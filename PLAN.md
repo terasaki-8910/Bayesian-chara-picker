@@ -31,9 +31,19 @@ wave 5           app-shell
 `scripts/dist-scan.mjs`（D2 の走査器）は criteria stage で実装済み・main にあり、
 `tests/dist-scan.test.ts` は既に green。フィーチャとして起こさない。
 
+## 現在地（2026-07-20）
+
+- **完了（main にマージ済み）**: wave 1 — `data-schema` / `engine-supply` /
+  `collect-script`
+- **今回の `state/features.txt`**: wave 2 — `engine-questions` / `character-dataset`
+- 未着手: wave 3〜5
+
+plan stage を再実行するたびにこの節を更新し、`state/features.txt` を次の wave に
+進める。PLAN 上の全フィーチャが main に存在したら `state/features.txt` を空にする。
+
 ---
 
-## wave 1（依存なし。これが今回の `state/features.txt`）
+## wave 1（依存なし。マージ済み）
 
 ### 1. `data-schema` — `src/data/schema.ts`
 
@@ -126,7 +136,10 @@ CLI 実行時は `data/characters.json` の `dlsiteQuery !== null` を回して
 
 ---
 
-## wave 2（wave 1 マージ後）
+## wave 2（wave 1 マージ後。これが今回の `state/features.txt`）
+
+`engine-questions` は `src/engine/questions.ts` のみ、`character-dataset` は
+`data/*.json` のみに触れる。ファイルは互いに素で、共有する可変状態も無い。
 
 ### 4. `engine-questions` — `src/engine/questions.ts`
 
