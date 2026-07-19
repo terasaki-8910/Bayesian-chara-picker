@@ -9,3 +9,17 @@ coverage/
 .env
 .env.*
 !.env.example
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+
+# DLsite 収集の生の取得物 (HTML は肥大かつ再取得可能・著作物のため追跡しない).
+# data/characters.json と data/supply.json 本体、tests/fixtures/ の固定 HTML
+# フィクスチャは追跡する (worktree 必須 + レビュー履歴に価値がある).
+/data/raw/
+
+# Vite
+.vite/
+*.tsbuildinfo

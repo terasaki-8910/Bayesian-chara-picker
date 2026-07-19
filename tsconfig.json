@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "checkJs": false,
+    "jsx": "react-jsx",
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "forceConsistentCasingInFileNames": true,
+    // 未使用チェックは ESLint の no-unused-vars(^_ 無視) に一本化する。
+    // tsc の noUnusedLocals は `_` 接頭辞を無視しないため、意図的な未使用が
+    // 二重基準で落ちるのを避ける。
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "types": ["node"]
+  },
+  "include": ["src", "tests", "e2e", "scripts", "vite.config.ts", "vitest.config.ts", "playwright.config.ts"],
+  "exclude": ["node_modules", "dist", "state", "coverage"]
+}
