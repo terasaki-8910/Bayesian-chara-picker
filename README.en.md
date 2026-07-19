@@ -4,121 +4,186 @@
 
 </div>
 
-# claude-pipeline-template
+# random-chara-picker
 
-A **GitHub template repository** for driving ONE project from a rough idea to a
-gated, tested result with Claude Code. Multiple projects run in parallel simply as
-separate repos (no shared state). Ralph-style iteration is used *inside* the build
-stage only, bounded and gated by tests -- not as an ungated overnight loop.
+Answer a handful of questions and get a few matching characters back — a character
+recommender **constrained by actual supply**.
 
-## Files
-- `pipeline.yaml`  -- declarative spec (source of truth). Keep in sync with run.sh.
-- `scripts/run.sh` -- POSIX driver: advances stages, stops at human gates (notifies).
-- `scripts/gates.sh` -- machine gates (tests / lint / ui). Customize per project.
-- `prompts/0X-*.md` -- the "contract" for each stage.
-- `CLAUDE.md`      -- project memory (imports your global UI rules).
-- `.claude/settings.json` -- SCOPED permissions (see Safety). Not global skip-permissions.
-- `Makefile`       -- optional shortcuts (`make plan`, `make build`, ...).
+## What this is
 
-## One-time GLOBAL setup (per machine, NOT in this repo)
-1. Stop the git co-author trailer everywhere:
-   `~/.claude/settings.json`  ->  { "includeCoAuthoredBy": false }
-2. Shared UI direction across all projects:
-   copy `docs/ui-rules.starter.md` to `~/.claude/rules/ui.md` and refine it over time.
-   `~/.claude/CLAUDE.md` / `~/.claude/rules/` load in every project; scope the UI rule
-   to frontend globs so it only loads for UI work (see the rules-directory docs).
+The decisive difference from an ordinary quiz tool: it **only ever suggests characters
+that actually have works on DLsite**. "A great character with nothing available" is a
+worthless suggestion, and this constraint is the project's sole reason to exist.
 
-## Per-project use
-1. On GitHub: make this a Template repository (Settings -> Template repository).
-2. For each new project: "Use this template" -> new repo -> clone.
-3. In `CLAUDE.md`, set ONLY the project name and a one-line purpose by hand (leave the
-   test/lint commands blank -- intake fills them once the stack is chosen, for you to
-   confirm). Output language is set in the `Language` field (default English, separate
-   from the chat language). If it has a UI, run `touch state/has_ui`.
-4. Run the pipeline:  `sh scripts/run.sh all`   (or stage by stage: `... intake`, etc.)
-   Intake is GUIDED-CHOICE: start from a one-line description; Claude offers options at
-   each decision and you just pick (high-impact decisions first, details later). You can
-   always specify your own instead.
-5. At the end of intake, Claude PROPOSES per-project tools (MCP/plugins/skills). On your
-   approval it writes `state/TOOLING.md` (the proposal) and `state/init-tools.sh` (the add
-   commands). To install, review them and run `sh state/init-tools.sh` YOURSELF (never auto).
-   Intake also proposes **project-specific .gitignore entries** (so large fixtures/generated
-   files aren't swept into the build's `git add -A`).
-6. (Optional) `sh scripts/run.sh slim` -- untrack + gitignore the **pipeline machinery**
-   (`scripts/`, `prompts/`, `pipeline.yaml`, `Makefile`, `docs/ui-rules.starter.md`) in THIS
-   project, so git holds only the deliverable (the machinery stays on disk and still runs).
-   Finish with `git commit`. Refused on the template itself (which must track everything to
-   distribute via "Use this template").
+Despite the name, randomness is not the point. What this really does is preference
+matching with a supply-based cutoff; weighted random selection is used only on the
+"leave it to me" path.
 
-## Stages (gates)
-0 intake (H, once: freeze spec + propose per-project tools -> `TOOLING.md` / `init-tools.sh`)
-1 criteria (H)  2 design_gate (UI only, H, once)
-3 plan (skim)  4 build (machine gates, per worktree, sequential by default)
-5 feature_accept (machine + light H, LOCAL merge)  6 integration_accept (machine + H, once)
+## Requirements
 
-## Progress / recovery
-- `sh scripts/run.sh status` -- shows which stages are done (`[x]`) and the **exact command
-  to continue**. Each stage records `state/done/<stage>` once its human gate passes (design
-  shows `[-] n/a` when there is no UI). One glance tells you how far you got and what's next.
-- On a gate failure you get a **repair menu**: `1) auto` (repair until it passes) / `2) hybrid`
-  [default/Enter, repairs a few times then hands to you] / `3) stop` (**opens an interactive Claude
-  seeded with the error** so you fix it, then re-gates after `/exit`). auto/hybrid feed the failing
-  output to an agent (real debugging, not blind retry); stop on no-progress; weakening/deleting tests
-  to force a pass is forbidden.
-- At **DONE** the pipeline prints **NEXT STEPS**: the env vars/secrets you must set (extracted from
-  SPEC), external tools, usage (see README), and how to run the tests integration skipped.
-- `sh scripts/run.sh reset` -- **recover from a failure**: clears build worktrees, `feature/*`
-  branches and checkpoints, keeping spec/criteria/plan (SPEC/ACCEPTANCE/PLAN/tests/gates).
-  Then `from build` rebuilds cleanly.
+- Node.js (needed to run Vite 8 / Vitest 4 / `scripts/collect.mjs`)
+- npm — the package manager is fixed to npm. `scripts/gates.sh` invokes `npm test` /
+  `npm run lint` directly, so do not swap in another package manager.
 
-## Optional command: prior-art survey (before build)
-`sh scripts/run.sh survey` -- before building from scratch, SEARCH for similar existing
-projects and present them (no naming repos from memory = no hallucination). Not part of
-`all`. Choose: build from scratch (default) or adopt one as a base. Adopting records
-`state/BASE.md` but copies no code -- an adopted base still passes the normal criteria/
-build gates and its license is yours to satisfy (existing != trusted).
-**Requires** WebSearch enabled (`.claude/settings.json` currently denies WebFetch).
+## Setup
 
-## Optional command: automation recommender (after build)
-`sh scripts/run.sh recommend` -- analyzes the **finished code** and PROPOSES Hooks / MCP /
-subagents / skills (proposal-only, written to `state/RECOMMENDATIONS.md`; you decide what to
-adopt). Uses the `claude-code-setup` plugin's `automation-recommender` skill if installed,
-else a built-in equivalent. **Runs automatically at DONE** (`RECOMMEND=0` to disable). It needs
-existing code, so it lives after build, not at intake.
+```sh
+npm install
+```
 
-## Models
-Spec/criteria = Opus, design/build = Sonnet. Set per stage via env
-(MODEL_BUILD=sonnet etc.). `opus-plan` is an interactive mode, not a headless model
-string -- for headless `plan`, MODEL_PLAN stays a real model. Fable is MANUAL escalation
-only (write the blocker to state/BLOCKED-*.md and escalate by hand); never automated,
-because some Fable queries route to Opus and it has availability/safeguard caveats.
+`data/characters.json` and `data/supply.json` are tracked in the repository. There is no
+extra fetch step, and no need to run collection before the first launch.
 
-## Safety (important)
-- Each feature builds in an isolated `git worktree`; that isolation is the safety boundary.
-- `.claude/settings.json` grants a SCOPED allowlist and denies push / rm -rf. Do NOT run
-  `--dangerously-skip-permissions` on your main machine; if you ever do, keep it inside a
-  worktree/sandbox only.
-- No push by default -- everything is local git.
+## Usage
 
-## How run.sh calls claude (portable, same for every project)
-run.sh uses the documented, stable forms -- no per-machine tweaking:
-- interactive (intake): `claude "<prompt>"` -- opens the REPL and sends it as message 1.
-- headless (criteria/plan/build, ...): `claude -p "<prompt>"`.
-Permissions are unified via the scoped allowlist in `.claude/settings.json`. If a future
-CLI changes these core flags, fix them in ONE place (`claude_interactive` / `claude_run`)
--- a template edit, not a per-machine one. `--model` is passed per stage via env vars.
+### Run the app
 
-## Run-time environment variables (watch progress / control cost)
-- `INTERACTIVE=1` -- open criteria/design/plan in the **Claude Code TUI instead of
-  headless**: you see progress, get notifications, can steer mid-run, and `/exit` to
-  continue. Default 0 = headless/unattended. **intake is always TUI; build is always
-  headless** (it runs each feature in a worktree). Example:
-  `INTERACTIVE=1 sh scripts/run.sh from plan`
-- `REPAIR_ITERS` (default 4) / `REPAIR_HARD_CAP` (default 12) -- auto-repair attempt caps on a
-  gate failure (hybrid repairs REPAIR_ITERS times then hands to you; hard cap is the ceiling).
-- `PARALLEL=1` -- build features concurrently (default sequential = safer for cost/kill).
-- `PERMISSION_MODE` (default acceptEdits) -- headless permission mode.
-- `MODEL_*` (INTAKE/CRITERIA/DESIGN/PLAN/BUILD) -- per-stage model.
-- Input notifications: human gates (approvals, the plan Enter-prompt) fire a macOS banner,
-  **suppressed while the terminal is frontmost** (you can already see it). `NOTIFY_ALWAYS=1`
-  to always banner.
+```sh
+npm run dev       # dev server
+npm run preview   # preview the build output
+```
+
+Local use only. It is a static SPA, so it stays in a shape that can be dropped onto
+static hosting as-is.
+
+How it behaves:
+
+1. On first launch, an over-18 confirmation. The answer is kept in localStorage.
+2. You answer a fixed 6-8 questions. Each question maps to one attribute axis, and every
+   question offers "no preference" (weight 0).
+3. It shows the top 3-5 characters. Each one comes with the reason — which axes matched —
+   and an external link to the DLsite search results.
+4. On the "leave it to me" path, it picks by weighted random selection from characters
+   whose supply is "few" or better.
+
+Recommendation is score-based: a match adds points, a clear mismatch subtracts, a blank
+axis contributes 0. Supply rank is added to the score as a weight, kept small enough that
+it never overrides preference matching. Getting one question wrong does not wipe out the
+candidate set. Characters with supply rank "0" are removed by a hard filter and can never
+be recommended.
+
+**Zero network access at runtime.** From launch through the result screen there are no
+requests to external hosts, and this is verified mechanically (ACCEPTANCE D1).
+
+### Collect supply data
+
+```sh
+npm run collect   # DLsite collection batch (a separate process from the app)
+```
+
+Manual or locally scheduled runs only. It is **deliberately not part of the gates** —
+putting an external-site dependency into a CI gate means DLsite's own circumstances break
+the build, and the repair loop keeps hammering a failure it cannot fix. The results are
+committed to `data/supply.json` and operated from there.
+
+Collection rules (bound by tests, not left to implementer discretion):
+
+- Fetch **page 1 only** of DLsite search results — strictly the range robots.txt allows
+  via `Allow: /*/fsr/=/*/per_page/*/page/1/`.
+- Honor `Crawl-delay: 10`; keep at least 10 seconds between requests.
+- Never hit a URL matching robots.txt's Disallow list.
+- Include a contact string in the User-Agent.
+- Read the total hit count from the `/page/N/` of the "last page" link inside
+  `global_pagination`. With `per_page/30`, the count falls in `[(N-1)*30+1, N*30]`.
+  No headless browser required.
+- Always scope work-ID counting to the inside of `search_result_list` — the full page
+  mixes in work IDs from recommendation slots.
+
+### Data files
+
+| File | How it is produced | Contents |
+|---|---|---|
+| `data/characters.json` | curated by hand | `id` / `name` / `aliases[]` / `series` / `dlsiteQuery` / the 10 attribute axes / `reviewed` |
+| `data/supply.json` | generated by `scripts/collect.mjs` | per character: `pageCount` / `estimatedRange` / `byWorkType` / `fetchedAt` |
+
+`dlsiteQuery` is a string a human has confirmed retrieves that character and only that
+character on DLsite search. If it cannot be pinned down, it is `null` (= not shipped).
+
+A single record with `reviewed: false` fails the gate. Drafted attribute values are
+**proposals, not facts**, so no record ships without human review.
+
+### The 10 attribute axes
+
+Axis names and values below are glossed into English for reading; the canonical values
+stored in `characters.json` are the Japanese strings listed in SPEC.md 2.3.
+
+The first four (gender presentation, age impression, build, personality) are required.
+The remaining six may be left blank — scoring still works with blanks, so review can
+proceed incrementally.
+
+| Axis | Type | Values |
+|---|---|---|
+| Gender presentation | single | female / otoko-no-ko / futanari / male |
+| Age impression | single, ordered | young / same age / older / mature |
+| Build | single, ordered | petite / average / glamorous / plush |
+| Personality | single | cool / energetic / easygoing / cheeky / shy / big-sister type |
+| Relationship role | multi | childhood friend / junior / senior / older sister / younger sister / maternal / teacher / master-servant / rival |
+| Approach | single, ordered | forward / somewhat forward / neutral / somewhat reserved / reserved |
+| Visual signifiers | multi | glasses / animal ears / tail / tanned / white hair / long hair / twintails |
+| Outfit / role | multi | uniform / maid / shrine maiden / nurse / magical girl / military uniform / office worker |
+| Species | single | human / elf / beastfolk / demon / machine / undead |
+| Mood | single | sweet / dominant / submissive / romance-leaning / transgressive-leaning |
+
+Two further axes are derived automatically, with zero manual work:
+
+| Axis | Derived from |
+|---|---|
+| Supply rank | `pageCount` bucketed: 0 / minimal (1) / few (2-5) / adequate (6-20) / plentiful (21+) |
+| Medium tendency | the ratio in `byWorkType` |
+
+## Constraints
+
+- **Wording**: no terms that directly evoke R18 content, in UI copy or in source. It stays
+  in vocabulary like "work count", "supply", "tendency", "affinity". A machine-checkable
+  banned-word list is enforced by lint. This is not to hide the purpose — it is a
+  deliberate design choice not to look like an adult site.
+- **UI**: colors only via design tokens; never a hardcoded hex / rgb() / hsl() literal.
+  No emoji in the UI or the source.
+- **Data quality**: nothing ships without human review (`reviewed`).
+
+## Out of scope (deliberately not built)
+
+- DLsite access at runtime, a backend API, any server-side processing
+- Bundling or displaying character images, work thumbnails, or work titles (copyright)
+- Fetching page 2 or beyond of DLsite search results
+- Pixiv integration, or collection from any other site
+- User accounts, favorites sync, server-side browsing history
+- Public hosting, SEO, affiliate links
+- A real Bayesian inference engine (overkill at a scale of 100-300 characters)
+
+## Stack
+
+React 19 / Vite 8 / Tailwind CSS 4 (CSS-first `@theme` config) / TypeScript 7 /
+Vitest 4 / Playwright + axe / ESLint 10 (jsx-a11y plus custom rules) / npm.
+
+## Scale phases
+
+1. **End-to-end with 30 characters** — take collection, data, questions and UI around one
+   small loop to find schema flaws cheaply.
+2. Grow to 100-300. The population is likely to widen further later, so keep adding a
+   character to be nothing more than appending data.
+
+## Developed via the gated pipeline
+
+This project advances through gated stages. Do not skip gates.
+
+```sh
+sh scripts/run.sh from <stage>                # resume from a stage
+INTERACTIVE=1 sh scripts/run.sh from <stage>  # open in the TUI instead of headless
+```
+
+Local verification commands:
+
+```sh
+npm test              # Vitest — data validation / collection parser / engine
+npm run lint          # ESLint + Stylelint + tsc --noEmit
+scripts/ui-check.sh   # Playwright + axe — responsive / contrast / keyboard operation
+```
+
+- Pass/fail criteria: [ACCEPTANCE.md](./ACCEPTANCE.md) (machine-decidable only; subjective
+  LLM review is not an acceptance criterion).
+- Stage definitions: [pipeline.yaml](./pipeline.yaml).
+- Only two human gates — reviewing attribute values (the act of setting `reviewed`), and a
+  one-time approval of the design direction.
+
+This README is generated from SPEC.md. Do not hand-edit it; change the SPEC and regenerate.

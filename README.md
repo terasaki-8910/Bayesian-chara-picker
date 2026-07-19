@@ -4,113 +4,170 @@
 
 </div>
 
-# claude-pipeline-template
+# random-chara-picker
 
-Claude Code で **1 つのプロジェクト**を、ざっくりした案からゲート付き・テスト済みの
-成果物まで進めるための **GitHub テンプレートリポジトリ**。複数プロジェクトは別リポジトリ
-として並列に走らせるだけでよい（共有状態なし）。Ralph 式の反復は build ステージの内部に
-だけ、テストで束ねた有界ループとして使う（無人の朝までグラインドではない）。
+いくつかの質問に答えると、条件に合うキャラを数体提案する**在庫制約つきキャラクター推薦ツール**。
 
-## ファイル構成
-- `pipeline.yaml`  — 宣言的な仕様（単一の真実）。run.sh と同期を保つこと。
-- `scripts/run.sh` — POSIX ドライバ本体：段階を進め、人間ゲートで通知して停止。
-- `scripts/gates.sh` — 機械ゲート（テスト / lint / ui）。プロジェクトごとに調整。
-- `prompts/0X-*.md` — 各段階の「契約」。
-- `CLAUDE.md`      — プロジェクト記憶（グローバルの UI ルールを取り込む）。
-- `.claude/settings.json` — スコープ付き権限（安全性の項参照）。素の skip-permissions は使わない。
-- `Makefile`       — 任意の短縮（`make plan`, `make build` …）。
+## これは何か
 
-## マシン全体の一度きり設定（このリポジトリ外）
-1. git の co-author 行を全プロジェクトで止める：
-   `~/.claude/settings.json` → `{ "includeCoAuthoredBy": false }`
-2. 全プロジェクト共通の UI 方針：
-   `docs/ui-rules.starter.md` を `~/.claude/rules/ui.md` にコピーして継続的に洗練する。
-   `~/.claude/CLAUDE.md` と `~/.claude/rules/` は全プロジェクトで読み込まれる。フロントエンドの
-   glob にスコープすれば UI 作業時のみ読み込まれる（rules ディレクトリのドキュメント参照）。
+ただの診断ツールとの決定的な違いは、**DLsite に実際に作品が存在するキャラしか提案しない**こと。
+「良いキャラだが作品が無い」は提案として無価値であり、この制約がプロジェクトの唯一の存在理由。
 
-## プロジェクトごとの使い方
-1. GitHub でこのリポジトリを Template repository に設定（Settings → Template repository）。
-2. 新規プロジェクトごとに Use this template → 新リポジトリ → clone。
-3. `CLAUDE.md` に**プロジェクト名と一行の目的だけ**手で記入（test/lint コマンド欄は空でよい
-   ——intake がスタック確定後に埋め、あなたが確認する）。生成物の言語は `Language` 欄（既定=
-   英語、会話言語とは別）で指定。UI があるなら `touch state/has_ui`。
-4. パイプライン実行：`sh scripts/run.sh all`（段階ごとにも：`… intake` など）。
-   intake は**案内型**：一行のざっくり指示から始め、Claude が各論点で選択肢を出し、あなたは
-   選ぶだけ（重い判断が先・細部は後）。合わなければ自分で指定も可。
-5. intake の最後に**プロジェクト別の道具提案**（MCP/プラグイン/スキル）が出る。承認すると
-   `state/TOOLING.md`（提案書）と `state/init-tools.sh`（導入コマンド）が生成される。入れる場合は
-   中身を確認し `sh state/init-tools.sh` を**自分で**実行する（Claude は自動導入しない）。intake は
-   **プロジェクト固有の .gitignore 追加**も提案する（大きな fixture・生成物を build の `git add -A`
-   がコミットしないように）。
-6. （任意）`sh scripts/run.sh slim` — このプロジェクトの git から**パイプライン機構**（`scripts/`,
-   `prompts/`, `pipeline.yaml`, `Makefile`, `docs/ui-rules.starter.md`）を untrack + gitignore し、
-   **git に成果物だけ**を残す（機構はディスクに残り実行可）。仕上げに `git commit`。※テンプレート
-   本体では拒否される（Use this template で配布するため全追跡が必須）。
+名称に反して乱数が主役ではない。実態は「供給量で足切りした嗜好マッチング」で、
+重み付き乱択を使うのは「おまかせ」経路のみ。
 
-## 段階（ゲート）
-0 intake（人間・1回：仕様確定＋プロジェクト別の道具提案 → `TOOLING.md` / `init-tools.sh`）／
-1 criteria（人間）／2 design_gate（UI のみ・人間・1回）／
-3 plan（目視）／4 build（機械ゲート・worktree・既定は逐次）／
-5 feature_accept（機械＋軽い人間・ローカルマージ）／6 integration_accept（機械＋人間・1回）
+## 必要なもの
 
-## 進捗確認・復旧
-- `sh scripts/run.sh status` — 完了したステージ（`[x]`）と、**次に進むコマンド**を表示。各
-  ステージは人間ゲートを通った時点で `state/done/<stage>` に記録される（UI 無しなら design は
-  `[-] n/a`）。「どこまで終わって、次に何を打てばいいか」が一目で分かる。
-- ゲート失敗時は**その場で修復メニュー**:`1) auto`（直るまで自動修復）/ `2) hybrid`〔既定・Enter・
-  数回で人間へ〕/ `3) stop`（**対話 Claude をエラー付きで起動**して自分で直す→`/exit` 後に再判定）。
-  auto/hybrid は失敗出力をエージェントに渡して直させる（盲目リトライでなく実デバッグ）。無進捗で自動
-  停止、テストを弱める/消すのは禁止。
-- 完了（DONE）時に **NEXT STEPS** を出力:設定すべき env/シークレット（SPEC から抽出）・外部ツール・
-  使い方（README 参照）・integration で skip された未検証テストの回し方。
-- `sh scripts/run.sh reset` — **失敗からの復旧**。build の worktree・`feature/*` ブランチ・
-  チェックポイントを消し、仕様/基準/計画（SPEC・ACCEPTANCE・PLAN・tests・gates）は残す。→
-  `from build` で作り直せる。
+- Node.js（Vite 8 / Vitest 4 / `scripts/collect.mjs` の実行に必要）
+- npm — パッケージマネージャは npm 固定。`scripts/gates.sh` が `npm test` / `npm run lint` を
+  直接叩くため、他のパッケージマネージャに差し替えない。
 
-## 任意コマンド：先行事例調査（build 前）
-`sh scripts/run.sh survey` — 一から作る前に、似た既存プロジェクトを**実検索**して提示（記憶
-からの列挙は禁止＝幻覚回避）。`all` には含まない。選択は「一から作る（既定）／既存を base に
-採用」。base 採用時は `state/BASE.md` に記録するがコードは複製しない——採用しても通常の
-criteria/build ゲートを通し、ライセンスも自分で満たす（"存在するだけ"では信用しない）。
-**要件**：WebSearch の有効化が必要（現状 `.claude/settings.json` は WebFetch を deny）。
+## セットアップ
 
-## 任意コマンド：自動化提案（build 後）
-`sh scripts/run.sh recommend` — **完成したコード**を解析し、Hooks/MCP/subagent/skill を**提案**
-（実装はせず `state/RECOMMENDATIONS.md` に出力、あなたが採否を決める）。`claude-code-setup`
-プラグインがあればその `automation-recommender` スキルを使い、無ければ内蔵で代替。**DONE で自動
-実行**される（`RECOMMEND=0` で無効化）。コードが無いと意味が無いので intake ではなく完成後。
+```sh
+npm install
+```
 
-## モデル
-仕様・基準 = Opus、design・build = Sonnet。段階ごとに環境変数で指定
-（`MODEL_BUILD=sonnet` など）。`opus-plan` は対話モードでありヘッドレスのモデル文字列では
-ないので、ヘッドレスの plan では `MODEL_PLAN` は実在モデルのまま。Fable は**手動エスカレー
-ションのみ**（ブロッカーを `state/BLOCKED-*.md` に書いて手で上げる）。一部の Fable クエリは
-Opus に迂回し可用性・セーフガードの注意もあるため、自動化はしない。
+`data/characters.json` と `data/supply.json` はリポジトリ管理。追加の取得手順は不要で、
+初回起動前に収集を走らせる必要もない。
 
-## 安全性（重要）
-- 各機能は隔離された `git worktree` でビルドする。この隔離が安全境界。
-- `.claude/settings.json` はスコープ付き許可リストを与え、push と rm -rf を deny する。
-  本番マシンで `--dangerously-skip-permissions` を使わないこと。使う場合も worktree /
-  サンドボックス内に限定する。
-- 既定では push しない — すべてローカル git。
+## 使い方
 
-## claude の起動（移植可能・全プロジェクト共通）
-run.sh は文書化された安定形で claude を呼ぶ。マシン依存の調整は不要:
-- 対話（intake）: `claude "<プロンプト>"` — REPL を開き、それを最初のメッセージとして送る。
-- ヘッドレス（criteria/plan/build 等）: `claude -p "<プロンプト>"`。
-権限は `.claude/settings.json` のスコープ付き許可リストで統一。将来 CLI がこの中核フラグを
-変えた時だけ、`claude_interactive` / `claude_run` の1箇所を直す（マシンごとではなくテンプレ
-1箇所の修正）。`--model` は段階別に環境変数で渡す。
+### アプリを動かす
 
-## 実行の環境変数（見ながら回す / コスト制御）
-- `INTERACTIVE=1` — criteria/design/plan を**ヘッドレスでなく Claude Code の TUI** で開く。
-  進捗が見え、通知が来て、途中で指示を変えられ、`/exit` で次段へ進む。既定 0 はヘッドレス
-  （無人）。**intake は常に TUI、build は常にヘッドレス**（機能ごとに worktree で回すため）。
-  例：`INTERACTIVE=1 sh scripts/run.sh from plan`
-- `REPAIR_ITERS`（既定 4）/ `REPAIR_HARD_CAP`（既定 12）— ゲート失敗時の自動修復の試行上限
-  （hybrid は REPAIR_ITERS 回で人間へ、絶対上限は HARD_CAP）。各試行は有料実行。
-- `PARALLEL=1` — build を並列化（既定は逐次＝コストと停止性で安全）。
-- `PERMISSION_MODE`（既定 acceptEdits）— ヘッドレスの権限モード。
-- `MODEL_*`（INTAKE/CRITERIA/DESIGN/PLAN/BUILD）— 段階別モデル。
-- 入力待ちの通知：人間ゲート（承認・plan の Enter 待ち）で macOS 通知を鳴らす。**ターミナルが
-  最前面の時は抑制**（見ているので不要）。常に鳴らすなら `NOTIFY_ALWAYS=1`。
+```sh
+npm run dev       # 開発サーバ
+npm run preview   # ビルド成果物のプレビュー
+```
+
+ローカル専用。静的 SPA なので、そのまま静的ホスティングに載せられる形は保つ。
+
+動作の流れ:
+
+1. 初回起動時に 18 歳以上の確認。結果は localStorage に保持する。
+2. 固定 6〜8 問に回答する。各質問は属性 1 軸に対応し、全問に「こだわらない」（重み 0）がある。
+3. 上位 3〜5 体を表示する。各体には「どの軸が一致したか」の根拠と、DLsite 検索結果への
+   外部リンクが付く。
+4. 「おまかせ」経路では、供給量が「少ない」以上のキャラから重み付き乱択で選ぶ。
+
+推薦はスコアリング方式。一致で加点、明確な不一致で減点、空欄は 0。供給量ランクは
+スコアに重みとして加算されるが、嗜好一致を上書きしない程度に抑える。1 問間違えても
+候補は全滅しない。供給量ランクが「0」のキャラはハードフィルタで常に候補から外れる。
+
+**実行時のネットワークアクセスはゼロ。** 起動から結果表示まで外部ホストへのリクエストは
+発生せず、これは機械検証する（ACCEPTANCE D1）。
+
+### データを収集する
+
+```sh
+npm run collect   # DLsite 収集バッチ（アプリとは別プロセス）
+```
+
+手動またはローカルの定期実行のみ。**ゲートには含めない** — 外部サイト依存を CI ゲートに
+入れると DLsite 側の都合でビルドが落ち、リペアループが自分では直せない失敗を叩き続ける。
+収集結果は `data/supply.json` にコミットして運用する。
+
+収集の規約（実装の自由裁量ではなく、テストで縛る）:
+
+- 取得するのは DLsite 検索結果の **1 ページ目のみ**。robots.txt が
+  `Allow: /*/fsr/=/*/per_page/*/page/1/` を明示している範囲に限る。
+- `Crawl-delay: 10` を厳守し、リクエスト間隔は 10 秒以上。
+- robots.txt の Disallow 一覧に該当する URL は叩かない。
+- User-Agent に連絡手段を含める。
+- 総ヒット数は `global_pagination` 内の「最後へ」リンクの `/page/N/` から読む。
+  `per_page/30` なら件数は `[(N-1)*30+1, N*30]` に収まる。ヘッドレスブラウザは不要。
+- 作品 ID の計数は必ず `search_result_list` の内側にスコープする（ページ全体には推薦枠の
+  作品 ID が混ざる）。
+
+### データファイル
+
+| ファイル | 生成方法 | 内容 |
+|---|---|---|
+| `data/characters.json` | 人手キュレーション | `id` / `name` / `aliases[]` / `series` / `dlsiteQuery` / 属性 10 軸 / `reviewed` |
+| `data/supply.json` | `scripts/collect.mjs` が生成 | キャラごとの `pageCount` / `estimatedRange` / `byWorkType` / `fetchedAt` |
+
+`dlsiteQuery` は「DLsite 検索でそのキャラだけを引ける」と人手で確認済みの文字列。
+確定できない場合は `null`（＝収録対象外）。
+
+`reviewed: false` のレコードが 1 件でもあればゲートが落ちる。属性値の下書きは**提案であって
+事実ではない**ため、人間のレビューを経ていないレコードは出荷しない。
+
+### 属性 10 軸
+
+必須は上位 4 軸（性別表現・年齢感・体型・性格）。残り 6 軸は空欄可 — スコアリング方式なので
+空欄でも推薦は成立し、レビューを段階的に進められる。
+
+| 軸 | 型 | 値 |
+|---|---|---|
+| 性別表現 | 単一 | 女性 / おとこの娘 / ふたなり / 男性 |
+| 年齢感 | 単一・順序 | 幼い / 同年代 / 年上 / 熟れた |
+| 体型 | 単一・順序 | 小柄華奢 / 標準 / グラマー / むちむち |
+| 性格 | 単一 | クール / 元気 / おっとり / 生意気 / 内気 / 姉御 |
+| 関係性ロール | 複数 | 幼馴染 / 後輩 / 先輩 / 姉 / 妹 / 母性 / 教師 / 主従 / ライバル |
+| 距離感 | 単一・順序 | 積極的 / やや積極的 / 中立 / やや受け身 / 受け身 |
+| 見た目の記号 | 複数 | 眼鏡 / ケモミミ / 尻尾 / 褐色 / 白髪 / 長髪 / ツインテール |
+| 衣装・立場 | 複数 | 制服 / メイド / 巫女 / ナース / 魔法少女 / 軍服 / OL |
+| 種族 | 単一 | 人間 / エルフ / 獣人 / 魔族 / 機械 / 不死 |
+| 雰囲気 | 単一 | 甘め / 支配的 / 従属的 / 純愛寄り / 背徳寄り |
+
+次の 2 軸は手作業ゼロで自動導出する:
+
+| 軸 | 導出元 |
+|---|---|
+| 供給量ランク | `pageCount` を段階化: 0 / 僅少(1) / 少ない(2-5) / 十分(6-20) / 豊富(21+) |
+| 媒体の傾向 | `byWorkType` の比率 |
+
+## 制約
+
+- **表現**: UI コピーおよびソースコードに R18 を直接連想させる語を使わない。「作品数」「供給」
+  「傾向」「相性」といった語彙で通す。機械判定可能な禁止語リストを lint に載せる。
+  用途を隠すためではなく、成人向けを装わない見た目を意図的に選ぶという設計判断。
+- **UI**: 色は必ずデザイントークン経由。hex / rgb() / hsl() のリテラル直書きは禁止。
+  ソースにも UI にも絵文字を置かない。
+- **データ品質**: 人間のレビュー（`reviewed`）を経ていないレコードは出荷しない。
+
+## 作らないもの（スコープ外）
+
+- 実行時の DLsite アクセス、バックエンド API、サーバーサイド処理
+- キャラクター画像・作品サムネイル・作品タイトルの同梱および表示（著作権）
+- DLsite 検索結果 2 ページ目以降の取得
+- Pixiv 連携、その他のサイトからの収集
+- ユーザーアカウント、お気に入り同期、閲覧履歴のサーバー保存
+- 一般公開ホスティング、SEO、アフィリエイト
+- 本物のベイズ推定エンジン（100〜300 体規模ではオーバースペック）
+
+## スタック
+
+React 19 / Vite 8 / Tailwind CSS 4（`@theme` の CSS-first 設定）/ TypeScript 7 /
+Vitest 4 / Playwright + axe / ESLint 10（jsx-a11y ＋ カスタム規則）/ npm。
+
+## 開発規模の段階
+
+1. **30 体で貫通** — 収集 → データ → 質問 → UI を小さく一周させ、スキーマの欠陥を安く発見する。
+2. 100〜300 体へ拡大。母集団は今後さらに広げる可能性が高いため、キャラ追加がデータ追記だけで
+   済む構造を保つ。
+
+## ゲート付きパイプラインで開発する
+
+このプロジェクトはゲート付きステージで進める。ゲートを飛ばさない。
+
+```sh
+sh scripts/run.sh from <stage>              # 指定ステージから再開
+INTERACTIVE=1 sh scripts/run.sh from <stage>  # ヘッドレスでなく TUI で開く
+```
+
+ローカルの検証コマンド:
+
+```sh
+npm test              # Vitest — データ検証 / 収集パーサ / エンジン
+npm run lint          # ESLint + Stylelint + tsc --noEmit
+scripts/ui-check.sh   # Playwright + axe — レスポンシブ / コントラスト / キーボード操作
+```
+
+- pass/fail の基準は [ACCEPTANCE.md](./ACCEPTANCE.md)（機械判定のみ。LLM の主観レビューは
+  受け入れ基準に含めない）。
+- ステージ定義は [pipeline.yaml](./pipeline.yaml)。
+- 人間のゲートは 2 点のみ — 属性値の妥当性レビュー（`reviewed` を立てる行為）と、
+  デザイン方向の一度きりの承認。
+
+この README は SPEC.md から生成される。手で編集せず、SPEC を直してから再生成すること。
