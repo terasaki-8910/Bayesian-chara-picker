@@ -1,0 +1,434 @@
+[
+  {
+    "id": "rezero-rem",
+    "name": "レム",
+    "aliases": ["Rem"],
+    "series": "Re:ゼロから始める異世界生活",
+    "dlsiteQuery": "リゼロ レム",
+    "axes": {
+      "genderExpression": "女性", "ageFeel": "同年代", "build": "標準", "personality": "クール",
+      "roles": ["主従"], "distance": "積極的", "looks": [], "outfit": ["メイド"], "species": "魔族", "mood": "純愛寄り"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "rezero-ram",
+    "name": "ラム",
+    "aliases": ["Ram"],
+    "series": "Re:ゼロから始める異世界生活",
+    "dlsiteQuery": "リゼロ ラム",
+    "axes": {
+      "genderExpression": "女性", "ageFeel": "同年代", "build": "標準", "personality": "生意気",
+      "roles": ["姉", "主従"], "distance": "中立", "looks": [], "outfit": ["メイド"], "species": "魔族", "mood": "支配的"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "fate-scathach",
+    "name": "スカサハ",
+    "aliases": ["Scathach", "ランサー"],
+    "series": "Fate",
+    "dlsiteQuery": "Fate スカサハ",
+    "axes": {
+      "genderExpression": "女性", "ageFeel": "熟れた", "build": "グラマー", "personality": "クール",
+      "roles": ["教師"], "distance": "やや積極的", "looks": ["長髪"], "outfit": [], "species": "不死", "mood": "支配的"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "fate-tamamo",
+    "name": "玉藻の前",
+    "aliases": ["Tamamo no Mae", "キャスター"],
+    "series": "Fate",
+    "dlsiteQuery": "Fate 玉藻の前",
+    "axes": {
+      "genderExpression": "女性", "ageFeel": "年上", "build": "グラマー", "personality": "おっとり",
+      "roles": ["主従", "母性"], "distance": "積極的", "looks": ["ケモミミ", "尻尾"], "outfit": ["巫女"], "species": "獣人", "mood": "甘め"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "fate-bb",
+    "name": "BB",
+    "aliases": [],
+    "series": "Fate/EXTRA",
+    "dlsiteQuery": "FGO BB",
+    "axes": {
+      "genderExpression": "女性", "ageFeel": "同年代", "build": "小柄華奢", "personality": "生意気",
+      "roles": [], "distance": "積極的", "looks": ["長髪"], "outfit": [], "species": "機械", "mood": "甘め"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "fgo-ishtar",
+    "name": "イシュタル",
+    "aliases": ["Ishtar"],
+    "series": "Fate/Grand Order",
+    "dlsiteQuery": "FGO イシュタル",
+    "axes": {
+      "genderExpression": "女性", "ageFeel": "熟れた", "build": "グラマー", "personality": "生意気",
+      "roles": [], "distance": "やや積極的", "looks": ["褐色", "長髪"], "outfit": [], "species": "不死", "mood": "支配的"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "fgo-kiyohime",
+    "name": "清姫",
+    "aliases": ["Kiyohime"],
+    "series": "Fate/Grand Order",
+    "dlsiteQuery": "FGO 清姫",
+    "axes": {
+      "genderExpression": "女性", "ageFeel": "同年代", "build": "グラマー", "personality": "内気",
+      "roles": [], "distance": "積極的", "looks": ["長髪"], "outfit": [], "species": "魔族", "mood": "背徳寄り"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "fgo-medusa",
+    "name": "メデューサ",
+    "aliases": ["Medusa", "ライダー"],
+    "series": "Fate/Grand Order",
+    "dlsiteQuery": "FGO メデューサ ライダー",
+    "axes": {
+      "genderExpression": "女性", "ageFeel": "年上", "build": "グラマー", "personality": "おっとり",
+      "roles": ["母性"], "distance": "受け身", "looks": ["白髪", "長髪"], "outfit": [], "species": "魔族", "mood": "甘め"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "overlord-albedo",
+    "name": "アルベド",
+    "aliases": ["Albedo"],
+    "series": "オーバーロード",
+    "dlsiteQuery": "オーバーロード アルベド",
+    "axes": {
+      "genderExpression": "女性", "ageFeel": "熟れた", "build": "グラマー", "personality": "生意気",
+      "roles": ["主従"], "distance": "積極的", "looks": ["長髪", "尻尾"], "outfit": [], "species": "魔族", "mood": "背徳寄り"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "overlord-narberal",
+    "name": "ナーベラル・ガンマ",
+    "aliases": ["Narberal Gamma", "ナーベ"],
+    "series": "オーバーロード",
+    "dlsiteQuery": "オーバーロード ナーベラル",
+    "axes": {
+      "genderExpression": "女性", "ageFeel": "同年代", "build": "標準", "personality": "クール",
+      "roles": ["主従"], "distance": "中立", "looks": ["長髪"], "outfit": ["メイド"], "species": "機械", "mood": "従属的"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "konosuba-darkness",
+    "name": "ダクネス",
+    "aliases": ["Darkness", "ラライナ"],
+    "series": "このすばらしい世界に祝福を!",
+    "dlsiteQuery": "このすば ダクネス",
+    "axes": {
+      "genderExpression": "女性", "ageFeel": "年上", "build": "グラマー", "personality": "おっとり",
+      "roles": ["先輩"], "distance": "受け身", "looks": ["長髪"], "outfit": ["軍服"], "species": "人間", "mood": "背徳寄り"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "fairytail-erza",
+    "name": "エルザ・スカーレット",
+    "aliases": ["Erza Scarlet"],
+    "series": "FAIRY TAIL",
+    "dlsiteQuery": "フェアリーテイル エルザ",
+    "axes": {
+      "genderExpression": "女性", "ageFeel": "年上", "build": "グラマー", "personality": "姉御",
+      "roles": ["先輩"], "distance": "やや積極的", "looks": ["長髪"], "outfit": ["軍服"], "species": "人間", "mood": "支配的"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "fairytail-mirajane",
+    "name": "ミラジェーン",
+    "aliases": ["Mirajane"],
+    "series": "FAIRY TAIL",
+    "dlsiteQuery": "フェアリーテイル ミラジェーン",
+    "axes": {
+      "genderExpression": "女性", "ageFeel": "年上", "build": "グラマー", "personality": "おっとり",
+      "roles": ["姉", "母性"], "distance": "やや積極的", "looks": ["白髪", "長髪"], "outfit": [], "species": "人間", "mood": "甘め"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "dragonball-bulma",
+    "name": "ブルマ",
+    "aliases": ["Bulma"],
+    "series": "ドラゴンボール",
+    "dlsiteQuery": "ドラゴンボール ブルマ",
+    "axes": {
+      "genderExpression": "女性", "ageFeel": "熟れた", "build": "標準", "personality": "生意気",
+      "roles": ["母性"], "distance": "やや積極的", "looks": ["長髪"], "outfit": [], "species": "人間", "mood": "甘め"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "dragonball-18",
+    "name": "人造人間18号",
+    "aliases": ["Android 18", "ラズリ"],
+    "series": "ドラゴンボール",
+    "dlsiteQuery": "ドラゴンボール 18号",
+    "axes": {
+      "genderExpression": "女性", "ageFeel": "年上", "build": "標準", "personality": "クール",
+      "roles": ["姉"], "distance": "中立", "looks": ["長髪"], "outfit": [], "species": "機械", "mood": "支配的"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "naruto-tsunade",
+    "name": "綱手",
+    "aliases": ["Tsunade"],
+    "series": "NARUTO",
+    "dlsiteQuery": "NARUTO 綱手",
+    "axes": {
+      "genderExpression": "女性", "ageFeel": "熟れた", "build": "グラマー", "personality": "姉御",
+      "roles": ["教師", "先輩"], "distance": "中立", "looks": ["長髪"], "outfit": [], "species": "人間", "mood": "支配的"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "naruto-kurenai",
+    "name": "夕日紅",
+    "aliases": ["Kurenai Yuhi"],
+    "series": "NARUTO",
+    "dlsiteQuery": "NARUTO 夕日紅",
+    "axes": {
+      "genderExpression": "女性", "ageFeel": "年上", "build": "グラマー", "personality": "おっとり",
+      "roles": ["教師", "母性"], "distance": "やや受け身", "looks": ["長髪"], "outfit": [], "species": "人間", "mood": "甘め"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "onepiece-robin",
+    "name": "ニコ・ロビン",
+    "aliases": ["Nico Robin"],
+    "series": "ONE PIECE",
+    "dlsiteQuery": "ワンピース ニコロビン",
+    "axes": {
+      "genderExpression": "女性", "ageFeel": "年上", "build": "グラマー", "personality": "クール",
+      "roles": ["姉", "先輩"], "distance": "中立", "looks": ["長髪"], "outfit": [], "species": "人間", "mood": "純愛寄り"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "onepiece-hancock",
+    "name": "ボア・ハンコック",
+    "aliases": ["Boa Hancock"],
+    "series": "ONE PIECE",
+    "dlsiteQuery": "ワンピース ハンコック",
+    "axes": {
+      "genderExpression": "女性", "ageFeel": "熟れた", "build": "グラマー", "personality": "生意気",
+      "roles": [], "distance": "積極的", "looks": ["長髪"], "outfit": [], "species": "人間", "mood": "支配的"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "onepiece-nami",
+    "name": "ナミ",
+    "aliases": ["Nami"],
+    "series": "ONE PIECE",
+    "dlsiteQuery": "ワンピース ナミ",
+    "axes": {
+      "genderExpression": "女性", "ageFeel": "同年代", "build": "標準", "personality": "生意気",
+      "roles": ["幼馴染"], "distance": "やや積極的", "looks": ["長髪"], "outfit": [], "species": "人間", "mood": "甘め"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "monmusu-miia",
+    "name": "ミーア",
+    "aliases": ["Miia"],
+    "series": "モンスター娘のいる日常",
+    "dlsiteQuery": "モンスター娘のいる日常 ミーア",
+    "axes": {
+      "genderExpression": "女性", "ageFeel": "同年代", "build": "グラマー", "personality": "元気",
+      "roles": [], "distance": "積極的", "looks": ["長髪"], "outfit": [], "species": "獣人", "mood": "甘め"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "monmusu-centorea",
+    "name": "セントレア",
+    "aliases": ["Centorea", "セラエオルグ"],
+    "series": "モンスター娘のいる日常",
+    "dlsiteQuery": "モンスター娘のいる日常 セントレア",
+    "axes": {
+      "genderExpression": "女性", "ageFeel": "年上", "build": "グラマー", "personality": "姉御",
+      "roles": ["母性"], "distance": "やや積極的", "looks": ["長髪"], "outfit": [], "species": "獣人", "mood": "純愛寄り"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "nier-2b",
+    "name": "2B",
+    "aliases": ["YoRHa No.2 Type B"],
+    "series": "NieR:Automata",
+    "dlsiteQuery": "ニーアオートマタ 2B",
+    "axes": {
+      "genderExpression": "女性", "ageFeel": "同年代", "build": "グラマー", "personality": "クール",
+      "roles": [], "distance": "中立", "looks": ["長髪"], "outfit": [], "species": "機械", "mood": "従属的"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "nier-a2",
+    "name": "A2",
+    "aliases": ["YoRHa Type A No.2"],
+    "series": "NieR:Automata",
+    "dlsiteQuery": "ニーアオートマタ A2",
+    "axes": {
+      "genderExpression": "女性", "ageFeel": "同年代", "build": "グラマー", "personality": "クール",
+      "roles": ["ライバル"], "distance": "受け身", "looks": ["長髪"], "outfit": [], "species": "機械", "mood": "支配的"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "azurlane-nagato",
+    "name": "長門",
+    "aliases": ["Nagato"],
+    "series": "アズールレーン",
+    "dlsiteQuery": "アズールレーン 長門",
+    "axes": {
+      "genderExpression": "女性", "ageFeel": "年上", "build": "グラマー", "personality": "クール",
+      "roles": ["姉"], "distance": "中立", "looks": ["長髪"], "outfit": ["軍服"], "species": "人間", "mood": "従属的"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "azurlane-yamato",
+    "name": "大和",
+    "aliases": ["Yamato"],
+    "series": "アズールレーン",
+    "dlsiteQuery": "アズールレーン 大和",
+    "axes": {
+      "genderExpression": "女性", "ageFeel": "熟れた", "build": "グラマー", "personality": "クール",
+      "roles": ["姉"], "distance": "中立", "looks": ["長髪"], "outfit": ["軍服"], "species": "人間", "mood": "支配的"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "granblue-narmaya",
+    "name": "ナルメア",
+    "aliases": ["Narmaya"],
+    "series": "グランブルーファンタジー",
+    "dlsiteQuery": "グランブルーファンタジー ナルメア",
+    "axes": {
+      "genderExpression": "女性", "ageFeel": "年上", "build": "グラマー", "personality": "クール",
+      "roles": [], "distance": "やや積極的", "looks": ["長髪"], "outfit": [], "species": "人間", "mood": "甘め"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "idolmaster-chihaya",
+    "name": "如月千早",
+    "aliases": ["Kisaragi Chihaya"],
+    "series": "アイドルマスター",
+    "dlsiteQuery": "アイドルマスター 如月千早",
+    "axes": {
+      "genderExpression": "女性", "ageFeel": "同年代", "build": "小柄華奢", "personality": "クール",
+      "roles": [], "distance": "受け身", "looks": ["長髪"], "outfit": [], "species": "人間", "mood": "純愛寄り"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "kanokari-chizuru",
+    "name": "水原千鶴",
+    "aliases": ["Mizuhara Chizuru"],
+    "series": "彼女、お借りします",
+    "dlsiteQuery": "彼女、お借りします 水原千鶴",
+    "axes": {
+      "genderExpression": "女性", "ageFeel": "同年代", "build": "標準", "personality": "クール",
+      "roles": [], "distance": "やや受け身", "looks": ["長髪"], "outfit": [], "species": "人間", "mood": "純愛寄り"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "spyfamily-yor",
+    "name": "ヨル・フォージャー",
+    "aliases": ["Yor Forger", "いばら姫"],
+    "series": "SPY×FAMILY",
+    "dlsiteQuery": "SPYFAMILY ヨル",
+    "axes": {
+      "genderExpression": "女性", "ageFeel": "年上", "build": "グラマー", "personality": "おっとり",
+      "roles": ["母性"], "distance": "やや受け身", "looks": ["長髪"], "outfit": ["OL"], "species": "人間", "mood": "純愛寄り"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "csm-makima",
+    "name": "マキマ",
+    "aliases": ["Makima"],
+    "series": "チェンソーマン",
+    "dlsiteQuery": "チェンソーマン マキマ",
+    "axes": {
+      "genderExpression": "女性", "ageFeel": "年上", "build": "標準", "personality": "クール",
+      "roles": ["主従"], "distance": "積極的", "looks": ["長髪"], "outfit": ["OL"], "species": "魔族", "mood": "支配的"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "aot-levi",
+    "name": "リヴァイ・アッカーマン",
+    "aliases": ["Levi Ackerman"],
+    "series": "進撃の巨人",
+    "dlsiteQuery": "進撃の巨人 リヴァイ",
+    "axes": {
+      "genderExpression": "男性", "ageFeel": "年上", "build": "標準", "personality": "クール",
+      "roles": ["先輩"], "distance": "中立", "looks": [], "outfit": ["軍服"], "species": "人間", "mood": "支配的"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "onepiece-zoro",
+    "name": "ロロノア・ゾロ",
+    "aliases": ["Roronoa Zoro"],
+    "series": "ONE PIECE",
+    "dlsiteQuery": "ワンピース ゾロ",
+    "axes": {
+      "genderExpression": "男性", "ageFeel": "同年代", "build": "グラマー", "personality": "クール",
+      "roles": ["ライバル"], "distance": "中立", "looks": [], "outfit": [], "species": "人間", "mood": "純愛寄り"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "fate-astolfo",
+    "name": "アストルフォ",
+    "aliases": ["Astolfo"],
+    "series": "Fate/Apocrypha",
+    "dlsiteQuery": "Fate アストルフォ",
+    "axes": {
+      "genderExpression": "おとこの娘", "ageFeel": "同年代", "build": "小柄華奢", "personality": "元気",
+      "roles": [], "distance": "やや積極的", "looks": ["長髪", "ツインテール"], "outfit": [], "species": "人間", "mood": "甘め"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "bleach-rangiku",
+    "name": "松本乱菊",
+    "aliases": ["Matsumoto Rangiku"],
+    "series": "BLEACH",
+    "dlsiteQuery": "BLEACH 松本乱菊",
+    "axes": {
+      "genderExpression": "女性", "ageFeel": "年上", "build": "グラマー", "personality": "元気",
+      "roles": ["先輩"], "distance": "積極的", "looks": ["長髪"], "outfit": ["軍服"], "species": "人間", "mood": "甘め"
+    },
+    "reviewed": false
+  },
+  {
+    "id": "bleach-yoruichi",
+    "name": "四楓院夜一",
+    "aliases": ["Yoruichi Shihoin"],
+    "series": "BLEACH",
+    "dlsiteQuery": "BLEACH 四楓院夜一",
+    "axes": {
+      "genderExpression": "女性", "ageFeel": "熟れた", "build": "グラマー", "personality": "姉御",
+      "roles": ["先輩", "教師"], "distance": "積極的", "looks": ["褐色", "長髪"], "outfit": [], "species": "人間", "mood": "支配的"
+    },
+    "reviewed": false
+  }
+]
