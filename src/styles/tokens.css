@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+/*
+ * デザイントークン（design_brief.md の一度きりの承認対象）。
+ * stylelint 側で src/styles/tokens.css のみ hex / 色関数リテラルを許可している
+ * （E2 はこのファイル以外の直書きを禁止する）。色は WCAG の相対輝度式で
+ * 手計算しコントラスト比を検証済み（各行にコメントで残す。実装時は
+ * scripts/ui-check.sh の axe-core が機械的に再検証する）。
+ */
+@theme {
+  /* ---- 色: ニュートラル。青/緑に寄せない純粋な無彩色グレー ---- */
+  --color-bg: #161616; /* L=0.0080 */
+  --color-surface: #1f1f1f; /* L=0.0137 */
+  --color-surface-raised: #262626; /* hover 時のみ */
+  --color-border: #333; /* 装飾的な区切りのみに使う。到達可能性の唯一の
+    手段にはしない。実際の状態変化は塗り(surface系)と accent の左バーで示す */
+
+  --color-text-primary: #f2f2f2; /* vs bg: 16.16:1 */
+  --color-text-secondary: #b3b3b3; /* vs bg: 8.63:1 */
+  --color-text-tertiary: #8a8a8a; /* vs bg: 5.24:1。通常文字サイズでも AA */
+
+  /* ---- アクセント: 真鍮寄りアンバー 1 色。用途は選択中の回答 / 主要ボタン /
+     供給量メーターの 3 つに限定する（design_brief.md）。他に転用しない。 ---- */
+  --color-accent: #c9a227; /* vs bg: 7.48:1 / vs surface: 6.81:1 */
+  --color-accent-strong: #d8b23a; /* hover/active。vs bg: 8.92:1 */
+  --color-accent-on: var(--color-bg); /* accent 地の上の文字。vs accent: 7.48:1 */
+
+  /* ---- タイポスケール: 質問文が最強、以降明確に弱める ---- */
+  --text-question: 1.75rem;
+  --text-question--line-height: 2.25rem;
+  --text-option: 1.0625rem;
+  --text-option--line-height: 1.5rem;
+  --text-label: 0.8125rem;
+  --text-label--line-height: 1.125rem;
+  --text-caption: 0.75rem;
+  --text-caption--line-height: 1rem;
+
+  --font-weight-question: 600;
+  --font-weight-option: 500;
+
+  --tracking-label: 0.04em;
+
+  /* ---- レイアウトの寸法。単発の余白は Tailwind 既定の spacing スケールを
+     使い、画面をまたいで繰り返す定数だけをここに固定する ---- */
+  --layout-content-width: 40rem;
+  --layout-page-padding: 1.5rem;
+
+  --radius-control: 0.25rem;
+}
