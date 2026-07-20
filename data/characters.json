@@ -3952,5 +3952,1245 @@
       "mood": "従属的",
       "affiliationName": "白玉楼"
     }
+  },
+  {
+    "id": "kancolle-atago",
+    "name": "愛宕",
+    "aliases": [
+      "Atago"
+    ],
+    "series": "艦隊これくしょん",
+    "dlsiteQuery": "艦これ 愛宕",
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "とても大きい",
+      "personality": "おっとり",
+      "roles": [
+        "母性"
+      ],
+      "distance": "やや積極的",
+      "looks": [],
+      "hairColor": "金",
+      "skinTone": null,
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": "甘め",
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "affiliationName": "重巡洋艦(高雄型)"
+    },
+    "reviewed": false,
+    "hitomiQuery": {
+      "character": "atago",
+      "series": null
+    },
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "kancolle-shimakaze",
+    "name": "島風",
+    "aliases": [
+      "Shimakaze"
+    ],
+    "series": "艦隊これくしょん",
+    "dlsiteQuery": "艦これ 島風",
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": "生意気",
+      "roles": [],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": "金",
+      "skinTone": null,
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": null,
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "affiliationName": "駆逐艦(島風型・同型艦なし)"
+    },
+    "reviewed": false,
+    "hitomiQuery": {
+      "character": "shimakaze",
+      "series": null
+    },
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "kancolle-kaga",
+    "name": "加賀",
+    "aliases": [
+      "Kaga"
+    ],
+    "series": "艦隊これくしょん",
+    "dlsiteQuery": "艦これ 加賀",
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": "クール",
+      "roles": [],
+      "distance": "やや受け身",
+      "looks": [],
+      "hairColor": "黒",
+      "skinTone": null,
+      "outfit": [
+        "軍服"
+      ],
+      "species": "人間",
+      "mood": null,
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "affiliationName": "正規空母(加賀型)"
+    },
+    "reviewed": false,
+    "hitomiQuery": {
+      "character": "kaga",
+      "series": null
+    },
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "kancolle-kashima",
+    "name": "鹿島",
+    "aliases": [
+      "Kashima"
+    ],
+    "series": "艦隊これくしょん",
+    "dlsiteQuery": "艦これ 鹿島",
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "とても大きい",
+      "personality": "おっとり",
+      "roles": [
+        "教師"
+      ],
+      "distance": "やや積極的",
+      "looks": [
+        "ツインテール"
+      ],
+      "hairColor": "銀",
+      "skinTone": null,
+      "outfit": [
+        "軍服"
+      ],
+      "species": "人間",
+      "mood": "甘め",
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "affiliationName": "練習巡洋艦(香取型)"
+    },
+    "reviewed": false,
+    "hitomiQuery": {
+      "character": "kashima",
+      "series": null
+    },
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "kancolle-takao",
+    "name": "高雄",
+    "aliases": [
+      "Takao"
+    ],
+    "series": "艦隊これくしょん",
+    "dlsiteQuery": "艦これ 高雄",
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "とても大きい",
+      "personality": "姉御",
+      "roles": [
+        "姉",
+        "先輩"
+      ],
+      "distance": "やや積極的",
+      "looks": [],
+      "hairColor": "黒",
+      "skinTone": null,
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": "純愛寄り",
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "affiliationName": "重巡洋艦(高雄型・1番艦)"
+    },
+    "reviewed": false,
+    "hitomiQuery": {
+      "character": "takao",
+      "series": null
+    },
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "kancolle-hamakaze",
+    "name": "浜風",
+    "aliases": [
+      "Hamakaze"
+    ],
+    "series": "艦隊これくしょん",
+    "dlsiteQuery": "艦これ 浜風",
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "とても大きい",
+      "personality": "クール",
+      "roles": [],
+      "distance": "やや受け身",
+      "looks": [],
+      "hairColor": "銀",
+      "skinTone": null,
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": "純愛寄り",
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "affiliationName": "駆逐艦(陽炎型・第十七駆逐隊)"
+    },
+    "reviewed": false,
+    "hitomiQuery": {
+      "character": "hamakaze",
+      "series": null
+    },
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "kancolle-taihou",
+    "name": "大鳳",
+    "aliases": [
+      "Taihou",
+      "Taiho"
+    ],
+    "series": "艦隊これくしょん",
+    "dlsiteQuery": "艦これ 大鳳",
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "小さい",
+      "personality": "おっとり",
+      "roles": [],
+      "distance": "やや積極的",
+      "looks": [],
+      "hairColor": "黒",
+      "skinTone": null,
+      "outfit": [],
+      "species": "人間",
+      "mood": "純愛寄り",
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "affiliationName": "装甲空母(大鳳型)・第一機動部隊旗艦"
+    },
+    "reviewed": false,
+    "hitomiQuery": {
+      "character": "taihou",
+      "series": null
+    },
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "kancolle-suzuya",
+    "name": "鈴谷",
+    "aliases": [
+      "Suzuya"
+    ],
+    "series": "艦隊これくしょん",
+    "dlsiteQuery": "艦これ 鈴谷",
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": "元気",
+      "roles": [],
+      "distance": "積極的",
+      "looks": [],
+      "hairColor": "緑",
+      "skinTone": null,
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": "甘め",
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "affiliationName": "重巡洋艦(最上型)"
+    },
+    "reviewed": false,
+    "hitomiQuery": {
+      "character": "suzuya",
+      "series": null
+    },
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "kancolle-kongou",
+    "name": "金剛",
+    "aliases": [
+      "Kongou",
+      "Kongo"
+    ],
+    "series": "艦隊これくしょん",
+    "dlsiteQuery": "艦これ 金剛",
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": "元気",
+      "roles": [
+        "姉"
+      ],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": "茶",
+      "skinTone": null,
+      "outfit": [
+        "巫女"
+      ],
+      "species": "人間",
+      "mood": "純愛寄り",
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "affiliationName": "戦艦(金剛型・1番艦)"
+    },
+    "reviewed": false,
+    "hitomiQuery": {
+      "character": "kongou",
+      "series": null
+    },
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "touhou-koishi",
+    "name": "古明地こいし",
+    "aliases": [
+      "Koishi Komeiji",
+      "koishi komeiji"
+    ],
+    "series": "東方Project",
+    "dlsiteQuery": "東方 古明地こいし",
+    "hitomiQuery": {
+      "character": "koishi komeiji",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": "元気",
+      "roles": [
+        "妹"
+      ],
+      "distance": "受け身",
+      "looks": [],
+      "hairColor": "緑",
+      "skinTone": null,
+      "outfit": [],
+      "species": "魔族",
+      "mood": null,
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "地霊殿"
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "touhou-momiji",
+    "name": "犬走椛",
+    "aliases": [
+      "Momiji Inubashiri",
+      "momiji inubashiri"
+    ],
+    "series": "東方Project",
+    "dlsiteQuery": "東方 犬走椛",
+    "hitomiQuery": {
+      "character": "momiji inubashiri",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": "クール",
+      "roles": [],
+      "distance": "中立",
+      "looks": [
+        "ケモミミ",
+        "尻尾"
+      ],
+      "hairColor": "白",
+      "skinTone": null,
+      "outfit": [],
+      "species": "魔族",
+      "mood": null,
+      "combat": "戦う",
+      "affiliationKind": "社会人",
+      "affiliationName": "妖怪の山"
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "touhou-meiling",
+    "name": "紅美鈴",
+    "aliases": [
+      "Hong Meiling",
+      "hong meiling",
+      "Meiling Hong"
+    ],
+    "series": "東方Project",
+    "dlsiteQuery": "東方 紅美鈴",
+    "hitomiQuery": {
+      "character": "hong meiling",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "むっちり",
+      "bust": "大きい",
+      "personality": "おっとり",
+      "roles": [
+        "主従"
+      ],
+      "distance": "やや積極的",
+      "looks": [],
+      "hairColor": "緑",
+      "skinTone": null,
+      "outfit": [],
+      "species": "魔族",
+      "mood": null,
+      "combat": "戦う",
+      "affiliationKind": "社会人",
+      "affiliationName": "紅魔館"
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "touhou-ran",
+    "name": "八雲藍",
+    "aliases": [
+      "Ran Yakumo",
+      "ran yakumo"
+    ],
+    "series": "東方Project",
+    "dlsiteQuery": "東方 八雲藍",
+    "hitomiQuery": {
+      "character": "ran yakumo",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "熟れた",
+      "build": "むっちり",
+      "bust": "大きい",
+      "personality": "クール",
+      "roles": [
+        "母性",
+        "主従"
+      ],
+      "distance": "やや受け身",
+      "looks": [
+        "ケモミミ",
+        "尻尾",
+        "長髪"
+      ],
+      "hairColor": "金",
+      "skinTone": null,
+      "outfit": [],
+      "species": "獣人",
+      "mood": null,
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "八雲家"
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "touhou-koakuma",
+    "name": "小悪魔",
+    "aliases": [
+      "Koakuma",
+      "koakuma"
+    ],
+    "series": "東方Project",
+    "dlsiteQuery": "東方 小悪魔",
+    "hitomiQuery": {
+      "character": "koakuma",
+      "series": "touhou project"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": "元気",
+      "roles": [
+        "主従"
+      ],
+      "distance": "やや受け身",
+      "looks": [
+        "角",
+        "尻尾"
+      ],
+      "hairColor": "赤",
+      "skinTone": null,
+      "outfit": [],
+      "species": "魔族",
+      "mood": null,
+      "combat": "戦う",
+      "affiliationKind": "社会人",
+      "affiliationName": "紅魔館"
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "touhou-suwako",
+    "name": "洩矢諏訪子",
+    "aliases": [
+      "Suwako Moriya",
+      "suwako moriya"
+    ],
+    "series": "東方Project",
+    "dlsiteQuery": "東方 洩矢諏訪子",
+    "hitomiQuery": {
+      "character": "suwako moriya",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": "元気",
+      "roles": [],
+      "distance": "やや積極的",
+      "looks": [
+        "ツインテール"
+      ],
+      "hairColor": "緑",
+      "skinTone": null,
+      "outfit": [],
+      "species": "魔族",
+      "mood": null,
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "守矢神社"
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "touhou-yuuka",
+    "name": "風見幽香",
+    "aliases": [
+      "Yuuka Kazami",
+      "yuuka kazami"
+    ],
+    "series": "東方Project",
+    "dlsiteQuery": "東方 風見幽香",
+    "hitomiQuery": {
+      "character": "yuuka kazami",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "熟れた",
+      "build": "むっちり",
+      "bust": "とても大きい",
+      "personality": "クール",
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": "金",
+      "skinTone": null,
+      "outfit": [],
+      "species": "魔族",
+      "mood": "支配的",
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "touhou-yuyuko",
+    "name": "西行寺幽々子",
+    "aliases": [
+      "Yuyuko Saigyouji",
+      "yuyuko saigyouji"
+    ],
+    "series": "東方Project",
+    "dlsiteQuery": "東方 西行寺幽々子",
+    "hitomiQuery": {
+      "character": "yuyuko saigyouji",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "熟れた",
+      "build": "むっちり",
+      "bust": "大きい",
+      "personality": "おっとり",
+      "roles": [
+        "主従"
+      ],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": "桃",
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "不死",
+      "mood": null,
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "白玉楼"
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "lovelive-maki",
+    "name": "西木野真姫",
+    "aliases": [
+      "Maki Nishikino"
+    ],
+    "series": "ラブライブ!",
+    "dlsiteQuery": "ラブライブ 真姫",
+    "hitomiQuery": {
+      "character": "maki nishikino",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "標準",
+      "personality": "クール",
+      "roles": [
+        "後輩"
+      ],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": "赤",
+      "skinTone": null,
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": "純愛寄り",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "音ノ木坂学院"
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "lovelive-eli",
+    "name": "絢瀬絵里",
+    "aliases": [
+      "Eli Ayase"
+    ],
+    "series": "ラブライブ!",
+    "dlsiteQuery": "ラブライブ 絵里",
+    "hitomiQuery": {
+      "character": "eli ayase",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": "姉御",
+      "roles": [
+        "先輩",
+        "母性"
+      ],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": "金",
+      "skinTone": null,
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": "純愛寄り",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "音ノ木坂学院"
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "lovelive-nico",
+    "name": "矢澤にこ",
+    "aliases": [
+      "Nico Yazawa"
+    ],
+    "series": "ラブライブ!",
+    "dlsiteQuery": "ラブライブ にこ",
+    "hitomiQuery": {
+      "character": "nico yazawa",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": "生意気",
+      "roles": [
+        "先輩",
+        "母性"
+      ],
+      "distance": "中立",
+      "looks": [
+        "ツインテール"
+      ],
+      "hairColor": "黒",
+      "skinTone": null,
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": null,
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "音ノ木坂学院"
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "lovelive-nozomi",
+    "name": "東條希",
+    "aliases": [
+      "Nozomi Tojo"
+    ],
+    "series": "ラブライブ!",
+    "dlsiteQuery": "ラブライブ 希",
+    "hitomiQuery": {
+      "character": "nozomi tojo",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "とても大きい",
+      "personality": "おっとり",
+      "roles": [
+        "先輩",
+        "母性"
+      ],
+      "distance": "やや積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": "紫",
+      "skinTone": null,
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": "甘め",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "音ノ木坂学院"
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "lovelive-kotori",
+    "name": "南ことり",
+    "aliases": [
+      "Kotori Minami"
+    ],
+    "series": "ラブライブ!",
+    "dlsiteQuery": "ラブライブ ことり",
+    "hitomiQuery": {
+      "character": "kotori minami",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": "おっとり",
+      "roles": [
+        "幼馴染"
+      ],
+      "distance": "やや受け身",
+      "looks": [],
+      "hairColor": "銀",
+      "skinTone": null,
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": "純愛寄り",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "音ノ木坂学院"
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "lovelive-umi",
+    "name": "園田海未",
+    "aliases": [
+      "Umi Sonoda"
+    ],
+    "series": "ラブライブ!",
+    "dlsiteQuery": "ラブライブ 海未",
+    "hitomiQuery": {
+      "character": "umi sonoda",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "標準",
+      "personality": "内気",
+      "roles": [
+        "幼馴染"
+      ],
+      "distance": "受け身",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": "青",
+      "skinTone": null,
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": "純愛寄り",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "音ノ木坂学院"
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "fate-illya",
+    "name": "イリヤスフィール・フォン・アインツベルン",
+    "aliases": [
+      "Illyasviel von Einzbern",
+      "Illya",
+      "イリヤ"
+    ],
+    "series": "Fate/stay night",
+    "dlsiteQuery": "Fate イリヤ",
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": "元気",
+      "roles": [
+        "妹"
+      ],
+      "distance": "やや積極的",
+      "looks": [
+        "長髪",
+        "ツインテール"
+      ],
+      "hairColor": "銀",
+      "skinTone": "色白",
+      "outfit": [
+        "魔法少女"
+      ],
+      "species": "人間",
+      "mood": "甘め",
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "affiliationName": "穂群原学園小等部"
+    },
+    "reviewed": false,
+    "hitomiQuery": {
+      "character": "illyasviel von einzbern",
+      "series": null
+    },
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "fate-raikou",
+    "name": "源頼光",
+    "aliases": [
+      "Minamoto no Raikou",
+      "みなもとのらいこう"
+    ],
+    "series": "Fate/Grand Order",
+    "dlsiteQuery": "FGO 源頼光",
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "熟れた",
+      "build": "標準",
+      "bust": "とても大きい",
+      "personality": "姉御",
+      "roles": [
+        "母性"
+      ],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": "黒",
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "不死",
+      "mood": "甘め",
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": null
+    },
+    "reviewed": false,
+    "hitomiQuery": {
+      "character": "minamoto no raikou",
+      "series": null
+    },
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "fate-nightingale",
+    "name": "ナイチンゲール",
+    "aliases": [
+      "Nightingale",
+      "フローレンス・ナイチンゲール",
+      "Florence Nightingale"
+    ],
+    "series": "Fate/Grand Order",
+    "dlsiteQuery": "FGO ナイチンゲール",
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "熟れた",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": "クール",
+      "roles": [
+        "母性"
+      ],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": "金",
+      "skinTone": null,
+      "outfit": [
+        "ナース"
+      ],
+      "species": "不死",
+      "mood": "支配的",
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": null
+    },
+    "reviewed": false,
+    "hitomiQuery": {
+      "character": "nightingale",
+      "series": null
+    },
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "fate-miyu",
+    "name": "美遊・エーデルフェルト",
+    "aliases": [
+      "Miyu Edelfelt",
+      "朔月美遊",
+      "衛宮美遊"
+    ],
+    "series": "Fate/kaleid liner プリズマ☆イリヤ",
+    "dlsiteQuery": "プリズマイリヤ 美遊",
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": "クール",
+      "roles": [
+        "ライバル"
+      ],
+      "distance": "受け身",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": "青",
+      "skinTone": null,
+      "outfit": [
+        "魔法少女"
+      ],
+      "species": "人間",
+      "mood": "純愛寄り",
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "affiliationName": "穂群原学園小等部"
+    },
+    "reviewed": false,
+    "hitomiQuery": {
+      "character": "miyu edelfelt",
+      "series": null
+    },
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "fate-shuten",
+    "name": "酒呑童子",
+    "aliases": [
+      "Shuten Douji",
+      "しゅてんどうじ"
+    ],
+    "series": "Fate/Grand Order",
+    "dlsiteQuery": "FGO 酒呑童子",
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "とても大きい",
+      "personality": "生意気",
+      "roles": [],
+      "distance": "やや積極的",
+      "looks": [
+        "長髪",
+        "角"
+      ],
+      "hairColor": "紫",
+      "skinTone": null,
+      "outfit": [],
+      "species": "魔族",
+      "mood": "背徳寄り",
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "大江山"
+    },
+    "reviewed": false,
+    "hitomiQuery": {
+      "character": "shuten douji",
+      "series": null
+    },
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "fate-sakura",
+    "name": "間桐桜",
+    "aliases": [
+      "Sakura Matou",
+      "まとうさくら"
+    ],
+    "series": "Fate/stay night",
+    "dlsiteQuery": "Fate 間桐桜",
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "とても大きい",
+      "personality": "内気",
+      "roles": [
+        "後輩",
+        "妹"
+      ],
+      "distance": "受け身",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": "紫",
+      "skinTone": null,
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": "従属的",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "穂群原学園"
+    },
+    "reviewed": false,
+    "hitomiQuery": {
+      "character": "sakura matou",
+      "series": null
+    },
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "fate-chloe",
+    "name": "クロエ・フォン・アインツベルン",
+    "aliases": [
+      "Chloe von Einzbern",
+      "クロ"
+    ],
+    "series": "Fate/kaleid liner プリズマ☆イリヤ ツヴァイ！",
+    "dlsiteQuery": "プリズマイリヤ クロエ",
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": "生意気",
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": "銀",
+      "skinTone": "褐色",
+      "outfit": [],
+      "species": "人間",
+      "mood": "背徳寄り",
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "affiliationName": "穂群原学園小等部"
+    },
+    "reviewed": false,
+    "hitomiQuery": {
+      "character": "chloe von einzbern",
+      "series": null
+    },
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "fate-jalter",
+    "name": "ジャンヌ・オルタ",
+    "aliases": [
+      "Jeanne Alter",
+      "Jeanne d'Arc (Alter)",
+      "ジャンヌ・ダルク〔オルタ〕"
+    ],
+    "series": "Fate/Grand Order",
+    "dlsiteQuery": "FGO ジャンヌオルタ",
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": "クール",
+      "roles": [],
+      "distance": "受け身",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": "黒",
+      "skinTone": null,
+      "outfit": [],
+      "species": "不死",
+      "mood": "支配的",
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": null
+    },
+    "reviewed": false,
+    "hitomiQuery": {
+      "character": "jeanne alter",
+      "series": null
+    },
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   }
 ]
