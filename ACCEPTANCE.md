@@ -10,13 +10,14 @@ LLM の主観レビューは受け入れ基準に含めない。
 | A1 | `data/characters.json` の全レコードがスキーマ検証を通る（zod） | Vitest |
 | A2 | `reviewed: false` のレコードが 0 件 | Vitest |
 | A3 | `id` が一意 | Vitest |
-| A4 | 全レコードに必須 4 軸（性別表現・年齢感・体型・性格）が埋まっている | Vitest |
+| A4 | 全レコードに必須 8 軸（性別表現・年齢感・体格・胸・性格・髪色・戦うか・所属の種類）が埋まっている | Vitest |
 | A5 | 全軸の値が §SPEC 2.3 の許容値リストに含まれる（typo・独自値を弾く） | Vitest |
 | A6 | `dlsiteQuery` が `null` でないレコードは `data/supply.json` に対応エントリを持つ | Vitest |
 | A7 | 出荷データに供給量ランク「なし」のキャラが 0 件（DLsite と hitomi.la の高い方で判定） | Vitest |
 | A8 | `supply.json` の全エントリが `fetchedAt` を持ち、ISO 8601 として解釈可能 | Vitest |
 | A9 | 全軸の値が NFC 正規化されている（濁点カナの NFC/NFD 混入を弾く） | Vitest |
 | A10 | 性別表現「男性」のレコードが既存 2 件から増えていない（SPEC 3 のラチェット） | Vitest |
+| A11 | 各キャラが任意軸のうち 4 つ以上埋まっている（薄いレコードで数だけ増やす歯止め） | Vitest |
 
 ## B. 収集スクリプトの規約遵守
 

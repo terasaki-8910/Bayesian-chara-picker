@@ -139,6 +139,38 @@ describe('A. データ品質', () => {
     expect(denormalized).toEqual([]);
   });
 
+  it('A11: 各キャラが任意軸のうち 4 つ以上埋まっている', () => {
+    // 必須 8 軸だけ埋めた薄いレコードで数だけ増やせないようにする歯止め。
+    //
+    // 「平均充足率」ではなく「1 体あたりの下限」にしているのは、平均だと
+    // 濃い 36 体が薄い 500 体を覆い隠せてしまうため。下限なら 1 体でも
+    // 薄ければ落ちる。
+    //
+    // 4 は現行 36 体の実測最小値（分布は 4:4件 / 5:10件 / 6:13件 / 7:9件）。
+    // 到達不能な理想値ではなく、いま維持できている密度をそのまま床にしている。
+    const OPTIONAL_AXES = [
+      'roles',
+      'distance',
+      'looks',
+      'skinTone',
+      'outfit',
+      'species',
+      'mood',
+      'affiliationName',
+    ] as const;
+    const MIN_FILLED = 4;
+
+    const thin: string[] = [];
+    for (const c of characters) {
+      const filled = OPTIONAL_AXES.filter((axis) => {
+        const value = c.axes[axis];
+        return Array.isArray(value) ? value.length > 0 : value !== null && value !== undefined && value !== '';
+      }).length;
+      if (filled < MIN_FILLED) thin.push(`${c.id}(${filled})`);
+    }
+    expect(thin).toEqual([]);
+  });
+
   it('A10: 男性キャラを新規追加していない（既存 2 件のみ許可）', () => {
     // SPEC 3: 男性キャラは推薦対象外。既存の 2 件はデータとしては残すが、
     // ここから増やさない（削除ではなくラチェットで縛る）。

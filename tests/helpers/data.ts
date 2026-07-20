@@ -52,8 +52,17 @@ export const AXIS_VALUES = {
   affiliationKind: ['学生', '社会人', '軍・組織', '冒険者', '非人間・その他'],
 } as const;
 
-/** SPEC 2.3: 必須は上位 4 軸。残りは空欄を許容する（供給先行の拡充方針の前提）。 */
-export const REQUIRED_AXES = ['genderExpression', 'ageFeel', 'build', 'personality'] as const;
+/** SPEC 2.3: 必須は 8 軸。残りは空欄を許容する（供給先行の拡充方針の前提）。 */
+export const REQUIRED_AXES = [
+  'genderExpression',
+  'ageFeel',
+  'build',
+  'bust',
+  'personality',
+  'hairColor',
+  'combat',
+  'affiliationKind',
+] as const;
 
 /** 複数選択の軸（値は配列）。 */
 export const MULTI_AXES = ['roles', 'looks', 'outfit'] as const;
