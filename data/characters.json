@@ -917,7 +917,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "大きい",
+      "bust": "標準",
       "personality": "クール",
       "roles": [
         "ライバル"
@@ -935,7 +935,7 @@
       "affiliationKind": "軍・組織",
       "affiliationName": "ヨルハ部隊"
     },
-    "reviewed": true,
+    "reviewed": false,
     "hitomiQuery": {
       "character": "a2",
       "series": null
@@ -956,7 +956,7 @@
       "genderExpression": "女性",
       "ageFeel": "年上",
       "build": "標準",
-      "bust": "大きい",
+      "bust": "小さい",
       "personality": "クール",
       "roles": [
         "姉"
@@ -976,7 +976,7 @@
       "affiliationKind": "軍・組織",
       "affiliationName": "重桜"
     },
-    "reviewed": true,
+    "reviewed": false,
     "hitomiQuery": {
       "character": "nagato",
       "series": "azur lane"
@@ -1041,7 +1041,7 @@
       "bust": "大きい",
       "personality": "クール",
       "roles": [],
-      "distance": "やや積極的",
+      "distance": "積極的",
       "looks": [
         "長髪"
       ],
@@ -1054,7 +1054,7 @@
       "affiliationKind": "冒険者",
       "affiliationName": null
     },
-    "reviewed": true,
+    "reviewed": false,
     "hitomiQuery": {
       "character": "narmaya",
       "series": null
@@ -1191,7 +1191,7 @@
       "genderExpression": "女性",
       "ageFeel": "年上",
       "build": "標準",
-      "bust": "標準",
+      "bust": "大きい",
       "personality": "クール",
       "roles": [
         "主従"
@@ -1211,7 +1211,7 @@
       "affiliationKind": "軍・組織",
       "affiliationName": "公安対魔特異4課"
     },
-    "reviewed": true,
+    "reviewed": false,
     "hitomiQuery": {
       "character": "makima",
       "series": null
@@ -1643,7 +1643,7 @@
       "roles": [
         "主従"
       ],
-      "distance": "積極的",
+      "distance": "やや積極的",
       "looks": [
         "長髪"
       ],
@@ -1681,7 +1681,7 @@
       "combat": "戦う",
       "affiliationKind": "学生",
       "roles": [],
-      "distance": "中立",
+      "distance": "やや積極的",
       "looks": [
         "長髪"
       ],
@@ -1721,7 +1721,7 @@
       "combat": "戦う",
       "affiliationKind": "学生",
       "roles": [],
-      "distance": "中立",
+      "distance": "やや積極的",
       "looks": [
         "長髪"
       ],
@@ -2317,7 +2317,7 @@
       "roles": [
         "先輩"
       ],
-      "distance": "中立",
+      "distance": "やや受け身",
       "looks": [
         "ツインテール",
         "長髪"
@@ -2551,7 +2551,7 @@
       "genderExpression": "女性",
       "ageFeel": "幼い",
       "build": "華奢",
-      "bust": "小さい",
+      "bust": "大きい",
       "personality": "元気",
       "hairColor": "金",
       "combat": "戦う",
@@ -2907,7 +2907,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "標準",
+      "bust": "小さい",
       "personality": "クール",
       "hairColor": "茶",
       "combat": "戦う",
@@ -3032,7 +3032,7 @@
       "combat": "戦う",
       "affiliationKind": "軍・組織",
       "roles": [],
-      "distance": "中立",
+      "distance": "やや受け身",
       "looks": [],
       "skinTone": "標準",
       "outfit": [
@@ -3112,7 +3112,7 @@
       "roles": [
         "姉"
       ],
-      "distance": "中立",
+      "distance": "やや積極的",
       "looks": [
         "長髪"
       ],
@@ -3236,7 +3236,7 @@
       "roles": [
         "姉"
       ],
-      "distance": "やや受け身",
+      "distance": "受け身",
       "looks": [],
       "skinTone": "標準",
       "outfit": [

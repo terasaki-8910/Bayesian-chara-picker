@@ -407,7 +407,7 @@ describe('C. 推薦エンジン', () => {
     }
   });
 
-  it('C11: 空欄の軸は確信度に関わらずスコアに寄与しない（3値式）', () => {
+  it('C11: 空欄の軸は「はい」方向の確信度ではスコアに寄与しない（3値式）', () => {
     const blankChar = makeSyntheticCharacter('c11-contribution-blank', { mood: null });
     const filledChar = makeSyntheticCharacter('c11-contribution-filled', { mood: '甘め' });
     const characters = [blankChar, filledChar];
@@ -417,10 +417,34 @@ describe('C. 推薦エンジン', () => {
     const probe = buildProbePool([filledChar]).find((p) => p.axis === 'mood' && p.value === '甘め');
     expect(probe).toBeDefined();
 
-    for (const confidence of ['yes', 'probably_yes', 'probably_no', 'no'] as const) {
+    for (const confidence of ['yes', 'probably_yes'] as const) {
       const scored = scoreCharacters({ [probe!.key]: confidence }, fx);
       const blankScore = scored.find((s) => s.character.id === 'c11-contribution-blank')?.score;
       expect(blankScore, `confidence=${confidence}`).toBe(0);
+    }
+  });
+
+  it('C11: 空欄の軸は「いいえ」方向では、その値を持たない非空欄キャラと同じだけ加点される', () => {
+    // 実データのC13で発見した不具合（utau-teto/kanokari-chizuruが無関係な
+    // キャラに誤収束）の再発防止用。空欄を常に0のままにすると、対象キャラが
+    // 空欄の軸で複数の値を連続して尋ねられたとき、その軸に何らかの値を持つ
+    // 無関係な他キャラだけが「該当しない」加点を積み重ねて逆転できてしまう。
+    const blankChar = makeSyntheticCharacter('c11-contribution-blank2', { mood: null });
+    const otherValueChar = makeSyntheticCharacter('c11-contribution-other', { mood: '支配的' });
+    const matchingChar = makeSyntheticCharacter('c11-contribution-matching', { mood: '甘め' });
+    const characters = [blankChar, otherValueChar, matchingChar];
+    const supply: SupplyFile = Object.fromEntries(characters.map((c) => [c.id, syntheticSupplyEntry()]));
+    const fx: Dataset = { characters, supply };
+
+    const probe = buildProbePool([matchingChar]).find((p) => p.axis === 'mood' && p.value === '甘め');
+    expect(probe).toBeDefined();
+
+    for (const confidence of ['probably_no', 'no'] as const) {
+      const scored = scoreCharacters({ [probe!.key]: confidence }, fx);
+      const blankScore = scored.find((s) => s.character.id === 'c11-contribution-blank2')?.score;
+      const otherScore = scored.find((s) => s.character.id === 'c11-contribution-other')?.score;
+      expect(blankScore, `confidence=${confidence}`).not.toBe(0);
+      expect(blankScore, `confidence=${confidence}`).toBe(otherScore);
     }
   });
 

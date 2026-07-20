@@ -88,24 +88,34 @@ function buildProbeIndex(dataset: Dataset): ReadonlyMap<string, Probe> {
 
 /**
  * 特性1つぶんのスコア寄与。3値式（Planエージェントが指摘したバグの修正版）:
- * 空欄は確信度に関わらず常に0（供給先行・属性は後追いという SPEC 6.1 の
- * 保証を守る — 属性未入力のキャラが「はい」回答だけで減点されることはない）。
- * 非空欄のみ、一致なら +w、不一致なら -w（w は確信度の符号付き重み）。
+ * 非空欄は、一致なら +w、不一致なら -w（w は確信度の符号付き重み）。
+ *
+ * 空欄の扱いは方向で非対称にする（実データの C13 で発見した不具合の修正。
+ * utau-teto / kanokari-chizuru が無関係なキャラに誤収束していた）:
+ * - 「はい」方向（w>0）は常に0（供給先行・属性は後追いという SPEC 6.1 の
+ *   保証を守る — 属性未入力のキャラが「はい」回答だけで加点されることはない）。
+ * - 「いいえ」方向（w<0）は、非空欄で別の値を持つキャラの「不一致」加点と
+ *   同じだけ加点する。「この特定の値は持たない」という事実は空欄でも真であり、
+ *   ここを0のままにすると、対象キャラが空欄の軸で複数の値を連続して尋ねられた
+ *   ときに、その軸に何らかの値を持つ無関係な他キャラだけが「該当しない」加点を
+ *   積み重ねて対象キャラを逆転できてしまう（多値の単一選択軸で顕著）。
  *
  * `has` も一緒に返す — 呼び出し側が「根拠として表示してよいか」を判定するため。
  * `delta > 0` だけでは判定できない: 「いいえ」（w<0）に対して実際に該当しない
  * （has=false）場合も `-w*BASE > 0` になり得るが、これは「不一致という予想が
  * 正しかった」ことによる加点であって、「${axis}=${value}」という特性を実際に
  * 持っているわけではない。この2つを区別せず reasons に積むと、「該当しない」
- * 特性を「該当する」根拠として表示する誤りになる（C5 で検出）。
+ * 特性を「該当する」根拠として表示する誤りになる（C5 で検出）。空欄の場合も
+ * 同じ理由で常に has=false を返す（「持たない」ことはわかっても「該当する
+ * 特性」を持っているわけではないため、根拠には積まない）。
  */
 function contribution(
   character: Character,
   probe: Probe,
   confidence: Confidence,
 ): { delta: number; has: boolean } {
-  if (isBlank(character, probe.axis)) return { delta: 0, has: false };
   const w = CONFIDENCE_WEIGHT[confidence];
+  if (isBlank(character, probe.axis)) return { delta: w < 0 ? -w * BASE_SCORE : 0, has: false };
   const has = hasTraitValue(character, probe.axis, probe.value, probe.multi);
   return { delta: has ? w * BASE_SCORE : -w * BASE_SCORE, has };
 }
