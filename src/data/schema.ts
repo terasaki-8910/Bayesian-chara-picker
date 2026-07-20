@@ -1,20 +1,28 @@
 import { z } from 'zod';
 
 /**
- * SPEC 2.3 の属性 10 軸。許容値は SPEC から書き起こす。
+ * SPEC 2.3 の属性 16 軸。許容値は SPEC から書き起こす。
  * ACCEPTANCE A5 は tests/helpers/data.ts に独立した literal を持ち、
  * ここと突き合わせて typo を検出する（二重化が検出力そのもの）。
  */
 const GENDER_EXPRESSION_VALUES = ['女性', 'おとこの娘', 'ふたなり', '男性'] as const;
 const AGE_FEEL_VALUES = ['幼い', '同年代', '年上', '熟れた'] as const;
-const BUILD_VALUES = ['小柄華奢', '標準', 'グラマー', 'むちむち'] as const;
+/** 体格のみ。胸は BUST_VALUES に分離した（旧「グラマー」は体格と胸を混同していた）。 */
+const BUILD_VALUES = ['華奢', '標準', 'むっちり'] as const;
+const BUST_VALUES = ['小さい', '標準', '大きい', 'とても大きい'] as const;
 const PERSONALITY_VALUES = ['クール', '元気', 'おっとり', '生意気', '内気', '姉御'] as const;
 const ROLES_VALUES = ['幼馴染', '後輩', '先輩', '姉', '妹', '母性', '教師', '主従', 'ライバル'] as const;
 const DISTANCE_VALUES = ['積極的', 'やや積極的', '中立', 'やや受け身', '受け身'] as const;
-const LOOKS_VALUES = ['眼鏡', 'ケモミミ', '尻尾', '褐色', '白髪', '長髪', 'ツインテール'] as const;
+/** 髪色・肌色はそれぞれ独立した軸に移した（旧 looks の「白髪」「褐色」）。 */
+const LOOKS_VALUES = ['眼鏡', 'ケモミミ', '尻尾', '長髪', 'ツインテール'] as const;
+const HAIR_COLOR_VALUES = ['黒', '白', '金', '茶', '赤', '青', '緑', '桃', '紫', '銀'] as const;
+const SKIN_TONE_VALUES = ['色白', '標準', '褐色'] as const;
 const OUTFIT_VALUES = ['制服', 'メイド', '巫女', 'ナース', '魔法少女', '軍服', 'OL'] as const;
 const SPECIES_VALUES = ['人間', 'エルフ', '獣人', '魔族', '機械', '不死'] as const;
 const MOOD_VALUES = ['甘め', '支配的', '従属的', '純愛寄り', '背徳寄り'] as const;
+const COMBAT_VALUES = ['戦う', '戦わない'] as const;
+/** 「学校に通っているか」に相当する広い分岐。所属名はこれとは別に自由記述で持つ。 */
+const AFFILIATION_KIND_VALUES = ['学生', '社会人', '軍・組織', '冒険者', '非人間・その他'] as const;
 
 /**
  * 軸の値は `string`（配列軸は `string[]`）で緩く型付けする。
@@ -28,13 +36,24 @@ export type Axes = {
   genderExpression: string | null;
   ageFeel: string | null;
   build: string | null;
+  bust: string | null;
   personality: string | null;
   roles: string[];
   distance: string | null;
   looks: string[];
+  hairColor: string | null;
+  skinTone: string | null;
   outfit: string[];
   species: string | null;
   mood: string | null;
+  combat: string | null;
+  affiliationKind: string | null;
+  /**
+   * 所属名。固定 enum にしない — 「アビドス高等学校」「黒ひげ海賊団」のように
+   * シリーズ固有で、全作品を網羅する enum は維持不能になる。候補が同一シリーズに
+   * 収束したときだけ聞く深掘り質問（Akinator の「〜学校？」に相当）に使う。
+   */
+  affiliationName: string | null;
 };
 
 export type AxisKey = keyof Axes;
@@ -79,21 +98,28 @@ export type HitomiSupplyEntry = {
 export type SupplyFile = Record<string, SupplyEntry>;
 
 /**
- * 必須 4 軸（性別表現・年齢感・体型・性格）は null を弾く。
- * 残り 6 軸は「空欄」を許容する: 単一軸は null、複数軸は [] が空欄
- * （SPEC 2.3 / PLAN wave 1）。
+ * 必須 4 軸（性別表現・年齢感・体格・性格）は null を弾く。
+ * 残りの軸は「空欄」を許容する: 単一軸は null、複数軸は [] が空欄
+ * （SPEC 2.3 / PLAN wave 1）。空欄許容は「供給先行で大量にキャラを入れ、
+ * 属性は後から埋める」拡充方針を成立させるための前提でもある。
  */
 const axesSchema: z.ZodType<Axes> = z.object({
   genderExpression: z.enum(GENDER_EXPRESSION_VALUES),
   ageFeel: z.enum(AGE_FEEL_VALUES),
   build: z.enum(BUILD_VALUES),
+  bust: z.enum(BUST_VALUES).nullable(),
   personality: z.enum(PERSONALITY_VALUES),
   roles: z.array(z.enum(ROLES_VALUES)),
   distance: z.enum(DISTANCE_VALUES).nullable(),
   looks: z.array(z.enum(LOOKS_VALUES)),
+  hairColor: z.enum(HAIR_COLOR_VALUES).nullable(),
+  skinTone: z.enum(SKIN_TONE_VALUES).nullable(),
   outfit: z.array(z.enum(OUTFIT_VALUES)),
   species: z.enum(SPECIES_VALUES).nullable(),
   mood: z.enum(MOOD_VALUES).nullable(),
+  combat: z.enum(COMBAT_VALUES).nullable(),
+  affiliationKind: z.enum(AFFILIATION_KIND_VALUES).nullable(),
+  affiliationName: z.string().min(1).nullable(),
 });
 
 const hitomiQuerySchema: z.ZodType<HitomiQuery> = z.object({
