@@ -1,0 +1,26 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`C. 推薦エンジン > C1: 固定の回答セットに対し決定論的な上位 N を返す 1`] = `
+[
+  {
+    "id": "onepiece-hancock",
+    "score": 44,
+  },
+  {
+    "id": "overlord-albedo",
+    "score": 44,
+  },
+  {
+    "id": "bleach-rangiku",
+    "score": 14,
+  },
+  {
+    "id": "bleach-yoruichi",
+    "score": 14,
+  },
+  {
+    "id": "csm-makima",
+    "score": 14,
+  },
+]
+`;
