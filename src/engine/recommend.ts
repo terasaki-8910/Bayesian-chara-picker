@@ -1,61 +1,41 @@
 import type { AxisKey, Character, SupplyFile } from '../data/schema';
 import {
-  AFFILIATION_NAME_MAX_DISTINCT,
-  MAX_QUESTIONS,
-  QUESTION_POOL,
-  STOP_CANDIDATES,
-  buildAffiliationNameQuestion,
-  type Question,
+  AXIS_LABEL,
+  CONFIDENCE_WEIGHT,
+  CONTENTION_M,
+  HARD_CAP,
+  MIN_QUESTIONS,
+  buildProbePool,
+  selectProbe,
+  type Confidence,
+  type Probe,
 } from './questions';
 import { combinedSupplyRank, hitomiSupplyRank, supplyRank, supplyRankIndex, type SupplyRank } from './supply';
 
-/** 質問の軸キー（= Question.id） -> 回答値。null は「こだわらない」（スコアに影響しない）。 */
-export type Answers = Record<string, string | null>;
+export { HARD_CAP, MIN_QUESTIONS } from './questions';
+export type { Confidence, Probe } from './questions';
+
+/** プローブ key（"axis=value" | "axis~value"） -> 確信度。 */
+export type AnswerMap = Record<string, Confidence>;
 
 export type Dataset = { characters: Character[]; supply: SupplyFile };
 
 export type Reason =
-  | { kind: 'axis'; axis: AxisKey; value: string; label: string }
+  | { kind: 'trait'; axis: AxisKey; value: string; label: string; confidence: Confidence }
   | { kind: 'supply'; rank: SupplyRank; label: string };
 
-export type Result = {
+export type Scored = {
   character: Character;
   score: number;
   supplyRank: SupplyRank;
   reasons: Reason[];
 };
 
-const AXIS_MATCH_SCORE = 20;
-const AXIS_MISMATCH_SCORE = -10;
-const RESULT_COUNT = 5;
+/** 特性1つが完全一致/不一致したときの基礎点。 */
+export const BASE_SCORE = 20;
 
-const AXIS_LABELS: Partial<Record<AxisKey, string>> = {
-  ...Object.fromEntries(QUESTION_POOL.map((q) => [q.axis, q.label])),
-  affiliationName: '所属名',
-};
-
-/**
- * 質問選択のタイブレークに使う固定優先順位。エントロピーが実質同点のとき、
- * この配列の先頭側を採用する（同じ回答列なら同じ質問列になることを保証する）。
- */
-const AXIS_PRIORITY: AxisKey[] = [
-  'genderExpression',
-  'ageFeel',
-  'build',
-  'bust',
-  'personality',
-  'distance',
-  'hairColor',
-  'skinTone',
-  'species',
-  'mood',
-  'combat',
-  'affiliationKind',
-  'affiliationName',
-];
-
-const ENTROPY_EPS = 1e-9;
-const BLANK_BUCKET = '__blank__';
+/** 推測を確定してよい最小スコア差（特性1つが完全に分離する量）。 */
+export const MARGIN_STOP = 2 * BASE_SCORE;
 
 function supplyLabelFor(rank: SupplyRank): string {
   return `供給量: ${rank}`;
@@ -70,168 +50,204 @@ function combinedRankFor(id: string, supply: SupplyFile): SupplyRank {
   return combinedSupplyRank(ranks);
 }
 
-function axisRawValue(character: Character, axis: AxisKey): string | string[] | null {
-  return character.axes[axis];
-}
-
 function isBlank(character: Character, axis: AxisKey): boolean {
-  const raw = axisRawValue(character, axis);
+  const raw = character.axes[axis];
   if (Array.isArray(raw)) return raw.length === 0;
   return raw === null || raw === undefined || raw === '';
 }
 
-function matchesAnswer(character: Character, axis: AxisKey, value: string): boolean {
-  const raw = axisRawValue(character, axis);
-  if (Array.isArray(raw)) return raw.includes(value);
-  return raw === value;
+function hasTraitValue(character: Character, axis: AxisKey, value: string, multi: boolean): boolean {
+  const raw = character.axes[axis];
+  return multi ? Array.isArray(raw) && raw.includes(value) : raw === value;
 }
 
 /**
- * 空欄はどんな回答とも矛盾しないとみなす（Akinator の「わからない」相当）。
- * 供給先行で属性未入力のキャラが質問選択で不当に脱落しないようにする（SPEC 6.1 / C11）。
+ * ハードフィルタ後の全員。`scoreCharacters` はここから嗜好の不一致では誰も落とさず
+ * スコアで並べるだけにする（C3 相当: 無作為多数回パスで1件も空にならないことの根拠）。
+ * `exclude` は「いいえ」で拒否済みのキャラ id 集合（再推測用。PLAN「拒否ループ」）。
  */
-function isConsistentWithAnswer(character: Character, axis: AxisKey, value: string): boolean {
-  if (isBlank(character, axis)) return true;
-  return matchesAnswer(character, axis, value);
-}
-
-/**
- * ハードフィルタ後の全員。`recommend()` はここから嗜好の不一致では誰も落とさず
- * スコアで並べるだけにする（C3: 無作為 1000 パスで 1 件も空にならないことの根拠）。
- */
-function survivors(dataset: Dataset): Character[] {
+function survivors(dataset: Dataset, exclude?: ReadonlySet<string>): Character[] {
   return dataset.characters.filter(
     (c) =>
       c.axes.genderExpression !== '男性' &&
       c.provisional !== true &&
-      combinedRankFor(c.id, dataset.supply) !== 'なし',
+      combinedRankFor(c.id, dataset.supply) !== 'なし' &&
+      !(exclude?.has(c.id) ?? false),
   );
 }
 
 /**
- * 質問選択専用の作業集合。survivors のうち、これまでの非 null な回答と
- * 矛盾しないキャラだけに絞る。スコアリングには使わない（母集団を分離するのが
- * 動的選択と C3/C4 の非空保証を両立させる鍵）。
+ * `AnswerMap` のキー（プローブ key 文字列）から実際の `Probe`（軸・値・multi）を
+ * 引くための逆引き表。`dataset.characters` 全体（男性・provisional も含む）から
+ * 作る — ハードフィルタで survivors から落ちたキャラにしか実在しない値のキーが
+ * 過去に answers へ記録されていても、確実にデコードできるようにするため。
  */
-function workingSet(dataset: Dataset, answers: Answers): Character[] {
-  const entries = Object.entries(answers) as [AxisKey, string | null][];
-  return survivors(dataset).filter((c) =>
-    entries.every(([axis, value]) => value === null || isConsistentWithAnswer(c, axis, value)),
-  );
-}
-
-/** 軸 k のエントロピー。空欄は独立したバケットとして数える（除外しない）。 */
-function axisEntropy(characters: readonly Character[], axis: AxisKey): number {
-  if (characters.length === 0) return 0;
-  const counts = new Map<string, number>();
-  for (const c of characters) {
-    const raw = axisRawValue(c, axis);
-    let key: string;
-    if (Array.isArray(raw)) {
-      key = raw.length === 0 ? BLANK_BUCKET : raw.slice().sort().join(',');
-    } else {
-      key = raw === null || raw === undefined || raw === '' ? BLANK_BUCKET : raw;
-    }
-    counts.set(key, (counts.get(key) ?? 0) + 1);
-  }
-  const total = characters.length;
-  let entropy = 0;
-  for (const count of counts.values()) {
-    const p = count / total;
-    entropy -= p * Math.log2(p);
-  }
-  return entropy;
-}
-
-function distinctAffiliationNames(characters: readonly Character[]): string[] {
-  const set = new Set<string>();
-  for (const c of characters) {
-    const v = c.axes.affiliationName;
-    if (v !== null && v !== '') set.add(v);
-  }
-  return [...set].sort();
+function buildProbeIndex(dataset: Dataset): ReadonlyMap<string, Probe> {
+  return new Map(buildProbePool(dataset.characters).map((p) => [p.key, p]));
 }
 
 /**
- * 次に聞くべき質問を、残った候補集合を最もよく二分する軸から動的に選ぶ
- * （SPEC 2.4）。学習データは使わない — 既にある「キャラ×軸」の行列だけで
- * 計算する純粋なエントロピー最大化。
+ * 特性1つぶんのスコア寄与。3値式（Planエージェントが指摘したバグの修正版）:
+ * 空欄は確信度に関わらず常に0（供給先行・属性は後追いという SPEC 6.1 の
+ * 保証を守る — 属性未入力のキャラが「はい」回答だけで減点されることはない）。
+ * 非空欄のみ、一致なら +w、不一致なら -w（w は確信度の符号付き重み）。
+ *
+ * `has` も一緒に返す — 呼び出し側が「根拠として表示してよいか」を判定するため。
+ * `delta > 0` だけでは判定できない: 「いいえ」（w<0）に対して実際に該当しない
+ * （has=false）場合も `-w*BASE > 0` になり得るが、これは「不一致という予想が
+ * 正しかった」ことによる加点であって、「${axis}=${value}」という特性を実際に
+ * 持っているわけではない。この2つを区別せず reasons に積むと、「該当しない」
+ * 特性を「該当する」根拠として表示する誤りになる（C5 で検出）。
  */
-export function nextQuestion(dataset: Dataset, answers: Answers, askedAxes: readonly AxisKey[]): Question | null {
-  if (askedAxes.length >= MAX_QUESTIONS) return null;
-
-  const working = workingSet(dataset, answers);
-  if (working.length <= STOP_CANDIDATES) return null;
-
-  const askedSet = new Set(askedAxes);
-  const candidates = new Set<AxisKey>(
-    QUESTION_POOL.map((q) => q.axis).filter((axis) => !askedSet.has(axis)),
-  );
-
-  // affiliationName は候補が同一シリーズ相当に収束したときだけ質問候補に入れる。
-  // 未収束のまま候補にすると、シリーズをまたいだ数十件の所属名が選択肢に並ぶ。
-  if (!askedSet.has('affiliationName')) {
-    const names = distinctAffiliationNames(working);
-    if (names.length >= 2 && names.length <= AFFILIATION_NAME_MAX_DISTINCT) {
-      candidates.add('affiliationName');
-    }
-  }
-
-  let best: AxisKey | null = null;
-  let bestEntropy = -1;
-  for (const axis of AXIS_PRIORITY) {
-    if (!candidates.has(axis)) continue;
-    const h = axisEntropy(working, axis);
-    if (h > bestEntropy + ENTROPY_EPS) {
-      bestEntropy = h;
-      best = axis;
-    }
-  }
-
-  if (best === null || bestEntropy <= ENTROPY_EPS) return null;
-
-  if (best === 'affiliationName') {
-    return buildAffiliationNameQuestion(distinctAffiliationNames(working));
-  }
-  return QUESTION_POOL.find((q) => q.axis === best) ?? null;
-}
-
-function scoreAgainstAnswers(character: Character, answers: Answers): { score: number; reasons: Reason[] } {
-  let score = 0;
-  const reasons: Reason[] = [];
-  for (const [axisKey, value] of Object.entries(answers)) {
-    if (value === null) continue; // こだわらない = 重み0
-    const axis = axisKey as AxisKey;
-    if (isBlank(character, axis)) continue; // 空欄は一致でも不一致でもない
-    if (matchesAnswer(character, axis, value)) {
-      score += AXIS_MATCH_SCORE;
-      reasons.push({ kind: 'axis', axis, value, label: AXIS_LABELS[axis] ?? axis });
-    } else {
-      score += AXIS_MISMATCH_SCORE;
-    }
-  }
-  return { score, reasons };
+function contribution(
+  character: Character,
+  probe: Probe,
+  confidence: Confidence,
+): { delta: number; has: boolean } {
+  if (isBlank(character, probe.axis)) return { delta: 0, has: false };
+  const w = CONFIDENCE_WEIGHT[confidence];
+  const has = hasTraitValue(character, probe.axis, probe.value, probe.multi);
+  return { delta: has ? w * BASE_SCORE : -w * BASE_SCORE, has };
 }
 
 /**
- * 決定論的な推薦。同じ入力なら常に同じ出力（`Math.random` を使わない）。
- * 供給量ランクをスコアに加点するが（最大 +4）、不一致1回（-10）より小さいため
- * 嗜好の不一致を上書きしない。
+ * 全 survivors のスコアを計算する。回答と食い違うキャラも一切除外しない
+ * （嗜好はスコアを動かすだけで、候補集合を削らない。空にならない保証の要）。
+ * 供給量は加点せず、並び順のタイブレークにのみ使う
+ * （PLAN: 単一推測方式ではスコア差が小さくなりうるため、加点式の係数調整より
+ * タイブレーク専用にする方が確実で検証しやすい）。
  */
-export function recommend(answers: Answers, dataset: Dataset): Result[] {
-  const results: Result[] = survivors(dataset).map((character) => {
+export function scoreCharacters(
+  answers: AnswerMap,
+  dataset: Dataset,
+  opts?: { exclude?: ReadonlySet<string> },
+): Scored[] {
+  const probeIndex = buildProbeIndex(dataset);
+  const entries = Object.entries(answers);
+
+  const results: Scored[] = survivors(dataset, opts?.exclude).map((character) => {
+    let score = 0;
+    const reasons: Reason[] = [];
+    for (const [key, confidence] of entries) {
+      const probe = probeIndex.get(key);
+      if (!probe) continue; // 未知のキー（不整合な呼び出し）は無視して安全側に倒す
+      const { delta, has } = contribution(character, probe, confidence);
+      score += delta;
+      if (has && delta > 0) {
+        reasons.push({
+          kind: 'trait',
+          axis: probe.axis,
+          value: probe.value,
+          label: AXIS_LABEL[probe.axis],
+          confidence,
+        });
+      }
+    }
     const rank = combinedRankFor(character.id, dataset.supply);
-    const { score: axisScore, reasons: axisReasons } = scoreAgainstAnswers(character, answers);
-    const reasons: Reason[] = [...axisReasons, { kind: 'supply', rank, label: supplyLabelFor(rank) }];
-    return { character, score: axisScore + supplyRankIndex(rank), supplyRank: rank, reasons };
+    reasons.push({ kind: 'supply', rank, label: supplyLabelFor(rank) });
+    return { character, score, supplyRank: rank, reasons };
   });
 
   results.sort((a, b) => {
     if (b.score !== a.score) return b.score - a.score;
+    const rankDiff = supplyRankIndex(b.supplyRank) - supplyRankIndex(a.supplyRank);
+    if (rankDiff !== 0) return rankDiff;
     return a.character.id < b.character.id ? -1 : a.character.id > b.character.id ? 1 : 0;
   });
 
-  return results.slice(0, RESULT_COUNT);
+  return results;
+}
+
+function isConsistent(character: Character, probe: Probe, confidence: Confidence): boolean {
+  if (confidence === 'unknown') return true; // 情報量ゼロ = 作業集合を絞らない
+  if (isBlank(character, probe.axis)) return true; // 空欄は常に矛盾しない扱い（供給先行方針）
+  const has = hasTraitValue(character, probe.axis, probe.value, probe.multi);
+  const expectYes = confidence === 'yes' || confidence === 'probably_yes';
+  return has === expectYes;
+}
+
+/**
+ * 質問選択専用の作業集合。survivors のうち、これまでの回答（「わからない」を除く）と
+ * 矛盾しないキャラだけに絞る。スコアリングには使わない
+ * （母集団を分離するのが動的選択と非空保証を両立させる鍵）。
+ * 「たぶんそう/たぶん違う」も yes/no と同じ向きで絞る（弱い確信度でもスコアの重みが
+ * 半分になるだけで、質問選択上は無視すべき理由が無いため）。
+ */
+function workingSet(
+  dataset: Dataset,
+  answers: AnswerMap,
+  probeIndex: ReadonlyMap<string, Probe>,
+  exclude?: ReadonlySet<string>,
+): Character[] {
+  const entries = Object.entries(answers);
+  return survivors(dataset, exclude).filter((c) =>
+    entries.every(([key, confidence]) => {
+      const probe = probeIndex.get(key);
+      return probe === undefined || isConsistent(c, probe, confidence);
+    }),
+  );
+}
+
+/**
+ * 次に聞くべきプローブを選ぶ（ハイブリッド母集団。PLAN「選択アルゴリズム」）。
+ *
+ * 通常は確定的な作業集合（今までの回答と矛盾しないキャラ）でプローブを選ぶ。
+ * その集合が2体未満に縮んだ、または作業集合内に情報量のあるプローブが
+ * 尽きた場合は、スコア上位 `CONTENTION_M` 体の「接戦集合」に母集団を切り替えて
+ * 選び直す。実データ33体のシミュレーションで、この切り替えが無いと5問前後で
+ * 作業集合が1体に収束してしまい、`MIN_QUESTIONS`（6問）に届く前に
+ * 「聞くべき質問が無い」状態に陥ることを確認済み。
+ */
+export function nextProbe(
+  dataset: Dataset,
+  answers: AnswerMap,
+  askedKeys: ReadonlySet<string>,
+  opts?: { exclude?: ReadonlySet<string> },
+): Probe | null {
+  const probeIndex = buildProbeIndex(dataset);
+  const working = workingSet(dataset, answers, probeIndex, opts?.exclude);
+
+  if (working.length >= 2) {
+    const probe = selectProbe(working, askedKeys);
+    if (probe !== null) return probe;
+  }
+
+  const contention = scoreCharacters(answers, dataset, opts)
+    .slice(0, CONTENTION_M)
+    .map((s) => s.character);
+  return selectProbe(contention, askedKeys);
+}
+
+/**
+ * 推測を提示してよいかどうか（PLAN「推測・拒否・再推測・全滅の具体的なルール」1.）。
+ * `askedCount >= MIN_QUESTIONS` かつ、以下のいずれかを満たすこと:
+ *   - `askedCount` が `HARD_CAP` に達した（情報量に関わらず強制打ち切り）
+ *   - 1位と2位のスコア差が `MARGIN_STOP` 以上
+ *   - 情報量のあるプローブがもう残っていない（`hasInformativeProbe===false`）
+ */
+export function shouldGuess(scored: readonly Scored[], askedCount: number, hasInformativeProbe: boolean): boolean {
+  if (askedCount < MIN_QUESTIONS) return false;
+  if (askedCount >= HARD_CAP) return true;
+  if (scored.length < 2) return true;
+  if (!hasInformativeProbe) return true;
+  return scored[0].score - scored[1].score >= MARGIN_STOP;
+}
+
+/**
+ * 決定論的な推測 + 同点のみ乱択。`scored` は `scoreCharacters` の出力
+ * （既に (score DESC, supplyRankIndex DESC, id ASC) でソート済み）を渡す想定。
+ * タイブレークは「供給量→乱択」（PLAN 規則6: 全問「わからない」なら全員スコア0で
+ * 並ぶため、この経路がそのまま「複数該当したらランダムに見せる」を実現する）。
+ */
+export function topGuess(scored: readonly Scored[], rng: () => number = Math.random): Scored {
+  if (scored.length === 0) {
+    throw new Error('topGuess: scored は空にできない（survivors が空ならデータ不整合）');
+  }
+  const top = scored[0];
+  const tied = scored.filter((s) => s.score === top.score && s.supplyRank === top.supplyRank);
+  if (tied.length === 1) return tied[0];
+  const idx = Math.min(Math.floor(rng() * tied.length), tied.length - 1);
+  return tied[idx];
 }
 
 /**
@@ -248,50 +264,40 @@ function mulberry32(seed: number): () => number {
   };
 }
 
-/** 重み付き非復元抽出。重み0のキャラも僅かに選ばれ得るよう下駄を履かせる。 */
-function weightedSampleWithoutReplacement(
-  items: readonly Character[],
-  weights: readonly number[],
-  count: number,
-  rand: () => number,
-): Character[] {
-  const pool = items.map((item, i) => ({ item, weight: Math.max(weights[i], 0.0001) }));
-  const picked: Character[] = [];
-  while (picked.length < count && pool.length > 0) {
-    const total = pool.reduce((sum, p) => sum + p.weight, 0);
-    let r = rand() * total;
-    let idx = 0;
-    while (idx < pool.length - 1) {
-      r -= pool[idx].weight;
-      if (r <= 0) break;
-      idx += 1;
-    }
-    picked.push(pool[idx].item);
-    pool.splice(idx, 1);
+/** 重み付き復元抽出1件ぶん。重み0のキャラも僅かに選ばれ得るよう下駄を履かせる。 */
+function weightedPick(items: readonly Character[], weights: readonly number[], rand: () => number): Character {
+  const total = weights.reduce((sum, w) => sum + Math.max(w, 0.0001), 0);
+  let r = rand() * total;
+  for (let i = 0; i < items.length; i++) {
+    r -= Math.max(weights[i], 0.0001);
+    if (r <= 0) return items[i];
   }
-  return picked;
+  return items[items.length - 1];
 }
 
 /**
- * 供給量「少ない」以上から、供給量で重み付けした乱択。id 昇順にソートしてから
- * 抽選するため、同じ seed なら入力配列の並び順に関係なく同じ結果になる（C6）。
+ * 質問・確認ループを経ない独立経路。供給量「少ない」以上から供給量で重み付けした
+ * 乱択で単一結果を返す。id 昇順にソートしてから抽選するため、同じ seed なら
+ * 入力配列の並び順に関係なく同じ結果になる（旧 C6 相当）。
  */
-export function omakase(dataset: Dataset, opts: { seed: number }): Result[] {
+export function omakase(dataset: Dataset, opts: { seed: number }): Scored {
   const pool = survivors(dataset)
     .filter((c) => supplyRankIndex(combinedRankFor(c.id, dataset.supply)) >= supplyRankIndex('少ない'))
     .slice()
     .sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
 
-  const weights = pool.map((c) => supplyRankIndex(combinedRankFor(c.id, dataset.supply)));
-  const picked = weightedSampleWithoutReplacement(pool, weights, Math.min(RESULT_COUNT, pool.length), mulberry32(opts.seed));
+  if (pool.length === 0) {
+    throw new Error('omakase: 供給量「少ない」以上のキャラが0件（データ不整合）');
+  }
 
-  return picked.map((character) => {
-    const rank = combinedRankFor(character.id, dataset.supply);
-    return {
-      character,
-      score: supplyRankIndex(rank),
-      supplyRank: rank,
-      reasons: [{ kind: 'supply', rank, label: supplyLabelFor(rank) }],
-    };
-  });
+  const weights = pool.map((c) => supplyRankIndex(combinedRankFor(c.id, dataset.supply)));
+  const picked = weightedPick(pool, weights, mulberry32(opts.seed));
+  const rank = combinedRankFor(picked.id, dataset.supply);
+
+  return {
+    character: picked,
+    score: 0,
+    supplyRank: rank,
+    reasons: [{ kind: 'supply', rank, label: supplyLabelFor(rank) }],
+  };
 }

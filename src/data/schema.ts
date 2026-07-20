@@ -85,6 +85,20 @@ export type Character = {
    * （性別表現「男性」と同じ扱い。SPEC 2.4 / 4.3）。
    */
   provisional: boolean;
+  /**
+   * ユーザー本人が合法的に所持・作成した画像への相対パス
+   * （例: "/character-images/rezero-rem.webp"）。`public/character-images/`
+   * に手動で置く運用。DLsite/hitomi 等の第三者画像は同梱しない方針は不変
+   * （SPEC 3）— これはあくまで利用者自身の画像のための経路。null = 未設定。
+   */
+  imagePath: string | null;
+  /**
+   * true = `imagePath` の画像がこのキャラのものとして確認済み。false のまま
+   * 画像を設定することもでき、その場合 UI は画像自体は表示しつつ「承認前」
+   * バッジを重ねる（`reviewed` とは独立。属性データの正しさではなく
+   * 「この画像がこのキャラで合っているか」だけを表す）。
+   */
+  imageApproved: boolean;
 };
 
 export type SupplyEntry = {
@@ -137,19 +151,26 @@ const hitomiQuerySchema: z.ZodType<HitomiQuery> = z.object({
   series: z.string().min(1).nullable(),
 });
 
-const characterSchema: z.ZodType<Character> = z.object({
-  id: z.string().min(1),
-  name: z.string().min(1),
-  aliases: z.array(z.string()),
-  series: z.string(),
-  // null = DLsite 検索でこのキャラだけを引ける文字列を確定できず、収録対象外。
-  dlsiteQuery: z.string().min(1).nullable(),
-  // null = hitomi.la のタグでこのキャラを一意に特定できず、収録対象外。
-  hitomiQuery: hitomiQuerySchema.nullable(),
-  axes: axesSchema,
-  reviewed: z.boolean(),
-  provisional: z.boolean(),
-});
+const characterSchema = z
+  .object({
+    id: z.string().min(1),
+    name: z.string().min(1),
+    aliases: z.array(z.string()),
+    series: z.string(),
+    // null = DLsite 検索でこのキャラだけを引ける文字列を確定できず、収録対象外。
+    dlsiteQuery: z.string().min(1).nullable(),
+    // null = hitomi.la のタグでこのキャラを一意に特定できず、収録対象外。
+    hitomiQuery: hitomiQuerySchema.nullable(),
+    axes: axesSchema,
+    reviewed: z.boolean(),
+    provisional: z.boolean(),
+    imagePath: z.string().min(1).nullable(),
+    imageApproved: z.boolean(),
+  })
+  .refine((c) => !c.imageApproved || c.imagePath !== null, {
+    message: 'imageApproved は imagePath が設定されているときのみ true にできる',
+    path: ['imageApproved'],
+  }) satisfies z.ZodType<Character>;
 
 export const charactersSchema: z.ZodType<Character[]> = z.array(characterSchema);
 

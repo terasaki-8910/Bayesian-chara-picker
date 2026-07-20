@@ -47,3 +47,16 @@
 
   --radius-control: 0.25rem;
 }
+
+/*
+ * 各画面ルートは個別に bg-bg を敷いているが、html/body 自体には既定色が無く
+ * 白のまま残っていた。AgeGate の半透明バックドロップ（bg-bg/85）がこの白と
+ * 合成され、意図した「ほぼ黒」ではなく中間グレーに見える実害が
+ * スクリーンショット確認で見つかったため、ベースの背景色を明示する。
+ */
+@layer base {
+  html,
+  body {
+    background-color: var(--color-bg);
+  }
+}

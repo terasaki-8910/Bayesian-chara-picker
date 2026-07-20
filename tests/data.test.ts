@@ -1,3 +1,6 @@
+import { existsSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+
 import { describe, expect, it } from 'vitest';
 
 import { charactersSchema, supplyFileSchema } from '../src/data/schema';
@@ -187,5 +190,24 @@ describe('A. データ品質', () => {
     const GRANDFATHERED = ['aot-levi', 'onepiece-zoro'];
     const males = characters.filter((c) => c.axes.genderExpression === '男性').map((c) => c.id);
     expect(males.slice().sort()).toEqual(GRANDFATHERED.slice().sort());
+  });
+
+  it('A13: imagePath が設定されたレコードは public/character-images/ に実ファイルを持つ', () => {
+    // ユーザーが手動で置く運用（SPEC 3）。パスだけ書いてファイルを置き忘れる事故を防ぐ。
+    const missing: string[] = [];
+    for (const c of characters) {
+      if (c.imagePath === null) continue;
+      const abs = fileURLToPath(new URL(`../public${c.imagePath}`, import.meta.url));
+      if (!existsSync(abs)) missing.push(`${c.id}: ${c.imagePath}`);
+    }
+    expect(missing).toEqual([]);
+  });
+
+  it('A14: imageApproved:true は imagePath が設定されているときのみ成立する', () => {
+    // zod の refine と二重化。ここが落ちたら refine 側の実装ミスも疑う。
+    const contradictions = characters
+      .filter((c) => c.imageApproved === true && c.imagePath === null)
+      .map((c) => c.id);
+    expect(contradictions).toEqual([]);
   });
 });

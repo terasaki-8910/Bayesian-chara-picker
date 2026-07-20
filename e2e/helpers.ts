@@ -3,18 +3,33 @@ import type { Page } from '@playwright/test';
 /**
  * UI 側の DOM 契約。ACCEPTANCE F1-F6 / D1 を機械判定するために、
  * 実装はこの data-testid を必ず備えること。
+ *
+ * 質問1問1回答（answer-yes 等）・単一推測（guess）・確定/おまかせ結果（result）・
+ * 全滅（no-guess）という Akinator 方式への転換に伴い、旧
+ * `answerOption`/`answerNoPreference`/`results`/`resultItem`/`resultTop` は廃止した
+ * （SPEC 2.4 の全面書き換えに追従）。
  */
 export const TESTID = {
   ageGate: 'age-gate',
   ageGateAccept: 'age-gate-accept',
   ageGateBackdrop: 'age-gate-backdrop',
   question: 'question',
-  answerOption: 'answer-option',
-  answerNoPreference: 'answer-no-preference',
-  results: 'results',
-  resultItem: 'result-item',
-  resultTop: 'result-top',
+  answerYes: 'answer-yes',
+  answerProbablyYes: 'answer-probably-yes',
+  answerUnknown: 'answer-unknown',
+  answerProbablyNo: 'answer-probably-no',
+  answerNo: 'answer-no',
   omakase: 'omakase',
+  guess: 'guess',
+  guessConfirm: 'guess-confirm',
+  guessReject: 'guess-reject',
+  guessImage: 'guess-image',
+  guessImageUnapprovedBadge: 'guess-image-unapproved-badge',
+  result: 'result',
+  resultImage: 'result-image',
+  noGuess: 'no-guess',
+  noGuessCandidate: 'no-guess-candidate',
+  restart: 'restart',
 } as const;
 
 /** 年齢確認の localStorage キー（SPEC 2.5）。 */
@@ -48,17 +63,43 @@ export async function acceptAgeGateByKeyboard(page: Page): Promise<void> {
 }
 
 /**
- * 質問をキーボードだけで最後まで回答する。
- * 質問数は 6〜8 問（SPEC 2.4）なので上限に余裕を持たせる。
+ * 質問に「はい」をキーボードだけで連打し、推測画面に到達したら「はい、この子
+ * です」で確定して result 画面まで完走する。質問数は 6〜10 問
+ * （SPEC 2.4 の MIN_QUESTIONS/HARD_CAP）なので上限に余裕を持たせる。
  */
-export async function answerAllByKeyboard(page: Page, maxQuestions = 12): Promise<void> {
+export async function answerAllByKeyboard(page: Page, maxQuestions = 15): Promise<void> {
   for (let i = 0; i < maxQuestions; i += 1) {
-    if (await page.getByTestId(TESTID.results).isVisible().catch(() => false)) return;
+    if (await page.getByTestId(TESTID.guess).isVisible().catch(() => false)) break;
     if (!(await page.getByTestId(TESTID.question).isVisible().catch(() => false))) break;
 
-    await tabTo(page, `[data-testid="${TESTID.answerOption}"]`);
+    await tabTo(page, `[data-testid="${TESTID.answerYes}"]`);
     await page.keyboard.press('Enter');
     await page.waitForTimeout(80);
   }
-  await page.getByTestId(TESTID.results).waitFor({ state: 'visible' });
+  await page.getByTestId(TESTID.guess).waitFor({ state: 'visible' });
+
+  await tabTo(page, `[data-testid="${TESTID.guessConfirm}"]`);
+  await page.keyboard.press('Enter');
+  await page.getByTestId(TESTID.result).waitFor({ state: 'visible' });
+}
+
+/**
+ * 推測画面まで到達し、「いいえ、違います」で1回だけ拒否する（拒否ループの検証用）。
+ * 拒否後は次点の推測（guess）か全滅（no-guess）のどちらかに遷移する —
+ * データ依存でどちらに転ぶか一定でないため、呼び出し側が状態を見て判定する。
+ */
+export async function reachGuessAndRejectOnceByKeyboard(page: Page, maxQuestions = 15): Promise<void> {
+  for (let i = 0; i < maxQuestions; i += 1) {
+    if (await page.getByTestId(TESTID.guess).isVisible().catch(() => false)) break;
+    if (!(await page.getByTestId(TESTID.question).isVisible().catch(() => false))) break;
+
+    await tabTo(page, `[data-testid="${TESTID.answerYes}"]`);
+    await page.keyboard.press('Enter');
+    await page.waitForTimeout(80);
+  }
+  await page.getByTestId(TESTID.guess).waitFor({ state: 'visible' });
+
+  await tabTo(page, `[data-testid="${TESTID.guessReject}"]`);
+  await page.keyboard.press('Enter');
+  await page.waitForTimeout(80);
 }
