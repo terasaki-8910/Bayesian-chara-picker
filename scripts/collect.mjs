@@ -164,8 +164,6 @@ async function collectCharacter(politeFetch, character) {
     estimatedRange: overall.estimatedRange,
     byWorkType,
     fetchedAt: new Date().toISOString(),
-    // hitomi.la 分は別プロセス（collect-hitomi.mjs）が埋める。ここでは未収集として null。
-    hitomi: null,
   };
 }
 
@@ -230,7 +228,8 @@ async function main() {
       return;
     }
 
-    supply[character.id] = entry;
+    // 既存の hitomi 分（collect-hitomi.mjs が書いたもの）を再収集で消さないよう温存する。
+    supply[character.id] = { ...entry, hitomi: supply[character.id]?.hitomi ?? null };
     // 1 キャラ終わるたびに保存する。中断されても直前までの結果は残る。
     writeFileSync(supplyPath, `${JSON.stringify(supply, null, 2)}\n`);
   }
