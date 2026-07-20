@@ -122,4 +122,28 @@ describe('A. データ品質', () => {
   it('段階 1 の完了条件: 実データが 30 体以上ある（SPEC 6）', () => {
     expect(characters.length).toBeGreaterThanOrEqual(30);
   });
+
+  it('A9: 軸の値が NFC 正規化されている', () => {
+    // 「グラマー」のような濁点付きカナは NFC と NFD で見た目が同じでもコードポイントが
+    // 違い、片方が混入すると enum チェックが不可解に落ちる。入口で縛る。
+    const denormalized: string[] = [];
+    for (const c of characters) {
+      for (const [axis, value] of Object.entries(c.axes)) {
+        for (const s of Array.isArray(value) ? value : [value]) {
+          if (typeof s === 'string' && s !== s.normalize('NFC')) {
+            denormalized.push(`${c.id}.${axis}="${s}"`);
+          }
+        }
+      }
+    }
+    expect(denormalized).toEqual([]);
+  });
+
+  it('A10: 男性キャラを新規追加していない（既存 2 件のみ許可）', () => {
+    // SPEC 3: 男性キャラは推薦対象外。既存の 2 件はデータとしては残すが、
+    // ここから増やさない（削除ではなくラチェットで縛る）。
+    const GRANDFATHERED = ['aot-levi', 'onepiece-zoro'];
+    const males = characters.filter((c) => c.axes.genderExpression === '男性').map((c) => c.id);
+    expect(males.slice().sort()).toEqual(GRANDFATHERED.slice().sort());
+  });
 });
