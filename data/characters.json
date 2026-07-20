@@ -1414,5 +1414,2156 @@
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
+  },
+  {
+    "id": "bluearchive-asuna",
+    "name": "一之瀬アスナ",
+    "aliases": [
+      "Asuna Ichinose",
+      "Ichinose Asuna"
+    ],
+    "series": "ブルーアーカイブ",
+    "dlsiteQuery": "ブルーアーカイブ アスナ",
+    "hitomiQuery": {
+      "character": "asuna ichinose",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": "元気",
+      "hairColor": "金",
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "人間",
+      "mood": null,
+      "affiliationName": "C&C"
+    }
+  },
+  {
+    "id": "bluearchive-yuuka",
+    "name": "早瀬ユウカ",
+    "aliases": [
+      "Yuuka Hayase",
+      "Hayase Yuuka"
+    ],
+    "series": "ブルーアーカイブ",
+    "dlsiteQuery": "ブルーアーカイブ ユウカ",
+    "hitomiQuery": {
+      "character": "yuuka hayase",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "むっちり",
+      "bust": "標準",
+      "personality": "クール",
+      "hairColor": "紫",
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "roles": [],
+      "distance": "中立",
+      "looks": [
+        "長髪",
+        "ツインテール"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": null,
+      "affiliationName": "セミナー"
+    }
+  },
+  {
+    "id": "bluearchive-toki",
+    "name": "飛鳥馬トキ",
+    "aliases": [
+      "Toki Asuma",
+      "Asuma Toki"
+    ],
+    "series": "ブルーアーカイブ",
+    "dlsiteQuery": "ブルーアーカイブ トキ",
+    "hitomiQuery": {
+      "character": "toki asuma",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": "生意気",
+      "hairColor": "黒",
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "roles": [
+        "主従"
+      ],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "skinTone": "色白",
+      "outfit": [
+        "メイド"
+      ],
+      "species": "人間",
+      "mood": null,
+      "affiliationName": "C&C"
+    }
+  },
+  {
+    "id": "bluearchive-mika",
+    "name": "聖園ミカ",
+    "aliases": [
+      "Mika Misono",
+      "Misono Mika"
+    ],
+    "series": "ブルーアーカイブ",
+    "dlsiteQuery": "ブルーアーカイブ ミカ",
+    "hitomiQuery": {
+      "character": "mika misono",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": "元気",
+      "hairColor": "桃",
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "skinTone": "色白",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": null,
+      "affiliationName": "ティーパーティー"
+    }
+  },
+  {
+    "id": "bluearchive-kisaki",
+    "name": "竜華キサキ",
+    "aliases": [
+      "Kisaki Ryuuge",
+      "Ryuuge Kisaki"
+    ],
+    "series": "ブルーアーカイブ",
+    "dlsiteQuery": "ブルーアーカイブ キサキ",
+    "hitomiQuery": {
+      "character": "kisaki ryuuge",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": "クール",
+      "hairColor": "黒",
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "roles": [],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "人間",
+      "mood": null,
+      "affiliationName": "玄龍門"
+    }
+  },
+  {
+    "id": "bluearchive-rio",
+    "name": "調月リオ",
+    "aliases": [
+      "Rio Tsukatsuki",
+      "Tsukatsuki Rio"
+    ],
+    "series": "ブルーアーカイブ",
+    "dlsiteQuery": "ブルーアーカイブ リオ",
+    "hitomiQuery": {
+      "character": "rio tsukatsuki",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": "クール",
+      "hairColor": "黒",
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "roles": [
+        "主従"
+      ],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "人間",
+      "mood": "支配的",
+      "affiliationName": "セミナー"
+    }
+  },
+  {
+    "id": "bluearchive-hina",
+    "name": "空崎ヒナ",
+    "aliases": [
+      "Hina Sorasaki",
+      "Sorasaki Hina"
+    ],
+    "series": "ブルーアーカイブ",
+    "dlsiteQuery": "ブルーアーカイブ ヒナ",
+    "hitomiQuery": {
+      "character": "hina sorasaki",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": "クール",
+      "hairColor": "白",
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "roles": [],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "skinTone": "色白",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": null,
+      "affiliationName": "風紀委員会"
+    }
+  },
+  {
+    "id": "bluearchive-noa",
+    "name": "生塩ノア",
+    "aliases": [
+      "Noa Ushio",
+      "Ushio Noa"
+    ],
+    "series": "ブルーアーカイブ",
+    "dlsiteQuery": "ブルーアーカイブ ノア",
+    "hitomiQuery": {
+      "character": "noa ushio",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": "クール",
+      "hairColor": "白",
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "roles": [],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "skinTone": "色白",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": null,
+      "affiliationName": "セミナー"
+    }
+  },
+  {
+    "id": "touhou-reimu",
+    "name": "博麗霊夢",
+    "aliases": [
+      "Reimu Hakurei",
+      "reimu hakurei"
+    ],
+    "series": "東方Project",
+    "dlsiteQuery": "東方 博麗霊夢",
+    "hitomiQuery": {
+      "character": "reimu hakurei",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": "クール",
+      "hairColor": "黒",
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "roles": [
+        "ライバル"
+      ],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "巫女"
+      ],
+      "species": "人間",
+      "mood": null,
+      "affiliationName": "博麗神社"
+    }
+  },
+  {
+    "id": "touhou-sakuya",
+    "name": "十六夜咲夜",
+    "aliases": [
+      "Sakuya Izayoi",
+      "sakuya izayoi"
+    ],
+    "series": "東方Project",
+    "dlsiteQuery": "東方 十六夜咲夜",
+    "hitomiQuery": {
+      "character": "sakuya izayoi",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": "クール",
+      "hairColor": "銀",
+      "combat": "戦う",
+      "affiliationKind": "社会人",
+      "roles": [
+        "主従"
+      ],
+      "distance": "やや受け身",
+      "looks": [],
+      "skinTone": "色白",
+      "outfit": [
+        "メイド"
+      ],
+      "species": "人間",
+      "mood": "従属的",
+      "affiliationName": "紅魔館"
+    }
+  },
+  {
+    "id": "touhou-patchouli",
+    "name": "パチュリー・ノーレッジ",
+    "aliases": [
+      "Patchouli Knowledge",
+      "patchouli knowledge"
+    ],
+    "series": "東方Project",
+    "dlsiteQuery": "東方 パチュリー・ノーレッジ",
+    "hitomiQuery": {
+      "character": "patchouli knowledge",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "標準",
+      "personality": "クール",
+      "hairColor": "紫",
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "roles": [],
+      "distance": "やや受け身",
+      "looks": [
+        "長髪"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "魔族",
+      "mood": null,
+      "affiliationName": "紅魔館"
+    }
+  },
+  {
+    "id": "touhou-sanae",
+    "name": "東風谷早苗",
+    "aliases": [
+      "Sanae Kochiya",
+      "sanae kochiya"
+    ],
+    "series": "東方Project",
+    "dlsiteQuery": "東方 東風谷早苗",
+    "hitomiQuery": {
+      "character": "sanae kochiya",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": "元気",
+      "hairColor": "緑",
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "roles": [],
+      "distance": "やや積極的",
+      "looks": [
+        "長髪"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "巫女"
+      ],
+      "species": "人間",
+      "mood": null,
+      "affiliationName": "守矢神社"
+    }
+  },
+  {
+    "id": "touhou-flandre",
+    "name": "フランドール・スカーレット",
+    "aliases": [
+      "Flandre Scarlet",
+      "flandre scarlet"
+    ],
+    "series": "東方Project",
+    "dlsiteQuery": "東方 フランドール・スカーレット",
+    "hitomiQuery": {
+      "character": "flandre scarlet",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": "元気",
+      "hairColor": "金",
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "roles": [
+        "妹"
+      ],
+      "distance": null,
+      "looks": [],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "不死",
+      "mood": "背徳寄り",
+      "affiliationName": "紅魔館"
+    }
+  },
+  {
+    "id": "touhou-remilia",
+    "name": "レミリア・スカーレット",
+    "aliases": [
+      "Remilia Scarlet",
+      "remilia scarlet"
+    ],
+    "series": "東方Project",
+    "dlsiteQuery": "東方 レミリア・スカーレット",
+    "hitomiQuery": {
+      "character": "remilia scarlet",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": "生意気",
+      "hairColor": "青",
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "roles": [
+        "姉",
+        "主従"
+      ],
+      "distance": "積極的",
+      "looks": [],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "不死",
+      "mood": "支配的",
+      "affiliationName": "紅魔館"
+    }
+  },
+  {
+    "id": "touhou-marisa",
+    "name": "霧雨魔理沙",
+    "aliases": [
+      "Marisa Kirisame",
+      "marisa kirisame"
+    ],
+    "series": "東方Project",
+    "dlsiteQuery": "東方 霧雨魔理沙",
+    "hitomiQuery": {
+      "character": "marisa kirisame",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": "元気",
+      "hairColor": "金",
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "roles": [
+        "ライバル"
+      ],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "人間",
+      "mood": null,
+      "affiliationName": null
+    }
+  },
+  {
+    "id": "touhou-alice",
+    "name": "アリス・マーガトロイド",
+    "aliases": [
+      "Alice Margatroid",
+      "alice margatroid"
+    ],
+    "series": "東方Project",
+    "dlsiteQuery": "東方 アリス・マーガトロイド",
+    "hitomiQuery": {
+      "character": "alice margatroid",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": "クール",
+      "hairColor": "金",
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "roles": [
+        "ライバル"
+      ],
+      "distance": "やや受け身",
+      "looks": [],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "魔族",
+      "mood": null,
+      "affiliationName": null
+    }
+  },
+  {
+    "id": "genshin-ganyu",
+    "name": "甘雨",
+    "aliases": [
+      "Ganyu",
+      "かんう"
+    ],
+    "series": "原神",
+    "dlsiteQuery": "原神 甘雨",
+    "hitomiQuery": {
+      "character": "ganyu",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": "おっとり",
+      "hairColor": "青",
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "roles": [],
+      "distance": "受け身",
+      "looks": [
+        "長髪"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "不死",
+      "mood": "甘め",
+      "affiliationName": "璃月七星"
+    }
+  },
+  {
+    "id": "genshin-raiden-shogun",
+    "name": "雷電将軍",
+    "aliases": [
+      "Raiden Shogun",
+      "エイ",
+      "Ei"
+    ],
+    "series": "原神",
+    "dlsiteQuery": "原神 雷電将軍",
+    "hitomiQuery": {
+      "character": "raiden shogun",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": "クール",
+      "hairColor": "紫",
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "roles": [
+        "主従"
+      ],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "不死",
+      "mood": "支配的",
+      "affiliationName": "稲妻幕府"
+    }
+  },
+  {
+    "id": "genshin-lumine",
+    "name": "蛍",
+    "aliases": [
+      "Lumine",
+      "ルミネ",
+      "ほたる"
+    ],
+    "series": "原神",
+    "dlsiteQuery": "原神 蛍",
+    "hitomiQuery": {
+      "character": "lumine",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": "おっとり",
+      "hairColor": "金",
+      "combat": "戦う",
+      "affiliationKind": "冒険者",
+      "roles": [],
+      "distance": "中立",
+      "looks": [],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "人間",
+      "mood": "純愛寄り",
+      "affiliationName": null
+    }
+  },
+  {
+    "id": "genshin-yae-miko",
+    "name": "八重神子",
+    "aliases": [
+      "Yae Miko",
+      "やえみこ"
+    ],
+    "series": "原神",
+    "dlsiteQuery": "原神 八重神子",
+    "hitomiQuery": {
+      "character": "yae miko",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": "生意気",
+      "hairColor": "桃",
+      "combat": "戦う",
+      "affiliationKind": "社会人",
+      "roles": [
+        "先輩"
+      ],
+      "distance": "やや積極的",
+      "looks": [
+        "ケモミミ",
+        "長髪"
+      ],
+      "skinTone": "色白",
+      "outfit": [
+        "巫女"
+      ],
+      "species": "獣人",
+      "mood": "支配的",
+      "affiliationName": "鳴神大社"
+    }
+  },
+  {
+    "id": "genshin-hu-tao",
+    "name": "胡桃",
+    "aliases": [
+      "Hu Tao",
+      "フータオ"
+    ],
+    "series": "原神",
+    "dlsiteQuery": "原神 胡桃",
+    "hitomiQuery": {
+      "character": "hu tao",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": "元気",
+      "hairColor": "茶",
+      "combat": "戦う",
+      "affiliationKind": "社会人",
+      "roles": [
+        "妹"
+      ],
+      "distance": "積極的",
+      "looks": [
+        "ツインテール",
+        "長髪"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "人間",
+      "mood": "甘め",
+      "affiliationName": "往生堂"
+    }
+  },
+  {
+    "id": "genshin-mona",
+    "name": "モナ",
+    "aliases": [
+      "Mona",
+      "Mona Megistus"
+    ],
+    "series": "原神",
+    "dlsiteQuery": "原神 モナ",
+    "hitomiQuery": {
+      "character": "mona megistus",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": "生意気",
+      "hairColor": "紫",
+      "combat": "戦う",
+      "affiliationKind": "社会人",
+      "roles": [],
+      "distance": "中立",
+      "looks": [
+        "ツインテール",
+        "長髪"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "人間",
+      "mood": "甘め",
+      "affiliationName": null
+    }
+  },
+  {
+    "id": "genshin-keqing",
+    "name": "刻晴",
+    "aliases": [
+      "Keqing",
+      "こくせい"
+    ],
+    "series": "原神",
+    "dlsiteQuery": "原神 刻晴",
+    "hitomiQuery": {
+      "character": "keqing",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": "クール",
+      "hairColor": "紫",
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "roles": [
+        "先輩"
+      ],
+      "distance": "中立",
+      "looks": [
+        "ツインテール",
+        "長髪"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "人間",
+      "mood": "純愛寄り",
+      "affiliationName": "璃月七星"
+    }
+  },
+  {
+    "id": "genshin-eula",
+    "name": "エウルア",
+    "aliases": [
+      "Eula",
+      "Eula Lawrence",
+      "エウルア・ローレンス"
+    ],
+    "series": "原神",
+    "dlsiteQuery": "原神 エウルア",
+    "hitomiQuery": {
+      "character": "eula lawrence",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": "クール",
+      "hairColor": "青",
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "roles": [
+        "姉"
+      ],
+      "distance": "中立",
+      "looks": [],
+      "skinTone": "色白",
+      "outfit": [
+        "軍服"
+      ],
+      "species": "人間",
+      "mood": "支配的",
+      "affiliationName": "西風騎士団"
+    }
+  },
+  {
+    "id": "onepiece-vivi",
+    "name": "ネフェルタリ・ビビ",
+    "aliases": [
+      "Nefertari Vivi",
+      "vivi nefertari",
+      "Vivi"
+    ],
+    "series": "ONE PIECE",
+    "dlsiteQuery": "ワンピース ビビ",
+    "hitomiQuery": {
+      "character": "vivi nefertari",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "標準",
+      "personality": "おっとり",
+      "hairColor": "青",
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "roles": [],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "人間",
+      "mood": "甘め",
+      "affiliationName": "アラバスタ王国"
+    }
+  },
+  {
+    "id": "onepiece-tashigi",
+    "name": "たしぎ",
+    "aliases": [
+      "Tashigi",
+      "tashigi"
+    ],
+    "series": "ONE PIECE",
+    "dlsiteQuery": "ワンピース たしぎ",
+    "hitomiQuery": {
+      "character": "tashigi",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": "おっとり",
+      "hairColor": "黒",
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "roles": [
+        "ライバル"
+      ],
+      "distance": "中立",
+      "looks": [
+        "眼鏡"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "軍服"
+      ],
+      "species": "人間",
+      "mood": null,
+      "affiliationName": "海軍"
+    }
+  },
+  {
+    "id": "onepiece-perona",
+    "name": "ペローナ",
+    "aliases": [
+      "Perona",
+      "perona"
+    ],
+    "series": "ONE PIECE",
+    "dlsiteQuery": "ワンピース ペローナ",
+    "hitomiQuery": {
+      "character": "perona",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "標準",
+      "personality": "生意気",
+      "hairColor": "桃",
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "roles": [],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "人間",
+      "mood": "支配的",
+      "affiliationName": "スリラーバーク"
+    }
+  },
+  {
+    "id": "onepiece-kalifa",
+    "name": "カリファ",
+    "aliases": [
+      "Kalifa",
+      "kalifa"
+    ],
+    "series": "ONE PIECE",
+    "dlsiteQuery": "ワンピース カリファ",
+    "hitomiQuery": {
+      "character": "kalifa",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": "クール",
+      "hairColor": "金",
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "roles": [],
+      "distance": "やや積極的",
+      "looks": [
+        "眼鏡",
+        "長髪"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "OL"
+      ],
+      "species": "人間",
+      "mood": "支配的",
+      "affiliationName": "CP9"
+    }
+  },
+  {
+    "id": "onepiece-carrot",
+    "name": "キャロット",
+    "aliases": [
+      "Carrot",
+      "carrot"
+    ],
+    "series": "ONE PIECE",
+    "dlsiteQuery": "ワンピース キャロット",
+    "hitomiQuery": {
+      "character": "carrot",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": "元気",
+      "hairColor": "金",
+      "combat": "戦う",
+      "affiliationKind": "冒険者",
+      "roles": [
+        "妹"
+      ],
+      "distance": "積極的",
+      "looks": [
+        "ケモミミ",
+        "尻尾"
+      ],
+      "skinTone": null,
+      "outfit": [],
+      "species": "獣人",
+      "mood": "甘め",
+      "affiliationName": "モコモ公国"
+    }
+  },
+  {
+    "id": "onepiece-uta",
+    "name": "ウタ",
+    "aliases": [
+      "Uta",
+      "uta"
+    ],
+    "series": "ONE PIECE",
+    "dlsiteQuery": "ワンピース ウタ",
+    "hitomiQuery": {
+      "character": "uta",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": "元気",
+      "hairColor": "赤",
+      "combat": "戦う",
+      "affiliationKind": "社会人",
+      "roles": [
+        "幼馴染"
+      ],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "人間",
+      "mood": "甘め",
+      "affiliationName": null
+    }
+  },
+  {
+    "id": "onepiece-sadi",
+    "name": "サディちゃん",
+    "aliases": [
+      "Sadi",
+      "Sadi-chan",
+      "sadi-chan"
+    ],
+    "series": "ONE PIECE",
+    "dlsiteQuery": "ワンピース サディちゃん",
+    "hitomiQuery": {
+      "character": "sadi-chan",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "熟れた",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": "姉御",
+      "hairColor": "茶",
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "roles": [
+        "主従"
+      ],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "人間",
+      "mood": "支配的",
+      "affiliationName": "インペルダウン"
+    }
+  },
+  {
+    "id": "naruto-sakura",
+    "name": "春野サクラ",
+    "aliases": [
+      "Sakura Haruno",
+      "sakura haruno"
+    ],
+    "series": "NARUTO",
+    "dlsiteQuery": "ナルト 春野サクラ",
+    "hitomiQuery": {
+      "character": "sakura haruno",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "小さい",
+      "personality": "元気",
+      "hairColor": "桃",
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "roles": [
+        "幼馴染",
+        "ライバル"
+      ],
+      "distance": "やや積極的",
+      "looks": [],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "人間",
+      "mood": null,
+      "affiliationName": "木ノ葉隠れの里"
+    }
+  },
+  {
+    "id": "naruto-hinata",
+    "name": "日向ヒナタ",
+    "aliases": [
+      "Hinata Hyuga",
+      "hinata hyuga"
+    ],
+    "series": "NARUTO",
+    "dlsiteQuery": "ナルト 日向ヒナタ",
+    "hitomiQuery": {
+      "character": "hinata hyuga",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": "内気",
+      "hairColor": "青",
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "roles": [],
+      "distance": "受け身",
+      "looks": [
+        "長髪"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "人間",
+      "mood": "純愛寄り",
+      "affiliationName": "木ノ葉隠れの里"
+    }
+  },
+  {
+    "id": "naruto-ino",
+    "name": "山中いの",
+    "aliases": [
+      "Ino Yamanaka",
+      "ino yamanaka"
+    ],
+    "series": "NARUTO",
+    "dlsiteQuery": "ナルト 山中いの",
+    "hitomiQuery": {
+      "character": "ino yamanaka",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": "生意気",
+      "hairColor": "金",
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "roles": [
+        "幼馴染",
+        "ライバル"
+      ],
+      "distance": "やや積極的",
+      "looks": [
+        "長髪"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "人間",
+      "mood": null,
+      "affiliationName": "木ノ葉隠れの里"
+    }
+  },
+  {
+    "id": "naruto-shizune",
+    "name": "シズネ",
+    "aliases": [
+      "Shizune",
+      "shizune"
+    ],
+    "series": "NARUTO",
+    "dlsiteQuery": "ナルト シズネ",
+    "hitomiQuery": {
+      "character": "shizune",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "標準",
+      "personality": "おっとり",
+      "hairColor": "黒",
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "roles": [
+        "主従",
+        "母性"
+      ],
+      "distance": "中立",
+      "looks": [],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "人間",
+      "mood": null,
+      "affiliationName": "木ノ葉隠れの里"
+    }
+  },
+  {
+    "id": "naruto-temari",
+    "name": "テマリ",
+    "aliases": [
+      "Temari",
+      "temari"
+    ],
+    "series": "NARUTO",
+    "dlsiteQuery": "ナルト テマリ",
+    "hitomiQuery": {
+      "character": "temari",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": "クール",
+      "hairColor": "金",
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "roles": [
+        "姉"
+      ],
+      "distance": "やや積極的",
+      "looks": [],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "人間",
+      "mood": null,
+      "affiliationName": "砂隠れの里"
+    }
+  },
+  {
+    "id": "naruto-anko",
+    "name": "みたらしアンコ",
+    "aliases": [
+      "Anko Mitarashi",
+      "anko mitarashi"
+    ],
+    "series": "NARUTO",
+    "dlsiteQuery": "ナルト みたらしアンコ",
+    "hitomiQuery": {
+      "character": "anko mitarashi",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": "元気",
+      "hairColor": "紫",
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "roles": [
+        "教師",
+        "先輩"
+      ],
+      "distance": "積極的",
+      "looks": [],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "人間",
+      "mood": null,
+      "affiliationName": "木ノ葉隠れの里"
+    }
+  },
+  {
+    "id": "naruto-tenten",
+    "name": "テンテン",
+    "aliases": [
+      "Tenten",
+      "tenten"
+    ],
+    "series": "NARUTO",
+    "dlsiteQuery": "ナルト テンテン",
+    "hitomiQuery": {
+      "character": "tenten",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": "クール",
+      "hairColor": "茶",
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "roles": [
+        "先輩"
+      ],
+      "distance": "中立",
+      "looks": [],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "人間",
+      "mood": null,
+      "affiliationName": "木ノ葉隠れの里"
+    }
+  },
+  {
+    "id": "bleach-orihime",
+    "name": "井上織姫",
+    "aliases": [
+      "Orihime Inoue",
+      "orihime inoue"
+    ],
+    "series": "BLEACH",
+    "dlsiteQuery": "ブリーチ 井上織姫",
+    "hitomiQuery": {
+      "character": "orihime inoue",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "とても大きい",
+      "personality": "おっとり",
+      "hairColor": "茶",
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "roles": [],
+      "distance": "やや受け身",
+      "looks": [
+        "長髪"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": "純愛寄り",
+      "affiliationName": "空座第一高校"
+    }
+  },
+  {
+    "id": "bleach-rukia",
+    "name": "朽木ルキア",
+    "aliases": [
+      "Rukia Kuchiki",
+      "rukia kuchiki"
+    ],
+    "series": "BLEACH",
+    "dlsiteQuery": "ブリーチ 朽木ルキア",
+    "hitomiQuery": {
+      "character": "rukia kuchiki",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": "クール",
+      "hairColor": "黒",
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "roles": [
+        "先輩"
+      ],
+      "distance": "中立",
+      "looks": [],
+      "skinTone": "標準",
+      "outfit": [
+        "軍服"
+      ],
+      "species": "不死",
+      "mood": null,
+      "affiliationName": "十三番隊"
+    }
+  },
+  {
+    "id": "bleach-soifon",
+    "name": "砕蜂",
+    "aliases": [
+      "Soi Fon",
+      "Sui-Feng",
+      "soi fon"
+    ],
+    "series": "BLEACH",
+    "dlsiteQuery": "ブリーチ 砕蜂",
+    "hitomiQuery": {
+      "character": "soi fon",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": "クール",
+      "hairColor": "黒",
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "roles": [],
+      "distance": "中立",
+      "looks": [],
+      "skinTone": "標準",
+      "outfit": [
+        "軍服"
+      ],
+      "species": "不死",
+      "mood": null,
+      "affiliationName": "二番隊"
+    }
+  },
+  {
+    "id": "bleach-halibel",
+    "name": "ティア・ハリベル",
+    "aliases": [
+      "Tia Halibel",
+      "Tier Harribel",
+      "tia halibel"
+    ],
+    "series": "BLEACH",
+    "dlsiteQuery": "ブリーチ ティア・ハリベル",
+    "hitomiQuery": {
+      "character": "tia halibel",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "とても大きい",
+      "personality": "クール",
+      "hairColor": "金",
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "roles": [
+        "姉"
+      ],
+      "distance": "中立",
+      "looks": [],
+      "skinTone": "褐色",
+      "outfit": [],
+      "species": "魔族",
+      "mood": null,
+      "affiliationName": "エスパーダ"
+    }
+  },
+  {
+    "id": "bleach-nelliel",
+    "name": "ネリエル・トゥ・オーデルシュヴァンク",
+    "aliases": [
+      "Nelliel Tu Odelschwanck",
+      "nelliel tu odelschwanck",
+      "Nel Tu"
+    ],
+    "series": "BLEACH",
+    "dlsiteQuery": "ブリーチ ネリエル",
+    "hitomiQuery": {
+      "character": "nelliel tu odelschwanck",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "むっちり",
+      "bust": "とても大きい",
+      "personality": "おっとり",
+      "hairColor": "緑",
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "roles": [
+        "姉"
+      ],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "魔族",
+      "mood": null,
+      "affiliationName": "エスパーダ"
+    }
+  },
+  {
+    "id": "bleach-unohana",
+    "name": "卯ノ花烈",
+    "aliases": [
+      "Retsu Unohana",
+      "retsu unohana"
+    ],
+    "series": "BLEACH",
+    "dlsiteQuery": "ブリーチ 卯ノ花烈",
+    "hitomiQuery": {
+      "character": "retsu unohana",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "熟れた",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": "おっとり",
+      "hairColor": "黒",
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "roles": [
+        "母性"
+      ],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "軍服"
+      ],
+      "species": "不死",
+      "mood": "甘め",
+      "affiliationName": "四番隊"
+    }
+  },
+  {
+    "id": "bleach-nemu",
+    "name": "涅ネム",
+    "aliases": [
+      "Nemu Kurotsuchi",
+      "nemu kurotsuchi"
+    ],
+    "series": "BLEACH",
+    "dlsiteQuery": "ブリーチ 涅ネム",
+    "hitomiQuery": {
+      "character": "nemu kurotsuchi",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "華奢",
+      "bust": "大きい",
+      "personality": "クール",
+      "hairColor": "黒",
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "roles": [
+        "主従"
+      ],
+      "distance": "受け身",
+      "looks": [
+        "長髪"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "軍服"
+      ],
+      "species": "不死",
+      "mood": "従属的",
+      "affiliationName": "十二番隊"
+    }
+  },
+  {
+    "id": "bleach-isane",
+    "name": "虎徹勇音",
+    "aliases": [
+      "Isane Kotetsu",
+      "isane kotetsu"
+    ],
+    "series": "BLEACH",
+    "dlsiteQuery": "ブリーチ 虎徹勇音",
+    "hitomiQuery": {
+      "character": "isane kotetsu",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "標準",
+      "personality": "内気",
+      "hairColor": "銀",
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "roles": [
+        "姉"
+      ],
+      "distance": "やや受け身",
+      "looks": [],
+      "skinTone": "標準",
+      "outfit": [
+        "軍服"
+      ],
+      "species": "不死",
+      "mood": null,
+      "affiliationName": "四番隊"
+    }
+  },
+  {
+    "id": "overlord-shalltear",
+    "name": "シャルティア・ブラッドフォールン",
+    "aliases": [
+      "Shalltear Bloodfallen",
+      "シャルティア"
+    ],
+    "series": "オーバーロード",
+    "dlsiteQuery": "オーバーロード シャルティア",
+    "hitomiQuery": {
+      "character": "shalltear bloodfallen",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": "生意気",
+      "hairColor": "銀",
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "roles": [
+        "主従"
+      ],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "不死",
+      "mood": "背徳寄り",
+      "affiliationName": "ナザリック地下大墳墓"
+    }
+  },
+  {
+    "id": "overlord-aura",
+    "name": "アウラ・ベラ・フィオーラ",
+    "aliases": [
+      "Aura Bella Fiora",
+      "アウラ"
+    ],
+    "series": "オーバーロード",
+    "dlsiteQuery": "オーバーロード アウラ",
+    "hitomiQuery": {
+      "character": "aura bella fiora",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": "元気",
+      "hairColor": "金",
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "roles": [
+        "主従"
+      ],
+      "distance": "積極的",
+      "looks": [],
+      "skinTone": "褐色",
+      "outfit": [],
+      "species": "エルフ",
+      "mood": null,
+      "affiliationName": "ナザリック地下大墳墓"
+    }
+  },
+  {
+    "id": "overlord-mare",
+    "name": "マーレ・ベロ・フィオーレ",
+    "aliases": [
+      "Mare Bello Fiore",
+      "マーレ"
+    ],
+    "series": "オーバーロード",
+    "dlsiteQuery": "オーバーロード マーレ",
+    "hitomiQuery": {
+      "character": "mare bello fiore",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "おとこの娘",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": "内気",
+      "hairColor": "金",
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "roles": [
+        "主従"
+      ],
+      "distance": "受け身",
+      "looks": [],
+      "skinTone": "褐色",
+      "outfit": [],
+      "species": "エルフ",
+      "mood": "従属的",
+      "affiliationName": "ナザリック地下大墳墓"
+    }
+  },
+  {
+    "id": "overlord-lupusregina",
+    "name": "ルプスレギナ・ベータ",
+    "aliases": [
+      "Lupusregina Beta",
+      "ルプスレギナ"
+    ],
+    "series": "オーバーロード",
+    "dlsiteQuery": "オーバーロード ルプスレギナ",
+    "hitomiQuery": {
+      "character": "lupusregina beta",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": "元気",
+      "hairColor": "赤",
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "roles": [
+        "主従"
+      ],
+      "distance": "やや積極的",
+      "looks": [
+        "長髪"
+      ],
+      "skinTone": "褐色",
+      "outfit": [
+        "メイド"
+      ],
+      "species": "獣人",
+      "mood": "背徳寄り",
+      "affiliationName": "ナザリック地下大墳墓"
+    }
+  },
+  {
+    "id": "overlord-clementine",
+    "name": "クレマンティーヌ",
+    "aliases": [
+      "Clementine",
+      "Clementine Valentinian"
+    ],
+    "series": "オーバーロード",
+    "dlsiteQuery": "オーバーロード クレマンティーヌ",
+    "hitomiQuery": {
+      "character": "clementine",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "標準",
+      "personality": "生意気",
+      "hairColor": "金",
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "roles": [],
+      "distance": "積極的",
+      "looks": [],
+      "skinTone": null,
+      "outfit": [],
+      "species": "人間",
+      "mood": "背徳寄り",
+      "affiliationName": "漆黒聖典（スレイン法国）"
+    }
+  },
+  {
+    "id": "overlord-yuri",
+    "name": "ユリ・アルファ",
+    "aliases": [
+      "Yuri Alpha",
+      "ユリ"
+    ],
+    "series": "オーバーロード",
+    "dlsiteQuery": "オーバーロード ユリ",
+    "hitomiQuery": {
+      "character": "yuri alpha",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": "姉御",
+      "hairColor": "黒",
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "roles": [
+        "姉",
+        "主従"
+      ],
+      "distance": "中立",
+      "looks": [
+        "眼鏡"
+      ],
+      "skinTone": null,
+      "outfit": [
+        "メイド"
+      ],
+      "species": "不死",
+      "mood": null,
+      "affiliationName": "ナザリック地下大墳墓"
+    }
+  },
+  {
+    "id": "overlord-solution",
+    "name": "ソリュシャン・イプシロン",
+    "aliases": [
+      "Solution Epsilon",
+      "ソリュシャン"
+    ],
+    "series": "オーバーロード",
+    "dlsiteQuery": "オーバーロード ソリュシャン",
+    "hitomiQuery": {
+      "character": "solution epsilon",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": "クール",
+      "hairColor": "金",
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "roles": [
+        "主従"
+      ],
+      "distance": "やや積極的",
+      "looks": [
+        "長髪"
+      ],
+      "skinTone": null,
+      "outfit": [
+        "メイド"
+      ],
+      "species": "魔族",
+      "mood": "背徳寄り",
+      "affiliationName": "ナザリック地下大墳墓"
+    }
+  },
+  {
+    "id": "utau-teto",
+    "name": "重音テト",
+    "aliases": [
+      "Kasane Teto",
+      "teto kasane"
+    ],
+    "series": "UTAU",
+    "dlsiteQuery": "重音テト",
+    "hitomiQuery": {
+      "character": "teto kasane",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "標準",
+      "personality": "生意気",
+      "hairColor": "赤",
+      "combat": "戦わない",
+      "affiliationKind": "社会人",
+      "roles": [],
+      "distance": null,
+      "looks": [
+        "ツインテール"
+      ],
+      "skinTone": "色白",
+      "outfit": [
+        "制服"
+      ],
+      "species": null,
+      "mood": "甘め",
+      "affiliationName": null
+    }
   }
 ]

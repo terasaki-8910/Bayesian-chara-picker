@@ -428,7 +428,13 @@ describe('C. 推薦エンジン', () => {
     }
   });
 
-  it('C13: 実データ33体全員が、オラクル回答で6問で自分自身に収束する', () => {
+  it('C13: 実データの生存者全員が、オラクル回答で自分自身に収束する（MIN_QUESTIONS〜HARD_CAP問の範囲内）', () => {
+    // データ拡充で母集団が増えるほど、似た候補が増えて必要質問数の分布は右に伸びる
+    // （33体時代は全員ちょうど6問だったが、それは「母集団が小さいから常に floor で
+    // 分離しきれる」という当時のデータ規模に固有の性質であり、アルゴリズムの
+    // 不変条件ではない）。不変条件として保証されるのは「6問未満では絶対に確定しない・
+    // 10問を超えて粘らない・最終的に必ず自分自身を言い当てる」の3点だけなので、
+    // それだけを固定する。
     const survivors = dataset.characters.filter(
       (c) => c.axes.genderExpression !== '男性' && c.provisional !== true,
     );
@@ -444,8 +450,8 @@ describe('C. 推薦エンジン', () => {
     }
 
     expect(failures).toEqual([]);
-    expect(Math.min(...askedCounts)).toBe(MIN_QUESTIONS);
-    expect(Math.max(...askedCounts)).toBe(MIN_QUESTIONS);
+    expect(Math.min(...askedCounts)).toBeGreaterThanOrEqual(MIN_QUESTIONS);
+    expect(Math.max(...askedCounts)).toBeLessThanOrEqual(HARD_CAP);
   });
 
   it('C13: 全問「わからない」の場合は HARD_CAP で強制的に推測へ進む', () => {

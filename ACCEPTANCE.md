@@ -54,7 +54,7 @@ LLM の主観レビューは受け入れ基準に含めない。
 | C10 | `selectProbe` が決定論的（同じ集団・同じ `askedKeys` なら同じプローブを返す） | Vitest |
 | C11 | 属性が全て空欄のキャラが混ざっていても質問選択・スコアリングが落ちず、空欄は確信度に関わらずスコアに寄与しない | Vitest（供給先行で投入したキャラを模した合成データ。3 値式の空欄=0 を検証） |
 | C12 | `askedCount < MIN_QUESTIONS(6)` の間 `shouldGuess` は常に `false`。「いいえ」で拒否したキャラは以降の `scoreCharacters`/`nextProbe` から除外される | Vitest |
-| C13 | 実データ 33 体全員について、真実に沿った回答（オラクル）を与えると 6 問で自分自身に収束する。全問「わからない」の場合は `HARD_CAP(10)` で強制的に推測へ進む | Vitest（実データ `data/characters.json` を使用） |
+| C13 | 実データの生存者全員について、真実に沿った回答（オラクル）を与えると `MIN_QUESTIONS`〜`HARD_CAP` 問の範囲内で自分自身に収束する。全問「わからない」の場合は `HARD_CAP(10)` で強制的に推測へ進む | Vitest（実データ `data/characters.json` を使用） |
 
 ## D. 実行時の閉じ込め
 
