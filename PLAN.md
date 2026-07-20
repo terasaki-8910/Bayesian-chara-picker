@@ -40,14 +40,21 @@ wave 5           app-shell
 
 ## 現在地（2026-07-20）
 
-- **完了（main にマージ済み）**: wave 1 — `data-schema` / `engine-supply` /
-  `collect-script`。wave 2 — `character-dataset`（36 体、`azurlane-yamato` は
-  ゲーム未実装のため `provisional: true` で `reviewed` 恒久 false のまま保留。
-  DLsite + hitomi.la 二重供給、`census-hitomi.mjs` による機械的キャラ列挙、
-  16 軸スキーマ、`provisional` フラグを含む）
-- **今回の `state/features.txt`**: wave 3 — `engine-recommend`
-  （`src/engine/questions.ts` + `src/engine/recommend.ts` を同一 worktree で実装）
-- 未着手: wave 4〜5
+- **完了（main にマージ済み）**: wave 1〜5 全て。
+  - wave 1 — `data-schema` / `engine-supply` / `collect-script`
+  - wave 2 — `character-dataset`（36 体、`azurlane-yamato` はゲーム未実装のため
+    `provisional: true` で `reviewed` 恒久 false のまま保留。DLsite + hitomi.la
+    二重供給、`census-hitomi.mjs` による機械的キャラ列挙、16 軸スキーマ、
+    `provisional` フラグを含む）
+  - wave 3 — `engine-recommend`（`questions.ts` + `recommend.ts`。エントロピーに
+    よる動的質問選択、ハードフィルタ3種、mulberry32 の自前実装）
+  - wave 4 — `ui-age-gate` / `ui-interview` / `ui-results`
+  - wave 5 — `app-shell`（`App.tsx` の画面遷移配線）
+- `state/features.txt`: 空。integration_accept 相当（`npm test` 71/71 +
+  `npm run lint` + `scripts/ui-check.sh` の D1/F1–F6 19件）が全て green。
+  実ブラウザでの目視確認も実施済み（3ブレークポイント、age-gate/question/
+  results/omakase）。
+- 未着手: なし（このラウンドの実装は完了。次はキャラ拡充 — SPEC 6.1 参照）
 
 plan stage を再実行するたびにこの節を更新し、`state/features.txt` を次の wave に
 進める。PLAN 上の全フィーチャが main に存在したら `state/features.txt` を空にする。
