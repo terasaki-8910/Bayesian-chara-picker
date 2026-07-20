@@ -26,9 +26,19 @@ describe('A. データ品質', () => {
     expect(result.success ? [] : result.error.issues.map((i) => `${i.path.join('.')}: ${i.message}`)).toEqual([]);
   });
 
-  it('A2: reviewed:false のレコードが 0 件', () => {
-    const unreviewed = characters.filter((c) => c.reviewed !== true).map((c) => c.id);
+  it('A2: reviewed:false のレコードが 0 件（provisional は対象外）', () => {
+    // provisional（公式デザイン未確定などで恒久的に reviewed:false のキャラ）は
+    // 意図的な例外なので A2 では見ない。推薦から除外されることは C7 相当の
+    // テストで別途縛る（SPEC 2.4 のハードフィルタ）。
+    const unreviewed = characters.filter((c) => c.reviewed !== true && c.provisional !== true).map((c) => c.id);
     expect(unreviewed).toEqual([]);
+  });
+
+  it('A12: provisional なレコードは reviewed:false のまま（true と同時に立てない）', () => {
+    // provisional は「レビューを保留する」宣言であって、reviewed:true と
+    // 同時に立つと A2 の抜け穴として悪用できてしまう（review せずに出荷する手段になる）。
+    const contradictions = characters.filter((c) => c.provisional === true && c.reviewed === true).map((c) => c.id);
+    expect(contradictions).toEqual([]);
   });
 
   it('A3: id が一意', () => {
@@ -137,6 +147,38 @@ describe('A. データ品質', () => {
       }
     }
     expect(denormalized).toEqual([]);
+  });
+
+  it('A11: 各キャラが任意軸のうち 4 つ以上埋まっている', () => {
+    // 必須 8 軸だけ埋めた薄いレコードで数だけ増やせないようにする歯止め。
+    //
+    // 「平均充足率」ではなく「1 体あたりの下限」にしているのは、平均だと
+    // 濃い 36 体が薄い 500 体を覆い隠せてしまうため。下限なら 1 体でも
+    // 薄ければ落ちる。
+    //
+    // 4 は現行 36 体の実測最小値（分布は 4:4件 / 5:10件 / 6:13件 / 7:9件）。
+    // 到達不能な理想値ではなく、いま維持できている密度をそのまま床にしている。
+    const OPTIONAL_AXES = [
+      'roles',
+      'distance',
+      'looks',
+      'skinTone',
+      'outfit',
+      'species',
+      'mood',
+      'affiliationName',
+    ] as const;
+    const MIN_FILLED = 4;
+
+    const thin: string[] = [];
+    for (const c of characters) {
+      const filled = OPTIONAL_AXES.filter((axis) => {
+        const value = c.axes[axis];
+        return Array.isArray(value) ? value.length > 0 : value !== null && value !== undefined && value !== '';
+      }).length;
+      if (filled < MIN_FILLED) thin.push(`${c.id}(${filled})`);
+    }
+    expect(thin).toEqual([]);
   });
 
   it('A10: 男性キャラを新規追加していない（既存 2 件のみ許可）', () => {

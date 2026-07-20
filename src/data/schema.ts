@@ -78,6 +78,13 @@ export type Character = {
   hitomiQuery: HitomiQuery | null; // null = hitomi.la収集の対象外（SPEC 2.2）
   axes: Axes;
   reviewed: boolean; // A2。人間のレビューでのみ true になる（SPEC 4.3）
+  /**
+   * true = 公式デザイン未確定などの理由でレビューを完了できないキャラ。
+   * A2（reviewed:false を禁じるゲート）の対象外にする代わり、reviewed は
+   * 恒久的に false のまま置く。推薦・おまかせのハードフィルタでも常に除外する
+   * （性別表現「男性」と同じ扱い。SPEC 2.4 / 4.3）。
+   */
+  provisional: boolean;
 };
 
 export type SupplyEntry = {
@@ -98,7 +105,10 @@ export type HitomiSupplyEntry = {
 export type SupplyFile = Record<string, SupplyEntry>;
 
 /**
- * 必須 4 軸（性別表現・年齢感・体格・性格）は null を弾く。
+ * 必須 8 軸（性別表現・年齢感・体格・胸・性格・髪色・戦うか・所属の種類）は null を弾く。
+ * 必須が少ないと「必須だけ埋めた薄いデータ」で 500 体を投入でき、動的質問選択
+ * （SPEC 2.4）が分岐する材料を持てなくなる。追加した 4 つは主観ではなく事実寄りの
+ * 軸を選んであり、規模を増やしても品質が落ちにくい。
  * 残りの軸は「空欄」を許容する: 単一軸は null、複数軸は [] が空欄
  * （SPEC 2.3 / PLAN wave 1）。空欄許容は「供給先行で大量にキャラを入れ、
  * 属性は後から埋める」拡充方針を成立させるための前提でもある。
@@ -107,18 +117,18 @@ const axesSchema: z.ZodType<Axes> = z.object({
   genderExpression: z.enum(GENDER_EXPRESSION_VALUES),
   ageFeel: z.enum(AGE_FEEL_VALUES),
   build: z.enum(BUILD_VALUES),
-  bust: z.enum(BUST_VALUES).nullable(),
+  bust: z.enum(BUST_VALUES),
   personality: z.enum(PERSONALITY_VALUES),
   roles: z.array(z.enum(ROLES_VALUES)),
   distance: z.enum(DISTANCE_VALUES).nullable(),
   looks: z.array(z.enum(LOOKS_VALUES)),
-  hairColor: z.enum(HAIR_COLOR_VALUES).nullable(),
+  hairColor: z.enum(HAIR_COLOR_VALUES),
   skinTone: z.enum(SKIN_TONE_VALUES).nullable(),
   outfit: z.array(z.enum(OUTFIT_VALUES)),
   species: z.enum(SPECIES_VALUES).nullable(),
   mood: z.enum(MOOD_VALUES).nullable(),
-  combat: z.enum(COMBAT_VALUES).nullable(),
-  affiliationKind: z.enum(AFFILIATION_KIND_VALUES).nullable(),
+  combat: z.enum(COMBAT_VALUES),
+  affiliationKind: z.enum(AFFILIATION_KIND_VALUES),
   affiliationName: z.string().min(1).nullable(),
 });
 
@@ -138,6 +148,7 @@ const characterSchema: z.ZodType<Character> = z.object({
   hitomiQuery: hitomiQuerySchema.nullable(),
   axes: axesSchema,
   reviewed: z.boolean(),
+  provisional: z.boolean(),
 });
 
 export const charactersSchema: z.ZodType<Character[]> = z.array(characterSchema);
