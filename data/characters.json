@@ -11,7 +11,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "標準",
+      "bust": "大きい",
       "personality": "クール",
       "roles": [
         "主従"
@@ -29,7 +29,7 @@
       "affiliationKind": "社会人",
       "affiliationName": "ロズワール邸"
     },
-    "reviewed": true,
+    "reviewed": false,
     "hitomiQuery": {
       "character": "rem",
       "series": null
@@ -91,7 +91,7 @@
       "genderExpression": "女性",
       "ageFeel": "熟れた",
       "build": "標準",
-      "bust": "大きい",
+      "bust": "とても大きい",
       "personality": "クール",
       "roles": [
         "教師"
@@ -109,7 +109,7 @@
       "affiliationKind": "非人間・その他",
       "affiliationName": "影の国"
     },
-    "reviewed": true,
+    "reviewed": false,
     "hitomiQuery": {
       "character": "scathach",
       "series": null
@@ -172,7 +172,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "華奢",
-      "bust": "小さい",
+      "bust": "大きい",
       "personality": "生意気",
       "roles": [],
       "distance": "積極的",
@@ -188,7 +188,7 @@
       "affiliationKind": "非人間・その他",
       "affiliationName": "ムーンセル"
     },
-    "reviewed": true,
+    "reviewed": false,
     "hitomiQuery": {
       "character": "bb",
       "series": null
@@ -212,7 +212,7 @@
       "bust": "大きい",
       "personality": "生意気",
       "roles": [],
-      "distance": "やや積極的",
+      "distance": "積極的",
       "looks": [
         "長髪"
       ],
@@ -225,7 +225,7 @@
       "affiliationKind": "非人間・その他",
       "affiliationName": null
     },
-    "reviewed": true,
+    "reviewed": false,
     "hitomiQuery": {
       "character": "ishtar",
       "series": null
@@ -406,7 +406,7 @@
       "genderExpression": "女性",
       "ageFeel": "年上",
       "build": "標準",
-      "bust": "大きい",
+      "bust": "とても大きい",
       "personality": "おっとり",
       "roles": [
         "先輩"
@@ -426,7 +426,7 @@
       "affiliationKind": "冒険者",
       "affiliationName": "カズマパーティー"
     },
-    "reviewed": true,
+    "reviewed": false,
     "hitomiQuery": {
       "character": "darkness",
       "series": null
@@ -607,7 +607,7 @@
       "genderExpression": "女性",
       "ageFeel": "熟れた",
       "build": "標準",
-      "bust": "大きい",
+      "bust": "とても大きい",
       "personality": "姉御",
       "roles": [
         "教師",
@@ -626,7 +626,7 @@
       "affiliationKind": "軍・組織",
       "affiliationName": "木ノ葉隠れの里"
     },
-    "reviewed": true,
+    "reviewed": false,
     "hitomiQuery": {
       "character": "tsunade",
       "series": null
@@ -727,7 +727,7 @@
       "genderExpression": "女性",
       "ageFeel": "熟れた",
       "build": "標準",
-      "bust": "大きい",
+      "bust": "とても大きい",
       "personality": "生意気",
       "roles": [],
       "distance": "積極的",
@@ -743,7 +743,7 @@
       "affiliationKind": "軍・組織",
       "affiliationName": "九蛇海賊団"
     },
-    "reviewed": true,
+    "reviewed": false,
     "hitomiQuery": {
       "character": "boa hancock",
       "series": null
@@ -764,7 +764,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "標準",
+      "bust": "大きい",
       "personality": "生意気",
       "roles": [
         "幼馴染"
@@ -782,7 +782,7 @@
       "affiliationKind": "軍・組織",
       "affiliationName": "麦わらの一味"
     },
-    "reviewed": true,
+    "reviewed": false,
     "hitomiQuery": {
       "character": "nami",
       "series": null
@@ -1346,7 +1346,7 @@
       "genderExpression": "女性",
       "ageFeel": "年上",
       "build": "標準",
-      "bust": "大きい",
+      "bust": "とても大きい",
       "personality": "元気",
       "roles": [
         "先輩"
@@ -1366,7 +1366,7 @@
       "affiliationKind": "軍・組織",
       "affiliationName": "護廷十三隊"
     },
-    "reviewed": true,
+    "reviewed": false,
     "hitomiQuery": {
       "character": "rangiku matsumoto",
       "series": null
@@ -1436,7 +1436,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "大きい",
+      "bust": "とても大きい",
       "personality": "元気",
       "hairColor": "金",
       "combat": "戦う",
@@ -1523,7 +1523,7 @@
       "roles": [
         "主従"
       ],
-      "distance": "中立",
+      "distance": "やや受け身",
       "looks": [
         "長髪"
       ],
@@ -1755,7 +1755,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "標準",
+      "bust": "小さい",
       "personality": "クール",
       "hairColor": "黒",
       "combat": "戦う",
@@ -1797,7 +1797,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "標準",
+      "bust": "小さい",
       "personality": "クール",
       "hairColor": "銀",
       "combat": "戦う",
@@ -1837,7 +1837,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "華奢",
-      "bust": "標準",
+      "bust": "大きい",
       "personality": "クール",
       "hairColor": "紫",
       "combat": "戦う",
@@ -2117,7 +2117,7 @@
       "roles": [
         "主従"
       ],
-      "distance": "中立",
+      "distance": "やや受け身",
       "looks": [
         "長髪"
       ],
@@ -2194,7 +2194,7 @@
       "roles": [
         "先輩"
       ],
-      "distance": "やや積極的",
+      "distance": "積極的",
       "looks": [
         "ケモミミ",
         "長髪"
@@ -3228,7 +3228,7 @@
       "genderExpression": "女性",
       "ageFeel": "年上",
       "build": "標準",
-      "bust": "標準",
+      "bust": "大きい",
       "personality": "内気",
       "hairColor": "銀",
       "combat": "戦う",
@@ -3553,7 +3553,7 @@
       "combat": "戦わない",
       "affiliationKind": "社会人",
       "roles": [],
-      "distance": null,
+      "distance": "やや積極的",
       "looks": [
         "ツインテール"
       ],
@@ -3561,9 +3561,396 @@
       "outfit": [
         "制服"
       ],
-      "species": null,
+      "species": "人間",
       "mood": "甘め",
       "affiliationName": null
+    }
+  },
+  {
+    "id": "genshin-ayaka",
+    "name": "神里綾華",
+    "aliases": [
+      "Kamisato Ayaka",
+      "Ayaka"
+    ],
+    "series": "原神",
+    "dlsiteQuery": "原神 綾華",
+    "hitomiQuery": {
+      "character": "ayaka kamisato",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "標準",
+      "personality": "クール",
+      "roles": [
+        "妹"
+      ],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": "青",
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "人間",
+      "mood": null,
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "affiliationName": "神里家(社奉行)"
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "genshin-shenhe",
+    "name": "申鶴",
+    "aliases": [
+      "Shenhe"
+    ],
+    "series": "原神",
+    "dlsiteQuery": "原神 申鶴",
+    "hitomiQuery": {
+      "character": "shenhe",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "華奢",
+      "bust": "とても大きい",
+      "personality": "クール",
+      "roles": [],
+      "distance": "受け身",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": "銀",
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "人間",
+      "mood": null,
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "仙人・閑雲(雲堂)の弟子"
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "genshin-nahida",
+    "name": "ナヒーダ",
+    "aliases": [
+      "Nahida",
+      "Buer",
+      "Lesser Lord Kusanali"
+    ],
+    "series": "原神",
+    "dlsiteQuery": "原神 ナヒーダ",
+    "hitomiQuery": {
+      "character": "nahida",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": "おっとり",
+      "roles": [
+        "母性"
+      ],
+      "distance": "やや積極的",
+      "looks": [],
+      "hairColor": "緑",
+      "skinTone": "色白",
+      "outfit": [],
+      "species": null,
+      "mood": null,
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "スメール(須弥)の草神"
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "genshin-furina",
+    "name": "フリーナ",
+    "aliases": [
+      "Furina",
+      "Furina de Fontaine",
+      "Focalors"
+    ],
+    "series": "原神",
+    "dlsiteQuery": "原神 フリーナ",
+    "hitomiQuery": {
+      "character": "focalors",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "標準",
+      "personality": "生意気",
+      "roles": [],
+      "distance": "やや積極的",
+      "looks": [
+        "長髪",
+        "ツインテール"
+      ],
+      "hairColor": "白",
+      "skinTone": "色白",
+      "outfit": [],
+      "species": null,
+      "mood": null,
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "フォンテーヌの水神/オペラ座女優"
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "genshin-barbara",
+    "name": "バーバラ",
+    "aliases": [
+      "Barbara",
+      "Barbara Pegg"
+    ],
+    "series": "原神",
+    "dlsiteQuery": "原神 バーバラ",
+    "hitomiQuery": {
+      "character": "barbara pegg",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "標準",
+      "personality": "元気",
+      "roles": [
+        "妹"
+      ],
+      "distance": "やや積極的",
+      "looks": [
+        "ツインテール"
+      ],
+      "hairColor": "金",
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "人間",
+      "mood": null,
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "affiliationName": "西風教会(モンド)"
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "touhou-yukari",
+    "name": "八雲紫",
+    "aliases": [
+      "Yukari Yakumo",
+      "yukari yakumo"
+    ],
+    "series": "東方Project",
+    "dlsiteQuery": "東方 八雲紫",
+    "hitomiQuery": {
+      "character": "yukari yakumo",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "熟れた",
+      "build": "むっちり",
+      "bust": "大きい",
+      "personality": "クール",
+      "hairColor": "金",
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "skinTone": null,
+      "outfit": [],
+      "species": "魔族",
+      "mood": "支配的",
+      "affiliationName": "妖怪の賢者"
+    }
+  },
+  {
+    "id": "touhou-satori",
+    "name": "古明地さとり",
+    "aliases": [
+      "Satori Komeiji",
+      "satori komeiji"
+    ],
+    "series": "東方Project",
+    "dlsiteQuery": "東方 古明地さとり",
+    "hitomiQuery": {
+      "character": "satori komeiji",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": "クール",
+      "hairColor": "紫",
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "roles": [
+        "姉"
+      ],
+      "distance": "受け身",
+      "looks": [],
+      "skinTone": null,
+      "outfit": [],
+      "species": "魔族",
+      "mood": null,
+      "affiliationName": "地霊殿"
+    }
+  },
+  {
+    "id": "touhou-aya",
+    "name": "射命丸文",
+    "aliases": [
+      "Aya Shameimaru",
+      "aya shameimaru"
+    ],
+    "series": "東方Project",
+    "dlsiteQuery": "東方 射命丸文",
+    "hitomiQuery": {
+      "character": "aya shameimaru",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": "元気",
+      "hairColor": "黒",
+      "combat": "戦う",
+      "affiliationKind": "社会人",
+      "roles": [],
+      "distance": "積極的",
+      "looks": [],
+      "skinTone": null,
+      "outfit": [],
+      "species": "魔族",
+      "mood": "背徳寄り",
+      "affiliationName": "文々。新聞"
+    }
+  },
+  {
+    "id": "touhou-reisen",
+    "name": "鈴仙・優曇華院・イナバ",
+    "aliases": [
+      "Reisen Udongein Inaba",
+      "reisen udongein inaba"
+    ],
+    "series": "東方Project",
+    "dlsiteQuery": "東方 鈴仙・優曇華院・イナバ",
+    "hitomiQuery": {
+      "character": "reisen udongein inaba",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": "内気",
+      "hairColor": "紫",
+      "combat": "戦う",
+      "affiliationKind": "社会人",
+      "roles": [
+        "後輩"
+      ],
+      "distance": "やや受け身",
+      "looks": [
+        "ケモミミ",
+        "長髪"
+      ],
+      "skinTone": null,
+      "outfit": [],
+      "species": "獣人",
+      "mood": "従属的",
+      "affiliationName": "永遠亭"
+    }
+  },
+  {
+    "id": "touhou-youmu",
+    "name": "魂魄妖夢",
+    "aliases": [
+      "Youmu Konpaku",
+      "youmu konpaku"
+    ],
+    "series": "東方Project",
+    "dlsiteQuery": "東方 魂魄妖夢",
+    "hitomiQuery": {
+      "character": "youmu konpaku",
+      "series": null
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": "おっとり",
+      "hairColor": "銀",
+      "combat": "戦う",
+      "affiliationKind": "社会人",
+      "roles": [
+        "主従"
+      ],
+      "distance": "やや受け身",
+      "looks": [],
+      "skinTone": null,
+      "outfit": [],
+      "species": "不死",
+      "mood": "従属的",
+      "affiliationName": "白玉楼"
     }
   }
 ]

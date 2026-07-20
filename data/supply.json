@@ -1618,5 +1618,185 @@
       "seriesFilter": null,
       "fetchedAt": "2026-07-20T15:28:20.477Z"
     }
+  },
+  "genshin-ayaka": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "fetchedAt": "2026-07-20T16:36:20.021Z",
+    "hitomi": {
+      "galleryCount": 703,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T16:45:33.893Z"
+    }
+  },
+  "genshin-shenhe": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-07-20T16:36:59.968Z",
+    "hitomi": {
+      "galleryCount": 707,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T16:45:34.947Z"
+    }
+  },
+  "genshin-nahida": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "fetchedAt": "2026-07-20T16:37:40.015Z",
+    "hitomi": {
+      "galleryCount": 715,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T16:45:36.451Z"
+    }
+  },
+  "genshin-furina": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "fetchedAt": "2026-07-20T16:38:20.102Z",
+    "hitomi": {
+      "galleryCount": 671,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T16:45:37.954Z"
+    }
+  },
+  "genshin-barbara": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "fetchedAt": "2026-07-20T16:39:00.225Z",
+    "hitomi": {
+      "galleryCount": 617,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T16:45:39.487Z"
+    }
+  },
+  "touhou-yukari": {
+    "pageCount": 13,
+    "estimatedRange": [
+      361,
+      390
+    ],
+    "byWorkType": {
+      "doujinshi": 13,
+      "voice": 13,
+      "game": 0
+    },
+    "fetchedAt": "2026-07-20T16:39:40.160Z",
+    "hitomi": {
+      "galleryCount": 1741,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T16:45:40.985Z"
+    }
+  },
+  "touhou-satori": {
+    "pageCount": 12,
+    "estimatedRange": [
+      331,
+      360
+    ],
+    "byWorkType": {
+      "doujinshi": 12,
+      "voice": 12,
+      "game": 2
+    },
+    "fetchedAt": "2026-07-20T16:40:20.171Z",
+    "hitomi": {
+      "galleryCount": 1703,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T16:45:42.482Z"
+    }
+  },
+  "touhou-aya": {
+    "pageCount": 13,
+    "estimatedRange": [
+      361,
+      390
+    ],
+    "byWorkType": {
+      "doujinshi": 13,
+      "voice": 13,
+      "game": 2
+    },
+    "fetchedAt": "2026-07-20T16:41:00.378Z",
+    "hitomi": {
+      "galleryCount": 1691,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T16:45:44.061Z"
+    }
+  },
+  "touhou-reisen": {
+    "pageCount": 8,
+    "estimatedRange": [
+      211,
+      240
+    ],
+    "byWorkType": {
+      "doujinshi": 8,
+      "voice": 8,
+      "game": 0
+    },
+    "fetchedAt": "2026-07-20T16:41:40.252Z",
+    "hitomi": {
+      "galleryCount": 1641,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T16:45:45.472Z"
+    }
+  },
+  "touhou-youmu": {
+    "pageCount": 11,
+    "estimatedRange": [
+      301,
+      330
+    ],
+    "byWorkType": {
+      "doujinshi": 11,
+      "voice": 11,
+      "game": 0
+    },
+    "fetchedAt": "2026-07-20T16:42:20.150Z",
+    "hitomi": {
+      "galleryCount": 1521,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T16:45:46.986Z"
+    }
   }
 }
