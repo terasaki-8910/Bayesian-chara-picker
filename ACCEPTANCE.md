@@ -75,13 +75,15 @@ LLM の主観レビューは受け入れ基準に含めない。
 
 ## F. UI（`scripts/ui-check.sh` が exit 0）
 
+F4（モーダルの Escape/背景クリック）と F5（年齢確認ゲート）は 2026-07-20 に
+年齢確認そのものを廃止したため対象が無くなり削除した（欠番。番号は振り直さない
+— PLAN.md の「wave 2 から削除」の前例と同じ扱い）。
+
 | # | 基準 | 判定 |
 |---|---|---|
 | F1 | 375 / 768 / 1280 px で `document.body` に横スクロールが発生しない | Playwright |
 | F2 | axe-core の violations（impact: serious 以上）が 0 件 | Playwright + axe |
 | F3 | 全対話要素に Tab のみで到達できる（マウス不要で完走可能） | Playwright（キーボードのみで質問 → 推測 → 確認まで操作） |
-| F4 | モーダル / オーバーレイが Escape と背景クリックの両方で閉じる | Playwright |
-| F5 | 年齢確認を通さずに質問・推測・結果のいずれの画面にも到達できない | Playwright |
 | F6 | 色以外の手段でも状態が判別できる（focus リングが可視） | Playwright（`:focus-visible` のアウトライン幅 > 0） |
 
 ## G. 完了の定義

@@ -1,16 +1,13 @@
 import { useCallback, useState } from 'react';
 
-import { useAgeConfirmation } from './hooks/useAgeConfirmation';
 import { dataset, useInterview } from './hooks/useInterview';
 import { omakase, type Scored } from './engine/recommend';
-import { AgeGate } from './screens/AgeGate';
 import { GuessScreen } from './screens/GuessScreen';
 import { NoGuessScreen } from './screens/NoGuessScreen';
 import { QuestionScreen } from './screens/QuestionScreen';
 import { ResultScreen } from './screens/ResultScreen';
 
 export default function App() {
-  const age = useAgeConfirmation();
   const interview = useInterview();
   const [omakaseResult, setOmakaseResult] = useState<Scored | null>(null);
 
@@ -23,13 +20,6 @@ export default function App() {
     interview.reset();
     setOmakaseResult(null);
   }, [interview]);
-
-  // F5: 未確認では質問も結果も一切描画しない。閉じただけ（dismissed）でも
-  // 確認済みにはならないため、age-gate 自体を非表示にするだけで下の画面には
-  // 進めない（何も描画しない空の状態になる）。
-  if (!age.confirmed) {
-    return <AgeGate open={!age.dismissed} onConfirm={age.confirm} onDismiss={age.dismiss} />;
-  }
 
   // おまかせは質問・推測ループを経ない独立経路（PLAN）。結果表示中は
   // interview 側の状態（質問の途中経過など）を無視して直接 result 画面へ出す。

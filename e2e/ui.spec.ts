@@ -1,15 +1,7 @@
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test } from '@playwright/test';
 
-import {
-  AGE_STORAGE_KEY,
-  TESTID,
-  acceptAgeGateByKeyboard,
-  answerAllByKeyboard,
-  openFresh,
-  reachGuessAndRejectOnceByKeyboard,
-  tabTo,
-} from './helpers';
+import { TESTID, answerAllByKeyboard, openFresh, reachGuessAndRejectOnceByKeyboard, tabTo } from './helpers';
 
 const BREAKPOINTS = [
   { name: 'mobile', width: 375, height: 812 },
@@ -23,15 +15,13 @@ test.describe('F1: 横スクロールが発生しない', () => {
       await page.setViewportSize({ width: bp.width, height: bp.height });
       await openFresh(page);
 
-      // 年齢確認・質問・推測・結果の各画面で確認する。1 画面だけでは足りない。
+      // 質問・推測・結果の各画面で確認する。1 画面だけでは足りない。
       const overflow = async () =>
         page.evaluate(() => ({
           doc: document.documentElement.scrollWidth - document.documentElement.clientWidth,
           body: document.body.scrollWidth - document.body.clientWidth,
         }));
 
-      expect((await overflow()).doc).toBeLessThanOrEqual(1);
-      await acceptAgeGateByKeyboard(page);
       expect((await overflow()).doc).toBeLessThanOrEqual(1);
       await answerAllByKeyboard(page);
       const after = await overflow();
@@ -51,21 +41,14 @@ test.describe('F2: axe-core の violations（serious 以上）が 0 件', () => 
       .map((v) => `${v.id} (${v.impact}): ${v.nodes.map((n) => n.target.join(' ')).join(' / ')}`);
   };
 
-  test('年齢確認画面', async ({ page }) => {
-    await openFresh(page);
-    expect(await scan(page)).toEqual([]);
-  });
-
   test('質問画面', async ({ page }) => {
     await openFresh(page);
-    await acceptAgeGateByKeyboard(page);
     await expect(page.getByTestId(TESTID.question)).toBeVisible();
     expect(await scan(page)).toEqual([]);
   });
 
   test('推測画面（画像プレースホルダー枠を含む）', async ({ page }) => {
     await openFresh(page);
-    await acceptAgeGateByKeyboard(page);
     await reachGuessAndRejectOnceByKeyboard(page);
     // reject 後は guess（次点）か no-guess（全滅）のどちらか。guess であれば scan する。
     if (await page.getByTestId(TESTID.guess).isVisible().catch(() => false)) {
@@ -75,7 +58,6 @@ test.describe('F2: axe-core の violations（serious 以上）が 0 件', () => 
 
   test('結果画面', async ({ page }) => {
     await openFresh(page);
-    await acceptAgeGateByKeyboard(page);
     await answerAllByKeyboard(page);
     expect(await scan(page)).toEqual([]);
   });
@@ -84,7 +66,6 @@ test.describe('F2: axe-core の violations（serious 以上）が 0 件', () => 
 test.describe('F3: マウス無しで完走できる', () => {
   test('Tab と Enter だけで質問 → 推測 → 確認まで到達する', async ({ page }) => {
     await openFresh(page);
-    await acceptAgeGateByKeyboard(page);
     await answerAllByKeyboard(page);
 
     await expect(page.getByTestId(TESTID.result)).toBeVisible();
@@ -92,7 +73,6 @@ test.describe('F3: マウス無しで完走できる', () => {
 
   test('「わからない」もキーボードで選べる', async ({ page }) => {
     await openFresh(page);
-    await acceptAgeGateByKeyboard(page);
     await tabTo(page, `[data-testid="${TESTID.answerUnknown}"]`);
     await page.keyboard.press('Enter');
     await page.waitForTimeout(80);
@@ -108,7 +88,6 @@ test.describe('F3: マウス無しで完走できる', () => {
 
   test('「いいえ」で推測を拒否してもキーボードだけで次へ進める', async ({ page }) => {
     await openFresh(page);
-    await acceptAgeGateByKeyboard(page);
     await reachGuessAndRejectOnceByKeyboard(page);
 
     const advanced =
@@ -120,68 +99,16 @@ test.describe('F3: マウス無しで完走できる', () => {
 
   test('「おまかせ」もキーボードで到達できる', async ({ page }) => {
     await openFresh(page);
-    await acceptAgeGateByKeyboard(page);
     await tabTo(page, `[data-testid="${TESTID.omakase}"]`);
     await page.keyboard.press('Enter');
     await expect(page.getByTestId(TESTID.result)).toBeVisible();
   });
 });
 
-test.describe('F4: モーダルが Escape と背景クリックの両方で閉じる', () => {
-  test('Escape で閉じる', async ({ page }) => {
-    await openFresh(page);
-    await expect(page.getByTestId(TESTID.ageGate)).toBeVisible();
-    await page.keyboard.press('Escape');
-    await expect(page.getByTestId(TESTID.ageGate)).toBeHidden();
-  });
-
-  test('背景クリックで閉じる', async ({ page }) => {
-    await openFresh(page);
-    await expect(page.getByTestId(TESTID.ageGate)).toBeVisible();
-    await page.getByTestId(TESTID.ageGateBackdrop).click({ position: { x: 5, y: 5 } });
-    await expect(page.getByTestId(TESTID.ageGate)).toBeHidden();
-  });
-
-  test('閉じただけでは確認済みにならない（F5 との整合）', async ({ page }) => {
-    await openFresh(page);
-    await page.keyboard.press('Escape');
-    const stored = await page.evaluate((key) => window.localStorage.getItem(key), AGE_STORAGE_KEY);
-    expect(stored).not.toBe('true');
-  });
-});
-
-test.describe('F5: 年齢確認を通さずに質問・推測・結果のいずれの画面にも到達できない', () => {
-  test('未確認では質問・推測・結果のいずれも表示されない', async ({ page }) => {
-    await openFresh(page);
-    await expect(page.getByTestId(TESTID.ageGate)).toBeVisible();
-    await expect(page.getByTestId(TESTID.question)).toBeHidden();
-    await expect(page.getByTestId(TESTID.guess)).toBeHidden();
-    await expect(page.getByTestId(TESTID.result)).toBeHidden();
-  });
-
-  test('モーダルを閉じてから操作しても先の画面へ抜けられない', async ({ page }) => {
-    await openFresh(page);
-    await page.keyboard.press('Escape');
-    for (let i = 0; i < 30; i += 1) await page.keyboard.press('Tab');
-    await page.keyboard.press('Enter');
-    await expect(page.getByTestId(TESTID.question)).toBeHidden();
-    await expect(page.getByTestId(TESTID.result)).toBeHidden();
-  });
-
-  test('確認済みフラグは localStorage に保持される', async ({ page }) => {
-    await openFresh(page);
-    await acceptAgeGateByKeyboard(page);
-    expect(await page.evaluate((key) => window.localStorage.getItem(key), AGE_STORAGE_KEY)).toBe('true');
-
-    await page.reload();
-    await expect(page.getByTestId(TESTID.ageGate)).toBeHidden();
-  });
-});
-
 test.describe('F6: 色以外でも状態が判別できる', () => {
   test('キーボードフォーカス時にアウトラインが見える', async ({ page }) => {
     await openFresh(page);
-    await tabTo(page, `[data-testid="${TESTID.ageGateAccept}"]`);
+    await tabTo(page, `[data-testid="${TESTID.answerYes}"]`);
 
     const ring = await page.evaluate(() => {
       const el = document.activeElement as HTMLElement | null;

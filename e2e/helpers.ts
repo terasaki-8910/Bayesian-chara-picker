@@ -1,18 +1,16 @@
 import type { Page } from '@playwright/test';
 
 /**
- * UI 側の DOM 契約。ACCEPTANCE F1-F6 / D1 を機械判定するために、
+ * UI 側の DOM 契約。ACCEPTANCE F1-F3/F6 / D1 を機械判定するために、
  * 実装はこの data-testid を必ず備えること。
  *
  * 質問1問1回答（answer-yes 等）・単一推測（guess）・確定/おまかせ結果（result）・
  * 全滅（no-guess）という Akinator 方式への転換に伴い、旧
  * `answerOption`/`answerNoPreference`/`results`/`resultItem`/`resultTop` は廃止した
- * （SPEC 2.4 の全面書き換えに追従）。
+ * （SPEC 2.4 の全面書き換えに追従）。年齢確認は 2026-07-20 に廃止したため
+ * `ageGate`/`ageGateAccept`/`ageGateBackdrop` も無い（SPEC 2.5）。
  */
 export const TESTID = {
-  ageGate: 'age-gate',
-  ageGateAccept: 'age-gate-accept',
-  ageGateBackdrop: 'age-gate-backdrop',
   question: 'question',
   answerYes: 'answer-yes',
   answerProbablyYes: 'answer-probably-yes',
@@ -32,9 +30,6 @@ export const TESTID = {
   restart: 'restart',
 } as const;
 
-/** 年齢確認の localStorage キー（SPEC 2.5）。 */
-export const AGE_STORAGE_KEY = 'chara-picker:age-confirmed';
-
 /** localStorage を空にした状態でトップを開く（初回起動の再現）。 */
 export async function openFresh(page: Page): Promise<void> {
   await page.goto('/');
@@ -53,13 +48,6 @@ export async function tabTo(page: Page, selector: string, maxTabs = 80): Promise
     await page.keyboard.press('Tab');
   }
   throw new Error(`Tab のみで ${selector} に到達できません（F3 違反）`);
-}
-
-/** 年齢確認をキーボードだけで通す。 */
-export async function acceptAgeGateByKeyboard(page: Page): Promise<void> {
-  await tabTo(page, `[data-testid="${TESTID.ageGateAccept}"]`);
-  await page.keyboard.press('Enter');
-  await page.getByTestId(TESTID.ageGate).waitFor({ state: 'hidden' });
 }
 
 /**
