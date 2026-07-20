@@ -56,6 +56,35 @@ wave 5           app-shell
   results/omakase）。
 - 未着手: なし（このラウンドの実装は完了。次はキャラ拡充 — SPEC 6.1 参照）
 
+### 追記（2026-07-20・同日）: 推薦エンジン + UI を Akinator 方式へ全面再設計
+
+wave 3〜5 で作った「常に上位 3〜5 体を並べるランキング UI」を実機で確認した
+ユーザーが却下（「アキネーター風と言ったのに全然違う」「ランダムに出ていない」）。
+以下を全面的に置き換えた（`feature/akinator-redesign` ブランチ、main にマージ済み）。
+下記 wave 3・wave 4 の `ui-interview`・`ui-results` 節の公開シンボル定義は
+**この置き換えにより陳腐化した**（歴史的記録として残すが、実装の正としては
+SPEC.md §2.4/2.6 と `src/engine/questions.ts` / `src/engine/recommend.ts` /
+`src/hooks/useInterview.ts` の実ファイルを見ること）。
+
+- 質問は軸の選択肢を並べる方式から `(軸, 値)` ごとの二値プローブへ
+  （`buildProbePool`/`selectProbe`、5段階確信度）。
+- `recommend`/`nextQuestion`（上位N・null終了）→ `scoreCharacters`/`nextProbe`/
+  `shouldGuess`/`topGuess`（単一推測への収束・拒否ループ・全滅時の近い候補）。
+- 画像フィールド（`imagePath`/`imageApproved`、ユーザー手動配置・承認前バッジ）を
+  `Character` に追加。
+- UI: `ResultsScreen` を `ResultScreen` に改名・単一結果用に書き換え、
+  `GuessScreen`/`NoGuessScreen`/`CharacterImage`/`CharacterReveal` を新設。
+- SPEC.md §1/§2.4/§2.6/§3、ACCEPTANCE.md の C1–C13・A13–A14・F3/F5、
+  `tests/engine.test.ts`、`e2e/helpers.ts` + 各 spec を新設計に全面追従。
+  実データ33体全員が6問で自己収束することを C13 で固定・実ブラウザでも確認済み。
+
+検証: `npm test`（76/76）+ `npm run lint` + `scripts/ui-check.sh`（D1/F1–F6 20件）
+が全て green。実ブラウザで実データ・真の回答（オラクル）による6問収束、拒否
+ループ、全滅パス、おまかせ、モバイル/キーボード操作を目視確認済み。この過程で
+実装済みだったが未検出だったバグを2件発見・修正（背景色未設定、推測根拠の
+誤表示）— 詳細はコミット `feat(engine,ui): 推薦エンジン+UIをAkinator方式...`
+参照。
+
 plan stage を再実行するたびにこの節を更新し、`state/features.txt` を次の wave に
 進める。PLAN 上の全フィーチャが main に存在したら `state/features.txt` を空にする。
 
