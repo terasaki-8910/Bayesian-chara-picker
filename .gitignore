@@ -24,6 +24,11 @@ coverage/
 .vite/
 *.tsbuildinfo
 
+# パッケージマネージャは npm 固定（scripts/gates.sh が npm を直接叩く）。
+# worktree で誤って `pnpm install` されたロックファイルが紛れ込んだことがあるので
+# 明示的に無視する。
+pnpm-lock.yaml
+
 # state/gates/* がフィーチャ単位の tsc を回すために一時生成する tsconfig。
 # ゲート側で必ず削除するが、途中で中断した場合に取り残されるのを追跡しない。
 /.tsconfig-gate.json
