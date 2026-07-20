@@ -14,6 +14,7 @@ coverage/
 /test-results/
 /playwright-report/
 /blob-report/
+.playwright-mcp/
 
 # DLsite 収集の生の取得物 (HTML は肥大かつ再取得可能・著作物のため追跡しない).
 # data/characters.json と data/supply.json 本体、tests/fixtures/ の固定 HTML
