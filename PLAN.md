@@ -14,11 +14,10 @@ wave 1  data-schema      engine-supply      collect-script
            |                  |    |             |
            |                  |    +-------------+
            v                  v                  v
-wave 2  engine-questions   character-dataset (collect 実行を含む)
-           |                  |
-           +--------+---------+
-                    v
-wave 3         engine-recommend
+wave 2                character-dataset (collect 実行を含む)
+                             |
+                             v
+wave 3         engine-recommend (questions.ts + recommend.ts)
                     |
         +-----------+-----------+
         v           v           v
@@ -31,12 +30,24 @@ wave 5           app-shell
 `scripts/dist-scan.mjs`（D2 の走査器）は criteria stage で実装済み・main にあり、
 `tests/dist-scan.test.ts` は既に green。フィーチャとして起こさない。
 
+**`engine-questions` は wave 2 から削除し、wave 3 に統合した**（2026-07-20）。
+理由: 16 軸化・動的質問選択の SPEC 改訂により、旧 `engine-questions` worktree
+（10 軸スキーマ、`グラマー` 等の廃止済み値、固定 6〜8 問配列を前提）が 8 割方
+陳腐化した。質問プール・エントロピー選択・`affiliationName` の深掘りゲートは
+一体で設計する必要があり、2 つの worktree に分けても中間状態を検証する術がない
+（`questions.ts` 単体のゲートは型検査と lint のみで、値の陳腐化を検出できない）。
+未マージだった `feature/engine-questions` ブランチ・worktree は破棄済み。
+
 ## 現在地（2026-07-20）
 
 - **完了（main にマージ済み）**: wave 1 — `data-schema` / `engine-supply` /
-  `collect-script`
-- **今回の `state/features.txt`**: wave 2 — `engine-questions` / `character-dataset`
-- 未着手: wave 3〜5
+  `collect-script`。wave 2 — `character-dataset`（36 体、`azurlane-yamato` は
+  ゲーム未実装のため `provisional: true` で `reviewed` 恒久 false のまま保留。
+  DLsite + hitomi.la 二重供給、`census-hitomi.mjs` による機械的キャラ列挙、
+  16 軸スキーマ、`provisional` フラグを含む）
+- **今回の `state/features.txt`**: wave 3 — `engine-recommend`
+  （`src/engine/questions.ts` + `src/engine/recommend.ts` を同一 worktree で実装）
+- 未着手: wave 4〜5
 
 plan stage を再実行するたびにこの節を更新し、`state/features.txt` を次の wave に
 進める。PLAN 上の全フィーチャが main に存在したら `state/features.txt` を空にする。
@@ -136,37 +147,9 @@ CLI 実行時は `data/characters.json` の `dlsiteQuery !== null` を回して
 
 ---
 
-## wave 2（wave 1 マージ後。これが今回の `state/features.txt`）
+## wave 2（wave 1 マージ後。マージ済み）
 
-`engine-questions` は `src/engine/questions.ts` のみ、`character-dataset` は
-`data/*.json` のみに触れる。ファイルは互いに素で、共有する可変状態も無い。
-
-### 4. `engine-questions` — `src/engine/questions.ts`
-
-依存: `data-schema`（軸のキー型）。
-
-```ts
-export type QuestionOption = { value: string; label: string };
-export type Question = {
-  id: string;
-  axis: AxisKey;              // schema.ts の軸キー
-  label: string;              // 軸の短いラベル（radiogroup の aria-label）
-  prompt: string;             // 質問文
-  options: readonly QuestionOption[];
-};
-export const QUESTIONS: readonly Question[];
-```
-
-制約（`tests/engine.test.ts` 冒頭が固定）: 6〜8 問 / `id` 一意 / 各 2 択以上 /
-`axis` は 1 問 1 軸で重複させない（C5 が `axis → question` の Map を作るため、
-同一軸に 2 問あると後勝ちになり根拠検証が壊れる）。
-必須 4 軸を必ず含める。「こだわらない」は `options` に入れない（回答値 `null`
-として UI 側が持つ）。
-
-ゲート: 型検査 + lint（`tests/engine.test.ts` は `recommend` を import するため
-まだ走らない）。
-
-### 5. `character-dataset` — `data/characters.json` / `data/supply.json`
+### 4. `character-dataset` — `data/characters.json` / `data/supply.json`
 
 依存: `data-schema`（検証）/ `engine-supply`（A7 のランク判定）/
 `collect-script`（`supply.json` の生成）。SPEC 6 段階 1 の 30 体。
@@ -195,15 +178,46 @@ A2 と `dlsiteQuery` の妥当性は **feature_accept の人間ゲート**で確
 
 ---
 
-## wave 3（wave 2 マージ後）
+## wave 3（wave 2 マージ後。これが今回の `state/features.txt`）
 
-### 6. `engine-recommend` — `src/engine/recommend.ts`
+### 5. `engine-recommend` — `src/engine/questions.ts` + `src/engine/recommend.ts`
 
-依存: `data-schema` / `engine-supply` / `engine-questions` / `character-dataset`。
-C1–C6 の全てを負う中核。
+依存: `data-schema` / `engine-supply` / `character-dataset`。
+C1–C11 の全てを負う中核。**質問プールと動的選択は一体で設計するため、
+2 ファイルを同一 worktree で実装する**（旧 `engine-questions` を統合した理由は
+上の「現在地」節を参照）。
+
+`src/engine/questions.ts`（`schema.ts` の型のみに依存する純粋な宣言モジュール）:
 
 ```ts
-export type Answers = Record<string, string | null>;   // 質問 id -> 回答値（null = こだわらない）
+export type QuestionOption = { value: string; label: string };
+export type Question = {
+  id: string;                 // === axis に統一する（id/axis の二重管理をやめる）
+  axis: AxisKey;
+  label: string;
+  prompt: string;
+  options: readonly QuestionOption[];
+};
+export const QUESTION_POOL: readonly Question[];
+export function buildAffiliationNameQuestion(values: readonly string[]): Question;
+export const MAX_QUESTIONS = 8;
+export const STOP_CANDIDATES = 3;
+export const AFFILIATION_NAME_MAX_DISTINCT = 4;
+```
+
+`QUESTION_POOL` は単一値の「聞ける」軸 12 個分（`genderExpression, ageFeel,
+build, bust, personality, distance, hairColor, skinTone, species, mood,
+combat, affiliationKind`）。**複数値軸（`roles`/`looks`/`outfit`）はプールに
+含めない** — 1 キャラが複数バケットに同時所属すると、動的選択の決定論的な
+二分探索（C8–C10）が濁るため。`genderExpression` の選択肢から `男性` は外す
+（ハードフィルタで生き残れない値を聞いても意味がない）。`affiliationName`
+は固定プールに入れず `buildAffiliationNameQuestion` で動的に作る
+（下の「動的質問選択」参照）。
+
+`src/engine/recommend.ts`（Dataset・フィルタ・スコアリング・エントロピー選択）:
+
+```ts
+export type Answers = Record<string, string | null>;   // axis キー -> 回答値（null = こだわらない）
 export type Dataset = { characters: Character[]; supply: SupplyFile };
 
 export type Reason =
@@ -219,31 +233,68 @@ export type Result = {
 
 export function recommend(answers: Answers, dataset: Dataset): Result[];
 export function omakase(dataset: Dataset, opts: { seed: number }): Result[];
+export function nextQuestion(
+  dataset: Dataset,
+  answers: Answers,
+  askedAxes: readonly AxisKey[],
+): Question | null;   // null = 質問終了（候補収束 / 上限到達 / 有効な軸なし）
 ```
 
-設計の要点（テストが直接縛る箇所）:
+**動的質問選択（SPEC 2.4 の核心。学習データを使わない）**
 
-- **ハードフィルタは供給量のみ**。ランク「なし」を除外する。嗜好の不一致で
-  候補を落とさない（C3: 無作為 1000 パスで 1 件も空にならない、を成立させる
-  唯一の方法がスコアリングのみで足切りしないこと）。
-- 返す件数は 3〜5（C1）。候補が十分にある限り 5 固定でよい。スコア降順。
-- 決定論。同じ入力で同じ出力（C1 は 2 回呼んで `toEqual`）。同点は `id` の
-  昇順など**安定した基準**で割る。`Math.random` を使わない。
-- `reasons` は必ず 1 件以上（C5）。全問「こだわらない」では axis 根拠が
-  1 件も立たないため、**`kind: 'supply'` の根拠を必ず添える**設計にする。
-  これが `Reason` を union にしている理由。
-- `kind: 'axis'` の根拠は**実際に一致した軸だけ**（C5 後半が捏造を弾く）:
-  その軸に対応する質問が存在し、回答が `null` でなく、キャラの軸値が
-  その回答に一致していること（複数軸なら `includes`）。
-- 供給量ランクはスコアに加点するが、嗜好一致の重みを上書きしない
-  小さい係数に抑える（SPEC 2.4）。
-- `omakase` はランク「少ない」以上のみを対象に、供給量で重み付けした乱択。
-  **seed から自前の疑似乱数（mulberry32 等）を回す**。同一 seed で再現し
-  （C6）、seed を変えれば顔ぶれが変わること（30 seed で 2 通り以上）。
+母集団を 2 つに分離するのが肝:
+- `survivors(dataset)` = ハードフィルタ後の全員。`recommend()` はここから
+  **嗜好の不一致では誰も落とさず**スコアで並べるだけ（C3/C4 が空にならない
+  唯一の方法）。
+- `workingSet(dataset, answers)` = `survivors` のうち、これまでの非 null な
+  回答と矛盾しないキャラだけに絞った作業集合。**質問選択専用**で、
+  スコアリングには使わない。空欄（null/空配列）は「どんな回答とも矛盾しない」
+  として常に残す（Akinator の「わからない」相当）。
+
+軸 `k` のエントロピー: `workingSet` を `c.axes[k]` でバケット分けし
+（空欄は独立の `∅` バケット）、`H = -Σ pᵢ·log2(pᵢ)`。既に聞いた軸を除き
+`H` 最大の軸を選ぶ。タイブレークは固定優先順位配列 `AXIS_PRIORITY` +
+微小イプシロン（C10「同じ回答列なら同じ質問列」を保証するため）。
+
+`affiliationName` は `workingSet` 内の非 null 値の種類数が
+**`AFFILIATION_NAME_MAX_DISTINCT`(4) 以下**になったときだけ候補に入れる
+（「候補が同一シリーズに収束したときだけ聞く」深掘り質問。未収束状態で
+聞くと選択肢が数十件になる）。
+
+相関する軸（例: 年齢感と体格）は片方に答えると working set が縮み、
+もう片方のエントロピーも自然に下がる。特別扱い不要（SPEC が明記する副作用）。
+
+`nextQuestion` が `null` を返す条件: `askedAxes.length >= MAX_QUESTIONS`
+／ `workingSet.length <= STOP_CANDIDATES` ／ 残り軸が全て `H ≈ 0`。
+
+**ハードフィルタ・スコアリング・おまかせ（テストが直接縛る箇所）**
+
+- ハードフィルタは 3 つ: 供給量ランク「なし」（`supply[id]` が存在しない場合も
+  「なし」扱い）／ `genderExpression === '男性'` ／ `provisional === true`。
+  **`reviewed` はフィルタしない**（出荷ゲートの話であって推薦時の話ではない）。
+- スコア: 軸ごとに一致 +20 / 明確な不一致 -10 / 空欄 0。供給量は
+  `+1 × supplyRankIndex(rank)`（最大 +4）。不一致 1 回（-10）より供給の
+  振れ幅（3）の方が小さいので、供給が嗜好不一致を上書きすることはない。
+- 返す件数は `min(5, survivors.length)`（C1）。`(score DESC, id ASC)` で
+  安定ソート。`Math.random` を使わない。
+- `reasons` は必ず 1 件以上（C5）: 実際に一致した軸だけ `kind:'axis'`、
+  加えて必ず `kind:'supply'` を 1 つ（全問「こだわらない」でも成立する理由）。
+- `omakase` はランク「少ない」以上のプールを **id 昇順にソートしてから**
+  `mulberry32` で重み付き抽選（ソートが先なので同 seed なら常に同じ結果。
+  C6）。`mulberry32` は `recommend.ts` 内に自前実装（依存追加なし）。
 
 ゲート: `npx vitest run tests/engine.test.ts` + 型検査 + lint。
 C1 のスナップショットはこの worktree での初回実行時に生成される
 （`__snapshots__` を成果物として必ずコミットすること）。
+
+**`tests/engine.test.ts` の書き換えを伴う。** 旧テストは「質問は 6〜8 問の
+固定配列」を前提にしており（`describe('質問セットの前提')`）、動的選択と
+矛盾するため削除する。共通ドライバ `runInterview(dataset, choose)` で
+`nextQuestion` を呼び続ける形に置き換え、C7–C11 を新規追加する
+（男性/provisional 除外・質問重複なし・エントロピー順・決定論・空欄耐性）。
+本来は criteria stage の契約変更だが、このセッションは他の収集スクリプト
+修正と同様に worktree 内でテスト書き換えと実装を両方行う運用で進める
+（テストを実装に迎合させないよう、先に固定してから実装する）。
 
 ---
 
@@ -259,7 +310,7 @@ wave 4 の 3 フィーチャは vitest の環境が `node` で jsdom を持た�
 実際の描画検証（F1–F6, D1）は integration_accept の `scripts/ui-check.sh` が担う。
 その分、下記の props 契約からの逸脱がそのまま wave 5 の破綻になる。契約を守ること。
 
-### 7. `ui-age-gate` — `src/screens/AgeGate.tsx` / `src/hooks/useAgeConfirmation.ts`
+### 6. `ui-age-gate` — `src/screens/AgeGate.tsx` / `src/hooks/useAgeConfirmation.ts`
 
 ```ts
 // useAgeConfirmation.ts
@@ -285,19 +336,23 @@ export function AgeGate(props: { open: boolean; onConfirm(): void; onDismiss(): 
 - axe serious 0（F2）。`role="dialog"` + `aria-modal` + ラベル付け、
   フォーカストラップ。design_brief: **凝らない。単純・一度きり。**
 
-### 8. `ui-interview` — `src/screens/QuestionScreen.tsx` / `src/hooks/useInterview.ts`
+### 7. `ui-interview` — `src/screens/QuestionScreen.tsx` / `src/hooks/useInterview.ts`
 
 main にある `QuestionScreen.tsx` は design gate の参照画面（ダミー文言 + 自前
-`useState`）。これを **`QUESTIONS` 駆動の props 受け取り型に作り替える**。
+`useState`）。これを **`recommend.ts` の `nextQuestion` 駆動の props 受け取り型に
+作り替える**（wave 3 の SPEC 改訂で固定 `QUESTIONS` 配列駆動ではなくなった）。
 見た目（1 問 1 画面・縦リスト左揃え・選択中のみアクセント）は維持する。
 
 ```ts
 // useInterview.ts
 export function useInterview(): {
-  question: Question | null;     // null = 全問終了
-  index: number; total: number;
+  question: Question | null;     // = nextQuestion(dataset, answers, askedAxes)。null = 全問終了
+  index: number;                 // 1-based、askedAxes.length + 1
+  total: number;                 // MAX_QUESTIONS（8）固定の上限値。動的選択で
+                                  // 実際の質問数は変動するため「生きた残り数」ではなく
+                                  // 安定した分母として使う（早期終了時は index が total 未満で止まる）
   answers: Answers;
-  answer(value: string | null): void;   // 回答して次の問へ
+  answer(value: string | null): void;   // 回答して次の問へ。こだわらない(null)でも askedAxes には積む
   reset(): void;
 };
 
@@ -320,7 +375,7 @@ export function QuestionScreen(props: {
 - `omakase` はこの画面から Tab で到達できること（F3 の 3 番目）。
 - 説明文・ツールチップを足さない（design_brief）。
 
-### 9. `ui-results` — `src/screens/ResultsScreen.tsx` / `src/lib/dlsite-link.ts` / `src/components/SupplyMeter.tsx`
+### 8. `ui-results` — `src/screens/ResultsScreen.tsx` / `src/lib/dlsite-link.ts` / `src/components/SupplyMeter.tsx`
 
 ```ts
 // dlsite-link.ts
@@ -351,7 +406,7 @@ export function ResultsScreen(props: { results: Result[]; onRestart(): void }): 
 
 ## wave 5（wave 4 マージ後）
 
-### 10. `app-shell` — `src/App.tsx` / `src/main.tsx` / `index.html`
+### 9. `app-shell` — `src/App.tsx` / `src/main.tsx` / `index.html`
 
 依存: wave 4 の全て + `engine-recommend`。画面遷移の配線。
 
