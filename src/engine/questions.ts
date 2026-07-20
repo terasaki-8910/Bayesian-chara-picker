@@ -193,6 +193,15 @@ const ENTROPY_EPSILON = 1e-9;
 /** これ未満のエントロピーは「聞く意味がない」として質問候補から外す（ビット単位）。 */
 export const MIN_GAIN = 0.35;
 
+/**
+ * `rng` 指定時、僅差の上位候補（情報量降順で上位何件）から乱択する範囲
+ * （ユーザー指摘: 空の回答状態からの1問目は集団のサイズに関わらず常に単一の
+ * argmax になり、データを拡充しても質問パターンが一切変わらない。回答経路に
+ * 依存しない「最初の数問」ほどこの影響が大きい）。値が近い上位候補はどれも
+ * ほぼ情報量最大に近いため、この中から選んでも収束効率はほぼ落ちない。
+ */
+export const TOP_K_RANDOM = 5;
+
 /** 最低質問数。この数に達するまでは `shouldGuess`（recommend.ts）が推測を許さない。 */
 export const MIN_QUESTIONS = 6;
 
@@ -212,25 +221,44 @@ export const CONTENTION_M = 10;
  * 接戦集合に切り替える「ハイブリッド母集団」——この関数自身は集団の由来を
  * 知らず、渡された集団の中だけでエントロピーを計算する。
  *
- * 同点（イプシロン以内）は `buildProbePool` の出力順（= 固定優先順位配列）で
- * 先に現れた方を採用する。ループ内で `>` のみを使い `>=` を使わないことで
- * この決定論を実現している。
+ * `rng` を省略した場合は完全決定論（C10）: 同点（イプシロン以内）は
+ * `buildProbePool` の出力順（= 固定優先順位配列）で先に現れた方を採用する。
+ * ループ内で `>` のみを使い `>=` を使わないことでこの決定論を実現している。
+ * テスト・スナップショットはこの経路（`rng` 省略）を使い続けるため、既存の
+ * C1/C8/C9/C10/C12/C13 は無変更で通る。
+ *
+ * `rng` を指定した場合（本番 UI 用。`recommend.ts` の `nextProbe` 経由）は、
+ * 情報量が僅差（上位 `TOP_K_RANDOM` 件）の候補から一様乱択する。空の回答状態
+ * からの1問目のように、母集団のサイズに関係なく常に単一の argmax になる質問が
+ * 毎回同じ文言になってしまう問題（データを拡充しても質問パターンが変わらない）
+ * への対処。上位候補はどれも情報量がほぼ最大に近いため、収束効率はほぼ落ちない。
  */
-export function selectProbe(population: readonly Character[], askedKeys: ReadonlySet<string>): Probe | null {
+export function selectProbe(
+  population: readonly Character[],
+  askedKeys: ReadonlySet<string>,
+  rng?: () => number,
+): Probe | null {
   if (population.length === 0) return null;
 
   const pool = buildProbePool(population);
-  let best: Probe | null = null;
-  let bestGain = -Infinity;
-
+  const candidates: { probe: Probe; gain: number }[] = [];
   for (const probe of pool) {
     if (askedKeys.has(probe.key)) continue;
     const gain = binaryEntropy(presenceRatio(population, probe));
-    if (gain > bestGain + ENTROPY_EPSILON) {
-      best = probe;
-      bestGain = gain;
+    if (gain >= MIN_GAIN) candidates.push({ probe, gain });
+  }
+  if (candidates.length === 0) return null;
+
+  if (rng === undefined) {
+    let best = candidates[0];
+    for (const c of candidates) {
+      if (c.gain > best.gain + ENTROPY_EPSILON) best = c;
     }
+    return best.probe;
   }
 
-  return best !== null && bestGain >= MIN_GAIN ? best : null;
+  const ranked = candidates.slice().sort((a, b) => b.gain - a.gain);
+  const top = ranked.slice(0, TOP_K_RANDOM);
+  const idx = Math.min(Math.floor(rng() * top.length), top.length - 1);
+  return top[idx].probe;
 }

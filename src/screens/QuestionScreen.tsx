@@ -21,11 +21,13 @@ const TESTID_BY_CONFIDENCE: Record<Confidence, string> = {
 export function QuestionScreen(props: {
   probe: Probe;
   askedCount: number;
+  canUndo: boolean;
   onAnswer(confidence: Confidence): void;
+  onUndo(): void;
   onOmakase(): void;
   onRestart(): void;
 }) {
-  const { probe, askedCount, onAnswer, onOmakase, onRestart } = props;
+  const { probe, askedCount, canUndo, onAnswer, onUndo, onOmakase, onRestart } = props;
 
   return (
     <div data-testid="question" className="min-h-dvh bg-bg text-text-primary">
@@ -56,6 +58,20 @@ export function QuestionScreen(props: {
         </div>
 
         <div className="mt-10 flex items-center gap-5">
+          {canUndo && (
+            <button
+              type="button"
+              data-testid="undo"
+              onClick={onUndo}
+              className={[
+                'text-label text-text-tertiary underline-offset-4',
+                'hover:text-text-secondary hover:underline focus-visible:outline focus-visible:outline-2',
+                'focus-visible:outline-offset-2 focus-visible:outline-accent',
+              ].join(' ')}
+            >
+              一つ前の回答に戻る
+            </button>
+          )}
           <button
             type="button"
             data-testid="omakase"

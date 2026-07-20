@@ -346,6 +346,32 @@ describe('C. 推薦エンジン', () => {
     expect(seq2).toEqual(seq1);
   });
 
+  it('C10: rng を指定すると僅差の上位候補から乱択され、同じ rng シードなら再現可能', () => {
+    // combat/bust/personality を横並びの均衡分布(H=1.0近辺)にし、上位候補が複数生まれる状況を作る。
+    const characters = Array.from({ length: 8 }, (_, i) =>
+      makeSyntheticCharacter(`c10rng-${i}`, {
+        combat: i < 4 ? '戦う' : '戦わない',
+        bust: i < 4 ? '標準' : '大きい',
+        personality: i < 4 ? 'クール' : '元気',
+      }),
+    );
+
+    const withoutRng = selectProbe(characters, new Set());
+    // rng省略時は常に同じ（決定論、C10前段と同じ契約）。
+    expect(selectProbe(characters, new Set())?.key).toBe(withoutRng?.key);
+
+    // rngを固定すれば毎回同じ結果、rngが違えば異なる候補が選ばれ得る。
+    const seen = new Set<string>();
+    for (let seed = 0; seed < 20; seed += 1) {
+      const rng = mulberry32(seed);
+      const a = selectProbe(characters, new Set(), rng);
+      const b = selectProbe(characters, new Set(), mulberry32(seed));
+      expect(b?.key).toBe(a?.key); // 同じシードなら再現可能
+      if (a) seen.add(a.key);
+    }
+    expect(seen.size).toBeGreaterThan(1); // シードを変えれば異なる候補も選ばれる
+  });
+
   it('C11: 属性が全て空欄のキャラ・供給エントリが無いキャラが混ざっても質問選択・スコアリングが落ちない', () => {
     const normal = Array.from({ length: 4 }, (_, i) =>
       makeSyntheticCharacter(`c11-normal-${i}`, { combat: i < 2 ? '戦う' : '戦わない' }),

@@ -34,7 +34,7 @@ export const dataset: Dataset = {
 /** 全滅画面に出す「近かった候補」の数（PLAN: 「スコア上位数体、rejectedも含む」）。 */
 const NEAR_MISS_COUNT = 3;
 
-type RawState = {
+type Snapshot = {
   answers: AnswerMap;
   askedKeys: readonly string[];
   /** 「いいえ」で拒否済みのキャラ id。以降のスコアリング・質問選択から除外する。 */
@@ -53,6 +53,19 @@ type RawState = {
   exhausted: boolean;
 };
 
+/**
+ * 「一つ前の回答に戻る」用の履歴スタック（ユーザー要望）。answer/reject の
+ * 直前スナップショットを積むだけの単純なUndo — 全体リセットとは別に、質問中・
+ * 推測確認中のどちらからも1手だけ巻き戻せるようにする。`history` 自身は
+ * スナップショットに含めない（再帰的なネストを避けるため）。
+ */
+type RawState = Snapshot & { history: readonly Snapshot[] };
+
+function snapshotOf(state: RawState): Snapshot {
+  const { history: _history, ...snapshot } = state;
+  return snapshot;
+}
+
 const initialState: RawState = {
   answers: {},
   askedKeys: [],
@@ -61,53 +74,64 @@ const initialState: RawState = {
   guess: null,
   confirmed: false,
   exhausted: false,
+  history: [],
 };
 
 type Action =
   | { type: 'answer'; key: string; confidence: Confidence }
   | { type: 'reject'; characterId: string }
   | { type: 'confirm' }
+  | { type: 'undo' }
   | { type: 'reset' };
 
 function reducer(state: RawState, action: Action): RawState {
   switch (action.type) {
     case 'answer': {
+      const history = [...state.history, snapshotOf(state)];
       const answers: AnswerMap = { ...state.answers, [action.key]: action.confidence };
       const askedKeys = [...state.askedKeys, action.key];
       const rejectedSet = new Set(state.rejected);
 
       if (state.bonusPending) {
         const scored = scoreCharacters(answers, dataset, { exclude: rejectedSet });
-        return { ...state, answers, askedKeys, bonusPending: false, guess: topGuess(scored, Math.random) };
+        return { ...state, answers, askedKeys, bonusPending: false, guess: topGuess(scored, Math.random), history };
       }
 
       const askedSet = new Set(askedKeys);
-      const probe = nextProbe(dataset, answers, askedSet, { exclude: rejectedSet });
+      const probe = nextProbe(dataset, answers, askedSet, { exclude: rejectedSet, rng: Math.random });
       const scored = scoreCharacters(answers, dataset, { exclude: rejectedSet });
       // probe===null（物理的に聞くべき質問が尽きた）なら MIN_QUESTIONS 未達でも
       // 推測へ進む — 存在しない質問を asking 画面に表示することはできないため。
       const goToGuessing = probe === null || shouldGuess(scored, askedKeys.length, probe !== null);
 
-      if (!goToGuessing) return { ...state, answers, askedKeys };
-      return { ...state, answers, askedKeys, guess: topGuess(scored, Math.random) };
+      if (!goToGuessing) return { ...state, answers, askedKeys, history };
+      return { ...state, answers, askedKeys, guess: topGuess(scored, Math.random), history };
     }
 
     case 'reject': {
+      const history = [...state.history, snapshotOf(state)];
       const rejected = [...state.rejected, action.characterId];
       const rejectedSet = new Set(rejected);
       const scored = scoreCharacters(state.answers, dataset, { exclude: rejectedSet });
 
-      if (scored.length === 0) return { ...state, rejected, exhausted: true };
+      if (scored.length === 0) return { ...state, rejected, exhausted: true, history };
 
       const askedSet = new Set(state.askedKeys);
-      const bonusProbe = nextProbe(dataset, state.answers, askedSet, { exclude: rejectedSet });
+      const bonusProbe = nextProbe(dataset, state.answers, askedSet, { exclude: rejectedSet, rng: Math.random });
 
-      if (bonusProbe !== null) return { ...state, rejected, bonusPending: true };
-      return { ...state, rejected, guess: topGuess(scored, Math.random) };
+      if (bonusProbe !== null) return { ...state, rejected, bonusPending: true, history };
+      return { ...state, rejected, guess: topGuess(scored, Math.random), history };
     }
 
     case 'confirm':
       return { ...state, confirmed: true };
+
+    case 'undo': {
+      if (state.history.length === 0) return state;
+      const prev = state.history[state.history.length - 1];
+      const history = state.history.slice(0, -1);
+      return { ...prev, history };
+    }
 
     case 'reset':
       return initialState;
@@ -118,8 +142,16 @@ function reducer(state: RawState, action: Action): RawState {
 }
 
 export type InterviewState =
-  | { phase: 'asking'; probe: Probe; askedCount: number; answer(confidence: Confidence): void; reset(): void }
-  | { phase: 'guessing'; guess: Scored; confirm(): void; reject(): void; reset(): void }
+  | {
+      phase: 'asking';
+      probe: Probe;
+      askedCount: number;
+      canUndo: boolean;
+      answer(confidence: Confidence): void;
+      undo(): void;
+      reset(): void;
+    }
+  | { phase: 'guessing'; guess: Scored; canUndo: boolean; confirm(): void; reject(): void; undo(): void; reset(): void }
   | { phase: 'confirmed'; guess: Scored; reset(): void }
   | { phase: 'exhausted'; nearMisses: Scored[]; reset(): void };
 
@@ -128,13 +160,18 @@ export function useInterview(): InterviewState {
 
   const askedSet = useMemo(() => new Set(state.askedKeys), [state.askedKeys]);
   const rejectedSet = useMemo(() => new Set(state.rejected), [state.rejected]);
-  // 質問選択は完全に決定論的（乱数を使わない）なので、guess と違って毎回引き直して安全。
+  // rng指定時、僅差の上位候補から乱択する（questions.ts の selectProbe 参照。
+  // データ拡充だけでは1問目が固定化してしまう問題への対処）。useMemo の依存配列
+  // (answers/askedSet/rejectedSet) が変わらない限り再計算されないため、
+  // 同じ回答状態の間は同じ乱数結果のまま安定する（再描画のたびに変わらない）。
   const probe = useMemo(
-    () => nextProbe(dataset, state.answers, askedSet, { exclude: rejectedSet }),
+    () => nextProbe(dataset, state.answers, askedSet, { exclude: rejectedSet, rng: Math.random }),
     [state.answers, askedSet, rejectedSet],
   );
 
   const reset = useCallback(() => dispatch({ type: 'reset' }), []);
+  const undo = useCallback(() => dispatch({ type: 'undo' }), []);
+  const canUndo = state.history.length > 0;
 
   const answer = useCallback(
     (confidence: Confidence) => {
@@ -161,7 +198,7 @@ export function useInterview(): InterviewState {
   }
 
   if (!state.bonusPending && state.guess) {
-    return { phase: 'guessing', guess: state.guess, confirm, reject, reset };
+    return { phase: 'guessing', guess: state.guess, canUndo, confirm, reject, undo, reset };
   }
 
   // asking: 通常の質問中、またはボーナス1問中。
@@ -171,5 +208,5 @@ export function useInterview(): InterviewState {
     const nearMisses = scoreCharacters(state.answers, dataset).slice(0, NEAR_MISS_COUNT);
     return { phase: 'exhausted', nearMisses, reset };
   }
-  return { phase: 'asking', probe, askedCount: state.askedKeys.length, answer, reset };
+  return { phase: 'asking', probe, askedCount: state.askedKeys.length, canUndo, answer, undo, reset };
 }

@@ -202,20 +202,20 @@ export function nextProbe(
   dataset: Dataset,
   answers: AnswerMap,
   askedKeys: ReadonlySet<string>,
-  opts?: { exclude?: ReadonlySet<string> },
+  opts?: { exclude?: ReadonlySet<string>; rng?: () => number },
 ): Probe | null {
   const probeIndex = buildProbeIndex(dataset);
   const working = workingSet(dataset, answers, probeIndex, opts?.exclude);
 
   if (working.length >= 2) {
-    const probe = selectProbe(working, askedKeys);
+    const probe = selectProbe(working, askedKeys, opts?.rng);
     if (probe !== null) return probe;
   }
 
   const contention = scoreCharacters(answers, dataset, opts)
     .slice(0, CONTENTION_M)
     .map((s) => s.character);
-  return selectProbe(contention, askedKeys);
+  return selectProbe(contention, askedKeys, opts?.rng);
 }
 
 /**

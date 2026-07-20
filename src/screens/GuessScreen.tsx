@@ -5,8 +5,15 @@ import type { Scored } from '../engine/recommend';
  * 単一推測 + はい/いいえ確認（PLAN: Akinator実機と同じ「思い浮かべているのは○○、
  * はい/いいえ」の形）。複数候補を並べて選ばせる旧 wave 5 の設計は廃止した。
  */
-export function GuessScreen(props: { guess: Scored; onConfirm(): void; onReject(): void; onRestart(): void }) {
-  const { guess, onConfirm, onReject, onRestart } = props;
+export function GuessScreen(props: {
+  guess: Scored;
+  canUndo: boolean;
+  onConfirm(): void;
+  onReject(): void;
+  onUndo(): void;
+  onRestart(): void;
+}) {
+  const { guess, canUndo, onConfirm, onReject, onUndo, onRestart } = props;
 
   return (
     <div data-testid="guess" className="min-h-dvh bg-bg text-text-primary">
@@ -42,18 +49,34 @@ export function GuessScreen(props: { guess: Scored; onConfirm(): void; onReject(
           </button>
         </div>
 
-        <button
-          type="button"
-          data-testid="restart"
-          onClick={onRestart}
-          className={[
-            'mt-6 text-label text-text-tertiary underline-offset-4',
-            'hover:text-text-secondary hover:underline focus-visible:outline focus-visible:outline-2',
-            'focus-visible:outline-offset-2 focus-visible:outline-accent',
-          ].join(' ')}
-        >
-          最初からやり直す
-        </button>
+        <div className="mt-6 flex items-center gap-5">
+          {canUndo && (
+            <button
+              type="button"
+              data-testid="undo"
+              onClick={onUndo}
+              className={[
+                'text-label text-text-tertiary underline-offset-4',
+                'hover:text-text-secondary hover:underline focus-visible:outline focus-visible:outline-2',
+                'focus-visible:outline-offset-2 focus-visible:outline-accent',
+              ].join(' ')}
+            >
+              一つ前の回答に戻る
+            </button>
+          )}
+          <button
+            type="button"
+            data-testid="restart"
+            onClick={onRestart}
+            className={[
+              'text-label text-text-tertiary underline-offset-4',
+              'hover:text-text-secondary hover:underline focus-visible:outline focus-visible:outline-2',
+              'focus-visible:outline-offset-2 focus-visible:outline-accent',
+            ].join(' ')}
+          >
+            最初からやり直す
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -33,7 +33,9 @@ export default function App() {
         <QuestionScreen
           probe={interview.probe}
           askedCount={interview.askedCount}
+          canUndo={interview.canUndo}
           onAnswer={interview.answer}
+          onUndo={interview.undo}
           onOmakase={handleOmakase}
           onRestart={handleRestart}
         />
@@ -42,8 +44,10 @@ export default function App() {
       return (
         <GuessScreen
           guess={interview.guess}
+          canUndo={interview.canUndo}
           onConfirm={interview.confirm}
           onReject={interview.reject}
+          onUndo={interview.undo}
           onRestart={handleRestart}
         />
       );
