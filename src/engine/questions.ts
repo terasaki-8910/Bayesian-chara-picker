@@ -95,9 +95,22 @@ export const AXIS_LABEL: Record<AxisKey, string> = {
  * 「関係性・属性は幼馴染ですか?」のように不自然になる軸があるため、
  * Akinator実機の口調に近い言い回しを軸ごとに用意する。
  */
+/**
+ * ageFeel の「同年代」は「あなたと同年代」と読めてしまい、回答がユーザー自身の
+ * 年齢に依存してぶれる（人によって答えが変わる = プローブとして機能しない）。
+ * 4値とも「(暗黙の)何かを基準にした相対表現」を避け、絶対的な年齢帯の言い回しに
+ * 個別に差し替える。
+ */
+const AGE_FEEL_PROMPTS: Record<string, string> = {
+  幼い: '見た目の年齢は幼い印象ですか?',
+  同年代: '見た目の年齢は10代後半〜20代前半くらいですか?',
+  年上: '見た目の年齢は20代後半〜30代くらいの落ち着いた印象ですか?',
+  熟れた: '見た目の年齢は大人びて熟れた印象ですか?',
+};
+
 const PROMPT_BUILDERS: Record<AxisKey, (value: string) => string> = {
   genderExpression: (v) => `性別表現は${v}に近いですか?`,
-  ageFeel: (v) => `年齢の印象は${v}に近いですか?`,
+  ageFeel: (v) => AGE_FEEL_PROMPTS[v] ?? `年齢の印象は${v}に近いですか?`,
   build: (v) => `体格は${v}ですか?`,
   bust: (v) => `胸のサイズは${v}ですか?`,
   personality: (v) => `性格は${v}寄りですか?`,

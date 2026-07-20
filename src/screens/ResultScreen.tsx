@@ -15,6 +15,8 @@ export function ResultScreen(props: { result: Scored; onRestart(): void }) {
 
         <CharacterReveal scored={result} imageTestId="result-image" />
 
+        <p className="mt-6 text-option text-text-secondary">本当の推しはこの子で合ってる?</p>
+
         <button
           type="button"
           data-testid="restart"
