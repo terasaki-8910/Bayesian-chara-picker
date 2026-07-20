@@ -1,72 +1,57 @@
-import type { Question } from '../engine/questions';
+import { CONFIDENCE_LABEL, type Confidence, type Probe } from '../engine/questions';
+
+/** Akinator実機の並び（はい→たぶんそう→わからない→たぶん違う→いいえ）をそのまま踏襲する。 */
+const CONFIDENCE_ORDER: readonly Confidence[] = ['yes', 'probably_yes', 'unknown', 'probably_no', 'no'];
+
+const TESTID_BY_CONFIDENCE: Record<Confidence, string> = {
+  yes: 'answer-yes',
+  probably_yes: 'answer-probably-yes',
+  unknown: 'answer-unknown',
+  probably_no: 'answer-probably-no',
+  no: 'answer-no',
+};
 
 /**
- * Stage 2 design gate で承認した見た目（1 問 1 画面・縦リスト左揃え・
- * 選択中のみアクセント）を維持しつつ、wave 3 の `nextQuestion` が動的に選ぶ
- * 質問を props で受け取る型に作り替えた（旧: 固定 `QUESTIONS` 配列 + 自前
- * useState）。純粋なプレゼンテーション層 — 質問選択のロジックは持たない。
+ * 1プローブ1画面・回答は常に5段階（PLAN）。旧設計の「軸の選択肢を並べて1つ選ぶ」
+ * 方式（`role="radiogroup"`で選択状態を持つ）から、「都度1問答えたら即座に次へ
+ * 進む」一発アクション方式に変わったため、選択永続状態や`aria-checked`は持たない
+ * （5つとも常に等価な操作ボタン。design_brief のアクセント使用箇所3限定を
+ * 超えて拡張しない — 5択それぞれをホバー/フォーカス以外で強調しない）。
  */
 export function QuestionScreen(props: {
-  question: Question;
-  index: number;
-  total: number;
-  selected: string | null;
-  onAnswer(value: string | null): void;
+  probe: Probe;
+  askedCount: number;
+  onAnswer(confidence: Confidence): void;
   onOmakase(): void;
 }) {
-  const { question, index, total, selected, onAnswer, onOmakase } = props;
+  const { probe, askedCount, onAnswer, onOmakase } = props;
 
   return (
     <div data-testid="question" className="min-h-dvh bg-bg text-text-primary">
       <div className="mx-auto flex w-full max-w-(--layout-content-width) flex-col px-(--layout-page-padding) py-16">
         <p className="text-label tracking-label text-text-secondary tabular-nums uppercase">
-          質問 {index} / {total}
+          {askedCount + 1}問目
         </p>
 
-        <h1 className="mt-4 text-question font-question text-text-primary">{question.prompt}</h1>
+        <h1 className="mt-4 text-question font-question text-text-primary">{probe.prompt}</h1>
 
-        <div role="radiogroup" aria-label={question.label} className="mt-10 flex flex-col gap-2">
-          {question.options.map((option) => {
-            const isSelected = selected === option.value;
-            return (
-              <button
-                key={option.value}
-                type="button"
-                role="radio"
-                aria-checked={isSelected}
-                data-testid="answer-option"
-                onClick={() => onAnswer(option.value)}
-                className={[
-                  'w-full rounded-control border-l-[3px] px-5 py-4 text-left text-option font-option',
-                  'transition-colors focus-visible:outline focus-visible:outline-2',
-                  'focus-visible:outline-offset-2 focus-visible:outline-accent',
-                  isSelected
-                    ? 'border-l-accent bg-accent/10 text-text-primary'
-                    : 'border-l-transparent bg-surface text-text-primary hover:bg-surface-raised',
-                ].join(' ')}
-              >
-                {option.label}
-              </button>
-            );
-          })}
-
-          <button
-            type="button"
-            role="radio"
-            aria-checked={selected === null}
-            data-testid="answer-no-preference"
-            onClick={() => onAnswer(null)}
-            className={[
-              'mt-2 w-full rounded-control border-l-[3px] border-t px-5 pt-5 pb-4 text-left text-option',
-              'border-t-border transition-colors focus-visible:outline focus-visible:outline-2',
-              'focus-visible:outline-offset-2 focus-visible:outline-accent',
-              selected === null
-                ? 'border-l-accent bg-accent/10 text-text-primary'
-                : 'border-l-transparent text-text-secondary hover:bg-surface-raised',
-            ].join(' ')}
-          >
-            こだわらない
-          </button>
+        <div role="group" aria-label="回答" className="mt-10 flex flex-col gap-2">
+          {CONFIDENCE_ORDER.map((confidence) => (
+            <button
+              key={confidence}
+              type="button"
+              data-testid={TESTID_BY_CONFIDENCE[confidence]}
+              onClick={() => onAnswer(confidence)}
+              className={[
+                'w-full rounded-control border-l-[3px] border-l-transparent bg-surface px-5 py-4',
+                'text-left text-option font-option text-text-primary transition-colors',
+                'hover:border-l-accent hover:bg-surface-raised focus-visible:outline focus-visible:outline-2',
+                'focus-visible:outline-offset-2 focus-visible:outline-accent',
+              ].join(' ')}
+            >
+              {CONFIDENCE_LABEL[confidence]}
+            </button>
+          ))}
         </div>
 
         <button

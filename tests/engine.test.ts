@@ -1,8 +1,26 @@
 import { describe, expect, it } from 'vitest';
 
-import type { AxisKey, Character, SupplyFile } from '../src/data/schema';
-import { MAX_QUESTIONS, QUESTION_POOL, type Question } from '../src/engine/questions';
-import { omakase, recommend, nextQuestion, type Answers, type Dataset } from '../src/engine/recommend';
+import type { Character, SupplyFile } from '../src/data/schema';
+import {
+  buildProbePool,
+  selectProbe,
+  HARD_CAP,
+  MIN_GAIN,
+  MIN_QUESTIONS,
+  type Confidence,
+  type Probe,
+} from '../src/engine/questions';
+import {
+  nextProbe,
+  omakase,
+  scoreCharacters,
+  shouldGuess,
+  topGuess,
+  type AnswerMap,
+  type Dataset,
+  type Reason,
+  type Scored,
+} from '../src/engine/recommend';
 import { SUPPLY_RANKS, supplyRank, supplyRankIndex } from '../src/engine/supply';
 import { AXIS_VALUES, MULTI_AXES, REQUIRED_AXES, readJson } from './helpers/data';
 
@@ -22,34 +40,51 @@ function mulberry32(seed: number): () => number {
   };
 }
 
+/** プローブ1つへの回答を決める戦略。 */
+type Strategy = (probe: Probe) => Confidence;
+
+/** 常に同じ確信度で答える戦略（C4/C13 の「全問わからない」等）。 */
+function always(confidence: Confidence): Strategy {
+  return () => confidence;
+}
+
+/** `target` の実際の属性に沿って正直に yes/no を返す戦略（オラクル）。 */
+function oracleFor(target: Character): Strategy {
+  return (probe) => {
+    const raw = target.axes[probe.axis];
+    const has = probe.multi ? Array.isArray(raw) && raw.includes(probe.value) : raw === probe.value;
+    return has ? 'yes' : 'no';
+  };
+}
+
 /**
- * 質問は固定配列ではなく `nextQuestion` が動的に選ぶ（SPEC 2.4）ので、
- * 「全問に回答する」はセッションを最後まで駆動する操作になる。
- * `choose` が各質問への回答を決める。
+ * `nextProbe` / `scoreCharacters` / `shouldGuess` / `topGuess` を実際の推測ループと
+ * 同じ短絡条件（probe===null または shouldGuess）で最後まで駆動する。
+ * `src/hooks/useInterview.ts` の reducer の 'answer' 分岐と同じ構造 — 本番と
+ * 別のロジックをテスト側に再実装して食い違うことを避けるため、意図的に揃えてある。
  */
-function runInterview(dataset: Dataset, choose: (q: Question) => string | null): Answers {
-  const answers: Answers = {};
-  const asked: AxisKey[] = [];
-  for (let guard = 0; guard <= MAX_QUESTIONS; guard += 1) {
-    const q = nextQuestion(dataset, answers, asked);
-    if (!q) break;
-    answers[q.axis] = choose(q);
-    asked.push(q.axis);
+function runToGuess(
+  dataset: Dataset,
+  strategy: Strategy,
+  opts?: { exclude?: ReadonlySet<string> },
+): { guess: Scored; answers: AnswerMap; askedKeys: Set<string> } {
+  const answers: AnswerMap = {};
+  const askedKeys = new Set<string>();
+  for (let guard = 0; guard <= HARD_CAP + 2; guard += 1) {
+    const probe = nextProbe(dataset, answers, askedKeys, opts);
+    const scored = scoreCharacters(answers, dataset, opts);
+    if (probe === null || shouldGuess(scored, askedKeys.size, probe !== null)) {
+      return { guess: topGuess(scored), answers, askedKeys };
+    }
+    answers[probe.key] = strategy(probe);
+    askedKeys.add(probe.key);
   }
-  return answers;
-}
-
-/** 各質問を「選択肢 + こだわらない」から無作為に選んで完走した 1 パス。 */
-function randomInterview(dataset: Dataset, rand: () => number): Answers {
-  return runInterview(dataset, (q) => {
-    const index = Math.floor(rand() * (q.options.length + 1));
-    return index === q.options.length ? null : q.options[index].value;
-  });
+  throw new Error('runToGuess: ガードを超えた（無限ループの疑い）');
 }
 
 /**
- * C9/C10 用の合成キャラを作る。既定値は全軸固定（エントロピー 0）にしておき、
- * テストごとに狙った軸だけ分布を作る。
+ * C9/C10/MIN_GAIN 用の合成キャラを作る。既定値は全軸固定（エントロピー 0）に
+ * しておき、テストごとに狙った軸だけ分布を作る。
  */
 function makeSyntheticCharacter(id: string, axesOverrides: Partial<Character['axes']> = {}): Character {
   return {
@@ -61,6 +96,8 @@ function makeSyntheticCharacter(id: string, axesOverrides: Partial<Character['ax
     hitomiQuery: null,
     reviewed: false,
     provisional: false,
+    imagePath: null,
+    imageApproved: false,
     axes: {
       genderExpression: '女性',
       ageFeel: '同年代',
@@ -93,198 +130,187 @@ function syntheticSupplyEntry() {
   };
 }
 
-describe('質問プール（候補軸。SPEC 2.4）', () => {
-  it('複数値軸（roles/looks/outfit）を含まない', () => {
-    for (const q of QUESTION_POOL) {
-      expect((MULTI_AXES as readonly string[]).includes(q.axis), `${q.axis} が複数値軸`).toBe(false);
+describe('プローブプール（SPEC 2.4）', () => {
+  it('プローブの key が一意で、フォーマットが単一値=/複数値~に従う', () => {
+    const pool = buildProbePool(dataset.characters);
+    expect(pool.length).toBeGreaterThan(0);
+
+    const seen = new Set<string>();
+    for (const probe of pool) {
+      expect(seen.has(probe.key), `${probe.key} が重複`).toBe(false);
+      seen.add(probe.key);
+      const sep = probe.multi ? '~' : '=';
+      expect(probe.key).toBe(`${probe.axis}${sep}${probe.value}`);
     }
   });
 
-  it('affiliationName を固定プールに含まない（動的深掘り専用）', () => {
-    expect(QUESTION_POOL.some((q) => q.axis === 'affiliationName')).toBe(false);
-  });
-
-  it('id と axis が一致し、id が一意', () => {
-    const ids = new Set<string>();
-    for (const q of QUESTION_POOL) {
-      expect(q.id).toBe(q.axis);
-      expect(ids.has(q.id), `${q.id} が重複`).toBe(false);
-      ids.add(q.id);
+  it('全プローブの値が SPEC 2.3 の許容値リストに含まれる', () => {
+    const pool = buildProbePool(dataset.characters);
+    for (const probe of pool) {
+      const allowed = AXIS_VALUES[probe.axis as keyof typeof AXIS_VALUES] as readonly string[] | undefined;
+      if (!allowed) continue; // affiliationName は自由記述（helpers/data.ts の A5 対象外と同じ扱い）
+      expect(allowed, `${probe.axis}="${probe.value}"`).toContain(probe.value);
     }
   });
 
-  it('各質問は 2 つ以上の選択肢を持ち、値が SPEC の許容値に含まれる', () => {
-    for (const q of QUESTION_POOL) {
-      expect(q.options.length, `${q.axis} の選択肢数`).toBeGreaterThanOrEqual(2);
-      const allowed = AXIS_VALUES[q.axis as keyof typeof AXIS_VALUES] as readonly string[] | undefined;
-      if (!allowed) continue;
-      for (const opt of q.options) {
-        expect(allowed, `${q.axis}="${opt.value}"`).toContain(opt.value);
-      }
+  it('multi フラグが軸の実際の型（配列かどうか）と一致する', () => {
+    const pool = buildProbePool(dataset.characters);
+    for (const probe of pool) {
+      expect(probe.multi, probe.axis).toBe((MULTI_AXES as readonly string[]).includes(probe.axis));
     }
   });
 
-  it('genderExpression に「男性」が無い（ハードフィルタで生き残れない値のため）', () => {
-    const q = QUESTION_POOL.find((x) => x.axis === 'genderExpression');
-    expect(q).toBeDefined();
-    expect(q!.options.map((o) => o.value)).not.toContain('男性');
-  });
-
-  it('必須 8 軸を全てカバーする', () => {
-    const poolAxes = new Set(QUESTION_POOL.map((q) => q.axis));
+  it('必須8軸それぞれについて、実データ内に少なくとも1つのプローブが存在する', () => {
+    const pool = buildProbePool(dataset.characters);
+    const poolAxes = new Set(pool.map((p) => p.axis));
     for (const axis of REQUIRED_AXES) {
-      expect(poolAxes.has(axis), `${axis} が質問プールに無い`).toBe(true);
+      expect(poolAxes.has(axis), `${axis} のプローブが無い`).toBe(true);
     }
+  });
+
+  it('MIN_GAIN 未満のエントロピーしか持たないプローブは selectProbe が選ばない', () => {
+    // 1/20 の偏り。H = -0.05*log2(0.05) - 0.95*log2(0.95) ≈ 0.286bit。
+    const skew = 1 / 20;
+    const entropy = -(skew * Math.log2(skew) + (1 - skew) * Math.log2(1 - skew));
+    expect(entropy).toBeLessThan(MIN_GAIN); // このテスト自体の前提（閾値未満であること）を確認
+
+    const characters = Array.from({ length: 20 }, (_, i) =>
+      makeSyntheticCharacter(`gain-${i}`, { combat: i === 0 ? '戦わない' : '戦う' }),
+    );
+    expect(selectProbe(characters, new Set())).toBeNull();
   });
 });
 
 describe('C. 推薦エンジン', () => {
-  it('C1: 固定の回答セットに対し決定論的な上位 N を返す', () => {
-    const fixedAnswers = runInterview(dataset, (q) => q.options[0].value);
-    const first = recommend(fixedAnswers, dataset);
-    const second = recommend(fixedAnswers, dataset);
+  it('C1: 固定の回答列に対し決定論的な単一推測を返す', () => {
+    const run = () => runToGuess(dataset, always('yes'));
+    const first = run();
+    const second = run();
 
-    expect(second).toEqual(first);
-    expect(first.length).toBeGreaterThanOrEqual(3);
-    expect(first.length).toBeLessThanOrEqual(5);
-
-    const scores = first.map((r) => r.score);
-    expect(scores).toEqual([...scores].sort((a, b) => b - a));
+    expect(second.guess.character.id).toBe(first.guess.character.id);
+    expect(second.guess.score).toBe(first.guess.score);
 
     // 変化検知用。id とスコアだけを固定する（表示文言の変更で落ちないように）。
-    expect(first.map((r) => ({ id: r.character.id, score: r.score }))).toMatchSnapshot();
+    expect({ id: first.guess.character.id, score: first.guess.score }).toMatchSnapshot();
   });
 
-  it('C2: 返るキャラの供給量ランクが全て「僅少」以上', () => {
+  it('C2: 推測・おまかせで返るキャラの供給量ランクが「なし」でない', () => {
     const rand = mulberry32(20260720);
-    for (let i = 0; i < 200; i += 1) {
-      const results = recommend(randomInterview(dataset, rand), dataset);
-      for (const r of results) {
-        expect(
-          supplyRankIndex(r.supplyRank),
-          `${r.character.id} の供給量ランクが ${r.supplyRank}`,
-        ).toBeGreaterThanOrEqual(supplyRankIndex('僅少'));
-      }
+    for (let i = 0; i < 50; i += 1) {
+      const target = dataset.characters[Math.floor(rand() * dataset.characters.length)];
+      const { guess } = runToGuess(dataset, oracleFor(target));
+      expect(guess.supplyRank, guess.character.id).not.toBe('なし');
+    }
+    for (let seed = 0; seed < 50; seed += 1) {
+      const result = omakase(dataset, { seed });
+      expect(result.supplyRank, result.character.id).not.toBe('なし');
     }
   });
 
-  it('C3: 無作為な 1000 通りの完走回答パスで結果が 1 件も空にならない', () => {
+  it('C3: 無作為な1000通りの回答パスで scoreCharacters が1件も空にならない', () => {
     const rand = mulberry32(1);
-    const empties: Answers[] = [];
+    const confidences: Confidence[] = ['yes', 'probably_yes', 'unknown', 'probably_no', 'no'];
+    const empties: AnswerMap[] = [];
+
     for (let i = 0; i < 1000; i += 1) {
-      const answers = randomInterview(dataset, rand);
-      if (recommend(answers, dataset).length === 0) empties.push(answers);
+      const answers: AnswerMap = {};
+      const askedKeys = new Set<string>();
+      for (let q = 0; q < 8; q += 1) {
+        const probe = nextProbe(dataset, answers, askedKeys);
+        if (!probe) break;
+        answers[probe.key] = confidences[Math.floor(rand() * confidences.length)];
+        askedKeys.add(probe.key);
+      }
+      if (scoreCharacters(answers, dataset).length === 0) empties.push(answers);
     }
     expect(empties).toEqual([]);
   });
 
-  it('C4: 全問「こだわらない」でも結果が空にならない', () => {
-    const answers = runInterview(dataset, () => null);
-    const results = recommend(answers, dataset);
-    expect(results.length).toBeGreaterThan(0);
+  it('C4: 全問「わからない」でも scoreCharacters の結果が空にならない', () => {
+    const { answers } = runToGuess(dataset, always('unknown'));
+    expect(scoreCharacters(answers, dataset).length).toBeGreaterThan(0);
   });
 
-  it('C5: 各結果に根拠が 1 つ以上付く', () => {
-    const rand = mulberry32(31337);
-    for (let i = 0; i < 200; i += 1) {
-      const results = recommend(randomInterview(dataset, rand), dataset);
-      for (const r of results) {
-        expect(r.reasons.length, `${r.character.id} に根拠が無い`).toBeGreaterThanOrEqual(1);
-      }
-    }
-  });
-
-  it('C5: 軸の根拠は実際に一致した軸だけを挙げる（根拠の捏造を弾く）', () => {
+  it('C5: 推測に付く根拠は実際に一致した特性だけを挙げる（根拠の捏造を弾く）', () => {
     const rand = mulberry32(4242);
-    for (let i = 0; i < 200; i += 1) {
-      const answers = randomInterview(dataset, rand);
-      for (const r of recommend(answers, dataset)) {
-        for (const reason of r.reasons) {
-          if (reason.kind !== 'axis') continue;
-          const answered = answers[reason.axis];
-          expect(answered, `未回答の軸 ${reason.axis} を根拠にしている`).not.toBeNull();
+    for (let i = 0; i < 100; i += 1) {
+      const target = dataset.characters[Math.floor(rand() * dataset.characters.length)];
+      const { guess } = runToGuess(dataset, oracleFor(target));
 
-          const value = r.character.axes[reason.axis];
-          const matched = Array.isArray(value) ? value.includes(answered!) : value === answered;
-          expect(matched, `${r.character.id} は ${reason.axis}=${answered} に一致しない`).toBe(true);
-        }
+      const traitReasons = guess.reasons.filter(
+        (r): r is Extract<Reason, { kind: 'trait' }> => r.kind === 'trait',
+      );
+      for (const reason of traitReasons) {
+        const raw = guess.character.axes[reason.axis];
+        const matched = Array.isArray(raw) ? raw.includes(reason.value) : raw === reason.value;
+        expect(matched, `${guess.character.id} は ${reason.axis}=${reason.value} に一致しない`).toBe(true);
       }
+      expect(guess.reasons.some((r) => r.kind === 'supply'), '供給量の根拠が無い').toBe(true);
     }
   });
 
-  it('C6: おまかせがシード固定時に再現可能な結果を返す', () => {
+  it('C6: おまかせがシード固定時に再現可能な単一結果を返す', () => {
     const a = omakase(dataset, { seed: 12345 });
     const b = omakase(dataset, { seed: 12345 });
-    expect(b.map((r) => r.character.id)).toEqual(a.map((r) => r.character.id));
-    expect(a.length).toBeGreaterThan(0);
+    expect(b.character.id).toBe(a.character.id);
   });
 
-  it('C6: おまかせは供給量「少ない」以上のみを返す（SPEC 2.4）', () => {
+  it('C6: おまかせは供給量「少ない」以上のみを返す', () => {
     for (let seed = 0; seed < 50; seed += 1) {
-      for (const r of omakase(dataset, { seed })) {
-        expect(
-          supplyRankIndex(r.supplyRank),
-          `${r.character.id} の供給量ランクが ${r.supplyRank}`,
-        ).toBeGreaterThanOrEqual(supplyRankIndex('少ない'));
-      }
+      const result = omakase(dataset, { seed });
+      expect(
+        supplyRankIndex(result.supplyRank),
+        `${result.character.id} の供給量ランクが ${result.supplyRank}`,
+      ).toBeGreaterThanOrEqual(supplyRankIndex('少ない'));
     }
   });
 
-  it('C6: シードが違えば選ばれる顔ぶれも変わりうる（乱択が効いている）', () => {
-    const signatures = new Set(
-      Array.from({ length: 30 }, (_, seed) =>
-        omakase(dataset, { seed })
-          .map((r) => r.character.id)
-          .join(','),
-      ),
-    );
+  it('C6: シードが違えば選ばれるキャラも変わりうる（乱択が効いている）', () => {
+    const ids = new Set(Array.from({ length: 30 }, (_, seed) => omakase(dataset, { seed }).character.id));
     // 全シードで同一結果 = 乱択が効いていない。
-    expect(signatures.size).toBeGreaterThan(1);
+    expect(ids.size).toBeGreaterThan(1);
   });
 
-  it('C7: 性別表現「男性」または provisional のキャラが結果にも「おまかせ」にも出ない', () => {
+  it('C7: 性別表現「男性」または provisional のキャラが推測にも「おまかせ」にも出ない', () => {
     // 実データの既知3体: 男性2体 + ゲーム未実装で provisional な1体。
     const EXCLUDED_IDS = ['aot-levi', 'onepiece-zoro', 'azurlane-yamato'];
 
     const rand = mulberry32(777);
-    for (let i = 0; i < 200; i += 1) {
-      const results = recommend(randomInterview(dataset, rand), dataset);
-      for (const id of EXCLUDED_IDS) {
-        expect(results.some((r) => r.character.id === id), `${id} が推薦に出た`).toBe(false);
-      }
+    for (let i = 0; i < 100; i += 1) {
+      const target = dataset.characters[Math.floor(rand() * dataset.characters.length)];
+      const { guess } = runToGuess(dataset, oracleFor(target));
+      expect(EXCLUDED_IDS, `${guess.character.id} が推測に出た`).not.toContain(guess.character.id);
     }
 
     for (let seed = 0; seed < 50; seed += 1) {
-      const results = omakase(dataset, { seed });
-      for (const id of EXCLUDED_IDS) {
-        expect(results.some((r) => r.character.id === id), `${id} がおまかせに出た`).toBe(false);
-      }
+      const result = omakase(dataset, { seed });
+      expect(EXCLUDED_IDS, `${result.character.id} がおまかせに出た`).not.toContain(result.character.id);
     }
   });
 
-  it('C8: 次の質問は未質問の軸から選ばれ、同じ軸を 2 回聞かない', () => {
-    const answers: Answers = {};
-    const asked: AxisKey[] = [];
-    const seenAxes = new Set<AxisKey>();
-    for (let guard = 0; guard <= MAX_QUESTIONS; guard += 1) {
-      const q = nextQuestion(dataset, answers, asked);
-      if (!q) break;
-      expect(seenAxes.has(q.axis), `${q.axis} を2回聞いた`).toBe(false);
-      seenAxes.add(q.axis);
-      answers[q.axis] = q.options[0].value;
-      asked.push(q.axis);
+  it('C8: nextProbe は askedKeys に無いプローブから選ばれ、同じプローブを2回聞かない', () => {
+    const answers: AnswerMap = {};
+    const askedKeys = new Set<string>();
+    const seen = new Set<string>();
+    for (let guard = 0; guard <= HARD_CAP; guard += 1) {
+      const probe = nextProbe(dataset, answers, askedKeys);
+      if (!probe) break;
+      expect(seen.has(probe.key), `${probe.key} を2回聞いた`).toBe(false);
+      seen.add(probe.key);
+      answers[probe.key] = 'yes';
+      askedKeys.add(probe.key);
     }
-    expect(seenAxes.size).toBeGreaterThan(0);
+    expect(seen.size).toBeGreaterThan(0);
   });
 
-  it('C8: askedAxes に含まれる軸は候補から除外される', () => {
-    const first = nextQuestion(dataset, {}, []);
+  it('C8: askedKeys に含まれるプローブは候補から除外される', () => {
+    const first = nextProbe(dataset, {}, new Set());
     expect(first).not.toBeNull();
-    const second = nextQuestion(dataset, {}, [first!.axis]);
-    expect(second?.axis).not.toBe(first!.axis);
+    const second = nextProbe(dataset, {}, new Set([first!.key]));
+    expect(second?.key).not.toBe(first!.key);
   });
 
-  it('C9: 候補が1つの値に偏っている軸より、二分できる軸が優先して選ばれる', () => {
+  it('C9: 候補が1つの値に偏ったプローブより、二分できるプローブが優先して選ばれる', () => {
     // combat: 4/4 均衡（H=1.0）、affiliationKind: 7/1 偏り（H≈0.544）、他は全軸固定（H=0）。
     const characters = Array.from({ length: 8 }, (_, i) =>
       makeSyntheticCharacter(`c9-${i}`, {
@@ -292,40 +318,35 @@ describe('C. 推薦エンジン', () => {
         affiliationKind: i < 7 ? '学生' : '社会人',
       }),
     );
-    const supply: SupplyFile = Object.fromEntries(characters.map((c) => [c.id, syntheticSupplyEntry()]));
-    const fx: Dataset = { characters, supply };
-
-    const q = nextQuestion(fx, {}, []);
-    expect(q?.axis).toBe('combat');
+    const probe = selectProbe(characters, new Set());
+    expect(probe?.axis).toBe('combat');
   });
 
-  it('C9/C10: エントロピーが同点なら AXIS_PRIORITY の優先順位で決まる', () => {
-    // combat も bust も 4/4 均衡（同じ H=1.0）にする。優先順位配列では bust の方が先。
+  it('C9/C10: エントロピーが同点なら軸の固定優先順位で決まる', () => {
+    // combat も bust も 4/4 均衡（同じ H=1.0）にする。軸の固定順では bust の方が先。
     const characters = Array.from({ length: 8 }, (_, i) =>
       makeSyntheticCharacter(`c9tie-${i}`, {
         combat: i < 4 ? '戦う' : '戦わない',
         bust: i < 4 ? '標準' : '大きい',
       }),
     );
-    const supply: SupplyFile = Object.fromEntries(characters.map((c) => [c.id, syntheticSupplyEntry()]));
-    const fx: Dataset = { characters, supply };
-
-    const q = nextQuestion(fx, {}, []);
-    expect(q?.axis).toBe('bust');
+    const probe = selectProbe(characters, new Set());
+    expect(probe?.axis).toBe('bust');
   });
 
-  it('C10: 同じ (dataset, answers, askedAxes) なら nextQuestion が同じ結果を返す', () => {
-    const a = nextQuestion(dataset, {}, []);
-    const b = nextQuestion(dataset, {}, []);
-    expect(b?.axis).toBe(a?.axis);
+  it('C10: 同じ (population, askedKeys) なら selectProbe が同じ結果を返す', () => {
+    const a = selectProbe(dataset.characters, new Set());
+    const b = selectProbe(dataset.characters, new Set());
+    expect(b?.key).toBe(a?.key);
 
-    // 同じ回答列なら同じ質問列になる。
-    const seq1 = Object.keys(runInterview(dataset, (q) => q.options[0].value));
-    const seq2 = Object.keys(runInterview(dataset, (q) => q.options[0].value));
+    // 同じ回答列（オラクル）なら同じ質問列になる。
+    const target = dataset.characters[0];
+    const seq1 = [...runToGuess(dataset, oracleFor(target)).askedKeys];
+    const seq2 = [...runToGuess(dataset, oracleFor(target)).askedKeys];
     expect(seq2).toEqual(seq1);
   });
 
-  it('C11: 属性が全て空欄のキャラ・供給エントリが無いキャラが混ざっても選択・推薦が落ちない', () => {
+  it('C11: 属性が全て空欄のキャラ・供給エントリが無いキャラが混ざっても質問選択・スコアリングが落ちない', () => {
     const normal = Array.from({ length: 4 }, (_, i) =>
       makeSyntheticCharacter(`c11-normal-${i}`, { combat: i < 2 ? '戦う' : '戦わない' }),
     );
@@ -350,23 +371,86 @@ describe('C. 推薦エンジン', () => {
     // c11-no-supply は意図的に supply に含めない（「なし」扱いでハードフィルタされる想定）。
     const fx: Dataset = { characters: [...withSupply, noSupplyEntry], supply };
 
-    expect(() => {
-      const answers: Answers = {};
-      const asked: AxisKey[] = [];
-      for (let guard = 0; guard <= MAX_QUESTIONS; guard += 1) {
-        const q = nextQuestion(fx, answers, asked);
-        if (!q) break;
-        answers[q.axis] = q.options[0].value;
-        asked.push(q.axis);
-      }
-    }).not.toThrow();
+    expect(() => runToGuess(fx, always('yes'))).not.toThrow();
 
-    const results = recommend({}, fx);
+    const results = scoreCharacters({}, fx);
     expect(results.length).toBeGreaterThan(0);
     for (const r of results) {
       expect(Number.isFinite(r.score), `${r.character.id} のスコアが不正な数値`).toBe(true);
       expect(r.character.id).not.toBe('c11-no-supply');
     }
+  });
+
+  it('C11: 空欄の軸は確信度に関わらずスコアに寄与しない（3値式）', () => {
+    const blankChar = makeSyntheticCharacter('c11-contribution-blank', { mood: null });
+    const filledChar = makeSyntheticCharacter('c11-contribution-filled', { mood: '甘め' });
+    const characters = [blankChar, filledChar];
+    const supply: SupplyFile = Object.fromEntries(characters.map((c) => [c.id, syntheticSupplyEntry()]));
+    const fx: Dataset = { characters, supply };
+
+    const probe = buildProbePool([filledChar]).find((p) => p.axis === 'mood' && p.value === '甘め');
+    expect(probe).toBeDefined();
+
+    for (const confidence of ['yes', 'probably_yes', 'probably_no', 'no'] as const) {
+      const scored = scoreCharacters({ [probe!.key]: confidence }, fx);
+      const blankScore = scored.find((s) => s.character.id === 'c11-contribution-blank')?.score;
+      expect(blankScore, `confidence=${confidence}`).toBe(0);
+    }
+  });
+
+  it('C12: askedCount < MIN_QUESTIONS の間 shouldGuess は常に false を返す', () => {
+    const scoredHuge: Scored[] = [
+      { character: dataset.characters[0], score: 1000, supplyRank: '豊富', reasons: [] },
+      { character: dataset.characters[1], score: -1000, supplyRank: '豊富', reasons: [] },
+    ];
+    for (let askedCount = 0; askedCount < MIN_QUESTIONS; askedCount += 1) {
+      // 極端なスコア差・情報量なしでも、floor未満なら常に false。
+      expect(shouldGuess(scoredHuge, askedCount, false)).toBe(false);
+    }
+  });
+
+  it('C12: 「いいえ」で拒否したキャラは以降の scoreCharacters/nextProbe から除外される', () => {
+    const target = dataset.characters.find((c) => c.axes.genderExpression !== '男性' && c.provisional !== true)!;
+    const { guess, answers } = runToGuess(dataset, oracleFor(target));
+
+    let rejected = new Set<string>([guess.character.id]);
+    let rescored = scoreCharacters(answers, dataset, { exclude: rejected });
+    expect(rescored.some((s) => s.character.id === guess.character.id)).toBe(false);
+    expect(rescored.length).toBeGreaterThan(0);
+
+    // 累積的に拒否を続けても、拒否済み全員が常に除外され続ける。
+    for (let i = 0; i < 5 && rescored.length > 0; i += 1) {
+      rejected = new Set([...rejected, rescored[0].character.id]);
+      rescored = scoreCharacters(answers, dataset, { exclude: rejected });
+      for (const id of rejected) {
+        expect(rescored.some((s) => s.character.id === id), `${id} が除外されていない`).toBe(false);
+      }
+    }
+  });
+
+  it('C13: 実データ33体全員が、オラクル回答で6問で自分自身に収束する', () => {
+    const survivors = dataset.characters.filter(
+      (c) => c.axes.genderExpression !== '男性' && c.provisional !== true,
+    );
+    const askedCounts: number[] = [];
+    const failures: string[] = [];
+
+    for (const target of survivors) {
+      const { guess, askedKeys } = runToGuess(dataset, oracleFor(target));
+      askedCounts.push(askedKeys.size);
+      if (guess.character.id !== target.id) {
+        failures.push(`${target.id}: guessed=${guess.character.id} after ${askedKeys.size}問`);
+      }
+    }
+
+    expect(failures).toEqual([]);
+    expect(Math.min(...askedCounts)).toBe(MIN_QUESTIONS);
+    expect(Math.max(...askedCounts)).toBe(MIN_QUESTIONS);
+  });
+
+  it('C13: 全問「わからない」の場合は HARD_CAP で強制的に推測へ進む', () => {
+    const { askedKeys } = runToGuess(dataset, always('unknown'));
+    expect(askedKeys.size).toBe(HARD_CAP);
   });
 });
 

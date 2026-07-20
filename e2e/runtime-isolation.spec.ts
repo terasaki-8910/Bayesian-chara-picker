@@ -20,7 +20,7 @@ test.describe('D1: 実行時の外部ネットワークアクセスが 0 件', (
     await openFresh(page);
     await acceptAgeGateByKeyboard(page);
     await answerAllByKeyboard(page);
-    await expect(page.getByTestId(TESTID.results)).toBeVisible();
+    await expect(page.getByTestId(TESTID.result)).toBeVisible();
 
     expect(external).toEqual([]);
   });
@@ -36,7 +36,7 @@ test.describe('D1: 実行時の外部ネットワークアクセスが 0 件', (
     await acceptAgeGateByKeyboard(page);
     await answerAllByKeyboard(page);
 
-    const links = page.getByTestId(TESTID.resultItem).locator('a[href^="http"]');
+    const links = page.getByTestId(TESTID.result).locator('a[href^="http"]');
     const count = await links.count();
     expect(count).toBeGreaterThan(0);
 

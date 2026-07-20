@@ -34,7 +34,9 @@
       "character": "rem",
       "series": null
     },
-    "provisional": false
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   },
   {
     "id": "rezero-ram",
@@ -72,7 +74,9 @@
       "character": "ram",
       "series": null
     },
-    "provisional": false
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   },
   {
     "id": "fate-scathach",
@@ -110,7 +114,9 @@
       "character": "scathach",
       "series": null
     },
-    "provisional": false
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   },
   {
     "id": "fate-tamamo",
@@ -152,7 +158,9 @@
       "character": "tamamo no mae",
       "series": null
     },
-    "provisional": false
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   },
   {
     "id": "fate-bb",
@@ -185,7 +193,9 @@
       "character": "bb",
       "series": null
     },
-    "provisional": false
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   },
   {
     "id": "fgo-ishtar",
@@ -220,7 +230,9 @@
       "character": "ishtar",
       "series": null
     },
-    "provisional": false
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   },
   {
     "id": "fgo-kiyohime",
@@ -255,7 +267,9 @@
       "character": "kiyohime",
       "series": null
     },
-    "provisional": false
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   },
   {
     "id": "fgo-medusa",
@@ -293,7 +307,9 @@
       "character": "medusa",
       "series": null
     },
-    "provisional": false
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   },
   {
     "id": "overlord-albedo",
@@ -331,7 +347,9 @@
       "character": "albedo",
       "series": null
     },
-    "provisional": false
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   },
   {
     "id": "overlord-narberal",
@@ -371,7 +389,9 @@
       "character": "narberal gamma",
       "series": null
     },
-    "provisional": false
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   },
   {
     "id": "konosuba-darkness",
@@ -411,7 +431,9 @@
       "character": "darkness",
       "series": null
     },
-    "provisional": false
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   },
   {
     "id": "fairytail-erza",
@@ -450,7 +472,9 @@
       "character": "erza scarlet",
       "series": null
     },
-    "provisional": false
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   },
   {
     "id": "fairytail-mirajane",
@@ -488,7 +512,9 @@
       "character": "mirajane strauss",
       "series": null
     },
-    "provisional": false
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   },
   {
     "id": "dragonball-bulma",
@@ -525,7 +551,9 @@
       "character": "bulma briefs",
       "series": null
     },
-    "provisional": false
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   },
   {
     "id": "dragonball-18",
@@ -563,7 +591,9 @@
       "character": "android 18",
       "series": null
     },
-    "provisional": false
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   },
   {
     "id": "naruto-tsunade",
@@ -601,7 +631,9 @@
       "character": "tsunade",
       "series": null
     },
-    "provisional": false
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   },
   {
     "id": "naruto-kurenai",
@@ -639,7 +671,9 @@
       "character": "kurenai yuhi",
       "series": null
     },
-    "provisional": false
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   },
   {
     "id": "onepiece-robin",
@@ -677,7 +711,9 @@
       "character": "nico robin",
       "series": null
     },
-    "provisional": false
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   },
   {
     "id": "onepiece-hancock",
@@ -712,7 +748,9 @@
       "character": "boa hancock",
       "series": null
     },
-    "provisional": false
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   },
   {
     "id": "onepiece-nami",
@@ -749,7 +787,9 @@
       "character": "nami",
       "series": null
     },
-    "provisional": false
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   },
   {
     "id": "monmusu-miia",
@@ -784,7 +824,9 @@
       "character": "miia",
       "series": null
     },
-    "provisional": false
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   },
   {
     "id": "monmusu-centorea",
@@ -822,7 +864,9 @@
       "character": "centorea shianus",
       "series": null
     },
-    "provisional": false
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   },
   {
     "id": "nier-2b",
@@ -857,7 +901,9 @@
       "character": "2b",
       "series": null
     },
-    "provisional": false
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   },
   {
     "id": "nier-a2",
@@ -894,7 +940,9 @@
       "character": "a2",
       "series": null
     },
-    "provisional": false
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   },
   {
     "id": "azurlane-nagato",
@@ -933,7 +981,9 @@
       "character": "nagato",
       "series": "azur lane"
     },
-    "provisional": false
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   },
   {
     "id": "azurlane-yamato",
@@ -972,7 +1022,9 @@
       "character": "yamato",
       "series": "azur lane"
     },
-    "provisional": true
+    "provisional": true,
+    "imagePath": null,
+    "imageApproved": false
   },
   {
     "id": "granblue-narmaya",
@@ -1007,7 +1059,9 @@
       "character": "narmaya",
       "series": null
     },
-    "provisional": false
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   },
   {
     "id": "idolmaster-chihaya",
@@ -1042,7 +1096,9 @@
       "character": "chihaya kisaragi",
       "series": null
     },
-    "provisional": false
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   },
   {
     "id": "kanokari-chizuru",
@@ -1077,7 +1133,9 @@
       "character": "chizuru ichinose",
       "series": null
     },
-    "provisional": false
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   },
   {
     "id": "spyfamily-yor",
@@ -1117,7 +1175,9 @@
       "character": "yor forger",
       "series": null
     },
-    "provisional": false
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   },
   {
     "id": "csm-makima",
@@ -1156,7 +1216,9 @@
       "character": "makima",
       "series": null
     },
-    "provisional": false
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   },
   {
     "id": "aot-levi",
@@ -1193,7 +1255,9 @@
       "character": "levi ackerman",
       "series": null
     },
-    "provisional": false
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   },
   {
     "id": "onepiece-zoro",
@@ -1228,7 +1292,9 @@
       "character": "roronoa zoro",
       "series": null
     },
-    "provisional": false
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   },
   {
     "id": "fate-astolfo",
@@ -1264,7 +1330,9 @@
       "character": "astolfo",
       "series": null
     },
-    "provisional": false
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   },
   {
     "id": "bleach-rangiku",
@@ -1303,7 +1371,9 @@
       "character": "rangiku matsumoto",
       "series": null
     },
-    "provisional": false
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   },
   {
     "id": "bleach-yoruichi",
@@ -1341,6 +1411,8 @@
       "character": "yoruichi shihoin",
       "series": null
     },
-    "provisional": false
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   }
 ]
