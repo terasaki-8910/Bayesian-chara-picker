@@ -12,6 +12,7 @@
     "lint": "eslint . && stylelint \"src/**/*.css\" --allow-empty-input && tsc --noEmit",
     "collect": "node scripts/collect.mjs",
     "collect:hitomi": "node scripts/collect-hitomi.mjs",
+    "census": "node scripts/census-hitomi.mjs",
     "fixtures": "node tests/fixtures/generate.mjs",
     "prepare": "chmod +x scripts/*.sh"
   },
