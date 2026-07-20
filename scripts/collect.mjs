@@ -142,32 +142,62 @@ async function fetchAndParse(politeFetch, opts) {
 /**
  * `data/characters.json` の `dlsiteQuery !== null` を回して `data/supply.json` を書く。
  * wave 2（character-dataset）で初めて使う経路。
+ *
+ * 36 体 × 4 クエリ × Crawl-delay 10 秒 ≒ 24 分かかる。途中でネットワークが
+ * 落ちても失われないよう、1 キャラ終わるごとに `data/supply.json` を書き直す。
+ * 既存の `supply.json` があれば読み込み、そこに無いキャラだけを対象にする
+ * （＝再実行 = 再開。取得済み分を再送しない）。
  */
 async function main() {
   const dataDir = new URL('../data/', import.meta.url);
-  const characters = JSON.parse(readFileSync(fileURLToPath(new URL('characters.json', dataDir)), 'utf8'));
+  const charactersPath = fileURLToPath(new URL('characters.json', dataDir));
+  const supplyPath = fileURLToPath(new URL('supply.json', dataDir));
+  const characters = JSON.parse(readFileSync(charactersPath, 'utf8'));
   const politeFetch = createPoliteFetcher({});
 
-  const supply = {};
-  for (const character of characters) {
-    if (character.dlsiteQuery === null) continue;
-
-    const overall = await fetchAndParse(politeFetch, { keyword: character.dlsiteQuery });
-    const byWorkType = {};
-    for (const workType of WORK_TYPES) {
-      const result = await fetchAndParse(politeFetch, { keyword: character.dlsiteQuery, workType });
-      byWorkType[workType] = result.pageCount;
-    }
-
-    supply[character.id] = {
-      pageCount: overall.pageCount,
-      estimatedRange: overall.estimatedRange,
-      byWorkType,
-      fetchedAt: new Date().toISOString(),
-    };
+  let supply = {};
+  try {
+    supply = JSON.parse(readFileSync(supplyPath, 'utf8'));
+  } catch (_err) {
+    // 初回実行、または前回が supply.json を書く前に落ちた場合。空から始める。
   }
 
-  writeFileSync(fileURLToPath(new URL('supply.json', dataDir)), `${JSON.stringify(supply, null, 2)}\n`);
+  const pending = characters.filter((c) => c.dlsiteQuery !== null && !(c.id in supply));
+  if (pending.length === 0) {
+    console.log('収集対象は全て取得済みです。');
+    return;
+  }
+  console.log(`収集対象 ${pending.length} 件（取得済み ${Object.keys(supply).length} 件はスキップ）`);
+
+  for (const [index, character] of pending.entries()) {
+    console.log(`[${index + 1}/${pending.length}] ${character.name} を収集中...`);
+    try {
+      const overall = await fetchAndParse(politeFetch, { keyword: character.dlsiteQuery });
+      const byWorkType = {};
+      for (const workType of WORK_TYPES) {
+        const result = await fetchAndParse(politeFetch, { keyword: character.dlsiteQuery, workType });
+        byWorkType[workType] = result.pageCount;
+      }
+
+      supply[character.id] = {
+        pageCount: overall.pageCount,
+        estimatedRange: overall.estimatedRange,
+        byWorkType,
+        fetchedAt: new Date().toISOString(),
+      };
+    } catch (err) {
+      console.error(`\n[${character.name}] の収集に失敗しました: ${err.message}`);
+      console.error(`ここまでの ${Object.keys(supply).length} 件は data/supply.json に保存済みです。`);
+      console.error('再実行すると、取得済みキャラをスキップして続きから再開します。');
+      process.exitCode = 1;
+      return;
+    }
+
+    // 1 キャラ終わるたびに保存する。中断されても直前までの結果は残る。
+    writeFileSync(supplyPath, `${JSON.stringify(supply, null, 2)}\n`);
+  }
+
+  console.log(`完了。${Object.keys(supply).length} 件を data/supply.json に書き込みました。`);
 }
 
 const isMainModule = process.argv[1] !== undefined && import.meta.url === `file://${process.argv[1]}`;
