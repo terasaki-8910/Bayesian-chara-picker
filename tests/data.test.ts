@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 
 import { charactersSchema, supplyFileSchema } from '../src/data/schema';
-import { supplyRank } from '../src/engine/supply';
+import { combinedSupplyRank, hitomiSupplyRank, supplyRank } from '../src/engine/supply';
 import {
   AXIS_VALUES,
   MULTI_AXES,
@@ -83,9 +83,22 @@ describe('A. データ品質', () => {
     expect(orphans).toEqual([]);
   });
 
-  it('A7: 出荷データに供給量ランク「なし」のキャラが 0 件', () => {
+  it('A6: hitomiQuery が null でないレコードは supply.json の対応エントリに hitomi 情報を持つ', () => {
+    const orphans = characters
+      .filter((c) => c.hitomiQuery !== null)
+      .filter((c) => supply[c.id]?.hitomi == null)
+      .map((c) => c.id);
+    expect(orphans).toEqual([]);
+  });
+
+  it('A7: 出荷データに供給量ランク「なし」のキャラが 0 件（DLsite と hitomi.la の高い方で判定）', () => {
     const empty = characters
-      .filter((c) => supplyRank(supply[c.id]?.pageCount ?? 0) === 'なし')
+      .filter((c) => {
+        const entry = supply[c.id];
+        const dlsiteRank = supplyRank(entry?.pageCount ?? 0);
+        const hitomiRank = entry?.hitomi ? hitomiSupplyRank(entry.hitomi.galleryCount) : 'なし';
+        return combinedSupplyRank([dlsiteRank, hitomiRank]) === 'なし';
+      })
       .map((c) => c.id);
     expect(empty).toEqual([]);
   });
