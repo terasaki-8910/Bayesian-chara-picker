@@ -139,6 +139,27 @@ async function fetchAndParse(politeFetch, opts) {
   return parseSearchResult(html, { perPage: PER_PAGE });
 }
 
+/** 1 キャラの取得が失敗した際、諦めるまでの再試行回数。 */
+const MAX_RETRIES = 3;
+
+/** 再試行の前に置く追加の待ち時間。Crawl-delay の上に足す（短縮しない）。 */
+const RETRY_BACKOFF_MS = 15_000;
+
+async function collectCharacter(politeFetch, character) {
+  const overall = await fetchAndParse(politeFetch, { keyword: character.dlsiteQuery });
+  const byWorkType = {};
+  for (const workType of WORK_TYPES) {
+    const result = await fetchAndParse(politeFetch, { keyword: character.dlsiteQuery, workType });
+    byWorkType[workType] = result.pageCount;
+  }
+  return {
+    pageCount: overall.pageCount,
+    estimatedRange: overall.estimatedRange,
+    byWorkType,
+    fetchedAt: new Date().toISOString(),
+  };
+}
+
 /**
  * `data/characters.json` の `dlsiteQuery !== null` を回して `data/supply.json` を書く。
  * wave 2（character-dataset）で初めて使う経路。
@@ -147,6 +168,10 @@ async function fetchAndParse(politeFetch, opts) {
  * 落ちても失われないよう、1 キャラ終わるごとに `data/supply.json` を書き直す。
  * 既存の `supply.json` があれば読み込み、そこに無いキャラだけを対象にする
  * （＝再実行 = 再開。取得済み分を再送しない）。
+ *
+ * DLsite 側の一時的な 403（Cloudflare のボット判定と見られる、確率的で
+ * 再試行すると通ることを実測済み）に備え、1 キャラにつき最大 MAX_RETRIES 回
+ * 試す。それでも失敗したら、その時点までの結果を保存して停止する。
  */
 async function main() {
   const dataDir = new URL('../data/', import.meta.url);
@@ -171,28 +196,32 @@ async function main() {
 
   for (const [index, character] of pending.entries()) {
     console.log(`[${index + 1}/${pending.length}] ${character.name} を収集中...`);
-    try {
-      const overall = await fetchAndParse(politeFetch, { keyword: character.dlsiteQuery });
-      const byWorkType = {};
-      for (const workType of WORK_TYPES) {
-        const result = await fetchAndParse(politeFetch, { keyword: character.dlsiteQuery, workType });
-        byWorkType[workType] = result.pageCount;
+    let entry;
+    let lastErr;
+    for (let attempt = 1; attempt <= MAX_RETRIES; attempt += 1) {
+      try {
+        entry = await collectCharacter(politeFetch, character);
+        lastErr = undefined;
+        break;
+      } catch (err) {
+        lastErr = err;
+        console.error(`  試行 ${attempt}/${MAX_RETRIES} 失敗: ${err.message}`);
+        if (attempt < MAX_RETRIES) {
+          console.error(`  ${RETRY_BACKOFF_MS / 1000}秒待って再試行します...`);
+          await sleep(RETRY_BACKOFF_MS);
+        }
       }
+    }
 
-      supply[character.id] = {
-        pageCount: overall.pageCount,
-        estimatedRange: overall.estimatedRange,
-        byWorkType,
-        fetchedAt: new Date().toISOString(),
-      };
-    } catch (err) {
-      console.error(`\n[${character.name}] の収集に失敗しました: ${err.message}`);
+    if (lastErr) {
+      console.error(`\n[${character.name}] の収集に失敗しました（${MAX_RETRIES}回試行）: ${lastErr.message}`);
       console.error(`ここまでの ${Object.keys(supply).length} 件は data/supply.json に保存済みです。`);
       console.error('再実行すると、取得済みキャラをスキップして続きから再開します。');
       process.exitCode = 1;
       return;
     }
 
+    supply[character.id] = entry;
     // 1 キャラ終わるたびに保存する。中断されても直前までの結果は残る。
     writeFileSync(supplyPath, `${JSON.stringify(supply, null, 2)}\n`);
   }
