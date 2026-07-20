@@ -24,11 +24,18 @@ const SEARCH_BASE = 'https://www.dlsite.com/maniax/fsr/=/language/jp/sex_categor
 /**
  * DLsite 検索結果 1 ページ目の URL を組み立てる。
  * `page` を受け取っても無視する — 2 ページ目以降を生成できる引数を持たせない（B1）。
+ *
+ * スペースは `%20` ではなく `+` でエンコードする。実測: このパス位置の `%20` は
+ * Cloudflare 側で 403 になる（100% 再現、UA/リトライ非依存）一方、`+` は 200 かつ
+ * DLsite 側が正しく複合キーワードとして解釈する（`<title>` に両方の語が入る）。
+ * `dlsiteQuery` は「シリーズ名 + キャラ名」のような複合語を前提にしているため
+ * （SPEC 2.1 の誤爆対策）、これを壊すと収集対象の大半で 403 になる。
  * @param {{ keyword: string, workType?: string }} opts
  * @returns {string}
  */
 export function buildSearchUrl({ keyword, workType }) {
-  const segments = [SEARCH_BASE, `keyword/${encodeURIComponent(keyword)}`];
+  const encodedKeyword = encodeURIComponent(keyword).replace(/%20/g, '+');
+  const segments = [SEARCH_BASE, `keyword/${encodedKeyword}`];
   if (workType) {
     segments.push(`work_type_category%5B0%5D/${encodeURIComponent(workType)}`);
   }
