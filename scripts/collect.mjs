@@ -164,6 +164,8 @@ async function collectCharacter(politeFetch, character) {
     estimatedRange: overall.estimatedRange,
     byWorkType,
     fetchedAt: new Date().toISOString(),
+    // hitomi.la 分は別プロセス（collect-hitomi.mjs）が埋める。ここでは未収集として null。
+    hitomi: null,
   };
 }
 

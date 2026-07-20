@@ -39,12 +39,24 @@ export type Axes = {
 
 export type AxisKey = keyof Axes;
 
+/**
+ * hitomi.la のタグ検索クエリ。`character` はキャラタグ（例: "narberal gamma"）。
+ * `series` は同名キャラが他作品と衝突する場合にのみ指定する series タグ
+ * （例: "azur lane"）。指定時は character タグと series タグの積集合の件数を使う
+ * （素の character タグ件数は他作品の同名キャラを含み得るため。SPEC 2.2）。
+ */
+export type HitomiQuery = {
+  character: string;
+  series: string | null;
+};
+
 export type Character = {
   id: string; // 一意（A3）
   name: string;
   aliases: string[];
   series: string;
-  dlsiteQuery: string | null; // null = 収録対象外（SPEC 2.1）
+  dlsiteQuery: string | null; // null = DLsite収集の対象外（SPEC 2.1）
+  hitomiQuery: HitomiQuery | null; // null = hitomi.la収集の対象外（SPEC 2.2）
   axes: Axes;
   reviewed: boolean; // A2。人間のレビューでのみ true になる（SPEC 4.3）
 };
@@ -54,6 +66,14 @@ export type SupplyEntry = {
   estimatedRange: [number, number];
   byWorkType: Record<string, number>;
   fetchedAt: string; // ISO 8601（A8 の正規表現に一致すること）
+  hitomi: HitomiSupplyEntry | null; // null = hitomiQuery が null、または未収集
+};
+
+/** `HitomiQuery` の積集合計算まで終えた結果。件数の単位はギャラリー数（DLsiteのpageCountとは別単位）。 */
+export type HitomiSupplyEntry = {
+  galleryCount: number;
+  seriesFilter: string | null; // 積集合に使った series タグ。使わなければ null（トレーサビリティ用）
+  fetchedAt: string; // ISO 8601
 };
 
 export type SupplyFile = Record<string, SupplyEntry>;
@@ -76,6 +96,11 @@ const axesSchema: z.ZodType<Axes> = z.object({
   mood: z.enum(MOOD_VALUES).nullable(),
 });
 
+const hitomiQuerySchema: z.ZodType<HitomiQuery> = z.object({
+  character: z.string().min(1),
+  series: z.string().min(1).nullable(),
+});
+
 const characterSchema: z.ZodType<Character> = z.object({
   id: z.string().min(1),
   name: z.string().min(1),
@@ -83,6 +108,8 @@ const characterSchema: z.ZodType<Character> = z.object({
   series: z.string(),
   // null = DLsite 検索でこのキャラだけを引ける文字列を確定できず、収録対象外。
   dlsiteQuery: z.string().min(1).nullable(),
+  // null = hitomi.la のタグでこのキャラを一意に特定できず、収録対象外。
+  hitomiQuery: hitomiQuerySchema.nullable(),
   axes: axesSchema,
   reviewed: z.boolean(),
 });
@@ -92,11 +119,18 @@ export const charactersSchema: z.ZodType<Character[]> = z.array(characterSchema)
 /** A8 が要求する ISO 8601（date-time、オフセットまたは Z 必須）。 */
 const ISO_8601_DATE_TIME = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?(Z|[+-]\d{2}:\d{2})$/;
 
+const hitomiSupplyEntrySchema: z.ZodType<HitomiSupplyEntry> = z.object({
+  galleryCount: z.number().int().nonnegative(),
+  seriesFilter: z.string().min(1).nullable(),
+  fetchedAt: z.string().regex(ISO_8601_DATE_TIME),
+});
+
 const supplyEntrySchema: z.ZodType<SupplyEntry> = z.object({
   pageCount: z.number().int().nonnegative(),
   estimatedRange: z.tuple([z.number().int().nonnegative(), z.number().int().nonnegative()]),
   byWorkType: z.record(z.string(), z.number().int().nonnegative()),
   fetchedAt: z.string().regex(ISO_8601_DATE_TIME),
+  hitomi: hitomiSupplyEntrySchema.nullable(),
 });
 
 /** キーはキャラ id（PLAN wave 1）。 */
