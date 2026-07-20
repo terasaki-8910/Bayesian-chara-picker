@@ -23,8 +23,9 @@ export function QuestionScreen(props: {
   askedCount: number;
   onAnswer(confidence: Confidence): void;
   onOmakase(): void;
+  onRestart(): void;
 }) {
-  const { probe, askedCount, onAnswer, onOmakase } = props;
+  const { probe, askedCount, onAnswer, onOmakase, onRestart } = props;
 
   return (
     <div data-testid="question" className="min-h-dvh bg-bg text-text-primary">
@@ -54,18 +55,32 @@ export function QuestionScreen(props: {
           ))}
         </div>
 
-        <button
-          type="button"
-          data-testid="omakase"
-          onClick={onOmakase}
-          className={[
-            'mt-10 self-start text-label text-text-tertiary underline-offset-4',
-            'hover:text-text-secondary hover:underline focus-visible:outline focus-visible:outline-2',
-            'focus-visible:outline-offset-2 focus-visible:outline-accent',
-          ].join(' ')}
-        >
-          おまかせで見る
-        </button>
+        <div className="mt-10 flex items-center gap-5">
+          <button
+            type="button"
+            data-testid="omakase"
+            onClick={onOmakase}
+            className={[
+              'text-label text-text-tertiary underline-offset-4',
+              'hover:text-text-secondary hover:underline focus-visible:outline focus-visible:outline-2',
+              'focus-visible:outline-offset-2 focus-visible:outline-accent',
+            ].join(' ')}
+          >
+            おまかせで見る
+          </button>
+          <button
+            type="button"
+            data-testid="restart"
+            onClick={onRestart}
+            className={[
+              'text-label text-text-tertiary underline-offset-4',
+              'hover:text-text-secondary hover:underline focus-visible:outline focus-visible:outline-2',
+              'focus-visible:outline-offset-2 focus-visible:outline-accent',
+            ].join(' ')}
+          >
+            最初からやり直す
+          </button>
+        </div>
       </div>
     </div>
   );

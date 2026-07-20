@@ -35,10 +35,18 @@ export default function App() {
           askedCount={interview.askedCount}
           onAnswer={interview.answer}
           onOmakase={handleOmakase}
+          onRestart={handleRestart}
         />
       );
     case 'guessing':
-      return <GuessScreen guess={interview.guess} onConfirm={interview.confirm} onReject={interview.reject} />;
+      return (
+        <GuessScreen
+          guess={interview.guess}
+          onConfirm={interview.confirm}
+          onReject={interview.reject}
+          onRestart={handleRestart}
+        />
+      );
     case 'confirmed':
       return <ResultScreen result={interview.guess} onRestart={handleRestart} />;
     case 'exhausted':
