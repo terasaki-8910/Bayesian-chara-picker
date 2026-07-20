@@ -28,11 +28,16 @@ function sleep(ms) {
 }
 
 /**
+ * @typedef {(url: string, init: { headers: Record<string, string> }) =>
+ *   Promise<{ ok: boolean, status: number, arrayBuffer: () => Promise<ArrayBuffer> }>} HitomiFetchLike
+ */
+
+/**
  * collect.mjs の createPoliteFetcher とは独立させる — あちらは DLsite 用の
  * User-Agent をハードコードして上書きする実装で、呼び出し側から差し替えられない
  * （B4 で固定された「凍結シンボル」なので変更しない）。hitomi.la 用に別サイト・
  * 別UA・別間隔の薄いスロットラーをここに持つ。
- * @param {{ fetchImpl?: typeof fetch, delayMs?: number }} [opts]
+ * @param {{ fetchImpl?: HitomiFetchLike, delayMs?: number }} [opts]
  */
 export function createHitomiFetcher({ fetchImpl = fetch, delayMs = REQUEST_DELAY_MS } = {}) {
   let lastCallAt = null;
@@ -76,7 +81,7 @@ export function parseNozomiIds(buffer) {
 /**
  * 指定タグのギャラリーID集合を取得する。タグが存在しない場合 404 が返るので空集合にする
  * （DLsiteの0件と同じ扱い。エラーにしない）。
- * @param {(url: string, init?: object) => Promise<Response>} politeFetch
+ * @param {HitomiFetchLike} politeFetch
  * @param {'character' | 'series'} area
  * @param {string} tag
  * @returns {Promise<Set<number>>}
@@ -97,7 +102,7 @@ async function fetchGalleryIds(politeFetch, area, tag) {
  * series タグの積集合を取る（同名キャラが他作品に存在する場合の誤カウント対策。
  * 実例: hitomi の character:yamato は 878 件あるが、大半は ONE PIECE / NARUTO の
  * ヤマトで、series:azur lane と積集合すると 11 件まで絞れる）。
- * @param {(url: string, init?: object) => Promise<Response>} politeFetch
+ * @param {HitomiFetchLike} politeFetch
  * @param {{ character: string, series: string | null }} query
  * @param {Map<string, Set<number>>} seriesCache 同一実行内で series タグを使い回すキャッシュ
  */

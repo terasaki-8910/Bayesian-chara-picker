@@ -48,7 +48,7 @@ describe('hitomi.la 収集スクリプトの規約遵守', () => {
   });
 
   it('countForHitomiQuery: series 未指定なら character タグの件数をそのまま使う', async () => {
-    const fetchImpl = vi.fn(async () => okResponse([10, 20, 30]));
+    const fetchImpl = async (_url: string, _init: { headers: Record<string, string> }) => okResponse([10, 20, 30]);
     const fetcher = createHitomiFetcher({ fetchImpl, delayMs: 0 });
     const result = await countForHitomiQuery(fetcher, { character: 'rem', series: null }, new Map());
     expect(result).toEqual({ galleryCount: 3, seriesFilter: null });
@@ -56,11 +56,11 @@ describe('hitomi.la 収集スクリプトの規約遵守', () => {
 
   it('countForHitomiQuery: series 指定時は character と series の積集合を使う（他作品同名キャラの誤カウント対策）', async () => {
     // yamato: 3件（One Pieceのヤマトを含む想定） / azur lane series: そのうち2件だけが実際に該当。
-    const fetchImpl = vi.fn(async (url: string) => {
+    const fetchImpl = async (url: string, _init: { headers: Record<string, string> }) => {
       if (url.includes('/character/')) return okResponse([1, 2, 3]);
       if (url.includes('/series/')) return okResponse([2, 3, 999]);
       throw new Error(`unexpected url: ${url}`);
-    });
+    };
     const fetcher = createHitomiFetcher({ fetchImpl, delayMs: 0 });
     const result = await countForHitomiQuery(
       fetcher,
@@ -71,27 +71,32 @@ describe('hitomi.la 収集スクリプトの規約遵守', () => {
   });
 
   it('countForHitomiQuery: series タグの取得は同一実行内でキャッシュされる（2 回呼んでも fetch は 3 回）', async () => {
-    const fetchImpl = vi.fn(async (url: string) => {
-      if (url.includes('/character/')) return okResponse([1, 2]);
+    let callCount = 0;
+    const fetchImpl = async (_url: string, _init: { headers: Record<string, string> }) => {
+      callCount += 1;
       return okResponse([1, 2]);
-    });
+    };
     const fetcher = createHitomiFetcher({ fetchImpl, delayMs: 0 });
     const cache = new Map();
     await countForHitomiQuery(fetcher, { character: 'nagato', series: 'azur lane' }, cache);
     await countForHitomiQuery(fetcher, { character: 'yamato', series: 'azur lane' }, cache);
     // character:nagato + character:yamato + series:azur_lane(1回だけ) = 3
-    expect(fetchImpl).toHaveBeenCalledTimes(3);
+    expect(callCount).toBe(3);
   });
 
   it('存在しないタグ（404）は空集合として扱う（エラーにしない）', async () => {
-    const fetchImpl = vi.fn(async () => notFoundResponse());
+    const fetchImpl = async (_url: string, _init: { headers: Record<string, string> }) => notFoundResponse();
     const fetcher = createHitomiFetcher({ fetchImpl, delayMs: 0 });
     const result = await countForHitomiQuery(fetcher, { character: 'nonexistent-tag', series: null }, new Map());
     expect(result).toEqual({ galleryCount: 0, seriesFilter: null });
   });
 
   it('404 以外の異常ステータスはエラーにする', async () => {
-    const fetchImpl = vi.fn(async () => ({ ok: false, status: 500, arrayBuffer: async () => nozomiBuffer([]) }));
+    const fetchImpl = async (_url: string, _init: { headers: Record<string, string> }) => ({
+      ok: false,
+      status: 500,
+      arrayBuffer: async () => nozomiBuffer([]),
+    });
     const fetcher = createHitomiFetcher({ fetchImpl, delayMs: 0 });
     await expect(
       countForHitomiQuery(fetcher, { character: 'rem', series: null }, new Map()),
@@ -101,7 +106,7 @@ describe('hitomi.la 収集スクリプトの規約遵守', () => {
   it('リクエスト間隔が REQUEST_DELAY_MS 以上あく', async () => {
     vi.useFakeTimers();
     const calledAt: number[] = [];
-    const fetchImpl = async () => {
+    const fetchImpl = async (_url: string, _init: { headers: Record<string, string> }) => {
       calledAt.push(Date.now());
       return okResponse([]);
     };
