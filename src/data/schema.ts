@@ -78,6 +78,13 @@ export type Character = {
   hitomiQuery: HitomiQuery | null; // null = hitomi.la収集の対象外（SPEC 2.2）
   axes: Axes;
   reviewed: boolean; // A2。人間のレビューでのみ true になる（SPEC 4.3）
+  /**
+   * true = 公式デザイン未確定などの理由でレビューを完了できないキャラ。
+   * A2（reviewed:false を禁じるゲート）の対象外にする代わり、reviewed は
+   * 恒久的に false のまま置く。推薦・おまかせのハードフィルタでも常に除外する
+   * （性別表現「男性」と同じ扱い。SPEC 2.4 / 4.3）。
+   */
+  provisional: boolean;
 };
 
 export type SupplyEntry = {
@@ -141,6 +148,7 @@ const characterSchema: z.ZodType<Character> = z.object({
   hitomiQuery: hitomiQuerySchema.nullable(),
   axes: axesSchema,
   reviewed: z.boolean(),
+  provisional: z.boolean(),
 });
 
 export const charactersSchema: z.ZodType<Character[]> = z.array(characterSchema);

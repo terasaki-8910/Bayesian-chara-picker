@@ -26,9 +26,19 @@ describe('A. データ品質', () => {
     expect(result.success ? [] : result.error.issues.map((i) => `${i.path.join('.')}: ${i.message}`)).toEqual([]);
   });
 
-  it('A2: reviewed:false のレコードが 0 件', () => {
-    const unreviewed = characters.filter((c) => c.reviewed !== true).map((c) => c.id);
+  it('A2: reviewed:false のレコードが 0 件（provisional は対象外）', () => {
+    // provisional（公式デザイン未確定などで恒久的に reviewed:false のキャラ）は
+    // 意図的な例外なので A2 では見ない。推薦から除外されることは C7 相当の
+    // テストで別途縛る（SPEC 2.4 のハードフィルタ）。
+    const unreviewed = characters.filter((c) => c.reviewed !== true && c.provisional !== true).map((c) => c.id);
     expect(unreviewed).toEqual([]);
+  });
+
+  it('A12: provisional なレコードは reviewed:false のまま（true と同時に立てない）', () => {
+    // provisional は「レビューを保留する」宣言であって、reviewed:true と
+    // 同時に立つと A2 の抜け穴として悪用できてしまう（review せずに出荷する手段になる）。
+    const contradictions = characters.filter((c) => c.provisional === true && c.reviewed === true).map((c) => c.id);
+    expect(contradictions).toEqual([]);
   });
 
   it('A3: id が一意', () => {
