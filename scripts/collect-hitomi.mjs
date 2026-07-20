@@ -28,11 +28,16 @@ function sleep(ms) {
 }
 
 /**
+ * @typedef {(url: string, init?: { headers?: Record<string, string> }) =>
+ *   Promise<{ ok: boolean, status: number, arrayBuffer: () => Promise<ArrayBuffer> }>} FetchLike
+ */
+
+/**
  * collect.mjs の createPoliteFetcher とは独立させる — あちらは DLsite 用の
  * User-Agent をハードコードして上書きする実装で、呼び出し側から差し替えられない
  * （B4 で固定された「凍結シンボル」なので変更しない）。hitomi.la 用に別サイト・
  * 別UA・別間隔の薄いスロットラーをここに持つ。
- * @param {{ fetchImpl?: typeof fetch, delayMs?: number }} [opts]
+ * @param {{ fetchImpl?: FetchLike, delayMs?: number }} [opts]
  */
 export function createHitomiFetcher({ fetchImpl = fetch, delayMs = REQUEST_DELAY_MS } = {}) {
   let lastCallAt = null;
