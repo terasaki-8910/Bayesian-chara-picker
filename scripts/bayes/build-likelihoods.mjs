@@ -14,6 +14,7 @@ import { fileURLToPath } from 'node:url';
 import {
   DEFAULT_EPSILON,
   AXIS_MERGE_WEIGHT,
+  WIKIDATA_MERGE_WEIGHT,
   clamp01,
   computeBinaryTheta,
   computeGroupBaseRate,
@@ -22,6 +23,7 @@ import {
   estimateBinaryLikelihood,
   estimateBinaryRawRate,
   estimateGroupLikelihood,
+  estimateWikidataLikelihood,
   mergeLikelihoods,
 } from './estimators.mjs';
 
@@ -73,12 +75,29 @@ function axisSourceLikelihood(character, source) {
     : estimateAxisSingleLikelihood(raw, source.value);
 }
 
+/**
+ * wikidata-facts.json は16軸(schema.tsのAxes)に無いキー（eyeColor等）も持つため
+ * character.axesではなく専用のfactsオブジェクトから引く（PLAN「P5」）。
+ */
+function wikidataSourceLikelihood(facts, source) {
+  const value = facts?.[source.axis];
+  return estimateWikidataLikelihood({ value, target: source.value, multi: source.multi });
+}
+
 async function main() {
   const dataDir = new URL('../../data/', import.meta.url);
   const cacheDir = new URL('../../state/bayes-pipeline/danbooru/', import.meta.url);
   const characters = JSON.parse(readFileSync(fileURLToPath(new URL('characters.json', dataDir)), 'utf8'));
   const questionsFile = JSON.parse(readFileSync(fileURLToPath(new URL('bayes/questions.json', dataDir)), 'utf8'));
   const tagMap = JSON.parse(readFileSync(fileURLToPath(new URL('bayes/tag-map.json', dataDir)), 'utf8'));
+  // wikidata-facts.json は任意（P5a未実行時は{}扱い。Danbooruキャッシュ欠落と同じく
+  // 自然にnull寄与へフォールバックする）。
+  let wikidataFacts = { entries: {} };
+  try {
+    wikidataFacts = JSON.parse(readFileSync(fileURLToPath(new URL('bayes/wikidata-facts.json', dataDir)), 'utf8'));
+  } catch (_err) {
+    // 未実行。
+  }
 
   const postsByChar = new Map();
   for (const c of characters) {
@@ -153,6 +172,7 @@ async function main() {
     const groupSource = q.sources.find((s) => s.type === 'danbooru-group');
     const binarySource = q.sources.find((s) => s.type === 'danbooru-binary');
     const axisSource = q.sources.find((s) => s.type === 'axis');
+    const wikidataSource = q.sources.find((s) => s.type === 'wikidata');
 
     let fallback = 0.5;
     if (groupSource) fallback = groupBaseRate[groupSource.group][groupSource.tag];
@@ -181,6 +201,10 @@ async function main() {
       }
       if (axisSource) {
         sources.push({ p: axisSourceLikelihood(c, axisSource), weight: AXIS_MERGE_WEIGHT });
+      }
+      if (wikidataSource) {
+        const facts = wikidataFacts.entries[c.id];
+        sources.push({ p: wikidataSourceLikelihood(facts, wikidataSource), weight: WIKIDATA_MERGE_WEIGHT });
       }
       const merged = mergeLikelihoods(sources, fallback);
       chars[c.id].push(round3(merged));

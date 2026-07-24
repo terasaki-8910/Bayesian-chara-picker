@@ -16,11 +16,21 @@ import questionsRuntimeFile from '../data/bayes/questions.runtime.json';
 
 const FORBIDDEN_TERMS: string[] = forbiddenTermsFile.terms;
 
+/**
+ * wikidata の axis は schema.ts の Axes キーに縛られない独自集合（eyeColor は
+ * Axesに存在しない事実キー）。llm の axis は抽出対象＝16軸マップのaxis-only質問
+ * （personality/mood/roles/species/combat/affiliationKind/distance）に限る
+ * （PLAN「P5」）。
+ */
+const WIKIDATA_AXIS_KEYS = ['genderExpression', 'hairColor', 'eyeColor', 'species'] as const;
+const LLM_AXIS_KEYS = ['personality', 'mood', 'species', 'combat', 'distance', 'affiliationKind', 'roles'] as const;
+
 const sourceSchema = z.discriminatedUnion('type', [
   z.object({ type: z.literal('danbooru-group'), group: z.string().min(1), tag: z.string().min(1) }),
   z.object({ type: z.literal('danbooru-binary'), tag: z.string().min(1) }),
   z.object({ type: z.literal('axis'), axis: z.string().min(1), value: z.string().min(1), multi: z.boolean() }),
-  z.object({ type: z.literal('llm') }).passthrough(),
+  z.object({ type: z.literal('wikidata'), axis: z.enum(WIKIDATA_AXIS_KEYS), value: z.string().min(1), multi: z.boolean() }),
+  z.object({ type: z.literal('llm'), axis: z.enum(LLM_AXIS_KEYS), value: z.string().min(1), multi: z.boolean() }),
 ]);
 
 const questionSchema = z.object({
@@ -223,6 +233,51 @@ describe('BA5. tag-overrides.json / tag-map.json の整合性', () => {
     expect(new Set(Object.keys(tagMap.entries))).toEqual(ids);
     for (const [id, entry] of Object.entries(tagMap.entries) as [string, { tag: string | null; reason?: string }][]) {
       if (entry.tag === null) expect(entry.reason, id).toBeTruthy();
+    }
+  });
+});
+
+describe('BA7. wikidata-map.json / wikidata-facts.json の整合性（PLAN「P5a」）', () => {
+  const wikidataMap = JSON.parse(readFileSync(new URL('../data/bayes/wikidata-map.json', import.meta.url), 'utf8'));
+  const wikidataFacts = JSON.parse(readFileSync(new URL('../data/bayes/wikidata-facts.json', import.meta.url), 'utf8'));
+  const GENDER_VALUES = new Set(['女性', 'おとこの娘', 'ふたなり', '男性']);
+  const HAIR_COLOR_VALUES = new Set(['黒', '白', '金', '茶', '赤', '青', '緑', '桃', '紫', '銀']);
+  const EYE_COLOR_TOKENS = new Set(['aqua', 'black', 'blue', 'brown', 'green', 'grey', 'orange', 'purple', 'red', 'yellow']);
+
+  it('wikidata-map.json は全キャラを1件ずつ持ち、qid=nullは reason 必須', () => {
+    const ids = new Set(charactersFile.map((c) => c.id));
+    expect(new Set(Object.keys(wikidataMap.entries))).toEqual(ids);
+    for (const [id, entry] of Object.entries(wikidataMap.entries) as [string, { qid: string | null; reason?: string }][]) {
+      if (entry.qid === null) expect(entry.reason, id).toBeTruthy();
+    }
+  });
+
+  it('wikidata-facts.json は全キャラを1件ずつ持つ（空オブジェクトも可）', () => {
+    const ids = new Set(charactersFile.map((c) => c.id));
+    expect(new Set(Object.keys(wikidataFacts.entries))).toEqual(ids);
+  });
+
+  it('facts の各値は既知の値域に収まる', () => {
+    for (const [id, facts] of Object.entries(wikidataFacts.entries) as [string, Record<string, unknown>][]) {
+      if ('genderExpression' in facts) expect(GENDER_VALUES.has(facts.genderExpression as string), id).toBe(true);
+      if ('hairColor' in facts) expect(HAIR_COLOR_VALUES.has(facts.hairColor as string), id).toBe(true);
+      if ('eyeColor' in facts) expect(EYE_COLOR_TOKENS.has(facts.eyeColor as string), id).toBe(true);
+      if ('species' in facts) {
+        expect(Array.isArray(facts.species), id).toBe(true);
+        expect((facts.species as string[]).every((v) => v === '人間'), id).toBe(true);
+      }
+    }
+  });
+
+  it('facts.genderExpression は本プロジェクト自身の査読済みcharacters.jsonと食い違わない（サニティチェックの回帰防止）', () => {
+    // 2026-07-25、azurlane-nagatoがWikidata誤対応でgenderExpression=男性を返した
+    // 実例で発覚。map-wikidata.mjs側でこの食い違いを検出したキャラのfactsは
+    // 丸ごと{}に無効化される設計なので、ここでその契約が守られているか検証する。
+    const byId = new Map(charactersFile.map((c) => [c.id, c]));
+    for (const [id, facts] of Object.entries(wikidataFacts.entries) as [string, { genderExpression?: string }][]) {
+      if (!facts.genderExpression) continue;
+      const reviewed = byId.get(id)?.axes.genderExpression;
+      expect(facts.genderExpression, `${id}: wikidata=${facts.genderExpression} vs 査読済み=${reviewed}`).toBe(reviewed);
     }
   });
 });

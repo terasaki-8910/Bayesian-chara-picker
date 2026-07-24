@@ -1,0 +1,624 @@
+{
+  "version": 1,
+  "entries": {
+    "rezero-rem": {
+      "genderExpression": "女性",
+      "hairColor": "青",
+      "eyeColor": "blue"
+    },
+    "rezero-ram": {},
+    "fate-scathach": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "fate-tamamo": {
+      "genderExpression": "女性",
+      "hairColor": "桃",
+      "eyeColor": "yellow"
+    },
+    "fate-bb": {},
+    "fgo-ishtar": {},
+    "fgo-kiyohime": {},
+    "fgo-medusa": {},
+    "overlord-albedo": {
+      "genderExpression": "女性",
+      "hairColor": "黒",
+      "eyeColor": "yellow"
+    },
+    "overlord-narberal": {
+      "genderExpression": "女性",
+      "hairColor": "黒",
+      "eyeColor": "black"
+    },
+    "konosuba-darkness": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "eyeColor": "blue",
+      "species": [
+        "人間"
+      ]
+    },
+    "fairytail-erza": {
+      "genderExpression": "女性",
+      "hairColor": "赤",
+      "eyeColor": "brown",
+      "species": [
+        "人間"
+      ]
+    },
+    "fairytail-mirajane": {
+      "genderExpression": "女性",
+      "hairColor": "白",
+      "eyeColor": "blue",
+      "species": [
+        "人間"
+      ]
+    },
+    "dragonball-bulma": {
+      "genderExpression": "女性",
+      "hairColor": "紫",
+      "eyeColor": "aqua",
+      "species": [
+        "人間"
+      ]
+    },
+    "dragonball-18": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "naruto-tsunade": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "eyeColor": "brown",
+      "species": [
+        "人間"
+      ]
+    },
+    "naruto-kurenai": {
+      "genderExpression": "女性",
+      "eyeColor": "red",
+      "species": [
+        "人間"
+      ]
+    },
+    "onepiece-robin": {
+      "genderExpression": "女性",
+      "hairColor": "黒",
+      "eyeColor": "blue",
+      "species": [
+        "人間"
+      ]
+    },
+    "onepiece-hancock": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "onepiece-nami": {
+      "genderExpression": "女性",
+      "eyeColor": "brown",
+      "species": [
+        "人間"
+      ]
+    },
+    "monmusu-miia": {
+      "genderExpression": "女性",
+      "hairColor": "赤",
+      "eyeColor": "orange"
+    },
+    "monmusu-centorea": {},
+    "nier-2b": {
+      "genderExpression": "女性",
+      "hairColor": "白",
+      "eyeColor": "blue"
+    },
+    "nier-a2": {},
+    "azurlane-nagato": {},
+    "azurlane-yamato": {},
+    "granblue-narmaya": {
+      "genderExpression": "女性"
+    },
+    "idolmaster-chihaya": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "kanokari-chizuru": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "brown",
+      "species": [
+        "人間"
+      ]
+    },
+    "spyfamily-yor": {
+      "genderExpression": "女性",
+      "hairColor": "黒",
+      "eyeColor": "red",
+      "species": [
+        "人間"
+      ]
+    },
+    "csm-makima": {
+      "genderExpression": "女性",
+      "hairColor": "赤",
+      "eyeColor": "yellow"
+    },
+    "aot-levi": {
+      "genderExpression": "男性",
+      "species": [
+        "人間"
+      ]
+    },
+    "onepiece-zoro": {
+      "genderExpression": "男性",
+      "hairColor": "緑",
+      "species": [
+        "人間"
+      ]
+    },
+    "fate-astolfo": {},
+    "bleach-rangiku": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "eyeColor": "blue"
+    },
+    "bleach-yoruichi": {
+      "genderExpression": "女性"
+    },
+    "bluearchive-asuna": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "eyeColor": "blue"
+    },
+    "bluearchive-yuuka": {
+      "genderExpression": "女性",
+      "hairColor": "紫",
+      "eyeColor": "purple",
+      "species": [
+        "人間"
+      ]
+    },
+    "bluearchive-toki": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "bluearchive-mika": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "bluearchive-kisaki": {
+      "genderExpression": "女性"
+    },
+    "bluearchive-rio": {
+      "genderExpression": "女性",
+      "hairColor": "黒",
+      "eyeColor": "red",
+      "species": [
+        "人間"
+      ]
+    },
+    "bluearchive-hina": {
+      "genderExpression": "女性"
+    },
+    "bluearchive-noa": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "touhou-reimu": {
+      "genderExpression": "女性",
+      "hairColor": "紫",
+      "eyeColor": "brown",
+      "species": [
+        "人間"
+      ]
+    },
+    "touhou-sakuya": {
+      "genderExpression": "女性",
+      "hairColor": "銀",
+      "species": [
+        "人間"
+      ]
+    },
+    "touhou-patchouli": {
+      "genderExpression": "女性",
+      "hairColor": "紫",
+      "eyeColor": "purple"
+    },
+    "touhou-sanae": {
+      "genderExpression": "女性",
+      "hairColor": "緑",
+      "eyeColor": "green",
+      "species": [
+        "人間"
+      ]
+    },
+    "touhou-flandre": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "eyeColor": "red"
+    },
+    "touhou-remilia": {
+      "genderExpression": "女性",
+      "hairColor": "青",
+      "eyeColor": "red"
+    },
+    "touhou-marisa": {
+      "genderExpression": "女性",
+      "hairColor": "赤",
+      "eyeColor": "yellow",
+      "species": [
+        "人間"
+      ]
+    },
+    "touhou-alice": {
+      "genderExpression": "女性",
+      "eyeColor": "yellow",
+      "species": [
+        "人間"
+      ]
+    },
+    "genshin-ganyu": {
+      "genderExpression": "女性",
+      "hairColor": "青",
+      "eyeColor": "purple",
+      "species": [
+        "人間"
+      ]
+    },
+    "genshin-raiden-shogun": {
+      "genderExpression": "女性",
+      "hairColor": "紫",
+      "eyeColor": "purple"
+    },
+    "genshin-lumine": {},
+    "genshin-yae-miko": {
+      "genderExpression": "女性",
+      "hairColor": "桃",
+      "eyeColor": "purple",
+      "species": [
+        "人間"
+      ]
+    },
+    "genshin-hu-tao": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "orange",
+      "species": [
+        "人間"
+      ]
+    },
+    "genshin-mona": {},
+    "genshin-keqing": {
+      "genderExpression": "女性",
+      "hairColor": "紫",
+      "eyeColor": "purple",
+      "species": [
+        "人間"
+      ]
+    },
+    "genshin-eula": {
+      "genderExpression": "女性",
+      "hairColor": "青",
+      "eyeColor": "yellow",
+      "species": [
+        "人間"
+      ]
+    },
+    "onepiece-vivi": {
+      "genderExpression": "女性",
+      "hairColor": "青",
+      "species": [
+        "人間"
+      ]
+    },
+    "onepiece-tashigi": {
+      "genderExpression": "女性",
+      "hairColor": "黒",
+      "eyeColor": "brown",
+      "species": [
+        "人間"
+      ]
+    },
+    "onepiece-perona": {
+      "genderExpression": "女性",
+      "hairColor": "桃",
+      "species": [
+        "人間"
+      ]
+    },
+    "onepiece-kalifa": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "onepiece-carrot": {
+      "genderExpression": "女性"
+    },
+    "onepiece-uta": {},
+    "onepiece-sadi": {},
+    "naruto-sakura": {
+      "genderExpression": "女性",
+      "hairColor": "桃",
+      "species": [
+        "人間"
+      ]
+    },
+    "naruto-hinata": {
+      "genderExpression": "女性",
+      "hairColor": "青",
+      "species": [
+        "人間"
+      ]
+    },
+    "naruto-ino": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "species": [
+        "人間"
+      ]
+    },
+    "naruto-shizune": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "naruto-temari": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "species": [
+        "人間"
+      ]
+    },
+    "naruto-anko": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "naruto-tenten": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "bleach-orihime": {
+      "genderExpression": "女性",
+      "eyeColor": "brown",
+      "species": [
+        "人間"
+      ]
+    },
+    "bleach-rukia": {
+      "genderExpression": "女性",
+      "hairColor": "黒",
+      "eyeColor": "purple"
+    },
+    "bleach-soifon": {
+      "genderExpression": "女性",
+      "hairColor": "黒",
+      "eyeColor": "grey",
+      "species": [
+        "人間"
+      ]
+    },
+    "bleach-halibel": {
+      "genderExpression": "女性"
+    },
+    "bleach-nelliel": {
+      "genderExpression": "女性"
+    },
+    "bleach-unohana": {
+      "genderExpression": "女性"
+    },
+    "bleach-nemu": {},
+    "bleach-isane": {
+      "genderExpression": "女性"
+    },
+    "overlord-shalltear": {
+      "genderExpression": "女性",
+      "hairColor": "銀",
+      "eyeColor": "red"
+    },
+    "overlord-aura": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "eyeColor": "green"
+    },
+    "overlord-mare": {},
+    "overlord-lupusregina": {
+      "genderExpression": "女性",
+      "hairColor": "赤",
+      "eyeColor": "orange"
+    },
+    "overlord-clementine": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "eyeColor": "red",
+      "species": [
+        "人間"
+      ]
+    },
+    "overlord-yuri": {
+      "genderExpression": "女性",
+      "hairColor": "黒",
+      "eyeColor": "black"
+    },
+    "overlord-solution": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "eyeColor": "blue"
+    },
+    "utau-teto": {},
+    "genshin-ayaka": {
+      "genderExpression": "女性",
+      "hairColor": "銀",
+      "eyeColor": "blue",
+      "species": [
+        "人間"
+      ]
+    },
+    "genshin-shenhe": {
+      "genderExpression": "女性",
+      "hairColor": "白",
+      "eyeColor": "grey",
+      "species": [
+        "人間"
+      ]
+    },
+    "genshin-nahida": {
+      "genderExpression": "女性"
+    },
+    "genshin-furina": {
+      "genderExpression": "女性",
+      "hairColor": "白",
+      "eyeColor": "blue",
+      "species": [
+        "人間"
+      ]
+    },
+    "genshin-barbara": {},
+    "touhou-yukari": {
+      "genderExpression": "女性"
+    },
+    "touhou-satori": {
+      "genderExpression": "女性",
+      "hairColor": "紫",
+      "eyeColor": "purple"
+    },
+    "touhou-aya": {
+      "genderExpression": "女性",
+      "hairColor": "黒"
+    },
+    "touhou-reisen": {
+      "genderExpression": "女性"
+    },
+    "touhou-youmu": {
+      "genderExpression": "女性"
+    },
+    "kancolle-atago": {},
+    "kancolle-shimakaze": {
+      "genderExpression": "女性"
+    },
+    "kancolle-kaga": {},
+    "kancolle-kashima": {},
+    "kancolle-takao": {},
+    "kancolle-hamakaze": {},
+    "kancolle-taihou": {},
+    "kancolle-suzuya": {},
+    "kancolle-kongou": {},
+    "touhou-koishi": {
+      "genderExpression": "女性",
+      "hairColor": "緑",
+      "eyeColor": "green"
+    },
+    "touhou-momiji": {},
+    "touhou-meiling": {
+      "genderExpression": "女性",
+      "hairColor": "赤",
+      "eyeColor": "blue"
+    },
+    "touhou-ran": {
+      "genderExpression": "女性"
+    },
+    "touhou-koakuma": {
+      "genderExpression": "女性",
+      "hairColor": "赤",
+      "eyeColor": "red"
+    },
+    "touhou-suwako": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "eyeColor": "grey"
+    },
+    "touhou-yuuka": {
+      "genderExpression": "女性",
+      "hairColor": "緑"
+    },
+    "touhou-yuyuko": {
+      "genderExpression": "女性"
+    },
+    "lovelive-maki": {
+      "genderExpression": "女性",
+      "hairColor": "赤",
+      "eyeColor": "purple",
+      "species": [
+        "人間"
+      ]
+    },
+    "lovelive-eli": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "eyeColor": "blue",
+      "species": [
+        "人間"
+      ]
+    },
+    "lovelive-nico": {
+      "genderExpression": "女性",
+      "hairColor": "黒",
+      "eyeColor": "red",
+      "species": [
+        "人間"
+      ]
+    },
+    "lovelive-nozomi": {
+      "genderExpression": "女性",
+      "hairColor": "紫",
+      "species": [
+        "人間"
+      ]
+    },
+    "lovelive-kotori": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "orange",
+      "species": [
+        "人間"
+      ]
+    },
+    "lovelive-umi": {},
+    "fate-illya": {},
+    "fate-raikou": {},
+    "fate-nightingale": {},
+    "fate-miyu": {
+      "genderExpression": "女性",
+      "hairColor": "黒",
+      "eyeColor": "yellow",
+      "species": [
+        "人間"
+      ]
+    },
+    "fate-shuten": {
+      "genderExpression": "女性"
+    },
+    "fate-sakura": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "fate-chloe": {
+      "genderExpression": "女性",
+      "hairColor": "桃",
+      "species": [
+        "人間"
+      ]
+    },
+    "fate-jalter": {}
+  }
+}

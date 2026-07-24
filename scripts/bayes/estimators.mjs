@@ -26,10 +26,31 @@ export const AXIS_MULTI_EXCLUDES = 0.2;
 
 /** マージ式での16軸ソースの固定重み W_AXIS。 */
 export const AXIS_MERGE_WEIGHT = 30;
-/** マージ式でのLLM抽出ソースの固定重み W_LLM（Phase 5）。 */
+/**
+ * マージ式でのWikidata構造化事実ソースの固定重み W_WIKIDATA（Phase 5a）。
+ * 「自前レビュー済み16軸(30) > 外部ハード事実(25) > LLM推論(15)」の序列にする——
+ * Wikidataは客観的事実だが (a) 外部由来でこのプロジェクトのenum写像は未レビュー、
+ * (b) 版違い（別デザイン）を指すことがある（PLAN「species版差問題」）ため、
+ * 自前16軸より一段弱くする。実務上hairColor/eyeColor質問ではDanbooruのn_eff
+ * （数百〜1000）が支配的なので、この定数の厳密な値自体は低リスク。
+ */
+export const WIKIDATA_MERGE_WEIGHT = 25;
+export const WIKIDATA_LIKELY_YES = 0.9;
+export const WIKIDATA_LIKELY_NO = 0.1;
+/** マージ式でのLLM抽出ソースの固定重み W_LLM（Phase 5b）。16軸の半分——
+ * LLMがノイズを出しても軸の確信を反転させず減衰に留める安全設計（BC13保護）。 */
 export const LLM_MERGE_WEIGHT = 15;
 export const LLM_LIKELY_YES = 0.85;
 export const LLM_LIKELY_NO = 0.15;
+/**
+ * 「証拠なし」の中立アンカー値そのもの（記録用の定数）。マージには使わない——
+ * estimateWikidataLikelihood/estimateLlmLikelihood は証拠なしを常にnullで返す。
+ * 0.5をweight付きでマージへ混ぜると、軸側が0.9で確信していても
+ * σ((30·logit(0.9)+15·logit(0.5))/(30+15)) ≈ 0.81 まで引き下げてしまい、
+ * BC13のオラクル閾値(p>=0.75)に対する安全マージンを不必要に削ってしまう
+ * （2026-07-25、P5設計時に判明。0.81自体は閾値を割らないが、他ソースの
+ * 追加分と重なると割り込むリスクがあるため、証拠なしは一貫してnullにする）。
+ */
 export const LLM_NO_EVIDENCE = 0.5;
 
 /** [epsilon, 1-epsilon] にクランプする（logitが±Infinityにならないようにする）。 */
@@ -128,6 +149,24 @@ export function estimateAxisSingleLikelihood(charValue, targetValue) {
 export function estimateAxisMultiLikelihood(charArray, targetValue) {
   if (!Array.isArray(charArray) || charArray.length === 0) return null;
   return charArray.includes(targetValue) ? AXIS_MULTI_INCLUDES : AXIS_MULTI_EXCLUDES;
+}
+
+/**
+ * Wikidata構造化事実からの疑似尤度（PLAN「P5」）。単一値は一致0.9/不一致0.1、
+ * 複数値（現状はspecies=人間の確認限定用途のみ）は含む場合のみ0.9・それ以外は
+ * null（不在に負信号を出さない——species版差問題対策。P31の分類がプロジェクト側の
+ * 種族enumと1:1対応しないため、「人間である」という正信号だけを信頼し、
+ * 「人間でない」を他の種族値への負信号として使わない）。
+ * @param {{ value: string | string[] | null | undefined, target: string, multi: boolean }} params
+ * @returns {number | null}
+ */
+export function estimateWikidataLikelihood({ value, target, multi }) {
+  if (multi) {
+    if (!Array.isArray(value) || value.length === 0) return null;
+    return value.includes(target) ? WIKIDATA_LIKELY_YES : null;
+  }
+  if (value === null || value === undefined || value === '') return null;
+  return value === target ? WIKIDATA_LIKELY_YES : WIKIDATA_LIKELY_NO;
 }
 
 /**

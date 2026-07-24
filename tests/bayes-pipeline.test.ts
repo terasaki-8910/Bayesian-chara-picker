@@ -13,11 +13,22 @@ import {
 import { mapOneCharacter, seriesOverlapRatio, toBareTag } from '../scripts/bayes/map-characters.mjs';
 import { runVerifyChecks, samplePostsForTag } from '../scripts/bayes/sample-posts.mjs';
 import {
+  claimValuesOf,
+  createWikidataFetcher,
+  fetchEntity,
+  fetchEntityLabels,
+  searchEntity,
+  REQUEST_DELAY_MS as WD_REQUEST_DELAY_MS,
+  USER_AGENT as WD_USER_AGENT,
+} from '../scripts/bayes/wikidata-client.mjs';
+import {
   AXIS_MULTI_EXCLUDES,
   AXIS_MULTI_INCLUDES,
   AXIS_SINGLE_MATCH,
   AXIS_SINGLE_MISMATCH,
   DEFAULT_EPSILON,
+  WIKIDATA_LIKELY_NO,
+  WIKIDATA_LIKELY_YES,
   clamp01,
   computeBinaryTheta,
   computeGroupBaseRate,
@@ -26,13 +37,14 @@ import {
   estimateBinaryLikelihood,
   estimateBinaryRawRate,
   estimateGroupLikelihood,
+  estimateWikidataLikelihood,
   logit,
   mergeLikelihoods,
   sigmoid,
 } from '../scripts/bayes/estimators.mjs';
 
 function jsonResponse(body: unknown) {
-  return { ok: true, status: 200, json: async () => body };
+  return { ok: true, status: 200, json: async () => body, text: async () => JSON.stringify(body) };
 }
 
 afterEach(() => {
@@ -537,5 +549,148 @@ describe('BB. 尤度ビルド（scripts/bayes/build-likelihoods.mjs）', () => {
     vi.resetModules();
     await import('../scripts/bayes/build-likelihoods.mjs');
     expect(fetchSpy).not.toHaveBeenCalled();
+  });
+});
+
+describe('BB. Wikidataクライアント（scripts/bayes/wikidata-client.mjs）', () => {
+  it('リクエスト間隔が REQUEST_DELAY_MS 以上あく', async () => {
+    vi.useFakeTimers();
+    const calledAt: number[] = [];
+    const fetchImpl = async () => {
+      calledAt.push(Date.now());
+      return jsonResponse({ search: [] });
+    };
+    const fetcher = createWikidataFetcher({ fetchImpl, delayMs: WD_REQUEST_DELAY_MS });
+
+    const done = (async () => {
+      await fetcher('https://www.wikidata.org/w/api.php?a=1');
+      await fetcher('https://www.wikidata.org/w/api.php?a=2');
+    })();
+    await vi.advanceTimersByTimeAsync(5 * WD_REQUEST_DELAY_MS);
+    await done;
+
+    expect(calledAt).toHaveLength(2);
+    expect(calledAt[1] - calledAt[0]).toBeGreaterThanOrEqual(WD_REQUEST_DELAY_MS);
+  });
+
+  it('User-Agent ヘッダを送り、連絡手段を含む', async () => {
+    const seen: Array<{ headers?: Record<string, string> }> = [];
+    const fetchImpl = async (_url: string, init?: { headers?: Record<string, string> }) => {
+      seen.push(init ?? {});
+      return jsonResponse({});
+    };
+    const fetcher = createWikidataFetcher({ fetchImpl, delayMs: 0 });
+    await fetcher('https://www.wikidata.org/w/api.php?a=1');
+    expect(seen[0].headers?.['User-Agent']).toBe(WD_USER_AGENT);
+    expect(WD_USER_AGENT).toMatch(/(mailto:|https?:\/\/|[^\s@]+@[^\s@]+\.[^\s@]+)/);
+  });
+
+  it('非JSON応答（レート制限時のプレーンテキスト応答）を検出してエラーにする', async () => {
+    const fetchImpl = async () => ({
+      ok: true,
+      status: 200,
+      text: async () => 'You are making too many requests to the API.',
+      json: async () => {
+        throw new Error('not reached');
+      },
+    });
+    const fetcher = createWikidataFetcher({ fetchImpl, delayMs: 0 });
+    await expect(fetcher('https://www.wikidata.org/w/api.php?a=1')).rejects.toThrow(/レート制限/);
+  });
+
+  it('ok:false のレスポンスはエラーにする', async () => {
+    const fetchImpl = async () => ({ ok: false, status: 500, text: async () => '', json: async () => ({}) });
+    const fetcher = createWikidataFetcher({ fetchImpl, delayMs: 0 });
+    await expect(fetcher('https://www.wikidata.org/w/api.php?a=1')).rejects.toThrow(/status=500/);
+  });
+
+  it('searchEntity: wbsearchentities・language=ja・maxlagを指定する', async () => {
+    let seenUrl = '';
+    const fetchImpl = async (url: string) => {
+      seenUrl = url;
+      return jsonResponse({
+        search: [{ id: 'Q117229504', display: { label: { value: 'Ichinose Asuna' } }, description: 'fictional character' }],
+      });
+    };
+    const fetcher = createWikidataFetcher({ fetchImpl, delayMs: 0 });
+    const result = await searchEntity(fetcher, '一之瀬アスナ');
+    expect(seenUrl).toContain('action=wbsearchentities');
+    expect(seenUrl).toContain('language=ja');
+    expect(seenUrl).toContain('maxlag=');
+    expect(result).toEqual([{ id: 'Q117229504', label: 'Ichinose Asuna', description: 'fictional character' }]);
+  });
+
+  it('fetchEntity: Special:EntityData/<qid>.json からclaims/labelsを取り出す', async () => {
+    let seenUrl = '';
+    const fetchImpl = async (url: string) => {
+      seenUrl = url;
+      return jsonResponse({ entities: { Q1: { claims: { P21: [] }, labels: { ja: { value: 'テスト' } } } } });
+    };
+    const fetcher = createWikidataFetcher({ fetchImpl, delayMs: 0 });
+    const entity = await fetchEntity(fetcher, 'Q1');
+    expect(seenUrl).toContain('Special:EntityData/Q1.json');
+    expect(entity).toEqual({ qid: 'Q1', claims: { P21: [] }, labels: { ja: { value: 'テスト' } } });
+  });
+
+  it('fetchEntityLabels: 複数idを1リクエストでids=P1|P2バッチにし、ja/en両方を返す（片方しか無いエンティティにも対応）', async () => {
+    let seenUrl = '';
+    const fetchImpl = async (url: string) => {
+      seenUrl = url;
+      return jsonResponse({
+        entities: {
+          P21: { labels: { ja: { value: '性別' }, en: { value: 'sex or gender' } } },
+          P1441: { labels: { en: { value: 'present in work' } } }, // jaラベル無しのケース
+        },
+      });
+    };
+    const fetcher = createWikidataFetcher({ fetchImpl, delayMs: 0 });
+    const labels = await fetchEntityLabels(fetcher, ['P21', 'P1441']);
+    expect(seenUrl).toContain('ids=P21%7CP1441');
+    expect(labels).toEqual({
+      P21: { ja: '性別', en: 'sex or gender' },
+      P1441: { ja: '', en: 'present in work' },
+    });
+  });
+
+  it('claimValuesOf: mainsnak.datavalueを取り出す。プロパティが無ければ空配列', () => {
+    const entity = {
+      qid: 'Q1',
+      labels: {},
+      claims: { P21: [{ mainsnak: { datavalue: { type: 'wikibase-entityid', value: { id: 'Q6581072' } } } }] },
+    };
+    expect(claimValuesOf(entity, 'P21')).toEqual([{ type: 'wikibase-entityid', value: { id: 'Q6581072' } }]);
+    expect(claimValuesOf(entity, 'P999')).toEqual([]);
+  });
+
+  it('import しただけでは外部通信しない', async () => {
+    const fetchSpy = vi.fn();
+    vi.stubGlobal('fetch', fetchSpy);
+    vi.resetModules();
+    await import('../scripts/bayes/wikidata-client.mjs');
+    expect(fetchSpy).not.toHaveBeenCalled();
+  });
+});
+
+describe('BB. Wikidata尤度推定（estimateWikidataLikelihood、scripts/bayes/estimators.mjs）', () => {
+  it('単一値: 一致でWIKIDATA_LIKELY_YES・不一致でWIKIDATA_LIKELY_NO', () => {
+    expect(estimateWikidataLikelihood({ value: '赤', target: '赤', multi: false })).toBe(WIKIDATA_LIKELY_YES);
+    expect(estimateWikidataLikelihood({ value: '青', target: '赤', multi: false })).toBe(WIKIDATA_LIKELY_NO);
+  });
+
+  it('単一値: 値が空欄(null/undefined/空文字)ならnull（寄与なし）', () => {
+    expect(estimateWikidataLikelihood({ value: null, target: '赤', multi: false })).toBeNull();
+    expect(estimateWikidataLikelihood({ value: undefined, target: '赤', multi: false })).toBeNull();
+    expect(estimateWikidataLikelihood({ value: '', target: '赤', multi: false })).toBeNull();
+  });
+
+  it('複数値(species確認限定用途): 含めばWIKIDATA_LIKELY_YES、含まなくても負信号を出さずnull', () => {
+    // PLAN「species版差問題」: P31が多値かつ非一貫なため、不在は「該当しない」の
+    // 証拠として使わない（正信号のみの確認限定ソース）。
+    expect(estimateWikidataLikelihood({ value: ['人間'], target: '人間', multi: true })).toBe(WIKIDATA_LIKELY_YES);
+    expect(estimateWikidataLikelihood({ value: [], target: '人間', multi: true })).toBeNull();
+    expect(estimateWikidataLikelihood({ value: null, target: '人間', multi: true })).toBeNull();
+    // 配列だが対象値を含まない場合も、classic 16軸の複数値軸(AXIS_MULTI_EXCLUDES=0.2)
+    // とは違いnull——他の値を持っていても「人間でない」への負信号にはしない。
+    expect(estimateWikidataLikelihood({ value: ['video_game_character'], target: '人間', multi: true })).toBeNull();
   });
 });

@@ -68,6 +68,12 @@
           "axis": "hairColor",
           "value": "黒",
           "multi": false
+        },
+        {
+          "type": "wikidata",
+          "axis": "hairColor",
+          "value": "黒",
+          "multi": false
         }
       ]
     },
@@ -87,6 +93,12 @@
         },
         {
           "type": "axis",
+          "axis": "hairColor",
+          "value": "白",
+          "multi": false
+        },
+        {
+          "type": "wikidata",
           "axis": "hairColor",
           "value": "白",
           "multi": false
@@ -112,6 +124,12 @@
           "axis": "hairColor",
           "value": "金",
           "multi": false
+        },
+        {
+          "type": "wikidata",
+          "axis": "hairColor",
+          "value": "金",
+          "multi": false
         }
       ]
     },
@@ -131,6 +149,12 @@
         },
         {
           "type": "axis",
+          "axis": "hairColor",
+          "value": "茶",
+          "multi": false
+        },
+        {
+          "type": "wikidata",
           "axis": "hairColor",
           "value": "茶",
           "multi": false
@@ -156,6 +180,12 @@
           "axis": "hairColor",
           "value": "赤",
           "multi": false
+        },
+        {
+          "type": "wikidata",
+          "axis": "hairColor",
+          "value": "赤",
+          "multi": false
         }
       ]
     },
@@ -175,6 +205,12 @@
         },
         {
           "type": "axis",
+          "axis": "hairColor",
+          "value": "青",
+          "multi": false
+        },
+        {
+          "type": "wikidata",
           "axis": "hairColor",
           "value": "青",
           "multi": false
@@ -200,6 +236,12 @@
           "axis": "hairColor",
           "value": "緑",
           "multi": false
+        },
+        {
+          "type": "wikidata",
+          "axis": "hairColor",
+          "value": "緑",
+          "multi": false
         }
       ]
     },
@@ -219,6 +261,12 @@
         },
         {
           "type": "axis",
+          "axis": "hairColor",
+          "value": "桃",
+          "multi": false
+        },
+        {
+          "type": "wikidata",
           "axis": "hairColor",
           "value": "桃",
           "multi": false
@@ -244,6 +292,12 @@
           "axis": "hairColor",
           "value": "紫",
           "multi": false
+        },
+        {
+          "type": "wikidata",
+          "axis": "hairColor",
+          "value": "紫",
+          "multi": false
         }
       ]
     },
@@ -263,6 +317,12 @@
         },
         {
           "type": "axis",
+          "axis": "hairColor",
+          "value": "銀",
+          "multi": false
+        },
+        {
+          "type": "wikidata",
           "axis": "hairColor",
           "value": "銀",
           "multi": false
@@ -352,6 +412,12 @@
           "type": "danbooru-group",
           "group": "eye-color",
           "tag": "aqua_eyes"
+        },
+        {
+          "type": "wikidata",
+          "axis": "eyeColor",
+          "value": "aqua",
+          "multi": false
         }
       ]
     },
@@ -368,6 +434,12 @@
           "type": "danbooru-group",
           "group": "eye-color",
           "tag": "black_eyes"
+        },
+        {
+          "type": "wikidata",
+          "axis": "eyeColor",
+          "value": "black",
+          "multi": false
         }
       ]
     },
@@ -384,6 +456,12 @@
           "type": "danbooru-group",
           "group": "eye-color",
           "tag": "blue_eyes"
+        },
+        {
+          "type": "wikidata",
+          "axis": "eyeColor",
+          "value": "blue",
+          "multi": false
         }
       ]
     },
@@ -400,6 +478,12 @@
           "type": "danbooru-group",
           "group": "eye-color",
           "tag": "brown_eyes"
+        },
+        {
+          "type": "wikidata",
+          "axis": "eyeColor",
+          "value": "brown",
+          "multi": false
         }
       ]
     },
@@ -416,6 +500,12 @@
           "type": "danbooru-group",
           "group": "eye-color",
           "tag": "green_eyes"
+        },
+        {
+          "type": "wikidata",
+          "axis": "eyeColor",
+          "value": "green",
+          "multi": false
         }
       ]
     },
@@ -432,6 +522,12 @@
           "type": "danbooru-group",
           "group": "eye-color",
           "tag": "grey_eyes"
+        },
+        {
+          "type": "wikidata",
+          "axis": "eyeColor",
+          "value": "grey",
+          "multi": false
         }
       ]
     },
@@ -448,6 +544,12 @@
           "type": "danbooru-group",
           "group": "eye-color",
           "tag": "orange_eyes"
+        },
+        {
+          "type": "wikidata",
+          "axis": "eyeColor",
+          "value": "orange",
+          "multi": false
         }
       ]
     },
@@ -464,6 +566,12 @@
           "type": "danbooru-group",
           "group": "eye-color",
           "tag": "purple_eyes"
+        },
+        {
+          "type": "wikidata",
+          "axis": "eyeColor",
+          "value": "purple",
+          "multi": false
         }
       ]
     },
@@ -480,6 +588,12 @@
           "type": "danbooru-group",
           "group": "eye-color",
           "tag": "red_eyes"
+        },
+        {
+          "type": "wikidata",
+          "axis": "eyeColor",
+          "value": "red",
+          "multi": false
         }
       ]
     },
@@ -496,6 +610,12 @@
           "type": "danbooru-group",
           "group": "eye-color",
           "tag": "yellow_eyes"
+        },
+        {
+          "type": "wikidata",
+          "axis": "eyeColor",
+          "value": "yellow",
+          "multi": false
         }
       ]
     },
@@ -1642,6 +1762,12 @@
           "axis": "species",
           "value": "人間",
           "multi": false
+        },
+        {
+          "type": "wikidata",
+          "axis": "species",
+          "value": "人間",
+          "multi": true
         }
       ]
     },
