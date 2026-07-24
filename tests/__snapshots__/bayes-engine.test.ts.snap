@@ -1,0 +1,8 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`BC. ベイズ推薦エンジン > BC1: 固定の回答列に対し決定論的な単一推測を返す 1`] = `
+{
+  "id": "kancolle-kongou",
+  "score": 174.49051827119393,
+}
+`;

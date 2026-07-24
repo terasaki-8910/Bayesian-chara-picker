@@ -19,6 +19,8 @@ export type SessionLogRecord = {
   askedCount: number;
   answers: readonly { key: string; confidence: Confidence }[];
   rejectedIds: readonly string[];
+  /** どちらのエンジンが生成したセッションか。省略時は 'classic'（旧レコードとの後方互換）。 */
+  engine?: 'classic' | 'bayes';
 };
 
 function readLog(): SessionLogRecord[] {

@@ -41,8 +41,12 @@ function supplyLabelFor(rank: SupplyRank): string {
   return `供給量: ${rank}`;
 }
 
-/** `supply.json` にエントリが無いキャラは「なし」扱いにする（ハードフィルタで除外される）。 */
-function combinedRankFor(id: string, supply: SupplyFile): SupplyRank {
+/**
+ * `supply.json` にエントリが無いキャラは「なし」扱いにする（ハードフィルタで除外される）。
+ * ベイズエンジン(src/engine/bayes.ts)からも事前分布(V_c)の計算に再利用するため export する
+ * （CONTRACT: 既存exportの追加のみ、改名・削除はしない）。
+ */
+export function combinedRankFor(id: string, supply: SupplyFile): SupplyRank {
   const entry = supply[id];
   if (!entry) return 'なし';
   const ranks: SupplyRank[] = [supplyRank(entry.pageCount)];
@@ -65,8 +69,10 @@ function hasTraitValue(character: Character, axis: AxisKey, value: string, multi
  * ハードフィルタ後の全員。`scoreCharacters` はここから嗜好の不一致では誰も落とさず
  * スコアで並べるだけにする（C3 相当: 無作為多数回パスで1件も空にならないことの根拠）。
  * `exclude` は「いいえ」で拒否済みのキャラ id 集合（再推測用。PLAN「拒否ループ」）。
+ * ベイズエンジン(src/engine/bayes.ts)からも同じハードフィルタ集合が必要なため export する
+ * （CONTRACT: 既存exportの追加のみ、改名・削除はしない）。
  */
-function survivors(dataset: Dataset, exclude?: ReadonlySet<string>): Character[] {
+export function survivors(dataset: Dataset, exclude?: ReadonlySet<string>): Character[] {
   return dataset.characters.filter(
     (c) =>
       c.axes.genderExpression !== '男性' &&

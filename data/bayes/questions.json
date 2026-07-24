@@ -1,0 +1,1938 @@
+{
+  "version": 1,
+  "groups": {
+    "hair-color": {
+      "coverageTags": [
+        "black_hair",
+        "white_hair",
+        "blonde_hair",
+        "brown_hair",
+        "red_hair",
+        "blue_hair",
+        "green_hair",
+        "pink_hair",
+        "purple_hair",
+        "grey_hair"
+      ]
+    },
+    "hair-length": {
+      "coverageTags": [
+        "short_hair",
+        "medium_hair",
+        "long_hair",
+        "very_long_hair"
+      ]
+    },
+    "eye-color": {
+      "coverageTags": [
+        "aqua_eyes",
+        "black_eyes",
+        "blue_eyes",
+        "brown_eyes",
+        "green_eyes",
+        "grey_eyes",
+        "orange_eyes",
+        "purple_eyes",
+        "red_eyes",
+        "yellow_eyes"
+      ]
+    },
+    "breast-size": {
+      "coverageTags": [
+        "flat_chest",
+        "small_breasts",
+        "medium_breasts",
+        "large_breasts",
+        "huge_breasts",
+        "gigantic_breasts"
+      ]
+    }
+  },
+  "questions": [
+    {
+      "id": "dg:hair-color:black_hair",
+      "prompt": "髪は黒系ですか?",
+      "reason": {
+        "axis": "hairColor",
+        "label": "髪色",
+        "value": "黒"
+      },
+      "sources": [
+        {
+          "type": "danbooru-group",
+          "group": "hair-color",
+          "tag": "black_hair"
+        },
+        {
+          "type": "axis",
+          "axis": "hairColor",
+          "value": "黒",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "dg:hair-color:white_hair",
+      "prompt": "髪は白系ですか?",
+      "reason": {
+        "axis": "hairColor",
+        "label": "髪色",
+        "value": "白"
+      },
+      "sources": [
+        {
+          "type": "danbooru-group",
+          "group": "hair-color",
+          "tag": "white_hair"
+        },
+        {
+          "type": "axis",
+          "axis": "hairColor",
+          "value": "白",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "dg:hair-color:blonde_hair",
+      "prompt": "髪は金系ですか?",
+      "reason": {
+        "axis": "hairColor",
+        "label": "髪色",
+        "value": "金"
+      },
+      "sources": [
+        {
+          "type": "danbooru-group",
+          "group": "hair-color",
+          "tag": "blonde_hair"
+        },
+        {
+          "type": "axis",
+          "axis": "hairColor",
+          "value": "金",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "dg:hair-color:brown_hair",
+      "prompt": "髪は茶系ですか?",
+      "reason": {
+        "axis": "hairColor",
+        "label": "髪色",
+        "value": "茶"
+      },
+      "sources": [
+        {
+          "type": "danbooru-group",
+          "group": "hair-color",
+          "tag": "brown_hair"
+        },
+        {
+          "type": "axis",
+          "axis": "hairColor",
+          "value": "茶",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "dg:hair-color:red_hair",
+      "prompt": "髪は赤系ですか?",
+      "reason": {
+        "axis": "hairColor",
+        "label": "髪色",
+        "value": "赤"
+      },
+      "sources": [
+        {
+          "type": "danbooru-group",
+          "group": "hair-color",
+          "tag": "red_hair"
+        },
+        {
+          "type": "axis",
+          "axis": "hairColor",
+          "value": "赤",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "dg:hair-color:blue_hair",
+      "prompt": "髪は青系ですか?",
+      "reason": {
+        "axis": "hairColor",
+        "label": "髪色",
+        "value": "青"
+      },
+      "sources": [
+        {
+          "type": "danbooru-group",
+          "group": "hair-color",
+          "tag": "blue_hair"
+        },
+        {
+          "type": "axis",
+          "axis": "hairColor",
+          "value": "青",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "dg:hair-color:green_hair",
+      "prompt": "髪は緑系ですか?",
+      "reason": {
+        "axis": "hairColor",
+        "label": "髪色",
+        "value": "緑"
+      },
+      "sources": [
+        {
+          "type": "danbooru-group",
+          "group": "hair-color",
+          "tag": "green_hair"
+        },
+        {
+          "type": "axis",
+          "axis": "hairColor",
+          "value": "緑",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "dg:hair-color:pink_hair",
+      "prompt": "髪は桃系ですか?",
+      "reason": {
+        "axis": "hairColor",
+        "label": "髪色",
+        "value": "桃"
+      },
+      "sources": [
+        {
+          "type": "danbooru-group",
+          "group": "hair-color",
+          "tag": "pink_hair"
+        },
+        {
+          "type": "axis",
+          "axis": "hairColor",
+          "value": "桃",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "dg:hair-color:purple_hair",
+      "prompt": "髪は紫系ですか?",
+      "reason": {
+        "axis": "hairColor",
+        "label": "髪色",
+        "value": "紫"
+      },
+      "sources": [
+        {
+          "type": "danbooru-group",
+          "group": "hair-color",
+          "tag": "purple_hair"
+        },
+        {
+          "type": "axis",
+          "axis": "hairColor",
+          "value": "紫",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "dg:hair-color:grey_hair",
+      "prompt": "髪は銀系ですか?",
+      "reason": {
+        "axis": "hairColor",
+        "label": "髪色",
+        "value": "銀"
+      },
+      "sources": [
+        {
+          "type": "danbooru-group",
+          "group": "hair-color",
+          "tag": "grey_hair"
+        },
+        {
+          "type": "axis",
+          "axis": "hairColor",
+          "value": "銀",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "dg:hair-length:short_hair",
+      "prompt": "髪は短いですか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "髪は短い"
+      },
+      "sources": [
+        {
+          "type": "danbooru-group",
+          "group": "hair-length",
+          "tag": "short_hair"
+        }
+      ]
+    },
+    {
+      "id": "dg:hair-length:medium_hair",
+      "prompt": "髪はミディアムくらいの長さですか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "髪はミディアムくらいの長さ"
+      },
+      "sources": [
+        {
+          "type": "danbooru-group",
+          "group": "hair-length",
+          "tag": "medium_hair"
+        }
+      ]
+    },
+    {
+      "id": "dg:hair-length:long_hair",
+      "prompt": "髪は長いですか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "長髪"
+      },
+      "sources": [
+        {
+          "type": "danbooru-group",
+          "group": "hair-length",
+          "tag": "long_hair"
+        },
+        {
+          "type": "axis",
+          "axis": "looks",
+          "value": "長髪",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "dg:hair-length:very_long_hair",
+      "prompt": "髪はとても長い(腰下くらい)ですか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "髪はとても長い(腰下くらい)"
+      },
+      "sources": [
+        {
+          "type": "danbooru-group",
+          "group": "hair-length",
+          "tag": "very_long_hair"
+        }
+      ]
+    },
+    {
+      "id": "dg:eye-color:aqua_eyes",
+      "prompt": "目の色は水色系ですか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "目の色は水色系"
+      },
+      "sources": [
+        {
+          "type": "danbooru-group",
+          "group": "eye-color",
+          "tag": "aqua_eyes"
+        }
+      ]
+    },
+    {
+      "id": "dg:eye-color:black_eyes",
+      "prompt": "目の色は黒系ですか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "目の色は黒系"
+      },
+      "sources": [
+        {
+          "type": "danbooru-group",
+          "group": "eye-color",
+          "tag": "black_eyes"
+        }
+      ]
+    },
+    {
+      "id": "dg:eye-color:blue_eyes",
+      "prompt": "目の色は青系ですか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "目の色は青系"
+      },
+      "sources": [
+        {
+          "type": "danbooru-group",
+          "group": "eye-color",
+          "tag": "blue_eyes"
+        }
+      ]
+    },
+    {
+      "id": "dg:eye-color:brown_eyes",
+      "prompt": "目の色は茶系ですか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "目の色は茶系"
+      },
+      "sources": [
+        {
+          "type": "danbooru-group",
+          "group": "eye-color",
+          "tag": "brown_eyes"
+        }
+      ]
+    },
+    {
+      "id": "dg:eye-color:green_eyes",
+      "prompt": "目の色は緑系ですか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "目の色は緑系"
+      },
+      "sources": [
+        {
+          "type": "danbooru-group",
+          "group": "eye-color",
+          "tag": "green_eyes"
+        }
+      ]
+    },
+    {
+      "id": "dg:eye-color:grey_eyes",
+      "prompt": "目の色はグレー系ですか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "目の色はグレー系"
+      },
+      "sources": [
+        {
+          "type": "danbooru-group",
+          "group": "eye-color",
+          "tag": "grey_eyes"
+        }
+      ]
+    },
+    {
+      "id": "dg:eye-color:orange_eyes",
+      "prompt": "目の色はオレンジ系ですか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "目の色はオレンジ系"
+      },
+      "sources": [
+        {
+          "type": "danbooru-group",
+          "group": "eye-color",
+          "tag": "orange_eyes"
+        }
+      ]
+    },
+    {
+      "id": "dg:eye-color:purple_eyes",
+      "prompt": "目の色は紫系ですか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "目の色は紫系"
+      },
+      "sources": [
+        {
+          "type": "danbooru-group",
+          "group": "eye-color",
+          "tag": "purple_eyes"
+        }
+      ]
+    },
+    {
+      "id": "dg:eye-color:red_eyes",
+      "prompt": "目の色は赤系ですか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "目の色は赤系"
+      },
+      "sources": [
+        {
+          "type": "danbooru-group",
+          "group": "eye-color",
+          "tag": "red_eyes"
+        }
+      ]
+    },
+    {
+      "id": "dg:eye-color:yellow_eyes",
+      "prompt": "目の色は黄系ですか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "目の色は黄系"
+      },
+      "sources": [
+        {
+          "type": "danbooru-group",
+          "group": "eye-color",
+          "tag": "yellow_eyes"
+        }
+      ]
+    },
+    {
+      "id": "dg:breast-size:flat_chest",
+      "prompt": "胸はとても控えめですか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "胸はとても控えめ"
+      },
+      "sources": [
+        {
+          "type": "danbooru-group",
+          "group": "breast-size",
+          "tag": "flat_chest"
+        }
+      ]
+    },
+    {
+      "id": "dg:breast-size:small_breasts",
+      "prompt": "胸のサイズは小さいですか?",
+      "reason": {
+        "axis": "bust",
+        "label": "胸のサイズ",
+        "value": "小さい"
+      },
+      "sources": [
+        {
+          "type": "danbooru-group",
+          "group": "breast-size",
+          "tag": "small_breasts"
+        },
+        {
+          "type": "axis",
+          "axis": "bust",
+          "value": "小さい",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "dg:breast-size:medium_breasts",
+      "prompt": "胸のサイズは標準的ですか?",
+      "reason": {
+        "axis": "bust",
+        "label": "胸のサイズ",
+        "value": "標準"
+      },
+      "sources": [
+        {
+          "type": "danbooru-group",
+          "group": "breast-size",
+          "tag": "medium_breasts"
+        },
+        {
+          "type": "axis",
+          "axis": "bust",
+          "value": "標準",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "dg:breast-size:large_breasts",
+      "prompt": "胸のサイズは大きいですか?",
+      "reason": {
+        "axis": "bust",
+        "label": "胸のサイズ",
+        "value": "大きい"
+      },
+      "sources": [
+        {
+          "type": "danbooru-group",
+          "group": "breast-size",
+          "tag": "large_breasts"
+        },
+        {
+          "type": "axis",
+          "axis": "bust",
+          "value": "大きい",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "dg:breast-size:huge_breasts",
+      "prompt": "胸のサイズはとても大きいですか?",
+      "reason": {
+        "axis": "bust",
+        "label": "胸のサイズ",
+        "value": "とても大きい"
+      },
+      "sources": [
+        {
+          "type": "danbooru-group",
+          "group": "breast-size",
+          "tag": "huge_breasts"
+        },
+        {
+          "type": "axis",
+          "axis": "bust",
+          "value": "とても大きい",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "dg:breast-size:gigantic_breasts",
+      "prompt": "胸のサイズは規格外なくらい大きいですか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "胸のサイズは規格外なくらい大きい"
+      },
+      "sources": [
+        {
+          "type": "danbooru-group",
+          "group": "breast-size",
+          "tag": "gigantic_breasts"
+        }
+      ]
+    },
+    {
+      "id": "db:pale_skin",
+      "prompt": "肌の色は色白ですか?",
+      "reason": {
+        "axis": "skinTone",
+        "label": "肌の色",
+        "value": "色白"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "pale_skin"
+        },
+        {
+          "type": "axis",
+          "axis": "skinTone",
+          "value": "色白",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "db:dark_skin",
+      "prompt": "肌の色は褐色寄りですか?",
+      "reason": {
+        "axis": "skinTone",
+        "label": "肌の色",
+        "value": "褐色"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "dark_skin"
+        },
+        {
+          "type": "axis",
+          "axis": "skinTone",
+          "value": "褐色",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "db:glasses",
+      "prompt": "眼鏡をかけていますか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "眼鏡"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "glasses"
+        },
+        {
+          "type": "axis",
+          "axis": "looks",
+          "value": "眼鏡",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "db:animal_ears",
+      "prompt": "ケモミミがありますか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "ケモミミ"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "animal_ears"
+        },
+        {
+          "type": "axis",
+          "axis": "looks",
+          "value": "ケモミミ",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "db:horns",
+      "prompt": "角がありますか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "角"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "horns"
+        },
+        {
+          "type": "axis",
+          "axis": "looks",
+          "value": "角",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "db:tail",
+      "prompt": "尻尾がありますか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "尻尾"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "tail"
+        },
+        {
+          "type": "axis",
+          "axis": "looks",
+          "value": "尻尾",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "db:twintails",
+      "prompt": "ツインテールですか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "ツインテール"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "twintails"
+        },
+        {
+          "type": "axis",
+          "axis": "looks",
+          "value": "ツインテール",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "db:school_uniform",
+      "prompt": "制服を着ていますか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "制服"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "school_uniform"
+        },
+        {
+          "type": "axis",
+          "axis": "outfit",
+          "value": "制服",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "db:maid",
+      "prompt": "メイド系の服装ですか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "メイド"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "maid"
+        },
+        {
+          "type": "axis",
+          "axis": "outfit",
+          "value": "メイド",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "db:miko",
+      "prompt": "巫女装束ですか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "巫女"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "miko"
+        },
+        {
+          "type": "axis",
+          "axis": "outfit",
+          "value": "巫女",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "db:nurse_cap",
+      "prompt": "ナース系の服装ですか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "ナース"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "nurse_cap"
+        },
+        {
+          "type": "axis",
+          "axis": "outfit",
+          "value": "ナース",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "db:magical_girl",
+      "prompt": "魔法少女系の服装ですか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "魔法少女"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "magical_girl"
+        },
+        {
+          "type": "axis",
+          "axis": "outfit",
+          "value": "魔法少女",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "db:military_uniform",
+      "prompt": "軍服系の服装ですか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "軍服"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "military_uniform"
+        },
+        {
+          "type": "axis",
+          "axis": "outfit",
+          "value": "軍服",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "db:office_lady",
+      "prompt": "OL系の服装ですか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "OL"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "office_lady"
+        },
+        {
+          "type": "axis",
+          "axis": "outfit",
+          "value": "OL",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "db:thighhighs",
+      "prompt": "ニーソ・太もも丈の靴下を履いていますか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "ニーソ・太もも丈の靴下"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "thighhighs"
+        }
+      ]
+    },
+    {
+      "id": "db:gloves",
+      "prompt": "手袋をしていますか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "手袋"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "gloves"
+        }
+      ]
+    },
+    {
+      "id": "db:hat",
+      "prompt": "帽子をかぶっていますか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "帽子"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "hat"
+        }
+      ]
+    },
+    {
+      "id": "db:ribbon",
+      "prompt": "リボンを着けていますか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "リボン"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "ribbon"
+        }
+      ]
+    },
+    {
+      "id": "db:ponytail",
+      "prompt": "ポニーテールですか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "ポニーテール"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "ponytail"
+        }
+      ]
+    },
+    {
+      "id": "db:braid",
+      "prompt": "三つ編みですか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "三つ編み"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "braid"
+        }
+      ]
+    },
+    {
+      "id": "db:eyepatch",
+      "prompt": "眼帯をしていますか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "眼帯"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "eyepatch"
+        }
+      ]
+    },
+    {
+      "id": "db:wings",
+      "prompt": "翼がありますか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "翼"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "wings"
+        }
+      ]
+    },
+    {
+      "id": "db:halo",
+      "prompt": "天使の輪(ハロー)がありますか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "天使の輪(ハロー)"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "halo"
+        }
+      ]
+    },
+    {
+      "id": "db:ahoge",
+      "prompt": "アホ毛がありますか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "アホ毛"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "ahoge"
+        }
+      ]
+    },
+    {
+      "id": "db:headphones",
+      "prompt": "ヘッドホンを着けていますか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "ヘッドホン"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "headphones"
+        }
+      ]
+    },
+    {
+      "id": "db:necktie",
+      "prompt": "ネクタイをしていますか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "ネクタイ"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "necktie"
+        }
+      ]
+    },
+    {
+      "id": "db:swimsuit",
+      "prompt": "水着姿の印象が強いですか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "水着姿"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "swimsuit"
+        }
+      ]
+    },
+    {
+      "id": "db:apron",
+      "prompt": "エプロンを着けていますか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "エプロン"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "apron"
+        }
+      ]
+    },
+    {
+      "id": "db:cape",
+      "prompt": "マント(ケープ)を着けていますか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "マント(ケープ)"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "cape"
+        }
+      ]
+    },
+    {
+      "id": "db:choker",
+      "prompt": "チョーカーを着けていますか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "チョーカー"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "choker"
+        }
+      ]
+    },
+    {
+      "id": "db:freckles",
+      "prompt": "そばかすがありますか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "そばかす"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "freckles"
+        }
+      ]
+    },
+    {
+      "id": "db:scar",
+      "prompt": "傷痕がありますか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "傷痕"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "scar"
+        }
+      ]
+    },
+    {
+      "id": "db:hair_ornament",
+      "prompt": "髪飾りを着けていますか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "髪飾り"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "hair_ornament"
+        }
+      ]
+    },
+    {
+      "id": "db:armor",
+      "prompt": "鎧を身に着けていますか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "鎧"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "armor"
+        }
+      ]
+    },
+    {
+      "id": "db:witch_hat",
+      "prompt": "魔女帽子をかぶっていますか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "魔女帽子"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "witch_hat"
+        }
+      ]
+    },
+    {
+      "id": "db:one_eye_covered",
+      "prompt": "片目が髪で隠れていますか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "片目が髪で隠れている"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "one_eye_covered"
+        }
+      ]
+    },
+    {
+      "id": "db:fang",
+      "prompt": "八重歯・牙がありますか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "八重歯・牙"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "fang"
+        }
+      ]
+    },
+    {
+      "id": "db:rabbit_ears",
+      "prompt": "うさ耳(コスチューム)を着けていますか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "うさ耳(コスチューム)"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "rabbit_ears"
+        }
+      ]
+    },
+    {
+      "id": "db:sailor_collar",
+      "prompt": "セーラー襟の服ですか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "セーラー襟"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "sailor_collar"
+        }
+      ]
+    },
+    {
+      "id": "ax:personality=クール",
+      "prompt": "性格はクール寄りですか?",
+      "reason": {
+        "axis": "personality",
+        "label": "性格",
+        "value": "クール"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "personality",
+          "value": "クール",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "ax:personality=元気",
+      "prompt": "性格は元気寄りですか?",
+      "reason": {
+        "axis": "personality",
+        "label": "性格",
+        "value": "元気"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "personality",
+          "value": "元気",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "ax:personality=おっとり",
+      "prompt": "性格はおっとり寄りですか?",
+      "reason": {
+        "axis": "personality",
+        "label": "性格",
+        "value": "おっとり"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "personality",
+          "value": "おっとり",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "ax:personality=生意気",
+      "prompt": "性格は生意気寄りですか?",
+      "reason": {
+        "axis": "personality",
+        "label": "性格",
+        "value": "生意気"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "personality",
+          "value": "生意気",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "ax:personality=内気",
+      "prompt": "性格は内気寄りですか?",
+      "reason": {
+        "axis": "personality",
+        "label": "性格",
+        "value": "内気"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "personality",
+          "value": "内気",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "ax:personality=姉御",
+      "prompt": "性格は姉御寄りですか?",
+      "reason": {
+        "axis": "personality",
+        "label": "性格",
+        "value": "姉御"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "personality",
+          "value": "姉御",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "ax:roles~幼馴染",
+      "prompt": "幼馴染に当てはまりますか?",
+      "reason": {
+        "axis": "roles",
+        "label": "関係性・属性",
+        "value": "幼馴染"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "roles",
+          "value": "幼馴染",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "ax:roles~後輩",
+      "prompt": "後輩に当てはまりますか?",
+      "reason": {
+        "axis": "roles",
+        "label": "関係性・属性",
+        "value": "後輩"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "roles",
+          "value": "後輩",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "ax:roles~先輩",
+      "prompt": "先輩に当てはまりますか?",
+      "reason": {
+        "axis": "roles",
+        "label": "関係性・属性",
+        "value": "先輩"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "roles",
+          "value": "先輩",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "ax:roles~姉",
+      "prompt": "姉に当てはまりますか?",
+      "reason": {
+        "axis": "roles",
+        "label": "関係性・属性",
+        "value": "姉"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "roles",
+          "value": "姉",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "ax:roles~妹",
+      "prompt": "妹に当てはまりますか?",
+      "reason": {
+        "axis": "roles",
+        "label": "関係性・属性",
+        "value": "妹"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "roles",
+          "value": "妹",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "ax:roles~母性",
+      "prompt": "母性に当てはまりますか?",
+      "reason": {
+        "axis": "roles",
+        "label": "関係性・属性",
+        "value": "母性"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "roles",
+          "value": "母性",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "ax:roles~教師",
+      "prompt": "教師に当てはまりますか?",
+      "reason": {
+        "axis": "roles",
+        "label": "関係性・属性",
+        "value": "教師"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "roles",
+          "value": "教師",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "ax:roles~主従",
+      "prompt": "主従に当てはまりますか?",
+      "reason": {
+        "axis": "roles",
+        "label": "関係性・属性",
+        "value": "主従"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "roles",
+          "value": "主従",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "ax:roles~ライバル",
+      "prompt": "ライバルに当てはまりますか?",
+      "reason": {
+        "axis": "roles",
+        "label": "関係性・属性",
+        "value": "ライバル"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "roles",
+          "value": "ライバル",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "ax:distance=積極的",
+      "prompt": "距離感は積極的ですか?",
+      "reason": {
+        "axis": "distance",
+        "label": "距離感",
+        "value": "積極的"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "distance",
+          "value": "積極的",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "ax:distance=やや積極的",
+      "prompt": "距離感はやや積極的ですか?",
+      "reason": {
+        "axis": "distance",
+        "label": "距離感",
+        "value": "やや積極的"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "distance",
+          "value": "やや積極的",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "ax:distance=中立",
+      "prompt": "距離感は中立ですか?",
+      "reason": {
+        "axis": "distance",
+        "label": "距離感",
+        "value": "中立"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "distance",
+          "value": "中立",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "ax:distance=やや受け身",
+      "prompt": "距離感はやや受け身ですか?",
+      "reason": {
+        "axis": "distance",
+        "label": "距離感",
+        "value": "やや受け身"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "distance",
+          "value": "やや受け身",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "ax:distance=受け身",
+      "prompt": "距離感は受け身ですか?",
+      "reason": {
+        "axis": "distance",
+        "label": "距離感",
+        "value": "受け身"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "distance",
+          "value": "受け身",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "ax:species=人間",
+      "prompt": "種族は人間ですか?",
+      "reason": {
+        "axis": "species",
+        "label": "種族",
+        "value": "人間"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "species",
+          "value": "人間",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "ax:species=エルフ",
+      "prompt": "種族はエルフですか?",
+      "reason": {
+        "axis": "species",
+        "label": "種族",
+        "value": "エルフ"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "species",
+          "value": "エルフ",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "ax:species=獣人",
+      "prompt": "種族は獣人ですか?",
+      "reason": {
+        "axis": "species",
+        "label": "種族",
+        "value": "獣人"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "species",
+          "value": "獣人",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "ax:species=魔族",
+      "prompt": "種族は魔族ですか?",
+      "reason": {
+        "axis": "species",
+        "label": "種族",
+        "value": "魔族"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "species",
+          "value": "魔族",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "ax:species=機械",
+      "prompt": "種族は機械ですか?",
+      "reason": {
+        "axis": "species",
+        "label": "種族",
+        "value": "機械"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "species",
+          "value": "機械",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "ax:species=不死",
+      "prompt": "種族は不死ですか?",
+      "reason": {
+        "axis": "species",
+        "label": "種族",
+        "value": "不死"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "species",
+          "value": "不死",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "ax:mood=甘め",
+      "prompt": "雰囲気は甘め寄りですか?",
+      "reason": {
+        "axis": "mood",
+        "label": "雰囲気",
+        "value": "甘め"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "mood",
+          "value": "甘め",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "ax:mood=支配的",
+      "prompt": "雰囲気は支配的寄りですか?",
+      "reason": {
+        "axis": "mood",
+        "label": "雰囲気",
+        "value": "支配的"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "mood",
+          "value": "支配的",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "ax:mood=従属的",
+      "prompt": "雰囲気は従属的寄りですか?",
+      "reason": {
+        "axis": "mood",
+        "label": "雰囲気",
+        "value": "従属的"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "mood",
+          "value": "従属的",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "ax:mood=純愛寄り",
+      "prompt": "雰囲気は純愛寄りですか?",
+      "reason": {
+        "axis": "mood",
+        "label": "雰囲気",
+        "value": "純愛寄り"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "mood",
+          "value": "純愛寄り",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "ax:mood=背徳寄り",
+      "prompt": "雰囲気は背徳寄りですか?",
+      "reason": {
+        "axis": "mood",
+        "label": "雰囲気",
+        "value": "背徳寄り"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "mood",
+          "value": "背徳寄り",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "ax:combat=戦う",
+      "prompt": "戦うキャラですか?",
+      "reason": {
+        "axis": "combat",
+        "label": "戦闘",
+        "value": "戦う"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "combat",
+          "value": "戦う",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "ax:combat=戦わない",
+      "prompt": "戦わないキャラですか?",
+      "reason": {
+        "axis": "combat",
+        "label": "戦闘",
+        "value": "戦わない"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "combat",
+          "value": "戦わない",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "ax:affiliationKind=学生",
+      "prompt": "所属は学生ですか?",
+      "reason": {
+        "axis": "affiliationKind",
+        "label": "所属の種類",
+        "value": "学生"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "affiliationKind",
+          "value": "学生",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "ax:affiliationKind=社会人",
+      "prompt": "所属は社会人ですか?",
+      "reason": {
+        "axis": "affiliationKind",
+        "label": "所属の種類",
+        "value": "社会人"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "affiliationKind",
+          "value": "社会人",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "ax:affiliationKind=軍・組織",
+      "prompt": "所属は軍・組織ですか?",
+      "reason": {
+        "axis": "affiliationKind",
+        "label": "所属の種類",
+        "value": "軍・組織"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "affiliationKind",
+          "value": "軍・組織",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "ax:affiliationKind=冒険者",
+      "prompt": "所属は冒険者ですか?",
+      "reason": {
+        "axis": "affiliationKind",
+        "label": "所属の種類",
+        "value": "冒険者"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "affiliationKind",
+          "value": "冒険者",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "ax:affiliationKind=非人間・その他",
+      "prompt": "所属は非人間・その他ですか?",
+      "reason": {
+        "axis": "affiliationKind",
+        "label": "所属の種類",
+        "value": "非人間・その他"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "affiliationKind",
+          "value": "非人間・その他",
+          "multi": false
+        }
+      ]
+    }
+  ]
+}

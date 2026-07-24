@@ -1,0 +1,968 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "key": "q001",
+      "prompt": "髪は黒系ですか?",
+      "reason": {
+        "axis": "hairColor",
+        "label": "髪色",
+        "value": "黒"
+      }
+    },
+    {
+      "key": "q002",
+      "prompt": "髪は白系ですか?",
+      "reason": {
+        "axis": "hairColor",
+        "label": "髪色",
+        "value": "白"
+      }
+    },
+    {
+      "key": "q003",
+      "prompt": "髪は金系ですか?",
+      "reason": {
+        "axis": "hairColor",
+        "label": "髪色",
+        "value": "金"
+      }
+    },
+    {
+      "key": "q004",
+      "prompt": "髪は茶系ですか?",
+      "reason": {
+        "axis": "hairColor",
+        "label": "髪色",
+        "value": "茶"
+      }
+    },
+    {
+      "key": "q005",
+      "prompt": "髪は赤系ですか?",
+      "reason": {
+        "axis": "hairColor",
+        "label": "髪色",
+        "value": "赤"
+      }
+    },
+    {
+      "key": "q006",
+      "prompt": "髪は青系ですか?",
+      "reason": {
+        "axis": "hairColor",
+        "label": "髪色",
+        "value": "青"
+      }
+    },
+    {
+      "key": "q007",
+      "prompt": "髪は緑系ですか?",
+      "reason": {
+        "axis": "hairColor",
+        "label": "髪色",
+        "value": "緑"
+      }
+    },
+    {
+      "key": "q008",
+      "prompt": "髪は桃系ですか?",
+      "reason": {
+        "axis": "hairColor",
+        "label": "髪色",
+        "value": "桃"
+      }
+    },
+    {
+      "key": "q009",
+      "prompt": "髪は紫系ですか?",
+      "reason": {
+        "axis": "hairColor",
+        "label": "髪色",
+        "value": "紫"
+      }
+    },
+    {
+      "key": "q010",
+      "prompt": "髪は銀系ですか?",
+      "reason": {
+        "axis": "hairColor",
+        "label": "髪色",
+        "value": "銀"
+      }
+    },
+    {
+      "key": "q011",
+      "prompt": "髪は短いですか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "髪は短い"
+      }
+    },
+    {
+      "key": "q012",
+      "prompt": "髪はミディアムくらいの長さですか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "髪はミディアムくらいの長さ"
+      }
+    },
+    {
+      "key": "q013",
+      "prompt": "髪は長いですか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "長髪"
+      }
+    },
+    {
+      "key": "q014",
+      "prompt": "髪はとても長い(腰下くらい)ですか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "髪はとても長い(腰下くらい)"
+      }
+    },
+    {
+      "key": "q015",
+      "prompt": "目の色は水色系ですか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "目の色は水色系"
+      }
+    },
+    {
+      "key": "q016",
+      "prompt": "目の色は黒系ですか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "目の色は黒系"
+      }
+    },
+    {
+      "key": "q017",
+      "prompt": "目の色は青系ですか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "目の色は青系"
+      }
+    },
+    {
+      "key": "q018",
+      "prompt": "目の色は茶系ですか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "目の色は茶系"
+      }
+    },
+    {
+      "key": "q019",
+      "prompt": "目の色は緑系ですか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "目の色は緑系"
+      }
+    },
+    {
+      "key": "q020",
+      "prompt": "目の色はグレー系ですか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "目の色はグレー系"
+      }
+    },
+    {
+      "key": "q021",
+      "prompt": "目の色はオレンジ系ですか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "目の色はオレンジ系"
+      }
+    },
+    {
+      "key": "q022",
+      "prompt": "目の色は紫系ですか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "目の色は紫系"
+      }
+    },
+    {
+      "key": "q023",
+      "prompt": "目の色は赤系ですか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "目の色は赤系"
+      }
+    },
+    {
+      "key": "q024",
+      "prompt": "目の色は黄系ですか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "目の色は黄系"
+      }
+    },
+    {
+      "key": "q025",
+      "prompt": "胸はとても控えめですか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "胸はとても控えめ"
+      }
+    },
+    {
+      "key": "q026",
+      "prompt": "胸のサイズは小さいですか?",
+      "reason": {
+        "axis": "bust",
+        "label": "胸のサイズ",
+        "value": "小さい"
+      }
+    },
+    {
+      "key": "q027",
+      "prompt": "胸のサイズは標準的ですか?",
+      "reason": {
+        "axis": "bust",
+        "label": "胸のサイズ",
+        "value": "標準"
+      }
+    },
+    {
+      "key": "q028",
+      "prompt": "胸のサイズは大きいですか?",
+      "reason": {
+        "axis": "bust",
+        "label": "胸のサイズ",
+        "value": "大きい"
+      }
+    },
+    {
+      "key": "q029",
+      "prompt": "胸のサイズはとても大きいですか?",
+      "reason": {
+        "axis": "bust",
+        "label": "胸のサイズ",
+        "value": "とても大きい"
+      }
+    },
+    {
+      "key": "q030",
+      "prompt": "胸のサイズは規格外なくらい大きいですか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "胸のサイズは規格外なくらい大きい"
+      }
+    },
+    {
+      "key": "q031",
+      "prompt": "肌の色は色白ですか?",
+      "reason": {
+        "axis": "skinTone",
+        "label": "肌の色",
+        "value": "色白"
+      }
+    },
+    {
+      "key": "q032",
+      "prompt": "肌の色は褐色寄りですか?",
+      "reason": {
+        "axis": "skinTone",
+        "label": "肌の色",
+        "value": "褐色"
+      }
+    },
+    {
+      "key": "q033",
+      "prompt": "眼鏡をかけていますか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "眼鏡"
+      }
+    },
+    {
+      "key": "q034",
+      "prompt": "ケモミミがありますか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "ケモミミ"
+      }
+    },
+    {
+      "key": "q035",
+      "prompt": "角がありますか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "角"
+      }
+    },
+    {
+      "key": "q036",
+      "prompt": "尻尾がありますか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "尻尾"
+      }
+    },
+    {
+      "key": "q037",
+      "prompt": "ツインテールですか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "ツインテール"
+      }
+    },
+    {
+      "key": "q038",
+      "prompt": "制服を着ていますか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "制服"
+      }
+    },
+    {
+      "key": "q039",
+      "prompt": "メイド系の服装ですか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "メイド"
+      }
+    },
+    {
+      "key": "q040",
+      "prompt": "巫女装束ですか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "巫女"
+      }
+    },
+    {
+      "key": "q041",
+      "prompt": "ナース系の服装ですか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "ナース"
+      }
+    },
+    {
+      "key": "q042",
+      "prompt": "魔法少女系の服装ですか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "魔法少女"
+      }
+    },
+    {
+      "key": "q043",
+      "prompt": "軍服系の服装ですか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "軍服"
+      }
+    },
+    {
+      "key": "q044",
+      "prompt": "OL系の服装ですか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "OL"
+      }
+    },
+    {
+      "key": "q045",
+      "prompt": "ニーソ・太もも丈の靴下を履いていますか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "ニーソ・太もも丈の靴下"
+      }
+    },
+    {
+      "key": "q046",
+      "prompt": "手袋をしていますか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "手袋"
+      }
+    },
+    {
+      "key": "q047",
+      "prompt": "帽子をかぶっていますか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "帽子"
+      }
+    },
+    {
+      "key": "q048",
+      "prompt": "リボンを着けていますか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "リボン"
+      }
+    },
+    {
+      "key": "q049",
+      "prompt": "ポニーテールですか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "ポニーテール"
+      }
+    },
+    {
+      "key": "q050",
+      "prompt": "三つ編みですか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "三つ編み"
+      }
+    },
+    {
+      "key": "q051",
+      "prompt": "眼帯をしていますか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "眼帯"
+      }
+    },
+    {
+      "key": "q052",
+      "prompt": "翼がありますか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "翼"
+      }
+    },
+    {
+      "key": "q053",
+      "prompt": "天使の輪(ハロー)がありますか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "天使の輪(ハロー)"
+      }
+    },
+    {
+      "key": "q054",
+      "prompt": "アホ毛がありますか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "アホ毛"
+      }
+    },
+    {
+      "key": "q055",
+      "prompt": "ヘッドホンを着けていますか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "ヘッドホン"
+      }
+    },
+    {
+      "key": "q056",
+      "prompt": "ネクタイをしていますか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "ネクタイ"
+      }
+    },
+    {
+      "key": "q057",
+      "prompt": "水着姿の印象が強いですか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "水着姿"
+      }
+    },
+    {
+      "key": "q058",
+      "prompt": "エプロンを着けていますか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "エプロン"
+      }
+    },
+    {
+      "key": "q059",
+      "prompt": "マント(ケープ)を着けていますか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "マント(ケープ)"
+      }
+    },
+    {
+      "key": "q060",
+      "prompt": "チョーカーを着けていますか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "チョーカー"
+      }
+    },
+    {
+      "key": "q061",
+      "prompt": "そばかすがありますか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "そばかす"
+      }
+    },
+    {
+      "key": "q062",
+      "prompt": "傷痕がありますか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "傷痕"
+      }
+    },
+    {
+      "key": "q063",
+      "prompt": "髪飾りを着けていますか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "髪飾り"
+      }
+    },
+    {
+      "key": "q064",
+      "prompt": "鎧を身に着けていますか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "鎧"
+      }
+    },
+    {
+      "key": "q065",
+      "prompt": "魔女帽子をかぶっていますか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "魔女帽子"
+      }
+    },
+    {
+      "key": "q066",
+      "prompt": "片目が髪で隠れていますか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "片目が髪で隠れている"
+      }
+    },
+    {
+      "key": "q067",
+      "prompt": "八重歯・牙がありますか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "八重歯・牙"
+      }
+    },
+    {
+      "key": "q068",
+      "prompt": "うさ耳(コスチューム)を着けていますか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "うさ耳(コスチューム)"
+      }
+    },
+    {
+      "key": "q069",
+      "prompt": "セーラー襟の服ですか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "セーラー襟"
+      }
+    },
+    {
+      "key": "q070",
+      "prompt": "性格はクール寄りですか?",
+      "reason": {
+        "axis": "personality",
+        "label": "性格",
+        "value": "クール"
+      }
+    },
+    {
+      "key": "q071",
+      "prompt": "性格は元気寄りですか?",
+      "reason": {
+        "axis": "personality",
+        "label": "性格",
+        "value": "元気"
+      }
+    },
+    {
+      "key": "q072",
+      "prompt": "性格はおっとり寄りですか?",
+      "reason": {
+        "axis": "personality",
+        "label": "性格",
+        "value": "おっとり"
+      }
+    },
+    {
+      "key": "q073",
+      "prompt": "性格は生意気寄りですか?",
+      "reason": {
+        "axis": "personality",
+        "label": "性格",
+        "value": "生意気"
+      }
+    },
+    {
+      "key": "q074",
+      "prompt": "性格は内気寄りですか?",
+      "reason": {
+        "axis": "personality",
+        "label": "性格",
+        "value": "内気"
+      }
+    },
+    {
+      "key": "q075",
+      "prompt": "性格は姉御寄りですか?",
+      "reason": {
+        "axis": "personality",
+        "label": "性格",
+        "value": "姉御"
+      }
+    },
+    {
+      "key": "q076",
+      "prompt": "幼馴染に当てはまりますか?",
+      "reason": {
+        "axis": "roles",
+        "label": "関係性・属性",
+        "value": "幼馴染"
+      }
+    },
+    {
+      "key": "q077",
+      "prompt": "後輩に当てはまりますか?",
+      "reason": {
+        "axis": "roles",
+        "label": "関係性・属性",
+        "value": "後輩"
+      }
+    },
+    {
+      "key": "q078",
+      "prompt": "先輩に当てはまりますか?",
+      "reason": {
+        "axis": "roles",
+        "label": "関係性・属性",
+        "value": "先輩"
+      }
+    },
+    {
+      "key": "q079",
+      "prompt": "姉に当てはまりますか?",
+      "reason": {
+        "axis": "roles",
+        "label": "関係性・属性",
+        "value": "姉"
+      }
+    },
+    {
+      "key": "q080",
+      "prompt": "妹に当てはまりますか?",
+      "reason": {
+        "axis": "roles",
+        "label": "関係性・属性",
+        "value": "妹"
+      }
+    },
+    {
+      "key": "q081",
+      "prompt": "母性に当てはまりますか?",
+      "reason": {
+        "axis": "roles",
+        "label": "関係性・属性",
+        "value": "母性"
+      }
+    },
+    {
+      "key": "q082",
+      "prompt": "教師に当てはまりますか?",
+      "reason": {
+        "axis": "roles",
+        "label": "関係性・属性",
+        "value": "教師"
+      }
+    },
+    {
+      "key": "q083",
+      "prompt": "主従に当てはまりますか?",
+      "reason": {
+        "axis": "roles",
+        "label": "関係性・属性",
+        "value": "主従"
+      }
+    },
+    {
+      "key": "q084",
+      "prompt": "ライバルに当てはまりますか?",
+      "reason": {
+        "axis": "roles",
+        "label": "関係性・属性",
+        "value": "ライバル"
+      }
+    },
+    {
+      "key": "q085",
+      "prompt": "距離感は積極的ですか?",
+      "reason": {
+        "axis": "distance",
+        "label": "距離感",
+        "value": "積極的"
+      }
+    },
+    {
+      "key": "q086",
+      "prompt": "距離感はやや積極的ですか?",
+      "reason": {
+        "axis": "distance",
+        "label": "距離感",
+        "value": "やや積極的"
+      }
+    },
+    {
+      "key": "q087",
+      "prompt": "距離感は中立ですか?",
+      "reason": {
+        "axis": "distance",
+        "label": "距離感",
+        "value": "中立"
+      }
+    },
+    {
+      "key": "q088",
+      "prompt": "距離感はやや受け身ですか?",
+      "reason": {
+        "axis": "distance",
+        "label": "距離感",
+        "value": "やや受け身"
+      }
+    },
+    {
+      "key": "q089",
+      "prompt": "距離感は受け身ですか?",
+      "reason": {
+        "axis": "distance",
+        "label": "距離感",
+        "value": "受け身"
+      }
+    },
+    {
+      "key": "q090",
+      "prompt": "種族は人間ですか?",
+      "reason": {
+        "axis": "species",
+        "label": "種族",
+        "value": "人間"
+      }
+    },
+    {
+      "key": "q091",
+      "prompt": "種族はエルフですか?",
+      "reason": {
+        "axis": "species",
+        "label": "種族",
+        "value": "エルフ"
+      }
+    },
+    {
+      "key": "q092",
+      "prompt": "種族は獣人ですか?",
+      "reason": {
+        "axis": "species",
+        "label": "種族",
+        "value": "獣人"
+      }
+    },
+    {
+      "key": "q093",
+      "prompt": "種族は魔族ですか?",
+      "reason": {
+        "axis": "species",
+        "label": "種族",
+        "value": "魔族"
+      }
+    },
+    {
+      "key": "q094",
+      "prompt": "種族は機械ですか?",
+      "reason": {
+        "axis": "species",
+        "label": "種族",
+        "value": "機械"
+      }
+    },
+    {
+      "key": "q095",
+      "prompt": "種族は不死ですか?",
+      "reason": {
+        "axis": "species",
+        "label": "種族",
+        "value": "不死"
+      }
+    },
+    {
+      "key": "q096",
+      "prompt": "雰囲気は甘め寄りですか?",
+      "reason": {
+        "axis": "mood",
+        "label": "雰囲気",
+        "value": "甘め"
+      }
+    },
+    {
+      "key": "q097",
+      "prompt": "雰囲気は支配的寄りですか?",
+      "reason": {
+        "axis": "mood",
+        "label": "雰囲気",
+        "value": "支配的"
+      }
+    },
+    {
+      "key": "q098",
+      "prompt": "雰囲気は従属的寄りですか?",
+      "reason": {
+        "axis": "mood",
+        "label": "雰囲気",
+        "value": "従属的"
+      }
+    },
+    {
+      "key": "q099",
+      "prompt": "雰囲気は純愛寄りですか?",
+      "reason": {
+        "axis": "mood",
+        "label": "雰囲気",
+        "value": "純愛寄り"
+      }
+    },
+    {
+      "key": "q100",
+      "prompt": "雰囲気は背徳寄りですか?",
+      "reason": {
+        "axis": "mood",
+        "label": "雰囲気",
+        "value": "背徳寄り"
+      }
+    },
+    {
+      "key": "q101",
+      "prompt": "戦うキャラですか?",
+      "reason": {
+        "axis": "combat",
+        "label": "戦闘",
+        "value": "戦う"
+      }
+    },
+    {
+      "key": "q102",
+      "prompt": "戦わないキャラですか?",
+      "reason": {
+        "axis": "combat",
+        "label": "戦闘",
+        "value": "戦わない"
+      }
+    },
+    {
+      "key": "q103",
+      "prompt": "所属は学生ですか?",
+      "reason": {
+        "axis": "affiliationKind",
+        "label": "所属の種類",
+        "value": "学生"
+      }
+    },
+    {
+      "key": "q104",
+      "prompt": "所属は社会人ですか?",
+      "reason": {
+        "axis": "affiliationKind",
+        "label": "所属の種類",
+        "value": "社会人"
+      }
+    },
+    {
+      "key": "q105",
+      "prompt": "所属は軍・組織ですか?",
+      "reason": {
+        "axis": "affiliationKind",
+        "label": "所属の種類",
+        "value": "軍・組織"
+      }
+    },
+    {
+      "key": "q106",
+      "prompt": "所属は冒険者ですか?",
+      "reason": {
+        "axis": "affiliationKind",
+        "label": "所属の種類",
+        "value": "冒険者"
+      }
+    },
+    {
+      "key": "q107",
+      "prompt": "所属は非人間・その他ですか?",
+      "reason": {
+        "axis": "affiliationKind",
+        "label": "所属の種類",
+        "value": "非人間・その他"
+      }
+    }
+  ]
+}

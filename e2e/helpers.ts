@@ -30,9 +30,14 @@ export const TESTID = {
   restart: 'restart',
 } as const;
 
-/** localStorage を空にした状態でトップを開く（初回起動の再現）。 */
-export async function openFresh(page: Page): Promise<void> {
-  await page.goto('/');
+/**
+ * localStorage を空にした状態でトップを開く（初回起動の再現）。
+ * `path` 省略時は既定エンジン（classic）の `/`。ベイズ試作の
+ * `/?engine=bayes` を開く呼び出しにも同じヘルパーを使えるよう追加した引数
+ * （既存呼び出しは無変更で動く）。
+ */
+export async function openFresh(page: Page, path = '/'): Promise<void> {
+  await page.goto(path);
   await page.evaluate(() => window.localStorage.clear());
   await page.reload();
 }

@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "note": "scripts/bayes/map-characters.mjs が使う手書きの正本。seriesAliases は data/characters.json の series 文字列 → Danbooru の category=3(著作権)タグ名の対応。overrides はキャラid単位で自動導出が失敗/誤った場合の強制指定・除外。すべて `node -e \"console.log(encodeURIComponent(...))\"` 経由のURLと `search[category]=3` で個別に存在確認済み（bare tag が別名詞と衝突するケースがあるため — kancolle/naruto/overlord は下記の通り実際のタグ名が異なった）。overrides の5件（2026-07-24追加）はいずれも「ローマ字表記がDanbooru公式タグと食い違う」ケース（語順反転ヒューリスティックだけでは届かない綴り差）。名字を落として名のみ+作品名カッコにするパターン（Blue Archive等）は overrides ではなく map-characters.mjs 側の先頭語ワイルドカード検索で自動解決するようにした。",
+  "seriesAliases": {
+    "東方Project": "touhou",
+    "艦隊これくしょん": "kantai_collection",
+    "Fate": "fate_(series)",
+    "Fate/Grand Order": "fate/grand_order",
+    "Fate/stay night": "fate/stay_night",
+    "Fate/EXTRA": "fate/extra",
+    "Fate/Apocrypha": "fate/apocrypha",
+    "Fate/kaleid liner プリズマ☆イリヤ": "fate/kaleid_liner_prisma_illya",
+    "Fate/kaleid liner プリズマ☆イリヤ ツヴァイ！": "fate/kaleid_liner_prisma_illya",
+    "Re:ゼロから始める異世界生活": "re:zero_kara_hajimeru_isekai_seikatsu",
+    "原神": "genshin_impact",
+    "ブルーアーカイブ": "blue_archive",
+    "アズールレーン": "azur_lane",
+    "オーバーロード": "overlord_(maruyama)",
+    "グランブルーファンタジー": "granblue_fantasy",
+    "チェンソーマン": "chainsaw_man",
+    "ドラゴンボール": "dragon_ball",
+    "モンスター娘のいる日常": "monster_musume_no_iru_nichijou",
+    "ラブライブ!": "love_live!_school_idol_project",
+    "彼女、お借りします": "kanojo_okarishimasu",
+    "進撃の巨人": "shingeki_no_kyojin",
+    "ONE PIECE": "one_piece",
+    "NARUTO": "naruto_(series)",
+    "BLEACH": "bleach",
+    "FAIRY TAIL": "fairy_tail",
+    "NieR:Automata": "nier:automata",
+    "SPY×FAMILY": "spy_x_family",
+    "UTAU": "utau",
+    "このすばらしい世界に祝福を!": "kono_subarashii_sekai_ni_shukufuku_wo!",
+    "アイドルマスター": "idolmaster"
+  },
+  "overrides": {
+    "naruto-kurenai": {
+      "tag": "yuuhi_kurenai",
+      "reason": "hitomiQuery=「kurenai yuhi」語順反転+ローマ字表記差(yuhi→yuuhi)。自動導出の反転試行はyuhi_kurenaiのみでyuuhi表記に届かずnot-found。2026-07-24、直接照合で確認(244件、category=4)。"
+    },
+    "bleach-yoruichi": {
+      "tag": "shihouin_yoruichi",
+      "reason": "hitomiQuery=「yoruichi shihoin」語順反転+ローマ字表記差(shihoin→shihouin)。2語反転ヒューリスティックはshihoin_yoruichiのみでshihouin表記に届かずnot-found。2026-07-24、直接照合で確認(2809件、category=4)。"
+    },
+    "naruto-hinata": {
+      "tag": "hyuuga_hinata",
+      "reason": "hitomiQuery=「hinata hyuga」語順反転+ローマ字表記差(hyuga→hyuuga)。2026-07-24、直接照合で確認(4407件、category=4)。"
+    },
+    "bleach-halibel": {
+      "tag": "tier_harribel",
+      "reason": "hitomiQuery=「tia halibel」だがDanbooru公式タグは別表記(tia→tier、halibel→harribel)。語順反転・ワイルドカードいずれも命中しない綴り差。2026-07-24、直接照合で確認(745件、category=4)。"
+    },
+    "bleach-soifon": {
+      "tag": "sui-feng",
+      "reason": "hitomiQuery=「soi fon」。旧来のsoi_fon/sui_fengタグは2025-12-15にsui-feng(ハイフン)へ統合され両方post_count=0のdeprecatedスタブ化。tag_aliases.jsonで統合先を確認。2026-07-24、直接照合で確認(953件、category=4)。"
+    },
+    "fate-nightingale": {
+      "tag": "florence_nightingale_(fate)",
+      "reason": "hitomiQuery=「nightingale」(姓のみ)だがDanbooru公式タグは名(Florence)を先頭語にする(florence_nightingale_(fate))。nightingale*ワイルドカードでは前方一致せず無関係のnightingale_(gundam)(69件、共起率1%)に誤対応していた。2026-07-24、直接照合で確認(3898件、category=4、fate_(series)との共起率99.9%)。"
+    },
+    "azurlane-yamato": {
+      "tag": null,
+      "reason": "アズールレーンの大和にDanbooru上のcharacterタグが存在しない模様（yamato*のcategory=4候補20件中、azur_lane修飾のものが1件も無いことを確認。2026-07-24）。このキャラはprovisional:trueで推薦・おまかせのハードフィルタから常に除外されるため実害は無いが、0%共起のyamato_(kancolle)等を誤ってDanbooruソースとして使わないよう明示的に除外する。将来ゲーム内で実装され得たら要再調査。"
+    }
+  }
+}

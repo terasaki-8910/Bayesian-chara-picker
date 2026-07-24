@@ -160,11 +160,42 @@ UI表示から外した。**エンジン・データ層の対応する機能（�
 フィルタ/タイブレーク、`dlsiteQuery`）自体は変更していない**。今回のUIは
 暫定で、今後統合する別UIに合わせて作り直す前提。
 
+## ベイズ推薦エンジン試作（`?engine=bayes`、併存・実験中）
+
+16軸の手動キュレーションだけに頼らず、Danbooruタグ共起（クラウドの集合知）から
+機械的に尤度を構築する試作エンジン。既定の URL（上記の一式）は無改造のまま、
+`?engine=bayes` を付けたときだけ以下の並行経路に分岐する（`src/App.tsx` が
+mount時に1回だけ読み、router は使わない）。
+
+- `data/bayes/questions.json`（手書き正本、Danbooruタグ文字列とプロンプトを保持）
+  → `scripts/bayes/build-likelihoods.mjs`（決定論・通信なし）が
+  `data/bayes/likelihoods.json`（キャラ×質問の確率密行列。数値のみ）と
+  `data/bayes/questions.runtime.json`（日本語プロンプトのみ）を生成する。
+  実行時keyは意図的に questions.json の id（Danbooruタグ名を含む）とは別の
+  不透明な連番 `q001`,`q002`,… にしてあり、`dist/` にタグ語彙が混入しない
+  （`tests/bayes-data.test.ts` が回帰を防ぐ）。
+- `src/engine/bayes.ts`: 事前分布 `π(c) ∝ log2(2+galleryCount+30·pageCount)`
+  から出発し、回答ごとに対数事後確率を更新（ベイズ推定）。質問選択は期待
+  エントロピー削減の貪欲最大化。`recommend.ts` の `survivors`・
+  `combinedRankFor`・`pickGuessWithCooldown`・`Scored`/`Reason` 型は無改造で
+  再利用する（score=200·P(c) が MARGIN_STOP=40 に対応するよう換算）。
+- `src/hooks/useBayesInterview.ts` は `useInterview.ts` の reducer をそのまま
+  ミラーし、質問選択・スコアリング・停止判定の3関数だけ差し替えた別フック。
+  `QuestionScreen`/`GuessScreen`/`ResultScreen`/`NoGuessScreen` は完全に共用・
+  無改造。`SessionLogRecord.engine`（`'classic' | 'bayes'`、省略時classic扱い）
+  でどちらのセッションかを記録する。
+- データ源: Danbooru投稿タグ（`scripts/bayes/sample-posts.mjs` が
+  `state/bayes-pipeline/danbooru/<id>.json` にキャッシュ、gitignore対象）+
+  既存16軸データ（尤度データが薄い/無い質問のフォールバック）。
+  Pixiv/Niconico等からのローカルLLM抽出（P5）は未着手——今は「客観的・
+  タグ化しやすい」外見系をDanbooruで、「主観的・タグ化しにくい」性格/雰囲気系を
+  16軸フォールバックで賄っている。
+
 ## テスト・ゲート
 
 | コマンド | 内容 |
 |---|---|
-| `npm test`（`vitest run`） | `tests/data.test.ts`（A系、データ品質）+ `tests/engine.test.ts`（C系、エンジン契約）+ 収集スクリプトのユニットテスト |
+| `npm test`（`vitest run`） | `tests/data.test.ts`（A系、データ品質）+ `tests/engine.test.ts`（C系、エンジン契約）+ 収集スクリプトのユニットテスト + `tests/bayes-*.test.ts`（BA/BB/BC/BD系、ベイズ試作の並行ゲート） |
 | `npm run lint` | ESLint（no-emoji / トークン強制 / 禁止語 / jsx-a11y）+ Stylelint + `tsc --noEmit` |
 | `scripts/ui-check.sh` | `npm run build` → `scripts/dist-scan.mjs dist`（D2） → `npx playwright test`（D1・F系） |
 

@@ -1,0 +1,2464 @@
+{
+  "version": 1,
+  "entries": {
+    "rezero-rem": {
+      "tag": "rem_(re:zero)",
+      "postCount": 10061,
+      "source": "wildcard-verified",
+      "seriesOverlap": 0.9986084882218468,
+      "candidatesTried": [
+        "rem",
+        "rem_(re:zero_kara_hajimeru_isekai_seikatsu)",
+        "rem(*)"
+      ],
+      "allCandidates": [
+        "remilia_scarlet(61118)",
+        "rem_(re:zero)(10061)",
+        "remielle_dan(2936)",
+        "remielle_dan_(moonlight_whispers)(1289)",
+        "remoraid(312)"
+      ],
+      "checkedAt": "2026-07-24T08:10:22.946Z"
+    },
+    "rezero-ram": {
+      "tag": "ram_(re:zero)",
+      "postCount": 3396,
+      "source": "wildcard-verified",
+      "seriesOverlap": 0.9988221436984688,
+      "candidatesTried": [
+        "ram",
+        "ram_(re:zero_kara_hajimeru_isekai_seikatsu)",
+        "ram(*)"
+      ],
+      "allCandidates": [
+        "ram_(re:zero)(3396)",
+        "ramlethal_valentine(2115)",
+        "ramza_beoulve(447)",
+        "ram_(neptunia)(434)",
+        "ramona_flowers(390)"
+      ],
+      "checkedAt": "2026-07-24T08:10:27.306Z"
+    },
+    "fate-scathach": {
+      "tag": "scathach_(fate)",
+      "postCount": 9451,
+      "source": "wildcard-verified",
+      "seriesOverlap": 0.9998941910908898,
+      "candidatesTried": [
+        "scathach",
+        "scathach_(fate_(series))",
+        "scathach(*)"
+      ],
+      "allCandidates": [
+        "scathach_(fate)(9451)",
+        "scathach-skadi_(fate)(1895)",
+        "scathach_(lancer)_(fate)(1444)",
+        "scathach_(swimsuit_assassin)_(fate)(1199)",
+        "scathach_(piercing_bunny)_(fate)(1045)"
+      ],
+      "checkedAt": "2026-07-24T08:10:31.746Z"
+    },
+    "fate-tamamo": {
+      "tag": "tamamo_no_mae_(fate)",
+      "postCount": 9092,
+      "source": "wildcard-verified",
+      "seriesOverlap": 0.9992300923889134,
+      "candidatesTried": [
+        "tamamo_no_mae",
+        "tamamo_no_mae_(fate_(series))",
+        "tamamo_no_mae(*)",
+        "tamamo(*)"
+      ],
+      "allCandidates": [
+        "tamamo_no_mae_(fate)(9092)",
+        "tamamo_cross_(umamusume)(3983)",
+        "tamamo_cat_(fate)(2769)",
+        "tamamo_no_mae_(swimsuit_lancer)_(fate)(2285)",
+        "tamamo_cross_(fast_as_lightning)_(umamusume)(1024)"
+      ],
+      "checkedAt": "2026-07-24T08:10:37.218Z"
+    },
+    "fate-bb": {
+      "tag": "bb_(fate/extra)",
+      "postCount": 1849,
+      "source": "series-qualified",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "bb",
+        "bb_(fate/extra)",
+        "bb(*)"
+      ],
+      "allCandidates": [
+        "bb_(fate/extra)(1849)",
+        "bb_(fate)(6505)",
+        "bb_(swimsuit_mooncancer)_(second_ascension)_(fate)(1168)",
+        "bb_(swimsuit_mooncancer)_(third_ascension)_(fate)(1010)",
+        "bb_dubai_(fate)(651)"
+      ],
+      "checkedAt": "2026-07-24T08:10:42.968Z"
+    },
+    "fgo-ishtar": {
+      "tag": "ishtar_(fate)",
+      "postCount": 5259,
+      "source": "wildcard-verified",
+      "seriesOverlap": 0.9996196995626545,
+      "candidatesTried": [
+        "ishtar",
+        "ishtar_(fate/grand_order)",
+        "ishtar(*)"
+      ],
+      "allCandidates": [
+        "ishtar(2)",
+        "ishtar_(fate)(5259)",
+        "ishtar_(fire_emblem)(631)",
+        "ishtar_(first_ascension)_(fate)(488)",
+        "ishtar_(swimsuit_rider)_(fate)(383)"
+      ],
+      "checkedAt": "2026-07-24T08:10:50.489Z"
+    },
+    "fgo-kiyohime": {
+      "tag": "kiyohime_(fate)",
+      "postCount": 3173,
+      "source": "wildcard-verified",
+      "seriesOverlap": 0.9990545225338796,
+      "candidatesTried": [
+        "kiyohime",
+        "kiyohime_(fate/grand_order)",
+        "kiyohime(*)"
+      ],
+      "allCandidates": [
+        "kiyohime(9)",
+        "kiyohime_(fate)(3173)",
+        "kiyohime_(second_ascension)_(fate)(538)",
+        "kiyohime_(first_ascension)_(fate)(423)",
+        "kiyohime_(swimsuit_lancer)_(first_ascension)_(fate)(379)"
+      ],
+      "checkedAt": "2026-07-24T08:10:58.266Z"
+    },
+    "fgo-medusa": {
+      "tag": "medusa_(fate)",
+      "postCount": 5806,
+      "source": "wildcard-verified",
+      "seriesOverlap": 0.9993110575266965,
+      "candidatesTried": [
+        "medusa",
+        "medusa_(fate/grand_order)",
+        "medusa(*)"
+      ],
+      "allCandidates": [
+        "medusa_(fate)(5806)",
+        "medusa_(rider)_(fate)(4467)",
+        "medusa_(fate/stay_night)(1610)",
+        "medusa_(lancer)_(fate)(806)",
+        "medusa_(casual_wear)_(fate)(777)"
+      ],
+      "checkedAt": "2026-07-24T08:11:03.676Z"
+    },
+    "overlord-albedo": {
+      "tag": "albedo_(overlord)",
+      "postCount": 1557,
+      "source": "wildcard-verified",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "albedo",
+        "albedo_(overlord_(maruyama))",
+        "albedo(*)"
+      ],
+      "allCandidates": [
+        "albedo_(genshin_impact)(3011)",
+        "albedo_(overlord)(1557)",
+        "albedo_(sweets_paradise)_(genshin_impact)(46)",
+        "albedo_(m&g)_(genshin_impact)(36)",
+        "albedo_(ben_10)(29)"
+      ],
+      "checkedAt": "2026-07-24T08:11:09.167Z"
+    },
+    "overlord-narberal": {
+      "tag": "narberal_gamma",
+      "postCount": 232,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "narberal_gamma",
+        "narberal_gamma_(overlord_(maruyama))",
+        "narberal_gamma(*)",
+        "narberal(*)"
+      ],
+      "allCandidates": [
+        "narberal_gamma(232)"
+      ],
+      "checkedAt": "2026-07-24T08:11:14.633Z"
+    },
+    "konosuba-darkness": {
+      "tag": "darkness_(konosuba)",
+      "postCount": 3478,
+      "source": "wildcard-verified",
+      "seriesOverlap": 0.9991374353076481,
+      "candidatesTried": [
+        "darkness",
+        "darkness_(kono_subarashii_sekai_ni_shukufuku_wo!)",
+        "darkness(*)"
+      ],
+      "allCandidates": [
+        "darkness_(konosuba)(3478)",
+        "darkness_devil(55)",
+        "darkness_mirage(35)",
+        "darkness_flesh_(chainsaw_man)(19)",
+        "darkness_heart_(alice_girls)(8)"
+      ],
+      "checkedAt": "2026-07-24T08:11:19.037Z"
+    },
+    "fairytail-erza": {
+      "tag": "erza_scarlet",
+      "postCount": 1195,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "erza_scarlet",
+        "erza_scarlet_(fairy_tail)",
+        "erza_scarlet(*)",
+        "erza(*)"
+      ],
+      "allCandidates": [
+        "erza_scarlet(1195)",
+        "erza_knightwalker(13)",
+        "erza_(aurelia)(10)",
+        "erza_(shinrabanshou)(5)",
+        "erza_(kingdom_death)(3)"
+      ],
+      "checkedAt": "2026-07-24T08:11:24.582Z"
+    },
+    "fairytail-mirajane": {
+      "tag": "mirajane_strauss",
+      "postCount": 188,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "mirajane_strauss",
+        "mirajane_strauss_(fairy_tail)",
+        "mirajane_strauss(*)",
+        "mirajane(*)"
+      ],
+      "allCandidates": [
+        "mirajane_strauss(188)"
+      ],
+      "checkedAt": "2026-07-24T08:11:30.078Z"
+    },
+    "dragonball-bulma": {
+      "tag": "bulma",
+      "postCount": 2434,
+      "source": "wildcard-verified",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "bulma_briefs",
+        "briefs_bulma",
+        "bulma_briefs_(dragon_ball)",
+        "bulma_briefs(*)",
+        "bulma(*)"
+      ],
+      "allCandidates": [
+        "bulma(2434)",
+        "bulma_(future)(55)",
+        "bulma_wolfy(1)"
+      ],
+      "checkedAt": "2026-07-24T08:11:36.656Z"
+    },
+    "dragonball-18": {
+      "tag": "android_18",
+      "postCount": 2921,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "android_18",
+        "android_18_(dragon_ball)",
+        "android_18(*)",
+        "android(*)"
+      ],
+      "allCandidates": [
+        "android_18(2921)",
+        "android_21(1919)",
+        "android_17(343)",
+        "android_(blue_archive)(177)",
+        "android_16(108)"
+      ],
+      "checkedAt": "2026-07-24T08:11:42.173Z"
+    },
+    "naruto-tsunade": {
+      "tag": "tsunade_(naruto)",
+      "postCount": 2367,
+      "source": "wildcard-verified",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "tsunade",
+        "tsunade_(naruto_(series))",
+        "tsunade(*)"
+      ],
+      "allCandidates": [
+        "tsunade_(naruto)(2367)",
+        "tsunade_(jiraiya_gouketsu_monogatari)(2)",
+        "tsunade_(tengai_makyou)(2)"
+      ],
+      "checkedAt": "2026-07-24T08:11:46.601Z"
+    },
+    "naruto-kurenai": {
+      "tag": "yuuhi_kurenai",
+      "postCount": 244,
+      "source": "override",
+      "checkedAt": "2026-07-24T08:11:47.688Z"
+    },
+    "onepiece-robin": {
+      "tag": "nico_robin",
+      "postCount": 7359,
+      "source": "exact",
+      "seriesOverlap": 0.9991846718304117,
+      "candidatesTried": [
+        "nico_robin",
+        "nico_robin_(one_piece)",
+        "nico_robin(*)",
+        "nico(*)"
+      ],
+      "allCandidates": [
+        "nico_robin(7359)",
+        "nicole_demara(4322)",
+        "nicole_(genshin_impact)(746)",
+        "nicole_(class_of_09)(255)",
+        "nicolina_(project_moon)(221)"
+      ],
+      "checkedAt": "2026-07-24T08:11:53.213Z"
+    },
+    "onepiece-hancock": {
+      "tag": "boa_hancock",
+      "postCount": 2111,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "boa_hancock",
+        "boa_hancock_(one_piece)",
+        "boa_hancock(*)",
+        "boa(*)"
+      ],
+      "allCandidates": [
+        "boa_hancock(2111)",
+        "boa_sandersonia(74)",
+        "boar_piglet_(fate)(47)",
+        "boa_marigold(37)",
+        "boa_constrictor_(kemono_friends)(19)"
+      ],
+      "checkedAt": "2026-07-24T08:11:58.700Z"
+    },
+    "onepiece-nami": {
+      "tag": "nami_(one_piece)",
+      "postCount": 10569,
+      "source": "series-qualified",
+      "seriesOverlap": 0.9998107673384427,
+      "candidatesTried": [
+        "nami",
+        "nami_(one_piece)",
+        "nami(*)"
+      ],
+      "allCandidates": [
+        "nami_(one_piece)(10569)",
+        "namine(653)",
+        "namikaze_minato(419)",
+        "namipon_(wuthering_waves)(370)",
+        "nami_(league)(351)"
+      ],
+      "checkedAt": "2026-07-24T08:12:03.140Z"
+    },
+    "monmusu-miia": {
+      "tag": "miia_(monster_musume)",
+      "postCount": 1196,
+      "source": "wildcard-verified",
+      "seriesOverlap": 0.9991638795986622,
+      "candidatesTried": [
+        "miia",
+        "miia_(monster_musume_no_iru_nichijou)",
+        "miia(*)"
+      ],
+      "allCandidates": [
+        "miia_(monster_musume)(1196)",
+        "miia's_mother(69)",
+        "miia_(konosuba)(61)",
+        "miia_(kawa-v)(10)",
+        "miia_(cosmic_break_2)(4)"
+      ],
+      "checkedAt": "2026-07-24T08:12:07.565Z"
+    },
+    "monmusu-centorea": {
+      "tag": "centorea_shianus",
+      "postCount": 598,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "centorea_shianus",
+        "centorea_shianus_(monster_musume_no_iru_nichijou)",
+        "centorea_shianus(*)",
+        "centorea(*)"
+      ],
+      "allCandidates": [
+        "centorea_shianus(598)",
+        "centorea's_mother(20)"
+      ],
+      "checkedAt": "2026-07-24T08:12:13.004Z"
+    },
+    "nier-2b": {
+      "tag": "2b_(nier:automata)",
+      "postCount": 12196,
+      "source": "series-qualified",
+      "seriesOverlap": 0.9954083306001967,
+      "candidatesTried": [
+        "2b",
+        "2b_(nier:automata)",
+        "2b(*)"
+      ],
+      "allCandidates": [
+        "2b_(nier:automata)(12196)",
+        "2b_(yorha_unofficial_waterfront_gear)_(nikke)(27)",
+        "2b_(brief_respite)_(azur_lane)(16)",
+        "2b14_(girls'_frontline)(13)",
+        "2ban-tan(2)"
+      ],
+      "checkedAt": "2026-07-24T08:12:17.434Z"
+    },
+    "nier-a2": {
+      "tag": "a2_(nier:automata)",
+      "postCount": 1638,
+      "source": "series-qualified",
+      "seriesOverlap": 0.9926739926739927,
+      "candidatesTried": [
+        "a2",
+        "a2_(nier:automata)",
+        "a2(*)"
+      ],
+      "allCandidates": [
+        "a2_(nier:automata)(1638)",
+        "a2_(yorha_unofficial_waterfront_gear_prototype)_(nikke)(11)",
+        "a2_(fruit_of_temptation)_(azur_lane)(9)",
+        "a2duck(2)"
+      ],
+      "checkedAt": "2026-07-24T08:12:21.845Z"
+    },
+    "azurlane-nagato": {
+      "tag": "nagato_(azur_lane)",
+      "postCount": 1530,
+      "source": "series-qualified",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "nagato",
+        "nagato_(azur_lane)",
+        "nagato(*)"
+      ],
+      "allCandidates": [
+        "nagato_(azur_lane)(1530)",
+        "nagato_(kancolle)(9806)",
+        "nagato_yuki(9240)",
+        "nagatoro_hayase(2220)",
+        "nagato_kai_ni_(kancolle)(828)"
+      ],
+      "checkedAt": "2026-07-24T08:12:26.204Z"
+    },
+    "azurlane-yamato": {
+      "tag": null,
+      "reason": "アズールレーンの大和にDanbooru上のcharacterタグが存在しない模様（yamato*のcategory=4候補20件中、azur_lane修飾のものが1件も無いことを確認。2026-07-24）。このキャラはprovisional:trueで推薦・おまかせのハードフィルタから常に除外されるため実害は無いが、0%共起のyamato_(kancolle)等を誤ってDanbooruソースとして使わないよう明示的に除外する。将来ゲーム内で実装され得たら要再調査。",
+      "source": "override",
+      "checkedAt": "2026-07-24T08:22:54.204Z"
+    },
+    "granblue-narmaya": {
+      "tag": "narmaya_(granblue_fantasy)",
+      "postCount": 3787,
+      "source": "series-qualified",
+      "seriesOverlap": 0.9992078162133615,
+      "candidatesTried": [
+        "narmaya",
+        "narmaya_(granblue_fantasy)",
+        "narmaya(*)"
+      ],
+      "allCandidates": [
+        "narmaya_(granblue_fantasy)(3787)",
+        "narmaya_(summer)_(granblue_fantasy)(488)",
+        "narmaya_(valentine)_(granblue_fantasy)(182)",
+        "narmaya_(holiday)_(granblue_fantasy)(117)",
+        "narmaya_(the_black_butterfly)_(granblue_fantasy)(64)"
+      ],
+      "checkedAt": "2026-07-24T08:12:39.423Z"
+    },
+    "idolmaster-chihaya": {
+      "tag": "kisaragi_chihaya",
+      "postCount": 6731,
+      "source": "name-order-reversed",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "chihaya_kisaragi",
+        "kisaragi_chihaya",
+        "chihaya_kisaragi_(idolmaster)",
+        "chihaya_kisaragi(*)",
+        "chihaya(*)"
+      ],
+      "allCandidates": [
+        "kisaragi_chihaya(6731)",
+        "chihaya_anon(10217)",
+        "chihaya_senri(218)",
+        "chihaya_gunzou(77)",
+        "chihaya_(roshin)(59)"
+      ],
+      "checkedAt": "2026-07-24T08:12:46.063Z"
+    },
+    "kanokari-chizuru": {
+      "tag": "mizuhara_chizuru",
+      "postCount": 903,
+      "source": "name-order-reversed",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "chizuru_mizuhara",
+        "mizuhara_chizuru",
+        "chizuru_mizuhara_(kanojo_okarishimasu)",
+        "chizuru_mizuhara(*)",
+        "chizuru(*)"
+      ],
+      "allCandidates": [
+        "mizuhara_chizuru(903)",
+        "chizuru_(chaos_zero_nightmare)(54)",
+        "chizuru_(madoka_magica)(39)",
+        "chizuru_(kininatteru_hito_ga_otoko_ja_nakatta)(16)",
+        "chizuru_(super_ledgehop)(12)"
+      ],
+      "checkedAt": "2026-07-24T08:12:52.658Z"
+    },
+    "spyfamily-yor": {
+      "tag": "yor_briar",
+      "postCount": 11277,
+      "source": "wildcard-verified",
+      "seriesOverlap": 0.999113239336703,
+      "candidatesTried": [
+        "yor_forger",
+        "forger_yor",
+        "yor_forger_(spy_x_family)",
+        "yor_forger(*)",
+        "yor(*)"
+      ],
+      "allCandidates": [
+        "yor_briar(11277)",
+        "yorigami_shion(4410)",
+        "yorigami_jo'on(3768)",
+        "yoru_(chainsaw_man)(3414)",
+        "yoroizuka_mizore(1510)"
+      ],
+      "checkedAt": "2026-07-24T08:12:59.259Z"
+    },
+    "csm-makima": {
+      "tag": "makima_(chainsaw_man)",
+      "postCount": 10730,
+      "source": "series-qualified",
+      "seriesOverlap": 0.9997204100652376,
+      "candidatesTried": [
+        "makima",
+        "makima_(chainsaw_man)",
+        "makima(*)"
+      ],
+      "allCandidates": [
+        "makima_(chainsaw_man)(10730)",
+        "makimachi_misao(54)"
+      ],
+      "checkedAt": "2026-07-24T08:13:03.693Z"
+    },
+    "aot-levi": {
+      "tag": "levi_(shingeki_no_kyojin)",
+      "postCount": 2530,
+      "source": "wildcard-verified",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "levi_ackerman",
+        "ackerman_levi",
+        "levi_ackerman_(shingeki_no_kyojin)",
+        "levi_ackerman(*)",
+        "levi(*)"
+      ],
+      "allCandidates": [
+        "levi_(shingeki_no_kyojin)(2530)",
+        "leviathan_(skullgirls)(666)",
+        "leviathan_(nikke)(459)",
+        "levi_(fear_&_hunger)(343)",
+        "levi_the_slasher(298)"
+      ],
+      "checkedAt": "2026-07-24T08:13:10.252Z"
+    },
+    "onepiece-zoro": {
+      "tag": "roronoa_zoro",
+      "postCount": 6327,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "roronoa_zoro",
+        "roronoa_zoro_(one_piece)",
+        "roronoa_zoro(*)",
+        "roronoa(*)"
+      ],
+      "allCandidates": [
+        "roronoa_zoro(6327)",
+        "roronoa_arashi(1)"
+      ],
+      "checkedAt": "2026-07-24T08:13:15.826Z"
+    },
+    "fate-astolfo": {
+      "tag": "astolfo_(fate)",
+      "postCount": 7585,
+      "source": "wildcard-verified",
+      "seriesOverlap": 0.9988134475939354,
+      "candidatesTried": [
+        "astolfo",
+        "astolfo_(fate/apocrypha)",
+        "astolfo(*)"
+      ],
+      "allCandidates": [
+        "astolfo_(fate)(7585)",
+        "astolfo_(rider)_(fate)(1807)",
+        "astolfo_(sailor_paladin)_(fate)(1313)",
+        "astolfo_(saber)_(fate)(918)",
+        "astolfo_(memories_at_trifas)_(fate)(675)"
+      ],
+      "checkedAt": "2026-07-24T08:13:21.303Z"
+    },
+    "bleach-rangiku": {
+      "tag": "matsumoto_rangiku",
+      "postCount": 1977,
+      "source": "name-order-reversed",
+      "seriesOverlap": 0.9984825493171472,
+      "candidatesTried": [
+        "rangiku_matsumoto",
+        "matsumoto_rangiku",
+        "rangiku_matsumoto_(bleach)",
+        "rangiku_matsumoto(*)",
+        "rangiku(*)"
+      ],
+      "allCandidates": [
+        "matsumoto_rangiku(1977)",
+        "rangiku_(flower_knight_girl)(5)"
+      ],
+      "checkedAt": "2026-07-24T08:13:27.887Z"
+    },
+    "bleach-yoruichi": {
+      "tag": "shihouin_yoruichi",
+      "postCount": 2809,
+      "source": "override",
+      "checkedAt": "2026-07-24T08:13:29.208Z"
+    },
+    "bluearchive-asuna": {
+      "tag": "asuna_(blue_archive)",
+      "postCount": 17911,
+      "source": "wildcard-verified",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "asuna_ichinose",
+        "ichinose_asuna",
+        "asuna_ichinose_(blue_archive)",
+        "asuna_ichinose(*)",
+        "asuna(*)"
+      ],
+      "allCandidates": [
+        "asuna_(blue_archive)(17911)",
+        "asuna_(bunny)_(blue_archive)(6856)",
+        "asuna_(sao)(6048)",
+        "asuna_(school_uniform)_(blue_archive)(3538)",
+        "asuna_(sao-alo)(758)"
+      ],
+      "checkedAt": "2026-07-24T08:13:35.659Z"
+    },
+    "bluearchive-yuuka": {
+      "tag": "yuuka_(blue_archive)",
+      "postCount": 18529,
+      "source": "wildcard-verified",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "yuuka_hayase",
+        "hayase_yuuka",
+        "yuuka_hayase_(blue_archive)",
+        "yuuka_hayase(*)",
+        "yuuka(*)"
+      ],
+      "allCandidates": [
+        "yuuka_(blue_archive)(18529)",
+        "yuuka_(track)_(blue_archive)(4018)",
+        "yuuka_(pajamas)_(blue_archive)(1034)",
+        "yuuka_(toru_nagase)(45)",
+        "yuuka_(c108_swimsuit)_(blue_archive)(34)"
+      ],
+      "checkedAt": "2026-07-24T08:13:42.223Z"
+    },
+    "bluearchive-toki": {
+      "tag": "toki_(blue_archive)",
+      "postCount": 11766,
+      "source": "wildcard-verified",
+      "seriesOverlap": 0.9999150093489716,
+      "candidatesTried": [
+        "toki_asuma",
+        "asuma_toki",
+        "toki_asuma_(blue_archive)",
+        "toki_asuma(*)",
+        "toki(*)"
+      ],
+      "allCandidates": [
+        "toki_(blue_archive)(11766)",
+        "toki_(bunny)_(blue_archive)(5874)",
+        "tokitsukaze_(kancolle)(3303)",
+        "tokisaki_kurumi(2490)",
+        "tokino_sora(2358)"
+      ],
+      "checkedAt": "2026-07-24T08:13:48.861Z"
+    },
+    "bluearchive-mika": {
+      "tag": "mika_(blue_archive)",
+      "postCount": 15739,
+      "source": "wildcard-verified",
+      "seriesOverlap": 0.9998729271237055,
+      "candidatesTried": [
+        "mika_misono",
+        "misono_mika",
+        "mika_misono_(blue_archive)",
+        "mika_misono(*)",
+        "mika(*)"
+      ],
+      "allCandidates": [
+        "mika_(blue_archive)(15739)",
+        "mikasa_ackerman(4615)",
+        "mika_(girls_und_panzer)(3125)",
+        "mika_(swimsuit)_(blue_archive)(1590)",
+        "mikazuki_munechika(1585)"
+      ],
+      "checkedAt": "2026-07-24T08:13:55.408Z"
+    },
+    "bluearchive-kisaki": {
+      "tag": "kisaki_(blue_archive)",
+      "postCount": 12519,
+      "source": "wildcard-verified",
+      "seriesOverlap": 0.999840242830897,
+      "candidatesTried": [
+        "kisaki_ryuuge",
+        "ryuuge_kisaki",
+        "kisaki_ryuuge_(blue_archive)",
+        "kisaki_ryuuge(*)",
+        "kisaki(*)"
+      ],
+      "allCandidates": [
+        "kisaki_(blue_archive)(12519)",
+        "kisaki_(swimsuit)_(blue_archive)(1155)",
+        "kisaki_(kindergarten_uniform)_(blue_archive)(475)",
+        "kisaki_(school_uniform)_(blue_archive)(311)",
+        "kisaki_asuna(89)"
+      ],
+      "checkedAt": "2026-07-24T08:14:02.092Z"
+    },
+    "bluearchive-rio": {
+      "tag": "rio_(blue_archive)",
+      "postCount": 14325,
+      "source": "wildcard-verified",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "rio_tsukatsuki",
+        "tsukatsuki_rio",
+        "rio_tsukatsuki_(blue_archive)",
+        "rio_tsukatsuki(*)",
+        "rio(*)"
+      ],
+      "allCandidates": [
+        "rio_(blue_archive)(14325)",
+        "rio_(armed)_(blue_archive)(1490)",
+        "riolu(1128)",
+        "rio_rollins(334)",
+        "rio_(black_survival)(221)"
+      ],
+      "checkedAt": "2026-07-24T08:14:08.802Z"
+    },
+    "bluearchive-hina": {
+      "tag": "hina_(blue_archive)",
+      "postCount": 18976,
+      "source": "wildcard-verified",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "hina_sorasaki",
+        "sorasaki_hina",
+        "hina_sorasaki_(blue_archive)",
+        "hina_sorasaki(*)",
+        "hina(*)"
+      ],
+      "allCandidates": [
+        "hina_(blue_archive)(18976)",
+        "hinanawi_tenshi(17717)",
+        "hinata_hajime(6581)",
+        "hina_(swimsuit)_(blue_archive)(2368)",
+        "hina_(dress)_(blue_archive)(2072)"
+      ],
+      "checkedAt": "2026-07-24T08:14:15.364Z"
+    },
+    "bluearchive-noa": {
+      "tag": "noa_(blue_archive)",
+      "postCount": 8237,
+      "source": "wildcard-verified",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "noa_ushio",
+        "ushio_noa",
+        "noa_ushio_(blue_archive)",
+        "noa_ushio(*)",
+        "noa(*)"
+      ],
+      "allCandidates": [
+        "noa_(blue_archive)(8237)",
+        "noa_(pajamas)_(blue_archive)(918)",
+        "noah_(xenoblade)(568)",
+        "noah_(fate)(289)",
+        "noah_ebalon(180)"
+      ],
+      "checkedAt": "2026-07-24T08:14:21.870Z"
+    },
+    "touhou-reimu": {
+      "tag": "hakurei_reimu",
+      "postCount": 97914,
+      "source": "name-order-reversed",
+      "seriesOverlap": 0.9999795739118001,
+      "candidatesTried": [
+        "reimu_hakurei",
+        "hakurei_reimu",
+        "reimu_hakurei_(touhou)",
+        "reimu_hakurei(*)",
+        "reimu(*)"
+      ],
+      "allCandidates": [
+        "hakurei_reimu(97914)",
+        "reimu_endou(698)",
+        "reimu_endou_(1st_costume)(108)",
+        "reimusan_(jotti)(93)",
+        "reimu_endou_(anniversary_dress)(55)"
+      ],
+      "checkedAt": "2026-07-24T08:14:28.615Z"
+    },
+    "touhou-sakuya": {
+      "tag": "izayoi_sakuya",
+      "postCount": 52534,
+      "source": "name-order-reversed",
+      "seriesOverlap": 0.9999809647085697,
+      "candidatesTried": [
+        "sakuya_izayoi",
+        "izayoi_sakuya",
+        "sakuya_izayoi_(touhou)",
+        "sakuya_izayoi(*)",
+        "sakuya(*)"
+      ],
+      "allCandidates": [
+        "izayoi_sakuya(52534)",
+        "sakuyamon(407)",
+        "sakuya_(sister_princess)(222)",
+        "sakuya_(p&d)(192)",
+        "sakuya_reina(154)"
+      ],
+      "checkedAt": "2026-07-24T08:14:35.152Z"
+    },
+    "touhou-patchouli": {
+      "tag": "patchouli_knowledge",
+      "postCount": 38290,
+      "source": "exact",
+      "seriesOverlap": 0.9999738835205014,
+      "candidatesTried": [
+        "patchouli_knowledge",
+        "patchouli_knowledge_(touhou)",
+        "patchouli_knowledge(*)",
+        "patchouli(*)"
+      ],
+      "allCandidates": [
+        "patchouli_knowledge(38290)",
+        "patchouli_(lunacid)(19)",
+        "patchouli_knowledge_(great_library_at_the_hieda_residence)(9)",
+        "patchouli_knowledge_(high_dexterity_maid_for_a_week)(6)",
+        "patchouli_knowledge_(book)(6)"
+      ],
+      "checkedAt": "2026-07-24T08:14:40.670Z"
+    },
+    "touhou-sanae": {
+      "tag": "kochiya_sanae",
+      "postCount": 40608,
+      "source": "name-order-reversed",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "sanae_kochiya",
+        "kochiya_sanae",
+        "sanae_kochiya_(touhou)",
+        "sanae_kochiya(*)",
+        "sanae(*)"
+      ],
+      "allCandidates": [
+        "kochiya_sanae(40608)",
+        "sanae-chan(65)",
+        "sanae-san_(primaveil_zwei)(9)",
+        "sanae_(alchemy_stars)(9)",
+        "sanae_tsutsuji(6)"
+      ],
+      "checkedAt": "2026-07-24T08:14:47.205Z"
+    },
+    "touhou-flandre": {
+      "tag": "flandre_scarlet",
+      "postCount": 61703,
+      "source": "exact",
+      "seriesOverlap": 0.999983793332577,
+      "candidatesTried": [
+        "flandre_scarlet",
+        "flandre_scarlet_(touhou)",
+        "flandre_scarlet(*)",
+        "flandre(*)"
+      ],
+      "allCandidates": [
+        "flandre_scarlet(61703)",
+        "flandre_(azur_lane)(154)",
+        "flandre_scarlet_(vampire_pursuing_the_hunter)(103)",
+        "flandre_(kaibutsu_oujo)(38)",
+        "flandre_scarlet_(imprisoned_dark_peacock_dragon)(21)"
+      ],
+      "checkedAt": "2026-07-24T08:14:52.778Z"
+    },
+    "touhou-remilia": {
+      "tag": "remilia_scarlet",
+      "postCount": 61118,
+      "source": "exact",
+      "seriesOverlap": 0.9999836382080566,
+      "candidatesTried": [
+        "remilia_scarlet",
+        "remilia_scarlet_(touhou)",
+        "remilia_scarlet(*)",
+        "remilia(*)"
+      ],
+      "allCandidates": [
+        "remilia_scarlet(61118)",
+        "remilia_nephys(113)",
+        "remilia_scarlet_(tiny_devil_mistress)(104)",
+        "remiliacn(46)",
+        "remilia_scarlet_(bat)(40)"
+      ],
+      "checkedAt": "2026-07-24T08:14:58.376Z"
+    },
+    "touhou-marisa": {
+      "tag": "kirisame_marisa",
+      "postCount": 85302,
+      "source": "name-order-reversed",
+      "seriesOverlap": 0.9999882769454409,
+      "candidatesTried": [
+        "marisa_kirisame",
+        "kirisame_marisa",
+        "marisa_kirisame_(touhou)",
+        "marisa_kirisame(*)",
+        "marisa(*)"
+      ],
+      "allCandidates": [
+        "kirisame_marisa(85302)",
+        "marisa_(street_fighter)(316)",
+        "marisa_(fire_emblem)(181)",
+        "marisa_(outfit_2)_(street_fighter)(22)",
+        "marisa's_unnamed_father(19)"
+      ],
+      "checkedAt": "2026-07-24T08:15:04.904Z"
+    },
+    "touhou-alice": {
+      "tag": "alice_margatroid",
+      "postCount": 39448,
+      "source": "exact",
+      "seriesOverlap": 0.9998732508618942,
+      "candidatesTried": [
+        "alice_margatroid",
+        "alice_margatroid_(touhou)",
+        "alice_margatroid(*)",
+        "alice(*)"
+      ],
+      "allCandidates": [
+        "alice_margatroid(39448)",
+        "alice_(alice_in_wonderland)(3893)",
+        "alice_thymefield(2778)",
+        "alice_margatroid_(pc-98)(1774)",
+        "alice_zuberg(1207)"
+      ],
+      "checkedAt": "2026-07-24T08:15:10.342Z"
+    },
+    "genshin-ganyu": {
+      "tag": "ganyu_(genshin_impact)",
+      "postCount": 20070,
+      "source": "series-qualified",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "ganyu",
+        "ganyu_(genshin_impact)",
+        "ganyu(*)"
+      ],
+      "allCandidates": [
+        "ganyu_(genshin_impact)(20070)",
+        "ganyu_(twilight_blossom)_(genshin_impact)(521)",
+        "ganyu_(china_merchants_bank)_(genshin_impact)(176)",
+        "ganyu_(young)_(genshin_impact)(152)",
+        "ganyu_(heytea)_(genshin_impact)(87)"
+      ],
+      "checkedAt": "2026-07-24T08:15:14.749Z"
+    },
+    "genshin-raiden-shogun": {
+      "tag": "raiden_shogun",
+      "postCount": 21840,
+      "source": "exact",
+      "seriesOverlap": 0.9998168498168498,
+      "candidatesTried": [
+        "raiden_shogun",
+        "raiden_shogun_(genshin_impact)",
+        "raiden_shogun(*)",
+        "raiden(*)"
+      ],
+      "allCandidates": [
+        "raiden_shogun(21840)",
+        "raiden_mei(5599)",
+        "raiden_mei_(herrscher_of_thunder)(1597)",
+        "raiden_mei_(apho)(714)",
+        "raiden_(metal_gear)(508)"
+      ],
+      "checkedAt": "2026-07-24T08:15:20.222Z"
+    },
+    "genshin-lumine": {
+      "tag": "lumine_(genshin_impact)",
+      "postCount": 21606,
+      "source": "series-qualified",
+      "seriesOverlap": 0.9999074331204295,
+      "candidatesTried": [
+        "lumine",
+        "lumine_(genshin_impact)",
+        "lumine(*)"
+      ],
+      "allCandidates": [
+        "lumine_(genshin_impact)(21606)",
+        "lumine_(as_heaven_and_earth_are_made_anew)_(genshin_impact)(376)",
+        "lumineon(216)",
+        "lumine_(hot_springs)_(genshin_impact)(166)",
+        "lumine_(mega_man)(50)"
+      ],
+      "checkedAt": "2026-07-24T08:15:24.712Z"
+    },
+    "genshin-yae-miko": {
+      "tag": "yae_miko",
+      "postCount": 12347,
+      "source": "exact",
+      "seriesOverlap": 0.9999190086660728,
+      "candidatesTried": [
+        "yae_miko",
+        "yae_miko_(genshin_impact)",
+        "yae_miko(*)",
+        "yae(*)"
+      ],
+      "allCandidates": [
+        "yae_miko(12347)",
+        "yae_sakura(2605)",
+        "yae_miko_(fox)(1013)",
+        "yae_sakura_(gyakushinn_miko)(832)",
+        "yae_sakura_(goushinnso_memento)(635)"
+      ],
+      "checkedAt": "2026-07-24T08:15:30.149Z"
+    },
+    "genshin-hu-tao": {
+      "tag": "hu_tao_(genshin_impact)",
+      "postCount": 14455,
+      "source": "series-qualified",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "hu_tao",
+        "tao_hu",
+        "hu_tao_(genshin_impact)",
+        "hu_tao(*)",
+        "hu(*)"
+      ],
+      "allCandidates": [
+        "hu_tao_(genshin_impact)(14455)",
+        "hung_(arknights)(1320)",
+        "hunter_(bloodborne)(1270)",
+        "huang_pao-lin(1224)",
+        "humboldt_penguin_(kemono_friends)(1136)"
+      ],
+      "checkedAt": "2026-07-24T08:15:36.769Z"
+    },
+    "genshin-mona": {
+      "tag": "mona_(genshin_impact)",
+      "postCount": 9754,
+      "source": "wildcard-verified",
+      "seriesOverlap": 0.999897477957761,
+      "candidatesTried": [
+        "mona_megistus",
+        "megistus_mona",
+        "mona_megistus_(genshin_impact)",
+        "mona_megistus(*)",
+        "mona(*)"
+      ],
+      "allCandidates": [
+        "mona_(genshin_impact)(9754)",
+        "monarch_(azur_lane)(403)",
+        "mona_(warioware)(333)",
+        "mona_(pact_of_stars_and_moon)_(genshin_impact)(304)",
+        "monarch_amalee(252)"
+      ],
+      "checkedAt": "2026-07-24T08:15:43.354Z"
+    },
+    "genshin-keqing": {
+      "tag": "keqing_(genshin_impact)",
+      "postCount": 8393,
+      "source": "series-qualified",
+      "seriesOverlap": 0.9998808530918623,
+      "candidatesTried": [
+        "keqing",
+        "keqing_(genshin_impact)",
+        "keqing(*)"
+      ],
+      "allCandidates": [
+        "keqing_(genshin_impact)(8393)",
+        "keqing_(opulent_splendor)_(genshin_impact)(1099)",
+        "keqing_(lantern_rite)_(genshin_impact)(191)",
+        "keqing_(oneplus)_(genshin_impact)(36)",
+        "keqing_(resplendent_feast)_(genshin_impact)(13)"
+      ],
+      "checkedAt": "2026-07-24T08:15:47.781Z"
+    },
+    "genshin-eula": {
+      "tag": "eula_(genshin_impact)",
+      "postCount": 6380,
+      "source": "wildcard-verified",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "eula_lawrence",
+        "lawrence_eula",
+        "eula_lawrence_(genshin_impact)",
+        "eula_lawrence(*)",
+        "eula(*)"
+      ],
+      "allCandidates": [
+        "eula_(genshin_impact)(6380)",
+        "eula_(pizza_hut)_(genshin_impact)(46)",
+        "eula_(genshin_concert)_(genshin_impact)(11)",
+        "eula_(resplendent_feast)_(genshin_impact)(8)",
+        "eula_(flame_fusion)_(genshin_impact)(6)"
+      ],
+      "checkedAt": "2026-07-24T08:15:54.342Z"
+    },
+    "onepiece-vivi": {
+      "tag": "nefertari_vivi",
+      "postCount": 909,
+      "source": "name-order-reversed",
+      "seriesOverlap": 0.9988998899889989,
+      "candidatesTried": [
+        "vivi_nefertari",
+        "nefertari_vivi",
+        "vivi_nefertari_(one_piece)",
+        "vivi_nefertari(*)",
+        "vivi(*)"
+      ],
+      "allCandidates": [
+        "nefertari_vivi(909)",
+        "vivian_banshee(4377)",
+        "vivio(1927)",
+        "viviana_(arknights)(731)",
+        "vivi_ornitier(688)"
+      ],
+      "checkedAt": "2026-07-24T08:16:00.947Z"
+    },
+    "onepiece-tashigi": {
+      "tag": "tashigi",
+      "postCount": 314,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "tashigi",
+        "tashigi_(one_piece)",
+        "tashigi(*)"
+      ],
+      "allCandidates": [
+        "tashigi(314)"
+      ],
+      "checkedAt": "2026-07-24T08:16:05.344Z"
+    },
+    "onepiece-perona": {
+      "tag": "perona",
+      "postCount": 1562,
+      "source": "exact",
+      "seriesOverlap": 0.998719590268886,
+      "candidatesTried": [
+        "perona",
+        "perona_(one_piece)",
+        "perona(*)"
+      ],
+      "allCandidates": [
+        "perona(1562)"
+      ],
+      "checkedAt": "2026-07-24T08:16:09.807Z"
+    },
+    "onepiece-kalifa": {
+      "tag": "kalifa_(one_piece)",
+      "postCount": 254,
+      "source": "series-qualified",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "kalifa",
+        "kalifa_(one_piece)",
+        "kalifa(*)"
+      ],
+      "allCandidates": [
+        "kalifa_(one_piece)(254)",
+        "kalifa_(eternal_arcadia)(1)"
+      ],
+      "checkedAt": "2026-07-24T08:16:14.238Z"
+    },
+    "onepiece-carrot": {
+      "tag": "carrot_(one_piece)",
+      "postCount": 591,
+      "source": "series-qualified",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "carrot",
+        "carrot_(one_piece)",
+        "carrot(*)"
+      ],
+      "allCandidates": [
+        "carrot_(one_piece)(591)",
+        "carrot_(pepper&carrot)(154)",
+        "carrot_(comodox)(57)",
+        "carrot_glace(44)",
+        "carrot_rabbit_(bukurote)(25)"
+      ],
+      "checkedAt": "2026-07-24T08:16:18.571Z"
+    },
+    "onepiece-uta": {
+      "tag": "uta_(one_piece)",
+      "postCount": 1252,
+      "source": "series-qualified",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "uta",
+        "uta_(one_piece)",
+        "uta(*)"
+      ],
+      "allCandidates": [
+        "uta_(one_piece)(1252)",
+        "utage_(arknights)(1689)",
+        "utane_uta(1327)",
+        "utaha_(blue_archive)(782)",
+        "utage_(summer_flowers)_(arknights)(604)"
+      ],
+      "checkedAt": "2026-07-24T08:16:23.120Z"
+    },
+    "onepiece-sadi": {
+      "tag": "sadi-chan",
+      "postCount": 73,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "sadi-chan",
+        "sadi-chan_(one_piece)",
+        "sadi-chan(*)"
+      ],
+      "allCandidates": [
+        "sadi-chan(73)",
+        "sadi-chan_(edkuroki)(12)"
+      ],
+      "checkedAt": "2026-07-24T08:16:27.670Z"
+    },
+    "naruto-sakura": {
+      "tag": "haruno_sakura",
+      "postCount": 5303,
+      "source": "name-order-reversed",
+      "seriesOverlap": 0.9996228549877428,
+      "candidatesTried": [
+        "sakura_haruno",
+        "haruno_sakura",
+        "sakura_haruno_(naruto_(series))",
+        "sakura_haruno(*)",
+        "sakura(*)"
+      ],
+      "allCandidates": [
+        "haruno_sakura(5303)",
+        "sakura_kyoko(16964)",
+        "sakura_miko(10065)",
+        "sakura_kyoko_(magical_girl)(7024)",
+        "sakurauchi_riko(4335)"
+      ],
+      "checkedAt": "2026-07-24T08:16:34.081Z"
+    },
+    "naruto-hinata": {
+      "tag": "hyuuga_hinata",
+      "postCount": 4407,
+      "source": "override",
+      "checkedAt": "2026-07-24T08:16:35.146Z"
+    },
+    "naruto-ino": {
+      "tag": "yamanaka_ino",
+      "postCount": 1239,
+      "source": "name-order-reversed",
+      "seriesOverlap": 0.9991928974979822,
+      "candidatesTried": [
+        "ino_yamanaka",
+        "yamanaka_ino",
+        "ino_yamanaka_(naruto_(series))",
+        "ino_yamanaka(*)",
+        "ino(*)"
+      ],
+      "allCandidates": [
+        "yamanaka_ino(1239)",
+        "inoue_takina(6676)",
+        "inoue_orihime(2876)",
+        "inoue_marina(419)",
+        "inoue_jun'ichi(371)"
+      ],
+      "checkedAt": "2026-07-24T08:16:41.788Z"
+    },
+    "naruto-shizune": {
+      "tag": "shizune_(naruto)",
+      "postCount": 370,
+      "source": "wildcard-verified",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "shizune",
+        "shizune_(naruto_(series))",
+        "shizune(*)"
+      ],
+      "allCandidates": [
+        "shizune_(naruto)(370)",
+        "shizune_(homare)(32)",
+        "shizune_(gouma_reifuden_izuna)(12)",
+        "shizune_tsukinoha_(shirow)(12)"
+      ],
+      "checkedAt": "2026-07-24T08:16:46.212Z"
+    },
+    "naruto-temari": {
+      "tag": "temari_(naruto)",
+      "postCount": 816,
+      "source": "wildcard-verified",
+      "seriesOverlap": 0.9975490196078431,
+      "candidatesTried": [
+        "temari",
+        "temari_(naruto_(series))",
+        "temari(*)"
+      ],
+      "allCandidates": [
+        "temari_(naruto)(816)",
+        "temari_(nekomata_okayu)(115)",
+        "temari_(shugo_chara!)(25)",
+        "temari_(konshin)(3)",
+        "temari_hanan(3)"
+      ],
+      "checkedAt": "2026-07-24T08:16:50.591Z"
+    },
+    "naruto-anko": {
+      "tag": "mitarashi_anko",
+      "postCount": 265,
+      "source": "name-order-reversed",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "anko_mitarashi",
+        "mitarashi_anko",
+        "anko_mitarashi_(naruto_(series))",
+        "anko_mitarashi(*)",
+        "anko(*)"
+      ],
+      "allCandidates": [
+        "mitarashi_anko(265)",
+        "anko_(gochiusa)(627)",
+        "ankokuboshi_kurome(109)",
+        "ankomon(75)",
+        "anko_(himukai_yuuji)(61)"
+      ],
+      "checkedAt": "2026-07-24T08:16:57.165Z"
+    },
+    "naruto-tenten": {
+      "tag": "tenten_(naruto)",
+      "postCount": 590,
+      "source": "wildcard-verified",
+      "seriesOverlap": 0.9983050847457627,
+      "candidatesTried": [
+        "tenten",
+        "tenten_(naruto_(series))",
+        "tenten(*)"
+      ],
+      "allCandidates": [
+        "tenten_(naruto)(590)",
+        "tenten_(pui_pui_molcar)(3)",
+        "tenten_(alicesoft)(3)",
+        "tenten-kun_(hanasaka_tenshi_tenten-kun)(2)",
+        "tenten_(you_huan_dao_shi)(1)"
+      ],
+      "checkedAt": "2026-07-24T08:17:01.568Z"
+    },
+    "bleach-orihime": {
+      "tag": "inoue_orihime",
+      "postCount": 2876,
+      "source": "name-order-reversed",
+      "seriesOverlap": 0.9996522948539638,
+      "candidatesTried": [
+        "orihime_inoue",
+        "inoue_orihime",
+        "orihime_inoue_(bleach)",
+        "orihime_inoue(*)",
+        "orihime(*)"
+      ],
+      "allCandidates": [
+        "inoue_orihime(2876)",
+        "orihime_(tanabata)(220)",
+        "orihime_(girls_revolution_project)(26)",
+        "orihime_(ojamajo_doremi)(7)",
+        "orihime_momoka(7)"
+      ],
+      "checkedAt": "2026-07-24T08:17:08.427Z"
+    },
+    "bleach-rukia": {
+      "tag": "kuchiki_rukia",
+      "postCount": 3368,
+      "source": "name-order-reversed",
+      "seriesOverlap": 0.9994061757719715,
+      "candidatesTried": [
+        "rukia_kuchiki",
+        "kuchiki_rukia",
+        "rukia_kuchiki_(bleach)",
+        "rukia_kuchiki(*)",
+        "rukia(*)"
+      ],
+      "allCandidates": [
+        "kuchiki_rukia(3368)",
+        "rukia_moon(38)",
+        "rukia_(incise_soul)(37)",
+        "rukia_(sound_horison)(29)",
+        "rukia_(rukiadaichi)(9)"
+      ],
+      "checkedAt": "2026-07-24T08:17:14.819Z"
+    },
+    "bleach-soifon": {
+      "tag": "sui-feng",
+      "postCount": 953,
+      "source": "override",
+      "checkedAt": "2026-07-24T08:17:15.868Z"
+    },
+    "bleach-halibel": {
+      "tag": "tier_harribel",
+      "postCount": 745,
+      "source": "override",
+      "checkedAt": "2026-07-24T08:17:16.992Z"
+    },
+    "bleach-nelliel": {
+      "tag": "nelliel_tu_odelschwanck",
+      "postCount": 707,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "nelliel_tu_odelschwanck",
+        "nelliel_tu_odelschwanck_(bleach)",
+        "nelliel_tu_odelschwanck(*)",
+        "nelliel(*)"
+      ],
+      "allCandidates": [
+        "nelliel_tu_odelschwanck(707)",
+        "nelliel_tu_odelschwanck_(young)(44)",
+        "nelliel_tu_odelschwanck_(creator's_art_collaboration)(6)",
+        "nelliel_tu_odelschwanck_(2022_swimsuit)(5)",
+        "nelliel_tu_odelschwanck_(orient_society)(3)"
+      ],
+      "checkedAt": "2026-07-24T08:17:22.492Z"
+    },
+    "bleach-unohana": {
+      "tag": "unohana_retsu",
+      "postCount": 627,
+      "source": "name-order-reversed",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "retsu_unohana",
+        "unohana_retsu",
+        "retsu_unohana_(bleach)",
+        "retsu_unohana(*)",
+        "retsu(*)"
+      ],
+      "allCandidates": [
+        "unohana_retsu(627)",
+        "retsuko(73)",
+        "retsu_kaioh(34)",
+        "retsu_(gesogeso)(20)",
+        "retsu_(ayame_hashinimasen)(17)"
+      ],
+      "checkedAt": "2026-07-24T08:17:29.159Z"
+    },
+    "bleach-nemu": {
+      "tag": "kurotsuchi_nemu",
+      "postCount": 403,
+      "source": "name-order-reversed",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "nemu_kurotsuchi",
+        "kurotsuchi_nemu",
+        "nemu_kurotsuchi_(bleach)",
+        "nemu_kurotsuchi(*)",
+        "nemu(*)"
+      ],
+      "allCandidates": [
+        "kurotsuchi_nemu(403)",
+        "nemu_(ceres_fauna)(124)",
+        "nemurin(115)",
+        "nemu_(haibane_renmei)(56)",
+        "nemui_nemu(55)"
+      ],
+      "checkedAt": "2026-07-24T08:17:35.790Z"
+    },
+    "bleach-isane": {
+      "tag": "kotetsu_isane",
+      "postCount": 219,
+      "source": "name-order-reversed",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "isane_kotetsu",
+        "kotetsu_isane",
+        "isane_kotetsu_(bleach)",
+        "isane_kotetsu(*)",
+        "isane(*)"
+      ],
+      "allCandidates": [
+        "kotetsu_isane(219)"
+      ],
+      "checkedAt": "2026-07-24T08:17:42.333Z"
+    },
+    "overlord-shalltear": {
+      "tag": "shalltear_bloodfallen",
+      "postCount": 432,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "shalltear_bloodfallen",
+        "shalltear_bloodfallen_(overlord_(maruyama))",
+        "shalltear_bloodfallen(*)",
+        "shalltear(*)"
+      ],
+      "allCandidates": [
+        "shalltear_bloodfallen(432)",
+        "shalltear_bloodfallen_(masked_white_lady)(4)"
+      ],
+      "checkedAt": "2026-07-24T08:17:47.849Z"
+    },
+    "overlord-aura": {
+      "tag": "aura_bella_fiora",
+      "postCount": 203,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "aura_bella_fiora",
+        "aura_bella_fiora_(overlord_(maruyama))",
+        "aura_bella_fiora(*)",
+        "aura(*)"
+      ],
+      "allCandidates": [
+        "aura_bella_fiora(203)",
+        "aura_(sousou_no_frieren)(1372)",
+        "aura_(.hack//)(60)",
+        "aura_blackquill(28)",
+        "aura_venefika(25)"
+      ],
+      "checkedAt": "2026-07-24T08:17:53.343Z"
+    },
+    "overlord-mare": {
+      "tag": "mare_bello_fiore",
+      "postCount": 161,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "mare_bello_fiore",
+        "mare_bello_fiore_(overlord_(maruyama))",
+        "mare_bello_fiore(*)",
+        "mare(*)"
+      ],
+      "allCandidates": [
+        "mare_bello_fiore(161)",
+        "mareep(668)",
+        "mareanie(417)",
+        "mare_s._ephemeral(132)",
+        "mare_(ac8231)(112)"
+      ],
+      "checkedAt": "2026-07-24T08:17:58.862Z"
+    },
+    "overlord-lupusregina": {
+      "tag": "lupusregina_beta",
+      "postCount": 200,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "lupusregina_beta",
+        "lupusregina_beta_(overlord_(maruyama))",
+        "lupusregina_beta(*)",
+        "lupusregina(*)"
+      ],
+      "allCandidates": [
+        "lupusregina_beta(200)"
+      ],
+      "checkedAt": "2026-07-24T08:18:04.350Z"
+    },
+    "overlord-clementine": {
+      "tag": "clementine_(overlord)",
+      "postCount": 110,
+      "source": "wildcard-verified",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "clementine",
+        "clementine_(overlord_(maruyama))",
+        "clementine(*)"
+      ],
+      "allCandidates": [
+        "clementine_(overlord)(110)",
+        "clementine_(the_walking_dead)(40)",
+        "clementine_(path_to_nowhere)(16)",
+        "clementine_lanark_(tamarinfrog)(12)",
+        "clementine_(mikuneki)(4)"
+      ],
+      "checkedAt": "2026-07-24T08:18:08.825Z"
+    },
+    "overlord-yuri": {
+      "tag": "yuri_alpha",
+      "postCount": 76,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "yuri_alpha",
+        "yuri_alpha_(overlord_(maruyama))",
+        "yuri_alpha(*)",
+        "yuri(*)"
+      ],
+      "allCandidates": [
+        "yuri_alpha(76)",
+        "yuri_(doki_doki_literature_club)(1738)",
+        "yuri_lowell(1688)",
+        "yuri_plisetsky(1012)",
+        "yuri_sakazaki(927)"
+      ],
+      "checkedAt": "2026-07-24T08:18:14.374Z"
+    },
+    "overlord-solution": {
+      "tag": "solution_epsilon",
+      "postCount": 106,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "solution_epsilon",
+        "solution_epsilon_(overlord_(maruyama))",
+        "solution_epsilon(*)",
+        "solution(*)"
+      ],
+      "allCandidates": [
+        "solution_epsilon(106)"
+      ],
+      "checkedAt": "2026-07-24T08:18:19.835Z"
+    },
+    "utau-teto": {
+      "tag": "kasane_teto",
+      "postCount": 17175,
+      "source": "name-order-reversed",
+      "seriesOverlap": 0.999825327510917,
+      "candidatesTried": [
+        "teto_kasane",
+        "kasane_teto",
+        "teto_kasane_(utau)",
+        "teto_kasane(*)",
+        "teto(*)"
+      ],
+      "allCandidates": [
+        "kasane_teto(17175)",
+        "teto_(nausicaa)(253)",
+        "teto_(no_game_no_life)(26)",
+        "tetote_lolipop_(pastime774)(5)",
+        "teto_(minus_skill-mochi)(3)"
+      ],
+      "checkedAt": "2026-07-24T08:18:26.416Z"
+    },
+    "genshin-ayaka": {
+      "tag": "kamisato_ayaka",
+      "postCount": 7308,
+      "source": "name-order-reversed",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "ayaka_kamisato",
+        "kamisato_ayaka",
+        "ayaka_kamisato_(genshin_impact)",
+        "ayaka_kamisato(*)",
+        "ayaka(*)"
+      ],
+      "allCandidates": [
+        "kamisato_ayaka(7308)",
+        "ayakakashi(44)",
+        "ayaka_(charismabard)(43)",
+        "ayaka_(yuutousei_ayaka_no_uraomote)(27)",
+        "ayaka_uehara(20)"
+      ],
+      "checkedAt": "2026-07-24T08:18:33.009Z"
+    },
+    "genshin-shenhe": {
+      "tag": "shenhe_(genshin_impact)",
+      "postCount": 6358,
+      "source": "series-qualified",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "shenhe",
+        "shenhe_(genshin_impact)",
+        "shenhe(*)"
+      ],
+      "allCandidates": [
+        "shenhe_(genshin_impact)(6358)",
+        "shenhe_(frostflower_dew)_(genshin_impact)(451)",
+        "shenhe's_talisman_spirit_(genshin_impact)(83)",
+        "shenhe_(young)_(genshin_impact)(54)",
+        "shenhe_(heytea)_(genshin_impact)(50)"
+      ],
+      "checkedAt": "2026-07-24T08:18:37.368Z"
+    },
+    "genshin-nahida": {
+      "tag": "nahida_(genshin_impact)",
+      "postCount": 13038,
+      "source": "series-qualified",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "nahida",
+        "nahida_(genshin_impact)",
+        "nahida(*)"
+      ],
+      "allCandidates": [
+        "nahida_(genshin_impact)(13038)",
+        "nahida_(genshin_cafe_in_seoul)_(genshin_impact)(26)",
+        "nahida_(2nd_anniversary)_(genshin_impact)(5)",
+        "nahida_(parallels_meet_school)_(genshin_impact)(5)"
+      ],
+      "checkedAt": "2026-07-24T08:18:41.857Z"
+    },
+    "genshin-furina": {
+      "tag": "focalors_(genshin_impact)",
+      "postCount": 1020,
+      "source": "series-qualified",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "focalors",
+        "focalors_(genshin_impact)",
+        "focalors(*)"
+      ],
+      "allCandidates": [
+        "focalors_(genshin_impact)(1020)"
+      ],
+      "checkedAt": "2026-07-24T08:18:46.252Z"
+    },
+    "genshin-barbara": {
+      "tag": "barbara_(genshin_impact)",
+      "postCount": 4036,
+      "source": "wildcard-verified",
+      "seriesOverlap": 0.9997522299306244,
+      "candidatesTried": [
+        "barbara_pegg",
+        "pegg_barbara",
+        "barbara_pegg_(genshin_impact)",
+        "barbara_pegg(*)",
+        "barbara(*)"
+      ],
+      "allCandidates": [
+        "barbara_(genshin_impact)(4036)",
+        "barbara_(summertime_sparkle)_(genshin_impact)(632)",
+        "barbara_(dq6)(334)",
+        "barbara_gordon(279)",
+        "barbara_parker(198)"
+      ],
+      "checkedAt": "2026-07-24T08:18:52.867Z"
+    },
+    "touhou-yukari": {
+      "tag": "yakumo_yukari",
+      "postCount": 37836,
+      "source": "name-order-reversed",
+      "seriesOverlap": 0.999867850724178,
+      "candidatesTried": [
+        "yukari_yakumo",
+        "yakumo_yukari",
+        "yukari_yakumo_(touhou)",
+        "yukari_yakumo(*)",
+        "yukari(*)"
+      ],
+      "allCandidates": [
+        "yakumo_yukari(37836)",
+        "yukari_(blue_archive)(1144)",
+        "yukari_(swimsuit)_(blue_archive)(244)",
+        "yukari_(princess_connect!)(170)",
+        "yukari_(momoko)(98)"
+      ],
+      "checkedAt": "2026-07-24T08:18:59.535Z"
+    },
+    "touhou-satori": {
+      "tag": "komeiji_satori",
+      "postCount": 30598,
+      "source": "name-order-reversed",
+      "seriesOverlap": 0.9999673181253677,
+      "candidatesTried": [
+        "satori_komeiji",
+        "komeiji_satori",
+        "satori_komeiji_(touhou)",
+        "satori_komeiji(*)",
+        "satori(*)"
+      ],
+      "allCandidates": [
+        "komeiji_satori(30598)",
+        "satori_kagome(68)",
+        "satori_ken(27)",
+        "satori_kagome_(100_demons_ver.)(11)",
+        "satori-chan(9)"
+      ],
+      "checkedAt": "2026-07-24T08:19:06.028Z"
+    },
+    "touhou-aya": {
+      "tag": "shameimaru_aya",
+      "postCount": 33829,
+      "source": "name-order-reversed",
+      "seriesOverlap": 0.9999704395636879,
+      "candidatesTried": [
+        "aya_shameimaru",
+        "shameimaru_aya",
+        "aya_shameimaru_(touhou)",
+        "aya_shameimaru(*)",
+        "aya(*)"
+      ],
+      "allCandidates": [
+        "shameimaru_aya(33829)",
+        "ayanami_rei(10324)",
+        "ayase_eli(7235)",
+        "ayase_momo(4129)",
+        "ayanami_(azur_lane)(3406)"
+      ],
+      "checkedAt": "2026-07-24T08:19:12.792Z"
+    },
+    "touhou-reisen": {
+      "tag": "reisen_udongein_inaba",
+      "postCount": 30772,
+      "source": "exact",
+      "seriesOverlap": 0.9999675029247368,
+      "candidatesTried": [
+        "reisen_udongein_inaba",
+        "reisen_udongein_inaba_(touhou)",
+        "reisen_udongein_inaba(*)",
+        "reisen(*)"
+      ],
+      "allCandidates": [
+        "reisen_udongein_inaba(30772)",
+        "reisen_(touhou_bougetsushou)(1116)",
+        "reisen_udongein_inaba_(bunny)(49)",
+        "reisen_udongein_inaba_(student_of_a_renowned_doctor)(12)",
+        "reisen_aoi(11)"
+      ],
+      "checkedAt": "2026-07-24T08:19:18.178Z"
+    },
+    "touhou-youmu": {
+      "tag": "konpaku_youmu",
+      "postCount": 40361,
+      "source": "name-order-reversed",
+      "seriesOverlap": 0.9999008944277892,
+      "candidatesTried": [
+        "youmu_konpaku",
+        "konpaku_youmu",
+        "youmu_konpaku_(touhou)",
+        "youmu_konpaku(*)",
+        "youmu(*)"
+      ],
+      "allCandidates": [
+        "konpaku_youmu(40361)",
+        "youmu_(tensura)(1)"
+      ],
+      "checkedAt": "2026-07-24T08:19:24.849Z"
+    },
+    "kancolle-atago": {
+      "tag": "atago_(kancolle)",
+      "postCount": 7148,
+      "source": "wildcard-verified",
+      "seriesOverlap": 0.9998601007274762,
+      "candidatesTried": [
+        "atago",
+        "atago_(kantai_collection)",
+        "atago(*)"
+      ],
+      "allCandidates": [
+        "atago_(kancolle)(7148)",
+        "atago_(azur_lane)(4858)",
+        "atago_(stunning_speedster)_(azur_lane)(964)",
+        "atago_(summer_march)_(azur_lane)(676)",
+        "atago_(school_traumerei)_(azur_lane)(296)"
+      ],
+      "checkedAt": "2026-07-24T08:19:29.237Z"
+    },
+    "kancolle-shimakaze": {
+      "tag": "shimakaze_(kancolle)",
+      "postCount": 20529,
+      "source": "wildcard-verified",
+      "seriesOverlap": 0.9998538652637732,
+      "candidatesTried": [
+        "shimakaze",
+        "shimakaze_(kantai_collection)",
+        "shimakaze(*)"
+      ],
+      "allCandidates": [
+        "shimakaze_(kancolle)(20529)",
+        "shimakaze_(azur_lane)(753)",
+        "shimakaze-kun(732)",
+        "shimakaze_(seal)(92)",
+        "shimakaze_(the_white_rabbit_of_wonderland)_(azur_lane)(66)"
+      ],
+      "checkedAt": "2026-07-24T08:19:33.633Z"
+    },
+    "kancolle-kaga": {
+      "tag": "kaga_(kancolle)",
+      "postCount": 22143,
+      "source": "wildcard-verified",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "kaga",
+        "kaga_(kantai_collection)",
+        "kaga(*)"
+      ],
+      "allCandidates": [
+        "kagamine_rin(25690)",
+        "kaga_(kancolle)(22143)",
+        "kagamine_len(17030)",
+        "kaga_(azur_lane)(2848)",
+        "kagari_atsuko(2672)"
+      ],
+      "checkedAt": "2026-07-24T08:19:39.156Z"
+    },
+    "kancolle-kashima": {
+      "tag": "kashima_(kancolle)",
+      "postCount": 9969,
+      "source": "wildcard-verified",
+      "seriesOverlap": 0.9997993780720232,
+      "candidatesTried": [
+        "kashima",
+        "kashima_(kantai_collection)",
+        "kashima(*)"
+      ],
+      "allCandidates": [
+        "kashima_(kancolle)(9969)",
+        "kashima_(lawson)_(kancolle)(568)",
+        "kashima_yuu(395)",
+        "kashima_(christmas)_(kancolle)(149)",
+        "kashima_hiiragi_(given)(132)"
+      ],
+      "checkedAt": "2026-07-24T08:19:43.567Z"
+    },
+    "kancolle-takao": {
+      "tag": "takao_(kancolle)",
+      "postCount": 5616,
+      "source": "wildcard-verified",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "takao",
+        "takao_(kantai_collection)",
+        "takao(*)"
+      ],
+      "allCandidates": [
+        "takao_(kancolle)(5616)",
+        "takao_(azur_lane)(2753)",
+        "takao_(beach_rhapsody)_(azur_lane)(494)",
+        "takao_(aoki_hagane_no_arpeggio)(489)",
+        "takao_(full_throttle_charmer)_(azur_lane)(329)"
+      ],
+      "checkedAt": "2026-07-24T08:19:47.918Z"
+    },
+    "kancolle-hamakaze": {
+      "tag": "hamakaze_(kancolle)",
+      "postCount": 10825,
+      "source": "wildcard-verified",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "hamakaze",
+        "hamakaze_(kantai_collection)",
+        "hamakaze(*)"
+      ],
+      "allCandidates": [
+        "hamakaze_(kancolle)(10825)",
+        "hamakaze_(yukata)_(kancolle)(270)",
+        "hamakaze_(azur_lane)(72)",
+        "hamakaze_(valentine)_(kancolle)(41)",
+        "hamakaze_(retrofit)_(azur_lane)(15)"
+      ],
+      "checkedAt": "2026-07-24T08:19:52.427Z"
+    },
+    "kancolle-taihou": {
+      "tag": "taihou_(kancolle)",
+      "postCount": 3292,
+      "source": "wildcard-verified",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "taihou",
+        "taihou_(kantai_collection)",
+        "taihou(*)"
+      ],
+      "allCandidates": [
+        "taihou_(azur_lane)(6352)",
+        "taihou_(kancolle)(3292)",
+        "taihou_(enraptured_companion)_(azur_lane)(1028)",
+        "taihou_(forbidden_fruit)_(azur_lane)(808)",
+        "taihou_(fun_on_the_baize)_(azur_lane)(457)"
+      ],
+      "checkedAt": "2026-07-24T08:19:57.879Z"
+    },
+    "kancolle-suzuya": {
+      "tag": "suzuya_(kancolle)",
+      "postCount": 9363,
+      "source": "wildcard-verified",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "suzuya",
+        "suzuya_(kantai_collection)",
+        "suzuya(*)"
+      ],
+      "allCandidates": [
+        "suzuya_(kancolle)(9363)",
+        "suzuya_kai_ni_(kancolle)(1460)",
+        "suzuya_juuzou(293)",
+        "suzuya_(christmas)_(kancolle)(263)",
+        "suzuya_(azur_lane)(215)"
+      ],
+      "checkedAt": "2026-07-24T08:20:02.304Z"
+    },
+    "kancolle-kongou": {
+      "tag": "kongou_(kancolle)",
+      "postCount": 14021,
+      "source": "wildcard-verified",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "kongou",
+        "kongou_(kantai_collection)",
+        "kongou(*)"
+      ],
+      "allCandidates": [
+        "kongou_(kancolle)(14021)",
+        "kongou_kai_ni_(kancolle)(2067)",
+        "kongou_(aoki_hagane_no_arpeggio)(522)",
+        "kongou_mitsuko(195)",
+        "kongou_(azur_lane)(195)"
+      ],
+      "checkedAt": "2026-07-24T08:20:06.654Z"
+    },
+    "touhou-koishi": {
+      "tag": "komeiji_koishi",
+      "postCount": 44274,
+      "source": "name-order-reversed",
+      "seriesOverlap": 0.9999774133803135,
+      "candidatesTried": [
+        "koishi_komeiji",
+        "komeiji_koishi",
+        "koishi_komeiji_(touhou)",
+        "koishi_komeiji(*)",
+        "koishi(*)"
+      ],
+      "allCandidates": [
+        "komeiji_koishi(44274)",
+        "koishikawa_iko(413)",
+        "koishikawa_emma(78)",
+        "koishikawa_kohane(22)",
+        "koishikawa_miku(20)"
+      ],
+      "checkedAt": "2026-07-24T08:20:13.322Z"
+    },
+    "touhou-momiji": {
+      "tag": "inubashiri_momiji",
+      "postCount": 25698,
+      "source": "name-order-reversed",
+      "seriesOverlap": 0.9999610864658728,
+      "candidatesTried": [
+        "momiji_inubashiri",
+        "inubashiri_momiji",
+        "momiji_inubashiri_(touhou)",
+        "momiji_inubashiri(*)",
+        "momiji(*)"
+      ],
+      "allCandidates": [
+        "inubashiri_momiji(25698)",
+        "momijiyama_teru(529)",
+        "momiji_(blue_archive)(316)",
+        "momiji_(binbougami_ga!)(179)",
+        "momiji_(ninja_gaiden)(151)"
+      ],
+      "checkedAt": "2026-07-24T08:20:19.900Z"
+    },
+    "touhou-meiling": {
+      "tag": "hong_meiling",
+      "postCount": 27851,
+      "source": "exact",
+      "seriesOverlap": 0.9998563785860471,
+      "candidatesTried": [
+        "hong_meiling",
+        "hong_meiling_(touhou)",
+        "hong_meiling(*)",
+        "hong(*)"
+      ],
+      "allCandidates": [
+        "hong_meiling(27851)",
+        "hong_lu_(project_moon)(4075)",
+        "hong_kong_(hetalia)(244)",
+        "hong_meiling_(panda)(213)",
+        "hongryeon_(last_origin)(206)"
+      ],
+      "checkedAt": "2026-07-24T08:20:25.518Z"
+    },
+    "touhou-ran": {
+      "tag": "yakumo_ran",
+      "postCount": 22534,
+      "source": "name-order-reversed",
+      "seriesOverlap": 0.9998668678441466,
+      "candidatesTried": [
+        "ran_yakumo",
+        "yakumo_ran",
+        "ran_yakumo_(touhou)",
+        "ran_yakumo(*)",
+        "ran(*)"
+      ],
+      "allCandidates": [
+        "yakumo_ran(22534)",
+        "ranka_lee(2422)",
+        "ranni_the_witch(2235)",
+        "randal_ivory(1082)",
+        "ranger_(ragnarok_online)(729)"
+      ],
+      "checkedAt": "2026-07-24T08:20:32.005Z"
+    },
+    "touhou-koakuma": {
+      "tag": "koakuma",
+      "postCount": 16018,
+      "source": "exact",
+      "seriesOverlap": 0.9999375702334873,
+      "candidatesTried": [
+        "koakuma",
+        "koakuma_(touhou)",
+        "koakuma(*)"
+      ],
+      "allCandidates": [
+        "koakuma(16018)",
+        "koakuma-chan_(monaka_curl)(37)",
+        "koakuma_(yukata)(13)",
+        "koakuma_(compendium_of_advanced_magic)(10)",
+        "koakuma_rimu(8)"
+      ],
+      "checkedAt": "2026-07-24T08:20:36.508Z"
+    },
+    "touhou-suwako": {
+      "tag": "moriya_suwako",
+      "postCount": 21651,
+      "source": "name-order-reversed",
+      "seriesOverlap": 0.9999538127569165,
+      "candidatesTried": [
+        "suwako_moriya",
+        "moriya_suwako",
+        "suwako_moriya_(touhou)",
+        "suwako_moriya(*)",
+        "suwako(*)"
+      ],
+      "allCandidates": [
+        "moriya_suwako(21651)"
+      ],
+      "checkedAt": "2026-07-24T08:20:43.259Z"
+    },
+    "touhou-yuuka": {
+      "tag": "kazami_yuuka",
+      "postCount": 20082,
+      "source": "name-order-reversed",
+      "seriesOverlap": 0.9998008166517279,
+      "candidatesTried": [
+        "yuuka_kazami",
+        "kazami_yuuka",
+        "yuuka_kazami_(touhou)",
+        "yuuka_kazami(*)",
+        "yuuka(*)"
+      ],
+      "allCandidates": [
+        "kazami_yuuka(20082)",
+        "yuuka_(blue_archive)(18529)",
+        "yuuka_(track)_(blue_archive)(4018)",
+        "yuuka_(pajamas)_(blue_archive)(1034)",
+        "yuuka_(toru_nagase)(45)"
+      ],
+      "checkedAt": "2026-07-24T08:20:49.632Z"
+    },
+    "touhou-yuyuko": {
+      "tag": "saigyouji_yuyuko",
+      "postCount": 27693,
+      "source": "name-order-reversed",
+      "seriesOverlap": 0.9999638897916441,
+      "candidatesTried": [
+        "yuyuko_saigyouji",
+        "saigyouji_yuyuko",
+        "yuyuko_saigyouji_(touhou)",
+        "yuyuko_saigyouji(*)",
+        "yuyuko(*)"
+      ],
+      "allCandidates": [
+        "saigyouji_yuyuko(27693)"
+      ],
+      "checkedAt": "2026-07-24T08:20:56.478Z"
+    },
+    "lovelive-maki": {
+      "tag": "nishikino_maki",
+      "postCount": 8349,
+      "source": "name-order-reversed",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "maki_nishikino",
+        "nishikino_maki",
+        "maki_nishikino_(love_live!_school_idol_project)",
+        "maki_nishikino(*)",
+        "maki(*)"
+      ],
+      "allCandidates": [
+        "nishikino_maki(8349)",
+        "makima_(chainsaw_man)(10730)",
+        "makise_kurisu(4301)",
+        "makinami_mari_illustrious(2801)",
+        "makigumo_(kancolle)(2351)"
+      ],
+      "checkedAt": "2026-07-24T08:21:02.942Z"
+    },
+    "lovelive-eli": {
+      "tag": "ayase_eli",
+      "postCount": 7235,
+      "source": "name-order-reversed",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "eli_ayase",
+        "ayase_eli",
+        "eli_ayase_(love_live!_school_idol_project)",
+        "eli_ayase(*)",
+        "eli(*)"
+      ],
+      "allCandidates": [
+        "ayase_eli(7235)",
+        "elizabeth_bathory_(fate)(3459)",
+        "elira_pendora(2468)",
+        "elizabeth_rose_bloodflame(2372)",
+        "elio_(pokemon)(1865)"
+      ],
+      "checkedAt": "2026-07-24T08:21:09.422Z"
+    },
+    "lovelive-nico": {
+      "tag": "yazawa_nico",
+      "postCount": 7768,
+      "source": "name-order-reversed",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "nico_yazawa",
+        "yazawa_nico",
+        "nico_yazawa_(love_live!_school_idol_project)",
+        "nico_yazawa(*)",
+        "nico(*)"
+      ],
+      "allCandidates": [
+        "yazawa_nico(7768)",
+        "nico_robin(7359)",
+        "nicole_demara(4322)",
+        "nicole_(genshin_impact)(746)",
+        "nicole_(class_of_09)(255)"
+      ],
+      "checkedAt": "2026-07-24T08:21:16.062Z"
+    },
+    "lovelive-nozomi": {
+      "tag": "tojo_nozomi",
+      "postCount": 7780,
+      "source": "name-order-reversed",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "nozomi_tojo",
+        "tojo_nozomi",
+        "nozomi_tojo_(love_live!_school_idol_project)",
+        "nozomi_tojo(*)",
+        "nozomi(*)"
+      ],
+      "allCandidates": [
+        "tojo_nozomi(7780)",
+        "nozomi_(blue_archive)(6358)",
+        "nozomi_(princess_connect!)(359)",
+        "nozomi_(kujibikido)_(blue_archive)(276)",
+        "nozomi_(mom's_touch)_(blue_archive)(55)"
+      ],
+      "checkedAt": "2026-07-24T08:21:22.645Z"
+    },
+    "lovelive-kotori": {
+      "tag": "minami_kotori",
+      "postCount": 5839,
+      "source": "name-order-reversed",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "kotori_minami",
+        "minami_kotori",
+        "kotori_minami_(love_live!_school_idol_project)",
+        "kotori_minami(*)",
+        "kotori(*)"
+      ],
+      "allCandidates": [
+        "minami_kotori(5839)",
+        "kotori_(blue_archive)(1127)",
+        "kotori_(cheer_squad)_(blue_archive)(679)",
+        "kotori_(takanashi_kiara)(456)",
+        "kotori_(takepoison)(42)"
+      ],
+      "checkedAt": "2026-07-24T08:21:29.311Z"
+    },
+    "lovelive-umi": {
+      "tag": "sonoda_umi",
+      "postCount": 7711,
+      "source": "name-order-reversed",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "umi_sonoda",
+        "sonoda_umi",
+        "umi_sonoda_(love_live!_school_idol_project)",
+        "umi_sonoda(*)",
+        "umi(*)"
+      ],
+      "allCandidates": [
+        "sonoda_umi(7711)",
+        "umikaze_(kancolle)(1526)",
+        "umika_(blue_archive)(461)",
+        "umikaze_kai_ni_(kancolle)(329)",
+        "umino_iruka(199)"
+      ],
+      "checkedAt": "2026-07-24T08:21:35.926Z"
+    },
+    "fate-illya": {
+      "tag": "illyasviel_von_einzbern",
+      "postCount": 10981,
+      "source": "exact",
+      "seriesOverlap": 0.9994536016756216,
+      "candidatesTried": [
+        "illyasviel_von_einzbern",
+        "illyasviel_von_einzbern_(fate/stay_night)",
+        "illyasviel_von_einzbern(*)",
+        "illyasviel(*)"
+      ],
+      "allCandidates": [
+        "illyasviel_von_einzbern(10981)",
+        "illyasviel_von_einzbern_(beast_style)(655)",
+        "illyasviel_von_einzbern_(swimsuit_archer)_(second_ascension)(263)",
+        "illyasviel_von_einzbern_(dress_of_heaven)(106)",
+        "illyasviel_von_einzbern_(swimsuit_archer)_(third_ascension)(77)"
+      ],
+      "checkedAt": "2026-07-24T08:21:42.492Z"
+    },
+    "fate-raikou": {
+      "tag": "minamoto_no_raikou_(fate)",
+      "postCount": 6540,
+      "source": "wildcard-verified",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "minamoto_no_raikou",
+        "minamoto_no_raikou_(fate/grand_order)",
+        "minamoto_no_raikou(*)",
+        "minamoto(*)"
+      ],
+      "allCandidates": [
+        "minamoto_no_raikou_(fate)(6540)",
+        "minamoto_no_raikou_(swimsuit_lancer)_(fate)(1443)",
+        "minamoto_sakura(1326)",
+        "minamoto_no_raikou_(second_ascension)_(fate)(908)",
+        "minamoto_no_raikou_(first_ascension)_(fate)(778)"
+      ],
+      "checkedAt": "2026-07-24T08:21:49.109Z"
+    },
+    "fate-nightingale": {
+      "tag": "florence_nightingale_(fate)",
+      "postCount": 3898,
+      "source": "override",
+      "checkedAt": "2026-07-24T08:21:50.268Z"
+    },
+    "fate-miyu": {
+      "tag": "miyu_edelfelt",
+      "postCount": 3587,
+      "source": "exact",
+      "seriesOverlap": 0.9997212155004181,
+      "candidatesTried": [
+        "miyu_edelfelt",
+        "miyu_edelfelt_(fate/kaleid_liner_prisma_illya)",
+        "miyu_edelfelt(*)",
+        "miyu(*)"
+      ],
+      "allCandidates": [
+        "miyu_edelfelt(3587)",
+        "miyu_(blue_archive)(5380)",
+        "miyuki_(kancolle)(2433)",
+        "miyu_(swimsuit)_(blue_archive)(1509)",
+        "miyu_edelfelt_(magical_girl)(1001)"
+      ],
+      "checkedAt": "2026-07-24T08:21:56.893Z"
+    },
+    "fate-shuten": {
+      "tag": "shuten_douji_(fate)",
+      "postCount": 7698,
+      "source": "wildcard-verified",
+      "seriesOverlap": 0.9994803845154585,
+      "candidatesTried": [
+        "shuten_douji",
+        "douji_shuten",
+        "shuten_douji_(fate/grand_order)",
+        "shuten_douji(*)",
+        "shuten(*)"
+      ],
+      "allCandidates": [
+        "shuten_douji_(fate)(7698)",
+        "shuten_douji_(first_ascension)_(fate)(619)",
+        "shuten_douji_(halloween_caster)_(fate)(544)",
+        "shuten_douji_(festival_outfit)_(fate)(304)",
+        "shuten_douji_(housamo)(90)"
+      ],
+      "checkedAt": "2026-07-24T08:22:04.537Z"
+    },
+    "fate-sakura": {
+      "tag": "matou_sakura",
+      "postCount": 6895,
+      "source": "name-order-reversed",
+      "seriesOverlap": 0.9998549673676578,
+      "candidatesTried": [
+        "sakura_matou",
+        "matou_sakura",
+        "sakura_matou_(fate/stay_night)",
+        "sakura_matou(*)",
+        "sakura(*)"
+      ],
+      "allCandidates": [
+        "matou_sakura(6895)",
+        "sakura_kyoko(16964)",
+        "sakura_miko(10065)",
+        "sakura_kyoko_(magical_girl)(7024)",
+        "sakurauchi_riko(4335)"
+      ],
+      "checkedAt": "2026-07-24T08:22:12.285Z"
+    },
+    "fate-chloe": {
+      "tag": "chloe_von_einzbern",
+      "postCount": 4567,
+      "source": "exact",
+      "seriesOverlap": 0.9997810378804467,
+      "candidatesTried": [
+        "chloe_von_einzbern",
+        "chloe_von_einzbern_(fate/kaleid_liner_prisma_illya)",
+        "chloe_von_einzbern(*)",
+        "chloe(*)"
+      ],
+      "allCandidates": [
+        "chloe_von_einzbern(4567)",
+        "chloe_(princess_connect!)(854)",
+        "chloe_von_einzbern_(archer_install)(784)",
+        "chloe_(fire_emblem)(530)",
+        "chloe_(pokemon)(514)"
+      ],
+      "checkedAt": "2026-07-24T08:22:18.914Z"
+    },
+    "fate-jalter": {
+      "tag": "jeanne_d'arc_alter_(fate)",
+      "postCount": 13627,
+      "source": "wildcard-verified",
+      "seriesOverlap": 0.9997064651060394,
+      "candidatesTried": [
+        "jeanne_alter",
+        "alter_jeanne",
+        "jeanne_alter_(fate/grand_order)",
+        "jeanne_alter(*)",
+        "jeanne(*)"
+      ],
+      "allCandidates": [
+        "jeanne_d'arc_alter_(fate)(13627)",
+        "jeanne_d'arc_(fate)(8695)",
+        "jeanne_d'arc_alter_(avenger)_(fate)(3537)",
+        "jeanne_d'arc_(ruler)_(fate)(3220)",
+        "jeanne_d'arc_alter_(swimsuit_berserker)_(fate)(2786)"
+      ],
+      "checkedAt": "2026-07-24T08:22:26.780Z"
+    }
+  }
+}
