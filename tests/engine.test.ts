@@ -207,24 +207,32 @@ describe('C. 推薦エンジン', () => {
     }
   });
 
-  it('C3: 無作為な1000通りの回答パスで scoreCharacters が1件も空にならない', () => {
-    const rand = mulberry32(1);
-    const confidences: Confidence[] = ['yes', 'probably_yes', 'unknown', 'probably_no', 'no'];
-    const empties: AnswerMap[] = [];
+  it(
+    'C3: 無作為な1000通りの回答パスで scoreCharacters が1件も空にならない',
+    () => {
+      const rand = mulberry32(1);
+      const confidences: Confidence[] = ['yes', 'probably_yes', 'unknown', 'probably_no', 'no'];
+      const empties: AnswerMap[] = [];
 
-    for (let i = 0; i < 1000; i += 1) {
-      const answers: AnswerMap = {};
-      const askedKeys = new Set<string>();
-      for (let q = 0; q < 8; q += 1) {
-        const probe = nextProbe(dataset, answers, askedKeys);
-        if (!probe) break;
-        answers[probe.key] = confidences[Math.floor(rand() * confidences.length)];
-        askedKeys.add(probe.key);
+      for (let i = 0; i < 1000; i += 1) {
+        const answers: AnswerMap = {};
+        const askedKeys = new Set<string>();
+        for (let q = 0; q < 8; q += 1) {
+          const probe = nextProbe(dataset, answers, askedKeys);
+          if (!probe) break;
+          answers[probe.key] = confidences[Math.floor(rand() * confidences.length)];
+          askedKeys.add(probe.key);
+        }
+        if (scoreCharacters(answers, dataset).length === 0) empties.push(answers);
       }
-      if (scoreCharacters(answers, dataset).length === 0) empties.push(answers);
-    }
-    expect(empties).toEqual([]);
-  });
+      expect(empties).toEqual([]);
+    },
+    // 他のテストファイル（tests/engine-bias.test.ts 等）と並列実行された際の
+    // CPU競合でデフォルト5秒を超えることがあるため明示的に緩める
+    // （2026-07-21、engine-bias.test.ts追加後に確認。20秒でも並列実行時に
+    // 超えることがあったため、実測の数倍のヘッドルームを持たせる）。
+    60000,
+  );
 
   it('C4: 全問「わからない」でも scoreCharacters の結果が空にならない', () => {
     const { answers } = runToGuess(dataset, always('unknown'));

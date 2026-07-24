@@ -17,9 +17,11 @@
         "主従"
       ],
       "distance": "積極的",
-      "looks": [],
+      "looks": [
+        "角"
+      ],
       "hairColor": "青",
-      "skinTone": null,
+      "skinTone": "色白",
       "outfit": [
         "メイド"
       ],
@@ -59,7 +61,7 @@
       "distance": "中立",
       "looks": [],
       "hairColor": "桃",
-      "skinTone": null,
+      "skinTone": "色白",
       "outfit": [
         "メイド"
       ],
@@ -101,7 +103,7 @@
         "長髪"
       ],
       "hairColor": "紫",
-      "skinTone": null,
+      "skinTone": "色白",
       "outfit": [],
       "species": "不死",
       "mood": "支配的",
@@ -132,7 +134,7 @@
       "ageFeel": "年上",
       "build": "標準",
       "bust": "大きい",
-      "personality": "おっとり",
+      "personality": "元気",
       "roles": [
         "主従",
         "母性"
@@ -143,7 +145,7 @@
         "尻尾"
       ],
       "hairColor": "桃",
-      "skinTone": null,
+      "skinTone": "色白",
       "outfit": [
         "巫女"
       ],
@@ -174,13 +176,15 @@
       "build": "華奢",
       "bust": "大きい",
       "personality": "生意気",
-      "roles": [],
+      "roles": [
+        "後輩"
+      ],
       "distance": "積極的",
       "looks": [
         "長髪"
       ],
       "hairColor": "紫",
-      "skinTone": null,
+      "skinTone": "色白",
       "outfit": [],
       "species": "機械",
       "mood": "甘め",
@@ -211,10 +215,13 @@
       "build": "標準",
       "bust": "大きい",
       "personality": "生意気",
-      "roles": [],
+      "roles": [
+        "妹"
+      ],
       "distance": "積極的",
       "looks": [
-        "長髪"
+        "長髪",
+        "ツインテール"
       ],
       "hairColor": "黒",
       "skinTone": "褐色",
@@ -223,7 +230,7 @@
       "mood": "支配的",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "affiliationName": null
+      "affiliationName": "メソポタミア"
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -244,17 +251,20 @@
     "dlsiteQuery": "FGO 清姫",
     "axes": {
       "genderExpression": "女性",
-      "ageFeel": "同年代",
-      "build": "標準",
+      "ageFeel": "幼い",
+      "build": "華奢",
       "bust": "大きい",
       "personality": "内気",
-      "roles": [],
+      "roles": [
+        "ライバル"
+      ],
       "distance": "積極的",
       "looks": [
-        "長髪"
+        "長髪",
+        "角"
       ],
       "hairColor": "緑",
-      "skinTone": null,
+      "skinTone": "色白",
       "outfit": [],
       "species": "魔族",
       "mood": "背徳寄り",
@@ -285,7 +295,7 @@
       "ageFeel": "年上",
       "build": "標準",
       "bust": "大きい",
-      "personality": "おっとり",
+      "personality": "クール",
       "roles": [
         "母性"
       ],
@@ -294,7 +304,7 @@
         "長髪"
       ],
       "hairColor": "白",
-      "skinTone": null,
+      "skinTone": "色白",
       "outfit": [],
       "species": "魔族",
       "mood": "甘め",
@@ -331,10 +341,10 @@
       "distance": "積極的",
       "looks": [
         "長髪",
-        "尻尾"
+        "角"
       ],
       "hairColor": "黒",
-      "skinTone": null,
+      "skinTone": "色白",
       "outfit": [],
       "species": "魔族",
       "mood": "背徳寄り",
@@ -374,15 +384,15 @@
         "長髪"
       ],
       "hairColor": "黒",
-      "skinTone": null,
+      "skinTone": "色白",
       "outfit": [
         "メイド"
       ],
-      "species": "機械",
+      "species": "魔族",
       "mood": "従属的",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": "プレアデス"
+      "affiliationName": "ナザリック地下大墳墓"
     },
     "reviewed": true,
     "hitomiQuery": {
@@ -407,7 +417,7 @@
       "ageFeel": "年上",
       "build": "標準",
       "bust": "とても大きい",
-      "personality": "おっとり",
+      "personality": "姉御",
       "roles": [
         "先輩"
       ],
@@ -416,7 +426,7 @@
         "長髪"
       ],
       "hairColor": "金",
-      "skinTone": null,
+      "skinTone": "色白",
       "outfit": [
         "軍服"
       ],
@@ -457,7 +467,7 @@
         "長髪"
       ],
       "hairColor": "赤",
-      "skinTone": null,
+      "skinTone": "色白",
       "outfit": [
         "軍服"
       ],
@@ -499,7 +509,7 @@
         "長髪"
       ],
       "hairColor": "白",
-      "skinTone": null,
+      "skinTone": "色白",
       "outfit": [],
       "species": "人間",
       "mood": "甘め",
@@ -534,14 +544,14 @@
         "母性"
       ],
       "distance": "やや積極的",
-      "looks": [
-        "長髪"
-      ],
+      "looks": [],
       "hairColor": "青",
-      "skinTone": null,
-      "outfit": [],
+      "skinTone": "色白",
+      "outfit": [
+        "軍服"
+      ],
       "species": "人間",
-      "mood": "甘め",
+      "mood": "支配的",
       "combat": "戦わない",
       "affiliationKind": "社会人",
       "affiliationName": "カプセルコーポレーション"
@@ -567,23 +577,21 @@
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "年上",
-      "build": "標準",
+      "build": "華奢",
       "bust": "標準",
       "personality": "クール",
       "roles": [
         "姉"
       ],
       "distance": "中立",
-      "looks": [
-        "長髪"
-      ],
+      "looks": [],
       "hairColor": "金",
-      "skinTone": null,
+      "skinTone": "色白",
       "outfit": [],
-      "species": "機械",
+      "species": "人間",
       "mood": "支配的",
       "combat": "戦う",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "社会人",
       "affiliationName": null
     },
     "reviewed": true,
@@ -618,7 +626,7 @@
         "長髪"
       ],
       "hairColor": "金",
-      "skinTone": null,
+      "skinTone": "色白",
       "outfit": [],
       "species": "人間",
       "mood": "支配的",
@@ -648,7 +656,7 @@
       "ageFeel": "年上",
       "build": "標準",
       "bust": "大きい",
-      "personality": "おっとり",
+      "personality": "姉御",
       "roles": [
         "教師",
         "母性"
@@ -658,10 +666,10 @@
         "長髪"
       ],
       "hairColor": "黒",
-      "skinTone": null,
+      "skinTone": "色白",
       "outfit": [],
       "species": "人間",
-      "mood": "甘め",
+      "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
       "affiliationName": "木ノ葉隠れの里"
@@ -695,10 +703,11 @@
       ],
       "distance": "中立",
       "looks": [
-        "長髪"
+        "長髪",
+        "眼鏡"
       ],
       "hairColor": "黒",
-      "skinTone": null,
+      "skinTone": "色白",
       "outfit": [],
       "species": "人間",
       "mood": "純愛寄り",
@@ -729,13 +738,15 @@
       "build": "標準",
       "bust": "とても大きい",
       "personality": "生意気",
-      "roles": [],
+      "roles": [
+        "姉"
+      ],
       "distance": "積極的",
       "looks": [
         "長髪"
       ],
       "hairColor": "黒",
-      "skinTone": null,
+      "skinTone": "色白",
       "outfit": [],
       "species": "人間",
       "mood": "支配的",
@@ -767,7 +778,7 @@
       "bust": "大きい",
       "personality": "生意気",
       "roles": [
-        "幼馴染"
+        "姉"
       ],
       "distance": "やや積極的",
       "looks": [
@@ -808,13 +819,14 @@
       "roles": [],
       "distance": "積極的",
       "looks": [
-        "長髪"
+        "長髪",
+        "尻尾"
       ],
       "hairColor": "赤",
-      "skinTone": null,
+      "skinTone": "色白",
       "outfit": [],
       "species": "獣人",
-      "mood": "甘め",
+      "mood": "純愛寄り",
       "combat": "戦わない",
       "affiliationKind": "非人間・その他",
       "affiliationName": null
@@ -844,15 +856,18 @@
       "bust": "大きい",
       "personality": "姉御",
       "roles": [
-        "母性"
+        "主従"
       ],
       "distance": "やや積極的",
       "looks": [
-        "長髪"
+        "長髪",
+        "尻尾"
       ],
       "hairColor": "金",
-      "skinTone": null,
-      "outfit": [],
+      "skinTone": "色白",
+      "outfit": [
+        "軍服"
+      ],
       "species": "獣人",
       "mood": "純愛寄り",
       "combat": "戦う",
@@ -884,12 +899,12 @@
       "personality": "クール",
       "roles": [],
       "distance": "中立",
-      "looks": [
-        "長髪"
-      ],
+      "looks": [],
       "hairColor": "白",
-      "skinTone": null,
-      "outfit": [],
+      "skinTone": "色白",
+      "outfit": [
+        "軍服"
+      ],
       "species": "機械",
       "mood": "従属的",
       "combat": "戦う",
@@ -927,8 +942,10 @@
         "長髪"
       ],
       "hairColor": "白",
-      "skinTone": null,
-      "outfit": [],
+      "skinTone": "色白",
+      "outfit": [
+        "軍服"
+      ],
       "species": "機械",
       "mood": "支配的",
       "combat": "戦う",
@@ -954,21 +971,22 @@
     "dlsiteQuery": "アズールレーン 長門",
     "axes": {
       "genderExpression": "女性",
-      "ageFeel": "年上",
-      "build": "標準",
+      "ageFeel": "幼い",
+      "build": "華奢",
       "bust": "小さい",
-      "personality": "クール",
+      "personality": "内気",
       "roles": [
         "姉"
       ],
       "distance": "中立",
       "looks": [
-        "長髪"
+        "長髪",
+        "ケモミミ"
       ],
       "hairColor": "黒",
       "skinTone": null,
       "outfit": [
-        "軍服"
+        "巫女"
       ],
       "species": "人間",
       "mood": "従属的",
@@ -1004,7 +1022,8 @@
       ],
       "distance": "中立",
       "looks": [
-        "長髪"
+        "長髪",
+        "ケモミミ"
       ],
       "hairColor": "黒",
       "skinTone": null,
@@ -1037,18 +1056,21 @@
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "年上",
-      "build": "標準",
+      "build": "華奢",
       "bust": "大きい",
-      "personality": "クール",
-      "roles": [],
+      "personality": "おっとり",
+      "roles": [
+        "母性"
+      ],
       "distance": "積極的",
       "looks": [
-        "長髪"
+        "長髪",
+        "角"
       ],
       "hairColor": "桃",
       "skinTone": null,
       "outfit": [],
-      "species": "人間",
+      "species": "魔族",
       "mood": "甘め",
       "combat": "戦う",
       "affiliationKind": "冒険者",
@@ -1077,14 +1099,18 @@
       "build": "華奢",
       "bust": "小さい",
       "personality": "クール",
-      "roles": [],
+      "roles": [
+        "ライバル"
+      ],
       "distance": "受け身",
       "looks": [
         "長髪"
       ],
       "hairColor": "黒",
       "skinTone": null,
-      "outfit": [],
+      "outfit": [
+        "制服"
+      ],
       "species": "人間",
       "mood": "純愛寄り",
       "combat": "戦わない",
@@ -1114,19 +1140,25 @@
       "build": "標準",
       "bust": "標準",
       "personality": "クール",
-      "roles": [],
+      "roles": [
+        "先輩"
+      ],
       "distance": "やや受け身",
       "looks": [
         "長髪"
       ],
       "hairColor": "黒",
       "skinTone": null,
-      "outfit": [],
+      "outfit": [
+        "制服",
+        "メイド",
+        "ナース"
+      ],
       "species": "人間",
       "mood": "純愛寄り",
       "combat": "戦わない",
       "affiliationKind": "学生",
-      "affiliationName": "名倉大学"
+      "affiliationName": "練馬大学"
     },
     "reviewed": true,
     "hitomiQuery": {
@@ -1160,7 +1192,7 @@
         "長髪"
       ],
       "hairColor": "黒",
-      "skinTone": null,
+      "skinTone": "色白",
       "outfit": [
         "OL"
       ],
@@ -1168,7 +1200,7 @@
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "社会人",
-      "affiliationName": "市役所"
+      "affiliationName": "ベルリント市役所"
     },
     "reviewed": true,
     "hitomiQuery": {
@@ -1201,7 +1233,7 @@
         "長髪"
       ],
       "hairColor": "赤",
-      "skinTone": null,
+      "skinTone": "色白",
       "outfit": [
         "OL"
       ],
@@ -1310,15 +1342,19 @@
       "build": "華奢",
       "bust": "小さい",
       "personality": "元気",
-      "roles": [],
+      "roles": [
+        "ライバル"
+      ],
       "distance": "やや積極的",
       "looks": [
         "長髪",
         "ツインテール"
       ],
       "hairColor": "桃",
-      "skinTone": null,
-      "outfit": [],
+      "skinTone": "色白",
+      "outfit": [
+        "制服"
+      ],
       "species": "人間",
       "mood": "甘め",
       "combat": "戦う",
@@ -1347,7 +1383,7 @@
       "ageFeel": "年上",
       "build": "標準",
       "bust": "とても大きい",
-      "personality": "元気",
+      "personality": "姉御",
       "roles": [
         "先輩"
       ],
@@ -1356,15 +1392,15 @@
         "長髪"
       ],
       "hairColor": "金",
-      "skinTone": null,
+      "skinTone": "色白",
       "outfit": [
         "軍服"
       ],
-      "species": "人間",
+      "species": "不死",
       "mood": "甘め",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": "護廷十三隊"
+      "affiliationName": "護廷十三隊十番隊"
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -1397,14 +1433,16 @@
       "looks": [
         "長髪"
       ],
-      "hairColor": "紫",
+      "hairColor": "黒",
       "skinTone": "褐色",
-      "outfit": [],
-      "species": "人間",
+      "outfit": [
+        "軍服"
+      ],
+      "species": "不死",
       "mood": "支配的",
       "combat": "戦う",
-      "affiliationKind": "軍・組織",
-      "affiliationName": "護廷十三隊"
+      "affiliationKind": "社会人",
+      "affiliationName": "浦原商店"
     },
     "reviewed": true,
     "hitomiQuery": {
@@ -1435,22 +1473,26 @@
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "同年代",
-      "build": "標準",
+      "build": "むっちり",
       "bust": "とても大きい",
       "personality": "元気",
       "hairColor": "金",
       "combat": "戦う",
       "affiliationKind": "学生",
-      "roles": [],
+      "roles": [
+        "先輩"
+      ],
       "distance": "積極的",
       "looks": [
         "長髪"
       ],
       "skinTone": "標準",
-      "outfit": [],
+      "outfit": [
+        "メイド"
+      ],
       "species": "人間",
-      "mood": null,
-      "affiliationName": "C&C"
+      "mood": "甘め",
+      "affiliationName": "ミレニアムサイエンススクール（C&C）"
     }
   },
   {
@@ -1475,11 +1517,13 @@
       "ageFeel": "同年代",
       "build": "むっちり",
       "bust": "標準",
-      "personality": "クール",
+      "personality": "生意気",
       "hairColor": "紫",
       "combat": "戦う",
       "affiliationKind": "学生",
-      "roles": [],
+      "roles": [
+        "後輩"
+      ],
       "distance": "中立",
       "looks": [
         "長髪",
@@ -1490,8 +1534,8 @@
         "制服"
       ],
       "species": "人間",
-      "mood": null,
-      "affiliationName": "セミナー"
+      "mood": "支配的",
+      "affiliationName": "ミレニアムサイエンススクール（セミナー）"
     }
   },
   {
@@ -1516,8 +1560,8 @@
       "ageFeel": "同年代",
       "build": "標準",
       "bust": "標準",
-      "personality": "生意気",
-      "hairColor": "黒",
+      "personality": "クール",
+      "hairColor": "金",
       "combat": "戦う",
       "affiliationKind": "学生",
       "roles": [
@@ -1532,8 +1576,8 @@
         "メイド"
       ],
       "species": "人間",
-      "mood": null,
-      "affiliationName": "C&C"
+      "mood": "従属的",
+      "affiliationName": "ミレニアムサイエンススクール（C&C）"
     }
   },
   {
@@ -1562,7 +1606,9 @@
       "hairColor": "桃",
       "combat": "戦う",
       "affiliationKind": "学生",
-      "roles": [],
+      "roles": [
+        "幼馴染"
+      ],
       "distance": "積極的",
       "looks": [
         "長髪"
@@ -1572,8 +1618,8 @@
         "制服"
       ],
       "species": "人間",
-      "mood": null,
-      "affiliationName": "ティーパーティー"
+      "mood": "純愛寄り",
+      "affiliationName": "トリニティ総合学園（ティーパーティー）"
     }
   },
   {
@@ -1610,8 +1656,8 @@
       "skinTone": "色白",
       "outfit": [],
       "species": "人間",
-      "mood": null,
-      "affiliationName": "玄龍門"
+      "mood": "支配的",
+      "affiliationName": "山海経高級中学校（玄龍門）"
     }
   },
   {
@@ -1634,7 +1680,7 @@
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "年上",
-      "build": "標準",
+      "build": "むっちり",
       "bust": "大きい",
       "personality": "クール",
       "hairColor": "黒",
@@ -1647,11 +1693,13 @@
       "looks": [
         "長髪"
       ],
-      "skinTone": "標準",
-      "outfit": [],
+      "skinTone": "色白",
+      "outfit": [
+        "OL"
+      ],
       "species": "人間",
       "mood": "支配的",
-      "affiliationName": "セミナー"
+      "affiliationName": "ミレニアムサイエンススクール（セミナー）"
     }
   },
   {
@@ -1680,18 +1728,20 @@
       "hairColor": "白",
       "combat": "戦う",
       "affiliationKind": "学生",
-      "roles": [],
+      "roles": [
+        "先輩"
+      ],
       "distance": "やや積極的",
       "looks": [
         "長髪"
       ],
       "skinTone": "色白",
       "outfit": [
-        "制服"
+        "軍服"
       ],
       "species": "人間",
-      "mood": null,
-      "affiliationName": "風紀委員会"
+      "mood": "支配的",
+      "affiliationName": "ゲヘナ学園（風紀委員会）"
     }
   },
   {
@@ -1716,11 +1766,13 @@
       "ageFeel": "同年代",
       "build": "標準",
       "bust": "標準",
-      "personality": "クール",
+      "personality": "おっとり",
       "hairColor": "白",
       "combat": "戦う",
       "affiliationKind": "学生",
-      "roles": [],
+      "roles": [
+        "後輩"
+      ],
       "distance": "やや積極的",
       "looks": [
         "長髪"
@@ -1730,8 +1782,8 @@
         "制服"
       ],
       "species": "人間",
-      "mood": null,
-      "affiliationName": "セミナー"
+      "mood": "甘め",
+      "affiliationName": "ミレニアムサイエンススクール（セミナー）"
     }
   },
   {
@@ -1772,7 +1824,7 @@
         "巫女"
       ],
       "species": "人間",
-      "mood": null,
+      "mood": "甘め",
       "affiliationName": "博麗神社"
     }
   },
@@ -1850,7 +1902,7 @@
       "skinTone": "色白",
       "outfit": [],
       "species": "魔族",
-      "mood": null,
+      "mood": "純愛寄り",
       "affiliationName": "紅魔館"
     }
   },
@@ -1880,7 +1932,9 @@
       "hairColor": "緑",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "roles": [],
+      "roles": [
+        "ライバル"
+      ],
       "distance": "やや積極的",
       "looks": [
         "長髪"
@@ -1890,7 +1944,7 @@
         "巫女"
       ],
       "species": "人間",
-      "mood": null,
+      "mood": "甘め",
       "affiliationName": "守矢神社"
     }
   },
@@ -1916,7 +1970,7 @@
       "ageFeel": "幼い",
       "build": "華奢",
       "bust": "小さい",
-      "personality": "元気",
+      "personality": "おっとり",
       "hairColor": "金",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
@@ -1924,7 +1978,9 @@
         "妹"
       ],
       "distance": null,
-      "looks": [],
+      "looks": [
+        "ツインテール"
+      ],
       "skinTone": "色白",
       "outfit": [],
       "species": "不死",
@@ -1955,7 +2011,7 @@
       "build": "華奢",
       "bust": "小さい",
       "personality": "生意気",
-      "hairColor": "青",
+      "hairColor": "銀",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
       "roles": [
@@ -2007,7 +2063,7 @@
       "skinTone": "標準",
       "outfit": [],
       "species": "人間",
-      "mood": null,
+      "mood": "甘め",
       "affiliationName": null
     }
   },
@@ -2031,7 +2087,7 @@
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "同年代",
-      "build": "標準",
+      "build": "華奢",
       "bust": "標準",
       "personality": "クール",
       "hairColor": "金",
@@ -2045,7 +2101,7 @@
       "skinTone": "色白",
       "outfit": [],
       "species": "魔族",
-      "mood": null,
+      "mood": "純愛寄り",
       "affiliationName": null
     }
   },
@@ -2071,19 +2127,24 @@
       "ageFeel": "同年代",
       "build": "標準",
       "bust": "大きい",
-      "personality": "おっとり",
+      "personality": "内気",
       "hairColor": "青",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "roles": [],
+      "roles": [
+        "先輩"
+      ],
       "distance": "受け身",
       "looks": [
-        "長髪"
+        "長髪",
+        "角"
       ],
       "skinTone": "色白",
-      "outfit": [],
+      "outfit": [
+        "OL"
+      ],
       "species": "不死",
-      "mood": "甘め",
+      "mood": "純愛寄り",
       "affiliationName": "璃月七星"
     }
   },
@@ -2123,7 +2184,7 @@
       ],
       "skinTone": "色白",
       "outfit": [],
-      "species": "不死",
+      "species": "機械",
       "mood": "支配的",
       "affiliationName": "稲妻幕府"
     }
@@ -2155,9 +2216,13 @@
       "hairColor": "金",
       "combat": "戦う",
       "affiliationKind": "冒険者",
-      "roles": [],
+      "roles": [
+        "妹"
+      ],
       "distance": "中立",
-      "looks": [],
+      "looks": [
+        "長髪"
+      ],
       "skinTone": "色白",
       "outfit": [],
       "species": "人間",
@@ -2190,7 +2255,7 @@
       "personality": "生意気",
       "hairColor": "桃",
       "combat": "戦う",
-      "affiliationKind": "社会人",
+      "affiliationKind": "非人間・その他",
       "roles": [
         "先輩"
       ],
@@ -2323,7 +2388,9 @@
         "長髪"
       ],
       "skinTone": "色白",
-      "outfit": [],
+      "outfit": [
+        "OL"
+      ],
       "species": "人間",
       "mood": "純愛寄り",
       "affiliationName": "璃月七星"
@@ -2360,14 +2427,16 @@
         "姉"
       ],
       "distance": "中立",
-      "looks": [],
+      "looks": [
+        "長髪"
+      ],
       "skinTone": "色白",
       "outfit": [
         "軍服"
       ],
       "species": "人間",
       "mood": "支配的",
-      "affiliationName": "西風騎士団"
+      "affiliationName": "西風騎士団(遊撃小隊隊長)"
     }
   },
   {
@@ -2393,10 +2462,10 @@
       "ageFeel": "同年代",
       "build": "華奢",
       "bust": "標準",
-      "personality": "おっとり",
+      "personality": "元気",
       "hairColor": "青",
       "combat": "戦う",
-      "affiliationKind": "軍・組織",
+      "affiliationKind": "社会人",
       "roles": [],
       "distance": "中立",
       "looks": [
@@ -2447,7 +2516,7 @@
         "軍服"
       ],
       "species": "人間",
-      "mood": null,
+      "mood": "純愛寄り",
       "affiliationName": "海軍"
     }
   },
@@ -2477,16 +2546,19 @@
       "hairColor": "桃",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "roles": [],
+      "roles": [
+        "妹"
+      ],
       "distance": "中立",
       "looks": [
-        "長髪"
+        "長髪",
+        "ツインテール"
       ],
       "skinTone": "色白",
       "outfit": [],
       "species": "人間",
       "mood": "支配的",
-      "affiliationName": "スリラーバーク"
+      "affiliationName": "スリラーバーク海賊団"
     }
   },
   {
@@ -2515,7 +2587,9 @@
       "hairColor": "金",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "roles": [],
+      "roles": [
+        "姉"
+      ],
       "distance": "やや積極的",
       "looks": [
         "眼鏡",
@@ -2527,7 +2601,7 @@
       ],
       "species": "人間",
       "mood": "支配的",
-      "affiliationName": "CP9"
+      "affiliationName": "CP0"
     }
   },
   {
@@ -2637,7 +2711,7 @@
       "personality": "姉御",
       "hairColor": "茶",
       "combat": "戦う",
-      "affiliationKind": "軍・組織",
+      "affiliationKind": "社会人",
       "roles": [
         "主従"
       ],
@@ -2687,7 +2761,7 @@
       "skinTone": "色白",
       "outfit": [],
       "species": "人間",
-      "mood": null,
+      "mood": "純愛寄り",
       "affiliationName": "木ノ葉隠れの里"
     }
   },
@@ -2717,7 +2791,10 @@
       "hairColor": "青",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "roles": [],
+      "roles": [
+        "姉",
+        "後輩"
+      ],
       "distance": "受け身",
       "looks": [
         "長髪"
@@ -2766,7 +2843,7 @@
       "skinTone": "色白",
       "outfit": [],
       "species": "人間",
-      "mood": null,
+      "mood": "純愛寄り",
       "affiliationName": "木ノ葉隠れの里"
     }
   },
@@ -2805,7 +2882,7 @@
       "skinTone": "色白",
       "outfit": [],
       "species": "人間",
-      "mood": null,
+      "mood": "従属的",
       "affiliationName": "木ノ葉隠れの里"
     }
   },
@@ -2831,7 +2908,7 @@
       "ageFeel": "同年代",
       "build": "標準",
       "bust": "標準",
-      "personality": "クール",
+      "personality": "姉御",
       "hairColor": "金",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
@@ -2843,7 +2920,7 @@
       "skinTone": "色白",
       "outfit": [],
       "species": "人間",
-      "mood": null,
+      "mood": "支配的",
       "affiliationName": "砂隠れの里"
     }
   },
@@ -2867,7 +2944,7 @@
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "年上",
-      "build": "標準",
+      "build": "華奢",
       "bust": "大きい",
       "personality": "元気",
       "hairColor": "紫",
@@ -2882,7 +2959,7 @@
       "skinTone": "標準",
       "outfit": [],
       "species": "人間",
-      "mood": null,
+      "mood": "支配的",
       "affiliationName": "木ノ葉隠れの里"
     }
   },
@@ -2950,7 +3027,9 @@
       "hairColor": "茶",
       "combat": "戦う",
       "affiliationKind": "学生",
-      "roles": [],
+      "roles": [
+        "母性"
+      ],
       "distance": "やや受け身",
       "looks": [
         "長髪"
@@ -2995,13 +3074,13 @@
       ],
       "distance": "中立",
       "looks": [],
-      "skinTone": "標準",
+      "skinTone": "色白",
       "outfit": [
         "軍服"
       ],
       "species": "不死",
-      "mood": null,
-      "affiliationName": "十三番隊"
+      "mood": "純愛寄り",
+      "affiliationName": "護廷十三隊十三番隊"
     }
   },
   {
@@ -3031,16 +3110,20 @@
       "hairColor": "黒",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "roles": [],
+      "roles": [
+        "後輩"
+      ],
       "distance": "やや受け身",
-      "looks": [],
+      "looks": [
+        "ツインテール"
+      ],
       "skinTone": "標準",
       "outfit": [
         "軍服"
       ],
       "species": "不死",
-      "mood": null,
-      "affiliationName": "二番隊"
+      "mood": "従属的",
+      "affiliationName": "護廷十三隊二番隊"
     }
   },
   {
@@ -3078,8 +3161,8 @@
       "skinTone": "褐色",
       "outfit": [],
       "species": "魔族",
-      "mood": null,
-      "affiliationName": "エスパーダ"
+      "mood": "支配的",
+      "affiliationName": "エスパーダ(第3位)"
     }
   },
   {
@@ -3114,13 +3197,14 @@
       ],
       "distance": "やや積極的",
       "looks": [
-        "長髪"
+        "長髪",
+        "角"
       ],
       "skinTone": "標準",
       "outfit": [],
       "species": "魔族",
-      "mood": null,
-      "affiliationName": "エスパーダ"
+      "mood": "甘め",
+      "affiliationName": "エスパーダ(第3位)"
     }
   },
   {
@@ -3150,7 +3234,8 @@
       "combat": "戦う",
       "affiliationKind": "軍・組織",
       "roles": [
-        "母性"
+        "母性",
+        "教師"
       ],
       "distance": "中立",
       "looks": [
@@ -3162,7 +3247,7 @@
       ],
       "species": "不死",
       "mood": "甘め",
-      "affiliationName": "四番隊"
+      "affiliationName": "護廷十三隊四番隊"
     }
   },
   {
@@ -3187,7 +3272,7 @@
       "ageFeel": "年上",
       "build": "華奢",
       "bust": "大きい",
-      "personality": "クール",
+      "personality": "内気",
       "hairColor": "黒",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
@@ -3202,9 +3287,9 @@
       "outfit": [
         "軍服"
       ],
-      "species": "不死",
+      "species": "機械",
       "mood": "従属的",
-      "affiliationName": "十二番隊"
+      "affiliationName": "護廷十三隊十二番隊"
     }
   },
   {
@@ -3234,7 +3319,8 @@
       "combat": "戦う",
       "affiliationKind": "軍・組織",
       "roles": [
-        "姉"
+        "姉",
+        "後輩"
       ],
       "distance": "受け身",
       "looks": [],
@@ -3243,8 +3329,8 @@
         "軍服"
       ],
       "species": "不死",
-      "mood": null,
-      "affiliationName": "四番隊"
+      "mood": "従属的",
+      "affiliationName": "護廷十三隊四番隊"
     }
   },
   {
@@ -3272,7 +3358,7 @@
       "personality": "生意気",
       "hairColor": "銀",
       "combat": "戦う",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "軍・組織",
       "roles": [
         "主従"
       ],
@@ -3312,7 +3398,7 @@
       "personality": "元気",
       "hairColor": "金",
       "combat": "戦う",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "軍・組織",
       "roles": [
         "主従"
       ],
@@ -3321,7 +3407,7 @@
       "skinTone": "褐色",
       "outfit": [],
       "species": "エルフ",
-      "mood": null,
+      "mood": "甘め",
       "affiliationName": "ナザリック地下大墳墓"
     }
   },
@@ -3350,7 +3436,7 @@
       "personality": "内気",
       "hairColor": "金",
       "combat": "戦う",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "軍・組織",
       "roles": [
         "主従"
       ],
@@ -3388,7 +3474,7 @@
       "personality": "元気",
       "hairColor": "赤",
       "combat": "戦う",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "軍・組織",
       "roles": [
         "主従"
       ],
@@ -3434,11 +3520,11 @@
       "roles": [],
       "distance": "積極的",
       "looks": [],
-      "skinTone": null,
+      "skinTone": "色白",
       "outfit": [],
       "species": "人間",
       "mood": "背徳寄り",
-      "affiliationName": "漆黒聖典（スレイン法国）"
+      "affiliationName": "秘密結社ズーラーノーン（元・漆黒聖典/スレイン法国）"
     }
   },
   {
@@ -3460,13 +3546,13 @@
     "imageApproved": false,
     "axes": {
       "genderExpression": "女性",
-      "ageFeel": "同年代",
+      "ageFeel": "年上",
       "build": "標準",
       "bust": "大きい",
       "personality": "姉御",
       "hairColor": "黒",
       "combat": "戦う",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "軍・組織",
       "roles": [
         "姉",
         "主従"
@@ -3480,7 +3566,7 @@
         "メイド"
       ],
       "species": "不死",
-      "mood": null,
+      "mood": "純愛寄り",
       "affiliationName": "ナザリック地下大墳墓"
     }
   },
@@ -3509,7 +3595,7 @@
       "personality": "クール",
       "hairColor": "金",
       "combat": "戦う",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "軍・組織",
       "roles": [
         "主従"
       ],
@@ -3551,7 +3637,7 @@
       "personality": "生意気",
       "hairColor": "赤",
       "combat": "戦わない",
-      "affiliationKind": "社会人",
+      "affiliationKind": "非人間・その他",
       "roles": [],
       "distance": "やや積極的",
       "looks": [
@@ -3561,7 +3647,7 @@
       "outfit": [
         "制服"
       ],
-      "species": "人間",
+      "species": "獣人",
       "mood": "甘め",
       "affiliationName": null
     }
@@ -3596,7 +3682,7 @@
       "skinTone": "色白",
       "outfit": [],
       "species": "人間",
-      "mood": null,
+      "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
       "affiliationName": "神里家(社奉行)"
@@ -3624,7 +3710,9 @@
       "build": "華奢",
       "bust": "とても大きい",
       "personality": "クール",
-      "roles": [],
+      "roles": [
+        "後輩"
+      ],
       "distance": "受け身",
       "looks": [
         "長髪"
@@ -3633,7 +3721,7 @@
       "skinTone": "色白",
       "outfit": [],
       "species": "人間",
-      "mood": null,
+      "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
       "affiliationName": "仙人・閑雲(雲堂)の弟子"
@@ -3667,12 +3755,14 @@
         "母性"
       ],
       "distance": "やや積極的",
-      "looks": [],
+      "looks": [
+        "長髪"
+      ],
       "hairColor": "緑",
       "skinTone": "色白",
       "outfit": [],
       "species": null,
-      "mood": null,
+      "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
       "affiliationName": "スメール(須弥)の草神"
@@ -3712,7 +3802,7 @@
       "skinTone": "色白",
       "outfit": [],
       "species": null,
-      "mood": null,
+      "mood": "甘め",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
       "affiliationName": "フォンテーヌの水神/オペラ座女優"
@@ -3750,9 +3840,11 @@
       ],
       "hairColor": "金",
       "skinTone": "色白",
-      "outfit": [],
+      "outfit": [
+        "ナース"
+      ],
       "species": "人間",
-      "mood": null,
+      "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
       "affiliationName": "西風教会(モンド)"
@@ -3788,7 +3880,9 @@
       "hairColor": "金",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "roles": [],
+      "roles": [
+        "主従"
+      ],
       "distance": "積極的",
       "looks": [
         "長髪"
@@ -3834,7 +3928,7 @@
       "skinTone": null,
       "outfit": [],
       "species": "魔族",
-      "mood": null,
+      "mood": "甘め",
       "affiliationName": "地霊殿"
     }
   },
@@ -3864,7 +3958,9 @@
       "hairColor": "黒",
       "combat": "戦う",
       "affiliationKind": "社会人",
-      "roles": [],
+      "roles": [
+        "ライバル"
+      ],
       "distance": "積極的",
       "looks": [],
       "skinTone": null,
@@ -3908,8 +4004,10 @@
         "ケモミミ",
         "長髪"
       ],
-      "skinTone": null,
-      "outfit": [],
+      "skinTone": "色白",
+      "outfit": [
+        "制服"
+      ],
       "species": "獣人",
       "mood": "従属的",
       "affiliationName": "永遠亭"
@@ -3946,7 +4044,7 @@
       ],
       "distance": "やや受け身",
       "looks": [],
-      "skinTone": null,
+      "skinTone": "色白",
       "outfit": [],
       "species": "不死",
       "mood": "従属的",
@@ -3971,9 +4069,11 @@
         "母性"
       ],
       "distance": "やや積極的",
-      "looks": [],
+      "looks": [
+        "長髪"
+      ],
       "hairColor": "金",
-      "skinTone": null,
+      "skinTone": "色白",
       "outfit": [
         "制服"
       ],
@@ -4012,12 +4112,12 @@
         "長髪"
       ],
       "hairColor": "金",
-      "skinTone": null,
+      "skinTone": "色白",
       "outfit": [
         "制服"
       ],
       "species": "人間",
-      "mood": null,
+      "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
       "affiliationName": "駆逐艦(島風型・同型艦なし)"
@@ -4045,16 +4145,18 @@
       "build": "標準",
       "bust": "大きい",
       "personality": "クール",
-      "roles": [],
+      "roles": [
+        "先輩"
+      ],
       "distance": "やや受け身",
       "looks": [],
       "hairColor": "黒",
-      "skinTone": null,
+      "skinTone": "標準",
       "outfit": [
         "軍服"
       ],
       "species": "人間",
-      "mood": null,
+      "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
       "affiliationName": "正規空母(加賀型)"
@@ -4090,7 +4192,7 @@
         "ツインテール"
       ],
       "hairColor": "銀",
-      "skinTone": null,
+      "skinTone": "色白",
       "outfit": [
         "軍服"
       ],
@@ -4130,7 +4232,7 @@
       "distance": "やや積極的",
       "looks": [],
       "hairColor": "黒",
-      "skinTone": null,
+      "skinTone": "標準",
       "outfit": [
         "制服"
       ],
@@ -4167,7 +4269,7 @@
       "distance": "やや受け身",
       "looks": [],
       "hairColor": "銀",
-      "skinTone": null,
+      "skinTone": "標準",
       "outfit": [
         "制服"
       ],
@@ -4205,8 +4307,10 @@
       "distance": "やや積極的",
       "looks": [],
       "hairColor": "黒",
-      "skinTone": null,
-      "outfit": [],
+      "skinTone": "標準",
+      "outfit": [
+        "軍服"
+      ],
       "species": "人間",
       "mood": "純愛寄り",
       "combat": "戦う",
@@ -4236,11 +4340,13 @@
       "build": "標準",
       "bust": "大きい",
       "personality": "元気",
-      "roles": [],
+      "roles": [
+        "姉"
+      ],
       "distance": "積極的",
       "looks": [],
       "hairColor": "緑",
-      "skinTone": null,
+      "skinTone": "標準",
       "outfit": [
         "制服"
       ],
@@ -4282,7 +4388,7 @@
         "長髪"
       ],
       "hairColor": "茶",
-      "skinTone": null,
+      "skinTone": "標準",
       "outfit": [
         "巫女"
       ],
@@ -4326,7 +4432,7 @@
       "distance": "受け身",
       "looks": [],
       "hairColor": "緑",
-      "skinTone": null,
+      "skinTone": "色白",
       "outfit": [],
       "species": "魔族",
       "mood": null,
@@ -4354,18 +4460,20 @@
     },
     "axes": {
       "genderExpression": "女性",
-      "ageFeel": "同年代",
+      "ageFeel": "幼い",
       "build": "標準",
       "bust": "標準",
       "personality": "クール",
-      "roles": [],
+      "roles": [
+        "ライバル"
+      ],
       "distance": "中立",
       "looks": [
         "ケモミミ",
         "尻尾"
       ],
       "hairColor": "白",
-      "skinTone": null,
+      "skinTone": "色白",
       "outfit": [],
       "species": "魔族",
       "mood": null,
@@ -4402,12 +4510,14 @@
         "主従"
       ],
       "distance": "やや積極的",
-      "looks": [],
-      "hairColor": "緑",
-      "skinTone": null,
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": "赤",
+      "skinTone": "標準",
       "outfit": [],
       "species": "魔族",
-      "mood": null,
+      "mood": "従属的",
       "combat": "戦う",
       "affiliationKind": "社会人",
       "affiliationName": "紅魔館"
@@ -4450,7 +4560,7 @@
       "skinTone": null,
       "outfit": [],
       "species": "獣人",
-      "mood": null,
+      "mood": "従属的",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
       "affiliationName": "八雲家"
@@ -4477,21 +4587,23 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "標準",
-      "personality": "元気",
+      "bust": "大きい",
+      "personality": "おっとり",
       "roles": [
         "主従"
       ],
       "distance": "やや受け身",
       "looks": [
-        "角",
-        "尻尾"
+        "尻尾",
+        "長髪"
       ],
       "hairColor": "赤",
       "skinTone": null,
-      "outfit": [],
+      "outfit": [
+        "OL"
+      ],
       "species": "魔族",
-      "mood": null,
+      "mood": "従属的",
       "combat": "戦う",
       "affiliationKind": "社会人",
       "affiliationName": "紅魔館"
@@ -4519,17 +4631,17 @@
       "ageFeel": "幼い",
       "build": "華奢",
       "bust": "小さい",
-      "personality": "元気",
-      "roles": [],
-      "distance": "やや積極的",
-      "looks": [
-        "ツインテール"
+      "personality": "生意気",
+      "roles": [
+        "母性"
       ],
-      "hairColor": "緑",
-      "skinTone": null,
+      "distance": "やや積極的",
+      "looks": [],
+      "hairColor": "金",
+      "skinTone": "色白",
       "outfit": [],
       "species": "魔族",
-      "mood": null,
+      "mood": "支配的",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
       "affiliationName": "守矢神社"
@@ -4563,14 +4675,14 @@
       "looks": [
         "長髪"
       ],
-      "hairColor": "金",
+      "hairColor": "緑",
       "skinTone": null,
       "outfit": [],
       "species": "魔族",
       "mood": "支配的",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "affiliationName": null
+      "affiliationName": "太陽の畑"
     },
     "reviewed": false,
     "provisional": false,
@@ -4592,14 +4704,14 @@
     },
     "axes": {
       "genderExpression": "女性",
-      "ageFeel": "熟れた",
+      "ageFeel": "年上",
       "build": "むっちり",
       "bust": "大きい",
       "personality": "おっとり",
       "roles": [
         "主従"
       ],
-      "distance": "積極的",
+      "distance": "中立",
       "looks": [
         "長髪"
       ],
@@ -4607,7 +4719,7 @@
       "skinTone": "色白",
       "outfit": [],
       "species": "不死",
-      "mood": null,
+      "mood": "甘め",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
       "affiliationName": "白玉楼"
@@ -4685,7 +4797,7 @@
         "長髪"
       ],
       "hairColor": "金",
-      "skinTone": null,
+      "skinTone": "色白",
       "outfit": [
         "制服"
       ],
@@ -4727,12 +4839,12 @@
         "ツインテール"
       ],
       "hairColor": "黒",
-      "skinTone": null,
+      "skinTone": "色白",
       "outfit": [
         "制服"
       ],
       "species": "人間",
-      "mood": null,
+      "mood": "甘め",
       "combat": "戦わない",
       "affiliationKind": "学生",
       "affiliationName": "音ノ木坂学院"
@@ -4807,7 +4919,7 @@
       ],
       "distance": "やや受け身",
       "looks": [],
-      "hairColor": "銀",
+      "hairColor": "茶",
       "skinTone": null,
       "outfit": [
         "制服"
@@ -4849,7 +4961,7 @@
         "長髪"
       ],
       "hairColor": "青",
-      "skinTone": null,
+      "skinTone": "色白",
       "outfit": [
         "制服"
       ],
@@ -4972,7 +5084,7 @@
         "長髪"
       ],
       "hairColor": "金",
-      "skinTone": null,
+      "skinTone": "色白",
       "outfit": [
         "ナース"
       ],
@@ -5015,7 +5127,7 @@
         "長髪"
       ],
       "hairColor": "青",
-      "skinTone": null,
+      "skinTone": "色白",
       "outfit": [
         "魔法少女"
       ],
@@ -5049,14 +5161,16 @@
       "build": "華奢",
       "bust": "とても大きい",
       "personality": "生意気",
-      "roles": [],
+      "roles": [
+        "幼馴染"
+      ],
       "distance": "やや積極的",
       "looks": [
         "長髪",
         "角"
       ],
       "hairColor": "紫",
-      "skinTone": null,
+      "skinTone": "色白",
       "outfit": [],
       "species": "魔族",
       "mood": "背徳寄り",
@@ -5097,13 +5211,13 @@
         "長髪"
       ],
       "hairColor": "紫",
-      "skinTone": null,
+      "skinTone": "色白",
       "outfit": [
         "制服"
       ],
       "species": "人間",
       "mood": "従属的",
-      "combat": "戦わない",
+      "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": "穂群原学園"
     },
@@ -5131,14 +5245,18 @@
       "build": "華奢",
       "bust": "小さい",
       "personality": "生意気",
-      "roles": [],
+      "roles": [
+        "姉"
+      ],
       "distance": "積極的",
       "looks": [
         "長髪"
       ],
       "hairColor": "銀",
       "skinTone": "褐色",
-      "outfit": [],
+      "outfit": [
+        "制服"
+      ],
       "species": "人間",
       "mood": "背徳寄り",
       "combat": "戦う",
@@ -5170,13 +5288,15 @@
       "build": "標準",
       "bust": "大きい",
       "personality": "クール",
-      "roles": [],
+      "roles": [
+        "妹"
+      ],
       "distance": "受け身",
       "looks": [
         "長髪"
       ],
       "hairColor": "黒",
-      "skinTone": null,
+      "skinTone": "色白",
       "outfit": [],
       "species": "不死",
       "mood": "支配的",

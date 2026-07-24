@@ -1,16 +1,20 @@
 import type { Axes, AxisKey, Character } from '../data/schema';
 
 /**
- * Akinator実機のラベル表記そのまま採用（5段階）。ユーザー提供のスクリーンショットに
- * 実在する文言。「こだわらない」のような独自ラベルは作らない —
- * 「わからない」が実質その役割を兼ねる（重み0。CONFIDENCE_WEIGHT参照）。
+ * 5段階の確信度ラベル。元はAkinator実機のスクリーンショットに実在する文言
+ * （はい/たぶんそう/わからない/たぶん違う/いいえ）をそのまま採用していたが、
+ * このアプリは「ユーザーが特定の答えを隠し持っていてそれを言い当てる」
+ * Akinator型の当てゲームではなく好み質問に答える形なので、「わからない」
+ * （＝答えを知らない）という文言は実態と合わないと判断し「どちらでも良い」
+ * （＝その軸にはこだわりが無い）に変更した（2026-07-21、ユーザー指摘）。
+ * 意味・重みは変えていない（重み0。CONFIDENCE_WEIGHT参照）。
  */
 export type Confidence = 'yes' | 'probably_yes' | 'unknown' | 'probably_no' | 'no';
 
 export const CONFIDENCE_LABEL: Record<Confidence, string> = {
   yes: 'はい',
   probably_yes: 'たぶんそう',
-  unknown: 'わからない',
+  unknown: 'どちらでも良い',
   probably_no: 'たぶん違う',
   no: 'いいえ',
 };

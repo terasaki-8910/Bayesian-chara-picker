@@ -1,19 +1,20 @@
-import { useCallback, useMemo, useReducer } from 'react';
+import { useCallback, useEffect, useMemo, useReducer } from 'react';
 
 import charactersData from '../../data/characters.json';
 import supplyData from '../../data/supply.json';
 import type { Character, SupplyFile } from '../data/schema';
+import { pickGuessWithCooldown } from '../engine/cooldown';
 import {
   nextProbe,
   scoreCharacters,
   shouldGuess,
-  topGuess,
   type AnswerMap,
   type Confidence,
   type Dataset,
   type Probe,
   type Scored,
 } from '../engine/recommend';
+import { useSessionLog, type SessionLogRecord } from './useSessionLog';
 
 /**
  * SPEC 2.5: characters.json / supply.json をビルド時に静的 import してバンドルに
@@ -78,8 +79,8 @@ const initialState: RawState = {
 };
 
 type Action =
-  | { type: 'answer'; key: string; confidence: Confidence }
-  | { type: 'reject'; characterId: string }
+  | { type: 'answer'; key: string; confidence: Confidence; recentGuessIds: readonly string[] }
+  | { type: 'reject'; characterId: string; recentGuessIds: readonly string[] }
   | { type: 'confirm' }
   | { type: 'undo' }
   | { type: 'reset' };
@@ -94,7 +95,14 @@ function reducer(state: RawState, action: Action): RawState {
 
       if (state.bonusPending) {
         const scored = scoreCharacters(answers, dataset, { exclude: rejectedSet });
-        return { ...state, answers, askedKeys, bonusPending: false, guess: topGuess(scored, Math.random), history };
+        return {
+          ...state,
+          answers,
+          askedKeys,
+          bonusPending: false,
+          guess: pickGuessWithCooldown(scored, action.recentGuessIds, Math.random),
+          history,
+        };
       }
 
       const askedSet = new Set(askedKeys);
@@ -105,7 +113,13 @@ function reducer(state: RawState, action: Action): RawState {
       const goToGuessing = probe === null || shouldGuess(scored, askedKeys.length, probe !== null);
 
       if (!goToGuessing) return { ...state, answers, askedKeys, history };
-      return { ...state, answers, askedKeys, guess: topGuess(scored, Math.random), history };
+      return {
+        ...state,
+        answers,
+        askedKeys,
+        guess: pickGuessWithCooldown(scored, action.recentGuessIds, Math.random),
+        history,
+      };
     }
 
     case 'reject': {
@@ -120,7 +134,12 @@ function reducer(state: RawState, action: Action): RawState {
       const bonusProbe = nextProbe(dataset, state.answers, askedSet, { exclude: rejectedSet, rng: Math.random });
 
       if (bonusProbe !== null) return { ...state, rejected, bonusPending: true, history };
-      return { ...state, rejected, guess: topGuess(scored, Math.random), history };
+      return {
+        ...state,
+        rejected,
+        guess: pickGuessWithCooldown(scored, action.recentGuessIds, Math.random),
+        history,
+      };
     }
 
     case 'confirm':
@@ -155,8 +174,14 @@ export type InterviewState =
   | { phase: 'confirmed'; guess: Scored; reset(): void }
   | { phase: 'exhausted'; nearMisses: Scored[]; reset(): void };
 
+/** answers を SessionLogRecord.answers の形（配列）に変換する。 */
+function answersLogOf(answers: AnswerMap): SessionLogRecord['answers'] {
+  return Object.entries(answers).map(([key, confidence]) => ({ key, confidence }));
+}
+
 export function useInterview(): InterviewState {
   const [state, dispatch] = useReducer(reducer, initialState);
+  const { recentGuessIds, log } = useSessionLog();
 
   const askedSet = useMemo(() => new Set(state.askedKeys), [state.askedKeys]);
   const rejectedSet = useMemo(() => new Set(state.rejected), [state.rejected]);
@@ -176,17 +201,54 @@ export function useInterview(): InterviewState {
   const answer = useCallback(
     (confidence: Confidence) => {
       if (!probe) return;
-      dispatch({ type: 'answer', key: probe.key, confidence });
+      dispatch({ type: 'answer', key: probe.key, confidence, recentGuessIds });
     },
-    [probe],
+    [probe, recentGuessIds],
   );
 
-  const confirm = useCallback(() => dispatch({ type: 'confirm' }), []);
+  const confirm = useCallback(() => {
+    if (state.guess) {
+      log({
+        ts: Date.now(),
+        guessId: state.guess.character.id,
+        outcome: 'confirmed',
+        askedCount: state.askedKeys.length,
+        answers: answersLogOf(state.answers),
+        rejectedIds: state.rejected,
+      });
+    }
+    dispatch({ type: 'confirm' });
+  }, [state.guess, state.askedKeys, state.answers, state.rejected, log]);
 
   const reject = useCallback(() => {
     if (!state.guess) return;
-    dispatch({ type: 'reject', characterId: state.guess.character.id });
-  }, [state.guess]);
+    log({
+      ts: Date.now(),
+      guessId: state.guess.character.id,
+      outcome: 'rejected',
+      askedCount: state.askedKeys.length,
+      answers: answersLogOf(state.answers),
+      rejectedIds: state.rejected,
+    });
+    dispatch({ type: 'reject', characterId: state.guess.character.id, recentGuessIds });
+  }, [state.guess, state.askedKeys, state.answers, state.rejected, recentGuessIds, log]);
+
+  // 全滅は reducer 内部の判定結果でしか分からない（reject 実行時点では、
+  // その reject が全滅を引き起こすかどうかを呼び出し側から先読みできない）ため、
+  // 遷移後に副作用として記録する。exhausted が false の間は毎回 return するだけ
+  // なので、実際に log が呼ばれるのは false→true になった瞬間の1回だけ
+  // （reset するまで再び true にはならない）。
+  useEffect(() => {
+    if (!state.exhausted) return;
+    log({
+      ts: Date.now(),
+      guessId: null,
+      outcome: 'exhausted',
+      askedCount: state.askedKeys.length,
+      answers: answersLogOf(state.answers),
+      rejectedIds: state.rejected,
+    });
+  }, [state.exhausted, state.askedKeys, state.answers, state.rejected, log]);
 
   if (state.exhausted) {
     const nearMisses = scoreCharacters(state.answers, dataset).slice(0, NEAR_MISS_COUNT);

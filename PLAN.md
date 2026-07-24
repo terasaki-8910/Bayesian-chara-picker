@@ -475,3 +475,34 @@ e2e（D1 / F1–F6）は横断的なので integration_accept に置く。
 
 そのうえで 3 ブレークポイントのスクリーンショットを実際に見る
 （design_brief「確認手順」: 視覚的重さの逆転と空状態の残骸を名指しで確認）。
+
+---
+
+## 保留中のアイデア（未intake、優先度低）
+
+まだ SPEC/ACCEPTANCE に落としていない、着手予定の無いアイデアの置き場。
+着手するときは通常通り intake からやり直すこと。
+
+- **選択時のカーソル追従ASCIIアートの手の演出**（2026-07-21、ユーザーより）。
+  参考: sasukeharaguchi.com（アーティスト佐々木/原口氏のポートフォリオサイト）に
+  ある、カーソルに追従する3D的な手のASCIIアート表現。キャラ選択のクリック演出に
+  応用できると面白いのでは、というアイデア。実装するとしても終盤（wave 5後・
+  integration_accept後）を想定。
+
+- **GitHub Pagesデプロイ後のセッションログを自宅サーバへ集約**
+  （2026-07-21、ユーザーより）。現状（`src/hooks/useSessionLog.ts`）は
+  localStorage保存＋開発中のみ`state/session-logs/log.jsonl`への追記
+  （`vite.config.ts`の`sessionLogDevPlugin`、`import.meta.env.DEV`ガード済み）。
+  GitHub Pagesは静的ホスティングでバックエンドが無いため、デプロイ後は
+  訪問者ごとのブラウザのlocalStorageに閉じてしまい、開発者側に自動集約されない。
+  集約したい場合は、`~/.claude/rules/infra.md`にある自宅サーバ（Tailscale/LAN
+  到達可、Postgres運用中）宛てにログをPOSTする軽いエンドポイントを新設する方向。
+  検討すべき論点（着手時に整理）:
+  - 公開静的サイトから自宅サーバへ直接書き込みを許す経路のセキュリティ
+    （認証無しの書き込みエンドポイントを外部公開することになるため、
+    レート制限・書き込み専用の最小権限ロール等が必要になりそう）
+  - 既存インフラ命名規則に倣い、新規DB/ロールを`chara_picker`等の専用名で
+    作成する（他プロジェクトのDB・ロールを流用しない、`infra.md`の方針通り）
+  - フロント側の`sendToDevLogFile`と同様の「失敗しても機能停止にしない」
+    fire-and-forget方式を踏襲するか要検討
+  未着手。実際にGitHub Pagesへデプロイする段になったら、このタスクから着手すること。
