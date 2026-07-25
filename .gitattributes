@@ -1,0 +1,19 @@
+# Windows(Claude Code経由でのP5b以降の作業)とMac(最終的な稼働環境)の間で
+# 改行コードが食い違って差分ノイズ/文字化けの原因にならないよう、
+# リポジトリ内は常にLFへ正規化する（core.autocrlfというクローン側の設定に
+# 依存せず、.gitattributes自身がリポジトリに同梱されるため確実）。
+* text=auto eol=lf
+
+# 画像・フォント等のバイナリ資産は改行コード変換の対象から外す
+# （現状バイナリは未追跡だが、data/characters.json の imagePath が実ファイルを
+# 持つようになった場合に備える）。
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.otf binary

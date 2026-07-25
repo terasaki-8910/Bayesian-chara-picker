@@ -186,10 +186,30 @@ mount時に1回だけ読み、router は使わない）。
   でどちらのセッションかを記録する。
 - データ源: Danbooru投稿タグ（`scripts/bayes/sample-posts.mjs` が
   `state/bayes-pipeline/danbooru/<id>.json` にキャッシュ、gitignore対象）+
-  既存16軸データ（尤度データが薄い/無い質問のフォールバック）。
-  Pixiv/Niconico等からのローカルLLM抽出（P5）は未着手——今は「客観的・
-  タグ化しやすい」外見系をDanbooruで、「主観的・タグ化しにくい」性格/雰囲気系を
-  16軸フォールバックで賄っている。
+  既存16軸データ（尤度データが薄い/無い質問のフォールバック）+ Wikidata構造化
+  事実（P5a）+ ニコニコ大百科+ローカルLLM抽出（P5b）の4ソースを
+  `mergeLikelihoods`（logit空間の信頼度加重平均）でマージする。
+- **P5a（Wikidata）**: `scripts/bayes/wikidata-client.mjs`/`map-wikidata.mjs` が
+  キャラ→QIDを検索・検証し、`data/bayes/wikidata-facts.json`
+  （性別・髪色・目の色・種族=人間の確認、制御語彙のみ）を生成。
+  `estimateWikidataLikelihood`（`estimators.mjs`）が尤度化。全131キャラで実行済み
+  （76%が何らかのfactsを取得）。
+- **P5b（ニコニコ大百科+ローカルLLM抽出）**: 「客観的・タグ化しやすい」外見系を
+  Danbooru/Wikidataで、「主観的・タグ化しにくい」性格/雰囲気系
+  （personality/mood/species/combat/distance/affiliationKind/roles、axis-only
+  38問）をこちらで補う。`scripts/bayes/niconico-client.mjs`/`map-niconico.mjs`
+  が記事本文を取得・検証し（Pixivはロボッツ排除規則がAIクローラーを名指しで
+  ブロックしているため対象外——ニコニコ大百科を代替に採用）、
+  `scripts/bayes/ollama-client.mjs`/`llm-extract.mjs`
+  がローカルLLM（qwen3:8b、Ollama経由）でevidence-first抽出（quoteを先に
+  逐語で書かせ、valueをそのquoteだけから判定させる）+ 引用照合ゲート
+  （LLMの引用が原文に実在するかを決定論的に照合、幻覚引用は再プロンプト後も
+  不採用ならnull寄与）を行い、`data/bayes/llm-extract.json`
+  （制御語彙のみ・引用文自体は持たない）を生成する。生記事テキスト・生プロンプト・
+  引用照合の全証跡は `state/bayes-pipeline/{niconico,llm}/` にのみキャッシュ
+  （gitignore、コミットツリーにファンサイトのプロースを持ち込まない）。
+  ローカルLLM実行の負荷が大きいため131キャラ中45キャラのみ実行済み
+  （`llm-extract.mjs` は `--force` なしで実行すると未処理分だけ再開する設計）。
 
 ## テスト・ゲート
 
