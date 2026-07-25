@@ -1,0 +1,1850 @@
+{
+  "version": 1,
+  "model": "qwen3:8b",
+  "seed": 20260725,
+  "entries": {
+    "touhou-reimu": {
+      "article": "博麗霊夢",
+      "axes": {
+        "personality": {
+          "value": "おっとり",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "純愛寄り",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "不死",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや積極的",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "冒険者",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      }
+    },
+    "kancolle-shimakaze": {
+      "article": "島風",
+      "axes": {
+        "personality": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      }
+    },
+    "genshin-mona": {
+      "article": "モナ",
+      "axes": {
+        "personality": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      }
+    },
+    "touhou-suwako": {
+      "article": "洩矢諏訪子",
+      "axes": {
+        "personality": {
+          "value": "おっとり",
+          "verified": false,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "純愛寄り",
+          "verified": false,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "人間",
+          "verified": false,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": false,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや積極的",
+          "verified": false,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "非人間・その他",
+          "verified": false,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      }
+    },
+    "rezero-rem": {
+      "article": "レム",
+      "axes": {
+        "personality": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      }
+    },
+    "rezero-ram": {
+      "article": "ラム",
+      "axes": {
+        "personality": {
+          "value": "おっとり",
+          "verified": false,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "純愛寄り",
+          "verified": false,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "エルフ",
+          "verified": false,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": false,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや積極的",
+          "verified": false,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "非人間・その他",
+          "verified": false,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      }
+    },
+    "fate-scathach": {
+      "article": "スカサハ",
+      "axes": {
+        "personality": {
+          "value": "生意気",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "背徳寄り",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "不死",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "積極的",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "非人間・その他",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "ライバル"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      }
+    },
+    "fate-tamamo": {
+      "article": "キャスター",
+      "axes": {
+        "personality": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      }
+    },
+    "fate-bb": {
+      "article": "BB",
+      "axes": {
+        "personality": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      }
+    },
+    "fgo-ishtar": {
+      "article": "イシュタル",
+      "axes": {
+        "personality": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "不死",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      }
+    },
+    "fgo-kiyohime": {
+      "article": "清姫",
+      "axes": {
+        "personality": {
+          "value": "生意気",
+          "verified": true,
+          "confidence": "low"
+        },
+        "mood": {
+          "value": "背徳寄り",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      }
+    },
+    "fgo-medusa": {
+      "article": "メデューサ",
+      "axes": {
+        "personality": {
+          "value": "生意気",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "魔族",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      }
+    },
+    "overlord-albedo": {
+      "article": "アルベド",
+      "axes": {
+        "personality": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "不死",
+          "verified": true,
+          "confidence": "low"
+        },
+        "combat": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      }
+    },
+    "overlord-narberal": {
+      "article": "ナーベラル・ガンマ",
+      "axes": {
+        "personality": {
+          "value": "生意気",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "背徳寄り",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "不死",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "low"
+        },
+        "affiliationKind": {
+          "value": "冒険者",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      }
+    },
+    "fairytail-erza": {
+      "article": "エルザ・スカーレット",
+      "axes": {
+        "personality": {
+          "value": "生意気",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "甘め",
+          "verified": true,
+          "confidence": "low"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや積極的",
+          "verified": true,
+          "confidence": "low"
+        },
+        "affiliationKind": {
+          "value": "冒険者",
+          "verified": false,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      }
+    },
+    "dragonball-bulma": {
+      "article": "ブルマ",
+      "axes": {
+        "personality": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      }
+    },
+    "dragonball-18": {
+      "article": "人造人間18号",
+      "axes": {
+        "personality": {
+          "value": "クール",
+          "verified": false,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "従属的",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや積極的",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "非人間・その他",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "主従"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      }
+    },
+    "onepiece-robin": {
+      "article": "ニコ・ロビン",
+      "axes": {
+        "personality": {
+          "value": "クール",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや積極的",
+          "verified": true,
+          "confidence": "low"
+        },
+        "affiliationKind": {
+          "value": "冒険者",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "後輩",
+            "先輩"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      }
+    },
+    "onepiece-hancock": {
+      "article": "ボア・ハンコック",
+      "axes": {
+        "personality": {
+          "value": "生意気",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "純愛寄り",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "積極的",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "軍・組織",
+          "verified": false,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "姉",
+            "教師"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      }
+    },
+    "onepiece-nami": {
+      "article": "ナミ",
+      "axes": {
+        "personality": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      }
+    },
+    "monmusu-miia": {
+      "article": "ミーア",
+      "axes": {
+        "personality": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "不死",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      }
+    },
+    "monmusu-centorea": {
+      "article": "セントレア",
+      "axes": {
+        "personality": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      }
+    },
+    "nier-2b": {
+      "article": "2B",
+      "axes": {
+        "personality": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      }
+    },
+    "azurlane-nagato": {
+      "article": "長門",
+      "axes": {
+        "personality": {
+          "value": "生意気",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      }
+    },
+    "granblue-narmaya": {
+      "article": "ナルメア",
+      "axes": {
+        "personality": {
+          "value": "クール",
+          "verified": false,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "エルフ",
+          "verified": false,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": false,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや積極的",
+          "verified": false,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "学生",
+          "verified": false,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      }
+    },
+    "idolmaster-chihaya": {
+      "article": "如月千早",
+      "axes": {
+        "personality": {
+          "value": "元気",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "純愛寄り",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "不死",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや積極的",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "非人間・その他",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      }
+    },
+    "kanokari-chizuru": {
+      "article": "水原千鶴",
+      "axes": {
+        "personality": {
+          "value": "クール",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "積極的",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "学生",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      }
+    },
+    "spyfamily-yor": {
+      "article": "ヨル・フォージャー",
+      "axes": {
+        "personality": {
+          "value": "おっとり",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "low"
+        },
+        "affiliationKind": {
+          "value": "軍・組織",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "姉"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      }
+    },
+    "csm-makima": {
+      "article": "マキマ",
+      "axes": {
+        "personality": {
+          "value": "クール",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "甘め",
+          "verified": true,
+          "confidence": "low"
+        },
+        "species": {
+          "value": "魔族",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "積極的",
+          "verified": true,
+          "confidence": "low"
+        },
+        "affiliationKind": {
+          "value": "軍・組織",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "母性"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      }
+    },
+    "onepiece-zoro": {
+      "article": "ロロノア・ゾロ",
+      "axes": {
+        "personality": {
+          "value": "クール",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "low"
+        },
+        "affiliationKind": {
+          "value": "冒険者",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "後輩"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      }
+    },
+    "fate-astolfo": {
+      "article": "アストルフォ",
+      "axes": {
+        "personality": {
+          "value": "生意気",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "軍・組織",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "先輩",
+            "後輩"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      }
+    },
+    "bleach-rangiku": {
+      "article": "松本乱菊",
+      "axes": {
+        "personality": {
+          "value": "姉御",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "積極的",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "軍・組織",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "先輩",
+            "教師"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      }
+    },
+    "bleach-yoruichi": {
+      "article": "四楓院夜一",
+      "axes": {
+        "personality": {
+          "value": "元気",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "軍・組織",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "姉",
+            "先輩",
+            "教師"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      }
+    },
+    "bluearchive-asuna": {
+      "article": "一之瀬アスナ",
+      "axes": {
+        "personality": {
+          "value": "生意気",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "甘め",
+          "verified": true,
+          "confidence": "low"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "積極的",
+          "verified": false,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "学生",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      }
+    },
+    "bluearchive-yuuka": {
+      "article": "早瀬ユウカ",
+      "axes": {
+        "personality": {
+          "value": "クール",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "背徳寄り",
+          "verified": true,
+          "confidence": "low"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "中立",
+          "verified": true,
+          "confidence": "low"
+        },
+        "affiliationKind": {
+          "value": "学生",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      }
+    },
+    "bluearchive-toki": {
+      "article": "飛鳥馬トキ",
+      "axes": {
+        "personality": {
+          "value": "クール",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "背徳寄り",
+          "verified": true,
+          "confidence": "low"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや積極的",
+          "verified": true,
+          "confidence": "low"
+        },
+        "affiliationKind": {
+          "value": "学生",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      }
+    },
+    "bluearchive-mika": {
+      "article": "聖園ミカ",
+      "axes": {
+        "personality": {
+          "value": "おっとり",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "甘め",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "エルフ",
+          "verified": false,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや積極的",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "学生",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "主従"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      }
+    },
+    "bluearchive-kisaki": {
+      "article": "竜華キサキ",
+      "axes": {
+        "personality": {
+          "value": "内気",
+          "verified": false,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "甘め",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "学生",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "妹"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      }
+    },
+    "bluearchive-rio": {
+      "article": "調月リオ",
+      "axes": {
+        "personality": {
+          "value": "クール",
+          "verified": false,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "純愛寄り",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "エルフ",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "中立",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "学生",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "教師"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      }
+    },
+    "bluearchive-hina": {
+      "article": "空崎ヒナ",
+      "axes": {
+        "personality": {
+          "value": "生意気",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "純愛寄り",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "中立",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "学生",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "主従"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      }
+    },
+    "bluearchive-noa": {
+      "article": "生塩ノア",
+      "axes": {
+        "personality": {
+          "value": "姉御",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや積極的",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "学生",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "後輩",
+            "教師"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      }
+    },
+    "touhou-sakuya": {
+      "article": "十六夜咲夜",
+      "axes": {
+        "personality": {
+          "value": "クール",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "純愛寄り",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや積極的",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "軍・組織",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "主従"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      }
+    },
+    "touhou-patchouli": {
+      "article": "パチュリー・ノーレッジ",
+      "axes": {
+        "personality": {
+          "value": "おっとり",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "背徳寄り",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "魔族",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや積極的",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "軍・組織",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      }
+    },
+    "touhou-sanae": {
+      "article": "東風谷早苗",
+      "axes": {
+        "personality": {
+          "value": "元気",
+          "verified": false,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "純愛寄り",
+          "verified": false,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "エルフ",
+          "verified": false,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": false,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや積極的",
+          "verified": false,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "軍・組織",
+          "verified": false,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      }
+    },
+    "touhou-flandre": {
+      "article": "フランドール・スカーレット",
+      "axes": {
+        "personality": {
+          "value": "おっとり",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "純愛寄り",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "魔族",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "low"
+        },
+        "distance": {
+          "value": "やや積極的",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "非人間・その他",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "姉",
+            "先輩",
+            "妹"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      }
+    }
+  }
+}

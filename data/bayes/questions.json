@@ -1422,6 +1422,12 @@
           "axis": "personality",
           "value": "クール",
           "multi": false
+        },
+        {
+          "type": "llm",
+          "axis": "personality",
+          "value": "クール",
+          "multi": false
         }
       ]
     },
@@ -1436,6 +1442,12 @@
       "sources": [
         {
           "type": "axis",
+          "axis": "personality",
+          "value": "元気",
+          "multi": false
+        },
+        {
+          "type": "llm",
           "axis": "personality",
           "value": "元気",
           "multi": false
@@ -1456,6 +1468,12 @@
           "axis": "personality",
           "value": "おっとり",
           "multi": false
+        },
+        {
+          "type": "llm",
+          "axis": "personality",
+          "value": "おっとり",
+          "multi": false
         }
       ]
     },
@@ -1470,6 +1488,12 @@
       "sources": [
         {
           "type": "axis",
+          "axis": "personality",
+          "value": "生意気",
+          "multi": false
+        },
+        {
+          "type": "llm",
           "axis": "personality",
           "value": "生意気",
           "multi": false
@@ -1490,6 +1514,12 @@
           "axis": "personality",
           "value": "内気",
           "multi": false
+        },
+        {
+          "type": "llm",
+          "axis": "personality",
+          "value": "内気",
+          "multi": false
         }
       ]
     },
@@ -1504,6 +1534,12 @@
       "sources": [
         {
           "type": "axis",
+          "axis": "personality",
+          "value": "姉御",
+          "multi": false
+        },
+        {
+          "type": "llm",
           "axis": "personality",
           "value": "姉御",
           "multi": false
@@ -1524,6 +1560,12 @@
           "axis": "roles",
           "value": "幼馴染",
           "multi": true
+        },
+        {
+          "type": "llm",
+          "axis": "roles",
+          "value": "幼馴染",
+          "multi": true
         }
       ]
     },
@@ -1538,6 +1580,12 @@
       "sources": [
         {
           "type": "axis",
+          "axis": "roles",
+          "value": "後輩",
+          "multi": true
+        },
+        {
+          "type": "llm",
           "axis": "roles",
           "value": "後輩",
           "multi": true
@@ -1558,6 +1606,12 @@
           "axis": "roles",
           "value": "先輩",
           "multi": true
+        },
+        {
+          "type": "llm",
+          "axis": "roles",
+          "value": "先輩",
+          "multi": true
         }
       ]
     },
@@ -1572,6 +1626,12 @@
       "sources": [
         {
           "type": "axis",
+          "axis": "roles",
+          "value": "姉",
+          "multi": true
+        },
+        {
+          "type": "llm",
           "axis": "roles",
           "value": "姉",
           "multi": true
@@ -1592,6 +1652,12 @@
           "axis": "roles",
           "value": "妹",
           "multi": true
+        },
+        {
+          "type": "llm",
+          "axis": "roles",
+          "value": "妹",
+          "multi": true
         }
       ]
     },
@@ -1606,6 +1672,12 @@
       "sources": [
         {
           "type": "axis",
+          "axis": "roles",
+          "value": "母性",
+          "multi": true
+        },
+        {
+          "type": "llm",
           "axis": "roles",
           "value": "母性",
           "multi": true
@@ -1626,6 +1698,12 @@
           "axis": "roles",
           "value": "教師",
           "multi": true
+        },
+        {
+          "type": "llm",
+          "axis": "roles",
+          "value": "教師",
+          "multi": true
         }
       ]
     },
@@ -1640,6 +1718,12 @@
       "sources": [
         {
           "type": "axis",
+          "axis": "roles",
+          "value": "主従",
+          "multi": true
+        },
+        {
+          "type": "llm",
           "axis": "roles",
           "value": "主従",
           "multi": true
@@ -1660,6 +1744,12 @@
           "axis": "roles",
           "value": "ライバル",
           "multi": true
+        },
+        {
+          "type": "llm",
+          "axis": "roles",
+          "value": "ライバル",
+          "multi": true
         }
       ]
     },
@@ -1674,6 +1764,12 @@
       "sources": [
         {
           "type": "axis",
+          "axis": "distance",
+          "value": "積極的",
+          "multi": false
+        },
+        {
+          "type": "llm",
           "axis": "distance",
           "value": "積極的",
           "multi": false
@@ -1694,6 +1790,12 @@
           "axis": "distance",
           "value": "やや積極的",
           "multi": false
+        },
+        {
+          "type": "llm",
+          "axis": "distance",
+          "value": "やや積極的",
+          "multi": false
         }
       ]
     },
@@ -1708,6 +1810,12 @@
       "sources": [
         {
           "type": "axis",
+          "axis": "distance",
+          "value": "中立",
+          "multi": false
+        },
+        {
+          "type": "llm",
           "axis": "distance",
           "value": "中立",
           "multi": false
@@ -1728,6 +1836,12 @@
           "axis": "distance",
           "value": "やや受け身",
           "multi": false
+        },
+        {
+          "type": "llm",
+          "axis": "distance",
+          "value": "やや受け身",
+          "multi": false
         }
       ]
     },
@@ -1742,6 +1856,12 @@
       "sources": [
         {
           "type": "axis",
+          "axis": "distance",
+          "value": "受け身",
+          "multi": false
+        },
+        {
+          "type": "llm",
           "axis": "distance",
           "value": "受け身",
           "multi": false
@@ -1768,6 +1888,12 @@
           "axis": "species",
           "value": "人間",
           "multi": true
+        },
+        {
+          "type": "llm",
+          "axis": "species",
+          "value": "人間",
+          "multi": false
         }
       ]
     },
@@ -1782,6 +1908,12 @@
       "sources": [
         {
           "type": "axis",
+          "axis": "species",
+          "value": "エルフ",
+          "multi": false
+        },
+        {
+          "type": "llm",
           "axis": "species",
           "value": "エルフ",
           "multi": false
@@ -1802,6 +1934,12 @@
           "axis": "species",
           "value": "獣人",
           "multi": false
+        },
+        {
+          "type": "llm",
+          "axis": "species",
+          "value": "獣人",
+          "multi": false
         }
       ]
     },
@@ -1816,6 +1954,12 @@
       "sources": [
         {
           "type": "axis",
+          "axis": "species",
+          "value": "魔族",
+          "multi": false
+        },
+        {
+          "type": "llm",
           "axis": "species",
           "value": "魔族",
           "multi": false
@@ -1836,6 +1980,12 @@
           "axis": "species",
           "value": "機械",
           "multi": false
+        },
+        {
+          "type": "llm",
+          "axis": "species",
+          "value": "機械",
+          "multi": false
         }
       ]
     },
@@ -1850,6 +2000,12 @@
       "sources": [
         {
           "type": "axis",
+          "axis": "species",
+          "value": "不死",
+          "multi": false
+        },
+        {
+          "type": "llm",
           "axis": "species",
           "value": "不死",
           "multi": false
@@ -1870,6 +2026,12 @@
           "axis": "mood",
           "value": "甘め",
           "multi": false
+        },
+        {
+          "type": "llm",
+          "axis": "mood",
+          "value": "甘め",
+          "multi": false
         }
       ]
     },
@@ -1884,6 +2046,12 @@
       "sources": [
         {
           "type": "axis",
+          "axis": "mood",
+          "value": "支配的",
+          "multi": false
+        },
+        {
+          "type": "llm",
           "axis": "mood",
           "value": "支配的",
           "multi": false
@@ -1904,6 +2072,12 @@
           "axis": "mood",
           "value": "従属的",
           "multi": false
+        },
+        {
+          "type": "llm",
+          "axis": "mood",
+          "value": "従属的",
+          "multi": false
         }
       ]
     },
@@ -1918,6 +2092,12 @@
       "sources": [
         {
           "type": "axis",
+          "axis": "mood",
+          "value": "純愛寄り",
+          "multi": false
+        },
+        {
+          "type": "llm",
           "axis": "mood",
           "value": "純愛寄り",
           "multi": false
@@ -1938,6 +2118,12 @@
           "axis": "mood",
           "value": "背徳寄り",
           "multi": false
+        },
+        {
+          "type": "llm",
+          "axis": "mood",
+          "value": "背徳寄り",
+          "multi": false
         }
       ]
     },
@@ -1952,6 +2138,12 @@
       "sources": [
         {
           "type": "axis",
+          "axis": "combat",
+          "value": "戦う",
+          "multi": false
+        },
+        {
+          "type": "llm",
           "axis": "combat",
           "value": "戦う",
           "multi": false
@@ -1972,6 +2164,12 @@
           "axis": "combat",
           "value": "戦わない",
           "multi": false
+        },
+        {
+          "type": "llm",
+          "axis": "combat",
+          "value": "戦わない",
+          "multi": false
         }
       ]
     },
@@ -1986,6 +2184,12 @@
       "sources": [
         {
           "type": "axis",
+          "axis": "affiliationKind",
+          "value": "学生",
+          "multi": false
+        },
+        {
+          "type": "llm",
           "axis": "affiliationKind",
           "value": "学生",
           "multi": false
@@ -2006,6 +2210,12 @@
           "axis": "affiliationKind",
           "value": "社会人",
           "multi": false
+        },
+        {
+          "type": "llm",
+          "axis": "affiliationKind",
+          "value": "社会人",
+          "multi": false
         }
       ]
     },
@@ -2020,6 +2230,12 @@
       "sources": [
         {
           "type": "axis",
+          "axis": "affiliationKind",
+          "value": "軍・組織",
+          "multi": false
+        },
+        {
+          "type": "llm",
           "axis": "affiliationKind",
           "value": "軍・組織",
           "multi": false
@@ -2040,6 +2256,12 @@
           "axis": "affiliationKind",
           "value": "冒険者",
           "multi": false
+        },
+        {
+          "type": "llm",
+          "axis": "affiliationKind",
+          "value": "冒険者",
+          "multi": false
         }
       ]
     },
@@ -2054,6 +2276,12 @@
       "sources": [
         {
           "type": "axis",
+          "axis": "affiliationKind",
+          "value": "非人間・その他",
+          "multi": false
+        },
+        {
+          "type": "llm",
           "axis": "affiliationKind",
           "value": "非人間・その他",
           "multi": false

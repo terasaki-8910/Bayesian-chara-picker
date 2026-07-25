@@ -22,11 +22,30 @@ import {
   USER_AGENT as WD_USER_AGENT,
 } from '../scripts/bayes/wikidata-client.mjs';
 import {
+  createNiconicoFetcher,
+  extractRedirectPath,
+  fetchArticleHtml,
+  htmlToText,
+  normalizeWhitespace,
+  REQUEST_DELAY_MS as NC_REQUEST_DELAY_MS,
+  USER_AGENT as NC_USER_AGENT,
+} from '../scripts/bayes/niconico-client.mjs';
+import { createOllamaClient, stripThinkTags } from '../scripts/bayes/ollama-client.mjs';
+import {
+  deriveAxisEnums,
+  buildUserPrompt,
+  verifyQuote,
+  stripWrappingBrackets,
+  extractOneCharacter,
+} from '../scripts/bayes/llm-extract.mjs';
+import {
   AXIS_MULTI_EXCLUDES,
   AXIS_MULTI_INCLUDES,
   AXIS_SINGLE_MATCH,
   AXIS_SINGLE_MISMATCH,
   DEFAULT_EPSILON,
+  LLM_LIKELY_NO,
+  LLM_LIKELY_YES,
   WIKIDATA_LIKELY_NO,
   WIKIDATA_LIKELY_YES,
   clamp01,
@@ -37,6 +56,7 @@ import {
   estimateBinaryLikelihood,
   estimateBinaryRawRate,
   estimateGroupLikelihood,
+  estimateLlmLikelihood,
   estimateWikidataLikelihood,
   logit,
   mergeLikelihoods,
@@ -692,5 +712,429 @@ describe('BB. Wikidata尤度推定（estimateWikidataLikelihood、scripts/bayes/
     // 配列だが対象値を含まない場合も、classic 16軸の複数値軸(AXIS_MULTI_EXCLUDES=0.2)
     // とは違いnull——他の値を持っていても「人間でない」への負信号にはしない。
     expect(estimateWikidataLikelihood({ value: ['video_game_character'], target: '人間', multi: true })).toBeNull();
+  });
+});
+
+describe('BB. LLM尤度推定（estimateLlmLikelihood、scripts/bayes/estimators.mjs）', () => {
+  it('単一値: verified:trueかつconfidence:highのみ採用。一致でLLM_LIKELY_YES・不一致でLLM_LIKELY_NO', () => {
+    expect(estimateLlmLikelihood({ value: 'クール', target: 'クール', multi: false, verified: true, confidence: 'high' })).toBe(
+      LLM_LIKELY_YES,
+    );
+    expect(estimateLlmLikelihood({ value: '元気', target: 'クール', multi: false, verified: true, confidence: 'high' })).toBe(
+      LLM_LIKELY_NO,
+    );
+  });
+
+  it('verified:falseまたはconfidenceがhigh以外ならnull（引用照合ゲート通過分だけを信用する保守設計）', () => {
+    expect(estimateLlmLikelihood({ value: 'クール', target: 'クール', multi: false, verified: false, confidence: 'high' })).toBeNull();
+    expect(estimateLlmLikelihood({ value: 'クール', target: 'クール', multi: false, verified: true, confidence: 'low' })).toBeNull();
+    expect(estimateLlmLikelihood({ value: 'クール', target: 'クール', multi: false, verified: true, confidence: 'none' })).toBeNull();
+  });
+
+  it('該当なし/空値はnull（証拠なし経路）', () => {
+    expect(estimateLlmLikelihood({ value: '該当なし', target: 'クール', multi: false, verified: true, confidence: 'high' })).toBeNull();
+    expect(estimateLlmLikelihood({ value: null, target: 'クール', multi: false, verified: true, confidence: 'high' })).toBeNull();
+  });
+
+  it('複数値(roles): 含めばLLM_LIKELY_YES、含まなくても負信号を出さずnull（未列挙は無情報）', () => {
+    expect(
+      estimateLlmLikelihood({ values: ['姉', '後輩'], target: '姉', multi: true, verified: true, confidence: 'high' }),
+    ).toBe(LLM_LIKELY_YES);
+    expect(
+      estimateLlmLikelihood({ values: ['後輩'], target: '姉', multi: true, verified: true, confidence: 'high' }),
+    ).toBeNull();
+    expect(estimateLlmLikelihood({ values: [], target: '姉', multi: true, verified: true, confidence: 'high' })).toBeNull();
+  });
+});
+
+describe('BB. ニコニコ大百科クライアント（scripts/bayes/niconico-client.mjs）', () => {
+  it('リクエスト間隔が REQUEST_DELAY_MS 以上あく', async () => {
+    vi.useFakeTimers();
+    const calledAt: number[] = [];
+    const fetchImpl = async () => {
+      calledAt.push(Date.now());
+      return { ok: true, status: 200, text: async () => '<html></html>' };
+    };
+    const fetcher = createNiconicoFetcher({ fetchImpl, delayMs: NC_REQUEST_DELAY_MS });
+
+    const done = (async () => {
+      await fetcher('/a/a');
+      await fetcher('/a/b');
+    })();
+    await vi.advanceTimersByTimeAsync(2 * NC_REQUEST_DELAY_MS);
+    await done;
+
+    expect(calledAt).toHaveLength(2);
+    expect(calledAt[1] - calledAt[0]).toBeGreaterThanOrEqual(NC_REQUEST_DELAY_MS);
+  });
+
+  it('User-Agent ヘッダを送り、連絡手段を含む', async () => {
+    const seen: Array<{ headers?: Record<string, string> }> = [];
+    const fetchImpl = async (_url: string, init?: { headers?: Record<string, string> }) => {
+      seen.push(init ?? {});
+      return { ok: true, status: 200, text: async () => '' };
+    };
+    const fetcher = createNiconicoFetcher({ fetchImpl, delayMs: 0 });
+    await fetcher('/a/test');
+    expect(seen[0].headers?.['User-Agent']).toBe(NC_USER_AGENT);
+    expect(NC_USER_AGENT).toMatch(/(mailto:|https?:\/\/|[^\s@]+@[^\s@]+\.[^\s@]+)/);
+  });
+
+  it('fetchArticleHtml: /a/<title> をURLエンコードして取得する', async () => {
+    let seenUrl = '';
+    const fetchImpl = async (url: string) => {
+      seenUrl = url;
+      return { ok: true, status: 200, text: async () => '<html>本文</html>' };
+    };
+    const fetcher = createNiconicoFetcher({ fetchImpl, delayMs: 0 });
+    const html = await fetchArticleHtml(fetcher, '博麗霊夢');
+    expect(seenUrl).toBe(`https://dic.nicovideo.jp/a/${encodeURIComponent('博麗霊夢')}`);
+    expect(html).toBe('<html>本文</html>');
+  });
+
+  it('fetchArticleHtml: 404はnullを返す（存在しない記事はエラーではなく無データ扱い）', async () => {
+    const fetchImpl = async () => ({ ok: false, status: 404, text: async () => '' });
+    const fetcher = createNiconicoFetcher({ fetchImpl, delayMs: 0 });
+    expect(await fetchArticleHtml(fetcher, '存在しない記事')).toBeNull();
+  });
+
+  it('fetchArticleHtml: 404以外のエラーは例外にする', async () => {
+    const fetchImpl = async () => ({ ok: false, status: 500, text: async () => '' });
+    const fetcher = createNiconicoFetcher({ fetchImpl, delayMs: 0 });
+    await expect(fetchArticleHtml(fetcher, 'x')).rejects.toThrow(/status=500/);
+  });
+
+  it('extractRedirectPath: location.replace(...)からパスを取り出す。リダイレクトでなければnull', () => {
+    const stub =
+      '<script>location.replace(\'https://dic.nicovideo.jp/a/%E3%82%B9%E3%82%AB%E3%82%A2%E3%83%8F\');</script>';
+    expect(extractRedirectPath(stub)).toBe(`/a/${encodeURIComponent('スカアハ')}`);
+    expect(extractRedirectPath('<p>普通の記事本文</p>')).toBeNull();
+  });
+
+  it('fetchArticleHtml: 表記ゆれリダイレクトスタブに当たったら転送先を自動で1回追う', async () => {
+    const seenPaths: string[] = [];
+    const stub =
+      '<script>location.replace(\'https://dic.nicovideo.jp/a/%E3%82%B9%E3%82%AB%E3%82%A2%E3%83%8F\');</script>';
+    const fetchImpl = async (url: string) => {
+      const path = new URL(url).pathname;
+      seenPaths.push(path);
+      if (path === `/a/${encodeURIComponent('スカサハ')}`) return { ok: true, status: 200, text: async () => stub };
+      if (path === `/a/${encodeURIComponent('スカアハ')}`) return { ok: true, status: 200, text: async () => '<p>本物の記事本文</p>' };
+      return { ok: false, status: 404, text: async () => '' };
+    };
+    const fetcher = createNiconicoFetcher({ fetchImpl, delayMs: 0 });
+    const html = await fetchArticleHtml(fetcher, 'スカサハ');
+    expect(html).toBe('<p>本物の記事本文</p>');
+    expect(seenPaths).toEqual([`/a/${encodeURIComponent('スカサハ')}`, `/a/${encodeURIComponent('スカアハ')}`]);
+  });
+
+  it('fetchArticleHtml: リダイレクト先が404ならnullを返す', async () => {
+    const stub =
+      '<script>location.replace(\'https://dic.nicovideo.jp/a/%E5%AD%98%E5%9C%A8%E3%81%97%E3%81%AA%E3%81%84\');</script>';
+    const fetchImpl = async (url: string) => {
+      const path = new URL(url).pathname;
+      if (path === `/a/${encodeURIComponent('元記事')}`) return { ok: true, status: 200, text: async () => stub };
+      return { ok: false, status: 404, text: async () => '' };
+    };
+    const fetcher = createNiconicoFetcher({ fetchImpl, delayMs: 0 });
+    expect(await fetchArticleHtml(fetcher, '元記事')).toBeNull();
+  });
+
+  it('htmlToText: script/styleの中身は本文に含めず、タグを剥がしてブロック要素は改行にする', () => {
+    const html =
+      '<html><head><style>.a{color:red}</style><script>alert(1)</script></head><body><p>こんにちは</p><p>さようなら</p></body></html>';
+    const text = htmlToText(html);
+    expect(text).not.toContain('color:red');
+    expect(text).not.toContain('alert');
+    expect(text).toContain('こんにちは');
+    expect(text).toContain('さようなら');
+  });
+
+  it('htmlToText: HTML実体参照をデコードする', () => {
+    expect(htmlToText('<p>A&amp;B &lt;tag&gt; &quot;quote&quot; &#39;apos&#39;&nbsp;end</p>')).toBe(
+      'A&B <tag> "quote" \'apos\' end',
+    );
+  });
+
+  it('htmlToText: リンク化された語(<a>等の残りのインライン要素)を除去してもスペースを挿入しない', () => {
+    // 2026-07-25、touhou-suwakoの実地抽出で発覚: ニコニコ大百科はほぼ全ての固有名詞を
+    // <a>でリンク化するため、除去時にスペースへ変換すると「あーうー」のような
+    // 「」で囲まれたリンク付き語の内側に「 あーうー 」という余計なスペースが入り、
+    // LLMが返す装飾無しの引用と照合基準文字列がズレて偽陰性になっていた。
+    expect(htmlToText('<p>「<a href="/a/x">あーうー</a>」と言う。</p>')).toBe('「あーうー」と言う。');
+    expect(htmlToText('<p><a href="/a/x">博麗</a><a href="/a/y">霊夢</a>は巫女。</p>')).toBe('博麗霊夢は巫女。');
+  });
+
+  it('htmlToText: td/thの区切りも改行として扱う(表データが連結しない)', () => {
+    expect(htmlToText('<table><tr><td>A</td><td>B</td></tr></table>')).toBe('A B');
+  });
+
+  it('htmlToText: コメント欄(「ななしのよっしん」以降)を切り捨てる', () => {
+    const html = '<p>本文の性格は明るい。</p><p>ななしのよっしん 2026/01/01 なんか適当なコメント 高評価 1</p>';
+    expect(htmlToText(html)).toBe('本文の性格は明るい。');
+  });
+
+  it('htmlToText: マーカーが無ければ何も切り捨てない', () => {
+    expect(htmlToText('<p>マーカーを含まない普通の記事本文</p>')).toBe('マーカーを含まない普通の記事本文');
+  });
+
+  it('normalizeWhitespace: 空白ラン(改行/タブ含む)を単一空白へ畳み前後をtrimする', () => {
+    expect(normalizeWhitespace('a   b\n\nc\td')).toBe('a b c d');
+    expect(normalizeWhitespace('  前後の空白  ')).toBe('前後の空白');
+  });
+
+  it('import しただけでは外部通信しない', async () => {
+    const fetchSpy = vi.fn();
+    vi.stubGlobal('fetch', fetchSpy);
+    vi.resetModules();
+    await import('../scripts/bayes/niconico-client.mjs');
+    expect(fetchSpy).not.toHaveBeenCalled();
+  });
+});
+
+describe('BB. Ollamaクライアント（scripts/bayes/ollama-client.mjs）', () => {
+  it('/api/chat へ think:false・format・temperature:0・seed・messages(system+user)を送る', async () => {
+    let seenUrl = '';
+    let seenBody: Record<string, unknown> = {};
+    const fetchImpl = async (url: string, init?: { body?: string }) => {
+      seenUrl = url;
+      seenBody = JSON.parse(init?.body ?? '{}');
+      return { ok: true, status: 200, json: async () => ({ message: { role: 'assistant', content: '{"value":"クール"}' } }), text: async () => '' };
+    };
+    const chat = createOllamaClient({ fetchImpl, apiRoot: 'http://localhost:11434' });
+    const format = { type: 'object', properties: {} };
+    await chat({ model: 'qwen3:8b', systemPrompt: 'sys', userPrompt: 'user', format, seed: 42 });
+
+    expect(seenUrl).toBe('http://localhost:11434/api/chat');
+    expect(seenBody.model).toBe('qwen3:8b');
+    expect(seenBody.think).toBe(false);
+    expect(seenBody.stream).toBe(false);
+    expect(seenBody.format).toEqual(format);
+    expect(seenBody.options).toEqual({ temperature: 0, seed: 42 });
+    expect(seenBody.messages).toEqual([
+      { role: 'system', content: 'sys' },
+      { role: 'user', content: 'user' },
+    ]);
+  });
+
+  it('応答のmessage.contentをJSONとしてパースして返す', async () => {
+    const fetchImpl = async () => ({
+      ok: true,
+      status: 200,
+      json: async () => ({ message: { content: '{"value":"元気","quote":"根拠"}' } }),
+      text: async () => '',
+    });
+    const chat = createOllamaClient({ fetchImpl });
+    const result = await chat({ model: 'qwen3:8b', systemPrompt: '', userPrompt: '', format: {}, seed: 1 });
+    expect(result).toEqual({ value: '元気', quote: '根拠' });
+  });
+
+  it('<think>タグが混入していても剥がしてからパースする（防御的実装。実地確認では出現しないが将来変化に備える）', () => {
+    expect(stripThinkTags('<think>考え中...</think>{"value":"クール"}')).toBe('{"value":"クール"}');
+    expect(stripThinkTags('{"value":"クール"}')).toBe('{"value":"クール"}');
+  });
+
+  it('ok:false のレスポンスはエラーにする', async () => {
+    const fetchImpl = async () => ({ ok: false, status: 500, json: async () => ({}), text: async () => '' });
+    const chat = createOllamaClient({ fetchImpl });
+    await expect(chat({ model: 'qwen3:8b', systemPrompt: '', userPrompt: '', format: {}, seed: 1 })).rejects.toThrow(/status=500/);
+  });
+
+  it('応答contentがJSONとして解釈できない場合はエラーにする', async () => {
+    const fetchImpl = async () => ({
+      ok: true,
+      status: 200,
+      json: async () => ({ message: { content: 'これはJSONではない' } }),
+      text: async () => '',
+    });
+    const chat = createOllamaClient({ fetchImpl });
+    await expect(chat({ model: 'qwen3:8b', systemPrompt: '', userPrompt: '', format: {}, seed: 1 })).rejects.toThrow(/JSON/);
+  });
+
+  it('import しただけでは外部通信しない', async () => {
+    const fetchSpy = vi.fn();
+    vi.stubGlobal('fetch', fetchSpy);
+    vi.resetModules();
+    await import('../scripts/bayes/ollama-client.mjs');
+    expect(fetchSpy).not.toHaveBeenCalled();
+  });
+});
+
+describe('BB. evidence-first LLM抽出+引用照合ゲート（scripts/bayes/llm-extract.mjs、PLAN「P5b」の本命部分）', () => {
+  function minimalAxisEnums() {
+    return {
+      personality: ['クール', '元気'],
+      mood: ['甘め', '支配的'],
+      species: ['人間', '魔族', '不死'],
+      combat: ['戦う', '戦わない'],
+      distance: ['積極的', '中立'],
+      affiliationKind: ['学生', '社会人'],
+      roles: ['主従', '姉', '後輩'],
+    };
+  }
+  type SingleAxisGuess = { quote: string; value: string; confidence: string };
+  type CombinedGuess = {
+    personality: SingleAxisGuess;
+    mood: SingleAxisGuess;
+    species: SingleAxisGuess;
+    combat: SingleAxisGuess;
+    distance: SingleAxisGuess;
+    affiliationKind: SingleAxisGuess;
+    roles: SingleAxisGuess[];
+  };
+  const NONE: SingleAxisGuess = { quote: '', value: '該当なし', confidence: 'none' };
+  function allNone(overrides: Partial<CombinedGuess> = {}): CombinedGuess {
+    return {
+      personality: NONE,
+      mood: NONE,
+      species: NONE,
+      combat: NONE,
+      distance: NONE,
+      affiliationKind: NONE,
+      roles: [],
+      ...overrides,
+    };
+  }
+
+  it('deriveAxisEnums: questions.jsonのaxis-typeソースから軸ごとの列挙値を出現順で導出する（llm対象外の軸・非axisソースは無視）', () => {
+    const questionsFile = {
+      questions: [
+        { sources: [{ type: 'axis', axis: 'personality', value: 'クール', multi: false }] },
+        { sources: [{ type: 'axis', axis: 'personality', value: '元気', multi: false }] },
+        { sources: [{ type: 'axis', axis: 'hairColor', value: '赤', multi: false }] },
+        { sources: [{ type: 'danbooru-binary', tag: 'smile' }] },
+        { sources: [{ type: 'axis', axis: 'roles', value: '姉', multi: true }] },
+      ],
+    };
+    const enums = deriveAxisEnums(questionsFile);
+    expect(enums.personality).toEqual(['クール', '元気']);
+    expect(enums.roles).toEqual(['姉']);
+    expect(enums.mood).toEqual([]);
+    expect(enums).not.toHaveProperty('hairColor');
+  });
+
+  it('buildUserPrompt: 各軸の選択肢と記事本文を含む', () => {
+    const axisEnums = { ...minimalAxisEnums(), mood: [], species: [], combat: [], distance: [], affiliationKind: [] };
+    const prompt = buildUserPrompt('本文テキスト', axisEnums);
+    expect(prompt).toContain('クール/元気');
+    expect(prompt).toContain('本文テキスト');
+    expect(prompt).toContain('personality');
+  });
+
+  it('verifyQuote: 空白の差異を正規化して照合し、最低長未満/空/未実在の引用は不採用にする', () => {
+    const articleText = normalizeWhitespace('霊夢は   とても\n強気な性格。');
+    expect(verifyQuote(articleText, 'とても  強気な性格')).toBe(true); // quote側の空白ラン差異も正規化される
+    expect(verifyQuote(articleText, '存在しない一節です')).toBe(false);
+    expect(verifyQuote(articleText, '短い')).toBe(false); // MIN_QUOTE_LENGTH未満
+    expect(verifyQuote(articleText, '')).toBe(false);
+  });
+
+  it('stripWrappingBrackets: 前後に対応する「」『』が1組あれば剥がす。無ければそのまま', () => {
+    expect(stripWrappingBrackets('「本文の一節」')).toBe('本文の一節');
+    expect(stripWrappingBrackets('『本文の一節』')).toBe('本文の一節');
+    expect(stripWrappingBrackets('本文の一節')).toBe('本文の一節'); // 括弧が無ければそのまま
+    expect(stripWrappingBrackets('「本文中『入れ子』の一節」')).toBe('本文中『入れ子』の一節'); // 外側1組だけ剥がす
+    expect(stripWrappingBrackets('「前後で対応していない』')).toBe('「前後で対応していない』'); // 対応してなければ剥がさない
+  });
+
+  it('verifyQuote: qwen3が付け足しがちな「」『』での装飾を剥がしてから照合する（本文自体には元々その装飾は無い実例）', () => {
+    // 2026-07-25、touhou-reimuの実地抽出でプロンプト上「装飾を追加するな」と
+    // 明記してもqwen3が引用を「」で包む癖が直らなかった実例に基づく
+    // （本文に実在する一節を「」で包んで渡すとfalseになるが、剥がせば本物と判定できる）。
+    const articleText = normalizeWhitespace('霊夢は普段から愛されいむと呼ばれることがある。');
+    expect(verifyQuote(articleText, '「普段から愛されいむ」')).toBe(true);
+    expect(verifyQuote(articleText, '普段から愛されいむ')).toBe(true); // 装飾が無くても引き続き通る
+    expect(verifyQuote(articleText, '「存在しない一節です」')).toBe(false); // 装飾を剥がしても本文に無ければ不採用
+  });
+
+  it('実在する引用は採用される(verified:true)。全軸一発で通ればリトライは発生しない', async () => {
+    const articleText = normalizeWhitespace('主人に忠実に仕える。人間ではなく魔族である。');
+    const ollamaChat = vi.fn().mockResolvedValueOnce(
+      allNone({
+        species: { quote: '人間ではなく魔族である', value: '魔族', confidence: 'high' },
+        roles: [{ quote: '主人に忠実に仕える', value: '主従', confidence: 'high' }],
+      }),
+    );
+
+    const result = await extractOneCharacter({ ollamaChat, articleText, axisEnums: minimalAxisEnums() });
+
+    expect(result.axes.species).toEqual({ value: '魔族', verified: true, confidence: 'high' });
+    expect(result.axes.roles).toEqual({ values: ['主従'], verified: true, confidence: 'high' });
+    expect(result.axes.personality).toEqual({ value: '該当なし', verified: false, confidence: 'none' });
+    expect(ollamaChat).toHaveBeenCalledTimes(1);
+  });
+
+  it('幻覚引用（原文に実在しない）はリトライされ、原文実在の引用に修正されれば採用される', async () => {
+    const articleText = normalizeWhitespace('種族は不死である。');
+    const ollamaChat = vi
+      .fn()
+      .mockResolvedValueOnce(allNone({ species: { quote: 'このキャラは吸血鬼です', value: '不死', confidence: 'high' } }))
+      .mockResolvedValueOnce({ quote: '種族は不死である', value: '不死', confidence: 'high' });
+
+    const result = await extractOneCharacter({ ollamaChat, articleText, axisEnums: minimalAxisEnums() });
+
+    expect(result.axes.species).toEqual({ value: '不死', verified: true, confidence: 'high' });
+    expect(ollamaChat).toHaveBeenCalledTimes(2);
+    const speciesLog = result.verification.filter((v: { axis: string }) => v.axis === 'species');
+    expect(speciesLog).toEqual([
+      { axis: 'species', quote: 'このキャラは吸血鬼です', matched: false, retries: 0 },
+      { axis: 'species', quote: '種族は不死である', matched: true, retries: 1 },
+    ]);
+  });
+
+  it('MAX_LLM_RETRIES(2回)まで再プロンプトしても幻覚引用のままならverified:falseで確定し、valueは信用しない扱いになる', async () => {
+    const articleText = normalizeWhitespace('本文には性格の記述が無い。');
+    const hallucinated = { quote: '存在しない引用文その1', value: 'クール', confidence: 'high' };
+    const ollamaChat = vi
+      .fn()
+      .mockResolvedValueOnce(allNone({ personality: hallucinated }))
+      .mockResolvedValueOnce({ quote: '存在しない引用文その2', value: 'クール', confidence: 'high' })
+      .mockResolvedValueOnce({ quote: '存在しない引用文その3', value: 'クール', confidence: 'high' });
+
+    const result = await extractOneCharacter({ ollamaChat, articleText, axisEnums: minimalAxisEnums() });
+
+    expect(result.axes.personality).toEqual({ value: 'クール', verified: false, confidence: 'high' });
+    expect(ollamaChat).toHaveBeenCalledTimes(3); // 初回 + retry×2
+    const retries = result.verification.filter((v: { axis: string }) => v.axis === 'personality').map((v: { retries: number }) => v.retries);
+    expect(retries).toEqual([0, 1, 2]);
+  });
+
+  it('該当なし(confidence:none)は照合を試みずverified:falseのまま。リトライもしない', async () => {
+    const articleText = '関係ない文章。';
+    const ollamaChat = vi.fn().mockResolvedValueOnce(allNone());
+
+    const result = await extractOneCharacter({ ollamaChat, articleText, axisEnums: minimalAxisEnums() });
+
+    for (const key of ['personality', 'mood', 'species', 'combat', 'distance', 'affiliationKind'] as const) {
+      expect(result.axes[key]).toEqual({ value: '該当なし', verified: false, confidence: 'none' });
+    }
+    expect(result.axes.roles).toEqual({ values: [], verified: false, confidence: 'none' });
+    expect(ollamaChat).toHaveBeenCalledTimes(1);
+  });
+
+  it('roles(複数値): confidence:highかつ引用実在するものだけ採用し、それ以外は静かに落とす（未列挙は無情報という設計のためリトライしない）', async () => {
+    const articleText = normalizeWhitespace('幼馴染として育った。姉のように慕われている。');
+    const ollamaChat = vi.fn().mockResolvedValueOnce(
+      allNone({
+        roles: [
+          { quote: '幼馴染として育った', value: '主従', confidence: 'high' }, // 実在するがvalueが選択肢外の例は別テストで扱う想定なのでここは主従で揃える
+          { quote: '存在しない引用', value: '後輩', confidence: 'high' }, // 幻覚→不採用
+          { quote: '姉のように慕われている', value: '姉', confidence: 'low' }, // 実在するがconfidence低→不採用
+        ],
+      }),
+    );
+
+    const result = await extractOneCharacter({ ollamaChat, articleText, axisEnums: minimalAxisEnums() });
+
+    expect(result.axes.roles).toEqual({ values: ['主従'], verified: true, confidence: 'high' });
+    expect(ollamaChat).toHaveBeenCalledTimes(1);
+  });
+
+  it('import しただけでは外部通信しない', async () => {
+    const fetchSpy = vi.fn();
+    vi.stubGlobal('fetch', fetchSpy);
+    vi.resetModules();
+    await import('../scripts/bayes/llm-extract.mjs');
+    expect(fetchSpy).not.toHaveBeenCalled();
   });
 });

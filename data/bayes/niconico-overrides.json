@@ -1,0 +1,5 @@
+{
+  "version": 1,
+  "note": "scripts/bayes/map-niconico.mjs が使う手書きの正本。overrides はキャラid単位で自動検索（character.name そのままの記事タイトル試行）が失敗/誤った場合の強制タイトル指定・除外（wikidata-overrides.json/tag-overrides.json と同型）。title:null は『記事が存在しない』『同名別作品の記事しか無く確認不能』等で意図的に除外したことを示す（自動探索を毎回やり直させないためのキャッシュも兼ねる）。",
+  "overrides": {}
+}

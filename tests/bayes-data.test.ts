@@ -282,6 +282,64 @@ describe('BA7. wikidata-map.json / wikidata-facts.json の整合性（PLAN「P5a
   });
 });
 
+describe('BA8. niconico-map.json / llm-extract.json の整合性（PLAN「P5b」）', () => {
+  const niconicoMap = JSON.parse(readFileSync(new URL('../data/bayes/niconico-map.json', import.meta.url), 'utf8'));
+  const llmExtractRaw = JSON.parse(readFileSync(new URL('../data/bayes/llm-extract.json', import.meta.url), 'utf8'));
+  const SINGLE_VALUE_AXES = ['personality', 'mood', 'species', 'combat', 'distance', 'affiliationKind'];
+  const CONFIDENCE_VALUES = new Set(['high', 'low', 'none']);
+
+  it('niconico-map.json は全キャラを1件ずつ持ち、title=nullは reason 必須', () => {
+    const ids = new Set(charactersFile.map((c) => c.id));
+    expect(new Set(Object.keys(niconicoMap.entries))).toEqual(ids);
+    for (const [id, entry] of Object.entries(niconicoMap.entries) as [string, { title: string | null; reason?: string }][]) {
+      if (entry.title === null) expect(entry.reason, id).toBeTruthy();
+    }
+  });
+
+  it('niconico-map.json は記事本文(プロース)を持たない（gitignoreの state/bayes-pipeline/niconico/ にのみ存在する契約）', () => {
+    expect(JSON.stringify(niconicoMap).includes('"text"')).toBe(false);
+  });
+
+  it('llm-extract.json の各エントリは axes を持ち、単一値軸は{value,verified,confidence}・rolesは{values,verified,confidence}の形', () => {
+    type AxisResult = { value?: string; values?: string[]; verified: boolean; confidence: string };
+    for (const [id, entry] of Object.entries(llmExtractRaw.entries) as [string, { article: string; axes: Record<string, AxisResult> }][]) {
+      expect(entry.article, id).toBeTruthy();
+      for (const axis of SINGLE_VALUE_AXES) {
+        const a = entry.axes[axis];
+        expect(a, `${id}.${axis}`).toBeDefined();
+        expect(typeof a.value, `${id}.${axis}.value`).toBe('string');
+        expect(typeof a.verified, `${id}.${axis}.verified`).toBe('boolean');
+        expect(CONFIDENCE_VALUES.has(a.confidence), `${id}.${axis}.confidence`).toBe(true);
+      }
+      const roles = entry.axes.roles;
+      expect(Array.isArray(roles.values), `${id}.roles.values`).toBe(true);
+      expect(typeof roles.verified, `${id}.roles.verified`).toBe('boolean');
+      expect(CONFIDENCE_VALUES.has(roles.confidence), `${id}.roles.confidence`).toBe(true);
+    }
+  });
+
+  it('llm-extract.json は生の引用文・生応答を持たない（gitignoreの state/bayes-pipeline/llm/ にのみ存在する契約。プロース非混入の担保）', () => {
+    const raw = JSON.stringify(llmExtractRaw);
+    expect(raw.includes('"quote"')).toBe(false);
+    expect(raw.includes('"rawResponse"')).toBe(false);
+  });
+
+  it('niconico-map.json / llm-extract.json は禁止語(config/forbidden-terms.json)を含まない', () => {
+    const hits: string[] = [];
+    const targets: [string, string][] = [
+      ['niconico-map.json', JSON.stringify(niconicoMap)],
+      ['llm-extract.json', JSON.stringify(llmExtractRaw)],
+    ];
+    for (const [name, raw] of targets) {
+      const lower = raw.toLowerCase();
+      for (const term of FORBIDDEN_TERMS) {
+        if (lower.includes(term.toLowerCase())) hits.push(`${name}: 「${term}」を含む`);
+      }
+    }
+    expect(hits).toEqual([]);
+  });
+});
+
 /**
  * questions.json の（Danbooruタグ名を含む）記述的idから、実行時の不透明key配列上の
  * 位置を引く。likelihoods.json/questions.runtime.json のkeyはid自体とは別物

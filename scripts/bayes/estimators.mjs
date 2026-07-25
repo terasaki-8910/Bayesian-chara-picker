@@ -170,6 +170,28 @@ export function estimateWikidataLikelihood({ value, target, multi }) {
 }
 
 /**
+ * ローカルLLM抽出(evidence-first+引用照合ゲート通過分のみ)からの疑似尤度
+ * （PLAN「P5b」）。verified!==true（引用が原文に実在しない/該当なし）または
+ * confidence!=='high'（LLM自身の自己申告が低確信）なら常にnull——
+ * 引用照合ゲートは「捏造引用」しか検出できず「実在文の誤ラベル」は防げないため、
+ * confidenceゲートを重ねて保守的にする多層防御の一部（W_LLM=15自体も軸(30)より
+ * 弱く、誤りが混入しても確信を反転できず減衰に留める設計。ゲートの限界は
+ * 引用照合だけで完結させず、BC13の自己収束チェックが最終防衛線）。
+ * @param {{ value?: string | null, values?: string[], target: string, multi: boolean, verified: boolean, confidence: string }} params
+ * @returns {number | null}
+ */
+export function estimateLlmLikelihood({ value, values, target, multi, verified, confidence }) {
+  if (verified !== true) return null;
+  if (confidence !== 'high') return null;
+  if (multi) {
+    if (!Array.isArray(values) || values.length === 0) return null;
+    return values.includes(target) ? LLM_LIKELY_YES : null;
+  }
+  if (value === null || value === undefined || value === '' || value === '該当なし') return null;
+  return value === target ? LLM_LIKELY_YES : LLM_LIKELY_NO;
+}
+
+/**
  * @typedef {{ p: number | null | undefined, weight: number }} LikelihoodSource
  */
 

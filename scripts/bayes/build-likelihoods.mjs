@@ -15,6 +15,7 @@ import {
   DEFAULT_EPSILON,
   AXIS_MERGE_WEIGHT,
   WIKIDATA_MERGE_WEIGHT,
+  LLM_MERGE_WEIGHT,
   clamp01,
   computeBinaryTheta,
   computeGroupBaseRate,
@@ -24,6 +25,7 @@ import {
   estimateBinaryRawRate,
   estimateGroupLikelihood,
   estimateWikidataLikelihood,
+  estimateLlmLikelihood,
   mergeLikelihoods,
 } from './estimators.mjs';
 
@@ -84,6 +86,24 @@ function wikidataSourceLikelihood(facts, source) {
   return estimateWikidataLikelihood({ value, target: source.value, multi: source.multi });
 }
 
+/**
+ * llm-extract.json は軸ごとに単一値なら{value,verified,confidence}、roles(multi)
+ * なら{values,verified,confidence}という形（PLAN「P5b」）。どちらのキーも渡し、
+ * multiフラグ側で使う方をestimateLlmLikelihoodに選ばせる。
+ */
+function llmSourceLikelihood(entry, source) {
+  const axisResult = entry?.axes?.[source.axis];
+  if (!axisResult) return null;
+  return estimateLlmLikelihood({
+    value: axisResult.value,
+    values: axisResult.values,
+    target: source.value,
+    multi: source.multi,
+    verified: axisResult.verified,
+    confidence: axisResult.confidence,
+  });
+}
+
 async function main() {
   const dataDir = new URL('../../data/', import.meta.url);
   const cacheDir = new URL('../../state/bayes-pipeline/danbooru/', import.meta.url);
@@ -95,6 +115,13 @@ async function main() {
   let wikidataFacts = { entries: {} };
   try {
     wikidataFacts = JSON.parse(readFileSync(fileURLToPath(new URL('bayes/wikidata-facts.json', dataDir)), 'utf8'));
+  } catch (_err) {
+    // 未実行。
+  }
+  // llm-extract.json も同様に任意（P5b未実行時は{}扱い）。
+  let llmExtract = { entries: {} };
+  try {
+    llmExtract = JSON.parse(readFileSync(fileURLToPath(new URL('bayes/llm-extract.json', dataDir)), 'utf8'));
   } catch (_err) {
     // 未実行。
   }
@@ -173,6 +200,7 @@ async function main() {
     const binarySource = q.sources.find((s) => s.type === 'danbooru-binary');
     const axisSource = q.sources.find((s) => s.type === 'axis');
     const wikidataSource = q.sources.find((s) => s.type === 'wikidata');
+    const llmSource = q.sources.find((s) => s.type === 'llm');
 
     let fallback = 0.5;
     if (groupSource) fallback = groupBaseRate[groupSource.group][groupSource.tag];
@@ -205,6 +233,10 @@ async function main() {
       if (wikidataSource) {
         const facts = wikidataFacts.entries[c.id];
         sources.push({ p: wikidataSourceLikelihood(facts, wikidataSource), weight: WIKIDATA_MERGE_WEIGHT });
+      }
+      if (llmSource) {
+        const entry = llmExtract.entries[c.id];
+        sources.push({ p: llmSourceLikelihood(entry, llmSource), weight: LLM_MERGE_WEIGHT });
       }
       const merged = mergeLikelihoods(sources, fallback);
       chars[c.id].push(round3(merged));
