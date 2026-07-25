@@ -43,5 +43,35 @@
     "Q87067369": "aqua"
   },
   "eyeColorMapNote": "Q112259529('gold')→yellow、Q17291407('amber')→orange、Q66821598('silver')→grey、Q87067369('cyan')→aqua（いずれもプロジェクトの10トークンに無い色を近い既存トークンへ寄せた判断）。null指定: Q39359966('segmental heterochromia'、部分的異色症=1つの瞳の中で色が分かれている状態)は単色概念に原理的に写像不能。Q62391724('white')は単色の目の色として扱いにくく対応するトークンが無いため保留。",
-  "overrides": {}
+  "overrides": {
+    "fgo-kiyohime": { "qid": "Q105594558" },
+    "onepiece-uta": { "qid": "Q123991597" },
+    "utau-teto": { "qid": "Q114560328" },
+    "onepiece-sadi": { "qid": "Q108671880" },
+    "bleach-nemu": { "qid": "Q2537164" },
+    "lovelive-umi": { "qid": "Q106831392" },
+    "fate-illya": { "qid": "Q4918698" },
+    "fate-jalter": { "qid": "Q135684450" },
+    "rezero-ram": { "qid": null, "reason": "自動検索の候補Q83376はrum（酒）で無関係。専用QIDは見当たらず。" },
+    "fate-bb": { "qid": null, "reason": "自動検索の候補Q244はBarbados（国）で無関係。専用QIDは見当たらず。" },
+    "monmusu-centorea": { "qid": null, "reason": "自動検索の候補Q156414はCentaurea（植物属）で無関係。専用QIDは見当たらず。" },
+    "kancolle-takao": { "qid": null, "reason": "自動検索の候補Q181557はKaohsiung（高雄市）で無関係。専用QIDは見当たらず。" },
+    "fgo-ishtar": { "qid": null, "reason": "同名衝突。Q102186969は『ダンジョンに出会いを求めるのは間違っているだろうか』のキャラで別作品。FGO版イシュタルの専用QIDは見当たらず。" },
+    "nier-a2": { "qid": null, "reason": "自動検索の候補Q107264251はQualis/CAPES分類システム（学術評価制度）で無関係。専用QIDは見当たらず。" },
+    "genshin-mona": { "qid": null, "reason": "候補Q2419834は女性名一般のエンティティ（fictional character等の記述なし）でキャラ本人の項目ではない。" },
+    "genshin-barbara": { "qid": null, "reason": "候補Q153957は女性名一般のエンティティでキャラ本人の項目ではない。" },
+    "azurlane-nagato": { "qid": null, "reason": "同名衝突。Q718509はNARUTOのキャラで別作品。アズールレーン版の専用QIDは見当たらず（実在の戦艦Q1291512はfictional characterではないため対象外）。" },
+    "azurlane-yamato": { "qid": null, "reason": "候補Q215010は実在の戦艦『大和』本体。アズールレーン版の専用QIDは見当たらず。" },
+    "kancolle-atago": { "qid": null, "reason": "候補Q753165は実在の重巡洋艦『愛宕』本体。艦これ版の専用QIDは見当たらず。" },
+    "kancolle-kaga": { "qid": null, "reason": "候補Q726146は実在の空母『加賀』本体。艦これ版の専用QIDは見当たらず。" },
+    "kancolle-kashima": { "qid": null, "reason": "候補は実在の巡洋艦/戦艦『鹿島』のみ。艦これ版の専用QIDは見当たらず。" },
+    "kancolle-hamakaze": { "qid": null, "reason": "候補は実在の駆逐艦『浜風』のみ。艦これ版の専用QIDは見当たらず。" },
+    "kancolle-taihou": { "qid": null, "reason": "同名衝突。Q117229330はアズールレーン版のキャラで別ゲーム（艦これとアズールレーンは別々に擬人化しているため取り違えは実害あり）。艦これ版の専用QIDは見当たらず。" },
+    "kancolle-suzuya": { "qid": null, "reason": "候補は実在の巡洋艦『鈴谷』のみ。艦これ版の専用QIDは見当たらず。" },
+    "kancolle-kongou": { "qid": null, "reason": "候補は実在の巡洋戦艦『金剛』のみ。艦これ版の専用QIDは見当たらず。" },
+    "fate-raikou": { "qid": null, "reason": "候補Q590523は実在の史実人物・源頼光本人。FGO版（サーヴァント化された女性化キャラ）の専用QIDは見当たらず。" },
+    "fate-nightingale": { "qid": null, "reason": "候補Q37103は実在の史実人物・フローレンス・ナイチンゲール本人。FGO版サーヴァントの専用QIDは見当たらず。" },
+    "fgo-medusa": { "qid": null, "reason": "候補Q160730はギリシャ神話のメデューサ概念そのもの（P31確認せず description のみで判断・保留）。FGO版サーヴァントの専用QIDは見当たらず。" },
+    "touhou-momiji": { "qid": null, "reason": "日本語名・英語alias(Momiji Inubashiri)いずれのWikidata検索でも0件。専用QIDは存在しないと判断。" }
+  }
 }

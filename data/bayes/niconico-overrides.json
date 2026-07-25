@@ -1,5 +1,30 @@
 {
   "version": 1,
   "note": "scripts/bayes/map-niconico.mjs が使う手書きの正本。overrides はキャラid単位で自動検索（character.name そのままの記事タイトル試行）が失敗/誤った場合の強制タイトル指定・除外（wikidata-overrides.json/tag-overrides.json と同型）。title:null は『記事が存在しない』『同名別作品の記事しか無く確認不能』等で意図的に除外したことを示す（自動探索を毎回やり直させないためのキャッシュも兼ねる）。",
-  "overrides": {}
+  "overrides": {
+    "fate-tamamo": { "title": "玉藻の前(Fate)" },
+    "konosuba-darkness": { "title": "ダクネス(この素晴らしい世界に祝福を!)" },
+    "kancolle-kaga": { "title": "加賀（艦これ）" },
+    "fate-nightingale": { "title": "ナイチンゲール(Fate)" },
+    "fate-chloe": { "title": "クロエ・フォン・アインツベルン" },
+    "naruto-tsunade": { "title": "綱手(NARUTO)" },
+    "aot-levi": { "title": "リヴァイ" },
+    "fairytail-mirajane": { "title": "ミラジェーン・ストラウス" },
+    "nier-a2": { "title": "ヨルハA型二号" },
+    "genshin-ganyu": { "title": "甘雨(原神)" },
+    "azurlane-yamato": { "title": null, "reason": "「大和」の曖昧さ回避ページに艦これ版(大和（艦これ）)の記載はあるがアズールレーン版の記載が無い（対照的に「加賀」は艦これ版・アズールレーン版の両方が明記されている）。WebSearchでも dic.nicovideo.jp の専用記事は見つからず、専用記事自体が存在しないと判断。" },
+    "naruto-kurenai": { "title": null, "reason": "「NARUTOの関連項目一覧」（単語記事があるキャラクターのみ掲載する公式まとめ記事、2026-07-26時点で本文確認）に記載が無く、専用記事は存在しないと判断。" },
+    "naruto-ino": { "title": null, "reason": "同上（NARUTOの関連項目一覧に記載なし）。" },
+    "naruto-shizune": { "title": null, "reason": "同上（NARUTOの関連項目一覧に記載なし）。WebSearchでも他キャラ記事内での言及のみで専用記事は見つからず。" },
+    "naruto-temari": { "title": null, "reason": "同上（NARUTOの関連項目一覧に記載なし）。" },
+    "naruto-anko": { "title": null, "reason": "同上（NARUTOの関連項目一覧に記載なし）。" },
+    "genshin-yae-miko": { "title": null, "reason": "WebSearchでdic.nicovideo.jpの専用記事が見つからず（Fandom Wiki・攻略サイトのみヒット）。「甘雨(原神)」等の先行実装キャラには記事があるが、本キャラ（2022年8月実装）以降ニコニコ大百科側の原神キャラ個別記事の追加が下火になっている可能性。" },
+    "genshin-eula": { "title": null, "reason": "同上（WebSearchでdic.nicovideo.jp専用記事見つからず、Fandom/wikiwiki等のみヒット）。「(原神)」曖昧さ回避パターンでの直接確認も404。" },
+    "genshin-ayaka": { "title": null, "reason": "同上（WebSearchでdic.nicovideo.jp専用記事見つからず）。" },
+    "genshin-furina": { "title": null, "reason": "同上（WebSearchでdic.nicovideo.jp専用記事見つからず、「(原神)」曖昧さ回避パターンでの直接確認も404）。" },
+    "onepiece-tashigi": { "title": null, "reason": "WebSearchでdic.nicovideo.jpの専用記事が見つからず（RENOTE・公式サイトのみヒット）。「(ONE PIECE)」曖昧さ回避パターン・カタカナ表記「タシギ」での直接確認も404。" },
+    "onepiece-perona": { "title": null, "reason": "同上（WebSearchでdic.nicovideo.jp専用記事見つからず、「(ONE PIECE)」パターンも404）。" },
+    "onepiece-kalifa": { "title": null, "reason": "同上（WebSearchでdic.nicovideo.jp専用記事見つからず、「(ONE PIECE)」パターンも404）。" },
+    "onepiece-sadi": { "title": null, "reason": "WebSearchで有効な候補が見つからず、「(ONE PIECE)」曖昧さ回避パターンでの直接確認も404。専用記事は存在しないと判断。" }
+  }
 }

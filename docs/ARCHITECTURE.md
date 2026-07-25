@@ -193,7 +193,10 @@ mount時に1回だけ読み、router は使わない）。
   キャラ→QIDを検索・検証し、`data/bayes/wikidata-facts.json`
   （性別・髪色・目の色・種族=人間の確認、制御語彙のみ）を生成。
   `estimateWikidataLikelihood`（`estimators.mjs`）が尤度化。全131キャラで実行済み
-  （76%が何らかのfactsを取得）。
+  （131キャラ中107キャラ=82%が何らかのfactsを取得。自動検索の同名衝突
+  ——艦これ/アズールレーンの艦娘と実在の艦船、FGOの史実サーヴァントと
+  実在の歴史上人物等——は`data/bayes/wikidata-overrides.json`で個別検証の上
+  QIDを確定/除外している）。
 - **P5b（ニコニコ大百科+ローカルLLM抽出）**: 「客観的・タグ化しやすい」外見系を
   Danbooru/Wikidataで、「主観的・タグ化しにくい」性格/雰囲気系
   （personality/mood/species/combat/distance/affiliationKind/roles、axis-only
@@ -201,15 +204,20 @@ mount時に1回だけ読み、router は使わない）。
   が記事本文を取得・検証し（Pixivはロボッツ排除規則がAIクローラーを名指しで
   ブロックしているため対象外——ニコニコ大百科を代替に採用）、
   `scripts/bayes/ollama-client.mjs`/`llm-extract.mjs`
-  がローカルLLM（qwen3:8b、Ollama経由）でevidence-first抽出（quoteを先に
+  がローカルLLM（Ornith-9B `hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-
+  MTP-GGUF:Q4_K_M`、Ollama経由）でevidence-first抽出（quoteを先に
   逐語で書かせ、valueをそのquoteだけから判定させる）+ 引用照合ゲート
   （LLMの引用が原文に実在するかを決定論的に照合、幻覚引用は再プロンプト後も
   不採用ならnull寄与）を行い、`data/bayes/llm-extract.json`
   （制御語彙のみ・引用文自体は持たない）を生成する。生記事テキスト・生プロンプト・
   引用照合の全証跡は `state/bayes-pipeline/{niconico,llm}/` にのみキャッシュ
   （gitignore、コミットツリーにファンサイトのプロースを持ち込まない）。
-  ローカルLLM実行の負荷が大きいため131キャラ中45キャラのみ実行済み
-  （`llm-extract.mjs` は `--force` なしで実行すると未処理分だけ再開する設計）。
+  131キャラ中117キャラ=89%が記事取得・LLM抽出済み（`scripts/bayes/
+  bench-llm-models.mjs`で複数のローカルLLM（9B〜35B級）を比較した結果、
+  このevidence-first逐語引用タスクではパラメータ数の大きいモデルほど
+  指示追従性が崩れて悪化する傾向が判明し、9B級のOrnith-9Bを採用——詳細は
+  `--model`フラグで比較実行可能）。
+  `llm-extract.mjs` は `--force` なしで実行すると未処理分だけ再開する設計。
 
 ## テスト・ゲート
 

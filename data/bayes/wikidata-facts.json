@@ -20,7 +20,12 @@
     },
     "fate-bb": {},
     "fgo-ishtar": {},
-    "fgo-kiyohime": {},
+    "fgo-kiyohime": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
     "fgo-medusa": {},
     "overlord-albedo": {
       "genderExpression": "女性",
@@ -348,8 +353,18 @@
     "onepiece-carrot": {
       "genderExpression": "女性"
     },
-    "onepiece-uta": {},
-    "onepiece-sadi": {},
+    "onepiece-uta": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "onepiece-sadi": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
     "naruto-sakura": {
       "genderExpression": "女性",
       "hairColor": "桃",
@@ -425,7 +440,11 @@
     "bleach-unohana": {
       "genderExpression": "女性"
     },
-    "bleach-nemu": {},
+    "bleach-nemu": {
+      "genderExpression": "女性",
+      "hairColor": "黒",
+      "eyeColor": "green"
+    },
     "bleach-isane": {
       "genderExpression": "女性"
     },
@@ -463,7 +482,13 @@
       "hairColor": "金",
       "eyeColor": "blue"
     },
-    "utau-teto": {},
+    "utau-teto": {
+      "hairColor": "赤",
+      "eyeColor": "red",
+      "species": [
+        "人間"
+      ]
+    },
     "genshin-ayaka": {
       "genderExpression": "女性",
       "hairColor": "銀",
@@ -591,8 +616,20 @@
         "人間"
       ]
     },
-    "lovelive-umi": {},
-    "fate-illya": {},
+    "lovelive-umi": {
+      "genderExpression": "女性",
+      "hairColor": "青",
+      "eyeColor": "brown",
+      "species": [
+        "人間"
+      ]
+    },
+    "fate-illya": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
     "fate-raikou": {},
     "fate-nightingale": {},
     "fate-miyu": {
@@ -619,6 +656,11 @@
         "人間"
       ]
     },
-    "fate-jalter": {}
+    "fate-jalter": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    }
   }
 }

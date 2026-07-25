@@ -20,11 +20,10 @@
       "checkedAt": "2026-07-25T12:57:28.042Z"
     },
     "fate-tamamo": {
-      "title": null,
-      "reason": "記事「キャスター」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "キャスター",
-      "checkedAt": "2026-07-25T12:57:43.077Z"
+      "title": "玉藻の前(Fate)",
+      "url": "https://dic.nicovideo.jp/a/%E7%8E%89%E8%97%BB%E3%81%AE%E5%89%8D(Fate)",
+      "source": "override",
+      "checkedAt": "2026-07-25T15:38:04.267Z"
     },
     "fate-bb": {
       "title": "BB",
@@ -63,11 +62,10 @@
       "checkedAt": "2026-07-25T12:58:18.083Z"
     },
     "konosuba-darkness": {
-      "title": null,
-      "reason": "記事「ダクネス」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "ダクネス",
-      "checkedAt": "2026-07-25T12:58:37.807Z"
+      "title": "ダクネス(この素晴らしい世界に祝福を!)",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%80%E3%82%AF%E3%83%8D%E3%82%B9(%E3%81%93%E3%81%AE%E7%B4%A0%E6%99%B4%E3%82%89%E3%81%97%E3%81%84%E4%B8%96%E7%95%8C%E3%81%AB%E7%A5%9D%E7%A6%8F%E3%82%92!)",
+      "source": "override",
+      "checkedAt": "2026-07-25T15:38:04.956Z"
     },
     "fairytail-erza": {
       "title": "エルザ・スカーレット",
@@ -76,10 +74,10 @@
       "checkedAt": "2026-07-25T12:58:43.091Z"
     },
     "fairytail-mirajane": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-07-25T12:58:53.014Z"
+      "title": "ミラジェーン・ストラウス",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%9F%E3%83%A9%E3%82%B8%E3%82%A7%E3%83%BC%E3%83%B3%E3%83%BB%E3%82%B9%E3%83%88%E3%83%A9%E3%82%A6%E3%82%B9",
+      "source": "override",
+      "checkedAt": "2026-07-25T15:38:09.715Z"
     },
     "dragonball-bulma": {
       "title": "ブルマ",
@@ -94,16 +92,16 @@
       "checkedAt": "2026-07-25T12:59:03.234Z"
     },
     "naruto-tsunade": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-07-25T12:59:12.908Z"
+      "title": "綱手(NARUTO)",
+      "url": "https://dic.nicovideo.jp/a/%E7%B6%B1%E6%89%8B(NARUTO)",
+      "source": "override",
+      "checkedAt": "2026-07-25T15:38:08.612Z"
     },
     "naruto-kurenai": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-07-25T12:59:22.941Z"
+      "reason": "「NARUTOの関連項目一覧」（単語記事があるキャラクターのみ掲載する公式まとめ記事、2026-07-26時点で本文確認）に記載が無く、専用記事は存在しないと判断。",
+      "source": "override",
+      "checkedAt": "2026-07-25T15:38:10.970Z"
     },
     "onepiece-robin": {
       "title": "ニコ・ロビン",
@@ -142,10 +140,10 @@
       "checkedAt": "2026-07-25T12:59:53.154Z"
     },
     "nier-a2": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-07-25T13:00:04.424Z"
+      "title": "ヨルハA型二号",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%A8%E3%83%AB%E3%83%8FA%E5%9E%8B%E4%BA%8C%E5%8F%B7",
+      "source": "override",
+      "checkedAt": "2026-07-25T15:38:10.280Z"
     },
     "azurlane-nagato": {
       "title": "長門",
@@ -155,10 +153,9 @@
     },
     "azurlane-yamato": {
       "title": null,
-      "reason": "記事「大和」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "大和",
-      "checkedAt": "2026-07-25T13:00:23.083Z"
+      "reason": "「大和」の曖昧さ回避ページに艦これ版(大和（艦これ）)の記載はあるがアズールレーン版の記載が無い（対照的に「加賀」は艦これ版・アズールレーン版の両方が明記されている）。WebSearchでも dic.nicovideo.jp の専用記事は見つからず、専用記事自体が存在しないと判断。",
+      "source": "override",
+      "checkedAt": "2026-07-25T15:38:10.918Z"
     },
     "granblue-narmaya": {
       "title": "ナルメア",
@@ -191,10 +188,10 @@
       "checkedAt": "2026-07-25T13:00:48.141Z"
     },
     "aot-levi": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-07-25T13:00:57.939Z"
+      "title": "リヴァイ",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%AA%E3%83%B4%E3%82%A1%E3%82%A4",
+      "source": "override",
+      "checkedAt": "2026-07-25T15:38:09.236Z"
     },
     "onepiece-zoro": {
       "title": "ロロノア・ゾロ",
@@ -317,10 +314,10 @@
       "checkedAt": "2026-07-25T13:02:38.727Z"
     },
     "genshin-ganyu": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-07-25T13:02:52.855Z"
+      "title": "甘雨(原神)",
+      "url": "https://dic.nicovideo.jp/a/%E7%94%98%E9%9B%A8(%E5%8E%9F%E7%A5%9E)",
+      "source": "override",
+      "checkedAt": "2026-07-25T15:38:10.846Z"
     },
     "genshin-raiden-shogun": {
       "title": "雷電将軍",
@@ -336,9 +333,9 @@
     },
     "genshin-yae-miko": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-07-25T13:03:22.871Z"
+      "reason": "WebSearchでdic.nicovideo.jpの専用記事が見つからず（Fandom Wiki・攻略サイトのみヒット）。「甘雨(原神)」等の先行実装キャラには記事があるが、本キャラ（2022年8月実装）以降ニコニコ大百科側の原神キャラ個別記事の追加が下火になっている可能性。",
+      "source": "override",
+      "checkedAt": "2026-07-25T15:38:11.225Z"
     },
     "genshin-hu-tao": {
       "title": "胡桃",
@@ -360,9 +357,9 @@
     },
     "genshin-eula": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-07-25T13:04:02.917Z"
+      "reason": "同上（WebSearchでdic.nicovideo.jp専用記事見つからず、Fandom/wikiwiki等のみヒット）。「(原神)」曖昧さ回避パターンでの直接確認も404。",
+      "source": "override",
+      "checkedAt": "2026-07-25T15:38:11.276Z"
     },
     "onepiece-vivi": {
       "title": "ネフェルタリ・ビビ",
@@ -372,21 +369,21 @@
     },
     "onepiece-tashigi": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-07-25T13:04:22.921Z"
+      "reason": "WebSearchでdic.nicovideo.jpの専用記事が見つからず（RENOTE・公式サイトのみヒット）。「(ONE PIECE)」曖昧さ回避パターン・カタカナ表記「タシギ」での直接確認も404。",
+      "source": "override",
+      "checkedAt": "2026-07-25T15:38:11.431Z"
     },
     "onepiece-perona": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-07-25T13:04:37.926Z"
+      "reason": "同上（WebSearchでdic.nicovideo.jp専用記事見つからず、「(ONE PIECE)」パターンも404）。",
+      "source": "override",
+      "checkedAt": "2026-07-25T15:38:11.483Z"
     },
     "onepiece-kalifa": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-07-25T13:04:52.858Z"
+      "reason": "同上（WebSearchでdic.nicovideo.jp専用記事見つからず、「(ONE PIECE)」パターンも404）。",
+      "source": "override",
+      "checkedAt": "2026-07-25T15:38:11.534Z"
     },
     "onepiece-carrot": {
       "title": "キャロット",
@@ -402,9 +399,9 @@
     },
     "onepiece-sadi": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-07-25T13:05:27.871Z"
+      "reason": "WebSearchで有効な候補が見つからず、「(ONE PIECE)」曖昧さ回避パターンでの直接確認も404。専用記事は存在しないと判断。",
+      "source": "override",
+      "checkedAt": "2026-07-25T15:38:11.585Z"
     },
     "naruto-sakura": {
       "title": "春野サクラ",
@@ -420,27 +417,27 @@
     },
     "naruto-ino": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-07-25T13:05:52.913Z"
+      "reason": "同上（NARUTOの関連項目一覧に記載なし）。",
+      "source": "override",
+      "checkedAt": "2026-07-25T15:38:11.022Z"
     },
     "naruto-shizune": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-07-25T13:06:07.902Z"
+      "reason": "同上（NARUTOの関連項目一覧に記載なし）。WebSearchでも他キャラ記事内での言及のみで専用記事は見つからず。",
+      "source": "override",
+      "checkedAt": "2026-07-25T15:38:11.073Z"
     },
     "naruto-temari": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-07-25T13:06:22.944Z"
+      "reason": "同上（NARUTOの関連項目一覧に記載なし）。",
+      "source": "override",
+      "checkedAt": "2026-07-25T15:38:11.126Z"
     },
     "naruto-anko": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-07-25T13:06:37.907Z"
+      "reason": "同上（NARUTOの関連項目一覧に記載なし）。",
+      "source": "override",
+      "checkedAt": "2026-07-25T15:38:11.176Z"
     },
     "naruto-tenten": {
       "title": "テンテン",
@@ -546,9 +543,9 @@
     },
     "genshin-ayaka": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-07-25T13:08:32.972Z"
+      "reason": "同上（WebSearchでdic.nicovideo.jp専用記事見つからず）。",
+      "source": "override",
+      "checkedAt": "2026-07-25T15:38:11.326Z"
     },
     "genshin-shenhe": {
       "title": "申鶴",
@@ -564,9 +561,9 @@
     },
     "genshin-furina": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-07-25T13:09:03.116Z"
+      "reason": "同上（WebSearchでdic.nicovideo.jp専用記事見つからず、「(原神)」曖昧さ回避パターンでの直接確認も404）。",
+      "source": "override",
+      "checkedAt": "2026-07-25T15:38:11.380Z"
     },
     "genshin-barbara": {
       "title": "バーバラ",
@@ -617,11 +614,10 @@
       "checkedAt": "2026-07-25T13:09:43.075Z"
     },
     "kancolle-kaga": {
-      "title": null,
-      "reason": "記事「加賀」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "加賀",
-      "checkedAt": "2026-07-25T13:09:53.042Z"
+      "title": "加賀（艦これ）",
+      "url": "https://dic.nicovideo.jp/a/%E5%8A%A0%E8%B3%80%EF%BC%88%E8%89%A6%E3%81%93%E3%82%8C%EF%BC%89",
+      "source": "override",
+      "checkedAt": "2026-07-25T15:38:06.161Z"
     },
     "kancolle-kashima": {
       "title": "鹿島",
@@ -756,11 +752,10 @@
       "checkedAt": "2026-07-25T13:11:48.125Z"
     },
     "fate-nightingale": {
-      "title": null,
-      "reason": "記事「ナイチンゲール」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "ナイチンゲール",
-      "checkedAt": "2026-07-25T13:12:08.133Z"
+      "title": "ナイチンゲール(Fate)",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%8A%E3%82%A4%E3%83%81%E3%83%B3%E3%82%B2%E3%83%BC%E3%83%AB(Fate)",
+      "source": "override",
+      "checkedAt": "2026-07-25T15:38:07.130Z"
     },
     "fate-miyu": {
       "title": "美遊・エーデルフェルト",
@@ -781,11 +776,10 @@
       "checkedAt": "2026-07-25T13:12:23.340Z"
     },
     "fate-chloe": {
-      "title": null,
-      "reason": "記事「クロエ・フォン・アインツベルン」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "クロエ・フォン・アインツベルン",
-      "checkedAt": "2026-07-25T13:12:38.233Z"
+      "title": "クロエ・フォン・アインツベルン",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%AF%E3%83%AD%E3%82%A8%E3%83%BB%E3%83%95%E3%82%A9%E3%83%B3%E3%83%BB%E3%82%A2%E3%82%A4%E3%83%B3%E3%83%84%E3%83%99%E3%83%AB%E3%83%B3",
+      "source": "override",
+      "checkedAt": "2026-07-25T15:38:07.867Z"
     },
     "fate-jalter": {
       "title": "ジャンヌ・オルタ",

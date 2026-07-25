@@ -47,12 +47,10 @@
       "checkedAt": "2026-07-24T23:21:05.743Z"
     },
     "fgo-kiyohime": {
-      "qid": null,
-      "reason": "シリーズ確認不能のため除外(候補qid=Q105594558, Kiyohime)。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateQid": "Q105594558",
-      "candidateLabel": "Kiyohime",
-      "checkedAt": "2026-07-24T23:21:14.284Z"
+      "qid": "Q105594558",
+      "label": "清姫",
+      "source": "override",
+      "checkedAt": "2026-07-25T15:48:02.813Z"
     },
     "fgo-medusa": {
       "qid": null,
@@ -467,18 +465,16 @@
       "checkedAt": "2026-07-24T23:26:31.192Z"
     },
     "onepiece-uta": {
-      "qid": null,
-      "reason": "シリーズ確認不能のため除外(候補qid=Q1770991, Uta)。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateQid": "Q1770991",
-      "candidateLabel": "Uta",
-      "checkedAt": "2026-07-24T23:26:39.576Z"
+      "qid": "Q123991597",
+      "label": "ウタ",
+      "source": "override",
+      "checkedAt": "2026-07-25T15:48:05.010Z"
     },
     "onepiece-sadi": {
-      "qid": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-07-24T23:26:40.797Z"
+      "qid": "Q108671880",
+      "label": "サディ",
+      "source": "override",
+      "checkedAt": "2026-07-25T15:48:08.750Z"
     },
     "naruto-sakura": {
       "qid": "Q203240",
@@ -572,10 +568,10 @@
       "checkedAt": "2026-07-24T23:27:42.274Z"
     },
     "bleach-nemu": {
-      "qid": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-07-24T23:27:44.724Z"
+      "qid": "Q2537164",
+      "label": "涅 ネム",
+      "source": "override",
+      "checkedAt": "2026-07-25T15:48:10.338Z"
     },
     "bleach-isane": {
       "qid": "Q3541215",
@@ -634,12 +630,10 @@
       "checkedAt": "2026-07-24T23:28:24.315Z"
     },
     "utau-teto": {
-      "qid": null,
-      "reason": "シリーズ確認不能のため除外(候補qid=Q114560328, Teto Kasane)。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateQid": "Q114560328",
-      "candidateLabel": "Teto Kasane",
-      "checkedAt": "2026-07-24T23:28:30.327Z"
+      "qid": "Q114560328",
+      "label": "重音テト",
+      "source": "override",
+      "checkedAt": "2026-07-25T15:48:07.591Z"
     },
     "genshin-ayaka": {
       "qid": "Q107618679",
@@ -874,16 +868,16 @@
       "checkedAt": "2026-07-24T23:31:29.812Z"
     },
     "lovelive-umi": {
-      "qid": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-07-24T23:31:32.106Z"
+      "qid": "Q106831392",
+      "label": "園田 海未",
+      "source": "override",
+      "checkedAt": "2026-07-25T15:48:11.955Z"
     },
     "fate-illya": {
-      "qid": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-07-24T23:31:33.318Z"
+      "qid": "Q4918698",
+      "label": "イリヤスフィール·フォン·アインツベルン",
+      "source": "override",
+      "checkedAt": "2026-07-25T15:48:14.124Z"
     },
     "fate-raikou": {
       "qid": null,
@@ -930,10 +924,10 @@
       "checkedAt": "2026-07-24T23:32:08.990Z"
     },
     "fate-jalter": {
-      "qid": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-07-24T23:32:11.367Z"
+      "qid": "Q135684450",
+      "label": "ジャンヌ・ダルク・オルタ",
+      "source": "override",
+      "checkedAt": "2026-07-25T15:48:15.109Z"
     }
   }
 }
