@@ -11,6 +11,7 @@
  * つまりJSONですらないエラーを確認済み。2026-07-25）ため、danbooru-client.mjsより
  * 保守的な自主規制間隔にし、`maxlag`パラメータで負荷回避に協力する。
  */
+import { pathToFileURL } from 'node:url';
 
 /** 実測のレート制限（0.3秒間隔で発生）に対して十分余裕を持たせた自主規制の間隔。 */
 export const REQUEST_DELAY_MS = 1_200;
@@ -165,7 +166,7 @@ export function claimValuesOf(entity, property) {
     .map((dv) => ({ type: dv.type, value: dv.value }));
 }
 
-const isMainModule = process.argv[1] !== undefined && import.meta.url === `file://${process.argv[1]}`;
+const isMainModule = process.argv[1] !== undefined && import.meta.url === pathToFileURL(process.argv[1]).href;
 if (isMainModule) {
   console.error('このファイルはライブラリです。map-wikidata.mjs から呼んでください。');
   process.exitCode = 1;

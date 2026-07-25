@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "model": "qwen3:8b",
+  "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M",
   "seed": 20260725,
   "entries": {
     "touhou-reimu": {
@@ -1845,6 +1845,2695 @@
           "confidence": "high"
         }
       }
+    },
+    "genshin-raiden-shogun": {
+      "article": "雷電将軍",
+      "axes": {
+        "personality": {
+          "value": "内気",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "支配的",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "不死",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "軍・組織",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "姉",
+            "主従"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "genshin-lumine": {
+      "article": "蛍",
+      "axes": {
+        "personality": {
+          "value": "おっとり",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "学生",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "幼馴染"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "genshin-hu-tao": {
+      "article": "胡桃",
+      "axes": {
+        "personality": {
+          "value": "元気",
+          "verified": true,
+          "confidence": "low"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "low"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "low"
+        },
+        "affiliationKind": {
+          "value": "社会人",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "後輩"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "genshin-keqing": {
+      "article": "刻晴",
+      "axes": {
+        "personality": {
+          "value": "クール",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "支配的",
+          "verified": true,
+          "confidence": "low"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "low"
+        },
+        "distance": {
+          "value": "やや積極的",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "軍・組織",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "onepiece-vivi": {
+      "article": "ネフェルタリ・ビビ",
+      "axes": {
+        "personality": {
+          "value": "生意気",
+          "verified": true,
+          "confidence": "low"
+        },
+        "mood": {
+          "value": "純愛寄り",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "low"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "low"
+        },
+        "affiliationKind": {
+          "value": "社会人",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "姉"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "onepiece-uta": {
+      "article": "ウタ",
+      "axes": {
+        "personality": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "非人間・その他",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "主従"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "naruto-sakura": {
+      "article": "春野サクラ",
+      "axes": {
+        "personality": {
+          "value": "元気",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "純愛寄り",
+          "verified": true,
+          "confidence": "low"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "学生",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "ライバル",
+            "先輩"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "naruto-hinata": {
+      "article": "日向ヒナタ",
+      "axes": {
+        "personality": {
+          "value": "おっとり",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "純愛寄り",
+          "verified": true,
+          "confidence": "low"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "軍・組織",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "妹",
+            "母性"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "naruto-tenten": {
+      "article": "テンテン",
+      "axes": {
+        "personality": {
+          "value": "生意気",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "純愛寄り",
+          "verified": true,
+          "confidence": "low"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "low"
+        },
+        "affiliationKind": {
+          "value": "軍・組織",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "bleach-orihime": {
+      "article": "井上織姫",
+      "axes": {
+        "personality": {
+          "value": "おっとり",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "甘め",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "学生",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "妹"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "bleach-rukia": {
+      "article": "朽木ルキア",
+      "axes": {
+        "personality": {
+          "value": "おっとり",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "甘め",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "軍・組織",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "幼馴染"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "bleach-soifon": {
+      "article": "砕蜂",
+      "axes": {
+        "personality": {
+          "value": "クール",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "純愛寄り",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "low"
+        },
+        "affiliationKind": {
+          "value": "軍・組織",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "先輩"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "bleach-halibel": {
+      "article": "ティア・ハリベル",
+      "axes": {
+        "personality": {
+          "value": "クール",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "甘め",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "軍・組織",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "主従",
+            "ライバル"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "bleach-nelliel": {
+      "article": "ネリエル・トゥ・オーデルシュヴァンク",
+      "axes": {
+        "personality": {
+          "value": "おっとり",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "純愛寄り",
+          "verified": true,
+          "confidence": "low"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや積極的",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "軍・組織",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "後輩"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "bleach-unohana": {
+      "article": "卯ノ花烈",
+      "axes": {
+        "personality": {
+          "value": "おっとり",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "支配的",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "low"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "軍・組織",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "先輩"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "bleach-nemu": {
+      "article": "涅ネム",
+      "axes": {
+        "personality": {
+          "value": "おっとり",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "支配的",
+          "verified": true,
+          "confidence": "low"
+        },
+        "species": {
+          "value": "機械",
+          "verified": true,
+          "confidence": "low"
+        },
+        "combat": {
+          "value": "戦わない",
+          "verified": true,
+          "confidence": "low"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "軍・組織",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "主従"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "bleach-isane": {
+      "article": "虎徹勇音",
+      "axes": {
+        "personality": {
+          "value": "おっとり",
+          "verified": true,
+          "confidence": "low"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "low"
+        },
+        "affiliationKind": {
+          "value": "軍・組織",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "先輩"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "overlord-shalltear": {
+      "article": "シャルティア・ブラッドフォールン",
+      "axes": {
+        "personality": {
+          "value": "生意気",
+          "verified": true,
+          "confidence": "low"
+        },
+        "mood": {
+          "value": "背徳寄り",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "不死",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "low"
+        },
+        "affiliationKind": {
+          "value": "軍・組織",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "overlord-aura": {
+      "article": "アウラ",
+      "axes": {
+        "personality": {
+          "value": "おっとり",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "社会人",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "overlord-mare": {
+      "article": "マーレ・ベロ・フィオーレ",
+      "axes": {
+        "personality": {
+          "value": "内気",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "従属的",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "エルフ",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "軍・組織",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "妹"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "overlord-lupusregina": {
+      "article": "ルプスレギナ・ベータ",
+      "axes": {
+        "personality": {
+          "value": "おっとり",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "甘め",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "獣人",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "冒険者",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "後輩",
+            "姉",
+            "母性"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "overlord-yuri": {
+      "article": "ユリ・アルファ",
+      "axes": {
+        "personality": {
+          "value": "おっとり",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "支配的",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "不死",
+          "verified": true,
+          "confidence": "low"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "low"
+        },
+        "affiliationKind": {
+          "value": "軍・組織",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "後輩",
+            "姉"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "overlord-solution": {
+      "article": "ソリュシャン・イプシロン",
+      "axes": {
+        "personality": {
+          "value": "おっとり",
+          "verified": true,
+          "confidence": "low"
+        },
+        "mood": {
+          "value": "甘め",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "機械",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "low"
+        },
+        "affiliationKind": {
+          "value": "軍・組織",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "genshin-shenhe": {
+      "article": "申鶴",
+      "axes": {
+        "personality": {
+          "value": "おっとり",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "純愛寄り",
+          "verified": true,
+          "confidence": "low"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "low"
+        },
+        "affiliationKind": {
+          "value": "軍・組織",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "genshin-nahida": {
+      "article": "ナヒーダ",
+      "axes": {
+        "personality": {
+          "value": "生意気",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "背徳寄り",
+          "verified": true,
+          "confidence": "low"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや積極的",
+          "verified": true,
+          "confidence": "low"
+        },
+        "affiliationKind": {
+          "value": "軍・組織",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "先輩",
+            "姉"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "genshin-barbara": {
+      "article": "バーバラ",
+      "axes": {
+        "personality": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "非人間・その他",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "後輩"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "touhou-satori": {
+      "article": "古明地さとり",
+      "axes": {
+        "personality": {
+          "value": "おっとり",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "甘め",
+          "verified": true,
+          "confidence": "low"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "low"
+        },
+        "combat": {
+          "value": "戦わない",
+          "verified": false,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "受け身",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "軍・組織",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "kancolle-atago": {
+      "article": "愛宕",
+      "axes": {
+        "personality": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "社会人",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "後輩"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "kancolle-kashima": {
+      "article": "鹿島",
+      "axes": {
+        "personality": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "社会人",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "主従"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "kancolle-takao": {
+      "article": "高雄",
+      "axes": {
+        "personality": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "軍・組織",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "先輩"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "kancolle-hamakaze": {
+      "article": "浜風",
+      "axes": {
+        "personality": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "roles": {
+          "values": [
+            "後輩"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "kancolle-taihou": {
+      "article": "大鳳",
+      "axes": {
+        "personality": {
+          "value": "おっとり",
+          "verified": true,
+          "confidence": "low"
+        },
+        "mood": {
+          "value": "支配的",
+          "verified": true,
+          "confidence": "low"
+        },
+        "species": {
+          "value": "機械",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "low"
+        },
+        "affiliationKind": {
+          "value": "軍・組織",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "kancolle-suzuya": {
+      "article": "鈴谷",
+      "axes": {
+        "personality": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "機械",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "軍・組織",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "主従"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "kancolle-kongou": {
+      "article": "金剛",
+      "axes": {
+        "personality": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "社会人",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "後輩"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "touhou-koakuma": {
+      "article": "小悪魔",
+      "axes": {
+        "personality": {
+          "value": "生意気",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "甘め",
+          "verified": false,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "学生",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "後輩"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "lovelive-maki": {
+      "article": "西木野真姫",
+      "axes": {
+        "personality": {
+          "value": "生意気",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "支配的",
+          "verified": true,
+          "confidence": "low"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦わない",
+          "verified": true,
+          "confidence": "low"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "学生",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "lovelive-eli": {
+      "article": "絢瀬絵里",
+      "axes": {
+        "personality": {
+          "value": "クール",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "純愛寄り",
+          "verified": true,
+          "confidence": "low"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "low"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": false,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "学生",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "姉"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "lovelive-nico": {
+      "article": "矢澤にこ",
+      "axes": {
+        "personality": {
+          "value": "生意気",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "純愛寄り",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦わない",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "積極的",
+          "verified": false,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "学生",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "lovelive-kotori": {
+      "article": "南ことり",
+      "axes": {
+        "personality": {
+          "value": "おっとり",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "甘め",
+          "verified": true,
+          "confidence": "low"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "low"
+        },
+        "combat": {
+          "value": "戦わない",
+          "verified": true,
+          "confidence": "low"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "学生",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "幼馴染"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "lovelive-umi": {
+      "article": "園田海未",
+      "axes": {
+        "personality": {
+          "value": "生意気",
+          "verified": false,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "支配的",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦わない",
+          "verified": true,
+          "confidence": "low"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "学生",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "幼馴染"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "fate-illya": {
+      "article": "イリヤスフィール・フォン・アインツベルン",
+      "axes": {
+        "personality": {
+          "value": "おっとり",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "甘め",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "low"
+        },
+        "affiliationKind": {
+          "value": "学生",
+          "verified": false,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "後輩"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "fate-raikou": {
+      "article": "源頼光",
+      "axes": {
+        "personality": {
+          "value": "おっとり",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "支配的",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "low"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "軍・組織",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "主従"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "touhou-remilia": {
+      "article": "レミリア・スカーレット",
+      "axes": {
+        "personality": {
+          "value": "おっとり",
+          "verified": true,
+          "confidence": "low"
+        },
+        "mood": {
+          "value": "支配的",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "不死",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "low"
+        },
+        "affiliationKind": {
+          "value": "軍・組織",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "姉",
+            "先輩"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "touhou-marisa": {
+      "article": "霧雨魔理沙",
+      "axes": {
+        "personality": {
+          "value": "生意気",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "支配的",
+          "verified": true,
+          "confidence": "low"
+        },
+        "species": {
+          "value": "人間",
+          "verified": false,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "冒険者",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "touhou-alice": {
+      "article": "アリス・マーガトロイド",
+      "axes": {
+        "personality": {
+          "value": "おっとり",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "甘め",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "魔族",
+          "verified": true,
+          "confidence": "low"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": false,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "非人間・その他",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "onepiece-carrot": {
+      "article": "キャロット",
+      "axes": {
+        "personality": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "獣人",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "非人間・その他",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "幼馴染"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "overlord-clementine": {
+      "article": "クレマンティーヌ",
+      "axes": {
+        "personality": {
+          "value": "生意気",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "支配的",
+          "verified": false,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "軍・組織",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "後輩",
+            "先輩"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "utau-teto": {
+      "article": "重音テト",
+      "axes": {
+        "personality": {
+          "value": "生意気",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "甘め",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "不死",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "社会人",
+          "verified": false,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "touhou-yukari": {
+      "article": "八雲紫",
+      "axes": {
+        "personality": {
+          "value": "生意気",
+          "verified": false,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "支配的",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "冒険者",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "母性"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "touhou-aya": {
+      "article": "射命丸文",
+      "axes": {
+        "personality": {
+          "value": "おっとり",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "支配的",
+          "verified": false,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "獣人",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦わない",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "冒険者",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "後輩"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "touhou-reisen": {
+      "article": "鈴仙・優曇華院・イナバ",
+      "axes": {
+        "personality": {
+          "value": "おっとり",
+          "verified": false,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "甘め",
+          "verified": false,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "獣人",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや積極的",
+          "verified": true,
+          "confidence": "low"
+        },
+        "affiliationKind": {
+          "value": "非人間・その他",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "妹"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "touhou-youmu": {
+      "article": "魂魄妖夢",
+      "axes": {
+        "personality": {
+          "value": "おっとり",
+          "verified": true,
+          "confidence": "low"
+        },
+        "mood": {
+          "value": "支配的",
+          "verified": false,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "不死",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": false,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "社会人",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "後輩"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "touhou-koishi": {
+      "article": "古明地こいし",
+      "axes": {
+        "personality": {
+          "value": "元気",
+          "verified": false,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "純愛寄り",
+          "verified": false,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "不死",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや積極的",
+          "verified": false,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "社会人",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "touhou-momiji": {
+      "article": "犬走椛",
+      "axes": {
+        "personality": {
+          "value": "おっとり",
+          "verified": true,
+          "confidence": "low"
+        },
+        "mood": {
+          "value": "純愛寄り",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "獣人",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "low"
+        },
+        "affiliationKind": {
+          "value": "軍・組織",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "主従",
+            "後輩"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "touhou-meiling": {
+      "article": "紅美鈴",
+      "axes": {
+        "personality": {
+          "value": "おっとり",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "甘め",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "獣人",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "low"
+        },
+        "affiliationKind": {
+          "value": "非人間・その他",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "後輩"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "touhou-ran": {
+      "article": "八雲藍",
+      "axes": {
+        "personality": {
+          "value": "おっとり",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "従属的",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "獣人",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "low"
+        },
+        "affiliationKind": {
+          "value": "非人間・その他",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "主従",
+            "後輩"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "touhou-yuuka": {
+      "article": "風見幽香",
+      "axes": {
+        "personality": {
+          "value": "生意気",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "支配的",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "人間",
+          "verified": false,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "冒険者",
+          "verified": false,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "touhou-yuyuko": {
+      "article": "西行寺幽々子",
+      "axes": {
+        "personality": {
+          "value": "おっとり",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "支配的",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "不死",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "非人間・その他",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "lovelive-nozomi": {
+      "article": "東條希",
+      "axes": {
+        "personality": {
+          "value": "おっとり",
+          "verified": false,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "甘め",
+          "verified": true,
+          "confidence": "low"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "戦わない",
+          "verified": true,
+          "confidence": "low"
+        },
+        "distance": {
+          "value": "やや積極的",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "学生",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "先輩"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "fate-miyu": {
+      "article": "美遊・エーデルフェルト",
+      "axes": {
+        "personality": {
+          "value": "クール",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "純愛寄り",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "不死",
+          "verified": true,
+          "confidence": "low"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "low"
+        },
+        "affiliationKind": {
+          "value": "学生",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "後輩"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "fate-shuten": {
+      "article": "酒呑童子",
+      "axes": {
+        "personality": {
+          "value": "生意気",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "純愛寄り",
+          "verified": false,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "魔族",
+          "verified": false,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "low"
+        },
+        "affiliationKind": {
+          "value": "社会人",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "fate-sakura": {
+      "article": "間桐桜",
+      "axes": {
+        "personality": {
+          "value": "おっとり",
+          "verified": true,
+          "confidence": "low"
+        },
+        "mood": {
+          "value": "純愛寄り",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "low"
+        },
+        "combat": {
+          "value": "戦わない",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "low"
+        },
+        "affiliationKind": {
+          "value": "学生",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "後輩",
+            "妹"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "fate-jalter": {
+      "article": "ジャンヌ・オルタ",
+      "axes": {
+        "personality": {
+          "value": "生意気",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "背徳寄り",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや受け身",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "冒険者",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "後輩",
+            "妹"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
     }
   }
 }

@@ -21,6 +21,7 @@
  *   - 初回呼び出しはモデルロードで数秒余分にかかる（load_duration）。以降は
  *     生成時間のみ。
  */
+import { pathToFileURL } from 'node:url';
 const API_ROOT = 'http://localhost:11434';
 
 /**
@@ -44,10 +45,10 @@ export function stripThinkTags(raw) {
  */
 export function createOllamaClient({ fetchImpl = fetch, apiRoot = API_ROOT } = {}) {
   /**
-   * @param {{ model: string, systemPrompt: string, userPrompt: string, format: object, seed: number }} params
+   * @param {{ model: string, systemPrompt: string, userPrompt: string, format: object, seed: number, numCtx?: number }} params
    * @returns {Promise<unknown>} format スキーマに準拠したパース済みJSON
    */
-  return async function chat({ model, systemPrompt, userPrompt, format, seed }) {
+  return async function chat({ model, systemPrompt, userPrompt, format, seed, numCtx = 32768 }) {
     const res = await fetchImpl(`${apiRoot}/api/chat`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -60,11 +61,14 @@ export function createOllamaClient({ fetchImpl = fetch, apiRoot = API_ROOT } = {
           { role: 'system', content: systemPrompt },
           { role: 'user', content: userPrompt },
         ],
-        options: { temperature: 0, seed },
+        // 既定のnum_ctx(多くのOllamaモデルで4096)だと長文記事（東方Project系で
+        // 6000〜15000トークン超）がプロンプト時点で溢れてstatus=400になることが
+        // 実地確認で判明した（2026-07-25、touhou-yukari他21件で再現）。
+        options: { temperature: 0, seed, num_ctx: numCtx },
       }),
     });
     if (!res.ok) {
-      throw new Error(`Ollama /api/chat 呼び出しに失敗しました (status=${res.status})`);
+      throw new Error(`Ollama /api/chat 呼び出しに失敗しました (status=${res.status}): ${await res.text()}`);
     }
     const result = /** @type {{ message: { content: string } }} */ (await res.json());
     const cleaned = stripThinkTags(result.message.content);
@@ -76,7 +80,7 @@ export function createOllamaClient({ fetchImpl = fetch, apiRoot = API_ROOT } = {
   };
 }
 
-const isMainModule = process.argv[1] !== undefined && import.meta.url === `file://${process.argv[1]}`;
+const isMainModule = process.argv[1] !== undefined && import.meta.url === pathToFileURL(process.argv[1]).href;
 if (isMainModule) {
   console.error('このファイルはライブラリです。llm-extract.mjs から呼んでください。');
   process.exitCode = 1;

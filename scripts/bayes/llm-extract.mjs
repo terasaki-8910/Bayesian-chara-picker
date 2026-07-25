@@ -22,7 +22,7 @@
  */
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 import { normalizeWhitespace } from './niconico-client.mjs';
 import { createOllamaClient } from './ollama-client.mjs';
 
@@ -181,10 +181,10 @@ export function verifyQuote(articleText, quote) {
  * @param {{
  *   ollamaChat: ReturnType<typeof createOllamaClient>, articleText: string, axisKey: string,
  *   initial: { quote: string, value: string, confidence: string }, axisEnums: Record<string, string[]>,
- *   verification: object[],
+ *   verification: object[], model: string,
  * }} params
  */
-async function resolveSingleAxis({ ollamaChat, articleText, axisKey, initial, axisEnums, verification }) {
+async function resolveSingleAxis({ ollamaChat, articleText, axisKey, initial, axisEnums, verification, model }) {
   let current = initial;
   let attempt = 0;
   for (;;) {
@@ -202,7 +202,7 @@ async function resolveSingleAxis({ ollamaChat, articleText, axisKey, initial, ax
     }
     attempt += 1;
     current = await ollamaChat({
-      model: MODEL,
+      model,
       systemPrompt: SYSTEM_PROMPT,
       userPrompt: buildRetryPrompt(articleText, axisKey, axisEnums, current.quote),
       format: singleAxisFieldSchema(axisEnums[axisKey]),
@@ -242,12 +242,15 @@ function resolveRolesAxis(articleText, initialEntries, verification) {
  */
 
 /**
- * @param {{ ollamaChat: ReturnType<typeof createOllamaClient>, articleText: string, axisEnums: Record<string, string[]> }} params
+ * @param {{
+ *   ollamaChat: ReturnType<typeof createOllamaClient>, articleText: string, axisEnums: Record<string, string[]>,
+ *   model?: string,
+ * }} params
  * @returns {Promise<{ axes: ExtractedAxes, verification: VerificationEntry[], rawResponse: unknown }>}
  */
-export async function extractOneCharacter({ ollamaChat, articleText, axisEnums }) {
+export async function extractOneCharacter({ ollamaChat, articleText, axisEnums, model = MODEL }) {
   const initial = await ollamaChat({
-    model: MODEL,
+    model,
     systemPrompt: SYSTEM_PROMPT,
     userPrompt: buildUserPrompt(articleText, axisEnums),
     format: buildCombinedFormatSchema(axisEnums),
@@ -265,6 +268,7 @@ export async function extractOneCharacter({ ollamaChat, articleText, axisEnums }
       initial: initial[axisKey],
       axisEnums,
       verification,
+      model,
     });
   }
   axes.roles = resolveRolesAxis(articleText, initial.roles ?? [], verification);
@@ -276,6 +280,7 @@ async function main() {
   const args = process.argv.slice(2);
   const force = args.includes('--force');
   const charFilter = args.includes('--char') ? args[args.indexOf('--char') + 1] : null;
+  const model = args.includes('--model') ? args[args.indexOf('--model') + 1] : MODEL;
 
   const dataDir = new URL('../../data/', import.meta.url);
   const charactersPath = fileURLToPath(new URL('characters.json', dataDir));
@@ -309,7 +314,7 @@ async function main() {
     console.log('全キャラ、抽出済みです（--force で再実行）。');
     return;
   }
-  console.log(`LLM抽出対象 ${pending.length} 件`);
+  console.log(`LLM抽出対象 ${pending.length} 件（model=${model}）`);
 
   const ollamaChat = createOllamaClient({});
   const noCoverage = [];
@@ -335,7 +340,7 @@ async function main() {
     const startedAt = new Date().toISOString();
     let result;
     try {
-      result = await extractOneCharacter({ ollamaChat, articleText: cached.text, axisEnums });
+      result = await extractOneCharacter({ ollamaChat, articleText: cached.text, axisEnums, model });
     } catch (err) {
       console.log(`抽出失敗: ${err.message}`);
       errors.push({ id: character.id, name: character.name, issue: err.message });
@@ -349,7 +354,7 @@ async function main() {
         {
           charId: character.id,
           article: cached.title,
-          model: MODEL,
+          model,
           seed: SEED,
           rawResponse: result.rawResponse,
           axes: result.axes,
@@ -362,8 +367,10 @@ async function main() {
       )}\n`,
     );
 
-    llmExtract.entries[character.id] = { article: cached.title, axes: result.axes };
-    llmExtract.model = MODEL;
+    // model はキャラ単位で記録する（比較検証で複数モデルを混在させ得るため。
+    // トップレベルの llmExtract.model は「直近の実行で使ったモデル」の参考値に過ぎない）。
+    llmExtract.entries[character.id] = { article: cached.title, axes: result.axes, model };
+    llmExtract.model = model;
     llmExtract.seed = SEED;
     writeFileSync(extractPath, `${JSON.stringify(llmExtract, null, 2)}\n`);
 
@@ -394,7 +401,7 @@ async function main() {
   }
 }
 
-const isMainModule = process.argv[1] !== undefined && import.meta.url === `file://${process.argv[1]}`;
+const isMainModule = process.argv[1] !== undefined && import.meta.url === pathToFileURL(process.argv[1]).href;
 if (isMainModule) {
   await main();
 }

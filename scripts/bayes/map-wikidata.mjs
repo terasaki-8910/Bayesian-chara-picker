@@ -27,7 +27,7 @@
  * --char <id> で単体のみ強制再チェック）。
  */
 import { readFileSync, writeFileSync } from 'node:fs';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 import { claimValuesOf, createWikidataFetcher, fetchEntity, fetchEntityLabels, searchEntity } from './wikidata-client.mjs';
 
 const SEVEN_DAYS_MS = 7 * 24 * 60 * 60 * 1000;
@@ -306,7 +306,7 @@ async function main() {
   }
 }
 
-const isMainModule = process.argv[1] !== undefined && import.meta.url === `file://${process.argv[1]}`;
+const isMainModule = process.argv[1] !== undefined && import.meta.url === pathToFileURL(process.argv[1]).href;
 if (isMainModule) {
   await main();
 }

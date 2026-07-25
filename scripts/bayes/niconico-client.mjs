@@ -10,6 +10,7 @@
  * 明示されているのでそれを自主規制の間隔として使う。記事ページ（`/a/`配下）は
  * robots.txtのDisallow対象外（`/p/` `/d/` `/s/` `/api/` 等の機能パスのみ制限）。
  */
+import { pathToFileURL } from 'node:url';
 
 /** robots.txtが明示する Crawl-delay をそのまま自主規制の間隔にする。 */
 export const REQUEST_DELAY_MS = 5_000;
@@ -164,7 +165,7 @@ export function normalizeWhitespace(text) {
   return text.replace(/\s+/g, ' ').trim();
 }
 
-const isMainModule = process.argv[1] !== undefined && import.meta.url === `file://${process.argv[1]}`;
+const isMainModule = process.argv[1] !== undefined && import.meta.url === pathToFileURL(process.argv[1]).href;
 if (isMainModule) {
   console.error('このファイルはライブラリです。map-niconico.mjs から呼んでください。');
   process.exitCode = 1;

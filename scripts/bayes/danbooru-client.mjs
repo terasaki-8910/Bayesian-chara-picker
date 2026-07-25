@@ -12,6 +12,7 @@
  * 将来アカウント登録して API key を使う場合は createDanbooruFetcher の呼び出し側で
  * ヘッダ/クエリに login・api_key を足すだけで済むようにしてある。
  */
+import { pathToFileURL } from 'node:url';
 
 /** 匿名アクセスの実測レート制限に対して十分余裕を持たせた自主規制の間隔。 */
 export const REQUEST_DELAY_MS = 1_100;
@@ -124,7 +125,7 @@ export function splitTagString(tagString) {
   return tagString.length === 0 ? [] : tagString.split(' ');
 }
 
-const isMainModule = process.argv[1] !== undefined && import.meta.url === `file://${process.argv[1]}`;
+const isMainModule = process.argv[1] !== undefined && import.meta.url === pathToFileURL(process.argv[1]).href;
 if (isMainModule) {
   console.error('このファイルはライブラリです。map-characters.mjs / sample-posts.mjs から呼んでください。');
   process.exitCode = 1;

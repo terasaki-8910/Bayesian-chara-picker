@@ -910,7 +910,7 @@ describe('BB. Ollamaクライアント（scripts/bayes/ollama-client.mjs）', ()
     expect(seenBody.think).toBe(false);
     expect(seenBody.stream).toBe(false);
     expect(seenBody.format).toEqual(format);
-    expect(seenBody.options).toEqual({ temperature: 0, seed: 42 });
+    expect(seenBody.options).toEqual({ temperature: 0, seed: 42, num_ctx: 32768 });
     expect(seenBody.messages).toEqual([
       { role: 'system', content: 'sys' },
       { role: 'user', content: 'user' },

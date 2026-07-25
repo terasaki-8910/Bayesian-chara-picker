@@ -10,7 +10,7 @@
  *   data/bayes/questions.runtime.json UI用射影（日本語プロンプトのみ。タグ文字列・sourcesは含めない）
  */
 import { readFileSync, writeFileSync } from 'node:fs';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 import {
   DEFAULT_EPSILON,
   AXIS_MERGE_WEIGHT,
@@ -260,7 +260,7 @@ async function main() {
   console.log('  data/bayes/questions.runtime.json');
 }
 
-const isMainModule = process.argv[1] !== undefined && import.meta.url === `file://${process.argv[1]}`;
+const isMainModule = process.argv[1] !== undefined && import.meta.url === pathToFileURL(process.argv[1]).href;
 if (isMainModule) {
   await main();
 }

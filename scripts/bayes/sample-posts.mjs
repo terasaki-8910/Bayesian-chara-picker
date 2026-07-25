@@ -12,7 +12,7 @@
  * あるキャラはスキップする（＝再実行で再開。--force で無視、--char <id> で単体のみ）。
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 import { createDanbooruFetcher, fetchPostsPage, splitTagString } from './danbooru-client.mjs';
 
 const MAX_PAGES = 5;
@@ -168,7 +168,7 @@ async function main() {
   console.log(`\n完了。${pending.length} 件を state/bayes-pipeline/danbooru/ に書き込みました。`);
 }
 
-const isMainModule = process.argv[1] !== undefined && import.meta.url === `file://${process.argv[1]}`;
+const isMainModule = process.argv[1] !== undefined && import.meta.url === pathToFileURL(process.argv[1]).href;
 if (isMainModule) {
   await main();
 }
