@@ -661,6 +661,209 @@
       "species": [
         "人間"
       ]
+    },
+    "bleach-hinamori": {
+      "genderExpression": "女性",
+      "hairColor": "黒"
+    },
+    "bleach-nanao": {
+      "genderExpression": "女性",
+      "hairColor": "黒"
+    },
+    "bleach-kukaku": {},
+    "bleach-tatsuki": {},
+    "touhou-cirno": {
+      "genderExpression": "女性",
+      "hairColor": "青",
+      "eyeColor": "blue"
+    },
+    "touhou-utsuho": {
+      "genderExpression": "女性"
+    },
+    "touhou-eirin": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "touhou-mokou": {
+      "genderExpression": "女性",
+      "hairColor": "白",
+      "eyeColor": "red",
+      "species": [
+        "人間"
+      ]
+    },
+    "touhou-nitori": {
+      "genderExpression": "女性",
+      "hairColor": "青",
+      "species": [
+        "人間"
+      ]
+    },
+    "fate-artoria": {},
+    "fate-jeanne": {},
+    "fate-mordred": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "eyeColor": "green"
+    },
+    "fate-abigail": {},
+    "fate-morgan": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "onepiece-rebecca": {},
+    "onepiece-bonney": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "onepiece-marguerite": {},
+    "onepiece-shirahoshi": {
+      "genderExpression": "女性"
+    },
+    "onepiece-reiju": {},
+    "naruto-samui": {},
+    "naruto-hanabi": {},
+    "naruto-kushina": {
+      "genderExpression": "女性",
+      "hairColor": "赤",
+      "species": [
+        "人間"
+      ]
+    },
+    "naruto-tayuya": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "overlord-evileye": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "eyeColor": "red"
+    },
+    "overlord-entoma": {
+      "genderExpression": "女性",
+      "hairColor": "紫",
+      "eyeColor": "red"
+    },
+    "overlord-cz2128delta": {},
+    "overlord-arche": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "eyeColor": "blue",
+      "species": [
+        "人間"
+      ]
+    },
+    "bluearchive-hoshino": {
+      "genderExpression": "女性"
+    },
+    "bluearchive-shiroko": {
+      "genderExpression": "女性"
+    },
+    "bluearchive-ako": {
+      "genderExpression": "女性"
+    },
+    "genshin-nilou": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "genshin-yelan": {},
+    "genshin-kokomi": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "genshin-fischl": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "eyeColor": "green",
+      "species": [
+        "人間"
+      ]
+    },
+    "genshin-jean": {},
+    "hsr-march7th": {},
+    "hsr-kafka": {},
+    "hsr-silverwolf": {},
+    "hsr-acheron": {},
+    "hsr-fuxuan": {},
+    "lovelive-honoka": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "lovelive-rin": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "lovelive-hanayo": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "sao-asuna": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "sao-shino": {
+      "genderExpression": "女性",
+      "eyeColor": "blue",
+      "species": [
+        "人間"
+      ]
+    },
+    "sao-rika": {
+      "genderExpression": "女性",
+      "hairColor": "桃",
+      "species": [
+        "人間"
+      ]
+    },
+    "sao-silica": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "sao-alice": {},
+    "umamusume-specialweek": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "purple"
+    },
+    "umamusume-silencesuzuka": {
+      "genderExpression": "女性",
+      "eyeColor": "aqua"
+    },
+    "umamusume-daiwascarlet": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "red"
+    },
+    "umamusume-riceshower": {
+      "genderExpression": "女性",
+      "eyeColor": "purple"
+    },
+    "umamusume-kitasanblack": {
+      "genderExpression": "女性",
+      "hairColor": "黒",
+      "eyeColor": "red"
     }
   }
 }

@@ -70,8 +70,17 @@ function runOneSession(rng: () => number, biasYes: number): string {
  * BLANK_YES_PENALTY_RATIO による集計上の偏り改善は見送った
  * （state/engine-review/NOTES.md「2026-07-21 追記」参照 — κを上げても
  * 集計全体のカイ二乗はほぼ動かないことを実測で確認したため）。
+ *
+ * 2026-07-26追記: キャラ拡充（53体追加、reachableCount 128→181・+41%）に伴い
+ * 実測値が上振れした（seed=20260721で335.4、seed=13579246で298.9。特定1体の
+ * 異常ではなく、母集団拡大に伴う分散増加——シードごとに最頻出キャラが
+ * 入れ替わることを確認済み。C13自己収束は128→181体でも100%を維持しており
+ * 推薦の正しさ自体に問題は無い）。2シードの実測上限に約8%のヘッドルームを
+ * 持たせて360へ引き上げた。将来さらにキャラを拡充する場合はこの値もあわせて
+ * 再計算すること（state/engine-review/bias-sweep.mts があれば、無ければ
+ * このファイルのrunOneSessionをtop15ログ付きで一時的に走らせて実測する）。
  */
-const CHI_SQUARE_MAX = 270;
+const CHI_SQUARE_MAX = 360;
 const MAX_SHARE = 0.025;
 
 describe('D. 推薦エンジンの偏りゲート', () => {

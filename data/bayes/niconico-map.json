@@ -786,6 +786,329 @@
       "url": "https://dic.nicovideo.jp/a/%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%8C%E3%83%BB%E3%82%AA%E3%83%AB%E3%82%BF",
       "source": "search-verified",
       "checkedAt": "2026-07-25T13:12:48.518Z"
+    },
+    "bleach-hinamori": {
+      "title": "雛森桃",
+      "url": "https://dic.nicovideo.jp/a/%E9%9B%9B%E6%A3%AE%E6%A1%83",
+      "source": "search-verified",
+      "checkedAt": "2026-07-26T08:16:49.260Z"
+    },
+    "bleach-nanao": {
+      "title": "伊勢七緒",
+      "url": "https://dic.nicovideo.jp/a/%E4%BC%8A%E5%8B%A2%E4%B8%83%E7%B7%92",
+      "source": "search-verified",
+      "checkedAt": "2026-07-26T08:16:54.142Z"
+    },
+    "bleach-kukaku": {
+      "title": "志波空鶴",
+      "url": "https://dic.nicovideo.jp/a/%E5%BF%97%E6%B3%A2%E7%A9%BA%E9%B6%B4",
+      "source": "search-verified",
+      "checkedAt": "2026-07-26T08:16:59.176Z"
+    },
+    "bleach-tatsuki": {
+      "title": "有沢竜貴",
+      "url": "https://dic.nicovideo.jp/a/%E6%9C%89%E6%B2%A2%E7%AB%9C%E8%B2%B4",
+      "source": "search-verified",
+      "checkedAt": "2026-07-26T08:17:04.241Z"
+    },
+    "touhou-cirno": {
+      "title": "チルノ",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%81%E3%83%AB%E3%83%8E",
+      "source": "search-verified",
+      "checkedAt": "2026-07-26T08:17:09.580Z"
+    },
+    "touhou-utsuho": {
+      "title": "霊烏路空",
+      "url": "https://dic.nicovideo.jp/a/%E9%9C%8A%E7%83%8F%E8%B7%AF%E7%A9%BA",
+      "source": "search-verified",
+      "checkedAt": "2026-07-26T08:17:14.845Z"
+    },
+    "touhou-eirin": {
+      "title": "八意永琳",
+      "url": "https://dic.nicovideo.jp/a/%E5%85%AB%E6%84%8F%E6%B0%B8%E7%90%B3",
+      "source": "search-verified",
+      "checkedAt": "2026-07-26T08:17:19.296Z"
+    },
+    "touhou-mokou": {
+      "title": "藤原妹紅",
+      "url": "https://dic.nicovideo.jp/a/%E8%97%A4%E5%8E%9F%E5%A6%B9%E7%B4%85",
+      "source": "search-verified",
+      "checkedAt": "2026-07-26T08:17:24.531Z"
+    },
+    "touhou-nitori": {
+      "title": "河城にとり",
+      "url": "https://dic.nicovideo.jp/a/%E6%B2%B3%E5%9F%8E%E3%81%AB%E3%81%A8%E3%82%8A",
+      "source": "search-verified",
+      "checkedAt": "2026-07-26T08:17:29.680Z"
+    },
+    "fate-artoria": {
+      "title": "アルトリア・ペンドラゴン",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%A2%E3%83%AB%E3%83%88%E3%83%AA%E3%82%A2%E3%83%BB%E3%83%9A%E3%83%B3%E3%83%89%E3%83%A9%E3%82%B4%E3%83%B3",
+      "source": "search-verified",
+      "checkedAt": "2026-07-26T08:24:23.014Z"
+    },
+    "fate-jeanne": {
+      "title": null,
+      "reason": "記事「ジャンヌ・ダルク」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateTitle": "ジャンヌ・ダルク",
+      "checkedAt": "2026-07-26T08:24:37.536Z"
+    },
+    "fate-mordred": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-07-26T08:24:47.339Z"
+    },
+    "fate-abigail": {
+      "title": null,
+      "reason": "記事「アビゲイル・ウィリアムズ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateTitle": "アビゲイル・ウィリアムズ",
+      "checkedAt": "2026-07-26T08:24:57.400Z"
+    },
+    "fate-morgan": {
+      "title": null,
+      "reason": "記事「モルガン」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateTitle": "モルガン",
+      "checkedAt": "2026-07-26T08:25:07.450Z"
+    },
+    "onepiece-rebecca": {
+      "title": null,
+      "reason": "記事「レベッカ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateTitle": "レベッカ",
+      "checkedAt": "2026-07-26T08:25:22.399Z"
+    },
+    "onepiece-bonney": {
+      "title": "ジュエリー・ボニー",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%B8%E3%83%A5%E3%82%A8%E3%83%AA%E3%83%BC%E3%83%BB%E3%83%9C%E3%83%8B%E3%83%BC",
+      "source": "search-verified",
+      "checkedAt": "2026-07-26T08:25:27.504Z"
+    },
+    "onepiece-marguerite": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-07-26T08:25:37.434Z"
+    },
+    "onepiece-shirahoshi": {
+      "title": "しらほし",
+      "url": "https://dic.nicovideo.jp/a/%E3%81%97%E3%82%89%E3%81%BB%E3%81%97",
+      "source": "search-verified",
+      "checkedAt": "2026-07-26T08:25:47.510Z"
+    },
+    "onepiece-reiju": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-07-26T08:25:57.359Z"
+    },
+    "naruto-samui": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-07-26T08:26:07.412Z"
+    },
+    "naruto-hanabi": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-07-26T08:26:17.464Z"
+    },
+    "naruto-kushina": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-07-26T08:26:27.330Z"
+    },
+    "naruto-tayuya": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-07-26T08:26:37.426Z"
+    },
+    "overlord-evileye": {
+      "title": "イビルアイ",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%A4%E3%83%93%E3%83%AB%E3%82%A2%E3%82%A4",
+      "source": "search-verified",
+      "checkedAt": "2026-07-26T08:26:42.676Z"
+    },
+    "overlord-entoma": {
+      "title": "エントマ・ヴァシリッサ・ゼータ",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%A8%E3%83%B3%E3%83%88%E3%83%9E%E3%83%BB%E3%83%B4%E3%82%A1%E3%82%B7%E3%83%AA%E3%83%83%E3%82%B5%E3%83%BB%E3%82%BC%E3%83%BC%E3%82%BF",
+      "source": "search-verified",
+      "checkedAt": "2026-07-26T08:26:47.677Z"
+    },
+    "overlord-cz2128delta": {
+      "title": "シズ",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%B7%E3%82%BA",
+      "source": "search-verified",
+      "checkedAt": "2026-07-26T08:26:52.497Z"
+    },
+    "overlord-arche": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-07-26T08:27:02.502Z"
+    },
+    "bluearchive-hoshino": {
+      "title": "小鳥遊ホシノ",
+      "url": "https://dic.nicovideo.jp/a/%E5%B0%8F%E9%B3%A5%E9%81%8A%E3%83%9B%E3%82%B7%E3%83%8E",
+      "source": "search-verified",
+      "checkedAt": "2026-07-26T08:27:07.689Z"
+    },
+    "bluearchive-shiroko": {
+      "title": "砂狼シロコ",
+      "url": "https://dic.nicovideo.jp/a/%E7%A0%82%E7%8B%BC%E3%82%B7%E3%83%AD%E3%82%B3",
+      "source": "search-verified",
+      "checkedAt": "2026-07-26T08:27:12.897Z"
+    },
+    "bluearchive-ako": {
+      "title": "天雨アコ",
+      "url": "https://dic.nicovideo.jp/a/%E5%A4%A9%E9%9B%A8%E3%82%A2%E3%82%B3",
+      "source": "search-verified",
+      "checkedAt": "2026-07-26T08:27:17.537Z"
+    },
+    "genshin-nilou": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-07-26T08:27:27.425Z"
+    },
+    "genshin-yelan": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-07-26T08:27:37.413Z"
+    },
+    "genshin-kokomi": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-07-26T08:27:56.283Z"
+    },
+    "genshin-fischl": {
+      "title": "フィッシュル",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%A5%E3%83%AB",
+      "source": "search-verified",
+      "checkedAt": "2026-07-26T08:28:02.869Z"
+    },
+    "genshin-jean": {
+      "title": "ジン",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%B8%E3%83%B3",
+      "source": "search-verified",
+      "checkedAt": "2026-07-26T08:28:07.490Z"
+    },
+    "hsr-march7th": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-07-26T08:28:17.442Z"
+    },
+    "hsr-kafka": {
+      "title": null,
+      "reason": "記事「カフカ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateTitle": "カフカ",
+      "checkedAt": "2026-07-26T08:28:27.399Z"
+    },
+    "hsr-silverwolf": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-07-26T08:28:37.398Z"
+    },
+    "hsr-acheron": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-07-26T08:28:47.511Z"
+    },
+    "hsr-fuxuan": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-07-26T08:28:57.459Z"
+    },
+    "lovelive-honoka": {
+      "title": "高坂穂乃果",
+      "url": "https://dic.nicovideo.jp/a/%E9%AB%98%E5%9D%82%E7%A9%82%E4%B9%83%E6%9E%9C",
+      "source": "search-verified",
+      "checkedAt": "2026-07-26T08:29:03.042Z"
+    },
+    "lovelive-rin": {
+      "title": "星空凛",
+      "url": "https://dic.nicovideo.jp/a/%E6%98%9F%E7%A9%BA%E5%87%9B",
+      "source": "search-verified",
+      "checkedAt": "2026-07-26T08:29:07.860Z"
+    },
+    "lovelive-hanayo": {
+      "title": "小泉花陽",
+      "url": "https://dic.nicovideo.jp/a/%E5%B0%8F%E6%B3%89%E8%8A%B1%E9%99%BD",
+      "source": "search-verified",
+      "checkedAt": "2026-07-26T08:29:12.617Z"
+    },
+    "sao-asuna": {
+      "title": "結城明日奈",
+      "url": "https://dic.nicovideo.jp/a/%E7%B5%90%E5%9F%8E%E6%98%8E%E6%97%A5%E5%A5%88",
+      "source": "search-verified",
+      "checkedAt": "2026-07-26T08:29:22.724Z"
+    },
+    "sao-shino": {
+      "title": "朝田詩乃",
+      "url": "https://dic.nicovideo.jp/a/%E6%9C%9D%E7%94%B0%E8%A9%A9%E4%B9%83",
+      "source": "search-verified",
+      "checkedAt": "2026-07-26T08:29:32.649Z"
+    },
+    "sao-rika": {
+      "title": "篠崎里香",
+      "url": "https://dic.nicovideo.jp/a/%E7%AF%A0%E5%B4%8E%E9%87%8C%E9%A6%99",
+      "source": "search-verified",
+      "checkedAt": "2026-07-26T08:29:42.518Z"
+    },
+    "sao-silica": {
+      "title": "綾野珪子",
+      "url": "https://dic.nicovideo.jp/a/%E7%B6%BE%E9%87%8E%E7%8F%AA%E5%AD%90",
+      "source": "search-verified",
+      "checkedAt": "2026-07-26T08:29:52.494Z"
+    },
+    "sao-alice": {
+      "title": "アリス・シンセシス・サーティ",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%A2%E3%83%AA%E3%82%B9%E3%83%BB%E3%82%B7%E3%83%B3%E3%82%BB%E3%82%B7%E3%82%B9%E3%83%BB%E3%82%B5%E3%83%BC%E3%83%86%E3%82%A3",
+      "source": "search-verified",
+      "checkedAt": "2026-07-26T08:30:03.516Z"
+    },
+    "umamusume-specialweek": {
+      "title": "スペシャルウィーク",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%B9%E3%83%9A%E3%82%B7%E3%83%A3%E3%83%AB%E3%82%A6%E3%82%A3%E3%83%BC%E3%82%AF",
+      "source": "search-verified",
+      "checkedAt": "2026-07-26T08:30:07.949Z"
+    },
+    "umamusume-silencesuzuka": {
+      "title": "サイレンススズカ",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%B5%E3%82%A4%E3%83%AC%E3%83%B3%E3%82%B9%E3%82%B9%E3%82%BA%E3%82%AB",
+      "source": "search-verified",
+      "checkedAt": "2026-07-26T08:30:13.179Z"
+    },
+    "umamusume-daiwascarlet": {
+      "title": "ダイワスカーレット",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%80%E3%82%A4%E3%83%AF%E3%82%B9%E3%82%AB%E3%83%BC%E3%83%AC%E3%83%83%E3%83%88",
+      "source": "search-verified",
+      "checkedAt": "2026-07-26T08:30:17.923Z"
+    },
+    "umamusume-riceshower": {
+      "title": "ライスシャワー",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%A9%E3%82%A4%E3%82%B9%E3%82%B7%E3%83%A3%E3%83%AF%E3%83%BC",
+      "source": "search-verified",
+      "checkedAt": "2026-07-26T08:30:22.864Z"
+    },
+    "umamusume-kitasanblack": {
+      "title": "キタサンブラック",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%AD%E3%82%BF%E3%82%B5%E3%83%B3%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF",
+      "source": "search-verified",
+      "checkedAt": "2026-07-26T08:30:27.999Z"
     }
   }
 }
