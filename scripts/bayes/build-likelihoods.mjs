@@ -34,7 +34,7 @@ function round3(x) {
 }
 
 /** 投稿配列から「いずれかのタグを含む投稿数(n_G)」と「タグ別内訳(k_q)」を数える。 */
-function countGroupCoverage(posts, coverageTags) {
+export function countGroupCoverage(posts, coverageTags) {
   const tagSet = new Set(coverageTags);
   let nG = 0;
   const kByTag = Object.fromEntries(coverageTags.map((t) => [t, 0]));
@@ -53,7 +53,7 @@ function countGroupCoverage(posts, coverageTags) {
   return { nG, kByTag };
 }
 
-function countBinary(posts, tag) {
+export function countBinary(posts, tag) {
   let k = 0;
   for (const post of posts) {
     if (post.tags.includes(tag)) k += 1;
@@ -61,7 +61,7 @@ function countBinary(posts, tag) {
   return k;
 }
 
-function loadDanbooruCache(cacheDir, id) {
+export function loadDanbooruCache(cacheDir, id) {
   try {
     const data = JSON.parse(readFileSync(fileURLToPath(new URL(`${id}.json`, cacheDir)), 'utf8'));
     return data.posts;

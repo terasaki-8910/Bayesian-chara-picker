@@ -31,6 +31,7 @@ import {
   USER_AGENT as NC_USER_AGENT,
 } from '../scripts/bayes/niconico-client.mjs';
 import { createOllamaClient, stripThinkTags } from '../scripts/bayes/ollama-client.mjs';
+import { buildAxisEvidenceMap, buildAxisHint } from '../scripts/bayes/review-hints.mjs';
 import {
   deriveAxisEnums,
   buildUserPrompt,
@@ -1136,5 +1137,113 @@ describe('BB. evidence-first LLM抽出+引用照合ゲート（scripts/bayes/llm
     vi.resetModules();
     await import('../scripts/bayes/llm-extract.mjs');
     expect(fetchSpy).not.toHaveBeenCalled();
+  });
+});
+
+describe('BE. 16軸レビュー支援ツール（scripts/bayes/review-hints.mjs、運用補助・PLAN対象外）', () => {
+  function emptyCtx(overrides: Partial<Parameters<typeof buildAxisHint>[3]> = {}) {
+    return {
+      posts: [],
+      groupCoverage: {},
+      groupBaseRate: {},
+      wikidataFacts: undefined,
+      llmEntry: undefined,
+      llmStateVerification: [],
+      ...overrides,
+    };
+  }
+
+  it('buildAxisEvidenceMap: reason.axisでグループ化し、同じ軸/値の重複質問は最初のsourcesを使う', () => {
+    const questionsFile = {
+      questions: [
+        { reason: { axis: 'hairColor', value: '黒' }, sources: [{ type: 'danbooru-group', group: 'hair-color', tag: 'black_hair' }] },
+        { reason: { axis: 'hairColor', value: '赤' }, sources: [{ type: 'danbooru-group', group: 'hair-color', tag: 'red_hair' }] },
+        { reason: { axis: 'personality', value: 'クール' }, sources: [{ type: 'llm', axis: 'personality', value: 'クール', multi: false }] },
+      ],
+    };
+    const map = buildAxisEvidenceMap(questionsFile);
+    expect(map.hairColor.map((c) => c.value)).toEqual(['黒', '赤']);
+    expect(map.personality.map((c) => c.value)).toEqual(['クール']);
+  });
+
+  it('単一値軸: Wikidataがドラフトと一致すればagree', () => {
+    const candidates = [{ value: '黒', sources: [{ type: 'wikidata', axis: 'hairColor', value: '黒', multi: false }] }];
+    const ctx = emptyCtx({ wikidataFacts: { hairColor: '黒' } });
+    const hint = buildAxisHint('hairColor', '黒', candidates, ctx);
+    expect(hint.agreement).toBe('agree');
+  });
+
+  it('単一値軸: Wikidataがドラフトと不一致ならconflictし、best値を報告する', () => {
+    const candidates = [
+      { value: '黒', sources: [{ type: 'wikidata', axis: 'hairColor', value: '黒', multi: false }] },
+      { value: '紫', sources: [{ type: 'wikidata', axis: 'hairColor', value: '紫', multi: false }] },
+    ];
+    const ctx = emptyCtx({ wikidataFacts: { hairColor: '紫' } });
+    const hint = buildAxisHint('hairColor', '黒', candidates, ctx);
+    expect(hint.agreement).toBe('conflict');
+    expect(hint.best).toBe('紫');
+  });
+
+  it('単一値軸: 証拠が一切無ければno-evidence（0.5等の中間値に潰さない）', () => {
+    const candidates = [{ value: '黒', sources: [{ type: 'wikidata', axis: 'hairColor', value: '黒', multi: false }] }];
+    const hint = buildAxisHint('hairColor', '黒', candidates, emptyCtx());
+    expect(hint.agreement).toBe('no-evidence');
+    expect(hint.evidence).toEqual([]);
+  });
+
+  it('単一値軸: LLM抽出はverified!==true・confidence!=="high"なら証拠として採用しない', () => {
+    const candidates = [{ value: 'クール', sources: [{ type: 'llm', axis: 'personality', value: 'クール', multi: false }] }];
+    const ctxLowConfidence = emptyCtx({
+      llmEntry: { axes: { personality: { value: 'クール', verified: true, confidence: 'low' } } },
+    });
+    expect(buildAxisHint('personality', '元気', candidates, ctxLowConfidence).agreement).toBe('no-evidence');
+
+    const ctxUnverified = emptyCtx({
+      llmEntry: { axes: { personality: { value: 'クール', verified: false, confidence: 'high' } } },
+    });
+    expect(buildAxisHint('personality', '元気', candidates, ctxUnverified).agreement).toBe('no-evidence');
+  });
+
+  it('単一値軸: Danbooruグループ比率がSUPPORT_THRESHOLD未満ならno-evidence扱い', () => {
+    const candidates = [{ value: '黒', sources: [{ type: 'danbooru-group', group: 'hair-color', tag: 'black_hair' }] }];
+    const ctx = emptyCtx({ groupCoverage: { 'hair-color': { nG: 100, kByTag: { black_hair: 10 } } } });
+    const hint = buildAxisHint('hairColor', '黒', candidates, ctx);
+    expect(hint.agreement).toBe('no-evidence');
+  });
+
+  it('該当なしの軸(ageFeel等)は候補が無くても常にno-evidence', () => {
+    const hint = buildAxisHint('ageFeel', '同年代', [], emptyCtx());
+    expect(hint.agreement).toBe('no-evidence');
+  });
+
+  it('multi軸: 証拠のある値がドラフトに無ければadd-candidateとしてconflict', () => {
+    const candidates = [{ value: '姉', sources: [{ type: 'llm', axis: 'roles', value: '姉', multi: true }] }];
+    const ctx = emptyCtx({ llmEntry: { axes: { roles: { values: ['姉'], verified: true, confidence: 'high' } } } });
+    const hint = buildAxisHint('roles', [], candidates, ctx);
+    expect(hint.agreement).toBe('conflict');
+    expect(hint.evidence[0]).toMatchObject({ value: '姉', action: 'add-candidate' });
+  });
+
+  it('multi軸: ドラフトにある値のDanbooru出現率がABSENCE_THRESHOLD以下ならremove-candidate', () => {
+    const candidates = [{ value: '眼鏡', sources: [{ type: 'danbooru-binary', tag: 'glasses' }] }];
+    const posts = Array.from({ length: 500 }, () => ({ id: 1, tags: ['1girl'] })); // glassesタグ0件
+    const hint = buildAxisHint('looks', ['眼鏡'], candidates, emptyCtx({ posts }));
+    expect(hint.agreement).toBe('conflict');
+    expect(hint.evidence[0]).toMatchObject({ value: '眼鏡', action: 'remove-candidate' });
+  });
+
+  it('multi軸: 証拠がドラフトと一致すればconfirmedでagree', () => {
+    const candidates = [{ value: '眼鏡', sources: [{ type: 'danbooru-binary', tag: 'glasses' }] }];
+    const posts = Array.from({ length: 100 }, (_v, i) => ({ id: i, tags: i < 60 ? ['glasses'] : [] })); // 60%
+    const hint = buildAxisHint('looks', ['眼鏡'], candidates, emptyCtx({ posts }));
+    expect(hint.agreement).toBe('agree');
+    expect(hint.evidence[0]).toMatchObject({ value: '眼鏡', action: 'confirmed' });
+  });
+
+  it('multi軸: LLMがroleを確認しない場合は「否定」ではなく単に証拠なし扱い（remove-candidateにしない）', () => {
+    const candidates = [{ value: '母性', sources: [{ type: 'llm', axis: 'roles', value: '母性', multi: true }] }];
+    const ctx = emptyCtx({ llmEntry: { axes: { roles: { values: ['主従'], verified: true, confidence: 'high' } } } });
+    const hint = buildAxisHint('roles', ['母性'], candidates, ctx);
+    expect(hint.agreement).toBe('no-evidence');
   });
 });
