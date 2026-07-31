@@ -61,6 +61,10 @@
     "azurlane-yamato": {
       "tag": null,
       "reason": "アズールレーンの大和にDanbooru上のcharacterタグが存在しない模様（yamato*のcategory=4候補20件中、azur_lane修飾のものが1件も無いことを確認。2026-07-24）。このキャラはprovisional:trueで推薦・おまかせのハードフィルタから常に除外されるため実害は無いが、0%共起のyamato_(kancolle)等を誤ってDanbooruソースとして使わないよう明示的に除外する。将来ゲーム内で実装され得たら要再調査。"
+    },
+    "bleach-kukaku": {
+      "tag": "shiba_kuukaku",
+      "reason": "hitomiQuery=「kukaku shiba」語順反転+ローマ字表記差(kukaku→kuukaku)。自動導出はkukaku_shiba/shiba_kukaku/kukaku_shiba_(bleach)/kukaku_shiba(*)/kukaku(*)の5パターンを試したがいずれもu1つの表記でkuukaku表記に届かずnot-found。2026-07-31、wiki other_names逆引き(志波空鶴→shiba_kuukaku)とタグ検索の両方で確認(146件、category=4)。"
     }
   }
 }
