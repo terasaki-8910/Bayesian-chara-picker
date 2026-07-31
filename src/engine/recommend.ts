@@ -242,6 +242,17 @@ export function nextProbe(
 }
 
 /**
+ * 「1位を推測として出せるだけ他と差がついているか」だけを見る判定。
+ * `shouldGuess`（初回の推測）と `shouldReguess`（「いいえ」後の再推測）が
+ * 共有する確信判定の本体で、質問数の下限・上限のような手続き的な条件は含まない。
+ * 候補が1体しか残っていない場合は比較相手がいないので確信ありとみなす。
+ */
+function isConfidentEnough(scored: readonly Scored[]): boolean {
+  if (scored.length < 2) return true;
+  return scored[0].score - scored[1].score >= MARGIN_STOP;
+}
+
+/**
  * 推測を提示してよいかどうか（PLAN「推測・拒否・再推測・全滅の具体的なルール」1.）。
  * `askedCount >= MIN_QUESTIONS` かつ、以下のいずれかを満たすこと:
  *   - `askedCount` が `HARD_CAP` に達した（情報量に関わらず強制打ち切り）
@@ -251,9 +262,38 @@ export function nextProbe(
 export function shouldGuess(scored: readonly Scored[], askedCount: number, hasInformativeProbe: boolean): boolean {
   if (askedCount < MIN_QUESTIONS) return false;
   if (askedCount >= HARD_CAP) return true;
-  if (scored.length < 2) return true;
   if (!hasInformativeProbe) return true;
-  return scored[0].score - scored[1].score >= MARGIN_STOP;
+  return isConfidentEnough(scored);
+}
+
+/** 「いいえ」で拒否された後、次の推測を出すまでに最低限聞く質問数。 */
+export const BONUS_MIN_QUESTIONS = 3;
+/** 「いいえ」後の再質問がこの数に達したら、確信が戻らなくても再推測へ進む。 */
+export const BONUS_MAX_QUESTIONS = 6;
+
+/**
+ * 「いいえ」で拒否された後の再質問モード中に、次の推測へ進んでよいかどうか。
+ *
+ * 拒否直後に1問だけ聞いて即座に次の推測を出す設計だったが、ユーザーからは
+ * 「質問を聞く気が無い」と受け取られる体験だった（拒否は「この候補は違う」という
+ * 強い情報なのに、それを踏まえて絞り込んだように見えないため）。最低
+ * `BONUS_MIN_QUESTIONS` 問は必ず聞き、その後は確信が戻るまで質問を続ける。
+ * だらだら続かないよう `BONUS_MAX_QUESTIONS` 問で打ち切る。
+ *
+ * `shouldGuess` と違い `HARD_CAP`（セッション全体の質問数上限）は見ない——
+ * 既に上限まで聞いていても、拒否した以上は最低限の聞き直しをする方が
+ * 体験として一貫しているため。ただし聞くべき質問が尽きていれば
+ * （`hasInformativeProbe===false`）下限を待たず即座に再推測する。
+ */
+export function shouldReguess(
+  scored: readonly Scored[],
+  questionsSinceReject: number,
+  hasInformativeProbe: boolean,
+): boolean {
+  if (!hasInformativeProbe) return true;
+  if (questionsSinceReject < BONUS_MIN_QUESTIONS) return false;
+  if (questionsSinceReject >= BONUS_MAX_QUESTIONS) return true;
+  return isConfidentEnough(scored);
 }
 
 /**

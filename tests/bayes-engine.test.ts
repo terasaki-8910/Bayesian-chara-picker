@@ -4,11 +4,15 @@ import type { Character, SupplyFile } from '../src/data/schema';
 import likelihoodsData from '../data/bayes/likelihoods.json';
 import questionsRuntimeData from '../data/bayes/questions.runtime.json';
 import {
+  BONUS_MAX_QUESTIONS_BAYES,
+  BONUS_MIN_QUESTIONS_BAYES,
   HARD_CAP_BAYES,
   MIN_QUESTIONS_BAYES,
+  SCORE_SCALE,
   bayesNextProbe,
   bayesScoreCharacters,
   bayesShouldGuess,
+  bayesShouldReguess,
   type BayesAnswerMap,
   type BayesProbe,
   type Confidence,
@@ -204,6 +208,51 @@ describe('BC. ベイズ推薦エンジン', () => {
       if (a) seen.add(a.key);
     }
     expect(seen.size).toBeGreaterThan(0);
+  });
+
+  describe('BC14: bayesShouldReguess（「いいえ」後の再質問）', () => {
+    // score = SCORE_SCALE・P(c) なので、p1=0.9/p2=0.05 は P_STOP・ODDS_STOP を共に満たす。
+    const confident: Scored[] = [
+      { character: dataset.characters[0], score: SCORE_SCALE * 0.9, supplyRank: '豊富', reasons: [] },
+      { character: dataset.characters[1], score: SCORE_SCALE * 0.05, supplyRank: '豊富', reasons: [] },
+    ];
+    // p1=0.3 は P_STOP(0.55)未満・比も 1.2 で ODDS_STOP(3) 未満。
+    const unsure: Scored[] = [
+      { character: dataset.characters[0], score: SCORE_SCALE * 0.3, supplyRank: '豊富', reasons: [] },
+      { character: dataset.characters[1], score: SCORE_SCALE * 0.25, supplyRank: '豊富', reasons: [] },
+    ];
+
+    it('BONUS_MIN_QUESTIONS_BAYES 未満の間は、どれだけ確信があっても false（最低問数を必ず聞く）', () => {
+      for (let n = 0; n < BONUS_MIN_QUESTIONS_BAYES; n += 1) {
+        expect(bayesShouldReguess(confident, n, true), `questionsSinceReject=${n}`).toBe(false);
+      }
+    });
+
+    it('BONUS_MIN_QUESTIONS_BAYES 以降は確信の有無で決まる', () => {
+      expect(bayesShouldReguess(confident, BONUS_MIN_QUESTIONS_BAYES, true)).toBe(true);
+      expect(bayesShouldReguess(unsure, BONUS_MIN_QUESTIONS_BAYES, true)).toBe(false);
+    });
+
+    it('BONUS_MAX_QUESTIONS_BAYES に達したら確信が無くても true（だらだら続けない）', () => {
+      expect(bayesShouldReguess(unsure, BONUS_MAX_QUESTIONS_BAYES - 1, true)).toBe(false);
+      expect(bayesShouldReguess(unsure, BONUS_MAX_QUESTIONS_BAYES, true)).toBe(true);
+      expect(bayesShouldReguess(unsure, BONUS_MAX_QUESTIONS_BAYES + 5, true)).toBe(true);
+    });
+
+    it('聞くべき質問が尽きたら、最低問数を待たず即座に true（存在しない質問は表示できない）', () => {
+      expect(bayesShouldReguess(unsure, 0, false)).toBe(true);
+    });
+
+    it('HARD_CAP_BAYES を超えて聞いていても、最低問数までは false のまま（全体上限は再質問には効かない）', () => {
+      // 「拒否した以上は最低限の聞き直しをする」という設計の明示的な回帰防止。
+      expect(bayesShouldReguess(confident, BONUS_MIN_QUESTIONS_BAYES - 1, true)).toBe(false);
+    });
+
+    it('候補が1体しか残っていなければ、最低問数の後は常に true（比較相手がいない）', () => {
+      const only: Scored[] = [{ character: dataset.characters[0], score: 1, supplyRank: '豊富', reasons: [] }];
+      expect(bayesShouldReguess(only, BONUS_MIN_QUESTIONS_BAYES, true)).toBe(true);
+      expect(bayesShouldReguess(only, BONUS_MIN_QUESTIONS_BAYES - 1, true)).toBe(false);
+    });
   });
 
   it(

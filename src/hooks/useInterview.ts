@@ -8,6 +8,7 @@ import {
   nextProbe,
   scoreCharacters,
   shouldGuess,
+  shouldReguess,
   type AnswerMap,
   type Confidence,
   type Dataset,
@@ -40,10 +41,11 @@ type Snapshot = {
   askedKeys: readonly string[];
   /** 「いいえ」で拒否済みのキャラ id。以降のスコアリング・質問選択から除外する。 */
   rejected: readonly string[];
-  /** 拒否直後、情報量のある質問が残っていた場合に挟む「ボーナス1問」の最中かどうか。
-   * この間は shouldGuess のマージン判定を待たず、1問答えたら即座に次の推測へ進む
-   * （PLAN 規則4「分離できる情報量のあるプローブが残っていれば1問だけ追加」）。 */
-  bonusPending: boolean;
+  /** 「いいえ」後の再質問モードで、拒否してから答えた質問数。null＝モード外。
+   * `shouldReguess` が true を返すまで質問を続け、返したら再推測して null に戻す
+   * （PLAN 規則4「1問だけ追加」から、最低3問＋確信回復まで聞く設計へ変更。
+   * engine/recommend.ts の shouldReguess のコメント参照）。 */
+  questionsSinceReject: number | null;
   /** 直近で提示した推測。guessing/confirmed 表示にはこれを使い、再描画のたびに
    * topGuess を引き直さない — 同点タイブレークは乱択のため、引き直すと表示中の
    * 推測が再描画のたびに変わってしまう（PLAN「同点のみ乱択」の意図は「1回だけ
@@ -71,7 +73,7 @@ const initialState: RawState = {
   answers: {},
   askedKeys: [],
   rejected: [],
-  bonusPending: false,
+  questionsSinceReject: null,
   guess: null,
   confirmed: false,
   exhausted: false,
@@ -93,21 +95,27 @@ function reducer(state: RawState, action: Action): RawState {
       const askedKeys = [...state.askedKeys, action.key];
       const rejectedSet = new Set(state.rejected);
 
-      if (state.bonusPending) {
-        const scored = scoreCharacters(answers, dataset, { exclude: rejectedSet });
+      const askedSet = new Set(askedKeys);
+      const probe = nextProbe(dataset, answers, askedSet, { exclude: rejectedSet, rng: Math.random });
+      const scored = scoreCharacters(answers, dataset, { exclude: rejectedSet });
+
+      // 「いいえ」後の再質問モード中は、最低問数と確信の回復を shouldReguess に委ねる
+      // （1問だけ聞いて即答えを出す旧挙動をやめた。engine/recommend.ts の同関数のコメント参照）。
+      if (state.questionsSinceReject !== null) {
+        const questionsSinceReject = state.questionsSinceReject + 1;
+        if (!shouldReguess(scored, questionsSinceReject, probe !== null)) {
+          return { ...state, answers, askedKeys, questionsSinceReject, history };
+        }
         return {
           ...state,
           answers,
           askedKeys,
-          bonusPending: false,
+          questionsSinceReject: null,
           guess: pickGuessWithCooldown(scored, action.recentGuessIds, Math.random),
           history,
         };
       }
 
-      const askedSet = new Set(askedKeys);
-      const probe = nextProbe(dataset, answers, askedSet, { exclude: rejectedSet, rng: Math.random });
-      const scored = scoreCharacters(answers, dataset, { exclude: rejectedSet });
       // probe===null（物理的に聞くべき質問が尽きた）なら MIN_QUESTIONS 未達でも
       // 推測へ進む — 存在しない質問を asking 画面に表示することはできないため。
       const goToGuessing = probe === null || shouldGuess(scored, askedKeys.length, probe !== null);
@@ -133,7 +141,8 @@ function reducer(state: RawState, action: Action): RawState {
       const askedSet = new Set(state.askedKeys);
       const bonusProbe = nextProbe(dataset, state.answers, askedSet, { exclude: rejectedSet, rng: Math.random });
 
-      if (bonusProbe !== null) return { ...state, rejected, bonusPending: true, history };
+      // 聞ける質問が残っていれば再質問モードへ入る（0問答えた状態から開始）。
+      if (bonusProbe !== null) return { ...state, rejected, questionsSinceReject: 0, history };
       return {
         ...state,
         rejected,
@@ -259,11 +268,13 @@ export function useInterview(): InterviewState {
     return { phase: 'confirmed', guess: state.guess, reset };
   }
 
-  if (!state.bonusPending && state.guess) {
+  // 再質問モード中（questionsSinceReject!==null）は、拒否済みの guess が残っていても
+  // guessing 画面へは進まない——次の推測が確定するまで asking を続ける。
+  if (state.questionsSinceReject === null && state.guess) {
     return { phase: 'guessing', guess: state.guess, canUndo, confirm, reject, undo, reset };
   }
 
-  // asking: 通常の質問中、またはボーナス1問中。
+  // asking: 通常の質問中、または「いいえ」後の再質問中。
   // probe が null になるのは reducer 側の事前チェックにより通常発生しないが、
   // 万一の不整合に備えて全滅画面へ安全側にフォールバックする。
   if (!probe) {

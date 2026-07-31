@@ -6,6 +6,7 @@ import {
   bayesNextProbe,
   bayesScoreCharacters,
   bayesShouldGuess,
+  bayesShouldReguess,
   type BayesAnswerMap,
   type BayesProbe,
   type Confidence,
@@ -15,8 +16,8 @@ import {
 
 /**
  * useInterview.ts のreducerを丸ごとミラーしたもの（PLAN「UI配線」）。
- * nextProbe/scoreCharacters/shouldGuess だけをbayes版に差し替え、
- * Snapshot/Action/undo/bonusPending/exhausted等の状態機械は完全に同じ構造を保つ
+ * nextProbe/scoreCharacters/shouldGuess/shouldReguess だけをbayes版に差し替え、
+ * Snapshot/Action/undo/questionsSinceReject/exhausted等の状態機械は完全に同じ構造を保つ
  * — 本番と別のロジックを二重実装して食い違うことを避けるため、意図的に揃えてある。
  *
  * `dataset` は import せず引数で受け取る。データの取得方法（静的import / 実行時fetch）が
@@ -34,7 +35,9 @@ type Snapshot = {
   answers: BayesAnswerMap;
   askedKeys: readonly string[];
   rejected: readonly string[];
-  bonusPending: boolean;
+  /** 「いいえ」後の再質問モードで、拒否してから答えた質問数。null＝モード外。
+   * `bayesShouldReguess` が true を返すまで質問を続け、返したら再推測して null に戻す。 */
+  questionsSinceReject: number | null;
   guess: Scored | null;
   confirmed: boolean;
   exhausted: boolean;
@@ -51,7 +54,7 @@ const initialState: RawState = {
   answers: {},
   askedKeys: [],
   rejected: [],
-  bonusPending: false,
+  questionsSinceReject: null,
   guess: null,
   confirmed: false,
   exhausted: false,
@@ -73,21 +76,27 @@ function reducer(state: RawState, action: Action): RawState {
       const askedKeys = [...state.askedKeys, action.key];
       const rejectedSet = new Set(state.rejected);
 
-      if (state.bonusPending) {
-        const scored = bayesScoreCharacters(answers, action.dataset, { exclude: rejectedSet });
+      const askedSet = new Set(askedKeys);
+      const probe = bayesNextProbe(action.dataset, answers, askedSet, { exclude: rejectedSet, rng: Math.random });
+      const scored = bayesScoreCharacters(answers, action.dataset, { exclude: rejectedSet });
+
+      // 「いいえ」後の再質問モード中は、最低問数と確信の回復を bayesShouldReguess に委ねる
+      // （1問だけ聞いて即答えを出す旧挙動をやめた。engine/bayes.ts の同関数のコメント参照）。
+      if (state.questionsSinceReject !== null) {
+        const questionsSinceReject = state.questionsSinceReject + 1;
+        if (!bayesShouldReguess(scored, questionsSinceReject, probe !== null)) {
+          return { ...state, answers, askedKeys, questionsSinceReject, history };
+        }
         return {
           ...state,
           answers,
           askedKeys,
-          bonusPending: false,
+          questionsSinceReject: null,
           guess: pickGuessWithCooldown(scored, action.recentGuessIds, Math.random),
           history,
         };
       }
 
-      const askedSet = new Set(askedKeys);
-      const probe = bayesNextProbe(action.dataset, answers, askedSet, { exclude: rejectedSet, rng: Math.random });
-      const scored = bayesScoreCharacters(answers, action.dataset, { exclude: rejectedSet });
       const goToGuessing = probe === null || bayesShouldGuess(scored, askedKeys.length, probe !== null);
 
       if (!goToGuessing) return { ...state, answers, askedKeys, history };
@@ -111,7 +120,8 @@ function reducer(state: RawState, action: Action): RawState {
       const askedSet = new Set(state.askedKeys);
       const bonusProbe = bayesNextProbe(action.dataset, state.answers, askedSet, { exclude: rejectedSet, rng: Math.random });
 
-      if (bonusProbe !== null) return { ...state, rejected, bonusPending: true, history };
+      // 聞ける質問が残っていれば再質問モードへ入る（0問答えた状態から開始）。
+      if (bonusProbe !== null) return { ...state, rejected, questionsSinceReject: 0, history };
       return {
         ...state,
         rejected,
@@ -241,7 +251,9 @@ export function useBayesInterview(dataset: Dataset): BayesInterviewState {
     return { phase: 'confirmed', guess: state.guess, reset };
   }
 
-  if (!state.bonusPending && state.guess) {
+  // 再質問モード中（questionsSinceReject!==null）は、拒否済みの guess が残っていても
+  // guessing 画面へは進まない——次の推測が確定するまで asking を続ける。
+  if (state.questionsSinceReject === null && state.guess) {
     const guessId = state.guess.character.id;
     const candidates = bayesScoreCharacters(state.answers, dataset, { exclude: rejectedSet })
       .filter((s) => s.character.id !== guessId)

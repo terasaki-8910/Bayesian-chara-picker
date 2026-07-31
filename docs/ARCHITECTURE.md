@@ -121,7 +121,7 @@
 ## 状態管理（`src/hooks/useInterview.ts`）
 
 `useReducer` ベース。生の事実（`answers` / `askedKeys` / `rejected` /
-`bonusPending` / `guess` / `confirmed` / `exhausted`）だけを reducer で持ち、
+`questionsSinceReject` / `guess` / `confirmed` / `exhausted`）だけを reducer で持ち、
 公開する `InterviewState` は `phase` で判別する discriminated union
 （`asking` / `guessing` / `confirmed` / `exhausted`）として毎レンダー導出する。
 
@@ -129,6 +129,13 @@
 `topGuess` の同点タイブレークは乱数を使うため、遷移が起きた瞬間の reducer
 内で一度だけ確定し、以降の再レンダーでは同じ推測を保持する
 （引き直すと同点だったときに表示中の推測が再描画のたびに変わってしまう）。
+
+「いいえ」で推測を拒否した後は `questionsSinceReject`（null＝モード外）で
+再質問モードに入り、`shouldReguess`（`engine/recommend.ts`。ベイズ側は
+`bayesShouldReguess`）が true を返すまで質問を続けてから次の推測を出す。
+以前は1問だけ聞いて即座に次を出していたが、拒否という強い情報を踏まえて
+絞り込んだように見えず「質問を聞く気が無い」体験になっていたため、
+最低3問＋確信が戻るまで（上限6問）へ変更した。
 
 ## UI層
 

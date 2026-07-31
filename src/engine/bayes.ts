@@ -273,6 +273,19 @@ export const P_STOP = 0.55;
 export const ODDS_STOP = 3;
 
 /**
+ * 「1位を推測として出せるだけ事後確率が立っているか」だけを見る判定。
+ * `bayesShouldGuess`（初回の推測）と `bayesShouldReguess`（「いいえ」後の再推測）が
+ * 共有する確信判定の本体で、質問数の下限・上限のような手続き的な条件は含まない。
+ * 候補が1体しか残っていない場合は比較相手がいないので確信ありとみなす。
+ */
+function isConfidentEnough(scored: readonly Scored[]): boolean {
+  if (scored.length < 2) return true;
+  const p1 = scored[0].score / SCORE_SCALE;
+  const p2 = scored[1].score / SCORE_SCALE;
+  return p1 >= P_STOP && p1 / p2 >= ODDS_STOP;
+}
+
+/**
  * 推測を提示してよいかどうか（PLAN「停止」）。classicの`shouldGuess`とシグネチャを
  * 揃えて`useBayesInterview`からの置き換えを容易にする——ただし判定式自体は
  * スコア差(MARGIN_STOP)ではなく事後確率の絶対値・比(P_STOP/ODDS_STOP)を使う点が異なる。
@@ -280,9 +293,39 @@ export const ODDS_STOP = 3;
 export function bayesShouldGuess(scored: readonly Scored[], askedCount: number, hasInformativeProbe: boolean): boolean {
   if (askedCount < MIN_QUESTIONS_BAYES) return false;
   if (askedCount >= HARD_CAP_BAYES) return true;
-  if (scored.length < 2) return true;
   if (!hasInformativeProbe) return true;
-  const p1 = scored[0].score / SCORE_SCALE;
-  const p2 = scored[1].score / SCORE_SCALE;
-  return p1 >= P_STOP && p1 / p2 >= ODDS_STOP;
+  return isConfidentEnough(scored);
+}
+
+/** 「いいえ」で拒否された後、次の推測を出すまでに最低限聞く質問数
+ * （classicの`BONUS_MIN_QUESTIONS`と同値だがベイズ側で独立にチューニングできるよう別名にする）。 */
+export const BONUS_MIN_QUESTIONS_BAYES = 3;
+/** 「いいえ」後の再質問がこの数に達したら、確信が戻らなくても再推測へ進む。 */
+export const BONUS_MAX_QUESTIONS_BAYES = 6;
+
+/**
+ * 「いいえ」で拒否された後の再質問モード中に、次の推測へ進んでよいかどうか
+ * （classicの`shouldReguess`のベイズ版。意味論・引数は同一で、確信判定だけが
+ * 事後確率ベース）。
+ *
+ * 拒否直後に1問だけ聞いて即座に次の推測を出す設計だったが、ユーザーからは
+ * 「質問を聞く気が無い」と受け取られる体験だった（拒否は「この候補は違う」という
+ * 強い情報なのに、それを踏まえて絞り込んだように見えないため）。最低
+ * `BONUS_MIN_QUESTIONS_BAYES` 問は必ず聞き、その後は確信が戻るまで質問を続ける。
+ * だらだら続かないよう `BONUS_MAX_QUESTIONS_BAYES` 問で打ち切る。
+ *
+ * `bayesShouldGuess` と違い `HARD_CAP_BAYES`（セッション全体の質問数上限）は
+ * 見ない——既に上限まで聞いていても、拒否した以上は最低限の聞き直しをする方が
+ * 体験として一貫しているため。ただし聞くべき質問が尽きていれば
+ * （`hasInformativeProbe===false`）下限を待たず即座に再推測する。
+ */
+export function bayesShouldReguess(
+  scored: readonly Scored[],
+  questionsSinceReject: number,
+  hasInformativeProbe: boolean,
+): boolean {
+  if (!hasInformativeProbe) return true;
+  if (questionsSinceReject < BONUS_MIN_QUESTIONS_BAYES) return false;
+  if (questionsSinceReject >= BONUS_MAX_QUESTIONS_BAYES) return true;
+  return isConfidentEnough(scored);
 }

@@ -11,10 +11,13 @@ import {
   type Probe,
 } from '../src/engine/questions';
 import {
+  BONUS_MAX_QUESTIONS,
+  BONUS_MIN_QUESTIONS,
   nextProbe,
   omakase,
   scoreCharacters,
   shouldGuess,
+  shouldReguess,
   survivors,
   topGuess,
   type AnswerMap,
@@ -469,6 +472,46 @@ describe('C. 推薦エンジン', () => {
       // 極端なスコア差・情報量なしでも、floor未満なら常に false。
       expect(shouldGuess(scoredHuge, askedCount, false)).toBe(false);
     }
+  });
+
+  describe('C14: shouldReguess（「いいえ」後の再質問）', () => {
+    // 1位と2位が MARGIN_STOP 以上離れている＝確信あり。
+    const confident: Scored[] = [
+      { character: dataset.characters[0], score: 1000, supplyRank: '豊富', reasons: [] },
+      { character: dataset.characters[1], score: 0, supplyRank: '豊富', reasons: [] },
+    ];
+    // 1位と2位が僅差＝確信なし。
+    const unsure: Scored[] = [
+      { character: dataset.characters[0], score: 10, supplyRank: '豊富', reasons: [] },
+      { character: dataset.characters[1], score: 9, supplyRank: '豊富', reasons: [] },
+    ];
+
+    it('BONUS_MIN_QUESTIONS 未満の間は、どれだけ確信があっても false（最低問数を必ず聞く）', () => {
+      for (let n = 0; n < BONUS_MIN_QUESTIONS; n += 1) {
+        expect(shouldReguess(confident, n, true), `questionsSinceReject=${n}`).toBe(false);
+      }
+    });
+
+    it('BONUS_MIN_QUESTIONS 以降は確信の有無で決まる', () => {
+      expect(shouldReguess(confident, BONUS_MIN_QUESTIONS, true)).toBe(true);
+      expect(shouldReguess(unsure, BONUS_MIN_QUESTIONS, true)).toBe(false);
+    });
+
+    it('BONUS_MAX_QUESTIONS に達したら確信が無くても true（だらだら続けない）', () => {
+      expect(shouldReguess(unsure, BONUS_MAX_QUESTIONS - 1, true)).toBe(false);
+      expect(shouldReguess(unsure, BONUS_MAX_QUESTIONS, true)).toBe(true);
+      expect(shouldReguess(unsure, BONUS_MAX_QUESTIONS + 5, true)).toBe(true);
+    });
+
+    it('聞くべき質問が尽きたら、最低問数を待たず即座に true（存在しない質問は表示できない）', () => {
+      expect(shouldReguess(unsure, 0, false)).toBe(true);
+    });
+
+    it('候補が1体しか残っていなければ、最低問数の後は常に true（比較相手がいない）', () => {
+      const only: Scored[] = [{ character: dataset.characters[0], score: 1, supplyRank: '豊富', reasons: [] }];
+      expect(shouldReguess(only, BONUS_MIN_QUESTIONS, true)).toBe(true);
+      expect(shouldReguess(only, BONUS_MIN_QUESTIONS - 1, true)).toBe(false);
+    });
   });
 
   it('C12: 「いいえ」で拒否したキャラは以降の scoreCharacters/nextProbe から除外される', () => {
