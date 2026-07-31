@@ -981,7 +981,7 @@
       "title": null,
       "reason": "not-found",
       "source": "not-found",
-      "checkedAt": "2026-07-26T08:27:37.413Z"
+      "checkedAt": "2026-07-31T20:03:11.862Z"
     },
     "genshin-kokomi": {
       "title": null,
@@ -1018,19 +1018,20 @@
       "title": null,
       "reason": "not-found",
       "source": "not-found",
-      "checkedAt": "2026-07-26T08:28:37.398Z"
+      "checkedAt": "2026-07-31T20:03:17.437Z"
     },
     "hsr-acheron": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-07-26T08:28:47.511Z"
+      "reason": "記事「黄泉」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateTitle": "黄泉",
+      "checkedAt": "2026-07-31T20:03:22.893Z"
     },
     "hsr-fuxuan": {
       "title": null,
       "reason": "not-found",
       "source": "not-found",
-      "checkedAt": "2026-07-26T08:28:57.459Z"
+      "checkedAt": "2026-07-31T20:03:06.343Z"
     },
     "lovelive-honoka": {
       "title": "高坂穂乃果",

@@ -6448,12 +6448,12 @@
   },
   {
     "id": "genshin-yelan",
-    "name": "イェラン",
+    "name": "夜蘭",
     "aliases": [
       "Yelan"
     ],
     "series": "原神",
-    "dlsiteQuery": "原神 イェラン",
+    "dlsiteQuery": "原神 夜蘭",
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "年上",
@@ -6671,12 +6671,12 @@
   },
   {
     "id": "hsr-silverwolf",
-    "name": "シルバーウルフ",
+    "name": "銀狼",
     "aliases": [
       "Silver Wolf"
     ],
     "series": "崩壊：スターレイル",
-    "dlsiteQuery": "スターレイル シルバーウルフ",
+    "dlsiteQuery": "スターレイル 銀狼",
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "幼い",
@@ -6708,12 +6708,12 @@
   },
   {
     "id": "hsr-acheron",
-    "name": "アシェン",
+    "name": "黄泉",
     "aliases": [
       "Acheron"
     ],
     "series": "崩壊：スターレイル",
-    "dlsiteQuery": "スターレイル アシェン",
+    "dlsiteQuery": "スターレイル 黄泉",
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "年上",
@@ -6745,12 +6745,12 @@
   },
   {
     "id": "hsr-fuxuan",
-    "name": "フ・シュアン",
+    "name": "符玄",
     "aliases": [
       "Fu Xuan"
     ],
     "series": "崩壊：スターレイル",
-    "dlsiteQuery": "スターレイル フ・シュアン",
+    "dlsiteQuery": "スターレイル 符玄",
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "同年代",

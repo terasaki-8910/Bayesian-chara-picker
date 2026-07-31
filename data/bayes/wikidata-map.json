@@ -1150,12 +1150,11 @@
       "checkedAt": "2026-07-26T08:14:43.569Z"
     },
     "genshin-yelan": {
-      "qid": null,
-      "reason": "シリーズ確認不能のため除外(候補qid=Q2475035, Yelandur)。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateQid": "Q2475035",
-      "candidateLabel": "Yelandur",
-      "checkedAt": "2026-07-26T08:14:52.075Z"
+      "qid": "Q117195714",
+      "label": "Yelan",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-07-31T20:02:40.025Z"
     },
     "genshin-kokomi": {
       "qid": "Q119998675",
@@ -1196,26 +1195,25 @@
       "checkedAt": "2026-07-26T08:15:21.469Z"
     },
     "hsr-silverwolf": {
-      "qid": null,
-      "reason": "シリーズ確認不能のため除外(候補qid=Q3840864, Silver Wolf Award)。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateQid": "Q3840864",
-      "candidateLabel": "Silver Wolf Award",
-      "checkedAt": "2026-07-26T08:15:26.281Z"
+      "qid": "Q123396142",
+      "label": "Silver Wolf",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-07-31T20:02:43.801Z"
     },
     "hsr-acheron": {
-      "qid": null,
-      "reason": "シリーズ確認不能のため除外(候補qid=Q414, Argentina)。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateQid": "Q414",
-      "candidateLabel": "Argentina",
-      "checkedAt": "2026-07-26T08:15:34.839Z"
+      "qid": "Q136526497",
+      "label": "Acheron",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-07-31T20:02:50.583Z"
     },
     "hsr-fuxuan": {
-      "qid": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-07-26T08:15:35.459Z"
+      "qid": "Q136526513",
+      "label": "Fu Xuan",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-07-31T20:02:35.782Z"
     },
     "lovelive-honoka": {
       "qid": "Q15884361",
