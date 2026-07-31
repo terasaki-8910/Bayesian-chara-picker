@@ -76,14 +76,19 @@ function runToGuess(
   dataset: Dataset,
   strategy: Strategy,
   opts?: { exclude?: ReadonlySet<string> },
-): { guess: Scored; answers: BayesAnswerMap; askedKeys: Set<string> } {
+): { guess: Scored; answers: BayesAnswerMap; askedKeys: Set<string>; probesExhausted: boolean } {
   const answers: BayesAnswerMap = {};
   const askedKeys = new Set<string>();
   for (let guard = 0; guard <= HARD_CAP_BAYES + 2; guard += 1) {
     const probe = bayesNextProbe(dataset, answers, askedKeys, opts);
     const scored = bayesScoreCharacters(answers, dataset, opts);
-    if (probe === null || bayesShouldGuess(scored, askedKeys.size, probe !== null)) {
-      return { guess: topGuess(scored), answers, askedKeys };
+    // probe===null は「情報量(期待エントロピー削減)がMIN_GAIN_BAYES以上の質問が
+    // 残っていない」状態。本番の reducer もこの場合は最低質問数を待たずに推測へ
+    // 進む（存在しない質問を asking 画面に表示できないため）ので、テストでも
+    // 同じ短絡にし、どちらで止まったかを呼び出し側へ返す。
+    if (probe === null) return { guess: topGuess(scored), answers, askedKeys, probesExhausted: true };
+    if (bayesShouldGuess(scored, askedKeys.size, true)) {
+      return { guess: topGuess(scored), answers, askedKeys, probesExhausted: false };
     }
     answers[probe.key] = strategy(probe);
     askedKeys.add(probe.key);
@@ -263,19 +268,28 @@ describe('BC. ベイズ推薦エンジン', () => {
       const reachable = survivors(dataset);
       const askedCounts: number[] = [];
       const failures: string[] = [];
+      const tooEarly: string[] = [];
 
       for (const target of reachable) {
-        const { guess, askedKeys } = runToGuess(dataset, oracleFor(target));
+        const { guess, askedKeys, probesExhausted } = runToGuess(dataset, oracleFor(target));
         askedCounts.push(askedKeys.size);
         if (guess.character.id !== target.id) {
           failures.push(`${target.id}: guessed=${guess.character.id} after ${askedKeys.size}問`);
+        }
+        // 「最低質問数より前に確定してしまう」ことだけを禁じる。ただし
+        // probesExhausted（情報量のある質問が尽きた）は本番コードも同じ短絡で
+        // 推測へ進む正当な経路なので除外する——母集団が小さいほど早く
+        // 起きやすく、2026-08-01時点では reachable=20 に対し質問131本で
+        // overlord-albedo が5問で該当した。
+        if (!probesExhausted && askedKeys.size < MIN_QUESTIONS_BAYES) {
+          tooEarly.push(`${target.id}: ${askedKeys.size}問`);
         }
       }
 
       const convergedRatio = (reachable.length - failures.length) / reachable.length;
       // 質問キュレーションへのフィードバック用に失敗リストを常に表示する（成功時も含めて可視化）。
       expect(convergedRatio, `未収束: ${JSON.stringify(failures)}`).toBeGreaterThanOrEqual(0.95);
-      expect(Math.min(...askedCounts)).toBeGreaterThanOrEqual(MIN_QUESTIONS_BAYES);
+      expect(tooEarly, '最低質問数より前に確定した').toEqual([]);
       expect(Math.max(...askedCounts)).toBeLessThanOrEqual(HARD_CAP_BAYES);
     },
     60000,

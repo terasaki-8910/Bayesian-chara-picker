@@ -4,11 +4,13 @@
     "rezero-rem": {
       "genderExpression": "女性",
       "hairColor": "青",
-      "eyeColor": "blue"
+      "eyeColor": "blue",
+      "stature": "小柄"
     },
     "rezero-ram": {},
     "fate-scathach": {
       "genderExpression": "女性",
+      "stature": "標準",
       "species": [
         "人間"
       ]
@@ -30,7 +32,8 @@
     "overlord-albedo": {
       "genderExpression": "女性",
       "hairColor": "黒",
-      "eyeColor": "yellow"
+      "eyeColor": "yellow",
+      "stature": "長身"
     },
     "overlord-narberal": {
       "genderExpression": "女性",
@@ -41,6 +44,7 @@
       "genderExpression": "女性",
       "hairColor": "金",
       "eyeColor": "blue",
+      "stature": "標準",
       "species": [
         "人間"
       ]
@@ -94,6 +98,7 @@
       "genderExpression": "女性",
       "hairColor": "黒",
       "eyeColor": "blue",
+      "stature": "長身",
       "species": [
         "人間"
       ]
@@ -107,6 +112,7 @@
     "onepiece-nami": {
       "genderExpression": "女性",
       "eyeColor": "brown",
+      "stature": "長身",
       "species": [
         "人間"
       ]
@@ -114,7 +120,8 @@
     "monmusu-miia": {
       "genderExpression": "女性",
       "hairColor": "赤",
-      "eyeColor": "orange"
+      "eyeColor": "orange",
+      "stature": "長身"
     },
     "monmusu-centorea": {},
     "nier-2b": {
@@ -138,6 +145,7 @@
       "genderExpression": "女性",
       "hairColor": "茶",
       "eyeColor": "brown",
+      "stature": "標準",
       "species": [
         "人間"
       ]
@@ -146,6 +154,7 @@
       "genderExpression": "女性",
       "hairColor": "黒",
       "eyeColor": "red",
+      "stature": "長身",
       "species": [
         "人間"
       ]
@@ -180,44 +189,52 @@
     "bluearchive-asuna": {
       "genderExpression": "女性",
       "hairColor": "金",
-      "eyeColor": "blue"
+      "eyeColor": "blue",
+      "stature": "標準"
     },
     "bluearchive-yuuka": {
       "genderExpression": "女性",
       "hairColor": "紫",
       "eyeColor": "purple",
+      "stature": "標準",
       "species": [
         "人間"
       ]
     },
     "bluearchive-toki": {
       "genderExpression": "女性",
+      "stature": "標準",
       "species": [
         "人間"
       ]
     },
     "bluearchive-mika": {
       "genderExpression": "女性",
+      "stature": "標準",
       "species": [
         "人間"
       ]
     },
     "bluearchive-kisaki": {
-      "genderExpression": "女性"
+      "genderExpression": "女性",
+      "stature": "小柄"
     },
     "bluearchive-rio": {
       "genderExpression": "女性",
       "hairColor": "黒",
       "eyeColor": "red",
+      "stature": "長身",
       "species": [
         "人間"
       ]
     },
     "bluearchive-hina": {
-      "genderExpression": "女性"
+      "genderExpression": "女性",
+      "stature": "小柄"
     },
     "bluearchive-noa": {
       "genderExpression": "女性",
+      "stature": "標準",
       "species": [
         "人間"
       ]
@@ -375,6 +392,7 @@
     "naruto-hinata": {
       "genderExpression": "女性",
       "hairColor": "青",
+      "stature": "標準",
       "species": [
         "人間"
       ]
@@ -414,6 +432,7 @@
     "bleach-orihime": {
       "genderExpression": "女性",
       "eyeColor": "brown",
+      "stature": "標準",
       "species": [
         "人間"
       ]
@@ -451,18 +470,21 @@
     "overlord-shalltear": {
       "genderExpression": "女性",
       "hairColor": "銀",
-      "eyeColor": "red"
+      "eyeColor": "red",
+      "stature": "小柄"
     },
     "overlord-aura": {
       "genderExpression": "女性",
       "hairColor": "金",
-      "eyeColor": "green"
+      "eyeColor": "green",
+      "stature": "小柄"
     },
     "overlord-mare": {},
     "overlord-lupusregina": {
       "genderExpression": "女性",
       "hairColor": "赤",
-      "eyeColor": "orange"
+      "eyeColor": "orange",
+      "stature": "長身"
     },
     "overlord-clementine": {
       "genderExpression": "女性",
@@ -475,16 +497,19 @@
     "overlord-yuri": {
       "genderExpression": "女性",
       "hairColor": "黒",
-      "eyeColor": "black"
+      "eyeColor": "black",
+      "stature": "長身"
     },
     "overlord-solution": {
       "genderExpression": "女性",
       "hairColor": "金",
-      "eyeColor": "blue"
+      "eyeColor": "blue",
+      "stature": "標準"
     },
     "utau-teto": {
       "hairColor": "赤",
       "eyeColor": "red",
+      "stature": "標準",
       "species": [
         "人間"
       ]
@@ -581,6 +606,7 @@
       "genderExpression": "女性",
       "hairColor": "赤",
       "eyeColor": "purple",
+      "stature": "標準",
       "species": [
         "人間"
       ]
@@ -589,6 +615,7 @@
       "genderExpression": "女性",
       "hairColor": "金",
       "eyeColor": "blue",
+      "stature": "標準",
       "species": [
         "人間"
       ]
@@ -597,6 +624,7 @@
       "genderExpression": "女性",
       "hairColor": "黒",
       "eyeColor": "red",
+      "stature": "小柄",
       "species": [
         "人間"
       ]
@@ -612,6 +640,7 @@
       "genderExpression": "女性",
       "hairColor": "茶",
       "eyeColor": "orange",
+      "stature": "標準",
       "species": [
         "人間"
       ]
@@ -620,6 +649,7 @@
       "genderExpression": "女性",
       "hairColor": "青",
       "eyeColor": "brown",
+      "stature": "標準",
       "species": [
         "人間"
       ]
@@ -762,13 +792,16 @@
       ]
     },
     "bluearchive-hoshino": {
-      "genderExpression": "女性"
+      "genderExpression": "女性",
+      "stature": "小柄"
     },
     "bluearchive-shiroko": {
-      "genderExpression": "女性"
+      "genderExpression": "女性",
+      "stature": "標準"
     },
     "bluearchive-ako": {
-      "genderExpression": "女性"
+      "genderExpression": "女性",
+      "stature": "標準"
     },
     "genshin-nilou": {
       "genderExpression": "女性",
@@ -797,8 +830,20 @@
       ]
     },
     "genshin-jean": {},
-    "hsr-march7th": {},
-    "hsr-kafka": {},
+    "hsr-march7th": {
+      "genderExpression": "女性",
+      "hairColor": "桃",
+      "species": [
+        "人間"
+      ]
+    },
+    "hsr-kafka": {
+      "genderExpression": "女性",
+      "hairColor": "桃",
+      "species": [
+        "人間"
+      ]
+    },
     "hsr-silverwolf": {
       "genderExpression": "女性",
       "hairColor": "銀",
@@ -838,6 +883,7 @@
     },
     "sao-asuna": {
       "genderExpression": "女性",
+      "stature": "標準",
       "species": [
         "人間"
       ]
@@ -866,25 +912,30 @@
     "umamusume-specialweek": {
       "genderExpression": "女性",
       "hairColor": "茶",
-      "eyeColor": "purple"
+      "eyeColor": "purple",
+      "stature": "標準"
     },
     "umamusume-silencesuzuka": {
       "genderExpression": "女性",
-      "eyeColor": "aqua"
+      "eyeColor": "aqua",
+      "stature": "標準"
     },
     "umamusume-daiwascarlet": {
       "genderExpression": "女性",
       "hairColor": "茶",
-      "eyeColor": "red"
+      "eyeColor": "red",
+      "stature": "標準"
     },
     "umamusume-riceshower": {
       "genderExpression": "女性",
-      "eyeColor": "purple"
+      "eyeColor": "purple",
+      "stature": "小柄"
     },
     "umamusume-kitasanblack": {
       "genderExpression": "女性",
       "hairColor": "黒",
-      "eyeColor": "red"
+      "eyeColor": "red",
+      "stature": "小柄"
     }
   }
 }

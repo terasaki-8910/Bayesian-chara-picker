@@ -39,10 +39,13 @@ import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { countBinary, countGroupCoverage, loadDanbooruCache } from './build-likelihoods.mjs';
 
-/** 単一値ではなく配列で持つ軸（roles/looks/outfit、schema.tsのAxes型と一致）。 */
-const MULTI_AXES = new Set(['roles', 'looks', 'outfit']);
-/** questions.jsonに証拠源の定義が無い軸（常にno-evidence）。 */
-const NO_EVIDENCE_AXES = ['ageFeel', 'build', 'affiliationName'];
+/** 単一値ではなく配列で持つ軸（roles/looks/outfit/occupation、schema.tsのAxes型と一致）。 */
+const MULTI_AXES = new Set(['roles', 'looks', 'outfit', 'occupation']);
+/** questions.jsonに証拠源の定義が無い軸（常にno-evidence）。
+ * ageFeel/build は2026-08-01に質問（axis+llmソース）が追加されたのでここから外した
+ * ——このスクリプトは questions.json を証拠源の対応表として再利用する設計なので、
+ * 質問が増えれば自動的に評価対象になる。 */
+const NO_EVIDENCE_AXES = ['affiliationName'];
 /** 「支持されている」とみなす最低スコア（danbooru比率・生率にのみ適用。llm/wikidataの一致は常に1.0）。 */
 const SUPPORT_THRESHOLD = 0.4;
 /**

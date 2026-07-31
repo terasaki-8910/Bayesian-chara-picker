@@ -963,6 +963,222 @@
         "label": "所属の種類",
         "value": "非人間・その他"
       }
+    },
+    {
+      "key": "q108",
+      "prompt": "見た目の年齢は幼い印象ですか?",
+      "reason": {
+        "axis": "ageFeel",
+        "label": "年齢の印象",
+        "value": "幼い"
+      }
+    },
+    {
+      "key": "q109",
+      "prompt": "見た目の年齢は10代後半〜20代前半くらいですか?",
+      "reason": {
+        "axis": "ageFeel",
+        "label": "年齢の印象",
+        "value": "同年代"
+      }
+    },
+    {
+      "key": "q110",
+      "prompt": "見た目の年齢は20代後半〜30代くらいの落ち着いた印象ですか?",
+      "reason": {
+        "axis": "ageFeel",
+        "label": "年齢の印象",
+        "value": "年上"
+      }
+    },
+    {
+      "key": "q111",
+      "prompt": "見た目の年齢は大人びて熟れた印象ですか?",
+      "reason": {
+        "axis": "ageFeel",
+        "label": "年齢の印象",
+        "value": "熟れた"
+      }
+    },
+    {
+      "key": "q112",
+      "prompt": "体格は華奢ですか?",
+      "reason": {
+        "axis": "build",
+        "label": "体格",
+        "value": "華奢"
+      }
+    },
+    {
+      "key": "q113",
+      "prompt": "体格は標準ですか?",
+      "reason": {
+        "axis": "build",
+        "label": "体格",
+        "value": "標準"
+      }
+    },
+    {
+      "key": "q114",
+      "prompt": "体格はむっちりですか?",
+      "reason": {
+        "axis": "build",
+        "label": "体格",
+        "value": "むっちり"
+      }
+    },
+    {
+      "key": "q115",
+      "prompt": "身長は小柄ですか?",
+      "reason": {
+        "axis": "stature",
+        "label": "身長の印象",
+        "value": "小柄"
+      }
+    },
+    {
+      "key": "q116",
+      "prompt": "身長は平均的ですか?",
+      "reason": {
+        "axis": "stature",
+        "label": "身長の印象",
+        "value": "標準"
+      }
+    },
+    {
+      "key": "q117",
+      "prompt": "身長は高い方ですか?",
+      "reason": {
+        "axis": "stature",
+        "label": "身長の印象",
+        "value": "長身"
+      }
+    },
+    {
+      "key": "q118",
+      "prompt": "忍者ですか?",
+      "reason": {
+        "axis": "occupation",
+        "label": "職業・立場",
+        "value": "忍者"
+      }
+    },
+    {
+      "key": "q119",
+      "prompt": "海賊ですか?",
+      "reason": {
+        "axis": "occupation",
+        "label": "職業・立場",
+        "value": "海賊"
+      }
+    },
+    {
+      "key": "q120",
+      "prompt": "軍人・兵士として戦う立場ですか?",
+      "reason": {
+        "axis": "occupation",
+        "label": "職業・立場",
+        "value": "兵士・軍人"
+      }
+    },
+    {
+      "key": "q121",
+      "prompt": "警察や公安のような治安を守る立場ですか?",
+      "reason": {
+        "axis": "occupation",
+        "label": "職業・立場",
+        "value": "警察・公安"
+      }
+    },
+    {
+      "key": "q122",
+      "prompt": "スパイや暗殺者のような裏の仕事をしていますか?",
+      "reason": {
+        "axis": "occupation",
+        "label": "職業・立場",
+        "value": "スパイ・暗殺者"
+      }
+    },
+    {
+      "key": "q123",
+      "prompt": "アイドルや芸能の活動をしていますか?",
+      "reason": {
+        "axis": "occupation",
+        "label": "職業・立場",
+        "value": "アイドル・芸能"
+      }
+    },
+    {
+      "key": "q124",
+      "prompt": "スポーツ・競技の選手ですか?",
+      "reason": {
+        "axis": "occupation",
+        "label": "職業・立場",
+        "value": "アスリート"
+      }
+    },
+    {
+      "key": "q125",
+      "prompt": "巫女や神職を務めていますか?",
+      "reason": {
+        "axis": "occupation",
+        "label": "職業・立場",
+        "value": "巫女・神職"
+      }
+    },
+    {
+      "key": "q126",
+      "prompt": "神様や精霊のような存在ですか?",
+      "reason": {
+        "axis": "occupation",
+        "label": "職業・立場",
+        "value": "神様・精霊"
+      }
+    },
+    {
+      "key": "q127",
+      "prompt": "メイドや従者として誰かに仕えていますか?",
+      "reason": {
+        "axis": "occupation",
+        "label": "職業・立場",
+        "value": "メイド・従者"
+      }
+    },
+    {
+      "key": "q128",
+      "prompt": "王族や貴族の身分ですか?",
+      "reason": {
+        "axis": "occupation",
+        "label": "職業・立場",
+        "value": "王族・貴族"
+      }
+    },
+    {
+      "key": "q129",
+      "prompt": "医者や看護のような医療に携わっていますか?",
+      "reason": {
+        "axis": "occupation",
+        "label": "職業・立場",
+        "value": "医療従事者"
+      }
+    },
+    {
+      "key": "q130",
+      "prompt": "研究者や発明家ですか?",
+      "reason": {
+        "axis": "occupation",
+        "label": "職業・立場",
+        "value": "研究者・発明家"
+      }
+    },
+    {
+      "key": "q131",
+      "prompt": "魔法使いや魔術師ですか?",
+      "reason": {
+        "axis": "occupation",
+        "label": "職業・立場",
+        "value": "魔法使い・魔術師"
+      }
     }
   ]
 }

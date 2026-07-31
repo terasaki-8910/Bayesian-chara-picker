@@ -26,7 +26,8 @@
  * 再実行時は checkedAt が7日以内のエントリをスキップする（--force で無視、
  * --char <id> で単体のみ強制再チェック）。
  */
-import { readFileSync, writeFileSync } from 'node:fs';
+import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { join } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { claimValuesOf, createWikidataFetcher, fetchEntity, fetchEntityLabels, searchEntity } from './wikidata-client.mjs';
 
@@ -140,9 +141,46 @@ async function mapOneCharacter(wikidataFetch, character, overridesFile, seriesAl
   };
 }
 
+/** P2048(身長)のquantity値で受け付ける単位QIDと、cmへの換算係数。 */
+const HEIGHT_UNIT_TO_CM = {
+  Q174728: 1, // センチメートル
+  Q11573: 100, // メートル
+  Q3710: 30.48, // フィート
+};
+
+/**
+ * P2048のquantity値をcmへ正規化する。未対応の単位はnull（誤った身長を掴むより
+ * 「寄与なし」の方が安全、という色QIDと同じ方針）。
+ * @param {{ amount: string, unit: string }} value
+ * @returns {number | null}
+ */
+function heightToCm(value) {
+  // unitは "http://www.wikidata.org/entity/Q174728" 形式のURI。
+  const unitQid = String(value.unit ?? '').split('/').pop() ?? '';
+  const factor = HEIGHT_UNIT_TO_CM[unitQid];
+  if (factor === undefined) return null;
+  const amount = Number(value.amount);
+  if (!Number.isFinite(amount) || amount <= 0) return null;
+  return amount * factor;
+}
+
+/**
+ * 身長(cm)を stature 軸の3値へバケット分けする。しきい値は
+ * data/bayes/wikidata-overrides.json の statureThresholds（手書きの正本。
+ * 色QIDの対応表と同じく「実データを見てから決める」運用）。
+ * @param {number} cm
+ * @param {{ petiteMaxCm: number, tallMinCm: number }} thresholds
+ * @returns {'小柄' | '標準' | '長身'}
+ */
+function statureBucketOf(cm, thresholds) {
+  if (cm <= thresholds.petiteMaxCm) return '小柄';
+  if (cm >= thresholds.tallMinCm) return '長身';
+  return '標準';
+}
+
 /**
  * @param {import('./wikidata-client.mjs').WikidataEntity} entity
- * @param {{ humanQids: string[], hairColorMap: Record<string,string|null>, eyeColorMap: Record<string,string|null> }} overridesFile
+ * @param {{ humanQids: string[], hairColorMap: Record<string,string|null>, eyeColorMap: Record<string,string|null>, statureThresholds: { petiteMaxCm: number, tallMinCm: number } }} overridesFile
  */
 function extractFacts(entity, overridesFile) {
   const facts = {};
@@ -180,6 +218,14 @@ function extractFacts(entity, overridesFile) {
     }
   }
 
+  const heightValues = claimValuesOf(entity, 'P2048').filter((v) => v.type === 'quantity');
+  if (heightValues.length > 0) {
+    const raw = /** @type {{ amount: string, unit: string }} */ (heightValues[0].value);
+    const cm = heightToCm(raw);
+    if (cm === null) notes.push(`未対応の身長の単位/値: ${JSON.stringify(raw)}`);
+    else facts.stature = statureBucketOf(cm, overridesFile.statureThresholds);
+  }
+
   const instanceOfQids = claimValuesOf(entity, 'P31')
     .filter((v) => v.type === 'wikibase-entityid')
     .map((v) => /** @type {{ id: string }} */ (v.value).id);
@@ -195,9 +241,57 @@ function extractFacts(entity, overridesFile) {
   return { facts, notes };
 }
 
+/**
+ * ネットワークを一切使わず、キャッシュ済みの生エンティティから facts だけを
+ * 再抽出する（--from-cache）。色QIDの対応表やstatureのしきい値のような
+ * 「手書きの写像規則」を調整するたびに全件を再取得するのは無駄が大きく、
+ * かつ相手サーバへの負荷でもあるため（2026-08-01、statureのしきい値を
+ * 実データの分布を見てから決めたかったが、P5計画に書かれていた生エンティティの
+ * キャッシュが実際には実装されておらず再取得が必要だったことから追加）。
+ */
+function reextractFromCache({ characters, overridesFile, cacheDir, factsPath, wikidataFacts, charFilter }) {
+  const targets = charFilter ? characters.filter((c) => c.id === charFilter) : characters;
+  const needsReview = [];
+  let updated = 0;
+  let missing = 0;
+
+  for (const character of targets) {
+    const cachePath = join(cacheDir, `${character.id}.json`);
+    let cached;
+    try {
+      cached = JSON.parse(readFileSync(cachePath, 'utf8'));
+    } catch (_err) {
+      missing += 1;
+      continue;
+    }
+    const { facts, notes } = extractFacts(cached.entity, overridesFile);
+
+    // ネットワーク版と同じ性別サニティチェックを通す（片方だけ緩いと、
+    // --from-cache で再抽出した瞬間に誤対応のfactsが復活してしまう）。
+    const reviewedGender = character.axes?.genderExpression;
+    if (facts.genderExpression && reviewedGender && facts.genderExpression !== reviewedGender) {
+      wikidataFacts.entries[character.id] = {};
+      needsReview.push({ id: character.id, name: character.name, issue: `性別不一致で無効化（--from-cache）` });
+      continue;
+    }
+
+    wikidataFacts.entries[character.id] = facts;
+    updated += 1;
+    for (const note of notes) needsReview.push({ id: character.id, name: character.name, issue: note });
+  }
+
+  writeFileSync(factsPath, `${JSON.stringify(wikidataFacts, null, 2)}\n`);
+  console.log(`キャッシュから ${updated} 件のfactsを再抽出しました（キャッシュ無し ${missing} 件）。`);
+  if (needsReview.length > 0) {
+    console.log(`\n=== 要レビュー ${needsReview.length} 件 ===`);
+    for (const r of needsReview) console.log(`  ${r.id} (${r.name}): ${r.issue}`);
+  }
+}
+
 async function main() {
   const args = process.argv.slice(2);
   const force = args.includes('--force');
+  const fromCache = args.includes('--from-cache');
   const charFilter = args.includes('--char') ? args[args.indexOf('--char') + 1] : null;
 
   const dataDir = new URL('../../data/', import.meta.url);
@@ -206,6 +300,7 @@ async function main() {
   const overridesPath = fileURLToPath(new URL('bayes/wikidata-overrides.json', dataDir));
   const mapPath = fileURLToPath(new URL('bayes/wikidata-map.json', dataDir));
   const factsPath = fileURLToPath(new URL('bayes/wikidata-facts.json', dataDir));
+  const cacheDir = fileURLToPath(new URL('../../state/bayes-pipeline/wikidata/', import.meta.url));
 
   const characters = JSON.parse(readFileSync(charactersPath, 'utf8'));
   const tagOverrides = JSON.parse(readFileSync(tagOverridesPath, 'utf8'));
@@ -230,6 +325,13 @@ async function main() {
     process.exitCode = 1;
     return;
   }
+
+  if (fromCache) {
+    reextractFromCache({ characters, overridesFile, cacheDir, factsPath, wikidataFacts, charFilter });
+    return;
+  }
+
+  mkdirSync(cacheDir, { recursive: true });
 
   const now = Date.now();
   const pending = targets.filter((c) => {
@@ -263,6 +365,13 @@ async function main() {
     }
 
     const entity = await fetchEntity(wikidataFetch, result.qid);
+    // 生エンティティをキャッシュする（gitignore対象）。写像規則（色QIDの対応表・
+    // statureのしきい値など）を変えたときに --from-cache で再取得なしに
+    // factsだけを作り直せるようにするため。
+    writeFileSync(
+      join(cacheDir, `${character.id}.json`),
+      `${JSON.stringify({ qid: result.qid, entity, fetchedAt: new Date().toISOString() }, null, 2)}\n`,
+    );
     const { facts, notes } = extractFacts(entity, overridesFile);
 
     // サニティチェック: 抽出したgenderExpressionが本プロジェクト自身の査読済み

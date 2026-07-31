@@ -46,7 +46,7 @@ export type Probe = {
 };
 
 /** 複数値軸（`Axes` 上で `string[]` の軸）。他は単一値軸（`string | null`）。 */
-const MULTI_AXES: readonly AxisKey[] = ['roles', 'looks', 'outfit'];
+const MULTI_AXES: readonly AxisKey[] = ['roles', 'looks', 'outfit', 'occupation'];
 const MULTI_AXIS_SET = new Set<AxisKey>(MULTI_AXES);
 
 /**
@@ -59,6 +59,7 @@ const AXIS_ORDER: readonly AxisKey[] = [
   'genderExpression',
   'ageFeel',
   'build',
+  'stature',
   'bust',
   'personality',
   'distance',
@@ -68,6 +69,7 @@ const AXIS_ORDER: readonly AxisKey[] = [
   'mood',
   'combat',
   'affiliationKind',
+  'occupation',
   'roles',
   'looks',
   'outfit',
@@ -92,6 +94,8 @@ export const AXIS_LABEL: Record<AxisKey, string> = {
   combat: '戦闘',
   affiliationKind: '所属の種類',
   affiliationName: '所属',
+  stature: '身長の印象',
+  occupation: '職業・立場',
 };
 
 /**
@@ -112,6 +116,38 @@ const AGE_FEEL_PROMPTS: Record<string, string> = {
   熟れた: '見た目の年齢は大人びて熟れた印象ですか?',
 };
 
+/**
+ * stature も ageFeel と同様、「標準」を機械的に「身長の印象は標準ですか?」と
+ * 聞くと基準が曖昧で答えがぶれるため、3値それぞれに具体的な言い回しを与える。
+ */
+const STATURE_PROMPTS: Record<string, string> = {
+  小柄: '身長は小柄ですか?',
+  標準: '身長は平均的ですか?',
+  長身: '身長は高い方ですか?',
+};
+
+/**
+ * occupation は値によって自然な助詞が変わる（「忍者ですか?」は自然だが
+ * 「アイドル・芸能ですか?」は不自然）ため、値ごとに言い回しを持つ。
+ * 未登録の値はフォールバックで「〜に当てはまりますか?」にする。
+ */
+const OCCUPATION_PROMPTS: Record<string, string> = {
+  忍者: '忍者ですか?',
+  海賊: '海賊ですか?',
+  '兵士・軍人': '軍人・兵士として戦う立場ですか?',
+  '警察・公安': '警察や公安のような治安を守る立場ですか?',
+  'スパイ・暗殺者': 'スパイや暗殺者のような裏の仕事をしていますか?',
+  'アイドル・芸能': 'アイドルや芸能の活動をしていますか?',
+  アスリート: 'スポーツ・競技の選手ですか?',
+  '巫女・神職': '巫女や神職を務めていますか?',
+  '神様・精霊': '神様や精霊のような存在ですか?',
+  'メイド・従者': 'メイドや従者として誰かに仕えていますか?',
+  '王族・貴族': '王族や貴族の身分ですか?',
+  医療従事者: '医者や看護のような医療に携わっていますか?',
+  '研究者・発明家': '研究者や発明家ですか?',
+  '魔法使い・魔術師': '魔法使いや魔術師ですか?',
+};
+
 const PROMPT_BUILDERS: Record<AxisKey, (value: string) => string> = {
   genderExpression: (v) => `性別表現は${v}に近いですか?`,
   ageFeel: (v) => AGE_FEEL_PROMPTS[v] ?? `年齢の印象は${v}に近いですか?`,
@@ -129,6 +165,8 @@ const PROMPT_BUILDERS: Record<AxisKey, (value: string) => string> = {
   combat: (v) => `${v}キャラですか?`,
   affiliationKind: (v) => `所属は${v}ですか?`,
   affiliationName: (v) => `所属は${v}ですか?`,
+  stature: (v) => STATURE_PROMPTS[v] ?? `身長の印象は${v}ですか?`,
+  occupation: (v) => OCCUPATION_PROMPTS[v] ?? `${v}に当てはまりますか?`,
 };
 
 function buildPrompt(axis: AxisKey, value: string): string {

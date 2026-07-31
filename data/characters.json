@@ -29,7 +29,9 @@
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "社会人",
-      "affiliationName": "ロズワール邸"
+      "affiliationName": "ロズワール邸",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -69,7 +71,11 @@
       "mood": "支配的",
       "combat": "戦う",
       "affiliationKind": "社会人",
-      "affiliationName": "ロズワール邸"
+      "affiliationName": "ロズワール邸",
+      "stature": null,
+      "occupation": [
+        "メイド・従者"
+      ]
     },
     "reviewed": true,
     "hitomiQuery": {
@@ -109,7 +115,9 @@
       "mood": "支配的",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "affiliationName": "影の国"
+      "affiliationName": "影の国",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -153,7 +161,12 @@
       "mood": "甘め",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": [
+        "巫女・神職",
+        "神様・精霊"
+      ]
     },
     "reviewed": true,
     "hitomiQuery": {
@@ -190,7 +203,9 @@
       "mood": "甘め",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "affiliationName": "ムーンセル"
+      "affiliationName": "ムーンセル",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -230,7 +245,9 @@
       "mood": "支配的",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "affiliationName": "メソポタミア"
+      "affiliationName": "メソポタミア",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -270,7 +287,9 @@
       "mood": "背徳寄り",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": true,
     "hitomiQuery": {
@@ -310,7 +329,9 @@
       "mood": "甘め",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": true,
     "hitomiQuery": {
@@ -350,7 +371,11 @@
       "mood": "背徳寄り",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": "ナザリック地下大墳墓"
+      "affiliationName": "ナザリック地下大墳墓",
+      "stature": null,
+      "occupation": [
+        "兵士・軍人"
+      ]
     },
     "reviewed": true,
     "hitomiQuery": {
@@ -392,7 +417,12 @@
       "mood": "従属的",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": "ナザリック地下大墳墓"
+      "affiliationName": "ナザリック地下大墳墓",
+      "stature": null,
+      "occupation": [
+        "メイド・従者",
+        "兵士・軍人"
+      ]
     },
     "reviewed": true,
     "hitomiQuery": {
@@ -434,7 +464,9 @@
       "mood": "背徳寄り",
       "combat": "戦う",
       "affiliationKind": "冒険者",
-      "affiliationName": "カズマパーティー"
+      "affiliationName": "カズマパーティー",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -475,7 +507,11 @@
       "mood": "支配的",
       "combat": "戦う",
       "affiliationKind": "冒険者",
-      "affiliationName": "妖精の尻尾"
+      "affiliationName": "妖精の尻尾",
+      "stature": null,
+      "occupation": [
+        "魔法使い・魔術師"
+      ]
     },
     "reviewed": true,
     "hitomiQuery": {
@@ -515,7 +551,11 @@
       "mood": "甘め",
       "combat": "戦う",
       "affiliationKind": "冒険者",
-      "affiliationName": "妖精の尻尾"
+      "affiliationName": "妖精の尻尾",
+      "stature": null,
+      "occupation": [
+        "魔法使い・魔術師"
+      ]
     },
     "reviewed": true,
     "hitomiQuery": {
@@ -554,7 +594,11 @@
       "mood": "支配的",
       "combat": "戦わない",
       "affiliationKind": "社会人",
-      "affiliationName": "カプセルコーポレーション"
+      "affiliationName": "カプセルコーポレーション",
+      "stature": null,
+      "occupation": [
+        "研究者・発明家"
+      ]
     },
     "reviewed": true,
     "hitomiQuery": {
@@ -592,7 +636,9 @@
       "mood": "支配的",
       "combat": "戦う",
       "affiliationKind": "社会人",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": true,
     "hitomiQuery": {
@@ -632,7 +678,9 @@
       "mood": "支配的",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": "木ノ葉隠れの里"
+      "affiliationName": "木ノ葉隠れの里",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -672,7 +720,11 @@
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": "木ノ葉隠れの里"
+      "affiliationName": "木ノ葉隠れの里",
+      "stature": null,
+      "occupation": [
+        "忍者"
+      ]
     },
     "reviewed": true,
     "hitomiQuery": {
@@ -713,7 +765,12 @@
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": "麦わらの一味"
+      "affiliationName": "麦わらの一味",
+      "stature": null,
+      "occupation": [
+        "海賊",
+        "研究者・発明家"
+      ]
     },
     "reviewed": true,
     "hitomiQuery": {
@@ -752,7 +809,9 @@
       "mood": "支配的",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": "九蛇海賊団"
+      "affiliationName": "九蛇海賊団",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -791,7 +850,9 @@
       "mood": "甘め",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": "麦わらの一味"
+      "affiliationName": "麦わらの一味",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -829,7 +890,9 @@
       "mood": "純愛寄り",
       "combat": "戦わない",
       "affiliationKind": "非人間・その他",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": true,
     "hitomiQuery": {
@@ -872,7 +935,9 @@
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": true,
     "hitomiQuery": {
@@ -909,7 +974,11 @@
       "mood": "従属的",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": "ヨルハ部隊"
+      "affiliationName": "ヨルハ部隊",
+      "stature": null,
+      "occupation": [
+        "兵士・軍人"
+      ]
     },
     "reviewed": true,
     "hitomiQuery": {
@@ -950,7 +1019,9 @@
       "mood": "支配的",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": "ヨルハ部隊"
+      "affiliationName": "ヨルハ部隊",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -992,7 +1063,9 @@
       "mood": "従属的",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": "重桜"
+      "affiliationName": "重桜",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -1034,7 +1107,9 @@
       "mood": "支配的",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": "重桜"
+      "affiliationName": "重桜",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -1074,7 +1149,9 @@
       "mood": "甘め",
       "combat": "戦う",
       "affiliationKind": "冒険者",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -1115,7 +1192,11 @@
       "mood": "純愛寄り",
       "combat": "戦わない",
       "affiliationKind": "社会人",
-      "affiliationName": "765プロダクション"
+      "affiliationName": "765プロダクション",
+      "stature": null,
+      "occupation": [
+        "アイドル・芸能"
+      ]
     },
     "reviewed": true,
     "hitomiQuery": {
@@ -1158,7 +1239,9 @@
       "mood": "純愛寄り",
       "combat": "戦わない",
       "affiliationKind": "学生",
-      "affiliationName": "練馬大学"
+      "affiliationName": "練馬大学",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": true,
     "hitomiQuery": {
@@ -1200,7 +1283,11 @@
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "社会人",
-      "affiliationName": "ベルリント市役所"
+      "affiliationName": "ベルリント市役所",
+      "stature": null,
+      "occupation": [
+        "スパイ・暗殺者"
+      ]
     },
     "reviewed": true,
     "hitomiQuery": {
@@ -1241,7 +1328,9 @@
       "mood": "支配的",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": "公安対魔特異4課"
+      "affiliationName": "公安対魔特異4課",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -1280,7 +1369,11 @@
       "mood": "支配的",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": "調査兵団"
+      "affiliationName": "調査兵団",
+      "stature": null,
+      "occupation": [
+        "兵士・軍人"
+      ]
     },
     "reviewed": true,
     "hitomiQuery": {
@@ -1317,7 +1410,11 @@
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": "麦わらの一味"
+      "affiliationName": "麦わらの一味",
+      "stature": null,
+      "occupation": [
+        "海賊"
+      ]
     },
     "reviewed": true,
     "hitomiQuery": {
@@ -1359,7 +1456,9 @@
       "mood": "甘め",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": true,
     "hitomiQuery": {
@@ -1400,7 +1499,9 @@
       "mood": "甘め",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": "護廷十三隊十番隊"
+      "affiliationName": "護廷十三隊十番隊",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -1442,7 +1543,12 @@
       "mood": "支配的",
       "combat": "戦う",
       "affiliationKind": "社会人",
-      "affiliationName": "浦原商店"
+      "affiliationName": "浦原商店",
+      "stature": null,
+      "occupation": [
+        "兵士・軍人",
+        "王族・貴族"
+      ]
     },
     "reviewed": true,
     "hitomiQuery": {
@@ -1492,7 +1598,9 @@
       ],
       "species": "人間",
       "mood": "甘め",
-      "affiliationName": "ミレニアムサイエンススクール（C&C）"
+      "affiliationName": "ミレニアムサイエンススクール（C&C）",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -1535,7 +1643,9 @@
       ],
       "species": "人間",
       "mood": "支配的",
-      "affiliationName": "ミレニアムサイエンススクール（セミナー）"
+      "affiliationName": "ミレニアムサイエンススクール（セミナー）",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -1577,7 +1687,9 @@
       ],
       "species": "人間",
       "mood": "従属的",
-      "affiliationName": "ミレニアムサイエンススクール（C&C）"
+      "affiliationName": "ミレニアムサイエンススクール（C&C）",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -1619,7 +1731,9 @@
       ],
       "species": "人間",
       "mood": "純愛寄り",
-      "affiliationName": "トリニティ総合学園（ティーパーティー）"
+      "affiliationName": "トリニティ総合学園（ティーパーティー）",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -1657,7 +1771,9 @@
       "outfit": [],
       "species": "人間",
       "mood": "支配的",
-      "affiliationName": "山海経高級中学校（玄龍門）"
+      "affiliationName": "山海経高級中学校（玄龍門）",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -1699,7 +1815,9 @@
       ],
       "species": "人間",
       "mood": "支配的",
-      "affiliationName": "ミレニアムサイエンススクール（セミナー）"
+      "affiliationName": "ミレニアムサイエンススクール（セミナー）",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -1741,7 +1859,9 @@
       ],
       "species": "人間",
       "mood": "支配的",
-      "affiliationName": "ゲヘナ学園（風紀委員会）"
+      "affiliationName": "ゲヘナ学園（風紀委員会）",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -1783,7 +1903,9 @@
       ],
       "species": "人間",
       "mood": "甘め",
-      "affiliationName": "ミレニアムサイエンススクール（セミナー）"
+      "affiliationName": "ミレニアムサイエンススクール（セミナー）",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -1825,7 +1947,9 @@
       ],
       "species": "人間",
       "mood": "甘め",
-      "affiliationName": "博麗神社"
+      "affiliationName": "博麗神社",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -1865,7 +1989,9 @@
       ],
       "species": "人間",
       "mood": "従属的",
-      "affiliationName": "紅魔館"
+      "affiliationName": "紅魔館",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -1903,7 +2029,9 @@
       "outfit": [],
       "species": "魔族",
       "mood": "純愛寄り",
-      "affiliationName": "紅魔館"
+      "affiliationName": "紅魔館",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -1945,7 +2073,9 @@
       ],
       "species": "人間",
       "mood": "甘め",
-      "affiliationName": "守矢神社"
+      "affiliationName": "守矢神社",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -1985,7 +2115,9 @@
       "outfit": [],
       "species": "不死",
       "mood": "背徳寄り",
-      "affiliationName": "紅魔館"
+      "affiliationName": "紅魔館",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -2024,7 +2156,9 @@
       "outfit": [],
       "species": "不死",
       "mood": "支配的",
-      "affiliationName": "紅魔館"
+      "affiliationName": "紅魔館",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -2064,7 +2198,9 @@
       "outfit": [],
       "species": "人間",
       "mood": "甘め",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -2102,7 +2238,9 @@
       "outfit": [],
       "species": "魔族",
       "mood": "純愛寄り",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -2145,7 +2283,9 @@
       ],
       "species": "不死",
       "mood": "純愛寄り",
-      "affiliationName": "璃月七星"
+      "affiliationName": "璃月七星",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -2186,7 +2326,9 @@
       "outfit": [],
       "species": "機械",
       "mood": "支配的",
-      "affiliationName": "稲妻幕府"
+      "affiliationName": "稲妻幕府",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -2227,7 +2369,9 @@
       "outfit": [],
       "species": "人間",
       "mood": "純愛寄り",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -2270,7 +2414,9 @@
       ],
       "species": "獣人",
       "mood": "支配的",
-      "affiliationName": "鳴神大社"
+      "affiliationName": "鳴神大社",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -2311,7 +2457,9 @@
       "outfit": [],
       "species": "人間",
       "mood": "甘め",
-      "affiliationName": "往生堂"
+      "affiliationName": "往生堂",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -2350,7 +2498,9 @@
       "outfit": [],
       "species": "人間",
       "mood": "甘め",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -2393,7 +2543,9 @@
       ],
       "species": "人間",
       "mood": "純愛寄り",
-      "affiliationName": "璃月七星"
+      "affiliationName": "璃月七星",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -2436,7 +2588,9 @@
       ],
       "species": "人間",
       "mood": "支配的",
-      "affiliationName": "西風騎士団(遊撃小隊隊長)"
+      "affiliationName": "西風騎士団(遊撃小隊隊長)",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -2475,7 +2629,9 @@
       "outfit": [],
       "species": "人間",
       "mood": "甘め",
-      "affiliationName": "アラバスタ王国"
+      "affiliationName": "アラバスタ王国",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -2517,7 +2673,9 @@
       ],
       "species": "人間",
       "mood": "純愛寄り",
-      "affiliationName": "海軍"
+      "affiliationName": "海軍",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -2558,7 +2716,9 @@
       "outfit": [],
       "species": "人間",
       "mood": "支配的",
-      "affiliationName": "スリラーバーク海賊団"
+      "affiliationName": "スリラーバーク海賊団",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -2601,7 +2761,9 @@
       ],
       "species": "人間",
       "mood": "支配的",
-      "affiliationName": "CP0"
+      "affiliationName": "CP0",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -2642,7 +2804,9 @@
       "outfit": [],
       "species": "獣人",
       "mood": "甘め",
-      "affiliationName": "モコモ公国"
+      "affiliationName": "モコモ公国",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -2682,7 +2846,9 @@
       "outfit": [],
       "species": "人間",
       "mood": "甘め",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -2723,7 +2889,9 @@
       "outfit": [],
       "species": "人間",
       "mood": "支配的",
-      "affiliationName": "インペルダウン"
+      "affiliationName": "インペルダウン",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -2762,7 +2930,9 @@
       "outfit": [],
       "species": "人間",
       "mood": "純愛寄り",
-      "affiliationName": "木ノ葉隠れの里"
+      "affiliationName": "木ノ葉隠れの里",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -2803,7 +2973,9 @@
       "outfit": [],
       "species": "人間",
       "mood": "純愛寄り",
-      "affiliationName": "木ノ葉隠れの里"
+      "affiliationName": "木ノ葉隠れの里",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -2844,7 +3016,9 @@
       "outfit": [],
       "species": "人間",
       "mood": "純愛寄り",
-      "affiliationName": "木ノ葉隠れの里"
+      "affiliationName": "木ノ葉隠れの里",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -2883,7 +3057,9 @@
       "outfit": [],
       "species": "人間",
       "mood": "従属的",
-      "affiliationName": "木ノ葉隠れの里"
+      "affiliationName": "木ノ葉隠れの里",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -2921,7 +3097,9 @@
       "outfit": [],
       "species": "人間",
       "mood": "支配的",
-      "affiliationName": "砂隠れの里"
+      "affiliationName": "砂隠れの里",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -2960,7 +3138,9 @@
       "outfit": [],
       "species": "人間",
       "mood": "支配的",
-      "affiliationName": "木ノ葉隠れの里"
+      "affiliationName": "木ノ葉隠れの里",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -2998,7 +3178,9 @@
       "outfit": [],
       "species": "人間",
       "mood": null,
-      "affiliationName": "木ノ葉隠れの里"
+      "affiliationName": "木ノ葉隠れの里",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -3040,7 +3222,9 @@
       ],
       "species": "人間",
       "mood": "純愛寄り",
-      "affiliationName": "空座第一高校"
+      "affiliationName": "空座第一高校",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -3080,7 +3264,9 @@
       ],
       "species": "不死",
       "mood": "純愛寄り",
-      "affiliationName": "護廷十三隊十三番隊"
+      "affiliationName": "護廷十三隊十三番隊",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -3123,7 +3309,9 @@
       ],
       "species": "不死",
       "mood": "従属的",
-      "affiliationName": "護廷十三隊二番隊"
+      "affiliationName": "護廷十三隊二番隊",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -3162,7 +3350,9 @@
       "outfit": [],
       "species": "魔族",
       "mood": "支配的",
-      "affiliationName": "エスパーダ(第3位)"
+      "affiliationName": "エスパーダ(第3位)",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -3204,7 +3394,9 @@
       "outfit": [],
       "species": "魔族",
       "mood": "甘め",
-      "affiliationName": "エスパーダ(第3位)"
+      "affiliationName": "エスパーダ(第3位)",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -3247,7 +3439,9 @@
       ],
       "species": "不死",
       "mood": "甘め",
-      "affiliationName": "護廷十三隊四番隊"
+      "affiliationName": "護廷十三隊四番隊",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -3289,7 +3483,9 @@
       ],
       "species": "機械",
       "mood": "従属的",
-      "affiliationName": "護廷十三隊十二番隊"
+      "affiliationName": "護廷十三隊十二番隊",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -3330,7 +3526,9 @@
       ],
       "species": "不死",
       "mood": "従属的",
-      "affiliationName": "護廷十三隊四番隊"
+      "affiliationName": "護廷十三隊四番隊",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -3370,7 +3568,9 @@
       "outfit": [],
       "species": "不死",
       "mood": "背徳寄り",
-      "affiliationName": "ナザリック地下大墳墓"
+      "affiliationName": "ナザリック地下大墳墓",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -3408,7 +3608,9 @@
       "outfit": [],
       "species": "エルフ",
       "mood": "甘め",
-      "affiliationName": "ナザリック地下大墳墓"
+      "affiliationName": "ナザリック地下大墳墓",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -3446,7 +3648,9 @@
       "outfit": [],
       "species": "エルフ",
       "mood": "従属的",
-      "affiliationName": "ナザリック地下大墳墓"
+      "affiliationName": "ナザリック地下大墳墓",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -3488,7 +3692,9 @@
       ],
       "species": "獣人",
       "mood": "背徳寄り",
-      "affiliationName": "ナザリック地下大墳墓"
+      "affiliationName": "ナザリック地下大墳墓",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -3524,7 +3730,9 @@
       "outfit": [],
       "species": "人間",
       "mood": "背徳寄り",
-      "affiliationName": "秘密結社ズーラーノーン（元・漆黒聖典/スレイン法国）"
+      "affiliationName": "秘密結社ズーラーノーン（元・漆黒聖典/スレイン法国）",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -3567,7 +3775,9 @@
       ],
       "species": "不死",
       "mood": "純愛寄り",
-      "affiliationName": "ナザリック地下大墳墓"
+      "affiliationName": "ナザリック地下大墳墓",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -3609,7 +3819,9 @@
       ],
       "species": "魔族",
       "mood": "背徳寄り",
-      "affiliationName": "ナザリック地下大墳墓"
+      "affiliationName": "ナザリック地下大墳墓",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -3649,7 +3861,9 @@
       ],
       "species": "獣人",
       "mood": "甘め",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -3685,7 +3899,9 @@
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": "神里家(社奉行)"
+      "affiliationName": "神里家(社奉行)",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "provisional": false,
@@ -3724,7 +3940,9 @@
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "affiliationName": "仙人・閑雲(雲堂)の弟子"
+      "affiliationName": "仙人・閑雲(雲堂)の弟子",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "provisional": false,
@@ -3765,7 +3983,9 @@
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "affiliationName": "スメール(須弥)の草神"
+      "affiliationName": "スメール(須弥)の草神",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "provisional": false,
@@ -3805,7 +4025,9 @@
       "mood": "甘め",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "affiliationName": "フォンテーヌの水神/オペラ座女優"
+      "affiliationName": "フォンテーヌの水神/オペラ座女優",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "provisional": false,
@@ -3847,7 +4069,9 @@
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": "西風教会(モンド)"
+      "affiliationName": "西風教会(モンド)",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "provisional": false,
@@ -3891,7 +4115,9 @@
       "outfit": [],
       "species": "魔族",
       "mood": "支配的",
-      "affiliationName": "妖怪の賢者"
+      "affiliationName": "妖怪の賢者",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -3929,7 +4155,9 @@
       "outfit": [],
       "species": "魔族",
       "mood": "甘め",
-      "affiliationName": "地霊殿"
+      "affiliationName": "地霊殿",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -3967,7 +4195,9 @@
       "outfit": [],
       "species": "魔族",
       "mood": "背徳寄り",
-      "affiliationName": "文々。新聞"
+      "affiliationName": "文々。新聞",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -4010,7 +4240,9 @@
       ],
       "species": "獣人",
       "mood": "従属的",
-      "affiliationName": "永遠亭"
+      "affiliationName": "永遠亭",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -4048,7 +4280,9 @@
       "outfit": [],
       "species": "不死",
       "mood": "従属的",
-      "affiliationName": "白玉楼"
+      "affiliationName": "白玉楼",
+      "stature": null,
+      "occupation": []
     }
   },
   {
@@ -4081,7 +4315,9 @@
       "mood": "甘め",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": "重巡洋艦(高雄型)"
+      "affiliationName": "重巡洋艦(高雄型)",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -4120,7 +4356,9 @@
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": "駆逐艦(島風型・同型艦なし)"
+      "affiliationName": "駆逐艦(島風型・同型艦なし)",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -4159,7 +4397,9 @@
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": "正規空母(加賀型)"
+      "affiliationName": "正規空母(加賀型)",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -4200,7 +4440,9 @@
       "mood": "甘め",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": "練習巡洋艦(香取型)"
+      "affiliationName": "練習巡洋艦(香取型)",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -4240,7 +4482,9 @@
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": "重巡洋艦(高雄型・1番艦)"
+      "affiliationName": "重巡洋艦(高雄型・1番艦)",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -4277,7 +4521,9 @@
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": "駆逐艦(陽炎型・第十七駆逐隊)"
+      "affiliationName": "駆逐艦(陽炎型・第十七駆逐隊)",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -4315,7 +4561,9 @@
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": "装甲空母(大鳳型)・第一機動部隊旗艦"
+      "affiliationName": "装甲空母(大鳳型)・第一機動部隊旗艦",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -4354,7 +4602,9 @@
       "mood": "甘め",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": "重巡洋艦(最上型)"
+      "affiliationName": "重巡洋艦(最上型)",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -4396,7 +4646,9 @@
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": "戦艦(金剛型・1番艦)"
+      "affiliationName": "戦艦(金剛型・1番艦)",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -4438,7 +4690,9 @@
       "mood": null,
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "affiliationName": "地霊殿"
+      "affiliationName": "地霊殿",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "provisional": false,
@@ -4479,7 +4733,9 @@
       "mood": null,
       "combat": "戦う",
       "affiliationKind": "社会人",
-      "affiliationName": "妖怪の山"
+      "affiliationName": "妖怪の山",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "provisional": false,
@@ -4520,7 +4776,9 @@
       "mood": "従属的",
       "combat": "戦う",
       "affiliationKind": "社会人",
-      "affiliationName": "紅魔館"
+      "affiliationName": "紅魔館",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "provisional": false,
@@ -4563,7 +4821,9 @@
       "mood": "従属的",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "affiliationName": "八雲家"
+      "affiliationName": "八雲家",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "provisional": false,
@@ -4606,7 +4866,9 @@
       "mood": "従属的",
       "combat": "戦う",
       "affiliationKind": "社会人",
-      "affiliationName": "紅魔館"
+      "affiliationName": "紅魔館",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "provisional": false,
@@ -4644,7 +4906,9 @@
       "mood": "支配的",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "affiliationName": "守矢神社"
+      "affiliationName": "守矢神社",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "provisional": false,
@@ -4682,7 +4946,9 @@
       "mood": "支配的",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "affiliationName": "太陽の畑"
+      "affiliationName": "太陽の畑",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "provisional": false,
@@ -4722,7 +4988,9 @@
       "mood": "甘め",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "affiliationName": "白玉楼"
+      "affiliationName": "白玉楼",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "provisional": false,
@@ -4763,7 +5031,9 @@
       "mood": "純愛寄り",
       "combat": "戦わない",
       "affiliationKind": "学生",
-      "affiliationName": "音ノ木坂学院"
+      "affiliationName": "音ノ木坂学院",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "provisional": false,
@@ -4805,7 +5075,9 @@
       "mood": "純愛寄り",
       "combat": "戦わない",
       "affiliationKind": "学生",
-      "affiliationName": "音ノ木坂学院"
+      "affiliationName": "音ノ木坂学院",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "provisional": false,
@@ -4847,7 +5119,9 @@
       "mood": "甘め",
       "combat": "戦わない",
       "affiliationKind": "学生",
-      "affiliationName": "音ノ木坂学院"
+      "affiliationName": "音ノ木坂学院",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "provisional": false,
@@ -4889,7 +5163,9 @@
       "mood": "甘め",
       "combat": "戦わない",
       "affiliationKind": "学生",
-      "affiliationName": "音ノ木坂学院"
+      "affiliationName": "音ノ木坂学院",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "provisional": false,
@@ -4928,7 +5204,9 @@
       "mood": "純愛寄り",
       "combat": "戦わない",
       "affiliationKind": "学生",
-      "affiliationName": "音ノ木坂学院"
+      "affiliationName": "音ノ木坂学院",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "provisional": false,
@@ -4969,7 +5247,9 @@
       "mood": "純愛寄り",
       "combat": "戦わない",
       "affiliationKind": "学生",
-      "affiliationName": "音ノ木坂学院"
+      "affiliationName": "音ノ木坂学院",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "provisional": false,
@@ -5009,7 +5289,9 @@
       "mood": "甘め",
       "combat": "戦う",
       "affiliationKind": "学生",
-      "affiliationName": "穂群原学園小等部"
+      "affiliationName": "穂群原学園小等部",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -5049,7 +5331,9 @@
       "mood": "甘め",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -5092,7 +5376,9 @@
       "mood": "支配的",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -5135,7 +5421,9 @@
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "学生",
-      "affiliationName": "穂群原学園小等部"
+      "affiliationName": "穂群原学園小等部",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -5176,7 +5464,9 @@
       "mood": "背徳寄り",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "affiliationName": "大江山"
+      "affiliationName": "大江山",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -5219,7 +5509,9 @@
       "mood": "従属的",
       "combat": "戦う",
       "affiliationKind": "学生",
-      "affiliationName": "穂群原学園"
+      "affiliationName": "穂群原学園",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -5261,7 +5553,9 @@
       "mood": "背徳寄り",
       "combat": "戦う",
       "affiliationKind": "学生",
-      "affiliationName": "穂群原学園小等部"
+      "affiliationName": "穂群原学園小等部",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -5302,7 +5596,9 @@
       "mood": "支配的",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -5339,7 +5635,9 @@
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -5376,7 +5674,9 @@
       "mood": "従属的",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -5413,7 +5713,9 @@
       "mood": "支配的",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -5450,7 +5752,9 @@
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "学生",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -5485,7 +5789,9 @@
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -5520,7 +5826,9 @@
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -5557,7 +5865,9 @@
       "mood": "支配的",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -5594,7 +5904,9 @@
       "mood": "背徳寄り",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -5629,7 +5941,9 @@
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -5667,7 +5981,9 @@
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -5702,7 +6018,9 @@
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -5737,7 +6055,9 @@
       "mood": "背徳寄り",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -5772,7 +6092,9 @@
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -5809,7 +6131,9 @@
       "mood": "背徳寄り",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -5846,7 +6170,9 @@
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "冒険者",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -5883,7 +6209,9 @@
       "mood": "背徳寄り",
       "combat": "戦う",
       "affiliationKind": "冒険者",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -5918,7 +6246,9 @@
       "mood": "支配的",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": "アマゾン・リリー"
+      "affiliationName": "アマゾン・リリー",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -5955,7 +6285,9 @@
       "mood": "純愛寄り",
       "combat": "戦わない",
       "affiliationKind": "非人間・その他",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -5992,7 +6324,9 @@
       "mood": "支配的",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": "ジェルマ王国"
+      "affiliationName": "ジェルマ王国",
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -6029,7 +6363,9 @@
       "mood": "支配的",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -6066,7 +6402,9 @@
       "mood": "従属的",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -6103,7 +6441,9 @@
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -6140,7 +6480,9 @@
       "mood": "背徳寄り",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -6177,7 +6519,9 @@
       "mood": "支配的",
       "combat": "戦う",
       "affiliationKind": "冒険者",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -6212,7 +6556,9 @@
       "mood": "従属的",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -6247,7 +6593,9 @@
       "mood": "従属的",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -6284,7 +6632,9 @@
       "mood": "純愛寄り",
       "combat": "戦わない",
       "affiliationKind": "冒険者",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -6322,7 +6672,9 @@
       "mood": "甘め",
       "combat": "戦う",
       "affiliationKind": "学生",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -6360,7 +6712,9 @@
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "学生",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -6398,7 +6752,9 @@
       "mood": "甘め",
       "combat": "戦う",
       "affiliationKind": "学生",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -6435,7 +6791,9 @@
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "冒険者",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -6472,7 +6830,9 @@
       "mood": "支配的",
       "combat": "戦う",
       "affiliationKind": "冒険者",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -6510,7 +6870,9 @@
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -6547,7 +6909,9 @@
       "mood": "背徳寄り",
       "combat": "戦う",
       "affiliationKind": "学生",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -6584,7 +6948,9 @@
       "mood": "支配的",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -6621,7 +6987,9 @@
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "冒険者",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -6658,7 +7026,9 @@
       "mood": "支配的",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -6695,7 +7065,9 @@
       "mood": "背徳寄り",
       "combat": "戦う",
       "affiliationKind": "冒険者",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -6732,7 +7104,9 @@
       "mood": "背徳寄り",
       "combat": "戦う",
       "affiliationKind": "冒険者",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -6769,7 +7143,9 @@
       "mood": "支配的",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -6806,7 +7182,9 @@
       "mood": "純愛寄り",
       "combat": "戦わない",
       "affiliationKind": "学生",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -6843,7 +7221,9 @@
       "mood": "純愛寄り",
       "combat": "戦わない",
       "affiliationKind": "学生",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -6880,7 +7260,9 @@
       "mood": "甘め",
       "combat": "戦わない",
       "affiliationKind": "学生",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -6917,7 +7299,9 @@
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "冒険者",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -6954,7 +7338,9 @@
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "冒険者",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -6992,7 +7378,9 @@
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "冒険者",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -7030,7 +7418,9 @@
       "mood": "甘め",
       "combat": "戦う",
       "affiliationKind": "冒険者",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -7068,7 +7458,9 @@
       "mood": "支配的",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -7103,7 +7495,9 @@
       "mood": "純愛寄り",
       "combat": "戦わない",
       "affiliationKind": "学生",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -7138,7 +7532,9 @@
       "mood": "純愛寄り",
       "combat": "戦わない",
       "affiliationKind": "学生",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -7173,7 +7569,9 @@
       "mood": "背徳寄り",
       "combat": "戦わない",
       "affiliationKind": "学生",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -7208,7 +7606,9 @@
       "mood": "従属的",
       "combat": "戦わない",
       "affiliationKind": "学生",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -7243,7 +7643,9 @@
       "mood": "支配的",
       "combat": "戦わない",
       "affiliationKind": "学生",
-      "affiliationName": null
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
     },
     "reviewed": false,
     "hitomiQuery": {

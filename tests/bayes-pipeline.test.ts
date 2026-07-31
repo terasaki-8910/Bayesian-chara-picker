@@ -971,6 +971,10 @@ describe('BB. evidence-first LLM抽出+引用照合ゲート（scripts/bayes/llm
       distance: ['積極的', '中立'],
       affiliationKind: ['学生', '社会人'],
       roles: ['主従', '姉', '後輩'],
+      ageFeel: ['幼い', '年上'],
+      build: ['華奢', '標準'],
+      stature: ['小柄', '長身'],
+      occupation: ['忍者', '海賊'],
     };
   }
   type SingleAxisGuess = { quote: string; value: string; confidence: string };
@@ -981,7 +985,11 @@ describe('BB. evidence-first LLM抽出+引用照合ゲート（scripts/bayes/llm
     combat: SingleAxisGuess;
     distance: SingleAxisGuess;
     affiliationKind: SingleAxisGuess;
+    ageFeel: SingleAxisGuess;
+    build: SingleAxisGuess;
+    stature: SingleAxisGuess;
     roles: SingleAxisGuess[];
+    occupation: SingleAxisGuess[];
   };
   const NONE: SingleAxisGuess = { quote: '', value: '該当なし', confidence: 'none' };
   function allNone(overrides: Partial<CombinedGuess> = {}): CombinedGuess {
@@ -992,7 +1000,11 @@ describe('BB. evidence-first LLM抽出+引用照合ゲート（scripts/bayes/llm
       combat: NONE,
       distance: NONE,
       affiliationKind: NONE,
+      ageFeel: NONE,
+      build: NONE,
+      stature: NONE,
       roles: [],
+      occupation: [],
       ...overrides,
     };
   }

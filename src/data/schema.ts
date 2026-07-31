@@ -23,6 +23,23 @@ const MOOD_VALUES = ['甘め', '支配的', '従属的', '純愛寄り', '背徳
 const COMBAT_VALUES = ['戦う', '戦わない'] as const;
 /** 「学校に通っているか」に相当する広い分岐。所属名はこれとは別に自由記述で持つ。 */
 const AFFILIATION_KIND_VALUES = ['学生', '社会人', '軍・組織', '冒険者', '非人間・その他'] as const;
+/**
+ * 身長の印象。BUILD_VALUES（体格の太さ）とは独立した軸——「華奢だが長身」
+ * 「むっちりだが小柄」のどちらも普通に存在するため、1軸に混ぜない。
+ */
+const STATURE_VALUES = ['小柄', '標準', '長身'] as const;
+/**
+ * 職業・立場。`affiliationKind`（学生/社会人/…の5値）より細かく、
+ * `affiliationName`（「ミレニアムサイエンススクール（C&C）」のような固有名）より粗い
+ * 中間粒度にする——固有名をそのまま質問にすると1キャラしか該当せず
+ * 「絞り込む質問」ではなく「答えを知っているか確かめる質問」になってしまうため。
+ * 複数値: 「巫女であり神様でもある」「アイドルでありアスリートでもある」が普通にある。
+ */
+const OCCUPATION_VALUES = [
+  '忍者', '海賊', '兵士・軍人', '警察・公安', 'スパイ・暗殺者', 'アイドル・芸能',
+  'アスリート', '巫女・神職', '神様・精霊', 'メイド・従者', '王族・貴族',
+  '医療従事者', '研究者・発明家', '魔法使い・魔術師',
+] as const;
 
 /**
  * 軸の値は `string`（配列軸は `string[]`）で緩く型付けする。
@@ -54,6 +71,8 @@ export type Axes = {
    * 収束したときだけ聞く深掘り質問（Akinator の「〜学校？」に相当）に使う。
    */
   affiliationName: string | null;
+  stature: string | null;
+  occupation: string[];
 };
 
 export type AxisKey = keyof Axes;
@@ -144,6 +163,8 @@ const axesSchema: z.ZodType<Axes> = z.object({
   combat: z.enum(COMBAT_VALUES),
   affiliationKind: z.enum(AFFILIATION_KIND_VALUES),
   affiliationName: z.string().min(1).nullable(),
+  stature: z.enum(STATURE_VALUES).nullable(),
+  occupation: z.array(z.enum(OCCUPATION_VALUES)),
 });
 
 const hitomiQuerySchema: z.ZodType<HitomiQuery> = z.object({

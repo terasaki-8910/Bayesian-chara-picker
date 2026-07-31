@@ -43,6 +43,8 @@
     "Q87067369": "aqua"
   },
   "eyeColorMapNote": "Q112259529('gold')→yellow、Q17291407('amber')→orange、Q66821598('silver')→grey、Q87067369('cyan')→aqua（いずれもプロジェクトの10トークンに無い色を近い既存トークンへ寄せた判断）。null指定: Q39359966('segmental heterochromia'、部分的異色症=1つの瞳の中で色が分かれている状態)は単色概念に原理的に写像不能。Q62391724('white')は単色の目の色として扱いにくく対応するトークンが無いため保留。",
+  "statureThresholds": { "petiteMaxCm": 155, "tallMinCm": 170 },
+  "statureThresholdsNote": "P2048(身長)→stature軸(小柄/標準/長身)のバケット境界。petiteMaxCm以下=小柄、tallMinCm以上=長身、間が標準。しきい値を変えたら `node scripts/bayes/map-wikidata.mjs --from-cache` でネットワーク再取得なしにfactsを作り直せる（生エンティティは state/bayes-pipeline/wikidata/ にキャッシュされる。P5計画に書かれていたこのキャッシュは実際には未実装で、2026-08-01のstature追加時に初めて実装した）。155/170という値は推測ではなく、2026-08-01時点でP2048を持つ41体の実分布から導出した: min=104(overlord-aura) p25=156 median=161 p75=168 max=188(onepiece-robin)。中央50%が156〜168に収まるので、その外側を境界にすると 小柄9体/標準24体/長身8体 とバランスの良い3分割になる。キャラを拡充してP2048保有数が大きく増えたら、この分布を取り直してしきい値も再確認すること。",
   "overrides": {
     "fgo-kiyohime": { "qid": "Q105594558" },
     "onepiece-uta": { "qid": "Q123991597" },

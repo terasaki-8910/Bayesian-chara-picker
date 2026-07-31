@@ -28,7 +28,7 @@ export function readText(relPath: string): string {
 }
 
 /**
- * SPEC 2.3 の属性 16 軸。ACCEPTANCE A5 の判定基準そのものなので、
+ * SPEC 2.3 の属性 18 軸。ACCEPTANCE A5 の判定基準そのものなので、
  * src 側のスキーマからは import せず、ここに literal で固定する。
  * src のスキーマに typo があれば A5 が食い違いとして検出する（二重化が目的）。
  *
@@ -50,6 +50,12 @@ export const AXIS_VALUES = {
   mood: ['甘め', '支配的', '従属的', '純愛寄り', '背徳寄り'],
   combat: ['戦う', '戦わない'],
   affiliationKind: ['学生', '社会人', '軍・組織', '冒険者', '非人間・その他'],
+  stature: ['小柄', '標準', '長身'],
+  occupation: [
+    '忍者', '海賊', '兵士・軍人', '警察・公安', 'スパイ・暗殺者', 'アイドル・芸能',
+    'アスリート', '巫女・神職', '神様・精霊', 'メイド・従者', '王族・貴族',
+    '医療従事者', '研究者・発明家', '魔法使い・魔術師',
+  ],
 } as const;
 
 /** SPEC 2.3: 必須は 8 軸。残りは空欄を許容する（供給先行の拡充方針の前提）。 */
@@ -65,6 +71,6 @@ export const REQUIRED_AXES = [
 ] as const;
 
 /** 複数選択の軸（値は配列）。 */
-export const MULTI_AXES = ['roles', 'looks', 'outfit'] as const;
+export const MULTI_AXES = ['roles', 'looks', 'outfit', 'occupation'] as const;
 
 export type AxisKey = keyof typeof AXIS_VALUES;

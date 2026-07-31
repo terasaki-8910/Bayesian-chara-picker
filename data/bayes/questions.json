@@ -2287,6 +2287,584 @@
           "multi": false
         }
       ]
+    },
+    {
+      "id": "ax:ageFeel=幼い",
+      "prompt": "見た目の年齢は幼い印象ですか?",
+      "reason": {
+        "axis": "ageFeel",
+        "label": "年齢の印象",
+        "value": "幼い"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "ageFeel",
+          "value": "幼い",
+          "multi": false
+        },
+        {
+          "type": "llm",
+          "axis": "ageFeel",
+          "value": "幼い",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "ax:ageFeel=同年代",
+      "prompt": "見た目の年齢は10代後半〜20代前半くらいですか?",
+      "reason": {
+        "axis": "ageFeel",
+        "label": "年齢の印象",
+        "value": "同年代"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "ageFeel",
+          "value": "同年代",
+          "multi": false
+        },
+        {
+          "type": "llm",
+          "axis": "ageFeel",
+          "value": "同年代",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "ax:ageFeel=年上",
+      "prompt": "見た目の年齢は20代後半〜30代くらいの落ち着いた印象ですか?",
+      "reason": {
+        "axis": "ageFeel",
+        "label": "年齢の印象",
+        "value": "年上"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "ageFeel",
+          "value": "年上",
+          "multi": false
+        },
+        {
+          "type": "llm",
+          "axis": "ageFeel",
+          "value": "年上",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "ax:ageFeel=熟れた",
+      "prompt": "見た目の年齢は大人びて熟れた印象ですか?",
+      "reason": {
+        "axis": "ageFeel",
+        "label": "年齢の印象",
+        "value": "熟れた"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "ageFeel",
+          "value": "熟れた",
+          "multi": false
+        },
+        {
+          "type": "llm",
+          "axis": "ageFeel",
+          "value": "熟れた",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "ax:build=華奢",
+      "prompt": "体格は華奢ですか?",
+      "reason": {
+        "axis": "build",
+        "label": "体格",
+        "value": "華奢"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "build",
+          "value": "華奢",
+          "multi": false
+        },
+        {
+          "type": "llm",
+          "axis": "build",
+          "value": "華奢",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "ax:build=標準",
+      "prompt": "体格は標準ですか?",
+      "reason": {
+        "axis": "build",
+        "label": "体格",
+        "value": "標準"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "build",
+          "value": "標準",
+          "multi": false
+        },
+        {
+          "type": "llm",
+          "axis": "build",
+          "value": "標準",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "ax:build=むっちり",
+      "prompt": "体格はむっちりですか?",
+      "reason": {
+        "axis": "build",
+        "label": "体格",
+        "value": "むっちり"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "build",
+          "value": "むっちり",
+          "multi": false
+        },
+        {
+          "type": "llm",
+          "axis": "build",
+          "value": "むっちり",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "ax:stature=小柄",
+      "prompt": "身長は小柄ですか?",
+      "reason": {
+        "axis": "stature",
+        "label": "身長の印象",
+        "value": "小柄"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "stature",
+          "value": "小柄",
+          "multi": false
+        },
+        {
+          "type": "wikidata",
+          "axis": "stature",
+          "value": "小柄",
+          "multi": false
+        },
+        {
+          "type": "llm",
+          "axis": "stature",
+          "value": "小柄",
+          "multi": false
+        },
+        {
+          "type": "danbooru-binary",
+          "tag": "petite"
+        }
+      ]
+    },
+    {
+      "id": "ax:stature=標準",
+      "prompt": "身長は平均的ですか?",
+      "reason": {
+        "axis": "stature",
+        "label": "身長の印象",
+        "value": "標準"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "stature",
+          "value": "標準",
+          "multi": false
+        },
+        {
+          "type": "wikidata",
+          "axis": "stature",
+          "value": "標準",
+          "multi": false
+        },
+        {
+          "type": "llm",
+          "axis": "stature",
+          "value": "標準",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "ax:stature=長身",
+      "prompt": "身長は高い方ですか?",
+      "reason": {
+        "axis": "stature",
+        "label": "身長の印象",
+        "value": "長身"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "stature",
+          "value": "長身",
+          "multi": false
+        },
+        {
+          "type": "wikidata",
+          "axis": "stature",
+          "value": "長身",
+          "multi": false
+        },
+        {
+          "type": "llm",
+          "axis": "stature",
+          "value": "長身",
+          "multi": false
+        },
+        {
+          "type": "danbooru-binary",
+          "tag": "tall_female"
+        }
+      ]
+    },
+    {
+      "id": "ax:occupation~忍者",
+      "prompt": "忍者ですか?",
+      "reason": {
+        "axis": "occupation",
+        "label": "職業・立場",
+        "value": "忍者"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "occupation",
+          "value": "忍者",
+          "multi": true
+        },
+        {
+          "type": "llm",
+          "axis": "occupation",
+          "value": "忍者",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "ax:occupation~海賊",
+      "prompt": "海賊ですか?",
+      "reason": {
+        "axis": "occupation",
+        "label": "職業・立場",
+        "value": "海賊"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "occupation",
+          "value": "海賊",
+          "multi": true
+        },
+        {
+          "type": "llm",
+          "axis": "occupation",
+          "value": "海賊",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "ax:occupation~兵士・軍人",
+      "prompt": "軍人・兵士として戦う立場ですか?",
+      "reason": {
+        "axis": "occupation",
+        "label": "職業・立場",
+        "value": "兵士・軍人"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "occupation",
+          "value": "兵士・軍人",
+          "multi": true
+        },
+        {
+          "type": "llm",
+          "axis": "occupation",
+          "value": "兵士・軍人",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "ax:occupation~警察・公安",
+      "prompt": "警察や公安のような治安を守る立場ですか?",
+      "reason": {
+        "axis": "occupation",
+        "label": "職業・立場",
+        "value": "警察・公安"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "occupation",
+          "value": "警察・公安",
+          "multi": true
+        },
+        {
+          "type": "llm",
+          "axis": "occupation",
+          "value": "警察・公安",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "ax:occupation~スパイ・暗殺者",
+      "prompt": "スパイや暗殺者のような裏の仕事をしていますか?",
+      "reason": {
+        "axis": "occupation",
+        "label": "職業・立場",
+        "value": "スパイ・暗殺者"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "occupation",
+          "value": "スパイ・暗殺者",
+          "multi": true
+        },
+        {
+          "type": "llm",
+          "axis": "occupation",
+          "value": "スパイ・暗殺者",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "ax:occupation~アイドル・芸能",
+      "prompt": "アイドルや芸能の活動をしていますか?",
+      "reason": {
+        "axis": "occupation",
+        "label": "職業・立場",
+        "value": "アイドル・芸能"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "occupation",
+          "value": "アイドル・芸能",
+          "multi": true
+        },
+        {
+          "type": "llm",
+          "axis": "occupation",
+          "value": "アイドル・芸能",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "ax:occupation~アスリート",
+      "prompt": "スポーツ・競技の選手ですか?",
+      "reason": {
+        "axis": "occupation",
+        "label": "職業・立場",
+        "value": "アスリート"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "occupation",
+          "value": "アスリート",
+          "multi": true
+        },
+        {
+          "type": "llm",
+          "axis": "occupation",
+          "value": "アスリート",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "ax:occupation~巫女・神職",
+      "prompt": "巫女や神職を務めていますか?",
+      "reason": {
+        "axis": "occupation",
+        "label": "職業・立場",
+        "value": "巫女・神職"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "occupation",
+          "value": "巫女・神職",
+          "multi": true
+        },
+        {
+          "type": "llm",
+          "axis": "occupation",
+          "value": "巫女・神職",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "ax:occupation~神様・精霊",
+      "prompt": "神様や精霊のような存在ですか?",
+      "reason": {
+        "axis": "occupation",
+        "label": "職業・立場",
+        "value": "神様・精霊"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "occupation",
+          "value": "神様・精霊",
+          "multi": true
+        },
+        {
+          "type": "llm",
+          "axis": "occupation",
+          "value": "神様・精霊",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "ax:occupation~メイド・従者",
+      "prompt": "メイドや従者として誰かに仕えていますか?",
+      "reason": {
+        "axis": "occupation",
+        "label": "職業・立場",
+        "value": "メイド・従者"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "occupation",
+          "value": "メイド・従者",
+          "multi": true
+        },
+        {
+          "type": "llm",
+          "axis": "occupation",
+          "value": "メイド・従者",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "ax:occupation~王族・貴族",
+      "prompt": "王族や貴族の身分ですか?",
+      "reason": {
+        "axis": "occupation",
+        "label": "職業・立場",
+        "value": "王族・貴族"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "occupation",
+          "value": "王族・貴族",
+          "multi": true
+        },
+        {
+          "type": "llm",
+          "axis": "occupation",
+          "value": "王族・貴族",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "ax:occupation~医療従事者",
+      "prompt": "医者や看護のような医療に携わっていますか?",
+      "reason": {
+        "axis": "occupation",
+        "label": "職業・立場",
+        "value": "医療従事者"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "occupation",
+          "value": "医療従事者",
+          "multi": true
+        },
+        {
+          "type": "llm",
+          "axis": "occupation",
+          "value": "医療従事者",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "ax:occupation~研究者・発明家",
+      "prompt": "研究者や発明家ですか?",
+      "reason": {
+        "axis": "occupation",
+        "label": "職業・立場",
+        "value": "研究者・発明家"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "occupation",
+          "value": "研究者・発明家",
+          "multi": true
+        },
+        {
+          "type": "llm",
+          "axis": "occupation",
+          "value": "研究者・発明家",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "ax:occupation~魔法使い・魔術師",
+      "prompt": "魔法使いや魔術師ですか?",
+      "reason": {
+        "axis": "occupation",
+        "label": "職業・立場",
+        "value": "魔法使い・魔術師"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "occupation",
+          "value": "魔法使い・魔術師",
+          "multi": true
+        },
+        {
+          "type": "llm",
+          "axis": "occupation",
+          "value": "魔法使い・魔術師",
+          "multi": true
+        }
+      ]
     }
   ]
 }

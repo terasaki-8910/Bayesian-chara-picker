@@ -122,6 +122,8 @@ function makeSyntheticCharacter(id: string, axesOverrides: Partial<Character['ax
       combat: '戦う',
       affiliationKind: '学生',
       affiliationName: null,
+      stature: null,
+      occupation: [],
       ...axesOverrides,
     },
   };

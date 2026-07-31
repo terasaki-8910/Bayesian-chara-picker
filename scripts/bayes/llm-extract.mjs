@@ -34,8 +34,13 @@ const MIN_QUOTE_LENGTH = 6;
 /** 幻覚引用1回だけでは切り捨てず、軸ごとに最大2回まで再プロンプトする。 */
 const MAX_LLM_RETRIES = 2;
 
-const LLM_AXIS_KEYS = ['personality', 'mood', 'species', 'combat', 'distance', 'affiliationKind', 'roles'];
-const SINGLE_VALUE_AXES = LLM_AXIS_KEYS.filter((k) => k !== 'roles');
+const LLM_AXIS_KEYS = [
+  'personality', 'mood', 'species', 'combat', 'distance', 'affiliationKind', 'roles',
+  'ageFeel', 'build', 'stature', 'occupation',
+];
+/** 複数値で持つ軸（schema.tsのAxes型で string[] のもの）。 */
+const MULTI_VALUE_AXES = ['roles', 'occupation'];
+const SINGLE_VALUE_AXES = LLM_AXIS_KEYS.filter((k) => !MULTI_VALUE_AXES.includes(k));
 
 const AXIS_LABELS = {
   personality: '性格',
@@ -45,6 +50,10 @@ const AXIS_LABELS = {
   distance: '距離感・積極性',
   affiliationKind: '所属の種類',
   roles: '関係性の役割（複数可）',
+  ageFeel: '見た目の年齢の印象',
+  build: '体格（体つきの太さ。身長とは別）',
+  stature: '身長の印象（体格の太さとは別）',
+  occupation: '職業・立場（複数可）',
 };
 
 const SYSTEM_PROMPT = `あなたはキャラクター属性の抽出器です。与えられたファンサイト記事の本文から、指定された属性だけを抽出します。次の手順を厳守してください。
@@ -55,7 +64,8 @@ const SYSTEM_PROMPT = `あなたはキャラクター属性の抽出器です。
 4. valueは指定された選択肢の中からのみ選びます。選択肢以外の言葉を使ってはいけません。
 5. 記事本文に根拠となる記述が見当たらない属性は、quoteを空文字、valueを「該当なし」、confidenceを「none」にします。このキャラクターについてあなたが元々知っている一般的な知識やイメージで埋めてはいけません——根拠は必ずこの記事本文の中だけから探し、見つからなければ正直に「該当なし」にしてください。
 6. 根拠はあるが判定に迷う場合はconfidenceを「low」、明確に判定できる場合は「high」にします。
-7. roles（関係性の役割）は複数該当し得ます。本文から確認できるものだけを列挙してください。無理に埋める必要はありません。`;
+7. roles（関係性の役割）と occupation（職業・立場）は複数該当し得ます。本文から確認できるものだけを列挙してください。無理に埋める必要はありません。
+8. build（体格）と stature（身長）は別の属性です。体つきの太さ・細さが build、背の高さが stature です。片方の記述からもう片方を推測してはいけません。`;
 
 /**
  * questions.json の既存 axis-type ソースから各軸の列挙値を実データ駆動で導出する
@@ -101,19 +111,21 @@ function buildCombinedFormatSchema(axisEnums) {
   for (const key of SINGLE_VALUE_AXES) {
     properties[key] = singleAxisFieldSchema(axisEnums[key]);
   }
-  properties.roles = {
-    type: 'array',
-    items: {
-      type: 'object',
-      properties: {
-        quote: { type: 'string' },
-        value: { type: 'string', enum: axisEnums.roles },
-        confidence: { type: 'string', enum: ['high', 'low', 'none'] },
+  for (const key of MULTI_VALUE_AXES) {
+    properties[key] = {
+      type: 'array',
+      items: {
+        type: 'object',
+        properties: {
+          quote: { type: 'string' },
+          value: { type: 'string', enum: axisEnums[key] },
+          confidence: { type: 'string', enum: ['high', 'low', 'none'] },
+        },
+        required: ['quote', 'value', 'confidence'],
       },
-      required: ['quote', 'value', 'confidence'],
-    },
-  };
-  return { type: 'object', properties, required: [...SINGLE_VALUE_AXES, 'roles'] };
+    };
+  }
+  return { type: 'object', properties, required: [...SINGLE_VALUE_AXES, ...MULTI_VALUE_AXES] };
 }
 
 /**
@@ -212,18 +224,19 @@ async function resolveSingleAxis({ ollamaChat, articleText, axisKey, initial, ax
 }
 
 /**
- * roles(複数値軸)の照合。未列挙は無情報として扱う設計のため、単一値軸のような
- * 再プロンプトはせず、照合に落ちた/confidenceがhighでない候補は静かに落とす
- * （安全側——不採用は「未確認」に留まりnull寄与になるだけで実害が無い）。
+ * 複数値軸（roles/occupation）の照合。未列挙は無情報として扱う設計のため、
+ * 単一値軸のような再プロンプトはせず、照合に落ちた/confidenceがhighでない候補は
+ * 静かに落とす（安全側——不採用は「未確認」に留まりnull寄与になるだけで実害が無い）。
  * @param {string} articleText
+ * @param {string} axisKey
  * @param {{ quote: string, value: string, confidence: string }[]} initialEntries
  * @param {object[]} verification
  */
-function resolveRolesAxis(articleText, initialEntries, verification) {
+function resolveMultiAxis(articleText, axisKey, initialEntries, verification) {
   const accepted = [];
   for (const entry of initialEntries) {
     const matched = verifyQuote(articleText, entry.quote);
-    verification.push({ axis: 'roles', role: entry.value, quote: entry.quote, matched, retries: 0 });
+    verification.push({ axis: axisKey, role: entry.value, quote: entry.quote, matched, retries: 0 });
     if (matched && entry.confidence === 'high') accepted.push(entry.value);
   }
   const values = [...new Set(accepted)];
@@ -232,12 +245,8 @@ function resolveRolesAxis(articleText, initialEntries, verification) {
 
 /**
  * @typedef {{ value: string, verified: boolean, confidence: string }} SingleAxisResult
- * @typedef {{ values: string[], verified: boolean, confidence: string }} RolesResult
- * @typedef {{
- *   personality: SingleAxisResult, mood: SingleAxisResult, species: SingleAxisResult,
- *   combat: SingleAxisResult, distance: SingleAxisResult, affiliationKind: SingleAxisResult,
- *   roles: RolesResult,
- * }} ExtractedAxes
+ * @typedef {{ values: string[], verified: boolean, confidence: string }} MultiAxisResult
+ * @typedef {Record<string, SingleAxisResult | MultiAxisResult>} ExtractedAxes
  * @typedef {{ axis: string, quote: string, matched: boolean | null, retries: number, role?: string }} VerificationEntry
  */
 
@@ -271,7 +280,9 @@ export async function extractOneCharacter({ ollamaChat, articleText, axisEnums, 
       model,
     });
   }
-  axes.roles = resolveRolesAxis(articleText, initial.roles ?? [], verification);
+  for (const axisKey of MULTI_VALUE_AXES) {
+    axes[axisKey] = resolveMultiAxis(articleText, axisKey, initial[axisKey] ?? [], verification);
+  }
 
   return { axes, verification, rawResponse: initial };
 }
@@ -383,8 +394,8 @@ async function main() {
     const summary = SINGLE_VALUE_AXES.map((k) => (result.axes[k].value === '該当なし' ? null : `${k}=${result.axes[k].value}`))
       .filter(Boolean)
       .join(', ');
-    const rolesSummary = result.axes.roles.values.join('/') || 'なし';
-    console.log(`完了 (${summary || '該当なし'}, roles=${rolesSummary})`);
+    const multiSummary = MULTI_VALUE_AXES.map((k) => `${k}=${result.axes[k].values.join('/') || 'なし'}`).join(', ');
+    console.log(`完了 (${summary || '該当なし'}, ${multiSummary})`);
   }
 
   const passRate = evidenceAttempts > 0 ? `${((verifiedCount / evidenceAttempts) * 100).toFixed(1)}%` : 'N/A';

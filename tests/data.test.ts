@@ -170,6 +170,8 @@ describe('A. データ品質', () => {
       'species',
       'mood',
       'affiliationName',
+      'stature',
+      'occupation',
     ] as const;
     const MIN_FILLED = 4;
 

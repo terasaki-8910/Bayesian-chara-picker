@@ -22,8 +22,11 @@ const FORBIDDEN_TERMS: string[] = forbiddenTermsFile.terms;
  * （personality/mood/roles/species/combat/affiliationKind/distance）に限る
  * （PLAN「P5」）。
  */
-const WIKIDATA_AXIS_KEYS = ['genderExpression', 'hairColor', 'eyeColor', 'species'] as const;
-const LLM_AXIS_KEYS = ['personality', 'mood', 'species', 'combat', 'distance', 'affiliationKind', 'roles'] as const;
+const WIKIDATA_AXIS_KEYS = ['genderExpression', 'hairColor', 'eyeColor', 'species', 'stature'] as const;
+const LLM_AXIS_KEYS = [
+  'personality', 'mood', 'species', 'combat', 'distance', 'affiliationKind', 'roles',
+  'ageFeel', 'build', 'stature', 'occupation',
+] as const;
 
 const sourceSchema = z.discriminatedUnion('type', [
   z.object({ type: z.literal('danbooru-group'), group: z.string().min(1), tag: z.string().min(1) }),
@@ -68,7 +71,7 @@ const runtimeSchema = z.object({
 const VALID_AXIS_KEYS = new Set([
   'genderExpression', 'ageFeel', 'build', 'bust', 'personality', 'roles', 'distance',
   'looks', 'hairColor', 'skinTone', 'outfit', 'species', 'mood', 'combat',
-  'affiliationKind', 'affiliationName',
+  'affiliationKind', 'affiliationName', 'stature', 'occupation',
 ]);
 
 describe('BA1. questions.json の構造', () => {
@@ -312,6 +315,7 @@ describe('BA7. wikidata-map.json / wikidata-facts.json の整合性（PLAN「P5a
   const GENDER_VALUES = new Set(['女性', 'おとこの娘', 'ふたなり', '男性']);
   const HAIR_COLOR_VALUES = new Set(['黒', '白', '金', '茶', '赤', '青', '緑', '桃', '紫', '銀']);
   const EYE_COLOR_TOKENS = new Set(['aqua', 'black', 'blue', 'brown', 'green', 'grey', 'orange', 'purple', 'red', 'yellow']);
+  const STATURE_VALUES = new Set(['小柄', '標準', '長身']);
 
   it('wikidata-map.json は全キャラを1件ずつ持ち、qid=nullは reason 必須', () => {
     const ids = new Set(charactersFile.map((c) => c.id));
@@ -331,6 +335,7 @@ describe('BA7. wikidata-map.json / wikidata-facts.json の整合性（PLAN「P5a
       if ('genderExpression' in facts) expect(GENDER_VALUES.has(facts.genderExpression as string), id).toBe(true);
       if ('hairColor' in facts) expect(HAIR_COLOR_VALUES.has(facts.hairColor as string), id).toBe(true);
       if ('eyeColor' in facts) expect(EYE_COLOR_TOKENS.has(facts.eyeColor as string), id).toBe(true);
+      if ('stature' in facts) expect(STATURE_VALUES.has(facts.stature as string), id).toBe(true);
       if ('species' in facts) {
         expect(Array.isArray(facts.species), id).toBe(true);
         expect((facts.species as string[]).every((v) => v === '人間'), id).toBe(true);
