@@ -22,6 +22,21 @@ Change here to override per project. The language I chat in is separate and unaf
                                      ビルドが落ちるようになり、リペアループが自分では直せ
                                      ない失敗を延々と叩く。データはコミットして運用する。)
 
+## キャラを追加するとき（拡充作業の手順）
+IMPORTANT: **新しい作品のキャラを足したら、`data/bayes/tag-overrides.json` の
+`seriesAliases` に「その作品の Danbooru category=3(著作権)タグ」を必ず先に足す。**
+これを忘れると Danbooru タグの共起検証が黙ってスキップされ、別作品の同名キャラを
+掴んだまま出荷される（2026-08-01 に実際に5件発生。符玄→藤原妹紅 等）。
+機械ゲートは A15/A16（`tests/bayes-data.test.ts` の BA5）で、`map-characters.mjs` も
+実行前に止まる。手順は次の順で、途中で `npm test` が落ちたら先に進まないこと:
+
+1. `data/characters.json` にキャラを追加
+2. 新作品なら `seriesAliases` に Danbooru の作品タグを追加（存在を実際に確認する）
+3. `node scripts/bayes/map-characters.mjs` → 共起率が低い/付かないキャラは
+   `overrides` に**理由付きで**確定させる（本名でなくゲーム内名でタグ付けされている、
+   ローマ字の長音表記が違う、等がよくある原因）
+4. `npm test` で A15/A16 を含むゲートを通す
+
 ## UI rules
 IMPORTANT: colors ONLY via design tokens; never hardcode hex. No emoji in UI or source.
 Shared personal UI direction: @~/.claude/rules/ui.md

@@ -227,13 +227,82 @@ describe('BA3. questions.runtime.json の射影ドリフト検出', () => {
 });
 
 describe('BA5. tag-overrides.json / tag-map.json の整合性', () => {
+  type TagMapEntry = {
+    tag: string | null;
+    reason?: string;
+    source?: string;
+    seriesOverlap?: number | null;
+  };
+  const tagMap = JSON.parse(readFileSync(new URL('../data/bayes/tag-map.json', import.meta.url), 'utf8')) as {
+    entries: Record<string, TagMapEntry>;
+  };
+  const overridesFile = JSON.parse(
+    readFileSync(new URL('../data/bayes/tag-overrides.json', import.meta.url), 'utf8'),
+  ) as {
+    seriesAliases: Record<string, string>;
+    overrides: Record<string, { tag: string | null; reason?: string }>;
+  };
+
+  /**
+   * scripts/bayes/map-characters.mjs の SERIES_OVERLAP_MIN と意図的に二重化する。
+   * ACCEPTANCE A5 と同じ考え方で、片方だけ変えたらここで落ちるのが検出力そのもの。
+   */
+  const SERIES_OVERLAP_MIN = 0.3;
+
   it('tag-map.json は全キャラを1件ずつ持ち、tag=nullは reason 必須', () => {
-    const tagMap = JSON.parse(readFileSync(new URL('../data/bayes/tag-map.json', import.meta.url), 'utf8'));
     const ids = new Set(charactersFile.map((c) => c.id));
     expect(new Set(Object.keys(tagMap.entries))).toEqual(ids);
-    for (const [id, entry] of Object.entries(tagMap.entries) as [string, { tag: string | null; reason?: string }][]) {
+    for (const [id, entry] of Object.entries(tagMap.entries)) {
       if (entry.tag === null) expect(entry.reason, id).toBeTruthy();
     }
+  });
+
+  /**
+   * 実際に起きた事故（2026-08-01）の再発防止。
+   *
+   * キャラ拡充で新しい作品を足したとき seriesAliases への追加を忘れると、
+   * map-characters.mjs の seriesOverlapRatio() が `if (!seriesAlias) return null` で
+   * 黙って検証をスキップし、ワイルドカードの誤ヒットがそのまま採用される。
+   * 実際に 符玄→fujiwara_no_mokou（東方）、SAOアスナ→asuna_(blue_archive) など
+   * 5件が誤対応のまま出荷され、ポートフォリオサイト側で別キャラの画像が表示された。
+   *
+   * 「エイリアスを足し忘れない」を人間の記憶に頼らず、ここで機械的に止める。
+   */
+  it('characters.json の全作品が seriesAliases に定義されている', () => {
+    const seriesList = [...new Set(charactersFile.map((c) => c.series))].sort();
+    const missing = seriesList.filter((s) => !(s in overridesFile.seriesAliases));
+    expect(
+      missing,
+      `seriesAliases 未定義の作品があります: ${missing.join(' / ')}\n` +
+        '→ data/bayes/tag-overrides.json の seriesAliases に Danbooru の category=3(著作権)タグを\n' +
+        '   追加してから scripts/bayes/map-characters.mjs を実行すること。\n' +
+        '   未定義のままだと作品タグとの共起検証がスキップされ、誤タグが素通りする。',
+    ).toEqual([]);
+  });
+
+  /**
+   * 上と対になる出口側のゲート。原因が何であれ「検証されていないタグ」を出荷させない。
+   * 手動 override は人間が確認済みなので理由付きで許可する。
+   */
+  it('tag が non-null のエントリは共起検証済みか、理由付きの override であること', () => {
+    const unverified = Object.entries(tagMap.entries)
+      .filter(([, e]) => e.tag !== null)
+      .filter(([, e]) => e.source !== 'override')
+      .filter(([, e]) => typeof e.seriesOverlap !== 'number' || e.seriesOverlap < SERIES_OVERLAP_MIN);
+    expect(
+      unverified.map(([id, e]) => `${id}(${e.tag}, source=${e.source}, overlap=${e.seriesOverlap})`),
+      '作品タグとの共起検証を通っていないタグがあります。\n' +
+        `→ 共起率が ${SERIES_OVERLAP_MIN} 未満か未計測です。別作品の同名キャラを掴んでいる可能性が高い。\n` +
+        '   正しいタグを tag-overrides.json の overrides に理由付きで指定するか、\n' +
+        '   seriesAliases を直してから map-characters.mjs を再実行すること。',
+    ).toEqual([]);
+  });
+
+  it('override は必ず理由を持つ（後から根拠を辿れるようにする）', () => {
+    const noReason = Object.entries(overridesFile.overrides)
+      .filter(([, v]) => !v.reason?.trim())
+      .map(([id]) => id);
+    expect(noReason, `理由の無い override: ${noReason.join(', ')}`).toEqual([]);
   });
 });
 

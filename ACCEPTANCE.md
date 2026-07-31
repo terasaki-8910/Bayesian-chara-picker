@@ -21,6 +21,16 @@ LLM の主観レビューは受け入れ基準に含めない。
 | A12 | `provisional: true` と `reviewed: true` が同時に成立しない（A2 の抜け道防止） | Vitest |
 | A13 | `imagePath` が `null` でないレコードは、対応するファイルが `public/character-images/` に実在する | Vitest（fs 存在確認） |
 | A14 | `imageApproved: true` は `imagePath !== null` のときのみ成立する | Vitest（zod の `refine` と二重化） |
+| A15 | `characters.json` の全作品が `tag-overrides.json` の `seriesAliases` に定義されている | Vitest（BA5） |
+| A16 | `tag-map.json` の `tag` が非 null のエントリは、作品タグとの共起率 0.3 以上か、理由付きの手動 override である | Vitest（BA5） |
+
+**A15 / A16 の由来（2026-08-01 の事故）**: キャラ拡充で新しい作品を足したときに
+`seriesAliases` への追加を忘れると、`seriesOverlapRatio()` が `seriesAlias` の無い場合に
+`null` を返して検証をスキップし、ワイルドカードの誤ヒットがそのまま採用される。
+実際にこれで 5 件が誤対応のまま出荷され、符玄→`fujiwara_no_mokou`（東方）、
+SAO アスナ→`asuna_(blue_archive)`（ブルアカ）などがポートフォリオサイトで
+別キャラの画像として表示された。**A15 が原因側、A16 が結果側**の歯止め。
+`scripts/bayes/map-characters.mjs` も実行前に同じ検査をして止まる（早期フィードバック）。
 
 ## B. 収集スクリプトの規約遵守
 

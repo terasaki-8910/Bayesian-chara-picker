@@ -238,6 +238,27 @@ async function main() {
     return;
   }
 
+  // seriesAlias が無いと seriesOverlapRatio() が検証をスキップし（null を返す）、
+  // ワイルドカードの誤ヒットがそのまま採用される。2026-08-01 にこれで5件の誤対応が
+  // 出荷された（符玄→fujiwara_no_mokou 等）。実行してから気づくのでは遅いので先に止める。
+  // 最終的なゲートは tests/bayes-data.test.ts の BA5。
+  const seriesWithoutAlias = [...new Set(targets.map((c) => c.series))]
+    .filter((s) => !(s in overridesFile.seriesAliases))
+    .sort();
+  if (seriesWithoutAlias.length > 0) {
+    console.error('');
+    console.error('[ERROR] seriesAliases に未定義の作品があります:');
+    for (const s of seriesWithoutAlias) console.error(`     ${s}`);
+    console.error('');
+    console.error('   このまま実行すると作品タグとの共起検証がスキップされ、');
+    console.error('   別作品の同名キャラを誤って採用しても検出できません。');
+    console.error('   data/bayes/tag-overrides.json の seriesAliases に');
+    console.error('   Danbooru の category=3(著作権)タグを追加してから再実行してください。');
+    console.error('');
+    process.exitCode = 1;
+    return;
+  }
+
   const now = Date.now();
   const pending = targets.filter((c) => {
     if (force || charFilter) return true;
