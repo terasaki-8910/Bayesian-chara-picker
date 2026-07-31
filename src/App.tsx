@@ -2,6 +2,7 @@ import { useCallback, useState } from 'react';
 
 import { dataset, useInterview } from './hooks/useInterview';
 import { useBayesInterview } from './hooks/useBayesInterview';
+import { initBayes } from './data/bayesRuntime';
 import { useSessionLog, type SessionLogRecord } from './hooks/useSessionLog';
 import { omakase, type Scored } from './engine/recommend';
 import type { Probe } from './engine/questions';
@@ -9,6 +10,10 @@ import { GuessScreen } from './screens/GuessScreen';
 import { NoGuessScreen } from './screens/NoGuessScreen';
 import { QuestionScreen } from './screens/QuestionScreen';
 import { ResultScreen } from './screens/ResultScreen';
+
+// ベイズエンジンへデータを注入する（engine/bayes.ts はJSONをimportしない）。
+// レンダリング前に一度だけ実行されれば良いのでモジュールスコープで呼ぶ。
+initBayes();
 
 /** 現行（16軸ルールベース）エンジンのフロー。旧 App() 本体をそのまま移しただけで無改造。 */
 function ClassicFlow() {
@@ -84,7 +89,7 @@ function ClassicFlow() {
  * NoGuessScreen）は完全に共用・無改造。omakaseもエンジン非依存で共用する。
  */
 function BayesFlow() {
-  const interview = useBayesInterview();
+  const interview = useBayesInterview(dataset);
   const { log } = useSessionLog();
   const [omakaseResult, setOmakaseResult] = useState<Scored | null>(null);
 
