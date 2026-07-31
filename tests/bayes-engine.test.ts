@@ -15,7 +15,7 @@ import {
   type Dataset,
   type Scored,
 } from '../src/engine/bayes';
-import { topGuess } from '../src/engine/recommend';
+import { survivors, topGuess } from '../src/engine/recommend';
 import { readJson } from './helpers/data';
 
 /**
@@ -207,15 +207,15 @@ describe('BC. ベイズ推薦エンジン', () => {
   });
 
   it(
-    'BC13: reachable 128体の95%以上が、尤度オラクル回答で自分自身に収束する（MIN_QUESTIONS_BAYES〜HARD_CAP_BAYES問の範囲内）',
+    'BC13: reachable(=survivors)な全キャラの95%以上が、尤度オラクル回答で自分自身に収束する（MIN_QUESTIONS_BAYES〜HARD_CAP_BAYES問の範囲内）',
     () => {
-      const survivors = dataset.characters.filter(
-        (c) => c.axes.genderExpression !== '男性' && c.provisional !== true,
-      );
+      // survivors()を直接使う（以前はここで一部だけ再実装しており、reviewed等の
+      // ハードフィルタ追加に追随できていなかった。2026-08-01発覚）。
+      const reachable = survivors(dataset);
       const askedCounts: number[] = [];
       const failures: string[] = [];
 
-      for (const target of survivors) {
+      for (const target of reachable) {
         const { guess, askedKeys } = runToGuess(dataset, oracleFor(target));
         askedCounts.push(askedKeys.size);
         if (guess.character.id !== target.id) {
@@ -223,7 +223,7 @@ describe('BC. ベイズ推薦エンジン', () => {
         }
       }
 
-      const convergedRatio = (survivors.length - failures.length) / survivors.length;
+      const convergedRatio = (reachable.length - failures.length) / reachable.length;
       // 質問キュレーションへのフィードバック用に失敗リストを常に表示する（成功時も含めて可視化）。
       expect(convergedRatio, `未収束: ${JSON.stringify(failures)}`).toBeGreaterThanOrEqual(0.95);
       expect(Math.min(...askedCounts)).toBeGreaterThanOrEqual(MIN_QUESTIONS_BAYES);

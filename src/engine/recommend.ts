@@ -71,12 +71,19 @@ function hasTraitValue(character: Character, axis: AxisKey, value: string, multi
  * `exclude` は「いいえ」で拒否済みのキャラ id 集合（再推測用。PLAN「拒否ループ」）。
  * ベイズエンジン(src/engine/bayes.ts)からも同じハードフィルタ集合が必要なため export する
  * （CONTRACT: 既存exportの追加のみ、改名・削除はしない）。
+ *
+ * `reviewed !== true`（査読前）も`provisional`と同格のハードフィルタにする
+ * （SPEC 2.4の意図通り。2026-08-01、`reviewed`を見ていなかったため184体中161体の
+ * 査読前キャラが本番で出現可能な状態になっており、ベイズの偏りゲート(BD)が
+ * χ²=319.1(閾値300、期待値からのズレが約7σ)という統計的に無視できない偏りを
+ * 検出して発覚した——査読前データの質のばらつきがそのまま偏りとして表面化していた）。
  */
 export function survivors(dataset: Dataset, exclude?: ReadonlySet<string>): Character[] {
   return dataset.characters.filter(
     (c) =>
       c.axes.genderExpression !== '男性' &&
       c.provisional !== true &&
+      c.reviewed === true &&
       combinedRankFor(c.id, dataset.supply) !== 'なし' &&
       !(exclude?.has(c.id) ?? false),
   );

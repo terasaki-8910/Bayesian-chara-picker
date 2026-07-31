@@ -15,6 +15,7 @@ import {
   omakase,
   scoreCharacters,
   shouldGuess,
+  survivors,
   topGuess,
   type AnswerMap,
   type Dataset,
@@ -94,7 +95,10 @@ function makeSyntheticCharacter(id: string, axesOverrides: Partial<Character['ax
     series: 'synthetic',
     dlsiteQuery: null,
     hitomiQuery: null,
-    reviewed: false,
+    // 合成フィクスチャは常に査読済み扱いにする（survivors()のreviewedハードフィルタで
+    // 除外されないように。C11等はスコアリングの頑健性を見るテストで、reviewedゲート
+    // 自体を検証する対象ではない）。
+    reviewed: true,
     provisional: false,
     imagePath: null,
     imageApproved: false,
@@ -493,13 +497,13 @@ describe('C. 推薦エンジン', () => {
     // 不変条件ではない）。不変条件として保証されるのは「6問未満では絶対に確定しない・
     // 10問を超えて粘らない・最終的に必ず自分自身を言い当てる」の3点だけなので、
     // それだけを固定する。
-    const survivors = dataset.characters.filter(
-      (c) => c.axes.genderExpression !== '男性' && c.provisional !== true,
-    );
+    // survivors()を直接使う（以前はここで一部だけ再実装しており、reviewed等の
+    // ハードフィルタ追加に追随できていなかった。2026-08-01発覚）。
+    const reachable = survivors(dataset);
     const askedCounts: number[] = [];
     const failures: string[] = [];
 
-    for (const target of survivors) {
+    for (const target of reachable) {
       const { guess, askedKeys } = runToGuess(dataset, oracleFor(target));
       askedCounts.push(askedKeys.size);
       if (guess.character.id !== target.id) {

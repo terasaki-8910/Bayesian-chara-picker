@@ -1,7 +1,16 @@
 import { describe, expect, it } from 'vitest';
 
 import type { Character, SupplyFile } from '../src/data/schema';
-import { nextProbe, scoreCharacters, shouldGuess, topGuess, type AnswerMap, type Confidence, type Dataset } from '../src/engine/recommend';
+import {
+  nextProbe,
+  scoreCharacters,
+  shouldGuess,
+  survivors,
+  topGuess,
+  type AnswerMap,
+  type Confidence,
+  type Dataset,
+} from '../src/engine/recommend';
 import { readJson } from './helpers/data';
 
 /**
@@ -27,9 +36,7 @@ const dataset: Dataset = {
  * 扱いになりカイ二乗を過大に見せる（2026-07-21発見、131分母=643.7が正しくは
  * 128分母=514.4だった）。
  */
-const reachableCount = dataset.characters.filter(
-  (c) => c.axes.genderExpression !== '男性' && c.provisional !== true,
-).length;
+const reachableCount = survivors(dataset).length;
 
 function mulberry32(seed: number): () => number {
   let a = seed >>> 0;
@@ -76,12 +83,24 @@ function runOneSession(rng: () => number, biasYes: number): string {
  * 異常ではなく、母集団拡大に伴う分散増加——シードごとに最頻出キャラが
  * 入れ替わることを確認済み。C13自己収束は128→181体でも100%を維持しており
  * 推薦の正しさ自体に問題は無い）。2シードの実測上限に約8%のヘッドルームを
- * 持たせて360へ引き上げた。将来さらにキャラを拡充する場合はこの値もあわせて
- * 再計算すること（state/engine-review/bias-sweep.mts があれば、無ければ
- * このファイルのrunOneSessionをtop15ログ付きで一時的に走らせて実測する）。
+ * 持たせて360へ引き上げた。
+ *
+ * 2026-08-01改定: `survivors()`が`reviewed!==true`もハードフィルタするように
+ * なり、reachableCount 181→20 へ激減（査読前データの質のばらつきがベイズ側の
+ * BDゲートで統計的に無視できない偏りとして表面化したため、reviewedを
+ * ハードフィルタに追加。詳細は tests/bayes-bias.test.ts の同日コメント参照）。
+ * 母集団が大きく変わったため両閾値を再計測: N=1000で
+ * chiSquare は seed=20260721→112.6, 13579246→75.8, 987654321→79.8
+ * （実測上限112.6に約40%の余裕で160へ）。
+ * maxShare は同順で9.10%, 8.40%, 7.80%（実測上限9.10%に約30%の余裕で0.12へ
+ * ——reachable=20では一様期待値自体が5%なので、旧値0.025は母集団縮小後は
+ * 理論上も満たせない値になっていた）。
+ * 将来さらにキャラを拡充/査読する場合はこの値もあわせて再計算すること
+ * （state/engine-review/bias-sweep.mts があれば、無ければこのファイルの
+ * runOneSessionをtop15ログ付きで一時的に走らせて実測する）。
  */
-const CHI_SQUARE_MAX = 360;
-const MAX_SHARE = 0.025;
+const CHI_SQUARE_MAX = 160;
+const MAX_SHARE = 0.12;
 
 describe('D. 推薦エンジンの偏りゲート', () => {
   // scoreCharacters/nextProbe は呼び出しごとに131体ぶんのプローブプールを
