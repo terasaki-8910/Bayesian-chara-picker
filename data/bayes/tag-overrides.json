@@ -31,7 +31,10 @@
     "SPY×FAMILY": "spy_x_family",
     "UTAU": "utau",
     "このすばらしい世界に祝福を!": "kono_subarashii_sekai_ni_shukufuku_wo!",
-    "アイドルマスター": "idolmaster"
+    "アイドルマスター": "idolmaster",
+    "崩壊：スターレイル": "honkai:_star_rail",
+    "ソードアート・オンライン": "sword_art_online",
+    "ウマ娘プリティーダービー": "umamusume"
   },
   "overrides": {
     "naruto-kurenai": {
@@ -65,6 +68,18 @@
     "bleach-kukaku": {
       "tag": "shiba_kuukaku",
       "reason": "hitomiQuery=「kukaku shiba」語順反転+ローマ字表記差(kukaku→kuukaku)。自動導出はkukaku_shiba/shiba_kukaku/kukaku_shiba_(bleach)/kukaku_shiba(*)/kukaku(*)の5パターンを試したがいずれもu1つの表記でkuukaku表記に届かずnot-found。2026-07-31、wiki other_names逆引き(志波空鶴→shiba_kuukaku)とタグ検索の両方で確認(146件、category=4)。"
+    },
+    "sao-rika": {
+      "tag": "lisbeth_(sao)",
+      "reason": "本名(篠崎里香)ではなくゲーム内名(リズベット)でタグ付けされている。自動導出はhitomiQuery由来のrika系を辿りrika_(pokemon)を誤選択していた(SAO共起0%)。2026-08-01、wiki other_names逆引き(篠崎里香→lisbeth_(sao))と共起検証で確認(776件、category=4、SAO共起100%)。"
+    },
+    "sao-silica": {
+      "tag": "silica",
+      "reason": "本名(綾野珪子)ではなくゲーム内名(シリカ)、かつ作品修飾の無いbareタグ。自動導出はkeiko系を辿りkeiko_(minami-ke)を誤選択していた(SAO共起0%)。2026-08-01、wiki other_names逆引き(綾野珪子→silica)と共起検証で確認(1200件、category=4、SAO共起100%)。"
+    },
+    "naruto-hanabi": {
+      "tag": "hyuuga_hanabi",
+      "reason": "hitomiQuery=「hanabi hyuga」語順反転+ローマ字表記差(hyuga→hyuuga)。自動導出はhanabi(*)のワイルドカードでhanabishi_haruka(別作品)を誤選択していた(共起0%、low-overlapで検出済み)。2026-08-01、wiki other_names逆引き(日向ハナビ→hyuuga_hanabi)と共起検証で確認(232件、category=4、naruto_(series)共起100%)。姉のnaruto-hinataも同種の表記差でoverride済み。"
     }
   }
 }

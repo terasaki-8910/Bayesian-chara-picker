@@ -2842,25 +2842,10 @@
       "checkedAt": "2026-07-26T08:08:21.979Z"
     },
     "naruto-hanabi": {
-      "tag": "hanabishi_haruka",
-      "postCount": 253,
-      "source": "low-overlap",
-      "seriesOverlap": 0,
-      "candidatesTried": [
-        "hanabi_hyuga",
-        "hyuga_hanabi",
-        "hanabi_hyuga_(naruto_(series))",
-        "hanabi_hyuga(*)",
-        "hanabi(*)"
-      ],
-      "allCandidates": [
-        "hanabishi_haruka(253)",
-        "hanabi_(senran_kagura)(146)",
-        "hanabishi_miki(54)",
-        "hanabishi_rikka(22)",
-        "hanabi_ichijou(21)"
-      ],
-      "checkedAt": "2026-07-26T08:08:32.990Z"
+      "tag": "hyuuga_hanabi",
+      "postCount": 232,
+      "source": "override",
+      "checkedAt": "2026-07-31T17:48:45.514Z"
     },
     "naruto-kushina": {
       "tag": "uzumaki_kushina",
@@ -3127,99 +3112,104 @@
     },
     "hsr-march7th": {
       "tag": "march_7th_(honkai:_star_rail)",
-      "postCount": 9464,
-      "source": "wildcard",
-      "seriesOverlap": null,
+      "postCount": 9492,
+      "source": "series-qualified",
+      "seriesOverlap": 0.9998946481247366,
       "candidatesTried": [
         "march_7th",
         "7th_march",
+        "march_7th_(honkai:_star_rail)",
         "march_7th(*)",
         "march(*)"
       ],
       "allCandidates": [
-        "march_7th_(honkai:_star_rail)(9464)",
-        "march_7th_(preservation)_(honkai:_star_rail)(4312)",
-        "march_7th_(hunt)_(honkai:_star_rail)(837)",
-        "marche_lorraine_(umamusume)(663)",
-        "marche_lorraine's_puppet(506)"
+        "march_7th_(honkai:_star_rail)(9492)",
+        "march_7th_(preservation)_(honkai:_star_rail)(4351)",
+        "march_7th_(hunt)_(honkai:_star_rail)(838)",
+        "marche_lorraine_(umamusume)(671)",
+        "marche_lorraine's_puppet(509)"
       ],
-      "checkedAt": "2026-07-26T08:09:57.703Z"
+      "checkedAt": "2026-07-31T17:44:58.805Z"
     },
     "hsr-kafka": {
       "tag": "kafka_(honkai:_star_rail)",
-      "postCount": 7941,
-      "source": "wildcard",
-      "seriesOverlap": null,
+      "postCount": 7953,
+      "source": "series-qualified",
+      "seriesOverlap": 0.9994970451401987,
       "candidatesTried": [
         "kafka",
+        "kafka_(honkai:_star_rail)",
         "kafka(*)"
       ],
       "allCandidates": [
-        "kafka_(honkai:_star_rail)(7941)",
+        "kafka_(honkai:_star_rail)(7953)",
         "kafka_(arknights)(151)",
         "kafka_(impression)_(honkai:_star_rail)(72)",
         "kafka_(shader_cat)_(honkai:_star_rail)(71)",
         "kafka_(good_me)_(honkai:_star_rail)(63)"
       ],
-      "checkedAt": "2026-07-26T08:09:59.909Z"
+      "checkedAt": "2026-07-31T17:45:02.618Z"
     },
     "hsr-silverwolf": {
       "tag": "silver_wolf_(honkai:_star_rail)",
-      "postCount": 5872,
-      "source": "wildcard",
-      "seriesOverlap": null,
+      "postCount": 5885,
+      "source": "series-qualified",
+      "seriesOverlap": 0.9998300764655905,
       "candidatesTried": [
         "silver_wolf",
         "wolf_silver",
+        "silver_wolf_(honkai:_star_rail)",
         "silver_wolf(*)",
         "silver(*)"
       ],
       "allCandidates": [
-        "silver_wolf_(honkai:_star_rail)(5872)",
-        "silver_(pokemon)(2601)",
-        "silver_fox_(kemono_friends)(1844)",
+        "silver_wolf_(honkai:_star_rail)(5885)",
+        "silver_(pokemon)(2605)",
+        "silver_fox_(kemono_friends)(1845)",
         "silverash_(arknights)(1270)",
-        "silver_wolf_(lv.999)_(honkai:_star_rail)(858)"
+        "silver_wolf_(lv.999)_(honkai:_star_rail)(861)"
       ],
-      "checkedAt": "2026-07-26T08:10:04.323Z"
+      "checkedAt": "2026-07-31T17:45:08.413Z"
     },
     "hsr-acheron": {
       "tag": "acheron_(honkai:_star_rail)",
-      "postCount": 6702,
-      "source": "wildcard",
-      "seriesOverlap": null,
+      "postCount": 6710,
+      "source": "series-qualified",
+      "seriesOverlap": 0.9998509687034277,
       "candidatesTried": [
         "acheron",
+        "acheron_(honkai:_star_rail)",
         "acheron(*)"
       ],
       "allCandidates": [
-        "acheron_(honkai:_star_rail)(6702)",
+        "acheron_(honkai:_star_rail)(6710)",
         "acheron_(slashed_dream)_(honkai:_star_rail)(839)",
         "acheron_(izumo)_(honkai:_star_rail)(159)",
         "acheron_(boundless_choreo)_(honkai:_star_rail)(88)",
         "acheron_(star_rail_live_2025)_(honkai:_star_rail)(54)"
       ],
-      "checkedAt": "2026-07-26T08:10:06.507Z"
+      "checkedAt": "2026-07-31T17:45:12.059Z"
     },
     "hsr-fuxuan": {
-      "tag": "fujiwara_no_mokou",
-      "postCount": 30341,
-      "source": "wildcard",
-      "seriesOverlap": null,
+      "tag": "fu_xuan_(honkai:_star_rail)",
+      "postCount": 1361,
+      "source": "series-qualified",
+      "seriesOverlap": 1,
       "candidatesTried": [
         "fu_xuan",
         "xuan_fu",
+        "fu_xuan_(honkai:_star_rail)",
         "fu_xuan(*)",
         "fu(*)"
       ],
       "allCandidates": [
-        "fujiwara_no_mokou(30341)",
-        "fujimaru_ritsuka_(male)(18774)",
-        "fujimaru_ritsuka_(female)(16240)",
-        "furina_(genshin_impact)(13619)",
-        "fubuki_(kancolle)(12878)"
+        "fu_xuan_(honkai:_star_rail)(1361)",
+        "fujiwara_no_mokou(30392)",
+        "fujimaru_ritsuka_(male)(18807)",
+        "fujimaru_ritsuka_(female)(16278)",
+        "furina_(genshin_impact)(13653)"
       ],
-      "checkedAt": "2026-07-26T08:10:10.938Z"
+      "checkedAt": "2026-07-31T17:45:18.116Z"
     },
     "lovelive-honoka": {
       "tag": "kosaka_honoka",
@@ -3285,203 +3275,183 @@
       "checkedAt": "2026-07-26T08:10:30.761Z"
     },
     "sao-asuna": {
-      "tag": "asuna_(blue_archive)",
-      "postCount": 17941,
-      "source": "wildcard",
-      "seriesOverlap": null,
+      "tag": "asuna_(sao)",
+      "postCount": 6054,
+      "source": "wildcard-verified",
+      "seriesOverlap": 0.9996696399074991,
       "candidatesTried": [
         "asuna_yuuki",
         "yuuki_asuna",
+        "asuna_yuuki_(sword_art_online)",
         "asuna_yuuki(*)",
         "asuna(*)"
       ],
       "allCandidates": [
-        "asuna_(blue_archive)(17941)",
-        "asuna_(bunny)_(blue_archive)(6861)",
-        "asuna_(sao)(6053)",
-        "asuna_(school_uniform)_(blue_archive)(3546)",
+        "asuna_(blue_archive)(18001)",
+        "asuna_(bunny)_(blue_archive)(6870)",
+        "asuna_(sao)(6054)",
+        "asuna_(school_uniform)_(blue_archive)(3558)",
         "asuna_(sao-alo)(758)"
       ],
-      "checkedAt": "2026-07-26T08:10:35.143Z"
+      "checkedAt": "2026-07-31T17:45:26.216Z"
     },
     "sao-shino": {
       "tag": "asada_shino",
       "postCount": 368,
       "source": "name-order-reversed",
-      "seriesOverlap": null,
+      "seriesOverlap": 1,
       "candidatesTried": [
         "shino_asada",
         "asada_shino",
+        "shino_asada_(sword_art_online)",
         "shino_asada(*)",
         "shino(*)"
       ],
       "allCandidates": [
         "asada_shino(368)",
-        "shinosawa_hiro(6519)",
-        "shinonome_ena(3564)",
-        "shinomiya_kaguya(2558)",
-        "shinonome_akito(2123)"
+        "shinosawa_hiro(6543)",
+        "shinonome_ena(3574)",
+        "shinomiya_kaguya(2561)",
+        "shinonome_akito(2129)"
       ],
-      "checkedAt": "2026-07-26T08:10:39.528Z"
+      "checkedAt": "2026-07-31T17:45:31.995Z"
     },
     "sao-rika": {
-      "tag": "rika_(pokemon)",
-      "postCount": 3768,
-      "source": "wildcard",
-      "seriesOverlap": null,
-      "candidatesTried": [
-        "rika_shinozaki",
-        "shinozaki_rika",
-        "rika_shinozaki(*)",
-        "rika(*)"
-      ],
-      "allCandidates": [
-        "rika_(pokemon)(3768)",
-        "rika_(m_k)(555)",
-        "rika_(touhou)(412)",
-        "rika_(palentine's_2026)_(pokemon)(78)",
-        "rikaritta_aries(71)"
-      ],
-      "checkedAt": "2026-07-26T08:10:43.996Z"
+      "tag": "lisbeth_(sao)",
+      "postCount": 776,
+      "source": "override",
+      "checkedAt": "2026-07-31T17:47:38.127Z"
     },
     "sao-silica": {
-      "tag": "keiko_(minami-ke)",
-      "postCount": 19,
-      "source": "wildcard",
-      "seriesOverlap": null,
-      "candidatesTried": [
-        "keiko_ayano",
-        "ayano_keiko",
-        "keiko_ayano(*)",
-        "keiko(*)"
-      ],
-      "allCandidates": [
-        "keiko_(minami-ke)(19)",
-        "keiko_(worldgore)(12)",
-        "keiko_(softending)(9)",
-        "keikou_mayoi(9)",
-        "keiko_6(7)"
-      ],
-      "checkedAt": "2026-07-26T08:10:48.454Z"
+      "tag": "silica",
+      "postCount": 1200,
+      "source": "override",
+      "checkedAt": "2026-07-31T17:47:38.625Z"
     },
     "sao-alice": {
       "tag": "alice_zuberg",
       "postCount": 1207,
       "source": "exact",
-      "seriesOverlap": null,
+      "seriesOverlap": 1,
       "candidatesTried": [
         "alice_zuberg",
+        "alice_zuberg_(sword_art_online)",
         "alice_zuberg(*)",
         "alice(*)"
       ],
       "allCandidates": [
         "alice_zuberg(1207)",
-        "alice_margatroid(39475)",
-        "alice_(alice_in_wonderland)(3899)",
-        "alice_thymefield(2785)",
-        "alice_margatroid_(pc-98)(1774)"
+        "alice_margatroid(39508)",
+        "alice_(alice_in_wonderland)(3909)",
+        "alice_thymefield(2799)",
+        "alice_margatroid_(pc-98)(1776)"
       ],
-      "checkedAt": "2026-07-26T08:10:51.721Z"
+      "checkedAt": "2026-07-31T17:45:57.151Z"
     },
     "umamusume-specialweek": {
       "tag": "special_week_(umamusume)",
-      "postCount": 4811,
-      "source": "wildcard",
-      "seriesOverlap": null,
+      "postCount": 4833,
+      "source": "series-qualified",
+      "seriesOverlap": 1,
       "candidatesTried": [
         "special_week",
         "week_special",
+        "special_week_(umamusume)",
         "special_week(*)",
         "special(*)"
       ],
       "allCandidates": [
-        "special_week_(umamusume)(4811)",
-        "special_week_(special_dreamer)_(umamusume)(1195)",
-        "special_week_(hopp'n_happy_heart)_(umamusume)(284)",
-        "special_week_(casual)_(umamusume)(84)",
+        "special_week_(umamusume)(4833)",
+        "special_week_(special_dreamer)_(umamusume)(1196)",
+        "special_week_(hopp'n_happy_heart)_(umamusume)(288)",
+        "special_week_(casual)_(umamusume)(88)",
         "special_week_(ruler_of_japan)_(umamusume)(65)"
       ],
-      "checkedAt": "2026-07-26T08:10:56.030Z"
+      "checkedAt": "2026-07-31T17:46:03.103Z"
     },
     "umamusume-silencesuzuka": {
       "tag": "silence_suzuka_(umamusume)",
-      "postCount": 6186,
-      "source": "wildcard",
-      "seriesOverlap": null,
+      "postCount": 6204,
+      "source": "series-qualified",
+      "seriesOverlap": 1,
       "candidatesTried": [
         "silence_suzuka",
         "suzuka_silence",
+        "silence_suzuka_(umamusume)",
         "silence_suzuka(*)",
         "silence(*)"
       ],
       "allCandidates": [
-        "silence_suzuka_(umamusume)(6186)",
-        "silence_suzuka_(innocent_silence)_(umamusume)(1642)",
-        "silence_(arknights)(1538)",
-        "silence_suzuka_(emerald_on_the_waves)_(umamusume)(306)",
+        "silence_suzuka_(umamusume)(6204)",
+        "silence_suzuka_(innocent_silence)_(umamusume)(1645)",
+        "silence_(arknights)(1539)",
+        "silence_suzuka_(emerald_on_the_waves)_(umamusume)(310)",
         "silence_the_paradigmatic_(arknights)(166)"
       ],
-      "checkedAt": "2026-07-26T08:11:00.474Z"
+      "checkedAt": "2026-07-31T17:46:08.908Z"
     },
     "umamusume-daiwascarlet": {
       "tag": "daiwa_scarlet_(umamusume)",
-      "postCount": 8632,
-      "source": "wildcard",
-      "seriesOverlap": null,
+      "postCount": 8660,
+      "source": "series-qualified",
+      "seriesOverlap": 1,
       "candidatesTried": [
         "daiwa_scarlet",
         "scarlet_daiwa",
+        "daiwa_scarlet_(umamusume)",
         "daiwa_scarlet(*)",
         "daiwa(*)"
       ],
       "allCandidates": [
-        "daiwa_scarlet_(umamusume)(8632)",
-        "daiwa_scarlet_(peak_blue)_(umamusume)(1897)",
-        "daiwa_scarlet_(casual)_(umamusume)(562)",
-        "daiwa_scarlet_(mini_vacation)_(umamusume)(417)",
+        "daiwa_scarlet_(umamusume)(8660)",
+        "daiwa_scarlet_(peak_blue)_(umamusume)(1904)",
+        "daiwa_scarlet_(casual)_(umamusume)(566)",
+        "daiwa_scarlet_(mini_vacation)_(umamusume)(418)",
         "daiwa_scarlet_(scarlet_nuit_etoile)_(umamusume)(336)"
       ],
-      "checkedAt": "2026-07-26T08:11:04.822Z"
+      "checkedAt": "2026-07-31T17:46:14.679Z"
     },
     "umamusume-riceshower": {
       "tag": "rice_shower_(umamusume)",
-      "postCount": 9568,
-      "source": "wildcard",
-      "seriesOverlap": null,
+      "postCount": 9655,
+      "source": "series-qualified",
+      "seriesOverlap": 1,
       "candidatesTried": [
         "rice_shower",
         "shower_rice",
+        "rice_shower_(umamusume)",
         "rice_shower(*)",
         "rice(*)"
       ],
       "allCandidates": [
-        "rice_shower_(umamusume)(9568)",
-        "rice_shower_(rosy_dreams)_(umamusume)(2447)",
-        "rice_shower_(vampire_makeover!)_(umamusume)(773)",
-        "rice_shower_(casual)_(umamusume)(507)",
-        "rice_cake_(honkai_impact)(163)"
+        "rice_shower_(umamusume)(9655)",
+        "rice_shower_(rosy_dreams)_(umamusume)(2455)",
+        "rice_shower_(vampire_makeover!)_(umamusume)(775)",
+        "rice_shower_(casual)_(umamusume)(508)",
+        "rice_cake_(honkai_impact)(164)"
       ],
-      "checkedAt": "2026-07-26T08:11:09.236Z"
+      "checkedAt": "2026-07-31T17:46:20.498Z"
     },
     "umamusume-kitasanblack": {
       "tag": "kitasan_black_(umamusume)",
-      "postCount": 4976,
-      "source": "wildcard",
-      "seriesOverlap": null,
+      "postCount": 4986,
+      "source": "series-qualified",
+      "seriesOverlap": 1,
       "candidatesTried": [
         "kitasan_black",
         "black_kitasan",
+        "kitasan_black_(umamusume)",
         "kitasan_black(*)",
         "kitasan(*)"
       ],
       "allCandidates": [
-        "kitasan_black_(umamusume)(4976)",
-        "kitasan_black_(gilded_shrine_to_glory)_(umamusume)(1412)",
+        "kitasan_black_(umamusume)(4986)",
+        "kitasan_black_(gilded_shrine_to_glory)_(umamusume)(1416)",
         "kitasan_black_(jubilant_star_auspicious_crane)_(umamusume)(94)",
         "kitasan_black_(young)_(umamusume)(91)",
         "kitasan_black_(casual)_(umamusume)(70)"
       ],
-      "checkedAt": "2026-07-26T08:11:13.647Z"
+      "checkedAt": "2026-07-31T17:46:26.292Z"
     }
   }
 }
