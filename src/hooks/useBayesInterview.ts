@@ -25,6 +25,10 @@ import {
  */
 
 const NEAR_MISS_COUNT = 3;
+/** guessingフェーズで推測と一緒に露出する「他の上位候補」の数（トップ3〜5候補の
+ * アコーディオンUI用。開発元=ここでフックが候補を返し、UIはサイト側で実装する順。
+ * 5件返してUI側で表示数を絞れるようにする）。 */
+const CANDIDATES_COUNT = 5;
 
 type Snapshot = {
   answers: BayesAnswerMap;
@@ -144,7 +148,18 @@ export type BayesInterviewState =
       undo(): void;
       reset(): void;
     }
-  | { phase: 'guessing'; guess: Scored; canUndo: boolean; confirm(): void; reject(): void; undo(): void; reset(): void }
+  | {
+      phase: 'guessing';
+      guess: Scored;
+      /** 推測(guess)を除いたスコア上位の他候補（降順・拒否済み除外済み）。
+       * guessはクールダウン適用後の1体なのでcandidates[0]と一致するとは限らない。 */
+      candidates: Scored[];
+      canUndo: boolean;
+      confirm(): void;
+      reject(): void;
+      undo(): void;
+      reset(): void;
+    }
   | { phase: 'confirmed'; guess: Scored; reset(): void }
   | { phase: 'exhausted'; nearMisses: Scored[]; reset(): void };
 
@@ -227,7 +242,11 @@ export function useBayesInterview(dataset: Dataset): BayesInterviewState {
   }
 
   if (!state.bonusPending && state.guess) {
-    return { phase: 'guessing', guess: state.guess, canUndo, confirm, reject, undo, reset };
+    const guessId = state.guess.character.id;
+    const candidates = bayesScoreCharacters(state.answers, dataset, { exclude: rejectedSet })
+      .filter((s) => s.character.id !== guessId)
+      .slice(0, CANDIDATES_COUNT);
+    return { phase: 'guessing', guess: state.guess, candidates, canUndo, confirm, reject, undo, reset };
   }
 
   if (!probe) {
