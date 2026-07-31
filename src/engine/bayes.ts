@@ -1,5 +1,3 @@
-import likelihoodsData from '../../data/bayes/likelihoods.json';
-import questionsRuntimeData from '../../data/bayes/questions.runtime.json';
 import type { AxisKey, Character, SupplyFile } from '../data/schema';
 import { CONFIDENCE_WEIGHT, type Confidence } from './questions';
 import { combinedRankFor, survivors, type Dataset, type Reason, type Scored } from './recommend';
@@ -17,25 +15,47 @@ export type BayesProbe = {
   reason: { axis: AxisKey; label: string; value: string };
 };
 
-type LikelihoodsFile = { epsilon: number; questionIds: string[]; baseRates: number[]; chars: Record<string, number[]> };
-type QuestionsRuntimeFile = {
+export type LikelihoodsFile = {
+  epsilon: number;
+  questionIds: string[];
+  baseRates: number[];
+  chars: Record<string, number[]>;
+};
+export type QuestionsRuntimeFile = {
   version: number;
   questions: { key: string; prompt: string; reason: { axis: string; label: string; value: string } }[];
 };
 
-const likelihoods = likelihoodsData as LikelihoodsFile;
-const questionsRuntime = questionsRuntimeData as QuestionsRuntimeFile;
-
-const QUESTION_INDEX = new Map(likelihoods.questionIds.map((id, i) => [id, i]));
-const PROBE_BY_KEY = new Map<string, BayesProbe>(
-  questionsRuntime.questions.map((q) => [q.key, { key: q.key, prompt: q.prompt, reason: q.reason as BayesProbe['reason'] }]),
-);
-
+/*
+ * likelihoods / questions.runtime は import せず、initBayesData() で外から注入する。
+ *
+ * 理由: このエンジンは配信方法の違う2つのアプリで共有されている。
+ *   - Bayesian-chara-picker: JSONを静的importしてバンドルに同梱（実行時ネットワーク0件 = D1）
+ *   - terasaki-8910.github.io (/chara-picker/): 実行時fetch（約280KBを初期JSから外すため）
+ * ここで静的importすると後者で必ずバンドルに載ってしまうため、データの取得元は
+ * 呼び出し側の責務にして、このファイル自体は両方で完全に同一に保つ。
+ * （同一に保つことで scripts/sync-chara-picker.mjs による機械的な同期が成立する）
+ *
+ * initBayesData() より前にエンジン関数を呼ぶと likelihoodOf() が明示的に投げる。
+ */
+let likelihoods: LikelihoodsFile | null = null;
+let questionIndex = new Map<string, number>();
+let probeByKey = new Map<string, BayesProbe>();
 /** 質問選択・エントロピー計算の対象になる全プローブ（固定順=questions.runtime.jsonの記載順）。 */
-const ALL_PROBES: readonly BayesProbe[] = questionsRuntime.questions.map((q) => PROBE_BY_KEY.get(q.key)!);
+let allProbes: readonly BayesProbe[] = [];
+
+export function initBayesData(l: LikelihoodsFile, q: QuestionsRuntimeFile): void {
+  likelihoods = l;
+  questionIndex = new Map(l.questionIds.map((id, i) => [id, i]));
+  probeByKey = new Map<string, BayesProbe>(
+    q.questions.map((qq) => [qq.key, { key: qq.key, prompt: qq.prompt, reason: qq.reason as BayesProbe['reason'] }]),
+  );
+  allProbes = q.questions.map((qq) => probeByKey.get(qq.key)!);
+}
 
 function likelihoodOf(characterId: string, questionKey: string): number {
-  const idx = QUESTION_INDEX.get(questionKey);
+  if (likelihoods === null) throw new Error('bayes.ts: initBayesData() より前に呼ばれた');
+  const idx = questionIndex.get(questionKey);
   const arr = likelihoods.chars[characterId];
   if (idx === undefined || arr === undefined) {
     throw new Error(`bayes.ts: 未知のquestionKeyまたはcharacterId (question=${questionKey}, character=${characterId})`);
@@ -148,7 +168,7 @@ export function bayesNextProbe(
 
   const posterior = normalizePosterior(computeLogPosterior(population, dataset.supply, answers));
   const candidates: { probe: BayesProbe; gain: number }[] = [];
-  for (const probe of ALL_PROBES) {
+  for (const probe of allProbes) {
     if (askedKeys.has(probe.key)) continue;
     const gain = expectedGain(posterior, probe.key);
     if (gain >= MIN_GAIN_BAYES) candidates.push({ probe, gain });
@@ -191,7 +211,7 @@ function evidenceReasonsFor(characterId: string, answers: BayesAnswerMap, rank: 
   for (const [key, confidence] of Object.entries(answers)) {
     const w = CONFIDENCE_WEIGHT[confidence];
     if (Math.abs(w) < EVIDENCE_WEIGHT_MIN) continue;
-    const probe = PROBE_BY_KEY.get(key);
+    const probe = probeByKey.get(key);
     if (!probe) continue;
     const p = likelihoodOf(characterId, key);
     const stronglyYes = w > 0 && p >= EVIDENCE_STRONG_YES;

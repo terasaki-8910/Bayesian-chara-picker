@@ -1,6 +1,5 @@
 import { useCallback, useEffect, useMemo, useReducer } from 'react';
 
-import { dataset } from './useInterview';
 import { useSessionLog, type SessionLogRecord } from './useSessionLog';
 import { pickGuessWithCooldown } from '../engine/cooldown';
 import {
@@ -10,6 +9,7 @@ import {
   type BayesAnswerMap,
   type BayesProbe,
   type Confidence,
+  type Dataset,
   type Scored,
 } from '../engine/bayes';
 
@@ -18,6 +18,10 @@ import {
  * nextProbe/scoreCharacters/shouldGuess だけをbayes版に差し替え、
  * Snapshot/Action/undo/bonusPending/exhausted等の状態機械は完全に同じ構造を保つ
  * — 本番と別のロジックを二重実装して食い違うことを避けるため、意図的に揃えてある。
+ *
+ * `dataset` は import せず引数で受け取る。データの取得方法（静的import / 実行時fetch）が
+ * アプリごとに異なるため（詳細は engine/bayes.ts 冒頭のコメント）。reducer へは
+ * recentGuessIds と同じく action 経由で渡し、reducer を純粋なまま保つ。
  */
 
 const NEAR_MISS_COUNT = 3;
@@ -51,8 +55,8 @@ const initialState: RawState = {
 };
 
 type Action =
-  | { type: 'answer'; key: string; confidence: Confidence; recentGuessIds: readonly string[] }
-  | { type: 'reject'; characterId: string; recentGuessIds: readonly string[] }
+  | { type: 'answer'; key: string; confidence: Confidence; recentGuessIds: readonly string[]; dataset: Dataset }
+  | { type: 'reject'; characterId: string; recentGuessIds: readonly string[]; dataset: Dataset }
   | { type: 'confirm' }
   | { type: 'undo' }
   | { type: 'reset' };
@@ -66,7 +70,7 @@ function reducer(state: RawState, action: Action): RawState {
       const rejectedSet = new Set(state.rejected);
 
       if (state.bonusPending) {
-        const scored = bayesScoreCharacters(answers, dataset, { exclude: rejectedSet });
+        const scored = bayesScoreCharacters(answers, action.dataset, { exclude: rejectedSet });
         return {
           ...state,
           answers,
@@ -78,8 +82,8 @@ function reducer(state: RawState, action: Action): RawState {
       }
 
       const askedSet = new Set(askedKeys);
-      const probe = bayesNextProbe(dataset, answers, askedSet, { exclude: rejectedSet, rng: Math.random });
-      const scored = bayesScoreCharacters(answers, dataset, { exclude: rejectedSet });
+      const probe = bayesNextProbe(action.dataset, answers, askedSet, { exclude: rejectedSet, rng: Math.random });
+      const scored = bayesScoreCharacters(answers, action.dataset, { exclude: rejectedSet });
       const goToGuessing = probe === null || bayesShouldGuess(scored, askedKeys.length, probe !== null);
 
       if (!goToGuessing) return { ...state, answers, askedKeys, history };
@@ -96,12 +100,12 @@ function reducer(state: RawState, action: Action): RawState {
       const history = [...state.history, snapshotOf(state)];
       const rejected = [...state.rejected, action.characterId];
       const rejectedSet = new Set(rejected);
-      const scored = bayesScoreCharacters(state.answers, dataset, { exclude: rejectedSet });
+      const scored = bayesScoreCharacters(state.answers, action.dataset, { exclude: rejectedSet });
 
       if (scored.length === 0) return { ...state, rejected, exhausted: true, history };
 
       const askedSet = new Set(state.askedKeys);
-      const bonusProbe = bayesNextProbe(dataset, state.answers, askedSet, { exclude: rejectedSet, rng: Math.random });
+      const bonusProbe = bayesNextProbe(action.dataset, state.answers, askedSet, { exclude: rejectedSet, rng: Math.random });
 
       if (bonusProbe !== null) return { ...state, rejected, bonusPending: true, history };
       return {
@@ -148,7 +152,7 @@ function answersLogOf(answers: BayesAnswerMap): SessionLogRecord['answers'] {
   return Object.entries(answers).map(([key, confidence]) => ({ key, confidence }));
 }
 
-export function useBayesInterview(): BayesInterviewState {
+export function useBayesInterview(dataset: Dataset): BayesInterviewState {
   const [state, dispatch] = useReducer(reducer, initialState);
   const { recentGuessIds, log } = useSessionLog();
 
@@ -156,7 +160,7 @@ export function useBayesInterview(): BayesInterviewState {
   const rejectedSet = useMemo(() => new Set(state.rejected), [state.rejected]);
   const probe = useMemo(
     () => bayesNextProbe(dataset, state.answers, askedSet, { exclude: rejectedSet, rng: Math.random }),
-    [state.answers, askedSet, rejectedSet],
+    [dataset, state.answers, askedSet, rejectedSet],
   );
 
   const reset = useCallback(() => dispatch({ type: 'reset' }), []);
@@ -166,9 +170,9 @@ export function useBayesInterview(): BayesInterviewState {
   const answer = useCallback(
     (confidence: Confidence) => {
       if (!probe) return;
-      dispatch({ type: 'answer', key: probe.key, confidence, recentGuessIds });
+      dispatch({ type: 'answer', key: probe.key, confidence, recentGuessIds, dataset });
     },
-    [probe, recentGuessIds],
+    [probe, recentGuessIds, dataset],
   );
 
   const confirm = useCallback(() => {
@@ -197,8 +201,8 @@ export function useBayesInterview(): BayesInterviewState {
       rejectedIds: state.rejected,
       engine: 'bayes',
     });
-    dispatch({ type: 'reject', characterId: state.guess.character.id, recentGuessIds });
-  }, [state.guess, state.askedKeys, state.answers, state.rejected, recentGuessIds, log]);
+    dispatch({ type: 'reject', characterId: state.guess.character.id, recentGuessIds, dataset });
+  }, [state.guess, state.askedKeys, state.answers, state.rejected, recentGuessIds, dataset, log]);
 
   useEffect(() => {
     if (!state.exhausted) return;
