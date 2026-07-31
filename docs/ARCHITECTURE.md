@@ -162,6 +162,14 @@ UI表示から外した。**エンジン・データ層の対応する機能（�
 
 ## ベイズ推薦エンジン試作（`?engine=bayes`、併存・実験中）
 
+> **注記（2026-07-31）**: このエンジンは terasaki-8910.github.io の `/chara-picker/`
+> でも動いており、`src/engine/*` と `src/data/schema.ts`、
+> `src/hooks/{useBayesInterview,useSessionLog}.ts` は
+> **両リポジトリでバイト単位に同一**に保つ約束になっている。
+> 尤度データは `initBayesData()` で外から注入する形にしてあり、このアプリ側の
+> 注入口は `src/data/bayesRuntime.ts`（静的import＝D1は維持）。
+> 編集時の制約は `docs/handoff-portfolio-site-sync.md` を参照。
+
 16軸の手動キュレーションだけに頼らず、Danbooruタグ共起（クラウドの集合知）から
 機械的に尤度を構築する試作エンジン。既定の URL（上記の一式）は無改造のまま、
 `?engine=bayes` を付けたときだけ以下の並行経路に分岐する（`src/App.tsx` が
