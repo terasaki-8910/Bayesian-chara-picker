@@ -449,30 +449,31 @@
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "年上",
-      "build": "標準",
-      "bust": "とても大きい",
-      "personality": "姉御",
+      "build": "むっちり",
+      "bust": "大きい",
+      "personality": "クール",
       "roles": [
         "先輩"
       ],
-      "distance": "受け身",
+      "distance": "やや受け身",
       "looks": [
         "長髪"
       ],
       "hairColor": "金",
       "skinTone": "色白",
-      "outfit": [
-        "軍服"
-      ],
+      "outfit": [],
       "species": "人間",
       "mood": "背徳寄り",
       "combat": "戦う",
       "affiliationKind": "冒険者",
       "affiliationName": "カズマパーティー",
-      "stature": null,
-      "occupation": []
+      "stature": "標準",
+      "occupation": [
+        "兵士・軍人",
+        "王族・貴族"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "darkness",
       "series": null
@@ -1491,7 +1492,7 @@
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "年上",
-      "build": "標準",
+      "build": "むっちり",
       "bust": "とても大きい",
       "personality": "姉御",
       "roles": [
@@ -1503,18 +1504,18 @@
       ],
       "hairColor": "金",
       "skinTone": "色白",
-      "outfit": [
-        "軍服"
-      ],
+      "outfit": [],
       "species": "不死",
       "mood": "甘め",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
       "affiliationName": "護廷十三隊十番隊",
-      "stature": null,
-      "occupation": []
+      "stature": "長身",
+      "occupation": [
+        "兵士・軍人"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "rangiku matsumoto",
       "series": null
@@ -2267,7 +2268,7 @@
       "character": "ganyu",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -2276,10 +2277,10 @@
       "ageFeel": "同年代",
       "build": "標準",
       "bust": "大きい",
-      "personality": "内気",
+      "personality": "おっとり",
       "hairColor": "青",
       "combat": "戦う",
-      "affiliationKind": "軍・組織",
+      "affiliationKind": "社会人",
       "roles": [
         "先輩"
       ],
@@ -2289,13 +2290,11 @@
         "角"
       ],
       "skinTone": "色白",
-      "outfit": [
-        "OL"
-      ],
+      "outfit": [],
       "species": "不死",
       "mood": "純愛寄り",
       "affiliationName": "璃月七星",
-      "stature": null,
+      "stature": "標準",
       "occupation": []
     }
   },
@@ -3251,7 +3250,7 @@
       "character": "rukia kuchiki",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -3265,19 +3264,20 @@
       "combat": "戦う",
       "affiliationKind": "軍・組織",
       "roles": [
-        "先輩"
+        "先輩",
+        "妹"
       ],
       "distance": "中立",
       "looks": [],
       "skinTone": "色白",
-      "outfit": [
-        "軍服"
-      ],
+      "outfit": [],
       "species": "不死",
       "mood": "純愛寄り",
       "affiliationName": "護廷十三隊十三番隊",
-      "stature": null,
-      "occupation": []
+      "stature": "小柄",
+      "occupation": [
+        "兵士・軍人"
+      ]
     }
   },
   {
@@ -4184,7 +4184,7 @@
       "character": "aya shameimaru",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -4192,7 +4192,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "標準",
+      "bust": "大きい",
       "personality": "元気",
       "hairColor": "黒",
       "combat": "戦う",
@@ -4207,7 +4207,7 @@
       "species": "魔族",
       "mood": "背徳寄り",
       "affiliationName": "文々。新聞",
-      "stature": null,
+      "stature": "標準",
       "occupation": []
     }
   },
@@ -5327,7 +5327,7 @@
       "ageFeel": "熟れた",
       "build": "標準",
       "bust": "とても大きい",
-      "personality": "姉御",
+      "personality": "おっとり",
       "roles": [
         "母性"
       ],
@@ -5335,18 +5335,18 @@
       "looks": [
         "長髪"
       ],
-      "hairColor": "黒",
+      "hairColor": "紫",
       "skinTone": "色白",
       "outfit": [],
-      "species": "不死",
+      "species": "人間",
       "mood": "甘め",
       "combat": "戦う",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "軍・組織",
       "affiliationName": null,
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "minamoto no raikou",
       "series": null
@@ -5378,7 +5378,7 @@
       "looks": [
         "長髪"
       ],
-      "hairColor": "金",
+      "hairColor": "桃",
       "skinTone": "色白",
       "outfit": [
         "ナース"
@@ -5386,12 +5386,14 @@
       "species": "不死",
       "mood": "支配的",
       "combat": "戦う",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "軍・組織",
       "affiliationName": null,
-      "stature": null,
-      "occupation": []
+      "stature": "標準",
+      "occupation": [
+        "医療従事者"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "nightingale",
       "series": null
@@ -7457,7 +7459,9 @@
       "build": "標準",
       "bust": "大きい",
       "personality": "クール",
-      "roles": [],
+      "roles": [
+        "幼馴染"
+      ],
       "distance": "中立",
       "looks": [
         "長髪"
@@ -7465,15 +7469,17 @@
       "hairColor": "金",
       "skinTone": "色白",
       "outfit": [],
-      "species": null,
-      "mood": "支配的",
+      "species": "人間",
+      "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
       "affiliationName": null,
-      "stature": null,
-      "occupation": []
+      "stature": "標準",
+      "occupation": [
+        "兵士・軍人"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "alice zuberg",
       "series": null
@@ -7496,7 +7502,9 @@
       "build": "標準",
       "bust": "標準",
       "personality": "元気",
-      "roles": [],
+      "roles": [
+        "後輩"
+      ],
       "distance": "積極的",
       "looks": [],
       "hairColor": "茶",
@@ -7507,10 +7515,12 @@
       "combat": "戦わない",
       "affiliationKind": "学生",
       "affiliationName": null,
-      "stature": null,
-      "occupation": []
+      "stature": "標準",
+      "occupation": [
+        "アスリート"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "special week",
       "series": null
@@ -7532,9 +7542,11 @@
       "ageFeel": "同年代",
       "build": "標準",
       "bust": "標準",
-      "personality": "元気",
-      "roles": [],
-      "distance": "やや積極的",
+      "personality": "おっとり",
+      "roles": [
+        "先輩"
+      ],
+      "distance": "やや受け身",
       "looks": [],
       "hairColor": "青",
       "skinTone": "標準",
@@ -7544,10 +7556,12 @@
       "combat": "戦わない",
       "affiliationKind": "学生",
       "affiliationName": null,
-      "stature": null,
-      "occupation": []
+      "stature": "標準",
+      "occupation": [
+        "アスリート"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "silence suzuka",
       "series": null

@@ -98,9 +98,18 @@ function runOneSession(rng: () => number, biasYes: number): string {
  * 将来さらにキャラを拡充/査読する場合はこの値もあわせて再計算すること
  * （state/engine-review/bias-sweep.mts があれば、無ければこのファイルの
  * runOneSessionをtop15ログ付きで一時的に走らせて実測する）。
+ *
+ * 2026-08-01追記（査読バッチ1）: reviewed 22→32体（reachable 20→30）に伴い
+ * 再計測（一時スイープをrunOneSession複製で5シード×N=1000、手順は上記の通り）。
+ * chiSquare実測: seed=20260721→150.7, 20260724→79.6, 13579246→92.0,
+ * 987654321→96.1, 424242→102.1。上限150.7に約40%の余裕で210へ。
+ * maxShare実測: 同順で5.80%, 5.00%, 5.20%, 5.80%, 5.90%。上限5.90%に
+ * 約35%の余裕で0.08へ（母集団拡大で一様期待値が5%→3.3%に下がったため、
+ * 旧値0.12は緩すぎる側に転じていた——閾値は緩める一方ではなく母集団に
+ * 合わせて締め直す）。
  */
-const CHI_SQUARE_MAX = 160;
-const MAX_SHARE = 0.12;
+const CHI_SQUARE_MAX = 210;
+const MAX_SHARE = 0.08;
 
 describe('D. 推薦エンジンの偏りゲート', () => {
   // scoreCharacters/nextProbe は呼び出しごとに131体ぶんのプローブプールを
