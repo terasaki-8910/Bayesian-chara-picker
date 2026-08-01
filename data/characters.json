@@ -691,7 +691,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "tsunade",
       "series": null
@@ -2390,7 +2390,7 @@
       "character": "lumine",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -2398,7 +2398,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "華奢",
-      "bust": "小さい",
+      "bust": "標準",
       "personality": "おっとり",
       "hairColor": "金",
       "combat": "戦う",
@@ -2432,7 +2432,7 @@
       "character": "yae miko",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -2609,7 +2609,7 @@
       "character": "eula lawrence",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -2696,7 +2696,7 @@
       "character": "tashigi",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -2704,7 +2704,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "標準",
+      "bust": "大きい",
       "personality": "おっとり",
       "hairColor": "黒",
       "combat": "戦う",
@@ -2717,9 +2717,7 @@
         "眼鏡"
       ],
       "skinTone": "標準",
-      "outfit": [
-        "軍服"
-      ],
+      "outfit": [],
       "species": "人間",
       "mood": "純愛寄り",
       "affiliationName": "海軍",
@@ -2740,7 +2738,7 @@
       "character": "perona",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -2748,7 +2746,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "華奢",
-      "bust": "標準",
+      "bust": "大きい",
       "personality": "生意気",
       "hairColor": "桃",
       "combat": "戦う",
@@ -2783,7 +2781,7 @@
       "character": "kalifa",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -2828,7 +2826,7 @@
       "character": "carrot",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -2854,7 +2852,7 @@
       "species": "獣人",
       "mood": "甘め",
       "affiliationName": "モコモ公国",
-      "stature": null,
+      "stature": "小柄",
       "occupation": []
     }
   },
@@ -2916,7 +2914,7 @@
       "character": "sadi-chan",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -2926,7 +2924,7 @@
       "build": "標準",
       "bust": "大きい",
       "personality": "姉御",
-      "hairColor": "茶",
+      "hairColor": "金",
       "combat": "戦う",
       "affiliationKind": "社会人",
       "roles": [
@@ -3045,7 +3043,7 @@
       "character": "ino yamanaka",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -3053,7 +3051,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "標準",
+      "bust": "大きい",
       "personality": "生意気",
       "hairColor": "金",
       "combat": "戦う",
@@ -3088,7 +3086,7 @@
       "character": "shizune",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -3096,7 +3094,7 @@
       "genderExpression": "女性",
       "ageFeel": "年上",
       "build": "標準",
-      "bust": "標準",
+      "bust": "大きい",
       "personality": "おっとり",
       "hairColor": "黒",
       "combat": "戦う",
@@ -3129,7 +3127,7 @@
       "character": "temari",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -3137,7 +3135,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "標準",
+      "bust": "大きい",
       "personality": "姉御",
       "hairColor": "金",
       "combat": "戦う",
@@ -3169,7 +3167,7 @@
       "character": "anko mitarashi",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -3210,7 +3208,7 @@
       "character": "tenten",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -3218,7 +3216,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "小さい",
+      "bust": "標準",
       "personality": "クール",
       "hairColor": "茶",
       "combat": "戦う",
@@ -3427,7 +3425,7 @@
       "character": "nelliel tu odelschwanck",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -3435,7 +3433,7 @@
       "genderExpression": "女性",
       "ageFeel": "年上",
       "build": "むっちり",
-      "bust": "とても大きい",
+      "bust": "大きい",
       "personality": "おっとり",
       "hairColor": "緑",
       "combat": "戦う",
@@ -3454,7 +3452,9 @@
       "mood": "甘め",
       "affiliationName": "エスパーダ(第3位)",
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "兵士・軍人"
+      ]
     }
   },
   {
@@ -3977,7 +3977,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -4149,9 +4149,11 @@
       "affiliationKind": "軍・組織",
       "affiliationName": "西風教会(モンド)",
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "魔法使い・魔術師"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -4513,7 +4515,7 @@
       "genderExpression": "女性",
       "ageFeel": "年上",
       "build": "標準",
-      "bust": "とても大きい",
+      "bust": "大きい",
       "personality": "おっとり",
       "roles": [
         "教師"
@@ -4535,7 +4537,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "kashima",
       "series": null
@@ -4600,7 +4602,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "華奢",
-      "bust": "とても大きい",
+      "bust": "大きい",
       "personality": "クール",
       "roles": [],
       "distance": "やや受け身",
@@ -4616,9 +4618,11 @@
       "affiliationKind": "軍・組織",
       "affiliationName": "駆逐艦(陽炎型・第十七駆逐隊)",
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "兵士・軍人"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "hamakaze",
       "series": null
@@ -4645,7 +4649,7 @@
       "roles": [],
       "distance": "やや積極的",
       "looks": [],
-      "hairColor": "黒",
+      "hairColor": "茶",
       "skinTone": "標準",
       "outfit": [
         "軍服"
@@ -4656,9 +4660,11 @@
       "affiliationKind": "軍・組織",
       "affiliationName": "装甲空母(大鳳型)・第一機動部隊旗艦",
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "兵士・軍人"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "taihou",
       "series": null
@@ -4697,9 +4703,11 @@
       "affiliationKind": "軍・組織",
       "affiliationName": "重巡洋艦(最上型)",
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "兵士・軍人"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "suzuya",
       "series": null
@@ -4787,7 +4795,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -4918,9 +4926,11 @@
       "affiliationKind": "非人間・その他",
       "affiliationName": "八雲家",
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "メイド・従者"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -5307,10 +5317,12 @@
       "combat": "戦わない",
       "affiliationKind": "学生",
       "affiliationName": "音ノ木坂学院",
-      "stature": null,
-      "occupation": []
+      "stature": "標準",
+      "occupation": [
+        "アイドル・芸能"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -5737,7 +5749,7 @@
       "bust": "小さい",
       "personality": "内気",
       "roles": [
-        "後輩"
+        "幼馴染"
       ],
       "distance": "やや受け身",
       "looks": [],
@@ -5750,9 +5762,11 @@
       "affiliationKind": "軍・組織",
       "affiliationName": null,
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "兵士・軍人"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "momo hinamori",
       "series": null
@@ -5789,9 +5803,11 @@
       "affiliationKind": "軍・組織",
       "affiliationName": null,
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "兵士・軍人"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "nanao ise",
       "series": null
@@ -5830,7 +5846,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "kukaku shiba",
       "series": null
@@ -5867,9 +5883,11 @@
       "affiliationKind": "学生",
       "affiliationName": null,
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "アスリート"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "tatsuki arisawa",
       "series": null
@@ -5903,10 +5921,10 @@
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
       "affiliationName": null,
-      "stature": null,
+      "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "cirno",
       "series": null
@@ -5943,7 +5961,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "utsuho reiuji",
       "series": null
@@ -6057,15 +6075,17 @@
       "hairColor": "青",
       "skinTone": "標準",
       "outfit": [],
-      "species": "獣人",
+      "species": "人間",
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
       "affiliationName": null,
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "研究者・発明家"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "nitori kawashiro",
       "series": null
@@ -6144,7 +6164,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "jeanne darc",
       "series": null
@@ -6181,7 +6201,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "mordred pendragon",
       "series": null
@@ -6218,7 +6238,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "abigail williams",
       "series": null
@@ -6257,7 +6277,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "morgan le fay",
       "series": null
@@ -6296,7 +6316,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "rebecca",
       "series": null
@@ -6374,7 +6394,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "marguerite",
       "series": null
@@ -6454,7 +6474,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "reiju vinsmoke",
       "series": null
@@ -6493,7 +6513,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "samui",
       "series": null
@@ -6532,7 +6552,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "hanabi hyuga",
       "series": null
@@ -6563,7 +6583,7 @@
       "hairColor": "赤",
       "skinTone": "標準",
       "outfit": [],
-      "species": null,
+      "species": "人間",
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
@@ -6571,7 +6591,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "kushina uzumaki",
       "series": null
@@ -6602,7 +6622,7 @@
       "hairColor": "赤",
       "skinTone": "標準",
       "outfit": [],
-      "species": null,
+      "species": "人間",
       "mood": "背徳寄り",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
@@ -6610,7 +6630,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "tayuya",
       "series": null
@@ -6638,7 +6658,7 @@
       ],
       "distance": "中立",
       "looks": [],
-      "hairColor": "銀",
+      "hairColor": "金",
       "skinTone": "色白",
       "outfit": [],
       "species": null,
@@ -6649,7 +6669,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "evileye",
       "series": null
@@ -6727,7 +6747,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "cz2128 delta",
       "series": null
@@ -6758,7 +6778,7 @@
       "hairColor": "金",
       "skinTone": "標準",
       "outfit": [],
-      "species": null,
+      "species": "人間",
       "mood": "純愛寄り",
       "combat": "戦わない",
       "affiliationKind": "冒険者",
@@ -6766,7 +6786,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "arche eeb rile furt",
       "series": null
@@ -6791,7 +6811,7 @@
       "bust": "大きい",
       "personality": "おっとり",
       "roles": [
-        "後輩"
+        "先輩"
       ],
       "distance": "やや受け身",
       "looks": [],
@@ -6803,10 +6823,10 @@
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": null,
-      "stature": null,
+      "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "hoshino takanashi",
       "series": null
@@ -6843,10 +6863,12 @@
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": null,
-      "stature": null,
-      "occupation": []
+      "stature": "標準",
+      "occupation": [
+        "アスリート"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "shiroko sunaookami",
       "series": null
@@ -6883,10 +6905,10 @@
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": null,
-      "stature": null,
+      "stature": "標準",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "ako amau",
       "series": null
@@ -6917,7 +6939,7 @@
       "hairColor": "紫",
       "skinTone": "標準",
       "outfit": [],
-      "species": null,
+      "species": "人間",
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "冒険者",
@@ -6925,7 +6947,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "nilou",
       "series": null
@@ -6956,7 +6978,7 @@
       "hairColor": "紫",
       "skinTone": "色白",
       "outfit": [],
-      "species": null,
+      "species": "人間",
       "mood": "支配的",
       "combat": "戦う",
       "affiliationKind": "冒険者",
@@ -6964,7 +6986,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "yelan",
       "series": null
@@ -6996,7 +7018,7 @@
       "hairColor": "桃",
       "skinTone": "色白",
       "outfit": [],
-      "species": null,
+      "species": "人間",
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
@@ -7004,7 +7026,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "kokomi sangonomiya",
       "series": null
@@ -7082,7 +7104,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "jean gunnhildr",
       "series": null
@@ -7110,10 +7132,10 @@
       ],
       "distance": "積極的",
       "looks": [],
-      "hairColor": "白",
+      "hairColor": "桃",
       "skinTone": "色白",
       "outfit": [],
-      "species": null,
+      "species": "人間",
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "冒険者",
@@ -7121,7 +7143,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "march 7th",
       "series": null
@@ -7149,10 +7171,10 @@
       "looks": [
         "長髪"
       ],
-      "hairColor": "赤",
+      "hairColor": "桃",
       "skinTone": "色白",
       "outfit": [],
-      "species": null,
+      "species": "人間",
       "mood": "支配的",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
@@ -7160,7 +7182,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "kafka",
       "series": null
@@ -7191,7 +7213,7 @@
       "hairColor": "銀",
       "skinTone": "標準",
       "outfit": [],
-      "species": null,
+      "species": "人間",
       "mood": "背徳寄り",
       "combat": "戦う",
       "affiliationKind": "冒険者",
@@ -7199,7 +7221,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "silver wolf",
       "series": null
@@ -7230,7 +7252,7 @@
       "hairColor": "紫",
       "skinTone": "色白",
       "outfit": [],
-      "species": null,
+      "species": "人間",
       "mood": "背徳寄り",
       "combat": "戦う",
       "affiliationKind": "冒険者",
@@ -7238,7 +7260,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "acheron",
       "series": null
@@ -7269,7 +7291,7 @@
       "hairColor": "紫",
       "skinTone": "色白",
       "outfit": [],
-      "species": null,
+      "species": "人間",
       "mood": "支配的",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
@@ -7277,7 +7299,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "fu xuan",
       "series": null
@@ -7308,7 +7330,7 @@
       "hairColor": "茶",
       "skinTone": "標準",
       "outfit": [],
-      "species": null,
+      "species": "人間",
       "mood": "純愛寄り",
       "combat": "戦わない",
       "affiliationKind": "学生",
@@ -7316,7 +7338,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "honoka kosaka",
       "series": null
@@ -7347,7 +7369,7 @@
       "hairColor": "金",
       "skinTone": "標準",
       "outfit": [],
-      "species": null,
+      "species": "人間",
       "mood": "純愛寄り",
       "combat": "戦わない",
       "affiliationKind": "学生",
@@ -7355,7 +7377,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "rin hoshizora",
       "series": null
@@ -7457,7 +7479,7 @@
       "ageFeel": "同年代",
       "build": "標準",
       "bust": "標準",
-      "personality": "内気",
+      "personality": "クール",
       "roles": [
         "ライバル"
       ],
@@ -7466,7 +7488,7 @@
       "hairColor": "茶",
       "skinTone": "標準",
       "outfit": [],
-      "species": null,
+      "species": "人間",
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "冒険者",
@@ -7474,7 +7496,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "shino asada",
       "series": null
@@ -7506,7 +7528,7 @@
       "hairColor": "桃",
       "skinTone": "標準",
       "outfit": [],
-      "species": null,
+      "species": "人間",
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "冒険者",
@@ -7514,7 +7536,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "rika shinozaki",
       "series": null
