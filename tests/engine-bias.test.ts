@@ -107,9 +107,15 @@ function runOneSession(rng: () => number, biasYes: number): string {
  * 約35%の余裕で0.08へ（母集団拡大で一様期待値が5%→3.3%に下がったため、
  * 旧値0.12は緩すぎる側に転じていた——閾値は緩める一方ではなく母集団に
  * 合わせて締め直す）。
+ *
+ * 2026-08-01追記（査読バッチ2）: reviewed 32→62体（reachable 30→60）。
+ * chiSquare実測: seed=20260721→136.2, 20260724→157.0, 13579246→202.4,
+ * 987654321→144.8, 424242→153.1。上限202.4に約41%の余裕で285へ。
+ * maxShare実測: 同順で3.70%, 3.80%, 5.10%, 3.20%, 3.60%。上限5.10%に
+ * 約37%の余裕で0.07へ（一様期待値は1.67%）。
  */
-const CHI_SQUARE_MAX = 210;
-const MAX_SHARE = 0.08;
+const CHI_SQUARE_MAX = 285;
+const MAX_SHARE = 0.07;
 
 describe('D. 推薦エンジンの偏りゲート', () => {
   // scoreCharacters/nextProbe は呼び出しごとに131体ぶんのプローブプールを

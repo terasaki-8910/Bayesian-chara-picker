@@ -75,8 +75,12 @@ function priorWeight(id: string, supply: SupplyFile): number {
  * 再計測（一時スイープをrunOneSession複製で5シード×N=1000）。
  * chiSquare実測: seed=20260721→55.6, 20260724→111.5, 13579246→83.2,
  * 987654321→60.8, 424242→80.9。上限111.5に約39%の余裕で155へ。
+ *
+ * 2026-08-01追記（査読バッチ2）: reviewed 32→62体（reachable 30→60）。
+ * chiSquare実測: seed=20260721→96.7, 20260724→96.8, 13579246→125.3,
+ * 987654321→96.9, 424242→110.4。上限125.3に約40%の余裕で175へ。
  */
-const CHI_SQUARE_MAX = 155;
+const CHI_SQUARE_MAX = 175;
 
 describe('BD. ベイズ推薦エンジンの偏りゲート', () => {
   it(

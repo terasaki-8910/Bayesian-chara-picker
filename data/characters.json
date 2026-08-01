@@ -99,7 +99,7 @@
       "genderExpression": "女性",
       "ageFeel": "熟れた",
       "build": "標準",
-      "bust": "とても大きい",
+      "bust": "大きい",
       "personality": "クール",
       "roles": [
         "教師"
@@ -116,10 +116,10 @@
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
       "affiliationName": "影の国",
-      "stature": null,
+      "stature": "標準",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "scathach",
       "series": null
@@ -1761,7 +1761,7 @@
       "character": "kisaki ryuuge",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -1784,7 +1784,7 @@
       "species": "人間",
       "mood": "支配的",
       "affiliationName": "山海経高級中学校（玄龍門）",
-      "stature": null,
+      "stature": "小柄",
       "occupation": []
     }
   },
@@ -1845,15 +1845,15 @@
       "character": "hina sorasaki",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "同年代",
-      "build": "標準",
-      "bust": "標準",
+      "build": "華奢",
+      "bust": "小さい",
       "personality": "クール",
       "hairColor": "白",
       "combat": "戦う",
@@ -1863,17 +1863,20 @@
       ],
       "distance": "やや積極的",
       "looks": [
-        "長髪"
+        "長髪",
+        "角"
       ],
       "skinTone": "色白",
       "outfit": [
-        "軍服"
+        "制服"
       ],
       "species": "人間",
-      "mood": "支配的",
+      "mood": "純愛寄り",
       "affiliationName": "ゲヘナ学園（風紀委員会）",
-      "stature": null,
-      "occupation": []
+      "stature": "小柄",
+      "occupation": [
+        "警察・公安"
+      ]
     }
   },
   {
@@ -1933,7 +1936,7 @@
       "character": "reimu hakurei",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -1941,9 +1944,9 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "小さい",
+      "bust": "標準",
       "personality": "クール",
-      "hairColor": "黒",
+      "hairColor": "茶",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
       "roles": [
@@ -1961,7 +1964,9 @@
       "mood": "甘め",
       "affiliationName": "博麗神社",
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "巫女・神職"
+      ]
     }
   },
   {
@@ -2228,7 +2233,7 @@
       "character": "alice margatroid",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -2236,7 +2241,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "華奢",
-      "bust": "標準",
+      "bust": "大きい",
       "personality": "クール",
       "hairColor": "金",
       "combat": "戦う",
@@ -2251,8 +2256,10 @@
       "species": "魔族",
       "mood": "純愛寄り",
       "affiliationName": null,
-      "stature": null,
-      "occupation": []
+      "stature": "長身",
+      "occupation": [
+        "魔法使い・魔術師"
+      ]
     }
   },
   {
@@ -2917,7 +2924,7 @@
       "character": "sakura haruno",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -2925,7 +2932,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "小さい",
+      "bust": "標準",
       "personality": "元気",
       "hairColor": "桃",
       "combat": "戦う",
@@ -2941,8 +2948,11 @@
       "species": "人間",
       "mood": "純愛寄り",
       "affiliationName": "木ノ葉隠れの里",
-      "stature": null,
-      "occupation": []
+      "stature": "標準",
+      "occupation": [
+        "忍者",
+        "医療従事者"
+      ]
     }
   },
   {
@@ -3206,15 +3216,15 @@
       "character": "orihime inoue",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "同年代",
-      "build": "標準",
-      "bust": "とても大きい",
+      "build": "むっちり",
+      "bust": "大きい",
       "personality": "おっとり",
       "hairColor": "茶",
       "combat": "戦う",
@@ -3233,7 +3243,7 @@
       "species": "人間",
       "mood": "純愛寄り",
       "affiliationName": "空座第一高校",
-      "stature": null,
+      "stature": "標準",
       "occupation": []
     }
   },
@@ -3294,7 +3304,7 @@
       "character": "soi fon",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -3315,14 +3325,15 @@
         "ツインテール"
       ],
       "skinTone": "標準",
-      "outfit": [
-        "軍服"
-      ],
+      "outfit": [],
       "species": "不死",
       "mood": "従属的",
       "affiliationName": "護廷十三隊二番隊",
-      "stature": null,
-      "occupation": []
+      "stature": "小柄",
+      "occupation": [
+        "兵士・軍人",
+        "スパイ・暗殺者"
+      ]
     }
   },
   {
@@ -3423,7 +3434,7 @@
       "character": "retsu unohana",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -3445,14 +3456,15 @@
         "長髪"
       ],
       "skinTone": "標準",
-      "outfit": [
-        "軍服"
-      ],
+      "outfit": [],
       "species": "不死",
-      "mood": "甘め",
+      "mood": "支配的",
       "affiliationName": "護廷十三隊四番隊",
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "兵士・軍人",
+        "医療従事者"
+      ]
     }
   },
   {
@@ -3637,7 +3649,7 @@
       "character": "mare bello fiore",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -3661,7 +3673,9 @@
       "mood": "従属的",
       "affiliationName": "ナザリック地下大墳墓",
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "魔法使い・魔術師"
+      ]
     }
   },
   {
@@ -3677,7 +3691,7 @@
       "character": "lupusregina beta",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -3685,7 +3699,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "標準",
+      "bust": "大きい",
       "personality": "元気",
       "hairColor": "赤",
       "combat": "戦う",
@@ -3704,8 +3718,10 @@
       "species": "獣人",
       "mood": "背徳寄り",
       "affiliationName": "ナザリック地下大墳墓",
-      "stature": null,
-      "occupation": []
+      "stature": "長身",
+      "occupation": [
+        "メイド・従者"
+      ]
     }
   },
   {
@@ -3721,7 +3737,7 @@
       "character": "clementine",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -3729,7 +3745,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "華奢",
-      "bust": "標準",
+      "bust": "大きい",
       "personality": "生意気",
       "hairColor": "金",
       "combat": "戦う",
@@ -3743,7 +3759,10 @@
       "mood": "背徳寄り",
       "affiliationName": "秘密結社ズーラーノーン（元・漆黒聖典/スレイン法国）",
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "兵士・軍人",
+        "スパイ・暗殺者"
+      ]
     }
   },
   {
@@ -3848,7 +3867,7 @@
       "character": "teto kasane",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -3873,7 +3892,7 @@
       "species": "獣人",
       "mood": "甘め",
       "affiliationName": null,
-      "stature": null,
+      "stature": "標準",
       "occupation": []
     }
   },
@@ -3987,7 +4006,7 @@
       "looks": [
         "長髪"
       ],
-      "hairColor": "緑",
+      "hairColor": "白",
       "skinTone": "色白",
       "outfit": [],
       "species": null,
@@ -3995,10 +4014,12 @@
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
       "affiliationName": "スメール(須弥)の草神",
-      "stature": null,
-      "occupation": []
+      "stature": "小柄",
+      "occupation": [
+        "神様・精霊"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -4144,17 +4165,17 @@
       "character": "satori komeiji",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
     "axes": {
       "genderExpression": "女性",
-      "ageFeel": "同年代",
+      "ageFeel": "幼い",
       "build": "華奢",
       "bust": "小さい",
       "personality": "クール",
-      "hairColor": "紫",
+      "hairColor": "桃",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
       "roles": [
@@ -4167,7 +4188,7 @@
       "species": "魔族",
       "mood": "甘め",
       "affiliationName": "地霊殿",
-      "stature": null,
+      "stature": "小柄",
       "occupation": []
     }
   },
@@ -4224,7 +4245,7 @@
       "character": "reisen udongein inaba",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -4232,7 +4253,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "標準",
+      "bust": "大きい",
       "personality": "内気",
       "hairColor": "紫",
       "combat": "戦う",
@@ -4253,7 +4274,9 @@
       "mood": "従属的",
       "affiliationName": "永遠亭",
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "兵士・軍人"
+      ]
     }
   },
   {
@@ -4395,11 +4418,14 @@
       "bust": "大きい",
       "personality": "クール",
       "roles": [
-        "先輩"
+        "先輩",
+        "ライバル"
       ],
       "distance": "やや受け身",
-      "looks": [],
-      "hairColor": "黒",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": "茶",
       "skinTone": "標準",
       "outfit": [
         "軍服"
@@ -4410,9 +4436,11 @@
       "affiliationKind": "軍・組織",
       "affiliationName": "正規空母(加賀型)",
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "兵士・軍人"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "kaga",
       "series": null
@@ -4727,7 +4755,7 @@
       "genderExpression": "女性",
       "ageFeel": "幼い",
       "build": "標準",
-      "bust": "標準",
+      "bust": "大きい",
       "personality": "クール",
       "roles": [
         "ライバル"
@@ -4737,7 +4765,7 @@
         "ケモミミ",
         "尻尾"
       ],
-      "hairColor": "白",
+      "hairColor": "銀",
       "skinTone": "色白",
       "outfit": [],
       "species": "魔族",
@@ -4748,7 +4776,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -4913,15 +4941,17 @@
       "hairColor": "金",
       "skinTone": "色白",
       "outfit": [],
-      "species": "魔族",
+      "species": "不死",
       "mood": "支配的",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
       "affiliationName": "守矢神社",
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "神様・精霊"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -4943,13 +4973,11 @@
       "genderExpression": "女性",
       "ageFeel": "熟れた",
       "build": "むっちり",
-      "bust": "とても大きい",
+      "bust": "大きい",
       "personality": "クール",
       "roles": [],
       "distance": "積極的",
-      "looks": [
-        "長髪"
-      ],
+      "looks": [],
       "hairColor": "緑",
       "skinTone": null,
       "outfit": [],
@@ -4961,7 +4989,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -5154,8 +5182,8 @@
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "年上",
-      "build": "標準",
-      "bust": "とても大きい",
+      "build": "むっちり",
+      "bust": "大きい",
       "personality": "おっとり",
       "roles": [
         "先輩",
@@ -5175,10 +5203,13 @@
       "combat": "戦わない",
       "affiliationKind": "学生",
       "affiliationName": "音ノ木坂学院",
-      "stature": null,
-      "occupation": []
+      "stature": "標準",
+      "occupation": [
+        "アイドル・芸能",
+        "巫女・神職"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -5460,14 +5491,13 @@
       "genderExpression": "女性",
       "ageFeel": "幼い",
       "build": "華奢",
-      "bust": "とても大きい",
+      "bust": "小さい",
       "personality": "生意気",
       "roles": [
         "幼馴染"
       ],
       "distance": "やや積極的",
       "looks": [
-        "長髪",
         "角"
       ],
       "hairColor": "紫",
@@ -5478,10 +5508,10 @@
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
       "affiliationName": "大江山",
-      "stature": null,
+      "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "shuten douji",
       "series": null
@@ -5557,7 +5587,7 @@
       "looks": [
         "長髪"
       ],
-      "hairColor": "銀",
+      "hairColor": "桃",
       "skinTone": "褐色",
       "outfit": [
         "制服"
@@ -5567,10 +5597,12 @@
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": "穂群原学園小等部",
-      "stature": null,
-      "occupation": []
+      "stature": "小柄",
+      "occupation": [
+        "魔法使い・魔術師"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "chloe von einzbern",
       "series": null
@@ -5598,22 +5630,22 @@
       "roles": [
         "妹"
       ],
-      "distance": "受け身",
-      "looks": [
-        "長髪"
-      ],
-      "hairColor": "黒",
+      "distance": "やや受け身",
+      "looks": [],
+      "hairColor": "銀",
       "skinTone": "色白",
       "outfit": [],
-      "species": "不死",
+      "species": "人間",
       "mood": "支配的",
       "combat": "戦う",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "軍・組織",
       "affiliationName": null,
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "魔法使い・魔術師"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "jeanne alter",
       "series": null
@@ -6559,10 +6591,12 @@
       "build": "華奢",
       "bust": "小さい",
       "personality": "内気",
-      "roles": [],
+      "roles": [
+        "主従"
+      ],
       "distance": "受け身",
       "looks": [],
-      "hairColor": "黒",
+      "hairColor": "紫",
       "skinTone": "色白",
       "outfit": [],
       "species": "魔族",
@@ -6571,9 +6605,11 @@
       "affiliationKind": "非人間・その他",
       "affiliationName": null,
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "メイド・従者"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "entoma vasilissa zeta",
       "series": null
@@ -6915,18 +6951,18 @@
       ],
       "distance": "積極的",
       "looks": [],
-      "hairColor": "紫",
+      "hairColor": "金",
       "skinTone": "色白",
       "outfit": [],
-      "species": null,
-      "mood": "背徳寄り",
+      "species": "人間",
+      "mood": "支配的",
       "combat": "戦う",
-      "affiliationKind": "学生",
+      "affiliationKind": "冒険者",
       "affiliationName": null,
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "fischl",
       "series": null
@@ -7297,26 +7333,28 @@
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "同年代",
-      "build": "標準",
+      "build": "華奢",
       "bust": "標準",
-      "personality": "姉御",
+      "personality": "おっとり",
       "roles": [
-        "幼馴染"
+        "母性"
       ],
       "distance": "やや積極的",
       "looks": [],
       "hairColor": "茶",
       "skinTone": "標準",
       "outfit": [],
-      "species": null,
+      "species": "人間",
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "冒険者",
       "affiliationName": null,
-      "stature": null,
-      "occupation": []
+      "stature": "標準",
+      "occupation": [
+        "兵士・軍人"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "asuna yuuki",
       "series": null
@@ -7584,10 +7622,12 @@
       "build": "標準",
       "bust": "標準",
       "personality": "生意気",
-      "roles": [],
+      "roles": [
+        "ライバル"
+      ],
       "distance": "積極的",
       "looks": [],
-      "hairColor": "赤",
+      "hairColor": "茶",
       "skinTone": "標準",
       "outfit": [],
       "species": "獣人",
@@ -7595,10 +7635,12 @@
       "combat": "戦わない",
       "affiliationKind": "学生",
       "affiliationName": null,
-      "stature": null,
-      "occupation": []
+      "stature": "標準",
+      "occupation": [
+        "アスリート"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "daiwa scarlet",
       "series": null
@@ -7618,7 +7660,7 @@
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "同年代",
-      "build": "標準",
+      "build": "華奢",
       "bust": "小さい",
       "personality": "内気",
       "roles": [],
@@ -7628,14 +7670,16 @@
       "skinTone": "色白",
       "outfit": [],
       "species": "獣人",
-      "mood": "従属的",
+      "mood": "純愛寄り",
       "combat": "戦わない",
       "affiliationKind": "学生",
       "affiliationName": null,
-      "stature": null,
-      "occupation": []
+      "stature": "小柄",
+      "occupation": [
+        "アスリート"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "rice shower",
       "series": null
@@ -7657,7 +7701,7 @@
       "ageFeel": "同年代",
       "build": "標準",
       "bust": "標準",
-      "personality": "姉御",
+      "personality": "元気",
       "roles": [],
       "distance": "やや積極的",
       "looks": [],
@@ -7665,14 +7709,16 @@
       "skinTone": "標準",
       "outfit": [],
       "species": "獣人",
-      "mood": "支配的",
+      "mood": "甘め",
       "combat": "戦わない",
       "affiliationKind": "学生",
       "affiliationName": null,
-      "stature": null,
-      "occupation": []
+      "stature": "小柄",
+      "occupation": [
+        "アスリート"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "kitasan black",
       "series": null
