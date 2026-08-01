@@ -30,6 +30,7 @@ import {
   REQUEST_DELAY_MS as NC_REQUEST_DELAY_MS,
   USER_AGENT as NC_USER_AGENT,
 } from '../scripts/bayes/niconico-client.mjs';
+import { isDisambiguationStub } from '../scripts/bayes/map-niconico.mjs';
 import { createOllamaClient, stripThinkTags } from '../scripts/bayes/ollama-client.mjs';
 import { buildAxisEvidenceMap, buildAxisHint } from '../scripts/bayes/review-hints.mjs';
 import {
@@ -912,6 +913,27 @@ describe('BB. ニコニコ大百科クライアント（scripts/bayes/niconico-c
     vi.resetModules();
     await import('../scripts/bayes/niconico-client.mjs');
     expect(fetchSpy).not.toHaveBeenCalled();
+  });
+});
+
+describe('isDisambiguationStub（scripts/bayes/map-niconico.mjs）', () => {
+  it('冒頭300文字以内に「曖昧さ回避」があればtrue', () => {
+    // 2026-08-02、fate-bb/overlord-albedo/csm-power で発覚: 短い一般語彙のキャラ名
+    // （BB/アルベド/パワー）が同名の他作品・実在物・一般名詞の曖昧さ回避ページを
+    // 掴んでいた。旧contentVerifiedはシリーズ名+キャラ名がリストの1項目として
+    // 偶然出現するだけで通してしまっていた。
+    expect(isDisambiguationStub('パワー（POWER）とは、力の事である。 曖昧さ回避 POWER - マーカス・ミラーの楽曲。')).toBe(
+      true,
+    );
+  });
+
+  it('通常の記事本文（曖昧さ回避マーカーが無い）はfalse', () => {
+    expect(isDisambiguationStub('レムとは、Re:ゼロから始める異世界生活に登場するキャラクターである。')).toBe(false);
+  });
+
+  it('「曖昧さ回避」が300文字より後ろにしか無ければfalse（記事末尾の関連項目欄等の誤検出を避ける）', () => {
+    const text = `${'あ'.repeat(400)}曖昧さ回避`;
+    expect(isDisambiguationStub(text)).toBe(false);
   });
 });
 

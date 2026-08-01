@@ -86,10 +86,27 @@ function nameVerified(articleText, characterName) {
 }
 
 /**
+ * 記事冒頭が「曖昧さ回避」ページであることを示すか。ニコニコ大百科の曖昧さ回避
+ * ページは同名の別概念（他作品のキャラ・一般名詞・実在の人物等）を列挙するだけの
+ * リストで、seriesVerified/nameVerifiedの両方をすり抜けてしまう（シリーズ名+
+ * キャラ名の組み合わせが、リストの1項目として偶然出現するだけで両方trueになる
+ * ため）。2026-08-02、fate-bb/overlord-albedo/csm-power で発覚: 「BB」「アルベド」
+ * 「パワー」という短い一般語彙のキャラ名が、いずれも同名の他作品キャラ・実在物・
+ * 一般名詞の曖昧さ回避ページを掴んでいた。掴んだページの本文は曖昧さ回避リストの
+ * 後に「無関係な別概念の語義説明」が続くだけで、対象キャラ個人の内容を一切含んで
+ * いなかった（LLM抽出がリスト内の無関係な語句を誤って引用する原因になっていた）。
+ * @param {string} articleText
+ */
+export function isDisambiguationStub(articleText) {
+  return articleText.slice(0, 300).includes('曖昧さ回避');
+}
+
+/**
  * @param {string} articleText
  * @param {Pick<import('../../src/data/schema.ts').Character, 'series' | 'name'>} character
  */
 function contentVerified(articleText, character) {
+  if (isDisambiguationStub(articleText)) return false;
   return seriesVerified(articleText, character.series) && nameVerified(articleText, character.name);
 }
 

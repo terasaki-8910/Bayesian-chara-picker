@@ -12,6 +12,9 @@
     "fairytail-mirajane": { "title": "ミラジェーン・ストラウス" },
     "nier-a2": { "title": "ヨルハA型二号" },
     "genshin-ganyu": { "title": "甘雨(原神)" },
+    "fate-bb": { "title": "BB(Fate/EXTRA CCC)" },
+    "overlord-albedo": { "title": "アルベド(オーバーロード)" },
+    "csm-power": { "title": "パワー(チェンソーマン)" },
     "azurlane-yamato": { "title": null, "reason": "「大和」の曖昧さ回避ページに艦これ版(大和（艦これ）)の記載はあるがアズールレーン版の記載が無い（対照的に「加賀」は艦これ版・アズールレーン版の両方が明記されている）。WebSearchでも dic.nicovideo.jp の専用記事は見つからず、専用記事自体が存在しないと判断。" },
     "naruto-kurenai": { "title": null, "reason": "「NARUTOの関連項目一覧」（単語記事があるキャラクターのみ掲載する公式まとめ記事、2026-07-26時点で本文確認）に記載が無く、専用記事は存在しないと判断。" },
     "naruto-ino": { "title": null, "reason": "同上（NARUTOの関連項目一覧に記載なし）。" },
@@ -27,6 +30,20 @@
     "onepiece-kalifa": { "title": null, "reason": "同上（WebSearchでdic.nicovideo.jp専用記事見つからず、「(ONE PIECE)」パターンも404）。" },
     "onepiece-sadi": { "title": null, "reason": "WebSearchで有効な候補が見つからず、「(ONE PIECE)」曖昧さ回避パターンでの直接確認も404。専用記事は存在しないと判断。" },
     "csm-himeno": { "title": "姫野(チェンソーマン)" },
-    "csm-reze": { "title": null, "reason": "WebSearchでdic.nicovideo.jpの専用記事が見つからず、「劇場版『チェンソーマン レゼ篇』」（2025年公開の映画記事）しかヒットしない。単体キャラクター記事は存在しないと判断。" }
+    "csm-reze": { "title": null, "reason": "WebSearchでdic.nicovideo.jpの専用記事が見つからず、「劇場版『チェンソーマン レゼ篇』」（2025年公開の映画記事）しかヒットしない。単体キャラクター記事は存在しないと判断。" },
+    "rezero-rem": { "title": "レム(Re:ゼロから始める異世界生活)" },
+    "rezero-ram": { "title": "ラム(Re:ゼロから始める異世界生活)" },
+    "onepiece-nami": { "title": "ナミ(ONE PIECE)" },
+    "monmusu-miia": { "title": "ミーア(モンスター娘のいる日常)" },
+    "nier-2b": { "title": "ヨルハ二号B型" },
+    "genshin-mona": { "title": "モナ(原神)" },
+    "kancolle-shimakaze": { "title": "島風(艦これ)" },
+    "kancolle-hamakaze": { "title": "浜風(艦これ)" },
+    "kancolle-suzuya": { "title": "鈴谷(艦これ)" },
+    "kancolle-kongou": { "title": "金剛(艦これ)" },
+    "overlord-cz2128delta": { "title": "シズ・デルタ" },
+    "fgo-kiyohime": { "title": "清姫", "reason": "2026-08-02追記: isDisambiguationStubガードの偽陽性。曖昧さ回避候補はFGOの清姫1件のみで、その直後に清姫伝説の詳細な解説（実質的な本文）がそのまま続く構成。素の記事タイトルのまま個別に救済。" },
+    "onepiece-uta": { "title": null, "reason": "2026-08-02、isDisambiguationStubガードで検出: 「うた」の曖昧さ回避ページのみで専用記事なし。候補「ウタ(ONE PIECE)」「ウタ(ONE PIECE FILM RED)」いずれも404。専用記事は存在しないと判断。" },
+    "genshin-jean": { "title": null, "reason": "2026-08-02、isDisambiguationStubガードで検出: 「ジン」の曖昧さ回避ページのみで専用記事なし。曖昧さ回避リストにも原神のジン(騎士団長)への直接リンクが無く（「ジン・グンヒルド」という別キャラのみ言及）、候補「ジン(原神)」も404。専用記事は存在しないと判断。" }
   }
 }
