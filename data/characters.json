@@ -30,10 +30,12 @@
       "combat": "戦う",
       "affiliationKind": "社会人",
       "affiliationName": "ロズワール邸",
-      "stature": null,
-      "occupation": []
+      "stature": "小柄",
+      "occupation": [
+        "メイド・従者"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "rem",
       "series": null
@@ -207,7 +209,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "bb",
       "series": null
@@ -1639,7 +1641,7 @@
       "character": "yuuka hayase",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -1667,7 +1669,7 @@
       "species": "人間",
       "mood": "支配的",
       "affiliationName": "ミレニアムサイエンススクール（セミナー）",
-      "stature": null,
+      "stature": "標準",
       "occupation": []
     }
   },
@@ -1906,7 +1908,7 @@
       "character": "noa ushio",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -1933,7 +1935,7 @@
       "species": "人間",
       "mood": "甘め",
       "affiliationName": "ミレニアムサイエンススクール（セミナー）",
-      "stature": null,
+      "stature": "標準",
       "occupation": []
     }
   },
@@ -2084,7 +2086,7 @@
       "character": "sanae kochiya",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -2112,7 +2114,9 @@
       "mood": "甘め",
       "affiliationName": "守矢神社",
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "巫女・神職"
+      ]
     }
   },
   {
@@ -2128,7 +2132,7 @@
       "character": "flandre scarlet",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -2170,7 +2174,7 @@
       "character": "remilia scarlet",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -2180,7 +2184,7 @@
       "build": "華奢",
       "bust": "小さい",
       "personality": "生意気",
-      "hairColor": "銀",
+      "hairColor": "青",
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
       "roles": [
@@ -2195,7 +2199,9 @@
       "mood": "支配的",
       "affiliationName": "紅魔館",
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "王族・貴族"
+      ]
     }
   },
   {
@@ -2211,7 +2217,7 @@
       "character": "marisa kirisame",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -2223,7 +2229,7 @@
       "personality": "元気",
       "hairColor": "金",
       "combat": "戦う",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "冒険者",
       "roles": [
         "ライバル"
       ],
@@ -2339,13 +2345,13 @@
       "character": "raiden shogun",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
     "axes": {
       "genderExpression": "女性",
-      "ageFeel": "年上",
+      "ageFeel": "熟れた",
       "build": "標準",
       "bust": "大きい",
       "personality": "クール",
@@ -2365,7 +2371,9 @@
       "mood": "支配的",
       "affiliationName": "稲妻幕府",
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "神様・精霊"
+      ]
     }
   },
   {
@@ -2469,7 +2477,7 @@
       "character": "hu tao",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -2555,7 +2563,7 @@
       "character": "keqing",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -2646,7 +2654,7 @@
       "character": "vivi nefertari",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -2654,7 +2662,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "華奢",
-      "bust": "標準",
+      "bust": "大きい",
       "personality": "元気",
       "hairColor": "青",
       "combat": "戦う",
@@ -2670,7 +2678,9 @@
       "mood": "甘め",
       "affiliationName": "アラバスタ王国",
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "王族・貴族"
+      ]
     }
   },
   {
@@ -2861,7 +2871,7 @@
       "character": "uta",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -2869,7 +2879,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "標準",
+      "bust": "大きい",
       "personality": "元気",
       "hairColor": "赤",
       "combat": "戦う",
@@ -2887,7 +2897,9 @@
       "mood": "甘め",
       "affiliationName": null,
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "アイドル・芸能"
+      ]
     }
   },
   {
@@ -2990,7 +3002,7 @@
       "character": "hinata hyuga",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -3000,7 +3012,7 @@
       "build": "標準",
       "bust": "大きい",
       "personality": "内気",
-      "hairColor": "青",
+      "hairColor": "黒",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
       "roles": [
@@ -3016,7 +3028,7 @@
       "species": "人間",
       "mood": "純愛寄り",
       "affiliationName": "木ノ葉隠れの里",
-      "stature": null,
+      "stature": "標準",
       "occupation": []
     }
   },
@@ -3504,7 +3516,7 @@
       "character": "nemu kurotsuchi",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -3525,14 +3537,14 @@
         "長髪"
       ],
       "skinTone": "標準",
-      "outfit": [
-        "軍服"
-      ],
+      "outfit": [],
       "species": "機械",
       "mood": "従属的",
       "affiliationName": "護廷十三隊十二番隊",
-      "stature": null,
-      "occupation": []
+      "stature": "標準",
+      "occupation": [
+        "研究者・発明家"
+      ]
     }
   },
   {
@@ -3548,7 +3560,7 @@
       "character": "isane kotetsu",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -3568,14 +3580,15 @@
       "distance": "受け身",
       "looks": [],
       "skinTone": "標準",
-      "outfit": [
-        "軍服"
-      ],
+      "outfit": [],
       "species": "不死",
       "mood": "従属的",
       "affiliationName": "護廷十三隊四番隊",
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "兵士・軍人",
+        "医療従事者"
+      ]
     }
   },
   {
@@ -3591,7 +3604,7 @@
       "character": "shalltear bloodfallen",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -3616,8 +3629,10 @@
       "species": "不死",
       "mood": "背徳寄り",
       "affiliationName": "ナザリック地下大墳墓",
-      "stature": null,
-      "occupation": []
+      "stature": "小柄",
+      "occupation": [
+        "兵士・軍人"
+      ]
     }
   },
   {
@@ -4000,10 +4015,12 @@
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
       "affiliationName": "仙人・閑雲(雲堂)の弟子",
-      "stature": null,
-      "occupation": []
+      "stature": "長身",
+      "occupation": [
+        "巫女・神職"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -4071,7 +4088,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "華奢",
-      "bust": "標準",
+      "bust": "小さい",
       "personality": "生意気",
       "roles": [],
       "distance": "やや積極的",
@@ -4079,7 +4096,7 @@
         "長髪",
         "ツインテール"
       ],
-      "hairColor": "白",
+      "hairColor": "青",
       "skinTone": "色白",
       "outfit": [],
       "species": null,
@@ -4090,7 +4107,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -4152,7 +4169,7 @@
       "character": "yukari yakumo",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -4178,7 +4195,9 @@
       "mood": "支配的",
       "affiliationName": "妖怪の賢者",
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "神様・精霊"
+      ]
     }
   },
   {
@@ -4321,7 +4340,7 @@
       "character": "youmu konpaku",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -4344,8 +4363,10 @@
       "species": "不死",
       "mood": "従属的",
       "affiliationName": "白玉楼",
-      "stature": null,
-      "occupation": []
+      "stature": "小柄",
+      "occupation": [
+        "兵士・軍人"
+      ]
     }
   },
   {
@@ -4425,7 +4446,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "shimakaze",
       "series": null
@@ -4535,7 +4556,7 @@
       "genderExpression": "女性",
       "ageFeel": "年上",
       "build": "標準",
-      "bust": "とても大きい",
+      "bust": "大きい",
       "personality": "姉御",
       "roles": [
         "姉",
@@ -4554,9 +4575,11 @@
       "affiliationKind": "軍・組織",
       "affiliationName": "重巡洋艦(高雄型・1番艦)",
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "兵士・軍人"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "takao",
       "series": null
@@ -4709,18 +4732,18 @@
       ],
       "hairColor": "茶",
       "skinTone": "標準",
-      "outfit": [
-        "巫女"
-      ],
+      "outfit": [],
       "species": "人間",
       "mood": "純愛寄り",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
       "affiliationName": "戦艦(金剛型・1番艦)",
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "兵士・軍人"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "kongou",
       "series": null
@@ -5064,7 +5087,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -5194,10 +5217,12 @@
       "combat": "戦わない",
       "affiliationKind": "学生",
       "affiliationName": "音ノ木坂学院",
-      "stature": null,
-      "occupation": []
+      "stature": "小柄",
+      "occupation": [
+        "アイドル・芸能"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -5495,7 +5520,7 @@
       "looks": [
         "長髪"
       ],
-      "hairColor": "青",
+      "hairColor": "黒",
       "skinTone": "色白",
       "outfit": [
         "魔法少女"
@@ -5505,10 +5530,12 @@
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": "穂群原学園小等部",
-      "stature": null,
-      "occupation": []
+      "stature": "小柄",
+      "occupation": [
+        "魔法使い・魔術師"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "miyu edelfelt",
       "series": null
@@ -6076,9 +6103,11 @@
       "affiliationKind": "非人間・その他",
       "affiliationName": null,
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "王族・貴族"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "artoria pendragon",
       "series": null
@@ -6381,10 +6410,12 @@
       "combat": "戦わない",
       "affiliationKind": "非人間・その他",
       "affiliationName": null,
-      "stature": null,
-      "occupation": []
+      "stature": "長身",
+      "occupation": [
+        "王族・貴族"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "shirahoshi",
       "series": null
@@ -7523,7 +7554,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "keiko ayano",
       "series": null
