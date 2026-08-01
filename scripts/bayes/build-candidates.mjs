@@ -40,6 +40,60 @@ import {
 
 /** 1girlタグとの共起率がこれ以上なら女性キャラ候補とみなす。 */
 const GENDER_RATIO_MIN = 0.3;
+
+/**
+ * 「プレイヤー自己投影アバター」パターンの除外正規表現（2026-08-02、実地確認で発覚）。
+ * ブルーアーカイブ「先生」・艦これ「提督」・アズールレーン「指揮官」・崩壊：スターレイル
+ * 「開拓者」等はゲーム側でプレイヤー自身を指す性別可変ロールで、ファンアートは
+ * どちらの性別でも描かれるため1girl率の単純閾値では弾けない
+ * （admiral_(kancolle)=53%、commander_(azur_lane)=77%等、閾値をどこに引いても
+ * 実在の東方系女性キャラ(神奈子31%等、複数人絵が多い作品文化で1girl単独タグの
+ * 付与率が構造的に低い)を巻き込まずに分離できなかった）。このサイトは「推薦する
+ * 特定のキャラ」が主旨で自己投影アバターは趣旨に合わないため、率に関わらず除外する。
+ */
+const EXCLUDED_AVATAR_PATTERNS = [
+  /^(doodle_)?sensei_\(blue_archive\)$/,
+  /^admiral_\(kancolle\)$/,
+  /^commander_\(azur_lane\)$/,
+  /^(trailblazer|caelus|stelle)_\(honkai:_star_rail\)$/,
+  /^aether_\(genshin_impact\)$/,
+  /^(wise|belle)_\(zenless_zone_zero\)$/,
+  /^rover_\(wuthering_waves\)$/,
+  /^male_byleth_\(fire_emblem\)$/,
+  /^fujimaru_ritsuka_\((male|female)\)$/,
+  /^inkling_player_character$/,
+  /^(male_)?trainer_\(pokemon\)$/,
+  /_\(male\)$/,
+];
+
+/**
+ * 実地確認で1girl率の閾値をすり抜けて混入した、確認済みの男性キャラ・
+ * プレイヤー選択アバター（ポケモン主人公等）・個体を指さない種族タグの個別除外
+ * （2026-08-02）。クロスドレス/性転換二次創作等で1girlタグが一定数付き閾値を
+ * 超えてしまうケースがある——率だけでは機械的に分離しきれないため実名で除外する。
+ */
+const EXCLUDED_TAGS = new Set([
+  'mario',
+  'uzumaki_naruto',
+  'link',
+  'emiya_shirou',
+  'uchiha_sasuke',
+  'kagamine_len',
+  'natsuki_subaru',
+  'cloud_strife',
+  'amamiya_ren',
+  'ash_ketchum',
+  'selene_(pokemon)',
+  'florian_(pokemon)',
+  'rotom',
+  'rotom_phone',
+  'gardevoir',
+]);
+
+/** @param {string} tagName */
+export function isExcludedCandidate(tagName) {
+  return EXCLUDED_TAGS.has(tagName) || EXCLUDED_AVATAR_PATTERNS.some((p) => p.test(tagName));
+}
 /** Danbooru API の /tags.json 1リクエストで取れる最大件数。 */
 const TOP_TAGS_LIMIT = 1000;
 /** 最終候補の目標件数（脱落込みで+312狙い、SPEC§6.1の供給先行方針）。 */
@@ -163,8 +217,12 @@ async function main() {
 
   console.log('Danbooruキャラタグ人気ランキングを取得中...');
   const topTags = await listTopCharacterTags(danbooruFetch, { limit: TOP_TAGS_LIMIT });
-  const deduped = topTags.filter((t) => !existingTags.has(t.name));
-  console.log(`上位${topTags.length}件中、既存重複を除いた${deduped.length}件を候補として評価します。`);
+  const deduped = topTags.filter((t) => !existingTags.has(t.name) && !isExcludedCandidate(t.name));
+  const excludedCount = topTags.filter((t) => !existingTags.has(t.name) && isExcludedCandidate(t.name)).length;
+  console.log(
+    `上位${topTags.length}件中、既存重複を除き、除外パターン${excludedCount}件（自己投影` +
+      `アバター等）も除いた${deduped.length}件を候補として評価します。`,
+  );
 
   const scored = [];
   for (const [index, tag] of deduped.entries()) {
@@ -223,17 +281,35 @@ async function main() {
   };
   writeFileSync(fileURLToPath(new URL('candidates.json', stateDir)), `${JSON.stringify(output, null, 2)}\n`);
 
+  const GENDER_REVIEW_MAX = 0.5;
+  const uncertainCandidates = rankedCandidates.filter((c) => c.genderRatio < GENDER_REVIEW_MAX);
+  const confidentCandidates = rankedCandidates.filter((c) => c.genderRatio >= GENDER_REVIEW_MAX);
+
   const md = [
     '# 500体拡張 候補リスト（機械生成・人間の承認待ち）',
     '',
     `生成日時: ${output.generatedAt}`,
     `Danbooruランキング由来候補: ${rankedCandidates.length}件（性別判定1girl率>=${GENDER_RATIO_MIN}、傾向スコア降順）`,
     '',
-    '## ランキング由来候補',
+    `**重要:** 性別判定は1girlタグ共起率のみに基づく機械推定で、確実ではありません。` +
+      `既知のプレイヤー自己投影アバター・確認済み男性キャラは除外済みですが、` +
+      `クロスドレス／性転換二次創作等の影響で漏れが残り得ます。特に下の` +
+      `「要確認」セクション(1girl率${(GENDER_REVIEW_MAX * 100).toFixed(0)}%未満、` +
+      `${uncertainCandidates.length}件)は目視確認してから承認してください。`,
+    '',
+    `## 要確認（1girl率${(GENDER_REVIEW_MAX * 100).toFixed(0)}%未満、${uncertainCandidates.length}件）`,
     '',
     '| Danbooruタグ | 総投稿数 | 傾向スコア | 1girl率 | fav中央値 |',
     '|---|---|---|---|---|',
-    ...rankedCandidates.map(
+    ...uncertainCandidates.map(
+      (c) => `| ${c.tag} | ${c.postCount} | ${c.explicitCount} | ${(c.genderRatio * 100).toFixed(0)}% | ${c.favMedian} |`,
+    ),
+    '',
+    `## 性別判定に自信あり（1girl率${(GENDER_REVIEW_MAX * 100).toFixed(0)}%以上、${confidentCandidates.length}件）`,
+    '',
+    '| Danbooruタグ | 総投稿数 | 傾向スコア | 1girl率 | fav中央値 |',
+    '|---|---|---|---|---|',
+    ...confidentCandidates.map(
       (c) => `| ${c.tag} | ${c.postCount} | ${c.explicitCount} | ${(c.genderRatio * 100).toFixed(0)}% | ${c.favMedian} |`,
     ),
     '',

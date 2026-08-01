@@ -11,6 +11,7 @@ import {
   searchCharacterTagCandidates,
   splitTagString,
 } from '../scripts/bayes/danbooru-client.mjs';
+import { isExcludedCandidate } from '../scripts/bayes/build-candidates.mjs';
 import { mapOneCharacter, seriesOverlapRatio, toBareTag } from '../scripts/bayes/map-characters.mjs';
 import { runVerifyChecks, samplePostsForTag } from '../scripts/bayes/sample-posts.mjs';
 import {
@@ -222,6 +223,51 @@ describe('BB. Danbooruクライアント（scripts/bayes/danbooru-client.mjs）'
     vi.resetModules();
     await import('../scripts/bayes/danbooru-client.mjs');
     expect(fetchSpy).not.toHaveBeenCalled();
+  });
+});
+
+describe('isExcludedCandidate（scripts/bayes/build-candidates.mjs）', () => {
+  // 2026-08-02、500体拡張の候補生成で実地発覚: ブルーアーカイブ「先生」・
+  // 艦これ「提督」等のプレイヤー自己投影アバターは1girl率の閾値だけでは弾けない
+  // （commander_(azur_lane)=77%、admiral_(kancolle)=53%等）。個別の確認済み男性
+  // キャラ・アバター系パターンを明示的に除外する。
+  it.each([
+    'sensei_(blue_archive)',
+    'doodle_sensei_(blue_archive)',
+    'admiral_(kancolle)',
+    'commander_(azur_lane)',
+    'trailblazer_(honkai:_star_rail)',
+    'caelus_(honkai:_star_rail)',
+    'stelle_(honkai:_star_rail)',
+    'aether_(genshin_impact)',
+    'wise_(zenless_zone_zero)',
+    'belle_(zenless_zone_zero)',
+    'rover_(wuthering_waves)',
+    'male_byleth_(fire_emblem)',
+    'fujimaru_ritsuka_(male)',
+    'fujimaru_ritsuka_(female)',
+    'inkling_player_character',
+    'mario',
+    'uzumaki_naruto',
+    'link',
+    'emiya_shirou',
+    'uchiha_sasuke',
+    'kagamine_len',
+    'natsuki_subaru',
+    'cloud_strife',
+    'amamiya_ren',
+    'ash_ketchum',
+    'selene_(pokemon)',
+    'florian_(pokemon)',
+    'rotom',
+    'rotom_phone',
+    'gardevoir',
+  ])('%s は除外される', (tag) => {
+    expect(isExcludedCandidate(tag)).toBe(true);
+  });
+
+  it.each(['hakurei_reimu', 'yasaka_kanako', 'commander_(something_else)'])('%s は除外されない', (tag) => {
+    expect(isExcludedCandidate(tag)).toBe(false);
   });
 });
 
