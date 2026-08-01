@@ -1181,22 +1181,22 @@ describe('BE. 16軸レビュー支援ツール（scripts/bayes/review-hints.mjs�
     expect(map.personality.map((c) => c.value)).toEqual(['クール']);
   });
 
-  it('単一値軸: Wikidataがドラフトと一致すればagree', () => {
+  it('multi軸(hairColor): Wikidataがドラフトに含まれればagree', () => {
     const candidates = [{ value: '黒', sources: [{ type: 'wikidata', axis: 'hairColor', value: '黒', multi: false }] }];
     const ctx = emptyCtx({ wikidataFacts: { hairColor: '黒' } });
-    const hint = buildAxisHint('hairColor', '黒', candidates, ctx);
+    const hint = buildAxisHint('hairColor', ['黒'], candidates, ctx);
     expect(hint.agreement).toBe('agree');
   });
 
-  it('単一値軸: Wikidataがドラフトと不一致ならconflictし、best値を報告する', () => {
+  it('multi軸(hairColor): Wikidataがドラフトに無い値を支持すればadd-candidateとしてconflict', () => {
     const candidates = [
       { value: '黒', sources: [{ type: 'wikidata', axis: 'hairColor', value: '黒', multi: false }] },
       { value: '紫', sources: [{ type: 'wikidata', axis: 'hairColor', value: '紫', multi: false }] },
     ];
     const ctx = emptyCtx({ wikidataFacts: { hairColor: '紫' } });
-    const hint = buildAxisHint('hairColor', '黒', candidates, ctx);
+    const hint = buildAxisHint('hairColor', ['黒'], candidates, ctx);
     expect(hint.agreement).toBe('conflict');
-    expect(hint.best).toBe('紫');
+    expect(hint.evidence).toContainEqual(expect.objectContaining({ value: '紫', action: 'add-candidate' }));
   });
 
   it('単一値軸: 証拠が一切無ければno-evidence（0.5等の中間値に潰さない）', () => {
@@ -1220,9 +1220,11 @@ describe('BE. 16軸レビュー支援ツール（scripts/bayes/review-hints.mjs�
   });
 
   it('単一値軸: Danbooruグループ比率がSUPPORT_THRESHOLD未満ならno-evidence扱い', () => {
-    const candidates = [{ value: '黒', sources: [{ type: 'danbooru-group', group: 'hair-color', tag: 'black_hair' }] }];
+    // hairColorは2026-08-01にmulti軸化したため、single軸の例として species を使う
+    // （buildAxisHintは合成candidates/ctxを渡す設計なので実データのsourcesは不要）。
+    const candidates = [{ value: '人間', sources: [{ type: 'danbooru-group', group: 'hair-color', tag: 'black_hair' }] }];
     const ctx = emptyCtx({ groupCoverage: { 'hair-color': { nG: 100, kByTag: { black_hair: 10 } } } });
-    const hint = buildAxisHint('hairColor', '黒', candidates, ctx);
+    const hint = buildAxisHint('species', '人間', candidates, ctx);
     expect(hint.agreement).toBe('no-evidence');
   });
 

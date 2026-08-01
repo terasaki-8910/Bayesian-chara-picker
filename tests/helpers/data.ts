@@ -39,11 +39,11 @@ export const AXIS_VALUES = {
   ageFeel: ['幼い', '同年代', '年上', '熟れた'],
   build: ['華奢', '標準', 'むっちり'],
   bust: ['小さい', '標準', '大きい', 'とても大きい'],
-  personality: ['クール', '元気', 'おっとり', '生意気', '内気', '姉御'],
+  personality: ['クール', '元気', 'おっとり', '生意気', '内気', '姉御', 'むっつり'],
   roles: ['幼馴染', '後輩', '先輩', '姉', '妹', '母性', '教師', '主従', 'ライバル', '恋人・伴侶'],
   distance: ['積極的', 'やや積極的', '中立', 'やや受け身', '受け身'],
   looks: ['眼鏡', 'ケモミミ', '角', '尻尾', '長髪', 'ツインテール'],
-  hairColor: ['黒', '白', '金', '茶', '赤', '青', '緑', '桃', '紫', '銀'],
+  hairColor: ['黒', '白', '金', '茶', '赤', '青', '緑', '桃', '紫', '銀', '橙'],
   skinTone: ['色白', '標準', '褐色'],
   outfit: ['制服', 'メイド', '巫女', 'ナース', '魔法少女', '軍服', 'OL', '和服・着物'],
   species: ['人間', 'エルフ', '獣人', '魔族', '機械', '不死'],
@@ -70,7 +70,7 @@ export const REQUIRED_AXES = [
   'affiliationKind',
 ] as const;
 
-/** 複数選択の軸（値は配列）。personality/mood は2026-08-01に単一値→複数値化。 */
-export const MULTI_AXES = ['roles', 'looks', 'outfit', 'occupation', 'personality', 'mood'] as const;
+/** 複数選択の軸（値は配列）。personality/mood/hairColor は2026-08-01に単一値→複数値化。 */
+export const MULTI_AXES = ['roles', 'looks', 'outfit', 'occupation', 'personality', 'mood', 'hairColor'] as const;
 
 export type AxisKey = keyof typeof AXIS_VALUES;

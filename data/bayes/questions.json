@@ -12,7 +12,8 @@
         "green_hair",
         "pink_hair",
         "purple_hair",
-        "grey_hair"
+        "grey_hair",
+        "orange_hair"
       ]
     },
     "hair-length": {
@@ -67,7 +68,7 @@
           "type": "axis",
           "axis": "hairColor",
           "value": "黒",
-          "multi": false
+          "multi": true
         },
         {
           "type": "wikidata",
@@ -95,7 +96,7 @@
           "type": "axis",
           "axis": "hairColor",
           "value": "白",
-          "multi": false
+          "multi": true
         },
         {
           "type": "wikidata",
@@ -123,7 +124,7 @@
           "type": "axis",
           "axis": "hairColor",
           "value": "金",
-          "multi": false
+          "multi": true
         },
         {
           "type": "wikidata",
@@ -151,7 +152,7 @@
           "type": "axis",
           "axis": "hairColor",
           "value": "茶",
-          "multi": false
+          "multi": true
         },
         {
           "type": "wikidata",
@@ -179,7 +180,7 @@
           "type": "axis",
           "axis": "hairColor",
           "value": "赤",
-          "multi": false
+          "multi": true
         },
         {
           "type": "wikidata",
@@ -207,7 +208,7 @@
           "type": "axis",
           "axis": "hairColor",
           "value": "青",
-          "multi": false
+          "multi": true
         },
         {
           "type": "wikidata",
@@ -235,7 +236,7 @@
           "type": "axis",
           "axis": "hairColor",
           "value": "緑",
-          "multi": false
+          "multi": true
         },
         {
           "type": "wikidata",
@@ -263,7 +264,7 @@
           "type": "axis",
           "axis": "hairColor",
           "value": "桃",
-          "multi": false
+          "multi": true
         },
         {
           "type": "wikidata",
@@ -291,7 +292,7 @@
           "type": "axis",
           "axis": "hairColor",
           "value": "紫",
-          "multi": false
+          "multi": true
         },
         {
           "type": "wikidata",
@@ -319,12 +320,40 @@
           "type": "axis",
           "axis": "hairColor",
           "value": "銀",
-          "multi": false
+          "multi": true
         },
         {
           "type": "wikidata",
           "axis": "hairColor",
           "value": "銀",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "dg:hair-color:orange_hair",
+      "prompt": "髪は橙(オレンジ)系ですか?",
+      "reason": {
+        "axis": "hairColor",
+        "label": "髪色",
+        "value": "橙"
+      },
+      "sources": [
+        {
+          "type": "danbooru-group",
+          "group": "hair-color",
+          "tag": "orange_hair"
+        },
+        {
+          "type": "axis",
+          "axis": "hairColor",
+          "value": "橙",
+          "multi": true
+        },
+        {
+          "type": "wikidata",
+          "axis": "hairColor",
+          "value": "橙",
           "multi": false
         }
       ]

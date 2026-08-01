@@ -10,12 +10,12 @@ const AGE_FEEL_VALUES = ['幼い', '同年代', '年上', '熟れた'] as const;
 /** 体格のみ。胸は BUST_VALUES に分離した（旧「グラマー」は体格と胸を混同していた）。 */
 const BUILD_VALUES = ['華奢', '標準', 'むっちり'] as const;
 const BUST_VALUES = ['小さい', '標準', '大きい', 'とても大きい'] as const;
-const PERSONALITY_VALUES = ['クール', '元気', 'おっとり', '生意気', '内気', '姉御'] as const;
+const PERSONALITY_VALUES = ['クール', '元気', 'おっとり', '生意気', '内気', '姉御', 'むっつり'] as const;
 const ROLES_VALUES = ['幼馴染', '後輩', '先輩', '姉', '妹', '母性', '教師', '主従', 'ライバル', '恋人・伴侶'] as const;
 const DISTANCE_VALUES = ['積極的', 'やや積極的', '中立', 'やや受け身', '受け身'] as const;
 /** 髪色・肌色はそれぞれ独立した軸に移した（旧 looks の「白髪」「褐色」）。 */
 const LOOKS_VALUES = ['眼鏡', 'ケモミミ', '角', '尻尾', '長髪', 'ツインテール'] as const;
-const HAIR_COLOR_VALUES = ['黒', '白', '金', '茶', '赤', '青', '緑', '桃', '紫', '銀'] as const;
+const HAIR_COLOR_VALUES = ['黒', '白', '金', '茶', '赤', '青', '緑', '桃', '紫', '銀', '橙'] as const;
 const SKIN_TONE_VALUES = ['色白', '標準', '褐色'] as const;
 const OUTFIT_VALUES = ['制服', 'メイド', '巫女', 'ナース', '魔法少女', '軍服', 'OL', '和服・着物'] as const;
 const SPECIES_VALUES = ['人間', 'エルフ', '獣人', '魔族', '機械', '不死'] as const;
@@ -67,7 +67,10 @@ export type Axes = {
   roles: string[];
   distance: string | null;
   looks: string[];
-  hairColor: string | null;
+  /** 複数値（配列）。personality/mood と同じモデル（2026-08-01。ナヒーダの
+   * 白62%/緑62%のような毛先グラデーションを表現するため）。必須8軸の1つなので
+   * 空配列は許容しない（A4）。 */
+  hairColor: string[];
   skinTone: string | null;
   outfit: string[];
   species: string | null;
@@ -165,7 +168,7 @@ const axesSchema: z.ZodType<Axes> = z.object({
   roles: z.array(z.enum(ROLES_VALUES)),
   distance: z.enum(DISTANCE_VALUES).nullable(),
   looks: z.array(z.enum(LOOKS_VALUES)),
-  hairColor: z.enum(HAIR_COLOR_VALUES),
+  hairColor: z.array(z.enum(HAIR_COLOR_VALUES)).min(1),
   skinTone: z.enum(SKIN_TONE_VALUES).nullable(),
   outfit: z.array(z.enum(OUTFIT_VALUES)),
   species: z.enum(SPECIES_VALUES).nullable(),

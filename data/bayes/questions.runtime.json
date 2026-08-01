@@ -93,6 +93,15 @@
     },
     {
       "key": "q011",
+      "prompt": "髪は橙(オレンジ)系ですか?",
+      "reason": {
+        "axis": "hairColor",
+        "label": "髪色",
+        "value": "橙"
+      }
+    },
+    {
+      "key": "q012",
       "prompt": "髪は短いですか?",
       "reason": {
         "axis": "looks",
@@ -101,7 +110,7 @@
       }
     },
     {
-      "key": "q012",
+      "key": "q013",
       "prompt": "髪はミディアムくらいの長さですか?",
       "reason": {
         "axis": "looks",
@@ -110,7 +119,7 @@
       }
     },
     {
-      "key": "q013",
+      "key": "q014",
       "prompt": "髪は長いですか?",
       "reason": {
         "axis": "looks",
@@ -119,7 +128,7 @@
       }
     },
     {
-      "key": "q014",
+      "key": "q015",
       "prompt": "髪はとても長い(腰下くらい)ですか?",
       "reason": {
         "axis": "looks",
@@ -128,7 +137,7 @@
       }
     },
     {
-      "key": "q015",
+      "key": "q016",
       "prompt": "目の色は水色系ですか?",
       "reason": {
         "axis": "looks",
@@ -137,7 +146,7 @@
       }
     },
     {
-      "key": "q016",
+      "key": "q017",
       "prompt": "目の色は黒系ですか?",
       "reason": {
         "axis": "looks",
@@ -146,7 +155,7 @@
       }
     },
     {
-      "key": "q017",
+      "key": "q018",
       "prompt": "目の色は青系ですか?",
       "reason": {
         "axis": "looks",
@@ -155,7 +164,7 @@
       }
     },
     {
-      "key": "q018",
+      "key": "q019",
       "prompt": "目の色は茶系ですか?",
       "reason": {
         "axis": "looks",
@@ -164,7 +173,7 @@
       }
     },
     {
-      "key": "q019",
+      "key": "q020",
       "prompt": "目の色は緑系ですか?",
       "reason": {
         "axis": "looks",
@@ -173,7 +182,7 @@
       }
     },
     {
-      "key": "q020",
+      "key": "q021",
       "prompt": "目の色はグレー系ですか?",
       "reason": {
         "axis": "looks",
@@ -182,7 +191,7 @@
       }
     },
     {
-      "key": "q021",
+      "key": "q022",
       "prompt": "目の色はオレンジ系ですか?",
       "reason": {
         "axis": "looks",
@@ -191,7 +200,7 @@
       }
     },
     {
-      "key": "q022",
+      "key": "q023",
       "prompt": "目の色は紫系ですか?",
       "reason": {
         "axis": "looks",
@@ -200,7 +209,7 @@
       }
     },
     {
-      "key": "q023",
+      "key": "q024",
       "prompt": "目の色は赤系ですか?",
       "reason": {
         "axis": "looks",
@@ -209,7 +218,7 @@
       }
     },
     {
-      "key": "q024",
+      "key": "q025",
       "prompt": "目の色は黄系ですか?",
       "reason": {
         "axis": "looks",
@@ -218,7 +227,7 @@
       }
     },
     {
-      "key": "q025",
+      "key": "q026",
       "prompt": "胸はとても控えめですか?",
       "reason": {
         "axis": "looks",
@@ -227,7 +236,7 @@
       }
     },
     {
-      "key": "q026",
+      "key": "q027",
       "prompt": "胸のサイズは小さいですか?",
       "reason": {
         "axis": "bust",
@@ -236,7 +245,7 @@
       }
     },
     {
-      "key": "q027",
+      "key": "q028",
       "prompt": "胸のサイズは標準的ですか?",
       "reason": {
         "axis": "bust",
@@ -245,7 +254,7 @@
       }
     },
     {
-      "key": "q028",
+      "key": "q029",
       "prompt": "胸のサイズは大きいですか?",
       "reason": {
         "axis": "bust",
@@ -254,7 +263,7 @@
       }
     },
     {
-      "key": "q029",
+      "key": "q030",
       "prompt": "胸のサイズはとても大きいですか?",
       "reason": {
         "axis": "bust",
@@ -263,7 +272,7 @@
       }
     },
     {
-      "key": "q030",
+      "key": "q031",
       "prompt": "胸のサイズは規格外なくらい大きいですか?",
       "reason": {
         "axis": "looks",
@@ -272,7 +281,7 @@
       }
     },
     {
-      "key": "q031",
+      "key": "q032",
       "prompt": "肌の色は色白ですか?",
       "reason": {
         "axis": "skinTone",
@@ -281,7 +290,7 @@
       }
     },
     {
-      "key": "q032",
+      "key": "q033",
       "prompt": "肌の色は褐色寄りですか?",
       "reason": {
         "axis": "skinTone",
@@ -290,7 +299,7 @@
       }
     },
     {
-      "key": "q033",
+      "key": "q034",
       "prompt": "眼鏡をかけていますか?",
       "reason": {
         "axis": "looks",
@@ -299,7 +308,7 @@
       }
     },
     {
-      "key": "q034",
+      "key": "q035",
       "prompt": "ケモミミがありますか?",
       "reason": {
         "axis": "looks",
@@ -308,7 +317,7 @@
       }
     },
     {
-      "key": "q035",
+      "key": "q036",
       "prompt": "角がありますか?",
       "reason": {
         "axis": "looks",
@@ -317,7 +326,7 @@
       }
     },
     {
-      "key": "q036",
+      "key": "q037",
       "prompt": "尻尾がありますか?",
       "reason": {
         "axis": "looks",
@@ -326,7 +335,7 @@
       }
     },
     {
-      "key": "q037",
+      "key": "q038",
       "prompt": "ツインテールですか?",
       "reason": {
         "axis": "looks",
@@ -335,7 +344,7 @@
       }
     },
     {
-      "key": "q038",
+      "key": "q039",
       "prompt": "制服を着ていますか?",
       "reason": {
         "axis": "outfit",
@@ -344,7 +353,7 @@
       }
     },
     {
-      "key": "q039",
+      "key": "q040",
       "prompt": "メイド系の服装ですか?",
       "reason": {
         "axis": "outfit",
@@ -353,7 +362,7 @@
       }
     },
     {
-      "key": "q040",
+      "key": "q041",
       "prompt": "巫女装束ですか?",
       "reason": {
         "axis": "outfit",
@@ -362,7 +371,7 @@
       }
     },
     {
-      "key": "q041",
+      "key": "q042",
       "prompt": "ナース系の服装ですか?",
       "reason": {
         "axis": "outfit",
@@ -371,7 +380,7 @@
       }
     },
     {
-      "key": "q042",
+      "key": "q043",
       "prompt": "魔法少女系の服装ですか?",
       "reason": {
         "axis": "outfit",
@@ -380,7 +389,7 @@
       }
     },
     {
-      "key": "q043",
+      "key": "q044",
       "prompt": "軍服系の服装ですか?",
       "reason": {
         "axis": "outfit",
@@ -389,7 +398,7 @@
       }
     },
     {
-      "key": "q044",
+      "key": "q045",
       "prompt": "OL系の服装ですか?",
       "reason": {
         "axis": "outfit",
@@ -398,7 +407,7 @@
       }
     },
     {
-      "key": "q045",
+      "key": "q046",
       "prompt": "ニーソ・太もも丈の靴下を履いていますか?",
       "reason": {
         "axis": "outfit",
@@ -407,7 +416,7 @@
       }
     },
     {
-      "key": "q046",
+      "key": "q047",
       "prompt": "手袋をしていますか?",
       "reason": {
         "axis": "outfit",
@@ -416,7 +425,7 @@
       }
     },
     {
-      "key": "q047",
+      "key": "q048",
       "prompt": "帽子をかぶっていますか?",
       "reason": {
         "axis": "outfit",
@@ -425,7 +434,7 @@
       }
     },
     {
-      "key": "q048",
+      "key": "q049",
       "prompt": "リボンを着けていますか?",
       "reason": {
         "axis": "looks",
@@ -434,7 +443,7 @@
       }
     },
     {
-      "key": "q049",
+      "key": "q050",
       "prompt": "ポニーテールですか?",
       "reason": {
         "axis": "looks",
@@ -443,7 +452,7 @@
       }
     },
     {
-      "key": "q050",
+      "key": "q051",
       "prompt": "三つ編みですか?",
       "reason": {
         "axis": "looks",
@@ -452,7 +461,7 @@
       }
     },
     {
-      "key": "q051",
+      "key": "q052",
       "prompt": "眼帯をしていますか?",
       "reason": {
         "axis": "looks",
@@ -461,7 +470,7 @@
       }
     },
     {
-      "key": "q052",
+      "key": "q053",
       "prompt": "翼がありますか?",
       "reason": {
         "axis": "looks",
@@ -470,7 +479,7 @@
       }
     },
     {
-      "key": "q053",
+      "key": "q054",
       "prompt": "天使の輪(ハロー)がありますか?",
       "reason": {
         "axis": "looks",
@@ -479,7 +488,7 @@
       }
     },
     {
-      "key": "q054",
+      "key": "q055",
       "prompt": "アホ毛がありますか?",
       "reason": {
         "axis": "looks",
@@ -488,7 +497,7 @@
       }
     },
     {
-      "key": "q055",
+      "key": "q056",
       "prompt": "ヘッドホンを着けていますか?",
       "reason": {
         "axis": "outfit",
@@ -497,7 +506,7 @@
       }
     },
     {
-      "key": "q056",
+      "key": "q057",
       "prompt": "ネクタイをしていますか?",
       "reason": {
         "axis": "outfit",
@@ -506,7 +515,7 @@
       }
     },
     {
-      "key": "q057",
+      "key": "q058",
       "prompt": "水着姿の印象が強いですか?",
       "reason": {
         "axis": "outfit",
@@ -515,7 +524,7 @@
       }
     },
     {
-      "key": "q058",
+      "key": "q059",
       "prompt": "エプロンを着けていますか?",
       "reason": {
         "axis": "outfit",
@@ -524,7 +533,7 @@
       }
     },
     {
-      "key": "q059",
+      "key": "q060",
       "prompt": "マント(ケープ)を着けていますか?",
       "reason": {
         "axis": "outfit",
@@ -533,7 +542,7 @@
       }
     },
     {
-      "key": "q060",
+      "key": "q061",
       "prompt": "チョーカーを着けていますか?",
       "reason": {
         "axis": "outfit",
@@ -542,7 +551,7 @@
       }
     },
     {
-      "key": "q061",
+      "key": "q062",
       "prompt": "そばかすがありますか?",
       "reason": {
         "axis": "looks",
@@ -551,7 +560,7 @@
       }
     },
     {
-      "key": "q062",
+      "key": "q063",
       "prompt": "傷痕がありますか?",
       "reason": {
         "axis": "looks",
@@ -560,7 +569,7 @@
       }
     },
     {
-      "key": "q063",
+      "key": "q064",
       "prompt": "髪飾りを着けていますか?",
       "reason": {
         "axis": "looks",
@@ -569,7 +578,7 @@
       }
     },
     {
-      "key": "q064",
+      "key": "q065",
       "prompt": "鎧を身に着けていますか?",
       "reason": {
         "axis": "outfit",
@@ -578,7 +587,7 @@
       }
     },
     {
-      "key": "q065",
+      "key": "q066",
       "prompt": "魔女帽子をかぶっていますか?",
       "reason": {
         "axis": "outfit",
@@ -587,7 +596,7 @@
       }
     },
     {
-      "key": "q066",
+      "key": "q067",
       "prompt": "片目が髪で隠れていますか?",
       "reason": {
         "axis": "looks",
@@ -596,7 +605,7 @@
       }
     },
     {
-      "key": "q067",
+      "key": "q068",
       "prompt": "八重歯・牙がありますか?",
       "reason": {
         "axis": "looks",
@@ -605,7 +614,7 @@
       }
     },
     {
-      "key": "q068",
+      "key": "q069",
       "prompt": "うさ耳(コスチューム)を着けていますか?",
       "reason": {
         "axis": "looks",
@@ -614,7 +623,7 @@
       }
     },
     {
-      "key": "q069",
+      "key": "q070",
       "prompt": "セーラー襟の服ですか?",
       "reason": {
         "axis": "outfit",
@@ -623,7 +632,7 @@
       }
     },
     {
-      "key": "q070",
+      "key": "q071",
       "prompt": "性格はクール寄りですか?",
       "reason": {
         "axis": "personality",
@@ -632,7 +641,7 @@
       }
     },
     {
-      "key": "q071",
+      "key": "q072",
       "prompt": "性格は元気寄りですか?",
       "reason": {
         "axis": "personality",
@@ -641,7 +650,7 @@
       }
     },
     {
-      "key": "q072",
+      "key": "q073",
       "prompt": "性格はおっとり寄りですか?",
       "reason": {
         "axis": "personality",
@@ -650,7 +659,7 @@
       }
     },
     {
-      "key": "q073",
+      "key": "q074",
       "prompt": "性格は生意気寄りですか?",
       "reason": {
         "axis": "personality",
@@ -659,7 +668,7 @@
       }
     },
     {
-      "key": "q074",
+      "key": "q075",
       "prompt": "性格は内気寄りですか?",
       "reason": {
         "axis": "personality",
@@ -668,7 +677,7 @@
       }
     },
     {
-      "key": "q075",
+      "key": "q076",
       "prompt": "性格は姉御寄りですか?",
       "reason": {
         "axis": "personality",
@@ -677,7 +686,7 @@
       }
     },
     {
-      "key": "q076",
+      "key": "q077",
       "prompt": "幼馴染に当てはまりますか?",
       "reason": {
         "axis": "roles",
@@ -686,7 +695,7 @@
       }
     },
     {
-      "key": "q077",
+      "key": "q078",
       "prompt": "後輩に当てはまりますか?",
       "reason": {
         "axis": "roles",
@@ -695,7 +704,7 @@
       }
     },
     {
-      "key": "q078",
+      "key": "q079",
       "prompt": "先輩に当てはまりますか?",
       "reason": {
         "axis": "roles",
@@ -704,7 +713,7 @@
       }
     },
     {
-      "key": "q079",
+      "key": "q080",
       "prompt": "姉に当てはまりますか?",
       "reason": {
         "axis": "roles",
@@ -713,7 +722,7 @@
       }
     },
     {
-      "key": "q080",
+      "key": "q081",
       "prompt": "妹に当てはまりますか?",
       "reason": {
         "axis": "roles",
@@ -722,7 +731,7 @@
       }
     },
     {
-      "key": "q081",
+      "key": "q082",
       "prompt": "母性に当てはまりますか?",
       "reason": {
         "axis": "roles",
@@ -731,7 +740,7 @@
       }
     },
     {
-      "key": "q082",
+      "key": "q083",
       "prompt": "教師に当てはまりますか?",
       "reason": {
         "axis": "roles",
@@ -740,7 +749,7 @@
       }
     },
     {
-      "key": "q083",
+      "key": "q084",
       "prompt": "主従に当てはまりますか?",
       "reason": {
         "axis": "roles",
@@ -749,7 +758,7 @@
       }
     },
     {
-      "key": "q084",
+      "key": "q085",
       "prompt": "ライバルに当てはまりますか?",
       "reason": {
         "axis": "roles",
@@ -758,7 +767,7 @@
       }
     },
     {
-      "key": "q085",
+      "key": "q086",
       "prompt": "距離感は積極的ですか?",
       "reason": {
         "axis": "distance",
@@ -767,7 +776,7 @@
       }
     },
     {
-      "key": "q086",
+      "key": "q087",
       "prompt": "距離感はやや積極的ですか?",
       "reason": {
         "axis": "distance",
@@ -776,7 +785,7 @@
       }
     },
     {
-      "key": "q087",
+      "key": "q088",
       "prompt": "距離感は中立ですか?",
       "reason": {
         "axis": "distance",
@@ -785,7 +794,7 @@
       }
     },
     {
-      "key": "q088",
+      "key": "q089",
       "prompt": "距離感はやや受け身ですか?",
       "reason": {
         "axis": "distance",
@@ -794,7 +803,7 @@
       }
     },
     {
-      "key": "q089",
+      "key": "q090",
       "prompt": "距離感は受け身ですか?",
       "reason": {
         "axis": "distance",
@@ -803,7 +812,7 @@
       }
     },
     {
-      "key": "q090",
+      "key": "q091",
       "prompt": "種族は人間ですか?",
       "reason": {
         "axis": "species",
@@ -812,7 +821,7 @@
       }
     },
     {
-      "key": "q091",
+      "key": "q092",
       "prompt": "種族はエルフですか?",
       "reason": {
         "axis": "species",
@@ -821,7 +830,7 @@
       }
     },
     {
-      "key": "q092",
+      "key": "q093",
       "prompt": "種族は獣人ですか?",
       "reason": {
         "axis": "species",
@@ -830,7 +839,7 @@
       }
     },
     {
-      "key": "q093",
+      "key": "q094",
       "prompt": "種族は魔族ですか?",
       "reason": {
         "axis": "species",
@@ -839,7 +848,7 @@
       }
     },
     {
-      "key": "q094",
+      "key": "q095",
       "prompt": "種族は機械ですか?",
       "reason": {
         "axis": "species",
@@ -848,7 +857,7 @@
       }
     },
     {
-      "key": "q095",
+      "key": "q096",
       "prompt": "種族は不死ですか?",
       "reason": {
         "axis": "species",
@@ -857,7 +866,7 @@
       }
     },
     {
-      "key": "q096",
+      "key": "q097",
       "prompt": "雰囲気は甘め寄りですか?",
       "reason": {
         "axis": "mood",
@@ -866,7 +875,7 @@
       }
     },
     {
-      "key": "q097",
+      "key": "q098",
       "prompt": "雰囲気は支配的寄りですか?",
       "reason": {
         "axis": "mood",
@@ -875,7 +884,7 @@
       }
     },
     {
-      "key": "q098",
+      "key": "q099",
       "prompt": "雰囲気は従属的寄りですか?",
       "reason": {
         "axis": "mood",
@@ -884,7 +893,7 @@
       }
     },
     {
-      "key": "q099",
+      "key": "q100",
       "prompt": "雰囲気は純愛寄りですか?",
       "reason": {
         "axis": "mood",
@@ -893,7 +902,7 @@
       }
     },
     {
-      "key": "q100",
+      "key": "q101",
       "prompt": "雰囲気は背徳寄りですか?",
       "reason": {
         "axis": "mood",
@@ -902,7 +911,7 @@
       }
     },
     {
-      "key": "q101",
+      "key": "q102",
       "prompt": "戦うキャラですか?",
       "reason": {
         "axis": "combat",
@@ -911,7 +920,7 @@
       }
     },
     {
-      "key": "q102",
+      "key": "q103",
       "prompt": "戦わないキャラですか?",
       "reason": {
         "axis": "combat",
@@ -920,7 +929,7 @@
       }
     },
     {
-      "key": "q103",
+      "key": "q104",
       "prompt": "所属は学生ですか?",
       "reason": {
         "axis": "affiliationKind",
@@ -929,7 +938,7 @@
       }
     },
     {
-      "key": "q104",
+      "key": "q105",
       "prompt": "所属は社会人ですか?",
       "reason": {
         "axis": "affiliationKind",
@@ -938,7 +947,7 @@
       }
     },
     {
-      "key": "q105",
+      "key": "q106",
       "prompt": "所属は軍・組織ですか?",
       "reason": {
         "axis": "affiliationKind",
@@ -947,7 +956,7 @@
       }
     },
     {
-      "key": "q106",
+      "key": "q107",
       "prompt": "所属は冒険者ですか?",
       "reason": {
         "axis": "affiliationKind",
@@ -956,7 +965,7 @@
       }
     },
     {
-      "key": "q107",
+      "key": "q108",
       "prompt": "所属は非人間・その他ですか?",
       "reason": {
         "axis": "affiliationKind",
@@ -965,7 +974,7 @@
       }
     },
     {
-      "key": "q108",
+      "key": "q109",
       "prompt": "見た目の年齢は幼い印象ですか?",
       "reason": {
         "axis": "ageFeel",
@@ -974,7 +983,7 @@
       }
     },
     {
-      "key": "q109",
+      "key": "q110",
       "prompt": "見た目の年齢は10代後半〜20代前半くらいですか?",
       "reason": {
         "axis": "ageFeel",
@@ -983,7 +992,7 @@
       }
     },
     {
-      "key": "q110",
+      "key": "q111",
       "prompt": "見た目の年齢は20代後半〜30代くらいの落ち着いた印象ですか?",
       "reason": {
         "axis": "ageFeel",
@@ -992,7 +1001,7 @@
       }
     },
     {
-      "key": "q111",
+      "key": "q112",
       "prompt": "見た目の年齢は大人びて熟れた印象ですか?",
       "reason": {
         "axis": "ageFeel",
@@ -1001,7 +1010,7 @@
       }
     },
     {
-      "key": "q112",
+      "key": "q113",
       "prompt": "体格は華奢ですか?",
       "reason": {
         "axis": "build",
@@ -1010,7 +1019,7 @@
       }
     },
     {
-      "key": "q113",
+      "key": "q114",
       "prompt": "体格は標準ですか?",
       "reason": {
         "axis": "build",
@@ -1019,7 +1028,7 @@
       }
     },
     {
-      "key": "q114",
+      "key": "q115",
       "prompt": "体格はむっちりですか?",
       "reason": {
         "axis": "build",
@@ -1028,7 +1037,7 @@
       }
     },
     {
-      "key": "q115",
+      "key": "q116",
       "prompt": "身長は小柄ですか?",
       "reason": {
         "axis": "stature",
@@ -1037,7 +1046,7 @@
       }
     },
     {
-      "key": "q116",
+      "key": "q117",
       "prompt": "身長は平均的ですか?",
       "reason": {
         "axis": "stature",
@@ -1046,7 +1055,7 @@
       }
     },
     {
-      "key": "q117",
+      "key": "q118",
       "prompt": "身長は高い方ですか?",
       "reason": {
         "axis": "stature",
@@ -1055,7 +1064,7 @@
       }
     },
     {
-      "key": "q118",
+      "key": "q119",
       "prompt": "忍者ですか?",
       "reason": {
         "axis": "occupation",
@@ -1064,7 +1073,7 @@
       }
     },
     {
-      "key": "q119",
+      "key": "q120",
       "prompt": "海賊ですか?",
       "reason": {
         "axis": "occupation",
@@ -1073,7 +1082,7 @@
       }
     },
     {
-      "key": "q120",
+      "key": "q121",
       "prompt": "軍人・兵士として戦う立場ですか?",
       "reason": {
         "axis": "occupation",
@@ -1082,7 +1091,7 @@
       }
     },
     {
-      "key": "q121",
+      "key": "q122",
       "prompt": "警察や公安のような治安を守る立場ですか?",
       "reason": {
         "axis": "occupation",
@@ -1091,7 +1100,7 @@
       }
     },
     {
-      "key": "q122",
+      "key": "q123",
       "prompt": "スパイや暗殺者のような裏の仕事をしていますか?",
       "reason": {
         "axis": "occupation",
@@ -1100,7 +1109,7 @@
       }
     },
     {
-      "key": "q123",
+      "key": "q124",
       "prompt": "アイドルや芸能の活動をしていますか?",
       "reason": {
         "axis": "occupation",
@@ -1109,7 +1118,7 @@
       }
     },
     {
-      "key": "q124",
+      "key": "q125",
       "prompt": "スポーツ・競技の選手ですか?",
       "reason": {
         "axis": "occupation",
@@ -1118,7 +1127,7 @@
       }
     },
     {
-      "key": "q125",
+      "key": "q126",
       "prompt": "巫女や神職を務めていますか?",
       "reason": {
         "axis": "occupation",
@@ -1127,7 +1136,7 @@
       }
     },
     {
-      "key": "q126",
+      "key": "q127",
       "prompt": "神様や精霊のような存在ですか?",
       "reason": {
         "axis": "occupation",
@@ -1136,7 +1145,7 @@
       }
     },
     {
-      "key": "q127",
+      "key": "q128",
       "prompt": "メイドや従者として誰かに仕えていますか?",
       "reason": {
         "axis": "occupation",
@@ -1145,7 +1154,7 @@
       }
     },
     {
-      "key": "q128",
+      "key": "q129",
       "prompt": "王族や貴族の身分ですか?",
       "reason": {
         "axis": "occupation",
@@ -1154,7 +1163,7 @@
       }
     },
     {
-      "key": "q129",
+      "key": "q130",
       "prompt": "医者や看護のような医療に携わっていますか?",
       "reason": {
         "axis": "occupation",
@@ -1163,7 +1172,7 @@
       }
     },
     {
-      "key": "q130",
+      "key": "q131",
       "prompt": "研究者や発明家ですか?",
       "reason": {
         "axis": "occupation",
@@ -1172,7 +1181,7 @@
       }
     },
     {
-      "key": "q131",
+      "key": "q132",
       "prompt": "魔法使いや魔術師ですか?",
       "reason": {
         "axis": "occupation",

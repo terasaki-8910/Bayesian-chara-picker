@@ -39,8 +39,8 @@ import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { countBinary, countGroupCoverage, loadDanbooruCache } from './build-likelihoods.mjs';
 
-/** 単一値ではなく配列で持つ軸（schema.tsのAxes型と一致。personality/moodは2026-08-01に複数値化）。 */
-const MULTI_AXES = new Set(['roles', 'looks', 'outfit', 'occupation', 'personality', 'mood']);
+/** 単一値ではなく配列で持つ軸（schema.tsのAxes型と一致。personality/mood/hairColorは2026-08-01に複数値化）。 */
+const MULTI_AXES = new Set(['roles', 'looks', 'outfit', 'occupation', 'personality', 'mood', 'hairColor']);
 /** questions.jsonに証拠源の定義が無い軸（常にno-evidence）。
  * ageFeel/build は2026-08-01に質問（axis+llmソース）が追加されたのでここから外した
  * ——このスクリプトは questions.json を証拠源の対応表として再利用する設計なので、
