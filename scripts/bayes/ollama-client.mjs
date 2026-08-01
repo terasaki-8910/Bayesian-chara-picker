@@ -64,7 +64,16 @@ export function createOllamaClient({ fetchImpl = fetch, apiRoot = API_ROOT } = {
         // 既定のnum_ctx(多くのOllamaモデルで4096)だと長文記事（東方Project系で
         // 6000〜15000トークン超）がプロンプト時点で溢れてstatus=400になることが
         // 実地確認で判明した（2026-07-25、touhou-yukari他21件で再現）。
-        options: { temperature: 0, seed, num_ctx: numCtx },
+        //
+        // num_predict: Ollama既定は無制限。生成が暴走ループした場合、stream:false
+        // なので応答ヘッダすら返らないままnum_ctxを埋めるまで生成が続き、Node
+        // fetch(undici)の既定ヘッダタイムアウト(5分)で「fetch failed」になることが
+        // 実地確認で判明した（2026-08-01、fate-scathach/fate-raikouで再現。温度0・
+        // 固定seedのため再実行でも決定論的に再発する）。健全な応答は全11軸の
+        // 抽出JSONでも1500トークン程度なので、4096で十分な余裕がある——上限に
+        // 達した暴走応答はJSONとして壊れて呼び出し側でエラーになるが、5分の
+        // ハング+接続断ではなく数十秒で失敗が確定するようになる。
+        options: { temperature: 0, seed, num_ctx: numCtx, num_predict: 4096 },
       }),
     });
     if (!res.ok) {

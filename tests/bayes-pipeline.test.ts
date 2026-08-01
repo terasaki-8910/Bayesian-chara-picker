@@ -911,7 +911,10 @@ describe('BB. Ollamaクライアント（scripts/bayes/ollama-client.mjs）', ()
     expect(seenBody.think).toBe(false);
     expect(seenBody.stream).toBe(false);
     expect(seenBody.format).toEqual(format);
-    expect(seenBody.options).toEqual({ temperature: 0, seed: 42, num_ctx: 32768 });
+    // num_predict: 生成暴走ループが応答ヘッダ未着のままfetchのヘッダタイムアウト
+    // (5分)に達して「fetch failed」になる実地事例への対処
+    // （2026-08-01、fate-scathach他3件。詳細はollama-client.mjsのコメント参照）。
+    expect(seenBody.options).toEqual({ temperature: 0, seed: 42, num_ctx: 32768, num_predict: 4096 });
     expect(seenBody.messages).toEqual([
       { role: 'system', content: 'sys' },
       { role: 'user', content: 'user' },
