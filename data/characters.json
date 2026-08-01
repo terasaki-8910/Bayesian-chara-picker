@@ -228,7 +228,7 @@
       "genderExpression": "女性",
       "ageFeel": "熟れた",
       "build": "標準",
-      "bust": "大きい",
+      "bust": "標準",
       "personality": "生意気",
       "roles": [
         "妹"
@@ -247,9 +247,11 @@
       "affiliationKind": "非人間・その他",
       "affiliationName": "メソポタミア",
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "神様・精霊"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "ishtar",
       "series": null
@@ -797,8 +799,8 @@
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "熟れた",
-      "build": "標準",
-      "bust": "とても大きい",
+      "build": "むっちり",
+      "bust": "大きい",
       "personality": "生意気",
       "roles": [
         "姉"
@@ -813,12 +815,15 @@
       "species": "人間",
       "mood": "支配的",
       "combat": "戦う",
-      "affiliationKind": "軍・組織",
+      "affiliationKind": "冒険者",
       "affiliationName": "九蛇海賊団",
-      "stature": null,
-      "occupation": []
+      "stature": "長身",
+      "occupation": [
+        "海賊",
+        "王族・貴族"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "boa hancock",
       "series": null
@@ -854,12 +859,14 @@
       "species": "人間",
       "mood": "甘め",
       "combat": "戦う",
-      "affiliationKind": "軍・組織",
+      "affiliationKind": "冒険者",
       "affiliationName": "麦わらの一味",
-      "stature": null,
-      "occupation": []
+      "stature": "長身",
+      "occupation": [
+        "海賊"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "nami",
       "series": null
@@ -1019,18 +1026,18 @@
       ],
       "hairColor": "白",
       "skinTone": "色白",
-      "outfit": [
-        "軍服"
-      ],
+      "outfit": [],
       "species": "機械",
       "mood": "支配的",
       "combat": "戦う",
       "affiliationKind": "軍・組織",
       "affiliationName": "ヨルハ部隊",
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "兵士・軍人"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "a2",
       "series": null
@@ -1072,9 +1079,11 @@
       "affiliationKind": "軍・組織",
       "affiliationName": "重桜",
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "兵士・軍人"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "nagato",
       "series": "azur lane"
@@ -1138,11 +1147,11 @@
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "年上",
-      "build": "華奢",
+      "build": "むっちり",
       "bust": "大きい",
       "personality": "おっとり",
       "roles": [
-        "母性"
+        "姉"
       ],
       "distance": "積極的",
       "looks": [
@@ -1160,7 +1169,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "narmaya",
       "series": null
@@ -1339,9 +1348,11 @@
       "affiliationKind": "軍・組織",
       "affiliationName": "公安対魔特異4課",
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "警察・公安"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "makima",
       "series": null
@@ -1584,7 +1595,7 @@
       "character": "asuna ichinose",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -1592,7 +1603,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "むっちり",
-      "bust": "とても大きい",
+      "bust": "大きい",
       "personality": "元気",
       "hairColor": "金",
       "combat": "戦う",
@@ -1611,7 +1622,7 @@
       "species": "人間",
       "mood": "甘め",
       "affiliationName": "ミレニアムサイエンススクール（C&C）",
-      "stature": null,
+      "stature": "標準",
       "occupation": []
     }
   },
@@ -1673,7 +1684,7 @@
       "character": "toki asuma",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -1700,8 +1711,11 @@
       "species": "人間",
       "mood": "従属的",
       "affiliationName": "ミレニアムサイエンススクール（C&C）",
-      "stature": null,
-      "occupation": []
+      "stature": "標準",
+      "occupation": [
+        "兵士・軍人",
+        "メイド・従者"
+      ]
     }
   },
   {
@@ -1717,7 +1731,7 @@
       "character": "mika misono",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -1725,7 +1739,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "標準",
+      "bust": "大きい",
       "personality": "元気",
       "hairColor": "桃",
       "combat": "戦う",
@@ -1744,7 +1758,7 @@
       "species": "人間",
       "mood": "純愛寄り",
       "affiliationName": "トリニティ総合学園（ティーパーティー）",
-      "stature": null,
+      "stature": "標準",
       "occupation": []
     }
   },
@@ -1801,7 +1815,7 @@
       "character": "rio tsukatsuki",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -1815,7 +1829,7 @@
       "combat": "戦う",
       "affiliationKind": "学生",
       "roles": [
-        "主従"
+        "先輩"
       ],
       "distance": "やや積極的",
       "looks": [
@@ -1828,7 +1842,7 @@
       "species": "人間",
       "mood": "支配的",
       "affiliationName": "ミレニアムサイエンススクール（セミナー）",
-      "stature": null,
+      "stature": "長身",
       "occupation": []
     }
   },
@@ -1982,7 +1996,7 @@
       "character": "sakuya izayoi",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -1990,7 +2004,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "小さい",
+      "bust": "標準",
       "personality": "クール",
       "hairColor": "銀",
       "combat": "戦う",
@@ -1999,7 +2013,9 @@
         "主従"
       ],
       "distance": "やや受け身",
-      "looks": [],
+      "looks": [
+        "長髪"
+      ],
       "skinTone": "色白",
       "outfit": [
         "メイド"
@@ -2008,7 +2024,9 @@
       "mood": "従属的",
       "affiliationName": "紅魔館",
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "メイド・従者"
+      ]
     }
   },
   {
@@ -2024,7 +2042,7 @@
       "character": "patchouli knowledge",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -2047,8 +2065,10 @@
       "species": "魔族",
       "mood": "純愛寄り",
       "affiliationName": "紅魔館",
-      "stature": null,
-      "occupation": []
+      "stature": "小柄",
+      "occupation": [
+        "魔法使い・魔術師"
+      ]
     }
   },
   {
@@ -2492,7 +2512,7 @@
       "character": "mona megistus",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -2500,9 +2520,9 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "大きい",
+      "bust": "標準",
       "personality": "生意気",
-      "hairColor": "紫",
+      "hairColor": "黒",
       "combat": "戦う",
       "affiliationKind": "社会人",
       "roles": [],
@@ -2517,7 +2537,9 @@
       "mood": "甘め",
       "affiliationName": null,
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "魔法使い・魔術師"
+      ]
     }
   },
   {
@@ -3350,7 +3372,7 @@
       "character": "tia halibel",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -3358,7 +3380,7 @@
       "genderExpression": "女性",
       "ageFeel": "年上",
       "build": "標準",
-      "bust": "とても大きい",
+      "bust": "大きい",
       "personality": "クール",
       "hairColor": "金",
       "combat": "戦う",
@@ -3373,8 +3395,10 @@
       "species": "魔族",
       "mood": "支配的",
       "affiliationName": "エスパーダ(第3位)",
-      "stature": null,
-      "occupation": []
+      "stature": "長身",
+      "occupation": [
+        "兵士・軍人"
+      ]
     }
   },
   {
@@ -3609,7 +3633,7 @@
       "character": "aura bella fiora",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -3632,7 +3656,7 @@
       "species": "エルフ",
       "mood": "甘め",
       "affiliationName": "ナザリック地下大墳墓",
-      "stature": null,
+      "stature": "小柄",
       "occupation": []
     }
   },
@@ -3778,7 +3802,7 @@
       "character": "yuri alpha",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -3806,8 +3830,10 @@
       "species": "不死",
       "mood": "純愛寄り",
       "affiliationName": "ナザリック地下大墳墓",
-      "stature": null,
-      "occupation": []
+      "stature": "長身",
+      "occupation": [
+        "メイド・従者"
+      ]
     }
   },
   {
@@ -3823,7 +3849,7 @@
       "character": "solution epsilon",
       "series": null
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false,
@@ -3850,8 +3876,11 @@
       "species": "魔族",
       "mood": "背徳寄り",
       "affiliationName": "ナザリック地下大墳墓",
-      "stature": null,
-      "occupation": []
+      "stature": "標準",
+      "occupation": [
+        "スパイ・暗殺者",
+        "メイド・従者"
+      ]
     }
   },
   {
@@ -4331,7 +4360,7 @@
       "genderExpression": "女性",
       "ageFeel": "年上",
       "build": "標準",
-      "bust": "とても大きい",
+      "bust": "大きい",
       "personality": "おっとり",
       "roles": [
         "母性"
@@ -4351,9 +4380,11 @@
       "affiliationKind": "軍・組織",
       "affiliationName": "重巡洋艦(高雄型)",
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "兵士・軍人"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "atago",
       "series": null
@@ -4817,9 +4848,11 @@
       "affiliationKind": "社会人",
       "affiliationName": "紅魔館",
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "メイド・従者"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -4909,7 +4942,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -5050,17 +5083,15 @@
     },
     "axes": {
       "genderExpression": "女性",
-      "ageFeel": "年上",
+      "ageFeel": "同年代",
       "build": "標準",
       "bust": "標準",
-      "personality": "クール",
+      "personality": "生意気",
       "roles": [
         "後輩"
       ],
       "distance": "中立",
-      "looks": [
-        "長髪"
-      ],
+      "looks": [],
       "hairColor": "赤",
       "skinTone": null,
       "outfit": [
@@ -5071,10 +5102,12 @@
       "combat": "戦わない",
       "affiliationKind": "学生",
       "affiliationName": "音ノ木坂学院",
-      "stature": null,
-      "occupation": []
+      "stature": "標準",
+      "occupation": [
+        "アイドル・芸能"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -5096,7 +5129,7 @@
       "ageFeel": "年上",
       "build": "標準",
       "bust": "大きい",
-      "personality": "姉御",
+      "personality": "クール",
       "roles": [
         "先輩",
         "母性"
@@ -5115,10 +5148,12 @@
       "combat": "戦わない",
       "affiliationKind": "学生",
       "affiliationName": "音ノ木坂学院",
-      "stature": null,
-      "occupation": []
+      "stature": "標準",
+      "occupation": [
+        "アイドル・芸能"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -5269,7 +5304,7 @@
     },
     "axes": {
       "genderExpression": "女性",
-      "ageFeel": "年上",
+      "ageFeel": "同年代",
       "build": "標準",
       "bust": "標準",
       "personality": "内気",
@@ -5290,10 +5325,12 @@
       "combat": "戦わない",
       "affiliationKind": "学生",
       "affiliationName": "音ノ木坂学院",
-      "stature": null,
-      "occupation": []
+      "stature": "標準",
+      "occupation": [
+        "アイドル・芸能"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -5322,7 +5359,7 @@
         "長髪",
         "ツインテール"
       ],
-      "hairColor": "銀",
+      "hairColor": "白",
       "skinTone": "色白",
       "outfit": [
         "魔法少女"
@@ -5332,10 +5369,12 @@
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": "穂群原学園小等部",
-      "stature": null,
-      "occupation": []
+      "stature": "小柄",
+      "occupation": [
+        "魔法使い・魔術師"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "illyasviel von einzbern",
       "series": null
@@ -5533,7 +5572,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "とても大きい",
+      "bust": "大きい",
       "personality": "内気",
       "roles": [
         "後輩",
@@ -5553,10 +5592,12 @@
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": "穂群原学園",
-      "stature": null,
-      "occupation": []
+      "stature": "標準",
+      "occupation": [
+        "魔法使い・魔術師"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "sakura matou",
       "series": null
@@ -5895,10 +5936,12 @@
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "熟れた",
-      "build": "標準",
+      "build": "むっちり",
       "bust": "標準",
       "personality": "クール",
-      "roles": [],
+      "roles": [
+        "教師"
+      ],
       "distance": "中立",
       "looks": [
         "長髪"
@@ -5912,9 +5955,12 @@
       "affiliationKind": "非人間・その他",
       "affiliationName": null,
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "医療従事者",
+        "研究者・発明家"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "eirin yagokoro",
       "series": null
@@ -5937,7 +5983,9 @@
       "build": "標準",
       "bust": "標準",
       "personality": "クール",
-      "roles": [],
+      "roles": [
+        "ライバル"
+      ],
       "distance": "やや積極的",
       "looks": [
         "長髪"
@@ -5953,7 +6001,7 @@
       "stature": null,
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "fujiwara no mokou",
       "series": null
@@ -6250,15 +6298,17 @@
       "hairColor": "桃",
       "skinTone": "標準",
       "outfit": [],
-      "species": null,
+      "species": "人間",
       "mood": "背徳寄り",
       "combat": "戦う",
       "affiliationKind": "冒険者",
       "affiliationName": null,
-      "stature": null,
-      "occupation": []
+      "stature": "長身",
+      "occupation": [
+        "海賊"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "jewelry bonney",
       "series": null
@@ -7305,15 +7355,17 @@
       "hairColor": "茶",
       "skinTone": "標準",
       "outfit": [],
-      "species": null,
+      "species": "人間",
       "mood": "甘め",
       "combat": "戦わない",
       "affiliationKind": "学生",
       "affiliationName": null,
-      "stature": null,
-      "occupation": []
+      "stature": "標準",
+      "occupation": [
+        "アイドル・芸能"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "hitomiQuery": {
       "character": "hanayo koizumi",
       "series": null
@@ -7336,9 +7388,7 @@
       "build": "華奢",
       "bust": "標準",
       "personality": "おっとり",
-      "roles": [
-        "母性"
-      ],
+      "roles": [],
       "distance": "やや積極的",
       "looks": [],
       "hairColor": "茶",

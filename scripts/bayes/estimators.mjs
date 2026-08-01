@@ -37,9 +37,16 @@ export const AXIS_MERGE_WEIGHT = 30;
 export const WIKIDATA_MERGE_WEIGHT = 25;
 export const WIKIDATA_LIKELY_YES = 0.9;
 export const WIKIDATA_LIKELY_NO = 0.1;
-/** マージ式でのLLM抽出ソースの固定重み W_LLM（Phase 5b）。16軸の半分——
- * LLMがノイズを出しても軸の確信を反転させず減衰に留める安全設計（BC13保護）。 */
-export const LLM_MERGE_WEIGHT = 15;
+/** マージ式でのLLM抽出ソースの固定重み W_LLM（Phase 5b）。
+ * 当初は16軸の半分(15)——「LLMがノイズを出しても軸の確信を反転させず減衰に
+ * 留める」設計だったが、査読90体時点のBC13で不足が発覚した（2026-08-01）:
+ * 手動0.9 vs LLM誤0.15の衝突軸が σ((30·logit(0.9)+15·logit(0.15))/45)≈0.71 と
+ * なり、BC13オラクルのunknown帯(0.25〜0.75)に落ちて質問が無情報化する。
+ * 反転はしないが情報の飢餓で自己収束を7体壊した（ウマ娘4体等、いずれも
+ * ニコニコ記事が競走馬/元ネタ寄りでLLM誤抽出が多いキャラ）。
+ * 8なら衝突時 σ≈0.80 で情報帯に残る。LLMが唯一のソースである軸は
+ * 単一ソースマージのため重みに影響されず、この変更で寄与を失わない。 */
+export const LLM_MERGE_WEIGHT = 8;
 export const LLM_LIKELY_YES = 0.85;
 export const LLM_LIKELY_NO = 0.15;
 /**

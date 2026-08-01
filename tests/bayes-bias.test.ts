@@ -79,8 +79,15 @@ function priorWeight(id: string, supply: SupplyFile): number {
  * 2026-08-01追記（査読バッチ2）: reviewed 32→62体（reachable 30→60）。
  * chiSquare実測: seed=20260721→96.7, 20260724→96.8, 13579246→125.3,
  * 987654321→96.9, 424242→110.4。上限125.3に約40%の余裕で175へ。
+ *
+ * 2026-08-01追記（査読バッチ3 + W_LLM 15→8）: reviewed 62→92体
+ * （reachable 60→90）。BC13修復のためのLLM_MERGE_WEIGHT変更
+ * （estimators.mjs参照）後に再計測。chiSquare実測: seed=20260721→160.6,
+ * 20260724→192.1, 13579246→174.9, 987654321→178.0, 424242→144.3。
+ * 上限192.1に約41%の余裕で270へ（W_LLM=15時点の外れ値261.6は変更後に
+ * 消滅——質問の情報量回復でprior駆動の集中が減った）。
  */
-const CHI_SQUARE_MAX = 175;
+const CHI_SQUARE_MAX = 270;
 
 describe('BD. ベイズ推薦エンジンの偏りゲート', () => {
   it(

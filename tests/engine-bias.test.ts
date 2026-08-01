@@ -113,9 +113,16 @@ function runOneSession(rng: () => number, biasYes: number): string {
  * 987654321→144.8, 424242→153.1。上限202.4に約41%の余裕で285へ。
  * maxShare実測: 同順で3.70%, 3.80%, 5.10%, 3.20%, 3.60%。上限5.10%に
  * 約37%の余裕で0.07へ（一様期待値は1.67%）。
+ *
+ * 2026-08-01追記（査読バッチ3 + W_LLM 15→8）: reviewed 62→92体
+ * （reachable 60→90）。BC13修復のためのLLM_MERGE_WEIGHT変更
+ * （estimators.mjs参照）後に再計測。chiSquare実測: seed=20260721→181.3,
+ * 20260724→149.5, 13579246→213.7, 987654321→161.7, 424242→229.8。
+ * 上限229.8に約39%の余裕で320へ。maxShare実測: 同順で2.60%, 2.20%,
+ * 3.20%, 2.60%, 2.60%。上限3.20%に約41%の余裕で0.045へ（一様期待値1.11%）。
  */
-const CHI_SQUARE_MAX = 285;
-const MAX_SHARE = 0.07;
+const CHI_SQUARE_MAX = 320;
+const MAX_SHARE = 0.045;
 
 describe('D. 推薦エンジンの偏りゲート', () => {
   // scoreCharacters/nextProbe は呼び出しごとに131体ぶんのプローブプールを
