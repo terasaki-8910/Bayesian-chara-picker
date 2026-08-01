@@ -90,6 +90,14 @@ const EXCLUDED_TAGS = new Set([
   'rotom',
   'rotom_phone',
   'gardevoir',
+  // 2026-08-02、1girl/1boy両方の共起数を比較する追加検証（GENDER_STRICT_CHECK）で
+  // 発覚: 1girl率だけでは30-60%と紛れていたが、1boy共起数の方が多い明確な男性キャラ。
+  'satou_kazuma',
+  'male_rover_(wuthering_waves)',
+  'denji_(chainsaw_man)',
+  'twilight_(spy_x_family)',
+  'scaramouche_(genshin_impact)',
+  'leon_s._kennedy',
 ]);
 
 /** @param {string} tagName */
@@ -190,14 +198,20 @@ async function enumerateSeriesCharacters(danbooruFetch, seriesTag, maxPosts = 60
 }
 
 /**
+ * 1girl率だけでは、1girl/1boyタグが両方一定数付く（クロスドレス・チーム物二次創作等）
+ * 男性キャラを弾ききれないと実地判明した（2026-08-02、このすば佐藤和真・チェンソーマン
+ * デンジ・SPY×FAMILYトワイライト等がgenderRatio 38-60%で1girl率単独チェックを通過して
+ * いたが、実際は1boy共起数の方が多かった）。1girl共起数が1boy共起数を上回ることを
+ * 必須条件として追加する。
  * @param {ReturnType<typeof createDanbooruFetcher>} danbooruFetch
  * @param {{ name: string, post_count: number }} tag
  */
 async function scoreCandidate(danbooruFetch, tag) {
   const girlCount = await countPosts(danbooruFetch, [tag.name, '1girl']);
   const genderRatio = female1girlRatio(girlCount, tag.post_count);
+  const boyCount = await countPosts(danbooruFetch, [tag.name, '1boy']);
   const explicitCount = await countPosts(danbooruFetch, [tag.name, 'rating:explicit']);
-  return { tag: tag.name, postCount: tag.post_count, genderRatio, explicitCount };
+  return { tag: tag.name, postCount: tag.post_count, genderRatio, boyCount, girlDominant: girlCount > boyCount, explicitCount };
 }
 
 /**
@@ -244,9 +258,11 @@ async function main() {
   }
 
   const femaleCandidates = scored
-    .filter((s) => s.genderRatio >= GENDER_RATIO_MIN)
+    .filter((s) => s.genderRatio >= GENDER_RATIO_MIN && s.girlDominant)
     .sort((a, b) => b.explicitCount - a.explicitCount);
-  console.log(`性別判定(1girl率>=${GENDER_RATIO_MIN})を通過した候補: ${femaleCandidates.length}件`);
+  console.log(
+    `性別判定(1girl率>=${GENDER_RATIO_MIN} かつ 1girl共起>1boy共起)を通過した候補: ${femaleCandidates.length}件`,
+  );
 
   const favTargets = femaleCandidates.slice(0, Math.min(FAV_SAMPLE_TOP_N, femaleCandidates.length));
   console.log(`fav_count中央値を測る対象: ${favTargets.length}件`);
@@ -271,16 +287,31 @@ async function main() {
       continue;
     }
     const chars = await enumerateSeriesCharacters(danbooruFetch, copyrightTag.name);
-    const newChars = chars.filter(
+    const preFiltered = chars.filter(
       ([tagName, count]) => !existingTags.has(tagName) && !isExcludedCandidate(tagName) && count >= MIN_SERIES_OCCURRENCE,
     );
+    // シリーズ内共起数(count)はそのキャラ自身の総投稿数ではないため性別判定の母数に使えない
+    // （2026-08-02実地発覚: kafuu_chinoのシリーズ内共起240に対し1boy共起360という
+    // 数字だけを見ると男性に見えるが、実際はchino自身の総投稿数(数千件規模)に対する
+    // 1girl比率が別次元で高い。母数を取り違えていた）。各キャラ自身のタグを
+    // scoreCandidateと同じロジックで再判定する。
+    const newChars = [];
+    for (const [tagName] of preFiltered) {
+      const tagInfo = await fetchTagExact(danbooruFetch, tagName);
+      if (!tagInfo || tagInfo.post_count === 0) continue;
+      const scored = await scoreCandidate(danbooruFetch, { name: tagName, post_count: tagInfo.post_count });
+      if (scored.genderRatio >= GENDER_RATIO_MIN && scored.girlDominant) {
+        const [, count] = chars.find(([t]) => t === tagName);
+        newChars.push({ tag: tagName, seriesPostCount: count, ...scored });
+      }
+    }
     priorityResults.push({
       seriesJa: series.seriesJa,
       resolved: true,
       copyrightTag: copyrightTag.name,
-      characters: newChars.map(([tagName, count]) => ({ tag: tagName, seriesPostCount: count })),
+      characters: newChars,
     });
-    console.log(`  ${series.seriesJa} (${copyrightTag.name}): ${newChars.length}件の新規候補キャラを検出`);
+    console.log(`  ${series.seriesJa} (${copyrightTag.name}): ${newChars.length}件の新規候補キャラを検出（性別判定込み）`);
   }
 
   const output = {
