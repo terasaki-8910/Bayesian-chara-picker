@@ -1188,6 +1188,60 @@
         "label": "職業・立場",
         "value": "魔法使い・魔術師"
       }
+    },
+    {
+      "key": "q133",
+      "prompt": "恋人・伴侶のような関係ですか?",
+      "reason": {
+        "axis": "roles",
+        "label": "関係性・属性",
+        "value": "恋人・伴侶"
+      }
+    },
+    {
+      "key": "q134",
+      "prompt": "対等な友人という関係ですか?",
+      "reason": {
+        "axis": "roles",
+        "label": "関係性・属性",
+        "value": "友人"
+      }
+    },
+    {
+      "key": "q135",
+      "prompt": "和服・着物を着ていますか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "和服・着物"
+      }
+    },
+    {
+      "key": "q136",
+      "prompt": "会社員・OLですか?",
+      "reason": {
+        "axis": "occupation",
+        "label": "職業・立場",
+        "value": "会社員・OL"
+      }
+    },
+    {
+      "key": "q137",
+      "prompt": "教師・講師ですか?",
+      "reason": {
+        "axis": "occupation",
+        "label": "職業・立場",
+        "value": "教師・講師"
+      }
+    },
+    {
+      "key": "q138",
+      "prompt": "格闘家・武道家ですか?",
+      "reason": {
+        "axis": "occupation",
+        "label": "職業・立場",
+        "value": "格闘家・武道家"
+      }
     }
   ]
 }

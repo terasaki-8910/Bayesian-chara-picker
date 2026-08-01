@@ -2894,6 +2894,138 @@
           "multi": true
         }
       ]
+    },
+    {
+      "id": "ax:roles~恋人・伴侶",
+      "prompt": "恋人・伴侶のような関係ですか?",
+      "reason": {
+        "axis": "roles",
+        "label": "関係性・属性",
+        "value": "恋人・伴侶"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "roles",
+          "value": "恋人・伴侶",
+          "multi": true
+        },
+        {
+          "type": "llm",
+          "axis": "roles",
+          "value": "恋人・伴侶",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "ax:roles~友人",
+      "prompt": "対等な友人という関係ですか?",
+      "reason": {
+        "axis": "roles",
+        "label": "関係性・属性",
+        "value": "友人"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "roles",
+          "value": "友人",
+          "multi": true
+        },
+        {
+          "type": "llm",
+          "axis": "roles",
+          "value": "友人",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "ax:outfit~和服・着物",
+      "prompt": "和服・着物を着ていますか?",
+      "reason": {
+        "axis": "outfit",
+        "label": "服装",
+        "value": "和服・着物"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "outfit",
+          "value": "和服・着物",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "ax:occupation~会社員・OL",
+      "prompt": "会社員・OLですか?",
+      "reason": {
+        "axis": "occupation",
+        "label": "職業・立場",
+        "value": "会社員・OL"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "occupation",
+          "value": "会社員・OL",
+          "multi": true
+        },
+        {
+          "type": "llm",
+          "axis": "occupation",
+          "value": "会社員・OL",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "ax:occupation~教師・講師",
+      "prompt": "教師・講師ですか?",
+      "reason": {
+        "axis": "occupation",
+        "label": "職業・立場",
+        "value": "教師・講師"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "occupation",
+          "value": "教師・講師",
+          "multi": true
+        },
+        {
+          "type": "llm",
+          "axis": "occupation",
+          "value": "教師・講師",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "ax:occupation~格闘家・武道家",
+      "prompt": "格闘家・武道家ですか?",
+      "reason": {
+        "axis": "occupation",
+        "label": "職業・立場",
+        "value": "格闘家・武道家"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "occupation",
+          "value": "格闘家・武道家",
+          "multi": true
+        },
+        {
+          "type": "llm",
+          "axis": "occupation",
+          "value": "格闘家・武道家",
+          "multi": true
+        }
+      ]
     }
   ]
 }

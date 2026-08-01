@@ -137,7 +137,9 @@
       "affiliationKind": "非人間・その他",
       "affiliationName": "影の国",
       "stature": "標準",
-      "occupation": []
+      "occupation": [
+        "教師・講師"
+      ]
     },
     "reviewed": true,
     "hitomiQuery": {
@@ -1726,7 +1728,9 @@
         "金"
       ],
       "skinTone": "色白",
-      "outfit": [],
+      "outfit": [
+        "和服・着物"
+      ],
       "species": "不死",
       "mood": [
         "甘め"
@@ -2647,7 +2651,9 @@
       ],
       "affiliationName": "璃月七星",
       "stature": "標準",
-      "occupation": []
+      "occupation": [
+        "会社員・OL"
+      ]
     }
   },
   {
@@ -3765,7 +3771,9 @@
       "distance": "中立",
       "looks": [],
       "skinTone": "色白",
-      "outfit": [],
+      "outfit": [
+        "和服・着物"
+      ],
       "species": "不死",
       "mood": [
         "純愛寄り"
@@ -3816,7 +3824,9 @@
         "ツインテール"
       ],
       "skinTone": "標準",
-      "outfit": [],
+      "outfit": [
+        "和服・着物"
+      ],
       "species": "不死",
       "mood": [
         "従属的"
@@ -3969,7 +3979,9 @@
         "長髪"
       ],
       "skinTone": "標準",
-      "outfit": [],
+      "outfit": [
+        "和服・着物"
+      ],
       "species": "不死",
       "mood": [
         "支配的"
@@ -4020,7 +4032,9 @@
         "長髪"
       ],
       "skinTone": "標準",
-      "outfit": [],
+      "outfit": [
+        "和服・着物"
+      ],
       "species": "機械",
       "mood": [
         "従属的"
@@ -4069,7 +4083,9 @@
       "distance": "受け身",
       "looks": [],
       "skinTone": "標準",
-      "outfit": [],
+      "outfit": [
+        "和服・着物"
+      ],
       "species": "不死",
       "mood": [
         "従属的"
@@ -5548,7 +5564,8 @@
       "affiliationName": "紅魔館",
       "stature": null,
       "occupation": [
-        "メイド・従者"
+        "メイド・従者",
+        "格闘家・武道家"
       ]
     },
     "reviewed": true,
@@ -8484,7 +8501,9 @@
       "personality": [
         "おっとり"
       ],
-      "roles": [],
+      "roles": [
+        "恋人・伴侶"
+      ],
       "distance": "やや積極的",
       "looks": [],
       "hairColor": [
@@ -8576,7 +8595,8 @@
         "元気"
       ],
       "roles": [
-        "幼馴染"
+        "幼馴染",
+        "友人"
       ],
       "distance": "積極的",
       "looks": [],
