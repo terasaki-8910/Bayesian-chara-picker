@@ -102,6 +102,14 @@ const TOP_TAGS_LIMIT = 1000;
 const TARGET_CANDIDATE_COUNT = 350;
 /** fav_count中央値を測る対象（傾向スコア上位、コスト管理のため候補全体には広げない）。 */
 const FAV_SAMPLE_TOP_N = 400;
+/**
+ * シリーズ内キャラ列挙で「本編キャラ」とみなす最低共起件数（2026-08-02実地確認で追加）。
+ * tag_string_character共起は合同誌・コラボ絵経由の他作品キャラも拾ってしまい、
+ * 実地確認では出現1〜4件がほぼ全てノイズ（けいおん!・アイマス・艦これ等の
+ * 無関係キャラ）だった。census-hitomi.mjsの「頻度2以上」より厳しめの5に設定
+ * （Danbooruはhitomi.laよりコラボ絵の混入率が高い実測傾向のため）。
+ */
+const MIN_SERIES_OCCURRENCE = 5;
 
 /**
  * 優先3作品。copyrightタグの綴りはDanbooru側の実際の命名規則が確定していないため、
@@ -263,7 +271,9 @@ async function main() {
       continue;
     }
     const chars = await enumerateSeriesCharacters(danbooruFetch, copyrightTag.name);
-    const newChars = chars.filter(([tagName]) => !existingTags.has(tagName));
+    const newChars = chars.filter(
+      ([tagName, count]) => !existingTags.has(tagName) && !isExcludedCandidate(tagName) && count >= MIN_SERIES_OCCURRENCE,
+    );
     priorityResults.push({
       seriesJa: series.seriesJa,
       resolved: true,
