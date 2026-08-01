@@ -7165,7 +7165,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "標準",
+      "bust": "大きい",
       "personality": [
         "元気"
       ],
@@ -7210,7 +7210,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "標準",
+      "bust": "大きい",
       "personality": [
         "生意気"
       ],
@@ -7300,7 +7300,7 @@
       "genderExpression": "女性",
       "ageFeel": "幼い",
       "build": "むっちり",
-      "bust": "とても大きい",
+      "bust": "大きい",
       "personality": [
         "内気"
       ],
@@ -7347,7 +7347,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "標準",
+      "bust": "大きい",
       "personality": [
         "クール"
       ],
@@ -7617,7 +7617,7 @@
       "genderExpression": "女性",
       "ageFeel": "幼い",
       "build": "華奢",
-      "bust": "小さい",
+      "bust": "大きい",
       "personality": [
         "内気"
       ],
@@ -7753,7 +7753,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "大きい",
+      "bust": "小さい",
       "personality": [
         "おっとり"
       ],
@@ -7809,7 +7809,7 @@
       "distance": "中立",
       "looks": [],
       "hairColor": [
-        "白"
+        "銀"
       ],
       "skinTone": "色白",
       "outfit": [],
@@ -7857,7 +7857,7 @@
       "distance": "やや積極的",
       "looks": [],
       "hairColor": [
-        "紫"
+        "青"
       ],
       "skinTone": "色白",
       "outfit": [],
@@ -7902,7 +7902,7 @@
         "長髪"
       ],
       "hairColor": [
-        "紫"
+        "赤"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -7947,7 +7947,7 @@
         "長髪"
       ],
       "hairColor": [
-        "紫"
+        "青"
       ],
       "skinTone": "色白",
       "outfit": [],
@@ -8028,7 +8028,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "華奢",
-      "bust": "小さい",
+      "bust": "標準",
       "personality": [
         "生意気"
       ],
@@ -8073,7 +8073,7 @@
       "genderExpression": "女性",
       "ageFeel": "年上",
       "build": "標準",
-      "bust": "とても大きい",
+      "bust": "大きい",
       "personality": [
         "姉御"
       ],
@@ -8118,7 +8118,7 @@
       "genderExpression": "女性",
       "ageFeel": "幼い",
       "build": "華奢",
-      "bust": "小さい",
+      "bust": "標準",
       "personality": [
         "元気"
       ],
@@ -8173,7 +8173,7 @@
         "長髪"
       ],
       "hairColor": [
-        "桃"
+        "紫"
       ],
       "skinTone": "色白",
       "outfit": [],
@@ -8253,7 +8253,7 @@
       "genderExpression": "女性",
       "ageFeel": "年上",
       "build": "標準",
-      "bust": "標準",
+      "bust": "大きい",
       "personality": [
         "クール"
       ],
@@ -8298,7 +8298,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "とても大きい",
+      "bust": "小さい",
       "personality": [
         "クール"
       ],
@@ -8308,7 +8308,7 @@
         "長髪"
       ],
       "hairColor": [
-        "紫"
+        "桃"
       ],
       "skinTone": "色白",
       "outfit": [],
@@ -8353,7 +8353,7 @@
       "distance": "積極的",
       "looks": [],
       "hairColor": [
-        "茶"
+        "橙"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -8398,7 +8398,7 @@
       "distance": "積極的",
       "looks": [],
       "hairColor": [
-        "金"
+        "橙"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -8535,7 +8535,7 @@
       "distance": "やや受け身",
       "looks": [],
       "hairColor": [
-        "茶"
+        "黒"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -8571,7 +8571,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "大きい",
+      "bust": "標準",
       "personality": [
         "元気"
       ],
@@ -8617,7 +8617,7 @@
       "genderExpression": "女性",
       "ageFeel": "幼い",
       "build": "華奢",
-      "bust": "小さい",
+      "bust": "標準",
       "personality": [
         "内気"
       ],
@@ -8759,7 +8759,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "標準",
+      "bust": "小さい",
       "personality": [
         "おっとり"
       ],
@@ -8769,7 +8769,7 @@
       "distance": "やや受け身",
       "looks": [],
       "hairColor": [
-        "青"
+        "橙"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -8806,7 +8806,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "標準",
+      "bust": "大きい",
       "personality": [
         "生意気"
       ],
@@ -8861,7 +8861,7 @@
       "distance": "受け身",
       "looks": [],
       "hairColor": [
-        "黒"
+        "茶"
       ],
       "skinTone": "色白",
       "outfit": [],
@@ -8898,7 +8898,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "標準",
+      "bust": "大きい",
       "personality": [
         "元気"
       ],
