@@ -86,6 +86,32 @@ export async function fetchTagExact(danbooruFetch, tagName) {
 }
 
 /**
+ * タグのwikiページの`other_names`配列を取得する（500体拡張の日本語名解決用、
+ * 2026-08-02追加）。実地確認（宝鐘マリン・狐坂ワカモ・初音ミク・ゼルダ姫）では
+ * 配列の先頭側に日本語表記の正式名が入っている傾向が高い——このプロジェクトは
+ * 「キャラ名を記憶から出さない」方針(SPEC§4.3)のため、日本語名もここから裏取り
+ * してから採用する（記憶だけで書いて「宝鐘マリン」を「鳳凰マリン」と誤記した
+ * 実例あり）。wikiページが存在しなければ空配列を返す。
+ * @param {ReturnType<typeof createDanbooruFetcher>} danbooruFetch
+ * @param {string} tagName
+ * @returns {Promise<string[]>}
+ */
+export async function fetchWikiOtherNames(danbooruFetch, tagName) {
+  const path = `/wiki_pages/${encodeURIComponent(tagName)}.json`;
+  try {
+    const page = /** @type {{ other_names?: string[] }} */ (await danbooruFetch(path));
+    return page.other_names ?? [];
+  } catch (_err) {
+    return [];
+  }
+}
+
+/** 文字列に日本語文字（ひらがな・カタカナ・漢字）が含まれるか。 */
+export function containsJapanese(text) {
+  return /[぀-ヿ㐀-鿿]/.test(text);
+}
+
+/**
  * 2タグの投稿件数（積集合）を取得する。曖昧なキャラクタータグ候補が本当に
  * 目的のシリーズ（copyrightタグ）に属すかの検証に使う——キャラタグの曖昧回避
  * カッコの表記（例: `taihou_(kancolle)`）はcopyrightタグの正式名

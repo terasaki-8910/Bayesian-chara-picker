@@ -3,10 +3,12 @@ import { afterEach, describe, expect, it, vi } from 'vitest';
 import {
   REQUEST_DELAY_MS,
   USER_AGENT,
+  containsJapanese,
   countPosts,
   createDanbooruFetcher,
   fetchPostsPage,
   fetchTagExact,
+  fetchWikiOtherNames,
   listTopCharacterTags,
   searchCharacterTagCandidates,
   splitTagString,
@@ -140,6 +142,26 @@ describe('BB. Danbooruクライアント（scripts/bayes/danbooru-client.mjs）'
     const fetcher = createDanbooruFetcher({ fetchImpl, delayMs: 0 });
     expect(await fetchTagExact(fetcher, 'hong_meiling')).toEqual({ name: 'hong_meiling', category: 4, post_count: 27851 });
     expect(await fetchTagExact(fetcher, 'nonexistent_tag')).toBeNull();
+  });
+
+  it('fetchWikiOtherNames: wikiページのother_names配列を返す、404なら空配列（500体拡張の日本語名解決用）', async () => {
+    // 2026-08-02、実地確認: 宝鐘マリンを「鳳凰マリン」と記憶だけで誤記した実例を受けて
+    // 追加。other_namesは記憶ではなく実データからの裏取りに使う。
+    const fetchImpl = async (url: string) => {
+      if (url.includes('wiki_pages/houshou_marine.json')) {
+        return jsonResponse({ other_names: ['宝鐘マリン', 'マリン船長'] });
+      }
+      return { ok: false, status: 404, json: async () => ({}), text: async () => 'Not Found' };
+    };
+    const fetcher = createDanbooruFetcher({ fetchImpl, delayMs: 0 });
+    expect(await fetchWikiOtherNames(fetcher, 'houshou_marine')).toEqual(['宝鐘マリン', 'マリン船長']);
+    expect(await fetchWikiOtherNames(fetcher, 'nonexistent_tag')).toEqual([]);
+  });
+
+  it('containsJapanese: ひらがな・カタカナ・漢字を含む文字列を判定する', () => {
+    expect(containsJapanese('宝鐘マリン')).toBe(true);
+    expect(containsJapanese('houshou_marine')).toBe(false);
+    expect(containsJapanese('미쿠')).toBe(false);
   });
 
   it('searchCharacterTagCandidates: category=4・order=countを指定する', async () => {
