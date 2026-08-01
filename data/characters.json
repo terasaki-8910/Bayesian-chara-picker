@@ -4376,7 +4376,8 @@
       ],
       "distance": "中立",
       "looks": [
-        "眼鏡"
+        "眼鏡",
+        "眼帯"
       ],
       "skinTone": null,
       "outfit": [
@@ -4428,7 +4429,8 @@
       ],
       "distance": "やや積極的",
       "looks": [
-        "長髪"
+        "長髪",
+        "眼帯"
       ],
       "skinTone": null,
       "outfit": [
@@ -7686,7 +7688,9 @@
       ],
       "roles": [],
       "distance": "中立",
-      "looks": [],
+      "looks": [
+        "眼帯"
+      ],
       "hairColor": [
         "銀"
       ],
@@ -8052,7 +8056,9 @@
         "後輩"
       ],
       "distance": "積極的",
-      "looks": [],
+      "looks": [
+        "眼帯"
+      ],
       "hairColor": [
         "金"
       ],
@@ -9111,7 +9117,9 @@
         "先輩"
       ],
       "distance": "やや積極的",
-      "looks": [],
+      "looks": [
+        "眼帯"
+      ],
       "hairColor": [
         "黒"
       ],

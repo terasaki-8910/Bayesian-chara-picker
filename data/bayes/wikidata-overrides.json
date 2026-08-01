@@ -9,7 +9,7 @@
     "Q112130778": "赤",
     "Q152357": "赤",
     "Q1922956": "黒",
-    "Q19916539": null,
+    "Q19916539": "橙",
     "Q202466": "金",
     "Q2367101": "茶",
     "Q26449910": "緑",
@@ -21,9 +21,10 @@
     "Q6933946": "白",
     "Q78375121": "青",
     "Q79483632": "茶",
-    "Q87069481": null
+    "Q87069481": null,
+    "Q18661358": "金"
   },
-  "hairColorMapNote": "Q112042190('beige blond')→金、Q27790873('purple hair')→紫。**重要な発見（2026-07-25）**: 博麗霊夢のP1884はQ27790873(紫)だが、本プロジェクトの査読済み16軸データではhairColor='黒'——WikidataとDanbooru/16軸で実際に食い違うケースを確認した。マッピング自体（QID→色concept）は正しいが、Wikidataの個別claimはDanbooruのような多数決の裏付けが無く、単独の誤り（編集ミス・古い設定）がそのまま残っていることがある。W_WIKIDATA=25はDanbooruのn_eff（人気キャラなら数百〜数千）や16軸(30)より弱いため通常は薄まるはずだが、低post_countキャラでは無視できない影響もあり得る。P5aのBC13/BD再検証で悪化が見えたらhairColor/eyeColorのWikidata採用自体を撤回する（PLAN「species版差問題」と同じ撤退基準を適用）。null指定は「10色enumに無理に押し込めない」判断（Q19916539='orange hair'はプロジェクトの髪色enumに橙が無くDanbooruのhair-colorグループにもorange_hairタグが無い——classic engine由来の既存の穴で今回新設したものではない。Q87069481='multicolored hair'は単色enumに原理的に写像不能）。金/黄系(Q202466 blond, Q61196466 yellow)は区別せず両方「金」に寄せた——Wikidataの'yellow hair'は写実的な金髪と塗り分けが曖昧な概念で、プロジェクト側にyellow専用の髪色enumが無いため。",
+  "hairColorMapNote": "Q112042190('beige blond')→金、Q27790873('purple hair')→紫。**重要な発見（2026-07-25）**: 博麗霊夢のP1884はQ27790873(紫)だが、本プロジェクトの査読済み16軸データではhairColor='黒'——WikidataとDanbooru/16軸で実際に食い違うケースを確認した。マッピング自体（QID→色concept）は正しいが、Wikidataの個別claimはDanbooruのような多数決の裏付けが無く、単独の誤り（編集ミス・古い設定）がそのまま残っていることがある。W_WIKIDATA=25はDanbooruのn_eff（人気キャラなら数百〜数千）や16軸(30)より弱いため通常は薄まるはずだが、低post_countキャラでは無視できない影響もあり得る。P5aのBC13/BD再検証で悪化が見えたらhairColor/eyeColorのWikidata採用自体を撤回する（PLAN「species版差問題」と同じ撤退基準を適用）。null指定は「10色enumに無理に押し込めない」判断（Q87069481='multicolored hair'は単色enumに原理的に写像不能）。2026-08-02追記: 髪色enumに「橙」を新設したのに伴い、Q19916539='orange hair'をnull→橙へ変更（ナミ/織姫のDanbooru実測89%/70%で語彙不足が判明し新設した経緯。既存の穴だったものが解消）。Q18661358='strawberry blond hair'（パワー(チェンソーマン)で新規出現）は金/橙の中間色だが、Danbooru実測がblonde_hair 70%で明確に金寄りだったため「金」に対応（乱菊のケースと同様、ストロベリーブロンドは実測で優勢な方に寄せる方針）。金/黄系(Q202466 blond, Q61196466 yellow)は区別せず両方「金」に寄せた——Wikidataの'yellow hair'は写実的な金髪と塗り分けが曖昧な概念で、プロジェクト側にyellow専用の髪色enumが無いため。",
   "eyeColorMap": {
     "Q17122834": "blue",
     "Q17122705": "brown",

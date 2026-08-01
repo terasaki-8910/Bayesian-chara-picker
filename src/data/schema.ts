@@ -14,7 +14,7 @@ const PERSONALITY_VALUES = ['クール', '元気', 'おっとり', '生意気', 
 const ROLES_VALUES = ['幼馴染', '後輩', '先輩', '姉', '妹', '母性', '教師', '主従', 'ライバル', '恋人・伴侶', '友人'] as const;
 const DISTANCE_VALUES = ['積極的', 'やや積極的', '中立', 'やや受け身', '受け身'] as const;
 /** 髪色・肌色はそれぞれ独立した軸に移した（旧 looks の「白髪」「褐色」）。 */
-const LOOKS_VALUES = ['眼鏡', 'ケモミミ', '角', '尻尾', '長髪', 'ツインテール'] as const;
+const LOOKS_VALUES = ['眼鏡', 'ケモミミ', '角', '尻尾', '長髪', 'ツインテール', '眼帯'] as const;
 const HAIR_COLOR_VALUES = ['黒', '白', '金', '茶', '赤', '青', '緑', '桃', '紫', '銀', '橙'] as const;
 const SKIN_TONE_VALUES = ['色白', '標準', '褐色'] as const;
 const OUTFIT_VALUES = ['制服', 'メイド', '巫女', 'ナース', '魔法少女', '軍服', 'OL', '和服・着物'] as const;

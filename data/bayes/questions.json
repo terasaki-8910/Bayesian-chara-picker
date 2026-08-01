@@ -1153,21 +1153,6 @@
       ]
     },
     {
-      "id": "db:eyepatch",
-      "prompt": "眼帯をしていますか?",
-      "reason": {
-        "axis": "looks",
-        "label": "外見的特徴",
-        "value": "眼帯"
-      },
-      "sources": [
-        {
-          "type": "danbooru-binary",
-          "tag": "eyepatch"
-        }
-      ]
-    },
-    {
       "id": "db:wings",
       "prompt": "翼がありますか?",
       "reason": {
@@ -3023,6 +3008,50 @@
           "type": "llm",
           "axis": "occupation",
           "value": "格闘家・武道家",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "ax:personality=むっつり",
+      "prompt": "性格はむっつり寄りですか?",
+      "reason": {
+        "axis": "personality",
+        "label": "性格",
+        "value": "むっつり"
+      },
+      "sources": [
+        {
+          "type": "axis",
+          "axis": "personality",
+          "value": "むっつり",
+          "multi": true
+        },
+        {
+          "type": "llm",
+          "axis": "personality",
+          "value": "むっつり",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "db:eyepatch",
+      "prompt": "眼帯をしていますか?",
+      "reason": {
+        "axis": "looks",
+        "label": "外見的特徴",
+        "value": "眼帯"
+      },
+      "sources": [
+        {
+          "type": "danbooru-binary",
+          "tag": "eyepatch"
+        },
+        {
+          "type": "axis",
+          "axis": "looks",
+          "value": "眼帯",
           "multi": true
         }
       ]
