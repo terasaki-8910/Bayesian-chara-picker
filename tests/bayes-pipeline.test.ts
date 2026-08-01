@@ -3,7 +3,9 @@ import { afterEach, describe, expect, it, vi } from 'vitest';
 import {
   REQUEST_DELAY_MS,
   USER_AGENT,
+  containsChineseTransliterationMarker,
   containsJapanese,
+  containsKana,
   countPosts,
   createDanbooruFetcher,
   fetchPostsPage,
@@ -162,6 +164,23 @@ describe('BB. Danbooruクライアント（scripts/bayes/danbooru-client.mjs）'
     expect(containsJapanese('宝鐘マリン')).toBe(true);
     expect(containsJapanese('houshou_marine')).toBe(false);
     expect(containsJapanese('미쿠')).toBe(false);
+    expect(containsJapanese('光之战士')).toBe(true);
+  });
+
+  it('containsKana: 漢字のみ（中国語表記と衝突しうる）はfalse、かな入りはtrueにする', () => {
+    expect(containsKana('宝鐘マリン')).toBe(true);
+    expect(containsKana('ふりーれん')).toBe(true);
+    expect(containsKana('光之战士')).toBe(false);
+    expect(containsKana('蒂法')).toBe(false);
+    expect(containsKana('houshou_marine')).toBe(false);
+  });
+
+  it('containsChineseTransliterationMarker: 中国語音訳専用漢字の有無を判定する', () => {
+    expect(containsChineseTransliterationMarker('光之战士')).toBe(true);
+    expect(containsChineseTransliterationMarker('蒂法')).toBe(true);
+    expect(containsChineseTransliterationMarker('遠坂凛')).toBe(false);
+    expect(containsChineseTransliterationMarker('御坂美琴')).toBe(false);
+    expect(containsChineseTransliterationMarker('喜多川海夢')).toBe(false);
   });
 
   it('searchCharacterTagCandidates: category=4・order=countを指定する', async () => {

@@ -112,6 +112,37 @@ export function containsJapanese(text) {
 }
 
 /**
+ * 文字列にひらがな・カタカナが含まれるか。CJK統合漢字（㐀-鿿）は日本語・中国語
+ * 双方で使われる（簡体字も同じUnicodeブロックに入る）ため、漢字の有無だけでは
+ * 日本語と断定できない——実際に`warrior_of_light_(ff14)`のother_namesで
+ * 中国語表記「光之战士」を日本語名として誤採用した実例あり（2026-08-02発覚）。
+ * かな（この関数）の有無を日本語表記の一次判定に使い、`containsJapanese`は
+ * 「かな入り候補が無い場合の漢字のみフォールバック」を意識して呼び分ける。
+ * @param {string} text
+ * @returns {boolean}
+ */
+export function containsKana(text) {
+  return /[぀-ヿ]/.test(text);
+}
+
+/**
+ * 中国語の音訳（外国語名の当て字）でほぼ専用に使われ、日本語の語彙・人名には
+ * 実質現れない漢字の一覧。かな入り候補が無い場合の「漢字のみ候補」が中国語表記か
+ * 日本語表記かを見分ける二次フィルタに使う——`warrior_of_light_(ff14)`の
+ * 「光之战士」(战)・`tifa_lockhart`の簡体字表記「蒂法」(蒂)のような実例を踏まえる
+ * （2026-08-02）。網羅的ではないので過信しない：ここに引っかからなくても
+ * 中国語である可能性はゼロではなく、最終的な人名確認は後段のniconico/wikidata
+ * マッピング（SPEC通りの二次照合）に委ねる。
+ * @param {string} text
+ * @returns {boolean}
+ */
+export function containsChineseTransliterationMarker(text) {
+  const markers =
+    '战丝东华义语统电关门达让团际龙风归岛显继鲁娜蒂姆兹妮薇娅婕讯迪玛塔曼恩尤杰凯赛埃诺冯涅茨谢萨艾欧澳匹乔丘肯培朵悉梅弗冈岑娃丽机业农沃韦罗卡拉库斯';
+  return [...text].some((ch) => markers.includes(ch));
+}
+
+/**
  * 2タグの投稿件数（積集合）を取得する。曖昧なキャラクタータグ候補が本当に
  * 目的のシリーズ（copyrightタグ）に属すかの検証に使う——キャラタグの曖昧回避
  * カッコの表記（例: `taihou_(kancolle)`）はcopyrightタグの正式名
