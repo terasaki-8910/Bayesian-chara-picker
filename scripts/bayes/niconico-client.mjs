@@ -128,6 +128,15 @@ export function htmlToText(html) {
     .replace(/<script[\s\S]*?<\/script>/gi, ' ')
     .replace(/<style[\s\S]*?<\/style>/gi, ' ')
     .replace(/<!--[\s\S]*?-->/g, ' ')
+    // 「sponsored by 求人ボックス」求人広告ウィジェット（class="kyujin-box-pc-container"）を除去。
+    // 2026-08-02、キャッシュ済み153記事の100%にこの広告が挿入されていることを実地確認——
+    // 「エンジニア部長候補/システムインテグレータ・ソフトハウス」のような求人票の文言が
+    // LLM抽出でoccupation=会社員・OL等の誤引用元になっていた（fate-bb/overlord-albedo/
+    // csm-power で発覚）。ページ内目次(<ul id="page-menu">)がこの広告ブロックの直後に
+    // 必ず続く安定した構造だったため、それを境界に除去する（目次自体も本文ではないので
+    // 併せて除去して問題ない）。
+    .replace(/<div class="kyujin-box-pc-container">[\s\S]*?(?=<ul id="page-menu">)/gi, ' ')
+    .replace(/<ul id="page-menu">[\s\S]*?<\/ul>/gi, ' ')
     // ブロック要素は改行に変えて段落構造を最低限残す（引用の可読性のため）。
     .replace(/<\/(p|div|li|h[1-6]|tr|td|th|br)>/gi, '\n')
     .replace(/<br\s*\/?>/gi, '\n')

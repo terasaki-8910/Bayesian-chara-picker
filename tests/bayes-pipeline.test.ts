@@ -879,6 +879,28 @@ describe('BB. ニコニコ大百科クライアント（scripts/bayes/niconico-c
     expect(htmlToText('<p>マーカーを含まない普通の記事本文</p>')).toBe('マーカーを含まない普通の記事本文');
   });
 
+  it('htmlToText: 「sponsored by 求人ボックス」求人広告ウィジェットを除去する', () => {
+    // 2026-08-02、キャッシュ済み153記事の100%にこの広告が挿入されていることを実地確認。
+    // 「エンジニア部長候補/システムインテグレータ・ソフトハウス」のような求人票の文言が
+    // LLM抽出でoccupation=会社員・OL等の誤引用元になっていた（fate-bb/overlord-albedo/
+    // csm-power で発覚）。ページ内目次(<ul id="page-menu">)がこの広告ブロックの直後に
+    // 必ず続く安定した構造だったため、それを境界に目次ごと除去する。
+    const html =
+      '<div class="article" id="article"><div class="kyujin-box-pc-container"><div class="kyujin-box-pc-header">' +
+      '<a class="kyujin-box-pc-sponsor">sponsored by <span>求人ボックス</span></a></div>' +
+      '<ul class="kyujin-box-pc-list"><li class="kyujin-box-pc-item">' +
+      '<div class="kyujin-box-pc-title">エンジニア部長候補/システムインテグレータ・ソフトハウス</div>' +
+      '<div class="kyujin-box-pc-salary">年収807万円～1,199万円</div></li></ul></div>' +
+      '<ul id="page-menu"><li><a href="#h2-1">概要</a></li><li><a href="#h2-2">血の悪魔</a></li></ul>' +
+      '<p>概要 パワーと力の違いについて。</p></div>';
+    const text = htmlToText(html);
+    expect(text).not.toContain('求人ボックス');
+    expect(text).not.toContain('エンジニア部長候補');
+    expect(text).not.toContain('システムインテグレータ');
+    expect(text).not.toContain('血の悪魔');
+    expect(text).toContain('パワーと力の違いについて。');
+  });
+
   it('normalizeWhitespace: 空白ラン(改行/タブ含む)を単一空白へ畳み前後をtrimする', () => {
     expect(normalizeWhitespace('a   b\n\nc\td')).toBe('a b c d');
     expect(normalizeWhitespace('  前後の空白  ')).toBe('前後の空白');
