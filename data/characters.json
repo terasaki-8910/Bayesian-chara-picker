@@ -288,8 +288,10 @@
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
       "affiliationName": null,
-      "stature": null,
-      "occupation": []
+      "stature": "小柄",
+      "occupation": [
+        "神様・精霊"
+      ]
     },
     "reviewed": true,
     "hitomiQuery": {
@@ -330,8 +332,10 @@
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
       "affiliationName": null,
-      "stature": null,
-      "occupation": []
+      "stature": "長身",
+      "occupation": [
+        "神様・精霊"
+      ]
     },
     "reviewed": true,
     "hitomiQuery": {
@@ -637,7 +641,7 @@
       "combat": "戦う",
       "affiliationKind": "社会人",
       "affiliationName": null,
-      "stature": null,
+      "stature": "標準",
       "occupation": []
     },
     "reviewed": true,
@@ -891,7 +895,7 @@
       "combat": "戦わない",
       "affiliationKind": "非人間・その他",
       "affiliationName": null,
-      "stature": null,
+      "stature": "長身",
       "occupation": []
     },
     "reviewed": true,
@@ -936,8 +940,10 @@
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
       "affiliationName": null,
-      "stature": null,
-      "occupation": []
+      "stature": "長身",
+      "occupation": [
+        "兵士・軍人"
+      ]
     },
     "reviewed": true,
     "hitomiQuery": {
@@ -1240,8 +1246,10 @@
       "combat": "戦わない",
       "affiliationKind": "学生",
       "affiliationName": "練馬大学",
-      "stature": null,
-      "occupation": []
+      "stature": "標準",
+      "occupation": [
+        "アイドル・芸能"
+      ]
     },
     "reviewed": true,
     "hitomiQuery": {
@@ -1457,8 +1465,11 @@
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
       "affiliationName": null,
-      "stature": null,
-      "occupation": []
+      "stature": "標準",
+      "occupation": [
+        "兵士・軍人",
+        "王族・貴族"
+      ]
     },
     "reviewed": true,
     "hitomiQuery": {
