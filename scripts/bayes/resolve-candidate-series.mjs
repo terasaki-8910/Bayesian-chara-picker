@@ -9,14 +9,12 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import {
-  containsChineseTransliterationMarker,
-  containsJapanese,
-  containsKana,
   countPosts,
   createDanbooruFetcher,
   extractWikiLinks,
   fetchTagExact,
   fetchWikiPage,
+  pickJapaneseDisplayName,
 } from './danbooru-client.mjs';
 
 const MAX_LINK_ATTEMPTS = 6;
@@ -24,15 +22,6 @@ const MIN_SERIES_OVERLAP = 0.5;
 
 function toTagForm(name) {
   return name.trim().toLowerCase().replace(/\s+/g, '_');
-}
-
-/** キャラ名解決（resolve-candidate-names.mjs）と同じ優先順位: かな > 中国語マーカー無し漢字のみ。 */
-function resolveJapaneseFromOtherNames(otherNames) {
-  const kana = otherNames.find((n) => containsKana(n));
-  if (kana) return { name: kana, confidence: 'kana' };
-  const kanjiOnly = otherNames.find((n) => containsJapanese(n) && !containsChineseTransliterationMarker(n));
-  if (kanjiOnly) return { name: kanjiOnly, confidence: 'kanji-only' };
-  return { name: null, confidence: null };
 }
 
 /**
@@ -51,7 +40,7 @@ async function resolveSeriesForCandidate(danbooruFetch, tag, postCount) {
     const overlap = postCount > 0 ? overlapCount / postCount : 0;
     if (overlap < MIN_SERIES_OVERLAP) continue;
     const seriesPage = await fetchWikiPage(danbooruFetch, seriesTag.name);
-    const ja = resolveJapaneseFromOtherNames(seriesPage?.other_names ?? []);
+    const ja = pickJapaneseDisplayName(seriesPage?.other_names ?? []);
     return { seriesTag: seriesTag.name, overlap, seriesNameJa: ja.name, seriesNameConfidence: ja.confidence };
   }
   return { seriesTag: null };

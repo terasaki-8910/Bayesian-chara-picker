@@ -163,8 +163,29 @@ export function containsKana(text) {
  */
 export function containsChineseTransliterationMarker(text) {
   const markers =
-    '战丝东华义语统电关门达让团际龙风归岛显继鲁娜蒂姆兹妮薇娅婕讯迪玛塔曼恩尤杰凯赛埃诺冯涅茨谢萨艾欧澳匹乔丘肯培朵悉梅弗冈岑娃丽机业农沃韦罗卡拉库斯';
+    '战丝东华义语统电关门达让团际龙风归岛显继鲁娜蒂姆兹妮薇娅婕讯迪玛塔曼恩尤杰凯赛埃诺冯涅茨谢萨艾欧澳匹乔丘肯培朵悉梅弗冈岑娃丽机业农沃韦罗卡拉库斯灭宫见鸢仪萤铃兰爱';
   return [...text].some((ch) => markers.includes(ch));
+}
+
+/**
+ * `other_names`配列から日本語の正式表記を選ぶ共通ロジック（500体拡張のキャラ名・
+ * シリーズ名の両方で使う、2026-08-02）。配列を先頭から順に見て、最初に
+ * 「かな（ひらがな・カタカナ）を含む」または「中国語音訳マーカー漢字を含まない
+ * 漢字のみ」を満たした要素を返す——2パス走査（配列全体からかな入りを先に探す）は
+ * しない。Danbooruのother_names配列は先頭側に正式表記、後方に二次創作あだ名・
+ * 多言語訳が来る傾向があり、2パス走査だと`chen`で配列先頭の正しい表記「橙」より
+ * 後方のあだ名「ゆっくりちぇん」（かな入り）を誤って先に拾ってしまっていた実例がある。
+ * @param {string[]} otherNames
+ * @returns {{ name: string | null, confidence: 'kana' | 'kanji-only' | null }}
+ */
+export function pickJapaneseDisplayName(otherNames) {
+  for (const name of otherNames) {
+    if (containsKana(name)) return { name, confidence: 'kana' };
+    if (containsJapanese(name) && !containsChineseTransliterationMarker(name)) {
+      return { name, confidence: 'kanji-only' };
+    }
+  }
+  return { name: null, confidence: null };
 }
 
 /**
