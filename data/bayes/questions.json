@@ -1421,7 +1421,7 @@
           "type": "axis",
           "axis": "personality",
           "value": "クール",
-          "multi": false
+          "multi": true
         },
         {
           "type": "llm",
@@ -1444,7 +1444,7 @@
           "type": "axis",
           "axis": "personality",
           "value": "元気",
-          "multi": false
+          "multi": true
         },
         {
           "type": "llm",
@@ -1467,7 +1467,7 @@
           "type": "axis",
           "axis": "personality",
           "value": "おっとり",
-          "multi": false
+          "multi": true
         },
         {
           "type": "llm",
@@ -1490,7 +1490,7 @@
           "type": "axis",
           "axis": "personality",
           "value": "生意気",
-          "multi": false
+          "multi": true
         },
         {
           "type": "llm",
@@ -1513,7 +1513,7 @@
           "type": "axis",
           "axis": "personality",
           "value": "内気",
-          "multi": false
+          "multi": true
         },
         {
           "type": "llm",
@@ -1536,7 +1536,7 @@
           "type": "axis",
           "axis": "personality",
           "value": "姉御",
-          "multi": false
+          "multi": true
         },
         {
           "type": "llm",
@@ -2025,7 +2025,7 @@
           "type": "axis",
           "axis": "mood",
           "value": "甘め",
-          "multi": false
+          "multi": true
         },
         {
           "type": "llm",
@@ -2048,7 +2048,7 @@
           "type": "axis",
           "axis": "mood",
           "value": "支配的",
-          "multi": false
+          "multi": true
         },
         {
           "type": "llm",
@@ -2071,7 +2071,7 @@
           "type": "axis",
           "axis": "mood",
           "value": "従属的",
-          "multi": false
+          "multi": true
         },
         {
           "type": "llm",
@@ -2094,7 +2094,7 @@
           "type": "axis",
           "axis": "mood",
           "value": "純愛寄り",
-          "multi": false
+          "multi": true
         },
         {
           "type": "llm",
@@ -2117,7 +2117,7 @@
           "type": "axis",
           "axis": "mood",
           "value": "背徳寄り",
-          "multi": false
+          "multi": true
         },
         {
           "type": "llm",

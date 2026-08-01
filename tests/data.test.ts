@@ -54,12 +54,13 @@ describe('A. データ品質', () => {
     expect(duplicated).toEqual([]);
   });
 
-  it('A4: 全レコードに必須 4 軸が埋まっている', () => {
+  it('A4: 全レコードに必須 8 軸が埋まっている', () => {
     const missing: string[] = [];
     for (const c of characters) {
       for (const axis of REQUIRED_AXES) {
         const value = c.axes[axis];
-        if (value === null || value === undefined || value === '') {
+        const isEmpty = Array.isArray(value) ? value.length === 0 : value === null || value === undefined || value === '';
+        if (isEmpty) {
           missing.push(`${c.id}.${axis}`);
         }
       }

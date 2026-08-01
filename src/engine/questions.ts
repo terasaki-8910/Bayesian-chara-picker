@@ -46,7 +46,7 @@ export type Probe = {
 };
 
 /** 複数値軸（`Axes` 上で `string[]` の軸）。他は単一値軸（`string | null`）。 */
-const MULTI_AXES: readonly AxisKey[] = ['roles', 'looks', 'outfit', 'occupation'];
+const MULTI_AXES: readonly AxisKey[] = ['roles', 'looks', 'outfit', 'occupation', 'personality', 'mood'];
 const MULTI_AXIS_SET = new Set<AxisKey>(MULTI_AXES);
 
 /**

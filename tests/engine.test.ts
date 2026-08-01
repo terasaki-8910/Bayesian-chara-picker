@@ -110,7 +110,7 @@ function makeSyntheticCharacter(id: string, axesOverrides: Partial<Character['ax
       ageFeel: '同年代',
       build: '標準',
       bust: '標準',
-      personality: 'クール',
+      personality: ['クール'],
       roles: [],
       distance: null,
       looks: [],
@@ -118,7 +118,7 @@ function makeSyntheticCharacter(id: string, axesOverrides: Partial<Character['ax
       skinTone: null,
       outfit: [],
       species: null,
-      mood: null,
+      mood: [],
       combat: '戦う',
       affiliationKind: '学生',
       affiliationName: null,
@@ -369,7 +369,7 @@ describe('C. 推薦エンジン', () => {
       makeSyntheticCharacter(`c10rng-${i}`, {
         combat: i < 4 ? '戦う' : '戦わない',
         bust: i < 4 ? '標準' : '大きい',
-        personality: i < 4 ? 'クール' : '元気',
+        personality: i < 4 ? ['クール'] : ['元気'],
       }),
     );
 
@@ -401,7 +401,7 @@ describe('C. 推薦エンジン', () => {
         ageFeel: null,
         build: null,
         bust: null,
-        personality: null,
+        personality: [],
         hairColor: null,
         combat: null,
         affiliationKind: null,
@@ -425,8 +425,8 @@ describe('C. 推薦エンジン', () => {
   });
 
   it('C11: 空欄の軸は「はい」方向の確信度ではスコアに寄与しない（3値式）', () => {
-    const blankChar = makeSyntheticCharacter('c11-contribution-blank', { mood: null });
-    const filledChar = makeSyntheticCharacter('c11-contribution-filled', { mood: '甘め' });
+    const blankChar = makeSyntheticCharacter('c11-contribution-blank', { mood: [] });
+    const filledChar = makeSyntheticCharacter('c11-contribution-filled', { mood: ['甘め'] });
     const characters = [blankChar, filledChar];
     const supply: SupplyFile = Object.fromEntries(characters.map((c) => [c.id, syntheticSupplyEntry()]));
     const fx: Dataset = { characters, supply };
@@ -446,9 +446,9 @@ describe('C. 推薦エンジン', () => {
     // キャラに誤収束）の再発防止用。空欄を常に0のままにすると、対象キャラが
     // 空欄の軸で複数の値を連続して尋ねられたとき、その軸に何らかの値を持つ
     // 無関係な他キャラだけが「該当しない」加点を積み重ねて逆転できてしまう。
-    const blankChar = makeSyntheticCharacter('c11-contribution-blank2', { mood: null });
-    const otherValueChar = makeSyntheticCharacter('c11-contribution-other', { mood: '支配的' });
-    const matchingChar = makeSyntheticCharacter('c11-contribution-matching', { mood: '甘め' });
+    const blankChar = makeSyntheticCharacter('c11-contribution-blank2', { mood: [] });
+    const otherValueChar = makeSyntheticCharacter('c11-contribution-other', { mood: ['支配的'] });
+    const matchingChar = makeSyntheticCharacter('c11-contribution-matching', { mood: ['甘め'] });
     const characters = [blankChar, otherValueChar, matchingChar];
     const supply: SupplyFile = Object.fromEntries(characters.map((c) => [c.id, syntheticSupplyEntry()]));
     const fx: Dataset = { characters, supply };
