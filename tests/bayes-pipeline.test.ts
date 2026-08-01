@@ -7,6 +7,7 @@ import {
   createDanbooruFetcher,
   fetchPostsPage,
   fetchTagExact,
+  listTopCharacterTags,
   searchCharacterTagCandidates,
   splitTagString,
 } from '../scripts/bayes/danbooru-client.mjs';
@@ -171,6 +172,43 @@ describe('BB. Danbooruクライアント（scripts/bayes/danbooru-client.mjs）'
     expect(seenUrl).toContain('page=2');
     expect(seenUrl).toContain('limit=200');
     expect(posts).toEqual([{ id: 1, tag_string_general: 'blue_hair maid' }]);
+  });
+
+  it('fetchPostsPage: onlyを明示すれば他フィールド(fav_count等)も指定できる（既定値は変わらない）', async () => {
+    let seenUrl = '';
+    const fetchImpl = async (url: string) => {
+      seenUrl = url;
+      return jsonResponse([{ id: 1, tag_string_general: 'blue_hair', fav_count: 42 }]);
+    };
+    const fetcher = createDanbooruFetcher({ fetchImpl, delayMs: 0 });
+    const posts = await fetchPostsPage(fetcher, 'rem_(re:zero)', {
+      page: 1,
+      limit: 200,
+      only: 'id,tag_string_general,fav_count',
+    });
+    expect(seenUrl).toContain('only=id,tag_string_general,fav_count');
+    expect(posts).toEqual([{ id: 1, tag_string_general: 'blue_hair', fav_count: 42 }]);
+  });
+
+  it('listTopCharacterTags: category=4・order=countで名前を起点にせず列挙する（500体拡張の候補列挙用）', async () => {
+    let seenUrl = '';
+    const fetchImpl = async (url: string) => {
+      seenUrl = url;
+      return jsonResponse([
+        { name: 'hakurei_reimu', category: 4, post_count: 50000 },
+        { name: 'rem_(re:zero)', category: 4, post_count: 10077 },
+      ]);
+    };
+    const fetcher = createDanbooruFetcher({ fetchImpl, delayMs: 0 });
+    const result = await listTopCharacterTags(fetcher, { page: 1, limit: 1000 });
+    expect(seenUrl).toContain('search[category]=4');
+    expect(seenUrl).toContain('search[order]=count');
+    expect(seenUrl).toContain('limit=1000');
+    expect(seenUrl).not.toContain('name_matches');
+    expect(result).toEqual([
+      { name: 'hakurei_reimu', category: 4, post_count: 50000 },
+      { name: 'rem_(re:zero)', category: 4, post_count: 10077 },
+    ]);
   });
 
   it('splitTagString: スペース区切りを配列にする、空文字列は空配列', () => {

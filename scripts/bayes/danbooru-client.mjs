@@ -102,18 +102,35 @@ export async function countPosts(danbooruFetch, tags) {
 }
 
 /**
- * `posts.json` の1ページぶんを取得する。一般タグ文字列だけに絞って転送量を抑える
- * （`only=` パラメータはDanbooru公式APIが提供するフィールド制限機構）。
+ * `posts.json` の1ページぶんを取得する。既定では一般タグ文字列だけに絞って転送量を
+ * 抑える（`only=` パラメータはDanbooru公式APIが提供するフィールド制限機構）。
+ * `only` を明示すれば他フィールド（`fav_count`・`tag_string_character`等）も取れる
+ * （500体拡張の候補スコアリング用、2026-08-02追加。既定値は変えていないので
+ * 既存呼び出し元・テストの `only=id,tag_string_general` 固定文字列アサートは影響を
+ * 受けない）。
  * @param {ReturnType<typeof createDanbooruFetcher>} danbooruFetch
  * @param {string} tag
- * @param {{ page?: number, limit?: number }} [opts]
- * @returns {Promise<{ id: number, tag_string_general: string }[]>}
+ * @param {{ page?: number, limit?: number, only?: string }} [opts]
+ * @returns {Promise<Record<string, unknown>[]>}
  */
-export async function fetchPostsPage(danbooruFetch, tag, { page = 1, limit = 200 } = {}) {
-  const path =
-    `/posts.json?tags=${encodeURIComponent(tag)}&limit=${limit}&page=${page}` +
-    `&only=id,tag_string_general`;
-  return /** @type {{ id: number, tag_string_general: string }[]} */ (await danbooruFetch(path));
+export async function fetchPostsPage(danbooruFetch, tag, { page = 1, limit = 200, only = 'id,tag_string_general' } = {}) {
+  const path = `/posts.json?tags=${encodeURIComponent(tag)}&limit=${limit}&page=${page}&only=${only}`;
+  return /** @type {Record<string, unknown>[]} */ (await danbooruFetch(path));
+}
+
+/**
+ * category=4 キャラクタータグを投稿数の多い順に列挙する（500体拡張の候補列挙用、
+ * 2026-08-02追加）。`searchCharacterTagCandidates` と違い `name_matches` を要求せず、
+ * 起点の名前無しで全キャラタグを横断的に人気順取得できる——収録候補を記憶からでは
+ * なく実データの機械列挙で決める方針（SPEC §4.3）の第2の列挙元として使う。
+ * Danbooru APIの`limit`上限は1000（1リクエストで取れる最大件数）。
+ * @param {ReturnType<typeof createDanbooruFetcher>} danbooruFetch
+ * @param {{ page?: number, limit?: number }} [opts]
+ * @returns {Promise<DanbooruTag[]>}
+ */
+export async function listTopCharacterTags(danbooruFetch, { page = 1, limit = 1000 } = {}) {
+  const path = `/tags.json?search[category]=4&search[order]=count&limit=${limit}&page=${page}`;
+  return /** @type {DanbooruTag[]} */ (await danbooruFetch(path));
 }
 
 /**
