@@ -7382,12 +7382,12 @@
   },
   {
     "id": "naruto-samui",
-    "name": "サミュイ",
+    "name": "サムイ",
     "aliases": [
       "Samui"
     ],
     "series": "NARUTO",
-    "dlsiteQuery": "NARUTO サミュイ",
+    "dlsiteQuery": "NARUTO サムイ",
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "同年代",
