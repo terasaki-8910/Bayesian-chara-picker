@@ -216,6 +216,14 @@ describe('BB. Danbooruクライアント（scripts/bayes/danbooru-client.mjs）'
     expect(containsChineseTransliterationMarker('愛宕')).toBe(false);
     expect(containsChineseTransliterationMarker('宵宫')).toBe(true);
     expect(containsChineseTransliterationMarker('宵宮')).toBe(false);
+    // 2026-08-02、実地確認: 「涅茨」を1単位のつもりで足したら「茨」が独立文字として
+    // 登録され、「茨木華扇」(東方Project、正しい表記)を誤ってすり抜け扱いにしていた。
+    // 「茨」のように単独でも標準的な日本語漢字(茨城・茨木等)として通用する文字は
+    // 文字単位の判定に向かないため除外——同種のリスクがある「欧・丘・肯・梅・机・恩」も
+    // 除外済み。
+    expect(containsChineseTransliterationMarker('茨木華扇')).toBe(false);
+    expect(containsChineseTransliterationMarker('欧陽菲菲')).toBe(false);
+    expect(containsChineseTransliterationMarker('梅澤')).toBe(false);
   });
 
   it('pickJapaneseDisplayName: other_namesの並び順どおりに最初の採用可能候補を選ぶ（配列内かな優先の2パス走査はしない）', () => {
