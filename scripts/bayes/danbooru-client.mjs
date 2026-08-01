@@ -97,13 +97,38 @@ export async function fetchTagExact(danbooruFetch, tagName) {
  * @returns {Promise<string[]>}
  */
 export async function fetchWikiOtherNames(danbooruFetch, tagName) {
+  const page = await fetchWikiPage(danbooruFetch, tagName);
+  return page?.other_names ?? [];
+}
+
+/**
+ * wikiページ本体（本文・other_names）を取得する。存在しなければ null
+ * （500体拡張の候補シリーズ解決用、2026-08-02追加。本文中の`[[シリーズ名]]`
+ * リンクからシリーズタグを機械的に裏取りするために使う——キャラ名解決と同じく
+ * 記憶からシリーズを憶測しない方針、SPEC §4.3）。
+ * @param {ReturnType<typeof createDanbooruFetcher>} danbooruFetch
+ * @param {string} tagName
+ * @returns {Promise<{ body?: string, other_names?: string[] } | null>}
+ */
+export async function fetchWikiPage(danbooruFetch, tagName) {
   const path = `/wiki_pages/${encodeURIComponent(tagName)}.json`;
   try {
-    const page = /** @type {{ other_names?: string[] }} */ (await danbooruFetch(path));
-    return page.other_names ?? [];
+    return /** @type {{ body?: string, other_names?: string[] }} */ (await danbooruFetch(path));
   } catch (_err) {
-    return [];
+    return null;
   }
+}
+
+/**
+ * wiki本文のDanbooru内部リンク`[[Name]]`・`[[Name|Display]]`を出現順に抽出する
+ * （500体拡張の候補シリーズ解決用、2026-08-02追加）。リンク先ページ名をそのまま
+ * 返す——タグ名への変換（空白→アンダースコア・小文字化）は呼び出し側で行う。
+ * @param {string} body
+ * @returns {string[]}
+ */
+export function extractWikiLinks(body) {
+  const matches = [...body.matchAll(/\[\[([^\]|]+)(?:\|[^\]]*)?\]\]/g)];
+  return matches.map((m) => m[1].trim());
 }
 
 /** 文字列に日本語文字（ひらがな・カタカナ・漢字）が含まれるか。 */

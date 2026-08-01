@@ -8,9 +8,11 @@ import {
   containsKana,
   countPosts,
   createDanbooruFetcher,
+  extractWikiLinks,
   fetchPostsPage,
   fetchTagExact,
   fetchWikiOtherNames,
+  fetchWikiPage,
   listTopCharacterTags,
   searchCharacterTagCandidates,
   splitTagString,
@@ -158,6 +160,28 @@ describe('BB. Danbooruクライアント（scripts/bayes/danbooru-client.mjs）'
     const fetcher = createDanbooruFetcher({ fetchImpl, delayMs: 0 });
     expect(await fetchWikiOtherNames(fetcher, 'houshou_marine')).toEqual(['宝鐘マリン', 'マリン船長']);
     expect(await fetchWikiOtherNames(fetcher, 'nonexistent_tag')).toEqual([]);
+  });
+
+  it('fetchWikiPage: wikiページ本体（body・other_names）を返す、404ならnull（候補シリーズ解決用）', async () => {
+    const fetchImpl = async (url: string) => {
+      if (url.includes('wiki_pages/frieren.json')) {
+        return jsonResponse({ body: 'The titular protagonist of [[Sousou no Frieren]].', other_names: ['フリーレン'] });
+      }
+      return { ok: false, status: 404, json: async () => ({}), text: async () => 'Not Found' };
+    };
+    const fetcher = createDanbooruFetcher({ fetchImpl, delayMs: 0 });
+    expect(await fetchWikiPage(fetcher, 'frieren')).toEqual({
+      body: 'The titular protagonist of [[Sousou no Frieren]].',
+      other_names: ['フリーレン'],
+    });
+    expect(await fetchWikiPage(fetcher, 'nonexistent_tag')).toBeNull();
+  });
+
+  it('extractWikiLinks: [[Name]]・[[Name|Display]]リンクを出現順に抽出する（候補シリーズ解決用）', () => {
+    const body =
+      'A tank-class character in [[Overwatch]]. She piloted a [[MEKA (overwatch)|]] mech alongside [[Soldier: 76|Soldier 76]].';
+    expect(extractWikiLinks(body)).toEqual(['Overwatch', 'MEKA (overwatch)', 'Soldier: 76']);
+    expect(extractWikiLinks('本文にリンクなし')).toEqual([]);
   });
 
   it('containsJapanese: ひらがな・カタカナ・漢字を含む文字列を判定する', () => {
