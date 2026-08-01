@@ -3310,5 +3310,77 @@
       "seriesFilter": null,
       "fetchedAt": "2026-07-26T08:04:50.163Z"
     }
+  },
+  "csm-power": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-01T13:57:49.994Z",
+    "hitomi": {
+      "galleryCount": 227,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-01T14:00:03.243Z"
+    }
+  },
+  "csm-kobeni": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-01T13:58:30.108Z",
+    "hitomi": {
+      "galleryCount": 108,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-01T14:00:04.402Z"
+    }
+  },
+  "csm-reze": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-01T13:59:10.134Z",
+    "hitomi": {
+      "galleryCount": 161,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-01T14:00:05.905Z"
+    }
+  },
+  "csm-himeno": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-01T13:59:50.104Z",
+    "hitomi": {
+      "galleryCount": 57,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-01T14:00:07.408Z"
+    }
   }
 }

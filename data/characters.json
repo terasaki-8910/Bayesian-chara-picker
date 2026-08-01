@@ -1518,7 +1518,8 @@
         "クール"
       ],
       "roles": [
-        "主従"
+        "主従",
+        "母性"
       ],
       "distance": "積極的",
       "looks": [
@@ -1528,9 +1529,7 @@
         "赤"
       ],
       "skinTone": "色白",
-      "outfit": [
-        "OL"
-      ],
+      "outfit": [],
       "species": "魔族",
       "mood": [
         "支配的"
@@ -8945,6 +8944,194 @@
     "reviewed": true,
     "hitomiQuery": {
       "character": "kitasan black",
+      "series": null
+    },
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "csm-power",
+    "name": "パワー",
+    "aliases": [
+      "Power"
+    ],
+    "series": "チェンソーマン",
+    "dlsiteQuery": "チェンソーマン パワー",
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "生意気"
+      ],
+      "roles": [
+        "友人"
+      ],
+      "distance": "積極的",
+      "looks": [
+        "角",
+        "長髪"
+      ],
+      "hairColor": [
+        "金"
+      ],
+      "skinTone": null,
+      "outfit": [],
+      "species": "魔族",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "affiliationName": "公安対魔特異4課",
+      "stature": null,
+      "occupation": [
+        "兵士・軍人"
+      ],
+      "reviewed": true
+    },
+    "reviewed": true,
+    "hitomiQuery": {
+      "character": "power",
+      "series": null
+    },
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "csm-kobeni",
+    "name": "東山コベニ",
+    "aliases": [
+      "Kobeni Higashiyama",
+      "コベニ"
+    ],
+    "series": "チェンソーマン",
+    "dlsiteQuery": "チェンソーマン コベニ",
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "内気"
+      ],
+      "roles": [
+        "先輩",
+        "友人"
+      ],
+      "distance": "受け身",
+      "looks": [],
+      "hairColor": [
+        "茶"
+      ],
+      "skinTone": null,
+      "outfit": [],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "軍・組織",
+      "affiliationName": "公安対魔特異4課",
+      "stature": null,
+      "occupation": [
+        "兵士・軍人"
+      ]
+    },
+    "reviewed": true,
+    "hitomiQuery": {
+      "character": "kobeni higashiyama",
+      "series": null
+    },
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "csm-reze",
+    "name": "レゼ",
+    "aliases": [
+      "Reze"
+    ],
+    "series": "チェンソーマン",
+    "dlsiteQuery": "チェンソーマン レゼ",
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "クール"
+      ],
+      "roles": [
+        "ライバル"
+      ],
+      "distance": "積極的",
+      "looks": [],
+      "hairColor": [
+        "紫"
+      ],
+      "skinTone": null,
+      "outfit": [],
+      "species": "人間",
+      "mood": [
+        "背徳寄り"
+      ],
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": null,
+      "stature": null,
+      "occupation": []
+    },
+    "reviewed": true,
+    "hitomiQuery": {
+      "character": "reze",
+      "series": null
+    },
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "csm-himeno",
+    "name": "ヒメノ",
+    "aliases": [
+      "Himeno"
+    ],
+    "series": "チェンソーマン",
+    "dlsiteQuery": "チェンソーマン ヒメノ",
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": [
+        "姉御"
+      ],
+      "roles": [
+        "先輩"
+      ],
+      "distance": "やや積極的",
+      "looks": [],
+      "hairColor": [
+        "黒"
+      ],
+      "skinTone": null,
+      "outfit": [],
+      "species": "人間",
+      "mood": [
+        "甘め"
+      ],
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "affiliationName": "公安対魔特異4課",
+      "stature": null,
+      "occupation": [
+        "兵士・軍人"
+      ]
+    },
+    "reviewed": true,
+    "hitomiQuery": {
+      "character": "himeno",
       "series": null
     },
     "provisional": false,

@@ -95,8 +95,13 @@ function priorWeight(id: string, supply: SupplyFile): number {
  * （reachable 120→181）。chiSquare実測: seed=20260721→259.3,
  * 20260724→276.2, 13579246→275.7, 987654321→281.2, 424242→292.6。
  * 上限292.6に約37%の余裕で400へ。
+ *
+ * 2026-08-01追記（チェーンソーマン5体追加）: reviewed 183→188体
+ * （reachable 181→185）。chiSquare実測: seed=20260721→295.2,
+ * 20260724→318.9, 13579246→296.6, 987654321→315.6, 424242→365.6。
+ * 上限365.6に約37%の余裕で500へ。
  */
-const CHI_SQUARE_MAX = 400;
+const CHI_SQUARE_MAX = 500;
 
 describe('BD. ベイズ推薦エンジンの偏りゲート', () => {
   it(

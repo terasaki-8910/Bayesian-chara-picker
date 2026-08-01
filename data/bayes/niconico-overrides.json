@@ -25,6 +25,8 @@
     "onepiece-tashigi": { "title": null, "reason": "WebSearchでdic.nicovideo.jpの専用記事が見つからず（RENOTE・公式サイトのみヒット）。「(ONE PIECE)」曖昧さ回避パターン・カタカナ表記「タシギ」での直接確認も404。" },
     "onepiece-perona": { "title": null, "reason": "同上（WebSearchでdic.nicovideo.jp専用記事見つからず、「(ONE PIECE)」パターンも404）。" },
     "onepiece-kalifa": { "title": null, "reason": "同上（WebSearchでdic.nicovideo.jp専用記事見つからず、「(ONE PIECE)」パターンも404）。" },
-    "onepiece-sadi": { "title": null, "reason": "WebSearchで有効な候補が見つからず、「(ONE PIECE)」曖昧さ回避パターンでの直接確認も404。専用記事は存在しないと判断。" }
+    "onepiece-sadi": { "title": null, "reason": "WebSearchで有効な候補が見つからず、「(ONE PIECE)」曖昧さ回避パターンでの直接確認も404。専用記事は存在しないと判断。" },
+    "csm-himeno": { "title": "姫野(チェンソーマン)" },
+    "csm-reze": { "title": null, "reason": "WebSearchでdic.nicovideo.jpの専用記事が見つからず、「劇場版『チェンソーマン レゼ篇』」（2025年公開の映画記事）しかヒットしない。単体キャラクター記事は存在しないと判断。" }
   }
 }

@@ -1262,6 +1262,34 @@
       "source": "search-verified",
       "seriesMatch": true,
       "checkedAt": "2026-07-31T20:22:10.402Z"
+    },
+    "csm-power": {
+      "qid": "Q112225524",
+      "label": "Power",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-01T13:47:11.771Z"
+    },
+    "csm-kobeni": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-08-01T13:47:14.198Z"
+    },
+    "csm-reze": {
+      "qid": "Q134454509",
+      "label": "Reze",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-01T13:47:19.016Z"
+    },
+    "csm-himeno": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q37113698, Jimeno)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q37113698",
+      "candidateLabel": "Jimeno",
+      "checkedAt": "2026-08-01T13:47:28.674Z"
     }
   }
 }

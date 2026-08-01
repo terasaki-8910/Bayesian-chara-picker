@@ -936,6 +936,17 @@
       "hairColor": "黒",
       "eyeColor": "red",
       "stature": "小柄"
-    }
+    },
+    "csm-power": {
+      "genderExpression": "女性",
+      "eyeColor": "yellow"
+    },
+    "csm-kobeni": {},
+    "csm-reze": {
+      "genderExpression": "女性",
+      "hairColor": "紫",
+      "eyeColor": "green"
+    },
+    "csm-himeno": {}
   }
 }
