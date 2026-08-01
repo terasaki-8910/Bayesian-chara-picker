@@ -1290,6 +1290,48 @@
       "candidateQid": "Q37113698",
       "candidateLabel": "Jimeno",
       "checkedAt": "2026-08-01T13:47:28.674Z"
+    },
+    "gochiusa-chino": {
+      "qid": "Q72988360",
+      "label": "Chino Kafu",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-01T23:24:31.142Z"
+    },
+    "gochiusa-rize": {
+      "qid": "Q72988361",
+      "label": "Rize Tedeza",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-01T23:24:35.888Z"
+    },
+    "gochiusa-chiya": {
+      "qid": "Q72988362",
+      "label": "Chiya Ujimatsu",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-01T23:24:40.684Z"
+    },
+    "oshimai-mahiro": {
+      "qid": "Q116198721",
+      "label": "Mahiro Oyama",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-01T23:24:45.484Z"
+    },
+    "oshimai-kaede": {
+      "qid": "Q116198882",
+      "label": "Kaede Hozuki",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-01T23:24:50.281Z"
+    },
+    "shinepost-yawara": {
+      "qid": "Q112899160",
+      "label": "Yawara Naekawa",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-01T23:24:55.090Z"
     }
   }
 }

@@ -1137,6 +1137,42 @@
       "url": "https://dic.nicovideo.jp/a/%E5%A7%AB%E9%87%8E(%E3%83%81%E3%82%A7%E3%83%B3%E3%82%BD%E3%83%BC%E3%83%9E%E3%83%B3)",
       "source": "override",
       "checkedAt": "2026-08-01T18:11:12.361Z"
+    },
+    "gochiusa-chino": {
+      "title": "香風智乃",
+      "url": "https://dic.nicovideo.jp/a/%E9%A6%99%E9%A2%A8%E6%99%BA%E4%B9%83",
+      "source": "search-verified",
+      "checkedAt": "2026-08-01T23:25:09.273Z"
+    },
+    "gochiusa-rize": {
+      "title": "天々座理世",
+      "url": "https://dic.nicovideo.jp/a/%E5%A4%A9%E3%80%85%E5%BA%A7%E7%90%86%E4%B8%96",
+      "source": "search-verified",
+      "checkedAt": "2026-08-01T23:25:13.433Z"
+    },
+    "gochiusa-chiya": {
+      "title": "宇治松千夜",
+      "url": "https://dic.nicovideo.jp/a/%E5%AE%87%E6%B2%BB%E6%9D%BE%E5%8D%83%E5%A4%9C",
+      "source": "search-verified",
+      "checkedAt": "2026-08-01T23:25:18.636Z"
+    },
+    "oshimai-mahiro": {
+      "title": "緒山まひろ",
+      "url": "https://dic.nicovideo.jp/a/%E7%B7%92%E5%B1%B1%E3%81%BE%E3%81%B2%E3%82%8D",
+      "source": "search-verified",
+      "checkedAt": "2026-08-01T23:25:23.153Z"
+    },
+    "oshimai-kaede": {
+      "title": "穂月かえで",
+      "url": "https://dic.nicovideo.jp/a/%E7%A9%82%E6%9C%88%E3%81%8B%E3%81%88%E3%81%A7",
+      "source": "search-verified",
+      "checkedAt": "2026-08-01T23:25:28.245Z"
+    },
+    "shinepost-yawara": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-08-01T23:25:38.078Z"
     }
   }
 }

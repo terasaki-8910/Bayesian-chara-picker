@@ -948,6 +948,41 @@
       "hairColor": "紫",
       "eyeColor": "green"
     },
-    "csm-himeno": {}
+    "csm-himeno": {},
+    "gochiusa-chino": {
+      "genderExpression": "女性",
+      "hairColor": "青",
+      "eyeColor": "blue",
+      "species": [
+        "人間"
+      ]
+    },
+    "gochiusa-rize": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "gochiusa-chiya": {
+      "genderExpression": "女性",
+      "hairColor": "黒",
+      "species": [
+        "人間"
+      ]
+    },
+    "oshimai-mahiro": {},
+    "oshimai-kaede": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "shinepost-yawara": {
+      "genderExpression": "女性",
+      "eyeColor": "purple",
+      "species": [
+        "人間"
+      ]
+    }
   }
 }

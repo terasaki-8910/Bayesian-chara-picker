@@ -9167,5 +9167,290 @@
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
+  },
+  {
+    "id": "gochiusa-chino",
+    "name": "香風智乃",
+    "aliases": [
+      "Kafuu Chino",
+      "チノ"
+    ],
+    "series": "ご注文はうさぎですか?",
+    "dlsiteQuery": "ご注文はうさぎですか 香風智乃",
+    "hitomiQuery": {
+      "character": "chino kafuu",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": [
+        "クール",
+        "内気"
+      ],
+      "roles": [
+        "妹"
+      ],
+      "distance": "やや受け身",
+      "looks": [],
+      "hairColor": [
+        "金"
+      ],
+      "skinTone": "色白",
+      "outfit": [
+        "メイド"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "喫茶ラビットハウス",
+      "stature": "小柄",
+      "occupation": [
+        "メイド・従者"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "gochiusa-rize",
+    "name": "天々座理世",
+    "aliases": [
+      "Tedeza Rize",
+      "リゼ"
+    ],
+    "series": "ご注文はうさぎですか?",
+    "dlsiteQuery": "ご注文はうさぎですか 天々座理世",
+    "hitomiQuery": {
+      "character": "rize tedeza",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "クール",
+        "おっとり"
+      ],
+      "roles": [
+        "先輩"
+      ],
+      "distance": "中立",
+      "looks": [],
+      "hairColor": [
+        "黒"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "メイド"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "affiliationName": "フルール・ド・ラパン",
+      "stature": "長身",
+      "occupation": [
+        "兵士・軍人",
+        "メイド・従者"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "gochiusa-chiya",
+    "name": "宇治松千夜",
+    "aliases": [
+      "Ujimatsu Chiya",
+      "チヤ"
+    ],
+    "series": "ご注文はうさぎですか?",
+    "dlsiteQuery": "ご注文はうさぎですか 宇治松千夜",
+    "hitomiQuery": {
+      "character": "chiya ujimatsu",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": [
+        "生意気",
+        "姉御"
+      ],
+      "roles": [
+        "先輩"
+      ],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "黒"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "和服・着物"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "社会人",
+      "affiliationName": null,
+      "stature": "標準",
+      "occupation": []
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "oshimai-mahiro",
+    "name": "緒山まひろ",
+    "aliases": [
+      "Oyama Mahiro"
+    ],
+    "series": "お兄ちゃんはおしまい!",
+    "dlsiteQuery": "お兄ちゃんはおしまい 緒山まひろ",
+    "hitomiQuery": {
+      "character": "mahiro oyama",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": [
+        "内気",
+        "おっとり"
+      ],
+      "roles": [
+        "幼馴染"
+      ],
+      "distance": "やや受け身",
+      "looks": [],
+      "hairColor": [
+        "黒"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": null,
+      "stature": "小柄",
+      "occupation": []
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "oshimai-kaede",
+    "name": "穂月かえで",
+    "aliases": [
+      "Hozuki Kaede"
+    ],
+    "series": "お兄ちゃんはおしまい!",
+    "dlsiteQuery": "お兄ちゃんはおしまい 穂月かえで",
+    "hitomiQuery": {
+      "character": "kaede hozuki",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": [
+        "姉御",
+        "元気"
+      ],
+      "roles": [
+        "先輩"
+      ],
+      "distance": "やや積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "茶"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": null,
+      "stature": "標準",
+      "occupation": []
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "shinepost-yawara",
+    "name": "苗川柔",
+    "aliases": [
+      "Naekawa Yawara"
+    ],
+    "series": "シャインポスト",
+    "dlsiteQuery": "シャインポスト 苗川柔",
+    "hitomiQuery": {
+      "character": "yawara naekawa",
+      "series": "shine post"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "むっちり",
+      "bust": "大きい",
+      "personality": [
+        "おっとり"
+      ],
+      "roles": [],
+      "distance": "やや受け身",
+      "looks": [],
+      "hairColor": [
+        "茶"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": null,
+      "stature": "標準",
+      "occupation": [
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   }
 ]

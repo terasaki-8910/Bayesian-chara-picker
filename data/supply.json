@@ -3382,5 +3382,113 @@
       "seriesFilter": null,
       "fetchedAt": "2026-08-01T14:00:07.408Z"
     }
+  },
+  "gochiusa-chino": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-01T22:46:17.983Z",
+    "hitomi": {
+      "galleryCount": 1068,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-01T23:18:37.576Z"
+    }
+  },
+  "gochiusa-rize": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-01T22:47:37.941Z",
+    "hitomi": {
+      "galleryCount": 296,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-01T23:18:40.574Z"
+    }
+  },
+  "gochiusa-chiya": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-01T22:48:18.049Z",
+    "hitomi": {
+      "galleryCount": 189,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-01T23:18:42.075Z"
+    }
+  },
+  "oshimai-mahiro": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-01T22:52:18.057Z",
+    "hitomi": {
+      "galleryCount": 390,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-01T23:18:52.581Z"
+    }
+  },
+  "oshimai-kaede": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-01T22:53:38.083Z",
+    "hitomi": {
+      "galleryCount": 70,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-01T23:18:55.582Z"
+    }
+  },
+  "shinepost-yawara": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-01T22:59:38.381Z",
+    "hitomi": {
+      "galleryCount": 4,
+      "seriesFilter": "shine post",
+      "fetchedAt": "2026-08-01T23:19:10.593Z"
+    }
   }
 }

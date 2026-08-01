@@ -34,7 +34,10 @@
     "アイドルマスター": "idolmaster",
     "崩壊：スターレイル": "honkai:_star_rail",
     "ソードアート・オンライン": "sword_art_online",
-    "ウマ娘プリティーダービー": "umamusume"
+    "ウマ娘プリティーダービー": "umamusume",
+    "シャインポスト": "shine_post",
+    "お兄ちゃんはおしまい!": "onii-chan_wa_oshimai!",
+    "ご注文はうさぎですか?": "gochuumon_wa_usagi_desu_ka?"
   },
   "overrides": {
     "naruto-kurenai": {
@@ -80,6 +83,30 @@
     "naruto-hanabi": {
       "tag": "hyuuga_hanabi",
       "reason": "hitomiQuery=「hanabi hyuga」語順反転+ローマ字表記差(hyuga→hyuuga)。自動導出はhanabi(*)のワイルドカードでhanabishi_haruka(別作品)を誤選択していた(共起0%、low-overlapで検出済み)。2026-08-01、wiki other_names逆引き(日向ハナビ→hyuuga_hanabi)と共起検証で確認(232件、category=4、naruto_(series)共起100%)。姉のnaruto-hinataも同種の表記差でoverride済み。"
+    },
+    "gochiusa-chino": {
+      "tag": "kafuu_chino",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "gochiusa-rize": {
+      "tag": "tedeza_rize",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "gochiusa-chiya": {
+      "tag": "ujimatsu_chiya",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "oshimai-mahiro": {
+      "tag": "oyama_mahiro",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "oshimai-kaede": {
+      "tag": "hozuki_kaede",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "shinepost-yawara": {
+      "tag": "naekawa_yawara",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     }
   }
 }
