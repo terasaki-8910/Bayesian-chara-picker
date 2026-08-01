@@ -4,7 +4,7 @@
  * 検索結果の 1 ページ目のみを取得し、件数の目安と媒体別内訳を data/supply.json に書く。
  */
 import { readFileSync, writeFileSync } from 'node:fs';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 
 /** robots.txt の `Crawl-delay: 10` を厳守する（秒未満に短縮しない）。 */
 export const CRAWL_DELAY_MS = 10_000;
@@ -237,7 +237,7 @@ async function main() {
   console.log(`完了。${Object.keys(supply).length} 件を data/supply.json に書き込みました。`);
 }
 
-const isMainModule = process.argv[1] !== undefined && import.meta.url === `file://${process.argv[1]}`;
+const isMainModule = process.argv[1] !== undefined && import.meta.url === pathToFileURL(process.argv[1]).href;
 if (isMainModule) {
   await main();
 }

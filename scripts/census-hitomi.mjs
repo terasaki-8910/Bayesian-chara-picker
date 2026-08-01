@@ -16,6 +16,7 @@
  *   node scripts/census-hitomi.mjs "blue archive" [サンプル数]
  */
 import { createHitomiFetcher, buildNozomiUrl, parseNozomiIds } from './collect-hitomi.mjs';
+import { pathToFileURL } from 'node:url';
 
 const GALLERY_META_BASE = 'https://ltn.gold-usergeneratedcontent.net/galleries';
 
@@ -113,7 +114,7 @@ async function main() {
   console.log(JSON.stringify({ seriesTag, seriesTotal: seriesIds.size, sampled: parsed, characters: rows }, null, 2));
 }
 
-const isMainModule = process.argv[1] !== undefined && import.meta.url === `file://${process.argv[1]}`;
+const isMainModule = process.argv[1] !== undefined && import.meta.url === pathToFileURL(process.argv[1]).href;
 if (isMainModule) {
   await main();
 }

@@ -12,7 +12,7 @@
  * 画像URLの難読化ロジック（gg.js の m()/b()/s()）は使わない — 件数を数えるだけなら不要。
  */
 import { readFileSync, writeFileSync } from 'node:fs';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 
 /** hitomi.la の robots.txt は Crawl-delay を明示していない。静的ファイル1本のGETと
  * DLsiteのフルページレンダリングでは負荷が桁違いなので、自主的に短めの間隔に留める。 */
@@ -205,7 +205,7 @@ async function main() {
   console.log(`完了。${pending.length} 件の hitomi データを data/supply.json に書き込みました。`);
 }
 
-const isMainModule = process.argv[1] !== undefined && import.meta.url === `file://${process.argv[1]}`;
+const isMainModule = process.argv[1] !== undefined && import.meta.url === pathToFileURL(process.argv[1]).href;
 if (isMainModule) {
   await main();
 }
