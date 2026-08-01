@@ -63,6 +63,8 @@ const EXCLUDED_AVATAR_PATTERNS = [
   /^fujimaru_ritsuka_\((male|female)\)$/,
   /^inkling_player_character$/,
   /^(male_)?trainer_\(pokemon\)$/,
+  /^doctor_\(arknights\)$/,
+  /^producer_\(idolmaster\)$/,
   /_\(male\)$/,
 ];
 

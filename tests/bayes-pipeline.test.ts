@@ -262,6 +262,8 @@ describe('isExcludedCandidate（scripts/bayes/build-candidates.mjs）', () => {
     'rotom',
     'rotom_phone',
     'gardevoir',
+    'doctor_(arknights)',
+    'producer_(idolmaster)',
   ])('%s は除外される', (tag) => {
     expect(isExcludedCandidate(tag)).toBe(true);
   });
