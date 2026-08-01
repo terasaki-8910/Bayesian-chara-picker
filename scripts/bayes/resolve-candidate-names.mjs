@@ -4,12 +4,11 @@
  * （2026-08-02）。記憶からの憶測ではなく実データの裏取りを徹底する（宝鐘マリンを
  * 鳳凰マリンと誤記した実例を受けて追加）。
  *
- * other_names配列の先頭側からかな（ひらがな・カタカナ）を含む最初の要素を
- * 第一候補として採用する（漢字のみの候補は中国語表記との衝突リスクがあるため
- * 採用しない——下の`resolveJapaneseName`のコメント参照）。見つからなければ
- * resolvedName: null のままneeds-knowledge（人力確認）に回す——このプロジェクトは
- * キャラ名を記憶から出さない方針（SPEC §4.3）なので、確認できない名前は空欄より
- * 安全側の「保留」にする。
+ * other_names配列を先頭から順に見て、最初に「採用してよい」と判定できた要素を
+ * 採用する（要素の並び順を尊重する——理由は下の`resolveJapaneseName`のコメント
+ * 参照）。見つからなければ resolvedName: null のままneeds-knowledge（人力確認）に
+ * 回す——このプロジェクトはキャラ名を記憶から出さない方針（SPEC §4.3）なので、
+ * 確認できない名前は空欄より安全側の「保留」にする。
  */
 import { readFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath, pathToFileURL } from 'node:url';
@@ -22,25 +21,31 @@ import {
 } from './danbooru-client.mjs';
 
 /**
- * CJK統合漢字は日本語・中国語で共有されるUnicodeブロックのため、漢字の有無だけでは
- * 日本語と断定できない（`warrior_of_light_(ff14)`で中国語「光之战士」を誤採用した
- * 実例あり、2026-08-02）。まずかな（ひらがな・カタカナ）を含む候補を最優先で採用する
- * （最も確度が高い）。かな入り候補が無い場合は、中国語音訳マーカー漢字
- * （containsChineseTransliterationMarker）を含まない漢字のみ候補を
- * `confidence: 'kanji-only'`として次点採用する——南野陽奈・遠坂凛のような
- * 生粋の日本語キャラはかな表記の別名が登録されておらず漢字のみのことが多いため、
- * かな不在=中国語と即断すると生粋の日本語名まで棄却してしまう。それでも該当なしなら
+ * other_names配列は「まずかな入り全部→次に漢字のみ全部」という2パス走査ではなく、
+ * 配列の並び順どおりに1件ずつ判定する。2026-08-02、東方キャラ複数件で誤採用が発覚:
+ * `chen`は配列先頭が正しい表記「橙」（かな無し）なのに、2パス走査だと後方の
+ * ニコニコ大百科的あだ名「ゆっくりちぇん」（かな入り）を先に拾ってしまっていた
+ * （同様に houraisan_kaguya→「てるよ」、hijiri_byakuren→「ひじぱい」、
+ * kagiyama_hina→「厄リスマス」も同型の誤採用）。Danbooruのother_names配列は
+ * 先頭側に正式表記、後方に二次創作あだ名・多言語訳が来る傾向があり、
+ * 「かな入りかどうか」より「並び順」の方が信頼できるシグナルだった。
+ * 各要素について、かな（ひらがな・カタカナ）を含むか、または中国語音訳マーカー漢字
+ * （containsChineseTransliterationMarker、CJK統合漢字は日中共有ブロックなので
+ * 判定に使う——`warrior_of_light_(ff14)`で中国語「光之战士」を誤採用した実例あり）を
+ * 含まない漢字のみか、のどちらかを満たした最初の要素を採用する。該当なしなら
  * resolvedName: null のままneeds-knowledge（人力確認）に回す——このプロジェクトは
  * キャラ名を記憶から出さない方針（SPEC §4.3）。kanji-only採用分は最終確定ではなく、
  * 後段のniconico/wikidataマッピング（二次照合、乖離があればname修正）で
  * 裏取りを続ける。
  */
-async function resolveJapaneseName(danbooruFetch, tag) {
+export async function resolveJapaneseName(danbooruFetch, tag) {
   const otherNames = await fetchWikiOtherNames(danbooruFetch, tag);
-  const kanaName = otherNames.find((n) => containsKana(n));
-  if (kanaName) return { otherNames, resolvedName: kanaName, confidence: 'kana' };
-  const kanjiOnlyName = otherNames.find((n) => containsJapanese(n) && !containsChineseTransliterationMarker(n));
-  if (kanjiOnlyName) return { otherNames, resolvedName: kanjiOnlyName, confidence: 'kanji-only' };
+  for (const name of otherNames) {
+    if (containsKana(name)) return { otherNames, resolvedName: name, confidence: 'kana' };
+    if (containsJapanese(name) && !containsChineseTransliterationMarker(name)) {
+      return { otherNames, resolvedName: name, confidence: 'kanji-only' };
+    }
+  }
   return { otherNames, resolvedName: null, confidence: null };
 }
 

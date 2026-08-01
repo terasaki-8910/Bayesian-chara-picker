@@ -18,6 +18,7 @@ import {
   splitTagString,
 } from '../scripts/bayes/danbooru-client.mjs';
 import { isExcludedCandidate } from '../scripts/bayes/build-candidates.mjs';
+import { resolveJapaneseName } from '../scripts/bayes/resolve-candidate-names.mjs';
 import { mapOneCharacter, seriesOverlapRatio, toBareTag } from '../scripts/bayes/map-characters.mjs';
 import { runVerifyChecks, samplePostsForTag } from '../scripts/bayes/sample-posts.mjs';
 import {
@@ -205,6 +206,30 @@ describe('BB. Danbooruクライアント（scripts/bayes/danbooru-client.mjs）'
     expect(containsChineseTransliterationMarker('遠坂凛')).toBe(false);
     expect(containsChineseTransliterationMarker('御坂美琴')).toBe(false);
     expect(containsChineseTransliterationMarker('喜多川海夢')).toBe(false);
+  });
+
+  it('resolveJapaneseName: other_namesの並び順どおりに最初の採用可能候補を選ぶ（配列内かな優先の2パス走査はしない）', async () => {
+    // 2026-08-02、実地確認: `chen`は配列先頭が正しい表記「橙」（かな無し）なのに、
+    // 「配列全体からまずかな入りを探す」2パス走査だと後方のニコニコ大百科的あだ名
+    // 「ゆっくりちぇん」（かな入り）を先に拾ってしまっていた。並び順を尊重する
+    // 実装ならこの実例で先頭の「橙」を正しく返すことを確認する。
+    const fetchImpl = async (url: string) => {
+      if (url.includes('wiki_pages/chen.json')) {
+        return jsonResponse({ other_names: ['橙', '첸', 'ゆっくりちぇん', 'ちぇん種'] });
+      }
+      if (url.includes('wiki_pages/tifa_lockhart.json')) {
+        return jsonResponse({ other_names: ['蒂法', 'Tifa', 'ティファ・ロックハート', 'ティファ'] });
+      }
+      return { ok: false, status: 404, json: async () => ({}), text: async () => 'Not Found' };
+    };
+    const fetcher = createDanbooruFetcher({ fetchImpl, delayMs: 0 });
+    expect(await resolveJapaneseName(fetcher, 'chen')).toMatchObject({ resolvedName: '橙', confidence: 'kanji-only' });
+    // 先頭候補が中国語音訳マーカー入りの漢字のみ（蒂法）の場合はスキップして
+    // 後方のかな入り候補（ティファ・ロックハート）まで進む。
+    expect(await resolveJapaneseName(fetcher, 'tifa_lockhart')).toMatchObject({
+      resolvedName: 'ティファ・ロックハート',
+      confidence: 'kana',
+    });
   });
 
   it('searchCharacterTagCandidates: category=4・order=countを指定する', async () => {
