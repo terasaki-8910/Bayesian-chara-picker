@@ -6406,5 +6406,167 @@
       "seriesFilter": "zenless zone zero",
       "fetchedAt": "2026-08-02T02:57:52.911Z"
     }
+  },
+  "pokemon-marnie": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T03:07:02.016Z",
+    "hitomi": {
+      "galleryCount": 476,
+      "seriesFilter": "pokemon",
+      "fetchedAt": "2026-08-02T03:12:31.157Z"
+    }
+  },
+  "pokemon-cynthia": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T03:07:42.057Z",
+    "hitomi": {
+      "galleryCount": 732,
+      "seriesFilter": "pokemon",
+      "fetchedAt": "2026-08-02T03:12:32.445Z"
+    }
+  },
+  "pokemon-misty": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T03:08:22.077Z",
+    "hitomi": {
+      "galleryCount": 587,
+      "seriesFilter": "pokemon",
+      "fetchedAt": "2026-08-02T03:12:33.945Z"
+    }
+  },
+  "pokemon-nessa": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T03:09:02.062Z",
+    "hitomi": {
+      "galleryCount": 273,
+      "seriesFilter": "pokemon",
+      "fetchedAt": "2026-08-02T03:12:35.444Z"
+    }
+  },
+  "pokemon-bea": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T03:09:42.129Z",
+    "hitomi": {
+      "galleryCount": 341,
+      "seriesFilter": "pokemon",
+      "fetchedAt": "2026-08-02T03:12:36.945Z"
+    }
+  },
+  "pokemon-lana": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T03:10:22.129Z",
+    "hitomi": {
+      "galleryCount": 617,
+      "seriesFilter": "pokemon",
+      "fetchedAt": "2026-08-02T03:12:38.448Z"
+    }
+  },
+  "pokemon-iono": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T03:11:02.166Z",
+    "hitomi": {
+      "galleryCount": 425,
+      "seriesFilter": "pokemon",
+      "fetchedAt": "2026-08-02T03:12:39.949Z"
+    }
+  },
+  "pokemon-skyla": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T03:11:42.092Z",
+    "hitomi": {
+      "galleryCount": 329,
+      "seriesFilter": "pokemon",
+      "fetchedAt": "2026-08-02T03:12:41.449Z"
+    }
+  },
+  "pokemon-lillie": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T03:12:22.123Z",
+    "hitomi": {
+      "galleryCount": 717,
+      "seriesFilter": "pokemon",
+      "fetchedAt": "2026-08-02T03:12:42.951Z"
+    }
   }
 }

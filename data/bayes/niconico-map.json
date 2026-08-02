@@ -2165,6 +2165,64 @@
       "reason": "not-found",
       "source": "not-found",
       "checkedAt": "2026-08-02T03:01:43.661Z"
+    },
+    "pokemon-marnie": {
+      "title": null,
+      "reason": "記事「Marnie」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateTitle": "Marnie",
+      "checkedAt": "2026-08-02T03:14:24.821Z"
+    },
+    "pokemon-cynthia": {
+      "title": "シロナ",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%B7%E3%83%AD%E3%83%8A",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T03:14:30.050Z"
+    },
+    "pokemon-misty": {
+      "title": null,
+      "reason": "記事「カスミ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateTitle": "カスミ",
+      "checkedAt": "2026-08-02T03:14:39.689Z"
+    },
+    "pokemon-nessa": {
+      "title": "ルリナ",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%AB%E3%83%AA%E3%83%8A",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T03:14:44.831Z"
+    },
+    "pokemon-bea": {
+      "title": "サイトウ",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%B5%E3%82%A4%E3%83%88%E3%82%A6",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T03:14:49.720Z"
+    },
+    "pokemon-lana": {
+      "title": null,
+      "reason": "記事「スイレン」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateTitle": "スイレン",
+      "checkedAt": "2026-08-02T03:14:59.923Z"
+    },
+    "pokemon-iono": {
+      "title": "ナンジャモ",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%8A%E3%83%B3%E3%82%B8%E3%83%A3%E3%83%A2",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T03:15:05.144Z"
+    },
+    "pokemon-skyla": {
+      "title": "フウロ",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%95%E3%82%A6%E3%83%AD",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T03:15:09.863Z"
+    },
+    "pokemon-lillie": {
+      "title": null,
+      "reason": "記事「リーリエ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateTitle": "リーリエ",
+      "checkedAt": "2026-08-02T03:15:19.674Z"
     }
   }
 }

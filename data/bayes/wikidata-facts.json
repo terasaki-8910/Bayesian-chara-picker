@@ -1466,6 +1466,32 @@
       "species": [
         "人間"
       ]
-    }
+    },
+    "pokemon-marnie": {
+      "genderExpression": "女性",
+      "hairColor": "黒",
+      "eyeColor": "green",
+      "species": [
+        "人間"
+      ]
+    },
+    "pokemon-cynthia": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "pokemon-misty": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "pokemon-nessa": {},
+    "pokemon-bea": {},
+    "pokemon-lana": {},
+    "pokemon-iono": {},
+    "pokemon-skyla": {},
+    "pokemon-lillie": {}
   }
 }

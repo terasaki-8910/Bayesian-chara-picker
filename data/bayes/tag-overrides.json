@@ -46,7 +46,8 @@
     "アークナイツ": "arknights",
     "ホロライブ": "hololive",
     "ホロライブEN": "hololive_english",
-    "ゼンレスゾーンゼロ": "zenless_zone_zero"
+    "ゼンレスゾーンゼロ": "zenless_zone_zero",
+    "ポケモン": "pokemon"
   },
   "overrides": {
     "naruto-kurenai": {
@@ -763,6 +764,42 @@
     },
     "zzz-astra": {
       "tag": "astra_yao",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "pokemon-marnie": {
+      "tag": "marnie_(pokemon)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "pokemon-cynthia": {
+      "tag": "cynthia_(pokemon)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "pokemon-misty": {
+      "tag": "misty_(pokemon)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "pokemon-nessa": {
+      "tag": "nessa_(pokemon)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "pokemon-bea": {
+      "tag": "bea_(pokemon)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "pokemon-lana": {
+      "tag": "lana_(pokemon)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "pokemon-iono": {
+      "tag": "iono_(pokemon)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "pokemon-skyla": {
+      "tag": "skyla_(pokemon)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "pokemon-lillie": {
+      "tag": "lillie_(pokemon)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     }
   }

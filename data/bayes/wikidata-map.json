@@ -2523,6 +2523,75 @@
       "source": "search-verified",
       "seriesMatch": true,
       "checkedAt": "2026-08-02T02:59:51.524Z"
+    },
+    "pokemon-marnie": {
+      "qid": "Q77149397",
+      "label": "Marnie",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T03:13:06.822Z"
+    },
+    "pokemon-cynthia": {
+      "qid": "Q3651393",
+      "label": "Cynthia",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T03:13:14.071Z"
+    },
+    "pokemon-misty": {
+      "qid": "Q1057356",
+      "label": "Misty",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T03:13:18.845Z"
+    },
+    "pokemon-nessa": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q116707789, Nessa)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q116707789",
+      "candidateLabel": "Nessa",
+      "checkedAt": "2026-08-02T03:13:24.812Z"
+    },
+    "pokemon-bea": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q116708625, Bea)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q116708625",
+      "candidateLabel": "Bea",
+      "checkedAt": "2026-08-02T03:13:33.228Z"
+    },
+    "pokemon-lana": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q30900427, Lana)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q30900427",
+      "candidateLabel": "Lana",
+      "checkedAt": "2026-08-02T03:13:42.065Z"
+    },
+    "pokemon-iono": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q114674035, Iono)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q114674035",
+      "candidateLabel": "Iono",
+      "checkedAt": "2026-08-02T03:13:50.000Z"
+    },
+    "pokemon-skyla": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q3616635, Skyla)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q3616635",
+      "candidateLabel": "Skyla",
+      "checkedAt": "2026-08-02T03:13:58.951Z"
+    },
+    "pokemon-lillie": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q50384847, Lillie)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q50384847",
+      "candidateLabel": "Lillie",
+      "checkedAt": "2026-08-02T03:14:07.284Z"
     }
   }
 }
