@@ -2446,6 +2446,83 @@
       "source": "search-verified",
       "seriesMatch": true,
       "checkedAt": "2026-08-02T02:41:58.476Z"
+    },
+    "zzz-ellen": {
+      "qid": "Q133256645",
+      "label": "Ellen Joe",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T02:59:04.737Z"
+    },
+    "zzz-jane": {
+      "qid": "Q136309476",
+      "label": "Jane Doe",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T02:59:09.527Z"
+    },
+    "zzz-vivian": {
+      "qid": "Q136480326",
+      "label": "Vivian Banshee",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T02:59:14.332Z"
+    },
+    "zzz-nicole": {
+      "qid": "Q136275619",
+      "label": "Nicole Demara",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T02:59:19.142Z"
+    },
+    "zzz-evelyn": {
+      "qid": "Q136463270",
+      "label": "Evelyn Chevalier",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T02:59:23.960Z"
+    },
+    "zzz-remielle": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-08-02T02:59:26.422Z"
+    },
+    "zzz-zhuyuan": {
+      "qid": "Q136305123",
+      "label": "Zhu Yuan",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T02:59:29.956Z"
+    },
+    "zzz-sunna": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q135914528, Chika)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q135914528",
+      "candidateLabel": "Chika",
+      "checkedAt": "2026-08-02T02:59:38.755Z"
+    },
+    "zzz-yixuan": {
+      "qid": "Q136504641",
+      "label": "Yixuan",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T02:59:41.938Z"
+    },
+    "zzz-burnice": {
+      "qid": "Q136312355",
+      "label": "Burnice White",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T02:59:46.740Z"
+    },
+    "zzz-astra": {
+      "qid": "Q136411529",
+      "label": "Astra Yao",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T02:59:51.524Z"
     }
   }
 }

@@ -6208,5 +6208,203 @@
       "seriesFilter": "blue archive",
       "fetchedAt": "2026-08-02T02:39:05.163Z"
     }
+  },
+  "zzz-ellen": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T02:49:24.959Z",
+    "hitomi": {
+      "galleryCount": 555,
+      "seriesFilter": "zenless zone zero",
+      "fetchedAt": "2026-08-02T02:57:34.939Z"
+    }
+  },
+  "zzz-jane": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T02:50:44.941Z",
+    "hitomi": {
+      "galleryCount": 306,
+      "seriesFilter": "zenless zone zero",
+      "fetchedAt": "2026-08-02T02:57:37.902Z"
+    }
+  },
+  "zzz-vivian": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T02:51:25.014Z",
+    "hitomi": {
+      "galleryCount": 203,
+      "seriesFilter": "zenless zone zero",
+      "fetchedAt": "2026-08-02T02:57:39.403Z"
+    }
+  },
+  "zzz-nicole": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T02:52:05.008Z",
+    "hitomi": {
+      "galleryCount": 379,
+      "seriesFilter": "zenless zone zero",
+      "fetchedAt": "2026-08-02T02:57:40.914Z"
+    }
+  },
+  "zzz-evelyn": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T02:52:45.062Z",
+    "hitomi": {
+      "galleryCount": 418,
+      "seriesFilter": "zenless zone zero",
+      "fetchedAt": "2026-08-02T02:57:42.405Z"
+    }
+  },
+  "zzz-remielle": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T02:53:25.137Z",
+    "hitomi": {
+      "galleryCount": 37,
+      "seriesFilter": "zenless zone zero",
+      "fetchedAt": "2026-08-02T02:57:43.906Z"
+    }
+  },
+  "zzz-zhuyuan": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T02:54:45.039Z",
+    "hitomi": {
+      "galleryCount": 260,
+      "seriesFilter": "zenless zone zero",
+      "fetchedAt": "2026-08-02T02:57:46.908Z"
+    }
+  },
+  "zzz-sunna": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T02:55:25.062Z",
+    "hitomi": {
+      "galleryCount": 82,
+      "seriesFilter": "zenless zone zero",
+      "fetchedAt": "2026-08-02T02:57:48.407Z"
+    }
+  },
+  "zzz-yixuan": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T02:56:05.139Z",
+    "hitomi": {
+      "galleryCount": 403,
+      "seriesFilter": "zenless zone zero",
+      "fetchedAt": "2026-08-02T02:57:49.909Z"
+    }
+  },
+  "zzz-burnice": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T02:56:45.163Z",
+    "hitomi": {
+      "galleryCount": 201,
+      "seriesFilter": "zenless zone zero",
+      "fetchedAt": "2026-08-02T02:57:51.409Z"
+    }
+  },
+  "zzz-astra": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T02:57:25.090Z",
+    "hitomi": {
+      "galleryCount": 245,
+      "seriesFilter": "zenless zone zero",
+      "fetchedAt": "2026-08-02T02:57:52.911Z"
+    }
   }
 }

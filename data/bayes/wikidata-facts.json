@@ -1403,6 +1403,69 @@
     "bluearchive-iroha": {
       "genderExpression": "女性",
       "stature": "小柄"
+    },
+    "zzz-ellen": {
+      "genderExpression": "女性",
+      "hairColor": "黒",
+      "stature": "標準"
+    },
+    "zzz-jane": {
+      "genderExpression": "女性",
+      "hairColor": "黒"
+    },
+    "zzz-vivian": {
+      "genderExpression": "女性",
+      "hairColor": "紫",
+      "species": [
+        "人間"
+      ]
+    },
+    "zzz-nicole": {
+      "genderExpression": "女性",
+      "hairColor": "桃",
+      "eyeColor": "green",
+      "species": [
+        "人間"
+      ]
+    },
+    "zzz-evelyn": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "eyeColor": "purple",
+      "species": [
+        "人間"
+      ]
+    },
+    "zzz-remielle": {},
+    "zzz-zhuyuan": {
+      "genderExpression": "女性",
+      "hairColor": "黒",
+      "eyeColor": "orange",
+      "species": [
+        "人間"
+      ]
+    },
+    "zzz-sunna": {},
+    "zzz-yixuan": {
+      "genderExpression": "女性",
+      "hairColor": "白",
+      "eyeColor": "yellow",
+      "species": [
+        "人間"
+      ]
+    },
+    "zzz-burnice": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "zzz-astra": {
+      "genderExpression": "女性",
+      "hairColor": "黒",
+      "species": [
+        "人間"
+      ]
     }
   }
 }

@@ -16603,5 +16603,514 @@
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
+  },
+  {
+    "id": "zzz-ellen",
+    "name": "エレン・ジョー",
+    "aliases": [
+      "Ellen Joe"
+    ],
+    "series": "ゼンレスゾーンゼロ",
+    "dlsiteQuery": "ゼンレスゾーンゼロ エレン・ジョー",
+    "hitomiQuery": {
+      "character": "ellen joe",
+      "series": "zenless zone zero"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "クール",
+        "生意気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "白"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "affiliationName": null,
+      "stature": "標準",
+      "occupation": [
+        "兵士・軍人"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "zzz-jane",
+    "name": "ジェーン・ドゥ",
+    "aliases": [
+      "Jane Doe"
+    ],
+    "series": "ゼンレスゾーンゼロ",
+    "dlsiteQuery": "ゼンレスゾーンゼロ ジェーン・ドゥ",
+    "hitomiQuery": {
+      "character": "jane doe",
+      "series": "zenless zone zero"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": [
+        "クール",
+        "生意気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "金"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "affiliationName": null,
+      "stature": "標準",
+      "occupation": [
+        "格闘家・武道家",
+        "兵士・軍人"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "zzz-vivian",
+    "name": "ビビアン・バンシー",
+    "aliases": [
+      "Vivian Banshee"
+    ],
+    "series": "ゼンレスゾーンゼロ",
+    "dlsiteQuery": "ゼンレスゾーンゼロ ビビアン・バンシー",
+    "hitomiQuery": {
+      "character": "vivian banshee",
+      "series": "zenless zone zero"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "おっとり"
+      ],
+      "roles": [],
+      "distance": "中立",
+      "looks": [
+        "ケモミミ",
+        "長髪"
+      ],
+      "hairColor": [
+        "白"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "獣人",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "affiliationName": null,
+      "stature": "標準",
+      "occupation": [
+        "研究者・発明家"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "zzz-nicole",
+    "name": "ニコ・デマラ",
+    "aliases": [
+      "Nicole Demara"
+    ],
+    "series": "ゼンレスゾーンゼロ",
+    "dlsiteQuery": "ゼンレスゾーンゼロ ニコ・デマラ",
+    "hitomiQuery": {
+      "character": "nicole demara",
+      "series": "zenless zone zero"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": [
+        "元気",
+        "生意気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "ケモミミ",
+        "長髪"
+      ],
+      "hairColor": [
+        "白"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "獣人",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "社会人",
+      "affiliationName": null,
+      "stature": "標準",
+      "occupation": [
+        "会社員・OL"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "zzz-evelyn",
+    "name": "イヴリン・シェヴァリエ",
+    "aliases": [
+      "Evelyn Chevalier"
+    ],
+    "series": "ゼンレスゾーンゼロ",
+    "dlsiteQuery": "ゼンレスゾーンゼロ イヴリン・シェヴァリエ",
+    "hitomiQuery": {
+      "character": "evelyn chevalier",
+      "series": "zenless zone zero"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": [
+        "クール",
+        "姉御"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "角",
+        "長髪"
+      ],
+      "hairColor": [
+        "紫"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "不死",
+      "mood": [
+        "背徳寄り"
+      ],
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": null,
+      "stature": "長身",
+      "occupation": [
+        "王族・貴族"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "zzz-remielle",
+    "name": "レミエール・ダン",
+    "aliases": [
+      "Remielle Dan"
+    ],
+    "series": "ゼンレスゾーンゼロ",
+    "dlsiteQuery": "ゼンレスゾーンゼロ レミエール・ダン",
+    "hitomiQuery": {
+      "character": "remielle dan",
+      "series": "zenless zone zero"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": [
+        "おっとり"
+      ],
+      "roles": [],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "桃"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": null,
+      "stature": "小柄",
+      "occupation": []
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "zzz-zhuyuan",
+    "name": "朱鳶",
+    "aliases": [
+      "Zhu Yuan"
+    ],
+    "series": "ゼンレスゾーンゼロ",
+    "dlsiteQuery": "ゼンレスゾーンゼロ 朱鳶",
+    "hitomiQuery": {
+      "character": "zhu yuan",
+      "series": "zenless zone zero"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": [
+        "クール"
+      ],
+      "roles": [],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "黒"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "軍服"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "affiliationName": null,
+      "stature": "標準",
+      "occupation": [
+        "警察・公安"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "zzz-sunna",
+    "name": "千夏",
+    "aliases": [
+      "Sunna"
+    ],
+    "series": "ゼンレスゾーンゼロ",
+    "dlsiteQuery": "ゼンレスゾーンゼロ 千夏",
+    "hitomiQuery": {
+      "character": "sunna",
+      "series": "zenless zone zero"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": [
+        "元気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "茶"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": null,
+      "stature": "小柄",
+      "occupation": []
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "zzz-yixuan",
+    "name": "儀玄",
+    "aliases": [
+      "Yixuan"
+    ],
+    "series": "ゼンレスゾーンゼロ",
+    "dlsiteQuery": "ゼンレスゾーンゼロ 儀玄",
+    "hitomiQuery": {
+      "character": "yixuan",
+      "series": "zenless zone zero"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "クール"
+      ],
+      "roles": [],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "黒"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "和服・着物"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": null,
+      "stature": "標準",
+      "occupation": [
+        "魔法使い・魔術師"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "zzz-burnice",
+    "name": "バーニス・ホワイト",
+    "aliases": [
+      "Burnice White"
+    ],
+    "series": "ゼンレスゾーンゼロ",
+    "dlsiteQuery": "ゼンレスゾーンゼロ バーニス・ホワイト",
+    "hitomiQuery": {
+      "character": "burnice white",
+      "series": "zenless zone zero"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": [
+        "元気",
+        "生意気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "橙"
+      ],
+      "skinTone": "褐色",
+      "outfit": [],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "社会人",
+      "affiliationName": null,
+      "stature": "標準",
+      "occupation": [
+        "研究者・発明家"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "zzz-astra",
+    "name": "アストラ・ヤオ",
+    "aliases": [
+      "Astra Yao"
+    ],
+    "series": "ゼンレスゾーンゼロ",
+    "dlsiteQuery": "ゼンレスゾーンゼロ アストラ・ヤオ",
+    "hitomiQuery": {
+      "character": "astra yao",
+      "series": "zenless zone zero"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": [
+        "クール",
+        "姉御"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "紫"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "人間",
+      "mood": [
+        "支配的"
+      ],
+      "combat": "戦わない",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": null,
+      "stature": "標準",
+      "occupation": [
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   }
 ]
