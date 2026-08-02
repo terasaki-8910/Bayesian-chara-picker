@@ -13,7 +13,7 @@
       "Bash(node scripts/collect-hitomi.mjs:*)"
     ],
     "deny": [
-      "Bash(git push:*)", "Bash(rm -rf:*)", "WebFetch"
+      "Bash(rm -rf:*)", "WebFetch"
     ]
   }
 }
