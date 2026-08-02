@@ -4026,6 +4026,42 @@
       "postCount": 3406,
       "source": "override",
       "checkedAt": "2026-08-02T00:59:15.819Z"
+    },
+    "hsr-firefly": {
+      "tag": "firefly_(honkai:_star_rail)",
+      "postCount": 16377,
+      "source": "override",
+      "checkedAt": "2026-08-02T01:09:50.961Z"
+    },
+    "hsr-cyrene": {
+      "tag": "cyrene_(honkai:_star_rail)",
+      "postCount": 8679,
+      "source": "override",
+      "checkedAt": "2026-08-02T01:09:52.017Z"
+    },
+    "hsr-sparkle": {
+      "tag": "sparkle_(honkai:_star_rail)",
+      "postCount": 7702,
+      "source": "override",
+      "checkedAt": "2026-08-02T01:09:53.103Z"
+    },
+    "hsr-herta": {
+      "tag": "herta_(honkai:_star_rail)",
+      "postCount": 4740,
+      "source": "override",
+      "checkedAt": "2026-08-02T01:09:54.202Z"
+    },
+    "hsr-castorice": {
+      "tag": "castorice_(honkai:_star_rail)",
+      "postCount": 4464,
+      "source": "override",
+      "checkedAt": "2026-08-02T01:09:55.320Z"
+    },
+    "hsr-theherta": {
+      "tag": "the_herta_(honkai:_star_rail)",
+      "postCount": 3484,
+      "source": "override",
+      "checkedAt": "2026-08-02T01:09:56.405Z"
     }
   }
 }

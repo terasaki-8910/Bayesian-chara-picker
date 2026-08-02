@@ -1887,6 +1887,50 @@
       "candidateQid": "Q25381",
       "candidateLabel": "amber",
       "checkedAt": "2026-08-02T01:05:57.514Z"
+    },
+    "hsr-firefly": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q25420, Lampyridae)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q25420",
+      "candidateLabel": "Lampyridae",
+      "checkedAt": "2026-08-02T01:14:32.352Z"
+    },
+    "hsr-cyrene": {
+      "qid": "Q136692526",
+      "label": "Cyrene",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T01:14:36.323Z"
+    },
+    "hsr-sparkle": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q127933, firework)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q127933",
+      "candidateLabel": "firework",
+      "checkedAt": "2026-08-02T01:14:44.718Z"
+    },
+    "hsr-herta": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q10996884, Herta)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q10996884",
+      "candidateLabel": "Herta",
+      "checkedAt": "2026-08-02T01:14:51.923Z"
+    },
+    "hsr-castorice": {
+      "qid": "Q136526507",
+      "label": "Castorice",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T01:14:55.507Z"
+    },
+    "hsr-theherta": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-08-02T01:14:57.932Z"
     }
   }
 }

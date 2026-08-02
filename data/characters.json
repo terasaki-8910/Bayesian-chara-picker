@@ -13099,5 +13099,284 @@
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
+  },
+  {
+    "id": "hsr-firefly",
+    "name": "ホタル",
+    "aliases": [
+      "Firefly"
+    ],
+    "series": "崩壊：スターレイル",
+    "dlsiteQuery": "崩壊スターレイル ホタル",
+    "hitomiQuery": {
+      "character": "firefly",
+      "series": "honkai star rail"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "標準",
+      "personality": [
+        "おっとり",
+        "内気"
+      ],
+      "roles": [],
+      "distance": "やや受け身",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "白"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": null,
+      "stature": "小柄",
+      "occupation": []
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hsr-cyrene",
+    "name": "キュレネ",
+    "aliases": [
+      "Cyrene"
+    ],
+    "series": "崩壊：スターレイル",
+    "dlsiteQuery": "崩壊スターレイル キュレネ",
+    "hitomiQuery": {
+      "character": "cyrene",
+      "series": "honkai star rail"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": [
+        "おっとり"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "金"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "人間",
+      "mood": [
+        "甘め"
+      ],
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": null,
+      "stature": "標準",
+      "occupation": [
+        "医療従事者"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hsr-sparkle",
+    "name": "花火",
+    "aliases": [
+      "Sparkle"
+    ],
+    "series": "崩壊：スターレイル",
+    "dlsiteQuery": "崩壊スターレイル 花火",
+    "hitomiQuery": {
+      "character": "sparkle",
+      "series": "honkai star rail"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "標準",
+      "personality": [
+        "生意気",
+        "むっつり"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "桃"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "人間",
+      "mood": [
+        "背徳寄り"
+      ],
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": null,
+      "stature": "標準",
+      "occupation": [
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hsr-herta",
+    "name": "ヘルタ",
+    "aliases": [
+      "Herta"
+    ],
+    "series": "崩壊：スターレイル",
+    "dlsiteQuery": "崩壊スターレイル ヘルタ",
+    "hitomiQuery": {
+      "character": "herta",
+      "series": "honkai star rail"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": [
+        "クール",
+        "生意気"
+      ],
+      "roles": [],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "紫"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "機械",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "天才たちの宇宙ステーション",
+      "stature": "小柄",
+      "occupation": [
+        "研究者・発明家"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hsr-castorice",
+    "name": "キャストリス",
+    "aliases": [
+      "Castorice"
+    ],
+    "series": "崩壊：スターレイル",
+    "dlsiteQuery": "崩壊スターレイル キャストリス",
+    "hitomiQuery": {
+      "character": "castorice",
+      "series": "honkai star rail"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": [
+        "内気",
+        "クール"
+      ],
+      "roles": [],
+      "distance": "やや受け身",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "白"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "不死",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": null,
+      "stature": "小柄",
+      "occupation": [
+        "神様・精霊"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hsr-theherta",
+    "name": "ヘルタ(不可知域)",
+    "aliases": [
+      "The Herta"
+    ],
+    "series": "崩壊：スターレイル",
+    "dlsiteQuery": "崩壊スターレイル ヘルタ 不可知域",
+    "hitomiQuery": {
+      "character": "the herta",
+      "series": "honkai star rail"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "クール",
+        "生意気"
+      ],
+      "roles": [],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "紫"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "人間",
+      "mood": [
+        "支配的"
+      ],
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "天才たちの宇宙ステーション",
+      "stature": "長身",
+      "occupation": [
+        "研究者・発明家"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   }
 ]

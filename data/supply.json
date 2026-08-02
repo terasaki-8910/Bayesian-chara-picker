@@ -4876,5 +4876,113 @@
       "seriesFilter": "genshin impact",
       "fetchedAt": "2026-08-02T01:04:19.206Z"
     }
+  },
+  "hsr-firefly": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:10:34.326Z",
+    "hitomi": {
+      "galleryCount": 781,
+      "seriesFilter": "honkai star rail",
+      "fetchedAt": "2026-08-02T01:14:02.365Z"
+    }
+  },
+  "hsr-cyrene": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:11:14.352Z",
+    "hitomi": {
+      "galleryCount": 118,
+      "seriesFilter": "honkai star rail",
+      "fetchedAt": "2026-08-02T01:14:03.818Z"
+    }
+  },
+  "hsr-sparkle": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:11:54.331Z",
+    "hitomi": {
+      "galleryCount": 477,
+      "seriesFilter": "honkai star rail",
+      "fetchedAt": "2026-08-02T01:14:05.318Z"
+    }
+  },
+  "hsr-herta": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:12:34.496Z",
+    "hitomi": {
+      "galleryCount": 122,
+      "seriesFilter": "honkai star rail",
+      "fetchedAt": "2026-08-02T01:14:06.820Z"
+    }
+  },
+  "hsr-castorice": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:13:14.386Z",
+    "hitomi": {
+      "galleryCount": 203,
+      "seriesFilter": "honkai star rail",
+      "fetchedAt": "2026-08-02T01:14:08.321Z"
+    }
+  },
+  "hsr-theherta": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:13:54.459Z",
+    "hitomi": {
+      "galleryCount": 247,
+      "seriesFilter": "honkai star rail",
+      "fetchedAt": "2026-08-02T01:14:09.821Z"
+    }
   }
 }

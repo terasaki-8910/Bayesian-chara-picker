@@ -1649,6 +1649,43 @@
       "source": "low-confidence",
       "candidateTitle": "アンバー",
       "checkedAt": "2026-08-02T01:06:59.200Z"
+    },
+    "hsr-firefly": {
+      "title": "ホタル",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%9B%E3%82%BF%E3%83%AB",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T01:15:04.978Z"
+    },
+    "hsr-cyrene": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-08-02T01:15:14.751Z"
+    },
+    "hsr-sparkle": {
+      "title": null,
+      "reason": "記事「花火」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateTitle": "花火",
+      "checkedAt": "2026-08-02T01:15:24.918Z"
+    },
+    "hsr-herta": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-08-02T01:15:34.781Z"
+    },
+    "hsr-castorice": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-08-02T01:15:44.807Z"
+    },
+    "hsr-theherta": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-08-02T01:15:54.746Z"
     }
   }
 }
