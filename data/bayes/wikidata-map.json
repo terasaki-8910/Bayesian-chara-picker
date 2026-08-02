@@ -2250,6 +2250,202 @@
       "candidateQid": "Q108223443",
       "candidateLabel": "Ceres Fauna",
       "checkedAt": "2026-08-02T02:02:36.304Z"
+    },
+    "bluearchive-aris": {
+      "qid": "Q125930254",
+      "label": "Tendou Alice",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T02:39:46.194Z"
+    },
+    "bluearchive-mari": {
+      "qid": "Q125020151",
+      "label": "Iochi Mari",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T02:39:50.987Z"
+    },
+    "bluearchive-kazusa": {
+      "qid": "Q127164627",
+      "label": "Kyouyama Kazusa",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T02:39:55.785Z"
+    },
+    "bluearchive-koharu": {
+      "qid": "Q125930350",
+      "label": "Shimoe Koharu",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T02:40:00.583Z"
+    },
+    "bluearchive-seia": {
+      "qid": "Q126950053",
+      "label": "Yurizono Seia",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T02:40:05.392Z"
+    },
+    "bluearchive-karin": {
+      "qid": "Q117229482",
+      "label": "Kakudate Karin",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T02:40:10.186Z"
+    },
+    "bluearchive-plana": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q484128, Fræna)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q484128",
+      "candidateLabel": "Fræna",
+      "checkedAt": "2026-08-02T02:40:18.585Z"
+    },
+    "bluearchive-arona": {
+      "qid": "Q124855593",
+      "label": "Arona",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T02:40:25.791Z"
+    },
+    "bluearchive-aru": {
+      "qid": "Q124841566",
+      "label": "Rikuhachima Aru",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T02:40:30.614Z"
+    },
+    "bluearchive-hanako": {
+      "qid": "Q125930667",
+      "label": "Urawa Hanako",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T02:40:35.394Z"
+    },
+    "bluearchive-nozomi": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-08-02T02:40:37.794Z"
+    },
+    "bluearchive-kanna": {
+      "qid": "Q126951812",
+      "label": "Ogata Kanna",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T02:40:41.409Z"
+    },
+    "bluearchive-midori": {
+      "qid": "Q126044904",
+      "label": "Saiba Midori",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T02:40:46.248Z"
+    },
+    "bluearchive-kei": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-08-02T02:40:48.613Z"
+    },
+    "bluearchive-saori": {
+      "qid": "Q127019751",
+      "label": "Joumae Saori",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T02:40:52.198Z"
+    },
+    "bluearchive-hikari": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-08-02T02:40:54.619Z"
+    },
+    "bluearchive-neru": {
+      "qid": "Q126044973",
+      "label": "Mikamo Neru",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T02:40:58.211Z"
+    },
+    "bluearchive-miyu": {
+      "qid": "Q127009020",
+      "label": "Kasumizawa Miyu",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T02:41:03.012Z"
+    },
+    "bluearchive-ibuki": {
+      "qid": "Q127164788",
+      "label": "Tanga Ibuki",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T02:41:07.812Z"
+    },
+    "bluearchive-miyako": {
+      "qid": "Q127008497",
+      "label": "Tsukiyuki Miyako",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T02:41:13.016Z"
+    },
+    "bluearchive-ichika": {
+      "qid": "Q127790239",
+      "label": "Nakamasa Ichika",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T02:41:17.431Z"
+    },
+    "bluearchive-izuna": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q17193086, Izuna)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q17193086",
+      "candidateLabel": "Izuna",
+      "checkedAt": "2026-08-02T02:41:27.441Z"
+    },
+    "bluearchive-azusa": {
+      "qid": "Q125930309",
+      "label": "Shirasu Azusa",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T02:41:30.849Z"
+    },
+    "bluearchive-hibiki2": {
+      "qid": "Q127790312",
+      "label": "Nekozuka Hibiki",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T02:41:35.418Z"
+    },
+    "bluearchive-kikyou": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q108576024, Kikyo)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q108576024",
+      "candidateLabel": "Kikyo",
+      "checkedAt": "2026-08-02T02:41:45.297Z"
+    },
+    "bluearchive-yuzu": {
+      "qid": "Q127164733",
+      "label": "Hanaoka Yuzu",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T02:41:48.890Z"
+    },
+    "bluearchive-iori": {
+      "qid": "Q125930559",
+      "label": "Shiromi Iori",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T02:41:53.673Z"
+    },
+    "bluearchive-iroha": {
+      "qid": "Q127174830",
+      "label": "Natsume Iroha",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T02:41:58.476Z"
     }
   }
 }

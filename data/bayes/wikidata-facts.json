@@ -1298,6 +1298,111 @@
     "hololiveen-baelz": {},
     "hololiveen-amelia": {},
     "hololiveen-irys": {},
-    "hololiveen-fauna": {}
+    "hololiveen-fauna": {},
+    "bluearchive-aris": {
+      "genderExpression": "女性",
+      "stature": "小柄"
+    },
+    "bluearchive-mari": {
+      "genderExpression": "女性",
+      "stature": "小柄"
+    },
+    "bluearchive-kazusa": {
+      "genderExpression": "女性",
+      "stature": "小柄"
+    },
+    "bluearchive-koharu": {
+      "genderExpression": "女性",
+      "stature": "小柄"
+    },
+    "bluearchive-seia": {
+      "genderExpression": "女性",
+      "stature": "小柄"
+    },
+    "bluearchive-karin": {
+      "genderExpression": "女性",
+      "eyeColor": "yellow",
+      "stature": "長身"
+    },
+    "bluearchive-plana": {},
+    "bluearchive-arona": {
+      "genderExpression": "女性",
+      "hairColor": "青",
+      "eyeColor": "blue"
+    },
+    "bluearchive-aru": {
+      "genderExpression": "女性",
+      "stature": "標準"
+    },
+    "bluearchive-hanako": {
+      "genderExpression": "女性",
+      "hairColor": "桃",
+      "stature": "標準"
+    },
+    "bluearchive-nozomi": {},
+    "bluearchive-kanna": {
+      "genderExpression": "女性",
+      "stature": "標準"
+    },
+    "bluearchive-midori": {
+      "genderExpression": "女性",
+      "stature": "小柄",
+      "species": [
+        "人間"
+      ]
+    },
+    "bluearchive-kei": {},
+    "bluearchive-saori": {
+      "genderExpression": "女性",
+      "stature": "標準"
+    },
+    "bluearchive-hikari": {},
+    "bluearchive-neru": {
+      "genderExpression": "女性",
+      "stature": "小柄"
+    },
+    "bluearchive-miyu": {
+      "genderExpression": "女性",
+      "stature": "小柄",
+      "species": [
+        "人間"
+      ]
+    },
+    "bluearchive-ibuki": {
+      "genderExpression": "女性",
+      "stature": "小柄"
+    },
+    "bluearchive-miyako": {
+      "genderExpression": "女性",
+      "stature": "標準",
+      "species": [
+        "人間"
+      ]
+    },
+    "bluearchive-ichika": {
+      "genderExpression": "女性",
+      "stature": "標準"
+    },
+    "bluearchive-izuna": {},
+    "bluearchive-azusa": {
+      "genderExpression": "女性",
+      "stature": "小柄"
+    },
+    "bluearchive-hibiki2": {
+      "genderExpression": "女性",
+      "stature": "小柄"
+    },
+    "bluearchive-kikyou": {},
+    "bluearchive-yuzu": {
+      "genderExpression": "女性",
+      "stature": "小柄"
+    },
+    "bluearchive-iori": {
+      "genderExpression": "女性"
+    },
+    "bluearchive-iroha": {
+      "genderExpression": "女性",
+      "stature": "小柄"
+    }
   }
 }

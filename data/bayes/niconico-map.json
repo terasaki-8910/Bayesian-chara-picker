@@ -1928,6 +1928,177 @@
       "reason": "not-found",
       "source": "not-found",
       "checkedAt": "2026-08-02T02:04:20.481Z"
+    },
+    "bluearchive-aris": {
+      "title": "天童アリス",
+      "url": "https://dic.nicovideo.jp/a/%E5%A4%A9%E7%AB%A5%E3%82%A2%E3%83%AA%E3%82%B9",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T02:42:08.079Z"
+    },
+    "bluearchive-mari": {
+      "title": "伊落マリー",
+      "url": "https://dic.nicovideo.jp/a/%E4%BC%8A%E8%90%BD%E3%83%9E%E3%83%AA%E3%83%BC",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T02:42:12.844Z"
+    },
+    "bluearchive-kazusa": {
+      "title": "杏山カズサ",
+      "url": "https://dic.nicovideo.jp/a/%E6%9D%8F%E5%B1%B1%E3%82%AB%E3%82%BA%E3%82%B5",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T02:42:17.953Z"
+    },
+    "bluearchive-koharu": {
+      "title": "下江コハル",
+      "url": "https://dic.nicovideo.jp/a/%E4%B8%8B%E6%B1%9F%E3%82%B3%E3%83%8F%E3%83%AB",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T02:42:22.757Z"
+    },
+    "bluearchive-seia": {
+      "title": "百合園セイア",
+      "url": "https://dic.nicovideo.jp/a/%E7%99%BE%E5%90%88%E5%9C%92%E3%82%BB%E3%82%A4%E3%82%A2",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T02:42:27.836Z"
+    },
+    "bluearchive-karin": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-08-02T02:42:37.601Z"
+    },
+    "bluearchive-plana": {
+      "title": "プラナ",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%97%E3%83%A9%E3%83%8A",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T02:42:42.641Z"
+    },
+    "bluearchive-arona": {
+      "title": "アロナ",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%A2%E3%83%AD%E3%83%8A",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T02:42:47.655Z"
+    },
+    "bluearchive-aru": {
+      "title": "陸八魔アル",
+      "url": "https://dic.nicovideo.jp/a/%E9%99%B8%E5%85%AB%E9%AD%94%E3%82%A2%E3%83%AB",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T02:42:52.894Z"
+    },
+    "bluearchive-hanako": {
+      "title": "浦和ハナコ",
+      "url": "https://dic.nicovideo.jp/a/%E6%B5%A6%E5%92%8C%E3%83%8F%E3%83%8A%E3%82%B3",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T02:42:57.854Z"
+    },
+    "bluearchive-nozomi": {
+      "title": "橘ノゾミ",
+      "url": "https://dic.nicovideo.jp/a/%E6%A9%98%E3%83%8E%E3%82%BE%E3%83%9F",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T02:43:03.141Z"
+    },
+    "bluearchive-kanna": {
+      "title": "尾刃カンナ",
+      "url": "https://dic.nicovideo.jp/a/%E5%B0%BE%E5%88%83%E3%82%AB%E3%83%B3%E3%83%8A",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T02:43:07.804Z"
+    },
+    "bluearchive-midori": {
+      "title": "才羽ミドリ",
+      "url": "https://dic.nicovideo.jp/a/%E6%89%8D%E7%BE%BD%E3%83%9F%E3%83%89%E3%83%AA",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T02:43:12.818Z"
+    },
+    "bluearchive-kei": {
+      "title": null,
+      "reason": "記事「天童ケイ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateTitle": "天童ケイ",
+      "checkedAt": "2026-08-02T02:43:27.902Z"
+    },
+    "bluearchive-saori": {
+      "title": "錠前サオリ",
+      "url": "https://dic.nicovideo.jp/a/%E9%8C%A0%E5%89%8D%E3%82%B5%E3%82%AA%E3%83%AA",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T02:43:33.060Z"
+    },
+    "bluearchive-hikari": {
+      "title": null,
+      "reason": "記事「橘ヒカリ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateTitle": "橘ヒカリ",
+      "checkedAt": "2026-08-02T02:43:42.619Z"
+    },
+    "bluearchive-neru": {
+      "title": "美甘ネル",
+      "url": "https://dic.nicovideo.jp/a/%E7%BE%8E%E7%94%98%E3%83%8D%E3%83%AB",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T02:43:47.790Z"
+    },
+    "bluearchive-miyu": {
+      "title": "霞沢ミユ",
+      "url": "https://dic.nicovideo.jp/a/%E9%9C%9E%E6%B2%A2%E3%83%9F%E3%83%A6",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T02:43:52.758Z"
+    },
+    "bluearchive-ibuki": {
+      "title": "丹花イブキ",
+      "url": "https://dic.nicovideo.jp/a/%E4%B8%B9%E8%8A%B1%E3%82%A4%E3%83%96%E3%82%AD",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T02:43:57.844Z"
+    },
+    "bluearchive-miyako": {
+      "title": "月雪ミヤコ",
+      "url": "https://dic.nicovideo.jp/a/%E6%9C%88%E9%9B%AA%E3%83%9F%E3%83%A4%E3%82%B3",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T02:44:02.868Z"
+    },
+    "bluearchive-ichika": {
+      "title": "仲正イチカ",
+      "url": "https://dic.nicovideo.jp/a/%E4%BB%B2%E6%AD%A3%E3%82%A4%E3%83%81%E3%82%AB",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T02:44:07.915Z"
+    },
+    "bluearchive-izuna": {
+      "title": null,
+      "reason": "記事「Izuna」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateTitle": "Izuna",
+      "checkedAt": "2026-08-02T02:44:17.792Z"
+    },
+    "bluearchive-azusa": {
+      "title": "白洲アズサ",
+      "url": "https://dic.nicovideo.jp/a/%E7%99%BD%E6%B4%B2%E3%82%A2%E3%82%BA%E3%82%B5",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T02:44:22.941Z"
+    },
+    "bluearchive-hibiki2": {
+      "title": "猫塚ヒビキ",
+      "url": "https://dic.nicovideo.jp/a/%E7%8C%AB%E5%A1%9A%E3%83%92%E3%83%93%E3%82%AD",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T02:44:27.857Z"
+    },
+    "bluearchive-kikyou": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-08-02T02:44:37.812Z"
+    },
+    "bluearchive-yuzu": {
+      "title": "花岡ユズ",
+      "url": "https://dic.nicovideo.jp/a/%E8%8A%B1%E5%B2%A1%E3%83%A6%E3%82%BA",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T02:44:42.935Z"
+    },
+    "bluearchive-iori": {
+      "title": "銀鏡イオリ",
+      "url": "https://dic.nicovideo.jp/a/%E9%8A%80%E9%8F%A1%E3%82%A4%E3%82%AA%E3%83%AA",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T02:44:47.893Z"
+    },
+    "bluearchive-iroha": {
+      "title": "棗イロハ",
+      "url": "https://dic.nicovideo.jp/a/%E6%A3%97%E3%82%A4%E3%83%AD%E3%83%8F",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T02:44:52.938Z"
     }
   }
 }
