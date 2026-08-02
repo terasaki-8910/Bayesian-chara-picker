@@ -12864,5 +12864,240 @@
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
+  },
+  {
+    "id": "genshin-paimon",
+    "name": "パイモン",
+    "aliases": [
+      "Paimon"
+    ],
+    "series": "原神",
+    "dlsiteQuery": "原神 パイモン",
+    "hitomiQuery": {
+      "character": "paimon",
+      "series": "genshin impact"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": [
+        "元気",
+        "生意気"
+      ],
+      "roles": [
+        "友人"
+      ],
+      "distance": "積極的",
+      "looks": [],
+      "hairColor": [
+        "白"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "魔族",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": null,
+      "stature": "小柄",
+      "occupation": []
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "genshin-klee",
+    "name": "クレー",
+    "aliases": [
+      "Klee"
+    ],
+    "series": "原神",
+    "dlsiteQuery": "原神 クレー",
+    "hitomiQuery": {
+      "character": "klee",
+      "series": "genshin impact"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": [
+        "元気",
+        "生意気"
+      ],
+      "roles": [
+        "妹"
+      ],
+      "distance": "積極的",
+      "looks": [
+        "ツインテール"
+      ],
+      "hairColor": [
+        "茶"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "社会人",
+      "affiliationName": null,
+      "stature": "小柄",
+      "occupation": [
+        "王族・貴族",
+        "研究者・発明家"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "genshin-arlecchino",
+    "name": "アルレッキーノ",
+    "aliases": [
+      "Arlecchino"
+    ],
+    "series": "原神",
+    "dlsiteQuery": "原神 アルレッキーノ",
+    "hitomiQuery": {
+      "character": "arlecchino",
+      "series": "genshin impact"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": [
+        "クール",
+        "姉御"
+      ],
+      "roles": [
+        "母性"
+      ],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "赤"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "魔族",
+      "mood": [
+        "支配的"
+      ],
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "affiliationName": "ファデュイ",
+      "stature": "長身",
+      "occupation": [
+        "スパイ・暗殺者"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "genshin-citlali",
+    "name": "シトラリ",
+    "aliases": [
+      "Citlali"
+    ],
+    "series": "原神",
+    "dlsiteQuery": "原神 シトラリ",
+    "hitomiQuery": {
+      "character": "citlali",
+      "series": "genshin impact"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "クール",
+        "むっつり"
+      ],
+      "roles": [],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "紫"
+      ],
+      "skinTone": "褐色",
+      "outfit": [],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": null,
+      "stature": "標準",
+      "occupation": [
+        "巫女・神職",
+        "魔法使い・魔術師"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "genshin-amber",
+    "name": "アンバー",
+    "aliases": [
+      "Amber"
+    ],
+    "series": "原神",
+    "dlsiteQuery": "原神 アンバー",
+    "hitomiQuery": {
+      "character": "amber",
+      "series": "genshin impact"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "元気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "橙"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "affiliationName": "西風騎士団",
+      "stature": "標準",
+      "occupation": [
+        "兵士・軍人"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   }
 ]

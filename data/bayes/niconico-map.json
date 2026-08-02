@@ -1616,6 +1616,39 @@
       "reason": "not-found",
       "source": "not-found",
       "checkedAt": "2026-08-02T00:55:45.355Z"
+    },
+    "genshin-paimon": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-08-02T01:06:19.069Z"
+    },
+    "genshin-klee": {
+      "title": null,
+      "reason": "記事「Klee」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateTitle": "Klee",
+      "checkedAt": "2026-08-02T01:06:29.157Z"
+    },
+    "genshin-arlecchino": {
+      "title": null,
+      "reason": "記事「アルレッキーノ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateTitle": "アルレッキーノ",
+      "checkedAt": "2026-08-02T01:06:39.011Z"
+    },
+    "genshin-citlali": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-08-02T01:06:49.094Z"
+    },
+    "genshin-amber": {
+      "title": null,
+      "reason": "記事「アンバー」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateTitle": "アンバー",
+      "checkedAt": "2026-08-02T01:06:59.200Z"
     }
   }
 }

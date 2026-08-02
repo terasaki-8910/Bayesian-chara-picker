@@ -3996,6 +3996,36 @@
       "postCount": 3434,
       "source": "override",
       "checkedAt": "2026-08-02T00:47:34.392Z"
+    },
+    "genshin-paimon": {
+      "tag": "paimon_(genshin_impact)",
+      "postCount": 8197,
+      "source": "override",
+      "checkedAt": "2026-08-02T00:59:10.311Z"
+    },
+    "genshin-klee": {
+      "tag": "klee_(genshin_impact)",
+      "postCount": 7159,
+      "source": "override",
+      "checkedAt": "2026-08-02T00:59:11.420Z"
+    },
+    "genshin-arlecchino": {
+      "tag": "arlecchino_(genshin_impact)",
+      "postCount": 5710,
+      "source": "override",
+      "checkedAt": "2026-08-02T00:59:12.520Z"
+    },
+    "genshin-citlali": {
+      "tag": "citlali_(genshin_impact)",
+      "postCount": 3871,
+      "source": "override",
+      "checkedAt": "2026-08-02T00:59:13.613Z"
+    },
+    "genshin-amber": {
+      "tag": "amber_(genshin_impact)",
+      "postCount": 3406,
+      "source": "override",
+      "checkedAt": "2026-08-02T00:59:15.819Z"
     }
   }
 }

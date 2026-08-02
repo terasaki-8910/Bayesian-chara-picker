@@ -1850,6 +1850,43 @@
       "candidateQid": "Q11324563",
       "candidateLabel": "Mirror of Nitocris",
       "checkedAt": "2026-08-02T00:54:50.617Z"
+    },
+    "genshin-paimon": {
+      "qid": "Q115320828",
+      "label": "Paimon",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T01:05:30.159Z"
+    },
+    "genshin-klee": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q44007, Paul Klee)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q44007",
+      "candidateLabel": "Paul Klee",
+      "checkedAt": "2026-08-02T01:05:39.929Z"
+    },
+    "genshin-arlecchino": {
+      "qid": "Q125688628",
+      "label": "Arlecchino",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T01:05:43.926Z"
+    },
+    "genshin-citlali": {
+      "qid": "Q136338779",
+      "label": "Citlali",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T01:05:48.783Z"
+    },
+    "genshin-amber": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q25381, amber)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q25381",
+      "candidateLabel": "amber",
+      "checkedAt": "2026-08-02T01:05:57.514Z"
     }
   }
 }

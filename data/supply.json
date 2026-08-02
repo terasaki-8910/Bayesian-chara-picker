@@ -4786,5 +4786,95 @@
       "seriesFilter": "fate",
       "fetchedAt": "2026-08-02T00:53:52.725Z"
     }
+  },
+  "genshin-paimon": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:00:41.862Z",
+    "hitomi": {
+      "galleryCount": 228,
+      "seriesFilter": "genshin impact",
+      "fetchedAt": "2026-08-02T01:04:11.701Z"
+    }
+  },
+  "genshin-klee": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:01:21.901Z",
+    "hitomi": {
+      "galleryCount": 263,
+      "seriesFilter": "genshin impact",
+      "fetchedAt": "2026-08-02T01:04:13.216Z"
+    }
+  },
+  "genshin-arlecchino": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:02:01.821Z",
+    "hitomi": {
+      "galleryCount": 322,
+      "seriesFilter": "genshin impact",
+      "fetchedAt": "2026-08-02T01:04:14.713Z"
+    }
+  },
+  "genshin-citlali": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:02:41.845Z",
+    "hitomi": {
+      "galleryCount": 275,
+      "seriesFilter": "genshin impact",
+      "fetchedAt": "2026-08-02T01:04:16.211Z"
+    }
+  },
+  "genshin-amber": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:04:01.939Z",
+    "hitomi": {
+      "galleryCount": 347,
+      "seriesFilter": "genshin impact",
+      "fetchedAt": "2026-08-02T01:04:19.206Z"
+    }
   }
 }

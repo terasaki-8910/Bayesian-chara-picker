@@ -1221,6 +1221,25 @@
     "fgo-jeanne": {},
     "fgo-okita": {},
     "fgo-musashi": {},
-    "fgo-nitocris": {}
+    "fgo-nitocris": {},
+    "genshin-paimon": {
+      "genderExpression": "女性"
+    },
+    "genshin-klee": {},
+    "genshin-arlecchino": {
+      "genderExpression": "女性",
+      "hairColor": "白",
+      "eyeColor": "red",
+      "species": [
+        "人間"
+      ]
+    },
+    "genshin-citlali": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "genshin-amber": {}
   }
 }
