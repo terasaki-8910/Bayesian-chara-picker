@@ -3255,6 +3255,14 @@
       "source": "search-verified",
       "seriesMatch": true,
       "checkedAt": "2026-08-02T06:17:09.958Z"
+    },
+    "vtuber-shigureui": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q38277951, Shigure Ui)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q38277951",
+      "candidateLabel": "Shigure Ui",
+      "checkedAt": "2026-08-02T06:42:24.287Z"
     }
   }
 }

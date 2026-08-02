@@ -22046,5 +22046,49 @@
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
+  },
+  {
+    "id": "vtuber-shigureui",
+    "name": "しぐれうい",
+    "aliases": [
+      "Shigure Ui"
+    ],
+    "series": "しぐれうい",
+    "dlsiteQuery": "しぐれうい",
+    "hitomiQuery": {
+      "character": "shigure ui",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "おっとり",
+        "元気"
+      ],
+      "roles": [],
+      "distance": "やや積極的",
+      "looks": [],
+      "hairColor": [
+        "茶"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "社会人",
+      "affiliationName": null,
+      "stature": "標準",
+      "occupation": [
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   }
 ]

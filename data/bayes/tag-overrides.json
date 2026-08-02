@@ -106,7 +106,8 @@
     "涼宮ハルヒの憂鬱": "suzumiya_haruhi_no_yuuutsu",
     "崩壊3rd": "honkai_impact_3rd",
     "ダンガンロンパ2 さよなら絶望学園": "danganronpa_2:_goodbye_despair",
-    "ダンガンロンパ 希望の学園と絶望の高校生": "danganronpa:_trigger_happy_havoc"
+    "ダンガンロンパ 希望の学園と絶望の高校生": "danganronpa:_trigger_happy_havoc",
+    "しぐれうい": "shigure_ui_(vtuber)"
   },
   "overrides": {
     "naruto-kurenai": {
@@ -1243,6 +1244,10 @@
     },
     "bocchi-kikuri": {
       "tag": "hiroi_kikuri",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "vtuber-shigureui": {
+      "tag": "shigure_ui_(vtuber)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     }
   }

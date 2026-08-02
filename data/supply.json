@@ -8296,5 +8296,23 @@
       "seriesFilter": null,
       "fetchedAt": "2026-08-02T06:16:47.625Z"
     }
+  },
+  "vtuber-shigureui": {
+    "pageCount": 7,
+    "estimatedRange": [
+      181,
+      210
+    ],
+    "byWorkType": {
+      "doujinshi": 7,
+      "voice": 7,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T06:42:15.075Z",
+    "hitomi": {
+      "galleryCount": 431,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T06:42:15.625Z"
+    }
   }
 }
