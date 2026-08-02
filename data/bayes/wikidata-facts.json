@@ -983,6 +983,234 @@
       "species": [
         "人間"
       ]
+    },
+    "touhou-orin": {
+      "genderExpression": "女性",
+      "hairColor": "赤"
+    },
+    "touhou-rumia": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "eyeColor": "red"
+    },
+    "touhou-chen": {
+      "genderExpression": "女性",
+      "hairColor": "茶"
+    },
+    "touhou-kogasa": {
+      "genderExpression": "女性"
+    },
+    "touhou-keine": {
+      "genderExpression": "女性"
+    },
+    "touhou-tenshi": {},
+    "touhou-kaguya": {
+      "genderExpression": "女性",
+      "hairColor": "黒"
+    },
+    "touhou-mystia": {
+      "genderExpression": "女性",
+      "hairColor": "桃",
+      "eyeColor": "grey"
+    },
+    "touhou-nazrin": {
+      "genderExpression": "女性",
+      "eyeColor": "red"
+    },
+    "touhou-suika": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "red"
+    },
+    "touhou-tewi": {
+      "genderExpression": "女性"
+    },
+    "touhou-byakuren": {},
+    "touhou-nue": {},
+    "touhou-parsee": {},
+    "touhou-kanako": {
+      "genderExpression": "女性"
+    },
+    "touhou-hina": {
+      "genderExpression": "女性"
+    },
+    "touhou-daiyousei": {
+      "genderExpression": "女性",
+      "hairColor": "緑"
+    },
+    "touhou-yuugi": {},
+    "touhou-eiki": {
+      "genderExpression": "女性",
+      "hairColor": "緑",
+      "eyeColor": "blue"
+    },
+    "touhou-wriggle": {
+      "genderExpression": "女性",
+      "eyeColor": "blue"
+    },
+    "touhou-komachi": {},
+    "touhou-kagerou": {},
+    "touhou-hatate": {},
+    "touhou-kasen": {},
+    "touhou-iku": {},
+    "touhou-yoshika": {},
+    "touhou-clownpiece": {
+      "genderExpression": "女性",
+      "hairColor": "金"
+    },
+    "vocaloid-miku": {},
+    "madoka-homura": {
+      "genderExpression": "女性",
+      "eyeColor": "blue",
+      "species": [
+        "人間"
+      ]
+    },
+    "madoka-madoka": {
+      "genderExpression": "女性",
+      "hairColor": "桃",
+      "stature": "小柄",
+      "species": [
+        "人間"
+      ]
+    },
+    "vocaloid-rin": {},
+    "madoka-mami": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "eyeColor": "yellow",
+      "species": [
+        "人間"
+      ]
+    },
+    "frieren-frieren": {
+      "genderExpression": "女性",
+      "hairColor": "白",
+      "eyeColor": "green"
+    },
+    "vocaloid-luka": {},
+    "vocaloid-yukari": {
+      "genderExpression": "女性",
+      "stature": "標準",
+      "species": [
+        "人間"
+      ]
+    },
+    "frieren-fern": {
+      "genderExpression": "女性",
+      "hairColor": "紫",
+      "eyeColor": "purple",
+      "species": [
+        "人間"
+      ]
+    },
+    "bocchi-nijika": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "species": [
+        "人間"
+      ]
+    },
+    "kancolle-hibiki": {},
+    "kancolle-shigure": {},
+    "kancolle-fubuki": {},
+    "kancolle-tenryuu": {},
+    "kancolle-haruna": {},
+    "kancolle-amatsukaze": {},
+    "kancolle-yamato": {},
+    "kancolle-shoukaku": {},
+    "kancolle-asashio": {},
+    "kancolle-eugen": {},
+    "kancolle-iowa": {},
+    "azurlane-taihou": {
+      "genderExpression": "女性",
+      "hairColor": "黒",
+      "eyeColor": "red"
+    },
+    "azurlane-bremerton": {},
+    "azurlane-formidable": {},
+    "azurlane-eugen": {},
+    "azurlane-atago2": {},
+    "azurlane-belfast": {},
+    "azurlane-sirius": {},
+    "azurlane-unicorn": {},
+    "azurlane-illustrious": {},
+    "imascg-rin": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "green",
+      "species": [
+        "人間"
+      ]
+    },
+    "imascg-riamu": {
+      "genderExpression": "女性",
+      "hairColor": "桃",
+      "species": [
+        "人間"
+      ]
+    },
+    "imascg-koume": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "eyeColor": "brown",
+      "species": [
+        "人間"
+      ]
+    },
+    "imascg-arisu": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "brown",
+      "species": [
+        "人間"
+      ]
+    },
+    "imascg-uzuki": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "brown",
+      "species": [
+        "人間"
+      ]
+    },
+    "imascg-fumika": {
+      "genderExpression": "女性",
+      "eyeColor": "blue",
+      "species": [
+        "人間"
+      ]
+    },
+    "imascg-mika": {
+      "genderExpression": "女性",
+      "hairColor": "桃",
+      "species": [
+        "人間"
+      ]
+    },
+    "imascg-minami": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "brown",
+      "species": [
+        "人間"
+      ]
+    },
+    "imascg-momoka": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "eyeColor": "green",
+      "species": [
+        "人間"
+      ]
+    },
+    "imascg-rika": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "eyeColor": "green",
+      "species": [
+        "人間"
+      ]
     }
   }
 }

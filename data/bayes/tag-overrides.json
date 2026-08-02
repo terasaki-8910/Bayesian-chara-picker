@@ -37,7 +37,12 @@
     "ウマ娘プリティーダービー": "umamusume",
     "シャインポスト": "shine_post",
     "お兄ちゃんはおしまい!": "onii-chan_wa_oshimai!",
-    "ご注文はうさぎですか?": "gochuumon_wa_usagi_desu_ka?"
+    "ご注文はうさぎですか?": "gochuumon_wa_usagi_desu_ka?",
+    "ボーカロイド": "vocaloid",
+    "葬送のフリーレン": "sousou_no_frieren",
+    "ぼっち・ざ・ろっく!": "bocchi_the_rock!",
+    "魔法少女まどか☆マギカ": "mahou_shoujo_madoka_magica",
+    "アイドルマスターシンデレラガールズ": "idolmaster_cinderella_girls"
   },
   "overrides": {
     "naruto-kurenai": {
@@ -106,6 +111,274 @@
     },
     "shinepost-yawara": {
       "tag": "naekawa_yawara",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "touhou-orin": {
+      "tag": "kaenbyou_rin",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "touhou-rumia": {
+      "tag": "rumia",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "touhou-chen": {
+      "tag": "chen",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "touhou-kogasa": {
+      "tag": "tatara_kogasa",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "touhou-keine": {
+      "tag": "kamishirasawa_keine",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "touhou-tenshi": {
+      "tag": "hinanawi_tenshi",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "touhou-kaguya": {
+      "tag": "houraisan_kaguya",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "touhou-mystia": {
+      "tag": "mystia_lorelei",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "touhou-nazrin": {
+      "tag": "nazrin",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "touhou-suika": {
+      "tag": "ibuki_suika",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "touhou-tewi": {
+      "tag": "inaba_tewi",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "touhou-byakuren": {
+      "tag": "hijiri_byakuren",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "touhou-nue": {
+      "tag": "houjuu_nue",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "touhou-parsee": {
+      "tag": "mizuhashi_parsee",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "touhou-kanako": {
+      "tag": "yasaka_kanako",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "touhou-hina": {
+      "tag": "kagiyama_hina",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "touhou-daiyousei": {
+      "tag": "daiyousei",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "touhou-yuugi": {
+      "tag": "hoshiguma_yuugi",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "touhou-eiki": {
+      "tag": "shiki_eiki",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "touhou-wriggle": {
+      "tag": "wriggle_nightbug",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "touhou-komachi": {
+      "tag": "onozuka_komachi",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "touhou-kagerou": {
+      "tag": "imaizumi_kagerou",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "touhou-hatate": {
+      "tag": "himekaidou_hatate",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "touhou-kasen": {
+      "tag": "ibaraki_kasen",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "touhou-iku": {
+      "tag": "nagae_iku",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "touhou-yoshika": {
+      "tag": "miyako_yoshika",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "touhou-clownpiece": {
+      "tag": "clownpiece",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "vocaloid-miku": {
+      "tag": "hatsune_miku",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "madoka-homura": {
+      "tag": "akemi_homura",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "madoka-madoka": {
+      "tag": "kaname_madoka",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "vocaloid-rin": {
+      "tag": "kagamine_rin",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "madoka-mami": {
+      "tag": "tomoe_mami",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "frieren-frieren": {
+      "tag": "frieren",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "vocaloid-luka": {
+      "tag": "megurine_luka",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "vocaloid-yukari": {
+      "tag": "yuzuki_yukari",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "frieren-fern": {
+      "tag": "fern_(sousou_no_frieren)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "bocchi-nijika": {
+      "tag": "ijichi_nijika",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "kancolle-hibiki": {
+      "tag": "hibiki_(kancolle)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "kancolle-shigure": {
+      "tag": "shigure_(kancolle)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "kancolle-fubuki": {
+      "tag": "fubuki_(kancolle)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "kancolle-tenryuu": {
+      "tag": "tenryuu_(kancolle)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "kancolle-haruna": {
+      "tag": "haruna_(kancolle)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "kancolle-amatsukaze": {
+      "tag": "amatsukaze_(kancolle)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "kancolle-yamato": {
+      "tag": "yamato_(kancolle)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "kancolle-shoukaku": {
+      "tag": "shoukaku_(kancolle)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "kancolle-asashio": {
+      "tag": "asashio_(kancolle)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "kancolle-eugen": {
+      "tag": "prinz_eugen_(kancolle)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "kancolle-iowa": {
+      "tag": "iowa_(kancolle)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "azurlane-taihou": {
+      "tag": "taihou_(azur_lane)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "azurlane-bremerton": {
+      "tag": "bremerton_(azur_lane)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "azurlane-formidable": {
+      "tag": "formidable_(azur_lane)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "azurlane-eugen": {
+      "tag": "prinz_eugen_(azur_lane)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "azurlane-atago2": {
+      "tag": "atago_(azur_lane)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "azurlane-belfast": {
+      "tag": "belfast_(azur_lane)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "azurlane-sirius": {
+      "tag": "sirius_(azur_lane)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "azurlane-unicorn": {
+      "tag": "unicorn_(azur_lane)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "azurlane-illustrious": {
+      "tag": "illustrious_(azur_lane)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "imascg-rin": {
+      "tag": "shibuya_rin",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "imascg-riamu": {
+      "tag": "yumemi_riamu",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "imascg-koume": {
+      "tag": "shirasaka_koume",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "imascg-arisu": {
+      "tag": "tachibana_arisu",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "imascg-uzuki": {
+      "tag": "shimamura_uzuki",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "imascg-fumika": {
+      "tag": "sagisawa_fumika",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "imascg-mika": {
+      "tag": "jougasaki_mika",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "imascg-minami": {
+      "tag": "nitta_minami",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "imascg-momoka": {
+      "tag": "sakurai_momoka",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "imascg-rika": {
+      "tag": "jougasaki_rika",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     }
   }
