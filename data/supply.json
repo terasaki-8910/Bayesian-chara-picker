@@ -8314,5 +8314,473 @@
       "seriesFilter": null,
       "fetchedAt": "2026-08-02T06:42:15.625Z"
     }
+  },
+  "bluearchive-hasumi": {
+    "pageCount": 4,
+    "estimatedRange": [
+      91,
+      120
+    ],
+    "byWorkType": {
+      "doujinshi": 4,
+      "voice": 4,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T07:06:48.791Z",
+    "hitomi": {
+      "galleryCount": 0,
+      "seriesFilter": "blue archive",
+      "fetchedAt": "2026-08-02T07:18:27.821Z"
+    }
+  },
+  "bluearchive-kayoko": {
+    "pageCount": 5,
+    "estimatedRange": [
+      121,
+      150
+    ],
+    "byWorkType": {
+      "doujinshi": 5,
+      "voice": 5,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T07:07:28.818Z",
+    "hitomi": {
+      "galleryCount": 0,
+      "seriesFilter": "blue archive",
+      "fetchedAt": "2026-08-02T07:18:29.000Z"
+    }
+  },
+  "bluearchive-mutsuki": {
+    "pageCount": 5,
+    "estimatedRange": [
+      121,
+      150
+    ],
+    "byWorkType": {
+      "doujinshi": 5,
+      "voice": 5,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T07:08:08.969Z",
+    "hitomi": {
+      "galleryCount": 0,
+      "seriesFilter": "blue archive",
+      "fetchedAt": "2026-08-02T07:18:30.502Z"
+    }
+  },
+  "bluearchive-kokona": {
+    "pageCount": 3,
+    "estimatedRange": [
+      61,
+      90
+    ],
+    "byWorkType": {
+      "doujinshi": 3,
+      "voice": 3,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T07:08:49.192Z",
+    "hitomi": {
+      "galleryCount": 0,
+      "seriesFilter": "blue archive",
+      "fetchedAt": "2026-08-02T07:18:32.002Z"
+    }
+  },
+  "bluearchive-nonomi": {
+    "pageCount": 6,
+    "estimatedRange": [
+      151,
+      180
+    ],
+    "byWorkType": {
+      "doujinshi": 6,
+      "voice": 6,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T07:09:29.035Z",
+    "hitomi": {
+      "galleryCount": 0,
+      "seriesFilter": "blue archive",
+      "fetchedAt": "2026-08-02T07:18:33.509Z"
+    }
+  },
+  "bluearchive-shun": {
+    "pageCount": 5,
+    "estimatedRange": [
+      121,
+      150
+    ],
+    "byWorkType": {
+      "doujinshi": 5,
+      "voice": 5,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T07:10:09.147Z",
+    "hitomi": {
+      "galleryCount": 0,
+      "seriesFilter": "blue archive",
+      "fetchedAt": "2026-08-02T07:18:35.004Z"
+    }
+  },
+  "bluearchive-momoi": {
+    "pageCount": 5,
+    "estimatedRange": [
+      121,
+      150
+    ],
+    "byWorkType": {
+      "doujinshi": 5,
+      "voice": 5,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T07:10:49.246Z",
+    "hitomi": {
+      "galleryCount": 0,
+      "seriesFilter": "blue archive",
+      "fetchedAt": "2026-08-02T07:18:36.506Z"
+    }
+  },
+  "bluearchive-ui": {
+    "pageCount": 11,
+    "estimatedRange": [
+      301,
+      330
+    ],
+    "byWorkType": {
+      "doujinshi": 11,
+      "voice": 11,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T07:11:29.275Z",
+    "hitomi": {
+      "galleryCount": 0,
+      "seriesFilter": "blue archive",
+      "fetchedAt": "2026-08-02T07:18:38.006Z"
+    }
+  },
+  "bluearchive-niyaniya": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T07:12:09.405Z",
+    "hitomi": {
+      "galleryCount": 0,
+      "seriesFilter": "blue archive",
+      "fetchedAt": "2026-08-02T07:18:39.511Z"
+    }
+  },
+  "bluearchive-natsu": {
+    "pageCount": 7,
+    "estimatedRange": [
+      181,
+      210
+    ],
+    "byWorkType": {
+      "doujinshi": 7,
+      "voice": 7,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T07:12:49.461Z",
+    "hitomi": {
+      "galleryCount": 0,
+      "seriesFilter": "blue archive",
+      "fetchedAt": "2026-08-02T07:18:41.008Z"
+    }
+  },
+  "bluearchive-saki": {
+    "pageCount": 10,
+    "estimatedRange": [
+      271,
+      300
+    ],
+    "byWorkType": {
+      "doujinshi": 10,
+      "voice": 10,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T07:13:29.495Z",
+    "hitomi": {
+      "galleryCount": 0,
+      "seriesFilter": "blue archive",
+      "fetchedAt": "2026-08-02T07:18:42.509Z"
+    }
+  },
+  "bluearchive-wakamo": {
+    "pageCount": 3,
+    "estimatedRange": [
+      61,
+      90
+    ],
+    "byWorkType": {
+      "doujinshi": 3,
+      "voice": 3,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T07:14:09.536Z",
+    "hitomi": {
+      "galleryCount": 0,
+      "seriesFilter": "blue archive",
+      "fetchedAt": "2026-08-02T07:18:44.009Z"
+    }
+  },
+  "bluearchive-hifumi": {
+    "pageCount": 3,
+    "estimatedRange": [
+      61,
+      90
+    ],
+    "byWorkType": {
+      "doujinshi": 3,
+      "voice": 3,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T07:14:49.709Z",
+    "hitomi": {
+      "galleryCount": 0,
+      "seriesFilter": "blue archive",
+      "fetchedAt": "2026-08-02T07:18:45.510Z"
+    }
+  },
+  "bluearchive-nagisa": {
+    "pageCount": 3,
+    "estimatedRange": [
+      61,
+      90
+    ],
+    "byWorkType": {
+      "doujinshi": 3,
+      "voice": 3,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T07:15:29.758Z",
+    "hitomi": {
+      "galleryCount": 0,
+      "seriesFilter": "blue archive",
+      "fetchedAt": "2026-08-02T07:18:47.011Z"
+    }
+  },
+  "bluearchive-reisa": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T07:16:09.860Z",
+    "hitomi": {
+      "galleryCount": 0,
+      "seriesFilter": "blue archive",
+      "fetchedAt": "2026-08-02T07:18:48.512Z"
+    }
+  },
+  "bluearchive-serika": {
+    "pageCount": 3,
+    "estimatedRange": [
+      61,
+      90
+    ],
+    "byWorkType": {
+      "doujinshi": 3,
+      "voice": 3,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T07:16:49.993Z",
+    "hitomi": {
+      "galleryCount": 0,
+      "seriesFilter": "blue archive",
+      "fetchedAt": "2026-08-02T07:18:50.013Z"
+    }
+  },
+  "fate-melusine": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T07:17:30.128Z",
+    "hitomi": {
+      "galleryCount": 0,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T07:18:51.515Z"
+    }
+  },
+  "overwatch-mercy": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T07:18:10.164Z",
+    "hitomi": {
+      "galleryCount": 0,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T07:18:53.015Z"
+    }
+  },
+  "pokemon-dawn": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T07:25:42.077Z",
+    "hitomi": {
+      "galleryCount": 486,
+      "seriesFilter": "pokemon",
+      "fetchedAt": "2026-08-02T07:30:38.053Z"
+    }
+  },
+  "pokemon-may": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T07:26:22.136Z",
+    "hitomi": {
+      "galleryCount": 605,
+      "seriesFilter": "pokemon",
+      "fetchedAt": "2026-08-02T07:30:39.343Z"
+    }
+  },
+  "pokemon-hilda": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T07:27:02.129Z",
+    "hitomi": {
+      "galleryCount": 484,
+      "seriesFilter": "pokemon",
+      "fetchedAt": "2026-08-02T07:30:40.845Z"
+    }
+  },
+  "pokemon-rosa": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T07:27:42.198Z",
+    "hitomi": {
+      "galleryCount": 816,
+      "seriesFilter": "pokemon",
+      "fetchedAt": "2026-08-02T07:30:42.345Z"
+    }
+  },
+  "pokemon-gloria": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T07:28:22.345Z",
+    "hitomi": {
+      "galleryCount": 408,
+      "seriesFilter": "pokemon",
+      "fetchedAt": "2026-08-02T07:30:43.843Z"
+    }
+  },
+  "pokemon-serena": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T07:29:02.432Z",
+    "hitomi": {
+      "galleryCount": 436,
+      "seriesFilter": "pokemon",
+      "fetchedAt": "2026-08-02T07:30:45.349Z"
+    }
+  },
+  "pokemon-akari": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T07:29:42.445Z",
+    "hitomi": {
+      "galleryCount": 270,
+      "seriesFilter": "pokemon",
+      "fetchedAt": "2026-08-02T07:30:46.846Z"
+    }
+  },
+  "pokemon-juliana": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T07:30:22.604Z",
+    "hitomi": {
+      "galleryCount": 149,
+      "seriesFilter": "pokemon",
+      "fetchedAt": "2026-08-02T07:30:48.347Z"
+    }
   }
 }

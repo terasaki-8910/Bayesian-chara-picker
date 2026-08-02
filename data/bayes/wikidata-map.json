@@ -3263,6 +3263,195 @@
       "candidateQid": "Q38277951",
       "candidateLabel": "Shigure Ui",
       "checkedAt": "2026-08-02T06:42:24.287Z"
+    },
+    "bluearchive-hasumi": {
+      "qid": "Q117229436",
+      "label": "Hanekawa Hasumi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T07:31:03.460Z"
+    },
+    "bluearchive-kayoko": {
+      "qid": "Q124841458",
+      "label": "Onikata Kayoko",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T07:31:08.238Z"
+    },
+    "bluearchive-mutsuki": {
+      "qid": "Q124841138",
+      "label": "Asagi Mutsuki",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T07:31:13.044Z"
+    },
+    "bluearchive-kokona": {
+      "qid": "Q130237176",
+      "label": "Sunohara Kokona",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T07:31:17.852Z"
+    },
+    "bluearchive-nonomi": {
+      "qid": "Q124841107",
+      "label": "Izayoi Nonomi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T07:31:22.676Z"
+    },
+    "bluearchive-shun": {
+      "qid": "Q130237165",
+      "label": "Sunohara Shun",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T07:31:27.460Z"
+    },
+    "bluearchive-momoi": {
+      "qid": "Q126044859",
+      "label": "Saiba Momoi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T07:31:32.298Z"
+    },
+    "bluearchive-ui": {
+      "qid": "Q130238233",
+      "label": "Kozeki Ui",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T07:31:37.045Z"
+    },
+    "bluearchive-niyaniya": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-08-02T07:31:39.470Z"
+    },
+    "bluearchive-natsu": {
+      "qid": "Q127164694",
+      "label": "Yutori Natsu",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T07:31:43.049Z"
+    },
+    "bluearchive-saki": {
+      "qid": "Q127008680",
+      "label": "Sorai Saki",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T07:31:47.854Z"
+    },
+    "bluearchive-wakamo": {
+      "qid": "Q127256061",
+      "label": "Kosaka Wakamo",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T07:31:52.683Z"
+    },
+    "bluearchive-hifumi": {
+      "qid": "Q125930213",
+      "label": "Ajitani Hifumi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T07:31:57.462Z"
+    },
+    "bluearchive-nagisa": {
+      "qid": "Q125930431",
+      "label": "Kirifuji Nagisa",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T07:32:02.299Z"
+    },
+    "bluearchive-reisa": {
+      "qid": "Q127790223",
+      "label": "Uzawa Reisa",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T07:32:07.050Z"
+    },
+    "bluearchive-serika": {
+      "qid": "Q124841438",
+      "label": "Kuromi Serika",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T07:32:11.868Z"
+    },
+    "fate-melusine": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q940279, Melusine)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q940279",
+      "candidateLabel": "Melusine",
+      "checkedAt": "2026-08-02T07:32:18.100Z"
+    },
+    "overwatch-mercy": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q274249, Massy)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q274249",
+      "candidateLabel": "Massy",
+      "checkedAt": "2026-08-02T07:32:25.532Z"
+    },
+    "pokemon-dawn": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q1155350, Dawn)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q1155350",
+      "candidateLabel": "Dawn",
+      "checkedAt": "2026-08-02T07:32:33.536Z"
+    },
+    "pokemon-may": {
+      "qid": "Q1287363",
+      "label": "May",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T07:32:41.994Z"
+    },
+    "pokemon-hilda": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q116792189, Hilda)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q116792189",
+      "candidateLabel": "Hilda",
+      "checkedAt": "2026-08-02T07:32:52.359Z"
+    },
+    "pokemon-rosa": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q1751954, May)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q1751954",
+      "candidateLabel": "May",
+      "checkedAt": "2026-08-02T07:32:58.741Z"
+    },
+    "pokemon-gloria": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q119791833, Gloria)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q119791833",
+      "candidateLabel": "Gloria",
+      "checkedAt": "2026-08-02T07:33:06.369Z"
+    },
+    "pokemon-serena": {
+      "qid": "Q17221976",
+      "label": "Serena",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T07:33:12.009Z"
+    },
+    "pokemon-akari": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q118489643, Akari Tsuchiya)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q118489643",
+      "candidateLabel": "Akari Tsuchiya",
+      "checkedAt": "2026-08-02T07:33:23.957Z"
+    },
+    "pokemon-juliana": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q106949255, Aoi)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q106949255",
+      "candidateLabel": "Aoi",
+      "checkedAt": "2026-08-02T07:33:33.507Z"
     }
   }
 }

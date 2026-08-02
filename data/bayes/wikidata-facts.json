@@ -1993,6 +1993,98 @@
         "人間"
       ]
     },
-    "vtuber-shigureui": {}
+    "vtuber-shigureui": {},
+    "bluearchive-hasumi": {
+      "genderExpression": "女性",
+      "hairColor": "黒",
+      "eyeColor": "red",
+      "stature": "長身"
+    },
+    "bluearchive-kayoko": {
+      "genderExpression": "女性",
+      "stature": "標準"
+    },
+    "bluearchive-mutsuki": {
+      "genderExpression": "女性",
+      "stature": "小柄"
+    },
+    "bluearchive-kokona": {
+      "genderExpression": "女性",
+      "stature": "小柄"
+    },
+    "bluearchive-nonomi": {
+      "genderExpression": "女性",
+      "stature": "標準"
+    },
+    "bluearchive-shun": {
+      "genderExpression": "女性",
+      "stature": "長身"
+    },
+    "bluearchive-momoi": {
+      "genderExpression": "女性",
+      "stature": "小柄",
+      "species": [
+        "人間"
+      ]
+    },
+    "bluearchive-ui": {
+      "genderExpression": "女性",
+      "stature": "標準"
+    },
+    "bluearchive-niyaniya": {},
+    "bluearchive-natsu": {
+      "genderExpression": "女性",
+      "stature": "小柄",
+      "species": [
+        "人間"
+      ]
+    },
+    "bluearchive-saki": {
+      "genderExpression": "女性",
+      "stature": "標準",
+      "species": [
+        "人間"
+      ]
+    },
+    "bluearchive-wakamo": {
+      "genderExpression": "女性",
+      "stature": "標準"
+    },
+    "bluearchive-hifumi": {
+      "genderExpression": "女性",
+      "stature": "標準"
+    },
+    "bluearchive-nagisa": {
+      "genderExpression": "女性",
+      "stature": "標準"
+    },
+    "bluearchive-reisa": {
+      "genderExpression": "女性",
+      "stature": "小柄"
+    },
+    "bluearchive-serika": {
+      "genderExpression": "女性",
+      "stature": "小柄"
+    },
+    "fate-melusine": {},
+    "overwatch-mercy": {},
+    "pokemon-dawn": {},
+    "pokemon-may": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "pokemon-hilda": {},
+    "pokemon-rosa": {},
+    "pokemon-gloria": {},
+    "pokemon-serena": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "pokemon-akari": {},
+    "pokemon-juliana": {}
   }
 }

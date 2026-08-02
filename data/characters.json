@@ -22090,5 +22090,1169 @@
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
+  },
+  {
+    "id": "bluearchive-hasumi",
+    "name": "羽川ハスミ",
+    "aliases": [
+      "Hanekawa Hasumi"
+    ],
+    "series": "ブルーアーカイブ",
+    "dlsiteQuery": "ブルーアーカイブ ハスミ",
+    "hitomiQuery": {
+      "character": "hasumi",
+      "series": "blue archive"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "クール"
+      ],
+      "roles": [
+        "先輩"
+      ],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "黒"
+      ],
+      "skinTone": "色白",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "affiliationName": "対策委員会",
+      "stature": "標準",
+      "occupation": []
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "bluearchive-kayoko",
+    "name": "鬼方カヨコ",
+    "aliases": [
+      "Onikata Kayoko"
+    ],
+    "series": "ブルーアーカイブ",
+    "dlsiteQuery": "ブルーアーカイブ カヨコ",
+    "hitomiQuery": {
+      "character": "kayoko",
+      "series": "blue archive"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "クール"
+      ],
+      "roles": [],
+      "distance": "中立",
+      "looks": [],
+      "hairColor": [
+        "黒"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "affiliationName": "トラブルシューター68",
+      "stature": "標準",
+      "occupation": []
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "bluearchive-mutsuki",
+    "name": "浅黄ムツキ",
+    "aliases": [
+      "Asagi Mutsuki"
+    ],
+    "series": "ブルーアーカイブ",
+    "dlsiteQuery": "ブルーアーカイブ ムツキ",
+    "hitomiQuery": {
+      "character": "mutsuki",
+      "series": "blue archive"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "クール",
+        "むっつり"
+      ],
+      "roles": [],
+      "distance": "中立",
+      "looks": [],
+      "hairColor": [
+        "黒"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "affiliationName": "トラブルシューター68",
+      "stature": "標準",
+      "occupation": []
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "bluearchive-kokona",
+    "name": "春原ココナ",
+    "aliases": [
+      "Sunohara Kokona"
+    ],
+    "series": "ブルーアーカイブ",
+    "dlsiteQuery": "ブルーアーカイブ ココナ",
+    "hitomiQuery": {
+      "character": "kokona",
+      "series": "blue archive"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "生意気",
+        "元気"
+      ],
+      "roles": [
+        "妹"
+      ],
+      "distance": "積極的",
+      "looks": [],
+      "hairColor": [
+        "茶"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "affiliationName": "梅花園",
+      "stature": "標準",
+      "occupation": []
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "bluearchive-nonomi",
+    "name": "十六夜ノノミ",
+    "aliases": [
+      "Izayoi Nonomi"
+    ],
+    "series": "ブルーアーカイブ",
+    "dlsiteQuery": "ブルーアーカイブ ノノミ",
+    "hitomiQuery": {
+      "character": "nonomi",
+      "series": "blue archive"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "元気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [],
+      "hairColor": [
+        "茶"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "affiliationName": "特別強制清掃部",
+      "stature": "標準",
+      "occupation": []
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "bluearchive-shun",
+    "name": "春原シュン",
+    "aliases": [
+      "Sunohara Shun"
+    ],
+    "series": "ブルーアーカイブ",
+    "dlsiteQuery": "ブルーアーカイブ シュン",
+    "hitomiQuery": {
+      "character": "shun",
+      "series": "blue archive"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "クール",
+        "姉御"
+      ],
+      "roles": [
+        "先輩",
+        "姉"
+      ],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "茶"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "affiliationName": "梅花園",
+      "stature": "標準",
+      "occupation": [
+        "教師・講師"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "bluearchive-momoi",
+    "name": "才羽モモイ",
+    "aliases": [
+      "Saiba Momoi"
+    ],
+    "series": "ブルーアーカイブ",
+    "dlsiteQuery": "ブルーアーカイブ モモイ",
+    "hitomiQuery": {
+      "character": "momoi",
+      "series": "blue archive"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "元気"
+      ],
+      "roles": [
+        "姉"
+      ],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "桃"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "affiliationName": "ゲーム開発部",
+      "stature": "標準",
+      "occupation": []
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "bluearchive-ui",
+    "name": "古関ウイ",
+    "aliases": [
+      "Kozeki Ui"
+    ],
+    "series": "ブルーアーカイブ",
+    "dlsiteQuery": "ブルーアーカイブ ウイ",
+    "hitomiQuery": {
+      "character": "ui",
+      "series": "blue archive"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "クール",
+        "内気"
+      ],
+      "roles": [],
+      "distance": "受け身",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "黒"
+      ],
+      "skinTone": "色白",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "affiliationName": "図書委員会",
+      "stature": "標準",
+      "occupation": []
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "bluearchive-niyaniya",
+    "name": "ニヤニヤ教授",
+    "aliases": [
+      "Professor Niyaniya",
+      "Professor Smug"
+    ],
+    "series": "ブルーアーカイブ",
+    "dlsiteQuery": "ニヤニヤ教授",
+    "hitomiQuery": {
+      "character": "niyaniya professor",
+      "series": "blue archive"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": [
+        "クール",
+        "生意気"
+      ],
+      "roles": [],
+      "distance": "中立",
+      "looks": [],
+      "hairColor": [
+        "紫"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": null,
+      "stature": "標準",
+      "occupation": [
+        "教師・講師"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "bluearchive-natsu",
+    "name": "柚鳥ナツ",
+    "aliases": [
+      "Yutori Natsu"
+    ],
+    "series": "ブルーアーカイブ",
+    "dlsiteQuery": "ブルーアーカイブ ナツ",
+    "hitomiQuery": {
+      "character": "natsu",
+      "series": "blue archive"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "生意気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [],
+      "hairColor": [
+        "赤"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "affiliationName": "放課後お菓子倶楽部",
+      "stature": "標準",
+      "occupation": []
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "bluearchive-saki",
+    "name": "空井サキ",
+    "aliases": [
+      "Sorai Saki"
+    ],
+    "series": "ブルーアーカイブ",
+    "dlsiteQuery": "ブルーアーカイブ サキ",
+    "hitomiQuery": {
+      "character": "saki",
+      "series": "blue archive"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "クール"
+      ],
+      "roles": [],
+      "distance": "中立",
+      "looks": [],
+      "hairColor": [
+        "紫"
+      ],
+      "skinTone": "色白",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "affiliationName": "RABBIT小隊",
+      "stature": "標準",
+      "occupation": [
+        "兵士・軍人"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "bluearchive-wakamo",
+    "name": "狐坂ワカモ",
+    "aliases": [
+      "Kitsunezaka Wakamo"
+    ],
+    "series": "ブルーアーカイブ",
+    "dlsiteQuery": "ブルーアーカイブ ワカモ",
+    "hitomiQuery": {
+      "character": "wakamo",
+      "series": "blue archive"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "生意気",
+        "むっつり"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "ケモミミ"
+      ],
+      "hairColor": [
+        "橙"
+      ],
+      "skinTone": "褐色",
+      "outfit": [],
+      "species": "獣人",
+      "mood": [
+        "背徳寄り"
+      ],
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "セブンプリズナーズ",
+      "stature": "標準",
+      "occupation": []
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "bluearchive-hifumi",
+    "name": "阿慈谷ヒフミ",
+    "aliases": [
+      "Ajitani Hifumi"
+    ],
+    "series": "ブルーアーカイブ",
+    "dlsiteQuery": "ブルーアーカイブ ヒフミ",
+    "hitomiQuery": {
+      "character": "hifumi",
+      "series": "blue archive"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "内気"
+      ],
+      "roles": [],
+      "distance": "受け身",
+      "looks": [
+        "長髪",
+        "ツインテール"
+      ],
+      "hairColor": [
+        "金"
+      ],
+      "skinTone": "色白",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "affiliationName": "追試部",
+      "stature": "標準",
+      "occupation": []
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "bluearchive-nagisa",
+    "name": "桐藤ナギサ",
+    "aliases": [
+      "Kirifuji Nagisa"
+    ],
+    "series": "ブルーアーカイブ",
+    "dlsiteQuery": "ブルーアーカイブ ナギサ",
+    "hitomiQuery": {
+      "character": "nagisa",
+      "series": "blue archive"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "おっとり"
+      ],
+      "roles": [],
+      "distance": "やや受け身",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "茶"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "人間",
+      "mood": [
+        "甘め"
+      ],
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "affiliationName": "ティーパーティー",
+      "stature": "標準",
+      "occupation": []
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "bluearchive-reisa",
+    "name": "宇沢レイサ",
+    "aliases": [
+      "Uzawa Reisa"
+    ],
+    "series": "ブルーアーカイブ",
+    "dlsiteQuery": "ブルーアーカイブ レイサ",
+    "hitomiQuery": {
+      "character": "reisa",
+      "series": "blue archive"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "元気",
+        "生意気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "長髪",
+        "ツインテール"
+      ],
+      "hairColor": [
+        "桃",
+        "紫"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "ヴィジランテクルー",
+      "stature": "標準",
+      "occupation": []
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "bluearchive-serika",
+    "name": "黒見セリカ",
+    "aliases": [
+      "Kuromi Serika"
+    ],
+    "series": "ブルーアーカイブ",
+    "dlsiteQuery": "ブルーアーカイブ セリカ",
+    "hitomiQuery": {
+      "character": "serika",
+      "series": "blue archive"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "クール"
+      ],
+      "roles": [],
+      "distance": "中立",
+      "looks": [],
+      "hairColor": [
+        "黒"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "affiliationName": "特別強制清掃部",
+      "stature": "標準",
+      "occupation": []
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "fate-melusine",
+    "name": "メリュジーヌ",
+    "aliases": [
+      "妖精騎士ランスロット",
+      "Melusine"
+    ],
+    "series": "Fate/Grand Order",
+    "dlsiteQuery": "メリュジーヌ",
+    "hitomiQuery": {
+      "character": "melusine fate",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": [
+        "クール"
+      ],
+      "roles": [],
+      "distance": "中立",
+      "looks": [],
+      "hairColor": [
+        "白"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "エルフ",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": null,
+      "stature": "小柄",
+      "occupation": [
+        "兵士・軍人"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "overwatch-mercy",
+    "name": "マーシー",
+    "aliases": [
+      "Mercy"
+    ],
+    "series": "オーバーウォッチ",
+    "dlsiteQuery": "マーシー OW",
+    "hitomiQuery": {
+      "character": "mercy overwatch",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "おっとり"
+      ],
+      "roles": [],
+      "distance": "やや受け身",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "金"
+      ],
+      "skinTone": "色白",
+      "outfit": [
+        "ナース"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "affiliationName": "オーバーウォッチ",
+      "stature": "標準",
+      "occupation": [
+        "医療従事者",
+        "兵士・軍人"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "pokemon-dawn",
+    "name": "ヒカリ",
+    "aliases": [
+      "Dawn"
+    ],
+    "series": "ポケモン",
+    "dlsiteQuery": "ポケモン ヒカリ",
+    "hitomiQuery": {
+      "character": "dawn",
+      "series": "pokemon"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "元気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [],
+      "hairColor": [
+        "青"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "冒険者",
+      "affiliationName": null,
+      "stature": "小柄",
+      "occupation": [
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "pokemon-may",
+    "name": "ハルカ",
+    "aliases": [
+      "May"
+    ],
+    "series": "ポケモン",
+    "dlsiteQuery": "ポケモン ハルカ",
+    "hitomiQuery": {
+      "character": "may",
+      "series": "pokemon"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "元気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [],
+      "hairColor": [
+        "茶"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "冒険者",
+      "affiliationName": null,
+      "stature": "小柄",
+      "occupation": [
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "pokemon-hilda",
+    "name": "トウコ",
+    "aliases": [
+      "Hilda"
+    ],
+    "series": "ポケモン",
+    "dlsiteQuery": "ポケモン トウコ",
+    "hitomiQuery": {
+      "character": "hilda",
+      "series": "pokemon"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "元気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [],
+      "hairColor": [
+        "茶"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "冒険者",
+      "affiliationName": null,
+      "stature": "標準",
+      "occupation": []
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "pokemon-rosa",
+    "name": "メイ",
+    "aliases": [
+      "Rosa"
+    ],
+    "series": "ポケモン",
+    "dlsiteQuery": "ポケモン メイ トレーナー",
+    "hitomiQuery": {
+      "character": "rosa",
+      "series": "pokemon"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "元気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [],
+      "hairColor": [
+        "桃"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "冒険者",
+      "affiliationName": null,
+      "stature": "小柄",
+      "occupation": []
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "pokemon-gloria",
+    "name": "ユウリ",
+    "aliases": [
+      "Gloria"
+    ],
+    "series": "ポケモン",
+    "dlsiteQuery": "ポケモン ユウリ 剣盾",
+    "hitomiQuery": {
+      "character": "gloria",
+      "series": "pokemon"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "元気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [],
+      "hairColor": [
+        "橙"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "冒険者",
+      "affiliationName": null,
+      "stature": "標準",
+      "occupation": [
+        "アスリート"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "pokemon-serena",
+    "name": "セレナ",
+    "aliases": [
+      "Serena"
+    ],
+    "series": "ポケモン",
+    "dlsiteQuery": "ポケモン セレナ",
+    "hitomiQuery": {
+      "character": "serena",
+      "series": "pokemon"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "元気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "金"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "冒険者",
+      "affiliationName": null,
+      "stature": "標準",
+      "occupation": [
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "pokemon-akari",
+    "name": "アカリ",
+    "aliases": [
+      "Akari"
+    ],
+    "series": "ポケモン",
+    "dlsiteQuery": "ポケモン アカリ アルセウス",
+    "hitomiQuery": {
+      "character": "akari",
+      "series": "pokemon"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "クール"
+      ],
+      "roles": [],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "橙"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "冒険者",
+      "affiliationName": null,
+      "stature": "標準",
+      "occupation": []
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "pokemon-juliana",
+    "name": "アオイ",
+    "aliases": [
+      "Juliana"
+    ],
+    "series": "ポケモン",
+    "dlsiteQuery": "ポケモン アオイ スカーレット バイオレット",
+    "hitomiQuery": {
+      "character": "juliana",
+      "series": "pokemon"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "元気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "青"
+      ],
+      "skinTone": "色白",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "affiliationName": null,
+      "stature": "標準",
+      "occupation": []
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   }
 ]
