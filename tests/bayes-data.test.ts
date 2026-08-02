@@ -313,7 +313,7 @@ describe('BA7. wikidata-map.json / wikidata-facts.json の整合性（PLAN「P5a
   const wikidataMap = JSON.parse(readFileSync(new URL('../data/bayes/wikidata-map.json', import.meta.url), 'utf8'));
   const wikidataFacts = JSON.parse(readFileSync(new URL('../data/bayes/wikidata-facts.json', import.meta.url), 'utf8'));
   const GENDER_VALUES = new Set(['女性', 'おとこの娘', 'ふたなり', '男性']);
-  const HAIR_COLOR_VALUES = new Set(['黒', '白', '金', '茶', '赤', '青', '緑', '桃', '紫', '銀']);
+  const HAIR_COLOR_VALUES = new Set(['黒', '白', '金', '茶', '赤', '青', '緑', '桃', '紫', '銀', '橙']);
   const EYE_COLOR_TOKENS = new Set(['aqua', 'black', 'blue', 'brown', 'green', 'grey', 'orange', 'purple', 'red', 'yellow']);
   const STATURE_VALUES = new Set(['小柄', '標準', '長身']);
 

@@ -2592,6 +2592,117 @@
       "candidateQid": "Q50384847",
       "candidateLabel": "Lillie",
       "checkedAt": "2026-08-02T03:14:07.284Z"
+    },
+    "mha-ochaco": {
+      "qid": "Q112053248",
+      "label": "Ochaco Uraraka",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T03:33:02.067Z"
+    },
+    "mha-toga": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-08-02T03:33:04.482Z"
+    },
+    "sf-chunli": {
+      "qid": "Q1945499",
+      "label": "Chun-Li",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T03:33:08.062Z"
+    },
+    "sf-cammy": {
+      "qid": "Q2074563",
+      "label": "Cammy White",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T03:33:12.871Z"
+    },
+    "toaru-shokuhou": {
+      "qid": "Q135965477",
+      "label": "Misaki Shokuhō",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T03:33:17.691Z"
+    },
+    "toaru-misaka": {
+      "qid": "Q682243",
+      "label": "Mikoto Misaka",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T03:33:22.511Z"
+    },
+    "toaru-kuroko": {
+      "qid": "Q118874695",
+      "label": "Kuroko Shirai",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T03:33:27.306Z"
+    },
+    "pricone-pecorine": {
+      "qid": "Q87718893",
+      "label": "Pecorine",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T03:33:32.081Z"
+    },
+    "pricone-kokkoro": {
+      "qid": "Q87718895",
+      "label": "Kokkoro",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T03:33:36.887Z"
+    },
+    "pricone-karyl": {
+      "qid": "Q87718894",
+      "label": "Kyaru",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T03:33:44.070Z"
+    },
+    "gotoubun-nino": {
+      "qid": "Q61937796",
+      "label": "Nino Nakano",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T03:33:48.875Z"
+    },
+    "gotoubun-miku": {
+      "qid": "Q61998478",
+      "label": "Miku Nakano",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T03:33:53.695Z"
+    },
+    "gotoubun-yotsuba": {
+      "qid": "Q104664041",
+      "label": "Yotsuba Nakano",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T03:33:58.505Z"
+    },
+    "gup-miho": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-08-02T03:34:00.883Z"
+    },
+    "gup-darjeeling": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q169997, Darjeeling)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q169997",
+      "candidateLabel": "Darjeeling",
+      "checkedAt": "2026-08-02T03:34:08.094Z"
+    },
+    "gup-maho": {
+      "qid": "Q133538618",
+      "label": "Maho Nishizumi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T03:34:11.699Z"
     }
   }
 }

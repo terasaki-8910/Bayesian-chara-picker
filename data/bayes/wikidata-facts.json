@@ -1492,6 +1492,96 @@
     "pokemon-lana": {},
     "pokemon-iono": {},
     "pokemon-skyla": {},
-    "pokemon-lillie": {}
+    "pokemon-lillie": {},
+    "mha-ochaco": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "brown",
+      "stature": "標準",
+      "species": [
+        "人間"
+      ]
+    },
+    "mha-toga": {},
+    "sf-chunli": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "sf-cammy": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "toaru-shokuhou": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "species": [
+        "人間"
+      ]
+    },
+    "toaru-misaka": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "brown",
+      "stature": "標準",
+      "species": [
+        "人間"
+      ]
+    },
+    "toaru-kuroko": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "brown",
+      "species": [
+        "人間"
+      ]
+    },
+    "pricone-pecorine": {
+      "genderExpression": "女性",
+      "hairColor": "橙",
+      "eyeColor": "blue",
+      "species": [
+        "人間"
+      ]
+    },
+    "pricone-kokkoro": {
+      "genderExpression": "女性",
+      "hairColor": "白"
+    },
+    "pricone-karyl": {
+      "genderExpression": "女性"
+    },
+    "gotoubun-nino": {
+      "genderExpression": "女性",
+      "hairColor": "桃",
+      "species": [
+        "人間"
+      ]
+    },
+    "gotoubun-miku": {
+      "genderExpression": "女性",
+      "hairColor": "桃",
+      "stature": "標準",
+      "species": [
+        "人間"
+      ]
+    },
+    "gotoubun-yotsuba": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "gup-miho": {},
+    "gup-darjeeling": {},
+    "gup-maho": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    }
   }
 }

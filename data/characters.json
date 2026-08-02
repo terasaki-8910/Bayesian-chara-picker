@@ -17513,5 +17513,794 @@
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
+  },
+  {
+    "id": "mha-ochaco",
+    "name": "麗日お茶子",
+    "aliases": [
+      "Uraraka Ochaco"
+    ],
+    "series": "僕のヒーローアカデミア",
+    "dlsiteQuery": "ヒロアカ 麗日お茶子",
+    "hitomiQuery": {
+      "character": "ochaco uraraka",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "元気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [],
+      "hairColor": [
+        "茶"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "affiliationName": "雄英高校",
+      "stature": "小柄",
+      "occupation": []
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "mha-toga",
+    "name": "トガヒミコ",
+    "aliases": [
+      "Toga Himiko"
+    ],
+    "series": "僕のヒーローアカデミア",
+    "dlsiteQuery": "ヒロアカ トガヒミコ",
+    "hitomiQuery": {
+      "character": "himiko toga",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": [
+        "むっつり",
+        "生意気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "ツインテール"
+      ],
+      "hairColor": [
+        "金"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [
+        "背徳寄り"
+      ],
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "affiliationName": "敵連合",
+      "stature": "小柄",
+      "occupation": [
+        "スパイ・暗殺者"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "sf-chunli",
+    "name": "春麗",
+    "aliases": [
+      "Chun-Li"
+    ],
+    "series": "ストリートファイター",
+    "dlsiteQuery": "ストリートファイター 春麗",
+    "hitomiQuery": {
+      "character": "chun-li",
+      "series": "street fighter"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": [
+        "クール",
+        "元気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "ツインテール"
+      ],
+      "hairColor": [
+        "黒"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "OL"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "affiliationName": "インターポール",
+      "stature": "標準",
+      "occupation": [
+        "警察・公安",
+        "格闘家・武道家"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "sf-cammy",
+    "name": "キャミィ",
+    "aliases": [
+      "Cammy White"
+    ],
+    "series": "ストリートファイター",
+    "dlsiteQuery": "ストリートファイター キャミィ",
+    "hitomiQuery": {
+      "character": "cammy white",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "クール"
+      ],
+      "roles": [],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "金"
+      ],
+      "skinTone": "色白",
+      "outfit": [
+        "軍服"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "affiliationName": "デルタレッド",
+      "stature": "標準",
+      "occupation": [
+        "兵士・軍人",
+        "格闘家・武道家"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "toaru-shokuhou",
+    "name": "食蜂操祈",
+    "aliases": [
+      "Shokuhou Misaki"
+    ],
+    "series": "とある魔術の禁書目録",
+    "dlsiteQuery": "とある魔術の禁書目録 食蜂操祈",
+    "hitomiQuery": {
+      "character": "misaki shokuhou",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": [
+        "クール",
+        "姉御"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "金"
+      ],
+      "skinTone": "色白",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [
+        "支配的"
+      ],
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "affiliationName": "常盤台中学",
+      "stature": "標準",
+      "occupation": [
+        "魔法使い・魔術師"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "toaru-misaka",
+    "name": "御坂美琴",
+    "aliases": [
+      "Misaka Mikoto"
+    ],
+    "series": "とある魔術の禁書目録",
+    "dlsiteQuery": "とある魔術の禁書目録 御坂美琴",
+    "hitomiQuery": {
+      "character": "mikoto misaka",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "生意気",
+        "元気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "ツインテール"
+      ],
+      "hairColor": [
+        "茶"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "affiliationName": "常盤台中学",
+      "stature": "標準",
+      "occupation": [
+        "魔法使い・魔術師"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "toaru-kuroko",
+    "name": "白井黒子",
+    "aliases": [
+      "Shirai Kuroko"
+    ],
+    "series": "とある魔術の禁書目録",
+    "dlsiteQuery": "とある魔術の禁書目録 白井黒子",
+    "hitomiQuery": {
+      "character": "kuroko shirai",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": [
+        "元気",
+        "むっつり"
+      ],
+      "roles": [
+        "後輩",
+        "恋人・伴侶"
+      ],
+      "distance": "積極的",
+      "looks": [
+        "ツインテール"
+      ],
+      "hairColor": [
+        "黒"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [
+        "背徳寄り"
+      ],
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "affiliationName": "常盤台中学",
+      "stature": "小柄",
+      "occupation": [
+        "魔法使い・魔術師",
+        "警察・公安"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "pricone-pecorine",
+    "name": "ペコリーヌ",
+    "aliases": [
+      "Pecorine"
+    ],
+    "series": "プリンセスコネクト!",
+    "dlsiteQuery": "プリンセスコネクト ペコリーヌ",
+    "hitomiQuery": {
+      "character": "pecorine",
+      "series": "princess connect"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": [
+        "元気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "金"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": null,
+      "stature": "標準",
+      "occupation": [
+        "王族・貴族"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "pricone-kokkoro",
+    "name": "コッコロ",
+    "aliases": [
+      "Kokkoro"
+    ],
+    "series": "プリンセスコネクト!",
+    "dlsiteQuery": "プリンセスコネクト コッコロ",
+    "hitomiQuery": {
+      "character": "kokkoro",
+      "series": "princess connect"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": [
+        "おっとり"
+      ],
+      "roles": [
+        "母性"
+      ],
+      "distance": "積極的",
+      "looks": [
+        "ケモミミ",
+        "長髪"
+      ],
+      "hairColor": [
+        "緑"
+      ],
+      "skinTone": "色白",
+      "outfit": [
+        "メイド"
+      ],
+      "species": "獣人",
+      "mood": [
+        "甘め"
+      ],
+      "combat": "戦う",
+      "affiliationKind": "冒険者",
+      "affiliationName": null,
+      "stature": "小柄",
+      "occupation": [
+        "メイド・従者"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "pricone-karyl",
+    "name": "キャル",
+    "aliases": [
+      "Karyl"
+    ],
+    "series": "プリンセスコネクト!",
+    "dlsiteQuery": "プリンセスコネクト キャル",
+    "hitomiQuery": {
+      "character": "karyl",
+      "series": "princess connect"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": [
+        "生意気",
+        "むっつり"
+      ],
+      "roles": [],
+      "distance": "やや積極的",
+      "looks": [
+        "ケモミミ",
+        "尻尾"
+      ],
+      "hairColor": [
+        "黒"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "獣人",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "冒険者",
+      "affiliationName": null,
+      "stature": "小柄",
+      "occupation": [
+        "スパイ・暗殺者"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "gotoubun-nino",
+    "name": "中野二乃",
+    "aliases": [
+      "Nakano Nino"
+    ],
+    "series": "五等分の花嫁",
+    "dlsiteQuery": "五等分の花嫁 中野二乃",
+    "hitomiQuery": {
+      "character": "nino nakano",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "生意気"
+      ],
+      "roles": [
+        "恋人・伴侶"
+      ],
+      "distance": "やや積極的",
+      "looks": [
+        "ツインテール"
+      ],
+      "hairColor": [
+        "紫"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [
+        "純愛寄り"
+      ],
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": null,
+      "stature": "標準",
+      "occupation": []
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "gotoubun-miku",
+    "name": "中野三玖",
+    "aliases": [
+      "Nakano Miku"
+    ],
+    "series": "五等分の花嫁",
+    "dlsiteQuery": "五等分の花嫁 中野三玖",
+    "hitomiQuery": {
+      "character": "miku nakano",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "内気"
+      ],
+      "roles": [
+        "恋人・伴侶"
+      ],
+      "distance": "受け身",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "紫"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [
+        "純愛寄り"
+      ],
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": null,
+      "stature": "標準",
+      "occupation": []
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "gotoubun-yotsuba",
+    "name": "中野四葉",
+    "aliases": [
+      "Nakano Yotsuba"
+    ],
+    "series": "五等分の花嫁",
+    "dlsiteQuery": "五等分の花嫁 中野四葉",
+    "hitomiQuery": {
+      "character": "yotsuba nakano",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "元気"
+      ],
+      "roles": [
+        "恋人・伴侶"
+      ],
+      "distance": "積極的",
+      "looks": [
+        "ツインテール"
+      ],
+      "hairColor": [
+        "紫"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [
+        "純愛寄り"
+      ],
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": null,
+      "stature": "標準",
+      "occupation": [
+        "アスリート"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "gup-miho",
+    "name": "西住みほ",
+    "aliases": [
+      "Nishizumi Miho"
+    ],
+    "series": "ガールズ&パンツァー",
+    "dlsiteQuery": "ガールズ&パンツァー 西住みほ",
+    "hitomiQuery": {
+      "character": "miho nishizumi",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "おっとり",
+        "内気"
+      ],
+      "roles": [],
+      "distance": "やや受け身",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "茶"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "制服",
+        "軍服"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "affiliationName": "大洗女子学園",
+      "stature": "標準",
+      "occupation": [
+        "兵士・軍人"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "gup-darjeeling",
+    "name": "ダージリン",
+    "aliases": [
+      "Darjeeling"
+    ],
+    "series": "ガールズ&パンツァー",
+    "dlsiteQuery": "ガールズ&パンツァー ダージリン",
+    "hitomiQuery": {
+      "character": "darjeeling",
+      "series": "girls und panzer"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": [
+        "おっとり",
+        "クール"
+      ],
+      "roles": [
+        "先輩"
+      ],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "金"
+      ],
+      "skinTone": "色白",
+      "outfit": [
+        "制服",
+        "軍服"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "affiliationName": "聖グロリアーナ女学院",
+      "stature": "標準",
+      "occupation": [
+        "兵士・軍人",
+        "王族・貴族"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "gup-maho",
+    "name": "西住まほ",
+    "aliases": [
+      "Nishizumi Maho"
+    ],
+    "series": "ガールズ&パンツァー",
+    "dlsiteQuery": "ガールズ&パンツァー 西住まほ",
+    "hitomiQuery": {
+      "character": "maho nishizumi",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "クール"
+      ],
+      "roles": [
+        "姉",
+        "先輩"
+      ],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "黒"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "制服",
+        "軍服"
+      ],
+      "species": "人間",
+      "mood": [
+        "支配的"
+      ],
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "affiliationName": "黒森峰女学園",
+      "stature": "標準",
+      "occupation": [
+        "兵士・軍人"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   }
 ]
