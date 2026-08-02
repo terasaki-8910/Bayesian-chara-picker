@@ -70,15 +70,15 @@ function oracleFor(target: Character): Strategy {
 function runToGuess(
   dataset: Dataset,
   strategy: Strategy,
-  opts?: { exclude?: ReadonlySet<string> },
-): { guess: Scored; answers: AnswerMap; askedKeys: Set<string> } {
+  opts?: { exclude?: ReadonlySet<string>; rng?: () => number },
+): { guess: Scored; answers: AnswerMap; askedKeys: Set<string>; scored: Scored[] } {
   const answers: AnswerMap = {};
   const askedKeys = new Set<string>();
   for (let guard = 0; guard <= HARD_CAP + 2; guard += 1) {
     const probe = nextProbe(dataset, answers, askedKeys, opts);
     const scored = scoreCharacters(answers, dataset, opts);
     if (probe === null || shouldGuess(scored, askedKeys.size, probe !== null)) {
-      return { guess: topGuess(scored), answers, askedKeys };
+      return { guess: topGuess(scored, opts?.rng), answers, askedKeys, scored };
     }
     answers[probe.key] = strategy(probe);
     askedKeys.add(probe.key);
@@ -535,31 +535,59 @@ describe('C. 推薦エンジン', () => {
     }
   });
 
-  it('C13: 実データの生存者全員が、オラクル回答で自分自身に収束する（MIN_QUESTIONS〜HARD_CAP問の範囲内）', () => {
+  it('C13: 実データの生存者全員が、オラクル回答で自分自身（または完全同点の候補）に収束する（MIN_QUESTIONS〜HARD_CAP問の範囲内）', () => {
     // データ拡充で母集団が増えるほど、似た候補が増えて必要質問数の分布は右に伸びる
     // （33体時代は全員ちょうど6問だったが、それは「母集団が小さいから常に floor で
     // 分離しきれる」という当時のデータ規模に固有の性質であり、アルゴリズムの
     // 不変条件ではない）。不変条件として保証されるのは「6問未満では絶対に確定しない・
-    // 10問を超えて粘らない・最終的に必ず自分自身を言い当てる」の3点だけなので、
-    // それだけを固定する。
+    // 10問を超えて粘らない」の2点と、「自分自身より真にスコアが高い他キャラに
+    // 負けることは無い（完全同点で選ばれなかった場合を除く）」。
     // survivors()を直接使う（以前はここで一部だけ再実装しており、reviewed等の
     // ハードフィルタ追加に追随できていなかった。2026-08-01発覚）。
+    //
+    // 2026-08-02発見（500体拡張Stage 1 査読キャンペーン完走・reachable 185→488）:
+    // topGuess() の同点タイブレークは既定で Math.random() を使う（C10で乱択が
+    // 意図的な仕様と確認済み）。母集団が488まで拡大すると、18軸の離散値だけでは
+    // HARD_CAP=10問の予算内で分離しきれない「真に完全同点」のキャラペアが実際に
+    // 発生するようになった（例: fate-illya/pokemon-lillie系）。runToGuess に
+    // 固定seedのrngを渡さず実行していたため、CIごとに毎回違う組み合わせで
+    // ランダムに失敗する不安定なゲートになっていた。
+    // 修正方針: (1) rngを固定seedにしてテスト自体を決定論的にする、
+    // (2) 「自分自身と真に同点(score & supplyRank一致)の他キャラに乱択で
+    // 負けた」場合は許容し、「真にスコアが自分より高い他キャラに負けた」
+    // 場合だけを失敗として扱う——後者だけが実際のアルゴリズム不具合を示す。
     const reachable = survivors(dataset);
     const askedCounts: number[] = [];
     const failures: string[] = [];
+    const rng = mulberry32(20260802);
 
     for (const target of reachable) {
-      const { guess, askedKeys } = runToGuess(dataset, oracleFor(target));
+      const { guess, askedKeys, scored } = runToGuess(dataset, oracleFor(target), { rng });
       askedCounts.push(askedKeys.size);
       if (guess.character.id !== target.id) {
-        failures.push(`${target.id}: guessed=${guess.character.id} after ${askedKeys.size}問`);
+        const targetScored = scored.find((s) => s.character.id === target.id);
+        const isTrueTie =
+          targetScored !== undefined &&
+          targetScored.score === guess.score &&
+          targetScored.supplyRank === guess.supplyRank;
+        if (!isTrueTie) {
+          failures.push(
+            `${target.id}: guessed=${guess.character.id} after ${askedKeys.size}問 ` +
+              `(target score=${targetScored?.score} vs guess score=${guess.score})`,
+          );
+        }
       }
     }
 
     expect(failures).toEqual([]);
     expect(Math.min(...askedCounts)).toBeGreaterThanOrEqual(MIN_QUESTIONS);
     expect(Math.max(...askedCounts)).toBeLessThanOrEqual(HARD_CAP);
-  });
+  },
+    // reachableが488体規模になり、全員ぶんのオラクル収束シミュレーションが
+    // vitestのデフォルト5000msを超えるようになった（実測13秒前後）。
+    // tests/engine-bias.test.ts/tests/bayes-bias.test.ts と同じ理由で緩める。
+    60000,
+  );
 
   it('C13: 全問「わからない」の場合は HARD_CAP で強制的に推測へ進む', () => {
     const { askedKeys } = runToGuess(dataset, always('unknown'));

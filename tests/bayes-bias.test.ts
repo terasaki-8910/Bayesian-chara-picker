@@ -100,8 +100,13 @@ function priorWeight(id: string, supply: SupplyFile): number {
  * （reachable 181→185）。chiSquare実測: seed=20260721→295.2,
  * 20260724→318.9, 13579246→296.6, 987654321→315.6, 424242→365.6。
  * 上限365.6に約37%の余裕で500へ。
+ *
+ * 2026-08-02追記（500体拡張Stage 1 査読キャンペーン完走）: reviewed 188→488体
+ * （reachable 185→488。18バッチのStage 1追加分301体を全件査読しreviewed:trueに
+ * 変更）。chiSquare実測: seed=20260721→677.8, 20260724→682.2, 13579246→734.9,
+ * 987654321→680.4, 424242→674.0。上限734.9に約36%の余裕で1000へ。
  */
-const CHI_SQUARE_MAX = 500;
+const CHI_SQUARE_MAX = 1000;
 
 describe('BD. ベイズ推薦エンジンの偏りゲート', () => {
   it(
@@ -128,7 +133,8 @@ describe('BD. ベイズ推薦エンジンの偏りゲート', () => {
 
       expect(chiSquare, `カイ二乗統計量: ${chiSquare.toFixed(1)}（期待値=prior比）`).toBeLessThanOrEqual(CHI_SQUARE_MAX);
     },
-    // tests/engine-bias.test.ts と同じ理由（他ファイルとの並列実行時のCPU競合）で緩める。
-    60000,
+    // tests/engine-bias.test.ts と同じ理由（他ファイルとの並列実行時のCPU競合）に加え、
+    // reachable母集団拡大でrunOneSessionのループ自体が重くなったため180sへ緩める。
+    180000,
   );
 });

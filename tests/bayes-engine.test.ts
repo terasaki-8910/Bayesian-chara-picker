@@ -107,14 +107,19 @@ describe('BC. ベイズ推薦エンジン', () => {
     expect({ id: first.guess.character.id, score: first.guess.score }).toMatchSnapshot();
   });
 
-  it('BC2: 推測で返るキャラの供給量ランクが「なし」でない', () => {
-    const rand = mulberry32(20260724);
-    for (let i = 0; i < 50; i += 1) {
-      const target = dataset.characters[Math.floor(rand() * dataset.characters.length)];
-      const { guess } = runToGuess(dataset, oracleFor(target));
-      expect(guess.supplyRank, guess.character.id).not.toBe('なし');
-    }
-  });
+  it(
+    'BC2: 推測で返るキャラの供給量ランクが「なし」でない',
+    () => {
+      const rand = mulberry32(20260724);
+      for (let i = 0; i < 50; i += 1) {
+        const target = dataset.characters[Math.floor(rand() * dataset.characters.length)];
+        const { guess } = runToGuess(dataset, oracleFor(target));
+        expect(guess.supplyRank, guess.character.id).not.toBe('なし');
+      }
+    },
+    // BC3と同じ理由（母集団拡大でrunToGuessループが5000msを超える）で緩める。
+    60000,
+  );
 
   it(
     'BC3: 無作為な1000通りの回答パスで bayesScoreCharacters が1件も空にならない',
@@ -146,35 +151,45 @@ describe('BC. ベイズ推薦エンジン', () => {
     expect(askedKeys.size).toBe(HARD_CAP_BAYES);
   });
 
-  it('BC5: 推測に付く根拠は実際に方向が強く一致する質問だけを挙げる（根拠の捏造を弾く）', () => {
-    const rand = mulberry32(4242);
-    for (let i = 0; i < 100; i += 1) {
-      const target = dataset.characters[Math.floor(rand() * dataset.characters.length)];
-      const { guess } = runToGuess(dataset, oracleFor(target));
+  it(
+    'BC5: 推測に付く根拠は実際に方向が強く一致する質問だけを挙げる（根拠の捏造を弾く）',
+    () => {
+      const rand = mulberry32(4242);
+      for (let i = 0; i < 100; i += 1) {
+        const target = dataset.characters[Math.floor(rand() * dataset.characters.length)];
+        const { guess } = runToGuess(dataset, oracleFor(target));
 
-      const traitReasons = guess.reasons.filter((r) => r.kind === 'trait');
-      for (const reason of traitReasons) {
-        const p = likelihoodOf(guess.character.id, reasonKeyFor(reason));
-        const stronglyYes = reason.confidence === 'yes' || reason.confidence === 'probably_yes';
-        if (stronglyYes) {
-          expect(p, `${guess.character.id} ${reason.axis}=${reason.value}`).toBeGreaterThanOrEqual(0.8);
-        } else {
-          expect(p, `${guess.character.id} ${reason.axis}=${reason.value}`).toBeLessThanOrEqual(0.2);
+        const traitReasons = guess.reasons.filter((r) => r.kind === 'trait');
+        for (const reason of traitReasons) {
+          const p = likelihoodOf(guess.character.id, reasonKeyFor(reason));
+          const stronglyYes = reason.confidence === 'yes' || reason.confidence === 'probably_yes';
+          if (stronglyYes) {
+            expect(p, `${guess.character.id} ${reason.axis}=${reason.value}`).toBeGreaterThanOrEqual(0.8);
+          } else {
+            expect(p, `${guess.character.id} ${reason.axis}=${reason.value}`).toBeLessThanOrEqual(0.2);
+          }
         }
+        expect(guess.reasons.some((r) => r.kind === 'supply'), '供給量の根拠が無い').toBe(true);
       }
-      expect(guess.reasons.some((r) => r.kind === 'supply'), '供給量の根拠が無い').toBe(true);
-    }
-  });
+    },
+    // BC3と同じ理由（母集団拡大でrunToGuessループが5000msを超える）で緩める。
+    60000,
+  );
 
-  it('BC7: 性別表現「男性」または provisional のキャラが推測に出ない', () => {
-    const EXCLUDED_IDS = ['aot-levi', 'onepiece-zoro', 'azurlane-yamato'];
-    const rand = mulberry32(777);
-    for (let i = 0; i < 100; i += 1) {
-      const target = dataset.characters[Math.floor(rand() * dataset.characters.length)];
-      const { guess } = runToGuess(dataset, oracleFor(target));
-      expect(EXCLUDED_IDS, `${guess.character.id} が推測に出た`).not.toContain(guess.character.id);
-    }
-  });
+  it(
+    'BC7: 性別表現「男性」または provisional のキャラが推測に出ない',
+    () => {
+      const EXCLUDED_IDS = ['aot-levi', 'onepiece-zoro', 'azurlane-yamato'];
+      const rand = mulberry32(777);
+      for (let i = 0; i < 100; i += 1) {
+        const target = dataset.characters[Math.floor(rand() * dataset.characters.length)];
+        const { guess } = runToGuess(dataset, oracleFor(target));
+        expect(EXCLUDED_IDS, `${guess.character.id} が推測に出た`).not.toContain(guess.character.id);
+      }
+    },
+    // BC3と同じ理由（母集団拡大でrunToGuessループが5000msを超える）で緩める。
+    60000,
+  );
 
   it('BC8: bayesNextProbe は askedKeys に無いプローブから選ばれ、同じプローブを2回聞かない', () => {
     const answers: BayesAnswerMap = {};
