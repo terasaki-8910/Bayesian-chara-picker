@@ -9196,7 +9196,7 @@
       "distance": "やや受け身",
       "looks": [],
       "hairColor": [
-        "金"
+        "青"
       ],
       "skinTone": "色白",
       "outfit": [
@@ -9212,7 +9212,7 @@
         "メイド・従者"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -9240,9 +9240,10 @@
         "おっとり"
       ],
       "roles": [
-        "先輩"
+        "先輩",
+        "友人"
       ],
-      "distance": "中立",
+      "distance": "やや受け身",
       "looks": [],
       "hairColor": [
         "黒"
@@ -9262,7 +9263,7 @@
         "メイド・従者"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -9311,7 +9312,7 @@
       "stature": "標準",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -9338,7 +9339,8 @@
         "おっとり"
       ],
       "roles": [
-        "幼馴染"
+        "幼馴染",
+        "妹"
       ],
       "distance": "やや受け身",
       "looks": [],
@@ -9350,14 +9352,16 @@
         "制服"
       ],
       "species": "人間",
-      "mood": [],
+      "mood": [
+        "甘め"
+      ],
       "combat": "戦わない",
       "affiliationKind": "学生",
       "affiliationName": null,
       "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -9377,14 +9381,15 @@
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "年上",
-      "build": "標準",
+      "build": "むっちり",
       "bust": "大きい",
       "personality": [
         "姉御",
         "元気"
       ],
       "roles": [
-        "先輩"
+        "先輩",
+        "姉"
       ],
       "distance": "やや積極的",
       "looks": [
@@ -9398,14 +9403,18 @@
         "制服"
       ],
       "species": "人間",
-      "mood": [],
+      "mood": [
+        "甘め"
+      ],
       "combat": "戦わない",
       "affiliationKind": "学生",
       "affiliationName": null,
       "stature": "標準",
-      "occupation": []
+      "occupation": [
+        "メイド・従者"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -9448,7 +9457,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -9474,14 +9483,16 @@
       "personality": [
         "元気"
       ],
-      "roles": [],
+      "roles": [
+        "主従"
+      ],
       "distance": "積極的",
       "looks": [
         "ケモミミ",
         "尻尾"
       ],
       "hairColor": [
-        "橙"
+        "赤"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -9491,9 +9502,11 @@
       "affiliationKind": "非人間・その他",
       "affiliationName": "地霊殿",
       "stature": "標準",
-      "occupation": []
+      "occupation": [
+        "メイド・従者"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -9516,13 +9529,15 @@
       "build": "華奢",
       "bust": "小さい",
       "personality": [
-        "内気"
+        "内気",
+        "おっとり"
       ],
       "roles": [],
       "distance": "中立",
       "looks": [],
       "hairColor": [
-        "黒"
+        "黒",
+        "金"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -9534,7 +9549,7 @@
       "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -9557,7 +9572,8 @@
       "build": "華奢",
       "bust": "小さい",
       "personality": [
-        "元気"
+        "元気",
+        "おっとり"
       ],
       "roles": [
         "主従"
@@ -9568,19 +9584,21 @@
         "尻尾"
       ],
       "hairColor": [
-        "金"
+        "茶"
       ],
       "skinTone": "標準",
       "outfit": [],
       "species": "獣人",
-      "mood": [],
+      "mood": [
+        "純愛寄り"
+      ],
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
       "affiliationName": null,
       "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -9614,15 +9632,15 @@
       ],
       "skinTone": "標準",
       "outfit": [],
-      "species": "魔族",
+      "species": "不死",
       "mood": [],
-      "combat": "戦う",
+      "combat": "戦わない",
       "affiliationKind": "非人間・その他",
       "affiliationName": null,
       "stature": "標準",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -9649,7 +9667,8 @@
       ],
       "roles": [
         "教師",
-        "母性"
+        "母性",
+        "先輩"
       ],
       "distance": "中立",
       "looks": [
@@ -9665,12 +9684,13 @@
       "combat": "戦う",
       "affiliationKind": "社会人",
       "affiliationName": "寺子屋",
-      "stature": "標準",
+      "stature": "小柄",
       "occupation": [
-        "教師・講師"
+        "教師・講師",
+        "研究者・発明家"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -9706,16 +9726,19 @@
       "skinTone": "色白",
       "outfit": [],
       "species": "魔族",
-      "mood": [],
+      "mood": [
+        "支配的"
+      ],
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
       "affiliationName": null,
       "stature": "標準",
       "occupation": [
-        "王族・貴族"
+        "王族・貴族",
+        "神様・精霊"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -9738,9 +9761,12 @@
       "build": "標準",
       "bust": "大きい",
       "personality": [
-        "クール"
+        "クール",
+        "おっとり"
       ],
-      "roles": [],
+      "roles": [
+        "主従"
+      ],
       "distance": "中立",
       "looks": [
         "長髪"
@@ -9762,7 +9788,7 @@
         "王族・貴族"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -9785,7 +9811,8 @@
       "build": "標準",
       "bust": "標準",
       "personality": [
-        "元気"
+        "元気",
+        "生意気"
       ],
       "roles": [],
       "distance": "やや積極的",
@@ -9793,7 +9820,7 @@
         "ケモミミ"
       ],
       "hairColor": [
-        "紫"
+        "桃"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -9807,7 +9834,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -9848,12 +9875,12 @@
       "species": "獣人",
       "mood": [],
       "combat": "戦う",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "軍・組織",
       "affiliationName": "命蓮寺",
       "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -9879,14 +9906,16 @@
         "元気",
         "生意気"
       ],
-      "roles": [],
+      "roles": [
+        "友人"
+      ],
       "distance": "積極的",
       "looks": [
         "角",
         "長髪"
       ],
       "hairColor": [
-        "金"
+        "茶"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -9898,7 +9927,7 @@
       "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -9924,7 +9953,10 @@
         "生意気",
         "元気"
       ],
-      "roles": [],
+      "roles": [
+        "先輩",
+        "友人"
+      ],
       "distance": "積極的",
       "looks": [
         "ケモミミ"
@@ -9937,12 +9969,12 @@
       "species": "獣人",
       "mood": [],
       "combat": "戦う",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "軍・組織",
       "affiliationName": "永遠亭",
       "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -9993,7 +10025,7 @@
         "魔法使い・魔術師"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -10017,7 +10049,8 @@
       "bust": "標準",
       "personality": [
         "クール",
-        "むっつり"
+        "むっつり",
+        "生意気"
       ],
       "roles": [],
       "distance": "中立",
@@ -10029,7 +10062,7 @@
       ],
       "skinTone": "標準",
       "outfit": [],
-      "species": "魔族",
+      "species": "獣人",
       "mood": [],
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
@@ -10037,7 +10070,7 @@
       "stature": "標準",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -10063,8 +10096,10 @@
         "内気",
         "むっつり"
       ],
-      "roles": [],
-      "distance": "受け身",
+      "roles": [
+        "友人"
+      ],
+      "distance": "やや受け身",
       "looks": [
         "長髪"
       ],
@@ -10081,9 +10116,11 @@
       "affiliationKind": "非人間・その他",
       "affiliationName": null,
       "stature": "標準",
-      "occupation": []
+      "occupation": [
+        "神様・精霊"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -10110,7 +10147,7 @@
         "姉御"
       ],
       "roles": [],
-      "distance": "中立",
+      "distance": "やや積極的",
       "looks": [
         "長髪"
       ],
@@ -10121,7 +10158,7 @@
       "outfit": [
         "巫女"
       ],
-      "species": "魔族",
+      "species": "不死",
       "mood": [
         "支配的"
       ],
@@ -10134,7 +10171,7 @@
         "巫女・神職"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -10162,7 +10199,7 @@
       "roles": [
         "母性"
       ],
-      "distance": "やや積極的",
+      "distance": "受け身",
       "looks": [
         "長髪"
       ],
@@ -10173,7 +10210,7 @@
       "outfit": [
         "和服・着物"
       ],
-      "species": "魔族",
+      "species": "不死",
       "mood": [
         "甘め"
       ],
@@ -10185,7 +10222,7 @@
         "神様・精霊"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -10213,7 +10250,7 @@
       "roles": [
         "友人"
       ],
-      "distance": "中立",
+      "distance": "やや受け身",
       "looks": [],
       "hairColor": [
         "緑"
@@ -10228,7 +10265,7 @@
       "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -10254,7 +10291,9 @@
         "元気",
         "姉御"
       ],
-      "roles": [],
+      "roles": [
+        "姉"
+      ],
       "distance": "積極的",
       "looks": [
         "角",
@@ -10273,7 +10312,7 @@
       "stature": "長身",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -10293,7 +10332,7 @@
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "年上",
-      "build": "標準",
+      "build": "華奢",
       "bust": "標準",
       "personality": [
         "クール"
@@ -10307,7 +10346,7 @@
         "長髪"
       ],
       "hairColor": [
-        "赤"
+        "緑"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -10316,14 +10355,16 @@
         "支配的"
       ],
       "combat": "戦う",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "軍・組織",
       "affiliationName": "四季映姫庁",
-      "stature": "標準",
+      "stature": "小柄",
       "occupation": [
-        "警察・公安"
+        "警察・公安",
+        "神様・精霊",
+        "王族・貴族"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -10357,14 +10398,16 @@
       "skinTone": "標準",
       "outfit": [],
       "species": "獣人",
-      "mood": [],
+      "mood": [
+        "背徳寄り"
+      ],
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
       "affiliationName": null,
       "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -10384,13 +10427,16 @@
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "同年代",
-      "build": "標準",
+      "build": "むっちり",
       "bust": "標準",
       "personality": [
-        "おっとり",
+        "元気",
         "クール"
       ],
-      "roles": [],
+      "roles": [
+        "後輩",
+        "妹"
+      ],
       "distance": "中立",
       "looks": [
         "長髪"
@@ -10405,10 +10451,10 @@
       "combat": "戦う",
       "affiliationKind": "社会人",
       "affiliationName": "三途の川",
-      "stature": "標準",
+      "stature": "長身",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -10431,7 +10477,8 @@
       "build": "標準",
       "bust": "標準",
       "personality": [
-        "内気"
+        "内気",
+        "おっとり"
       ],
       "roles": [],
       "distance": "やや受け身",
@@ -10452,7 +10499,7 @@
       "stature": "標準",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -10498,7 +10545,7 @@
       "stature": "標準",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -10536,17 +10583,18 @@
       "outfit": [
         "和服・着物"
       ],
-      "species": "魔族",
+      "species": "不死",
       "mood": [],
-      "combat": "戦わない",
+      "combat": "戦う",
       "affiliationKind": "非人間・その他",
       "affiliationName": null,
       "stature": "標準",
       "occupation": [
-        "医療従事者"
+        "医療従事者",
+        "魔法使い・魔術師"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -10569,9 +10617,12 @@
       "build": "標準",
       "bust": "大きい",
       "personality": [
-        "クール"
+        "クール",
+        "おっとり"
       ],
-      "roles": [],
+      "roles": [
+        "主従"
+      ],
       "distance": "中立",
       "looks": [
         "長髪"
@@ -10586,10 +10637,12 @@
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
       "affiliationName": null,
-      "stature": "標準",
-      "occupation": []
+      "stature": "長身",
+      "occupation": [
+        "警察・公安"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -10614,7 +10667,9 @@
       "personality": [
         "元気"
       ],
-      "roles": [],
+      "roles": [
+        "主従"
+      ],
       "distance": "積極的",
       "looks": [
         "長髪"
@@ -10625,14 +10680,18 @@
       "skinTone": "色白",
       "outfit": [],
       "species": "不死",
-      "mood": [],
+      "mood": [
+        "従属的"
+      ],
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
       "affiliationName": null,
       "stature": "標準",
-      "occupation": []
+      "occupation": [
+        "メイド・従者"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -10664,13 +10723,14 @@
         "ツインテール"
       ],
       "hairColor": [
-        "紫"
+        "金"
       ],
       "skinTone": "標準",
       "outfit": [],
-      "species": "魔族",
+      "species": "エルフ",
       "mood": [
-        "背徳寄り"
+        "背徳寄り",
+        "支配的"
       ],
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
@@ -10678,7 +10738,7 @@
       "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -10724,7 +10784,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -10775,7 +10835,7 @@
         "魔法使い・魔術師"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -10801,8 +10861,10 @@
         "おっとり",
         "内気"
       ],
-      "roles": [],
-      "distance": "やや受け身",
+      "roles": [
+        "友人"
+      ],
+      "distance": "やや積極的",
       "looks": [],
       "hairColor": [
         "桃"
@@ -10819,13 +10881,13 @@
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": null,
-      "stature": "標準",
+      "stature": "小柄",
       "occupation": [
         "魔法使い・魔術師",
         "神様・精霊"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -10869,7 +10931,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -10889,14 +10951,15 @@
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "年上",
-      "build": "標準",
+      "build": "むっちり",
       "bust": "大きい",
       "personality": [
         "姉御",
         "クール"
       ],
       "roles": [
-        "先輩"
+        "先輩",
+        "友人"
       ],
       "distance": "積極的",
       "looks": [
@@ -10921,7 +10984,7 @@
         "魔法使い・魔術師"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -10969,7 +11032,7 @@
         "魔法使い・魔術師"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -11015,7 +11078,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -11034,7 +11097,7 @@
     },
     "axes": {
       "genderExpression": "女性",
-      "ageFeel": "年上",
+      "ageFeel": "同年代",
       "build": "標準",
       "bust": "標準",
       "personality": [
@@ -11050,7 +11113,7 @@
       ],
       "skinTone": "色白",
       "outfit": [],
-      "species": "機械",
+      "species": "人間",
       "mood": [],
       "combat": "戦わない",
       "affiliationKind": "非人間・その他",
@@ -11060,7 +11123,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -11094,7 +11157,7 @@
         "長髪"
       ],
       "hairColor": [
-        "青"
+        "紫"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -11108,7 +11171,7 @@
         "魔法使い・魔術師"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -11135,19 +11198,24 @@
         "姉御"
       ],
       "roles": [
-        "先輩"
+        "先輩",
+        "妹",
+        "友人"
       ],
       "distance": "積極的",
       "looks": [],
       "hairColor": [
-        "橙"
+        "橙",
+        "金"
       ],
       "skinTone": "標準",
       "outfit": [
         "制服"
       ],
       "species": "人間",
-      "mood": [],
+      "mood": [
+        "甘め"
+      ],
       "combat": "戦わない",
       "affiliationKind": "学生",
       "affiliationName": "結束バンド",
@@ -11156,7 +11224,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -11203,7 +11271,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -11251,7 +11319,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -11300,7 +11368,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -11347,7 +11415,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -11394,7 +11462,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -11441,7 +11509,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -11491,7 +11559,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -11543,7 +11611,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -11592,7 +11660,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -11642,7 +11710,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -11690,7 +11758,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -11716,7 +11784,9 @@
         "クール",
         "おっとり"
       ],
-      "roles": [],
+      "roles": [
+        "主従"
+      ],
       "distance": "中立",
       "looks": [
         "長髪"
@@ -11740,7 +11810,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -11788,7 +11858,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -11839,7 +11909,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -11889,7 +11959,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -11941,7 +12011,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -11994,7 +12064,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -12045,7 +12115,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -12095,7 +12165,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -12146,7 +12216,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -12165,7 +12235,7 @@
     },
     "axes": {
       "genderExpression": "女性",
-      "ageFeel": "同年代",
+      "ageFeel": "幼い",
       "build": "華奢",
       "bust": "標準",
       "personality": [
@@ -12177,7 +12247,8 @@
         "長髪"
       ],
       "hairColor": [
-        "黒"
+        "黒",
+        "茶"
       ],
       "skinTone": "色白",
       "outfit": [],
@@ -12191,7 +12262,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -12217,7 +12288,9 @@
         "むっつり",
         "生意気"
       ],
-      "roles": [],
+      "roles": [
+        "妹"
+      ],
       "distance": "やや積極的",
       "looks": [
         "ツインテール"
@@ -12229,7 +12302,8 @@
       "outfit": [],
       "species": "人間",
       "mood": [
-        "背徳寄り"
+        "背徳寄り",
+        "甘め"
       ],
       "combat": "戦わない",
       "affiliationKind": "学生",
@@ -12239,7 +12313,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -12262,23 +12336,24 @@
       "build": "華奢",
       "bust": "小さい",
       "personality": [
-        "元気"
+        "元気",
+        "内気"
       ],
       "roles": [
         "後輩"
       ],
-      "distance": "積極的",
+      "distance": "やや受け身",
       "looks": [
         "ツインテール"
       ],
       "hairColor": [
-        "茶"
+        "金"
       ],
       "skinTone": "標準",
       "outfit": [],
       "species": "人間",
       "mood": [],
-      "combat": "戦わない",
+      "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": null,
       "stature": "小柄",
@@ -12286,7 +12361,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -12313,12 +12388,13 @@
         "生意気"
       ],
       "roles": [],
-      "distance": "中立",
+      "distance": "やや受け身",
       "looks": [
         "長髪"
       ],
       "hairColor": [
-        "金"
+        "金",
+        "茶"
       ],
       "skinTone": "色白",
       "outfit": [],
@@ -12332,7 +12408,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -12357,13 +12433,15 @@
       "personality": [
         "元気"
       ],
-      "roles": [],
+      "roles": [
+        "友人"
+      ],
       "distance": "やや積極的",
       "looks": [
         "長髪"
       ],
       "hairColor": [
-        "橙"
+        "茶"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -12377,7 +12455,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -12424,7 +12502,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -12458,7 +12536,7 @@
         "長髪"
       ],
       "hairColor": [
-        "茶"
+        "桃"
       ],
       "skinTone": "褐色",
       "outfit": [],
@@ -12472,7 +12550,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -12491,21 +12569,25 @@
     },
     "axes": {
       "genderExpression": "女性",
-      "ageFeel": "年上",
+      "ageFeel": "同年代",
       "build": "標準",
       "bust": "標準",
       "personality": [
-        "クール"
+        "クール",
+        "内気"
       ],
       "roles": [
-        "先輩"
+        "先輩",
+        "後輩",
+        "友人"
       ],
-      "distance": "中立",
+      "distance": "やや受け身",
       "looks": [
         "長髪"
       ],
       "hairColor": [
-        "黒"
+        "黒",
+        "茶"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -12520,7 +12602,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -12543,15 +12625,18 @@
       "build": "華奢",
       "bust": "標準",
       "personality": [
-        "おっとり"
+        "おっとり",
+        "生意気"
       ],
-      "roles": [],
+      "roles": [
+        "主従"
+      ],
       "distance": "中立",
       "looks": [
         "ツインテール"
       ],
       "hairColor": [
-        "紫"
+        "金"
       ],
       "skinTone": "色白",
       "outfit": [],
@@ -12568,7 +12653,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -12602,13 +12687,13 @@
         "長髪"
       ],
       "hairColor": [
-        "茶"
+        "金"
       ],
       "skinTone": "褐色",
       "outfit": [],
       "species": "人間",
       "mood": [],
-      "combat": "戦わない",
+      "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": null,
       "stature": "小柄",
@@ -12616,7 +12701,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -12640,7 +12725,8 @@
       "bust": "大きい",
       "personality": [
         "おっとり",
-        "内気"
+        "内気",
+        "クール"
       ],
       "roles": [
         "恋人・伴侶"
@@ -12656,17 +12742,19 @@
       "outfit": [],
       "species": "人間",
       "mood": [
-        "甘め"
+        "甘め",
+        "純愛寄り"
       ],
       "combat": "戦う",
-      "affiliationKind": "軍・組織",
+      "affiliationKind": "社会人",
       "affiliationName": "カルデア",
       "stature": "標準",
       "occupation": [
-        "兵士・軍人"
+        "兵士・軍人",
+        "会社員・OL"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -12716,7 +12804,7 @@
         "巫女・神職"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -12765,7 +12853,7 @@
         "格闘家・武道家"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -12811,7 +12899,7 @@
         "格闘家・武道家"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -12860,7 +12948,7 @@
         "スパイ・暗殺者"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -12904,7 +12992,7 @@
       "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -12953,7 +13041,7 @@
         "研究者・発明家"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -12987,11 +13075,11 @@
         "長髪"
       ],
       "hairColor": [
-        "赤"
+        "白"
       ],
       "skinTone": "色白",
       "outfit": [],
-      "species": "魔族",
+      "species": "人間",
       "mood": [
         "支配的"
       ],
@@ -13003,7 +13091,7 @@
         "スパイ・暗殺者"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -13050,7 +13138,7 @@
         "魔法使い・魔術師"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -13095,7 +13183,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -13139,7 +13227,7 @@
       "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -13186,7 +13274,7 @@
         "医療従事者"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -13234,7 +13322,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -13280,7 +13368,7 @@
         "研究者・発明家"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -13316,7 +13404,7 @@
       ],
       "skinTone": "色白",
       "outfit": [],
-      "species": "不死",
+      "species": "人間",
       "mood": [],
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
@@ -13326,7 +13414,7 @@
         "神様・精霊"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -13374,7 +13462,7 @@
         "研究者・発明家"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -13413,7 +13501,7 @@
       ],
       "skinTone": "標準",
       "outfit": [],
-      "species": "獣人",
+      "species": "人間",
       "mood": [],
       "combat": "戦う",
       "affiliationKind": "軍・組織",
@@ -13423,7 +13511,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -13470,7 +13558,7 @@
         "スパイ・暗殺者"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -13516,7 +13604,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -13562,7 +13650,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -13603,7 +13691,7 @@
         "背徳寄り"
       ],
       "combat": "戦わない",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "社会人",
       "affiliationName": "ホロライブ",
       "stature": "標準",
       "occupation": [
@@ -13611,7 +13699,7 @@
         "海賊"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -13651,16 +13739,18 @@
       "skinTone": "標準",
       "outfit": [],
       "species": "獣人",
-      "mood": [],
+      "mood": [
+        "甘め"
+      ],
       "combat": "戦わない",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "社会人",
       "affiliationName": "ホロライブ",
       "stature": "標準",
       "occupation": [
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -13680,7 +13770,7 @@
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "同年代",
-      "build": "標準",
+      "build": "華奢",
       "bust": "標準",
       "personality": [
         "クール",
@@ -13706,7 +13796,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -13732,7 +13822,11 @@
         "生意気",
         "元気"
       ],
-      "roles": [],
+      "roles": [
+        "先輩",
+        "姉",
+        "友人"
+      ],
       "distance": "積極的",
       "looks": [
         "ケモミミ",
@@ -13744,16 +13838,18 @@
       "skinTone": "標準",
       "outfit": [],
       "species": "獣人",
-      "mood": [],
+      "mood": [
+        "甘め"
+      ],
       "combat": "戦わない",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "社会人",
       "affiliationName": "ホロライブ",
-      "stature": "標準",
+      "stature": "小柄",
       "occupation": [
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -13795,14 +13891,14 @@
       "species": "獣人",
       "mood": [],
       "combat": "戦わない",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "社会人",
       "affiliationName": "ホロライブ",
       "stature": "標準",
       "occupation": [
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -13851,7 +13947,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -13877,7 +13973,9 @@
         "元気",
         "生意気"
       ],
-      "roles": [],
+      "roles": [
+        "友人"
+      ],
       "distance": "積極的",
       "looks": [
         "角",
@@ -13890,17 +13988,18 @@
       "outfit": [],
       "species": "魔族",
       "mood": [
-        "背徳寄り"
+        "背徳寄り",
+        "純愛寄り"
       ],
       "combat": "戦わない",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "社会人",
       "affiliationName": "ホロライブ",
       "stature": "標準",
       "occupation": [
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -13927,7 +14026,7 @@
         "内気"
       ],
       "roles": [],
-      "distance": "やや積極的",
+      "distance": "やや受け身",
       "looks": [
         "ツインテール"
       ],
@@ -13939,14 +14038,15 @@
       "species": "人間",
       "mood": [],
       "combat": "戦わない",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "社会人",
       "affiliationName": "ホロライブ",
       "stature": "小柄",
       "occupation": [
-        "アイドル・芸能"
+        "アイドル・芸能",
+        "メイド・従者"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -13973,7 +14073,8 @@
         "姉御"
       ],
       "roles": [
-        "母性"
+        "母性",
+        "友人"
       ],
       "distance": "中立",
       "looks": [
@@ -13988,17 +14089,18 @@
       "outfit": [],
       "species": "獣人",
       "mood": [
-        "甘め"
+        "甘め",
+        "支配的"
       ],
       "combat": "戦わない",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "社会人",
       "affiliationName": "ホロライブ",
       "stature": "標準",
       "occupation": [
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -14044,7 +14146,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -14067,10 +14169,14 @@
       "build": "標準",
       "bust": "大きい",
       "personality": [
-        "おっとり"
+        "おっとり",
+        "内気"
       ],
-      "roles": [],
-      "distance": "積極的",
+      "roles": [
+        "恋人・伴侶",
+        "友人"
+      ],
+      "distance": "やや受け身",
       "looks": [
         "長髪"
       ],
@@ -14079,12 +14185,12 @@
       ],
       "skinTone": "色白",
       "outfit": [],
-      "species": "魔族",
+      "species": "不死",
       "mood": [
         "甘め"
       ],
       "combat": "戦わない",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "社会人",
       "affiliationName": "ホロライブ",
       "stature": "標準",
       "occupation": [
@@ -14092,7 +14198,7 @@
         "巫女・神職"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -14118,8 +14224,10 @@
         "おっとり",
         "クール"
       ],
-      "roles": [],
-      "distance": "中立",
+      "roles": [
+        "母性"
+      ],
+      "distance": "やや受け身",
       "looks": [
         "角",
         "長髪"
@@ -14132,7 +14240,7 @@
       "species": "魔族",
       "mood": [],
       "combat": "戦わない",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "社会人",
       "affiliationName": "ホロライブ",
       "stature": "標準",
       "occupation": [
@@ -14140,7 +14248,7 @@
         "王族・貴族"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -14165,7 +14273,9 @@
       "personality": [
         "元気"
       ],
-      "roles": [],
+      "roles": [
+        "後輩"
+      ],
       "distance": "積極的",
       "looks": [
         "ケモミミ",
@@ -14177,16 +14287,18 @@
       "skinTone": "標準",
       "outfit": [],
       "species": "獣人",
-      "mood": [],
+      "mood": [
+        "支配的"
+      ],
       "combat": "戦わない",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "社会人",
       "affiliationName": "ホロライブ",
       "stature": "標準",
       "occupation": [
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -14206,14 +14318,14 @@
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "年上",
-      "build": "標準",
+      "build": "むっちり",
       "bust": "とても大きい",
       "personality": [
         "おっとり",
         "クール"
       ],
       "roles": [],
-      "distance": "中立",
+      "distance": "やや受け身",
       "looks": [
         "長髪"
       ],
@@ -14225,9 +14337,11 @@
         "軍服"
       ],
       "species": "人間",
-      "mood": [],
+      "mood": [
+        "甘め"
+      ],
       "combat": "戦う",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "社会人",
       "affiliationName": "ホロライブ",
       "stature": "長身",
       "occupation": [
@@ -14235,7 +14349,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -14261,7 +14375,9 @@
         "生意気",
         "元気"
       ],
-      "roles": [],
+      "roles": [
+        "友人"
+      ],
       "distance": "積極的",
       "looks": [
         "ケモミミ",
@@ -14275,14 +14391,15 @@
       "species": "獣人",
       "mood": [],
       "combat": "戦わない",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "軍・組織",
       "affiliationName": "ホロライブ",
-      "stature": "標準",
+      "stature": "小柄",
       "occupation": [
-        "アイドル・芸能"
+        "アイドル・芸能",
+        "メイド・従者"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -14330,7 +14447,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -14379,7 +14496,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -14405,8 +14522,10 @@
         "クール",
         "むっつり"
       ],
-      "roles": [],
-      "distance": "中立",
+      "roles": [
+        "先輩"
+      ],
+      "distance": "やや受け身",
       "looks": [
         "角",
         "長髪"
@@ -14423,14 +14542,14 @@
         "支配的"
       ],
       "combat": "戦わない",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "学生",
       "affiliationName": "ホロライブ",
       "stature": "標準",
       "occupation": [
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -14456,7 +14575,9 @@
         "おっとり",
         "クール"
       ],
-      "roles": [],
+      "roles": [
+        "友人"
+      ],
       "distance": "中立",
       "looks": [
         "ケモミミ",
@@ -14467,7 +14588,7 @@
       ],
       "skinTone": "標準",
       "outfit": [],
-      "species": "獣人",
+      "species": "エルフ",
       "mood": [],
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
@@ -14478,7 +14599,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -14525,7 +14646,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -14550,7 +14671,9 @@
       "personality": [
         "元気"
       ],
-      "roles": [],
+      "roles": [
+        "母性"
+      ],
       "distance": "積極的",
       "looks": [
         "ケモミミ",
@@ -14572,7 +14695,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -14596,7 +14719,8 @@
       "bust": "大きい",
       "personality": [
         "むっつり",
-        "内気"
+        "内気",
+        "元気"
       ],
       "roles": [
         "恋人・伴侶"
@@ -14612,17 +14736,19 @@
       "outfit": [],
       "species": "魔族",
       "mood": [
-        "背徳寄り"
+        "背徳寄り",
+        "甘め"
       ],
       "combat": "戦わない",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "社会人",
       "affiliationName": null,
       "stature": "標準",
       "occupation": [
-        "魔法使い・魔術師"
+        "魔法使い・魔術師",
+        "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -14641,7 +14767,7 @@
     },
     "axes": {
       "genderExpression": "女性",
-      "ageFeel": "同年代",
+      "ageFeel": "幼い",
       "build": "標準",
       "bust": "大きい",
       "personality": [
@@ -14668,7 +14794,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -14691,7 +14817,8 @@
       "build": "標準",
       "bust": "標準",
       "personality": [
-        "おっとり"
+        "おっとり",
+        "生意気"
       ],
       "roles": [],
       "distance": "中立",
@@ -14706,17 +14833,20 @@
         "和服・着物"
       ],
       "species": "人間",
-      "mood": [],
+      "mood": [
+        "純愛寄り"
+      ],
       "combat": "戦う",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "軍・組織",
       "affiliationName": "ホロライブ",
       "stature": "標準",
       "occupation": [
         "忍者",
-        "アイドル・芸能"
+        "アイドル・芸能",
+        "アスリート"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -14735,7 +14865,7 @@
     },
     "axes": {
       "genderExpression": "女性",
-      "ageFeel": "年上",
+      "ageFeel": "熟れた",
       "build": "標準",
       "bust": "標準",
       "personality": [
@@ -14762,7 +14892,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -14798,17 +14928,17 @@
       ],
       "skinTone": "色白",
       "outfit": [],
-      "species": "魔族",
+      "species": "獣人",
       "mood": [],
       "combat": "戦わない",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "社会人",
       "affiliationName": "ホロライブEN",
       "stature": "小柄",
       "occupation": [
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -14856,7 +14986,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -14895,14 +15025,14 @@
       "species": "不死",
       "mood": [],
       "combat": "戦う",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "社会人",
       "affiliationName": "ホロライブEN",
       "stature": "標準",
       "occupation": [
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -14928,7 +15058,9 @@
         "元気",
         "生意気"
       ],
-      "roles": [],
+      "roles": [
+        "友人"
+      ],
       "distance": "積極的",
       "looks": [
         "長髪"
@@ -14938,17 +15070,17 @@
       ],
       "skinTone": "標準",
       "outfit": [],
-      "species": "魔族",
+      "species": "不死",
       "mood": [],
       "combat": "戦わない",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "社会人",
       "affiliationName": "ホロライブEN",
       "stature": "標準",
       "occupation": [
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -14995,7 +15127,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -15042,7 +15174,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -15090,7 +15222,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -15139,7 +15271,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -15166,7 +15298,7 @@
         "生意気"
       ],
       "roles": [],
-      "distance": "積極的",
+      "distance": "やや積極的",
       "looks": [
         "眼鏡",
         "ツインテール"
@@ -15179,15 +15311,16 @@
       "species": "人間",
       "mood": [],
       "combat": "戦わない",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "社会人",
       "affiliationName": "ホロライブEN",
       "stature": "小柄",
       "occupation": [
         "スパイ・暗殺者",
-        "アイドル・芸能"
+        "アイドル・芸能",
+        "警察・公安"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -15227,14 +15360,14 @@
         "甘め"
       ],
       "combat": "戦う",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "社会人",
       "affiliationName": "ホロライブEN",
       "stature": "標準",
       "occupation": [
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -15285,7 +15418,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -15305,7 +15438,7 @@
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "同年代",
-      "build": "標準",
+      "build": "華奢",
       "bust": "大きい",
       "personality": [
         "おっとり"
@@ -15322,15 +15455,15 @@
       "outfit": [
         "制服"
       ],
-      "species": "人間",
+      "species": "機械",
       "mood": [],
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": "トリニティ総合学園",
-      "stature": "標準",
+      "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -15349,14 +15482,16 @@
     },
     "axes": {
       "genderExpression": "女性",
-      "ageFeel": "同年代",
-      "build": "標準",
+      "ageFeel": "幼い",
+      "build": "華奢",
       "bust": "とても大きい",
       "personality": [
         "元気",
-        "生意気"
+        "おっとり"
       ],
-      "roles": [],
+      "roles": [
+        "友人"
+      ],
       "distance": "積極的",
       "looks": [
         "眼鏡",
@@ -15370,16 +15505,19 @@
         "制服"
       ],
       "species": "人間",
-      "mood": [],
+      "mood": [
+        "甘め"
+      ],
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": "百鬼夜行学園",
-      "stature": "標準",
+      "stature": "小柄",
       "occupation": [
-        "研究者・発明家"
+        "研究者・発明家",
+        "巫女・神職"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -15402,9 +15540,12 @@
       "build": "標準",
       "bust": "標準",
       "personality": [
-        "元気"
+        "元気",
+        "おっとり"
       ],
-      "roles": [],
+      "roles": [
+        "友人"
+      ],
       "distance": "積極的",
       "looks": [
         "長髪"
@@ -15421,12 +15562,12 @@
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": null,
-      "stature": "標準",
+      "stature": "小柄",
       "occupation": [
         "アスリート"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -15445,13 +15586,16 @@
     },
     "axes": {
       "genderExpression": "女性",
-      "ageFeel": "同年代",
+      "ageFeel": "幼い",
       "build": "標準",
       "bust": "大きい",
       "personality": [
-        "おっとり"
+        "おっとり",
+        "生意気"
       ],
-      "roles": [],
+      "roles": [
+        "後輩"
+      ],
       "distance": "やや受け身",
       "looks": [
         "長髪"
@@ -15464,14 +15608,16 @@
         "制服"
       ],
       "species": "人間",
-      "mood": [],
+      "mood": [
+        "純愛寄り"
+      ],
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": null,
-      "stature": "標準",
+      "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -15511,15 +15657,15 @@
       "outfit": [
         "制服"
       ],
-      "species": "人間",
+      "species": "獣人",
       "mood": [],
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": null,
-      "stature": "標準",
+      "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -15561,10 +15707,10 @@
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": null,
-      "stature": "標準",
+      "stature": "長身",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -15608,7 +15754,7 @@
       "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -15639,19 +15785,21 @@
         "長髪"
       ],
       "hairColor": [
-        "白"
+        "青"
       ],
       "skinTone": "色白",
       "outfit": [],
       "species": "機械",
-      "mood": [],
-      "combat": "戦わない",
-      "affiliationKind": "非人間・その他",
+      "mood": [
+        "甘め"
+      ],
+      "combat": "戦う",
+      "affiliationKind": "学生",
       "affiliationName": "キヴォトス",
       "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -15677,7 +15825,9 @@
         "生意気",
         "元気"
       ],
-      "roles": [],
+      "roles": [
+        "友人"
+      ],
       "distance": "積極的",
       "looks": [
         "長髪"
@@ -15695,9 +15845,11 @@
       "affiliationKind": "学生",
       "affiliationName": null,
       "stature": "標準",
-      "occupation": []
+      "occupation": [
+        "会社員・OL"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -15720,7 +15872,8 @@
       "build": "標準",
       "bust": "標準",
       "personality": [
-        "クール"
+        "クール",
+        "生意気"
       ],
       "roles": [],
       "distance": "中立",
@@ -15728,21 +15881,23 @@
         "長髪"
       ],
       "hairColor": [
-        "茶"
+        "桃"
       ],
       "skinTone": "標準",
       "outfit": [
         "制服"
       ],
       "species": "人間",
-      "mood": [],
+      "mood": [
+        "背徳寄り"
+      ],
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": null,
       "stature": "標準",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -15765,7 +15920,8 @@
       "build": "標準",
       "bust": "標準",
       "personality": [
-        "おっとり"
+        "おっとり",
+        "元気"
       ],
       "roles": [],
       "distance": "中立",
@@ -15780,14 +15936,16 @@
         "制服"
       ],
       "species": "人間",
-      "mood": [],
+      "mood": [
+        "甘め"
+      ],
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": null,
       "stature": "標準",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -15834,10 +15992,11 @@
       "affiliationName": null,
       "stature": "標準",
       "occupation": [
-        "格闘家・武道家"
+        "格闘家・武道家",
+        "警察・公安"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -15856,7 +16015,7 @@
     },
     "axes": {
       "genderExpression": "女性",
-      "ageFeel": "同年代",
+      "ageFeel": "幼い",
       "build": "標準",
       "bust": "標準",
       "personality": [
@@ -15864,7 +16023,7 @@
         "内気"
       ],
       "roles": [
-        "姉"
+        "妹"
       ],
       "distance": "中立",
       "looks": [
@@ -15882,10 +16041,10 @@
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": "トリニティ総合学園",
-      "stature": "標準",
+      "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -15935,7 +16094,7 @@
       "stature": "長身",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -15958,9 +16117,11 @@
       "build": "標準",
       "bust": "大きい",
       "personality": [
-        "おっとり"
+        "むっつり"
       ],
-      "roles": [],
+      "roles": [
+        "先輩"
+      ],
       "distance": "やや積極的",
       "looks": [
         "長髪"
@@ -15973,14 +16134,18 @@
         "制服"
       ],
       "species": "人間",
-      "mood": [],
+      "mood": [
+        "支配的"
+      ],
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": null,
       "stature": "標準",
-      "occupation": []
+      "occupation": [
+        "兵士・軍人"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -16027,7 +16192,7 @@
       "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -16069,10 +16234,10 @@
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": null,
-      "stature": "標準",
+      "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -16115,9 +16280,11 @@
       "affiliationKind": "学生",
       "affiliationName": null,
       "stature": "小柄",
-      "occupation": []
+      "occupation": [
+        "兵士・軍人"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -16136,14 +16303,17 @@
     },
     "axes": {
       "genderExpression": "女性",
-      "ageFeel": "同年代",
-      "build": "標準",
+      "ageFeel": "幼い",
+      "build": "華奢",
       "bust": "標準",
       "personality": [
-        "クール"
+        "おっとり"
       ],
-      "roles": [],
-      "distance": "中立",
+      "roles": [
+        "後輩",
+        "友人"
+      ],
+      "distance": "やや受け身",
       "looks": [
         "長髪"
       ],
@@ -16155,17 +16325,17 @@
         "制服",
         "和服・着物"
       ],
-      "species": "人間",
+      "species": "魔族",
       "mood": [],
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": null,
-      "stature": "標準",
+      "stature": "小柄",
       "occupation": [
         "格闘家・武道家"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -16207,14 +16377,18 @@
         "和服・着物"
       ],
       "species": "人間",
-      "mood": [],
+      "mood": [
+        "純愛寄り"
+      ],
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": null,
       "stature": "標準",
-      "occupation": []
+      "occupation": [
+        "兵士・軍人"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -16243,7 +16417,7 @@
       "roles": [
         "先輩"
       ],
-      "distance": "中立",
+      "distance": "やや積極的",
       "looks": [
         "長髪"
       ],
@@ -16256,17 +16430,17 @@
       ],
       "species": "人間",
       "mood": [
-        "支配的"
+        "純愛寄り"
       ],
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": null,
-      "stature": "長身",
+      "stature": "標準",
       "occupation": [
         "警察・公安"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -16314,7 +16488,7 @@
         "忍者"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -16333,16 +16507,17 @@
     },
     "axes": {
       "genderExpression": "女性",
-      "ageFeel": "年上",
+      "ageFeel": "同年代",
       "build": "標準",
       "bust": "大きい",
       "personality": [
-        "おっとり"
+        "おっとり",
+        "内気"
       ],
       "roles": [
         "先輩"
       ],
-      "distance": "中立",
+      "distance": "やや受け身",
       "looks": [
         "長髪"
       ],
@@ -16358,10 +16533,10 @@
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": null,
-      "stature": "標準",
+      "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -16384,11 +16559,13 @@
       "build": "華奢",
       "bust": "小さい",
       "personality": [
-        "元気",
-        "生意気"
+        "むっつり"
       ],
-      "roles": [],
-      "distance": "積極的",
+      "roles": [
+        "後輩",
+        "友人"
+      ],
+      "distance": "やや受け身",
       "looks": [
         "ケモミミ",
         "尻尾"
@@ -16401,14 +16578,18 @@
         "制服"
       ],
       "species": "獣人",
-      "mood": [],
+      "mood": [
+        "純愛寄り"
+      ],
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": null,
       "stature": "小柄",
-      "occupation": []
+      "occupation": [
+        "研究者・発明家"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -16458,7 +16639,7 @@
         "スパイ・暗殺者"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -16484,7 +16665,9 @@
         "内気",
         "おっとり"
       ],
-      "roles": [],
+      "roles": [
+        "先輩"
+      ],
       "distance": "やや受け身",
       "looks": [
         "長髪"
@@ -16504,7 +16687,7 @@
       "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -16523,14 +16706,14 @@
     },
     "axes": {
       "genderExpression": "女性",
-      "ageFeel": "同年代",
+      "ageFeel": "幼い",
       "build": "標準",
       "bust": "標準",
       "personality": [
         "クール"
       ],
       "roles": [],
-      "distance": "中立",
+      "distance": "積極的",
       "looks": [
         "長髪"
       ],
@@ -16541,15 +16724,19 @@
       "outfit": [
         "制服"
       ],
-      "species": "人間",
-      "mood": [],
+      "species": "エルフ",
+      "mood": [
+        "純愛寄り"
+      ],
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": null,
-      "stature": "標準",
-      "occupation": []
+      "stature": "小柄",
+      "occupation": [
+        "警察・公安"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -16591,15 +16778,16 @@
       ],
       "species": "人間",
       "mood": [
-        "支配的"
+        "支配的",
+        "甘め"
       ],
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": null,
-      "stature": "標準",
+      "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -16631,7 +16819,7 @@
         "長髪"
       ],
       "hairColor": [
-        "白"
+        "黒"
       ],
       "skinTone": "色白",
       "outfit": [],
@@ -16645,7 +16833,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -16677,7 +16865,7 @@
         "長髪"
       ],
       "hairColor": [
-        "金"
+        "黒"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -16692,7 +16880,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -16717,18 +16905,20 @@
       "personality": [
         "おっとり"
       ],
-      "roles": [],
+      "roles": [
+        "後輩"
+      ],
       "distance": "中立",
       "looks": [
         "ケモミミ",
         "長髪"
       ],
       "hairColor": [
-        "白"
+        "紫"
       ],
       "skinTone": "色白",
       "outfit": [],
-      "species": "獣人",
+      "species": "エルフ",
       "mood": [],
       "combat": "戦う",
       "affiliationKind": "軍・組織",
@@ -16738,7 +16928,7 @@
         "研究者・発明家"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -16771,11 +16961,11 @@
         "長髪"
       ],
       "hairColor": [
-        "白"
+        "桃"
       ],
       "skinTone": "標準",
       "outfit": [],
-      "species": "獣人",
+      "species": "人間",
       "mood": [],
       "combat": "戦う",
       "affiliationKind": "社会人",
@@ -16785,7 +16975,7 @@
         "会社員・OL"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -16818,11 +17008,11 @@
         "長髪"
       ],
       "hairColor": [
-        "紫"
+        "金"
       ],
       "skinTone": "色白",
       "outfit": [],
-      "species": "不死",
+      "species": "人間",
       "mood": [
         "背徳寄り"
       ],
@@ -16834,7 +17024,7 @@
         "王族・貴族"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -16877,7 +17067,7 @@
       "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -16924,7 +17114,7 @@
         "警察・公安"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -16967,7 +17157,7 @@
       "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -16998,7 +17188,7 @@
         "長髪"
       ],
       "hairColor": [
-        "黒"
+        "白"
       ],
       "skinTone": "標準",
       "outfit": [
@@ -17014,7 +17204,7 @@
         "魔法使い・魔術師"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -17060,7 +17250,7 @@
         "研究者・発明家"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -17092,7 +17282,7 @@
         "長髪"
       ],
       "hairColor": [
-        "紫"
+        "黒"
       ],
       "skinTone": "色白",
       "outfit": [],
@@ -17108,7 +17298,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -17153,7 +17343,7 @@
       "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -17179,7 +17369,9 @@
         "クール",
         "おっとり"
       ],
-      "roles": [],
+      "roles": [
+        "先輩"
+      ],
       "distance": "中立",
       "looks": [
         "長髪"
@@ -17192,12 +17384,14 @@
       "species": "人間",
       "mood": [],
       "combat": "戦う",
-      "affiliationKind": "冒険者",
+      "affiliationKind": "社会人",
       "affiliationName": null,
       "stature": "長身",
-      "occupation": []
+      "occupation": [
+        "研究者・発明家"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -17241,7 +17435,7 @@
       "stature": "標準",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -17280,14 +17474,14 @@
       "species": "人間",
       "mood": [],
       "combat": "戦う",
-      "affiliationKind": "冒険者",
+      "affiliationKind": "軍・組織",
       "affiliationName": null,
       "stature": "長身",
       "occupation": [
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -17327,10 +17521,11 @@
       "affiliationName": null,
       "stature": "小柄",
       "occupation": [
-        "格闘家・武道家"
+        "格闘家・武道家",
+        "アスリート"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -17374,7 +17569,7 @@
       "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -17400,7 +17595,9 @@
         "元気",
         "生意気"
       ],
-      "roles": [],
+      "roles": [
+        "先輩"
+      ],
       "distance": "積極的",
       "looks": [
         "ツインテール"
@@ -17420,7 +17617,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -17463,7 +17660,7 @@
       "stature": "標準",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -17509,7 +17706,7 @@
         "研究者・発明家"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -17535,7 +17732,7 @@
         "元気"
       ],
       "roles": [],
-      "distance": "積極的",
+      "distance": "やや積極的",
       "looks": [],
       "hairColor": [
         "茶"
@@ -17545,14 +17742,16 @@
         "制服"
       ],
       "species": "人間",
-      "mood": [],
+      "mood": [
+        "純愛寄り"
+      ],
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": "雄英高校",
-      "stature": "小柄",
+      "stature": "標準",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -17595,14 +17794,14 @@
         "背徳寄り"
       ],
       "combat": "戦う",
-      "affiliationKind": "軍・組織",
+      "affiliationKind": "学生",
       "affiliationName": "敵連合",
       "stature": "小柄",
       "occupation": [
         "スパイ・暗殺者"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -17651,7 +17850,7 @@
         "格闘家・武道家"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -17696,10 +17895,11 @@
       "stature": "標準",
       "occupation": [
         "兵士・軍人",
-        "格闘家・武道家"
+        "格闘家・武道家",
+        "アスリート"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -17723,10 +17923,11 @@
       "bust": "大きい",
       "personality": [
         "クール",
-        "姉御"
+        "姉御",
+        "生意気"
       ],
       "roles": [],
-      "distance": "積極的",
+      "distance": "やや受け身",
       "looks": [
         "長髪"
       ],
@@ -17749,7 +17950,7 @@
         "魔法使い・魔術師"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -17768,14 +17969,17 @@
     },
     "axes": {
       "genderExpression": "女性",
-      "ageFeel": "同年代",
+      "ageFeel": "幼い",
       "build": "標準",
       "bust": "標準",
       "personality": [
         "生意気",
         "元気"
       ],
-      "roles": [],
+      "roles": [
+        "先輩",
+        "姉"
+      ],
       "distance": "積極的",
       "looks": [
         "ツインテール"
@@ -17788,7 +17992,9 @@
         "制服"
       ],
       "species": "人間",
-      "mood": [],
+      "mood": [
+        "純愛寄り"
+      ],
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": "常盤台中学",
@@ -17797,7 +18003,7 @@
         "魔法使い・魔術師"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -17825,14 +18031,15 @@
       ],
       "roles": [
         "後輩",
-        "恋人・伴侶"
+        "恋人・伴侶",
+        "友人"
       ],
       "distance": "積極的",
       "looks": [
         "ツインテール"
       ],
       "hairColor": [
-        "黒"
+        "茶"
       ],
       "skinTone": "標準",
       "outfit": [
@@ -17840,7 +18047,8 @@
       ],
       "species": "人間",
       "mood": [
-        "背徳寄り"
+        "背徳寄り",
+        "純愛寄り"
       ],
       "combat": "戦う",
       "affiliationKind": "学生",
@@ -17851,7 +18059,7 @@
         "警察・公安"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -17870,33 +18078,39 @@
     },
     "axes": {
       "genderExpression": "女性",
-      "ageFeel": "幼い",
+      "ageFeel": "同年代",
       "build": "標準",
       "bust": "大きい",
       "personality": [
-        "元気"
+        "元気",
+        "生意気"
       ],
-      "roles": [],
+      "roles": [
+        "友人"
+      ],
       "distance": "積極的",
       "looks": [
         "長髪"
       ],
       "hairColor": [
-        "金"
+        "金",
+        "橙"
       ],
       "skinTone": "標準",
       "outfit": [],
       "species": "人間",
-      "mood": [],
+      "mood": [
+        "甘め"
+      ],
       "combat": "戦う",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "冒険者",
       "affiliationName": null,
       "stature": "標準",
       "occupation": [
         "王族・貴族"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -17930,13 +18144,13 @@
         "長髪"
       ],
       "hairColor": [
-        "緑"
+        "白"
       ],
       "skinTone": "色白",
       "outfit": [
         "メイド"
       ],
-      "species": "獣人",
+      "species": "エルフ",
       "mood": [
         "甘め"
       ],
@@ -17945,10 +18159,11 @@
       "affiliationName": null,
       "stature": "小柄",
       "occupation": [
-        "メイド・従者"
+        "メイド・従者",
+        "巫女・神職"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -17975,7 +18190,7 @@
         "むっつり"
       ],
       "roles": [],
-      "distance": "やや積極的",
+      "distance": "やや受け身",
       "looks": [
         "ケモミミ",
         "尻尾"
@@ -17986,7 +18201,9 @@
       "skinTone": "標準",
       "outfit": [],
       "species": "獣人",
-      "mood": [],
+      "mood": [
+        "純愛寄り"
+      ],
       "combat": "戦う",
       "affiliationKind": "冒険者",
       "affiliationName": null,
@@ -17995,7 +18212,7 @@
         "スパイ・暗殺者"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -18021,14 +18238,15 @@
         "生意気"
       ],
       "roles": [
-        "恋人・伴侶"
+        "恋人・伴侶",
+        "友人"
       ],
       "distance": "やや積極的",
       "looks": [
         "ツインテール"
       ],
       "hairColor": [
-        "紫"
+        "桃"
       ],
       "skinTone": "標準",
       "outfit": [
@@ -18044,7 +18262,7 @@
       "stature": "標準",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -18067,17 +18285,20 @@
       "build": "標準",
       "bust": "標準",
       "personality": [
-        "内気"
+        "内気",
+        "クール"
       ],
       "roles": [
-        "恋人・伴侶"
+        "恋人・伴侶",
+        "妹"
       ],
-      "distance": "受け身",
+      "distance": "やや受け身",
       "looks": [
         "長髪"
       ],
       "hairColor": [
-        "紫"
+        "紫",
+        "桃"
       ],
       "skinTone": "標準",
       "outfit": [
@@ -18093,7 +18314,7 @@
       "stature": "標準",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -18119,7 +18340,8 @@
         "元気"
       ],
       "roles": [
-        "恋人・伴侶"
+        "恋人・伴侶",
+        "友人"
       ],
       "distance": "積極的",
       "looks": [
@@ -18144,7 +18366,7 @@
         "アスリート"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -18193,7 +18415,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -18217,7 +18439,8 @@
       "bust": "大きい",
       "personality": [
         "おっとり",
-        "クール"
+        "クール",
+        "生意気"
       ],
       "roles": [
         "先輩"
@@ -18235,17 +18458,20 @@
         "軍服"
       ],
       "species": "人間",
-      "mood": [],
+      "mood": [
+        "支配的"
+      ],
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": "聖グロリアーナ女学院",
       "stature": "標準",
       "occupation": [
         "兵士・軍人",
-        "王族・貴族"
+        "王族・貴族",
+        "アスリート"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -18298,7 +18524,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -18324,13 +18550,16 @@
         "生意気",
         "内気"
       ],
-      "roles": [],
+      "roles": [
+        "友人"
+      ],
       "distance": "積極的",
       "looks": [
         "長髪"
       ],
       "hairColor": [
-        "橙"
+        "橙",
+        "赤"
       ],
       "skinTone": "色白",
       "outfit": [
@@ -18338,16 +18567,18 @@
         "軍服"
       ],
       "species": "人間",
-      "mood": [],
+      "mood": [
+        "支配的"
+      ],
       "combat": "戦う",
       "affiliationKind": "軍・組織",
       "affiliationName": "ネルフ",
-      "stature": "標準",
+      "stature": "小柄",
       "occupation": [
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -18366,14 +18597,16 @@
     },
     "axes": {
       "genderExpression": "女性",
-      "ageFeel": "同年代",
+      "ageFeel": "幼い",
       "build": "華奢",
       "bust": "小さい",
       "personality": [
         "クール",
         "内気"
       ],
-      "roles": [],
+      "roles": [
+        "友人"
+      ],
       "distance": "受け身",
       "looks": [
         "長髪"
@@ -18396,7 +18629,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -18423,7 +18656,8 @@
         "内気"
       ],
       "roles": [
-        "恋人・伴侶"
+        "恋人・伴侶",
+        "ライバル"
       ],
       "distance": "やや受け身",
       "looks": [
@@ -18449,7 +18683,7 @@
         "警察・公安"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -18475,7 +18709,8 @@
         "元気"
       ],
       "roles": [
-        "恋人・伴侶"
+        "恋人・伴侶",
+        "先輩"
       ],
       "distance": "積極的",
       "looks": [
@@ -18490,7 +18725,8 @@
       ],
       "species": "人間",
       "mood": [
-        "純愛寄り"
+        "純愛寄り",
+        "支配的"
       ],
       "combat": "戦う",
       "affiliationKind": "軍・組織",
@@ -18501,7 +18737,7 @@
         "警察・公安"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -18527,7 +18763,9 @@
         "生意気",
         "元気"
       ],
-      "roles": [],
+      "roles": [
+        "ライバル"
+      ],
       "distance": "積極的",
       "looks": [
         "長髪"
@@ -18540,7 +18778,9 @@
         "制服"
       ],
       "species": "人間",
-      "mood": [],
+      "mood": [
+        "純愛寄り"
+      ],
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": "本能字学園",
@@ -18549,7 +18789,7 @@
         "格闘家・武道家"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -18576,7 +18816,9 @@
         "姉御"
       ],
       "roles": [
-        "先輩"
+        "先輩",
+        "ライバル",
+        "友人"
       ],
       "distance": "中立",
       "looks": [
@@ -18602,7 +18844,7 @@
         "王族・貴族"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -18639,7 +18881,7 @@
       ],
       "skinTone": "色白",
       "outfit": [],
-      "species": "不死",
+      "species": "人間",
       "mood": [
         "背徳寄り"
       ],
@@ -18649,7 +18891,7 @@
       "stature": "標準",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -18691,7 +18933,8 @@
       ],
       "species": "人間",
       "mood": [
-        "支配的"
+        "支配的",
+        "純愛寄り"
       ],
       "combat": "戦う",
       "affiliationKind": "学生",
@@ -18702,7 +18945,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -18725,9 +18968,13 @@
       "build": "標準",
       "bust": "標準",
       "personality": [
-        "内気"
+        "内気",
+        "おっとり"
       ],
-      "roles": [],
+      "roles": [
+        "幼馴染",
+        "友人"
+      ],
       "distance": "受け身",
       "looks": [
         "長髪"
@@ -18740,14 +18987,16 @@
         "制服"
       ],
       "species": "人間",
-      "mood": [],
+      "mood": [
+        "甘め"
+      ],
       "combat": "戦わない",
       "affiliationKind": "学生",
       "affiliationName": "軽音楽部",
       "stature": "標準",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -18774,7 +19023,8 @@
         "生意気"
       ],
       "roles": [
-        "後輩"
+        "後輩",
+        "友人"
       ],
       "distance": "やや積極的",
       "looks": [
@@ -18795,7 +19045,7 @@
       "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -18821,7 +19071,9 @@
         "生意気",
         "おっとり"
       ],
-      "roles": [],
+      "roles": [
+        "姉"
+      ],
       "distance": "やや積極的",
       "looks": [
         "長髪"
@@ -18834,14 +19086,18 @@
         "制服"
       ],
       "species": "人間",
-      "mood": [],
+      "mood": [
+        "甘め"
+      ],
       "combat": "戦わない",
       "affiliationKind": "学生",
       "affiliationName": null,
       "stature": "小柄",
-      "occupation": []
+      "occupation": [
+        "メイド・従者"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -18861,7 +19117,7 @@
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "同年代",
-      "build": "標準",
+      "build": "華奢",
       "bust": "標準",
       "personality": [
         "生意気",
@@ -18882,14 +19138,16 @@
         "制服"
       ],
       "species": "人間",
-      "mood": [],
+      "mood": [
+        "支配的"
+      ],
       "combat": "戦わない",
       "affiliationKind": "学生",
       "affiliationName": null,
       "stature": "標準",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -18909,7 +19167,7 @@
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "幼い",
-      "build": "華奢",
+      "build": "標準",
       "bust": "小さい",
       "personality": [
         "元気"
@@ -18933,12 +19191,12 @@
       "combat": "戦わない",
       "affiliationKind": "学生",
       "affiliationName": null,
-      "stature": "小柄",
+      "stature": "標準",
       "occupation": [
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -18958,14 +19216,16 @@
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "同年代",
-      "build": "標準",
+      "build": "華奢",
       "bust": "標準",
       "personality": [
         "クール",
         "内気"
       ],
-      "roles": [],
-      "distance": "中立",
+      "roles": [
+        "主従"
+      ],
+      "distance": "やや受け身",
       "looks": [
         "長髪"
       ],
@@ -18977,7 +19237,9 @@
         "制服"
       ],
       "species": "人間",
-      "mood": [],
+      "mood": [
+        "甘め"
+      ],
       "combat": "戦わない",
       "affiliationKind": "学生",
       "affiliationName": null,
@@ -18986,7 +19248,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -19027,7 +19289,9 @@
         "和服・着物"
       ],
       "species": "人間",
-      "mood": [],
+      "mood": [
+        "純愛寄り"
+      ],
       "combat": "戦う",
       "affiliationKind": "軍・組織",
       "affiliationName": "鬼殺隊",
@@ -19037,7 +19301,7 @@
         "医療従事者"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -19063,7 +19327,8 @@
         "おっとり"
       ],
       "roles": [
-        "妹"
+        "妹",
+        "姉"
       ],
       "distance": "中立",
       "looks": [
@@ -19076,15 +19341,17 @@
       "outfit": [
         "和服・着物"
       ],
-      "species": "魔族",
-      "mood": [],
+      "species": "人間",
+      "mood": [
+        "甘め"
+      ],
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
       "affiliationName": null,
       "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -19112,7 +19379,7 @@
       "roles": [
         "幼馴染"
       ],
-      "distance": "積極的",
+      "distance": "やや受け身",
       "looks": [
         "長髪"
       ],
@@ -19124,7 +19391,9 @@
         "制服"
       ],
       "species": "人間",
-      "mood": [],
+      "mood": [
+        "純愛寄り"
+      ],
       "combat": "戦わない",
       "affiliationKind": "学生",
       "affiliationName": null,
@@ -19133,7 +19402,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -19160,7 +19429,7 @@
         "むっつり"
       ],
       "roles": [],
-      "distance": "積極的",
+      "distance": "やや積極的",
       "looks": [
         "長髪"
       ],
@@ -19176,12 +19445,12 @@
       "combat": "戦わない",
       "affiliationKind": "学生",
       "affiliationName": null,
-      "stature": "標準",
+      "stature": "小柄",
       "occupation": [
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -19208,19 +19477,23 @@
         "姉御"
       ],
       "roles": [
-        "幼馴染"
+        "幼馴染",
+        "母性"
       ],
       "distance": "積極的",
       "looks": [
         "長髪"
       ],
       "hairColor": [
-        "黒"
+        "黒",
+        "茶"
       ],
       "skinTone": "標準",
       "outfit": [],
       "species": "人間",
-      "mood": [],
+      "mood": [
+        "純愛寄り"
+      ],
       "combat": "戦う",
       "affiliationKind": "軍・組織",
       "affiliationName": "アバランチ",
@@ -19229,7 +19502,7 @@
         "格闘家・武道家"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -19252,7 +19525,8 @@
       "build": "標準",
       "bust": "標準",
       "personality": [
-        "おっとり"
+        "おっとり",
+        "元気"
       ],
       "roles": [],
       "distance": "やや積極的",
@@ -19269,14 +19543,14 @@
         "純愛寄り"
       ],
       "combat": "戦う",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "冒険者",
       "affiliationName": null,
       "stature": "標準",
       "occupation": [
         "巫女・神職"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -19317,12 +19591,12 @@
       "combat": "戦う",
       "affiliationKind": "冒険者",
       "affiliationName": "ハイラル王国",
-      "stature": "標準",
+      "stature": "長身",
       "occupation": [
         "王族・貴族"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -19367,7 +19641,7 @@
         "王族・貴族"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -19414,10 +19688,11 @@
       "affiliationName": "コメットオブザーバトリー",
       "stature": "長身",
       "occupation": [
-        "神様・精霊"
+        "神様・精霊",
+        "研究者・発明家"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -19464,7 +19739,7 @@
         "アスリート"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -19511,7 +19786,7 @@
         "格闘家・武道家"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -19536,8 +19811,10 @@
       "personality": [
         "元気"
       ],
-      "roles": [],
-      "distance": "積極的",
+      "roles": [
+        "友人"
+      ],
+      "distance": "やや受け身",
       "looks": [],
       "hairColor": [
         "茶"
@@ -19555,10 +19832,11 @@
       "affiliationName": null,
       "stature": "小柄",
       "occupation": [
-        "魔法使い・魔術師"
+        "魔法使い・魔術師",
+        "アスリート"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -19589,7 +19867,8 @@
       "distance": "積極的",
       "looks": [],
       "hairColor": [
-        "赤"
+        "赤",
+        "金"
       ],
       "skinTone": "標準",
       "outfit": [
@@ -19602,10 +19881,11 @@
       "affiliationName": "DA(Direct Attack)",
       "stature": "標準",
       "occupation": [
-        "スパイ・暗殺者"
+        "スパイ・暗殺者",
+        "メイド・従者"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -19645,10 +19925,12 @@
       "combat": "戦う",
       "affiliationKind": "冒険者",
       "affiliationName": null,
-      "stature": "標準",
-      "occupation": []
+      "stature": "長身",
+      "occupation": [
+        "兵士・軍人"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -19691,10 +19973,10 @@
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
       "affiliationName": null,
-      "stature": "標準",
+      "stature": "長身",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -19720,7 +20002,9 @@
         "元気",
         "生意気"
       ],
-      "roles": [],
+      "roles": [
+        "妹"
+      ],
       "distance": "積極的",
       "looks": [],
       "hairColor": [
@@ -19738,7 +20022,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -19783,7 +20067,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -19802,14 +20086,16 @@
     },
     "axes": {
       "genderExpression": "女性",
-      "ageFeel": "年上",
-      "build": "標準",
+      "ageFeel": "同年代",
+      "build": "むっちり",
       "bust": "標準",
       "personality": [
         "クール"
       ],
-      "roles": [],
-      "distance": "中立",
+      "roles": [
+        "先輩"
+      ],
+      "distance": "やや受け身",
       "looks": [
         "長髪"
       ],
@@ -19828,7 +20114,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -19847,8 +20133,8 @@
     },
     "axes": {
       "genderExpression": "女性",
-      "ageFeel": "同年代",
-      "build": "標準",
+      "ageFeel": "幼い",
+      "build": "華奢",
       "bust": "標準",
       "personality": [
         "生意気"
@@ -19864,7 +20150,9 @@
       "skinTone": "色白",
       "outfit": [],
       "species": "人間",
-      "mood": [],
+      "mood": [
+        "支配的"
+      ],
       "combat": "戦わない",
       "affiliationKind": "社会人",
       "affiliationName": "765プロダクション",
@@ -19873,7 +20161,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -19899,7 +20187,11 @@
         "クール",
         "内気"
       ],
-      "roles": [],
+      "roles": [
+        "幼馴染",
+        "先輩",
+        "友人"
+      ],
       "distance": "やや受け身",
       "looks": [],
       "hairColor": [
@@ -19917,7 +20209,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -19943,7 +20235,9 @@
         "生意気",
         "クール"
       ],
-      "roles": [],
+      "roles": [
+        "友人"
+      ],
       "distance": "中立",
       "looks": [],
       "hairColor": [
@@ -19952,16 +20246,18 @@
       "skinTone": "標準",
       "outfit": [],
       "species": "人間",
-      "mood": [],
+      "mood": [
+        "甘め"
+      ],
       "combat": "戦わない",
-      "affiliationKind": "社会人",
+      "affiliationKind": "学生",
       "affiliationName": "283プロダクション",
       "stature": "標準",
       "occupation": [
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -20009,7 +20305,7 @@
         "スパイ・暗殺者"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -20053,7 +20349,7 @@
         "魔法使い・魔術師"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -20099,7 +20395,7 @@
         "神様・精霊"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -20125,7 +20421,9 @@
         "生意気",
         "クール"
       ],
-      "roles": [],
+      "roles": [
+        "主従"
+      ],
       "distance": "やや受け身",
       "looks": [],
       "hairColor": [
@@ -20143,7 +20441,7 @@
       "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -20169,7 +20467,9 @@
         "元気",
         "生意気"
       ],
-      "roles": [],
+      "roles": [
+        "友人"
+      ],
       "distance": "積極的",
       "looks": [],
       "hairColor": [
@@ -20180,14 +20480,18 @@
         "制服"
       ],
       "species": "人間",
-      "mood": [],
+      "mood": [
+        "純愛寄り"
+      ],
       "combat": "戦わない",
       "affiliationKind": "学生",
       "affiliationName": null,
       "stature": "標準",
-      "occupation": []
+      "occupation": [
+        "アイドル・芸能"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -20219,7 +20523,7 @@
         "長髪"
       ],
       "hairColor": [
-        "赤"
+        "茶"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -20234,7 +20538,7 @@
         "格闘家・武道家"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -20278,7 +20582,7 @@
         "魔法使い・魔術師"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -20298,11 +20602,12 @@
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "同年代",
-      "build": "標準",
+      "build": "むっちり",
       "bust": "大きい",
       "personality": [
         "むっつり",
-        "クール"
+        "クール",
+        "生意気"
       ],
       "roles": [
         "妹"
@@ -20326,7 +20631,7 @@
       "stature": "標準",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -20372,7 +20677,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -20419,7 +20724,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -20465,7 +20770,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -20485,7 +20790,7 @@
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "同年代",
-      "build": "標準",
+      "build": "華奢",
       "bust": "標準",
       "personality": [
         "元気",
@@ -20506,13 +20811,13 @@
       "combat": "戦う",
       "affiliationKind": "冒険者",
       "affiliationName": null,
-      "stature": "標準",
+      "stature": "小柄",
       "occupation": [
         "王族・貴族",
         "格闘家・武道家"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -20557,7 +20862,7 @@
         "アスリート"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -20583,7 +20888,9 @@
         "生意気",
         "クール"
       ],
-      "roles": [],
+      "roles": [
+        "姉"
+      ],
       "distance": "中立",
       "looks": [
         "長髪"
@@ -20603,7 +20910,7 @@
       "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -20622,15 +20929,15 @@
     },
     "axes": {
       "genderExpression": "女性",
-      "ageFeel": "同年代",
-      "build": "標準",
+      "ageFeel": "幼い",
+      "build": "華奢",
       "bust": "標準",
       "personality": [
         "内気",
         "むっつり"
       ],
       "roles": [],
-      "distance": "受け身",
+      "distance": "やや受け身",
       "looks": [],
       "hairColor": [
         "黒"
@@ -20644,10 +20951,10 @@
       "combat": "戦わない",
       "affiliationKind": "学生",
       "affiliationName": null,
-      "stature": "標準",
+      "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -20685,13 +20992,13 @@
       ],
       "species": "人間",
       "mood": [],
-      "combat": "戦わない",
+      "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": null,
       "stature": "標準",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -20740,7 +21047,7 @@
         "魔法使い・魔術師"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -20786,7 +21093,7 @@
         "スパイ・暗殺者"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -20809,7 +21116,8 @@
       "build": "華奢",
       "bust": "小さい",
       "personality": [
-        "元気"
+        "元気",
+        "おっとり"
       ],
       "roles": [],
       "distance": "積極的",
@@ -20829,7 +21137,7 @@
       "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -20855,13 +21163,16 @@
         "元気",
         "生意気"
       ],
-      "roles": [],
+      "roles": [
+        "幼馴染"
+      ],
       "distance": "積極的",
       "looks": [
         "長髪"
       ],
       "hairColor": [
-        "桃"
+        "桃",
+        "茶"
       ],
       "skinTone": "褐色",
       "outfit": [],
@@ -20872,10 +21183,11 @@
       "affiliationName": null,
       "stature": "標準",
       "occupation": [
-        "研究者・発明家"
+        "研究者・発明家",
+        "魔法使い・魔術師"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -20926,7 +21238,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -20949,7 +21261,8 @@
       "build": "標準",
       "bust": "標準",
       "personality": [
-        "クール"
+        "クール",
+        "おっとり"
       ],
       "roles": [],
       "distance": "中立",
@@ -20963,14 +21276,18 @@
       "skinTone": "色白",
       "outfit": [],
       "species": "魔族",
-      "mood": [],
-      "combat": "戦わない",
+      "mood": [
+        "純愛寄り"
+      ],
+      "combat": "戦う",
       "affiliationKind": "非人間・その他",
       "affiliationName": "にじさんじ",
       "stature": "標準",
-      "occupation": []
+      "occupation": [
+        "教師・講師"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -20989,14 +21306,14 @@
     },
     "axes": {
       "genderExpression": "女性",
-      "ageFeel": "同年代",
-      "build": "標準",
+      "ageFeel": "幼い",
+      "build": "むっちり",
       "bust": "標準",
       "personality": [
         "元気"
       ],
       "roles": [],
-      "distance": "積極的",
+      "distance": "やや受け身",
       "looks": [],
       "hairColor": [
         "金"
@@ -21012,10 +21329,11 @@
       "affiliationName": null,
       "stature": "標準",
       "occupation": [
-        "魔法使い・魔術師"
+        "魔法使い・魔術師",
+        "神様・精霊"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -21041,7 +21359,10 @@
         "元気",
         "生意気"
       ],
-      "roles": [],
+      "roles": [
+        "恋人・伴侶",
+        "友人"
+      ],
       "distance": "積極的",
       "looks": [
         "長髪"
@@ -21054,14 +21375,18 @@
         "制服"
       ],
       "species": "人間",
-      "mood": [],
+      "mood": [
+        "純愛寄り"
+      ],
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": null,
       "stature": "標準",
-      "occupation": []
+      "occupation": [
+        "メイド・従者"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -21111,7 +21436,7 @@
         "神様・精霊"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -21158,7 +21483,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -21202,7 +21527,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -21226,10 +21551,13 @@
       "bust": "小さい",
       "personality": [
         "クール",
-        "むっつり"
+        "むっつり",
+        "内気"
       ],
-      "roles": [],
-      "distance": "中立",
+      "roles": [
+        "友人"
+      ],
+      "distance": "やや積極的",
       "looks": [
         "ツインテール"
       ],
@@ -21246,7 +21574,7 @@
       "stature": "標準",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -21266,7 +21594,7 @@
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "同年代",
-      "build": "標準",
+      "build": "むっちり",
       "bust": "大きい",
       "personality": [
         "おっとり",
@@ -21278,21 +21606,21 @@
         "長髪"
       ],
       "hairColor": [
-        "緑"
+        "青"
       ],
       "skinTone": "色白",
       "outfit": [],
-      "species": "魔族",
+      "species": "機械",
       "mood": [
         "甘め"
       ],
       "combat": "戦う",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "軍・組織",
       "affiliationName": null,
       "stature": "標準",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -21316,10 +21644,15 @@
       "bust": "小さい",
       "personality": [
         "クール",
-        "内気"
+        "内気",
+        "生意気"
       ],
-      "roles": [],
-      "distance": "受け身",
+      "roles": [
+        "後輩",
+        "妹",
+        "友人"
+      ],
+      "distance": "やや積極的",
       "looks": [
         "角",
         "尻尾"
@@ -21332,14 +21665,18 @@
         "制服"
       ],
       "species": "魔族",
-      "mood": [],
+      "mood": [
+        "純愛寄り"
+      ],
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": null,
       "stature": "小柄",
-      "occupation": []
+      "occupation": [
+        "アスリート"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -21386,7 +21723,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -21433,7 +21770,7 @@
       "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -21479,7 +21816,7 @@
       "stature": "標準",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -21523,10 +21860,10 @@
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": "SOS団",
-      "stature": "標準",
+      "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -21564,7 +21901,7 @@
       "outfit": [
         "軍服"
       ],
-      "species": "機械",
+      "species": "人間",
       "mood": [],
       "combat": "戦う",
       "affiliationKind": "軍・組織",
@@ -21574,7 +21911,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -21622,7 +21959,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -21642,14 +21979,16 @@
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "同年代",
-      "build": "標準",
+      "build": "華奢",
       "bust": "標準",
       "personality": [
         "おっとり",
         "クール"
       ],
-      "roles": [],
-      "distance": "中立",
+      "roles": [
+        "友人"
+      ],
+      "distance": "やや受け身",
       "looks": [],
       "hairColor": [
         "緑"
@@ -21666,7 +22005,7 @@
       "stature": "標準",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -21713,7 +22052,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -21733,7 +22072,7 @@
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "同年代",
-      "build": "標準",
+      "build": "華奢",
       "bust": "標準",
       "personality": [
         "生意気",
@@ -21752,7 +22091,9 @@
         "制服"
       ],
       "species": "人間",
-      "mood": [],
+      "mood": [
+        "甘め"
+      ],
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": null,
@@ -21761,7 +22102,7 @@
         "魔法使い・魔術師"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -21804,7 +22145,7 @@
       "stature": "標準",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -21852,7 +22193,7 @@
         "王族・貴族"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -21874,7 +22215,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "華奢",
-      "bust": "小さい",
+      "bust": "大きい",
       "personality": [
         "内気",
         "むっつり"
@@ -21896,12 +22237,12 @@
       "combat": "戦わない",
       "affiliationKind": "学生",
       "affiliationName": "結束バンド",
-      "stature": "小柄",
+      "stature": "標準",
       "occupation": [
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -21949,7 +22290,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -21969,7 +22310,7 @@
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "同年代",
-      "build": "標準",
+      "build": "華奢",
       "bust": "標準",
       "personality": [
         "元気"
@@ -21994,7 +22335,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -22014,26 +22355,31 @@
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "年上",
-      "build": "標準",
+      "build": "華奢",
       "bust": "大きい",
       "personality": [
         "おっとり",
         "クール"
       ],
       "roles": [
-        "先輩"
+        "先輩",
+        "後輩",
+        "友人"
       ],
-      "distance": "中立",
+      "distance": "やや積極的",
       "looks": [
         "長髪"
       ],
       "hairColor": [
-        "黒"
+        "黒",
+        "桃"
       ],
       "skinTone": "色白",
       "outfit": [],
       "species": "人間",
-      "mood": [],
+      "mood": [
+        "甘め"
+      ],
       "combat": "戦わない",
       "affiliationKind": "社会人",
       "affiliationName": "SICK HACK",
@@ -22042,7 +22388,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -22083,10 +22429,11 @@
       "affiliationName": null,
       "stature": "標準",
       "occupation": [
-        "アイドル・芸能"
+        "アイドル・芸能",
+        "会社員・OL"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -22112,7 +22459,8 @@
         "クール"
       ],
       "roles": [
-        "先輩"
+        "先輩",
+        "後輩"
       ],
       "distance": "中立",
       "looks": [
@@ -22126,14 +22474,16 @@
         "制服"
       ],
       "species": "人間",
-      "mood": [],
+      "mood": [
+        "支配的"
+      ],
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": "対策委員会",
-      "stature": "標準",
+      "stature": "長身",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -22158,7 +22508,9 @@
       "personality": [
         "クール"
       ],
-      "roles": [],
+      "roles": [
+        "後輩"
+      ],
       "distance": "中立",
       "looks": [],
       "hairColor": [
@@ -22171,12 +22523,14 @@
       "species": "人間",
       "mood": [],
       "combat": "戦う",
-      "affiliationKind": "学生",
+      "affiliationKind": "社会人",
       "affiliationName": "トラブルシューター68",
       "stature": "標準",
-      "occupation": []
+      "occupation": [
+        "会社員・OL"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -22195,14 +22549,16 @@
     },
     "axes": {
       "genderExpression": "女性",
-      "ageFeel": "同年代",
+      "ageFeel": "幼い",
       "build": "標準",
       "bust": "標準",
       "personality": [
         "クール",
         "むっつり"
       ],
-      "roles": [],
+      "roles": [
+        "幼馴染"
+      ],
       "distance": "中立",
       "looks": [],
       "hairColor": [
@@ -22217,10 +22573,12 @@
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": "トラブルシューター68",
-      "stature": "標準",
-      "occupation": []
+      "stature": "小柄",
+      "occupation": [
+        "アスリート"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -22239,7 +22597,7 @@
     },
     "axes": {
       "genderExpression": "女性",
-      "ageFeel": "同年代",
+      "ageFeel": "幼い",
       "build": "標準",
       "bust": "標準",
       "personality": [
@@ -22259,14 +22617,18 @@
         "制服"
       ],
       "species": "人間",
-      "mood": [],
+      "mood": [
+        "甘め"
+      ],
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": "梅花園",
-      "stature": "標準",
-      "occupation": []
+      "stature": "小柄",
+      "occupation": [
+        "教師・講師"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -22309,7 +22671,7 @@
       "stature": "標準",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -22333,7 +22695,8 @@
       "bust": "標準",
       "personality": [
         "クール",
-        "姉御"
+        "姉御",
+        "おっとり"
       ],
       "roles": [
         "先輩",
@@ -22351,16 +22714,18 @@
         "制服"
       ],
       "species": "人間",
-      "mood": [],
+      "mood": [
+        "甘め"
+      ],
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": "梅花園",
-      "stature": "標準",
+      "stature": "長身",
       "occupation": [
         "教師・講師"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -22380,7 +22745,7 @@
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "同年代",
-      "build": "標準",
+      "build": "華奢",
       "bust": "標準",
       "personality": [
         "元気"
@@ -22400,14 +22765,16 @@
         "制服"
       ],
       "species": "人間",
-      "mood": [],
+      "mood": [
+        "支配的"
+      ],
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": "ゲーム開発部",
-      "stature": "標準",
+      "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -22446,14 +22813,18 @@
         "制服"
       ],
       "species": "人間",
-      "mood": [],
+      "mood": [
+        "純愛寄り"
+      ],
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": "図書委員会",
       "stature": "標準",
-      "occupation": []
+      "occupation": [
+        "研究者・発明家"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -22498,7 +22869,7 @@
         "教師・講師"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -22517,13 +22888,16 @@
     },
     "axes": {
       "genderExpression": "女性",
-      "ageFeel": "同年代",
+      "ageFeel": "幼い",
       "build": "標準",
       "bust": "標準",
       "personality": [
         "生意気"
       ],
-      "roles": [],
+      "roles": [
+        "後輩",
+        "友人"
+      ],
       "distance": "積極的",
       "looks": [],
       "hairColor": [
@@ -22534,14 +22908,16 @@
         "制服"
       ],
       "species": "人間",
-      "mood": [],
+      "mood": [
+        "甘め"
+      ],
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": "放課後お菓子倶楽部",
-      "stature": "標準",
+      "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -22561,7 +22937,7 @@
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "同年代",
-      "build": "標準",
+      "build": "むっちり",
       "bust": "標準",
       "personality": [
         "クール"
@@ -22577,16 +22953,18 @@
         "制服"
       ],
       "species": "人間",
-      "mood": [],
+      "mood": [
+        "純愛寄り"
+      ],
       "combat": "戦う",
-      "affiliationKind": "学生",
+      "affiliationKind": "軍・組織",
       "affiliationName": "RABBIT小隊",
       "stature": "標準",
       "occupation": [
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -22612,7 +22990,10 @@
         "生意気",
         "むっつり"
       ],
-      "roles": [],
+      "roles": [
+        "主従",
+        "恋人・伴侶"
+      ],
       "distance": "積極的",
       "looks": [
         "ケモミミ"
@@ -22624,15 +23005,18 @@
       "outfit": [],
       "species": "獣人",
       "mood": [
-        "背徳寄り"
+        "背徳寄り",
+        "純愛寄り"
       ],
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
       "affiliationName": "セブンプリズナーズ",
       "stature": "標準",
-      "occupation": []
+      "occupation": [
+        "スパイ・暗殺者"
+      ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -22655,9 +23039,12 @@
       "build": "標準",
       "bust": "標準",
       "personality": [
-        "内気"
+        "内気",
+        "おっとり"
       ],
-      "roles": [],
+      "roles": [
+        "後輩"
+      ],
       "distance": "受け身",
       "looks": [
         "長髪",
@@ -22671,14 +23058,16 @@
         "制服"
       ],
       "species": "人間",
-      "mood": [],
+      "mood": [
+        "純愛寄り"
+      ],
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": "追試部",
       "stature": "標準",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -22703,7 +23092,9 @@
       "personality": [
         "おっとり"
       ],
-      "roles": [],
+      "roles": [
+        "先輩"
+      ],
       "distance": "やや受け身",
       "looks": [
         "長髪"
@@ -22723,7 +23114,7 @@
       "stature": "標準",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -22742,14 +23133,16 @@
     },
     "axes": {
       "genderExpression": "女性",
-      "ageFeel": "同年代",
+      "ageFeel": "幼い",
       "build": "標準",
       "bust": "標準",
       "personality": [
         "元気",
         "生意気"
       ],
-      "roles": [],
+      "roles": [
+        "友人"
+      ],
       "distance": "積極的",
       "looks": [
         "長髪",
@@ -22766,12 +23159,12 @@
       "species": "人間",
       "mood": [],
       "combat": "戦う",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "学生",
       "affiliationName": "ヴィジランテクルー",
-      "stature": "標準",
+      "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -22794,7 +23187,8 @@
       "build": "標準",
       "bust": "標準",
       "personality": [
-        "クール"
+        "クール",
+        "生意気"
       ],
       "roles": [],
       "distance": "中立",
@@ -22811,10 +23205,10 @@
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": "特別強制清掃部",
-      "stature": "標準",
+      "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -22838,9 +23232,13 @@
       "build": "華奢",
       "bust": "小さい",
       "personality": [
-        "クール"
+        "クール",
+        "内気"
       ],
-      "roles": [],
+      "roles": [
+        "姉",
+        "恋人・伴侶"
+      ],
       "distance": "中立",
       "looks": [],
       "hairColor": [
@@ -22849,16 +23247,19 @@
       "skinTone": "色白",
       "outfit": [],
       "species": "エルフ",
-      "mood": [],
+      "mood": [
+        "純愛寄り"
+      ],
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
       "affiliationName": null,
       "stature": "小柄",
       "occupation": [
-        "兵士・軍人"
+        "兵士・軍人",
+        "魔法使い・魔術師"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -22906,7 +23307,7 @@
         "兵士・軍人"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -22949,7 +23350,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -22992,7 +23393,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -23033,7 +23434,7 @@
       "stature": "標準",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -23074,7 +23475,7 @@
       "stature": "小柄",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -23117,7 +23518,7 @@
         "アスリート"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -23162,7 +23563,7 @@
         "アイドル・芸能"
       ]
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -23205,7 +23606,7 @@
       "stature": "標準",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
@@ -23250,7 +23651,7 @@
       "stature": "標準",
       "occupation": []
     },
-    "reviewed": false,
+    "reviewed": true,
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
