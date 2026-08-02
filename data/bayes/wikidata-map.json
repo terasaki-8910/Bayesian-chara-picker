@@ -3227,6 +3227,34 @@
       "candidateQid": "Q5371628",
       "candidateLabel": "Emilia",
       "checkedAt": "2026-08-02T05:43:06.235Z"
+    },
+    "bocchi-hitori": {
+      "qid": "Q113317037",
+      "label": "Hitori Gotō",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T06:16:55.542Z"
+    },
+    "bocchi-ryo": {
+      "qid": "Q113317122",
+      "label": "Ryō Yamada",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T06:17:00.350Z"
+    },
+    "bocchi-ikuyo": {
+      "qid": "Q113317124",
+      "label": "Ikuyo Kita",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T06:17:05.148Z"
+    },
+    "bocchi-kikuri": {
+      "qid": "Q115924666",
+      "label": "Kikuri Hiroi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T06:17:09.958Z"
     }
   }
 }

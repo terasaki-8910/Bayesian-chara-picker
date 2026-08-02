@@ -21856,5 +21856,195 @@
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
+  },
+  {
+    "id": "bocchi-hitori",
+    "name": "後藤ひとり",
+    "aliases": [
+      "Gotoh Hitori",
+      "ぼっちちゃん"
+    ],
+    "series": "ぼっち・ざ・ろっく!",
+    "dlsiteQuery": "ぼっち・ざ・ろっく! 後藤ひとり",
+    "hitomiQuery": {
+      "character": "hitori gotoh",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": [
+        "内気",
+        "むっつり"
+      ],
+      "roles": [],
+      "distance": "受け身",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "桃"
+      ],
+      "skinTone": "色白",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "結束バンド",
+      "stature": "小柄",
+      "occupation": [
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "bocchi-ryo",
+    "name": "山田リョウ",
+    "aliases": [
+      "Yamada Ryo"
+    ],
+    "series": "ぼっち・ざ・ろっく!",
+    "dlsiteQuery": "リョウ ぼっち",
+    "hitomiQuery": {
+      "character": "ryo yamada",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "クール",
+        "むっつり"
+      ],
+      "roles": [],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "青"
+      ],
+      "skinTone": "色白",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "結束バンド",
+      "stature": "標準",
+      "occupation": [
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "bocchi-ikuyo",
+    "name": "喜多郁代",
+    "aliases": [
+      "Kita Ikuyo"
+    ],
+    "series": "ぼっち・ざ・ろっく!",
+    "dlsiteQuery": "喜多郁代",
+    "hitomiQuery": {
+      "character": "ikuyo kita",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "元気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [],
+      "hairColor": [
+        "赤"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "結束バンド",
+      "stature": "標準",
+      "occupation": [
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "bocchi-kikuri",
+    "name": "廣井きくり",
+    "aliases": [
+      "Hiroi Kikuri"
+    ],
+    "series": "ぼっち・ざ・ろっく!",
+    "dlsiteQuery": "きくり ぼっち",
+    "hitomiQuery": {
+      "character": "kikuri hiroi",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": [
+        "おっとり",
+        "クール"
+      ],
+      "roles": [
+        "先輩"
+      ],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "黒"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "社会人",
+      "affiliationName": "SICK HACK",
+      "stature": "標準",
+      "occupation": [
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   }
 ]

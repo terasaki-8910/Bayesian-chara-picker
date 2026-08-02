@@ -1961,6 +1961,37 @@
       ]
     },
     "granblue-djeeta": {},
-    "rezero-emilia": {}
+    "rezero-emilia": {},
+    "bocchi-hitori": {
+      "genderExpression": "女性",
+      "hairColor": "桃",
+      "eyeColor": "blue",
+      "species": [
+        "人間"
+      ]
+    },
+    "bocchi-ryo": {
+      "genderExpression": "女性",
+      "hairColor": "青",
+      "eyeColor": "yellow",
+      "species": [
+        "人間"
+      ]
+    },
+    "bocchi-ikuyo": {
+      "genderExpression": "女性",
+      "hairColor": "赤",
+      "eyeColor": "yellow",
+      "species": [
+        "人間"
+      ]
+    },
+    "bocchi-kikuri": {
+      "genderExpression": "女性",
+      "hairColor": "桃",
+      "species": [
+        "人間"
+      ]
+    }
   }
 }

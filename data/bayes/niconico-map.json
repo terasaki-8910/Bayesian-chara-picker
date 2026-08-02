@@ -2782,6 +2782,31 @@
       "url": "https://dic.nicovideo.jp/a/%E3%82%A8%E3%83%9F%E3%83%AA%E3%82%A2",
       "source": "search-verified",
       "checkedAt": "2026-08-02T05:49:45.500Z"
+    },
+    "bocchi-hitori": {
+      "title": "後藤ひとり",
+      "url": "https://dic.nicovideo.jp/a/%E5%BE%8C%E8%97%A4%E3%81%B2%E3%81%A8%E3%82%8A",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T06:17:29.747Z"
+    },
+    "bocchi-ryo": {
+      "title": null,
+      "reason": "記事「山田リョウ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateTitle": "山田リョウ",
+      "checkedAt": "2026-08-02T06:17:39.499Z"
+    },
+    "bocchi-ikuyo": {
+      "title": "喜多郁代",
+      "url": "https://dic.nicovideo.jp/a/%E5%96%9C%E5%A4%9A%E9%83%81%E4%BB%A3",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T06:17:44.783Z"
+    },
+    "bocchi-kikuri": {
+      "title": "廣井きくり",
+      "url": "https://dic.nicovideo.jp/a/%E5%BB%A3%E4%BA%95%E3%81%8D%E3%81%8F%E3%82%8A",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T06:17:49.747Z"
     }
   }
 }

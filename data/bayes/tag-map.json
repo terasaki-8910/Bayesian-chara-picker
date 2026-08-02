@@ -5142,6 +5142,30 @@
       "postCount": 5013,
       "source": "override",
       "checkedAt": "2026-08-02T04:28:51.569Z"
+    },
+    "bocchi-hitori": {
+      "tag": "gotoh_hitori",
+      "postCount": 17746,
+      "source": "override",
+      "checkedAt": "2026-08-02T06:13:32.619Z"
+    },
+    "bocchi-ryo": {
+      "tag": "yamada_ryo",
+      "postCount": 6497,
+      "source": "override",
+      "checkedAt": "2026-08-02T06:13:33.652Z"
+    },
+    "bocchi-ikuyo": {
+      "tag": "kita_ikuyo",
+      "postCount": 9219,
+      "source": "override",
+      "checkedAt": "2026-08-02T06:13:34.762Z"
+    },
+    "bocchi-kikuri": {
+      "tag": "hiroi_kikuri",
+      "postCount": 4120,
+      "source": "override",
+      "checkedAt": "2026-08-02T06:13:35.855Z"
     }
   }
 }

@@ -8224,5 +8224,77 @@
       "seriesFilter": null,
       "fetchedAt": "2026-08-02T05:38:25.297Z"
     }
+  },
+  "bocchi-hitori": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T06:14:11.488Z",
+    "hitomi": {
+      "galleryCount": 0,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T06:16:43.857Z"
+    }
+  },
+  "bocchi-ryo": {
+    "pageCount": 5,
+    "estimatedRange": [
+      121,
+      150
+    ],
+    "byWorkType": {
+      "doujinshi": 5,
+      "voice": 5,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T06:14:51.428Z",
+    "hitomi": {
+      "galleryCount": 0,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T06:16:44.623Z"
+    }
+  },
+  "bocchi-ikuyo": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T06:15:31.434Z",
+    "hitomi": {
+      "galleryCount": 351,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T06:16:46.123Z"
+    }
+  },
+  "bocchi-kikuri": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T06:16:11.394Z",
+    "hitomi": {
+      "galleryCount": 123,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T06:16:47.625Z"
+    }
   }
 }
