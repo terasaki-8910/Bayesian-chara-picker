@@ -1962,6 +1962,206 @@
       "candidateQid": "Q11289764",
       "candidateLabel": "エクシア",
       "checkedAt": "2026-08-02T01:23:18.568Z"
+    },
+    "hololive-marine": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q99470768, Houshou Marine)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q99470768",
+      "candidateLabel": "Houshou Marine",
+      "checkedAt": "2026-08-02T01:45:12.094Z"
+    },
+    "hololive-fubuki": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q85323946, Shirakami Fubuki)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q85323946",
+      "candidateLabel": "Shirakami Fubuki",
+      "checkedAt": "2026-08-02T01:45:14.717Z"
+    },
+    "hololive-suisei": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q86731266, Hoshimachi Suisei)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q86731266",
+      "candidateLabel": "Hoshimachi Suisei",
+      "checkedAt": "2026-08-02T01:45:18.560Z"
+    },
+    "hololive-pekora": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q89771228, Usada Pekora)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q89771228",
+      "candidateLabel": "Usada Pekora",
+      "checkedAt": "2026-08-02T01:45:20.747Z"
+    },
+    "hololive-okayu": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q88885593, Nekomata Okayu)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q88885593",
+      "candidateLabel": "Nekomata Okayu",
+      "checkedAt": "2026-08-02T01:45:23.139Z"
+    },
+    "hololive-miko": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q85327517, Sakura Miko)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q85327517",
+      "candidateLabel": "Sakura Miko",
+      "checkedAt": "2026-08-02T01:45:25.824Z"
+    },
+    "hololive-towa": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q99413618, Tokoyami Towa)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q99413618",
+      "candidateLabel": "Tokoyami Towa",
+      "checkedAt": "2026-08-02T01:45:28.382Z"
+    },
+    "hololive-aqua": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q88874152, Minato Aqua)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q88874152",
+      "candidateLabel": "Minato Aqua",
+      "checkedAt": "2026-08-02T01:45:30.324Z"
+    },
+    "hololive-mio": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q106840546, Ookami Mio)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q106840546",
+      "candidateLabel": "Ookami Mio",
+      "checkedAt": "2026-08-02T01:45:33.165Z"
+    },
+    "hololive-subaru": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q95972569, Ōzora Subaru)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q95972569",
+      "candidateLabel": "Ōzora Subaru",
+      "checkedAt": "2026-08-02T01:45:35.555Z"
+    },
+    "hololive-kanata": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q89035235, Amane Kanata)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q89035235",
+      "candidateLabel": "Amane Kanata",
+      "checkedAt": "2026-08-02T01:45:37.946Z"
+    },
+    "hololive-lamy": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q100304510, Lamy Yukihana)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q100304510",
+      "candidateLabel": "Lamy Yukihana",
+      "checkedAt": "2026-08-02T01:45:40.344Z"
+    },
+    "hololive-korone": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q98774527, Inugami Korone)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q98774527",
+      "candidateLabel": "Inugami Korone",
+      "checkedAt": "2026-08-02T01:45:43.327Z"
+    },
+    "hololive-noel": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q99470410, Shirogane Noel)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q99470410",
+      "candidateLabel": "Shirogane Noel",
+      "checkedAt": "2026-08-02T01:45:45.952Z"
+    },
+    "hololive-chloe": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q109743000, Sakamata Chloe)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q109743000",
+      "candidateLabel": "Sakamata Chloe",
+      "checkedAt": "2026-08-02T01:45:48.363Z"
+    },
+    "hololive-botan": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q105432506, Shishiro Botan)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q105432506",
+      "candidateLabel": "Shishiro Botan",
+      "checkedAt": "2026-08-02T01:45:50.537Z"
+    },
+    "hololive-laplus": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q109742973, La+ Darknesss)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q109742973",
+      "candidateLabel": "La+ Darknesss",
+      "checkedAt": "2026-08-02T01:45:53.152Z"
+    },
+    "hololive-ayame": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q106714182, Nakiri Ayame)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q106714182",
+      "candidateLabel": "Nakiri Ayame",
+      "checkedAt": "2026-08-02T01:45:56.539Z"
+    },
+    "hololive-flare": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q99470379, Shiranui Flare)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q99470379",
+      "candidateLabel": "Shiranui Flare",
+      "checkedAt": "2026-08-02T01:45:59.554Z"
+    },
+    "hololive-shion": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q106811363, Murasaki Shion)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q106811363",
+      "candidateLabel": "Murasaki Shion",
+      "checkedAt": "2026-08-02T01:46:01.970Z"
+    },
+    "hololive-koyori": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q109742996, Hakui Koyori)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q109742996",
+      "candidateLabel": "Hakui Koyori",
+      "checkedAt": "2026-08-02T01:46:03.956Z"
+    },
+    "hololive-rushia": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q90815761, Uruha Rushia)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q90815761",
+      "candidateLabel": "Uruha Rushia",
+      "checkedAt": "2026-08-02T01:46:07.328Z"
+    },
+    "hololive-matsuri": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q88387033, Natsuiro Matsuri)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q88387033",
+      "candidateLabel": "Natsuiro Matsuri",
+      "checkedAt": "2026-08-02T01:46:10.600Z"
+    },
+    "hololive-iroha": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q109743004, Kazama Iroha)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q109743004",
+      "candidateLabel": "Kazama Iroha",
+      "checkedAt": "2026-08-02T01:46:12.365Z"
+    },
+    "hololive-azki": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q116936972, AZKi)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q116936972",
+      "candidateLabel": "AZKi",
+      "checkedAt": "2026-08-02T01:46:19.354Z"
     }
   }
 }

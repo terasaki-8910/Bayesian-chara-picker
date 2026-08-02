@@ -13566,5 +13566,1205 @@
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
+  },
+  {
+    "id": "hololive-marine",
+    "name": "宝鐘マリン",
+    "aliases": [
+      "Houshou Marine"
+    ],
+    "series": "ホロライブ",
+    "dlsiteQuery": "ホロライブ 宝鐘マリン",
+    "hitomiQuery": {
+      "character": "houshou marine",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": [
+        "元気",
+        "生意気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "赤"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "人間",
+      "mood": [
+        "背徳寄り"
+      ],
+      "combat": "戦わない",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "ホロライブ",
+      "stature": "標準",
+      "occupation": [
+        "アイドル・芸能",
+        "海賊"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hololive-fubuki",
+    "name": "白上フブキ",
+    "aliases": [
+      "Shirakami Fubuki"
+    ],
+    "series": "ホロライブ",
+    "dlsiteQuery": "ホロライブ 白上フブキ",
+    "hitomiQuery": {
+      "character": "shirakami fubuki",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "元気"
+      ],
+      "roles": [
+        "友人"
+      ],
+      "distance": "積極的",
+      "looks": [
+        "ケモミミ",
+        "尻尾",
+        "長髪"
+      ],
+      "hairColor": [
+        "白"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "獣人",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "ホロライブ",
+      "stature": "標準",
+      "occupation": [
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hololive-suisei",
+    "name": "星街すいせい",
+    "aliases": [
+      "Hoshimachi Suisei"
+    ],
+    "series": "ホロライブ",
+    "dlsiteQuery": "ホロライブ 星街すいせい",
+    "hitomiQuery": {
+      "character": "hoshimachi suisei",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "クール",
+        "生意気"
+      ],
+      "roles": [],
+      "distance": "やや積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "青"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "ホロライブ",
+      "stature": "標準",
+      "occupation": [
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hololive-pekora",
+    "name": "兎田ぺこら",
+    "aliases": [
+      "Usada Pekora"
+    ],
+    "series": "ホロライブ",
+    "dlsiteQuery": "ホロライブ 兎田ぺこら",
+    "hitomiQuery": {
+      "character": "usada pekora",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "生意気",
+        "元気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "ケモミミ",
+        "長髪"
+      ],
+      "hairColor": [
+        "白"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "獣人",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "ホロライブ",
+      "stature": "標準",
+      "occupation": [
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hololive-okayu",
+    "name": "猫又おかゆ",
+    "aliases": [
+      "Nekomata Okayu"
+    ],
+    "series": "ホロライブ",
+    "dlsiteQuery": "ホロライブ 猫又おかゆ",
+    "hitomiQuery": {
+      "character": "nekomata okayu",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "むっちり",
+      "bust": "大きい",
+      "personality": [
+        "おっとり"
+      ],
+      "roles": [
+        "友人"
+      ],
+      "distance": "中立",
+      "looks": [
+        "ケモミミ",
+        "尻尾",
+        "長髪"
+      ],
+      "hairColor": [
+        "橙"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "獣人",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "ホロライブ",
+      "stature": "標準",
+      "occupation": [
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hololive-miko",
+    "name": "さくらみこ",
+    "aliases": [
+      "Sakura Miko"
+    ],
+    "series": "ホロライブ",
+    "dlsiteQuery": "ホロライブ さくらみこ",
+    "hitomiQuery": {
+      "character": "sakura miko",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "元気",
+        "生意気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "桃"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "巫女"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "ホロライブ",
+      "stature": "標準",
+      "occupation": [
+        "巫女・神職",
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hololive-towa",
+    "name": "常闇トワ",
+    "aliases": [
+      "Tokoyami Towa"
+    ],
+    "series": "ホロライブ",
+    "dlsiteQuery": "ホロライブ 常闇トワ",
+    "hitomiQuery": {
+      "character": "tokoyami towa",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": [
+        "元気",
+        "生意気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "角",
+        "長髪"
+      ],
+      "hairColor": [
+        "紫"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "魔族",
+      "mood": [
+        "背徳寄り"
+      ],
+      "combat": "戦わない",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "ホロライブ",
+      "stature": "標準",
+      "occupation": [
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hololive-aqua",
+    "name": "湊あくあ",
+    "aliases": [
+      "Minato Aqua"
+    ],
+    "series": "ホロライブ",
+    "dlsiteQuery": "ホロライブ 湊あくあ",
+    "hitomiQuery": {
+      "character": "minato aqua",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": [
+        "元気",
+        "内気"
+      ],
+      "roles": [],
+      "distance": "やや積極的",
+      "looks": [
+        "ツインテール"
+      ],
+      "hairColor": [
+        "青"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "ホロライブ",
+      "stature": "小柄",
+      "occupation": [
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hololive-mio",
+    "name": "大神ミオ",
+    "aliases": [
+      "Ookami Mio"
+    ],
+    "series": "ホロライブ",
+    "dlsiteQuery": "ホロライブ 大神ミオ",
+    "hitomiQuery": {
+      "character": "ookami mio",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": [
+        "おっとり",
+        "姉御"
+      ],
+      "roles": [
+        "母性"
+      ],
+      "distance": "中立",
+      "looks": [
+        "ケモミミ",
+        "尻尾",
+        "長髪"
+      ],
+      "hairColor": [
+        "紫"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "獣人",
+      "mood": [
+        "甘め"
+      ],
+      "combat": "戦わない",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "ホロライブ",
+      "stature": "標準",
+      "occupation": [
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hololive-subaru",
+    "name": "大空スバル",
+    "aliases": [
+      "Oozora Subaru"
+    ],
+    "series": "ホロライブ",
+    "dlsiteQuery": "ホロライブ 大空スバル",
+    "hitomiQuery": {
+      "character": "oozora subaru",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "元気",
+        "生意気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [],
+      "hairColor": [
+        "橙"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "ホロライブ",
+      "stature": "標準",
+      "occupation": [
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hololive-kanata",
+    "name": "天音かなた",
+    "aliases": [
+      "Amane Kanata"
+    ],
+    "series": "ホロライブ",
+    "dlsiteQuery": "ホロライブ 天音かなた",
+    "hitomiQuery": {
+      "character": "amane kanata",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": [
+        "おっとり"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "青"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "魔族",
+      "mood": [
+        "甘め"
+      ],
+      "combat": "戦わない",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "ホロライブ",
+      "stature": "標準",
+      "occupation": [
+        "アイドル・芸能",
+        "巫女・神職"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hololive-lamy",
+    "name": "雪花ラミィ",
+    "aliases": [
+      "Yukihana Lamy"
+    ],
+    "series": "ホロライブ",
+    "dlsiteQuery": "ホロライブ 雪花ラミィ",
+    "hitomiQuery": {
+      "character": "yukihana lamy",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": [
+        "おっとり",
+        "クール"
+      ],
+      "roles": [],
+      "distance": "中立",
+      "looks": [
+        "角",
+        "長髪"
+      ],
+      "hairColor": [
+        "白"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "魔族",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "ホロライブ",
+      "stature": "標準",
+      "occupation": [
+        "アイドル・芸能",
+        "王族・貴族"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hololive-korone",
+    "name": "戌神ころね",
+    "aliases": [
+      "Inugami Korone"
+    ],
+    "series": "ホロライブ",
+    "dlsiteQuery": "ホロライブ 戌神ころね",
+    "hitomiQuery": {
+      "character": "inugami korone",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "元気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "ケモミミ",
+        "尻尾"
+      ],
+      "hairColor": [
+        "茶"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "獣人",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "ホロライブ",
+      "stature": "標準",
+      "occupation": [
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hololive-noel",
+    "name": "白銀ノエル",
+    "aliases": [
+      "Shirogane Noel"
+    ],
+    "series": "ホロライブ",
+    "dlsiteQuery": "ホロライブ 白銀ノエル",
+    "hitomiQuery": {
+      "character": "shirogane noel",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "とても大きい",
+      "personality": [
+        "おっとり",
+        "クール"
+      ],
+      "roles": [],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "銀"
+      ],
+      "skinTone": "色白",
+      "outfit": [
+        "軍服"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "ホロライブ",
+      "stature": "長身",
+      "occupation": [
+        "兵士・軍人",
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hololive-chloe",
+    "name": "沙花叉クロヱ",
+    "aliases": [
+      "Sakamata Chloe"
+    ],
+    "series": "ホロライブ",
+    "dlsiteQuery": "ホロライブ 沙花叉クロヱ",
+    "hitomiQuery": {
+      "character": "sakamata chloe",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "生意気",
+        "元気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "ケモミミ",
+        "長髪"
+      ],
+      "hairColor": [
+        "黒"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "獣人",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "ホロライブ",
+      "stature": "標準",
+      "occupation": [
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hololive-botan",
+    "name": "獅白ぼたん",
+    "aliases": [
+      "Shishiro Botan"
+    ],
+    "series": "ホロライブ",
+    "dlsiteQuery": "ホロライブ 獅白ぼたん",
+    "hitomiQuery": {
+      "character": "shishiro botan",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "元気",
+        "生意気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "ケモミミ",
+        "長髪"
+      ],
+      "hairColor": [
+        "金"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "獣人",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "ホロライブ",
+      "stature": "標準",
+      "occupation": [
+        "格闘家・武道家",
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hololive-laplus",
+    "name": "ラプラス・ダークネス",
+    "aliases": [
+      "La+ Darknesss"
+    ],
+    "series": "ホロライブ",
+    "dlsiteQuery": "ホロライブ ラプラス・ダークネス",
+    "hitomiQuery": {
+      "character": "laplus darknesss",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": [
+        "生意気",
+        "元気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "角",
+        "長髪"
+      ],
+      "hairColor": [
+        "紫"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "魔族",
+      "mood": [
+        "背徳寄り"
+      ],
+      "combat": "戦わない",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "ホロライブ",
+      "stature": "小柄",
+      "occupation": [
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hololive-ayame",
+    "name": "百鬼あやめ",
+    "aliases": [
+      "Nakiri Ayame"
+    ],
+    "series": "ホロライブ",
+    "dlsiteQuery": "ホロライブ 百鬼あやめ",
+    "hitomiQuery": {
+      "character": "nakiri ayame",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": [
+        "クール",
+        "むっつり"
+      ],
+      "roles": [],
+      "distance": "中立",
+      "looks": [
+        "角",
+        "長髪"
+      ],
+      "hairColor": [
+        "紫"
+      ],
+      "skinTone": "色白",
+      "outfit": [
+        "和服・着物"
+      ],
+      "species": "魔族",
+      "mood": [
+        "支配的"
+      ],
+      "combat": "戦わない",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "ホロライブ",
+      "stature": "標準",
+      "occupation": [
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hololive-flare",
+    "name": "不知火フレア",
+    "aliases": [
+      "Shiranui Flare"
+    ],
+    "series": "ホロライブ",
+    "dlsiteQuery": "ホロライブ 不知火フレア",
+    "hitomiQuery": {
+      "character": "shiranui flare",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": [
+        "おっとり",
+        "クール"
+      ],
+      "roles": [],
+      "distance": "中立",
+      "looks": [
+        "ケモミミ",
+        "長髪"
+      ],
+      "hairColor": [
+        "赤"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "獣人",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "ホロライブ",
+      "stature": "標準",
+      "occupation": [
+        "王族・貴族",
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hololive-shion",
+    "name": "紫咲シオン",
+    "aliases": [
+      "Murasaki Shion"
+    ],
+    "series": "ホロライブ",
+    "dlsiteQuery": "ホロライブ 紫咲シオン",
+    "hitomiQuery": {
+      "character": "murasaki shion",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": [
+        "元気",
+        "生意気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "ツインテール"
+      ],
+      "hairColor": [
+        "紫"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "ホロライブ",
+      "stature": "小柄",
+      "occupation": [
+        "魔法使い・魔術師",
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hololive-koyori",
+    "name": "博衣こより",
+    "aliases": [
+      "Hakui Koyori"
+    ],
+    "series": "ホロライブ",
+    "dlsiteQuery": "ホロライブ 博衣こより",
+    "hitomiQuery": {
+      "character": "hakui koyori",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "標準",
+      "personality": [
+        "元気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "ケモミミ",
+        "長髪"
+      ],
+      "hairColor": [
+        "桃"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "獣人",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "ホロライブ",
+      "stature": "小柄",
+      "occupation": [
+        "研究者・発明家",
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hololive-rushia",
+    "name": "潤羽るしあ",
+    "aliases": [
+      "Uruha Rushia"
+    ],
+    "series": "ホロライブ",
+    "dlsiteQuery": "ホロライブ 潤羽るしあ",
+    "hitomiQuery": {
+      "character": "uruha rushia",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": [
+        "むっつり",
+        "内気"
+      ],
+      "roles": [
+        "恋人・伴侶"
+      ],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "緑"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "魔族",
+      "mood": [
+        "背徳寄り"
+      ],
+      "combat": "戦わない",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": null,
+      "stature": "標準",
+      "occupation": [
+        "魔法使い・魔術師"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hololive-matsuri",
+    "name": "夏色まつり",
+    "aliases": [
+      "Natsuiro Matsuri"
+    ],
+    "series": "ホロライブ",
+    "dlsiteQuery": "ホロライブ 夏色まつり",
+    "hitomiQuery": {
+      "character": "natsuiro matsuri",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": [
+        "元気",
+        "生意気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "ツインテール"
+      ],
+      "hairColor": [
+        "橙"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "ホロライブ",
+      "stature": "標準",
+      "occupation": [
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hololive-iroha",
+    "name": "風真いろは",
+    "aliases": [
+      "Kazama Iroha"
+    ],
+    "series": "ホロライブ",
+    "dlsiteQuery": "ホロライブ 風真いろは",
+    "hitomiQuery": {
+      "character": "kazama iroha",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "おっとり"
+      ],
+      "roles": [],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "紫"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "和服・着物"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "ホロライブ",
+      "stature": "標準",
+      "occupation": [
+        "忍者",
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hololive-azki",
+    "name": "AZKi",
+    "aliases": [
+      "Azki"
+    ],
+    "series": "ホロライブ",
+    "dlsiteQuery": "ホロライブ AZKi",
+    "hitomiQuery": {
+      "character": "azki",
+      "series": "hololive"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "クール",
+        "おっとり"
+      ],
+      "roles": [],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "青"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "ホロライブ",
+      "stature": "標準",
+      "occupation": [
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   }
 ]

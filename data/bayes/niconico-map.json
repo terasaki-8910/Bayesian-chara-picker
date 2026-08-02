@@ -1712,6 +1712,156 @@
       "source": "low-confidence",
       "candidateTitle": "エクシア",
       "checkedAt": "2026-08-02T01:24:00.316Z"
+    },
+    "hololive-marine": {
+      "title": "宝鐘マリン",
+      "url": "https://dic.nicovideo.jp/a/%E5%AE%9D%E9%90%98%E3%83%9E%E3%83%AA%E3%83%B3",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T01:46:34.592Z"
+    },
+    "hololive-fubuki": {
+      "title": "白上フブキ",
+      "url": "https://dic.nicovideo.jp/a/%E7%99%BD%E4%B8%8A%E3%83%95%E3%83%96%E3%82%AD",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T01:46:39.554Z"
+    },
+    "hololive-suisei": {
+      "title": "星街すいせい",
+      "url": "https://dic.nicovideo.jp/a/%E6%98%9F%E8%A1%97%E3%81%99%E3%81%84%E3%81%9B%E3%81%84",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T01:46:44.763Z"
+    },
+    "hololive-pekora": {
+      "title": "兎田ぺこら",
+      "url": "https://dic.nicovideo.jp/a/%E5%85%8E%E7%94%B0%E3%81%BA%E3%81%93%E3%82%89",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T01:46:49.836Z"
+    },
+    "hololive-okayu": {
+      "title": "猫又おかゆ",
+      "url": "https://dic.nicovideo.jp/a/%E7%8C%AB%E5%8F%88%E3%81%8A%E3%81%8B%E3%82%86",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T01:46:54.539Z"
+    },
+    "hololive-miko": {
+      "title": "さくらみこ",
+      "url": "https://dic.nicovideo.jp/a/%E3%81%95%E3%81%8F%E3%82%89%E3%81%BF%E3%81%93",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T01:46:59.540Z"
+    },
+    "hololive-towa": {
+      "title": "常闇トワ",
+      "url": "https://dic.nicovideo.jp/a/%E5%B8%B8%E9%97%87%E3%83%88%E3%83%AF",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T01:47:04.571Z"
+    },
+    "hololive-aqua": {
+      "title": "湊あくあ",
+      "url": "https://dic.nicovideo.jp/a/%E6%B9%8A%E3%81%82%E3%81%8F%E3%81%82",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T01:47:09.512Z"
+    },
+    "hololive-mio": {
+      "title": "大神ミオ",
+      "url": "https://dic.nicovideo.jp/a/%E5%A4%A7%E7%A5%9E%E3%83%9F%E3%82%AA",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T01:47:14.426Z"
+    },
+    "hololive-subaru": {
+      "title": "大空スバル",
+      "url": "https://dic.nicovideo.jp/a/%E5%A4%A7%E7%A9%BA%E3%82%B9%E3%83%90%E3%83%AB",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T01:47:19.576Z"
+    },
+    "hololive-kanata": {
+      "title": "天音かなた",
+      "url": "https://dic.nicovideo.jp/a/%E5%A4%A9%E9%9F%B3%E3%81%8B%E3%81%AA%E3%81%9F",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T01:47:24.573Z"
+    },
+    "hololive-lamy": {
+      "title": "雪花ラミィ",
+      "url": "https://dic.nicovideo.jp/a/%E9%9B%AA%E8%8A%B1%E3%83%A9%E3%83%9F%E3%82%A3",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T01:47:29.587Z"
+    },
+    "hololive-korone": {
+      "title": "戌神ころね",
+      "url": "https://dic.nicovideo.jp/a/%E6%88%8C%E7%A5%9E%E3%81%93%E3%82%8D%E3%81%AD",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T01:47:34.473Z"
+    },
+    "hololive-noel": {
+      "title": "白銀ノエル",
+      "url": "https://dic.nicovideo.jp/a/%E7%99%BD%E9%8A%80%E3%83%8E%E3%82%A8%E3%83%AB",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T01:47:39.486Z"
+    },
+    "hololive-chloe": {
+      "title": "沙花叉クロヱ",
+      "url": "https://dic.nicovideo.jp/a/%E6%B2%99%E8%8A%B1%E5%8F%89%E3%82%AF%E3%83%AD%E3%83%B1",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T01:47:44.634Z"
+    },
+    "hololive-botan": {
+      "title": "獅白ぼたん",
+      "url": "https://dic.nicovideo.jp/a/%E7%8D%85%E7%99%BD%E3%81%BC%E3%81%9F%E3%82%93",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T01:47:49.573Z"
+    },
+    "hololive-laplus": {
+      "title": "ラプラス・ダークネス",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%A9%E3%83%97%E3%83%A9%E3%82%B9%E3%83%BB%E3%83%80%E3%83%BC%E3%82%AF%E3%83%8D%E3%82%B9",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T01:47:54.767Z"
+    },
+    "hololive-ayame": {
+      "title": "百鬼あやめ",
+      "url": "https://dic.nicovideo.jp/a/%E7%99%BE%E9%AC%BC%E3%81%82%E3%82%84%E3%82%81",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T01:47:59.405Z"
+    },
+    "hololive-flare": {
+      "title": "不知火フレア",
+      "url": "https://dic.nicovideo.jp/a/%E4%B8%8D%E7%9F%A5%E7%81%AB%E3%83%95%E3%83%AC%E3%82%A2",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T01:48:04.625Z"
+    },
+    "hololive-shion": {
+      "title": "紫咲シオン",
+      "url": "https://dic.nicovideo.jp/a/%E7%B4%AB%E5%92%B2%E3%82%B7%E3%82%AA%E3%83%B3",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T01:48:09.392Z"
+    },
+    "hololive-koyori": {
+      "title": "博衣こより",
+      "url": "https://dic.nicovideo.jp/a/%E5%8D%9A%E8%A1%A3%E3%81%93%E3%82%88%E3%82%8A",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T01:48:14.673Z"
+    },
+    "hololive-rushia": {
+      "title": "潤羽るしあ",
+      "url": "https://dic.nicovideo.jp/a/%E6%BD%A4%E7%BE%BD%E3%82%8B%E3%81%97%E3%81%82",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T01:48:19.479Z"
+    },
+    "hololive-matsuri": {
+      "title": "夏色まつり",
+      "url": "https://dic.nicovideo.jp/a/%E5%A4%8F%E8%89%B2%E3%81%BE%E3%81%A4%E3%82%8A",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T01:48:24.493Z"
+    },
+    "hololive-iroha": {
+      "title": "風真いろは",
+      "url": "https://dic.nicovideo.jp/a/%E9%A2%A8%E7%9C%9F%E3%81%84%E3%82%8D%E3%81%AF",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T01:48:29.520Z"
+    },
+    "hololive-azki": {
+      "title": "AZKi",
+      "url": "https://dic.nicovideo.jp/a/AZKi",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T01:48:34.571Z"
     }
   }
 }

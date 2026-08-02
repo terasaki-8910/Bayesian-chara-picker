@@ -5056,5 +5056,455 @@
       "seriesFilter": "arknights",
       "fetchedAt": "2026-08-02T01:22:34.474Z"
     }
+  },
+  "hololive-marine": {
+    "pageCount": 10,
+    "estimatedRange": [
+      271,
+      300
+    ],
+    "byWorkType": {
+      "doujinshi": 10,
+      "voice": 10,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:28:10.971Z",
+    "hitomi": {
+      "galleryCount": 1092,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T01:44:16.297Z"
+    }
+  },
+  "hololive-fubuki": {
+    "pageCount": 4,
+    "estimatedRange": [
+      91,
+      120
+    ],
+    "byWorkType": {
+      "doujinshi": 4,
+      "voice": 4,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:28:50.947Z",
+    "hitomi": {
+      "galleryCount": 1112,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T01:44:17.471Z"
+    }
+  },
+  "hololive-suisei": {
+    "pageCount": 4,
+    "estimatedRange": [
+      91,
+      120
+    ],
+    "byWorkType": {
+      "doujinshi": 4,
+      "voice": 4,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:29:30.835Z",
+    "hitomi": {
+      "galleryCount": 880,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T01:44:18.972Z"
+    }
+  },
+  "hololive-pekora": {
+    "pageCount": 7,
+    "estimatedRange": [
+      181,
+      210
+    ],
+    "byWorkType": {
+      "doujinshi": 7,
+      "voice": 7,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:30:10.906Z",
+    "hitomi": {
+      "galleryCount": 448,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T01:44:20.467Z"
+    }
+  },
+  "hololive-okayu": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:30:50.860Z",
+    "hitomi": {
+      "galleryCount": 816,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T01:44:21.974Z"
+    }
+  },
+  "hololive-miko": {
+    "pageCount": 7,
+    "estimatedRange": [
+      181,
+      210
+    ],
+    "byWorkType": {
+      "doujinshi": 7,
+      "voice": 7,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:31:31.024Z",
+    "hitomi": {
+      "galleryCount": 355,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T01:44:23.469Z"
+    }
+  },
+  "hololive-towa": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:32:10.883Z",
+    "hitomi": {
+      "galleryCount": 507,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T01:44:24.975Z"
+    }
+  },
+  "hololive-aqua": {
+    "pageCount": 6,
+    "estimatedRange": [
+      151,
+      180
+    ],
+    "byWorkType": {
+      "doujinshi": 6,
+      "voice": 6,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:32:50.911Z",
+    "hitomi": {
+      "galleryCount": 561,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T01:44:26.475Z"
+    }
+  },
+  "hololive-mio": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:33:30.974Z",
+    "hitomi": {
+      "galleryCount": 569,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T01:44:27.977Z"
+    }
+  },
+  "hololive-subaru": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:34:11.005Z",
+    "hitomi": {
+      "galleryCount": 635,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T01:44:29.478Z"
+    }
+  },
+  "hololive-kanata": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:34:50.961Z",
+    "hitomi": {
+      "galleryCount": 448,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T01:44:30.973Z"
+    }
+  },
+  "hololive-lamy": {
+    "pageCount": 3,
+    "estimatedRange": [
+      61,
+      90
+    ],
+    "byWorkType": {
+      "doujinshi": 3,
+      "voice": 3,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:35:31.034Z",
+    "hitomi": {
+      "galleryCount": 493,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T01:44:32.473Z"
+    }
+  },
+  "hololive-korone": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:36:11.088Z",
+    "hitomi": {
+      "galleryCount": 191,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T01:44:33.973Z"
+    }
+  },
+  "hololive-noel": {
+    "pageCount": 3,
+    "estimatedRange": [
+      61,
+      90
+    ],
+    "byWorkType": {
+      "doujinshi": 3,
+      "voice": 3,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:36:48.662Z",
+    "hitomi": {
+      "galleryCount": 575,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T01:44:35.479Z"
+    }
+  },
+  "hololive-chloe": {
+    "pageCount": 3,
+    "estimatedRange": [
+      61,
+      90
+    ],
+    "byWorkType": {
+      "doujinshi": 3,
+      "voice": 3,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:37:28.594Z",
+    "hitomi": {
+      "galleryCount": 539,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T01:44:36.981Z"
+    }
+  },
+  "hololive-botan": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:38:08.663Z",
+    "hitomi": {
+      "galleryCount": 335,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T01:44:38.477Z"
+    }
+  },
+  "hololive-laplus": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:38:48.702Z",
+    "hitomi": {
+      "galleryCount": 281,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T01:44:39.977Z"
+    }
+  },
+  "hololive-ayame": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:39:28.704Z",
+    "hitomi": {
+      "galleryCount": 354,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T01:44:41.479Z"
+    }
+  },
+  "hololive-flare": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:40:08.755Z",
+    "hitomi": {
+      "galleryCount": 350,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T01:44:42.979Z"
+    }
+  },
+  "hololive-shion": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:40:48.755Z",
+    "hitomi": {
+      "galleryCount": 465,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T01:44:44.481Z"
+    }
+  },
+  "hololive-koyori": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:41:28.743Z",
+    "hitomi": {
+      "galleryCount": 307,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T01:44:45.981Z"
+    }
+  },
+  "hololive-rushia": {
+    "pageCount": 6,
+    "estimatedRange": [
+      151,
+      180
+    ],
+    "byWorkType": {
+      "doujinshi": 6,
+      "voice": 6,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:42:08.800Z",
+    "hitomi": {
+      "galleryCount": 205,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T01:44:47.483Z"
+    }
+  },
+  "hololive-matsuri": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:42:48.734Z",
+    "hitomi": {
+      "galleryCount": 219,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T01:44:48.983Z"
+    }
+  },
+  "hololive-iroha": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:43:28.848Z",
+    "hitomi": {
+      "galleryCount": 322,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T01:44:50.484Z"
+    }
+  },
+  "hololive-azki": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:44:08.813Z",
+    "hitomi": {
+      "galleryCount": 356,
+      "seriesFilter": "hololive",
+      "fetchedAt": "2026-08-02T01:44:53.639Z"
+    }
   }
 }
