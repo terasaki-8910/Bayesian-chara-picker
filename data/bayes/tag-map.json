@@ -3966,6 +3966,36 @@
       "postCount": 3362,
       "source": "override",
       "checkedAt": "2026-08-02T00:00:58.074Z"
+    },
+    "fgo-mash": {
+      "tag": "mash_kyrielight",
+      "postCount": 20555,
+      "source": "override",
+      "checkedAt": "2026-08-02T00:47:26.750Z"
+    },
+    "fgo-jeanne": {
+      "tag": "jeanne_d'arc_(fate)",
+      "postCount": 8703,
+      "source": "override",
+      "checkedAt": "2026-08-02T00:47:27.789Z"
+    },
+    "fgo-okita": {
+      "tag": "okita_souji_(fate)",
+      "postCount": 7927,
+      "source": "override",
+      "checkedAt": "2026-08-02T00:47:28.884Z"
+    },
+    "fgo-musashi": {
+      "tag": "miyamoto_musashi_(fate)",
+      "postCount": 5107,
+      "source": "override",
+      "checkedAt": "2026-08-02T00:47:31.171Z"
+    },
+    "fgo-nitocris": {
+      "tag": "nitocris_(fate)",
+      "postCount": 3434,
+      "source": "override",
+      "checkedAt": "2026-08-02T00:47:34.392Z"
     }
   }
 }

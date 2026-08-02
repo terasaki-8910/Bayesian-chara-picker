@@ -4696,5 +4696,95 @@
       "seriesFilter": null,
       "fetchedAt": "2026-08-02T00:26:44.888Z"
     }
+  },
+  "fgo-mash": {
+    "pageCount": 4,
+    "estimatedRange": [
+      91,
+      120
+    ],
+    "byWorkType": {
+      "doujinshi": 4,
+      "voice": 4,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T00:48:14.203Z",
+    "hitomi": {
+      "galleryCount": 0,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T00:53:41.035Z"
+    }
+  },
+  "fgo-jeanne": {
+    "pageCount": 3,
+    "estimatedRange": [
+      61,
+      90
+    ],
+    "byWorkType": {
+      "doujinshi": 3,
+      "voice": 3,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T00:48:54.295Z",
+    "hitomi": {
+      "galleryCount": 0,
+      "seriesFilter": "fate",
+      "fetchedAt": "2026-08-02T00:53:43.717Z"
+    }
+  },
+  "fgo-okita": {
+    "pageCount": 3,
+    "estimatedRange": [
+      61,
+      90
+    ],
+    "byWorkType": {
+      "doujinshi": 3,
+      "voice": 3,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T00:49:34.175Z",
+    "hitomi": {
+      "galleryCount": 0,
+      "seriesFilter": "fate",
+      "fetchedAt": "2026-08-02T00:53:45.218Z"
+    }
+  },
+  "fgo-musashi": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T00:50:54.250Z",
+    "hitomi": {
+      "galleryCount": 0,
+      "seriesFilter": "fate",
+      "fetchedAt": "2026-08-02T00:53:48.220Z"
+    }
+  },
+  "fgo-nitocris": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T00:52:54.324Z",
+    "hitomi": {
+      "galleryCount": 0,
+      "seriesFilter": "fate",
+      "fetchedAt": "2026-08-02T00:53:52.725Z"
+    }
   }
 }

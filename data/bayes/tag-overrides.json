@@ -380,6 +380,26 @@
     "imascg-rika": {
       "tag": "jougasaki_rika",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "fgo-mash": {
+      "tag": "mash_kyrielight",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "fgo-jeanne": {
+      "tag": "jeanne_d'arc_(fate)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "fgo-okita": {
+      "tag": "okita_souji_(fate)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "fgo-musashi": {
+      "tag": "miyamoto_musashi_(fate)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "fgo-nitocris": {
+      "tag": "nitocris_(fate)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     }
   }
 }

@@ -1811,6 +1811,45 @@
       "source": "search-verified",
       "seriesMatch": true,
       "checkedAt": "2026-08-02T00:33:42.680Z"
+    },
+    "fgo-mash": {
+      "qid": "Q117752976",
+      "label": "Mash Kyrielight",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T00:54:22.969Z"
+    },
+    "fgo-jeanne": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q7226, Joan of Arc)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q7226",
+      "candidateLabel": "Joan of Arc",
+      "checkedAt": "2026-08-02T00:54:31.414Z"
+    },
+    "fgo-okita": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q267549, Okita Sōji)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q267549",
+      "candidateLabel": "Okita Sōji",
+      "checkedAt": "2026-08-02T00:54:35.005Z"
+    },
+    "fgo-musashi": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q193344, Miyamoto Musashi)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q193344",
+      "candidateLabel": "Miyamoto Musashi",
+      "checkedAt": "2026-08-02T00:54:42.429Z"
+    },
+    "fgo-nitocris": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q11324563, Mirror of Nitocris)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q11324563",
+      "candidateLabel": "Mirror of Nitocris",
+      "checkedAt": "2026-08-02T00:54:50.617Z"
     }
   }
 }

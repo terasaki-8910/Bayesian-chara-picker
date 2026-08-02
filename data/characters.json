@@ -12620,5 +12620,249 @@
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
+  },
+  {
+    "id": "fgo-mash",
+    "name": "マシュ・キリエライト",
+    "aliases": [
+      "Mash Kyrielight"
+    ],
+    "series": "Fate/Grand Order",
+    "dlsiteQuery": "FGO マシュ・キリエライト",
+    "hitomiQuery": {
+      "character": "mash kyrielight",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": [
+        "おっとり",
+        "内気"
+      ],
+      "roles": [
+        "恋人・伴侶"
+      ],
+      "distance": "やや受け身",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "紫"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "人間",
+      "mood": [
+        "甘め"
+      ],
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "affiliationName": "カルデア",
+      "stature": "標準",
+      "occupation": [
+        "兵士・軍人"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "fgo-jeanne",
+    "name": "ジャンヌ・ダルク",
+    "aliases": [
+      "Jeanne d'Arc"
+    ],
+    "series": "Fate/Grand Order",
+    "dlsiteQuery": "FGO ジャンヌ・ダルク",
+    "hitomiQuery": {
+      "character": "jeanne d'arc",
+      "series": "fate"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": [
+        "おっとり"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "金"
+      ],
+      "skinTone": "色白",
+      "outfit": [
+        "軍服"
+      ],
+      "species": "人間",
+      "mood": [
+        "純愛寄り"
+      ],
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "affiliationName": "カルデア",
+      "stature": "標準",
+      "occupation": [
+        "兵士・軍人",
+        "巫女・神職"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "fgo-okita",
+    "name": "沖田総司",
+    "aliases": [
+      "Okita Souji"
+    ],
+    "series": "Fate/Grand Order",
+    "dlsiteQuery": "FGO 沖田総司",
+    "hitomiQuery": {
+      "character": "okita souji",
+      "series": "fate"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": [
+        "元気",
+        "生意気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "茶"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "和服・着物"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "affiliationName": "カルデア",
+      "stature": "小柄",
+      "occupation": [
+        "兵士・軍人",
+        "格闘家・武道家"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "fgo-musashi",
+    "name": "宮本武蔵",
+    "aliases": [
+      "Miyamoto Musashi"
+    ],
+    "series": "Fate/Grand Order",
+    "dlsiteQuery": "FGO 宮本武蔵",
+    "hitomiQuery": {
+      "character": "miyamoto musashi",
+      "series": "fate"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "元気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [],
+      "hairColor": [
+        "白"
+      ],
+      "skinTone": "褐色",
+      "outfit": [
+        "和服・着物"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "affiliationName": "カルデア",
+      "stature": "標準",
+      "occupation": [
+        "兵士・軍人",
+        "格闘家・武道家"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "fgo-nitocris",
+    "name": "ニトクリス",
+    "aliases": [
+      "Nitocris"
+    ],
+    "series": "Fate/Grand Order",
+    "dlsiteQuery": "FGO ニトクリス",
+    "hitomiQuery": {
+      "character": "nitocris",
+      "series": "fate"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": [
+        "クール",
+        "姉御"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "紫"
+      ],
+      "skinTone": "褐色",
+      "outfit": [],
+      "species": "人間",
+      "mood": [
+        "支配的"
+      ],
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": null,
+      "stature": "長身",
+      "occupation": [
+        "王族・貴族",
+        "スパイ・暗殺者"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   }
 ]
