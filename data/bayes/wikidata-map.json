@@ -2703,6 +2703,131 @@
       "source": "search-verified",
       "seriesMatch": true,
       "checkedAt": "2026-08-02T03:34:11.699Z"
+    },
+    "eva-asuka": {
+      "qid": "Q1355816",
+      "label": "Asuka Langley Soryu",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T04:00:55.153Z"
+    },
+    "eva-rei": {
+      "qid": "Q1140524",
+      "label": "Rei Ayanami",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T04:01:00.589Z"
+    },
+    "nanoha-fate": {
+      "qid": "Q1188832",
+      "label": "Fate Testarossa",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T04:01:05.326Z"
+    },
+    "nanoha-nanoha": {
+      "qid": "Q2736386",
+      "label": "Nanoha Takamachi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T04:01:10.132Z"
+    },
+    "killakill-ryuuko": {
+      "qid": "Q65038190",
+      "label": "Ryūko Matoi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T04:01:14.927Z"
+    },
+    "killakill-satsuki": {
+      "qid": "Q116879089",
+      "label": "Satsuki Kiryūin",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T04:01:19.939Z"
+    },
+    "geass-cc": {
+      "qid": "Q2442857",
+      "label": "C.C.",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T04:01:24.540Z"
+    },
+    "fe3h-edelgard": {
+      "qid": "Q101136766",
+      "label": "Edelgard von Hresvelg",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T04:01:31.767Z"
+    },
+    "kon-mio": {
+      "qid": "Q3858633",
+      "label": "Mio Akiyama",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T04:01:36.532Z"
+    },
+    "kon-azusa": {
+      "qid": "Q3631585",
+      "label": "Azusa Nakano",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T04:01:41.350Z"
+    },
+    "luckystar-konata": {
+      "qid": "Q3198610",
+      "label": "Konata Izumi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T04:01:46.154Z"
+    },
+    "luckystar-kagami": {
+      "qid": "Q114263361",
+      "label": "Kagami Hiiragi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T04:01:50.947Z"
+    },
+    "gkidols-ume": {
+      "qid": "Q134570638",
+      "label": "Ume Hanami",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T04:01:55.730Z"
+    },
+    "gkidols-hiro": {
+      "qid": "Q134570636",
+      "label": "Hiro Shinosawa",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T04:02:00.551Z"
+    },
+    "kimetsu-shinobu": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-08-02T04:02:03.027Z"
+    },
+    "kimetsu-nezuko": {
+      "qid": "Q109767984",
+      "label": "Nezuko Kamado",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T04:02:06.586Z"
+    },
+    "nijigasaki-ayumu": {
+      "qid": "Q107026104",
+      "label": "Ayumu Uehara",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T04:02:11.349Z"
+    },
+    "nijigasaki-setsuna": {
+      "qid": "Q107026111",
+      "label": "Setsuna Yuki",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T04:02:16.157Z"
     }
   }
 }

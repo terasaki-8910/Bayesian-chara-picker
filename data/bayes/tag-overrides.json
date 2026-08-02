@@ -53,7 +53,17 @@
     "とある魔術の禁書目録": "toaru_majutsu_no_index",
     "プリンセスコネクト!": "princess_connect!",
     "五等分の花嫁": "go-toubun_no_hanayome",
-    "ガールズ&パンツァー": "girls_und_panzer"
+    "ガールズ&パンツァー": "girls_und_panzer",
+    "新世紀エヴァンゲリオン": "neon_genesis_evangelion",
+    "魔法少女リリカルなのは": "mahou_shoujo_lyrical_nanoha",
+    "キルラキル": "kill_la_kill",
+    "コードギアス反逆のルルーシュ": "code_geass",
+    "ファイアーエムブレム風花雪月": "fire_emblem:_three_houses",
+    "けいおん!": "k-on!",
+    "らき☆すた": "lucky_star",
+    "学園アイドルマスター": "gakuen_idolmaster",
+    "鬼滅の刃": "kimetsu_no_yaiba",
+    "ラブライブ!虹ヶ咲学園スクールアイドル同好会": "love_live!_nijigasaki_high_school_idol_club"
   },
   "overrides": {
     "naruto-kurenai": {
@@ -870,6 +880,78 @@
     },
     "gup-maho": {
       "tag": "nishizumi_maho",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "eva-asuka": {
+      "tag": "souryuu_asuka_langley",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "eva-rei": {
+      "tag": "ayanami_rei",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "nanoha-fate": {
+      "tag": "fate_testarossa",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "nanoha-nanoha": {
+      "tag": "takamachi_nanoha",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "killakill-ryuuko": {
+      "tag": "matoi_ryuuko",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "killakill-satsuki": {
+      "tag": "kiryuuin_satsuki",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "geass-cc": {
+      "tag": "c.c.",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "fe3h-edelgard": {
+      "tag": "edelgard_von_hresvelg",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "kon-mio": {
+      "tag": "akiyama_mio",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "kon-azusa": {
+      "tag": "nakano_azusa",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "luckystar-konata": {
+      "tag": "izumi_konata",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "luckystar-kagami": {
+      "tag": "hiiragi_kagami",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "gkidols-ume": {
+      "tag": "hanami_ume",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "gkidols-hiro": {
+      "tag": "shinosawa_hiro",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "kimetsu-shinobu": {
+      "tag": "kochou_shinobu",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "kimetsu-nezuko": {
+      "tag": "kamado_nezuko",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "nijigasaki-ayumu": {
+      "tag": "uehara_ayumu",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "nijigasaki-setsuna": {
+      "tag": "yuki_setsuna",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     }
   }

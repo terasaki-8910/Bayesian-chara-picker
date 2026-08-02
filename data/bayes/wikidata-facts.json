@@ -1582,6 +1582,128 @@
       "species": [
         "人間"
       ]
+    },
+    "eva-asuka": {
+      "genderExpression": "女性",
+      "hairColor": "赤",
+      "eyeColor": "blue",
+      "stature": "小柄",
+      "species": [
+        "人間"
+      ]
+    },
+    "eva-rei": {
+      "genderExpression": "女性",
+      "hairColor": "青",
+      "eyeColor": "red",
+      "species": [
+        "人間"
+      ]
+    },
+    "nanoha-fate": {
+      "genderExpression": "女性",
+      "eyeColor": "red",
+      "species": [
+        "人間"
+      ]
+    },
+    "nanoha-nanoha": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "purple",
+      "species": [
+        "人間"
+      ]
+    },
+    "killakill-ryuuko": {
+      "genderExpression": "女性",
+      "hairColor": "黒",
+      "species": [
+        "人間"
+      ]
+    },
+    "killakill-satsuki": {
+      "genderExpression": "女性",
+      "hairColor": "黒",
+      "eyeColor": "blue",
+      "species": [
+        "人間"
+      ]
+    },
+    "geass-cc": {
+      "genderExpression": "女性",
+      "hairColor": "緑",
+      "stature": "標準",
+      "species": [
+        "人間"
+      ]
+    },
+    "fe3h-edelgard": {
+      "genderExpression": "女性",
+      "hairColor": "白",
+      "species": [
+        "人間"
+      ]
+    },
+    "kon-mio": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "kon-azusa": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "luckystar-konata": {
+      "genderExpression": "女性",
+      "hairColor": "青",
+      "eyeColor": "green",
+      "species": [
+        "人間"
+      ]
+    },
+    "luckystar-kagami": {
+      "genderExpression": "女性",
+      "hairColor": "紫",
+      "species": [
+        "人間"
+      ]
+    },
+    "gkidols-ume": {
+      "species": [
+        "人間"
+      ]
+    },
+    "gkidols-hiro": {
+      "species": [
+        "人間"
+      ]
+    },
+    "kimetsu-shinobu": {},
+    "kimetsu-nezuko": {
+      "genderExpression": "女性",
+      "hairColor": "黒",
+      "stature": "小柄",
+      "species": [
+        "人間"
+      ]
+    },
+    "nijigasaki-ayumu": {
+      "genderExpression": "女性",
+      "stature": "標準",
+      "species": [
+        "人間"
+      ]
+    },
+    "nijigasaki-setsuna": {
+      "genderExpression": "女性",
+      "stature": "小柄",
+      "species": [
+        "人間"
+      ]
     }
   }
 }

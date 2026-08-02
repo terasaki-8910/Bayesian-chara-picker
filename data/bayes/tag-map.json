@@ -4686,6 +4686,114 @@
       "postCount": 6945,
       "source": "override",
       "checkedAt": "2026-08-02T03:19:54.038Z"
+    },
+    "eva-asuka": {
+      "tag": "souryuu_asuka_langley",
+      "postCount": 17320,
+      "source": "override",
+      "checkedAt": "2026-08-02T03:45:11.968Z"
+    },
+    "eva-rei": {
+      "tag": "ayanami_rei",
+      "postCount": 10352,
+      "source": "override",
+      "checkedAt": "2026-08-02T03:45:13.001Z"
+    },
+    "nanoha-fate": {
+      "tag": "fate_testarossa",
+      "postCount": 9988,
+      "source": "override",
+      "checkedAt": "2026-08-02T03:45:14.103Z"
+    },
+    "nanoha-nanoha": {
+      "tag": "takamachi_nanoha",
+      "postCount": 8293,
+      "source": "override",
+      "checkedAt": "2026-08-02T03:45:15.204Z"
+    },
+    "killakill-ryuuko": {
+      "tag": "matoi_ryuuko",
+      "postCount": 8721,
+      "source": "override",
+      "checkedAt": "2026-08-02T03:45:16.303Z"
+    },
+    "killakill-satsuki": {
+      "tag": "kiryuuin_satsuki",
+      "postCount": 5164,
+      "source": "override",
+      "checkedAt": "2026-08-02T03:45:17.407Z"
+    },
+    "geass-cc": {
+      "tag": "c.c.",
+      "postCount": 5860,
+      "source": "override",
+      "checkedAt": "2026-08-02T03:45:19.608Z"
+    },
+    "fe3h-edelgard": {
+      "tag": "edelgard_von_hresvelg",
+      "postCount": 5456,
+      "source": "override",
+      "checkedAt": "2026-08-02T03:45:21.806Z"
+    },
+    "kon-mio": {
+      "tag": "akiyama_mio",
+      "postCount": 10542,
+      "source": "override",
+      "checkedAt": "2026-08-02T03:45:22.905Z"
+    },
+    "kon-azusa": {
+      "tag": "nakano_azusa",
+      "postCount": 9244,
+      "source": "override",
+      "checkedAt": "2026-08-02T03:45:24.007Z"
+    },
+    "luckystar-konata": {
+      "tag": "izumi_konata",
+      "postCount": 6455,
+      "source": "override",
+      "checkedAt": "2026-08-02T03:45:25.107Z"
+    },
+    "luckystar-kagami": {
+      "tag": "hiiragi_kagami",
+      "postCount": 6468,
+      "source": "override",
+      "checkedAt": "2026-08-02T03:45:26.208Z"
+    },
+    "gkidols-ume": {
+      "tag": "hanami_ume",
+      "postCount": 3014,
+      "source": "override",
+      "checkedAt": "2026-08-02T03:45:27.308Z"
+    },
+    "gkidols-hiro": {
+      "tag": "shinosawa_hiro",
+      "postCount": 6550,
+      "source": "override",
+      "checkedAt": "2026-08-02T03:45:28.410Z"
+    },
+    "kimetsu-shinobu": {
+      "tag": "kochou_shinobu",
+      "postCount": 3857,
+      "source": "override",
+      "checkedAt": "2026-08-02T03:45:29.510Z"
+    },
+    "kimetsu-nezuko": {
+      "tag": "kamado_nezuko",
+      "postCount": 3359,
+      "source": "override",
+      "checkedAt": "2026-08-02T03:45:30.614Z"
+    },
+    "nijigasaki-ayumu": {
+      "tag": "uehara_ayumu",
+      "postCount": 3516,
+      "source": "override",
+      "checkedAt": "2026-08-02T03:45:31.712Z"
+    },
+    "nijigasaki-setsuna": {
+      "tag": "yuki_setsuna",
+      "postCount": 3456,
+      "source": "override",
+      "checkedAt": "2026-08-02T03:45:32.816Z"
     }
   }
 }

@@ -18302,5 +18302,888 @@
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
+  },
+  {
+    "id": "eva-asuka",
+    "name": "惣流・アスカ・ラングレー",
+    "aliases": [
+      "Souryuu Asuka Langley"
+    ],
+    "series": "新世紀エヴァンゲリオン",
+    "dlsiteQuery": "エヴァンゲリオン 惣流・アスカ・ラングレー",
+    "hitomiQuery": {
+      "character": "asuka langley souryuu",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "生意気",
+        "内気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "橙"
+      ],
+      "skinTone": "色白",
+      "outfit": [
+        "制服",
+        "軍服"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "affiliationName": "ネルフ",
+      "stature": "標準",
+      "occupation": [
+        "兵士・軍人"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "eva-rei",
+    "name": "綾波レイ",
+    "aliases": [
+      "Ayanami Rei"
+    ],
+    "series": "新世紀エヴァンゲリオン",
+    "dlsiteQuery": "エヴァンゲリオン 綾波レイ",
+    "hitomiQuery": {
+      "character": "rei ayanami",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": [
+        "クール",
+        "内気"
+      ],
+      "roles": [],
+      "distance": "受け身",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "青"
+      ],
+      "skinTone": "色白",
+      "outfit": [
+        "制服",
+        "軍服"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "affiliationName": "ネルフ",
+      "stature": "標準",
+      "occupation": [
+        "兵士・軍人"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "nanoha-fate",
+    "name": "フェイト・テスタロッサ",
+    "aliases": [
+      "Fate Testarossa"
+    ],
+    "series": "魔法少女リリカルなのは",
+    "dlsiteQuery": "リリカルなのは フェイト・テスタロッサ",
+    "hitomiQuery": {
+      "character": "fate testarossa",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": [
+        "クール",
+        "内気"
+      ],
+      "roles": [
+        "恋人・伴侶"
+      ],
+      "distance": "やや受け身",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "紫"
+      ],
+      "skinTone": "色白",
+      "outfit": [
+        "魔法少女"
+      ],
+      "species": "人間",
+      "mood": [
+        "純愛寄り"
+      ],
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "affiliationName": null,
+      "stature": "小柄",
+      "occupation": [
+        "魔法使い・魔術師",
+        "警察・公安"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "nanoha-nanoha",
+    "name": "高町なのは",
+    "aliases": [
+      "Takamachi Nanoha"
+    ],
+    "series": "魔法少女リリカルなのは",
+    "dlsiteQuery": "リリカルなのは 高町なのは",
+    "hitomiQuery": {
+      "character": "nanoha takamachi",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "元気"
+      ],
+      "roles": [
+        "恋人・伴侶"
+      ],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "茶"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "魔法少女"
+      ],
+      "species": "人間",
+      "mood": [
+        "純愛寄り"
+      ],
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "affiliationName": null,
+      "stature": "標準",
+      "occupation": [
+        "魔法使い・魔術師",
+        "警察・公安"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "killakill-ryuuko",
+    "name": "纏流子",
+    "aliases": [
+      "Matoi Ryuuko"
+    ],
+    "series": "キルラキル",
+    "dlsiteQuery": "キルラキル 纏流子",
+    "hitomiQuery": {
+      "character": "ryuuko matoi",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "生意気",
+        "元気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "黒"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "affiliationName": "本能字学園",
+      "stature": "標準",
+      "occupation": [
+        "格闘家・武道家"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "killakill-satsuki",
+    "name": "鬼龍院皐月",
+    "aliases": [
+      "Kiryuuin Satsuki"
+    ],
+    "series": "キルラキル",
+    "dlsiteQuery": "キルラキル 鬼龍院皐月",
+    "hitomiQuery": {
+      "character": "satsuki kiryuuin",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": [
+        "クール",
+        "姉御"
+      ],
+      "roles": [
+        "先輩"
+      ],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "黒"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [
+        "支配的"
+      ],
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "affiliationName": "本能字学園",
+      "stature": "長身",
+      "occupation": [
+        "格闘家・武道家",
+        "王族・貴族"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "geass-cc",
+    "name": "C.C.",
+    "aliases": [
+      "C.C.",
+      "シーツー"
+    ],
+    "series": "コードギアス反逆のルルーシュ",
+    "dlsiteQuery": "コードギアス シーツー",
+    "hitomiQuery": {
+      "character": "c.c.",
+      "series": "code geass"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "熟れた",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": [
+        "クール",
+        "むっつり"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "緑"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "不死",
+      "mood": [
+        "背徳寄り"
+      ],
+      "combat": "戦わない",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": null,
+      "stature": "標準",
+      "occupation": []
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "fe3h-edelgard",
+    "name": "エーデルガルト",
+    "aliases": [
+      "Edelgard von Hresvelg"
+    ],
+    "series": "ファイアーエムブレム風花雪月",
+    "dlsiteQuery": "ファイアーエムブレム風花雪月 エーデルガルト",
+    "hitomiQuery": {
+      "character": "edelgard von hresvelg",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": [
+        "クール",
+        "姉御"
+      ],
+      "roles": [
+        "先輩"
+      ],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "白"
+      ],
+      "skinTone": "色白",
+      "outfit": [
+        "軍服"
+      ],
+      "species": "人間",
+      "mood": [
+        "支配的"
+      ],
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "affiliationName": null,
+      "stature": "標準",
+      "occupation": [
+        "王族・貴族",
+        "兵士・軍人"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "kon-mio",
+    "name": "秋山澪",
+    "aliases": [
+      "Akiyama Mio"
+    ],
+    "series": "けいおん!",
+    "dlsiteQuery": "けいおん 秋山澪",
+    "hitomiQuery": {
+      "character": "mio akiyama",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "内気"
+      ],
+      "roles": [],
+      "distance": "受け身",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "黒"
+      ],
+      "skinTone": "色白",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "軽音楽部",
+      "stature": "標準",
+      "occupation": []
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "kon-azusa",
+    "name": "中野梓",
+    "aliases": [
+      "Nakano Azusa"
+    ],
+    "series": "けいおん!",
+    "dlsiteQuery": "けいおん 中野梓",
+    "hitomiQuery": {
+      "character": "azusa nakano",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": [
+        "クール",
+        "生意気"
+      ],
+      "roles": [
+        "後輩"
+      ],
+      "distance": "やや積極的",
+      "looks": [
+        "ツインテール"
+      ],
+      "hairColor": [
+        "黒"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "軽音楽部",
+      "stature": "小柄",
+      "occupation": []
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "luckystar-konata",
+    "name": "泉こなた",
+    "aliases": [
+      "Izumi Konata"
+    ],
+    "series": "らき☆すた",
+    "dlsiteQuery": "らき☆すた 泉こなた",
+    "hitomiQuery": {
+      "character": "konata izumi",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": [
+        "生意気",
+        "おっとり"
+      ],
+      "roles": [],
+      "distance": "やや積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "青"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": null,
+      "stature": "小柄",
+      "occupation": []
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "luckystar-kagami",
+    "name": "柊かがみ",
+    "aliases": [
+      "Hiiragi Kagami"
+    ],
+    "series": "らき☆すた",
+    "dlsiteQuery": "らき☆すた 柊かがみ",
+    "hitomiQuery": {
+      "character": "kagami hiiragi",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "生意気",
+        "元気"
+      ],
+      "roles": [
+        "姉"
+      ],
+      "distance": "積極的",
+      "looks": [
+        "ツインテール"
+      ],
+      "hairColor": [
+        "紫"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": null,
+      "stature": "標準",
+      "occupation": []
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "gkidols-ume",
+    "name": "花海佑芽",
+    "aliases": [
+      "Hanami Ume"
+    ],
+    "series": "学園アイドルマスター",
+    "dlsiteQuery": "学園アイドルマスター 花海佑芽",
+    "hitomiQuery": {
+      "character": "ume hanami",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": [
+        "元気"
+      ],
+      "roles": [
+        "妹"
+      ],
+      "distance": "積極的",
+      "looks": [
+        "ツインテール"
+      ],
+      "hairColor": [
+        "橙"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": null,
+      "stature": "小柄",
+      "occupation": [
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "gkidols-hiro",
+    "name": "篠澤広",
+    "aliases": [
+      "Shinosawa Hiro"
+    ],
+    "series": "学園アイドルマスター",
+    "dlsiteQuery": "学園アイドルマスター 篠澤広",
+    "hitomiQuery": {
+      "character": "hiro shinosawa",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "クール",
+        "内気"
+      ],
+      "roles": [],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "黒"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": null,
+      "stature": "標準",
+      "occupation": [
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "kimetsu-shinobu",
+    "name": "胡蝶しのぶ",
+    "aliases": [
+      "Kochou Shinobu"
+    ],
+    "series": "鬼滅の刃",
+    "dlsiteQuery": "鬼滅の刃 胡蝶しのぶ",
+    "hitomiQuery": {
+      "character": "shinobu kochou",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "標準",
+      "personality": [
+        "おっとり",
+        "むっつり"
+      ],
+      "roles": [
+        "先輩"
+      ],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "紫"
+      ],
+      "skinTone": "色白",
+      "outfit": [
+        "和服・着物"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "affiliationName": "鬼殺隊",
+      "stature": "小柄",
+      "occupation": [
+        "兵士・軍人",
+        "医療従事者"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "kimetsu-nezuko",
+    "name": "竈門禰豆子",
+    "aliases": [
+      "Kamado Nezuko"
+    ],
+    "series": "鬼滅の刃",
+    "dlsiteQuery": "鬼滅の刃 竈門禰豆子",
+    "hitomiQuery": {
+      "character": "nezuko kamado",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "おっとり"
+      ],
+      "roles": [
+        "妹"
+      ],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "黒"
+      ],
+      "skinTone": "色白",
+      "outfit": [
+        "和服・着物"
+      ],
+      "species": "魔族",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": null,
+      "stature": "小柄",
+      "occupation": []
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "nijigasaki-ayumu",
+    "name": "上原歩夢",
+    "aliases": [
+      "Uehara Ayumu"
+    ],
+    "series": "ラブライブ!虹ヶ咲学園スクールアイドル同好会",
+    "dlsiteQuery": "虹ヶ咲学園 上原歩夢",
+    "hitomiQuery": {
+      "character": "ayumu uehara",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "元気"
+      ],
+      "roles": [
+        "幼馴染"
+      ],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "紫"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": null,
+      "stature": "標準",
+      "occupation": [
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "nijigasaki-setsuna",
+    "name": "優木せつ菜",
+    "aliases": [
+      "Yuki Setsuna"
+    ],
+    "series": "ラブライブ!虹ヶ咲学園スクールアイドル同好会",
+    "dlsiteQuery": "虹ヶ咲学園 優木せつ菜",
+    "hitomiQuery": {
+      "character": "setsuna yuki",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "元気",
+        "むっつり"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "桃"
+      ],
+      "skinTone": "標準",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": null,
+      "stature": "標準",
+      "occupation": [
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   }
 ]
