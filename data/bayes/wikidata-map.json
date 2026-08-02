@@ -2162,6 +2162,94 @@
       "candidateQid": "Q116936972",
       "candidateLabel": "AZKi",
       "checkedAt": "2026-08-02T01:46:19.354Z"
+    },
+    "hololiveen-gura": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q100556077, Gawr Gura)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q100556077",
+      "candidateLabel": "Gawr Gura",
+      "checkedAt": "2026-08-02T02:02:01.228Z"
+    },
+    "hololiveen-kronii": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q108223449, Ouro Kronii)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q108223449",
+      "candidateLabel": "Ouro Kronii",
+      "checkedAt": "2026-08-02T02:02:03.833Z"
+    },
+    "hololiveen-calliope": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q106248049, Mori Calliope)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q106248049",
+      "candidateLabel": "Mori Calliope",
+      "checkedAt": "2026-08-02T02:02:06.838Z"
+    },
+    "hololiveen-kiara": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q105772701, Takanashi Kiara)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q105772701",
+      "candidateLabel": "Takanashi Kiara",
+      "checkedAt": "2026-08-02T02:02:09.479Z"
+    },
+    "hololiveen-mumei": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q108223451, Nanashi Mumei)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q108223451",
+      "candidateLabel": "Nanashi Mumei",
+      "checkedAt": "2026-08-02T02:02:12.315Z"
+    },
+    "hololiveen-novella": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q135105407, Shiori Novella)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q135105407",
+      "candidateLabel": "Shiori Novella",
+      "checkedAt": "2026-08-02T02:02:14.050Z"
+    },
+    "hololiveen-nerissa": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q130279084, Nerissa Ravencroft)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q130279084",
+      "candidateLabel": "Nerissa Ravencroft",
+      "checkedAt": "2026-08-02T02:02:16.672Z"
+    },
+    "hololiveen-baelz": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q108223458, Hakos Baelz)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q108223458",
+      "candidateLabel": "Hakos Baelz",
+      "checkedAt": "2026-08-02T02:02:18.857Z"
+    },
+    "hololiveen-amelia": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q107120130, Watson Amelia)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q107120130",
+      "candidateLabel": "Watson Amelia",
+      "checkedAt": "2026-08-02T02:02:23.653Z"
+    },
+    "hololiveen-irys": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q98276842, Iris Châteaubriand)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q98276842",
+      "candidateLabel": "Iris Châteaubriand",
+      "checkedAt": "2026-08-02T02:02:33.307Z"
+    },
+    "hololiveen-fauna": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q108223443, Ceres Fauna)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q108223443",
+      "candidateLabel": "Ceres Fauna",
+      "checkedAt": "2026-08-02T02:02:36.304Z"
     }
   }
 }

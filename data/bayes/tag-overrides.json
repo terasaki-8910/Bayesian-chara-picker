@@ -44,7 +44,8 @@
     "魔法少女まどか☆マギカ": "mahou_shoujo_madoka_magica",
     "アイドルマスターシンデレラガールズ": "idolmaster_cinderella_girls",
     "アークナイツ": "arknights",
-    "ホロライブ": "hololive"
+    "ホロライブ": "hololive",
+    "ホロライブEN": "hololive_english"
   },
   "overrides": {
     "naruto-kurenai": {
@@ -561,6 +562,50 @@
     },
     "hololive-azki": {
       "tag": "azki_(hololive)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "hololiveen-gura": {
+      "tag": "gawr_gura",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "hololiveen-kronii": {
+      "tag": "ouro_kronii",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "hololiveen-calliope": {
+      "tag": "mori_calliope",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "hololiveen-kiara": {
+      "tag": "takanashi_kiara",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "hololiveen-mumei": {
+      "tag": "nanashi_mumei",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "hololiveen-novella": {
+      "tag": "shiori_novella",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "hololiveen-nerissa": {
+      "tag": "nerissa_ravencroft",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "hololiveen-baelz": {
+      "tag": "hakos_baelz",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "hololiveen-amelia": {
+      "tag": "watson_amelia",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "hololiveen-irys": {
+      "tag": "irys_(hololive)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "hololiveen-fauna": {
+      "tag": "ceres_fauna",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     }
   }

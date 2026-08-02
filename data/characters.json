@@ -14766,5 +14766,528 @@
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
+  },
+  {
+    "id": "hololiveen-gura",
+    "name": "がうるぐら",
+    "aliases": [
+      "Gawr Gura"
+    ],
+    "series": "ホロライブEN",
+    "dlsiteQuery": "ホロライブEN がうるぐら",
+    "hitomiQuery": {
+      "character": "gawr gura",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": [
+        "元気",
+        "内気"
+      ],
+      "roles": [],
+      "distance": "やや積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "青"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "魔族",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "ホロライブEN",
+      "stature": "小柄",
+      "occupation": [
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hololiveen-kronii",
+    "name": "オーロ・クロニー",
+    "aliases": [
+      "Ouro Kronii"
+    ],
+    "series": "ホロライブEN",
+    "dlsiteQuery": "ホロライブEN オーロ・クロニー",
+    "hitomiQuery": {
+      "character": "ouro kronii",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": [
+        "クール"
+      ],
+      "roles": [],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "黒"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "魔族",
+      "mood": [
+        "支配的"
+      ],
+      "combat": "戦わない",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "ホロライブEN",
+      "stature": "長身",
+      "occupation": [
+        "神様・精霊",
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hololiveen-calliope",
+    "name": "森美声",
+    "aliases": [
+      "Mori Calliope"
+    ],
+    "series": "ホロライブEN",
+    "dlsiteQuery": "ホロライブEN 森美声",
+    "hitomiQuery": {
+      "character": "mori calliope",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "元気",
+        "生意気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "桃"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "不死",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "ホロライブEN",
+      "stature": "標準",
+      "occupation": [
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hololiveen-kiara",
+    "name": "小鳥遊キアラ",
+    "aliases": [
+      "Takanashi Kiara"
+    ],
+    "series": "ホロライブEN",
+    "dlsiteQuery": "ホロライブEN 小鳥遊キアラ",
+    "hitomiQuery": {
+      "character": "takanashi kiara",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "元気",
+        "生意気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "橙"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "魔族",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "ホロライブEN",
+      "stature": "標準",
+      "occupation": [
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hololiveen-mumei",
+    "name": "七詩ムメイ",
+    "aliases": [
+      "Nanashi Mumei"
+    ],
+    "series": "ホロライブEN",
+    "dlsiteQuery": "ホロライブEN 七詩ムメイ",
+    "hitomiQuery": {
+      "character": "nanashi mumei",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "標準",
+      "personality": [
+        "おっとり",
+        "むっつり"
+      ],
+      "roles": [],
+      "distance": "中立",
+      "looks": [
+        "ケモミミ",
+        "長髪"
+      ],
+      "hairColor": [
+        "茶"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "獣人",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "ホロライブEN",
+      "stature": "小柄",
+      "occupation": [
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hololiveen-novella",
+    "name": "シオリ・ノヴェラ",
+    "aliases": [
+      "Shiori Novella"
+    ],
+    "series": "ホロライブEN",
+    "dlsiteQuery": "ホロライブEN シオリ・ノヴェラ",
+    "hitomiQuery": {
+      "character": "shiori novella",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "クール"
+      ],
+      "roles": [],
+      "distance": "中立",
+      "looks": [
+        "眼鏡",
+        "長髪"
+      ],
+      "hairColor": [
+        "紫"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "ホロライブEN",
+      "stature": "標準",
+      "occupation": [
+        "スパイ・暗殺者",
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hololiveen-nerissa",
+    "name": "ネリッサ・レイヴンクロフト",
+    "aliases": [
+      "Nerissa Ravencroft"
+    ],
+    "series": "ホロライブEN",
+    "dlsiteQuery": "ホロライブEN ネリッサ・レイヴンクロフト",
+    "hitomiQuery": {
+      "character": "nerissa ravencroft",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": [
+        "クール",
+        "むっつり"
+      ],
+      "roles": [],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "黒"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "魔族",
+      "mood": [
+        "背徳寄り"
+      ],
+      "combat": "戦わない",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "ホロライブEN",
+      "stature": "標準",
+      "occupation": [
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hololiveen-baelz",
+    "name": "ハコス・ベールズ",
+    "aliases": [
+      "Hakos Baelz"
+    ],
+    "series": "ホロライブEN",
+    "dlsiteQuery": "ホロライブEN ハコス・ベールズ",
+    "hitomiQuery": {
+      "character": "hakos baelz",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "生意気",
+        "元気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "ケモミミ",
+        "長髪"
+      ],
+      "hairColor": [
+        "赤"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "獣人",
+      "mood": [
+        "背徳寄り"
+      ],
+      "combat": "戦わない",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "ホロライブEN",
+      "stature": "標準",
+      "occupation": [
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hololiveen-amelia",
+    "name": "ワトソン・アメリア",
+    "aliases": [
+      "Watson Amelia"
+    ],
+    "series": "ホロライブEN",
+    "dlsiteQuery": "ホロライブEN ワトソン・アメリア",
+    "hitomiQuery": {
+      "character": "watson amelia",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": [
+        "元気",
+        "生意気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "眼鏡",
+        "ツインテール"
+      ],
+      "hairColor": [
+        "金"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "人間",
+      "mood": [],
+      "combat": "戦わない",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "ホロライブEN",
+      "stature": "小柄",
+      "occupation": [
+        "スパイ・暗殺者",
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hololiveen-irys",
+    "name": "アイリス",
+    "aliases": [
+      "IRyS"
+    ],
+    "series": "ホロライブEN",
+    "dlsiteQuery": "ホロライブEN アイリス",
+    "hitomiQuery": {
+      "character": "irys",
+      "series": "hololive"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": [
+        "おっとり"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "赤"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "魔族",
+      "mood": [
+        "甘め"
+      ],
+      "combat": "戦う",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "ホロライブEN",
+      "stature": "標準",
+      "occupation": [
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "hololiveen-fauna",
+    "name": "セレス・ファウナ",
+    "aliases": [
+      "Ceres Fauna"
+    ],
+    "series": "ホロライブEN",
+    "dlsiteQuery": "ホロライブEN セレス・ファウナ",
+    "hitomiQuery": {
+      "character": "ceres fauna",
+      "series": null
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": [
+        "おっとり"
+      ],
+      "roles": [
+        "母性"
+      ],
+      "distance": "積極的",
+      "looks": [
+        "角",
+        "長髪"
+      ],
+      "hairColor": [
+        "緑"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "魔族",
+      "mood": [
+        "甘め"
+      ],
+      "combat": "戦わない",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "ホロライブEN",
+      "stature": "標準",
+      "occupation": [
+        "神様・精霊",
+        "アイドル・芸能"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   }
 ]

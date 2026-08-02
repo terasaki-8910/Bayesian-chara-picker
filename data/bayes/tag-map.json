@@ -4236,6 +4236,72 @@
       "postCount": 3721,
       "source": "override",
       "checkedAt": "2026-08-02T01:29:16.000Z"
+    },
+    "hololiveen-gura": {
+      "tag": "gawr_gura",
+      "postCount": 16372,
+      "source": "override",
+      "checkedAt": "2026-08-02T01:52:13.293Z"
+    },
+    "hololiveen-kronii": {
+      "tag": "ouro_kronii",
+      "postCount": 14113,
+      "source": "override",
+      "checkedAt": "2026-08-02T01:52:14.318Z"
+    },
+    "hololiveen-calliope": {
+      "tag": "mori_calliope",
+      "postCount": 12432,
+      "source": "override",
+      "checkedAt": "2026-08-02T01:52:16.515Z"
+    },
+    "hololiveen-kiara": {
+      "tag": "takanashi_kiara",
+      "postCount": 10366,
+      "source": "override",
+      "checkedAt": "2026-08-02T01:52:17.621Z"
+    },
+    "hololiveen-mumei": {
+      "tag": "nanashi_mumei",
+      "postCount": 9607,
+      "source": "override",
+      "checkedAt": "2026-08-02T01:52:18.718Z"
+    },
+    "hololiveen-novella": {
+      "tag": "shiori_novella",
+      "postCount": 7529,
+      "source": "override",
+      "checkedAt": "2026-08-02T01:52:20.188Z"
+    },
+    "hololiveen-nerissa": {
+      "tag": "nerissa_ravencroft",
+      "postCount": 7365,
+      "source": "override",
+      "checkedAt": "2026-08-02T01:52:20.937Z"
+    },
+    "hololiveen-baelz": {
+      "tag": "hakos_baelz",
+      "postCount": 7350,
+      "source": "override",
+      "checkedAt": "2026-08-02T01:52:22.037Z"
+    },
+    "hololiveen-amelia": {
+      "tag": "watson_amelia",
+      "postCount": 7293,
+      "source": "override",
+      "checkedAt": "2026-08-02T01:52:23.135Z"
+    },
+    "hololiveen-irys": {
+      "tag": "irys_(hololive)",
+      "postCount": 5786,
+      "source": "override",
+      "checkedAt": "2026-08-02T01:52:24.238Z"
+    },
+    "hololiveen-fauna": {
+      "tag": "ceres_fauna",
+      "postCount": 5606,
+      "source": "override",
+      "checkedAt": "2026-08-02T01:52:25.339Z"
     }
   }
 }

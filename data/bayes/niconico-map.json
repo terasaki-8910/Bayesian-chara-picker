@@ -1862,6 +1862,72 @@
       "url": "https://dic.nicovideo.jp/a/AZKi",
       "source": "search-verified",
       "checkedAt": "2026-08-02T01:48:34.571Z"
+    },
+    "hololiveen-gura": {
+      "title": "がうるぐら",
+      "url": "https://dic.nicovideo.jp/a/%E3%81%8C%E3%81%86%E3%82%8B%E3%81%90%E3%82%89",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T02:02:50.258Z"
+    },
+    "hololiveen-kronii": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-08-02T02:03:00.448Z"
+    },
+    "hololiveen-calliope": {
+      "title": "森美声",
+      "url": "https://dic.nicovideo.jp/a/%E6%A3%AE%E7%BE%8E%E5%A3%B0",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T02:03:10.441Z"
+    },
+    "hololiveen-kiara": {
+      "title": "小鳥遊キアラ",
+      "url": "https://dic.nicovideo.jp/a/%E5%B0%8F%E9%B3%A5%E9%81%8A%E3%82%AD%E3%82%A2%E3%83%A9",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T02:03:15.313Z"
+    },
+    "hololiveen-mumei": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-08-02T02:03:25.295Z"
+    },
+    "hololiveen-novella": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-08-02T02:03:35.303Z"
+    },
+    "hololiveen-nerissa": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-08-02T02:03:45.429Z"
+    },
+    "hololiveen-baelz": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-08-02T02:03:55.247Z"
+    },
+    "hololiveen-amelia": {
+      "title": "ワトソン・アメリア",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%AF%E3%83%88%E3%82%BD%E3%83%B3%E3%83%BB%E3%82%A2%E3%83%A1%E3%83%AA%E3%82%A2",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T02:04:00.516Z"
+    },
+    "hololiveen-irys": {
+      "title": "IRyS",
+      "url": "https://dic.nicovideo.jp/a/IRyS",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T02:04:10.474Z"
+    },
+    "hololiveen-fauna": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-08-02T02:04:20.481Z"
     }
   }
 }
