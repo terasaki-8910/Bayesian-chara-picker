@@ -42,7 +42,8 @@
     "葬送のフリーレン": "sousou_no_frieren",
     "ぼっち・ざ・ろっく!": "bocchi_the_rock!",
     "魔法少女まどか☆マギカ": "mahou_shoujo_madoka_magica",
-    "アイドルマスターシンデレラガールズ": "idolmaster_cinderella_girls"
+    "アイドルマスターシンデレラガールズ": "idolmaster_cinderella_girls",
+    "アークナイツ": "arknights"
   },
   "overrides": {
     "naruto-kurenai": {
@@ -443,6 +444,22 @@
     },
     "hsr-theherta": {
       "tag": "the_herta_(honkai:_star_rail)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "arknights-amiya": {
+      "tag": "amiya_(arknights)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "arknights-texas": {
+      "tag": "texas_(arknights)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "arknights-suzuran": {
+      "tag": "suzuran_(arknights)",
+      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "arknights-exusiai": {
+      "tag": "exusiai_(arknights)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     }
   }

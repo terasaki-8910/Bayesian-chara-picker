@@ -1686,6 +1686,32 @@
       "reason": "not-found",
       "source": "not-found",
       "checkedAt": "2026-08-02T01:15:54.746Z"
+    },
+    "arknights-amiya": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-08-02T01:23:30.339Z"
+    },
+    "arknights-texas": {
+      "title": "テキサス",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%86%E3%82%AD%E3%82%B5%E3%82%B9",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T01:23:35.462Z"
+    },
+    "arknights-suzuran": {
+      "title": null,
+      "reason": "記事「スズラン」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateTitle": "スズラン",
+      "checkedAt": "2026-08-02T01:23:50.300Z"
+    },
+    "arknights-exusiai": {
+      "title": null,
+      "reason": "記事「エクシア」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateTitle": "エクシア",
+      "checkedAt": "2026-08-02T01:24:00.316Z"
     }
   }
 }

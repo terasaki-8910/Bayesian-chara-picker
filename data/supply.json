@@ -4984,5 +4984,77 @@
       "seriesFilter": "honkai star rail",
       "fetchedAt": "2026-08-02T01:14:09.821Z"
     }
+  },
+  "arknights-amiya": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:19:39.995Z",
+    "hitomi": {
+      "galleryCount": 224,
+      "seriesFilter": "arknights",
+      "fetchedAt": "2026-08-02T01:22:28.529Z"
+    }
+  },
+  "arknights-texas": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:20:20.072Z",
+    "hitomi": {
+      "galleryCount": 288,
+      "seriesFilter": "arknights",
+      "fetchedAt": "2026-08-02T01:22:29.970Z"
+    }
+  },
+  "arknights-suzuran": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:21:00.058Z",
+    "hitomi": {
+      "galleryCount": 247,
+      "seriesFilter": "arknights",
+      "fetchedAt": "2026-08-02T01:22:31.486Z"
+    }
+  },
+  "arknights-exusiai": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-02T01:22:20.106Z",
+    "hitomi": {
+      "galleryCount": 264,
+      "seriesFilter": "arknights",
+      "fetchedAt": "2026-08-02T01:22:34.474Z"
+    }
   }
 }

@@ -13378,5 +13378,193 @@
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
+  },
+  {
+    "id": "arknights-amiya",
+    "name": "アーミヤ",
+    "aliases": [
+      "Amiya"
+    ],
+    "series": "アークナイツ",
+    "dlsiteQuery": "アークナイツ アーミヤ",
+    "hitomiQuery": {
+      "character": "amiya",
+      "series": "arknights"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": [
+        "おっとり"
+      ],
+      "roles": [
+        "先輩"
+      ],
+      "distance": "中立",
+      "looks": [
+        "ケモミミ",
+        "尻尾",
+        "長髪"
+      ],
+      "hairColor": [
+        "橙"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "獣人",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "affiliationName": "ロドスアイランド製薬",
+      "stature": "小柄",
+      "occupation": [
+        "兵士・軍人"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "arknights-texas",
+    "name": "テキサス",
+    "aliases": [
+      "Texas"
+    ],
+    "series": "アークナイツ",
+    "dlsiteQuery": "アークナイツ テキサス",
+    "hitomiQuery": {
+      "character": "texas",
+      "series": "arknights"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "クール"
+      ],
+      "roles": [],
+      "distance": "中立",
+      "looks": [
+        "ケモミミ",
+        "尻尾"
+      ],
+      "hairColor": [
+        "黒"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "獣人",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "affiliationName": "ペンギン急便",
+      "stature": "標準",
+      "occupation": [
+        "兵士・軍人",
+        "スパイ・暗殺者"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "arknights-suzuran",
+    "name": "スズラン",
+    "aliases": [
+      "Suzuran"
+    ],
+    "series": "アークナイツ",
+    "dlsiteQuery": "アークナイツ スズラン",
+    "hitomiQuery": {
+      "character": "suzuran",
+      "series": "arknights"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "年上",
+      "build": "標準",
+      "bust": "大きい",
+      "personality": [
+        "クール"
+      ],
+      "roles": [],
+      "distance": "中立",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "白"
+      ],
+      "skinTone": "色白",
+      "outfit": [],
+      "species": "獣人",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "affiliationName": "ロドスアイランド製薬",
+      "stature": "長身",
+      "occupation": [
+        "医療従事者",
+        "兵士・軍人"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
+  },
+  {
+    "id": "arknights-exusiai",
+    "name": "エクシア",
+    "aliases": [
+      "Exusiai"
+    ],
+    "series": "アークナイツ",
+    "dlsiteQuery": "アークナイツ エクシア",
+    "hitomiQuery": {
+      "character": "exusiai",
+      "series": "arknights"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "personality": [
+        "元気",
+        "生意気"
+      ],
+      "roles": [],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "桃"
+      ],
+      "skinTone": "標準",
+      "outfit": [],
+      "species": "魔族",
+      "mood": [],
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "affiliationName": "ペンギン急便",
+      "stature": "標準",
+      "occupation": [
+        "兵士・軍人"
+      ]
+    },
+    "reviewed": false,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   }
 ]

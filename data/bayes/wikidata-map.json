@@ -1931,6 +1931,37 @@
       "reason": "not-found",
       "source": "not-found",
       "checkedAt": "2026-08-02T01:14:57.932Z"
+    },
+    "arknights-amiya": {
+      "qid": "Q134221910",
+      "label": "Amiya",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-08-02T01:23:00.083Z"
+    },
+    "arknights-texas": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q916484, Texas)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q916484",
+      "candidateLabel": "Texas",
+      "checkedAt": "2026-08-02T01:23:08.482Z"
+    },
+    "arknights-suzuran": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q101711, Convallaria majalis)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q101711",
+      "candidateLabel": "Convallaria majalis",
+      "checkedAt": "2026-08-02T01:23:16.534Z"
+    },
+    "arknights-exusiai": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q11289764, エクシア)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q11289764",
+      "candidateLabel": "エクシア",
+      "checkedAt": "2026-08-02T01:23:18.568Z"
     }
   }
 }
