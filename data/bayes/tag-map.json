@@ -4794,6 +4794,354 @@
       "postCount": 3456,
       "source": "override",
       "checkedAt": "2026-08-02T03:45:32.816Z"
+    },
+    "ff7-tifa": {
+      "tag": "tifa_lockhart",
+      "postCount": 16570,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:27:37.565Z"
+    },
+    "ff7-aerith": {
+      "tag": "aerith_gainsborough",
+      "postCount": 11533,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:27:38.592Z"
+    },
+    "zelda-zelda": {
+      "tag": "princess_zelda",
+      "postCount": 16359,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:27:39.691Z"
+    },
+    "mario-peach": {
+      "tag": "princess_peach",
+      "postCount": 8481,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:27:40.860Z"
+    },
+    "mario-rosalina": {
+      "tag": "rosalina",
+      "postCount": 4678,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:27:42.006Z"
+    },
+    "mario-daisy": {
+      "tag": "princess_daisy",
+      "postCount": 3281,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:27:43.006Z"
+    },
+    "xeno2-pyra": {
+      "tag": "pyra_(xenoblade)",
+      "postCount": 9443,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:27:44.092Z"
+    },
+    "ccs-sakura": {
+      "tag": "kinomoto_sakura",
+      "postCount": 8944,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:27:47.393Z"
+    },
+    "lycrecoil-chisato": {
+      "tag": "nishikigi_chisato",
+      "postCount": 8341,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:27:48.497Z"
+    },
+    "metroid-samus": {
+      "tag": "samus_aran",
+      "postCount": 7777,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:27:49.596Z"
+    },
+    "darkstalkers-morrigan": {
+      "tag": "morrigan_aensland",
+      "postCount": 7131,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:27:50.693Z"
+    },
+    "idolmaster-miki": {
+      "tag": "hoshii_miki",
+      "postCount": 6763,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:27:51.796Z"
+    },
+    "idolmaster-haruka": {
+      "tag": "amami_haruka",
+      "postCount": 6312,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:27:52.919Z"
+    },
+    "idolmaster-takane": {
+      "tag": "shijou_takane",
+      "postCount": 5577,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:27:53.996Z"
+    },
+    "idolmaster-iori": {
+      "tag": "minase_iori",
+      "postCount": 5077,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:27:55.098Z"
+    },
+    "imsc-madoka": {
+      "tag": "higuchi_madoka",
+      "postCount": 5897,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:27:56.195Z"
+    },
+    "imsc-fuyuko": {
+      "tag": "mayuzumi_fuyuko",
+      "postCount": 3903,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:27:57.297Z"
+    },
+    "spyfamily-anya": {
+      "tag": "anya_(spy_x_family)",
+      "postCount": 6700,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:27:58.402Z"
+    },
+    "konosuba-megumin": {
+      "tag": "megumin",
+      "postCount": 10690,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:27:59.497Z"
+    },
+    "konosuba-aqua": {
+      "tag": "aqua_(konosuba)",
+      "postCount": 6680,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:00.701Z"
+    },
+    "monogatari-shinobu": {
+      "tag": "oshino_shinobu",
+      "postCount": 6635,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:02.936Z"
+    },
+    "bisquedoll-marin": {
+      "tag": "kitagawa_marin",
+      "postCount": 6329,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:05.006Z"
+    },
+    "fatalfury-mai": {
+      "tag": "shiranui_mai",
+      "postCount": 5869,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:05.199Z"
+    },
+    "dungeonmeshi-marcille": {
+      "tag": "marcille_donato",
+      "postCount": 5787,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:06.303Z"
+    },
+    "psg-stocking": {
+      "tag": "stocking_(psg)",
+      "postCount": 5490,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:07.399Z"
+    },
+    "gurrenlagann-yoko": {
+      "tag": "yoko_littner",
+      "postCount": 5414,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:08.497Z"
+    },
+    "fe-lucina": {
+      "tag": "lucina_(fire_emblem)",
+      "postCount": 5338,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:09.604Z"
+    },
+    "fe-corrin": {
+      "tag": "female_corrin_(fire_emblem)",
+      "postCount": 4747,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:10.702Z"
+    },
+    "fe-lyn": {
+      "tag": "lyn_(fire_emblem)",
+      "postCount": 3007,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:11.802Z"
+    },
+    "overwatch-dva": {
+      "tag": "d.va_(overwatch)",
+      "postCount": 5327,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:12.903Z"
+    },
+    "opm-tatsumaki": {
+      "tag": "tatsumaki",
+      "postCount": 4918,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:15.256Z"
+    },
+    "watamote-tomoko": {
+      "tag": "kuroki_tomoko",
+      "postCount": 4872,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:16.354Z"
+    },
+    "gridman-rikka": {
+      "tag": "takarada_rikka",
+      "postCount": 4648,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:17.456Z"
+    },
+    "lol-ahri": {
+      "tag": "ahri_(league)",
+      "postCount": 4608,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:18.559Z"
+    },
+    "lol-jinx": {
+      "tag": "jinx_(league)",
+      "postCount": 3560,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:19.658Z"
+    },
+    "voiceroid-kiritan": {
+      "tag": "touhoku_kiritan",
+      "postCount": 4520,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:20.849Z"
+    },
+    "atelierryza-ryza": {
+      "tag": "reisalin_stout",
+      "postCount": 4456,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:21.857Z"
+    },
+    "difranxx-zerotwo": {
+      "tag": "zero_two_(darling_in_the_franxx)",
+      "postCount": 4450,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:22.972Z"
+    },
+    "nijisanji-lize": {
+      "tag": "lize_helesta",
+      "postCount": 4401,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:24.058Z"
+    },
+    "yugioh-dmg": {
+      "tag": "dark_magician_girl",
+      "postCount": 4339,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:26.256Z"
+    },
+    "dandadan-momo": {
+      "tag": "ayase_momo",
+      "postCount": 4152,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:27.355Z"
+    },
+    "danmachi-hestia": {
+      "tag": "hestia_(danmachi)",
+      "postCount": 4136,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:28.458Z"
+    },
+    "rwby-weiss": {
+      "tag": "weiss_schnee",
+      "postCount": 3530,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:30.661Z"
+    },
+    "nikke-anis": {
+      "tag": "anis_(nikke)",
+      "postCount": 3638,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:31.768Z"
+    },
+    "oreimo-ruri": {
+      "tag": "gokou_ruri",
+      "postCount": 3591,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:32.861Z"
+    },
+    "guiltygear-dizzy": {
+      "tag": "dizzy_(guilty_gear)",
+      "postCount": 3402,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:33.963Z"
+    },
+    "maidragon-kanna": {
+      "tag": "kanna_kamui",
+      "postCount": 3281,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:35.069Z"
+    },
+    "symphogear-chris": {
+      "tag": "yukine_chris",
+      "postCount": 3076,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:36.167Z"
+    },
+    "eromangasensei-sagiri": {
+      "tag": "izumi_sagiri",
+      "postCount": 3006,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:37.268Z"
+    },
+    "haruhi-haruhi": {
+      "tag": "suzumiya_haruhi",
+      "postCount": 11006,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:38.366Z"
+    },
+    "haruhi-yuki": {
+      "tag": "nagato_yuki",
+      "postCount": 9251,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:39.466Z"
+    },
+    "honkai3-bronya": {
+      "tag": "bronya_zaychik",
+      "postCount": 4842,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:42.780Z"
+    },
+    "honkai3-kiana": {
+      "tag": "kiana_kaslana",
+      "postCount": 7627,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:43.869Z"
+    },
+    "danganronpa-chiaki": {
+      "tag": "nanami_chiaki",
+      "postCount": 13574,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:44.967Z"
+    },
+    "fate-nero": {
+      "tag": "nero_claudius_(fate)",
+      "postCount": 11296,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:47.168Z"
+    },
+    "fate-rin": {
+      "tag": "tohsaka_rin",
+      "postCount": 10800,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:48.271Z"
+    },
+    "granblue-djeeta": {
+      "tag": "djeeta_(granblue_fantasy)",
+      "postCount": 4529,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:50.474Z"
+    },
+    "rezero-emilia": {
+      "tag": "emilia_(re:zero)",
+      "postCount": 5013,
+      "source": "override",
+      "checkedAt": "2026-08-02T04:28:51.569Z"
     }
   }
 }

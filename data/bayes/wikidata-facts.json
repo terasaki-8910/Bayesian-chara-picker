@@ -1704,6 +1704,263 @@
       "species": [
         "人間"
       ]
-    }
+    },
+    "ff7-tifa": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "brown",
+      "species": [
+        "人間"
+      ]
+    },
+    "ff7-aerith": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "zelda-zelda": {
+      "genderExpression": "女性",
+      "eyeColor": "blue",
+      "stature": "長身"
+    },
+    "mario-peach": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "eyeColor": "blue",
+      "stature": "標準",
+      "species": [
+        "人間"
+      ]
+    },
+    "mario-rosalina": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "species": [
+        "人間"
+      ]
+    },
+    "mario-daisy": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "xeno2-pyra": {
+      "genderExpression": "女性"
+    },
+    "ccs-sakura": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "green",
+      "species": [
+        "人間"
+      ]
+    },
+    "lycrecoil-chisato": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "eyeColor": "red",
+      "species": [
+        "人間"
+      ]
+    },
+    "metroid-samus": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "stature": "長身",
+      "species": [
+        "人間"
+      ]
+    },
+    "darkstalkers-morrigan": {
+      "genderExpression": "女性",
+      "hairColor": "緑",
+      "eyeColor": "green",
+      "stature": "長身"
+    },
+    "idolmaster-miki": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "idolmaster-haruka": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "idolmaster-takane": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "idolmaster-iori": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "imsc-madoka": {},
+    "imsc-fuyuko": {},
+    "spyfamily-anya": {},
+    "konosuba-megumin": {
+      "genderExpression": "女性",
+      "hairColor": "黒",
+      "eyeColor": "red",
+      "species": [
+        "人間"
+      ]
+    },
+    "konosuba-aqua": {},
+    "monogatari-shinobu": {
+      "genderExpression": "女性"
+    },
+    "bisquedoll-marin": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "stature": "標準",
+      "species": [
+        "人間"
+      ]
+    },
+    "fatalfury-mai": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "stature": "標準",
+      "species": [
+        "人間"
+      ]
+    },
+    "dungeonmeshi-marcille": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "eyeColor": "green"
+    },
+    "psg-stocking": {},
+    "gurrenlagann-yoko": {
+      "genderExpression": "女性",
+      "hairColor": "赤",
+      "species": [
+        "人間"
+      ]
+    },
+    "fe-lucina": {
+      "genderExpression": "女性",
+      "hairColor": "青",
+      "species": [
+        "人間"
+      ]
+    },
+    "fe-corrin": {},
+    "fe-lyn": {},
+    "overwatch-dva": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "brown",
+      "species": [
+        "人間"
+      ]
+    },
+    "opm-tatsumaki": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "watamote-tomoko": {},
+    "gridman-rikka": {},
+    "lol-ahri": {},
+    "lol-jinx": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "voiceroid-kiritan": {},
+    "atelierryza-ryza": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "brown",
+      "species": [
+        "人間"
+      ]
+    },
+    "difranxx-zerotwo": {},
+    "nijisanji-lize": {},
+    "yugioh-dmg": {},
+    "dandadan-momo": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "danmachi-hestia": {
+      "genderExpression": "女性",
+      "hairColor": "黒",
+      "eyeColor": "blue"
+    },
+    "rwby-weiss": {},
+    "nikke-anis": {},
+    "oreimo-ruri": {
+      "genderExpression": "女性",
+      "eyeColor": "purple",
+      "species": [
+        "人間"
+      ]
+    },
+    "guiltygear-dizzy": {
+      "genderExpression": "女性",
+      "hairColor": "青"
+    },
+    "maidragon-kanna": {
+      "genderExpression": "女性",
+      "eyeColor": "blue"
+    },
+    "symphogear-chris": {},
+    "eromangasensei-sagiri": {
+      "genderExpression": "女性",
+      "hairColor": "銀",
+      "eyeColor": "blue",
+      "species": [
+        "人間"
+      ]
+    },
+    "haruhi-haruhi": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "haruhi-yuki": {
+      "genderExpression": "女性",
+      "hairColor": "紫",
+      "eyeColor": "brown"
+    },
+    "honkai3-bronya": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "honkai3-kiana": {},
+    "danganronpa-chiaki": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "fate-nero": {},
+    "fate-rin": {
+      "genderExpression": "女性",
+      "eyeColor": "aqua",
+      "species": [
+        "人間"
+      ]
+    },
+    "granblue-djeeta": {},
+    "rezero-emilia": {}
   }
 }

@@ -2430,6 +2430,358 @@
       "url": "https://dic.nicovideo.jp/a/%E5%84%AA%E6%9C%A8%E3%81%9B%E3%81%A4%E8%8F%9C",
       "source": "search-verified",
       "checkedAt": "2026-08-02T04:04:04.821Z"
+    },
+    "ff7-tifa": {
+      "title": "ティファ・ロックハート",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%86%E3%82%A3%E3%83%95%E3%82%A1%E3%83%BB%E3%83%AD%E3%83%83%E3%82%AF%E3%83%8F%E3%83%BC%E3%83%88",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:43:15.287Z"
+    },
+    "ff7-aerith": {
+      "title": "エアリス・ゲインズブール",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%A8%E3%82%A2%E3%83%AA%E3%82%B9%E3%83%BB%E3%82%B2%E3%82%A4%E3%83%B3%E3%82%BA%E3%83%96%E3%83%BC%E3%83%AB",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:43:20.214Z"
+    },
+    "zelda-zelda": {
+      "title": "ゼルダ姫",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%BC%E3%83%AB%E3%83%80%E5%A7%AB",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:43:30.374Z"
+    },
+    "mario-peach": {
+      "title": "ピーチ姫",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%94%E3%83%BC%E3%83%81%E5%A7%AB",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:43:35.200Z"
+    },
+    "mario-rosalina": {
+      "title": "ロゼッタ",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%AD%E3%82%BC%E3%83%83%E3%82%BF",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:43:40.051Z"
+    },
+    "mario-daisy": {
+      "title": "デイジー姫",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%87%E3%82%A4%E3%82%B8%E3%83%BC%E5%A7%AB",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:43:45.175Z"
+    },
+    "xeno2-pyra": {
+      "title": "ホムラ",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%9B%E3%83%A0%E3%83%A9",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:43:55.037Z"
+    },
+    "ccs-sakura": {
+      "title": "木之本桜",
+      "url": "https://dic.nicovideo.jp/a/%E6%9C%A8%E4%B9%8B%E6%9C%AC%E6%A1%9C",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:44:00.084Z"
+    },
+    "lycrecoil-chisato": {
+      "title": "錦木千束",
+      "url": "https://dic.nicovideo.jp/a/%E9%8C%A6%E6%9C%A8%E5%8D%83%E6%9D%9F",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:44:05.090Z"
+    },
+    "metroid-samus": {
+      "title": "サムス・アラン",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%B5%E3%83%A0%E3%82%B9%E3%83%BB%E3%82%A2%E3%83%A9%E3%83%B3",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:44:10.116Z"
+    },
+    "darkstalkers-morrigan": {
+      "title": null,
+      "reason": "記事「モリガン・アーンスランド」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateTitle": "モリガン・アーンスランド",
+      "checkedAt": "2026-08-02T05:44:20.155Z"
+    },
+    "idolmaster-miki": {
+      "title": "星井美希",
+      "url": "https://dic.nicovideo.jp/a/%E6%98%9F%E4%BA%95%E7%BE%8E%E5%B8%8C",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:44:26.212Z"
+    },
+    "idolmaster-haruka": {
+      "title": "天海春香",
+      "url": "https://dic.nicovideo.jp/a/%E5%A4%A9%E6%B5%B7%E6%98%A5%E9%A6%99",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:44:31.133Z"
+    },
+    "idolmaster-takane": {
+      "title": "四条貴音",
+      "url": "https://dic.nicovideo.jp/a/%E5%9B%9B%E6%9D%A1%E8%B2%B4%E9%9F%B3",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:44:35.919Z"
+    },
+    "idolmaster-iori": {
+      "title": "水瀬伊織",
+      "url": "https://dic.nicovideo.jp/a/%E6%B0%B4%E7%80%AC%E4%BC%8A%E7%B9%94",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:44:40.949Z"
+    },
+    "imsc-madoka": {
+      "title": "樋口円香",
+      "url": "https://dic.nicovideo.jp/a/%E6%A8%8B%E5%8F%A3%E5%86%86%E9%A6%99",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:44:45.154Z"
+    },
+    "imsc-fuyuko": {
+      "title": "黛冬優子",
+      "url": "https://dic.nicovideo.jp/a/%E9%BB%9B%E5%86%AC%E5%84%AA%E5%AD%90",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:44:50.223Z"
+    },
+    "spyfamily-anya": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-08-02T05:45:00.038Z"
+    },
+    "konosuba-megumin": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-08-02T05:45:10.053Z"
+    },
+    "konosuba-aqua": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-08-02T05:45:19.951Z"
+    },
+    "monogatari-shinobu": {
+      "title": "忍野忍",
+      "url": "https://dic.nicovideo.jp/a/%E5%BF%8D%E9%87%8E%E5%BF%8D",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:45:25.160Z"
+    },
+    "bisquedoll-marin": {
+      "title": "喜多川海夢",
+      "url": "https://dic.nicovideo.jp/a/%E5%96%9C%E5%A4%9A%E5%B7%9D%E6%B5%B7%E5%A4%A2",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:45:30.361Z"
+    },
+    "fatalfury-mai": {
+      "title": "不知火舞",
+      "url": "https://dic.nicovideo.jp/a/%E4%B8%8D%E7%9F%A5%E7%81%AB%E8%88%9E",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:45:35.119Z"
+    },
+    "dungeonmeshi-marcille": {
+      "title": "マルシル",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%9E%E3%83%AB%E3%82%B7%E3%83%AB",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:45:45.124Z"
+    },
+    "psg-stocking": {
+      "title": "アナーキー・ストッキング",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%A2%E3%83%8A%E3%83%BC%E3%82%AD%E3%83%BC%E3%83%BB%E3%82%B9%E3%83%88%E3%83%83%E3%82%AD%E3%83%B3%E3%82%B0",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:45:50.199Z"
+    },
+    "gurrenlagann-yoko": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-08-02T05:46:00.117Z"
+    },
+    "fe-lucina": {
+      "title": "ルキナ",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%AB%E3%82%AD%E3%83%8A",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:46:05.311Z"
+    },
+    "fe-corrin": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-08-02T05:46:15.107Z"
+    },
+    "fe-lyn": {
+      "title": "リンディス",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%AA%E3%83%B3%E3%83%87%E3%82%A3%E3%82%B9",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:46:25.447Z"
+    },
+    "overwatch-dva": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-08-02T05:46:30.462Z"
+    },
+    "opm-tatsumaki": {
+      "title": "戦慄のタツマキ",
+      "url": "https://dic.nicovideo.jp/a/%E6%88%A6%E6%85%84%E3%81%AE%E3%82%BF%E3%83%84%E3%83%9E%E3%82%AD",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:46:35.183Z"
+    },
+    "watamote-tomoko": {
+      "title": "黒木智子",
+      "url": "https://dic.nicovideo.jp/a/%E9%BB%92%E6%9C%A8%E6%99%BA%E5%AD%90",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:46:40.211Z"
+    },
+    "gridman-rikka": {
+      "title": "宝多六花",
+      "url": "https://dic.nicovideo.jp/a/%E5%AE%9D%E5%A4%9A%E5%85%AD%E8%8A%B1",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:46:45.152Z"
+    },
+    "lol-ahri": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-08-02T05:46:55.052Z"
+    },
+    "lol-jinx": {
+      "title": null,
+      "reason": "記事「ジンクス」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateTitle": "ジンクス",
+      "checkedAt": "2026-08-02T05:47:05.290Z"
+    },
+    "voiceroid-kiritan": {
+      "title": "東北きりたん",
+      "url": "https://dic.nicovideo.jp/a/%E6%9D%B1%E5%8C%97%E3%81%8D%E3%82%8A%E3%81%9F%E3%82%93",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:47:10.350Z"
+    },
+    "atelierryza-ryza": {
+      "title": "ライザリン・シュタウト",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%A9%E3%82%A4%E3%82%B6%E3%83%AA%E3%83%B3%E3%83%BB%E3%82%B7%E3%83%A5%E3%82%BF%E3%82%A6%E3%83%88",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:47:15.276Z"
+    },
+    "difranxx-zerotwo": {
+      "title": "ゼロツー(ダリフラ)",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%BC%E3%83%AD%E3%83%84%E3%83%BC(%E3%83%80%E3%83%AA%E3%83%95%E3%83%A9)",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:47:20.072Z"
+    },
+    "nijisanji-lize": {
+      "title": "リゼ・ヘルエスタ",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%AA%E3%82%BC%E3%83%BB%E3%83%98%E3%83%AB%E3%82%A8%E3%82%B9%E3%82%BF",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:47:25.435Z"
+    },
+    "yugioh-dmg": {
+      "title": "ブラックマジシャンガール",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%E3%83%9E%E3%82%B8%E3%82%B7%E3%83%A3%E3%83%B3%E3%82%AC%E3%83%BC%E3%83%AB",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:47:35.294Z"
+    },
+    "dandadan-momo": {
+      "title": "綾瀬桃",
+      "url": "https://dic.nicovideo.jp/a/%E7%B6%BE%E7%80%AC%E6%A1%83",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:47:40.399Z"
+    },
+    "danmachi-hestia": {
+      "title": "ヘスティア",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%98%E3%82%B9%E3%83%86%E3%82%A3%E3%82%A2",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:47:45.196Z"
+    },
+    "rwby-weiss": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-08-02T05:47:55.071Z"
+    },
+    "nikke-anis": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-08-02T05:48:05.071Z"
+    },
+    "oreimo-ruri": {
+      "title": "五更瑠璃",
+      "url": "https://dic.nicovideo.jp/a/%E4%BA%94%E6%9B%B4%E7%91%A0%E7%92%83",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:48:15.659Z"
+    },
+    "guiltygear-dizzy": {
+      "title": "ディズィー",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%87%E3%82%A3%E3%82%BA%E3%82%A3%E3%83%BC",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:48:20.386Z"
+    },
+    "maidragon-kanna": {
+      "title": "カンナカムイ",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%AB%E3%83%B3%E3%83%8A%E3%82%AB%E3%83%A0%E3%82%A4",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:48:25.287Z"
+    },
+    "symphogear-chris": {
+      "title": "雪音クリス",
+      "url": "https://dic.nicovideo.jp/a/%E9%9B%AA%E9%9F%B3%E3%82%AF%E3%83%AA%E3%82%B9",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:48:30.725Z"
+    },
+    "eromangasensei-sagiri": {
+      "title": "和泉紗霧",
+      "url": "https://dic.nicovideo.jp/a/%E5%92%8C%E6%B3%89%E7%B4%97%E9%9C%A7",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:48:35.254Z"
+    },
+    "haruhi-haruhi": {
+      "title": "涼宮ハルヒ",
+      "url": "https://dic.nicovideo.jp/a/%E6%B6%BC%E5%AE%AE%E3%83%8F%E3%83%AB%E3%83%92",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:48:40.217Z"
+    },
+    "haruhi-yuki": {
+      "title": "長門有希",
+      "url": "https://dic.nicovideo.jp/a/%E9%95%B7%E9%96%80%E6%9C%89%E5%B8%8C",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:48:45.451Z"
+    },
+    "honkai3-bronya": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-08-02T05:48:55.097Z"
+    },
+    "honkai3-kiana": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-08-02T05:49:05.139Z"
+    },
+    "danganronpa-chiaki": {
+      "title": "七海千秋",
+      "url": "https://dic.nicovideo.jp/a/%E4%B8%83%E6%B5%B7%E5%8D%83%E7%A7%8B",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:49:10.360Z"
+    },
+    "fate-nero": {
+      "title": null,
+      "reason": "記事「ネロ・クラウディウス(Fate)」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateTitle": "ネロ・クラウディウス(Fate)",
+      "checkedAt": "2026-08-02T05:49:25.080Z"
+    },
+    "fate-rin": {
+      "title": "遠坂凛",
+      "url": "https://dic.nicovideo.jp/a/%E9%81%A0%E5%9D%82%E5%87%9B",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:49:30.443Z"
+    },
+    "granblue-djeeta": {
+      "title": null,
+      "reason": "記事「ジータ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateTitle": "ジータ",
+      "checkedAt": "2026-08-02T05:49:40.255Z"
+    },
+    "rezero-emilia": {
+      "title": "エミリア",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%A8%E3%83%9F%E3%83%AA%E3%82%A2",
+      "source": "search-verified",
+      "checkedAt": "2026-08-02T05:49:45.500Z"
     }
   }
 }
