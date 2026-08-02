@@ -224,6 +224,10 @@ describe('BB. Danbooruクライアント（scripts/bayes/danbooru-client.mjs）'
     expect(containsChineseTransliterationMarker('茨木華扇')).toBe(false);
     expect(containsChineseTransliterationMarker('欧陽菲菲')).toBe(false);
     expect(containsChineseTransliterationMarker('梅澤')).toBe(false);
+    // 2026-08-02、実地確認: 「蝴蝶忍」(鬼滅の刃・胡蝶しのぶの中国語音訳、虫偏の
+    // 「蝴」は日本語の「胡蝶」では使わない)が旧denylistをすり抜けていた。
+    expect(containsChineseTransliterationMarker('蝴蝶忍')).toBe(true);
+    expect(containsChineseTransliterationMarker('胡蝶しのぶ')).toBe(false);
   });
 
   it('pickJapaneseDisplayName: other_namesの並び順どおりに最初の採用可能候補を選ぶ（配列内かな優先の2パス走査はしない）', () => {
