@@ -99,6 +99,78 @@ export const AXIS_LABEL: Record<AxisKey, string> = {
 };
 
 /**
+ * 推測・結果画面に出すキャラのプロフィール1項目。
+ * 単一値軸も複数値軸も `values` の配列に揃えて返す（描画側で分岐させないため）。
+ */
+export type ProfileEntry = { axis: AxisKey; label: string; values: string[] };
+
+/**
+ * プロフィールに出す軸の優先順位。上ほど「そのキャラ固有で、見て面白い」情報。
+ * 所属名（「ミレニアムサイエンススクール（C&C）」等）は質問には使われないが
+ * 最も固有性が高いので先頭に置く。逆に性別表現・肌の色のような、多くのキャラで
+ * 同じ値になり情報量の乏しい軸は末尾に回す。
+ */
+const PROFILE_AXIS_ORDER: readonly AxisKey[] = [
+  'affiliationName',
+  'occupation',
+  'species',
+  'personality',
+  'roles',
+  'mood',
+  'looks',
+  'outfit',
+  'hairColor',
+  'combat',
+  'ageFeel',
+  'stature',
+  'build',
+  'distance',
+  'affiliationKind',
+  'skinTone',
+  'genderExpression',
+];
+
+/** プロフィールには出さない軸（内部ロジック・尤度計算では引き続き使う）。 */
+const PROFILE_HIDDEN_AXES: ReadonlySet<AxisKey> = new Set<AxisKey>(['bust']);
+
+/** 1画面に出すプロフィールの既定件数。全軸出すと多すぎて読まれないため絞る。 */
+export const PROFILE_ENTRY_LIMIT = 5;
+
+/**
+ * キャラに実際に格納されている属性を、表示用に優先順位順で取り出す。
+ *
+ * 推測の「根拠」（ユーザーの回答由来）とは別物であることに注意——根拠は
+ * 「なぜこのキャラが出たか」を示すが、こちらは回答した質問に関係なく
+ * 「このキャラにどんなデータがあるか」を示す。両方出す場合、根拠で既に
+ * 見せた軸は `exclude` に渡して重複を避ける。
+ *
+ * @param character 対象キャラ
+ * @param opts.exclude 除外する軸（根拠として既に表示済みの軸など）
+ * @param opts.limit 最大件数（既定 PROFILE_ENTRY_LIMIT）
+ */
+export function profileEntriesFor(
+  character: Character,
+  opts?: { exclude?: ReadonlySet<AxisKey>; limit?: number },
+): ProfileEntry[] {
+  const limit = opts?.limit ?? PROFILE_ENTRY_LIMIT;
+  const entries: ProfileEntry[] = [];
+
+  for (const axis of PROFILE_AXIS_ORDER) {
+    if (entries.length >= limit) break;
+    if (PROFILE_HIDDEN_AXES.has(axis)) continue;
+    if (opts?.exclude?.has(axis)) continue;
+
+    const raw = character.axes[axis];
+    const values = Array.isArray(raw) ? raw.filter((v) => v !== '') : raw === null || raw === '' ? [] : [raw];
+    if (values.length === 0) continue;
+
+    entries.push({ axis, label: AXIS_LABEL[axis], values });
+  }
+
+  return entries;
+}
+
+/**
  * 軸ごとのプロンプト文生成。「{label}は{value}ですか?」で全軸を機械的に埋めると
  * 「関係性・属性は幼馴染ですか?」のように不自然になる軸があるため、
  * Akinator実機の口調に近い言い回しを軸ごとに用意する。

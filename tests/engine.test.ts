@@ -1,8 +1,11 @@
 import { describe, expect, it } from 'vitest';
 
-import type { Character, SupplyFile } from '../src/data/schema';
+import type { AxisKey, Character, SupplyFile } from '../src/data/schema';
 import {
+  AXIS_LABEL,
+  PROFILE_ENTRY_LIMIT,
   buildProbePool,
+  profileEntriesFor,
   selectProbe,
   HARD_CAP,
   MIN_GAIN,
@@ -267,6 +270,63 @@ describe('C. 推薦エンジン', () => {
       }
       expect(guess.reasons.some((r) => r.kind === 'supply'), '供給量の根拠が無い').toBe(true);
     }
+  });
+
+  describe('C15: profileEntriesFor（推測・結果画面のプロフィール表示）', () => {
+    it('単一値軸も複数値軸も values 配列に揃えて返す', () => {
+      const c = makeSyntheticCharacter('c15-shape', {
+        species: '人間',
+        occupation: ['忍者', '海賊'],
+      });
+      const entries = profileEntriesFor(c);
+      const byAxis = new Map(entries.map((e) => [e.axis, e]));
+      expect(byAxis.get('species')?.values).toEqual(['人間']);
+      expect(byAxis.get('occupation')?.values).toEqual(['忍者', '海賊']);
+      for (const e of entries) expect(Array.isArray(e.values)).toBe(true);
+    });
+
+    it('空欄（null・空配列）の軸は出さない', () => {
+      const c = makeSyntheticCharacter('c15-empty', {
+        species: null,
+        occupation: [],
+        affiliationName: null,
+      });
+      const axes = profileEntriesFor(c, { limit: 99 }).map((e) => e.axis);
+      expect(axes).not.toContain('species');
+      expect(axes).not.toContain('occupation');
+      expect(axes).not.toContain('affiliationName');
+    });
+
+    it('胸のサイズは値があっても出さない（プロフィール非表示軸）', () => {
+      const c = makeSyntheticCharacter('c15-bust', { bust: 'とても大きい' });
+      const axes = profileEntriesFor(c, { limit: 99 }).map((e) => e.axis);
+      expect(axes).not.toContain('bust');
+    });
+
+    it('exclude に渡した軸は出さない（根拠として既に表示済みの軸の重複を避ける）', () => {
+      const c = makeSyntheticCharacter('c15-exclude', { species: '人間', personality: ['クール'] });
+      const axes = profileEntriesFor(c, { exclude: new Set<AxisKey>(['species']), limit: 99 }).map((e) => e.axis);
+      expect(axes).not.toContain('species');
+      expect(axes).toContain('personality');
+    });
+
+    it('既定で PROFILE_ENTRY_LIMIT 件までに絞り、固有性の高い軸を先に出す', () => {
+      const c = makeSyntheticCharacter('c15-limit', {
+        affiliationName: 'ミレニアムサイエンススクール（C&C）',
+        occupation: ['忍者'],
+        species: '人間',
+      });
+      const entries = profileEntriesFor(c);
+      expect(entries.length).toBeLessThanOrEqual(PROFILE_ENTRY_LIMIT);
+      // 所属名→職業→種族 の順（PROFILE_AXIS_ORDER の先頭3つ）で始まる。
+      expect(entries.slice(0, 3).map((e) => e.axis)).toEqual(['affiliationName', 'occupation', 'species']);
+    });
+
+    it('label は AXIS_LABEL と一致する', () => {
+      const c = makeSyntheticCharacter('c15-label', { species: '人間' });
+      const species = profileEntriesFor(c, { limit: 99 }).find((e) => e.axis === 'species');
+      expect(species?.label).toBe(AXIS_LABEL.species);
+    });
   });
 
   it('C6: おまかせがシード固定時に再現可能な単一結果を返す', () => {

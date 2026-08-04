@@ -1,4 +1,6 @@
 import { CharacterImage } from './CharacterImage';
+import { profileEntriesFor } from '../engine/questions';
+import type { AxisKey } from '../data/schema';
 import type { Reason, Scored } from '../engine/recommend';
 
 /**
@@ -11,10 +13,18 @@ import type { Reason, Scored } from '../engine/recommend';
  * `reasons` はエンジン側では引き続き `kind:'supply'` を含むが、ここでは
  * `kind:'trait'` のみを表示する（供給量そのもの＝ハードフィルタ/タイブレークは
  * 変更なし。あくまで見せる/見せないの話。SPEC 2.5「UI に出さない情報」）。
+ *
+ * 表示は2段構成にする（2026-08-03）:
+ *   1. 「はい」で一致した根拠 — なぜこのキャラが出たか
+ *   2. プロフィール — 回答した質問に関係なく、そのキャラに格納されている属性
+ * 2は「結局このキャラはどんなデータを持っているのか」が知りたい、という要望に
+ * 応えるもの。1で既に見せた軸は2から除いて重複を避ける。
  */
 export function CharacterReveal(props: { scored: Scored; imageTestId: string }) {
   const { character, reasons } = props.scored;
   const traitReasons = reasons.filter((r): r is Extract<Reason, { kind: 'trait' }> => r.kind === 'trait');
+  const shownAxes = new Set<AxisKey>(traitReasons.map((r) => r.axis));
+  const profile = profileEntriesFor(character, { exclude: shownAxes });
 
   return (
     <>
@@ -30,10 +40,26 @@ export function CharacterReveal(props: { scored: Scored; imageTestId: string }) 
       <p className="mt-1 text-option text-text-secondary">{character.series}</p>
 
       {traitReasons.length > 0 && (
-        <ul className="mt-4 flex flex-wrap justify-center gap-x-3 gap-y-1 text-label text-text-secondary">
+        <ul
+          data-testid="reveal-reasons"
+          className="mt-4 flex flex-wrap justify-center gap-x-3 gap-y-1 text-label text-text-primary"
+        >
           {traitReasons.map((reason, i) => (
             <li key={i}>
               {reason.label}: {reason.value}
+            </li>
+          ))}
+        </ul>
+      )}
+
+      {profile.length > 0 && (
+        <ul
+          data-testid="reveal-profile"
+          className="mt-3 flex flex-wrap justify-center gap-x-3 gap-y-1 text-label text-text-secondary"
+        >
+          {profile.map((entry) => (
+            <li key={entry.axis}>
+              {entry.label}: {entry.values.join('・')}
             </li>
           ))}
         </ul>

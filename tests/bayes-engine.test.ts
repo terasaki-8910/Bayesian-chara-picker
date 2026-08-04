@@ -167,12 +167,15 @@ describe('BC. ベイズ推薦エンジン', () => {
         const traitReasons = guess.reasons.filter((r) => r.kind === 'trait');
         for (const reason of traitReasons) {
           const p = likelihoodOf(guess.character.id, reasonKeyFor(reason));
-          const stronglyYes = reason.confidence === 'yes' || reason.confidence === 'probably_yes';
-          if (stronglyYes) {
-            expect(p, `${guess.character.id} ${reason.axis}=${reason.value}`).toBeGreaterThanOrEqual(0.8);
-          } else {
-            expect(p, `${guess.character.id} ${reason.axis}=${reason.value}`).toBeLessThanOrEqual(0.2);
-          }
+          // 根拠は「はい」方向のみ（classicのC5と同じ契約）。「いいえ」で一致した
+          // 質問は推定には効いていても根拠には出さない——表示側は confidence を
+          // 持たない `ラベル: 値` 形式なので、否定の根拠を混ぜると
+          // 「翼を持たない」が「外見的特徴: 翼」と読めてしまうため（2026-08-03）。
+          expect(
+            reason.confidence,
+            `${guess.character.id} ${reason.axis}=${reason.value} が否定方向の根拠`,
+          ).toMatch(/^(yes|probably_yes)$/);
+          expect(p, `${guess.character.id} ${reason.axis}=${reason.value}`).toBeGreaterThanOrEqual(0.8);
         }
         expect(guess.reasons.some((r) => r.kind === 'supply'), '供給量の根拠が無い').toBe(true);
       }

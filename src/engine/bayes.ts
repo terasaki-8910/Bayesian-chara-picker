@@ -194,7 +194,6 @@ export const SCORE_SCALE = 200;
 
 const EVIDENCE_WEIGHT_MIN = 0.5;
 const EVIDENCE_STRONG_YES = 0.8;
-const EVIDENCE_STRONG_NO = 0.2;
 const EVIDENCE_COUNT = 4;
 
 function logit(p: number): number {
@@ -202,21 +201,26 @@ function logit(p: number): number {
 }
 
 /**
- * 根拠抽出。|w|≥0.5で答えた質問のうち、方向が強く一致するもの
- * （yes方向ならp≥0.8、no方向ならp≤0.2）だけを |w・logit(p)| 降順で最大4件。
- * 「該当しない」ことしか分からない弱い一致は根拠に出さない（classicのC5相当の設計）。
+ * 根拠抽出。「はい」方向（w≥0.5）で答え、かつそのキャラの尤度が高い（p≥0.8）
+ * 質問だけを |w・logit(p)| 降順で最大4件。
+ *
+ * 「いいえ」方向の一致（そのキャラが該当しないことが分かった質問）は、推定には
+ * 効いていても根拠としては出さない——classicの`scoreCharacters`が
+ * 「実際にその特性を持つ」場合しか根拠を積まない（C5）のと挙動を揃える。
+ * 揃えていなかった当時は、表示側が`confidence`を無視して`ラベル: 値`とだけ
+ * 描画するため「翼を持たない」が「外見的特徴: 翼」と出てしまい、キャラ情報が
+ * 壊れているように見えていた（2026-08-03、一之瀬アスナで発覚。同じ描画コードで
+ * classicは正しく見えていたのは、classicが元から肯定のみだったため）。
  */
 function evidenceReasonsFor(characterId: string, answers: BayesAnswerMap, rank: SupplyRank): Reason[] {
   const scored: { reason: Reason; strength: number }[] = [];
   for (const [key, confidence] of Object.entries(answers)) {
     const w = CONFIDENCE_WEIGHT[confidence];
-    if (Math.abs(w) < EVIDENCE_WEIGHT_MIN) continue;
+    if (w < EVIDENCE_WEIGHT_MIN) continue;
     const probe = probeByKey.get(key);
     if (!probe) continue;
     const p = likelihoodOf(characterId, key);
-    const stronglyYes = w > 0 && p >= EVIDENCE_STRONG_YES;
-    const stronglyNo = w < 0 && p <= EVIDENCE_STRONG_NO;
-    if (!stronglyYes && !stronglyNo) continue;
+    if (p < EVIDENCE_STRONG_YES) continue;
     scored.push({
       reason: { kind: 'trait', axis: probe.reason.axis, value: probe.reason.value, label: probe.reason.label, confidence },
       strength: Math.abs(w * logit(p)),
