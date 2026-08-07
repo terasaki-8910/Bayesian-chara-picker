@@ -41,34 +41,60 @@ type Snapshot = {
   guess: Scored | null;
   confirmed: boolean;
   exhausted: boolean;
+  /**
+   * このスナップショットの時点で asking 画面に表示されていた質問（無ければ null）。
+   * 各アクションの処理時に一度だけ `bayesNextProbe` を呼んで state に確定させ、
+   * 以後は undo で復元されるまで再計算しない。
+   *
+   * 以前はここを持たず、hookの `useMemo` で `state.answers` 等から毎レンダー
+   * `bayesNextProbe(..., { rng: Math.random })` を呼んで再導出していた。
+   * `bayesNextProbe` は拮抗する候補間のタイブレークに Math.random を使う
+   * （意図的な設計 — forward進行が常に同じ質問順にならないための多様性）ため、
+   * forward進行中は毎回ユニークな answers/askedKeys に対して1回しか導出されず
+   * 問題が表面化しないが、undo で「以前訪れたのと同じ answers/askedKeys」に
+   * 巻き戻すと、再導出時にMath.randomが再び振られて**別の質問**が選ばれることが
+   * あった（ユーザー報告: 「一つ前の回答に戻ると、一つ前の問題ではなく別の問題に
+   * なる」）。質問の選択をstateへ一度だけ確定させることで、undoは常に
+   * 「そのスナップショットで実際に表示されていた質問」を復元するようになる。
+   */
+  probe: BayesProbe | null;
 };
 
-type RawState = Snapshot & { history: readonly Snapshot[] };
+export type RawState = Snapshot & { history: readonly Snapshot[] };
 
 function snapshotOf(state: RawState): Snapshot {
   const { history: _history, ...snapshot } = state;
   return snapshot;
 }
 
-const initialState: RawState = {
-  answers: {},
-  askedKeys: [],
-  rejected: [],
-  questionsSinceReject: null,
-  guess: null,
-  confirmed: false,
-  exhausted: false,
-  history: [],
-};
+/**
+ * 初期stateの組み立て。`dataset` が無いとモジュールスコープで初期probeを
+ * 計算できないため、`useReducer` の遅延初期化(第三引数)から呼ぶ。
+ * マウントごとに1回だけ呼ばれる（Reactの仕様）ので、複数インスタンスが
+ * 同じ初期質問に固定される心配もない。
+ */
+export function init(dataset: Dataset): RawState {
+  return {
+    answers: {},
+    askedKeys: [],
+    rejected: [],
+    questionsSinceReject: null,
+    guess: null,
+    confirmed: false,
+    exhausted: false,
+    probe: bayesNextProbe(dataset, {}, new Set(), { exclude: new Set(), rng: Math.random }),
+    history: [],
+  };
+}
 
-type Action =
+export type Action =
   | { type: 'answer'; key: string; confidence: Confidence; recentGuessIds: readonly string[]; dataset: Dataset }
   | { type: 'reject'; characterId: string; recentGuessIds: readonly string[]; dataset: Dataset }
   | { type: 'confirm' }
   | { type: 'undo' }
-  | { type: 'reset' };
+  | { type: 'reset'; dataset: Dataset };
 
-function reducer(state: RawState, action: Action): RawState {
+export function reducer(state: RawState, action: Action): RawState {
   switch (action.type) {
     case 'answer': {
       const history = [...state.history, snapshotOf(state)];
@@ -85,7 +111,7 @@ function reducer(state: RawState, action: Action): RawState {
       if (state.questionsSinceReject !== null) {
         const questionsSinceReject = state.questionsSinceReject + 1;
         if (!bayesShouldReguess(scored, questionsSinceReject, probe !== null)) {
-          return { ...state, answers, askedKeys, questionsSinceReject, history };
+          return { ...state, answers, askedKeys, questionsSinceReject, probe, history };
         }
         return {
           ...state,
@@ -93,18 +119,20 @@ function reducer(state: RawState, action: Action): RawState {
           askedKeys,
           questionsSinceReject: null,
           guess: pickGuessWithCooldown(scored, action.recentGuessIds, Math.random),
+          probe: null,
           history,
         };
       }
 
       const goToGuessing = probe === null || bayesShouldGuess(scored, askedKeys.length, probe !== null);
 
-      if (!goToGuessing) return { ...state, answers, askedKeys, history };
+      if (!goToGuessing) return { ...state, answers, askedKeys, probe, history };
       return {
         ...state,
         answers,
         askedKeys,
         guess: pickGuessWithCooldown(scored, action.recentGuessIds, Math.random),
+        probe: null,
         history,
       };
     }
@@ -115,17 +143,18 @@ function reducer(state: RawState, action: Action): RawState {
       const rejectedSet = new Set(rejected);
       const scored = bayesScoreCharacters(state.answers, action.dataset, { exclude: rejectedSet });
 
-      if (scored.length === 0) return { ...state, rejected, exhausted: true, history };
+      if (scored.length === 0) return { ...state, rejected, exhausted: true, probe: null, history };
 
       const askedSet = new Set(state.askedKeys);
       const bonusProbe = bayesNextProbe(action.dataset, state.answers, askedSet, { exclude: rejectedSet, rng: Math.random });
 
       // 聞ける質問が残っていれば再質問モードへ入る（0問答えた状態から開始）。
-      if (bonusProbe !== null) return { ...state, rejected, questionsSinceReject: 0, history };
+      if (bonusProbe !== null) return { ...state, rejected, questionsSinceReject: 0, probe: bonusProbe, history };
       return {
         ...state,
         rejected,
         guess: pickGuessWithCooldown(scored, action.recentGuessIds, Math.random),
+        probe: null,
         history,
       };
     }
@@ -134,6 +163,9 @@ function reducer(state: RawState, action: Action): RawState {
       return { ...state, confirmed: true };
 
     case 'undo': {
+      // history に積まれた Snapshot は probe も含めて確定済みなので、
+      // ここで bayesNextProbe を呼び直さない（呼び直すとタイブレークの
+      // Math.random が再び振られ、undo前と違う質問に化けるバグの原因だった）。
       if (state.history.length === 0) return state;
       const prev = state.history[state.history.length - 1];
       const history = state.history.slice(0, -1);
@@ -141,7 +173,7 @@ function reducer(state: RawState, action: Action): RawState {
     }
 
     case 'reset':
-      return initialState;
+      return init(action.dataset);
 
     default:
       return state;
@@ -178,17 +210,16 @@ function answersLogOf(answers: BayesAnswerMap): SessionLogRecord['answers'] {
 }
 
 export function useBayesInterview(dataset: Dataset): BayesInterviewState {
-  const [state, dispatch] = useReducer(reducer, initialState);
+  const [state, dispatch] = useReducer(reducer, dataset, init);
   const { recentGuessIds, log } = useSessionLog();
 
-  const askedSet = useMemo(() => new Set(state.askedKeys), [state.askedKeys]);
   const rejectedSet = useMemo(() => new Set(state.rejected), [state.rejected]);
-  const probe = useMemo(
-    () => bayesNextProbe(dataset, state.answers, askedSet, { exclude: rejectedSet, rng: Math.random }),
-    [dataset, state.answers, askedSet, rejectedSet],
-  );
+  // 質問はもう毎レンダー導出しない。state.probe が「その時点で表示すべき質問」の
+  // 確定値（reducer が各アクションの処理時に一度だけ確定させる。Snapshot型の
+  // コメント参照）。
+  const probe = state.probe;
 
-  const reset = useCallback(() => dispatch({ type: 'reset' }), []);
+  const reset = useCallback(() => dispatch({ type: 'reset', dataset }), [dataset]);
   const undo = useCallback(() => dispatch({ type: 'undo' }), []);
   const canUndo = state.history.length > 0;
 

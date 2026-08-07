@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useReducer } from 'react';
+import { useCallback, useEffect, useReducer } from 'react';
 
 import charactersData from '../../data/characters.json';
 import supplyData from '../../data/supply.json';
@@ -54,6 +54,25 @@ type Snapshot = {
   confirmed: boolean;
   /** 拒否を続けた結果、非拒否キャラが尽きた（PLAN 規則5「全滅」）。 */
   exhausted: boolean;
+  /**
+   * このスナップショットの時点で asking 画面に表示されていた質問（無ければ null）。
+   * 各アクションの処理時に一度だけ `nextProbe` を呼んで state に確定させ、
+   * 以後は undo で復元されるまで再計算しない。
+   *
+   * 以前はここを持たず、hookの `useMemo` で `state.answers` 等から毎レンダー
+   * `nextProbe(..., { rng: Math.random })` を呼んで再導出していた。`nextProbe`は
+   * 拮抗する候補間のタイブレークに Math.random を使う（意図的な設計 — forward
+   * 進行が常に同じ質問順にならないための多様性）ため、forward進行中は毎回
+   * ユニークな answers/askedKeys に対して1回しか導出されず問題が表面化しないが、
+   * undo で「以前訪れたのと同じ answers/askedKeys」に巻き戻すと、再導出時に
+   * Math.randomが再び振られて**別の質問**が選ばれることがあった
+   * （サイト側でユーザー報告: 「一つ前の回答に戻ると、一つ前の問題ではなく
+   * 別の問題になる」。useBayesInterview.tsをミラーしたこちらにも同じ構造の
+   * バグが存在したため、対称性を保ったまま同時に修正）。質問の選択をstateへ
+   * 一度だけ確定させることで、undoは常に「そのスナップショットで実際に
+   * 表示されていた質問」を復元するようになる。
+   */
+  probe: Probe | null;
 };
 
 /**
@@ -62,32 +81,41 @@ type Snapshot = {
  * 推測確認中のどちらからも1手だけ巻き戻せるようにする。`history` 自身は
  * スナップショットに含めない（再帰的なネストを避けるため）。
  */
-type RawState = Snapshot & { history: readonly Snapshot[] };
+export type RawState = Snapshot & { history: readonly Snapshot[] };
 
 function snapshotOf(state: RawState): Snapshot {
   const { history: _history, ...snapshot } = state;
   return snapshot;
 }
 
-const initialState: RawState = {
-  answers: {},
-  askedKeys: [],
-  rejected: [],
-  questionsSinceReject: null,
-  guess: null,
-  confirmed: false,
-  exhausted: false,
-  history: [],
-};
+/**
+ * 初期stateの組み立て。`useReducer` の遅延初期化(第三引数)から呼ぶことで、
+ * マウントごとに1回だけ初期probeを決定する（Reactの仕様。複数インスタンスが
+ * 同じ初期質問に固定される心配もない）。`dataset` はモジュールスコープの
+ * 静的importなので引数は不要。
+ */
+export function init(): RawState {
+  return {
+    answers: {},
+    askedKeys: [],
+    rejected: [],
+    questionsSinceReject: null,
+    guess: null,
+    confirmed: false,
+    exhausted: false,
+    probe: nextProbe(dataset, {}, new Set(), { exclude: new Set(), rng: Math.random }),
+    history: [],
+  };
+}
 
-type Action =
+export type Action =
   | { type: 'answer'; key: string; confidence: Confidence; recentGuessIds: readonly string[] }
   | { type: 'reject'; characterId: string; recentGuessIds: readonly string[] }
   | { type: 'confirm' }
   | { type: 'undo' }
   | { type: 'reset' };
 
-function reducer(state: RawState, action: Action): RawState {
+export function reducer(state: RawState, action: Action): RawState {
   switch (action.type) {
     case 'answer': {
       const history = [...state.history, snapshotOf(state)];
@@ -104,7 +132,7 @@ function reducer(state: RawState, action: Action): RawState {
       if (state.questionsSinceReject !== null) {
         const questionsSinceReject = state.questionsSinceReject + 1;
         if (!shouldReguess(scored, questionsSinceReject, probe !== null)) {
-          return { ...state, answers, askedKeys, questionsSinceReject, history };
+          return { ...state, answers, askedKeys, questionsSinceReject, probe, history };
         }
         return {
           ...state,
@@ -112,6 +140,7 @@ function reducer(state: RawState, action: Action): RawState {
           askedKeys,
           questionsSinceReject: null,
           guess: pickGuessWithCooldown(scored, action.recentGuessIds, Math.random),
+          probe: null,
           history,
         };
       }
@@ -120,12 +149,13 @@ function reducer(state: RawState, action: Action): RawState {
       // 推測へ進む — 存在しない質問を asking 画面に表示することはできないため。
       const goToGuessing = probe === null || shouldGuess(scored, askedKeys.length, probe !== null);
 
-      if (!goToGuessing) return { ...state, answers, askedKeys, history };
+      if (!goToGuessing) return { ...state, answers, askedKeys, probe, history };
       return {
         ...state,
         answers,
         askedKeys,
         guess: pickGuessWithCooldown(scored, action.recentGuessIds, Math.random),
+        probe: null,
         history,
       };
     }
@@ -136,17 +166,18 @@ function reducer(state: RawState, action: Action): RawState {
       const rejectedSet = new Set(rejected);
       const scored = scoreCharacters(state.answers, dataset, { exclude: rejectedSet });
 
-      if (scored.length === 0) return { ...state, rejected, exhausted: true, history };
+      if (scored.length === 0) return { ...state, rejected, exhausted: true, probe: null, history };
 
       const askedSet = new Set(state.askedKeys);
       const bonusProbe = nextProbe(dataset, state.answers, askedSet, { exclude: rejectedSet, rng: Math.random });
 
       // 聞ける質問が残っていれば再質問モードへ入る（0問答えた状態から開始）。
-      if (bonusProbe !== null) return { ...state, rejected, questionsSinceReject: 0, history };
+      if (bonusProbe !== null) return { ...state, rejected, questionsSinceReject: 0, probe: bonusProbe, history };
       return {
         ...state,
         rejected,
         guess: pickGuessWithCooldown(scored, action.recentGuessIds, Math.random),
+        probe: null,
         history,
       };
     }
@@ -155,6 +186,9 @@ function reducer(state: RawState, action: Action): RawState {
       return { ...state, confirmed: true };
 
     case 'undo': {
+      // history に積まれた Snapshot は probe も含めて確定済みなので、
+      // ここで nextProbe を呼び直さない（呼び直すとタイブレークの
+      // Math.random が再び振られ、undo前と違う質問に化けるバグの原因だった）。
       if (state.history.length === 0) return state;
       const prev = state.history[state.history.length - 1];
       const history = state.history.slice(0, -1);
@@ -162,7 +196,7 @@ function reducer(state: RawState, action: Action): RawState {
     }
 
     case 'reset':
-      return initialState;
+      return init();
 
     default:
       return state;
@@ -189,19 +223,14 @@ function answersLogOf(answers: AnswerMap): SessionLogRecord['answers'] {
 }
 
 export function useInterview(): InterviewState {
-  const [state, dispatch] = useReducer(reducer, initialState);
+  const [state, dispatch] = useReducer(reducer, undefined, init);
   const { recentGuessIds, log } = useSessionLog();
 
-  const askedSet = useMemo(() => new Set(state.askedKeys), [state.askedKeys]);
-  const rejectedSet = useMemo(() => new Set(state.rejected), [state.rejected]);
-  // rng指定時、僅差の上位候補から乱択する（questions.ts の selectProbe 参照。
-  // データ拡充だけでは1問目が固定化してしまう問題への対処）。useMemo の依存配列
-  // (answers/askedSet/rejectedSet) が変わらない限り再計算されないため、
-  // 同じ回答状態の間は同じ乱数結果のまま安定する（再描画のたびに変わらない）。
-  const probe = useMemo(
-    () => nextProbe(dataset, state.answers, askedSet, { exclude: rejectedSet, rng: Math.random }),
-    [state.answers, askedSet, rejectedSet],
-  );
+  // 質問はもう毎レンダー導出しない。state.probe が「その時点で表示すべき質問」の
+  // 確定値（reducer が各アクションの処理時に一度だけ確定させる。Snapshot型の
+  // コメント参照）。classicには候補一覧(candidates)機能が無く rejectedSet の
+  // 他の用途も無いため、旧probe導出用useMemoと一緒に削除した。
+  const probe = state.probe;
 
   const reset = useCallback(() => dispatch({ type: 'reset' }), []);
   const undo = useCallback(() => dispatch({ type: 'undo' }), []);
