@@ -5328,6 +5328,25 @@
       "postCount": 3805,
       "source": "override",
       "checkedAt": "2026-08-02T07:25:03.175Z"
+    },
+    "bluearchive-kanoe": {
+      "tag": "kanoe_(blue_archive)",
+      "postCount": 1907,
+      "source": "series-qualified",
+      "seriesOverlap": 0.9994756161510225,
+      "candidatesTried": [
+        "kanoe",
+        "kanoe_(blue_archive)",
+        "kanoe(*)"
+      ],
+      "allCandidates": [
+        "kanoe_(blue_archive)(1907)",
+        "kanoe_yuuko(222)",
+        "kanoe_(c108_swimsuit)_(blue_archive)(33)",
+        "kanoe_(succubus)_(blue_archive)(30)",
+        "kanoe_zouichi(18)"
+      ],
+      "checkedAt": "2026-08-22T19:15:00.372Z"
     }
   }
 }

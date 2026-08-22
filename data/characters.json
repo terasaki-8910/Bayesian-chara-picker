@@ -23655,5 +23655,57 @@
     "provisional": false,
     "imagePath": null,
     "imageApproved": false
+  },
+  {
+    "id": "bluearchive-kanoe",
+    "name": "板垣カノエ",
+    "aliases": [
+      "Kanoe",
+      "Itagaki Kanoe"
+    ],
+    "series": "ブルーアーカイブ",
+    "dlsiteQuery": "ブルーアーカイブ カノエ",
+    "hitomiQuery": {
+      "character": "kanoe",
+      "series": "blue archive"
+    },
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "小さい",
+      "personality": [
+        "おっとり",
+        "むっつり"
+      ],
+      "roles": [
+        "先輩"
+      ],
+      "distance": "積極的",
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "銀"
+      ],
+      "skinTone": "色白",
+      "outfit": [
+        "制服"
+      ],
+      "species": "人間",
+      "mood": [
+        "背徳寄り",
+        "純愛寄り"
+      ],
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "affiliationName": "ワイルドハント芸術学院（オカルト研究会）",
+      "stature": "小柄",
+      "occupation": []
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false
   }
 ]

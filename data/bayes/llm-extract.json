@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M",
+  "model": "qwen3:8b",
   "seed": 20260725,
   "entries": {
     "touhou-reimu": {
@@ -23496,6 +23496,72 @@
         }
       },
       "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+    },
+    "bluearchive-kanoe": {
+      "article": "板垣カノエ",
+      "axes": {
+        "personality": {
+          "value": "クール",
+          "verified": false,
+          "confidence": "low"
+        },
+        "mood": {
+          "value": "背徳寄り",
+          "verified": true,
+          "confidence": "high"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "戦わない",
+          "verified": true,
+          "confidence": "low"
+        },
+        "distance": {
+          "value": "積極的",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "冒険者",
+          "verified": true,
+          "confidence": "high"
+        },
+        "ageFeel": {
+          "value": "年上",
+          "verified": true,
+          "confidence": "high"
+        },
+        "build": {
+          "value": "華奢",
+          "verified": true,
+          "confidence": "high"
+        },
+        "stature": {
+          "value": "標準",
+          "verified": true,
+          "confidence": "low"
+        },
+        "roles": {
+          "values": [
+            "後輩",
+            "恋人・伴侶"
+          ],
+          "verified": true,
+          "confidence": "high"
+        },
+        "occupation": {
+          "values": [
+            "アイドル・芸能"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "qwen3:8b"
     }
   }
 }
