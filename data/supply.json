@@ -8782,5 +8782,23 @@
       "seriesFilter": "pokemon",
       "fetchedAt": "2026-08-02T07:30:48.347Z"
     }
+  },
+  "bluearchive-kanoe": {
+    "pageCount": 3,
+    "estimatedRange": [
+      61,
+      90
+    ],
+    "byWorkType": {
+      "doujinshi": 3,
+      "voice": 3,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-22T19:17:49.735Z",
+    "hitomi": {
+      "galleryCount": 0,
+      "seriesFilter": "blue archive",
+      "fetchedAt": "2026-08-22T19:18:00.558Z"
+    }
   }
 }
