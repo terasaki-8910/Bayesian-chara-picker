@@ -428,6 +428,26 @@ describe('BA8. niconico-map.json / llm-extract.json の整合性（PLAN「P5b」
     }
   });
 
+  /**
+   * 取り違えた記事から取った LLM 抽出値が残り続けた事故の再発防止（2026-10-05 発見）。
+   *
+   * 記事の対応付けを直したり「記事なし」に確定したりしても、llm-extract.json の古い値は
+   * 消えずに尤度へ入り続けていた。hsr-firefly は 08-02 に「ホタル（昆虫）」の記事を外したのに
+   * その記事から取った値が残り、monmusu-centorea は曖昧さ回避ページ「セントレア」（空港など）
+   * から取った値のままだった。抽出値は、今そのキャラに確定している記事から取ったものに限る。
+   */
+  it('llm-extract.json の各エントリは、niconico-map.json で今そのキャラに確定している記事から取ったもの', () => {
+    const entries = niconicoMap.entries as Record<string, { title: string | null }>;
+    const stale = (Object.entries(llmExtractRaw.entries) as [string, { article: string }][])
+      .filter(([id, e]) => entries[id]?.title !== e.article)
+      .map(([id, e]) => `${id}: 抽出元=${e.article} / 今の記事=${entries[id]?.title ?? 'なし'}`);
+    expect(
+      stale,
+      '今の記事と違う記事から取った抽出値があります。\n' +
+        '→ 該当キャラのエントリを消して、scripts/bayes/llm-extract.mjs で抽出し直すこと。',
+    ).toEqual([]);
+  });
+
   it('llm-extract.json は生の引用文・生応答を持たない（gitignoreの state/bayes-pipeline/llm/ にのみ存在する契約。プロース非混入の担保）', () => {
     const raw = JSON.stringify(llmExtractRaw);
     expect(raw.includes('"quote"')).toBe(false);
