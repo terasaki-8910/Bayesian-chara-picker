@@ -270,7 +270,10 @@ describe('C. 推薦エンジン', () => {
       }
       expect(guess.reasons.some((r) => r.kind === 'supply'), '供給量の根拠が無い').toBe(true);
     }
-  });
+  },
+  // Windows 機（Node 25）では単体でも約5.5秒かかり、既定の5秒を超えて止まっていた
+  // （2026-10-04 実測）。並列実行時はさらに延びるため、C3 と同じ60秒にそろえる。
+  60000);
 
   describe('C15: profileEntriesFor（推測・結果画面のプロフィール表示）', () => {
     it('単一値軸も複数値軸も values 配列に揃えて返す', () => {
@@ -366,7 +369,9 @@ describe('C. 推薦エンジン', () => {
       const result = omakase(dataset, { seed });
       expect(EXCLUDED_IDS, `${result.character.id} がおまかせに出た`).not.toContain(result.character.id);
     }
-  });
+  },
+  // C5 と同じ理由（Windows 機で既定の5秒を超えていた。2026-10-04 実測）。
+  60000);
 
   it('C8: nextProbe は askedKeys に無いプローブから選ばれ、同じプローブを2回聞かない', () => {
     const answers: AnswerMap = {};

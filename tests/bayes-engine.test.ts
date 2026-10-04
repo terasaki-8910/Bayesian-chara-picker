@@ -334,7 +334,9 @@ describe('BC. ベイズ推薦エンジン', () => {
       expect(tooEarly, '最低質問数より前に確定した').toEqual([]);
       expect(Math.max(...askedCounts)).toBeLessThanOrEqual(HARD_CAP_BAYES);
     },
-    60000,
+    // Windows 機（Node 25）では単体で約57秒かかり、全体実行では60秒を超えて
+    // 止まっていた（2026-10-04 実測）。判定の閾値は変えず、制限時間だけ300秒にする。
+    300000,
   );
 });
 
