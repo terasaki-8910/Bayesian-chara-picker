@@ -958,14 +958,6 @@
       "candidateLabel": "Saber",
       "checkedAt": "2026-07-31T20:18:19.177Z"
     },
-    "fate-jeanne": {
-      "qid": null,
-      "reason": "シリーズ確認不能のため除外(候補qid=Q7226, Joan of Arc)。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateQid": "Q7226",
-      "candidateLabel": "Joan of Arc",
-      "checkedAt": "2026-07-31T20:18:26.601Z"
-    },
     "fate-mordred": {
       "qid": "Q105516988",
       "label": "Mordred",
