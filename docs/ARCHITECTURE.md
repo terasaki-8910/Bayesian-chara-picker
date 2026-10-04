@@ -218,9 +218,10 @@ mount時に1回だけ読み、router は使わない）。
   38問）をこちらで補う。`scripts/bayes/niconico-client.mjs`/`map-niconico.mjs`
   が記事本文を取得・検証し（Pixivはロボッツ排除規則がAIクローラーを名指しで
   ブロックしているため対象外——ニコニコ大百科を代替に採用）、
-  `scripts/bayes/ollama-client.mjs`/`llm-extract.mjs`
+  `scripts/bayes/llm-client.mjs`/`llm-extract.mjs`
   がローカルLLM（Ornith-9B `hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-
-  MTP-GGUF:Q4_K_M`、Ollama経由）でevidence-first抽出（quoteを先に
+  MTP-GGUF-Q4_K_M`、llama.cpp の llama-server 経由。2026-10 に Ollama から移行。
+  既存の llm-extract.json の大半は Ollama 時代の抽出）でevidence-first抽出（quoteを先に
   逐語で書かせ、valueをそのquoteだけから判定させる）+ 引用照合ゲート
   （LLMの引用が原文に実在するかを決定論的に照合、幻覚引用は再プロンプト後も
   不採用ならnull寄与）を行い、`data/bayes/llm-extract.json`
@@ -231,7 +232,10 @@ mount時に1回だけ読み、router は使わない）。
   bench-llm-models.mjs`で複数のローカルLLM（9B〜35B級）を比較した結果、
   このevidence-first逐語引用タスクではパラメータ数の大きいモデルほど
   指示追従性が崩れて悪化する傾向が判明し、9B級のOrnith-9Bを採用——詳細は
-  `--model`フラグで比較実行可能）。
+  `--model`フラグで比較実行可能）。bench は査読済みキャラの固定 seed 標本で
+  「査読値との一致率」・被覆率・引用照合通過率・空欄率・途中で切れた数・秒/体を出し、
+  各モデルの runInfo（ビルド、GGUF の sha256、起動引数）と一緒に
+  `state/bayes-pipeline/bench/` へ残す。
   `llm-extract.mjs` は `--force` なしで実行すると未処理分だけ再開する設計。
 
 ## テスト・ゲート
