@@ -1,13 +1,22 @@
 #!/usr/bin/env node
 /**
  * state/bayes-pipeline/niconico/<id>.json にキャッシュ済みの記事本文から、
- * ローカルLLM(qwen3:8b・Ollama)でaxis-only 38問（personality/mood/species/
- * combat/distance/affiliationKind/roles）の値をevidence-first方式で抽出し、
+ * ローカルLLM（llama.cpp の llama-server、既定は Ornith-9B）で axis-only の11軸
+ * （personality/mood/species/combat/distance/affiliationKind/roles/ageFeel/build/
+ * stature/occupation）の値をevidence-first方式で抽出し、
  * data/bayes/llm-extract.json（制御語彙のみ・引用文は持たない）へ書き出す
  * （PLAN「P5b」）。生プロンプト・生応答・引用文の全証跡は
- * state/bayes-pipeline/llm/<id>.json にのみ残す（gitignore、監査用）。
+ * state/bayes-pipeline/llm/<id>.json にのみ残す（gitignore、監査用）。実行ごとの
+ * 実行環境（runInfo: ビルド、GGUF の sha256、サーバー起動引数、生成設定）は
+ * state/bayes-pipeline/llm/_runs/<ISO時刻>.json に残す。
  *
- * evidence-first抽出（scripts/bayes/ollama-client.mjsの実地検証で必要性を実証済み）:
+ * 使い方:
+ *   node scripts/bayes/llm-extract.mjs [--model <models.ini 名>] [--force] [--char <id>]
+ *     [--state-dir <dir>]
+ * llama-server を先に起動しておく（~/tools/localllm/serve.ps1）。state の場所は
+ * --state-dir か環境変数 BAYES_STATE_DIR で切り替えられる（既定はリポジトリ内の state/）。
+ *
+ * evidence-first抽出（scripts/bayes/llm-client.mjs 冒頭の、旧 Ollama 版での実地検証で必要性を実証済み）:
  *   1. 各軸についてquoteを先に書かせ、valueはそのquoteだけを根拠に判定させる
  *      （スキーマでquoteをvalueより前の必須フィールドにする）。
  *   2. 決定論だけでquoteが原文に実在するかを照合する（LLMを信用しない）。
@@ -21,26 +30,27 @@
  * シンプルな戦略にする（--force で無視、--char <id> で単体のみ強制再実行）。
  */
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
-import { join } from 'node:path';
+import { basename, join, resolve } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { normalizeWhitespace } from './niconico-client.mjs';
-import { createOllamaClient } from './ollama-client.mjs';
+import { createLlmClient, runInfo } from './llm-client.mjs';
 
-const MODEL = 'qwen3:8b';
+/** 既定の抽出モデル（~/tools/localllm/models.ini のセクション名）。--model で切り替える。 */
+export const MODEL = 'hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF-Q4_K_M';
 /** 抽出プロンプト/スキーマのバージョンを日付で示す固定シード（temp:0と併用し決定論を担保）。 */
-const SEED = 20260725;
+export const SEED = 20260725;
 /** 1文字引用等の自明一致を弾く最低長ガード。 */
 const MIN_QUOTE_LENGTH = 6;
 /** 幻覚引用1回だけでは切り捨てず、軸ごとに最大2回まで再プロンプトする。 */
 const MAX_LLM_RETRIES = 2;
 
-const LLM_AXIS_KEYS = [
+export const LLM_AXIS_KEYS = [
   'personality', 'mood', 'species', 'combat', 'distance', 'affiliationKind', 'roles',
   'ageFeel', 'build', 'stature', 'occupation',
 ];
 /** 複数値で持つ軸（schema.tsのAxes型で string[] のもの）。 */
-const MULTI_VALUE_AXES = ['roles', 'occupation'];
-const SINGLE_VALUE_AXES = LLM_AXIS_KEYS.filter((k) => !MULTI_VALUE_AXES.includes(k));
+export const MULTI_VALUE_AXES = ['roles', 'occupation'];
+export const SINGLE_VALUE_AXES = LLM_AXIS_KEYS.filter((k) => !MULTI_VALUE_AXES.includes(k));
 
 const AXIS_LABELS = {
   personality: '性格',
@@ -66,6 +76,18 @@ const SYSTEM_PROMPT = `あなたはキャラクター属性の抽出器です。
 6. 根拠はあるが判定に迷う場合はconfidenceを「low」、明確に判定できる場合は「high」にします。
 7. roles（関係性の役割）と occupation（職業・立場）は複数該当し得ます。本文から確認できるものだけを列挙してください。無理に埋める必要はありません。
 8. build（体格）と stature（身長）は別の属性です。体つきの太さ・細さが build、背の高さが stature です。片方の記述からもう片方を推測してはいけません。`;
+
+/**
+ * state ディレクトリ。--state-dir > 環境変数 BAYES_STATE_DIR > リポジトリ内の state/。
+ * @param {string[]} args
+ * @returns {string}
+ */
+export function resolveStateDir(args) {
+  const i = args.indexOf('--state-dir');
+  if (i >= 0 && args[i + 1]) return resolve(args[i + 1]);
+  if (process.env.BAYES_STATE_DIR) return resolve(process.env.BAYES_STATE_DIR);
+  return fileURLToPath(new URL('../../state/', import.meta.url));
+}
 
 /**
  * questions.json の既存 axis-type ソースから各軸の列挙値を実データ駆動で導出する
@@ -191,12 +213,12 @@ export function verifyQuote(articleText, quote) {
 /**
  * 単一値の軸を照合し、幻覚引用ならMAX_LLM_RETRIESまで再プロンプトする。
  * @param {{
- *   ollamaChat: ReturnType<typeof createOllamaClient>, articleText: string, axisKey: string,
+ *   llmChat: ReturnType<typeof createLlmClient>, articleText: string, axisKey: string,
  *   initial: { quote: string, value: string, confidence: string }, axisEnums: Record<string, string[]>,
  *   verification: object[], model: string,
  * }} params
  */
-async function resolveSingleAxis({ ollamaChat, articleText, axisKey, initial, axisEnums, verification, model }) {
+async function resolveSingleAxis({ llmChat, articleText, axisKey, initial, axisEnums, verification, model }) {
   let current = initial;
   let attempt = 0;
   for (;;) {
@@ -213,7 +235,7 @@ async function resolveSingleAxis({ ollamaChat, articleText, axisKey, initial, ax
       return { value: current.value, verified: false, confidence: current.confidence };
     }
     attempt += 1;
-    current = await ollamaChat({
+    current = await llmChat({
       model,
       systemPrompt: SYSTEM_PROMPT,
       userPrompt: buildRetryPrompt(articleText, axisKey, axisEnums, current.quote),
@@ -252,13 +274,13 @@ function resolveMultiAxis(articleText, axisKey, initialEntries, verification) {
 
 /**
  * @param {{
- *   ollamaChat: ReturnType<typeof createOllamaClient>, articleText: string, axisEnums: Record<string, string[]>,
+ *   llmChat: ReturnType<typeof createLlmClient>, articleText: string, axisEnums: Record<string, string[]>,
  *   model?: string,
  * }} params
  * @returns {Promise<{ axes: ExtractedAxes, verification: VerificationEntry[], rawResponse: unknown }>}
  */
-export async function extractOneCharacter({ ollamaChat, articleText, axisEnums, model = MODEL }) {
-  const initial = await ollamaChat({
+export async function extractOneCharacter({ llmChat, articleText, axisEnums, model = MODEL }) {
+  const initial = await llmChat({
     model,
     systemPrompt: SYSTEM_PROMPT,
     userPrompt: buildUserPrompt(articleText, axisEnums),
@@ -271,7 +293,7 @@ export async function extractOneCharacter({ ollamaChat, articleText, axisEnums, 
   const axes = /** @type {any} */ ({});
   for (const axisKey of SINGLE_VALUE_AXES) {
     axes[axisKey] = await resolveSingleAxis({
-      ollamaChat,
+      llmChat,
       articleText,
       axisKey,
       initial: initial[axisKey],
@@ -297,8 +319,9 @@ async function main() {
   const charactersPath = fileURLToPath(new URL('characters.json', dataDir));
   const questionsPath = fileURLToPath(new URL('bayes/questions.json', dataDir));
   const extractPath = fileURLToPath(new URL('bayes/llm-extract.json', dataDir));
-  const niconicoCacheDir = fileURLToPath(new URL('../../state/bayes-pipeline/niconico/', import.meta.url));
-  const llmCacheDir = fileURLToPath(new URL('../../state/bayes-pipeline/llm/', import.meta.url));
+  const stateDir = resolveStateDir(args);
+  const niconicoCacheDir = join(stateDir, 'bayes-pipeline', 'niconico');
+  const llmCacheDir = join(stateDir, 'bayes-pipeline', 'llm');
 
   const characters = JSON.parse(readFileSync(charactersPath, 'utf8'));
   const questionsFile = JSON.parse(readFileSync(questionsPath, 'utf8'));
@@ -327,7 +350,20 @@ async function main() {
   }
   console.log(`LLM抽出対象 ${pending.length} 件（model=${model}）`);
 
-  const ollamaChat = createOllamaClient({});
+  // 実行の最初に実行環境を記録する（モデルの読み込みもここで済ませる）。
+  const runStartedAt = new Date().toISOString();
+  const info = await runInfo(model);
+  const runsDir = join(llmCacheDir, '_runs');
+  mkdirSync(runsDir, { recursive: true });
+  const runRecordPath = join(runsDir, `${runStartedAt.replace(/[:.]/g, '-')}.json`);
+  writeFileSync(
+    runRecordPath,
+    `${JSON.stringify({ startedAt: runStartedAt, seed: SEED, targets: pending.map((c) => c.id), runInfo: info }, null, 2)}\n`,
+  );
+  const runRecord = basename(runRecordPath);
+  console.log(`実行環境: ${info.build_info} / sha256 ${info.model_sha256} → ${runRecordPath}`);
+
+  const llmChat = createLlmClient({});
   const noCoverage = [];
   const errors = [];
   let attempted = 0;
@@ -351,7 +387,7 @@ async function main() {
     const startedAt = new Date().toISOString();
     let result;
     try {
-      result = await extractOneCharacter({ ollamaChat, articleText: cached.text, axisEnums, model });
+      result = await extractOneCharacter({ llmChat, articleText: cached.text, axisEnums, model });
     } catch (err) {
       console.log(`抽出失敗: ${err.message}`);
       errors.push({ id: character.id, name: character.name, issue: err.message });
@@ -367,6 +403,7 @@ async function main() {
           article: cached.title,
           model,
           seed: SEED,
+          runRecord,
           rawResponse: result.rawResponse,
           axes: result.axes,
           verification: result.verification,

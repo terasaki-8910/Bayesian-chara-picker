@@ -41,7 +41,15 @@ import {
   USER_AGENT as NC_USER_AGENT,
 } from '../scripts/bayes/niconico-client.mjs';
 import { isDisambiguationStub } from '../scripts/bayes/map-niconico.mjs';
-import { createOllamaClient, stripThinkTags } from '../scripts/bayes/ollama-client.mjs';
+import { MAX_TOKENS, createLlmClient, resolveApiRoot, runInfo, stripThinkTags } from '../scripts/bayes/llm-client.mjs';
+import {
+  adoptedValues,
+  formatTable,
+  pickSample,
+  scoreCharacter,
+  seededShuffle,
+  summarizeModel,
+} from '../scripts/bayes/bench-llm-models.mjs';
 import { buildAxisEvidenceMap, buildAxisHint } from '../scripts/bayes/review-hints.mjs';
 import {
   deriveAxisEnums,
@@ -1144,73 +1152,262 @@ describe('isDisambiguationStub（scripts/bayes/map-niconico.mjs）', () => {
   });
 });
 
-describe('BB. Ollamaクライアント（scripts/bayes/ollama-client.mjs）', () => {
-  it('/api/chat へ think:false・format・temperature:0・seed・messages(system+user)を送る', async () => {
-    let seenUrl = '';
-    let seenBody: Record<string, unknown> = {};
-    const fetchImpl = async (url: string, init?: { body?: string }) => {
-      seenUrl = url;
-      seenBody = JSON.parse(init?.body ?? '{}');
-      return { ok: true, status: 200, json: async () => ({ message: { role: 'assistant', content: '{"value":"クール"}' } }), text: async () => '' };
-    };
-    const chat = createOllamaClient({ fetchImpl, apiRoot: 'http://localhost:11434' });
-    const format = { type: 'object', properties: {} };
-    await chat({ model: 'qwen3:8b', systemPrompt: 'sys', userPrompt: 'user', format, seed: 42 });
+describe('BB. LLMクライアント（scripts/bayes/llm-client.mjs、llama-server の OpenAI 互換 API）', () => {
+  type FetchInit = { method?: string; headers?: Record<string, string>; body?: string };
+  function okResponse(payload: unknown) {
+    return { ok: true, status: 200, json: async () => payload, text: async () => JSON.stringify(payload) };
+  }
+  function completion(content: string, finishReason = 'stop') {
+    return { choices: [{ finish_reason: finishReason, message: { role: 'assistant', content } }] };
+  }
 
-    expect(seenUrl).toBe('http://localhost:11434/api/chat');
-    expect(seenBody.model).toBe('qwen3:8b');
-    expect(seenBody.think).toBe(false);
-    expect(seenBody.stream).toBe(false);
-    expect(seenBody.format).toEqual(format);
-    // num_predict: 生成暴走ループが応答ヘッダ未着のままfetchのヘッダタイムアウト
-    // (5分)に達して「fetch failed」になる実地事例への対処
-    // （2026-08-01、fate-scathach他3件。詳細はollama-client.mjsのコメント参照）。
-    expect(seenBody.options).toEqual({ temperature: 0, seed: 42, num_ctx: 32768, num_predict: 4096 });
-    expect(seenBody.messages).toEqual([
-      { role: 'system', content: 'sys' },
-      { role: 'user', content: 'user' },
-    ]);
+  it('/v1/chat/completions へ生成設定を全部明示して送る（温度0・seed・max_tokens・sampler・cache_prompt・思考なし・JSONスキーマ）', async () => {
+    let seenUrl = '';
+    let seenInit: FetchInit = {};
+    const fetchImpl = async (url: string, init?: FetchInit) => {
+      seenUrl = url;
+      seenInit = init ?? {};
+      return okResponse(completion('{"value":"クール"}'));
+    };
+    const chat = createLlmClient({ fetchImpl, apiRoot: 'http://127.0.0.1:8080' });
+    const format = { type: 'object', properties: { value: { type: 'string' } }, required: ['value'] };
+    await chat({ model: 'm', systemPrompt: 'sys', userPrompt: 'user', format, seed: 42 });
+
+    expect(seenUrl).toBe('http://127.0.0.1:8080/v1/chat/completions');
+    expect(seenInit.method).toBe('POST');
+    const body = JSON.parse(seenInit.body ?? '{}');
+    expect(body).toEqual({
+      model: 'm',
+      messages: [
+        { role: 'system', content: 'sys' },
+        { role: 'user', content: 'user' },
+      ],
+      stream: false,
+      temperature: 0,
+      seed: 42,
+      // 暴走生成の安全弁。旧 Ollama 版の num_predict:4096 と同じ値（llm-client.mjs のコメント参照）。
+      max_tokens: 4096,
+      top_k: 40,
+      top_p: 1,
+      min_p: 0,
+      // 罰則は温度0でも結果に効くので切っておく。
+      repeat_penalty: 1,
+      presence_penalty: 0,
+      frequency_penalty: 0,
+      cache_prompt: false,
+      chat_template_kwargs: { enable_thinking: false },
+      reasoning_effort: 'none',
+      response_format: { type: 'json_schema', json_schema: { name: 'extraction', strict: true, schema: format } },
+    });
+    expect(body.max_tokens).toBe(MAX_TOKENS);
   });
 
-  it('応答のmessage.contentをJSONとしてパースして返す', async () => {
-    const fetchImpl = async () => ({
-      ok: true,
-      status: 200,
-      json: async () => ({ message: { content: '{"value":"元気","quote":"根拠"}' } }),
-      text: async () => '',
-    });
-    const chat = createOllamaClient({ fetchImpl });
-    const result = await chat({ model: 'qwen3:8b', systemPrompt: '', userPrompt: '', format: {}, seed: 1 });
+  it('接続先の既定は LOCALLLM_URL、無ければ http://127.0.0.1:8080（末尾の / は落とす）', () => {
+    vi.stubEnv('LOCALLLM_URL', 'http://192.168.0.5:9000/');
+    expect(resolveApiRoot()).toBe('http://192.168.0.5:9000');
+    vi.stubEnv('LOCALLLM_URL', '');
+    expect(resolveApiRoot()).toBe('http://127.0.0.1:8080');
+    vi.unstubAllEnvs();
+  });
+
+  it('応答の choices[0].message.content をJSONとしてパースして返す', async () => {
+    const chat = createLlmClient({ fetchImpl: async () => okResponse(completion('{"value":"元気","quote":"根拠"}')) });
+    const result = await chat({ model: 'm', systemPrompt: '', userPrompt: '', format: {}, seed: 1 });
     expect(result).toEqual({ value: '元気', quote: '根拠' });
   });
 
-  it('<think>タグが混入していても剥がしてからパースする（防御的実装。実地確認では出現しないが将来変化に備える）', () => {
+  it('<think>タグが混入していても剥がしてからパースする（防御的実装）', async () => {
     expect(stripThinkTags('<think>考え中...</think>{"value":"クール"}')).toBe('{"value":"クール"}');
     expect(stripThinkTags('{"value":"クール"}')).toBe('{"value":"クール"}');
+    const chat = createLlmClient({ fetchImpl: async () => okResponse(completion('<think>\n考え中\n</think>\n{"value":"クール"}')) });
+    await expect(chat({ model: 'm', systemPrompt: '', userPrompt: '', format: {}, seed: 1 })).resolves.toEqual({ value: 'クール' });
   });
 
-  it('ok:false のレスポンスはエラーにする', async () => {
-    const fetchImpl = async () => ({ ok: false, status: 500, json: async () => ({}), text: async () => '' });
-    const chat = createOllamaClient({ fetchImpl });
-    await expect(chat({ model: 'qwen3:8b', systemPrompt: '', userPrompt: '', format: {}, seed: 1 })).rejects.toThrow(/status=500/);
+  it("finish_reason が 'length'（max_tokens で切れた）なら code:'TRUNCATED' のエラーにする", async () => {
+    const chat = createLlmClient({ fetchImpl: async () => okResponse(completion('{"value":"ク', 'length')) });
+    const err = await chat({ model: 'm', systemPrompt: '', userPrompt: '', format: {}, seed: 1 }).catch((e: unknown) => e);
+    expect(err).toBeInstanceOf(Error);
+    expect((err as { code?: string }).code).toBe('TRUNCATED');
   });
 
-  it('応答contentがJSONとして解釈できない場合はエラーにする', async () => {
+  it('HTTP エラーは status と応答本文つきのエラーにする', async () => {
     const fetchImpl = async () => ({
-      ok: true,
-      status: 200,
-      json: async () => ({ message: { content: 'これはJSONではない' } }),
-      text: async () => '',
+      ok: false,
+      status: 400,
+      json: async () => ({}),
+      text: async () => '{"error":{"message":"the request exceeds the available context size"}}',
     });
-    const chat = createOllamaClient({ fetchImpl });
-    await expect(chat({ model: 'qwen3:8b', systemPrompt: '', userPrompt: '', format: {}, seed: 1 })).rejects.toThrow(/JSON/);
+    const chat = createLlmClient({ fetchImpl });
+    await expect(chat({ model: 'm', systemPrompt: '', userPrompt: '', format: {}, seed: 1 })).rejects.toThrow(
+      /status=400.*exceeds the available context size/,
+    );
+  });
+
+  it('応答contentがJSONとして解釈できない場合はエラーにする（TRUNCATED ではない）', async () => {
+    const chat = createLlmClient({ fetchImpl: async () => okResponse(completion('これはJSONではない')) });
+    const err = await chat({ model: 'm', systemPrompt: '', userPrompt: '', format: {}, seed: 1 }).catch((e: unknown) => e);
+    expect((err as Error).message).toMatch(/JSON/);
+    expect((err as { code?: string }).code).toBeUndefined();
+  });
+
+  it('runInfo: /props?autoload=true で読み込ませ、/models の起動引数と /props のビルド・パス・既定設定を返す', async () => {
+    const urls: string[] = [];
+    const fetchImpl = async (url: string) => {
+      urls.push(url);
+      if (url.endsWith('/models')) {
+        return okResponse({ data: [{ id: 'a/b-Q4', status: { value: 'loaded', args: ['llama-server.exe', '--ctx-size', '32768'] } }] });
+      }
+      return okResponse({
+        build_info: 'b11177-1ab7e5ad2',
+        model_path: 'C:\\models\\blobs\\sha256-' + 'a'.repeat(64),
+        total_slots: 4,
+        default_generation_settings: { params: { temperature: 0.8 } },
+      });
+    };
+    const info = await runInfo('a/b-Q4', { fetchImpl, apiRoot: 'http://x' });
+    expect(urls[0]).toBe('http://x/props?model=a%2Fb-Q4&autoload=true');
+    expect(info).toMatchObject({
+      engine: 'llama.cpp',
+      build_info: 'b11177-1ab7e5ad2',
+      model: 'a/b-Q4',
+      model_sha256: 'a'.repeat(64), // Ollama の blob はファイル名が sha256
+      server_args: ['llama-server.exe', '--ctx-size', '32768'],
+      total_slots: 4,
+      default_generation_settings: { temperature: 0.8 },
+    });
+    await expect(runInfo('missing', { fetchImpl, apiRoot: 'http://x' })).rejects.toThrow(/models\.ini/);
   });
 
   it('import しただけでは外部通信しない', async () => {
     const fetchSpy = vi.fn();
     vi.stubGlobal('fetch', fetchSpy);
     vi.resetModules();
-    await import('../scripts/bayes/ollama-client.mjs');
+    await import('../scripts/bayes/llm-client.mjs');
+    expect(fetchSpy).not.toHaveBeenCalled();
+  });
+});
+
+describe('BB. LLMモデル比較の採点（scripts/bayes/bench-llm-models.mjs）', () => {
+  const OK = (value: string) => ({ value, verified: true, confidence: 'high' });
+  function emptyAxes() {
+    return {
+      personality: { value: '該当なし', verified: false, confidence: 'none' },
+      mood: { value: '該当なし', verified: false, confidence: 'none' },
+      species: { value: '該当なし', verified: false, confidence: 'none' },
+      combat: { value: '該当なし', verified: false, confidence: 'none' },
+      distance: { value: '該当なし', verified: false, confidence: 'none' },
+      affiliationKind: { value: '該当なし', verified: false, confidence: 'none' },
+      ageFeel: { value: '該当なし', verified: false, confidence: 'none' },
+      build: { value: '該当なし', verified: false, confidence: 'none' },
+      stature: { value: '該当なし', verified: false, confidence: 'none' },
+      roles: { values: [] as string[], verified: false, confidence: 'none' },
+      occupation: { values: [] as string[], verified: false, confidence: 'none' },
+    };
+  }
+  const NONE = { quote: '', value: '該当なし', confidence: 'none' };
+  function rawAllNone() {
+    return {
+      personality: NONE, mood: NONE, species: NONE, combat: NONE, distance: NONE, affiliationKind: NONE,
+      ageFeel: NONE, build: NONE, stature: NONE, roles: [], occupation: [],
+    };
+  }
+
+  it('pickSample: reviewed:true かつ記事ありだけを対象に、同じ seed なら同じ標本・違う seed なら別の順序になる', () => {
+    const characters = Array.from({ length: 40 }, (_, i) => ({ id: `c${String(i).padStart(2, '0')}`, reviewed: i !== 3 }));
+    const hasArticle = (id: string) => id !== 'c05';
+    const a = pickSample({ characters, hasArticle, sampleSize: 10, seed: 7 });
+    const b = pickSample({ characters: [...characters].reverse(), hasArticle, sampleSize: 10, seed: 7 });
+    expect(a).toEqual(b); // 入力順に依らない（id 昇順にしてからシャッフル）
+    expect(a).toHaveLength(10);
+    expect(a).not.toContain('c03');
+    expect(a).not.toContain('c05');
+    expect(pickSample({ characters, hasArticle, sampleSize: 38, seed: 8 })).not.toEqual(
+      pickSample({ characters, hasArticle, sampleSize: 38, seed: 7 }),
+    );
+    expect(pickSample({ characters, hasArticle, sampleSize: 10, seed: 7, onlyIds: ['c03', 'c10'] })).toEqual(['c10']);
+  });
+
+  it('seededShuffle: 要素を失わず入力を変更しない', () => {
+    const input = ['a', 'b', 'c', 'd', 'e'];
+    const out = seededShuffle(input, 1);
+    expect([...out].sort()).toEqual(input);
+    expect(input).toEqual(['a', 'b', 'c', 'd', 'e']);
+  });
+
+  it('adoptedValues: verified かつ confidence:high の値だけを採用する（llm-extract / estimateLlmLikelihood と同じ条件）', () => {
+    expect(adoptedValues('personality', OK('クール'))).toEqual(['クール']);
+    expect(adoptedValues('personality', { value: 'クール', verified: false, confidence: 'high' })).toEqual([]);
+    expect(adoptedValues('personality', { value: 'クール', verified: true, confidence: 'low' })).toEqual([]);
+    expect(adoptedValues('roles', { values: ['姉', '主従'], verified: true, confidence: 'high' })).toEqual(['姉', '主従']);
+  });
+
+  it('scoreCharacter: 単一値は査読値(配列なら要素)に含まれれば一致、複数値は採用値ひとつずつ数え、査読値なしの枠は採点しない', () => {
+    const reviewedAxes = {
+      personality: ['クール', 'ツンデレ'], // 配列: 要素に含まれれば一致
+      mood: ['甘め'],
+      species: '人間',
+      combat: null, // 正解なし: 採点しない
+      roles: ['主従', '姉'],
+      occupation: [], // 正解なし
+      ageFeel: '年上',
+    };
+    const axes = {
+      ...emptyAxes(),
+      personality: OK('ツンデレ'), // 一致
+      mood: OK('支配的'), // 不一致
+      species: { value: '魔族', verified: false, confidence: 'high' }, // 照合落ち: 採点しない（未被覆）
+      combat: OK('戦う'), // 査読値なし: 採点しない
+      roles: { values: ['主従', '後輩'], verified: true, confidence: 'high' }, // 一致1・不一致1
+      occupation: { values: ['忍者'], verified: true, confidence: 'high' }, // 査読値なし
+    };
+    const rawResponse = { ...rawAllNone(), personality: { quote: 'q', value: 'ツンデレ', confidence: 'high' } };
+    const verification = [{ matched: true }, { matched: false }, { matched: null }];
+    const s = scoreCharacter({ reviewedAxes, result: { axes, verification, rawResponse } });
+
+    expect(s.perAxis.personality).toEqual({ match: 1, mismatch: 0, scoredSlots: 1, coveredSlots: 1 });
+    expect(s.perAxis.mood).toEqual({ match: 0, mismatch: 1, scoredSlots: 1, coveredSlots: 1 });
+    expect(s.perAxis.species).toEqual({ match: 0, mismatch: 0, scoredSlots: 1, coveredSlots: 0 });
+    expect(s.perAxis.combat).toEqual({ match: 0, mismatch: 0, scoredSlots: 0, coveredSlots: 0 });
+    expect(s.perAxis.roles).toEqual({ match: 1, mismatch: 1, scoredSlots: 1, coveredSlots: 1 });
+    expect(s.perAxis.occupation).toEqual({ match: 0, mismatch: 0, scoredSlots: 0, coveredSlots: 0 });
+    expect(s.perAxis.ageFeel).toEqual({ match: 0, mismatch: 0, scoredSlots: 1, coveredSlots: 0 });
+    expect(s.quoteChecked).toBe(2);
+    expect(s.quotePassed).toBe(1);
+    expect(s.blankSlots).toBe(10); // 初回応答で答えたのは personality だけ
+    expect(s.totalSlots).toBe(11);
+  });
+
+  it('summarizeModel: 一致率・被覆率・途中で切れた数を合算する。失敗したキャラの枠は未被覆として分母に入る', () => {
+    const reviewedAxes = { personality: 'クール', species: '人間' };
+    const ok = scoreCharacter({
+      reviewedAxes,
+      result: { axes: { ...emptyAxes(), personality: OK('クール'), species: OK('魔族') }, verification: [], rawResponse: rawAllNone() },
+    });
+    const failed = scoreCharacter({ reviewedAxes, result: null });
+    const s = summarizeModel([
+      { elapsedMs: 2000, score: ok },
+      { elapsedMs: 4000, score: failed, error: '切れた', errorCode: 'TRUNCATED' },
+    ]);
+    expect(s.match).toBe(1);
+    expect(s.mismatch).toBe(1);
+    expect(s.accuracy).toBe(0.5);
+    expect(s.scoredSlots).toBe(4);
+    expect(s.coveredSlots).toBe(2);
+    expect(s.coverage).toBe(0.5);
+    expect(s.truncated).toBe(1);
+    expect(s.errors).toBe(1);
+    expect(s.avgSecPerChar).toBe(3);
+    expect(s.perAxis.personality.accuracy).toBe(1);
+    expect(s.perAxis.species.accuracy).toBe(0);
+    expect(s.perAxis.mood.accuracy).toBeNull();
+    expect(formatTable([{ model: 'm', summary: s }])).toContain('| m | 50.0% | 1/1 | 50.0% |');
+  });
+
+  it('import しただけでは外部通信しない', async () => {
+    const fetchSpy = vi.fn();
+    vi.stubGlobal('fetch', fetchSpy);
+    vi.resetModules();
+    await import('../scripts/bayes/bench-llm-models.mjs');
     expect(fetchSpy).not.toHaveBeenCalled();
   });
 });
@@ -1316,32 +1513,32 @@ describe('BB. evidence-first LLM抽出+引用照合ゲート（scripts/bayes/llm
 
   it('実在する引用は採用される(verified:true)。全軸一発で通ればリトライは発生しない', async () => {
     const articleText = normalizeWhitespace('主人に忠実に仕える。人間ではなく魔族である。');
-    const ollamaChat = vi.fn().mockResolvedValueOnce(
+    const llmChat = vi.fn().mockResolvedValueOnce(
       allNone({
         species: { quote: '人間ではなく魔族である', value: '魔族', confidence: 'high' },
         roles: [{ quote: '主人に忠実に仕える', value: '主従', confidence: 'high' }],
       }),
     );
 
-    const result = await extractOneCharacter({ ollamaChat, articleText, axisEnums: minimalAxisEnums() });
+    const result = await extractOneCharacter({ llmChat, articleText, axisEnums: minimalAxisEnums() });
 
     expect(result.axes.species).toEqual({ value: '魔族', verified: true, confidence: 'high' });
     expect(result.axes.roles).toEqual({ values: ['主従'], verified: true, confidence: 'high' });
     expect(result.axes.personality).toEqual({ value: '該当なし', verified: false, confidence: 'none' });
-    expect(ollamaChat).toHaveBeenCalledTimes(1);
+    expect(llmChat).toHaveBeenCalledTimes(1);
   });
 
   it('幻覚引用（原文に実在しない）はリトライされ、原文実在の引用に修正されれば採用される', async () => {
     const articleText = normalizeWhitespace('種族は不死である。');
-    const ollamaChat = vi
+    const llmChat = vi
       .fn()
       .mockResolvedValueOnce(allNone({ species: { quote: 'このキャラは吸血鬼です', value: '不死', confidence: 'high' } }))
       .mockResolvedValueOnce({ quote: '種族は不死である', value: '不死', confidence: 'high' });
 
-    const result = await extractOneCharacter({ ollamaChat, articleText, axisEnums: minimalAxisEnums() });
+    const result = await extractOneCharacter({ llmChat, articleText, axisEnums: minimalAxisEnums() });
 
     expect(result.axes.species).toEqual({ value: '不死', verified: true, confidence: 'high' });
-    expect(ollamaChat).toHaveBeenCalledTimes(2);
+    expect(llmChat).toHaveBeenCalledTimes(2);
     const speciesLog = result.verification.filter((v: { axis: string }) => v.axis === 'species');
     expect(speciesLog).toEqual([
       { axis: 'species', quote: 'このキャラは吸血鬼です', matched: false, retries: 0 },
@@ -1352,36 +1549,36 @@ describe('BB. evidence-first LLM抽出+引用照合ゲート（scripts/bayes/llm
   it('MAX_LLM_RETRIES(2回)まで再プロンプトしても幻覚引用のままならverified:falseで確定し、valueは信用しない扱いになる', async () => {
     const articleText = normalizeWhitespace('本文には性格の記述が無い。');
     const hallucinated = { quote: '存在しない引用文その1', value: 'クール', confidence: 'high' };
-    const ollamaChat = vi
+    const llmChat = vi
       .fn()
       .mockResolvedValueOnce(allNone({ personality: hallucinated }))
       .mockResolvedValueOnce({ quote: '存在しない引用文その2', value: 'クール', confidence: 'high' })
       .mockResolvedValueOnce({ quote: '存在しない引用文その3', value: 'クール', confidence: 'high' });
 
-    const result = await extractOneCharacter({ ollamaChat, articleText, axisEnums: minimalAxisEnums() });
+    const result = await extractOneCharacter({ llmChat, articleText, axisEnums: minimalAxisEnums() });
 
     expect(result.axes.personality).toEqual({ value: 'クール', verified: false, confidence: 'high' });
-    expect(ollamaChat).toHaveBeenCalledTimes(3); // 初回 + retry×2
+    expect(llmChat).toHaveBeenCalledTimes(3); // 初回 + retry×2
     const retries = result.verification.filter((v: { axis: string }) => v.axis === 'personality').map((v: { retries: number }) => v.retries);
     expect(retries).toEqual([0, 1, 2]);
   });
 
   it('該当なし(confidence:none)は照合を試みずverified:falseのまま。リトライもしない', async () => {
     const articleText = '関係ない文章。';
-    const ollamaChat = vi.fn().mockResolvedValueOnce(allNone());
+    const llmChat = vi.fn().mockResolvedValueOnce(allNone());
 
-    const result = await extractOneCharacter({ ollamaChat, articleText, axisEnums: minimalAxisEnums() });
+    const result = await extractOneCharacter({ llmChat, articleText, axisEnums: minimalAxisEnums() });
 
     for (const key of ['personality', 'mood', 'species', 'combat', 'distance', 'affiliationKind'] as const) {
       expect(result.axes[key]).toEqual({ value: '該当なし', verified: false, confidence: 'none' });
     }
     expect(result.axes.roles).toEqual({ values: [], verified: false, confidence: 'none' });
-    expect(ollamaChat).toHaveBeenCalledTimes(1);
+    expect(llmChat).toHaveBeenCalledTimes(1);
   });
 
   it('roles(複数値): confidence:highかつ引用実在するものだけ採用し、それ以外は静かに落とす（未列挙は無情報という設計のためリトライしない）', async () => {
     const articleText = normalizeWhitespace('幼馴染として育った。姉のように慕われている。');
-    const ollamaChat = vi.fn().mockResolvedValueOnce(
+    const llmChat = vi.fn().mockResolvedValueOnce(
       allNone({
         roles: [
           { quote: '幼馴染として育った', value: '主従', confidence: 'high' }, // 実在するがvalueが選択肢外の例は別テストで扱う想定なのでここは主従で揃える
@@ -1391,10 +1588,10 @@ describe('BB. evidence-first LLM抽出+引用照合ゲート（scripts/bayes/llm
       }),
     );
 
-    const result = await extractOneCharacter({ ollamaChat, articleText, axisEnums: minimalAxisEnums() });
+    const result = await extractOneCharacter({ llmChat, articleText, axisEnums: minimalAxisEnums() });
 
     expect(result.axes.roles).toEqual({ values: ['主従'], verified: true, confidence: 'high' });
-    expect(ollamaChat).toHaveBeenCalledTimes(1);
+    expect(llmChat).toHaveBeenCalledTimes(1);
   });
 
   it('import しただけでは外部通信しない', async () => {
