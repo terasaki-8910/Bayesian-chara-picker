@@ -33,3 +33,6 @@ pnpm-lock.yaml
 # state/gates/* がフィーチャ単位の tsc を回すために一時生成する tsconfig。
 # ゲート側で必ず削除するが、途中で中断した場合に取り残されるのを追跡しない。
 /.tsconfig-gate.json
+
+# Claude Code の個人用のローカル設定（PC ごとに違う。コミットしない）
+.claude/settings.local.json
