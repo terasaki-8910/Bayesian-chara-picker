@@ -32,16 +32,16 @@
       "checkedAt": "2026-08-01T17:52:11.136Z"
     },
     "fgo-ishtar": {
-      "title": "イシュタル",
-      "url": "https://dic.nicovideo.jp/a/%E3%82%A4%E3%82%B7%E3%83%A5%E3%82%BF%E3%83%AB",
-      "source": "search-verified",
-      "checkedAt": "2026-08-01T17:52:15.592Z"
+      "title": "イシュタル(Fate)",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%A4%E3%82%B7%E3%83%A5%E3%82%BF%E3%83%AB(Fate)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:51:47.349Z"
     },
     "fgo-kiyohime": {
-      "title": "清姫",
-      "url": "https://dic.nicovideo.jp/a/%E6%B8%85%E5%A7%AB",
+      "title": "清姫(Fate)",
+      "url": "https://dic.nicovideo.jp/a/%E6%B8%85%E5%A7%AB(Fate)",
       "source": "override",
-      "checkedAt": "2026-08-01T18:15:28.384Z"
+      "checkedAt": "2026-10-04T15:51:53.637Z"
     },
     "fgo-medusa": {
       "title": "メデューサ",
@@ -128,11 +128,10 @@
       "checkedAt": "2026-08-01T18:15:17.447Z"
     },
     "monmusu-centorea": {
-      "title": null,
-      "reason": "記事「セントレア」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "セントレア",
-      "checkedAt": "2026-08-01T17:54:00.743Z"
+      "title": "セントレア・シアヌス",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%BB%E3%83%B3%E3%83%88%E3%83%AC%E3%82%A2%E3%83%BB%E3%82%B7%E3%82%A2%E3%83%8C%E3%82%B9",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:44:53.787Z"
     },
     "nier-2b": {
       "title": "ヨルハ二号B型",
@@ -388,10 +387,9 @@
     },
     "onepiece-carrot": {
       "title": null,
-      "reason": "記事「キャロット」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "キャロット",
-      "checkedAt": "2026-08-01T17:57:40.960Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。「キャロット」は「この記事は曖昧さ回避です」のページ。そこに載っている「キャロット(ONE PIECE)」も「キャロット(ワンピース)」も404で、Web検索でもニコニコ大百科に本人の記事は見つからなかった(見つかったのはpixiv百科事典、アニヲタWikiだけ)。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:44:59.020Z"
     },
     "onepiece-uta": {
       "title": null,
@@ -850,31 +848,28 @@
       "checkedAt": "2026-08-01T18:04:37.074Z"
     },
     "fate-mordred": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-01T18:05:01.734Z"
+      "title": "モードレッド(Fate/Apocrypha)",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%A2%E3%83%BC%E3%83%89%E3%83%AC%E3%83%83%E3%83%89(Fate%2FApocrypha)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:45:00.151Z"
     },
     "fate-abigail": {
-      "title": null,
-      "reason": "記事「アビゲイル・ウィリアムズ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "アビゲイル・ウィリアムズ",
-      "checkedAt": "2026-08-01T18:05:11.826Z"
+      "title": "アビゲイル・ウィリアムズ(Fate)",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%A2%E3%83%93%E3%82%B2%E3%82%A4%E3%83%AB%E3%83%BB%E3%82%A6%E3%82%A3%E3%83%AA%E3%82%A2%E3%83%A0%E3%82%BA(Fate)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:45:06.326Z"
     },
     "fate-morgan": {
-      "title": null,
-      "reason": "記事「モルガン」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "モルガン",
-      "checkedAt": "2026-08-01T18:05:21.705Z"
+      "title": "モルガン(Fate)",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%A2%E3%83%AB%E3%82%AC%E3%83%B3(Fate)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:45:14.494Z"
     },
     "onepiece-rebecca": {
       "title": null,
-      "reason": "記事「レベッカ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "レベッカ",
-      "checkedAt": "2026-08-01T18:05:36.818Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。「レベッカ」は「欧米の女性名である」で始まる、人名の曖昧さ回避のページ。「レベッカ(ONE PIECE)」も「レベッカ(ワンピース)」も404で、Web検索でもONE PIECEのレベッカ本人の記事は見つからなかった。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:45:19.693Z"
     },
     "onepiece-bonney": {
       "title": "ジュエリー・ボニー",
@@ -884,9 +879,9 @@
     },
     "onepiece-marguerite": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-01T18:05:51.820Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。原作での名前「マーガレット」で「マーガレット(ONE PIECE)」を引いたが404だった。前回試した「マルグリット」系の3件も404で、Web検索でもニコニコ大百科に本人の記事は見つからなかった(見つかったのはONE PIECE Wiki、アニヲタWikiだけ)。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:45:19.820Z"
     },
     "onepiece-shirahoshi": {
       "title": "しらほし",
@@ -896,40 +891,39 @@
     },
     "onepiece-reiju": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-01T18:06:11.732Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。原作どおりの表記「ヴィンスモーク・レイジュ」で引いたが404だった。前回試した「ビンスモーク」表記の3件も404で、Web検索でもニコニコ大百科に本人の記事は見つからなかった(見つかったのはpixiv百科事典、アニヲタWikiなど)。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:45:19.964Z"
     },
     "naruto-samui": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-01T18:06:21.791Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。「サムイ」「サムイ(NARUTO)」「サムイ(ナルト)」はすべて404。Web検索でも、記事があるのはpixiv百科事典などで、ニコニコ大百科の記事は見つからなかった。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:45:20.090Z"
     },
     "naruto-hanabi": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-01T18:06:31.815Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。「日向ハナビ」と括弧付きの2件はすべて404。検索で出るのは「日向ヒナタ」の記事(「日向宗家は妹のハナビが継いでいる」と触れるだけ)など別人の記事で、本人の記事は見つからなかった。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:45:20.218Z"
     },
     "naruto-kushina": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-01T18:06:44.876Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。「うずまきクシナ」と括弧付きの2件はすべて404。ニコニコ動画のタグ「うずまきクシナ」のページにも「ニコニコ大百科の記事は見つかりませんでした」とあり、記事は無い。名前が出てくるのは「波風ミナト」「うずまきナルト」の記事だけ。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:45:20.350Z"
     },
     "naruto-tayuya": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-01T18:06:51.833Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。「多由也」「多由也(NARUTO)」「多由也(ナルト)」はすべて404。Web検索でも、ニコニコ大百科に本人の記事は見つからなかった。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:45:20.491Z"
     },
     "overlord-evileye": {
       "title": null,
-      "reason": "記事「イビルアイ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "イビルアイ",
-      "checkedAt": "2026-08-01T18:07:01.874Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。「イビルアイ」は「この記事は曖昧さ回避です」のページ。オーバーロードについては「オーバーロード（小説）におけるヒロイン？（吸血鬼）である」と1行あるだけで、個別の記事への誘導は無い。「イビルアイ(オーバーロード)」は404で、本名の「キーノ・ファスリス・インベルン」で検索しても記事は見つからなかった。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:45:20.617Z"
     },
     "overlord-entoma": {
       "title": "エントマ・ヴァシリッサ・ゼータ",
@@ -945,9 +939,9 @@
     },
     "overlord-arche": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-01T18:07:26.888Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。フルネームでの2件に加えて「アルシェ(オーバーロード)」も404だった。Web検索でも、記事があるのはpixiv百科事典などで、ニコニコ大百科の記事は見つからなかった。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:45:20.768Z"
     },
     "bluearchive-hoshino": {
       "title": "小鳥遊ホシノ",
@@ -969,21 +963,21 @@
     },
     "genshin-nilou": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-01T18:07:51.945Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。「ニィロウ」も「ニィロウ(原神)」も404。検索で出たのは記事「スメール」の中の1項目(「☆5/水元素「ニィロウ」（CV：金元寿子）」)だけで、本人の記事は無い。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:45:21.032Z"
     },
     "genshin-yelan": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-01T18:08:02.137Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。「夜蘭」も「夜蘭(原神)」も404。検索でも「原神キャラクターの誕生日一覧」や「ノエル(原神)」の記事に名前が出るだけで、本人の記事は見つからなかった。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:45:21.184Z"
     },
     "genshin-kokomi": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-01T18:08:16.975Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。「珊瑚宮心海」も「珊瑚宮心海(原神)」も404。Web検索でも、ニコニコ大百科に本人の記事は見つからなかった。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:45:21.353Z"
     },
     "genshin-fischl": {
       "title": "フィッシュル",
@@ -999,35 +993,33 @@
     },
     "hsr-march7th": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-01T18:08:47.085Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。「三月なのか」と括弧付きの3件はすべて404。キャラの紹介は作品の記事「崩壊:スターレイル」の中にしかなく、本人の記事は検索でも見つからなかった(作品の記事は採らない)。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:45:21.496Z"
     },
     "hsr-kafka": {
       "title": null,
-      "reason": "記事「カフカ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "カフカ",
-      "checkedAt": "2026-08-01T18:08:57.024Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。「カフカ」は「この記事は曖昧さ回避です」のページで、フランツ・カフカなどが並び、スターレイルのカフカは載っていない。括弧付きの3件も、コロン無しの「カフカ(崩壊スターレイル)」も404で、本人の記事は無い。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:45:21.742Z"
     },
     "hsr-silverwolf": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-01T18:09:07.057Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。「銀狼」と括弧付きの3件はすべて404。検索しても、作品の記事「崩壊:スターレイル」の中で扱われているだけで、本人の記事は見つからなかった。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:45:21.878Z"
     },
     "hsr-acheron": {
       "title": null,
-      "reason": "記事「黄泉」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "黄泉",
-      "checkedAt": "2026-08-01T18:09:17.113Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。「黄泉」は「死後の世界（冥界、霊界など）のこと。本稿で記述する」という一般名詞の記事。括弧付きの3件は404で、検索でも本人の記事は見つからなかった。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:45:22.002Z"
     },
     "hsr-fuxuan": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-01T18:09:27.348Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。「符玄」と括弧付きの3件はすべて404。検索しても、作品の記事「崩壊:スターレイル」の中で紹介されているだけで、本人の記事は見つからなかった。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:45:22.140Z"
     },
     "lovelive-honoka": {
       "title": "高坂穂乃果",
@@ -1163,9 +1155,9 @@
     },
     "shinepost-yawara": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-01T23:25:38.078Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。「苗川柔」も「苗川柔(シャインポスト)」も404。ニコニコ大百科にあるのは作品の記事「シャインポスト」だけで、本人の記事は検索でも見つからなかった(pixiv百科事典にはある)。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:45:22.307Z"
     },
     "touhou-orin": {
       "title": "火焔猫燐",
@@ -1348,11 +1340,10 @@
       "checkedAt": "2026-08-02T00:36:27.111Z"
     },
     "vocaloid-rin": {
-      "title": null,
-      "reason": "記事「鏡音リン」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "鏡音リン",
-      "checkedAt": "2026-08-02T00:36:36.557Z"
+      "title": "鏡音リン",
+      "url": "https://dic.nicovideo.jp/a/%E9%8F%A1%E9%9F%B3%E3%83%AA%E3%83%B3",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:45:23.098Z"
     },
     "madoka-mami": {
       "title": "巴マミ",
@@ -1361,17 +1352,16 @@
       "checkedAt": "2026-08-02T00:36:42.514Z"
     },
     "frieren-frieren": {
-      "title": "フリーレン",
-      "url": "https://dic.nicovideo.jp/a/%E3%83%95%E3%83%AA%E3%83%BC%E3%83%AC%E3%83%B3",
-      "source": "search-verified",
-      "checkedAt": "2026-08-02T00:36:46.558Z"
+      "title": "フリーレン(葬送のフリーレン)",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%95%E3%83%AA%E3%83%BC%E3%83%AC%E3%83%B3(%E8%91%AC%E9%80%81%E3%81%AE%E3%83%95%E3%83%AA%E3%83%BC%E3%83%AC%E3%83%B3)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:51:59.418Z"
     },
     "vocaloid-luka": {
-      "title": null,
-      "reason": "記事「巡音ルカ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "巡音ルカ",
-      "checkedAt": "2026-08-02T00:36:56.534Z"
+      "title": "巡音ルカ",
+      "url": "https://dic.nicovideo.jp/a/%E5%B7%A1%E9%9F%B3%E3%83%AB%E3%82%AB",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:45:29.179Z"
     },
     "vocaloid-yukari": {
       "title": "結月ゆかり",
@@ -1380,10 +1370,10 @@
       "checkedAt": "2026-08-02T00:37:02.232Z"
     },
     "frieren-fern": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T00:37:11.527Z"
+      "title": "フェルン(葬送のフリーレン)",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%95%E3%82%A7%E3%83%AB%E3%83%B3(%E8%91%AC%E9%80%81%E3%81%AE%E3%83%95%E3%83%AA%E3%83%BC%E3%83%AC%E3%83%B3)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:45:34.903Z"
     },
     "bocchi-nijika": {
       "title": "伊地知虹夏",
@@ -1398,23 +1388,22 @@
       "checkedAt": "2026-08-02T00:37:21.750Z"
     },
     "kancolle-shigure": {
-      "title": "時雨",
-      "url": "https://dic.nicovideo.jp/a/%E6%99%82%E9%9B%A8",
-      "source": "search-verified",
-      "checkedAt": "2026-08-02T00:37:26.633Z"
+      "title": "時雨(艦これ)",
+      "url": "https://dic.nicovideo.jp/a/%E6%99%82%E9%9B%A8(%E8%89%A6%E3%81%93%E3%82%8C)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:52:11.255Z"
     },
     "kancolle-fubuki": {
-      "title": null,
-      "reason": "記事「吹雪」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "吹雪",
-      "checkedAt": "2026-08-02T00:37:36.672Z"
+      "title": "吹雪(艦これ)",
+      "url": "https://dic.nicovideo.jp/a/%E5%90%B9%E9%9B%AA(%E8%89%A6%E3%81%93%E3%82%8C)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:45:40.777Z"
     },
     "kancolle-tenryuu": {
-      "title": "天龍",
-      "url": "https://dic.nicovideo.jp/a/%E5%A4%A9%E9%BE%8D",
-      "source": "search-verified",
-      "checkedAt": "2026-08-02T00:37:41.610Z"
+      "title": "天龍(艦これ)",
+      "url": "https://dic.nicovideo.jp/a/%E5%A4%A9%E9%BE%8D(%E8%89%A6%E3%81%93%E3%82%8C)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:52:17.078Z"
     },
     "kancolle-haruna": {
       "title": "榛名",
@@ -1423,44 +1412,40 @@
       "checkedAt": "2026-08-02T00:37:46.645Z"
     },
     "kancolle-amatsukaze": {
-      "title": "天津風",
-      "url": "https://dic.nicovideo.jp/a/%E5%A4%A9%E6%B4%A5%E9%A2%A8",
-      "source": "search-verified",
-      "checkedAt": "2026-08-02T00:37:51.593Z"
+      "title": "天津風(艦これ)",
+      "url": "https://dic.nicovideo.jp/a/%E5%A4%A9%E6%B4%A5%E9%A2%A8(%E8%89%A6%E3%81%93%E3%82%8C)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:52:05.300Z"
     },
     "kancolle-yamato": {
-      "title": "大和",
-      "url": "https://dic.nicovideo.jp/a/%E5%A4%A7%E5%92%8C",
-      "source": "search-verified",
-      "checkedAt": "2026-08-02T00:37:56.852Z"
+      "title": "大和(艦これ)",
+      "url": "https://dic.nicovideo.jp/a/%E5%A4%A7%E5%92%8C(%E8%89%A6%E3%81%93%E3%82%8C)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:52:23.057Z"
     },
     "kancolle-shoukaku": {
-      "title": null,
-      "reason": "記事「翔鶴」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "翔鶴",
-      "checkedAt": "2026-08-02T00:38:06.609Z"
+      "title": "翔鶴(艦これ)",
+      "url": "https://dic.nicovideo.jp/a/%E7%BF%94%E9%B6%B4(%E8%89%A6%E3%81%93%E3%82%8C)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:45:46.836Z"
     },
     "kancolle-asashio": {
-      "title": null,
-      "reason": "記事「朝潮」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "朝潮",
-      "checkedAt": "2026-08-02T00:38:16.585Z"
+      "title": "朝潮(艦これ)",
+      "url": "https://dic.nicovideo.jp/a/%E6%9C%9D%E6%BD%AE(%E8%89%A6%E3%81%93%E3%82%8C)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:45:52.811Z"
     },
     "kancolle-eugen": {
-      "title": null,
-      "reason": "記事「プリンツ・オイゲン」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "プリンツ・オイゲン",
-      "checkedAt": "2026-08-02T00:38:36.676Z"
+      "title": "プリンツ・オイゲン(艦これ)",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%97%E3%83%AA%E3%83%B3%E3%83%84%E3%83%BB%E3%82%AA%E3%82%A4%E3%82%B2%E3%83%B3(%E8%89%A6%E3%81%93%E3%82%8C)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:45:58.828Z"
     },
     "kancolle-iowa": {
-      "title": null,
-      "reason": "記事「アイオワ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "アイオワ",
-      "checkedAt": "2026-08-02T00:38:51.779Z"
+      "title": "アイオワ(艦これ)",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%A2%E3%82%A4%E3%82%AA%E3%83%AF(%E8%89%A6%E3%81%93%E3%82%8C)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:46:04.805Z"
     },
     "azurlane-taihou": {
       "title": "大鳳",
@@ -1469,16 +1454,16 @@
       "checkedAt": "2026-08-02T00:38:56.806Z"
     },
     "azurlane-bremerton": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T00:39:06.689Z"
+      "title": "ブレマートン(アズールレーン)",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%96%E3%83%AC%E3%83%9E%E3%83%BC%E3%83%88%E3%83%B3(%E3%82%A2%E3%82%BA%E3%83%BC%E3%83%AB%E3%83%AC%E3%83%BC%E3%83%B3)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:46:10.535Z"
     },
     "azurlane-formidable": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T00:39:16.548Z"
+      "title": "フォーミダブル(アズールレーン)",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9F%E3%83%80%E3%83%96%E3%83%AB(%E3%82%A2%E3%82%BA%E3%83%BC%E3%83%AB%E3%83%AC%E3%83%BC%E3%83%B3)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:46:16.406Z"
     },
     "azurlane-eugen": {
       "title": "プリンツ・オイゲン",
@@ -1499,17 +1484,16 @@
       "checkedAt": "2026-08-02T00:39:36.652Z"
     },
     "azurlane-sirius": {
-      "title": null,
-      "reason": "記事「シリアス」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "シリアス",
-      "checkedAt": "2026-08-02T00:39:47.000Z"
+      "title": "シリアス(アズールレーン)",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%B7%E3%83%AA%E3%82%A2%E3%82%B9(%E3%82%A2%E3%82%BA%E3%83%BC%E3%83%AB%E3%83%AC%E3%83%BC%E3%83%B3)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:46:22.237Z"
     },
     "azurlane-unicorn": {
-      "title": "ユニコーン",
-      "url": "https://dic.nicovideo.jp/a/%E3%83%A6%E3%83%8B%E3%82%B3%E3%83%BC%E3%83%B3",
-      "source": "search-verified",
-      "checkedAt": "2026-08-02T00:39:51.700Z"
+      "title": "ユニコーン(アズールレーン)",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%A6%E3%83%8B%E3%82%B3%E3%83%BC%E3%83%B3(%E3%82%A2%E3%82%BA%E3%83%BC%E3%83%AB%E3%83%AC%E3%83%BC%E3%83%B3)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:51:41.067Z"
     },
     "azurlane-illustrious": {
       "title": "イラストリアス",
@@ -1584,64 +1568,58 @@
       "checkedAt": "2026-08-02T00:55:01.249Z"
     },
     "fgo-jeanne": {
-      "title": null,
-      "reason": "記事「ジャンヌ・ダルク」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "ジャンヌ・ダルク",
-      "checkedAt": "2026-08-02T00:55:15.568Z"
+      "title": "ジャンヌ・ダルク(Fate/Apocrypha)",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%8C%E3%83%BB%E3%83%80%E3%83%AB%E3%82%AF(Fate%2FApocrypha)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:46:28.544Z"
     },
     "fgo-okita": {
-      "title": null,
-      "reason": "記事「沖田総司」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "沖田総司",
-      "checkedAt": "2026-08-02T00:55:25.436Z"
+      "title": "桜セイバー",
+      "url": "https://dic.nicovideo.jp/a/%E6%A1%9C%E3%82%BB%E3%82%A4%E3%83%90%E3%83%BC",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:46:34.728Z"
     },
     "fgo-musashi": {
-      "title": null,
-      "reason": "記事「宮本武蔵」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "宮本武蔵",
-      "checkedAt": "2026-08-02T00:55:35.329Z"
+      "title": "宮本武蔵(Fate)",
+      "url": "https://dic.nicovideo.jp/a/%E5%AE%AE%E6%9C%AC%E6%AD%A6%E8%94%B5(Fate)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:46:41.000Z"
     },
     "fgo-nitocris": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T00:55:45.355Z"
+      "title": "ニトクリス(Fate)",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%8B%E3%83%88%E3%82%AF%E3%83%AA%E3%82%B9(Fate)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:46:47.103Z"
     },
     "genshin-paimon": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T01:06:19.069Z"
+      "title": "パイモン(原神)",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%91%E3%82%A4%E3%83%A2%E3%83%B3(%E5%8E%9F%E7%A5%9E)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:46:52.852Z"
     },
     "genshin-klee": {
-      "title": null,
-      "reason": "記事「Klee」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "Klee",
-      "checkedAt": "2026-08-02T01:06:29.157Z"
+      "title": "クレー(原神)",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%AF%E3%83%AC%E3%83%BC(%E5%8E%9F%E7%A5%9E)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:46:58.651Z"
     },
     "genshin-arlecchino": {
       "title": null,
-      "reason": "記事「アルレッキーノ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "アルレッキーノ",
-      "checkedAt": "2026-08-02T01:06:39.011Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。個別記事なし。「アルレッキーノ」は即興劇の人物と『からくりサーカス』のキャラの曖昧さ回避ページで、原神は載っていない。「アルレッキーノ(原神)」は404で、記事「ファデュイ」でも「ファトゥス第四位「召使」アルレッキーノ」の項だけが個別記事へのリンクを持たない(シニョーラ(原神)・タルタリヤ(原神)などにはリンクがある)。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:47:03.821Z"
     },
     "genshin-citlali": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T01:06:49.094Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。個別記事なし。「シトラリ」「シトラリ(原神)」はどちらも404。Web検索でも記事は見つからず、記事「原神キャラクターの誕生日一覧」にも名前が載っていない。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:47:03.899Z"
     },
     "genshin-amber": {
       "title": null,
-      "reason": "記事「アンバー」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "アンバー",
-      "checkedAt": "2026-08-02T01:06:59.200Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。個別記事なし。「アンバー」は曖昧さ回避ページ(「アンバーとは、以下の意味をあらわす言葉である」)で原神のアンバーは載っていない。「アンバー(原神)」は404で、誕生日一覧でもその曖昧さ回避ページへの自動リンクしかない。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:47:04.006Z"
     },
     "hsr-firefly": {
       "title": null,
@@ -1651,40 +1629,39 @@
     },
     "hsr-cyrene": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T01:15:14.751Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。個別記事なし。4通りの記事名がすべて404。ゲーム記事「崩壊:スターレイル」の登場人物一覧にもまだ載っておらず、Web検索でも記事は見つからない。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:47:04.095Z"
     },
     "hsr-sparkle": {
       "title": null,
-      "reason": "記事「花火」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "花火",
-      "checkedAt": "2026-08-02T01:15:24.918Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。個別記事なし。「花火」は「火薬を用いて金属の燃焼、炎色反応、音響を楽しむ娯楽」の一般語の記事。スターレイル付きの記事名は3通りとも404で、ゲーム記事「崩壊:スターレイル」の「花火(はなび)(CV：上田麗奈)」の項にも個別記事へのリンクがない。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:47:04.164Z"
     },
     "hsr-herta": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T01:15:34.781Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。個別記事なし。4通りの記事名がすべて404で、ゲーム記事「崩壊:スターレイル」の「ヘルタ(CV：山崎はるか)」の項にも個別記事へのリンクがない(このゲーム記事の登場人物欄はどのキャラも個別記事へのリンクを持たない)。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:47:04.250Z"
     },
     "hsr-castorice": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T01:15:44.807Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。個別記事なし。4通りの記事名がすべて404で、ゲーム記事「崩壊:スターレイル」の「キャストリス(CV：斎藤千和)」の項にも個別記事へのリンクがない。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:47:04.342Z"
     },
     "hsr-theherta": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T01:15:54.746Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。個別記事なし。日本語版の正式名「マダム・ヘルタ」で引いても404。ゲーム記事「崩壊:スターレイル」の「マダム・ヘルタ(CV：山崎はるか)」の項にも個別記事へのリンクがない。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:47:04.431Z"
     },
     "arknights-amiya": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T01:23:30.339Z"
+      "title": "アーミヤ(アークナイツ)",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%A2%E3%83%BC%E3%83%9F%E3%83%A4(%E3%82%A2%E3%83%BC%E3%82%AF%E3%83%8A%E3%82%A4%E3%83%84)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:47:05.158Z"
     },
     "arknights-texas": {
       "title": "テキサス",
@@ -1693,18 +1670,16 @@
       "checkedAt": "2026-08-02T01:23:35.462Z"
     },
     "arknights-suzuran": {
-      "title": null,
-      "reason": "記事「スズラン」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "スズラン",
-      "checkedAt": "2026-08-02T01:23:50.300Z"
+      "title": "スズラン(アークナイツ)",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%B9%E3%82%BA%E3%83%A9%E3%83%B3(%E3%82%A2%E3%83%BC%E3%82%AF%E3%83%8A%E3%82%A4%E3%83%84)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:47:10.820Z"
     },
     "arknights-exusiai": {
-      "title": null,
-      "reason": "記事「エクシア」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "エクシア",
-      "checkedAt": "2026-08-02T01:24:00.316Z"
+      "title": "エクシア(アークナイツ)",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%A8%E3%82%AF%E3%82%B7%E3%82%A2(%E3%82%A2%E3%83%BC%E3%82%AF%E3%83%8A%E3%82%A4%E3%83%84)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:47:16.576Z"
     },
     "hololive-marine": {
       "title": "宝鐘マリン",
@@ -1863,10 +1838,10 @@
       "checkedAt": "2026-08-02T02:02:50.258Z"
     },
     "hololiveen-kronii": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T02:03:00.448Z"
+      "title": "オーロ・クロニー",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%AA%E3%83%BC%E3%83%AD%E3%83%BB%E3%82%AF%E3%83%AD%E3%83%8B%E3%83%BC",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:47:25.712Z"
     },
     "hololiveen-calliope": {
       "title": "森美声",
@@ -1882,27 +1857,27 @@
     },
     "hololiveen-mumei": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T02:03:25.295Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。個別記事なし。3通りの記事名がすべて404。記事「ホロライブ」(「ホロライブEN」の転送先)の卒業生欄に「七詩ムメイ(ななし むめい/Nanashi Mumei)」とあるが、記事のある卒業生(湊あくあ・Gawr Guraなど)と違って個別記事へのリンクがない。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:47:30.905Z"
     },
     "hololiveen-novella": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T02:03:35.303Z"
+      "title": "シオリ・ノヴェラ",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%B7%E3%82%AA%E3%83%AA%E3%83%BB%E3%83%8E%E3%83%B4%E3%82%A7%E3%83%A9",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:47:31.511Z"
     },
     "hololiveen-nerissa": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T02:03:45.429Z"
+      "title": "ネリッサ・レイヴンクロフト",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%8D%E3%83%AA%E3%83%83%E3%82%B5%E3%83%BB%E3%83%AC%E3%82%A4%E3%83%B4%E3%83%B3%E3%82%AF%E3%83%AD%E3%83%95%E3%83%88",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:47:37.134Z"
     },
     "hololiveen-baelz": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T02:03:55.247Z"
+      "title": "ハコス・ベールズ",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%8F%E3%82%B3%E3%82%B9%E3%83%BB%E3%83%99%E3%83%BC%E3%83%AB%E3%82%BA",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:47:42.815Z"
     },
     "hololiveen-amelia": {
       "title": "ワトソン・アメリア",
@@ -1918,9 +1893,9 @@
     },
     "hololiveen-fauna": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T02:04:20.481Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。個別記事なし。3通りの記事名がすべて404。記事「ホロライブ」の卒業生欄の「Ceres Fauna(セレス・ファウナ)」にも個別記事へのリンクがない。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:47:47.995Z"
     },
     "bluearchive-aris": {
       "title": "天童アリス",
@@ -1954,9 +1929,9 @@
     },
     "bluearchive-karin": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T02:42:37.601Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。個別記事なし。3通りの記事名がすべて404。記事「ブルーアーカイブのキャラクター一覧」でも「角楯カリン」は「角」と「カリン」への自動リンクに分かれており(この記事名が無いということ)、久田イズナなどのような個別記事へのリンクもない。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:47:48.077Z"
     },
     "bluearchive-plana": {
       "title": "プラナ",
@@ -2001,11 +1976,10 @@
       "checkedAt": "2026-08-02T02:43:12.818Z"
     },
     "bluearchive-kei": {
-      "title": null,
-      "reason": "記事「天童ケイ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "天童ケイ",
-      "checkedAt": "2026-08-02T02:43:27.902Z"
+      "title": "ケイ（ブルーアーカイブ）",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%B1%E3%82%A4%EF%BC%88%E3%83%96%E3%83%AB%E3%83%BC%E3%82%A2%E3%83%BC%E3%82%AB%E3%82%A4%E3%83%96%EF%BC%89",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:47:48.720Z"
     },
     "bluearchive-saori": {
       "title": "錠前サオリ",
@@ -2014,11 +1988,10 @@
       "checkedAt": "2026-08-02T02:43:33.060Z"
     },
     "bluearchive-hikari": {
-      "title": null,
-      "reason": "記事「橘ヒカリ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "橘ヒカリ",
-      "checkedAt": "2026-08-02T02:43:42.619Z"
+      "title": "橘ヒカリ(ブルアカ)",
+      "url": "https://dic.nicovideo.jp/a/%E6%A9%98%E3%83%92%E3%82%AB%E3%83%AA(%E3%83%96%E3%83%AB%E3%82%A2%E3%82%AB)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:47:54.436Z"
     },
     "bluearchive-neru": {
       "title": "美甘ネル",
@@ -2051,11 +2024,10 @@
       "checkedAt": "2026-08-02T02:44:07.915Z"
     },
     "bluearchive-izuna": {
-      "title": null,
-      "reason": "記事「Izuna」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "Izuna",
-      "checkedAt": "2026-08-02T02:44:17.792Z"
+      "title": "久田イズナ",
+      "url": "https://dic.nicovideo.jp/a/%E4%B9%85%E7%94%B0%E3%82%A4%E3%82%BA%E3%83%8A",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:48:00.204Z"
     },
     "bluearchive-azusa": {
       "title": "白洲アズサ",
@@ -2070,10 +2042,10 @@
       "checkedAt": "2026-08-02T02:44:27.857Z"
     },
     "bluearchive-kikyou": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T02:44:37.812Z"
+      "title": "桐生キキョウ",
+      "url": "https://dic.nicovideo.jp/a/%E6%A1%90%E7%94%9F%E3%82%AD%E3%82%AD%E3%83%A7%E3%82%A6",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:48:06.143Z"
     },
     "bluearchive-yuzu": {
       "title": "花岡ユズ",
@@ -2095,15 +2067,15 @@
     },
     "zzz-ellen": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T03:00:08.643Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。個別記事なし。3通りの記事名がすべて404。ゲーム記事「ゼンレスゾーンゼロ」の登場人物一覧の「エレン・ジョー(CV：若山詩音)」にも個別記事へのリンクがない(リンクがあるのは「11号」・パイパー・ウィール・ビビアン・バンシーだけ)。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:48:11.317Z"
     },
     "zzz-jane": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T03:00:18.615Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。個別記事なし。3通りの記事名がすべて404で、ゲーム記事「ゼンレスゾーンゼロ」の「ジェーン・ドゥ(CV：嶋村侑)」の項にも個別記事へのリンクがない。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:48:11.421Z"
     },
     "zzz-vivian": {
       "title": "ビビアン・バンシー",
@@ -2113,58 +2085,57 @@
     },
     "zzz-nicole": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T03:00:33.697Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。個別記事なし。3通りの記事名がすべて404で、ゲーム記事「ゼンレスゾーンゼロ」の「ニコ・デマラ(CV：芹澤優)」の項にも個別記事へのリンクがない。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:48:11.519Z"
     },
     "zzz-evelyn": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T03:00:43.671Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。個別記事なし。3通りの記事名がすべて404で、ゲーム記事「ゼンレスゾーンゼロ」の「イヴリン・シェヴァリエ(CV：日笠陽子)」の項にも個別記事へのリンクがない。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:48:11.625Z"
     },
     "zzz-remielle": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T03:00:53.653Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。個別記事なし。3通りの記事名がすべて404。ゲーム記事「ゼンレスゾーンゼロ」の登場人物一覧にもまだ載っておらず、Web検索でも記事は見つからない。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:48:11.727Z"
     },
     "zzz-zhuyuan": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T03:01:03.689Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。個別記事なし。3通りの記事名がすべて404で、ゲーム記事「ゼンレスゾーンゼロ」の「朱鳶(シュエン)(CV：井上麻里奈)」の項にも個別記事へのリンクがない。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:48:11.836Z"
     },
     "zzz-sunna": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T03:01:14.330Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。個別記事なし。3通りの記事名がすべて404で、ゲーム記事「ゼンレスゾーンゼロ」の「千夏(CV：森嶋優花)」の項にも個別記事へのリンクがない。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:48:11.943Z"
     },
     "zzz-yixuan": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T03:01:23.717Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。「儀玄」「儀玄(ゼンレスゾーンゼロ)」「儀玄(ゼンゼロ)」はいずれも404。Web検索(2系統)でも作品記事「ゼンレスゾーンゼロ」のキャラ一覧に「儀玄（イーシェン）（CV：能登麻美子）」とあるだけで、専用記事は無い(作品記事は主題が作品なので採らない)。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:48:12.050Z"
     },
     "zzz-burnice": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T03:01:33.692Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。「バーニス・ホワイト」系の記事名はすべて404。Web検索でも作品記事「ゼンレスゾーンゼロ」のキャラ一覧(「バーニス・ホワイト（CV：高橋花林）」)にしか出てこず、専用記事は無い。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:48:12.161Z"
     },
     "zzz-astra": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T03:01:43.661Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。「アストラ・ヤオ」系の記事名はすべて404。Web検索でも作品記事「ゼンレスゾーンゼロ」のキャラ一覧(「アストラ・ヤオ（CV：遠藤綾）」)と声優記事にしか出てこず、専用記事は無い。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:48:12.263Z"
     },
     "pokemon-marnie": {
-      "title": null,
-      "reason": "記事「Marnie」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "Marnie",
-      "checkedAt": "2026-08-02T03:14:24.821Z"
+      "title": "マリィ(ポケモン)",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%9E%E3%83%AA%E3%82%A3(%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:48:12.944Z"
     },
     "pokemon-cynthia": {
       "title": "シロナ",
@@ -2173,11 +2144,10 @@
       "checkedAt": "2026-08-02T03:14:30.050Z"
     },
     "pokemon-misty": {
-      "title": null,
-      "reason": "記事「カスミ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "カスミ",
-      "checkedAt": "2026-08-02T03:14:39.689Z"
+      "title": "カスミ（ポケモン）",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%AB%E3%82%B9%E3%83%9F%EF%BC%88%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%EF%BC%89",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:48:18.895Z"
     },
     "pokemon-nessa": {
       "title": "ルリナ",
@@ -2192,11 +2162,10 @@
       "checkedAt": "2026-08-02T03:14:49.720Z"
     },
     "pokemon-lana": {
-      "title": null,
-      "reason": "記事「スイレン」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "スイレン",
-      "checkedAt": "2026-08-02T03:14:59.923Z"
+      "title": "スイレン(ポケモン)",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%B9%E3%82%A4%E3%83%AC%E3%83%B3(%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:48:24.553Z"
     },
     "pokemon-iono": {
       "title": "ナンジャモ",
@@ -2211,11 +2180,10 @@
       "checkedAt": "2026-08-02T03:15:09.863Z"
     },
     "pokemon-lillie": {
-      "title": null,
-      "reason": "記事「リーリエ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "リーリエ",
-      "checkedAt": "2026-08-02T03:15:19.674Z"
+      "title": "リーリエ",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%AA%E3%83%BC%E3%83%AA%E3%82%A8",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:48:30.391Z"
     },
     "mha-ochaco": {
       "title": "麗日お茶子",
@@ -2296,11 +2264,10 @@
       "checkedAt": "2026-08-02T03:35:20.592Z"
     },
     "gup-miho": {
-      "title": null,
-      "reason": "記事「西住みほ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "西住みほ",
-      "checkedAt": "2026-08-02T03:35:30.619Z"
+      "title": "西住みほ",
+      "url": "https://dic.nicovideo.jp/a/%E8%A5%BF%E4%BD%8F%E3%81%BF%E3%81%BB",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:48:36.388Z"
     },
     "gup-darjeeling": {
       "title": "ダージリン",
@@ -2309,11 +2276,10 @@
       "checkedAt": "2026-08-02T03:35:35.609Z"
     },
     "gup-maho": {
-      "title": null,
-      "reason": "記事「西住まほ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "西住まほ",
-      "checkedAt": "2026-08-02T03:35:45.409Z"
+      "title": "西住まほ",
+      "url": "https://dic.nicovideo.jp/a/%E8%A5%BF%E4%BD%8F%E3%81%BE%E3%81%BB",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:48:42.083Z"
     },
     "eva-asuka": {
       "title": "惣流・アスカ・ラングレー",
@@ -2352,11 +2318,10 @@
       "checkedAt": "2026-08-02T04:02:55.156Z"
     },
     "geass-cc": {
-      "title": null,
-      "reason": "記事「C.C.」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "C.C.",
-      "checkedAt": "2026-08-02T04:03:04.368Z"
+      "title": "C.C.",
+      "url": "https://dic.nicovideo.jp/a/C.C.",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:48:47.819Z"
     },
     "fe3h-edelgard": {
       "title": "エーデルガルト",
@@ -2485,11 +2450,10 @@
       "checkedAt": "2026-08-02T05:44:10.116Z"
     },
     "darkstalkers-morrigan": {
-      "title": null,
-      "reason": "記事「モリガン・アーンスランド」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "モリガン・アーンスランド",
-      "checkedAt": "2026-08-02T05:44:20.155Z"
+      "title": "モリガン・アーンスランド",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%A2%E3%83%AA%E3%82%AC%E3%83%B3%E3%83%BB%E3%82%A2%E3%83%BC%E3%83%B3%E3%82%B9%E3%83%A9%E3%83%B3%E3%83%89",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:48:53.501Z"
     },
     "idolmaster-miki": {
       "title": "星井美希",
@@ -2528,22 +2492,22 @@
       "checkedAt": "2026-08-02T05:44:50.223Z"
     },
     "spyfamily-anya": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T05:45:00.038Z"
+      "title": "アーニャ・フォージャー",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%A2%E3%83%BC%E3%83%8B%E3%83%A3%E3%83%BB%E3%83%95%E3%82%A9%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:48:59.261Z"
     },
     "konosuba-megumin": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T05:45:10.053Z"
+      "title": "めぐみん(この素晴らしい世界に祝福を!)",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%81%E3%81%90%E3%81%BF%E3%82%93(%E3%81%93%E3%81%AE%E7%B4%A0%E6%99%B4%E3%82%89%E3%81%97%E3%81%84%E4%B8%96%E7%95%8C%E3%81%AB%E7%A5%9D%E7%A6%8F%E3%82%92!)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:49:05.115Z"
     },
     "konosuba-aqua": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T05:45:19.951Z"
+      "title": "アクア(この素晴らしい世界に祝福を!)",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%A2%E3%82%AF%E3%82%A2(%E3%81%93%E3%81%AE%E7%B4%A0%E6%99%B4%E3%82%89%E3%81%97%E3%81%84%E4%B8%96%E7%95%8C%E3%81%AB%E7%A5%9D%E7%A6%8F%E3%82%92!)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:49:10.869Z"
     },
     "monogatari-shinobu": {
       "title": "忍野忍",
@@ -2577,9 +2541,9 @@
     },
     "gurrenlagann-yoko": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T05:46:00.117Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。「ヨーコ」は人名の曖昧さ回避。そこに挙がる「ヨーコ・リットナー」はリンクになっておらず、直接引いても404。Web検索でも作品記事「天元突破グレンラガン」しか見つからず、専用記事は無い。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:49:16.046Z"
     },
     "fe-lucina": {
       "title": "ルキナ",
@@ -2588,10 +2552,10 @@
       "checkedAt": "2026-08-02T05:46:05.311Z"
     },
     "fe-corrin": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T05:46:15.107Z"
+      "title": "カムイ(ファイアーエムブレム)",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%AB%E3%83%A0%E3%82%A4(%E3%83%95%E3%82%A1%E3%82%A4%E3%82%A2%E3%83%BC%E3%82%A8%E3%83%A0%E3%83%96%E3%83%AC%E3%83%A0)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:49:16.934Z"
     },
     "fe-lyn": {
       "title": "リンディス",
@@ -2601,9 +2565,9 @@
     },
     "overwatch-dva": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T05:46:30.462Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。「D.Va」「D.Va(オーバーウォッチ)」「D.Va(Overwatch)」はいずれも404。Web検索でも作品記事「オーバーウォッチ」のキャラ解説(「D.Va(種別:タンク) 本名:ハナ・ソング」)と声優記事にしか出てこず、専用記事は無い。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:49:22.106Z"
     },
     "opm-tatsumaki": {
       "title": "戦慄のタツマキ",
@@ -2625,16 +2589,15 @@
     },
     "lol-ahri": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T05:46:55.052Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。「アーリ」「アーリ(LoL)」「アーリ(リーグ・オブ・レジェンド)」はいずれも404。Web検索(2系統)でも作品記事「League of Legends」しか見つからず、専用記事は無い。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:49:22.192Z"
     },
     "lol-jinx": {
       "title": null,
-      "reason": "記事「ジンクス」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "ジンクス",
-      "checkedAt": "2026-08-02T05:47:05.290Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。「ジンクス」は冒頭「ジンクスとは教訓・法則のようなものである」の一般語記事で、ティーン・タイタンズの悪役を扱う節はあるがLoLのジンクスは載っていない。「ジンクス(LoL)」等は404で、Web検索でもLoL/アーケインのジンクスの専用記事は見つからない。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:49:22.291Z"
     },
     "voiceroid-kiritan": {
       "title": "東北きりたん",
@@ -2680,15 +2643,15 @@
     },
     "rwby-weiss": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T05:47:55.071Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。「ワイス・シュニー」「ワイス・シュニー(RWBY)」は404。Web検索でも作品記事「RWBY」の登場人物節(「Weiss Schnee（ワイス・シュニー）… 白の少女」)にしか無く、専用記事は無い。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:49:22.380Z"
     },
     "nikke-anis": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T05:48:05.071Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。「アニス」は曖昧さ回避で、案内先の「アニス(NIKKE)」も「アニス(勝利の女神:NIKKE)」も404(未作成)。Web検索でも作品記事しか見つからず、専用記事は無い。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:49:22.481Z"
     },
     "oreimo-ruri": {
       "title": "五更瑠璃",
@@ -2734,15 +2697,15 @@
     },
     "honkai3-bronya": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T05:48:55.097Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。「ブローニャ・ザイチク」「ブローニャ・ザイチク(崩壊3rd)」「ブローニャ」はいずれも404。Web検索でも作品記事「崩壊学園」「崩壊3rd」のキャラ解説にしか無く、専用記事は無い(作品記事を使うと崩壊学園版の設定も混ざる)。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:49:22.560Z"
     },
     "honkai3-kiana": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T05:49:05.139Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。「キアナ」「キアナ(崩壊3rd)」「キアナ・カスラナ」はいずれも404。Web検索でも作品記事「崩壊学園」「崩壊3rd」の中の解説しか無く、専用記事は無い。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:49:22.646Z"
     },
     "danganronpa-chiaki": {
       "title": "七海千秋",
@@ -2751,11 +2714,10 @@
       "checkedAt": "2026-08-02T05:49:10.360Z"
     },
     "fate-nero": {
-      "title": null,
-      "reason": "記事「ネロ・クラウディウス(Fate)」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "ネロ・クラウディウス(Fate)",
-      "checkedAt": "2026-08-02T05:49:25.080Z"
+      "title": "セイバー(Fate/EXTRA)",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%BB%E3%82%A4%E3%83%90%E3%83%BC(Fate%2FEXTRA)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:49:23.952Z"
     },
     "fate-rin": {
       "title": "遠坂凛",
@@ -2771,10 +2733,10 @@
       "checkedAt": "2026-08-02T05:49:40.255Z"
     },
     "rezero-emilia": {
-      "title": "エミリア",
-      "url": "https://dic.nicovideo.jp/a/%E3%82%A8%E3%83%9F%E3%83%AA%E3%82%A2",
-      "source": "search-verified",
-      "checkedAt": "2026-08-02T05:49:45.500Z"
+      "title": "エミリア(Re:ゼロから始める異世界生活)",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%A8%E3%83%9F%E3%83%AA%E3%82%A2(Re%3A%E3%82%BC%E3%83%AD%E3%81%8B%E3%82%89%E5%A7%8B%E3%82%81%E3%82%8B%E7%95%B0%E4%B8%96%E7%95%8C%E7%94%9F%E6%B4%BB)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:52:28.850Z"
     },
     "bocchi-hitori": {
       "title": "後藤ひとり",
@@ -2783,11 +2745,10 @@
       "checkedAt": "2026-08-02T06:17:29.747Z"
     },
     "bocchi-ryo": {
-      "title": null,
-      "reason": "記事「山田リョウ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "山田リョウ",
-      "checkedAt": "2026-08-02T06:17:39.499Z"
+      "title": "山田リョウ(ぼざろ)",
+      "url": "https://dic.nicovideo.jp/a/%E5%B1%B1%E7%94%B0%E3%83%AA%E3%83%A7%E3%82%A6(%E3%81%BC%E3%81%96%E3%82%8D)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:49:29.599Z"
     },
     "bocchi-ikuyo": {
       "title": "喜多郁代",
@@ -2857,9 +2818,9 @@
     },
     "bluearchive-niyaniya": {
       "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-08-02T07:34:37.220Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。「ニヤニヤ教授」「ニヤニヤ教授(ブルーアーカイブ)」「ニヤニヤ教授(ブルアカ)」はいずれも404で、Web検索でも専用記事は無い。天地ニヤ(陰陽部部長)は作中でこの名を名乗っていただけの別人とされるので代わりに使わない(なお攻略サイトでは教授の見た目は「金髪の幼女」とされ、データの axes の紫髪・年上とは合わない)。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:49:34.815Z"
     },
     "bluearchive-natsu": {
       "title": "柚鳥ナツ",
@@ -2911,16 +2872,15 @@
     },
     "overwatch-mercy": {
       "title": null,
-      "reason": "記事「マーシー」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "マーシー",
-      "checkedAt": "2026-08-02T07:35:32.258Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。「マーシー」は田代まさし・真島昌利などの曖昧さ回避で、オーバーウォッチのマーシーは載っていない。「マーシー(オーバーウォッチ)」「マーシー(Overwatch)」は404で、Web検索でも作品記事「オーバーウォッチ」のキャラ解説にしか無い。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:49:34.925Z"
     },
     "pokemon-dawn": {
-      "title": "Dawn",
-      "url": "https://dic.nicovideo.jp/a/Dawn",
-      "source": "search-verified",
-      "checkedAt": "2026-08-02T07:35:42.344Z"
+      "title": "ヒカリ（ポケモン）",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%92%E3%82%AB%E3%83%AA%EF%BC%88%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%EF%BC%89",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:52:34.783Z"
     },
     "pokemon-may": {
       "title": "ハルカ",
@@ -2929,52 +2889,46 @@
       "checkedAt": "2026-08-02T07:35:52.404Z"
     },
     "pokemon-hilda": {
-      "title": null,
-      "reason": "記事「トウコ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "トウコ",
-      "checkedAt": "2026-08-02T07:36:07.199Z"
+      "title": "トウコ(ポケモン)",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%88%E3%82%A6%E3%82%B3(%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:49:35.627Z"
     },
     "pokemon-rosa": {
-      "title": null,
-      "reason": "記事「メイ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "メイ",
-      "checkedAt": "2026-08-02T07:36:17.210Z"
+      "title": "メイ（ポケモン）",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%A1%E3%82%A4%EF%BC%88%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%EF%BC%89",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:49:41.369Z"
     },
     "pokemon-gloria": {
-      "title": null,
-      "reason": "記事「ユウリ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "ユウリ",
-      "checkedAt": "2026-08-02T07:36:27.284Z"
+      "title": "ユウリ(ポケモン)",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%A6%E3%82%A6%E3%83%AA(%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:49:47.045Z"
     },
     "pokemon-serena": {
-      "title": null,
-      "reason": "記事「セレナ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "セレナ",
-      "checkedAt": "2026-08-02T07:36:37.190Z"
+      "title": "セレナ(ポケモン)",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%BB%E3%83%AC%E3%83%8A(%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3)",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:49:52.752Z"
     },
     "pokemon-akari": {
-      "title": null,
-      "reason": "記事「アカリ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "アカリ",
-      "checkedAt": "2026-08-02T07:36:52.228Z"
+      "title": "ショウ（ポケモン）",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%B7%E3%83%A7%E3%82%A6%EF%BC%88%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3%EF%BC%89",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:49:58.508Z"
     },
     "pokemon-juliana": {
       "title": null,
-      "reason": "記事「アオイ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "アオイ",
-      "checkedAt": "2026-08-02T07:37:07.259Z"
+      "reason": "2026-10-05、Claude が記事の冒頭を読んで判定（確認シート1回目 R1-5）。「アオイ」は「あおい」の曖昧さ回避で、SVの女性主人公は案内1行のみ。「アオイ(ポケモン)」「アオイ(ポケットモンスター)」は404で、Web検索で出た「アオハル」も引いたが青春などの曖昧さ回避で無関係だった。専用記事は無い。",
+      "source": "override",
+      "checkedAt": "2026-10-04T15:50:03.637Z"
     },
     "bluearchive-kanoe": {
       "title": "板垣カノエ",
       "url": "https://dic.nicovideo.jp/a/%E6%9D%BF%E5%9E%A3%E3%82%AB%E3%83%8E%E3%82%A8",
       "source": "search-verified",
-      "checkedAt": "2026-08-22T19:29:43.934Z"
+      "checkedAt": "2026-10-04T15:50:04.420Z"
     }
   }
 }
