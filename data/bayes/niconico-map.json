@@ -849,13 +849,6 @@
       "source": "search-verified",
       "checkedAt": "2026-08-01T18:04:37.074Z"
     },
-    "fate-jeanne": {
-      "title": null,
-      "reason": "記事「ジャンヌ・ダルク」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "ジャンヌ・ダルク",
-      "checkedAt": "2026-08-01T18:04:51.793Z"
-    },
     "fate-mordred": {
       "title": null,
       "reason": "not-found",

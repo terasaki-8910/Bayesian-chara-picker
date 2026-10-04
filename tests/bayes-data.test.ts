@@ -307,6 +307,42 @@ describe('BA5. tag-overrides.json / tag-map.json の整合性', () => {
       .map(([id]) => id);
     expect(noReason, `理由の無い override: ${noReason.join(', ')}`).toEqual([]);
   });
+
+  /**
+   * 同じキャラの重複登録の再発防止（2026-10-04 発見）。
+   *
+   * 初期データの fate-jeanne と、500体拡張で足した fgo-jeanne が同じキャラ（ジャンヌ・ダルク、
+   * Fate/Grand Order）だった。しかも fate-jeanne は名前のワイルドカード検索で件数が最多の
+   * jeanne_d'arc_alter_(fate)（ジャンヌ・オルタ）を掴んでおり、fate-jalter と同じタグに
+   * なっていた。同じキャラが2体いると推定で区別できず、片方には別キャラの絵の統計が付く。
+   * 表示名+作品名の一致と、Danbooru タグの一致の両方で止める。
+   */
+  it('同じキャラを重複して登録していない（表示名+作品名も、Danbooru タグも重ならない）', () => {
+    const byNameSeries = new Map<string, string[]>();
+    for (const c of charactersFile) {
+      const key = `${c.name} / ${c.series}`;
+      byNameSeries.set(key, [...(byNameSeries.get(key) ?? []), c.id]);
+    }
+    const dupNames = [...byNameSeries.entries()]
+      .filter(([, ids]) => ids.length > 1)
+      .map(([key, ids]) => `${key}: ${ids.join(', ')}`);
+
+    const byTag = new Map<string, string[]>();
+    for (const [id, entry] of Object.entries(tagMap.entries)) {
+      if (entry.tag === null) continue;
+      byTag.set(entry.tag, [...(byTag.get(entry.tag) ?? []), id]);
+    }
+    const dupTags = [...byTag.entries()]
+      .filter(([, ids]) => ids.length > 1)
+      .map(([tag, ids]) => `${tag}: ${ids.join(', ')}`);
+
+    expect(dupNames, '表示名と作品名が同じキャラが複数います（重複登録の疑い）').toEqual([]);
+    expect(
+      dupTags,
+      '同じ Danbooru タグに解決されたキャラが複数います。\n' +
+        '→ 別キャラのタグを掴んでいるか、同じキャラの重複登録です。',
+    ).toEqual([]);
+  });
 });
 
 describe('BA7. wikidata-map.json / wikidata-facts.json の整合性（PLAN「P5a」）', () => {

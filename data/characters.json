@@ -7018,49 +7018,6 @@
     "imageApproved": false
   },
   {
-    "id": "fate-jeanne",
-    "name": "ジャンヌ・ダルク",
-    "aliases": [
-      "Jeanne d'Arc"
-    ],
-    "series": "Fate/Grand Order",
-    "dlsiteQuery": "FGO ジャンヌ・ダルク",
-    "axes": {
-      "genderExpression": "女性",
-      "ageFeel": "同年代",
-      "build": "標準",
-      "bust": "小さい",
-      "personality": [
-        "おっとり"
-      ],
-      "roles": [],
-      "distance": "やや受け身",
-      "looks": [],
-      "hairColor": [
-        "金"
-      ],
-      "skinTone": "色白",
-      "outfit": [],
-      "species": "不死",
-      "mood": [
-        "純愛寄り"
-      ],
-      "combat": "戦う",
-      "affiliationKind": "非人間・その他",
-      "affiliationName": null,
-      "stature": null,
-      "occupation": []
-    },
-    "reviewed": true,
-    "hitomiQuery": {
-      "character": "jeanne darc",
-      "series": null
-    },
-    "provisional": false,
-    "imagePath": null,
-    "imageApproved": false
-  },
-  {
     "id": "fate-mordred",
     "name": "モードレッド",
     "aliases": [

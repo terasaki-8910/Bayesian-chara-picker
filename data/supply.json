@@ -2537,24 +2537,6 @@
       "fetchedAt": "2026-07-26T08:03:45.643Z"
     }
   },
-  "fate-jeanne": {
-    "pageCount": 3,
-    "estimatedRange": [
-      61,
-      90
-    ],
-    "byWorkType": {
-      "doujinshi": 3,
-      "voice": 3,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-26T07:35:20.164Z",
-    "hitomi": {
-      "galleryCount": 1517,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-26T08:03:47.140Z"
-    }
-  },
   "fate-mordred": {
     "pageCount": 3,
     "estimatedRange": [

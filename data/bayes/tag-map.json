@@ -2650,27 +2650,6 @@
       ],
       "checkedAt": "2026-07-26T08:07:22.632Z"
     },
-    "fate-jeanne": {
-      "tag": "jeanne_d'arc_alter_(fate)",
-      "postCount": 13636,
-      "source": "wildcard-verified",
-      "seriesOverlap": 0.9996333235552948,
-      "candidatesTried": [
-        "jeanne_darc",
-        "darc_jeanne",
-        "jeanne_darc_(fate/grand_order)",
-        "jeanne_darc(*)",
-        "jeanne(*)"
-      ],
-      "allCandidates": [
-        "jeanne_d'arc_alter_(fate)(13636)",
-        "jeanne_d'arc_(fate)(8697)",
-        "jeanne_d'arc_alter_(avenger)_(fate)(3538)",
-        "jeanne_d'arc_(ruler)_(fate)(3221)",
-        "jeanne_d'arc_alter_(swimsuit_berserker)_(fate)(2788)"
-      ],
-      "checkedAt": "2026-07-26T08:07:30.377Z"
-    },
     "fate-mordred": {
       "tag": "mordred_(fate)",
       "postCount": 6578,
