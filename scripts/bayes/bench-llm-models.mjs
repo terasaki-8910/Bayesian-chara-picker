@@ -332,6 +332,29 @@ async function main() {
   const startedAt = new Date().toISOString();
   const llmChat = createLlmClient({});
   const results = [];
+  mkdirSync(benchDir, { recursive: true });
+  const reportPath = join(benchDir, `${startedAt.replace(/[:.]/g, '-')}.json`);
+  // モデルが1つ終わるごとに書き出す。最後にまとめて書くだけだと、途中でプロセスが止められたとき
+  // （2026-10-05、メモリ不足で4モデル目の途中に止められた）キャラごとの抽出値が全部失われる。
+  const writeReport = (finished) =>
+    writeFileSync(
+      reportPath,
+      `${JSON.stringify(
+        {
+          startedAt,
+          finishedAt: finished ? new Date().toISOString() : null,
+          stateDir,
+          extractSeed: SEED,
+          shuffleSeed,
+          sampleSize,
+          sample,
+          models,
+          results,
+        },
+        null,
+        2,
+      )}\n`,
+    );
   for (const model of models) {
     console.log(`=== ${model} ===`);
     // 読み込みはここで済ませる（切り替えに数十秒かかるので、1体目の秒数に混ぜない）。
@@ -341,6 +364,7 @@ async function main() {
     const perChar = await benchOneModel({ model, llmChat, sample, articles, reviewedById, axisEnums });
     const summary = summarizeModel(perChar);
     results.push({ model, runInfo: info, summary, perChar });
+    writeReport(false);
     console.log(
       `  一致率 ${pct(summary.accuracy)}（${summary.match}/${summary.match + summary.mismatch}）、被覆率 ${pct(summary.coverage)}、` +
         `引用照合 ${pct(summary.quotePassRate)}、空欄 ${pct(summary.blankRate)}、切れ ${summary.truncated}、` +
@@ -350,16 +374,7 @@ async function main() {
 
   console.log(formatTable(results));
 
-  mkdirSync(benchDir, { recursive: true });
-  const reportPath = join(benchDir, `${startedAt.replace(/[:.]/g, '-')}.json`);
-  writeFileSync(
-    reportPath,
-    `${JSON.stringify(
-      { startedAt, finishedAt: new Date().toISOString(), stateDir, extractSeed: SEED, shuffleSeed, sampleSize, sample, results },
-      null,
-      2,
-    )}\n`,
-  );
+  writeReport(true);
   console.log(`\n詳細レポート: ${reportPath}`);
 }
 
