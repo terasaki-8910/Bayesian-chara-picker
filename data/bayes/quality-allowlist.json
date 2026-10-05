@@ -21,7 +21,6 @@
   "maternal-but-childlike": {
     "genshin-nahida": "2026-10-05 時点の既存の違反、見直し中",
     "touhou-suwako": "2026-10-05 時点の既存の違反、見直し中",
-    "lovelive-nico": "2026-10-05 時点の既存の違反、見直し中",
     "hololive-koyori": "2026-10-05 時点の既存の違反、見直し中",
     "pricone-kokkoro": "2026-10-05 時点の既存の違反、見直し中",
     "danmachi-hestia": "2026-10-05 時点の既存の違反、見直し中"
@@ -30,9 +29,7 @@
   "childlike-but-tall": {
     "onepiece-shirahoshi": "2026-10-05 時点の既存の違反、見直し中"
   },
-  "student-with-office-job": {
-    "bluearchive-aru": "2026-10-05 時点の既存の違反、見直し中"
-  },
+  "student-with-office-job": {},
   "deity-or-spirit-but-human": {
     "madoka-madoka": "2026-10-05 時点の既存の違反、見直し中",
     "hsr-castorice": "2026-10-05 時点の既存の違反、見直し中",
@@ -42,70 +39,52 @@
   "nonfighter-with-combat-job": {
     "hololive-marine": "2026-10-05 時点の既存の違反、見直し中",
     "hololiveen-novella": "2026-10-05 時点の既存の違反、見直し中",
-    "hololiveen-amelia": "2026-10-05 時点の既存の違反、見直し中",
     "spyfamily-anya": "2026-10-05 時点の既存の違反、見直し中"
   },
   "otokonoko-with-large-bust": {},
   "outfit-メイド-occupation-mismatch": {
-    "bluearchive-asuna": "2026-10-05 時点の既存の違反、見直し中",
     "touhou-meiling": "2026-10-05 時点の既存の違反、見直し中",
     "touhou-ran": "2026-10-05 時点の既存の違反、見直し中",
-    "oshimai-kaede": "2026-10-05 時点の既存の違反、見直し中",
     "touhou-orin": "2026-10-05 時点の既存の違反、見直し中",
     "touhou-yoshika": "2026-10-05 時点の既存の違反、見直し中",
     "hololive-chloe": "2026-10-05 時点の既存の違反、見直し中",
-    "luckystar-konata": "2026-10-05 時点の既存の違反、見直し中",
-    "lycrecoil-chisato": "2026-10-05 時点の既存の違反、見直し中",
     "dandadan-momo": "2026-10-05 時点の既存の違反、見直し中",
     "pricone-kokkoro": "城のお世話係として職業にメイド・従者を置くが、衣装はメイド服ではない（設定上の役割）"
   },
   "outfit-巫女-occupation-mismatch": {
-    "genshin-yae-miko": "2026-10-05 時点の既存の違反、見直し中",
     "genshin-shenhe": "2026-10-05 時点の既存の違反、見直し中",
     "lovelive-nozomi": "2026-10-05 時点の既存の違反、見直し中",
     "touhou-byakuren": "2026-10-05 時点の既存の違反、見直し中",
     "fgo-jeanne": "2026-10-05 時点の既存の違反、見直し中",
     "genshin-citlali": "2026-10-05 時点の既存の違反、見直し中",
-    "hololive-kanata": "2026-10-05 時点の既存の違反、見直し中",
     "bluearchive-mari": "2026-10-05 時点の既存の違反、見直し中",
-    "pricone-kokkoro": "2026-10-05 時点の既存の違反、見直し中",
-    "ff7-aerith": "2026-10-05 時点の既存の違反、見直し中"
+    "pricone-kokkoro": "2026-10-05 時点の既存の違反、見直し中"
   },
   "outfit-ナース-occupation-mismatch": {
     "naruto-sakura": "2026-10-05 時点の既存の違反、見直し中",
     "bleach-unohana": "2026-10-05 時点の既存の違反、見直し中",
     "bleach-isane": "2026-10-05 時点の既存の違反、見直し中",
     "touhou-eirin": "2026-10-05 時点の既存の違反、見直し中",
-    "touhou-kasen": "2026-10-05 時点の既存の違反、見直し中",
     "hsr-cyrene": "2026-10-05 時点の既存の違反、見直し中",
     "arknights-suzuran": "2026-10-05 時点の既存の違反、見直し中",
     "kimetsu-shinobu": "2026-10-05 時点の既存の違反、見直し中"
   },
   "outfit-OL-occupation-mismatch": {
-    "spyfamily-yor": "2026-10-05 時点の既存の違反、見直し中",
     "genshin-ganyu": "2026-10-05 時点の既存の違反、見直し中",
     "onepiece-kalifa": "2026-10-05 時点の既存の違反、見直し中",
     "touhou-koakuma": "2026-10-05 時点の既存の違反、見直し中",
     "fgo-mash": "2026-10-05 時点の既存の違反、見直し中",
-    "bluearchive-aru": "2026-10-05 時点の既存の違反、見直し中",
-    "zzz-nicole": "2026-10-05 時点の既存の違反、見直し中",
-    "vtuber-shigureui": "2026-10-05 時点の既存の違反、見直し中",
     "bluearchive-kayoko": "2026-10-05 時点の既存の違反、見直し中"
   },
   "occupation-teacher-roles-mismatch": {
     "naruto-tsunade": "2026-10-05 時点の既存の違反、見直し中",
     "naruto-kurenai": "2026-10-05 時点の既存の違反、見直し中",
     "bleach-yoruichi": "2026-10-05 時点の既存の違反、見直し中",
-    "naruto-anko": "2026-10-05 時点の既存の違反、見直し中",
     "bleach-unohana": "2026-10-05 時点の既存の違反、見直し中",
     "touhou-youmu": "2026-10-05 時点の既存の違反、見直し中",
     "kancolle-kashima": "2026-10-05 時点の既存の違反、見直し中",
     "touhou-eirin": "2026-10-05 時点の既存の違反、見直し中",
-    "touhou-eiki": "2026-10-05 時点の既存の違反、見直し中",
-    "nijisanji-lize": "2026-10-05 時点の既存の違反、見直し中",
-    "bluearchive-kokona": "2026-10-05 時点の既存の違反、見直し中",
-    "bluearchive-shun": "2026-10-05 時点の既存の違反、見直し中",
-    "bluearchive-niyaniya": "2026-10-05 時点の既存の違反、見直し中"
+    "bluearchive-kokona": "2026-10-05 時点の既存の違反、見直し中"
   },
   "danbooru-hair-color": {},
   "danbooru-bust-gap": {

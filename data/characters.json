@@ -814,8 +814,8 @@
         "姉御"
       ],
       "roles": [
-        "教師",
-        "母性"
+        "母性",
+        "教師"
       ],
       "distance": "やや受け身",
       "looks": [
@@ -1085,7 +1085,7 @@
       "affiliationName": null,
       "stature": "長身",
       "occupation": [
-        "兵士・軍人"
+        "格闘家・武道家"
       ]
     },
     "reviewed": true,
@@ -1481,7 +1481,8 @@
       "affiliationName": "ベルリント市役所",
       "stature": null,
       "occupation": [
-        "スパイ・暗殺者"
+        "スパイ・暗殺者",
+        "会社員・OL"
       ]
     },
     "reviewed": true,
@@ -1675,7 +1676,7 @@
         "甘め"
       ],
       "combat": "戦う",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "軍・組織",
       "affiliationName": null,
       "stature": "標準",
       "occupation": [
@@ -1777,7 +1778,7 @@
         "支配的"
       ],
       "combat": "戦う",
-      "affiliationKind": "社会人",
+      "affiliationKind": "軍・組織",
       "affiliationName": "浦原商店",
       "stature": null,
       "occupation": [
@@ -1841,7 +1842,10 @@
       ],
       "affiliationName": "ミレニアムサイエンススクール（C&C）",
       "stature": "標準",
-      "occupation": []
+      "occupation": [
+        "スパイ・暗殺者",
+        "メイド・従者"
+      ]
     }
   },
   {
@@ -2380,7 +2384,7 @@
         "緑"
       ],
       "combat": "戦う",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "社会人",
       "roles": [
         "ライバル"
       ],
@@ -2795,7 +2799,9 @@
       ],
       "affiliationName": "鳴神大社",
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "巫女・神職"
+      ]
     }
   },
   {
@@ -2989,7 +2995,9 @@
       ],
       "affiliationName": "西風騎士団(遊撃小隊隊長)",
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "兵士・軍人"
+      ]
     }
   },
   {
@@ -3610,8 +3618,7 @@
       "combat": "戦う",
       "affiliationKind": "軍・組織",
       "roles": [
-        "教師",
-        "先輩"
+        "教師"
       ],
       "distance": "積極的",
       "looks": [],
@@ -3623,7 +3630,10 @@
       ],
       "affiliationName": "木ノ葉隠れの里",
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "忍者",
+        "教師・講師"
+      ]
     }
   },
   {
@@ -4922,9 +4932,7 @@
       ],
       "affiliationName": "永遠亭",
       "stature": null,
-      "occupation": [
-        "兵士・軍人"
-      ]
+      "occupation": []
     }
   },
   {
@@ -5926,7 +5934,7 @@
     },
     "axes": {
       "genderExpression": "女性",
-      "ageFeel": "幼い",
+      "ageFeel": "同年代",
       "build": "華奢",
       "bust": "小さい",
       "personality": [
@@ -5934,7 +5942,7 @@
       ],
       "roles": [
         "先輩",
-        "母性"
+        "姉"
       ],
       "distance": "中立",
       "looks": [
@@ -6825,7 +6833,8 @@
         "クール"
       ],
       "roles": [
-        "教師"
+        "教師",
+        "主従"
       ],
       "distance": "中立",
       "looks": [
@@ -6845,8 +6854,7 @@
       "affiliationName": null,
       "stature": null,
       "occupation": [
-        "医療従事者",
-        "研究者・発明家"
+        "医療従事者"
       ]
     },
     "reviewed": true,
@@ -8181,7 +8189,7 @@
         "支配的"
       ],
       "combat": "戦う",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "軍・組織",
       "affiliationName": null,
       "stature": null,
       "occupation": []
@@ -8504,12 +8512,10 @@
         "純愛寄り"
       ],
       "combat": "戦う",
-      "affiliationKind": "冒険者",
+      "affiliationKind": "軍・組織",
       "affiliationName": null,
       "stature": "標準",
-      "occupation": [
-        "兵士・軍人"
-      ]
+      "occupation": []
     },
     "reviewed": true,
     "hitomiQuery": {
@@ -9089,10 +9095,13 @@
         "背徳寄り"
       ],
       "combat": "戦う",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "軍・組織",
       "affiliationName": null,
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "兵士・軍人",
+        "スパイ・暗殺者"
+      ]
     },
     "reviewed": true,
     "hitomiQuery": {
@@ -9398,9 +9407,7 @@
       "affiliationKind": "学生",
       "affiliationName": null,
       "stature": "標準",
-      "occupation": [
-        "メイド・従者"
-      ]
+      "occupation": []
     },
     "reviewed": true,
     "provisional": false,
@@ -10315,9 +10322,7 @@
       "personality": [
         "クール"
       ],
-      "roles": [
-        "教師"
-      ],
+      "roles": [],
       "distance": "中立",
       "looks": [],
       "hairColor": [
@@ -10334,9 +10339,7 @@
       "affiliationName": "四季映姫庁",
       "stature": "小柄",
       "occupation": [
-        "警察・公安",
-        "神様・精霊",
-        "王族・貴族"
+        "神様・精霊"
       ]
     },
     "reviewed": true,
@@ -10563,7 +10566,6 @@
       "affiliationName": null,
       "stature": "標準",
       "occupation": [
-        "医療従事者",
         "魔法使い・魔術師"
       ]
     },
@@ -12707,11 +12709,10 @@
         "純愛寄り"
       ],
       "combat": "戦う",
-      "affiliationKind": "社会人",
+      "affiliationKind": "軍・組織",
       "affiliationName": "カルデア",
       "stature": "標準",
       "occupation": [
-        "兵士・軍人",
         "会社員・OL"
       ]
     },
@@ -12901,7 +12902,7 @@
       ],
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "affiliationName": null,
+      "affiliationName": "カルデア",
       "stature": "長身",
       "occupation": [
         "王族・貴族",
@@ -13183,7 +13184,7 @@
       "species": "人間",
       "mood": [],
       "combat": "戦う",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "軍・組織",
       "affiliationName": null,
       "stature": "小柄",
       "occupation": []
@@ -13277,7 +13278,7 @@
         "背徳寄り"
       ],
       "combat": "戦う",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "軍・組織",
       "affiliationName": null,
       "stature": "標準",
       "occupation": [
@@ -13417,7 +13418,7 @@
         "支配的"
       ],
       "combat": "戦う",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "軍・組織",
       "affiliationName": "天才たちの宇宙ステーション",
       "stature": "長身",
       "occupation": [
@@ -13563,7 +13564,7 @@
       "combat": "戦う",
       "affiliationKind": "軍・組織",
       "affiliationName": "ロドスアイランド製薬",
-      "stature": "長身",
+      "stature": "小柄",
       "occupation": [
         "医療従事者",
         "兵士・軍人"
@@ -13755,7 +13756,7 @@
       "species": "人間",
       "mood": [],
       "combat": "戦わない",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "社会人",
       "affiliationName": "ホロライブ",
       "stature": "標準",
       "occupation": [
@@ -13905,7 +13906,7 @@
       "species": "人間",
       "mood": [],
       "combat": "戦わない",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "社会人",
       "affiliationName": "ホロライブ",
       "stature": "標準",
       "occupation": [
@@ -14112,7 +14113,7 @@
       "species": "人間",
       "mood": [],
       "combat": "戦わない",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "学生",
       "affiliationName": "ホロライブ",
       "stature": "標準",
       "occupation": [
@@ -14164,12 +14165,11 @@
         "甘め"
       ],
       "combat": "戦わない",
-      "affiliationKind": "社会人",
+      "affiliationKind": "学生",
       "affiliationName": "ホロライブ",
       "stature": "標準",
       "occupation": [
-        "アイドル・芸能",
-        "巫女・神職"
+        "アイドル・芸能"
       ]
     },
     "reviewed": true,
@@ -14310,7 +14310,7 @@
         "甘め"
       ],
       "combat": "戦う",
-      "affiliationKind": "社会人",
+      "affiliationKind": "軍・組織",
       "affiliationName": "ホロライブ",
       "stature": "長身",
       "occupation": [
@@ -14756,7 +14756,7 @@
       "species": "人間",
       "mood": [],
       "combat": "戦わない",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "学生",
       "affiliationName": "ホロライブ",
       "stature": "標準",
       "occupation": [
@@ -14855,7 +14855,7 @@
       "species": "人間",
       "mood": [],
       "combat": "戦わない",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "社会人",
       "affiliationName": "ホロライブ",
       "stature": "標準",
       "occupation": [
@@ -15286,9 +15286,7 @@
       "affiliationName": "ホロライブEN",
       "stature": "小柄",
       "occupation": [
-        "スパイ・暗殺者",
-        "アイドル・芸能",
-        "警察・公安"
+        "アイドル・芸能"
       ]
     },
     "reviewed": true,
@@ -15482,10 +15480,9 @@
       ],
       "combat": "戦う",
       "affiliationKind": "学生",
-      "affiliationName": "百鬼夜行学園",
+      "affiliationName": "トリニティ総合学園",
       "stature": "小柄",
       "occupation": [
-        "研究者・発明家",
         "巫女・神職"
       ]
     },
@@ -15821,9 +15818,7 @@
       "affiliationKind": "学生",
       "affiliationName": null,
       "stature": "標準",
-      "occupation": [
-        "会社員・OL"
-      ]
+      "occupation": []
     },
     "reviewed": true,
     "provisional": false,
@@ -15970,7 +15965,6 @@
       "affiliationName": null,
       "stature": "標準",
       "occupation": [
-        "格闘家・武道家",
         "警察・公安"
       ]
     },
@@ -16018,7 +16012,7 @@
       "mood": [],
       "combat": "戦う",
       "affiliationKind": "学生",
-      "affiliationName": "トリニティ総合学園",
+      "affiliationName": "ミレニアムサイエンススクール",
       "stature": "小柄",
       "occupation": []
     },
@@ -16818,7 +16812,7 @@
       "species": "人間",
       "mood": [],
       "combat": "戦う",
-      "affiliationKind": "軍・組織",
+      "affiliationKind": "学生",
       "affiliationName": null,
       "stature": "標準",
       "occupation": [
@@ -16870,8 +16864,7 @@
       "affiliationName": null,
       "stature": "標準",
       "occupation": [
-        "格闘家・武道家",
-        "兵士・軍人"
+        "警察・公安"
       ]
     },
     "reviewed": true,
@@ -16963,9 +16956,7 @@
       "affiliationKind": "社会人",
       "affiliationName": null,
       "stature": "標準",
-      "occupation": [
-        "会社員・OL"
-      ]
+      "occupation": []
     },
     "reviewed": true,
     "provisional": false,
@@ -17049,10 +17040,12 @@
       "species": "人間",
       "mood": [],
       "combat": "戦う",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "軍・組織",
       "affiliationName": null,
       "stature": "小柄",
-      "occupation": []
+      "occupation": [
+        "兵士・軍人"
+      ]
     },
     "reviewed": true,
     "provisional": false,
@@ -18383,7 +18376,7 @@
       "affiliationName": "大洗女子学園",
       "stature": "標準",
       "occupation": [
-        "兵士・軍人"
+        "アスリート"
       ]
     },
     "reviewed": true,
@@ -18437,8 +18430,6 @@
       "affiliationName": "聖グロリアーナ女学院",
       "stature": "標準",
       "occupation": [
-        "兵士・軍人",
-        "王族・貴族",
         "アスリート"
       ]
     },
@@ -18489,9 +18480,7 @@
       "affiliationKind": "学生",
       "affiliationName": "黒森峰女学園",
       "stature": "標準",
-      "occupation": [
-        "兵士・軍人"
-      ]
+      "occupation": []
     },
     "reviewed": true,
     "provisional": false,
@@ -19038,7 +19027,9 @@
         "おっとり"
       ],
       "roles": [
-        "姉"
+        "先輩",
+        "姉",
+        "友人"
       ],
       "distance": "やや積極的",
       "looks": [
@@ -19059,9 +19050,7 @@
       "affiliationKind": "学生",
       "affiliationName": null,
       "stature": "小柄",
-      "occupation": [
-        "メイド・従者"
-      ]
+      "occupation": []
     },
     "reviewed": true,
     "provisional": false,
@@ -19291,8 +19280,8 @@
         "おっとり"
       ],
       "roles": [
-        "妹",
-        "姉"
+        "姉",
+        "妹"
       ],
       "distance": "中立",
       "looks": [
@@ -19510,9 +19499,7 @@
       "affiliationKind": "冒険者",
       "affiliationName": null,
       "stature": "標準",
-      "occupation": [
-        "巫女・神職"
-      ]
+      "occupation": []
     },
     "reviewed": true,
     "provisional": false,
@@ -19842,8 +19829,7 @@
       "affiliationName": "DA(Direct Attack)",
       "stature": "標準",
       "occupation": [
-        "スパイ・暗殺者",
-        "メイド・従者"
+        "スパイ・暗殺者"
       ]
     },
     "reviewed": true,
@@ -21259,7 +21245,8 @@
       "affiliationName": "にじさんじ",
       "stature": "標準",
       "occupation": [
-        "教師・講師"
+        "アイドル・芸能",
+        "王族・貴族"
       ]
     },
     "reviewed": true,
@@ -22019,8 +22006,7 @@
       "affiliationName": null,
       "stature": "小柄",
       "occupation": [
-        "王族・貴族",
-        "兵士・軍人"
+        "王族・貴族"
       ]
     },
     "reviewed": true,
@@ -22401,8 +22387,7 @@
       "affiliationName": null,
       "stature": "標準",
       "occupation": [
-        "アイドル・芸能",
-        "会社員・OL"
+        "アイドル・芸能"
       ]
     },
     "reviewed": true,
@@ -22649,7 +22634,7 @@
       "mood": [],
       "combat": "戦う",
       "affiliationKind": "学生",
-      "affiliationName": "特別強制清掃部",
+      "affiliationName": "対策委員会",
       "stature": "標準",
       "occupation": []
     },
@@ -22681,8 +22666,8 @@
         "おっとり"
       ],
       "roles": [
-        "先輩",
-        "姉"
+        "姉",
+        "教師"
       ],
       "distance": "中立",
       "looks": [
@@ -22847,12 +22832,10 @@
       "species": "人間",
       "mood": [],
       "combat": "戦わない",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "軍・組織",
       "affiliationName": null,
       "stature": "標準",
-      "occupation": [
-        "教師・講師"
-      ]
+      "occupation": []
     },
     "reviewed": true,
     "provisional": false,
@@ -23198,7 +23181,7 @@
       "mood": [],
       "combat": "戦う",
       "affiliationKind": "学生",
-      "affiliationName": "特別強制清掃部",
+      "affiliationName": "アビドス高等学校（対策委員会）",
       "stature": "小柄",
       "occupation": []
     },
