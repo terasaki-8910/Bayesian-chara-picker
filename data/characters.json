@@ -10515,7 +10515,7 @@
       ],
       "skinTone": "標準",
       "outfit": [],
-      "species": "獣人",
+      "species": "魔族",
       "mood": [],
       "combat": "戦う",
       "affiliationKind": "社会人",
@@ -14356,7 +14356,7 @@
       ],
       "skinTone": "標準",
       "outfit": [],
-      "species": "獣人",
+      "species": "人間",
       "mood": [],
       "combat": "戦わない",
       "affiliationKind": "軍・組織",
@@ -22479,7 +22479,7 @@
       "outfit": [
         "制服"
       ],
-      "species": "人間",
+      "species": "魔族",
       "mood": [],
       "combat": "戦う",
       "affiliationKind": "社会人",
