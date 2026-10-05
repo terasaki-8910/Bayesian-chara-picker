@@ -319,6 +319,7 @@ async function main() {
   const charactersPath = fileURLToPath(new URL('characters.json', dataDir));
   const questionsPath = fileURLToPath(new URL('bayes/questions.json', dataDir));
   const extractPath = fileURLToPath(new URL('bayes/llm-extract.json', dataDir));
+  const niconicoMapPath = fileURLToPath(new URL('bayes/niconico-map.json', dataDir));
   const stateDir = resolveStateDir(args);
   const niconicoCacheDir = join(stateDir, 'bayes-pipeline', 'niconico');
   const llmCacheDir = join(stateDir, 'bayes-pipeline', 'llm');
@@ -326,6 +327,13 @@ async function main() {
   const characters = JSON.parse(readFileSync(charactersPath, 'utf8'));
   const questionsFile = JSON.parse(readFileSync(questionsPath, 'utf8'));
   const axisEnums = deriveAxisEnums(questionsFile);
+  // 抽出に使う記事は niconico-map.json で今そのキャラに確定している記事だけ。
+  // 記事キャッシュは対応付けを直したり「記事なし」に確定したりしても残るので、キャッシュの有無で
+  // 選ぶと、取り違えた古い記事からまた抽出してしまう（2026-10-05、hsr-firefly の「ホタル」（昆虫）など。
+  // tests/bayes-data.test.ts の BA8 がデータ側で同じことを検査する）。
+  const niconicoTitles = new Map(
+    Object.entries(JSON.parse(readFileSync(niconicoMapPath, 'utf8')).entries).map(([id, e]) => [id, e?.title ?? null]),
+  );
 
   let llmExtract = { version: 1, model: MODEL, seed: SEED, entries: {} };
   try {
@@ -373,12 +381,23 @@ async function main() {
   for (const [index, character] of pending.entries()) {
     process.stdout.write(`[${index + 1}/${pending.length}] ${character.name} (${character.id}) ... `);
 
+    const expectedTitle = niconicoTitles.get(character.id) ?? null;
+    if (expectedTitle === null) {
+      console.log('niconico-map.json で記事なし。スキップ。');
+      noCoverage.push({ id: character.id, name: character.name });
+      continue;
+    }
     const niconicoCachePath = join(niconicoCacheDir, `${character.id}.json`);
     let cached;
     try {
       cached = JSON.parse(readFileSync(niconicoCachePath, 'utf8'));
     } catch (_err) {
-      console.log('ニコニコ記事キャッシュなし（map-niconico.mjs未実行/記事なし）。スキップ。');
+      console.log('ニコニコ記事キャッシュなし（map-niconico.mjs未実行）。スキップ。');
+      noCoverage.push({ id: character.id, name: character.name });
+      continue;
+    }
+    if (cached.title !== expectedTitle) {
+      console.log(`記事キャッシュ「${cached.title}」が今の記事「${expectedTitle}」と違う（map-niconico.mjs --char で取り直す）。スキップ。`);
       noCoverage.push({ id: character.id, name: character.name });
       continue;
     }
