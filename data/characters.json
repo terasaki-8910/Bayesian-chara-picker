@@ -175,14 +175,15 @@
       "distance": "積極的",
       "looks": [
         "ケモミミ",
-        "尻尾"
+        "尻尾",
+        "長髪"
       ],
       "hairColor": [
         "桃"
       ],
       "skinTone": "色白",
       "outfit": [
-        "巫女"
+        "和服・着物"
       ],
       "species": "獣人",
       "mood": [
@@ -193,7 +194,6 @@
       "affiliationName": null,
       "stature": null,
       "occupation": [
-        "巫女・神職",
         "神様・精霊"
       ]
     },
@@ -278,7 +278,7 @@
       "hairColor": [
         "黒"
       ],
-      "skinTone": "褐色",
+      "skinTone": "色白",
       "outfit": [],
       "species": "不死",
       "mood": [
@@ -376,7 +376,7 @@
         "長髪"
       ],
       "hairColor": [
-        "白"
+        "紫"
       ],
       "skinTone": "色白",
       "outfit": [],
@@ -583,9 +583,7 @@
         "赤"
       ],
       "skinTone": "色白",
-      "outfit": [
-        "軍服"
-      ],
+      "outfit": [],
       "species": "人間",
       "mood": [
         "支配的"
@@ -683,9 +681,7 @@
         "青"
       ],
       "skinTone": "色白",
-      "outfit": [
-        "軍服"
-      ],
+      "outfit": [],
       "species": "人間",
       "mood": [
         "支配的"
@@ -818,8 +814,8 @@
         "姉御"
       ],
       "roles": [
-        "教師",
-        "母性"
+        "母性",
+        "教師"
       ],
       "distance": "やや受け身",
       "looks": [
@@ -874,8 +870,7 @@
       ],
       "distance": "中立",
       "looks": [
-        "長髪",
-        "眼鏡"
+        "長髪"
       ],
       "hairColor": [
         "黒"
@@ -1063,7 +1058,7 @@
       "genderExpression": "女性",
       "ageFeel": "年上",
       "build": "標準",
-      "bust": "大きい",
+      "bust": "とても大きい",
       "personality": [
         "姉御"
       ],
@@ -1072,16 +1067,15 @@
       ],
       "distance": "やや積極的",
       "looks": [
-        "長髪",
-        "尻尾"
+        "ケモミミ",
+        "尻尾",
+        "長髪"
       ],
       "hairColor": [
         "金"
       ],
       "skinTone": "色白",
-      "outfit": [
-        "軍服"
-      ],
+      "outfit": [],
       "species": "獣人",
       "mood": [
         "純愛寄り"
@@ -1091,7 +1085,7 @@
       "affiliationName": null,
       "stature": "長身",
       "occupation": [
-        "兵士・軍人"
+        "格闘家・武道家"
       ]
     },
     "reviewed": true,
@@ -1126,9 +1120,7 @@
         "白"
       ],
       "skinTone": "色白",
-      "outfit": [
-        "軍服"
-      ],
+      "outfit": [],
       "species": "機械",
       "mood": [
         "従属的"
@@ -1228,7 +1220,7 @@
       ],
       "skinTone": null,
       "outfit": [
-        "巫女"
+        "和服・着物"
       ],
       "species": "人間",
       "mood": [
@@ -1373,12 +1365,10 @@
         "長髪"
       ],
       "hairColor": [
-        "黒"
+        "青"
       ],
       "skinTone": null,
-      "outfit": [
-        "制服"
-      ],
+      "outfit": [],
       "species": "人間",
       "mood": [
         "純愛寄り"
@@ -1425,14 +1415,11 @@
         "長髪"
       ],
       "hairColor": [
-        "黒"
+        "黒",
+        "茶"
       ],
       "skinTone": null,
-      "outfit": [
-        "制服",
-        "メイド",
-        "ナース"
-      ],
+      "outfit": [],
       "species": "人間",
       "mood": [
         "純愛寄り"
@@ -1494,7 +1481,8 @@
       "affiliationName": "ベルリント市役所",
       "stature": null,
       "occupation": [
-        "スパイ・暗殺者"
+        "スパイ・暗殺者",
+        "会社員・OL"
       ]
     },
     "reviewed": true,
@@ -1617,7 +1605,7 @@
       "genderExpression": "男性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "大きい",
+      "bust": "標準",
       "personality": [
         "クール"
       ],
@@ -1674,8 +1662,7 @@
       ],
       "distance": "やや積極的",
       "looks": [
-        "長髪",
-        "ツインテール"
+        "長髪"
       ],
       "hairColor": [
         "桃"
@@ -1689,7 +1676,7 @@
         "甘め"
       ],
       "combat": "戦う",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "軍・組織",
       "affiliationName": null,
       "stature": "標準",
       "occupation": [
@@ -1782,18 +1769,16 @@
         "長髪"
       ],
       "hairColor": [
-        "黒"
+        "紫"
       ],
       "skinTone": "褐色",
-      "outfit": [
-        "軍服"
-      ],
+      "outfit": [],
       "species": "不死",
       "mood": [
         "支配的"
       ],
       "combat": "戦う",
-      "affiliationKind": "社会人",
+      "affiliationKind": "軍・組織",
       "affiliationName": "浦原商店",
       "stature": null,
       "occupation": [
@@ -1857,7 +1842,10 @@
       ],
       "affiliationName": "ミレニアムサイエンススクール（C&C）",
       "stature": "標準",
-      "occupation": []
+      "occupation": [
+        "スパイ・暗殺者",
+        "メイド・従者"
+      ]
     }
   },
   {
@@ -2099,7 +2087,7 @@
       ],
       "skinTone": "色白",
       "outfit": [
-        "OL"
+        "制服"
       ],
       "species": "人間",
       "mood": [
@@ -2152,7 +2140,7 @@
       "outfit": [
         "制服"
       ],
-      "species": "人間",
+      "species": "魔族",
       "mood": [
         "純愛寄り"
       ],
@@ -2396,7 +2384,7 @@
         "緑"
       ],
       "combat": "戦う",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "社会人",
       "roles": [
         "ライバル"
       ],
@@ -2453,9 +2441,7 @@
         "妹"
       ],
       "distance": null,
-      "looks": [
-        "ツインテール"
-      ],
+      "looks": [],
       "skinTone": "色白",
       "outfit": [],
       "species": "不死",
@@ -2702,7 +2688,9 @@
         "長髪"
       ],
       "skinTone": "色白",
-      "outfit": [],
+      "outfit": [
+        "和服・着物"
+      ],
       "species": "機械",
       "mood": [
         "支配的"
@@ -2811,7 +2799,9 @@
       ],
       "affiliationName": "鳴神大社",
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "巫女・神職"
+      ]
     }
   },
   {
@@ -2951,9 +2941,7 @@
         "長髪"
       ],
       "skinTone": "色白",
-      "outfit": [
-        "OL"
-      ],
+      "outfit": [],
       "species": "人間",
       "mood": [
         "純愛寄り"
@@ -2998,20 +2986,18 @@
         "姉"
       ],
       "distance": "中立",
-      "looks": [
-        "長髪"
-      ],
+      "looks": [],
       "skinTone": "色白",
-      "outfit": [
-        "軍服"
-      ],
+      "outfit": [],
       "species": "人間",
       "mood": [
         "支配的"
       ],
       "affiliationName": "西風騎士団(遊撃小隊隊長)",
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "兵士・軍人"
+      ]
     }
   },
   {
@@ -3632,8 +3618,7 @@
       "combat": "戦う",
       "affiliationKind": "軍・組織",
       "roles": [
-        "教師",
-        "先輩"
+        "教師"
       ],
       "distance": "積極的",
       "looks": [],
@@ -3645,7 +3630,10 @@
       ],
       "affiliationName": "木ノ葉隠れの里",
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "忍者",
+        "教師・講師"
+      ]
     }
   },
   {
@@ -4496,7 +4484,7 @@
       ],
       "skinTone": "色白",
       "outfit": [
-        "制服"
+        "軍服"
       ],
       "species": "獣人",
       "mood": [
@@ -4571,7 +4559,7 @@
       "genderExpression": "女性",
       "ageFeel": "年上",
       "build": "華奢",
-      "bust": "とても大きい",
+      "bust": "大きい",
       "personality": [
         "クール"
       ],
@@ -4681,10 +4669,10 @@
       "roles": [],
       "distance": "やや積極的",
       "looks": [
-        "長髪",
-        "ツインテール"
+        "長髪"
       ],
       "hairColor": [
+        "白",
         "青"
       ],
       "skinTone": "色白",
@@ -4736,9 +4724,7 @@
         "金"
       ],
       "skinTone": "色白",
-      "outfit": [
-        "ナース"
-      ],
+      "outfit": [],
       "species": "人間",
       "mood": [
         "純愛寄り"
@@ -4946,9 +4932,7 @@
       ],
       "affiliationName": "永遠亭",
       "stature": null,
-      "occupation": [
-        "兵士・軍人"
-      ]
+      "occupation": []
     }
   },
   {
@@ -5028,7 +5012,7 @@
       ],
       "skinTone": "色白",
       "outfit": [
-        "制服"
+        "軍服"
       ],
       "species": "人間",
       "mood": [
@@ -5123,11 +5107,12 @@
         "長髪"
       ],
       "hairColor": [
+        "黒",
         "茶"
       ],
       "skinTone": "標準",
       "outfit": [
-        "軍服"
+        "和服・着物"
       ],
       "species": "人間",
       "mood": [
@@ -5171,6 +5156,7 @@
       ],
       "distance": "やや積極的",
       "looks": [
+        "長髪",
         "ツインテール"
       ],
       "hairColor": [
@@ -5226,7 +5212,7 @@
       ],
       "skinTone": "標準",
       "outfit": [
-        "制服"
+        "軍服"
       ],
       "species": "人間",
       "mood": [
@@ -5320,9 +5306,7 @@
         "茶"
       ],
       "skinTone": "標準",
-      "outfit": [
-        "軍服"
-      ],
+      "outfit": [],
       "species": "人間",
       "mood": [
         "純愛寄り"
@@ -5364,7 +5348,9 @@
         "姉"
       ],
       "distance": "積極的",
-      "looks": [],
+      "looks": [
+        "長髪"
+      ],
       "hairColor": [
         "緑"
       ],
@@ -5810,14 +5796,14 @@
         "主従"
       ],
       "distance": "中立",
-      "looks": [
-        "長髪"
-      ],
+      "looks": [],
       "hairColor": [
         "桃"
       ],
       "skinTone": "色白",
-      "outfit": [],
+      "outfit": [
+        "和服・着物"
+      ],
       "species": "不死",
       "mood": [
         "甘め"
@@ -5948,7 +5934,7 @@
     },
     "axes": {
       "genderExpression": "女性",
-      "ageFeel": "幼い",
+      "ageFeel": "同年代",
       "build": "華奢",
       "bust": "小さい",
       "personality": [
@@ -5956,7 +5942,7 @@
       ],
       "roles": [
         "先輩",
-        "母性"
+        "姉"
       ],
       "distance": "中立",
       "looks": [
@@ -6012,7 +5998,8 @@
       ],
       "distance": "やや積極的",
       "looks": [
-        "長髪"
+        "長髪",
+        "ツインテール"
       ],
       "hairColor": [
         "紫"
@@ -6063,7 +6050,9 @@
         "幼馴染"
       ],
       "distance": "やや受け身",
-      "looks": [],
+      "looks": [
+        "長髪"
+      ],
       "hairColor": [
         "茶"
       ],
@@ -6800,9 +6789,11 @@
       ],
       "roles": [],
       "distance": "積極的",
-      "looks": [],
+      "looks": [
+        "長髪"
+      ],
       "hairColor": [
-        "黒"
+        "茶"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -6842,7 +6833,8 @@
         "クール"
       ],
       "roles": [
-        "教師"
+        "教師",
+        "主従"
       ],
       "distance": "中立",
       "looks": [
@@ -6862,8 +6854,7 @@
       "affiliationName": null,
       "stature": null,
       "occupation": [
-        "医療従事者",
-        "研究者・発明家"
+        "医療従事者"
       ]
     },
     "reviewed": true,
@@ -7078,7 +7069,9 @@
       ],
       "roles": [],
       "distance": "受け身",
-      "looks": [],
+      "looks": [
+        "長髪"
+      ],
       "hairColor": [
         "金"
       ],
@@ -7168,7 +7161,9 @@
         "幼馴染"
       ],
       "distance": "積極的",
-      "looks": [],
+      "looks": [
+        "長髪"
+      ],
       "hairColor": [
         "桃"
       ],
@@ -7213,7 +7208,9 @@
         "ライバル"
       ],
       "distance": "積極的",
-      "looks": [],
+      "looks": [
+        "長髪"
+      ],
       "hairColor": [
         "桃"
       ],
@@ -7348,9 +7345,7 @@
       ],
       "roles": [],
       "distance": "中立",
-      "looks": [
-        "長髪"
-      ],
+      "looks": [],
       "hairColor": [
         "桃"
       ],
@@ -7440,7 +7435,9 @@
         "妹"
       ],
       "distance": "やや受け身",
-      "looks": [],
+      "looks": [
+        "長髪"
+      ],
       "hairColor": [
         "黒"
       ],
@@ -7485,7 +7482,9 @@
         "母性"
       ],
       "distance": "積極的",
-      "looks": [],
+      "looks": [
+        "長髪"
+      ],
       "hairColor": [
         "赤"
       ],
@@ -7530,7 +7529,9 @@
         "ライバル"
       ],
       "distance": "積極的",
-      "looks": [],
+      "looks": [
+        "長髪"
+      ],
       "hairColor": [
         "赤"
       ],
@@ -7625,7 +7626,10 @@
         "紫"
       ],
       "skinTone": "色白",
-      "outfit": [],
+      "outfit": [
+        "メイド",
+        "和服・着物"
+      ],
       "species": "魔族",
       "mood": [
         "従属的"
@@ -7758,7 +7762,9 @@
         "先輩"
       ],
       "distance": "やや受け身",
-      "looks": [],
+      "looks": [
+        "長髪"
+      ],
       "hairColor": [
         "桃"
       ],
@@ -7804,7 +7810,9 @@
         "後輩"
       ],
       "distance": "中立",
-      "looks": [],
+      "looks": [
+        "ケモミミ"
+      ],
       "hairColor": [
         "銀"
       ],
@@ -7844,7 +7852,7 @@
       "genderExpression": "女性",
       "ageFeel": "幼い",
       "build": "華奢",
-      "bust": "小さい",
+      "bust": "大きい",
       "personality": [
         "内気"
       ],
@@ -7896,6 +7904,7 @@
       "roles": [],
       "distance": "やや受け身",
       "looks": [
+        "角",
         "長髪"
       ],
       "hairColor": [
@@ -7940,9 +7949,7 @@
       ],
       "roles": [],
       "distance": "中立",
-      "looks": [
-        "長髪"
-      ],
+      "looks": [],
       "hairColor": [
         "青"
       ],
@@ -8034,6 +8041,7 @@
       ],
       "distance": "積極的",
       "looks": [
+        "長髪",
         "眼帯"
       ],
       "hairColor": [
@@ -8181,7 +8189,7 @@
         "支配的"
       ],
       "combat": "戦う",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "軍・組織",
       "affiliationName": null,
       "stature": null,
       "occupation": []
@@ -8215,7 +8223,9 @@
         "後輩"
       ],
       "distance": "中立",
-      "looks": [],
+      "looks": [
+        "長髪"
+      ],
       "hairColor": [
         "銀"
       ],
@@ -8489,7 +8499,9 @@
         "恋人・伴侶"
       ],
       "distance": "やや積極的",
-      "looks": [],
+      "looks": [
+        "長髪"
+      ],
       "hairColor": [
         "茶"
       ],
@@ -8500,12 +8512,10 @@
         "純愛寄り"
       ],
       "combat": "戦う",
-      "affiliationKind": "冒険者",
+      "affiliationKind": "軍・組織",
       "affiliationName": null,
       "stature": "標準",
-      "occupation": [
-        "兵士・軍人"
-      ]
+      "occupation": []
     },
     "reviewed": true,
     "hitomiQuery": {
@@ -8536,9 +8546,11 @@
         "ライバル"
       ],
       "distance": "やや受け身",
-      "looks": [],
+      "looks": [
+        "眼鏡"
+      ],
       "hairColor": [
-        "黒"
+        "青"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -8629,7 +8641,9 @@
         "後輩"
       ],
       "distance": "受け身",
-      "looks": [],
+      "looks": [
+        "ツインテール"
+      ],
       "hairColor": [
         "茶"
       ],
@@ -8724,7 +8738,10 @@
         "後輩"
       ],
       "distance": "積極的",
-      "looks": [],
+      "looks": [
+        "ケモミミ",
+        "尻尾"
+      ],
       "hairColor": [
         "茶"
       ],
@@ -8771,7 +8788,11 @@
         "先輩"
       ],
       "distance": "やや受け身",
-      "looks": [],
+      "looks": [
+        "ケモミミ",
+        "尻尾",
+        "長髪"
+      ],
       "hairColor": [
         "橙"
       ],
@@ -8818,7 +8839,12 @@
         "ライバル"
       ],
       "distance": "積極的",
-      "looks": [],
+      "looks": [
+        "ケモミミ",
+        "尻尾",
+        "長髪",
+        "ツインテール"
+      ],
       "hairColor": [
         "茶"
       ],
@@ -8863,7 +8889,11 @@
       ],
       "roles": [],
       "distance": "受け身",
-      "looks": [],
+      "looks": [
+        "ケモミミ",
+        "尻尾",
+        "長髪"
+      ],
       "hairColor": [
         "茶"
       ],
@@ -8908,7 +8938,10 @@
       ],
       "roles": [],
       "distance": "やや積極的",
-      "looks": [],
+      "looks": [
+        "ケモミミ",
+        "尻尾"
+      ],
       "hairColor": [
         "黒"
       ],
@@ -9062,10 +9095,13 @@
         "背徳寄り"
       ],
       "combat": "戦う",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "軍・組織",
       "affiliationName": null,
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "兵士・軍人",
+        "スパイ・暗殺者"
+      ]
     },
     "reviewed": true,
     "hitomiQuery": {
@@ -9151,13 +9187,15 @@
         "妹"
       ],
       "distance": "やや受け身",
-      "looks": [],
+      "looks": [
+        "長髪"
+      ],
       "hairColor": [
         "青"
       ],
       "skinTone": "色白",
       "outfit": [
-        "メイド"
+        "制服"
       ],
       "species": "人間",
       "mood": [],
@@ -9165,9 +9203,7 @@
       "affiliationKind": "学生",
       "affiliationName": "喫茶ラビットハウス",
       "stature": "小柄",
-      "occupation": [
-        "メイド・従者"
-      ]
+      "occupation": []
     },
     "reviewed": true,
     "provisional": false,
@@ -9201,13 +9237,16 @@
         "友人"
       ],
       "distance": "やや受け身",
-      "looks": [],
+      "looks": [
+        "長髪",
+        "ツインテール"
+      ],
       "hairColor": [
-        "黒"
+        "紫"
       ],
       "skinTone": "標準",
       "outfit": [
-        "メイド"
+        "制服"
       ],
       "species": "人間",
       "mood": [],
@@ -9215,10 +9254,7 @@
       "affiliationKind": "学生",
       "affiliationName": "フルール・ド・ラパン",
       "stature": "長身",
-      "occupation": [
-        "兵士・軍人",
-        "メイド・従者"
-      ]
+      "occupation": []
     },
     "reviewed": true,
     "provisional": false,
@@ -9255,7 +9291,8 @@
         "長髪"
       ],
       "hairColor": [
-        "黒"
+        "黒",
+        "茶"
       ],
       "skinTone": "標準",
       "outfit": [
@@ -9300,9 +9337,11 @@
         "妹"
       ],
       "distance": "やや受け身",
-      "looks": [],
+      "looks": [
+        "長髪"
+      ],
       "hairColor": [
-        "黒"
+        "桃"
       ],
       "skinTone": "標準",
       "outfit": [
@@ -9353,7 +9392,8 @@
         "長髪"
       ],
       "hairColor": [
-        "茶"
+        "青",
+        "桃"
       ],
       "skinTone": "標準",
       "outfit": [
@@ -9367,9 +9407,7 @@
       "affiliationKind": "学生",
       "affiliationName": null,
       "stature": "標準",
-      "occupation": [
-        "メイド・従者"
-      ]
+      "occupation": []
     },
     "reviewed": true,
     "provisional": false,
@@ -9585,7 +9623,7 @@
       "distance": "やや積極的",
       "looks": [],
       "hairColor": [
-        "紫"
+        "青"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -9629,10 +9667,11 @@
       ],
       "distance": "中立",
       "looks": [
-        "ケモミミ"
+        "長髪"
       ],
       "hairColor": [
-        "青"
+        "青",
+        "銀"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -9825,7 +9864,7 @@
         "尻尾"
       ],
       "hairColor": [
-        "紫"
+        "銀"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -9968,9 +10007,7 @@
         "紫"
       ],
       "skinTone": "標準",
-      "outfit": [
-        "和服・着物"
-      ],
+      "outfit": [],
       "species": "魔族",
       "mood": [],
       "combat": "戦う",
@@ -10011,15 +10048,13 @@
       ],
       "roles": [],
       "distance": "中立",
-      "looks": [
-        "長髪"
-      ],
+      "looks": [],
       "hairColor": [
-        "紫"
+        "黒"
       ],
       "skinTone": "標準",
       "outfit": [],
-      "species": "獣人",
+      "species": "魔族",
       "mood": [],
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
@@ -10057,11 +10092,9 @@
         "友人"
       ],
       "distance": "やや受け身",
-      "looks": [
-        "長髪"
-      ],
+      "looks": [],
       "hairColor": [
-        "緑"
+        "金"
       ],
       "skinTone": "色白",
       "outfit": [],
@@ -10112,9 +10145,7 @@
         "紫"
       ],
       "skinTone": "標準",
-      "outfit": [
-        "巫女"
-      ],
+      "outfit": [],
       "species": "不死",
       "mood": [
         "支配的"
@@ -10124,8 +10155,7 @@
       "affiliationName": "守矢神社",
       "stature": "標準",
       "occupation": [
-        "神様・精霊",
-        "巫女・神職"
+        "神様・精霊"
       ]
     },
     "reviewed": true,
@@ -10161,12 +10191,10 @@
         "長髪"
       ],
       "hairColor": [
-        "桃"
+        "緑"
       ],
       "skinTone": "色白",
-      "outfit": [
-        "和服・着物"
-      ],
+      "outfit": [],
       "species": "不死",
       "mood": [
         "甘め"
@@ -10257,9 +10285,9 @@
         "長髪"
       ],
       "hairColor": [
-        "茶"
+        "金"
       ],
-      "skinTone": "褐色",
+      "skinTone": "標準",
       "outfit": [],
       "species": "魔族",
       "mood": [],
@@ -10294,14 +10322,9 @@
       "personality": [
         "クール"
       ],
-      "roles": [
-        "教師"
-      ],
+      "roles": [],
       "distance": "中立",
-      "looks": [
-        "眼鏡",
-        "長髪"
-      ],
+      "looks": [],
       "hairColor": [
         "緑"
       ],
@@ -10316,9 +10339,7 @@
       "affiliationName": "四季映姫庁",
       "stature": "小柄",
       "occupation": [
-        "警察・公安",
-        "神様・精霊",
-        "王族・貴族"
+        "神様・精霊"
       ]
     },
     "reviewed": true,
@@ -10395,9 +10416,7 @@
         "妹"
       ],
       "distance": "中立",
-      "looks": [
-        "長髪"
-      ],
+      "looks": [],
       "hairColor": [
         "赤"
       ],
@@ -10441,10 +10460,11 @@
       "distance": "やや受け身",
       "looks": [
         "ケモミミ",
-        "尻尾"
+        "尻尾",
+        "長髪"
       ],
       "hairColor": [
-        "銀"
+        "茶"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -10487,14 +10507,15 @@
       ],
       "distance": "やや積極的",
       "looks": [
-        "ケモミミ"
+        "長髪",
+        "ツインテール"
       ],
       "hairColor": [
-        "紫"
+        "茶"
       ],
       "skinTone": "標準",
       "outfit": [],
-      "species": "獣人",
+      "species": "魔族",
       "mood": [],
       "combat": "戦う",
       "affiliationKind": "社会人",
@@ -10534,12 +10555,10 @@
         "長髪"
       ],
       "hairColor": [
-        "黒"
+        "桃"
       ],
       "skinTone": "標準",
-      "outfit": [
-        "和服・着物"
-      ],
+      "outfit": [],
       "species": "不死",
       "mood": [],
       "combat": "戦う",
@@ -10547,7 +10566,6 @@
       "affiliationName": null,
       "stature": "標準",
       "occupation": [
-        "医療従事者",
         "魔法使い・魔術師"
       ]
     },
@@ -10585,7 +10603,8 @@
         "長髪"
       ],
       "hairColor": [
-        "青"
+        "青",
+        "紫"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -10628,11 +10647,9 @@
         "主従"
       ],
       "distance": "積極的",
-      "looks": [
-        "長髪"
-      ],
+      "looks": [],
       "hairColor": [
-        "黒"
+        "青"
       ],
       "skinTone": "色白",
       "outfit": [],
@@ -10677,7 +10694,7 @@
       "roles": [],
       "distance": "積極的",
       "looks": [
-        "ツインテール"
+        "長髪"
       ],
       "hairColor": [
         "金"
@@ -10773,7 +10790,7 @@
         "長髪"
       ],
       "hairColor": [
-        "紫"
+        "黒"
       ],
       "skinTone": "色白",
       "outfit": [
@@ -10822,7 +10839,9 @@
         "友人"
       ],
       "distance": "やや積極的",
-      "looks": [],
+      "looks": [
+        "ツインテール"
+      ],
       "hairColor": [
         "桃"
       ],
@@ -10972,7 +10991,8 @@
       ],
       "distance": "やや受け身",
       "looks": [
-        "長髪"
+        "長髪",
+        "ツインテール"
       ],
       "hairColor": [
         "白"
@@ -11160,7 +11180,9 @@
         "友人"
       ],
       "distance": "積極的",
-      "looks": [],
+      "looks": [
+        "長髪"
+      ],
       "hairColor": [
         "橙",
         "金"
@@ -11216,7 +11238,7 @@
       ],
       "skinTone": "色白",
       "outfit": [
-        "軍服"
+        "制服"
       ],
       "species": "人間",
       "mood": [],
@@ -11260,11 +11282,11 @@
         "長髪"
       ],
       "hairColor": [
-        "銀"
+        "黒"
       ],
       "skinTone": "標準",
       "outfit": [
-        "軍服"
+        "制服"
       ],
       "species": "人間",
       "mood": [],
@@ -11305,15 +11327,14 @@
         "後輩"
       ],
       "distance": "積極的",
-      "looks": [
-        "長髪"
-      ],
+      "looks": [],
       "hairColor": [
+        "黒",
         "茶"
       ],
       "skinTone": "標準",
       "outfit": [
-        "軍服"
+        "制服"
       ],
       "species": "人間",
       "mood": [],
@@ -11346,22 +11367,20 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "標準",
+      "bust": "大きい",
       "personality": [
         "生意気"
       ],
       "roles": [],
       "distance": "やや積極的",
       "looks": [
-        "長髪"
+        "眼帯"
       ],
       "hairColor": [
-        "茶"
+        "紫"
       ],
       "skinTone": "標準",
-      "outfit": [
-        "軍服"
-      ],
+      "outfit": [],
       "species": "人間",
       "mood": [],
       "combat": "戦う",
@@ -11403,12 +11422,10 @@
         "長髪"
       ],
       "hairColor": [
-        "橙"
+        "黒"
       ],
       "skinTone": "標準",
-      "outfit": [
-        "軍服"
-      ],
+      "outfit": [],
       "species": "人間",
       "mood": [],
       "combat": "戦う",
@@ -11450,11 +11467,11 @@
         "長髪"
       ],
       "hairColor": [
-        "紫"
+        "銀"
       ],
       "skinTone": "標準",
       "outfit": [
-        "軍服"
+        "制服"
       ],
       "species": "人間",
       "mood": [],
@@ -11498,7 +11515,7 @@
         "長髪"
       ],
       "hairColor": [
-        "黒"
+        "茶"
       ],
       "skinTone": "標準",
       "outfit": [
@@ -11550,11 +11567,12 @@
         "長髪"
       ],
       "hairColor": [
-        "黒"
+        "白",
+        "銀"
       ],
       "skinTone": "色白",
       "outfit": [
-        "軍服"
+        "和服・着物"
       ],
       "species": "人間",
       "mood": [
@@ -11601,11 +11619,11 @@
         "長髪"
       ],
       "hairColor": [
-        "茶"
+        "黒"
       ],
       "skinTone": "標準",
       "outfit": [
-        "軍服"
+        "制服"
       ],
       "species": "人間",
       "mood": [],
@@ -11646,7 +11664,8 @@
       "roles": [],
       "distance": "やや積極的",
       "looks": [
-        "長髪"
+        "長髪",
+        "ツインテール"
       ],
       "hairColor": [
         "金"
@@ -11702,9 +11721,7 @@
         "金"
       ],
       "skinTone": "標準",
-      "outfit": [
-        "軍服"
-      ],
+      "outfit": [],
       "species": "人間",
       "mood": [],
       "combat": "戦う",
@@ -11788,7 +11805,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "標準",
+      "bust": "とても大きい",
       "personality": [
         "おっとり",
         "内気"
@@ -11799,12 +11816,10 @@
         "長髪"
       ],
       "hairColor": [
-        "茶"
+        "桃"
       ],
       "skinTone": "標準",
-      "outfit": [
-        "軍服"
-      ],
+      "outfit": [],
       "species": "人間",
       "mood": [],
       "combat": "戦う",
@@ -11845,15 +11860,14 @@
       ],
       "distance": "中立",
       "looks": [
-        "長髪"
+        "長髪",
+        "ツインテール"
       ],
       "hairColor": [
-        "茶"
+        "銀"
       ],
       "skinTone": "色白",
-      "outfit": [
-        "軍服"
-      ],
+      "outfit": [],
       "species": "人間",
       "mood": [
         "甘め"
@@ -11898,7 +11912,8 @@
         "長髪"
       ],
       "hairColor": [
-        "金"
+        "白",
+        "銀"
       ],
       "skinTone": "色白",
       "outfit": [
@@ -11947,6 +11962,7 @@
       ],
       "distance": "積極的",
       "looks": [
+        "ケモミミ",
         "長髪"
       ],
       "hairColor": [
@@ -11954,9 +11970,9 @@
       ],
       "skinTone": "標準",
       "outfit": [
-        "和服・着物"
+        "軍服"
       ],
-      "species": "人間",
+      "species": "獣人",
       "mood": [
         "甘め"
       ],
@@ -12002,7 +12018,7 @@
         "長髪"
       ],
       "hairColor": [
-        "銀"
+        "白"
       ],
       "skinTone": "色白",
       "outfit": [
@@ -12055,7 +12071,7 @@
         "長髪"
       ],
       "hairColor": [
-        "紫"
+        "白"
       ],
       "skinTone": "標準",
       "outfit": [
@@ -12101,11 +12117,10 @@
       "roles": [],
       "distance": "積極的",
       "looks": [
-        "角",
         "長髪"
       ],
       "hairColor": [
-        "白"
+        "紫"
       ],
       "skinTone": "色白",
       "outfit": [
@@ -12157,12 +12172,10 @@
         "長髪"
       ],
       "hairColor": [
-        "茶"
+        "白"
       ],
       "skinTone": "標準",
-      "outfit": [
-        "軍服"
-      ],
+      "outfit": [],
       "species": "人間",
       "mood": [],
       "combat": "戦う",
@@ -12249,9 +12262,7 @@
         "妹"
       ],
       "distance": "やや積極的",
-      "looks": [
-        "ツインテール"
-      ],
+      "looks": [],
       "hairColor": [
         "桃"
       ],
@@ -12300,9 +12311,7 @@
         "後輩"
       ],
       "distance": "やや受け身",
-      "looks": [
-        "ツインテール"
-      ],
+      "looks": [],
       "hairColor": [
         "金"
       ],
@@ -12445,7 +12454,7 @@
         "長髪"
       ],
       "hairColor": [
-        "茶"
+        "黒"
       ],
       "skinTone": "色白",
       "outfit": [],
@@ -12495,7 +12504,7 @@
       "hairColor": [
         "桃"
       ],
-      "skinTone": "褐色",
+      "skinTone": "標準",
       "outfit": [],
       "species": "人間",
       "mood": [],
@@ -12555,7 +12564,6 @@
       "affiliationName": null,
       "stature": "標準",
       "occupation": [
-        "格闘家・武道家",
         "アイドル・芸能"
       ]
     },
@@ -12646,7 +12654,7 @@
       "hairColor": [
         "金"
       ],
-      "skinTone": "褐色",
+      "skinTone": "標準",
       "outfit": [],
       "species": "人間",
       "mood": [],
@@ -12689,9 +12697,7 @@
         "恋人・伴侶"
       ],
       "distance": "やや受け身",
-      "looks": [
-        "長髪"
-      ],
+      "looks": [],
       "hairColor": [
         "紫"
       ],
@@ -12703,11 +12709,10 @@
         "純愛寄り"
       ],
       "combat": "戦う",
-      "affiliationKind": "社会人",
+      "affiliationKind": "軍・組織",
       "affiliationName": "カルデア",
       "stature": "標準",
       "occupation": [
-        "兵士・軍人",
         "会社員・OL"
       ]
     },
@@ -12745,9 +12750,7 @@
         "金"
       ],
       "skinTone": "色白",
-      "outfit": [
-        "軍服"
-      ],
+      "outfit": [],
       "species": "人間",
       "mood": [
         "純愛寄り"
@@ -12782,18 +12785,16 @@
       "genderExpression": "女性",
       "ageFeel": "幼い",
       "build": "華奢",
-      "bust": "小さい",
+      "bust": "大きい",
       "personality": [
         "元気",
         "生意気"
       ],
       "roles": [],
       "distance": "積極的",
-      "looks": [
-        "長髪"
-      ],
+      "looks": [],
       "hairColor": [
-        "茶"
+        "金"
       ],
       "skinTone": "標準",
       "outfit": [
@@ -12831,17 +12832,19 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "標準",
+      "bust": "大きい",
       "personality": [
         "元気"
       ],
       "roles": [],
       "distance": "積極的",
-      "looks": [],
-      "hairColor": [
-        "白"
+      "looks": [
+        "長髪"
       ],
-      "skinTone": "褐色",
+      "hairColor": [
+        "桃"
+      ],
+      "skinTone": "標準",
       "outfit": [
         "和服・着物"
       ],
@@ -12885,6 +12888,7 @@
       "roles": [],
       "distance": "積極的",
       "looks": [
+        "ケモミミ",
         "長髪"
       ],
       "hairColor": [
@@ -12892,13 +12896,13 @@
       ],
       "skinTone": "褐色",
       "outfit": [],
-      "species": "人間",
+      "species": "獣人",
       "mood": [
         "支配的"
       ],
       "combat": "戦う",
       "affiliationKind": "非人間・その他",
-      "affiliationName": null,
+      "affiliationName": "カルデア",
       "stature": "長身",
       "occupation": [
         "王族・貴族",
@@ -12983,7 +12987,7 @@
         "ツインテール"
       ],
       "hairColor": [
-        "茶"
+        "金"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -13080,9 +13084,10 @@
         "長髪"
       ],
       "hairColor": [
+        "桃",
         "紫"
       ],
-      "skinTone": "褐色",
+      "skinTone": "標準",
       "outfit": [],
       "species": "人間",
       "mood": [],
@@ -13126,7 +13131,7 @@
         "長髪"
       ],
       "hairColor": [
-        "橙"
+        "茶"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -13172,14 +13177,14 @@
         "長髪"
       ],
       "hairColor": [
-        "白"
+        "銀"
       ],
       "skinTone": "色白",
       "outfit": [],
       "species": "人間",
       "mood": [],
       "combat": "戦う",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "軍・組織",
       "affiliationName": null,
       "stature": "小柄",
       "occupation": []
@@ -13215,7 +13220,7 @@
         "長髪"
       ],
       "hairColor": [
-        "金"
+        "桃"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -13260,10 +13265,11 @@
       "roles": [],
       "distance": "積極的",
       "looks": [
-        "長髪"
+        "長髪",
+        "ツインテール"
       ],
       "hairColor": [
-        "桃"
+        "白"
       ],
       "skinTone": "色白",
       "outfit": [],
@@ -13272,7 +13278,7 @@
         "背徳寄り"
       ],
       "combat": "戦う",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "軍・組織",
       "affiliationName": null,
       "stature": "標準",
       "occupation": [
@@ -13311,7 +13317,7 @@
         "長髪"
       ],
       "hairColor": [
-        "紫"
+        "茶"
       ],
       "skinTone": "色白",
       "outfit": [],
@@ -13357,7 +13363,7 @@
         "長髪"
       ],
       "hairColor": [
-        "白"
+        "紫"
       ],
       "skinTone": "色白",
       "outfit": [],
@@ -13403,7 +13409,7 @@
         "長髪"
       ],
       "hairColor": [
-        "紫"
+        "茶"
       ],
       "skinTone": "色白",
       "outfit": [],
@@ -13412,7 +13418,7 @@
         "支配的"
       ],
       "combat": "戦う",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "軍・組織",
       "affiliationName": "天才たちの宇宙ステーション",
       "stature": "長身",
       "occupation": [
@@ -13454,11 +13460,11 @@
         "長髪"
       ],
       "hairColor": [
-        "橙"
+        "茶"
       ],
       "skinTone": "標準",
       "outfit": [],
-      "species": "人間",
+      "species": "獣人",
       "mood": [],
       "combat": "戦う",
       "affiliationKind": "軍・組織",
@@ -13497,7 +13503,8 @@
       "distance": "中立",
       "looks": [
         "ケモミミ",
-        "尻尾"
+        "尻尾",
+        "長髪"
       ],
       "hairColor": [
         "黒"
@@ -13536,17 +13543,19 @@
       "genderExpression": "女性",
       "ageFeel": "年上",
       "build": "標準",
-      "bust": "大きい",
+      "bust": "小さい",
       "personality": [
         "クール"
       ],
       "roles": [],
       "distance": "中立",
       "looks": [
+        "ケモミミ",
+        "尻尾",
         "長髪"
       ],
       "hairColor": [
-        "白"
+        "金"
       ],
       "skinTone": "色白",
       "outfit": [],
@@ -13555,7 +13564,7 @@
       "combat": "戦う",
       "affiliationKind": "軍・組織",
       "affiliationName": "ロドスアイランド製薬",
-      "stature": "長身",
+      "stature": "小柄",
       "occupation": [
         "医療従事者",
         "兵士・軍人"
@@ -13593,7 +13602,7 @@
         "長髪"
       ],
       "hairColor": [
-        "桃"
+        "赤"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -13636,7 +13645,8 @@
       "roles": [],
       "distance": "積極的",
       "looks": [
-        "長髪"
+        "長髪",
+        "ツインテール"
       ],
       "hairColor": [
         "赤"
@@ -13746,7 +13756,7 @@
       "species": "人間",
       "mood": [],
       "combat": "戦わない",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "社会人",
       "affiliationName": "ホロライブ",
       "stature": "標準",
       "occupation": [
@@ -13790,7 +13800,8 @@
         "長髪"
       ],
       "hairColor": [
-        "白"
+        "白",
+        "青"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -13837,11 +13848,10 @@
       "distance": "中立",
       "looks": [
         "ケモミミ",
-        "尻尾",
-        "長髪"
+        "尻尾"
       ],
       "hairColor": [
-        "橙"
+        "紫"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -13896,7 +13906,7 @@
       "species": "人間",
       "mood": [],
       "combat": "戦わない",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "社会人",
       "affiliationName": "ホロライブ",
       "stature": "標準",
       "occupation": [
@@ -13936,7 +13946,9 @@
       "distance": "積極的",
       "looks": [
         "角",
-        "長髪"
+        "尻尾",
+        "長髪",
+        "ツインテール"
       ],
       "hairColor": [
         "紫"
@@ -13977,7 +13989,7 @@
       "genderExpression": "女性",
       "ageFeel": "幼い",
       "build": "華奢",
-      "bust": "小さい",
+      "bust": "大きい",
       "personality": [
         "元気",
         "内気"
@@ -13985,13 +13997,17 @@
       "roles": [],
       "distance": "やや受け身",
       "looks": [
+        "長髪",
         "ツインテール"
       ],
       "hairColor": [
-        "青"
+        "青",
+        "桃"
       ],
       "skinTone": "色白",
-      "outfit": [],
+      "outfit": [
+        "メイド"
+      ],
       "species": "人間",
       "mood": [],
       "combat": "戦わない",
@@ -14040,7 +14056,7 @@
         "長髪"
       ],
       "hairColor": [
-        "紫"
+        "黒"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -14087,7 +14103,8 @@
       "distance": "積極的",
       "looks": [],
       "hairColor": [
-        "橙"
+        "黒",
+        "茶"
       ],
       "skinTone": "標準",
       "outfit": [
@@ -14096,7 +14113,7 @@
       "species": "人間",
       "mood": [],
       "combat": "戦わない",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "学生",
       "affiliationName": "ホロライブ",
       "stature": "標準",
       "occupation": [
@@ -14124,7 +14141,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "大きい",
+      "bust": "小さい",
       "personality": [
         "おっとり",
         "内気"
@@ -14138,7 +14155,8 @@
         "長髪"
       ],
       "hairColor": [
-        "青"
+        "青",
+        "銀"
       ],
       "skinTone": "色白",
       "outfit": [],
@@ -14147,12 +14165,11 @@
         "甘め"
       ],
       "combat": "戦わない",
-      "affiliationKind": "社会人",
+      "affiliationKind": "学生",
       "affiliationName": "ホロライブ",
       "stature": "標準",
       "occupation": [
-        "アイドル・芸能",
-        "巫女・神職"
+        "アイドル・芸能"
       ]
     },
     "reviewed": true,
@@ -14186,15 +14203,14 @@
       ],
       "distance": "やや受け身",
       "looks": [
-        "角",
         "長髪"
       ],
       "hairColor": [
-        "白"
+        "青"
       ],
       "skinTone": "色白",
       "outfit": [],
-      "species": "魔族",
+      "species": "エルフ",
       "mood": [],
       "combat": "戦わない",
       "affiliationKind": "社会人",
@@ -14283,22 +14299,18 @@
       ],
       "roles": [],
       "distance": "やや受け身",
-      "looks": [
-        "長髪"
-      ],
+      "looks": [],
       "hairColor": [
         "銀"
       ],
       "skinTone": "色白",
-      "outfit": [
-        "軍服"
-      ],
+      "outfit": [],
       "species": "人間",
       "mood": [
         "甘め"
       ],
       "combat": "戦う",
-      "affiliationKind": "社会人",
+      "affiliationKind": "軍・組織",
       "affiliationName": "ホロライブ",
       "stature": "長身",
       "occupation": [
@@ -14337,15 +14349,14 @@
       ],
       "distance": "積極的",
       "looks": [
-        "ケモミミ",
         "長髪"
       ],
       "hairColor": [
-        "黒"
+        "銀"
       ],
       "skinTone": "標準",
       "outfit": [],
-      "species": "獣人",
+      "species": "人間",
       "mood": [],
       "combat": "戦わない",
       "affiliationKind": "軍・組織",
@@ -14377,7 +14388,7 @@
       "genderExpression": "女性",
       "ageFeel": "年上",
       "build": "標準",
-      "bust": "標準",
+      "bust": "大きい",
       "personality": [
         "元気",
         "生意気"
@@ -14386,10 +14397,11 @@
       "distance": "積極的",
       "looks": [
         "ケモミミ",
+        "尻尾",
         "長髪"
       ],
       "hairColor": [
-        "金"
+        "銀"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -14437,7 +14449,8 @@
         "長髪"
       ],
       "hairColor": [
-        "紫"
+        "紫",
+        "銀"
       ],
       "skinTone": "色白",
       "outfit": [],
@@ -14474,7 +14487,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "大きい",
+      "bust": "標準",
       "personality": [
         "クール",
         "むっつり"
@@ -14488,7 +14501,8 @@
         "長髪"
       ],
       "hairColor": [
-        "紫"
+        "白",
+        "赤"
       ],
       "skinTone": "色白",
       "outfit": [
@@ -14537,13 +14551,12 @@
       ],
       "distance": "中立",
       "looks": [
-        "ケモミミ",
         "長髪"
       ],
       "hairColor": [
-        "赤"
+        "金"
       ],
-      "skinTone": "標準",
+      "skinTone": "褐色",
       "outfit": [],
       "species": "エルフ",
       "mood": [],
@@ -14585,10 +14598,10 @@
       "roles": [],
       "distance": "積極的",
       "looks": [
-        "ツインテール"
+        "長髪"
       ],
       "hairColor": [
-        "紫"
+        "銀"
       ],
       "skinTone": "色白",
       "outfit": [],
@@ -14634,6 +14647,7 @@
       "distance": "積極的",
       "looks": [
         "ケモミミ",
+        "尻尾",
         "長髪"
       ],
       "hairColor": [
@@ -14673,7 +14687,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "大きい",
+      "bust": "小さい",
       "personality": [
         "むっつり",
         "内気",
@@ -14726,25 +14740,23 @@
       "genderExpression": "女性",
       "ageFeel": "幼い",
       "build": "標準",
-      "bust": "大きい",
+      "bust": "小さい",
       "personality": [
         "元気",
         "生意気"
       ],
       "roles": [],
       "distance": "積極的",
-      "looks": [
-        "ツインテール"
-      ],
+      "looks": [],
       "hairColor": [
-        "橙"
+        "茶"
       ],
       "skinTone": "標準",
       "outfit": [],
       "species": "人間",
       "mood": [],
       "combat": "戦わない",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "学生",
       "affiliationName": "ホロライブ",
       "stature": "標準",
       "occupation": [
@@ -14783,7 +14795,7 @@
         "長髪"
       ],
       "hairColor": [
-        "紫"
+        "金"
       ],
       "skinTone": "標準",
       "outfit": [
@@ -14835,14 +14847,15 @@
         "長髪"
       ],
       "hairColor": [
-        "青"
+        "黒",
+        "桃"
       ],
       "skinTone": "色白",
       "outfit": [],
       "species": "人間",
       "mood": [],
       "combat": "戦わない",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "社会人",
       "affiliationName": "ホロライブ",
       "stature": "標準",
       "occupation": [
@@ -14878,6 +14891,7 @@
       "roles": [],
       "distance": "やや積極的",
       "looks": [
+        "尻尾",
         "長髪"
       ],
       "hairColor": [
@@ -14926,7 +14940,7 @@
         "長髪"
       ],
       "hairColor": [
-        "黒"
+        "青"
       ],
       "skinTone": "色白",
       "outfit": [],
@@ -15116,7 +15130,8 @@
         "長髪"
       ],
       "hairColor": [
-        "紫"
+        "黒",
+        "銀"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -15160,6 +15175,7 @@
       "roles": [],
       "distance": "中立",
       "looks": [
+        "角",
         "長髪"
       ],
       "hairColor": [
@@ -15209,6 +15225,7 @@
       "distance": "積極的",
       "looks": [
         "ケモミミ",
+        "尻尾",
         "長髪"
       ],
       "hairColor": [
@@ -15249,17 +15266,14 @@
       "genderExpression": "女性",
       "ageFeel": "幼い",
       "build": "華奢",
-      "bust": "小さい",
+      "bust": "標準",
       "personality": [
         "元気",
         "生意気"
       ],
       "roles": [],
       "distance": "やや積極的",
-      "looks": [
-        "眼鏡",
-        "ツインテール"
-      ],
+      "looks": [],
       "hairColor": [
         "金"
       ],
@@ -15272,9 +15286,7 @@
       "affiliationName": "ホロライブEN",
       "stature": "小柄",
       "occupation": [
-        "スパイ・暗殺者",
-        "アイドル・芸能",
-        "警察・公安"
+        "アイドル・芸能"
       ]
     },
     "reviewed": true,
@@ -15305,6 +15317,7 @@
       "roles": [],
       "distance": "積極的",
       "looks": [
+        "角",
         "長髪"
       ],
       "hairColor": [
@@ -15396,7 +15409,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "華奢",
-      "bust": "大きい",
+      "bust": "小さい",
       "personality": [
         "おっとり"
       ],
@@ -15406,7 +15419,7 @@
         "長髪"
       ],
       "hairColor": [
-        "白"
+        "黒"
       ],
       "skinTone": "色白",
       "outfit": [
@@ -15441,7 +15454,7 @@
       "genderExpression": "女性",
       "ageFeel": "幼い",
       "build": "華奢",
-      "bust": "とても大きい",
+      "bust": "小さい",
       "personality": [
         "元気",
         "おっとり"
@@ -15451,26 +15464,25 @@
       ],
       "distance": "積極的",
       "looks": [
-        "眼鏡",
+        "ケモミミ",
         "長髪"
       ],
       "hairColor": [
-        "紫"
+        "橙"
       ],
       "skinTone": "標準",
       "outfit": [
         "制服"
       ],
-      "species": "人間",
+      "species": "獣人",
       "mood": [
         "甘め"
       ],
       "combat": "戦う",
       "affiliationKind": "学生",
-      "affiliationName": "百鬼夜行学園",
+      "affiliationName": "トリニティ総合学園",
       "stature": "小柄",
       "occupation": [
-        "研究者・発明家",
         "巫女・神職"
       ]
     },
@@ -15505,16 +15517,16 @@
       ],
       "distance": "積極的",
       "looks": [
-        "長髪"
+        "ケモミミ"
       ],
       "hairColor": [
-        "茶"
+        "黒"
       ],
       "skinTone": "標準",
       "outfit": [
         "制服"
       ],
-      "species": "人間",
+      "species": "獣人",
       "mood": [],
       "combat": "戦う",
       "affiliationKind": "学生",
@@ -15545,7 +15557,7 @@
       "genderExpression": "女性",
       "ageFeel": "幼い",
       "build": "標準",
-      "bust": "大きい",
+      "bust": "小さい",
       "personality": [
         "おっとり",
         "生意気"
@@ -15555,10 +15567,11 @@
       ],
       "distance": "やや受け身",
       "looks": [
-        "長髪"
+        "長髪",
+        "ツインテール"
       ],
       "hairColor": [
-        "紫"
+        "桃"
       ],
       "skinTone": "色白",
       "outfit": [
@@ -15595,7 +15608,7 @@
       "genderExpression": "女性",
       "ageFeel": "年上",
       "build": "標準",
-      "bust": "大きい",
+      "bust": "小さい",
       "personality": [
         "おっとり",
         "クール"
@@ -15605,10 +15618,12 @@
       ],
       "distance": "中立",
       "looks": [
+        "ケモミミ",
+        "尻尾",
         "長髪"
       ],
       "hairColor": [
-        "白"
+        "金"
       ],
       "skinTone": "色白",
       "outfit": [
@@ -15653,9 +15668,9 @@
         "長髪"
       ],
       "hairColor": [
-        "茶"
+        "黒"
       ],
-      "skinTone": "標準",
+      "skinTone": "褐色",
       "outfit": [
         "制服"
       ],
@@ -15787,6 +15802,7 @@
       ],
       "distance": "積極的",
       "looks": [
+        "角",
         "長髪"
       ],
       "hairColor": [
@@ -15796,15 +15812,13 @@
       "outfit": [
         "制服"
       ],
-      "species": "人間",
+      "species": "魔族",
       "mood": [],
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": null,
       "stature": "標準",
-      "occupation": [
-        "会社員・OL"
-      ]
+      "occupation": []
     },
     "reviewed": true,
     "provisional": false,
@@ -15883,16 +15897,18 @@
       "roles": [],
       "distance": "中立",
       "looks": [
-        "長髪"
+        "尻尾",
+        "長髪",
+        "ツインテール"
       ],
       "hairColor": [
-        "茶"
+        "緑"
       ],
       "skinTone": "標準",
       "outfit": [
         "制服"
       ],
-      "species": "人間",
+      "species": "獣人",
       "mood": [
         "甘め"
       ],
@@ -15932,24 +15948,23 @@
       ],
       "distance": "中立",
       "looks": [
+        "ケモミミ",
         "長髪"
       ],
       "hairColor": [
-        "黒"
+        "金"
       ],
       "skinTone": "標準",
       "outfit": [
-        "制服",
-        "和服・着物"
+        "制服"
       ],
-      "species": "人間",
+      "species": "獣人",
       "mood": [],
       "combat": "戦う",
       "affiliationKind": "学生",
       "affiliationName": null,
       "stature": "標準",
       "occupation": [
-        "格闘家・武道家",
         "警察・公安"
       ]
     },
@@ -15987,7 +16002,7 @@
         "長髪"
       ],
       "hairColor": [
-        "緑"
+        "金"
       ],
       "skinTone": "標準",
       "outfit": [
@@ -15997,7 +16012,7 @@
       "mood": [],
       "combat": "戦う",
       "affiliationKind": "学生",
-      "affiliationName": "トリニティ総合学園",
+      "affiliationName": "ミレニアムサイエンススクール",
       "stature": "小柄",
       "occupation": []
     },
@@ -16022,7 +16037,7 @@
       "genderExpression": "女性",
       "ageFeel": "年上",
       "build": "標準",
-      "bust": "大きい",
+      "bust": "小さい",
       "personality": [
         "クール",
         "姉御"
@@ -16084,7 +16099,8 @@
         "長髪"
       ],
       "hairColor": [
-        "紫"
+        "黒",
+        "青"
       ],
       "skinTone": "標準",
       "outfit": [
@@ -16132,16 +16148,17 @@
       ],
       "distance": "積極的",
       "looks": [
+        "尻尾",
         "長髪"
       ],
       "hairColor": [
-        "茶"
+        "緑"
       ],
       "skinTone": "標準",
       "outfit": [
         "制服"
       ],
-      "species": "人間",
+      "species": "獣人",
       "mood": [],
       "combat": "戦う",
       "affiliationKind": "学生",
@@ -16170,7 +16187,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "大きい",
+      "bust": "小さい",
       "personality": [
         "おっとり"
       ],
@@ -16180,11 +16197,12 @@
         "長髪"
       ],
       "hairColor": [
-        "金"
+        "金",
+        "橙"
       ],
       "skinTone": "色白",
       "outfit": [
-        "制服"
+        "メイド"
       ],
       "species": "人間",
       "mood": [],
@@ -16192,7 +16210,9 @@
       "affiliationKind": "学生",
       "affiliationName": null,
       "stature": "小柄",
-      "occupation": []
+      "occupation": [
+        "メイド・従者"
+      ]
     },
     "reviewed": true,
     "provisional": false,
@@ -16225,7 +16245,7 @@
         "長髪"
       ],
       "hairColor": [
-        "茶"
+        "黒"
       ],
       "skinTone": "標準",
       "outfit": [
@@ -16272,15 +16292,16 @@
       ],
       "distance": "やや受け身",
       "looks": [
+        "角",
+        "尻尾",
         "長髪"
       ],
       "hairColor": [
-        "黒"
+        "金"
       ],
       "skinTone": "標準",
       "outfit": [
-        "制服",
-        "和服・着物"
+        "制服"
       ],
       "species": "魔族",
       "mood": [],
@@ -16330,8 +16351,7 @@
       ],
       "skinTone": "色白",
       "outfit": [
-        "制服",
-        "和服・着物"
+        "制服"
       ],
       "species": "人間",
       "mood": [
@@ -16426,13 +16446,15 @@
       "distance": "中立",
       "looks": [
         "ケモミミ",
+        "尻尾",
         "長髪"
       ],
       "hairColor": [
-        "白"
+        "茶"
       ],
       "skinTone": "標準",
       "outfit": [
+        "制服",
         "和服・着物"
       ],
       "species": "獣人",
@@ -16466,7 +16488,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "大きい",
+      "bust": "小さい",
       "personality": [
         "おっとり",
         "内気"
@@ -16525,10 +16547,11 @@
       "distance": "やや受け身",
       "looks": [
         "ケモミミ",
-        "尻尾"
+        "尻尾",
+        "長髪"
       ],
       "hairColor": [
-        "茶"
+        "黒"
       ],
       "skinTone": "標準",
       "outfit": [
@@ -16575,16 +16598,18 @@
       "roles": [],
       "distance": "積極的",
       "looks": [
-        "長髪"
+        "ケモミミ",
+        "尻尾"
       ],
       "hairColor": [
-        "紫"
+        "黒"
       ],
       "skinTone": "標準",
       "outfit": [
+        "制服",
         "和服・着物"
       ],
-      "species": "人間",
+      "species": "獣人",
       "mood": [
         "支配的"
       ],
@@ -16630,7 +16655,7 @@
         "長髪"
       ],
       "hairColor": [
-        "金"
+        "赤"
       ],
       "skinTone": "標準",
       "outfit": [
@@ -16672,12 +16697,14 @@
       "roles": [],
       "distance": "積極的",
       "looks": [
-        "長髪"
+        "尻尾",
+        "長髪",
+        "ツインテール"
       ],
       "hairColor": [
         "銀"
       ],
-      "skinTone": "色白",
+      "skinTone": "褐色",
       "outfit": [
         "制服"
       ],
@@ -16727,7 +16754,7 @@
         "長髪"
       ],
       "hairColor": [
-        "黒"
+        "赤"
       ],
       "skinTone": "標準",
       "outfit": [
@@ -16773,21 +16800,23 @@
       "roles": [],
       "distance": "積極的",
       "looks": [
-        "長髪"
+        "尻尾"
       ],
       "hairColor": [
         "黒"
       ],
       "skinTone": "色白",
-      "outfit": [],
-      "species": "人間",
+      "outfit": [
+        "メイド"
+      ],
+      "species": "獣人",
       "mood": [],
       "combat": "戦う",
-      "affiliationKind": "軍・組織",
+      "affiliationKind": "学生",
       "affiliationName": null,
       "stature": "標準",
       "occupation": [
-        "兵士・軍人"
+        "メイド・従者"
       ]
     },
     "reviewed": true,
@@ -16819,6 +16848,8 @@
       "roles": [],
       "distance": "積極的",
       "looks": [
+        "ケモミミ",
+        "尻尾",
         "長髪"
       ],
       "hairColor": [
@@ -16826,15 +16857,14 @@
       ],
       "skinTone": "標準",
       "outfit": [],
-      "species": "人間",
+      "species": "獣人",
       "mood": [],
       "combat": "戦う",
       "affiliationKind": "軍・組織",
       "affiliationName": null,
       "stature": "標準",
       "occupation": [
-        "格闘家・武道家",
-        "兵士・軍人"
+        "警察・公安"
       ]
     },
     "reviewed": true,
@@ -16867,7 +16897,6 @@
       ],
       "distance": "中立",
       "looks": [
-        "ケモミミ",
         "長髪"
       ],
       "hairColor": [
@@ -16914,7 +16943,6 @@
       "roles": [],
       "distance": "積極的",
       "looks": [
-        "ケモミミ",
         "長髪"
       ],
       "hairColor": [
@@ -16928,9 +16956,7 @@
       "affiliationKind": "社会人",
       "affiliationName": null,
       "stature": "標準",
-      "occupation": [
-        "会社員・OL"
-      ]
+      "occupation": []
     },
     "reviewed": true,
     "provisional": false,
@@ -16960,10 +16986,7 @@
       ],
       "roles": [],
       "distance": "積極的",
-      "looks": [
-        "角",
-        "長髪"
-      ],
+      "looks": [],
       "hairColor": [
         "金"
       ],
@@ -17002,15 +17025,13 @@
       "genderExpression": "女性",
       "ageFeel": "幼い",
       "build": "華奢",
-      "bust": "小さい",
+      "bust": "大きい",
       "personality": [
         "おっとり"
       ],
       "roles": [],
       "distance": "中立",
-      "looks": [
-        "長髪"
-      ],
+      "looks": [],
       "hairColor": [
         "桃"
       ],
@@ -17019,10 +17040,12 @@
       "species": "人間",
       "mood": [],
       "combat": "戦う",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "軍・組織",
       "affiliationName": null,
       "stature": "小柄",
-      "occupation": []
+      "occupation": [
+        "兵士・軍人"
+      ]
     },
     "reviewed": true,
     "provisional": false,
@@ -17058,9 +17081,7 @@
         "黒"
       ],
       "skinTone": "標準",
-      "outfit": [
-        "軍服"
-      ],
+      "outfit": [],
       "species": "人間",
       "mood": [],
       "combat": "戦う",
@@ -17102,7 +17123,7 @@
         "長髪"
       ],
       "hairColor": [
-        "茶"
+        "緑"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -17148,9 +17169,7 @@
         "白"
       ],
       "skinTone": "標準",
-      "outfit": [
-        "和服・着物"
-      ],
+      "outfit": [],
       "species": "人間",
       "mood": [],
       "combat": "戦う",
@@ -17190,12 +17209,12 @@
       "roles": [],
       "distance": "積極的",
       "looks": [
-        "長髪"
+        "ツインテール"
       ],
       "hairColor": [
-        "橙"
+        "金"
       ],
-      "skinTone": "褐色",
+      "skinTone": "標準",
       "outfit": [],
       "species": "人間",
       "mood": [],
@@ -17285,7 +17304,8 @@
       ],
       "distance": "中立",
       "looks": [
-        "長髪"
+        "長髪",
+        "ツインテール"
       ],
       "hairColor": [
         "黒"
@@ -17376,9 +17396,7 @@
       ],
       "roles": [],
       "distance": "積極的",
-      "looks": [
-        "ツインテール"
-      ],
+      "looks": [],
       "hairColor": [
         "橙"
       ],
@@ -17424,6 +17442,7 @@
         "長髪"
       ],
       "hairColor": [
+        "黒",
         "青"
       ],
       "skinTone": "褐色",
@@ -17467,9 +17486,9 @@
       "distance": "中立",
       "looks": [],
       "hairColor": [
-        "桃"
+        "銀"
       ],
-      "skinTone": "標準",
+      "skinTone": "褐色",
       "outfit": [],
       "species": "人間",
       "mood": [],
@@ -17510,9 +17529,7 @@
       ],
       "roles": [],
       "distance": "やや受け身",
-      "looks": [
-        "長髪"
-      ],
+      "looks": [],
       "hairColor": [
         "青"
       ],
@@ -17557,10 +17574,12 @@
       ],
       "distance": "積極的",
       "looks": [
+        "長髪",
         "ツインテール"
       ],
       "hairColor": [
-        "紫"
+        "青",
+        "桃"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -17605,7 +17624,7 @@
         "長髪"
       ],
       "hairColor": [
-        "橙"
+        "赤"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -17649,7 +17668,7 @@
         "長髪"
       ],
       "hairColor": [
-        "白"
+        "金"
       ],
       "skinTone": "色白",
       "outfit": [],
@@ -17736,9 +17755,7 @@
       ],
       "roles": [],
       "distance": "積極的",
-      "looks": [
-        "ツインテール"
-      ],
+      "looks": [],
       "hairColor": [
         "金"
       ],
@@ -17786,16 +17803,13 @@
       ],
       "roles": [],
       "distance": "積極的",
-      "looks": [
-        "ツインテール"
-      ],
+      "looks": [],
       "hairColor": [
-        "黒"
+        "黒",
+        "茶"
       ],
       "skinTone": "標準",
-      "outfit": [
-        "OL"
-      ],
+      "outfit": [],
       "species": "人間",
       "mood": [],
       "combat": "戦う",
@@ -17938,9 +17952,7 @@
         "姉"
       ],
       "distance": "積極的",
-      "looks": [
-        "ツインテール"
-      ],
+      "looks": [],
       "hairColor": [
         "茶"
       ],
@@ -17993,6 +18005,7 @@
       ],
       "distance": "積極的",
       "looks": [
+        "長髪",
         "ツインテール"
       ],
       "hairColor": [
@@ -18104,9 +18117,7 @@
         "白"
       ],
       "skinTone": "色白",
-      "outfit": [
-        "メイド"
-      ],
+      "outfit": [],
       "species": "エルフ",
       "mood": [
         "甘め"
@@ -18150,7 +18161,8 @@
       "distance": "やや受け身",
       "looks": [
         "ケモミミ",
-        "尻尾"
+        "尻尾",
+        "長髪"
       ],
       "hairColor": [
         "黒"
@@ -18254,8 +18266,7 @@
         "長髪"
       ],
       "hairColor": [
-        "紫",
-        "桃"
+        "茶"
       ],
       "skinTone": "標準",
       "outfit": [
@@ -18301,11 +18312,9 @@
         "友人"
       ],
       "distance": "積極的",
-      "looks": [
-        "ツインテール"
-      ],
+      "looks": [],
       "hairColor": [
-        "紫"
+        "橙"
       ],
       "skinTone": "標準",
       "outfit": [
@@ -18351,9 +18360,7 @@
       ],
       "roles": [],
       "distance": "やや受け身",
-      "looks": [
-        "長髪"
-      ],
+      "looks": [],
       "hairColor": [
         "茶"
       ],
@@ -18369,7 +18376,7 @@
       "affiliationName": "大洗女子学園",
       "stature": "標準",
       "occupation": [
-        "兵士・軍人"
+        "アスリート"
       ]
     },
     "reviewed": true,
@@ -18423,8 +18430,6 @@
       "affiliationName": "聖グロリアーナ女学院",
       "stature": "標準",
       "occupation": [
-        "兵士・軍人",
-        "王族・貴族",
         "アスリート"
       ]
     },
@@ -18458,11 +18463,9 @@
         "先輩"
       ],
       "distance": "中立",
-      "looks": [
-        "長髪"
-      ],
+      "looks": [],
       "hairColor": [
-        "黒"
+        "茶"
       ],
       "skinTone": "標準",
       "outfit": [
@@ -18477,9 +18480,7 @@
       "affiliationKind": "学生",
       "affiliationName": "黒森峰女学園",
       "stature": "標準",
-      "occupation": [
-        "兵士・軍人"
-      ]
+      "occupation": []
     },
     "reviewed": true,
     "provisional": false,
@@ -18520,8 +18521,7 @@
       ],
       "skinTone": "色白",
       "outfit": [
-        "制服",
-        "軍服"
+        "制服"
       ],
       "species": "人間",
       "mood": [
@@ -18565,16 +18565,13 @@
         "友人"
       ],
       "distance": "受け身",
-      "looks": [
-        "長髪"
-      ],
+      "looks": [],
       "hairColor": [
         "青"
       ],
       "skinTone": "色白",
       "outfit": [
-        "制服",
-        "軍服"
+        "制服"
       ],
       "species": "人間",
       "mood": [],
@@ -18621,7 +18618,7 @@
         "長髪"
       ],
       "hairColor": [
-        "紫"
+        "金"
       ],
       "skinTone": "色白",
       "outfit": [
@@ -18838,7 +18835,7 @@
       ],
       "skinTone": "色白",
       "outfit": [],
-      "species": "人間",
+      "species": "不死",
       "mood": [
         "背徳寄り"
       ],
@@ -18869,7 +18866,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "大きい",
+      "bust": "標準",
       "personality": [
         "クール",
         "姉御"
@@ -18886,7 +18883,7 @@
       ],
       "skinTone": "色白",
       "outfit": [
-        "軍服"
+        "制服"
       ],
       "species": "人間",
       "mood": [
@@ -18985,6 +18982,7 @@
       ],
       "distance": "やや積極的",
       "looks": [
+        "長髪",
         "ツインテール"
       ],
       "hairColor": [
@@ -19029,7 +19027,9 @@
         "おっとり"
       ],
       "roles": [
-        "姉"
+        "先輩",
+        "姉",
+        "友人"
       ],
       "distance": "やや積極的",
       "looks": [
@@ -19050,9 +19050,7 @@
       "affiliationKind": "学生",
       "affiliationName": null,
       "stature": "小柄",
-      "occupation": [
-        "メイド・従者"
-      ]
+      "occupation": []
     },
     "reviewed": true,
     "provisional": false,
@@ -19085,6 +19083,7 @@
       ],
       "distance": "積極的",
       "looks": [
+        "長髪",
         "ツインテール"
       ],
       "hairColor": [
@@ -19125,7 +19124,7 @@
       "genderExpression": "女性",
       "ageFeel": "幼い",
       "build": "標準",
-      "bust": "小さい",
+      "bust": "大きい",
       "personality": [
         "元気"
       ],
@@ -19133,11 +19132,9 @@
         "妹"
       ],
       "distance": "積極的",
-      "looks": [
-        "ツインテール"
-      ],
+      "looks": [],
       "hairColor": [
-        "橙"
+        "茶"
       ],
       "skinTone": "標準",
       "outfit": [
@@ -19174,7 +19171,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "華奢",
-      "bust": "標準",
+      "bust": "小さい",
       "personality": [
         "クール",
         "内気"
@@ -19187,7 +19184,7 @@
         "長髪"
       ],
       "hairColor": [
-        "黒"
+        "金"
       ],
       "skinTone": "標準",
       "outfit": [
@@ -19235,10 +19232,9 @@
         "先輩"
       ],
       "distance": "積極的",
-      "looks": [
-        "長髪"
-      ],
+      "looks": [],
       "hairColor": [
+        "黒",
         "紫"
       ],
       "skinTone": "色白",
@@ -19284,8 +19280,8 @@
         "おっとり"
       ],
       "roles": [
-        "妹",
-        "姉"
+        "姉",
+        "妹"
       ],
       "distance": "中立",
       "looks": [
@@ -19391,7 +19387,7 @@
         "長髪"
       ],
       "hairColor": [
-        "桃"
+        "黒"
       ],
       "skinTone": "標準",
       "outfit": [
@@ -19503,9 +19499,7 @@
       "affiliationKind": "冒険者",
       "affiliationName": null,
       "stature": "標準",
-      "occupation": [
-        "巫女・神職"
-      ]
+      "occupation": []
     },
     "reviewed": true,
     "provisional": false,
@@ -19681,7 +19675,7 @@
         "長髪"
       ],
       "hairColor": [
-        "橙"
+        "茶"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -19723,9 +19717,7 @@
       ],
       "roles": [],
       "distance": "やや積極的",
-      "looks": [
-        "長髪"
-      ],
+      "looks": [],
       "hairColor": [
         "赤"
       ],
@@ -19824,7 +19816,6 @@
       "distance": "積極的",
       "looks": [],
       "hairColor": [
-        "赤",
         "金"
       ],
       "skinTone": "標準",
@@ -19838,8 +19829,7 @@
       "affiliationName": "DA(Direct Attack)",
       "stature": "標準",
       "occupation": [
-        "スパイ・暗殺者",
-        "メイド・従者"
+        "スパイ・暗殺者"
       ]
     },
     "reviewed": true,
@@ -19908,15 +19898,14 @@
       "genderExpression": "女性",
       "ageFeel": "年上",
       "build": "むっちり",
-      "bust": "とても大きい",
+      "bust": "大きい",
       "personality": [
         "生意気"
       ],
       "roles": [],
       "distance": "積極的",
       "looks": [
-        "長髪",
-        "角"
+        "長髪"
       ],
       "hairColor": [
         "緑"
@@ -19963,9 +19952,11 @@
         "妹"
       ],
       "distance": "積極的",
-      "looks": [],
+      "looks": [
+        "長髪"
+      ],
       "hairColor": [
-        "茶"
+        "金"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -20006,9 +19997,7 @@
       ],
       "roles": [],
       "distance": "積極的",
-      "looks": [
-        "ツインテール"
-      ],
+      "looks": [],
       "hairColor": [
         "茶"
       ],
@@ -20045,7 +20034,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "むっちり",
-      "bust": "標準",
+      "bust": "大きい",
       "personality": [
         "クール"
       ],
@@ -20057,7 +20046,7 @@
         "長髪"
       ],
       "hairColor": [
-        "黒"
+        "銀"
       ],
       "skinTone": "色白",
       "outfit": [],
@@ -20099,7 +20088,7 @@
       "roles": [],
       "distance": "やや受け身",
       "looks": [
-        "ツインテール"
+        "長髪"
       ],
       "hairColor": [
         "茶"
@@ -20152,7 +20141,7 @@
       "distance": "やや受け身",
       "looks": [],
       "hairColor": [
-        "黒"
+        "茶"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -20196,9 +20185,11 @@
         "友人"
       ],
       "distance": "中立",
-      "looks": [],
+      "looks": [
+        "長髪"
+      ],
       "hairColor": [
-        "金"
+        "黒"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -20292,7 +20283,8 @@
       "distance": "やや積極的",
       "looks": [],
       "hairColor": [
-        "黒"
+        "黒",
+        "茶"
       ],
       "skinTone": "色白",
       "outfit": [],
@@ -20382,7 +20374,9 @@
         "主従"
       ],
       "distance": "やや受け身",
-      "looks": [],
+      "looks": [
+        "長髪"
+      ],
       "hairColor": [
         "金"
       ],
@@ -20428,7 +20422,9 @@
         "友人"
       ],
       "distance": "積極的",
-      "looks": [],
+      "looks": [
+        "長髪"
+      ],
       "hairColor": [
         "金"
       ],
@@ -20523,7 +20519,9 @@
       ],
       "roles": [],
       "distance": "やや積極的",
-      "looks": [],
+      "looks": [
+        "長髪"
+      ],
       "hairColor": [
         "金"
       ],
@@ -20571,7 +20569,7 @@
       ],
       "distance": "中立",
       "looks": [
-        "ツインテール"
+        "長髪"
       ],
       "hairColor": [
         "桃"
@@ -20622,7 +20620,7 @@
       "hairColor": [
         "赤"
       ],
-      "skinTone": "褐色",
+      "skinTone": "標準",
       "outfit": [],
       "species": "人間",
       "mood": [],
@@ -20712,7 +20710,8 @@
         "長髪"
       ],
       "hairColor": [
-        "白"
+        "白",
+        "銀"
       ],
       "skinTone": "色白",
       "outfit": [],
@@ -20802,7 +20801,9 @@
       ],
       "roles": [],
       "distance": "積極的",
-      "looks": [],
+      "looks": [
+        "長髪"
+      ],
       "hairColor": [
         "茶"
       ],
@@ -20849,9 +20850,7 @@
         "姉"
       ],
       "distance": "中立",
-      "looks": [
-        "長髪"
-      ],
+      "looks": [],
       "hairColor": [
         "緑"
       ],
@@ -20895,7 +20894,9 @@
       ],
       "roles": [],
       "distance": "やや受け身",
-      "looks": [],
+      "looks": [
+        "長髪"
+      ],
       "hairColor": [
         "黒"
       ],
@@ -20939,7 +20940,9 @@
       ],
       "roles": [],
       "distance": "やや受け身",
-      "looks": [],
+      "looks": [
+        "長髪"
+      ],
       "hairColor": [
         "黒"
       ],
@@ -20985,10 +20988,11 @@
       "distance": "積極的",
       "looks": [
         "ケモミミ",
-        "尻尾"
+        "尻尾",
+        "長髪"
       ],
       "hairColor": [
-        "白"
+        "黒"
       ],
       "skinTone": "色白",
       "outfit": [],
@@ -21033,6 +21037,7 @@
       "roles": [],
       "distance": "積極的",
       "looks": [
+        "長髪",
         "ツインテール"
       ],
       "hairColor": [
@@ -21080,7 +21085,7 @@
       "distance": "積極的",
       "looks": [],
       "hairColor": [
-        "黒"
+        "茶"
       ],
       "skinTone": "色白",
       "outfit": [],
@@ -21131,7 +21136,7 @@
         "桃",
         "茶"
       ],
-      "skinTone": "褐色",
+      "skinTone": "標準",
       "outfit": [],
       "species": "人間",
       "mood": [],
@@ -21224,11 +21229,10 @@
       "roles": [],
       "distance": "中立",
       "looks": [
-        "長髪",
-        "角"
+        "長髪"
       ],
       "hairColor": [
-        "紫"
+        "青"
       ],
       "skinTone": "色白",
       "outfit": [],
@@ -21241,7 +21245,8 @@
       "affiliationName": "にじさんじ",
       "stature": "標準",
       "occupation": [
-        "教師・講師"
+        "アイドル・芸能",
+        "王族・貴族"
       ]
     },
     "reviewed": true,
@@ -21271,14 +21276,14 @@
       ],
       "roles": [],
       "distance": "やや受け身",
-      "looks": [],
+      "looks": [
+        "長髪"
+      ],
       "hairColor": [
         "金"
       ],
       "skinTone": "色白",
-      "outfit": [
-        "魔法少女"
-      ],
+      "outfit": [],
       "species": "人間",
       "mood": [],
       "combat": "戦う",
@@ -21321,11 +21326,9 @@
         "友人"
       ],
       "distance": "積極的",
-      "looks": [
-        "長髪"
-      ],
+      "looks": [],
       "hairColor": [
-        "黒"
+        "茶"
       ],
       "skinTone": "標準",
       "outfit": [
@@ -21364,7 +21367,7 @@
       "genderExpression": "女性",
       "ageFeel": "幼い",
       "build": "華奢",
-      "bust": "とても大きい",
+      "bust": "大きい",
       "personality": [
         "元気",
         "おっとり"
@@ -21374,7 +21377,8 @@
       ],
       "distance": "積極的",
       "looks": [
-        "長髪"
+        "長髪",
+        "ツインテール"
       ],
       "hairColor": [
         "黒"
@@ -21470,7 +21474,7 @@
       "distance": "積極的",
       "looks": [],
       "hairColor": [
-        "桃"
+        "茶"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -21516,7 +21520,7 @@
       ],
       "distance": "やや積極的",
       "looks": [
-        "ツインテール"
+        "長髪"
       ],
       "hairColor": [
         "黒"
@@ -21560,6 +21564,7 @@
       "roles": [],
       "distance": "受け身",
       "looks": [
+        "尻尾",
         "長髪"
       ],
       "hairColor": [
@@ -21612,15 +21617,15 @@
       "distance": "やや積極的",
       "looks": [
         "角",
-        "尻尾"
+        "尻尾",
+        "長髪",
+        "ツインテール"
       ],
       "hairColor": [
-        "銀"
+        "紫"
       ],
       "skinTone": "色白",
-      "outfit": [
-        "制服"
-      ],
+      "outfit": [],
       "species": "魔族",
       "mood": [
         "純愛寄り"
@@ -21654,7 +21659,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "標準",
+      "bust": "大きい",
       "personality": [
         "生意気",
         "クール"
@@ -21662,6 +21667,7 @@
       "roles": [],
       "distance": "積極的",
       "looks": [
+        "長髪",
         "ツインテール"
       ],
       "hairColor": [
@@ -21802,8 +21808,7 @@
       "roles": [],
       "distance": "受け身",
       "looks": [
-        "眼鏡",
-        "長髪"
+        "眼鏡"
       ],
       "hairColor": [
         "紫"
@@ -21855,9 +21860,7 @@
         "銀"
       ],
       "skinTone": "色白",
-      "outfit": [
-        "軍服"
-      ],
+      "outfit": [],
       "species": "人間",
       "mood": [],
       "combat": "戦う",
@@ -21900,12 +21903,10 @@
         "長髪"
       ],
       "hairColor": [
-        "赤"
+        "白"
       ],
       "skinTone": "標準",
-      "outfit": [
-        "制服"
-      ],
+      "outfit": [],
       "species": "人間",
       "mood": [],
       "combat": "戦う",
@@ -21948,7 +21949,7 @@
       "distance": "やや受け身",
       "looks": [],
       "hairColor": [
-        "緑"
+        "茶"
       ],
       "skinTone": "色白",
       "outfit": [
@@ -21983,7 +21984,7 @@
       "genderExpression": "女性",
       "ageFeel": "幼い",
       "build": "標準",
-      "bust": "標準",
+      "bust": "大きい",
       "personality": [
         "生意気",
         "元気"
@@ -21994,7 +21995,7 @@
         "長髪"
       ],
       "hairColor": [
-        "桃"
+        "金"
       ],
       "skinTone": "色白",
       "outfit": [],
@@ -22005,8 +22006,7 @@
       "affiliationName": null,
       "stature": "小柄",
       "occupation": [
-        "王族・貴族",
-        "兵士・軍人"
+        "王族・貴族"
       ]
     },
     "reviewed": true,
@@ -22038,6 +22038,7 @@
       "roles": [],
       "distance": "やや積極的",
       "looks": [
+        "長髪",
         "ツインテール"
       ],
       "hairColor": [
@@ -22227,9 +22228,7 @@
       ],
       "roles": [],
       "distance": "中立",
-      "looks": [
-        "長髪"
-      ],
+      "looks": [],
       "hairColor": [
         "青"
       ],
@@ -22274,7 +22273,9 @@
       ],
       "roles": [],
       "distance": "積極的",
-      "looks": [],
+      "looks": [
+        "長髪"
+      ],
       "hairColor": [
         "赤"
       ],
@@ -22313,7 +22314,7 @@
       "genderExpression": "女性",
       "ageFeel": "年上",
       "build": "華奢",
-      "bust": "大きい",
+      "bust": "小さい",
       "personality": [
         "おっとり",
         "クール"
@@ -22328,8 +22329,8 @@
         "長髪"
       ],
       "hairColor": [
-        "黒",
-        "桃"
+        "桃",
+        "紫"
       ],
       "skinTone": "色白",
       "outfit": [],
@@ -22375,7 +22376,7 @@
       "distance": "やや積極的",
       "looks": [],
       "hairColor": [
-        "茶"
+        "金"
       ],
       "skinTone": "色白",
       "outfit": [],
@@ -22386,8 +22387,7 @@
       "affiliationName": null,
       "stature": "標準",
       "occupation": [
-        "アイドル・芸能",
-        "会社員・OL"
+        "アイドル・芸能"
       ]
     },
     "reviewed": true,
@@ -22411,7 +22411,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "標準",
+      "bust": "とても大きい",
       "personality": [
         "クール"
       ],
@@ -22469,7 +22469,9 @@
         "後輩"
       ],
       "distance": "中立",
-      "looks": [],
+      "looks": [
+        "角"
+      ],
       "hairColor": [
         "黒"
       ],
@@ -22477,7 +22479,7 @@
       "outfit": [
         "制服"
       ],
-      "species": "人間",
+      "species": "魔族",
       "mood": [],
       "combat": "戦う",
       "affiliationKind": "社会人",
@@ -22517,9 +22519,11 @@
         "幼馴染"
       ],
       "distance": "中立",
-      "looks": [],
+      "looks": [
+        "長髪"
+      ],
       "hairColor": [
-        "黒"
+        "白"
       ],
       "skinTone": "標準",
       "outfit": [
@@ -22565,15 +22569,18 @@
         "妹"
       ],
       "distance": "積極的",
-      "looks": [],
+      "looks": [
+        "ケモミミ",
+        "長髪"
+      ],
       "hairColor": [
-        "茶"
+        "銀"
       ],
       "skinTone": "標準",
       "outfit": [
         "制服"
       ],
-      "species": "人間",
+      "species": "獣人",
       "mood": [
         "甘め"
       ],
@@ -22606,14 +22613,17 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "標準",
+      "bust": "大きい",
       "personality": [
         "元気"
       ],
       "roles": [],
       "distance": "積極的",
-      "looks": [],
+      "looks": [
+        "長髪"
+      ],
       "hairColor": [
+        "金",
         "茶"
       ],
       "skinTone": "標準",
@@ -22624,7 +22634,7 @@
       "mood": [],
       "combat": "戦う",
       "affiliationKind": "学生",
-      "affiliationName": "特別強制清掃部",
+      "affiliationName": "対策委員会",
       "stature": "標準",
       "occupation": []
     },
@@ -22656,21 +22666,22 @@
         "おっとり"
       ],
       "roles": [
-        "先輩",
-        "姉"
+        "姉",
+        "教師"
       ],
       "distance": "中立",
       "looks": [
+        "ケモミミ",
         "長髪"
       ],
       "hairColor": [
-        "茶"
+        "黒"
       ],
       "skinTone": "標準",
       "outfit": [
         "制服"
       ],
-      "species": "人間",
+      "species": "獣人",
       "mood": [
         "甘め"
       ],
@@ -22715,7 +22726,7 @@
         "長髪"
       ],
       "hairColor": [
-        "桃"
+        "金"
       ],
       "skinTone": "標準",
       "outfit": [
@@ -22803,28 +22814,28 @@
       "genderExpression": "女性",
       "ageFeel": "年上",
       "build": "標準",
-      "bust": "大きい",
+      "bust": "小さい",
       "personality": [
         "クール",
         "生意気"
       ],
       "roles": [],
       "distance": "中立",
-      "looks": [],
+      "looks": [
+        "長髪"
+      ],
       "hairColor": [
-        "紫"
+        "金"
       ],
       "skinTone": "色白",
       "outfit": [],
       "species": "人間",
       "mood": [],
       "combat": "戦わない",
-      "affiliationKind": "非人間・その他",
+      "affiliationKind": "軍・組織",
       "affiliationName": null,
       "stature": "標準",
-      "occupation": [
-        "教師・講師"
-      ]
+      "occupation": []
     },
     "reviewed": true,
     "provisional": false,
@@ -22856,9 +22867,11 @@
         "友人"
       ],
       "distance": "積極的",
-      "looks": [],
+      "looks": [
+        "長髪"
+      ],
       "hairColor": [
-        "赤"
+        "桃"
       ],
       "skinTone": "標準",
       "outfit": [
@@ -22942,7 +22955,7 @@
       "genderExpression": "女性",
       "ageFeel": "同年代",
       "build": "標準",
-      "bust": "標準",
+      "bust": "大きい",
       "personality": [
         "生意気",
         "むっつり"
@@ -22953,12 +22966,15 @@
       ],
       "distance": "積極的",
       "looks": [
-        "ケモミミ"
+        "ケモミミ",
+        "尻尾",
+        "長髪"
       ],
       "hairColor": [
-        "橙"
+        "黒",
+        "赤"
       ],
-      "skinTone": "褐色",
+      "skinTone": "色白",
       "outfit": [],
       "species": "獣人",
       "mood": [
@@ -23149,7 +23165,11 @@
       ],
       "roles": [],
       "distance": "中立",
-      "looks": [],
+      "looks": [
+        "ケモミミ",
+        "長髪",
+        "ツインテール"
+      ],
       "hairColor": [
         "黒"
       ],
@@ -23157,11 +23177,11 @@
       "outfit": [
         "制服"
       ],
-      "species": "人間",
+      "species": "獣人",
       "mood": [],
       "combat": "戦う",
       "affiliationKind": "学生",
-      "affiliationName": "特別強制清掃部",
+      "affiliationName": "アビドス高等学校（対策委員会）",
       "stature": "小柄",
       "occupation": []
     },
@@ -23197,7 +23217,9 @@
         "恋人・伴侶"
       ],
       "distance": "中立",
-      "looks": [],
+      "looks": [
+        "長髪"
+      ],
       "hairColor": [
         "白"
       ],
@@ -23291,7 +23313,9 @@
       ],
       "roles": [],
       "distance": "積極的",
-      "looks": [],
+      "looks": [
+        "長髪"
+      ],
       "hairColor": [
         "青"
       ],
@@ -23377,7 +23401,9 @@
       ],
       "roles": [],
       "distance": "積極的",
-      "looks": [],
+      "looks": [
+        "長髪"
+      ],
       "hairColor": [
         "茶"
       ],
@@ -23418,9 +23444,12 @@
       ],
       "roles": [],
       "distance": "積極的",
-      "looks": [],
+      "looks": [
+        "長髪",
+        "ツインテール"
+      ],
       "hairColor": [
-        "桃"
+        "茶"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -23461,7 +23490,7 @@
       "distance": "積極的",
       "looks": [],
       "hairColor": [
-        "橙"
+        "茶"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -23551,7 +23580,7 @@
         "長髪"
       ],
       "hairColor": [
-        "橙"
+        "黒"
       ],
       "skinTone": "標準",
       "outfit": [],
@@ -23594,7 +23623,7 @@
         "長髪"
       ],
       "hairColor": [
-        "青"
+        "茶"
       ],
       "skinTone": "色白",
       "outfit": [

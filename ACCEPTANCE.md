@@ -23,6 +23,7 @@ LLM の主観レビューは受け入れ基準に含めない。
 | A14 | `imageApproved: true` は `imagePath !== null` のときのみ成立する | Vitest（zod の `refine` と二重化） |
 | A15 | `characters.json` の全作品が `tag-overrides.json` の `seriesAliases` に定義されている | Vitest（BA5） |
 | A16 | `tag-map.json` の `tag` が非 null のエントリは、作品タグとの共起率 0.3 以上か、理由付きの手動 override である | Vitest（BA5） |
+| A17 | 軸どうしの矛盾（14 ルール）と Danbooru の実測との食い違い（髪色・胸・肌・looks の 7 ルール）に、許可リスト（`data/bayes/quality-allowlist.json`）に無い新しい違反が無い。許可の理由は必須で、直った違反の許可が残っていても落ちる（ラチェット） | Vitest（BF） |
 
 **A15 / A16 の由来（2026-08-01 の事故）**: キャラ拡充で新しい作品を足したときに
 `seriesAliases` への追加を忘れると、`seriesOverlapRatio()` が `seriesAlias` の無い場合に
@@ -31,6 +32,11 @@ LLM の主観レビューは受け入れ基準に含めない。
 SAO アスナ→`asuna_(blue_archive)`（ブルアカ）などがポートフォリオサイトで
 別キャラの画像として表示された。**A15 が原因側、A16 が結果側**の歯止め。
 `scripts/bayes/map-characters.mjs` も実行前に同じ検査をして止まる（早期フィードバック）。
+
+**A17 の運用**: Danbooru の実測は `state/`（gitignore）を直接読まず、`data/bayes/danbooru-stats.json`
+（タグの出現数だけ）を読む。キャッシュを取り直した／キャラを足したら
+`node scripts/bayes/export-danbooru-stats.mjs --state-dir <state>` で書き出し直す
+（タグの対応付けが古い・統計が無いキャラは BF2 が落ちる）。
 
 ## B. 収集スクリプトの規約遵守
 

@@ -79,23 +79,10 @@
       "checkedAt": "2026-08-01T13:18:19.568Z"
     },
     "fate-bb": {
-      "tag": "bb_(fate/extra)",
-      "postCount": 1850,
-      "source": "series-qualified",
-      "seriesOverlap": 1,
-      "candidatesTried": [
-        "bb",
-        "bb_(fate/extra)",
-        "bb(*)"
-      ],
-      "allCandidates": [
-        "bb_(fate/extra)(1850)",
-        "bb_(fate)(6523)",
-        "bb_(swimsuit_mooncancer)_(second_ascension)_(fate)(1169)",
-        "bb_(swimsuit_mooncancer)_(third_ascension)_(fate)(1010)",
-        "bb_dubai_(fate)(665)"
-      ],
-      "checkedAt": "2026-08-01T13:18:25.123Z"
+      "tag": "bb_(fate)",
+      "postCount": 6600,
+      "source": "override",
+      "checkedAt": "2026-10-05T05:48:02.110Z"
     },
     "fgo-ishtar": {
       "tag": "ishtar_(fate)",
@@ -1721,19 +1708,10 @@
       "checkedAt": "2026-08-01T13:26:27.248Z"
     },
     "genshin-furina": {
-      "tag": "focalors_(genshin_impact)",
-      "postCount": 1022,
-      "source": "series-qualified",
-      "seriesOverlap": 1,
-      "candidatesTried": [
-        "focalors",
-        "focalors_(genshin_impact)",
-        "focalors(*)"
-      ],
-      "allCandidates": [
-        "focalors_(genshin_impact)(1022)"
-      ],
-      "checkedAt": "2026-08-01T13:26:31.672Z"
+      "tag": "furina_(genshin_impact)",
+      "postCount": 14061,
+      "source": "override",
+      "checkedAt": "2026-10-05T05:48:01.345Z"
     },
     "genshin-barbara": {
       "tag": "barbara_(genshin_impact)",
@@ -3275,25 +3253,10 @@
       "checkedAt": "2026-07-31T17:45:26.216Z"
     },
     "sao-shino": {
-      "tag": "asada_shino",
-      "postCount": 368,
-      "source": "name-order-reversed",
-      "seriesOverlap": 1,
-      "candidatesTried": [
-        "shino_asada",
-        "asada_shino",
-        "shino_asada_(sword_art_online)",
-        "shino_asada(*)",
-        "shino(*)"
-      ],
-      "allCandidates": [
-        "asada_shino(368)",
-        "shinosawa_hiro(6543)",
-        "shinonome_ena(3574)",
-        "shinomiya_kaguya(2561)",
-        "shinonome_akito(2129)"
-      ],
-      "checkedAt": "2026-07-31T17:45:31.995Z"
+      "tag": "sinon",
+      "postCount": 2390,
+      "source": "override",
+      "checkedAt": "2026-10-05T05:48:01.734Z"
     },
     "sao-rika": {
       "tag": "lisbeth_(sao)",

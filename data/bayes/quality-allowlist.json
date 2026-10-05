@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "note": "tests/quality-gates.test.ts の許可リスト。ルール名 → { キャラ id: 例外の理由 }。理由は必須。2026-10-05 時点の違反は一括で入れた既存分で、直したら消す（消し忘れもテストが落ちる）。新しい違反をここへ足して通すのは禁止。作品の設定上の正当な例外だけ、固有の理由を書いて足す。",
+  "rules": {
+  "human-with-beast-looks": {
+    "azurlane-nagato": "2026-10-05 時点の既存の違反、見直し中",
+    "azurlane-yamato": "2026-10-05 時点の既存の違反、見直し中",
+    "genshin-nilou": "ニィロウの角は頭飾りで、種族は人間として設定されている"
+  },
+  "beastkin-without-ears-or-tail": {
+    "overlord-lupusregina": "2026-10-05 時点の既存の違反、見直し中",
+    "utau-teto": "2026-10-05 時点の既存の違反、見直し中",
+    "touhou-utsuho": "2026-10-05 時点の既存の違反、見直し中",
+    "onepiece-shirahoshi": "2026-10-05 時点の既存の違反、見直し中",
+    "touhou-wriggle": "2026-10-05 時点の既存の違反、見直し中",
+    "touhou-keine": "ワーハクタク（半獣）で、獣耳・尻尾は無く角が種族の特徴として描かれている"
+  },
+  "maternal-but-childlike": {
+    "genshin-nahida": "2026-10-05 時点の既存の違反、見直し中",
+    "touhou-suwako": "2026-10-05 時点の既存の違反、見直し中",
+    "hololive-koyori": "2026-10-05 時点の既存の違反、見直し中",
+    "pricone-kokkoro": "2026-10-05 時点の既存の違反、見直し中",
+    "danmachi-hestia": "2026-10-05 時点の既存の違反、見直し中"
+  },
+  "student-but-mature": {},
+  "childlike-but-tall": {
+    "onepiece-shirahoshi": "2026-10-05 時点の既存の違反、見直し中"
+  },
+  "student-with-office-job": {},
+  "deity-or-spirit-but-human": {
+    "madoka-madoka": "2026-10-05 時点の既存の違反、見直し中",
+    "hsr-castorice": "2026-10-05 時点の既存の違反、見直し中",
+    "mario-rosalina": "2026-10-05 時点の既存の違反、見直し中",
+    "yugioh-dmg": "2026-10-05 時点の既存の違反、見直し中"
+  },
+  "nonfighter-with-combat-job": {
+    "hololive-marine": "2026-10-05 時点の既存の違反、見直し中",
+    "hololiveen-novella": "2026-10-05 時点の既存の違反、見直し中",
+    "spyfamily-anya": "2026-10-05 時点の既存の違反、見直し中"
+  },
+  "otokonoko-with-large-bust": {},
+  "outfit-メイド-occupation-mismatch": {
+    "touhou-meiling": "2026-10-05 時点の既存の違反、見直し中",
+    "touhou-ran": "2026-10-05 時点の既存の違反、見直し中",
+    "touhou-orin": "2026-10-05 時点の既存の違反、見直し中",
+    "touhou-yoshika": "2026-10-05 時点の既存の違反、見直し中",
+    "hololive-chloe": "2026-10-05 時点の既存の違反、見直し中",
+    "dandadan-momo": "2026-10-05 時点の既存の違反、見直し中",
+    "pricone-kokkoro": "城のお世話係として職業にメイド・従者を置くが、衣装はメイド服ではない（設定上の役割）"
+  },
+  "outfit-巫女-occupation-mismatch": {
+    "genshin-shenhe": "2026-10-05 時点の既存の違反、見直し中",
+    "lovelive-nozomi": "2026-10-05 時点の既存の違反、見直し中",
+    "touhou-byakuren": "2026-10-05 時点の既存の違反、見直し中",
+    "fgo-jeanne": "2026-10-05 時点の既存の違反、見直し中",
+    "genshin-citlali": "2026-10-05 時点の既存の違反、見直し中",
+    "bluearchive-mari": "2026-10-05 時点の既存の違反、見直し中",
+    "pricone-kokkoro": "2026-10-05 時点の既存の違反、見直し中"
+  },
+  "outfit-ナース-occupation-mismatch": {
+    "naruto-sakura": "2026-10-05 時点の既存の違反、見直し中",
+    "bleach-unohana": "2026-10-05 時点の既存の違反、見直し中",
+    "bleach-isane": "2026-10-05 時点の既存の違反、見直し中",
+    "touhou-eirin": "2026-10-05 時点の既存の違反、見直し中",
+    "hsr-cyrene": "2026-10-05 時点の既存の違反、見直し中",
+    "arknights-suzuran": "2026-10-05 時点の既存の違反、見直し中",
+    "kimetsu-shinobu": "2026-10-05 時点の既存の違反、見直し中"
+  },
+  "outfit-OL-occupation-mismatch": {
+    "genshin-ganyu": "2026-10-05 時点の既存の違反、見直し中",
+    "onepiece-kalifa": "2026-10-05 時点の既存の違反、見直し中",
+    "touhou-koakuma": "2026-10-05 時点の既存の違反、見直し中",
+    "fgo-mash": "2026-10-05 時点の既存の違反、見直し中",
+    "bluearchive-kayoko": "2026-10-05 時点の既存の違反、見直し中"
+  },
+  "occupation-teacher-roles-mismatch": {
+    "naruto-tsunade": "2026-10-05 時点の既存の違反、見直し中",
+    "naruto-kurenai": "2026-10-05 時点の既存の違反、見直し中",
+    "bleach-yoruichi": "2026-10-05 時点の既存の違反、見直し中",
+    "bleach-unohana": "2026-10-05 時点の既存の違反、見直し中",
+    "touhou-youmu": "2026-10-05 時点の既存の違反、見直し中",
+    "kancolle-kashima": "2026-10-05 時点の既存の違反、見直し中",
+    "touhou-eirin": "2026-10-05 時点の既存の違反、見直し中",
+    "bluearchive-kokona": "2026-10-05 時点の既存の違反、見直し中"
+  },
+  "danbooru-hair-color": {},
+  "danbooru-bust-gap": {
+    "naruto-hanabi": "2026-10-05 時点の既存の違反、見直し中",
+    "imascg-riamu": "2026-10-05 時点の既存の違反、見直し中",
+    "bluearchive-miyako": "2026-10-05 時点の既存の違反、見直し中",
+    "nanoha-fate": "2026-10-05 時点の既存の違反、見直し中",
+    "honkai3-bronya": "2026-10-05 時点の既存の違反、見直し中"
+  },
+  "danbooru-skin-dark-missing": {},
+  "danbooru-skin-dark-unlisted": {},
+  "danbooru-looks-animal-ears-missing": {
+    "bluearchive-midori": "2026-10-05 時点の既存の違反、見直し中",
+    "bluearchive-momoi": "2026-10-05 時点の既存の違反、見直し中"
+  },
+  "danbooru-looks-tail-missing": {
+    "bluearchive-midori": "2026-10-05 時点の既存の違反、見直し中",
+    "bluearchive-momoi": "2026-10-05 時点の既存の違反、見直し中"
+  },
+  "danbooru-looks-long-hair-missing": {}
+  }
+}
