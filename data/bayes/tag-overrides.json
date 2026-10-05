@@ -1353,6 +1353,18 @@
     "pokemon-juliana": {
       "tag": "juliana_(pokemon)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "genshin-furina": {
+      "tag": "furina_(genshin_impact)",
+      "reason": "2026-10-05、確認シート2回目 R2-6 で確定。自動導出は focalors_(genshin_impact)(1044件、水神フォカロルス名義の別人格タグ)を掴んでいた。フリーナ本人の主たるタグは furina_(genshin_impact)(14061件、category=4)。直接照合で確認。"
+    },
+    "sao-shino": {
+      "tag": "sinon",
+      "reason": "2026-10-05、確認シート2回目 R2-6 で確定。自動導出は asada_shino(388件、現実世界の姿のタグ)を掴んでいた。作中の呼称・描かれ方の大半は GGO のシノンで、sinon(2390件、category=4)の方が6倍多い。直接照合で確認。"
+    },
+    "fate-bb": {
+      "tag": "bb_(fate)",
+      "reason": "2026-10-05、確認シート2回目 R2-6 で確定。自動導出は bb_(fate/extra)(1872件)を掴んでいた。件数の多い総称タグ bb_(fate)(6600件、category=4)に統一する。直接照合で確認。"
     }
   }
 }
