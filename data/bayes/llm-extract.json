@@ -17541,14 +17541,14 @@
       "article": "篠澤広",
       "axes": {
         "personality": {
-          "value": "生意気",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "mood": {
-          "value": "甘め",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "species": {
           "value": "該当なし",
@@ -17561,9 +17561,9 @@
           "confidence": "none"
         },
         "distance": {
-          "value": "やや受け身",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "affiliationKind": {
           "value": "学生",
@@ -17571,9 +17571,9 @@
           "confidence": "high"
         },
         "ageFeel": {
-          "value": "幼い",
+          "value": "同年代",
           "verified": true,
-          "confidence": "low"
+          "confidence": "high"
         },
         "build": {
           "value": "華奢",
@@ -17581,16 +17581,14 @@
           "confidence": "high"
         },
         "stature": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "roles": {
-          "values": [
-            "主従"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         },
         "occupation": {
           "values": [
@@ -17600,20 +17598,20 @@
           "confidence": "high"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
     "kimetsu-shinobu": {
       "article": "胡蝶しのぶ",
       "axes": {
         "personality": {
-          "value": "おっとり",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "mood": {
-          "value": "純愛寄り",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "species": {
           "value": "該当なし",
@@ -17626,62 +17624,58 @@
           "confidence": "high"
         },
         "distance": {
-          "value": "やや受け身",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "affiliationKind": {
-          "value": "軍・組織",
-          "verified": true,
-          "confidence": "high"
-        },
-        "ageFeel": {
-          "value": "同年代",
+          "value": "非人間・その他",
           "verified": true,
           "confidence": "low"
+        },
+        "ageFeel": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "build": {
           "value": "華奢",
-          "verified": false,
-          "confidence": "high"
+          "verified": true,
+          "confidence": "low"
         },
         "stature": {
           "value": "小柄",
           "verified": true,
-          "confidence": "high"
+          "confidence": "low"
         },
         "roles": {
-          "values": [
-            "先輩"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         },
         "occupation": {
-          "values": [
-            "医療従事者"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
     "kimetsu-nezuko": {
       "article": "竈門禰豆子",
       "axes": {
         "personality": {
-          "value": "おっとり",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "mood": {
-          "value": "甘め",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "species": {
-          "value": "不死",
+          "value": "魔族",
           "verified": true,
           "confidence": "high"
         },
@@ -17691,14 +17685,14 @@
           "confidence": "high"
         },
         "distance": {
-          "value": "やや受け身",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "affiliationKind": {
-          "value": "学生",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "ageFeel": {
           "value": "幼い",
@@ -17706,14 +17700,14 @@
           "confidence": "high"
         },
         "build": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "stature": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "roles": {
           "values": [
@@ -17728,85 +17722,20 @@
           "confidence": "none"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
     "nijigasaki-ayumu": {
       "article": "上原歩夢",
       "axes": {
         "personality": {
-          "value": "むっつり",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "mood": {
-          "value": "純愛寄り",
-          "verified": true,
-          "confidence": "high"
-        },
-        "species": {
-          "value": "人間",
-          "verified": true,
-          "confidence": "high"
-        },
-        "combat": {
-          "value": "戦わない",
-          "verified": true,
-          "confidence": "low"
-        },
-        "distance": {
-          "value": "やや受け身",
-          "verified": true,
-          "confidence": "high"
-        },
-        "affiliationKind": {
-          "value": "学生",
-          "verified": true,
-          "confidence": "high"
-        },
-        "ageFeel": {
-          "value": "同年代",
-          "verified": true,
-          "confidence": "low"
-        },
-        "build": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "high"
-        },
-        "stature": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "low"
-        },
-        "roles": {
-          "values": [
-            "後輩"
-          ],
-          "verified": true,
-          "confidence": "high"
-        },
-        "occupation": {
-          "values": [
-            "アイドル・芸能"
-          ],
-          "verified": true,
-          "confidence": "high"
-        }
-      },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
-    },
-    "nijigasaki-setsuna": {
-      "article": "優木せつ菜",
-      "axes": {
-        "personality": {
-          "value": "むっつり",
-          "verified": true,
-          "confidence": "high"
-        },
-        "mood": {
-          "value": "甘め",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "species": {
           "value": "該当なし",
@@ -17814,14 +17743,14 @@
           "confidence": "none"
         },
         "combat": {
-          "value": "戦わない",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "distance": {
-          "value": "やや積極的",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "affiliationKind": {
           "value": "学生",
@@ -17831,17 +17760,17 @@
         "ageFeel": {
           "value": "同年代",
           "verified": true,
-          "confidence": "low"
+          "confidence": "high"
         },
         "build": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "stature": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "roles": {
           "values": [
@@ -17858,212 +17787,83 @@
           "confidence": "high"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
+    },
+    "nijigasaki-setsuna": {
+      "article": "優木せつ菜",
+      "axes": {
+        "personality": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "学生",
+          "verified": true,
+          "confidence": "high"
+        },
+        "ageFeel": {
+          "value": "同年代",
+          "verified": true,
+          "confidence": "high"
+        },
+        "build": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "stature": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        },
+        "occupation": {
+          "values": [
+            "アイドル・芸能"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
     "ff7-tifa": {
       "article": "ティファ・ロックハート",
       "axes": {
         "personality": {
-          "value": "おっとり",
-          "verified": true,
-          "confidence": "high"
-        },
-        "mood": {
-          "value": "純愛寄り",
-          "verified": true,
-          "confidence": "high"
-        },
-        "species": {
-          "value": "人間",
-          "verified": true,
-          "confidence": "high"
-        },
-        "combat": {
-          "value": "戦う",
-          "verified": true,
-          "confidence": "high"
-        },
-        "distance": {
-          "value": "やや積極的",
-          "verified": true,
-          "confidence": "low"
-        },
-        "affiliationKind": {
-          "value": "冒険者",
-          "verified": true,
-          "confidence": "high"
-        },
-        "ageFeel": {
-          "value": "幼い",
-          "verified": true,
-          "confidence": "high"
-        },
-        "build": {
-          "value": "華奢",
-          "verified": true,
-          "confidence": "high"
-        },
-        "stature": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "high"
-        },
-        "roles": {
-          "values": [
-            "幼馴染",
-            "母性"
-          ],
-          "verified": true,
-          "confidence": "high"
-        },
-        "occupation": {
-          "values": [
-            "格闘家・武道家"
-          ],
-          "verified": true,
-          "confidence": "high"
-        }
-      },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
-    },
-    "ff7-aerith": {
-      "article": "エアリス・ゲインズブール",
-      "axes": {
-        "personality": {
-          "value": "元気",
-          "verified": true,
-          "confidence": "high"
-        },
-        "mood": {
-          "value": "純愛寄り",
-          "verified": true,
-          "confidence": "low"
-        },
-        "species": {
-          "value": "不死",
-          "verified": true,
-          "confidence": "high"
-        },
-        "combat": {
-          "value": "戦わない",
-          "verified": false,
-          "confidence": "high"
-        },
-        "distance": {
-          "value": "やや積極的",
-          "verified": true,
-          "confidence": "high"
-        },
-        "affiliationKind": {
-          "value": "冒険者",
-          "verified": true,
-          "confidence": "high"
-        },
-        "ageFeel": {
-          "value": "同年代",
-          "verified": true,
-          "confidence": "high"
-        },
-        "build": {
-          "value": "華奢",
-          "verified": false,
-          "confidence": "high"
-        },
-        "stature": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "high"
-        },
-        "roles": {
-          "values": [],
+          "value": "該当なし",
           "verified": false,
           "confidence": "none"
         },
-        "occupation": {
-          "values": [],
+        "mood": {
+          "value": "該当なし",
           "verified": false,
           "confidence": "none"
-        }
-      },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
-    },
-    "mario-peach": {
-      "article": "ピーチ姫",
-      "axes": {
-        "personality": {
-          "value": "おっとり",
-          "verified": true,
-          "confidence": "high"
-        },
-        "mood": {
-          "value": "甘め",
-          "verified": true,
-          "confidence": "low"
-        },
-        "species": {
-          "value": "人間",
-          "verified": true,
-          "confidence": "low"
-        },
-        "combat": {
-          "value": "戦う",
-          "verified": true,
-          "confidence": "high"
-        },
-        "distance": {
-          "value": "やや積極的",
-          "verified": true,
-          "confidence": "high"
-        },
-        "affiliationKind": {
-          "value": "非人間・その他",
-          "verified": true,
-          "confidence": "high"
-        },
-        "ageFeel": {
-          "value": "同年代",
-          "verified": true,
-          "confidence": "low"
-        },
-        "build": {
-          "value": "華奢",
-          "verified": true,
-          "confidence": "low"
-        },
-        "stature": {
-          "value": "長身",
-          "verified": true,
-          "confidence": "high"
-        },
-        "roles": {
-          "values": [
-            "姉"
-          ],
-          "verified": true,
-          "confidence": "high"
-        },
-        "occupation": {
-          "values": [
-            "王族・貴族"
-          ],
-          "verified": true,
-          "confidence": "high"
-        }
-      },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
-    },
-    "mario-rosalina": {
-      "article": "ロゼッタ",
-      "axes": {
-        "personality": {
-          "value": "おっとり",
-          "verified": false,
-          "confidence": "high"
-        },
-        "mood": {
-          "value": "純愛寄り",
-          "verified": true,
-          "confidence": "low"
         },
         "species": {
           "value": "該当なし",
@@ -18076,27 +17876,27 @@
           "confidence": "high"
         },
         "distance": {
-          "value": "やや受け身",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "affiliationKind": {
-          "value": "冒険者",
-          "verified": true,
-          "confidence": "high"
-        },
-        "ageFeel": {
-          "value": "熟れた",
+          "value": "非人間・その他",
           "verified": true,
           "confidence": "low"
         },
+        "ageFeel": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
         "build": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "stature": {
-          "value": "長身",
+          "value": "標準",
           "verified": true,
           "confidence": "high"
         },
@@ -18108,32 +17908,91 @@
           "confidence": "high"
         },
         "occupation": {
-          "values": [
-            "研究者・発明家"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
-    "mario-daisy": {
-      "article": "デイジー姫",
+    "ff7-aerith": {
+      "article": "エアリス・ゲインズブール",
       "axes": {
         "personality": {
-          "value": "生意気",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "mood": {
-          "value": "甘め",
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "distance": {
+          "value": "積極的",
           "verified": true,
           "confidence": "high"
         },
+        "affiliationKind": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "ageFeel": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "build": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "stature": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        },
+        "occupation": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      },
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
+    },
+    "mario-peach": {
+      "article": "ピーチ姫",
+      "axes": {
+        "personality": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
         "species": {
-          "value": "人間",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "combat": {
           "value": "戦う",
@@ -18141,46 +18000,164 @@
           "confidence": "high"
         },
         "distance": {
-          "value": "やや積極的",
+          "value": "積極的",
           "verified": true,
           "confidence": "low"
         },
         "affiliationKind": {
-          "value": "学生",
-          "verified": true,
-          "confidence": "high"
-        },
-        "ageFeel": {
-          "value": "同年代",
+          "value": "非人間・その他",
           "verified": true,
           "confidence": "low"
         },
+        "ageFeel": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
         "build": {
-          "value": "華奢",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "stature": {
-          "value": "標準",
+          "value": "長身",
           "verified": true,
           "confidence": "high"
         },
         "roles": {
-          "values": [
-            "恋人・伴侶"
-          ],
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        },
+        "occupation": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      },
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
+    },
+    "mario-rosalina": {
+      "article": "ロゼッタ",
+      "axes": {
+        "personality": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "戦う",
           "verified": true,
           "confidence": "high"
         },
-        "occupation": {
-          "values": [
-            "アスリート"
-          ],
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "非人間・その他",
           "verified": true,
-          "confidence": "high"
+          "confidence": "low"
+        },
+        "ageFeel": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "build": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "stature": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        },
+        "occupation": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
+    },
+    "mario-daisy": {
+      "article": "デイジー姫",
+      "axes": {
+        "personality": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "非人間・その他",
+          "verified": true,
+          "confidence": "low"
+        },
+        "ageFeel": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "build": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "stature": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        },
+        "occupation": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      },
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
     "xeno2-pyra": {
       "article": "ホムラ",
@@ -18231,21 +18208,17 @@
           "confidence": "none"
         },
         "roles": {
-          "values": [
-            "友人"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         },
         "occupation": {
-          "values": [
-            "魔法使い・魔術師"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
     "ccs-sakura": {
       "article": "木之本桜",
@@ -18256,24 +18229,24 @@
           "confidence": "none"
         },
         "mood": {
-          "value": "純愛寄り",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "species": {
-          "value": "人間",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "combat": {
-          "value": "戦う",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "distance": {
-          "value": "やや受け身",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "affiliationKind": {
           "value": "学生",
@@ -18282,7 +18255,7 @@
         },
         "ageFeel": {
           "value": "幼い",
-          "verified": true,
+          "verified": false,
           "confidence": "high"
         },
         "build": {
@@ -18296,39 +18269,35 @@
           "confidence": "none"
         },
         "roles": {
-          "values": [
-            "友人"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         },
         "occupation": {
-          "values": [
-            "アスリート"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
     "lycrecoil-chisato": {
       "article": "錦木千束",
       "axes": {
         "personality": {
-          "value": "おっとり",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "mood": {
-          "value": "甘め",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "species": {
-          "value": "人間",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "combat": {
           "value": "戦う",
@@ -18336,14 +18305,14 @@
           "confidence": "high"
         },
         "distance": {
-          "value": "やや受け身",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "affiliationKind": {
-          "value": "冒険者",
+          "value": "非人間・その他",
           "verified": true,
-          "confidence": "high"
+          "confidence": "low"
         },
         "ageFeel": {
           "value": "同年代",
@@ -18351,33 +18320,27 @@
           "confidence": "high"
         },
         "build": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "stature": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "roles": {
-          "values": [
-            "友人",
-            "後輩"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         },
         "occupation": {
-          "values": [
-            "メイド・従者",
-            "アスリート"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
     "metroid-samus": {
       "article": "サムス・アラン",
@@ -18393,34 +18356,34 @@
           "confidence": "none"
         },
         "species": {
-          "value": "人間",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "combat": {
           "value": "戦う",
-          "verified": false,
+          "verified": true,
           "confidence": "high"
         },
         "distance": {
-          "value": "やや受け身",
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "非人間・その他",
           "verified": true,
           "confidence": "low"
         },
-        "affiliationKind": {
-          "value": "冒険者",
-          "verified": true,
-          "confidence": "high"
-        },
         "ageFeel": {
-          "value": "同年代",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "build": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "stature": {
           "value": "該当なし",
@@ -18428,34 +18391,30 @@
           "confidence": "none"
         },
         "roles": {
-          "values": [
-            "主従"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         },
         "occupation": {
-          "values": [
-            "兵士・軍人"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
     "idolmaster-miki": {
       "article": "星井美希",
       "axes": {
         "personality": {
-          "value": "おっとり",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "mood": {
-          "value": "純愛寄り",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "species": {
           "value": "該当なし",
@@ -18468,59 +18427,57 @@
           "confidence": "none"
         },
         "distance": {
-          "value": "やや受け身",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "affiliationKind": {
           "value": "社会人",
           "verified": true,
-          "confidence": "high"
-        },
-        "ageFeel": {
-          "value": "同年代",
-          "verified": true,
           "confidence": "low"
         },
+        "ageFeel": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
         "build": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "stature": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "roles": {
           "values": [
-            "妹"
+            "ライバル"
           ],
           "verified": true,
           "confidence": "high"
         },
         "occupation": {
-          "values": [
-            "アイドル・芸能"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
     "idolmaster-takane": {
       "article": "四条貴音",
       "axes": {
         "personality": {
-          "value": "おっとり",
+          "value": "該当なし",
           "verified": false,
-          "confidence": "high"
+          "confidence": "none"
         },
         "mood": {
-          "value": "支配的",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "species": {
           "value": "該当なし",
@@ -18528,19 +18485,19 @@
           "confidence": "none"
         },
         "combat": {
-          "value": "戦わない",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "distance": {
-          "value": "やや受け身",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "affiliationKind": {
-          "value": "社会人",
+          "value": "非人間・その他",
           "verified": true,
-          "confidence": "high"
+          "confidence": "low"
         },
         "ageFeel": {
           "value": "同年代",
@@ -18548,67 +18505,62 @@
           "confidence": "high"
         },
         "build": {
-          "value": "むっちり",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "stature": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "roles": {
           "values": [
-            "先輩",
-            "姉",
-            "母性"
+            "ライバル"
           ],
           "verified": true,
           "confidence": "high"
         },
         "occupation": {
-          "values": [
-            "アイドル・芸能",
-            "王族・貴族"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
     "idolmaster-iori": {
       "article": "水瀬伊織",
       "axes": {
         "personality": {
-          "value": "生意気",
+          "value": "該当なし",
           "verified": false,
-          "confidence": "high"
+          "confidence": "none"
         },
         "mood": {
-          "value": "支配的",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "species": {
-          "value": "人間",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "combat": {
-          "value": "戦わない",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "distance": {
-          "value": "やや受け身",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "affiliationKind": {
-          "value": "社会人",
+          "value": "学生",
           "verified": true,
-          "confidence": "high"
+          "confidence": "low"
         },
         "ageFeel": {
           "value": "幼い",
@@ -18621,28 +18573,24 @@
           "confidence": "high"
         },
         "stature": {
-          "value": "標準",
+          "value": "小柄",
           "verified": true,
           "confidence": "high"
         },
         "roles": {
-          "values": [
-            "後輩",
-            "友人"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         },
         "occupation": {
           "values": [
-            "アイドル・芸能",
-            "アスリート"
+            "アイドル・芸能"
           ],
           "verified": true,
           "confidence": "high"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
     "imsc-madoka": {
       "article": "樋口円香",
@@ -18653,14 +18601,14 @@
           "confidence": "high"
         },
         "mood": {
-          "value": "純愛寄り",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "species": {
-          "value": "人間",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "combat": {
           "value": "該当なし",
@@ -18668,61 +18616,57 @@
           "confidence": "none"
         },
         "distance": {
-          "value": "やや受け身",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "affiliationKind": {
           "value": "社会人",
           "verified": true,
-          "confidence": "high"
+          "confidence": "low"
         },
         "ageFeel": {
-          "value": "同年代",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "build": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "stature": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "roles": {
           "values": [
-            "幼馴染",
-            "先輩",
-            "友人"
+            "幼馴染"
           ],
           "verified": true,
           "confidence": "high"
         },
         "occupation": {
-          "values": [
-            "アイドル・芸能"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
     "imsc-fuyuko": {
       "article": "黛冬優子",
       "axes": {
         "personality": {
-          "value": "おっとり",
+          "value": "生意気",
           "verified": true,
           "confidence": "high"
         },
         "mood": {
-          "value": "甘め",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "species": {
           "value": "該当なし",
@@ -18730,14 +18674,14 @@
           "confidence": "none"
         },
         "combat": {
-          "value": "戦う",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "distance": {
-          "value": "やや受け身",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "affiliationKind": {
           "value": "学生",
@@ -18745,37 +18689,32 @@
           "confidence": "high"
         },
         "ageFeel": {
-          "value": "同年代",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "build": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "stature": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "roles": {
-          "values": [
-            "友人",
-            "妹"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         },
         "occupation": {
-          "values": [
-            "アイドル・芸能"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
     "monogatari-shinobu": {
       "article": "忍野忍",
@@ -18783,17 +18722,17 @@
         "personality": {
           "value": "内気",
           "verified": true,
-          "confidence": "high"
-        },
-        "mood": {
-          "value": "甘め",
-          "verified": true,
           "confidence": "low"
         },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
         "species": {
-          "value": "不死",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "combat": {
           "value": "戦う",
@@ -18801,29 +18740,29 @@
           "confidence": "high"
         },
         "distance": {
-          "value": "やや受け身",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "affiliationKind": {
-          "value": "学生",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "ageFeel": {
           "value": "幼い",
-          "verified": false,
+          "verified": true,
           "confidence": "high"
         },
         "build": {
-          "value": "華奢",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "stature": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "roles": {
           "values": [
@@ -18833,80 +18772,73 @@
           "confidence": "high"
         },
         "occupation": {
-          "values": [
-            "兵士・軍人"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
     "bisquedoll-marin": {
       "article": "喜多川海夢",
       "axes": {
         "personality": {
-          "value": "元気",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "mood": {
-          "value": "純愛寄り",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "species": {
-          "value": "人間",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "combat": {
-          "value": "戦わない",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "distance": {
-          "value": "やや受け身",
+          "value": "積極的",
           "verified": true,
-          "confidence": "high"
+          "confidence": "low"
         },
         "affiliationKind": {
           "value": "学生",
-          "verified": true,
+          "verified": false,
           "confidence": "high"
         },
         "ageFeel": {
-          "value": "同年代",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "build": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "stature": {
-          "value": "標準",
+          "value": "長身",
           "verified": true,
-          "confidence": "high"
+          "confidence": "low"
         },
         "roles": {
-          "values": [
-            "友人"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         },
         "occupation": {
-          "values": [
-            "アイドル・芸能",
-            "アスリート"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
     "dungeonmeshi-marcille": {
       "article": "マルシル",
@@ -18937,9 +18869,9 @@
           "confidence": "none"
         },
         "affiliationKind": {
-          "value": "非人間・その他",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "ageFeel": {
           "value": "該当なし",
@@ -18957,44 +18889,35 @@
           "confidence": "none"
         },
         "roles": {
-          "values": [
-            "主従"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         },
         "occupation": {
-          "values": [
-            "王族・貴族",
-            "研究者・発明家",
-            "兵士・軍人",
-            "神様・精霊",
-            "アイドル・芸能",
-            "アスリート"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
     "psg-stocking": {
       "article": "アナーキー・ストッキング",
       "axes": {
         "personality": {
-          "value": "生意気",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "mood": {
-          "value": "甘め",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "species": {
-          "value": "不死",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "combat": {
           "value": "戦う",
@@ -19002,64 +18925,62 @@
           "confidence": "high"
         },
         "distance": {
-          "value": "やや受け身",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "affiliationKind": {
-          "value": "非人間・その他",
+          "value": "学生",
           "verified": true,
           "confidence": "high"
         },
         "ageFeel": {
-          "value": "同年代",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "build": {
-          "value": "むっちり",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "stature": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "roles": {
           "values": [
-            "妹"
+            "ライバル"
           ],
           "verified": true,
           "confidence": "high"
         },
         "occupation": {
-          "values": [
-            "教師・講師"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
     "fe-lucina": {
       "article": "ルキナ",
       "axes": {
         "personality": {
-          "value": "生意気",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "mood": {
-          "value": "甘め",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "species": {
-          "value": "人間",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "combat": {
           "value": "戦う",
@@ -19067,59 +18988,55 @@
           "confidence": "high"
         },
         "distance": {
-          "value": "やや受け身",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "affiliationKind": {
-          "value": "冒険者",
+          "value": "非人間・その他",
           "verified": true,
-          "confidence": "high"
+          "confidence": "low"
         },
         "ageFeel": {
-          "value": "同年代",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "build": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "stature": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "roles": {
-          "values": [
-            "後輩"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         },
         "occupation": {
-          "values": [
-            "兵士・軍人"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
     "fe-lyn": {
       "article": "リンディス",
       "axes": {
         "personality": {
-          "value": "生意気",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "mood": {
-          "value": "純愛寄り",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "species": {
           "value": "人間",
@@ -19128,68 +19045,66 @@
         },
         "combat": {
           "value": "戦う",
-          "verified": true,
+          "verified": false,
           "confidence": "high"
         },
         "distance": {
-          "value": "やや積極的",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "affiliationKind": {
           "value": "非人間・その他",
           "verified": true,
-          "confidence": "high"
+          "confidence": "low"
         },
         "ageFeel": {
-          "value": "同年代",
+          "value": "幼い",
           "verified": true,
           "confidence": "low"
         },
         "build": {
-          "value": "華奢",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "stature": {
-          "value": "小柄",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "roles": {
-          "values": [
-            "後輩"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         },
         "occupation": {
           "values": [
-            "アスリート"
+            "王族・貴族"
           ],
           "verified": true,
           "confidence": "high"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
     "opm-tatsumaki": {
       "article": "戦慄のタツマキ",
       "axes": {
         "personality": {
-          "value": "生意気",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "mood": {
-          "value": "支配的",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "species": {
-          "value": "人間",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "combat": {
           "value": "戦う",
@@ -19197,29 +19112,29 @@
           "confidence": "high"
         },
         "distance": {
-          "value": "やや受け身",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "affiliationKind": {
-          "value": "軍・組織",
+          "value": "非人間・その他",
           "verified": true,
-          "confidence": "high"
+          "confidence": "low"
         },
         "ageFeel": {
           "value": "幼い",
           "verified": true,
-          "confidence": "high"
+          "confidence": "low"
         },
         "build": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "stature": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "roles": {
           "values": [
@@ -19229,14 +19144,12 @@
           "confidence": "high"
         },
         "occupation": {
-          "values": [
-            "アスリート"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
     "watamote-tomoko": {
       "article": "黒木智子",
@@ -19247,14 +19160,14 @@
           "confidence": "high"
         },
         "mood": {
-          "value": "純愛寄り",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "species": {
-          "value": "人間",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "combat": {
           "value": "該当なし",
@@ -19262,13 +19175,13 @@
           "confidence": "none"
         },
         "distance": {
-          "value": "やや受け身",
+          "value": "受け身",
           "verified": true,
           "confidence": "high"
         },
         "affiliationKind": {
           "value": "学生",
-          "verified": false,
+          "verified": true,
           "confidence": "high"
         },
         "ageFeel": {
@@ -19277,9 +19190,9 @@
           "confidence": "high"
         },
         "build": {
-          "value": "華奢",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "stature": {
           "value": "小柄",
@@ -19297,7 +19210,7 @@
           "confidence": "none"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
     "gridman-rikka": {
       "article": "宝多六花",
@@ -19308,14 +19221,14 @@
           "confidence": "high"
         },
         "mood": {
-          "value": "純愛寄り",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "species": {
           "value": "人間",
           "verified": true,
-          "confidence": "high"
+          "confidence": "low"
         },
         "combat": {
           "value": "戦う",
@@ -19323,19 +19236,19 @@
           "confidence": "high"
         },
         "distance": {
-          "value": "やや受け身",
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "非人間・その他",
           "verified": true,
           "confidence": "low"
         },
-        "affiliationKind": {
-          "value": "学生",
-          "verified": true,
-          "confidence": "high"
-        },
         "ageFeel": {
-          "value": "同年代",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "build": {
           "value": "該当なし",
@@ -19348,32 +19261,25 @@
           "confidence": "none"
         },
         "roles": {
-          "values": [
-            "友人",
-            "後輩",
-            "幼馴染"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         },
         "occupation": {
-          "values": [
-            "アスリート",
-            "魔法使い・魔術師"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
     "voiceroid-kiritan": {
       "article": "東北きりたん",
       "axes": {
         "personality": {
-          "value": "おっとり",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "mood": {
           "value": "甘め",
@@ -19381,44 +19287,46 @@
           "confidence": "high"
         },
         "species": {
-          "value": "機械",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "combat": {
-          "value": "戦わない",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "distance": {
-          "value": "やや受け身",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "affiliationKind": {
-          "value": "非人間・その他",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "ageFeel": {
           "value": "幼い",
-          "verified": true,
+          "verified": false,
           "confidence": "high"
         },
         "build": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "low"
-        },
-        "stature": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "low"
-        },
-        "roles": {
-          "values": [],
+          "value": "該当なし",
           "verified": false,
           "confidence": "none"
+        },
+        "stature": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "roles": {
+          "values": [
+            "妹"
+          ],
+          "verified": true,
+          "confidence": "high"
         },
         "occupation": {
           "values": [],
@@ -19426,45 +19334,45 @@
           "confidence": "none"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
     "atelierryza-ryza": {
       "article": "ライザリン・シュタウト",
       "axes": {
         "personality": {
-          "value": "おっとり",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "mood": {
-          "value": "純愛寄り",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "species": {
-          "value": "人間",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "combat": {
-          "value": "戦わない",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "distance": {
-          "value": "やや積極的",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "affiliationKind": {
-          "value": "社会人",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "ageFeel": {
-          "value": "幼い",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "build": {
           "value": "むっちり",
@@ -19472,15 +19380,14 @@
           "confidence": "high"
         },
         "stature": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "roles": {
           "values": [
-            "妹",
             "幼馴染",
-            "主従"
+            "友人"
           ],
           "verified": true,
           "confidence": "high"
@@ -19493,87 +19400,20 @@
           "confidence": "high"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
     "difranxx-zerotwo": {
       "article": "ゼロツー(ダリフラ)",
       "axes": {
         "personality": {
-          "value": "生意気",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "mood": {
-          "value": "背徳寄り",
-          "verified": true,
-          "confidence": "low"
-        },
-        "species": {
-          "value": "人間",
-          "verified": true,
-          "confidence": "high"
-        },
-        "combat": {
-          "value": "戦う",
-          "verified": true,
-          "confidence": "high"
-        },
-        "distance": {
-          "value": "やや受け身",
-          "verified": true,
-          "confidence": "high"
-        },
-        "affiliationKind": {
-          "value": "軍・組織",
-          "verified": true,
-          "confidence": "high"
-        },
-        "ageFeel": {
-          "value": "同年代",
-          "verified": true,
-          "confidence": "high"
-        },
-        "build": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "low"
-        },
-        "stature": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "low"
-        },
-        "roles": {
-          "values": [
-            "友人",
-            "恋人・伴侶"
-          ],
-          "verified": true,
-          "confidence": "high"
-        },
-        "occupation": {
-          "values": [
-            "兵士・軍人",
-            "アスリート"
-          ],
-          "verified": true,
-          "confidence": "high"
-        }
-      },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
-    },
-    "nijisanji-lize": {
-      "article": "リゼ・ヘルエスタ",
-      "axes": {
-        "personality": {
-          "value": "おっとり",
-          "verified": true,
-          "confidence": "high"
-        },
-        "mood": {
-          "value": "純愛寄り",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "species": {
           "value": "該当なし",
@@ -19586,94 +19426,90 @@
           "confidence": "high"
         },
         "distance": {
-          "value": "やや積極的",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "affiliationKind": {
-          "value": "学生",
-          "verified": false,
+          "value": "軍・組織",
+          "verified": true,
           "confidence": "high"
         },
         "ageFeel": {
           "value": "幼い",
-          "verified": true,
+          "verified": false,
           "confidence": "high"
         },
         "build": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "stature": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "roles": {
-          "values": [
-            "姉"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         },
         "occupation": {
-          "values": [
-            "教師・講師"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
-    "yugioh-dmg": {
-      "article": "ブラックマジシャンガール",
+    "nijisanji-lize": {
+      "article": "リゼ・ヘルエスタ",
       "axes": {
         "personality": {
-          "value": "むっつり",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "mood": {
-          "value": "純愛寄り",
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "非人間・その他",
           "verified": true,
           "confidence": "low"
         },
-        "species": {
-          "value": "エルフ",
-          "verified": true,
-          "confidence": "high"
-        },
-        "combat": {
-          "value": "戦う",
-          "verified": false,
-          "confidence": "high"
-        },
-        "distance": {
-          "value": "やや受け身",
-          "verified": true,
-          "confidence": "high"
-        },
-        "affiliationKind": {
-          "value": "学生",
-          "verified": true,
-          "confidence": "high"
-        },
         "ageFeel": {
-          "value": "幼い",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "build": {
-          "value": "むっちり",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "stature": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "roles": {
           "values": [],
@@ -19682,14 +19518,75 @@
         },
         "occupation": {
           "values": [
-            "魔法使い・魔術師",
-            "神様・精霊"
+            "王族・貴族",
+            "教師・講師"
           ],
           "verified": true,
           "confidence": "high"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
+    },
+    "yugioh-dmg": {
+      "article": "ブラックマジシャンガール",
+      "axes": {
+        "personality": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "非人間・その他",
+          "verified": true,
+          "confidence": "low"
+        },
+        "ageFeel": {
+          "value": "幼い",
+          "verified": true,
+          "confidence": "low"
+        },
+        "build": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "stature": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        },
+        "occupation": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      },
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
     "dandadan-momo": {
       "article": "綾瀬桃",
@@ -19761,9 +19658,9 @@
       "article": "ヘスティア",
       "axes": {
         "personality": {
-          "value": "おっとり",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "mood": {
           "value": "該当なし",
@@ -19771,29 +19668,29 @@
           "confidence": "none"
         },
         "species": {
-          "value": "不死",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "combat": {
-          "value": "戦わない",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "distance": {
-          "value": "やや受け身",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "affiliationKind": {
-          "value": "非人間・その他",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "ageFeel": {
-          "value": "幼い",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "build": {
           "value": "該当なし",
@@ -19811,14 +19708,12 @@
           "confidence": "none"
         },
         "occupation": {
-          "values": [
-            "神様・精霊"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
     "oreimo-ruri": {
       "article": "五更瑠璃",
@@ -19829,24 +19724,24 @@
           "confidence": "high"
         },
         "mood": {
-          "value": "純愛寄り",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "species": {
           "value": "人間",
           "verified": true,
-          "confidence": "high"
+          "confidence": "low"
         },
         "combat": {
-          "value": "戦わない",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "distance": {
-          "value": "やや積極的",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "affiliationKind": {
           "value": "学生",
@@ -19856,35 +19751,33 @@
         "ageFeel": {
           "value": "同年代",
           "verified": true,
-          "confidence": "low"
+          "confidence": "high"
         },
         "build": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "stature": {
           "value": "標準",
           "verified": true,
-          "confidence": "high"
+          "confidence": "low"
         },
         "roles": {
           "values": [
-            "友人"
+            "友人",
+            "恋人・伴侶"
           ],
           "verified": true,
           "confidence": "high"
         },
         "occupation": {
-          "values": [
-            "アスリート",
-            "会社員・OL"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
     "guiltygear-dizzy": {
       "article": "ディズィー",
@@ -19892,17 +19785,17 @@
         "personality": {
           "value": "おっとり",
           "verified": true,
-          "confidence": "high"
+          "confidence": "low"
         },
         "mood": {
-          "value": "甘め",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "species": {
-          "value": "機械",
+          "value": "人間",
           "verified": true,
-          "confidence": "high"
+          "confidence": "low"
         },
         "combat": {
           "value": "戦う",
@@ -19910,29 +19803,29 @@
           "confidence": "high"
         },
         "distance": {
-          "value": "やや受け身",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "affiliationKind": {
-          "value": "冒険者",
+          "value": "非人間・その他",
           "verified": true,
-          "confidence": "high"
+          "confidence": "low"
         },
         "ageFeel": {
           "value": "幼い",
           "verified": true,
-          "confidence": "low"
+          "confidence": "high"
         },
         "build": {
-          "value": "むっちり",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "stature": {
           "value": "標準",
           "verified": true,
-          "confidence": "low"
+          "confidence": "high"
         },
         "roles": {
           "values": [],
@@ -19941,231 +19834,41 @@
         },
         "occupation": {
           "values": [
-            "巫女・神職"
+            "海賊"
           ],
           "verified": true,
           "confidence": "high"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
     "maidragon-kanna": {
       "article": "カンナカムイ",
       "axes": {
         "personality": {
-          "value": "生意気",
-          "verified": true,
-          "confidence": "high"
-        },
-        "mood": {
-          "value": "純愛寄り",
-          "verified": true,
-          "confidence": "high"
-        },
-        "species": {
-          "value": "エルフ",
-          "verified": false,
-          "confidence": "high"
-        },
-        "combat": {
-          "value": "戦わない",
-          "verified": true,
-          "confidence": "low"
-        },
-        "distance": {
-          "value": "やや積極的",
-          "verified": true,
-          "confidence": "high"
-        },
-        "affiliationKind": {
-          "value": "冒険者",
-          "verified": true,
-          "confidence": "high"
-        },
-        "ageFeel": {
-          "value": "幼い",
-          "verified": true,
-          "confidence": "high"
-        },
-        "build": {
-          "value": "華奢",
-          "verified": true,
-          "confidence": "high"
-        },
-        "stature": {
-          "value": "小柄",
-          "verified": true,
-          "confidence": "high"
-        },
-        "roles": {
-          "values": [
-            "後輩",
-            "友人",
-            "妹"
-          ],
-          "verified": true,
-          "confidence": "high"
-        },
-        "occupation": {
-          "values": [
-            "アスリート",
-            "教師・講師"
-          ],
-          "verified": true,
-          "confidence": "high"
-        }
-      },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
-    },
-    "eromangasensei-sagiri": {
-      "article": "和泉紗霧",
-      "axes": {
-        "personality": {
-          "value": "おっとり",
-          "verified": true,
-          "confidence": "high"
-        },
-        "mood": {
-          "value": "甘め",
-          "verified": true,
-          "confidence": "high"
-        },
-        "species": {
-          "value": "人間",
-          "verified": true,
-          "confidence": "high"
-        },
-        "combat": {
-          "value": "戦わない",
-          "verified": true,
-          "confidence": "high"
-        },
-        "distance": {
-          "value": "受け身",
-          "verified": true,
-          "confidence": "high"
-        },
-        "affiliationKind": {
-          "value": "学生",
-          "verified": true,
-          "confidence": "high"
-        },
-        "ageFeel": {
-          "value": "幼い",
-          "verified": true,
-          "confidence": "low"
-        },
-        "build": {
-          "value": "華奢",
-          "verified": true,
-          "confidence": "high"
-        },
-        "stature": {
-          "value": "小柄",
-          "verified": true,
-          "confidence": "high"
-        },
-        "roles": {
-          "values": [],
+          "value": "該当なし",
           "verified": false,
           "confidence": "none"
         },
-        "occupation": {
-          "values": [],
+        "mood": {
+          "value": "該当なし",
           "verified": false,
           "confidence": "none"
-        }
-      },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
-    },
-    "haruhi-haruhi": {
-      "article": "涼宮ハルヒ",
-      "axes": {
-        "personality": {
-          "value": "生意気",
-          "verified": true,
-          "confidence": "high"
-        },
-        "mood": {
-          "value": "純愛寄り",
-          "verified": true,
-          "confidence": "low"
         },
         "species": {
-          "value": "人間",
-          "verified": true,
-          "confidence": "high"
-        },
-        "combat": {
-          "value": "戦わない",
+          "value": "魔族",
           "verified": true,
           "confidence": "low"
+        },
+        "combat": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "distance": {
           "value": "積極的",
           "verified": true,
-          "confidence": "high"
-        },
-        "affiliationKind": {
-          "value": "冒険者",
-          "verified": true,
-          "confidence": "high"
-        },
-        "ageFeel": {
-          "value": "同年代",
-          "verified": true,
           "confidence": "low"
-        },
-        "build": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "low"
-        },
-        "stature": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "low"
-        },
-        "roles": {
-          "values": [],
-          "verified": false,
-          "confidence": "none"
-        },
-        "occupation": {
-          "values": [],
-          "verified": false,
-          "confidence": "none"
-        }
-      },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
-    },
-    "haruhi-yuki": {
-      "article": "長門有希",
-      "axes": {
-        "personality": {
-          "value": "おっとり",
-          "verified": true,
-          "confidence": "high"
-        },
-        "mood": {
-          "value": "純愛寄り",
-          "verified": true,
-          "confidence": "high"
-        },
-        "species": {
-          "value": "機械",
-          "verified": true,
-          "confidence": "high"
-        },
-        "combat": {
-          "value": "戦う",
-          "verified": true,
-          "confidence": "high"
-        },
-        "distance": {
-          "value": "やや受け身",
-          "verified": true,
-          "confidence": "high"
         },
         "affiliationKind": {
           "value": "学生",
@@ -20174,7 +19877,7 @@
         },
         "ageFeel": {
           "value": "幼い",
-          "verified": false,
+          "verified": true,
           "confidence": "high"
         },
         "build": {
@@ -20188,36 +19891,93 @@
           "confidence": "high"
         },
         "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        },
+        "occupation": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      },
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
+    },
+    "eromangasensei-sagiri": {
+      "article": "和泉紗霧",
+      "axes": {
+        "personality": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "学生",
+          "verified": false,
+          "confidence": "high"
+        },
+        "ageFeel": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "build": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "stature": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "roles": {
           "values": [
-            "友人",
-            "主従"
+            "妹"
           ],
           "verified": true,
           "confidence": "high"
         },
         "occupation": {
-          "values": [
-            "魔法使い・魔術師",
-            "研究者・発明家"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
-    "danganronpa-chiaki": {
-      "article": "七海千秋",
+    "haruhi-haruhi": {
+      "article": "涼宮ハルヒ",
       "axes": {
         "personality": {
-          "value": "おっとり",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "mood": {
-          "value": "甘め",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "species": {
           "value": "人間",
@@ -20225,29 +19985,90 @@
           "confidence": "high"
         },
         "combat": {
-          "value": "戦わない",
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "distance": {
+          "value": "積極的",
           "verified": true,
           "confidence": "low"
+        },
+        "affiliationKind": {
+          "value": "非人間・その他",
+          "verified": true,
+          "confidence": "low"
+        },
+        "ageFeel": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "build": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "stature": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        },
+        "occupation": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      },
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
+    },
+    "haruhi-yuki": {
+      "article": "長門有希",
+      "axes": {
+        "personality": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "機械",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
         },
         "distance": {
           "value": "やや受け身",
           "verified": true,
-          "confidence": "high"
+          "confidence": "low"
         },
         "affiliationKind": {
           "value": "学生",
-          "verified": true,
+          "verified": false,
           "confidence": "high"
         },
         "ageFeel": {
-          "value": "同年代",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "build": {
-          "value": "華奢",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "stature": {
           "value": "標準",
@@ -20255,49 +20076,106 @@
           "confidence": "high"
         },
         "roles": {
-          "values": [
-            "友人"
-          ],
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        },
+        "occupation": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      },
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
+    },
+    "danganronpa-chiaki": {
+      "article": "七海千秋",
+      "axes": {
+        "personality": {
+          "value": "おっとり",
+          "verified": true,
+          "confidence": "low"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "学生",
+          "verified": false,
+          "confidence": "high"
+        },
+        "ageFeel": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "build": {
+          "value": "華奢",
+          "verified": true,
+          "confidence": "low"
+        },
+        "stature": {
+          "value": "標準",
           "verified": true,
           "confidence": "high"
         },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        },
         "occupation": {
-          "values": [
-            "アスリート"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
     "fate-rin": {
       "article": "遠坂凛",
       "axes": {
         "personality": {
-          "value": "生意気",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "mood": {
-          "value": "甘め",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "species": {
           "value": "人間",
-          "verified": true,
+          "verified": false,
           "confidence": "high"
         },
         "combat": {
-          "value": "戦わない",
-          "verified": true,
-          "confidence": "low"
-        },
-        "distance": {
-          "value": "やや受け身",
+          "value": "戦う",
           "verified": true,
           "confidence": "high"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "affiliationKind": {
           "value": "学生",
@@ -20307,12 +20185,12 @@
         "ageFeel": {
           "value": "幼い",
           "verified": true,
-          "confidence": "low"
+          "confidence": "high"
         },
         "build": {
-          "value": "華奢",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "stature": {
           "value": "標準",
@@ -20321,20 +20199,18 @@
         },
         "roles": {
           "values": [
-            "後輩"
+            "教師"
           ],
           "verified": true,
           "confidence": "high"
         },
         "occupation": {
-          "values": [
-            "魔法使い・魔術師"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
     "bocchi-hitori": {
       "article": "後藤ひとり",
@@ -20345,24 +20221,24 @@
           "confidence": "high"
         },
         "mood": {
-          "value": "甘め",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "species": {
-          "value": "人間",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "combat": {
-          "value": "戦わない",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "distance": {
-          "value": "受け身",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "affiliationKind": {
           "value": "学生",
@@ -20375,9 +20251,9 @@
           "confidence": "low"
         },
         "build": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "stature": {
           "value": "標準",
@@ -20385,34 +20261,30 @@
           "confidence": "high"
         },
         "roles": {
-          "values": [
-            "友人"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         },
         "occupation": {
-          "values": [
-            "アスリート"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
     "bocchi-ikuyo": {
       "article": "喜多郁代",
       "axes": {
         "personality": {
-          "value": "元気",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "mood": {
-          "value": "純愛寄り",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "species": {
           "value": "該当なし",
@@ -20420,14 +20292,14 @@
           "confidence": "none"
         },
         "combat": {
-          "value": "戦わない",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "distance": {
-          "value": "やや積極的",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "affiliationKind": {
           "value": "学生",
@@ -20440,141 +20312,9 @@
           "confidence": "low"
         },
         "build": {
-          "value": "華奢",
-          "verified": true,
-          "confidence": "high"
-        },
-        "stature": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "high"
-        },
-        "roles": {
-          "values": [
-            "恋人・伴侶"
-          ],
-          "verified": true,
-          "confidence": "high"
-        },
-        "occupation": {
-          "values": [
-            "アスリート"
-          ],
-          "verified": true,
-          "confidence": "high"
-        }
-      },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
-    },
-    "bocchi-kikuri": {
-      "article": "廣井きくり",
-      "axes": {
-        "personality": {
-          "value": "生意気",
-          "verified": false,
-          "confidence": "high"
-        },
-        "mood": {
-          "value": "甘め",
-          "verified": true,
-          "confidence": "high"
-        },
-        "species": {
-          "value": "人間",
-          "verified": true,
-          "confidence": "high"
-        },
-        "combat": {
-          "value": "戦わない",
-          "verified": true,
-          "confidence": "low"
-        },
-        "distance": {
-          "value": "やや積極的",
-          "verified": true,
-          "confidence": "high"
-        },
-        "affiliationKind": {
-          "value": "冒険者",
-          "verified": true,
-          "confidence": "high"
-        },
-        "ageFeel": {
-          "value": "同年代",
-          "verified": true,
-          "confidence": "low"
-        },
-        "build": {
-          "value": "華奢",
-          "verified": true,
-          "confidence": "high"
-        },
-        "stature": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "low"
-        },
-        "roles": {
-          "values": [
-            "幼馴染",
-            "後輩",
-            "友人"
-          ],
-          "verified": true,
-          "confidence": "high"
-        },
-        "occupation": {
-          "values": [
-            "アスリート"
-          ],
-          "verified": true,
-          "confidence": "high"
-        }
-      },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
-    },
-    "vtuber-shigureui": {
-      "article": "しぐれうい",
-      "axes": {
-        "personality": {
-          "value": "おっとり",
-          "verified": true,
-          "confidence": "low"
-        },
-        "mood": {
-          "value": "甘め",
-          "verified": true,
-          "confidence": "low"
-        },
-        "species": {
           "value": "該当なし",
           "verified": false,
           "confidence": "none"
-        },
-        "combat": {
-          "value": "該当なし",
-          "verified": false,
-          "confidence": "none"
-        },
-        "distance": {
-          "value": "やや受け身",
-          "verified": true,
-          "confidence": "high"
-        },
-        "affiliationKind": {
-          "value": "社会人",
-          "verified": true,
-          "confidence": "high"
-        },
-        "ageFeel": {
-          "value": "同年代",
-          "verified": true,
-          "confidence": "low"
-        },
-        "build": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "low"
         },
         "stature": {
           "value": "標準",
@@ -20587,118 +20327,50 @@
           "confidence": "none"
         },
         "occupation": {
-          "values": [
-            "会社員・OL",
-            "アスリート"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
-    "bluearchive-hasumi": {
-      "article": "羽川ハスミ",
+    "bocchi-kikuri": {
+      "article": "廣井きくり",
       "axes": {
         "personality": {
-          "value": "むっつり",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "mood": {
-          "value": "支配的",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "species": {
-          "value": "人間",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "combat": {
-          "value": "戦う",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "distance": {
-          "value": "やや受け身",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "affiliationKind": {
-          "value": "学生",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "ageFeel": {
-          "value": "同年代",
-          "verified": true,
-          "confidence": "low"
-        },
-        "build": {
-          "value": "標準",
+          "value": "年上",
           "verified": true,
           "confidence": "high"
-        },
-        "stature": {
-          "value": "長身",
-          "verified": true,
-          "confidence": "low"
-        },
-        "roles": {
-          "values": [
-            "後輩"
-          ],
-          "verified": true,
-          "confidence": "high"
-        },
-        "occupation": {
-          "values": [
-            "会社員・OL"
-          ],
-          "verified": true,
-          "confidence": "high"
-        }
-      },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
-    },
-    "bluearchive-kayoko": {
-      "article": "鬼方カヨコ",
-      "axes": {
-        "personality": {
-          "value": "生意気",
-          "verified": true,
-          "confidence": "high"
-        },
-        "mood": {
-          "value": "支配的",
-          "verified": true,
-          "confidence": "high"
-        },
-        "species": {
-          "value": "人間",
-          "verified": true,
-          "confidence": "low"
-        },
-        "combat": {
-          "value": "戦う",
-          "verified": true,
-          "confidence": "high"
-        },
-        "distance": {
-          "value": "やや受け身",
-          "verified": true,
-          "confidence": "low"
-        },
-        "affiliationKind": {
-          "value": "社会人",
-          "verified": true,
-          "confidence": "high"
-        },
-        "ageFeel": {
-          "value": "同年代",
-          "verified": true,
-          "confidence": "low"
         },
         "build": {
           "value": "該当なし",
@@ -20706,44 +20378,103 @@
           "confidence": "none"
         },
         "stature": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "roles": {
           "values": [
-            "後輩"
+            "先輩"
           ],
           "verified": true,
           "confidence": "high"
         },
         "occupation": {
-          "values": [
-            "会社員・OL"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
-    "bluearchive-mutsuki": {
-      "article": "浅黄ムツキ",
+    "vtuber-shigureui": {
+      "article": "しぐれうい",
       "axes": {
         "personality": {
-          "value": "生意気",
+          "value": "該当なし",
           "verified": false,
-          "confidence": "high"
+          "confidence": "none"
         },
         "mood": {
-          "value": "甘め",
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "非人間・その他",
+          "verified": true,
+          "confidence": "low"
+        },
+        "ageFeel": {
+          "value": "幼い",
           "verified": true,
           "confidence": "high"
         },
+        "build": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "stature": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        },
+        "occupation": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      },
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
+    },
+    "bluearchive-hasumi": {
+      "article": "羽川ハスミ",
+      "axes": {
+        "personality": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
         "species": {
-          "value": "人間",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "combat": {
           "value": "戦う",
@@ -20751,7 +20482,68 @@
           "confidence": "high"
         },
         "distance": {
-          "value": "やや受け身",
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "学生",
+          "verified": true,
+          "confidence": "high"
+        },
+        "ageFeel": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "build": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "stature": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        },
+        "occupation": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      },
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
+    },
+    "bluearchive-kayoko": {
+      "article": "鬼方カヨコ",
+      "axes": {
+        "personality": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "中立",
           "verified": true,
           "confidence": "low"
         },
@@ -20761,19 +20553,80 @@
           "confidence": "high"
         },
         "ageFeel": {
-          "value": "幼い",
+          "value": "同年代",
           "verified": true,
           "confidence": "high"
         },
         "build": {
-          "value": "華奢",
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "stature": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        },
+        "occupation": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      },
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
+    },
+    "bluearchive-mutsuki": {
+      "article": "浅黄ムツキ",
+      "axes": {
+        "personality": {
+          "value": "生意気",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": false,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや積極的",
           "verified": true,
           "confidence": "low"
         },
+        "affiliationKind": {
+          "value": "学生",
+          "verified": true,
+          "confidence": "high"
+        },
+        "ageFeel": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "build": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
         "stature": {
           "value": "小柄",
-          "verified": true,
-          "confidence": "low"
+          "verified": false,
+          "confidence": "high"
         },
         "roles": {
           "values": [
@@ -20783,27 +20636,25 @@
           "confidence": "high"
         },
         "occupation": {
-          "values": [
-            "アスリート"
-          ],
-          "verified": true,
-          "confidence": "high"
+          "values": [],
+          "verified": false,
+          "confidence": "none"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
     "bluearchive-kokona": {
       "article": "春原ココナ",
       "axes": {
         "personality": {
-          "value": "生意気",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "mood": {
-          "value": "甘め",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "species": {
           "value": "該当なし",
@@ -20811,14 +20662,14 @@
           "confidence": "none"
         },
         "combat": {
-          "value": "戦う",
-          "verified": true,
-          "confidence": "high"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "distance": {
-          "value": "やや受け身",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "affiliationKind": {
           "value": "学生",
@@ -20831,17 +20682,18 @@
           "confidence": "high"
         },
         "build": {
-          "value": "華奢",
-          "verified": true,
-          "confidence": "low"
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
         },
         "stature": {
           "value": "小柄",
-          "verified": true,
+          "verified": false,
           "confidence": "high"
         },
         "roles": {
           "values": [
+            "教師",
             "妹"
           ],
           "verified": true,
@@ -20855,7 +20707,7 @@
           "confidence": "high"
         }
       },
-      "model": "hf.co/huihui-ai/Huihui-Ornith-1.0-9B-abliterated-MTP-GGUF:Q4_K_M"
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
     "bluearchive-nonomi": {
       "article": "十六夜ノノミ",
@@ -25062,6 +24914,633 @@
           "values": [],
           "verified": false,
           "confidence": "none"
+        },
+        "occupation": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      },
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
+    },
+    "darkstalkers-morrigan": {
+      "article": "モリガン・アーンスランド",
+      "axes": {
+        "personality": {
+          "value": "おっとり",
+          "verified": true,
+          "confidence": "low"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "魔族",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "非人間・その他",
+          "verified": true,
+          "confidence": "high"
+        },
+        "ageFeel": {
+          "value": "年上",
+          "verified": true,
+          "confidence": "low"
+        },
+        "build": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "stature": {
+          "value": "標準",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        },
+        "occupation": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      },
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
+    },
+    "idolmaster-haruka": {
+      "article": "天海春香",
+      "axes": {
+        "personality": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "low"
+        },
+        "combat": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "distance": {
+          "value": "やや積極的",
+          "verified": true,
+          "confidence": "high"
+        },
+        "affiliationKind": {
+          "value": "学生",
+          "verified": true,
+          "confidence": "low"
+        },
+        "ageFeel": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "build": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "stature": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        },
+        "occupation": {
+          "values": [
+            "アイドル・芸能"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
+    },
+    "spyfamily-anya": {
+      "article": "アーニャ・フォージャー",
+      "axes": {
+        "personality": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "学生",
+          "verified": true,
+          "confidence": "high"
+        },
+        "ageFeel": {
+          "value": "幼い",
+          "verified": true,
+          "confidence": "high"
+        },
+        "build": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "stature": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "roles": {
+          "values": [
+            "妹"
+          ],
+          "verified": true,
+          "confidence": "high"
+        },
+        "occupation": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      },
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
+    },
+    "konosuba-megumin": {
+      "article": "めぐみん(この素晴らしい世界に祝福を!)",
+      "axes": {
+        "personality": {
+          "value": "クール",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや積極的",
+          "verified": true,
+          "confidence": "low"
+        },
+        "affiliationKind": {
+          "value": "学生",
+          "verified": true,
+          "confidence": "high"
+        },
+        "ageFeel": {
+          "value": "幼い",
+          "verified": true,
+          "confidence": "high"
+        },
+        "build": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "stature": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        },
+        "occupation": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      },
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
+    },
+    "konosuba-aqua": {
+      "article": "アクア(この素晴らしい世界に祝福を!)",
+      "axes": {
+        "personality": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "非人間・その他",
+          "verified": true,
+          "confidence": "low"
+        },
+        "ageFeel": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "build": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "stature": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "roles": {
+          "values": [
+            "後輩"
+          ],
+          "verified": true,
+          "confidence": "high"
+        },
+        "occupation": {
+          "values": [
+            "魔法使い・魔術師"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
+    },
+    "fatalfury-mai": {
+      "article": "不知火舞",
+      "axes": {
+        "personality": {
+          "value": "元気",
+          "verified": true,
+          "confidence": "high"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "積極的",
+          "verified": true,
+          "confidence": "low"
+        },
+        "affiliationKind": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "ageFeel": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "build": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "stature": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "roles": {
+          "values": [
+            "恋人・伴侶"
+          ],
+          "verified": true,
+          "confidence": "high"
+        },
+        "occupation": {
+          "values": [
+            "忍者"
+          ],
+          "verified": true,
+          "confidence": "high"
+        }
+      },
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
+    },
+    "fe-corrin": {
+      "article": "カムイ(ファイアーエムブレム)",
+      "axes": {
+        "personality": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "ageFeel": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "build": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "stature": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        },
+        "occupation": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      },
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
+    },
+    "fate-nero": {
+      "article": "セイバー(Fate/EXTRA)",
+      "axes": {
+        "personality": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "affiliationKind": {
+          "value": "非人間・その他",
+          "verified": true,
+          "confidence": "high"
+        },
+        "ageFeel": {
+          "value": "幼い",
+          "verified": true,
+          "confidence": "high"
+        },
+        "build": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "stature": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "roles": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        },
+        "occupation": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      },
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
+    },
+    "rezero-emilia": {
+      "article": "エミリア(Re:ゼロから始める異世界生活)",
+      "axes": {
+        "personality": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "エルフ",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "戦う",
+          "verified": true,
+          "confidence": "high"
+        },
+        "distance": {
+          "value": "やや積極的",
+          "verified": true,
+          "confidence": "low"
+        },
+        "affiliationKind": {
+          "value": "非人間・その他",
+          "verified": true,
+          "confidence": "low"
+        },
+        "ageFeel": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "build": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "stature": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "roles": {
+          "values": [
+            "友人"
+          ],
+          "verified": true,
+          "confidence": "high"
+        },
+        "occupation": {
+          "values": [],
+          "verified": false,
+          "confidence": "none"
+        }
+      },
+      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
+    },
+    "bocchi-ryo": {
+      "article": "山田リョウ(ぼざろ)",
+      "axes": {
+        "personality": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "mood": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "species": {
+          "value": "人間",
+          "verified": true,
+          "confidence": "high"
+        },
+        "combat": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "distance": {
+          "value": "受け身",
+          "verified": true,
+          "confidence": "low"
+        },
+        "affiliationKind": {
+          "value": "学生",
+          "verified": true,
+          "confidence": "high"
+        },
+        "ageFeel": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "build": {
+          "value": "該当なし",
+          "verified": false,
+          "confidence": "none"
+        },
+        "stature": {
+          "value": "標準",
+          "verified": true,
+          "confidence": "high"
+        },
+        "roles": {
+          "values": [
+            "後輩",
+            "友人"
+          ],
+          "verified": true,
+          "confidence": "high"
         },
         "occupation": {
           "values": [],
