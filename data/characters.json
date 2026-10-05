@@ -194,7 +194,6 @@
       "affiliationName": null,
       "stature": null,
       "occupation": [
-        "巫女・神職",
         "神様・精霊"
       ]
     },
@@ -9195,9 +9194,7 @@
       "affiliationKind": "学生",
       "affiliationName": "喫茶ラビットハウス",
       "stature": "小柄",
-      "occupation": [
-        "メイド・従者"
-      ]
+      "occupation": []
     },
     "reviewed": true,
     "provisional": false,
@@ -9248,9 +9245,7 @@
       "affiliationKind": "学生",
       "affiliationName": "フルール・ド・ラパン",
       "stature": "長身",
-      "occupation": [
-        "メイド・従者"
-      ]
+      "occupation": []
     },
     "reviewed": true,
     "provisional": false,
@@ -10153,8 +10148,7 @@
       "affiliationName": "守矢神社",
       "stature": "標準",
       "occupation": [
-        "神様・精霊",
-        "巫女・神職"
+        "神様・精霊"
       ]
     },
     "reviewed": true,
@@ -16222,7 +16216,9 @@
       "affiliationKind": "学生",
       "affiliationName": null,
       "stature": "小柄",
-      "occupation": []
+      "occupation": [
+        "メイド・従者"
+      ]
     },
     "reviewed": true,
     "provisional": false,
@@ -16826,7 +16822,7 @@
       "affiliationName": null,
       "stature": "標準",
       "occupation": [
-        "兵士・軍人"
+        "メイド・従者"
       ]
     },
     "reviewed": true,
