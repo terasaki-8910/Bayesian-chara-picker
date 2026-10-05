@@ -125,24 +125,6 @@
       "fetchedAt": "2026-07-20T06:45:56.965Z"
     }
   },
-  "overlord-narberal": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T05:26:16.781Z",
-    "hitomi": {
-      "galleryCount": 63,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-20T06:46:01.441Z"
-    }
-  },
   "konosuba-darkness": {
     "pageCount": 5,
     "estimatedRange": [
@@ -159,24 +141,6 @@
       "galleryCount": 801,
       "seriesFilter": null,
       "fetchedAt": "2026-07-20T06:46:02.948Z"
-    }
-  },
-  "fairytail-mirajane": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T05:28:16.677Z",
-    "hitomi": {
-      "galleryCount": 72,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-20T06:46:06.027Z"
     }
   },
   "dragonball-bulma": {
@@ -233,24 +197,6 @@
       "fetchedAt": "2026-07-20T06:46:10.460Z"
     }
   },
-  "naruto-kurenai": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T05:30:56.693Z",
-    "hitomi": {
-      "galleryCount": 101,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-20T06:46:11.956Z"
-    }
-  },
   "onepiece-hancock": {
     "pageCount": 8,
     "estimatedRange": [
@@ -285,60 +231,6 @@
       "galleryCount": 2881,
       "seriesFilter": null,
       "fetchedAt": "2026-07-20T06:46:16.542Z"
-    }
-  },
-  "nier-a2": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T05:35:36.587Z",
-    "hitomi": {
-      "galleryCount": 51,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-20T06:46:22.468Z"
-    }
-  },
-  "azurlane-nagato": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T05:36:16.770Z",
-    "hitomi": {
-      "galleryCount": 187,
-      "seriesFilter": "azur lane",
-      "fetchedAt": "2026-07-20T06:46:25.567Z"
-    }
-  },
-  "azurlane-yamato": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T05:36:56.680Z",
-    "hitomi": {
-      "galleryCount": 11,
-      "seriesFilter": "azur lane",
-      "fetchedAt": "2026-07-20T06:46:27.004Z"
     }
   },
   "granblue-narmaya": {
@@ -1061,24 +953,6 @@
       "fetchedAt": "2026-07-20T15:27:33.967Z"
     }
   },
-  "genshin-eula": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T15:06:45.139Z",
-    "hitomi": {
-      "galleryCount": 742,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-20T15:27:35.412Z"
-    }
-  },
   "onepiece-vivi": {
     "pageCount": 3,
     "estimatedRange": [
@@ -1097,78 +971,6 @@
       "fetchedAt": "2026-07-20T15:27:36.957Z"
     }
   },
-  "onepiece-tashigi": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T15:08:05.181Z",
-    "hitomi": {
-      "galleryCount": 132,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-20T15:27:38.405Z"
-    }
-  },
-  "onepiece-perona": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T15:08:45.240Z",
-    "hitomi": {
-      "galleryCount": 115,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-20T15:27:39.907Z"
-    }
-  },
-  "onepiece-kalifa": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T15:09:25.260Z",
-    "hitomi": {
-      "galleryCount": 103,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-20T15:27:41.425Z"
-    }
-  },
-  "onepiece-carrot": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T15:10:05.244Z",
-    "hitomi": {
-      "galleryCount": 96,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-20T15:27:42.962Z"
-    }
-  },
   "onepiece-uta": {
     "pageCount": 5,
     "estimatedRange": [
@@ -1185,24 +987,6 @@
       "galleryCount": 79,
       "seriesFilter": null,
       "fetchedAt": "2026-07-20T15:27:44.447Z"
-    }
-  },
-  "onepiece-sadi": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T15:11:25.178Z",
-    "hitomi": {
-      "galleryCount": 71,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-20T15:27:45.917Z"
     }
   },
   "naruto-sakura": {
@@ -1241,42 +1025,6 @@
       "fetchedAt": "2026-07-20T15:27:49.016Z"
     }
   },
-  "naruto-ino": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T15:13:25.279Z",
-    "hitomi": {
-      "galleryCount": 426,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-20T15:27:50.421Z"
-    }
-  },
-  "naruto-shizune": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T15:14:05.216Z",
-    "hitomi": {
-      "galleryCount": 346,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-20T15:27:51.924Z"
-    }
-  },
   "naruto-temari": {
     "pageCount": 2,
     "estimatedRange": [
@@ -1293,42 +1041,6 @@
       "galleryCount": 287,
       "seriesFilter": null,
       "fetchedAt": "2026-07-20T15:27:53.509Z"
-    }
-  },
-  "naruto-anko": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T15:15:25.294Z",
-    "hitomi": {
-      "galleryCount": 239,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-20T15:27:55.045Z"
-    }
-  },
-  "naruto-tenten": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T15:16:05.353Z",
-    "hitomi": {
-      "galleryCount": 151,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-20T15:27:56.505Z"
     }
   },
   "bleach-orihime": {
@@ -1349,24 +1061,6 @@
       "fetchedAt": "2026-07-20T15:27:57.935Z"
     }
   },
-  "bleach-rukia": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T15:17:25.362Z",
-    "hitomi": {
-      "galleryCount": 432,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-20T15:27:59.504Z"
-    }
-  },
   "bleach-soifon": {
     "pageCount": 2,
     "estimatedRange": [
@@ -1385,240 +1079,6 @@
       "fetchedAt": "2026-07-20T15:28:00.932Z"
     }
   },
-  "bleach-halibel": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T15:18:45.325Z",
-    "hitomi": {
-      "galleryCount": 137,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-20T15:28:02.442Z"
-    }
-  },
-  "bleach-nelliel": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T15:19:25.273Z",
-    "hitomi": {
-      "galleryCount": 66,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-20T15:28:03.937Z"
-    }
-  },
-  "bleach-unohana": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T15:20:05.318Z",
-    "hitomi": {
-      "galleryCount": 86,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-20T15:28:05.441Z"
-    }
-  },
-  "bleach-nemu": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T15:20:45.265Z",
-    "hitomi": {
-      "galleryCount": 101,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-20T15:28:06.993Z"
-    }
-  },
-  "bleach-isane": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T15:21:25.360Z",
-    "hitomi": {
-      "galleryCount": 67,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-20T15:28:08.443Z"
-    }
-  },
-  "overlord-shalltear": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T15:22:05.287Z",
-    "hitomi": {
-      "galleryCount": 91,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-20T15:28:09.989Z"
-    }
-  },
-  "overlord-aura": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T15:22:45.545Z",
-    "hitomi": {
-      "galleryCount": 47,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-20T15:28:11.447Z"
-    }
-  },
-  "overlord-mare": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T15:23:25.259Z",
-    "hitomi": {
-      "galleryCount": 43,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-20T15:28:12.950Z"
-    }
-  },
-  "overlord-lupusregina": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T15:24:05.256Z",
-    "hitomi": {
-      "galleryCount": 41,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-20T15:28:14.452Z"
-    }
-  },
-  "overlord-clementine": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T15:24:45.311Z",
-    "hitomi": {
-      "galleryCount": 40,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-20T15:28:16.033Z"
-    }
-  },
-  "overlord-yuri": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T15:25:25.459Z",
-    "hitomi": {
-      "galleryCount": 24,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-20T15:28:17.481Z"
-    }
-  },
-  "overlord-solution": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T15:26:01.545Z",
-    "hitomi": {
-      "galleryCount": 23,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-20T15:28:18.958Z"
-    }
-  },
-  "utau-teto": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T15:26:41.670Z",
-    "hitomi": {
-      "galleryCount": 65,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-20T15:28:20.477Z"
-    }
-  },
   "genshin-ayaka": {
     "pageCount": 2,
     "estimatedRange": [
@@ -1635,24 +1095,6 @@
       "galleryCount": 703,
       "seriesFilter": null,
       "fetchedAt": "2026-07-20T16:45:33.893Z"
-    }
-  },
-  "genshin-shenhe": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T16:36:59.968Z",
-    "hitomi": {
-      "galleryCount": 707,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-20T16:45:34.947Z"
     }
   },
   "genshin-nahida": {
@@ -1799,24 +1241,6 @@
       "fetchedAt": "2026-07-20T16:45:46.986Z"
     }
   },
-  "kancolle-atago": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T17:52:04.404Z",
-    "hitomi": {
-      "galleryCount": 1937,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-20T18:12:11.395Z"
-    }
-  },
   "kancolle-shimakaze": {
     "pageCount": 2,
     "estimatedRange": [
@@ -1851,96 +1275,6 @@
       "galleryCount": 1592,
       "seriesFilter": null,
       "fetchedAt": "2026-07-20T18:12:14.048Z"
-    }
-  },
-  "kancolle-kashima": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T17:54:04.324Z",
-    "hitomi": {
-      "galleryCount": 1520,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-20T18:12:15.557Z"
-    }
-  },
-  "kancolle-takao": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T17:54:44.301Z",
-    "hitomi": {
-      "galleryCount": 1485,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-20T18:12:17.052Z"
-    }
-  },
-  "kancolle-hamakaze": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T17:55:24.312Z",
-    "hitomi": {
-      "galleryCount": 1001,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-20T18:12:18.556Z"
-    }
-  },
-  "kancolle-taihou": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T17:56:04.386Z",
-    "hitomi": {
-      "galleryCount": 980,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-20T18:12:20.111Z"
-    }
-  },
-  "kancolle-suzuya": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T17:56:44.295Z",
-    "hitomi": {
-      "galleryCount": 968,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-20T18:12:21.558Z"
     }
   },
   "kancolle-kongou": {
@@ -2267,24 +1601,6 @@
       "fetchedAt": "2026-07-20T18:12:50.093Z"
     }
   },
-  "fate-miyu": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T18:09:24.541Z",
-    "hitomi": {
-      "galleryCount": 920,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-20T18:12:51.595Z"
-    }
-  },
   "fate-shuten": {
     "pageCount": 3,
     "estimatedRange": [
@@ -2321,24 +1637,6 @@
       "fetchedAt": "2026-07-20T18:12:54.600Z"
     }
   },
-  "fate-chloe": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-20T18:11:24.446Z",
-    "hitomi": {
-      "galleryCount": 1109,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-20T18:12:56.144Z"
-    }
-  },
   "fate-jalter": {
     "pageCount": 4,
     "estimatedRange": [
@@ -2355,78 +1653,6 @@
       "galleryCount": 1859,
       "seriesFilter": null,
       "fetchedAt": "2026-07-20T18:12:57.605Z"
-    }
-  },
-  "bleach-hinamori": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-26T07:28:39.633Z",
-    "hitomi": {
-      "galleryCount": 63,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-26T08:03:32.474Z"
-    }
-  },
-  "bleach-nanao": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-26T07:29:19.603Z",
-    "hitomi": {
-      "galleryCount": 51,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-26T08:03:33.612Z"
-    }
-  },
-  "bleach-kukaku": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-26T07:29:59.833Z",
-    "hitomi": {
-      "galleryCount": 52,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-26T08:03:35.115Z"
-    }
-  },
-  "bleach-tatsuki": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-26T07:30:39.601Z",
-    "hitomi": {
-      "galleryCount": 60,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-26T08:03:36.615Z"
     }
   },
   "touhou-cirno": {
@@ -2519,24 +1745,6 @@
       "fetchedAt": "2026-07-26T08:03:44.127Z"
     }
   },
-  "fate-artoria": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-26T07:34:39.985Z",
-    "hitomi": {
-      "galleryCount": 1571,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-26T08:03:45.643Z"
-    }
-  },
   "fate-mordred": {
     "pageCount": 3,
     "estimatedRange": [
@@ -2553,24 +1761,6 @@
       "galleryCount": 472,
       "seriesFilter": null,
       "fetchedAt": "2026-07-26T08:03:48.623Z"
-    }
-  },
-  "fate-abigail": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-26T07:36:39.916Z",
-    "hitomi": {
-      "galleryCount": 801,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-26T08:03:50.130Z"
     }
   },
   "fate-morgan": {
@@ -2607,222 +1797,6 @@
       "galleryCount": 285,
       "seriesFilter": null,
       "fetchedAt": "2026-07-26T08:03:53.126Z"
-    }
-  },
-  "onepiece-bonney": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-26T07:38:39.826Z",
-    "hitomi": {
-      "galleryCount": 66,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-26T08:03:54.631Z"
-    }
-  },
-  "onepiece-marguerite": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-26T07:39:19.882Z",
-    "hitomi": {
-      "galleryCount": 68,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-26T08:03:56.129Z"
-    }
-  },
-  "onepiece-shirahoshi": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-26T07:40:00.033Z",
-    "hitomi": {
-      "galleryCount": 49,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-26T08:03:57.631Z"
-    }
-  },
-  "onepiece-reiju": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-26T07:40:39.993Z",
-    "hitomi": {
-      "galleryCount": 49,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-26T08:03:59.131Z"
-    }
-  },
-  "naruto-samui": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-26T07:41:19.942Z",
-    "hitomi": {
-      "galleryCount": 137,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-26T08:04:00.633Z"
-    }
-  },
-  "naruto-hanabi": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-26T07:41:59.991Z",
-    "hitomi": {
-      "galleryCount": 91,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-26T08:04:02.134Z"
-    }
-  },
-  "naruto-kushina": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-26T07:42:39.976Z",
-    "hitomi": {
-      "galleryCount": 64,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-26T08:04:03.636Z"
-    }
-  },
-  "naruto-tayuya": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-26T07:43:20.026Z",
-    "hitomi": {
-      "galleryCount": 58,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-26T08:04:05.135Z"
-    }
-  },
-  "overlord-evileye": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-26T07:44:00.194Z",
-    "hitomi": {
-      "galleryCount": 18,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-26T08:04:06.637Z"
-    }
-  },
-  "overlord-entoma": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-26T07:44:40.123Z",
-    "hitomi": {
-      "galleryCount": 12,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-26T08:04:08.138Z"
-    }
-  },
-  "overlord-cz2128delta": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-26T07:45:20.059Z",
-    "hitomi": {
-      "galleryCount": 11,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-26T08:04:09.639Z"
-    }
-  },
-  "overlord-arche": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-26T07:46:00.104Z",
-    "hitomi": {
-      "galleryCount": 11,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-26T08:04:11.146Z"
     }
   },
   "bluearchive-hoshino": {
@@ -2879,78 +1853,6 @@
       "fetchedAt": "2026-07-26T08:04:15.647Z"
     }
   },
-  "genshin-nilou": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-26T07:48:40.199Z",
-    "hitomi": {
-      "galleryCount": 617,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-26T08:04:17.155Z"
-    }
-  },
-  "genshin-yelan": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-26T07:49:20.235Z",
-    "hitomi": {
-      "galleryCount": 474,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-26T08:04:18.643Z"
-    }
-  },
-  "genshin-kokomi": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-26T07:50:00.215Z",
-    "hitomi": {
-      "galleryCount": 454,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-26T08:04:20.144Z"
-    }
-  },
-  "genshin-fischl": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-26T07:50:40.302Z",
-    "hitomi": {
-      "galleryCount": 312,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-26T08:04:21.645Z"
-    }
-  },
   "genshin-jean": {
     "pageCount": 2,
     "estimatedRange": [
@@ -2967,96 +1869,6 @@
       "galleryCount": 514,
       "seriesFilter": null,
       "fetchedAt": "2026-07-26T08:04:23.151Z"
-    }
-  },
-  "hsr-march7th": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-26T07:52:00.286Z",
-    "hitomi": {
-      "galleryCount": 302,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-26T08:04:24.648Z"
-    }
-  },
-  "hsr-kafka": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-26T07:52:40.326Z",
-    "hitomi": {
-      "galleryCount": 635,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-26T08:04:26.153Z"
-    }
-  },
-  "hsr-silverwolf": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-26T07:53:20.448Z",
-    "hitomi": {
-      "galleryCount": 401,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-26T08:04:27.649Z"
-    }
-  },
-  "hsr-acheron": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-26T07:54:00.399Z",
-    "hitomi": {
-      "galleryCount": 175,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-26T08:04:29.150Z"
-    }
-  },
-  "hsr-fuxuan": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-26T07:54:40.465Z",
-    "hitomi": {
-      "galleryCount": 179,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-26T08:04:30.650Z"
     }
   },
   "lovelive-honoka": {
@@ -3131,96 +1943,6 @@
       "fetchedAt": "2026-07-26T08:04:36.675Z"
     }
   },
-  "sao-shino": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-26T07:58:00.553Z",
-    "hitomi": {
-      "galleryCount": 532,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-26T08:04:38.161Z"
-    }
-  },
-  "sao-rika": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-26T07:58:40.515Z",
-    "hitomi": {
-      "galleryCount": 243,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-26T08:04:39.752Z"
-    }
-  },
-  "sao-silica": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-26T07:59:20.647Z",
-    "hitomi": {
-      "galleryCount": 339,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-26T08:04:41.157Z"
-    }
-  },
-  "sao-alice": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-26T08:00:00.666Z",
-    "hitomi": {
-      "galleryCount": 156,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-26T08:04:42.660Z"
-    }
-  },
-  "umamusume-specialweek": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-26T08:00:40.618Z",
-    "hitomi": {
-      "galleryCount": 62,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-26T08:04:44.164Z"
-    }
-  },
   "umamusume-silencesuzuka": {
     "pageCount": 2,
     "estimatedRange": [
@@ -3237,24 +1959,6 @@
       "galleryCount": 69,
       "seriesFilter": null,
       "fetchedAt": "2026-07-26T08:04:45.660Z"
-    }
-  },
-  "umamusume-daiwascarlet": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-07-26T08:02:00.637Z",
-    "hitomi": {
-      "galleryCount": 135,
-      "seriesFilter": null,
-      "fetchedAt": "2026-07-26T08:04:47.162Z"
     }
   },
   "umamusume-riceshower": {
@@ -3293,42 +1997,6 @@
       "fetchedAt": "2026-07-26T08:04:50.163Z"
     }
   },
-  "csm-power": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-01T13:57:49.994Z",
-    "hitomi": {
-      "galleryCount": 227,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-01T14:00:03.243Z"
-    }
-  },
-  "csm-kobeni": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-01T13:58:30.108Z",
-    "hitomi": {
-      "galleryCount": 108,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-01T14:00:04.402Z"
-    }
-  },
   "csm-reze": {
     "pageCount": 2,
     "estimatedRange": [
@@ -3345,24 +2013,6 @@
       "galleryCount": 161,
       "seriesFilter": null,
       "fetchedAt": "2026-08-01T14:00:05.905Z"
-    }
-  },
-  "csm-himeno": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-01T13:59:50.104Z",
-    "hitomi": {
-      "galleryCount": 57,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-01T14:00:07.408Z"
     }
   },
   "gochiusa-chino": {
@@ -3383,42 +2033,6 @@
       "fetchedAt": "2026-08-01T23:18:37.576Z"
     }
   },
-  "gochiusa-rize": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-01T22:47:37.941Z",
-    "hitomi": {
-      "galleryCount": 296,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-01T23:18:40.574Z"
-    }
-  },
-  "gochiusa-chiya": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-01T22:48:18.049Z",
-    "hitomi": {
-      "galleryCount": 189,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-01T23:18:42.075Z"
-    }
-  },
   "oshimai-mahiro": {
     "pageCount": 2,
     "estimatedRange": [
@@ -3435,42 +2049,6 @@
       "galleryCount": 390,
       "seriesFilter": null,
       "fetchedAt": "2026-08-01T23:18:52.581Z"
-    }
-  },
-  "oshimai-kaede": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-01T22:53:38.083Z",
-    "hitomi": {
-      "galleryCount": 70,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-01T23:18:55.582Z"
-    }
-  },
-  "shinepost-yawara": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-01T22:59:38.381Z",
-    "hitomi": {
-      "galleryCount": 4,
-      "seriesFilter": "shine post",
-      "fetchedAt": "2026-08-01T23:19:10.593Z"
     }
   },
   "touhou-orin": {
@@ -3923,24 +2501,6 @@
       "fetchedAt": "2026-08-02T00:25:35.850Z"
     }
   },
-  "touhou-yoshika": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-01T23:56:53.559Z",
-    "hitomi": {
-      "galleryCount": 135,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T00:25:37.363Z"
-    }
-  },
   "touhou-clownpiece": {
     "pageCount": 3,
     "estimatedRange": [
@@ -4121,24 +2681,6 @@
       "fetchedAt": "2026-08-02T00:25:55.367Z"
     }
   },
-  "bocchi-nijika": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T00:04:52.797Z",
-    "hitomi": {
-      "galleryCount": 282,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T00:25:56.862Z"
-    }
-  },
   "kancolle-hibiki": {
     "pageCount": 4,
     "estimatedRange": [
@@ -4229,24 +2771,6 @@
       "fetchedAt": "2026-08-02T00:26:05.868Z"
     }
   },
-  "kancolle-amatsukaze": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T00:08:52.857Z",
-    "hitomi": {
-      "galleryCount": 506,
-      "seriesFilter": "kantai collection",
-      "fetchedAt": "2026-08-02T00:26:07.370Z"
-    }
-  },
   "kancolle-yamato": {
     "pageCount": 2,
     "estimatedRange": [
@@ -4263,78 +2787,6 @@
       "galleryCount": 595,
       "seriesFilter": "kantai collection",
       "fetchedAt": "2026-08-02T00:26:08.869Z"
-    }
-  },
-  "kancolle-shoukaku": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T00:10:13.027Z",
-    "hitomi": {
-      "galleryCount": 467,
-      "seriesFilter": "kantai collection",
-      "fetchedAt": "2026-08-02T00:26:10.369Z"
-    }
-  },
-  "kancolle-asashio": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T00:10:52.934Z",
-    "hitomi": {
-      "galleryCount": 411,
-      "seriesFilter": "kantai collection",
-      "fetchedAt": "2026-08-02T00:26:11.869Z"
-    }
-  },
-  "kancolle-eugen": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T00:11:33.024Z",
-    "hitomi": {
-      "galleryCount": 539,
-      "seriesFilter": "kantai collection",
-      "fetchedAt": "2026-08-02T00:26:13.393Z"
-    }
-  },
-  "kancolle-iowa": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T00:12:12.974Z",
-    "hitomi": {
-      "galleryCount": 304,
-      "seriesFilter": "kantai collection",
-      "fetchedAt": "2026-08-02T00:26:14.876Z"
     }
   },
   "azurlane-taihou": {
@@ -4389,24 +2841,6 @@
       "galleryCount": 542,
       "seriesFilter": "azur lane",
       "fetchedAt": "2026-08-02T00:26:20.882Z"
-    }
-  },
-  "azurlane-eugen": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T00:14:51.179Z",
-    "hitomi": {
-      "galleryCount": 312,
-      "seriesFilter": "azur lane",
-      "fetchedAt": "2026-08-02T00:26:22.377Z"
     }
   },
   "azurlane-atago2": {
@@ -4517,168 +2951,6 @@
       "fetchedAt": "2026-08-02T00:26:31.530Z"
     }
   },
-  "imascg-riamu": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T00:19:31.298Z",
-    "hitomi": {
-      "galleryCount": 315,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T00:26:32.883Z"
-    }
-  },
-  "imascg-koume": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T00:20:11.274Z",
-    "hitomi": {
-      "galleryCount": 428,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T00:26:34.388Z"
-    }
-  },
-  "imascg-arisu": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T00:20:51.300Z",
-    "hitomi": {
-      "galleryCount": 1196,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T00:26:35.890Z"
-    }
-  },
-  "imascg-uzuki": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T00:21:31.303Z",
-    "hitomi": {
-      "galleryCount": 815,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T00:26:37.383Z"
-    }
-  },
-  "imascg-fumika": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T00:22:11.370Z",
-    "hitomi": {
-      "galleryCount": 868,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T00:26:38.892Z"
-    }
-  },
-  "imascg-mika": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T00:22:51.367Z",
-    "hitomi": {
-      "galleryCount": 947,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T00:26:40.386Z"
-    }
-  },
-  "imascg-minami": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T00:23:31.324Z",
-    "hitomi": {
-      "galleryCount": 848,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T00:26:41.896Z"
-    }
-  },
-  "imascg-momoka": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T00:24:11.477Z",
-    "hitomi": {
-      "galleryCount": 718,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T00:26:43.387Z"
-    }
-  },
-  "imascg-rika": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T00:24:51.485Z",
-    "hitomi": {
-      "galleryCount": 871,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T00:26:44.888Z"
-    }
-  },
   "fgo-mash": {
     "pageCount": 4,
     "estimatedRange": [
@@ -4769,96 +3041,6 @@
       "fetchedAt": "2026-08-02T00:53:52.725Z"
     }
   },
-  "genshin-paimon": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T01:00:41.862Z",
-    "hitomi": {
-      "galleryCount": 228,
-      "seriesFilter": "genshin impact",
-      "fetchedAt": "2026-08-02T01:04:11.701Z"
-    }
-  },
-  "genshin-klee": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T01:01:21.901Z",
-    "hitomi": {
-      "galleryCount": 263,
-      "seriesFilter": "genshin impact",
-      "fetchedAt": "2026-08-02T01:04:13.216Z"
-    }
-  },
-  "genshin-arlecchino": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T01:02:01.821Z",
-    "hitomi": {
-      "galleryCount": 322,
-      "seriesFilter": "genshin impact",
-      "fetchedAt": "2026-08-02T01:04:14.713Z"
-    }
-  },
-  "genshin-citlali": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T01:02:41.845Z",
-    "hitomi": {
-      "galleryCount": 275,
-      "seriesFilter": "genshin impact",
-      "fetchedAt": "2026-08-02T01:04:16.211Z"
-    }
-  },
-  "genshin-amber": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T01:04:01.939Z",
-    "hitomi": {
-      "galleryCount": 347,
-      "seriesFilter": "genshin impact",
-      "fetchedAt": "2026-08-02T01:04:19.206Z"
-    }
-  },
   "hsr-firefly": {
     "pageCount": 2,
     "estimatedRange": [
@@ -4875,168 +3057,6 @@
       "galleryCount": 781,
       "seriesFilter": "honkai star rail",
       "fetchedAt": "2026-08-02T01:14:02.365Z"
-    }
-  },
-  "hsr-cyrene": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T01:11:14.352Z",
-    "hitomi": {
-      "galleryCount": 118,
-      "seriesFilter": "honkai star rail",
-      "fetchedAt": "2026-08-02T01:14:03.818Z"
-    }
-  },
-  "hsr-sparkle": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T01:11:54.331Z",
-    "hitomi": {
-      "galleryCount": 477,
-      "seriesFilter": "honkai star rail",
-      "fetchedAt": "2026-08-02T01:14:05.318Z"
-    }
-  },
-  "hsr-herta": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T01:12:34.496Z",
-    "hitomi": {
-      "galleryCount": 122,
-      "seriesFilter": "honkai star rail",
-      "fetchedAt": "2026-08-02T01:14:06.820Z"
-    }
-  },
-  "hsr-castorice": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T01:13:14.386Z",
-    "hitomi": {
-      "galleryCount": 203,
-      "seriesFilter": "honkai star rail",
-      "fetchedAt": "2026-08-02T01:14:08.321Z"
-    }
-  },
-  "hsr-theherta": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T01:13:54.459Z",
-    "hitomi": {
-      "galleryCount": 247,
-      "seriesFilter": "honkai star rail",
-      "fetchedAt": "2026-08-02T01:14:09.821Z"
-    }
-  },
-  "arknights-amiya": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T01:19:39.995Z",
-    "hitomi": {
-      "galleryCount": 224,
-      "seriesFilter": "arknights",
-      "fetchedAt": "2026-08-02T01:22:28.529Z"
-    }
-  },
-  "arknights-texas": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T01:20:20.072Z",
-    "hitomi": {
-      "galleryCount": 288,
-      "seriesFilter": "arknights",
-      "fetchedAt": "2026-08-02T01:22:29.970Z"
-    }
-  },
-  "arknights-suzuran": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T01:21:00.058Z",
-    "hitomi": {
-      "galleryCount": 247,
-      "seriesFilter": "arknights",
-      "fetchedAt": "2026-08-02T01:22:31.486Z"
-    }
-  },
-  "arknights-exusiai": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T01:22:20.106Z",
-    "hitomi": {
-      "galleryCount": 264,
-      "seriesFilter": "arknights",
-      "fetchedAt": "2026-08-02T01:22:34.474Z"
     }
   },
   "hololive-marine": {
@@ -5183,24 +3203,6 @@
       "fetchedAt": "2026-08-02T01:44:26.475Z"
     }
   },
-  "hololive-mio": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T01:33:30.974Z",
-    "hitomi": {
-      "galleryCount": 569,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T01:44:27.977Z"
-    }
-  },
   "hololive-subaru": {
     "pageCount": 2,
     "estimatedRange": [
@@ -5255,24 +3257,6 @@
       "fetchedAt": "2026-08-02T01:44:32.473Z"
     }
   },
-  "hololive-korone": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T01:36:11.088Z",
-    "hitomi": {
-      "galleryCount": 191,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T01:44:33.973Z"
-    }
-  },
   "hololive-noel": {
     "pageCount": 3,
     "estimatedRange": [
@@ -5309,24 +3293,6 @@
       "fetchedAt": "2026-08-02T01:44:36.981Z"
     }
   },
-  "hololive-botan": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T01:38:08.663Z",
-    "hitomi": {
-      "galleryCount": 335,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T01:44:38.477Z"
-    }
-  },
   "hololive-laplus": {
     "pageCount": 2,
     "estimatedRange": [
@@ -5361,24 +3327,6 @@
       "galleryCount": 354,
       "seriesFilter": null,
       "fetchedAt": "2026-08-02T01:44:41.479Z"
-    }
-  },
-  "hololive-flare": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T01:40:08.755Z",
-    "hitomi": {
-      "galleryCount": 350,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T01:44:42.979Z"
     }
   },
   "hololive-shion": {
@@ -5435,24 +3383,6 @@
       "fetchedAt": "2026-08-02T01:44:47.483Z"
     }
   },
-  "hololive-matsuri": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T01:42:48.734Z",
-    "hitomi": {
-      "galleryCount": 219,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T01:44:48.983Z"
-    }
-  },
   "hololive-iroha": {
     "pageCount": 2,
     "estimatedRange": [
@@ -5487,204 +3417,6 @@
       "galleryCount": 356,
       "seriesFilter": "hololive",
       "fetchedAt": "2026-08-02T01:44:53.639Z"
-    }
-  },
-  "hololiveen-gura": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T01:53:04.629Z",
-    "hitomi": {
-      "galleryCount": 493,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T02:00:32.172Z"
-    }
-  },
-  "hololiveen-kronii": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T01:53:44.765Z",
-    "hitomi": {
-      "galleryCount": 361,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T02:00:33.353Z"
-    }
-  },
-  "hololiveen-calliope": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T01:55:04.669Z",
-    "hitomi": {
-      "galleryCount": 318,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T02:00:36.354Z"
-    }
-  },
-  "hololiveen-kiara": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T01:55:44.701Z",
-    "hitomi": {
-      "galleryCount": 193,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T02:00:37.856Z"
-    }
-  },
-  "hololiveen-mumei": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T01:56:24.773Z",
-    "hitomi": {
-      "galleryCount": 89,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T02:00:39.358Z"
-    }
-  },
-  "hololiveen-novella": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T01:57:04.800Z",
-    "hitomi": {
-      "galleryCount": 106,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T02:00:40.857Z"
-    }
-  },
-  "hololiveen-nerissa": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T01:57:44.787Z",
-    "hitomi": {
-      "galleryCount": 116,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T02:00:42.358Z"
-    }
-  },
-  "hololiveen-baelz": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T01:58:24.831Z",
-    "hitomi": {
-      "galleryCount": 158,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T02:00:43.860Z"
-    }
-  },
-  "hololiveen-amelia": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T01:59:04.862Z",
-    "hitomi": {
-      "galleryCount": 169,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T02:00:45.360Z"
-    }
-  },
-  "hololiveen-irys": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T01:59:44.822Z",
-    "hitomi": {
-      "galleryCount": 150,
-      "seriesFilter": "hololive",
-      "fetchedAt": "2026-08-02T02:00:48.527Z"
-    }
-  },
-  "hololiveen-fauna": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T02:00:24.821Z",
-    "hitomi": {
-      "galleryCount": 148,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T02:00:49.861Z"
     }
   },
   "bluearchive-aris": {
@@ -5849,42 +3581,6 @@
       "fetchedAt": "2026-08-02T02:38:17.135Z"
     }
   },
-  "bluearchive-hanako": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T02:16:33.993Z",
-    "hitomi": {
-      "galleryCount": 3,
-      "seriesFilter": "blue archive",
-      "fetchedAt": "2026-08-02T02:38:18.637Z"
-    }
-  },
-  "bluearchive-nozomi": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T02:17:54.085Z",
-    "hitomi": {
-      "galleryCount": 4,
-      "seriesFilter": "blue archive",
-      "fetchedAt": "2026-08-02T02:38:21.639Z"
-    }
-  },
   "bluearchive-kanna": {
     "pageCount": 2,
     "estimatedRange": [
@@ -5901,42 +3597,6 @@
       "galleryCount": 5,
       "seriesFilter": "blue archive",
       "fetchedAt": "2026-08-02T02:38:23.141Z"
-    }
-  },
-  "bluearchive-midori": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T02:19:14.755Z",
-    "hitomi": {
-      "galleryCount": 2,
-      "seriesFilter": "blue archive",
-      "fetchedAt": "2026-08-02T02:38:24.641Z"
-    }
-  },
-  "bluearchive-kei": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T02:19:54.817Z",
-    "hitomi": {
-      "galleryCount": 3,
-      "seriesFilter": "blue archive",
-      "fetchedAt": "2026-08-02T02:38:26.142Z"
     }
   },
   "bluearchive-saori": {
@@ -5957,24 +3617,6 @@
       "fetchedAt": "2026-08-02T02:38:27.642Z"
     }
   },
-  "bluearchive-hikari": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T02:21:54.838Z",
-    "hitomi": {
-      "galleryCount": 2,
-      "seriesFilter": "blue archive",
-      "fetchedAt": "2026-08-02T02:38:30.645Z"
-    }
-  },
   "bluearchive-neru": {
     "pageCount": 2,
     "estimatedRange": [
@@ -5993,78 +3635,6 @@
       "fetchedAt": "2026-08-02T02:38:32.146Z"
     }
   },
-  "bluearchive-miyu": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T02:23:14.791Z",
-    "hitomi": {
-      "galleryCount": 3,
-      "seriesFilter": "blue archive",
-      "fetchedAt": "2026-08-02T02:38:33.648Z"
-    }
-  },
-  "bluearchive-ibuki": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T02:24:34.949Z",
-    "hitomi": {
-      "galleryCount": 7,
-      "seriesFilter": "blue archive",
-      "fetchedAt": "2026-08-02T02:38:36.655Z"
-    }
-  },
-  "bluearchive-miyako": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T02:25:14.938Z",
-    "hitomi": {
-      "galleryCount": 1,
-      "seriesFilter": "blue archive",
-      "fetchedAt": "2026-08-02T02:38:38.149Z"
-    }
-  },
-  "bluearchive-ichika": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T02:27:14.999Z",
-    "hitomi": {
-      "galleryCount": 1,
-      "seriesFilter": "blue archive",
-      "fetchedAt": "2026-08-02T02:38:42.665Z"
-    }
-  },
   "bluearchive-izuna": {
     "pageCount": 3,
     "estimatedRange": [
@@ -6081,42 +3651,6 @@
       "galleryCount": 1,
       "seriesFilter": "blue archive",
       "fetchedAt": "2026-08-02T02:38:44.153Z"
-    }
-  },
-  "bluearchive-azusa": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T02:30:33.463Z",
-    "hitomi": {
-      "galleryCount": 3,
-      "seriesFilter": "blue archive",
-      "fetchedAt": "2026-08-02T02:38:50.156Z"
-    }
-  },
-  "bluearchive-hibiki2": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T02:32:33.444Z",
-    "hitomi": {
-      "galleryCount": 12,
-      "seriesFilter": "blue archive",
-      "fetchedAt": "2026-08-02T02:38:54.661Z"
     }
   },
   "bluearchive-kikyou": {
@@ -6155,402 +3689,6 @@
       "fetchedAt": "2026-08-02T02:39:02.162Z"
     }
   },
-  "bluearchive-iori": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T02:36:33.624Z",
-    "hitomi": {
-      "galleryCount": 3,
-      "seriesFilter": "blue archive",
-      "fetchedAt": "2026-08-02T02:39:03.662Z"
-    }
-  },
-  "bluearchive-iroha": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T02:37:13.545Z",
-    "hitomi": {
-      "galleryCount": 4,
-      "seriesFilter": "blue archive",
-      "fetchedAt": "2026-08-02T02:39:05.163Z"
-    }
-  },
-  "zzz-ellen": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T02:49:24.959Z",
-    "hitomi": {
-      "galleryCount": 555,
-      "seriesFilter": "zenless zone zero",
-      "fetchedAt": "2026-08-02T02:57:34.939Z"
-    }
-  },
-  "zzz-jane": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T02:50:44.941Z",
-    "hitomi": {
-      "galleryCount": 306,
-      "seriesFilter": "zenless zone zero",
-      "fetchedAt": "2026-08-02T02:57:37.902Z"
-    }
-  },
-  "zzz-vivian": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T02:51:25.014Z",
-    "hitomi": {
-      "galleryCount": 203,
-      "seriesFilter": "zenless zone zero",
-      "fetchedAt": "2026-08-02T02:57:39.403Z"
-    }
-  },
-  "zzz-nicole": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T02:52:05.008Z",
-    "hitomi": {
-      "galleryCount": 379,
-      "seriesFilter": "zenless zone zero",
-      "fetchedAt": "2026-08-02T02:57:40.914Z"
-    }
-  },
-  "zzz-evelyn": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T02:52:45.062Z",
-    "hitomi": {
-      "galleryCount": 418,
-      "seriesFilter": "zenless zone zero",
-      "fetchedAt": "2026-08-02T02:57:42.405Z"
-    }
-  },
-  "zzz-remielle": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T02:53:25.137Z",
-    "hitomi": {
-      "galleryCount": 37,
-      "seriesFilter": "zenless zone zero",
-      "fetchedAt": "2026-08-02T02:57:43.906Z"
-    }
-  },
-  "zzz-zhuyuan": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T02:54:45.039Z",
-    "hitomi": {
-      "galleryCount": 260,
-      "seriesFilter": "zenless zone zero",
-      "fetchedAt": "2026-08-02T02:57:46.908Z"
-    }
-  },
-  "zzz-sunna": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T02:55:25.062Z",
-    "hitomi": {
-      "galleryCount": 82,
-      "seriesFilter": "zenless zone zero",
-      "fetchedAt": "2026-08-02T02:57:48.407Z"
-    }
-  },
-  "zzz-yixuan": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T02:56:05.139Z",
-    "hitomi": {
-      "galleryCount": 403,
-      "seriesFilter": "zenless zone zero",
-      "fetchedAt": "2026-08-02T02:57:49.909Z"
-    }
-  },
-  "zzz-burnice": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T02:56:45.163Z",
-    "hitomi": {
-      "galleryCount": 201,
-      "seriesFilter": "zenless zone zero",
-      "fetchedAt": "2026-08-02T02:57:51.409Z"
-    }
-  },
-  "zzz-astra": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T02:57:25.090Z",
-    "hitomi": {
-      "galleryCount": 245,
-      "seriesFilter": "zenless zone zero",
-      "fetchedAt": "2026-08-02T02:57:52.911Z"
-    }
-  },
-  "pokemon-marnie": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T03:07:02.016Z",
-    "hitomi": {
-      "galleryCount": 476,
-      "seriesFilter": "pokemon",
-      "fetchedAt": "2026-08-02T03:12:31.157Z"
-    }
-  },
-  "pokemon-cynthia": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T03:07:42.057Z",
-    "hitomi": {
-      "galleryCount": 732,
-      "seriesFilter": "pokemon",
-      "fetchedAt": "2026-08-02T03:12:32.445Z"
-    }
-  },
-  "pokemon-misty": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T03:08:22.077Z",
-    "hitomi": {
-      "galleryCount": 587,
-      "seriesFilter": "pokemon",
-      "fetchedAt": "2026-08-02T03:12:33.945Z"
-    }
-  },
-  "pokemon-nessa": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T03:09:02.062Z",
-    "hitomi": {
-      "galleryCount": 273,
-      "seriesFilter": "pokemon",
-      "fetchedAt": "2026-08-02T03:12:35.444Z"
-    }
-  },
-  "pokemon-bea": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T03:09:42.129Z",
-    "hitomi": {
-      "galleryCount": 341,
-      "seriesFilter": "pokemon",
-      "fetchedAt": "2026-08-02T03:12:36.945Z"
-    }
-  },
-  "pokemon-lana": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T03:10:22.129Z",
-    "hitomi": {
-      "galleryCount": 617,
-      "seriesFilter": "pokemon",
-      "fetchedAt": "2026-08-02T03:12:38.448Z"
-    }
-  },
-  "pokemon-iono": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T03:11:02.166Z",
-    "hitomi": {
-      "galleryCount": 425,
-      "seriesFilter": "pokemon",
-      "fetchedAt": "2026-08-02T03:12:39.949Z"
-    }
-  },
-  "pokemon-skyla": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T03:11:42.092Z",
-    "hitomi": {
-      "galleryCount": 329,
-      "seriesFilter": "pokemon",
-      "fetchedAt": "2026-08-02T03:12:41.449Z"
-    }
-  },
-  "pokemon-lillie": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T03:12:22.123Z",
-    "hitomi": {
-      "galleryCount": 717,
-      "seriesFilter": "pokemon",
-      "fetchedAt": "2026-08-02T03:12:42.951Z"
-    }
-  },
   "mha-ochaco": {
     "pageCount": 2,
     "estimatedRange": [
@@ -6567,24 +3705,6 @@
       "galleryCount": 0,
       "seriesFilter": null,
       "fetchedAt": "2026-08-02T03:32:02.700Z"
-    }
-  },
-  "mha-toga": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T03:21:51.380Z",
-    "hitomi": {
-      "galleryCount": 316,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T03:32:04.202Z"
     }
   },
   "sf-chunli": {
@@ -6623,24 +3743,6 @@
       "fetchedAt": "2026-08-02T03:32:08.714Z"
     }
   },
-  "toaru-shokuhou": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T03:24:31.396Z",
-    "hitomi": {
-      "galleryCount": 540,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T03:32:11.711Z"
-    }
-  },
   "toaru-misaka": {
     "pageCount": 3,
     "estimatedRange": [
@@ -6657,24 +3759,6 @@
       "galleryCount": 1501,
       "seriesFilter": null,
       "fetchedAt": "2026-08-02T03:32:13.223Z"
-    }
-  },
-  "toaru-kuroko": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T03:25:51.486Z",
-    "hitomi": {
-      "galleryCount": 636,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T03:32:14.712Z"
     }
   },
   "pricone-pecorine": {
@@ -6911,42 +3995,6 @@
       "fetchedAt": "2026-08-02T03:59:03.167Z"
     }
   },
-  "killakill-ryuuko": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T03:48:51.149Z",
-    "hitomi": {
-      "galleryCount": 343,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T03:59:04.652Z"
-    }
-  },
-  "killakill-satsuki": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T03:49:31.167Z",
-    "hitomi": {
-      "galleryCount": 244,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T03:59:06.152Z"
-    }
-  },
   "geass-cc": {
     "pageCount": 2,
     "estimatedRange": [
@@ -6963,24 +4011,6 @@
       "galleryCount": 960,
       "seriesFilter": "code geass",
       "fetchedAt": "2026-08-02T03:59:10.683Z"
-    }
-  },
-  "fe3h-edelgard": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T03:52:11.171Z",
-    "hitomi": {
-      "galleryCount": 104,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T03:59:15.159Z"
     }
   },
   "kon-mio": {
@@ -7017,42 +4047,6 @@
       "galleryCount": 1039,
       "seriesFilter": null,
       "fetchedAt": "2026-08-02T03:59:18.166Z"
-    }
-  },
-  "luckystar-konata": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T03:54:11.287Z",
-    "hitomi": {
-      "galleryCount": 487,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T03:59:19.662Z"
-    }
-  },
-  "luckystar-kagami": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T03:54:51.360Z",
-    "hitomi": {
-      "galleryCount": 525,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T03:59:21.167Z"
     }
   },
   "gkidols-ume": {
@@ -7127,150 +4121,6 @@
       "fetchedAt": "2026-08-02T03:59:27.166Z"
     }
   },
-  "nijigasaki-ayumu": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T03:58:11.422Z",
-    "hitomi": {
-      "galleryCount": 373,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T03:59:28.667Z"
-    }
-  },
-  "nijigasaki-setsuna": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T03:58:51.360Z",
-    "hitomi": {
-      "galleryCount": 414,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T03:59:30.169Z"
-    }
-  },
-  "ff7-tifa": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T04:29:45.009Z",
-    "hitomi": {
-      "galleryCount": 2186,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T05:14:41.410Z"
-    }
-  },
-  "ff7-aerith": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T04:30:25.198Z",
-    "hitomi": {
-      "galleryCount": 456,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T05:14:42.576Z"
-    }
-  },
-  "zelda-zelda": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T04:31:05.291Z",
-    "hitomi": {
-      "galleryCount": 649,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T05:14:44.079Z"
-    }
-  },
-  "mario-peach": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T04:31:45.282Z",
-    "hitomi": {
-      "galleryCount": 382,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T05:14:45.579Z"
-    }
-  },
-  "mario-rosalina": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T04:32:25.380Z",
-    "hitomi": {
-      "galleryCount": 132,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T05:14:47.083Z"
-    }
-  },
-  "mario-daisy": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T04:33:05.421Z",
-    "hitomi": {
-      "galleryCount": 103,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T05:14:48.588Z"
-    }
-  },
   "ccs-sakura": {
     "pageCount": 2,
     "estimatedRange": [
@@ -7305,42 +4155,6 @@
       "galleryCount": 689,
       "seriesFilter": null,
       "fetchedAt": "2026-08-02T05:14:56.115Z"
-    }
-  },
-  "metroid-samus": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T04:37:05.977Z",
-    "hitomi": {
-      "galleryCount": 543,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T05:14:57.620Z"
-    }
-  },
-  "darkstalkers-morrigan": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T04:37:46.020Z",
-    "hitomi": {
-      "galleryCount": 896,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T05:14:59.122Z"
     }
   },
   "idolmaster-miki": {
@@ -7415,78 +4229,6 @@
       "fetchedAt": "2026-08-02T05:15:05.138Z"
     }
   },
-  "imsc-madoka": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T04:41:06.547Z",
-    "hitomi": {
-      "galleryCount": 669,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T05:15:06.642Z"
-    }
-  },
-  "imsc-fuyuko": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T04:41:46.602Z",
-    "hitomi": {
-      "galleryCount": 562,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T05:15:08.147Z"
-    }
-  },
-  "spyfamily-anya": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T04:42:26.738Z",
-    "hitomi": {
-      "galleryCount": 223,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T05:15:09.645Z"
-    }
-  },
-  "konosuba-megumin": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T04:43:06.865Z",
-    "hitomi": {
-      "galleryCount": 1331,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T05:15:11.156Z"
-    }
-  },
   "bisquedoll-marin": {
     "pageCount": 2,
     "estimatedRange": [
@@ -7521,42 +4263,6 @@
       "galleryCount": 1952,
       "seriesFilter": null,
       "fetchedAt": "2026-08-02T05:15:18.686Z"
-    }
-  },
-  "dungeonmeshi-marcille": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T04:47:07.546Z",
-    "hitomi": {
-      "galleryCount": 190,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T05:15:20.175Z"
-    }
-  },
-  "psg-stocking": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T04:47:47.762Z",
-    "hitomi": {
-      "galleryCount": 207,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T05:15:21.676Z"
     }
   },
   "gurrenlagann-yoko": {
@@ -7595,42 +4301,6 @@
       "fetchedAt": "2026-08-02T05:15:32.206Z"
     }
   },
-  "watamote-tomoko": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T04:53:08.574Z",
-    "hitomi": {
-      "galleryCount": 335,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T05:15:33.710Z"
-    }
-  },
-  "gridman-rikka": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T04:53:48.706Z",
-    "hitomi": {
-      "galleryCount": 363,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T05:15:35.215Z"
-    }
-  },
   "voiceroid-kiritan": {
     "pageCount": 2,
     "estimatedRange": [
@@ -7647,42 +4317,6 @@
       "galleryCount": 0,
       "seriesFilter": null,
       "fetchedAt": "2026-08-02T05:15:39.723Z"
-    }
-  },
-  "atelierryza-ryza": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T04:56:29.145Z",
-    "hitomi": {
-      "galleryCount": 424,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T05:15:41.228Z"
-    }
-  },
-  "nijisanji-lize": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T04:57:49.399Z",
-    "hitomi": {
-      "galleryCount": 474,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T05:15:44.236Z"
     }
   },
   "yugioh-dmg": {
@@ -7739,42 +4373,6 @@
       "fetchedAt": "2026-08-02T05:15:50.253Z"
     }
   },
-  "rwby-weiss": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T05:01:50.081Z",
-    "hitomi": {
-      "galleryCount": 96,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T05:15:53.262Z"
-    }
-  },
-  "oreimo-ruri": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T05:03:10.242Z",
-    "hitomi": {
-      "galleryCount": 955,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T05:15:56.275Z"
-    }
-  },
   "guiltygear-dizzy": {
     "pageCount": 2,
     "estimatedRange": [
@@ -7793,24 +4391,6 @@
       "fetchedAt": "2026-08-02T05:15:57.775Z"
     }
   },
-  "maidragon-kanna": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T05:04:30.444Z",
-    "hitomi": {
-      "galleryCount": 346,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T05:15:59.280Z"
-    }
-  },
   "symphogear-chris": {
     "pageCount": 2,
     "estimatedRange": [
@@ -7827,24 +4407,6 @@
       "galleryCount": 455,
       "seriesFilter": null,
       "fetchedAt": "2026-08-02T05:16:00.783Z"
-    }
-  },
-  "eromangasensei-sagiri": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T05:05:50.718Z",
-    "hitomi": {
-      "galleryCount": 373,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T05:16:02.285Z"
     }
   },
   "haruhi-haruhi": {
@@ -7881,60 +4443,6 @@
       "galleryCount": 792,
       "seriesFilter": null,
       "fetchedAt": "2026-08-02T05:16:05.298Z"
-    }
-  },
-  "honkai3-bronya": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T05:09:11.243Z",
-    "hitomi": {
-      "galleryCount": 192,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T05:16:09.806Z"
-    }
-  },
-  "honkai3-kiana": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T05:09:51.448Z",
-    "hitomi": {
-      "galleryCount": 167,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T05:16:11.311Z"
-    }
-  },
-  "danganronpa-chiaki": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-02T05:10:31.489Z",
-    "hitomi": {
-      "galleryCount": 102,
-      "seriesFilter": null,
-      "fetchedAt": "2026-08-02T05:16:12.815Z"
     }
   },
   "fate-rin": {
@@ -8621,6 +5129,4292 @@
       "fetchedAt": "2026-08-02T07:18:53.015Z"
     }
   },
+  "bluearchive-kanoe": {
+    "pageCount": 3,
+    "estimatedRange": [
+      61,
+      90
+    ],
+    "byWorkType": {
+      "doujinshi": 3,
+      "voice": 3,
+      "game": 0
+    },
+    "fetchedAt": "2026-08-22T19:17:49.735Z",
+    "hitomi": {
+      "galleryCount": 0,
+      "seriesFilter": "blue archive",
+      "fetchedAt": "2026-08-22T19:18:00.558Z"
+    }
+  },
+  "overlord-narberal": {
+    "pageCount": 1,
+    "estimatedRange": [
+      7,
+      7
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 7,
+      "aiGenerated": 2
+    },
+    "fetchedAt": "2026-10-05T11:20:18.131Z",
+    "hitomi": {
+      "galleryCount": 63,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T06:46:01.441Z"
+    }
+  },
+  "fairytail-mirajane": {
+    "pageCount": 1,
+    "estimatedRange": [
+      6,
+      6
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 6,
+      "aiGenerated": 4
+    },
+    "fetchedAt": "2026-10-05T11:20:58.193Z",
+    "hitomi": {
+      "galleryCount": 72,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T06:46:06.027Z"
+    }
+  },
+  "naruto-kurenai": {
+    "pageCount": 1,
+    "estimatedRange": [
+      6,
+      6
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 6,
+      "aiGenerated": 2
+    },
+    "fetchedAt": "2026-10-05T11:21:38.141Z",
+    "hitomi": {
+      "galleryCount": 101,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T06:46:11.956Z"
+    }
+  },
+  "nier-a2": {
+    "pageCount": 1,
+    "estimatedRange": [
+      6,
+      6
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 6,
+      "aiGenerated": 3
+    },
+    "fetchedAt": "2026-10-05T11:22:18.216Z",
+    "hitomi": {
+      "galleryCount": 51,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T06:46:22.468Z"
+    }
+  },
+  "azurlane-nagato": {
+    "pageCount": 1,
+    "estimatedRange": [
+      17,
+      17
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 17,
+      "aiGenerated": 2
+    },
+    "fetchedAt": "2026-10-05T11:22:58.306Z",
+    "hitomi": {
+      "galleryCount": 187,
+      "seriesFilter": "azur lane",
+      "fetchedAt": "2026-07-20T06:46:25.567Z"
+    }
+  },
+  "azurlane-yamato": {
+    "pageCount": 1,
+    "estimatedRange": [
+      3,
+      3
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 3,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T11:23:38.345Z",
+    "hitomi": {
+      "galleryCount": 11,
+      "seriesFilter": "azur lane",
+      "fetchedAt": "2026-07-20T06:46:27.004Z"
+    }
+  },
+  "genshin-eula": {
+    "pageCount": 1,
+    "estimatedRange": [
+      26,
+      26
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 26,
+      "aiGenerated": 16
+    },
+    "fetchedAt": "2026-10-05T11:24:18.239Z",
+    "hitomi": {
+      "galleryCount": 742,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T15:27:35.412Z"
+    }
+  },
+  "onepiece-tashigi": {
+    "pageCount": 1,
+    "estimatedRange": [
+      25,
+      25
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 1
+    },
+    "firstPage": {
+      "items": 25,
+      "aiGenerated": 6
+    },
+    "fetchedAt": "2026-10-05T11:24:58.324Z",
+    "hitomi": {
+      "galleryCount": 132,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T15:27:38.405Z"
+    }
+  },
+  "onepiece-perona": {
+    "pageCount": 1,
+    "estimatedRange": [
+      27,
+      27
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 27,
+      "aiGenerated": 16
+    },
+    "fetchedAt": "2026-10-05T11:25:38.324Z",
+    "hitomi": {
+      "galleryCount": 115,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T15:27:39.907Z"
+    }
+  },
+  "onepiece-kalifa": {
+    "pageCount": 1,
+    "estimatedRange": [
+      10,
+      10
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 10,
+      "aiGenerated": 4
+    },
+    "fetchedAt": "2026-10-05T11:26:18.454Z",
+    "hitomi": {
+      "galleryCount": 103,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T15:27:41.425Z"
+    }
+  },
+  "onepiece-carrot": {
+    "pageCount": 1,
+    "estimatedRange": [
+      5,
+      5
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 5,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T11:26:58.435Z",
+    "hitomi": {
+      "galleryCount": 96,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T15:27:42.962Z"
+    }
+  },
+  "onepiece-sadi": {
+    "pageCount": 1,
+    "estimatedRange": [
+      6,
+      6
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 6,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T11:27:38.518Z",
+    "hitomi": {
+      "galleryCount": 71,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T15:27:45.917Z"
+    }
+  },
+  "naruto-ino": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 1
+    },
+    "firstPage": {
+      "items": 30,
+      "aiGenerated": 12
+    },
+    "fetchedAt": "2026-10-05T11:28:18.574Z",
+    "hitomi": {
+      "galleryCount": 426,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T15:27:50.421Z"
+    }
+  },
+  "naruto-shizune": {
+    "pageCount": 1,
+    "estimatedRange": [
+      18,
+      18
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 1
+    },
+    "firstPage": {
+      "items": 18,
+      "aiGenerated": 7
+    },
+    "fetchedAt": "2026-10-05T11:28:58.509Z",
+    "hitomi": {
+      "galleryCount": 346,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T15:27:51.924Z"
+    }
+  },
+  "naruto-anko": {
+    "pageCount": 1,
+    "estimatedRange": [
+      13,
+      13
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 13,
+      "aiGenerated": 4
+    },
+    "fetchedAt": "2026-10-05T11:29:38.586Z",
+    "hitomi": {
+      "galleryCount": 239,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T15:27:55.045Z"
+    }
+  },
+  "naruto-tenten": {
+    "pageCount": 1,
+    "estimatedRange": [
+      15,
+      15
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 15,
+      "aiGenerated": 6
+    },
+    "fetchedAt": "2026-10-05T11:30:18.662Z",
+    "hitomi": {
+      "galleryCount": 151,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T15:27:56.505Z"
+    }
+  },
+  "bleach-rukia": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 1
+    },
+    "firstPage": {
+      "items": 30,
+      "aiGenerated": 26
+    },
+    "fetchedAt": "2026-10-05T11:30:58.791Z",
+    "hitomi": {
+      "galleryCount": 432,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T15:27:59.504Z"
+    }
+  },
+  "bleach-halibel": {
+    "pageCount": 1,
+    "estimatedRange": [
+      10,
+      10
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 10,
+      "aiGenerated": 7
+    },
+    "fetchedAt": "2026-10-05T11:31:38.604Z",
+    "hitomi": {
+      "galleryCount": 137,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T15:28:02.442Z"
+    }
+  },
+  "bleach-nelliel": {
+    "pageCount": 1,
+    "estimatedRange": [
+      14,
+      14
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 1
+    },
+    "firstPage": {
+      "items": 14,
+      "aiGenerated": 10
+    },
+    "fetchedAt": "2026-10-05T11:32:18.649Z",
+    "hitomi": {
+      "galleryCount": 66,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T15:28:03.937Z"
+    }
+  },
+  "bleach-unohana": {
+    "pageCount": 1,
+    "estimatedRange": [
+      7,
+      7
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 7,
+      "aiGenerated": 6
+    },
+    "fetchedAt": "2026-10-05T11:32:58.745Z",
+    "hitomi": {
+      "galleryCount": 86,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T15:28:05.441Z"
+    }
+  },
+  "bleach-nemu": {
+    "pageCount": 1,
+    "estimatedRange": [
+      10,
+      10
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 10,
+      "aiGenerated": 9
+    },
+    "fetchedAt": "2026-10-05T11:33:38.786Z",
+    "hitomi": {
+      "galleryCount": 101,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T15:28:06.993Z"
+    }
+  },
+  "bleach-isane": {
+    "pageCount": 1,
+    "estimatedRange": [
+      3,
+      3
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 3,
+      "aiGenerated": 3
+    },
+    "fetchedAt": "2026-10-05T11:34:18.768Z",
+    "hitomi": {
+      "galleryCount": 67,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T15:28:08.443Z"
+    }
+  },
+  "overlord-shalltear": {
+    "pageCount": 1,
+    "estimatedRange": [
+      15,
+      15
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 15,
+      "aiGenerated": 3
+    },
+    "fetchedAt": "2026-10-05T11:34:58.839Z",
+    "hitomi": {
+      "galleryCount": 91,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T15:28:09.989Z"
+    }
+  },
+  "overlord-aura": {
+    "pageCount": 1,
+    "estimatedRange": [
+      5,
+      5
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 5,
+      "aiGenerated": 2
+    },
+    "fetchedAt": "2026-10-05T11:35:38.765Z",
+    "hitomi": {
+      "galleryCount": 47,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T15:28:11.447Z"
+    }
+  },
+  "overlord-mare": {
+    "pageCount": 1,
+    "estimatedRange": [
+      5,
+      5
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 5,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-05T11:36:18.831Z",
+    "hitomi": {
+      "galleryCount": 43,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T15:28:12.950Z"
+    }
+  },
+  "overlord-lupusregina": {
+    "pageCount": 1,
+    "estimatedRange": [
+      4,
+      4
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 4,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T11:36:58.908Z",
+    "hitomi": {
+      "galleryCount": 41,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T15:28:14.452Z"
+    }
+  },
+  "overlord-clementine": {
+    "pageCount": 1,
+    "estimatedRange": [
+      3,
+      3
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 3,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T11:37:38.921Z",
+    "hitomi": {
+      "galleryCount": 40,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T15:28:16.033Z"
+    }
+  },
+  "overlord-yuri": {
+    "pageCount": 1,
+    "estimatedRange": [
+      2,
+      2
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 2,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T11:38:18.847Z",
+    "hitomi": {
+      "galleryCount": 24,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T15:28:17.481Z"
+    }
+  },
+  "overlord-solution": {
+    "pageCount": 1,
+    "estimatedRange": [
+      4,
+      4
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 4,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T11:38:58.925Z",
+    "hitomi": {
+      "galleryCount": 23,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T15:28:18.958Z"
+    }
+  },
+  "utau-teto": {
+    "pageCount": 1,
+    "estimatedRange": [
+      19,
+      19
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 19,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-05T11:39:39.022Z",
+    "hitomi": {
+      "galleryCount": 65,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T15:28:20.477Z"
+    }
+  },
+  "genshin-shenhe": {
+    "pageCount": 1,
+    "estimatedRange": [
+      20,
+      20
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 20,
+      "aiGenerated": 8
+    },
+    "fetchedAt": "2026-10-05T11:40:19.008Z",
+    "hitomi": {
+      "galleryCount": 707,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T16:45:34.947Z"
+    }
+  },
+  "kancolle-atago": {
+    "pageCount": 1,
+    "estimatedRange": [
+      13,
+      13
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 13,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T11:40:58.965Z",
+    "hitomi": {
+      "galleryCount": 1937,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T18:12:11.395Z"
+    }
+  },
+  "kancolle-kashima": {
+    "pageCount": 1,
+    "estimatedRange": [
+      25,
+      25
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 25,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-05T11:41:39.109Z",
+    "hitomi": {
+      "galleryCount": 1520,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T18:12:15.557Z"
+    }
+  },
+  "kancolle-takao": {
+    "pageCount": 1,
+    "estimatedRange": [
+      10,
+      10
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 10,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T11:42:19.070Z",
+    "hitomi": {
+      "galleryCount": 1485,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T18:12:17.052Z"
+    }
+  },
+  "kancolle-hamakaze": {
+    "pageCount": 1,
+    "estimatedRange": [
+      11,
+      11
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 11,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T11:42:59.105Z",
+    "hitomi": {
+      "galleryCount": 1001,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T18:12:18.556Z"
+    }
+  },
+  "kancolle-taihou": {
+    "pageCount": 1,
+    "estimatedRange": [
+      6,
+      6
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 6,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T11:43:39.214Z",
+    "hitomi": {
+      "galleryCount": 980,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T18:12:20.111Z"
+    }
+  },
+  "kancolle-suzuya": {
+    "pageCount": 1,
+    "estimatedRange": [
+      30,
+      30
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 30,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T11:44:19.187Z",
+    "hitomi": {
+      "galleryCount": 968,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T18:12:21.558Z"
+    }
+  },
+  "fate-miyu": {
+    "pageCount": 1,
+    "estimatedRange": [
+      28,
+      28
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 28,
+      "aiGenerated": 21
+    },
+    "fetchedAt": "2026-10-05T11:44:59.202Z",
+    "hitomi": {
+      "galleryCount": 920,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T18:12:51.595Z"
+    }
+  },
+  "fate-chloe": {
+    "pageCount": 1,
+    "estimatedRange": [
+      29,
+      29
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 29,
+      "aiGenerated": 19
+    },
+    "fetchedAt": "2026-10-05T11:45:39.215Z",
+    "hitomi": {
+      "galleryCount": 1109,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-20T18:12:56.144Z"
+    }
+  },
+  "bleach-hinamori": {
+    "pageCount": 1,
+    "estimatedRange": [
+      3,
+      3
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 3,
+      "aiGenerated": 3
+    },
+    "fetchedAt": "2026-10-05T11:46:19.426Z",
+    "hitomi": {
+      "galleryCount": 63,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-26T08:03:32.474Z"
+    }
+  },
+  "bleach-nanao": {
+    "pageCount": 1,
+    "estimatedRange": [
+      3,
+      3
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 3,
+      "aiGenerated": 2
+    },
+    "fetchedAt": "2026-10-05T11:46:59.225Z",
+    "hitomi": {
+      "galleryCount": 51,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-26T08:03:33.612Z"
+    }
+  },
+  "bleach-kukaku": {
+    "pageCount": 1,
+    "estimatedRange": [
+      1,
+      1
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 1,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T11:47:39.328Z",
+    "hitomi": {
+      "galleryCount": 52,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-26T08:03:35.115Z"
+    }
+  },
+  "bleach-tatsuki": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T11:48:19.390Z",
+    "hitomi": {
+      "galleryCount": 60,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-26T08:03:36.615Z"
+    }
+  },
+  "fate-artoria": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 1
+    },
+    "firstPage": {
+      "items": 30,
+      "aiGenerated": 19
+    },
+    "fetchedAt": "2026-10-05T11:48:59.486Z",
+    "hitomi": {
+      "galleryCount": 1571,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-26T08:03:45.643Z"
+    }
+  },
+  "fate-abigail": {
+    "pageCount": 1,
+    "estimatedRange": [
+      29,
+      29
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 29,
+      "aiGenerated": 7
+    },
+    "fetchedAt": "2026-10-05T11:49:39.448Z",
+    "hitomi": {
+      "galleryCount": 801,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-26T08:03:50.130Z"
+    }
+  },
+  "onepiece-bonney": {
+    "pageCount": 1,
+    "estimatedRange": [
+      3,
+      3
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 3,
+      "aiGenerated": 3
+    },
+    "fetchedAt": "2026-10-05T11:50:19.421Z",
+    "hitomi": {
+      "galleryCount": 66,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-26T08:03:54.631Z"
+    }
+  },
+  "onepiece-marguerite": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T11:50:59.395Z",
+    "hitomi": {
+      "galleryCount": 68,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-26T08:03:56.129Z"
+    }
+  },
+  "onepiece-shirahoshi": {
+    "pageCount": 1,
+    "estimatedRange": [
+      7,
+      7
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 7,
+      "aiGenerated": 3
+    },
+    "fetchedAt": "2026-10-05T11:51:39.494Z",
+    "hitomi": {
+      "galleryCount": 49,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-26T08:03:57.631Z"
+    }
+  },
+  "onepiece-reiju": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T11:52:19.623Z",
+    "hitomi": {
+      "galleryCount": 49,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-26T08:03:59.131Z"
+    }
+  },
+  "naruto-samui": {
+    "pageCount": 1,
+    "estimatedRange": [
+      5,
+      5
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 1
+    },
+    "firstPage": {
+      "items": 5,
+      "aiGenerated": 2
+    },
+    "fetchedAt": "2026-10-05T11:52:59.515Z",
+    "hitomi": {
+      "galleryCount": 137,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-26T08:04:00.633Z"
+    }
+  },
+  "naruto-hanabi": {
+    "pageCount": 1,
+    "estimatedRange": [
+      2,
+      2
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 2,
+      "aiGenerated": 2
+    },
+    "fetchedAt": "2026-10-05T11:53:39.548Z",
+    "hitomi": {
+      "galleryCount": 91,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-26T08:04:02.134Z"
+    }
+  },
+  "naruto-kushina": {
+    "pageCount": 1,
+    "estimatedRange": [
+      5,
+      5
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 5,
+      "aiGenerated": 2
+    },
+    "fetchedAt": "2026-10-05T11:54:19.537Z",
+    "hitomi": {
+      "galleryCount": 64,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-26T08:04:03.636Z"
+    }
+  },
+  "naruto-tayuya": {
+    "pageCount": 1,
+    "estimatedRange": [
+      2,
+      2
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 2,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T11:54:59.682Z",
+    "hitomi": {
+      "galleryCount": 58,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-26T08:04:05.135Z"
+    }
+  },
+  "overlord-evileye": {
+    "pageCount": 1,
+    "estimatedRange": [
+      1,
+      1
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 1,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T11:55:39.589Z",
+    "hitomi": {
+      "galleryCount": 18,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-26T08:04:06.637Z"
+    }
+  },
+  "overlord-entoma": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T11:56:20.149Z",
+    "hitomi": {
+      "galleryCount": 12,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-26T08:04:08.138Z"
+    }
+  },
+  "overlord-cz2128delta": {
+    "pageCount": 1,
+    "estimatedRange": [
+      6,
+      6
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 6,
+      "aiGenerated": 3
+    },
+    "fetchedAt": "2026-10-05T11:56:59.727Z",
+    "hitomi": {
+      "galleryCount": 11,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-26T08:04:09.639Z"
+    }
+  },
+  "overlord-arche": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T11:57:39.673Z",
+    "hitomi": {
+      "galleryCount": 11,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-26T08:04:11.146Z"
+    }
+  },
+  "genshin-nilou": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 30,
+      "aiGenerated": 14
+    },
+    "fetchedAt": "2026-10-05T11:58:19.809Z",
+    "hitomi": {
+      "galleryCount": 617,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-26T08:04:17.155Z"
+    }
+  },
+  "genshin-yelan": {
+    "pageCount": 1,
+    "estimatedRange": [
+      13,
+      13
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 13,
+      "aiGenerated": 9
+    },
+    "fetchedAt": "2026-10-05T11:58:59.771Z",
+    "hitomi": {
+      "galleryCount": 474,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-26T08:04:18.643Z"
+    }
+  },
+  "genshin-kokomi": {
+    "pageCount": 1,
+    "estimatedRange": [
+      16,
+      16
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 16,
+      "aiGenerated": 7
+    },
+    "fetchedAt": "2026-10-05T11:59:39.828Z",
+    "hitomi": {
+      "galleryCount": 454,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-26T08:04:20.144Z"
+    }
+  },
+  "genshin-fischl": {
+    "pageCount": 1,
+    "estimatedRange": [
+      14,
+      14
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 14,
+      "aiGenerated": 9
+    },
+    "fetchedAt": "2026-10-05T12:00:19.745Z",
+    "hitomi": {
+      "galleryCount": 312,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-26T08:04:21.645Z"
+    }
+  },
+  "hsr-march7th": {
+    "pageCount": 1,
+    "estimatedRange": [
+      8,
+      8
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 8,
+      "aiGenerated": 3
+    },
+    "fetchedAt": "2026-10-05T12:00:59.809Z",
+    "hitomi": {
+      "galleryCount": 302,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-26T08:04:24.648Z"
+    }
+  },
+  "hsr-kafka": {
+    "pageCount": 1,
+    "estimatedRange": [
+      18,
+      18
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 18,
+      "aiGenerated": 14
+    },
+    "fetchedAt": "2026-10-05T12:01:39.859Z",
+    "hitomi": {
+      "galleryCount": 635,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-26T08:04:26.153Z"
+    }
+  },
+  "hsr-silverwolf": {
+    "pageCount": 1,
+    "estimatedRange": [
+      23,
+      23
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 23,
+      "aiGenerated": 9
+    },
+    "fetchedAt": "2026-10-05T12:02:19.906Z",
+    "hitomi": {
+      "galleryCount": 401,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-26T08:04:27.649Z"
+    }
+  },
+  "hsr-acheron": {
+    "pageCount": 1,
+    "estimatedRange": [
+      9,
+      9
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 9,
+      "aiGenerated": 7
+    },
+    "fetchedAt": "2026-10-05T12:03:00.026Z",
+    "hitomi": {
+      "galleryCount": 175,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-26T08:04:29.150Z"
+    }
+  },
+  "hsr-fuxuan": {
+    "pageCount": 1,
+    "estimatedRange": [
+      11,
+      11
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 11,
+      "aiGenerated": 5
+    },
+    "fetchedAt": "2026-10-05T12:03:40.079Z",
+    "hitomi": {
+      "galleryCount": 179,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-26T08:04:30.650Z"
+    }
+  },
+  "sao-shino": {
+    "pageCount": 1,
+    "estimatedRange": [
+      20,
+      20
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 1
+    },
+    "firstPage": {
+      "items": 20,
+      "aiGenerated": 19
+    },
+    "fetchedAt": "2026-10-05T12:04:19.983Z",
+    "hitomi": {
+      "galleryCount": 532,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-26T08:04:38.161Z"
+    }
+  },
+  "sao-rika": {
+    "pageCount": 1,
+    "estimatedRange": [
+      1,
+      1
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 1,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-05T12:05:00.103Z",
+    "hitomi": {
+      "galleryCount": 243,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-26T08:04:39.752Z"
+    }
+  },
+  "sao-silica": {
+    "pageCount": 1,
+    "estimatedRange": [
+      3,
+      3
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 3,
+      "aiGenerated": 3
+    },
+    "fetchedAt": "2026-10-05T12:05:40.150Z",
+    "hitomi": {
+      "galleryCount": 339,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-26T08:04:41.157Z"
+    }
+  },
+  "sao-alice": {
+    "pageCount": 1,
+    "estimatedRange": [
+      4,
+      4
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 4,
+      "aiGenerated": 3
+    },
+    "fetchedAt": "2026-10-05T12:06:20.094Z",
+    "hitomi": {
+      "galleryCount": 156,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-26T08:04:42.660Z"
+    }
+  },
+  "umamusume-specialweek": {
+    "pageCount": 1,
+    "estimatedRange": [
+      22,
+      22
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 22,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T12:07:00.276Z",
+    "hitomi": {
+      "galleryCount": 62,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-26T08:04:44.164Z"
+    }
+  },
+  "umamusume-daiwascarlet": {
+    "pageCount": 1,
+    "estimatedRange": [
+      18,
+      18
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 18,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T12:07:40.218Z",
+    "hitomi": {
+      "galleryCount": 135,
+      "seriesFilter": null,
+      "fetchedAt": "2026-07-26T08:04:47.162Z"
+    }
+  },
+  "csm-power": {
+    "pageCount": 1,
+    "estimatedRange": [
+      28,
+      28
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 28,
+      "aiGenerated": 20
+    },
+    "fetchedAt": "2026-10-05T12:08:20.298Z",
+    "hitomi": {
+      "galleryCount": 227,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-01T14:00:03.243Z"
+    }
+  },
+  "csm-kobeni": {
+    "pageCount": 1,
+    "estimatedRange": [
+      18,
+      18
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 18,
+      "aiGenerated": 12
+    },
+    "fetchedAt": "2026-10-05T12:09:00.280Z",
+    "hitomi": {
+      "galleryCount": 108,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-01T14:00:04.402Z"
+    }
+  },
+  "csm-himeno": {
+    "pageCount": 1,
+    "estimatedRange": [
+      4,
+      4
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 4,
+      "aiGenerated": 2
+    },
+    "fetchedAt": "2026-10-05T12:09:40.295Z",
+    "hitomi": {
+      "galleryCount": 57,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-01T14:00:07.408Z"
+    }
+  },
+  "gochiusa-rize": {
+    "pageCount": 1,
+    "estimatedRange": [
+      15,
+      15
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 15,
+      "aiGenerated": 6
+    },
+    "fetchedAt": "2026-10-05T12:10:20.260Z",
+    "hitomi": {
+      "galleryCount": 296,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-01T23:18:40.574Z"
+    }
+  },
+  "gochiusa-chiya": {
+    "pageCount": 1,
+    "estimatedRange": [
+      13,
+      13
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 13,
+      "aiGenerated": 4
+    },
+    "fetchedAt": "2026-10-05T12:11:00.339Z",
+    "hitomi": {
+      "galleryCount": 189,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-01T23:18:42.075Z"
+    }
+  },
+  "oshimai-kaede": {
+    "pageCount": 1,
+    "estimatedRange": [
+      7,
+      7
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 7,
+      "aiGenerated": 2
+    },
+    "fetchedAt": "2026-10-05T12:11:40.320Z",
+    "hitomi": {
+      "galleryCount": 70,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-01T23:18:55.582Z"
+    }
+  },
+  "shinepost-yawara": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T12:12:21.009Z",
+    "hitomi": {
+      "galleryCount": 4,
+      "seriesFilter": "shine post",
+      "fetchedAt": "2026-08-01T23:19:10.593Z"
+    }
+  },
+  "touhou-yoshika": {
+    "pageCount": 1,
+    "estimatedRange": [
+      30,
+      30
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 1
+    },
+    "firstPage": {
+      "items": 30,
+      "aiGenerated": 5
+    },
+    "fetchedAt": "2026-10-05T12:13:00.508Z",
+    "hitomi": {
+      "galleryCount": 135,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T00:25:37.363Z"
+    }
+  },
+  "bocchi-nijika": {
+    "pageCount": 1,
+    "estimatedRange": [
+      8,
+      8
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 8,
+      "aiGenerated": 7
+    },
+    "fetchedAt": "2026-10-05T12:13:40.383Z",
+    "hitomi": {
+      "galleryCount": 282,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T00:25:56.862Z"
+    }
+  },
+  "kancolle-amatsukaze": {
+    "pageCount": 1,
+    "estimatedRange": [
+      19,
+      19
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 19,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-05T12:14:20.418Z",
+    "hitomi": {
+      "galleryCount": 506,
+      "seriesFilter": "kantai collection",
+      "fetchedAt": "2026-08-02T00:26:07.370Z"
+    }
+  },
+  "kancolle-shoukaku": {
+    "pageCount": 1,
+    "estimatedRange": [
+      10,
+      10
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 10,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T12:15:00.762Z",
+    "hitomi": {
+      "galleryCount": 467,
+      "seriesFilter": "kantai collection",
+      "fetchedAt": "2026-08-02T00:26:10.369Z"
+    }
+  },
+  "kancolle-asashio": {
+    "pageCount": 1,
+    "estimatedRange": [
+      17,
+      17
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 17,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T12:15:40.465Z",
+    "hitomi": {
+      "galleryCount": 411,
+      "seriesFilter": "kantai collection",
+      "fetchedAt": "2026-08-02T00:26:11.869Z"
+    }
+  },
+  "kancolle-eugen": {
+    "pageCount": 1,
+    "estimatedRange": [
+      3,
+      3
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 3,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-05T12:16:20.527Z",
+    "hitomi": {
+      "galleryCount": 539,
+      "seriesFilter": "kantai collection",
+      "fetchedAt": "2026-08-02T00:26:13.393Z"
+    }
+  },
+  "kancolle-iowa": {
+    "pageCount": 1,
+    "estimatedRange": [
+      4,
+      4
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 4,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T12:17:00.629Z",
+    "hitomi": {
+      "galleryCount": 304,
+      "seriesFilter": "kantai collection",
+      "fetchedAt": "2026-08-02T00:26:14.876Z"
+    }
+  },
+  "azurlane-eugen": {
+    "pageCount": 1,
+    "estimatedRange": [
+      18,
+      18
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 18,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-05T12:17:40.602Z",
+    "hitomi": {
+      "galleryCount": 312,
+      "seriesFilter": "azur lane",
+      "fetchedAt": "2026-08-02T00:26:22.377Z"
+    }
+  },
+  "imascg-riamu": {
+    "pageCount": 1,
+    "estimatedRange": [
+      5,
+      5
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 5,
+      "aiGenerated": 2
+    },
+    "fetchedAt": "2026-10-05T12:18:20.628Z",
+    "hitomi": {
+      "galleryCount": 315,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T00:26:32.883Z"
+    }
+  },
+  "imascg-koume": {
+    "pageCount": 1,
+    "estimatedRange": [
+      10,
+      10
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 10,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-05T12:19:00.759Z",
+    "hitomi": {
+      "galleryCount": 428,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T00:26:34.388Z"
+    }
+  },
+  "imascg-arisu": {
+    "pageCount": 1,
+    "estimatedRange": [
+      26,
+      26
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 1
+    },
+    "firstPage": {
+      "items": 26,
+      "aiGenerated": 11
+    },
+    "fetchedAt": "2026-10-05T12:19:40.793Z",
+    "hitomi": {
+      "galleryCount": 1196,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T00:26:35.890Z"
+    }
+  },
+  "imascg-uzuki": {
+    "pageCount": 1,
+    "estimatedRange": [
+      22,
+      22
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 1
+    },
+    "firstPage": {
+      "items": 22,
+      "aiGenerated": 8
+    },
+    "fetchedAt": "2026-10-05T12:20:20.775Z",
+    "hitomi": {
+      "galleryCount": 815,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T00:26:37.383Z"
+    }
+  },
+  "imascg-fumika": {
+    "pageCount": 1,
+    "estimatedRange": [
+      14,
+      14
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 1
+    },
+    "firstPage": {
+      "items": 14,
+      "aiGenerated": 9
+    },
+    "fetchedAt": "2026-10-05T12:21:00.903Z",
+    "hitomi": {
+      "galleryCount": 868,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T00:26:38.892Z"
+    }
+  },
+  "imascg-mika": {
+    "pageCount": 1,
+    "estimatedRange": [
+      5,
+      5
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 5,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-05T12:21:40.923Z",
+    "hitomi": {
+      "galleryCount": 947,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T00:26:40.386Z"
+    }
+  },
+  "imascg-minami": {
+    "pageCount": 1,
+    "estimatedRange": [
+      12,
+      12
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 12,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-05T12:22:20.814Z",
+    "hitomi": {
+      "galleryCount": 848,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T00:26:41.896Z"
+    }
+  },
+  "imascg-momoka": {
+    "pageCount": 1,
+    "estimatedRange": [
+      14,
+      14
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 1
+    },
+    "firstPage": {
+      "items": 14,
+      "aiGenerated": 6
+    },
+    "fetchedAt": "2026-10-05T12:23:00.943Z",
+    "hitomi": {
+      "galleryCount": 718,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T00:26:43.387Z"
+    }
+  },
+  "imascg-rika": {
+    "pageCount": 1,
+    "estimatedRange": [
+      7,
+      7
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 7,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-05T12:23:40.881Z",
+    "hitomi": {
+      "galleryCount": 871,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T00:26:44.888Z"
+    }
+  },
+  "genshin-paimon": {
+    "pageCount": 1,
+    "estimatedRange": [
+      17,
+      17
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 17,
+      "aiGenerated": 5
+    },
+    "fetchedAt": "2026-10-05T12:24:20.961Z",
+    "hitomi": {
+      "galleryCount": 228,
+      "seriesFilter": "genshin impact",
+      "fetchedAt": "2026-08-02T01:04:11.701Z"
+    }
+  },
+  "genshin-klee": {
+    "pageCount": 1,
+    "estimatedRange": [
+      21,
+      21
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 21,
+      "aiGenerated": 13
+    },
+    "fetchedAt": "2026-10-05T12:25:01.021Z",
+    "hitomi": {
+      "galleryCount": 263,
+      "seriesFilter": "genshin impact",
+      "fetchedAt": "2026-08-02T01:04:13.216Z"
+    }
+  },
+  "genshin-arlecchino": {
+    "pageCount": 1,
+    "estimatedRange": [
+      5,
+      5
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 5,
+      "aiGenerated": 2
+    },
+    "fetchedAt": "2026-10-05T12:25:40.996Z",
+    "hitomi": {
+      "galleryCount": 322,
+      "seriesFilter": "genshin impact",
+      "fetchedAt": "2026-08-02T01:04:14.713Z"
+    }
+  },
+  "genshin-citlali": {
+    "pageCount": 1,
+    "estimatedRange": [
+      7,
+      7
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 7,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-05T12:26:20.951Z",
+    "hitomi": {
+      "galleryCount": 275,
+      "seriesFilter": "genshin impact",
+      "fetchedAt": "2026-08-02T01:04:16.211Z"
+    }
+  },
+  "genshin-amber": {
+    "pageCount": 1,
+    "estimatedRange": [
+      13,
+      13
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 13,
+      "aiGenerated": 6
+    },
+    "fetchedAt": "2026-10-05T12:27:01.086Z",
+    "hitomi": {
+      "galleryCount": 347,
+      "seriesFilter": "genshin impact",
+      "fetchedAt": "2026-08-02T01:04:19.206Z"
+    }
+  },
+  "hsr-cyrene": {
+    "pageCount": 1,
+    "estimatedRange": [
+      4,
+      4
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 4,
+      "aiGenerated": 3
+    },
+    "fetchedAt": "2026-10-05T12:27:41.050Z",
+    "hitomi": {
+      "galleryCount": 118,
+      "seriesFilter": "honkai star rail",
+      "fetchedAt": "2026-08-02T01:14:03.818Z"
+    }
+  },
+  "hsr-sparkle": {
+    "pageCount": 1,
+    "estimatedRange": [
+      14,
+      14
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 14,
+      "aiGenerated": 9
+    },
+    "fetchedAt": "2026-10-05T12:28:21.062Z",
+    "hitomi": {
+      "galleryCount": 477,
+      "seriesFilter": "honkai star rail",
+      "fetchedAt": "2026-08-02T01:14:05.318Z"
+    }
+  },
+  "hsr-herta": {
+    "pageCount": 1,
+    "estimatedRange": [
+      15,
+      15
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 15,
+      "aiGenerated": 8
+    },
+    "fetchedAt": "2026-10-05T12:29:01.190Z",
+    "hitomi": {
+      "galleryCount": 122,
+      "seriesFilter": "honkai star rail",
+      "fetchedAt": "2026-08-02T01:14:06.820Z"
+    }
+  },
+  "hsr-castorice": {
+    "pageCount": 1,
+    "estimatedRange": [
+      9,
+      9
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 9,
+      "aiGenerated": 6
+    },
+    "fetchedAt": "2026-10-05T12:29:41.079Z",
+    "hitomi": {
+      "galleryCount": 203,
+      "seriesFilter": "honkai star rail",
+      "fetchedAt": "2026-08-02T01:14:08.321Z"
+    }
+  },
+  "hsr-theherta": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T12:30:21.208Z",
+    "hitomi": {
+      "galleryCount": 247,
+      "seriesFilter": "honkai star rail",
+      "fetchedAt": "2026-08-02T01:14:09.821Z"
+    }
+  },
+  "arknights-amiya": {
+    "pageCount": 1,
+    "estimatedRange": [
+      7,
+      7
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 7,
+      "aiGenerated": 5
+    },
+    "fetchedAt": "2026-10-05T12:31:01.135Z",
+    "hitomi": {
+      "galleryCount": 224,
+      "seriesFilter": "arknights",
+      "fetchedAt": "2026-08-02T01:22:28.529Z"
+    }
+  },
+  "arknights-texas": {
+    "pageCount": 1,
+    "estimatedRange": [
+      3,
+      3
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 3,
+      "aiGenerated": 3
+    },
+    "fetchedAt": "2026-10-05T12:31:41.293Z",
+    "hitomi": {
+      "galleryCount": 288,
+      "seriesFilter": "arknights",
+      "fetchedAt": "2026-08-02T01:22:29.970Z"
+    }
+  },
+  "arknights-suzuran": {
+    "pageCount": 1,
+    "estimatedRange": [
+      11,
+      11
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 11,
+      "aiGenerated": 6
+    },
+    "fetchedAt": "2026-10-05T12:32:21.332Z",
+    "hitomi": {
+      "galleryCount": 247,
+      "seriesFilter": "arknights",
+      "fetchedAt": "2026-08-02T01:22:31.486Z"
+    }
+  },
+  "arknights-exusiai": {
+    "pageCount": 1,
+    "estimatedRange": [
+      2,
+      2
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 2,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-05T12:33:01.434Z",
+    "hitomi": {
+      "galleryCount": 264,
+      "seriesFilter": "arknights",
+      "fetchedAt": "2026-08-02T01:22:34.474Z"
+    }
+  },
+  "hololive-mio": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 30,
+      "aiGenerated": 14
+    },
+    "fetchedAt": "2026-10-05T12:33:41.298Z",
+    "hitomi": {
+      "galleryCount": 569,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T01:44:27.977Z"
+    }
+  },
+  "hololive-korone": {
+    "pageCount": 1,
+    "estimatedRange": [
+      26,
+      26
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 26,
+      "aiGenerated": 16
+    },
+    "fetchedAt": "2026-10-05T12:34:21.395Z",
+    "hitomi": {
+      "galleryCount": 191,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T01:44:33.973Z"
+    }
+  },
+  "hololive-botan": {
+    "pageCount": 1,
+    "estimatedRange": [
+      25,
+      25
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 25,
+      "aiGenerated": 17
+    },
+    "fetchedAt": "2026-10-05T12:35:01.385Z",
+    "hitomi": {
+      "galleryCount": 335,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T01:44:38.477Z"
+    }
+  },
+  "hololive-flare": {
+    "pageCount": 1,
+    "estimatedRange": [
+      27,
+      27
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 27,
+      "aiGenerated": 20
+    },
+    "fetchedAt": "2026-10-05T12:35:41.373Z",
+    "hitomi": {
+      "galleryCount": 350,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T01:44:42.979Z"
+    }
+  },
+  "hololive-matsuri": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 30,
+      "aiGenerated": 19
+    },
+    "fetchedAt": "2026-10-05T12:36:21.512Z",
+    "hitomi": {
+      "galleryCount": 219,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T01:44:48.983Z"
+    }
+  },
+  "hololiveen-gura": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T12:37:01.471Z",
+    "hitomi": {
+      "galleryCount": 493,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T02:00:32.172Z"
+    }
+  },
+  "hololiveen-kronii": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T12:37:41.507Z",
+    "hitomi": {
+      "galleryCount": 361,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T02:00:33.353Z"
+    }
+  },
+  "hololiveen-calliope": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T12:38:21.488Z",
+    "hitomi": {
+      "galleryCount": 318,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T02:00:36.354Z"
+    }
+  },
+  "hololiveen-kiara": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T12:39:01.533Z",
+    "hitomi": {
+      "galleryCount": 193,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T02:00:37.856Z"
+    }
+  },
+  "hololiveen-mumei": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T12:39:41.503Z",
+    "hitomi": {
+      "galleryCount": 89,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T02:00:39.358Z"
+    }
+  },
+  "hololiveen-novella": {
+    "pageCount": 1,
+    "estimatedRange": [
+      1,
+      1
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 1,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-05T12:40:21.581Z",
+    "hitomi": {
+      "galleryCount": 106,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T02:00:40.857Z"
+    }
+  },
+  "hololiveen-nerissa": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T12:41:01.662Z",
+    "hitomi": {
+      "galleryCount": 116,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T02:00:42.358Z"
+    }
+  },
+  "hololiveen-baelz": {
+    "pageCount": 1,
+    "estimatedRange": [
+      1,
+      1
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 1,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-05T12:41:41.941Z",
+    "hitomi": {
+      "galleryCount": 158,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T02:00:43.860Z"
+    }
+  },
+  "hololiveen-amelia": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T12:42:21.774Z",
+    "hitomi": {
+      "galleryCount": 169,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T02:00:45.360Z"
+    }
+  },
+  "hololiveen-irys": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T12:43:01.672Z",
+    "hitomi": {
+      "galleryCount": 150,
+      "seriesFilter": "hololive",
+      "fetchedAt": "2026-08-02T02:00:48.527Z"
+    }
+  },
+  "hololiveen-fauna": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T12:43:41.693Z",
+    "hitomi": {
+      "galleryCount": 148,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T02:00:49.861Z"
+    }
+  },
+  "bluearchive-hanako": {
+    "pageCount": 1,
+    "estimatedRange": [
+      26,
+      26
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 26,
+      "aiGenerated": 8
+    },
+    "fetchedAt": "2026-10-05T12:44:21.779Z",
+    "hitomi": {
+      "galleryCount": 3,
+      "seriesFilter": "blue archive",
+      "fetchedAt": "2026-08-02T02:38:18.637Z"
+    }
+  },
+  "bluearchive-nozomi": {
+    "pageCount": 1,
+    "estimatedRange": [
+      23,
+      23
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 23,
+      "aiGenerated": 4
+    },
+    "fetchedAt": "2026-10-05T12:45:02.079Z",
+    "hitomi": {
+      "galleryCount": 4,
+      "seriesFilter": "blue archive",
+      "fetchedAt": "2026-08-02T02:38:21.639Z"
+    }
+  },
+  "bluearchive-midori": {
+    "pageCount": 1,
+    "estimatedRange": [
+      29,
+      29
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 1
+    },
+    "firstPage": {
+      "items": 29,
+      "aiGenerated": 5
+    },
+    "fetchedAt": "2026-10-05T12:45:41.900Z",
+    "hitomi": {
+      "galleryCount": 2,
+      "seriesFilter": "blue archive",
+      "fetchedAt": "2026-08-02T02:38:24.641Z"
+    }
+  },
+  "bluearchive-kei": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 30,
+      "aiGenerated": 3
+    },
+    "fetchedAt": "2026-10-05T12:46:21.981Z",
+    "hitomi": {
+      "galleryCount": 3,
+      "seriesFilter": "blue archive",
+      "fetchedAt": "2026-08-02T02:38:26.142Z"
+    }
+  },
+  "bluearchive-hikari": {
+    "pageCount": 1,
+    "estimatedRange": [
+      22,
+      22
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 22,
+      "aiGenerated": 8
+    },
+    "fetchedAt": "2026-10-05T12:47:02.113Z",
+    "hitomi": {
+      "galleryCount": 2,
+      "seriesFilter": "blue archive",
+      "fetchedAt": "2026-08-02T02:38:30.645Z"
+    }
+  },
+  "bluearchive-miyu": {
+    "pageCount": 1,
+    "estimatedRange": [
+      20,
+      20
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 20,
+      "aiGenerated": 3
+    },
+    "fetchedAt": "2026-10-05T12:47:41.959Z",
+    "hitomi": {
+      "galleryCount": 3,
+      "seriesFilter": "blue archive",
+      "fetchedAt": "2026-08-02T02:38:33.648Z"
+    }
+  },
+  "bluearchive-ibuki": {
+    "pageCount": 1,
+    "estimatedRange": [
+      26,
+      26
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 1
+    },
+    "firstPage": {
+      "items": 26,
+      "aiGenerated": 9
+    },
+    "fetchedAt": "2026-10-05T12:48:21.992Z",
+    "hitomi": {
+      "galleryCount": 7,
+      "seriesFilter": "blue archive",
+      "fetchedAt": "2026-08-02T02:38:36.655Z"
+    }
+  },
+  "bluearchive-miyako": {
+    "pageCount": 1,
+    "estimatedRange": [
+      25,
+      25
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 25,
+      "aiGenerated": 2
+    },
+    "fetchedAt": "2026-10-05T12:49:01.993Z",
+    "hitomi": {
+      "galleryCount": 1,
+      "seriesFilter": "blue archive",
+      "fetchedAt": "2026-08-02T02:38:38.149Z"
+    }
+  },
+  "bluearchive-ichika": {
+    "pageCount": 1,
+    "estimatedRange": [
+      15,
+      15
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 15,
+      "aiGenerated": 3
+    },
+    "fetchedAt": "2026-10-05T12:49:42.339Z",
+    "hitomi": {
+      "galleryCount": 1,
+      "seriesFilter": "blue archive",
+      "fetchedAt": "2026-08-02T02:38:42.665Z"
+    }
+  },
+  "bluearchive-azusa": {
+    "pageCount": 1,
+    "estimatedRange": [
+      14,
+      14
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 14,
+      "aiGenerated": 2
+    },
+    "fetchedAt": "2026-10-05T12:50:22.134Z",
+    "hitomi": {
+      "galleryCount": 3,
+      "seriesFilter": "blue archive",
+      "fetchedAt": "2026-08-02T02:38:50.156Z"
+    }
+  },
+  "bluearchive-hibiki2": {
+    "pageCount": 1,
+    "estimatedRange": [
+      6,
+      6
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 6,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T12:51:02.677Z",
+    "hitomi": {
+      "galleryCount": 12,
+      "seriesFilter": "blue archive",
+      "fetchedAt": "2026-08-02T02:38:54.661Z"
+    }
+  },
+  "bluearchive-iori": {
+    "pageCount": 1,
+    "estimatedRange": [
+      16,
+      16
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 16,
+      "aiGenerated": 5
+    },
+    "fetchedAt": "2026-10-05T12:51:42.310Z",
+    "hitomi": {
+      "galleryCount": 3,
+      "seriesFilter": "blue archive",
+      "fetchedAt": "2026-08-02T02:39:03.662Z"
+    }
+  },
+  "bluearchive-iroha": {
+    "pageCount": 1,
+    "estimatedRange": [
+      21,
+      21
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 21,
+      "aiGenerated": 2
+    },
+    "fetchedAt": "2026-10-05T12:52:22.228Z",
+    "hitomi": {
+      "galleryCount": 4,
+      "seriesFilter": "blue archive",
+      "fetchedAt": "2026-08-02T02:39:05.163Z"
+    }
+  },
+  "zzz-ellen": {
+    "pageCount": 1,
+    "estimatedRange": [
+      10,
+      10
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 10,
+      "aiGenerated": 4
+    },
+    "fetchedAt": "2026-10-05T12:53:02.211Z",
+    "hitomi": {
+      "galleryCount": 555,
+      "seriesFilter": "zenless zone zero",
+      "fetchedAt": "2026-08-02T02:57:34.939Z"
+    }
+  },
+  "zzz-jane": {
+    "pageCount": 1,
+    "estimatedRange": [
+      5,
+      5
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 5,
+      "aiGenerated": 3
+    },
+    "fetchedAt": "2026-10-05T12:53:42.866Z",
+    "hitomi": {
+      "galleryCount": 306,
+      "seriesFilter": "zenless zone zero",
+      "fetchedAt": "2026-08-02T02:57:37.902Z"
+    }
+  },
+  "zzz-vivian": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T12:54:22.337Z",
+    "hitomi": {
+      "galleryCount": 203,
+      "seriesFilter": "zenless zone zero",
+      "fetchedAt": "2026-08-02T02:57:39.403Z"
+    }
+  },
+  "zzz-nicole": {
+    "pageCount": 1,
+    "estimatedRange": [
+      9,
+      9
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 9,
+      "aiGenerated": 7
+    },
+    "fetchedAt": "2026-10-05T12:55:02.275Z",
+    "hitomi": {
+      "galleryCount": 379,
+      "seriesFilter": "zenless zone zero",
+      "fetchedAt": "2026-08-02T02:57:40.914Z"
+    }
+  },
+  "zzz-evelyn": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T12:55:42.296Z",
+    "hitomi": {
+      "galleryCount": 418,
+      "seriesFilter": "zenless zone zero",
+      "fetchedAt": "2026-08-02T02:57:42.405Z"
+    }
+  },
+  "zzz-remielle": {
+    "pageCount": 1,
+    "estimatedRange": [
+      2,
+      2
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 2,
+      "aiGenerated": 2
+    },
+    "fetchedAt": "2026-10-05T12:56:22.480Z",
+    "hitomi": {
+      "galleryCount": 37,
+      "seriesFilter": "zenless zone zero",
+      "fetchedAt": "2026-08-02T02:57:43.906Z"
+    }
+  },
+  "zzz-zhuyuan": {
+    "pageCount": 1,
+    "estimatedRange": [
+      11,
+      11
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 11,
+      "aiGenerated": 3
+    },
+    "fetchedAt": "2026-10-05T12:57:02.330Z",
+    "hitomi": {
+      "galleryCount": 260,
+      "seriesFilter": "zenless zone zero",
+      "fetchedAt": "2026-08-02T02:57:46.908Z"
+    }
+  },
+  "zzz-sunna": {
+    "pageCount": 1,
+    "estimatedRange": [
+      3,
+      3
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 3,
+      "aiGenerated": 2
+    },
+    "fetchedAt": "2026-10-05T12:57:42.435Z",
+    "hitomi": {
+      "galleryCount": 82,
+      "seriesFilter": "zenless zone zero",
+      "fetchedAt": "2026-08-02T02:57:48.407Z"
+    }
+  },
+  "zzz-yixuan": {
+    "pageCount": 1,
+    "estimatedRange": [
+      11,
+      11
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 11,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-05T12:58:22.543Z",
+    "hitomi": {
+      "galleryCount": 403,
+      "seriesFilter": "zenless zone zero",
+      "fetchedAt": "2026-08-02T02:57:49.909Z"
+    }
+  },
+  "zzz-burnice": {
+    "pageCount": 1,
+    "estimatedRange": [
+      2,
+      2
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 2,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-05T12:59:02.474Z",
+    "hitomi": {
+      "galleryCount": 201,
+      "seriesFilter": "zenless zone zero",
+      "fetchedAt": "2026-08-02T02:57:51.409Z"
+    }
+  },
+  "zzz-astra": {
+    "pageCount": 1,
+    "estimatedRange": [
+      1,
+      1
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 1,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-05T12:59:42.534Z",
+    "hitomi": {
+      "galleryCount": 245,
+      "seriesFilter": "zenless zone zero",
+      "fetchedAt": "2026-08-02T02:57:52.911Z"
+    }
+  },
+  "pokemon-marnie": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T13:00:22.490Z",
+    "hitomi": {
+      "galleryCount": 476,
+      "seriesFilter": "pokemon",
+      "fetchedAt": "2026-08-02T03:12:31.157Z"
+    }
+  },
+  "pokemon-cynthia": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T13:01:02.591Z",
+    "hitomi": {
+      "galleryCount": 732,
+      "seriesFilter": "pokemon",
+      "fetchedAt": "2026-08-02T03:12:32.445Z"
+    }
+  },
+  "pokemon-misty": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T13:01:42.613Z",
+    "hitomi": {
+      "galleryCount": 587,
+      "seriesFilter": "pokemon",
+      "fetchedAt": "2026-08-02T03:12:33.945Z"
+    }
+  },
+  "pokemon-nessa": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T13:02:22.767Z",
+    "hitomi": {
+      "galleryCount": 273,
+      "seriesFilter": "pokemon",
+      "fetchedAt": "2026-08-02T03:12:35.444Z"
+    }
+  },
+  "pokemon-bea": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T13:03:02.779Z",
+    "hitomi": {
+      "galleryCount": 341,
+      "seriesFilter": "pokemon",
+      "fetchedAt": "2026-08-02T03:12:36.945Z"
+    }
+  },
+  "pokemon-lana": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T13:03:42.837Z",
+    "hitomi": {
+      "galleryCount": 617,
+      "seriesFilter": "pokemon",
+      "fetchedAt": "2026-08-02T03:12:38.448Z"
+    }
+  },
+  "pokemon-iono": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T13:04:22.738Z",
+    "hitomi": {
+      "galleryCount": 425,
+      "seriesFilter": "pokemon",
+      "fetchedAt": "2026-08-02T03:12:39.949Z"
+    }
+  },
+  "pokemon-skyla": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T13:05:02.784Z",
+    "hitomi": {
+      "galleryCount": 329,
+      "seriesFilter": "pokemon",
+      "fetchedAt": "2026-08-02T03:12:41.449Z"
+    }
+  },
+  "pokemon-lillie": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T13:05:42.733Z",
+    "hitomi": {
+      "galleryCount": 717,
+      "seriesFilter": "pokemon",
+      "fetchedAt": "2026-08-02T03:12:42.951Z"
+    }
+  },
+  "mha-toga": {
+    "pageCount": 1,
+    "estimatedRange": [
+      26,
+      26
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 26,
+      "aiGenerated": 13
+    },
+    "fetchedAt": "2026-10-05T13:06:22.756Z",
+    "hitomi": {
+      "galleryCount": 316,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T03:32:04.202Z"
+    }
+  },
+  "toaru-shokuhou": {
+    "pageCount": 1,
+    "estimatedRange": [
+      29,
+      29
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 29,
+      "aiGenerated": 21
+    },
+    "fetchedAt": "2026-10-05T13:07:03.952Z",
+    "hitomi": {
+      "galleryCount": 540,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T03:32:11.711Z"
+    }
+  },
+  "toaru-kuroko": {
+    "pageCount": 1,
+    "estimatedRange": [
+      27,
+      27
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 1
+    },
+    "firstPage": {
+      "items": 27,
+      "aiGenerated": 15
+    },
+    "fetchedAt": "2026-10-05T13:07:42.969Z",
+    "hitomi": {
+      "galleryCount": 636,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T03:32:14.712Z"
+    }
+  },
+  "killakill-ryuuko": {
+    "pageCount": 1,
+    "estimatedRange": [
+      7,
+      7
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 7,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T13:08:22.955Z",
+    "hitomi": {
+      "galleryCount": 343,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T03:59:04.652Z"
+    }
+  },
+  "killakill-satsuki": {
+    "pageCount": 1,
+    "estimatedRange": [
+      5,
+      5
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 5,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T13:09:02.927Z",
+    "hitomi": {
+      "galleryCount": 244,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T03:59:06.152Z"
+    }
+  },
+  "fe3h-edelgard": {
+    "pageCount": 1,
+    "estimatedRange": [
+      2,
+      2
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 2,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T13:09:43.323Z",
+    "hitomi": {
+      "galleryCount": 104,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T03:59:15.159Z"
+    }
+  },
+  "luckystar-konata": {
+    "pageCount": 1,
+    "estimatedRange": [
+      28,
+      28
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 28,
+      "aiGenerated": 5
+    },
+    "fetchedAt": "2026-10-05T13:10:23.072Z",
+    "hitomi": {
+      "galleryCount": 487,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T03:59:19.662Z"
+    }
+  },
+  "luckystar-kagami": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 30,
+      "aiGenerated": 9
+    },
+    "fetchedAt": "2026-10-05T13:11:03.484Z",
+    "hitomi": {
+      "galleryCount": 525,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T03:59:21.167Z"
+    }
+  },
+  "nijigasaki-ayumu": {
+    "pageCount": 1,
+    "estimatedRange": [
+      22,
+      22
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 22,
+      "aiGenerated": 10
+    },
+    "fetchedAt": "2026-10-05T13:11:43.826Z",
+    "hitomi": {
+      "galleryCount": 373,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T03:59:28.667Z"
+    }
+  },
+  "nijigasaki-setsuna": {
+    "pageCount": 1,
+    "estimatedRange": [
+      20,
+      20
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 20,
+      "aiGenerated": 9
+    },
+    "fetchedAt": "2026-10-05T13:12:23.063Z",
+    "hitomi": {
+      "galleryCount": 414,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T03:59:30.169Z"
+    }
+  },
+  "ff7-tifa": {
+    "pageCount": 1,
+    "estimatedRange": [
+      4,
+      4
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 4,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-05T13:13:03.123Z",
+    "hitomi": {
+      "galleryCount": 2186,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T05:14:41.410Z"
+    }
+  },
+  "ff7-aerith": {
+    "pageCount": 1,
+    "estimatedRange": [
+      6,
+      6
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 1
+    },
+    "firstPage": {
+      "items": 6,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T13:13:43.153Z",
+    "hitomi": {
+      "galleryCount": 456,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T05:14:42.576Z"
+    }
+  },
+  "zelda-zelda": {
+    "pageCount": 1,
+    "estimatedRange": [
+      5,
+      5
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 5,
+      "aiGenerated": 2
+    },
+    "fetchedAt": "2026-10-05T13:14:23.586Z",
+    "hitomi": {
+      "galleryCount": 649,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T05:14:44.079Z"
+    }
+  },
+  "mario-peach": {
+    "pageCount": 1,
+    "estimatedRange": [
+      6,
+      6
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 6,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-05T13:15:03.797Z",
+    "hitomi": {
+      "galleryCount": 382,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T05:14:45.579Z"
+    }
+  },
+  "mario-rosalina": {
+    "pageCount": 1,
+    "estimatedRange": [
+      1,
+      1
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 1,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T13:15:43.248Z",
+    "hitomi": {
+      "galleryCount": 132,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T05:14:47.083Z"
+    }
+  },
+  "mario-daisy": {
+    "pageCount": 1,
+    "estimatedRange": [
+      2,
+      2
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 2,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T13:16:23.250Z",
+    "hitomi": {
+      "galleryCount": 103,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T05:14:48.588Z"
+    }
+  },
+  "metroid-samus": {
+    "pageCount": 1,
+    "estimatedRange": [
+      7,
+      7
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 7,
+      "aiGenerated": 2
+    },
+    "fetchedAt": "2026-10-05T13:17:03.419Z",
+    "hitomi": {
+      "galleryCount": 543,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T05:14:57.620Z"
+    }
+  },
+  "darkstalkers-morrigan": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T13:17:43.440Z",
+    "hitomi": {
+      "galleryCount": 896,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T05:14:59.122Z"
+    }
+  },
+  "imsc-madoka": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 30,
+      "aiGenerated": 23
+    },
+    "fetchedAt": "2026-10-05T13:18:23.414Z",
+    "hitomi": {
+      "galleryCount": 669,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T05:15:06.642Z"
+    }
+  },
+  "imsc-fuyuko": {
+    "pageCount": 1,
+    "estimatedRange": [
+      26,
+      26
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 1
+    },
+    "firstPage": {
+      "items": 26,
+      "aiGenerated": 15
+    },
+    "fetchedAt": "2026-10-05T13:19:03.577Z",
+    "hitomi": {
+      "galleryCount": 562,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T05:15:08.147Z"
+    }
+  },
+  "spyfamily-anya": {
+    "pageCount": 1,
+    "estimatedRange": [
+      12,
+      12
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 12,
+      "aiGenerated": 10
+    },
+    "fetchedAt": "2026-10-05T13:19:43.588Z",
+    "hitomi": {
+      "galleryCount": 223,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T05:15:09.645Z"
+    }
+  },
+  "konosuba-megumin": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T13:20:23.773Z",
+    "hitomi": {
+      "galleryCount": 1331,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T05:15:11.156Z"
+    }
+  },
+  "dungeonmeshi-marcille": {
+    "pageCount": 1,
+    "estimatedRange": [
+      14,
+      14
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 14,
+      "aiGenerated": 5
+    },
+    "fetchedAt": "2026-10-05T13:21:04.137Z",
+    "hitomi": {
+      "galleryCount": 190,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T05:15:20.175Z"
+    }
+  },
+  "psg-stocking": {
+    "pageCount": 1,
+    "estimatedRange": [
+      19,
+      19
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 19,
+      "aiGenerated": 2
+    },
+    "fetchedAt": "2026-10-05T13:21:43.571Z",
+    "hitomi": {
+      "galleryCount": 207,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T05:15:21.676Z"
+    }
+  },
+  "watamote-tomoko": {
+    "pageCount": 1,
+    "estimatedRange": [
+      12,
+      12
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 12,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-05T13:22:23.548Z",
+    "hitomi": {
+      "galleryCount": 335,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T05:15:33.710Z"
+    }
+  },
+  "gridman-rikka": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T13:23:04.064Z",
+    "hitomi": {
+      "galleryCount": 363,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T05:15:35.215Z"
+    }
+  },
+  "atelierryza-ryza": {
+    "pageCount": 1,
+    "estimatedRange": [
+      3,
+      3
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 3,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T13:23:43.704Z",
+    "hitomi": {
+      "galleryCount": 424,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T05:15:41.228Z"
+    }
+  },
+  "nijisanji-lize": {
+    "pageCount": 1,
+    "estimatedRange": [
+      2,
+      2
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 2,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T13:24:23.686Z",
+    "hitomi": {
+      "galleryCount": 474,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T05:15:44.236Z"
+    }
+  },
+  "rwby-weiss": {
+    "pageCount": 1,
+    "estimatedRange": [
+      4,
+      4
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 4,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T13:25:03.724Z",
+    "hitomi": {
+      "galleryCount": 96,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T05:15:53.262Z"
+    }
+  },
+  "oreimo-ruri": {
+    "pageCount": 1,
+    "estimatedRange": [
+      24,
+      24
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 1
+    },
+    "firstPage": {
+      "items": 24,
+      "aiGenerated": 7
+    },
+    "fetchedAt": "2026-10-05T13:25:43.730Z",
+    "hitomi": {
+      "galleryCount": 955,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T05:15:56.275Z"
+    }
+  },
+  "maidragon-kanna": {
+    "pageCount": 1,
+    "estimatedRange": [
+      16,
+      16
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 16,
+      "aiGenerated": 9
+    },
+    "fetchedAt": "2026-10-05T13:26:23.840Z",
+    "hitomi": {
+      "galleryCount": 346,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T05:15:59.280Z"
+    }
+  },
+  "eromangasensei-sagiri": {
+    "pageCount": 1,
+    "estimatedRange": [
+      18,
+      18
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 18,
+      "aiGenerated": 10
+    },
+    "fetchedAt": "2026-10-05T13:27:03.800Z",
+    "hitomi": {
+      "galleryCount": 373,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T05:16:02.285Z"
+    }
+  },
+  "honkai3-bronya": {
+    "pageCount": 1,
+    "estimatedRange": [
+      3,
+      3
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 3,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T13:27:43.784Z",
+    "hitomi": {
+      "galleryCount": 192,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T05:16:09.806Z"
+    }
+  },
+  "honkai3-kiana": {
+    "pageCount": 1,
+    "estimatedRange": [
+      3,
+      3
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 3,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T13:28:23.968Z",
+    "hitomi": {
+      "galleryCount": 167,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T05:16:11.311Z"
+    }
+  },
+  "danganronpa-chiaki": {
+    "pageCount": 1,
+    "estimatedRange": [
+      1,
+      1
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 1,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T13:29:03.781Z",
+    "hitomi": {
+      "galleryCount": 102,
+      "seriesFilter": null,
+      "fetchedAt": "2026-08-02T05:16:12.815Z"
+    }
+  },
   "pokemon-dawn": {
     "pageCount": 0,
     "estimatedRange": [
@@ -8632,7 +9426,11 @@
       "voice": 0,
       "game": 0
     },
-    "fetchedAt": "2026-08-02T07:25:42.077Z",
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T13:29:43.871Z",
     "hitomi": {
       "galleryCount": 486,
       "seriesFilter": "pokemon",
@@ -8650,7 +9448,11 @@
       "voice": 0,
       "game": 0
     },
-    "fetchedAt": "2026-08-02T07:26:22.136Z",
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T13:30:23.900Z",
     "hitomi": {
       "galleryCount": 605,
       "seriesFilter": "pokemon",
@@ -8668,7 +9470,11 @@
       "voice": 0,
       "game": 0
     },
-    "fetchedAt": "2026-08-02T07:27:02.129Z",
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T13:31:03.861Z",
     "hitomi": {
       "galleryCount": 484,
       "seriesFilter": "pokemon",
@@ -8686,7 +9492,11 @@
       "voice": 0,
       "game": 0
     },
-    "fetchedAt": "2026-08-02T07:27:42.198Z",
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T13:31:43.976Z",
     "hitomi": {
       "galleryCount": 816,
       "seriesFilter": "pokemon",
@@ -8704,7 +9514,11 @@
       "voice": 0,
       "game": 0
     },
-    "fetchedAt": "2026-08-02T07:28:22.345Z",
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T13:32:24.142Z",
     "hitomi": {
       "galleryCount": 408,
       "seriesFilter": "pokemon",
@@ -8722,7 +9536,11 @@
       "voice": 0,
       "game": 0
     },
-    "fetchedAt": "2026-08-02T07:29:02.432Z",
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T13:33:03.961Z",
     "hitomi": {
       "galleryCount": 436,
       "seriesFilter": "pokemon",
@@ -8740,7 +9558,11 @@
       "voice": 0,
       "game": 0
     },
-    "fetchedAt": "2026-08-02T07:29:42.445Z",
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T13:33:44.077Z",
     "hitomi": {
       "galleryCount": 270,
       "seriesFilter": "pokemon",
@@ -8758,29 +9580,15 @@
       "voice": 0,
       "game": 0
     },
-    "fetchedAt": "2026-08-02T07:30:22.604Z",
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-05T13:34:24.552Z",
     "hitomi": {
       "galleryCount": 149,
       "seriesFilter": "pokemon",
       "fetchedAt": "2026-08-02T07:30:48.347Z"
-    }
-  },
-  "bluearchive-kanoe": {
-    "pageCount": 3,
-    "estimatedRange": [
-      61,
-      90
-    ],
-    "byWorkType": {
-      "doujinshi": 3,
-      "voice": 3,
-      "game": 0
-    },
-    "fetchedAt": "2026-08-22T19:17:49.735Z",
-    "hitomi": {
-      "galleryCount": 0,
-      "seriesFilter": "blue archive",
-      "fetchedAt": "2026-08-22T19:18:00.558Z"
     }
   }
 }

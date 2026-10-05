@@ -786,7 +786,9 @@
       "affiliationKind": "軍・組織",
       "affiliationName": "木ノ葉隠れの里",
       "stature": null,
-      "occupation": []
+      "occupation": [
+        "忍者"
+      ]
     },
     "reviewed": true,
     "hitomiQuery": {
@@ -4734,7 +4736,7 @@
       "affiliationName": "西風教会(モンド)",
       "stature": null,
       "occupation": [
-        "魔法使い・魔術師"
+        "アイドル・芸能"
       ]
     },
     "reviewed": true,
@@ -4979,7 +4981,6 @@
       "affiliationName": "白玉楼",
       "stature": "小柄",
       "occupation": [
-        "兵士・軍人",
         "教師・講師"
       ]
     }
