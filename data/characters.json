@@ -511,7 +511,7 @@
       "Darkness",
       "ラライナ"
     ],
-    "series": "このすばらしい世界に祝福を!",
+    "series": "この素晴らしい世界に祝福を!",
     "dlsiteQuery": "このすば ダクネス",
     "axes": {
       "genderExpression": "女性",
@@ -610,7 +610,7 @@
   },
   {
     "id": "fairytail-mirajane",
-    "name": "ミラジェーン",
+    "name": "ミラジェーン・ストラウス",
     "aliases": [
       "Mirajane"
     ],
@@ -7242,7 +7242,7 @@
   },
   {
     "id": "onepiece-marguerite",
-    "name": "マルグリット",
+    "name": "マーガレット",
     "aliases": [
       "Marguerite"
     ],
@@ -7332,7 +7332,7 @@
   },
   {
     "id": "onepiece-reiju",
-    "name": "ビンスモーク・レイジュ",
+    "name": "ヴィンスモーク・レイジュ",
     "aliases": [
       "Reiju Vinsmoke"
     ],
@@ -7649,7 +7649,7 @@
   },
   {
     "id": "overlord-cz2128delta",
-    "name": "シズ",
+    "name": "シズ・デルタ",
     "aliases": [
       "CZ2128 Delta"
     ],
@@ -9078,7 +9078,7 @@
   },
   {
     "id": "csm-himeno",
-    "name": "ヒメノ",
+    "name": "姫野",
     "aliases": [
       "Himeno"
     ],
@@ -13378,7 +13378,7 @@
   },
   {
     "id": "hsr-theherta",
-    "name": "ヘルタ(不可知域)",
+    "name": "マダム・ヘルタ",
     "aliases": [
       "The Herta"
     ],
@@ -14856,7 +14856,7 @@
   },
   {
     "id": "hololiveen-gura",
-    "name": "がうるぐら",
+    "name": "がうる・ぐら",
     "aliases": [
       "Gawr Gura"
     ],
@@ -14950,7 +14950,7 @@
   },
   {
     "id": "hololiveen-calliope",
-    "name": "森美声",
+    "name": "森カリオペ",
     "aliases": [
       "Mori Calliope"
     ],
@@ -15284,7 +15284,7 @@
   },
   {
     "id": "hololiveen-irys",
-    "name": "アイリス",
+    "name": "IRyS",
     "aliases": [
       "IRyS"
     ],
@@ -16404,7 +16404,7 @@
   },
   {
     "id": "bluearchive-izuna",
-    "name": "イズナ",
+    "name": "久田イズナ",
     "aliases": [
       "Izuna"
     ],
@@ -16553,7 +16553,7 @@
   },
   {
     "id": "bluearchive-kikyou",
-    "name": "キキョウ",
+    "name": "桐生キキョウ",
     "aliases": [
       "Kikyou"
     ],
@@ -20221,7 +20221,7 @@
   },
   {
     "id": "spyfamily-anya",
-    "name": "アーニャ(SPY×FAMILY)",
+    "name": "アーニャ・フォージャー",
     "aliases": [
       "Anya Forger"
     ],
@@ -20269,11 +20269,11 @@
   },
   {
     "id": "konosuba-megumin",
-    "name": "惠惠",
+    "name": "めぐみん",
     "aliases": [
       "Megumin"
     ],
-    "series": "このすばらしい世界に祝福を!",
+    "series": "この素晴らしい世界に祝福を!",
     "dlsiteQuery": "このすばらしい世界に祝福を! めぐみん",
     "hitomiQuery": {
       "character": "megumin",
@@ -20313,11 +20313,11 @@
   },
   {
     "id": "konosuba-aqua",
-    "name": "水之女神アクア",
+    "name": "アクア",
     "aliases": [
       "Aqua (Konosuba)"
     ],
-    "series": "このすばらしい世界に祝福を!",
+    "series": "この素晴らしい世界に祝福を!",
     "dlsiteQuery": "コノスバ アクア",
     "hitomiQuery": {
       "character": "aqua konosuba",
@@ -20688,7 +20688,7 @@
   },
   {
     "id": "fe-corrin",
-    "name": "カムイ(FEif)",
+    "name": "カムイ",
     "aliases": [
       "Corrin"
     ],
@@ -21151,7 +21151,7 @@
   },
   {
     "id": "difranxx-zerotwo",
-    "name": "ゼロツー(ダリフラ)",
+    "name": "ゼロツー",
     "aliases": [
       "Zero Two"
     ],
@@ -21447,7 +21447,7 @@
   },
   {
     "id": "nikke-anis",
-    "name": "アニス(勝利の女神:NIKKE)",
+    "name": "アニス",
     "aliases": [
       "Anis"
     ],
@@ -21969,7 +21969,7 @@
   },
   {
     "id": "fate-nero",
-    "name": "ネロ・クラウディウス(Fate)",
+    "name": "ネロ・クラウディウス",
     "aliases": [
       "Nero Claudius"
     ],
@@ -23527,7 +23527,7 @@
   },
   {
     "id": "pokemon-akari",
-    "name": "アカリ",
+    "name": "ショウ",
     "aliases": [
       "Akari"
     ],
