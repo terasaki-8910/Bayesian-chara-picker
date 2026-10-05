@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * DLsite 収集バッチ（SPEC 2.2）。アプリからは一切 import しない独立プロセス。
- * 検索結果の 1 ページ目のみを取得し、件数の目安と媒体別内訳を data/supply.json に書く。
+ * 検索結果の 1 ページ目のみを取得し、件数の目安・媒体別内訳・AI 生成作品の数を data/supply.json に書く。
  */
 import { readFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath, pathToFileURL } from 'node:url';
@@ -86,39 +86,119 @@ export function estimateRange({ pageCount, itemsOnFirstPage, perPage }) {
  * `id` 属性が一致する div 要素の内側 HTML を、タグの入れ子を数えて正確に取り出す。
  * 最初に現れた `</div>` で打ち切ると、要素内にさらに div が入れ子になっている
  * 実サイトの HTML で取りこぼす（B6 の罠と同種の失敗）。
+ *
+ * 同じ id の要素が複数あっても全て返す。DLsite の検索ページは
+ * `id="search_result_list"` を 2 つ持つ（読み込み中の骨組み `loading_display` と、
+ * 表示側 `loading_display_open`）。1 つ目だけ取ると骨組みを掴み、結果が 1 ページ
+ * （1〜30 件）のときに作品数が 0 になる（2026-10 に発覚。pageCount=1 のキャラが
+ * 488 体中 0 体だった）。どれが表示側かの判断は呼び出し側が中身で行う。
+ * @returns {string[]} 出現順の内側 HTML。無ければ空配列
  */
-function extractElementById(html, id) {
-  const openTag = new RegExp(`<div[^>]*\\bid=["']${id}["'][^>]*>`, 'i');
-  const start = openTag.exec(html);
-  if (!start) return null;
-
-  const contentStart = start.index + start[0].length;
+function extractElementsById(html, id) {
+  const openTag = new RegExp(String.raw`<div[^>]*\bid=["']${id}["'][^>]*>`, 'gi');
   const tagPattern = /<div\b[^>]*>|<\/div>/gi;
-  tagPattern.lastIndex = contentStart;
+  const found = [];
 
-  let depth = 1;
-  let match;
-  while ((match = tagPattern.exec(html)) !== null) {
-    if (match[0].toLowerCase() === '</div>') {
-      depth -= 1;
-      if (depth === 0) {
-        return html.slice(contentStart, match.index);
+  let start;
+  while ((start = openTag.exec(html)) !== null) {
+    const contentStart = start.index + start[0].length;
+    tagPattern.lastIndex = contentStart;
+
+    let depth = 1;
+    let end = html.length;
+    let match;
+    while ((match = tagPattern.exec(html)) !== null) {
+      if (match[0].toLowerCase() === '</div>') {
+        depth -= 1;
+        if (depth === 0) {
+          end = match.index;
+          break;
+        }
+      } else {
+        depth += 1;
       }
-    } else {
-      depth += 1;
     }
+    found.push(html.slice(contentStart, end));
+    // 入れ子の内側に同じ id が現れても二重に拾わない。
+    openTag.lastIndex = Math.max(openTag.lastIndex, end);
   }
-  return html.slice(contentStart);
+  return found;
+}
+
+/**
+ * 作品 ID。RJ（同人）だけでなく BJ（書籍）・VJ（ソフト）も検索結果に混ざる。
+ * RJ だけを数えると、これらが 1 ページ目の件数から落ちる。
+ */
+const WORK_ID_SOURCE = String.raw`(?:RJ|BJ|VJ)\d{6,}`;
+
+/** 結果リスト内の作品 ID（出現順・重複なし）。1 作品が複数箇所に出ても 1 と数える。 */
+function listWorkIds(listHtml) {
+  // 作品行は `data-list_item_product_id` を持つ。無い構造に変わっても落ちないよう ID 全体へ退避する。
+  const byAttr = [...listHtml.matchAll(new RegExp(`data-list_item_product_id="(${WORK_ID_SOURCE})"`, 'g'))];
+  const ids =
+    byAttr.length > 0
+      ? byAttr.map((m) => m[1])
+      : (listHtml.match(new RegExp(String.raw`\b${WORK_ID_SOURCE}\b`, 'g')) ?? []);
+  return [...new Set(ids)];
+}
+
+/**
+ * 同じ id の要素のうち表示側を選ぶ。class 名（`loading_display_open` 等）は
+ * サイト側の都合で変わり得るので頼らず、作品 ID を最も多く含むものを選ぶ。
+ * 骨組みは作品 ID を持たず、0 件ページの表示側も持たないので、どれを選んでも 0 になる。
+ */
+function pickResultList(candidates) {
+  let best = { html: '', ids: [] };
+  for (const html of candidates) {
+    const ids = listWorkIds(html);
+    if (ids.length > best.ids.length) best = { html, ids };
+  }
+  return best;
+}
+
+/**
+ * AI 生成作品の ID 集合。DLsite は AI 生成作品を別フロア（作品 URL が `/aix/work/`）に置き、
+ * 同じ作品行の `__product_attributes` にも `AIG` が付く。実物 85 作品（8 ページ）で
+ * 2 つの目印は 1 作品も食い違わなかった。どちらか一方でも付いていれば AI 生成とする。
+ */
+function aiGeneratedIds(listHtml, ids) {
+  const wanted = new Set(ids);
+  const ai = new Set();
+
+  const urlPattern = new RegExp(String.raw`/aix/work/=/product_id/(${WORK_ID_SOURCE})\b`, 'g');
+  for (const m of listHtml.matchAll(urlPattern)) {
+    if (wanted.has(m[1])) ai.add(m[1]);
+  }
+
+  for (const input of listHtml.matchAll(/<input\b[^>]*__product_attributes[^>]*>/g)) {
+    const id = new RegExp(String.raw`\bid="_(${WORK_ID_SOURCE})"`).exec(input[0])?.[1];
+    const value = /\bvalue="([^"]*)"/.exec(input[0])?.[1] ?? '';
+    if (id && wanted.has(id) && value.split(',').includes('AIG')) ai.add(id);
+  }
+  return ai;
 }
 
 /**
  * 検索結果 HTML を解析する。総ヒット数は `global_pagination` の「最後へ」リンクの
  * `/page/N/` から読む（本文には数値として存在しない）。作品 ID の計数は
  * `search_result_list` の内側にスコープする（B6: ページ全体には推薦枠の ID が混ざる）。
+ * `search_result_list` は骨組みと表示側の 2 つあるので、作品を持つ方を選ぶ。
+ *
+ * `aiOnFirstPage` は 1 ページ目に並ぶ作品のうち AI 生成のもの。件数（pageCount 等）には
+ * 含めたまま、内数として別に返す。複数ページあるときは 1 ページ目（人気順の先頭 30 件）
+ * しか見ていないので、全体の AI 率の標本であって全数ではない。
  */
 export function parseSearchResult(html, { perPage = PER_PAGE } = {}) {
-  const resultListHtml = extractElementById(html, 'search_result_list') ?? '';
-  const itemsOnFirstPage = new Set(resultListHtml.match(/RJ\d{6,}/g) ?? []).size;
+  const candidates = extractElementsById(html, 'search_result_list');
+  if (candidates.length === 0) {
+    // 構造変更や遮断ページを「0 件」と誤認して供給ゼロとして記録しないよう、黙って 0 にしない。
+    throw new Error(
+      'search_result_list が見つかりません（DLsite のページ構造が変わったか、検索結果ではないページです）',
+    );
+  }
+  const { html: resultListHtml, ids } = pickResultList(candidates);
+  const itemsOnFirstPage = ids.length;
+  const aiOnFirstPage = aiGeneratedIds(resultListHtml, ids).size;
 
   const lastPageLink = /<a[^>]*href="([^"]*)"[^>]*>\s*最後へ\s*<\/a>/.exec(html);
   let pageCount;
@@ -128,10 +208,17 @@ export function parseSearchResult(html, { perPage = PER_PAGE } = {}) {
   } else {
     pageCount = itemsOnFirstPage > 0 ? 1 : 0;
   }
+  if (pageCount > 1 && itemsOnFirstPage === 0) {
+    // 2 ページ以上あるなら 1 ページ目は作品で埋まっているはず。0 なら結果リストの選び損ない。
+    throw new Error(
+      '複数ページあるのに 1 ページ目の作品を 1 件も読めません（結果リストの解析に失敗している可能性）',
+    );
+  }
 
   return {
     pageCount,
     itemsOnFirstPage,
+    aiOnFirstPage,
     estimatedRange: estimateRange({ pageCount, itemsOnFirstPage, perPage }),
   };
 }
@@ -152,7 +239,7 @@ const MAX_RETRIES = 3;
 /** 再試行の前に置く追加の待ち時間。Crawl-delay の上に足す（短縮しない）。 */
 const RETRY_BACKOFF_MS = 15_000;
 
-async function collectCharacter(politeFetch, character) {
+export async function collectCharacter(politeFetch, character) {
   const overall = await fetchAndParse(politeFetch, { keyword: character.dlsiteQuery });
   const byWorkType = {};
   for (const workType of WORK_TYPES) {
@@ -163,6 +250,8 @@ async function collectCharacter(politeFetch, character) {
     pageCount: overall.pageCount,
     estimatedRange: overall.estimatedRange,
     byWorkType,
+    // 1 ページ目の作品数と、そのうち AI 生成の数（件数とは別に記録。pageCount 等の意味は変えない）。
+    firstPage: { items: overall.itemsOnFirstPage, aiGenerated: overall.aiOnFirstPage },
     fetchedAt: new Date().toISOString(),
   };
 }

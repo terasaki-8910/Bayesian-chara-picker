@@ -139,7 +139,22 @@ export type SupplyEntry = {
   estimatedRange: [number, number];
   byWorkType: Record<string, number>;
   fetchedAt: string; // ISO 8601（A8 の正規表現に一致すること）
+  /**
+   * DLsite 検索結果の 1 ページ目（人気順の先頭 30 件まで）の内訳。pageCount・estimatedRange・
+   * byWorkType の意味は変えず、それらとは別に持つ。未設定 = このフィールドを追加する前の収集分。
+   */
+  firstPage?: SupplyFirstPage;
   hitomi: HitomiSupplyEntry | null; // null = hitomiQuery が null、または未収集
+};
+
+/**
+ * `items` は 1 ページ目の作品数（pageCount = 1 のときは総ヒット数に等しい）。
+ * `aiGenerated` はそのうち AI 生成作品（DLsite の `/aix/` フロア）の数で、`items` に含まれる内数。
+ * pageCount >= 2 のときは先頭 30 件の標本であり、検索結果全体の AI 生成数ではない。
+ */
+export type SupplyFirstPage = {
+  items: number;
+  aiGenerated: number;
 };
 
 /** `HitomiQuery` の積集合計算まで終えた結果。件数の単位はギャラリー数（DLsiteのpageCountとは別単位）。 */
@@ -218,11 +233,22 @@ const hitomiSupplyEntrySchema: z.ZodType<HitomiSupplyEntry> = z.object({
   fetchedAt: z.string().regex(ISO_8601_DATE_TIME),
 });
 
+const supplyFirstPageSchema: z.ZodType<SupplyFirstPage> = z
+  .object({
+    items: z.number().int().nonnegative(),
+    aiGenerated: z.number().int().nonnegative(),
+  })
+  .refine((f) => f.aiGenerated <= f.items, {
+    message: 'aiGenerated は items に含まれる内数なので items を超えられない',
+    path: ['aiGenerated'],
+  });
+
 const supplyEntrySchema: z.ZodType<SupplyEntry> = z.object({
   pageCount: z.number().int().nonnegative(),
   estimatedRange: z.tuple([z.number().int().nonnegative(), z.number().int().nonnegative()]),
   byWorkType: z.record(z.string(), z.number().int().nonnegative()),
   fetchedAt: z.string().regex(ISO_8601_DATE_TIME),
+  firstPage: supplyFirstPageSchema.optional(),
   hitomi: hitomiSupplyEntrySchema.nullable(),
 });
 

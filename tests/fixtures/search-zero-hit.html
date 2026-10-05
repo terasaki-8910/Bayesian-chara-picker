@@ -3,11 +3,32 @@
 <head><meta charset="utf-8"><title>検索結果</title></head>
 <body>
 <div id="search_result_outer">
-  <div id="search_result_list" class="n_worklist">
-    <table class="n_worklist_item">
-
-    </table>
+<!-- 作品結果のロード中 -->
+<div
+  id="search_result_list"
+  class="loading_display"
+  data-toggle="found"
+  style="display: none;"
+>
+  <div class="search_skeleton_box n_worklist">
+    <div class="search_skeleton_inner">
+      <div class="search_skeleton_tumb"><div class="search_skeleton_img"></div></div>
+      <div class="search_skeleton_detail">
+        <div class="search_skeleton_title"></div>
+        <div class="search_skeleton_name"></div>
+      </div>
+    </div>
   </div>
+</div>
+<!-- 作品結果 -->
+<div id="search_result_list" class="loading_display_open" data-toggle="found">
+  <div class="work_not_found">
+    <p class="lead">条件に一致する作品は見つかりませんでした</p>
+    <ul class="extend_search_list">
+      <li class="extend_search_list_item"><a href="https://www.dlsite.com/appx/fsr/=/language/jp/keyword/x/">アプリを検索する</a></li>
+    </ul>
+  </div>
+</div>
 
 </div>
 <div id="recommend_rank" class="recommend_list">
