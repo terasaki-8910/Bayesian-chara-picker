@@ -107,7 +107,7 @@ export function isExcludedCandidate(tagName) {
 /** Danbooru API の /tags.json 1リクエストで取れる最大件数。 */
 const TOP_TAGS_LIMIT = 1000;
 /** 最終候補の目標件数（脱落込みで+312狙い、SPEC§6.1の供給先行方針）。 */
-const TARGET_CANDIDATE_COUNT = 350;
+const TARGET_CANDIDATE_COUNT = 512;
 /** fav_count中央値を測る対象（傾向スコア上位、コスト管理のため候補全体には広げない）。 */
 const FAV_SAMPLE_TOP_N = 400;
 /**
@@ -259,7 +259,7 @@ async function main() {
 
   const femaleCandidates = scored
     .filter((s) => s.genderRatio >= GENDER_RATIO_MIN && s.girlDominant)
-    .sort((a, b) => b.explicitCount - a.explicitCount);
+    .sort((a, b) => b.postCount - a.postCount);
   console.log(
     `性別判定(1girl率>=${GENDER_RATIO_MIN} かつ 1girl共起>1boy共起)を通過した候補: ${femaleCandidates.length}件`,
   );
@@ -275,7 +275,7 @@ async function main() {
     }
   }
 
-  const rankedCandidates = withFav.sort((a, b) => b.explicitCount - a.explicitCount).slice(0, TARGET_CANDIDATE_COUNT);
+  const rankedCandidates = withFav.sort((a, b) => b.postCount - a.postCount).slice(0, TARGET_CANDIDATE_COUNT);
 
   console.log('優先3作品のシリーズ内キャラを列挙中...');
   const priorityResults = [];
