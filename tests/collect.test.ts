@@ -5,15 +5,18 @@ import {
   PER_PAGE,
   USER_AGENT,
   buildSearchUrl,
+  collectCharacter,
   createPoliteFetcher,
   estimateRange,
   parseSearchResult,
 } from '../scripts/collect.mjs';
+import { supplyFileSchema } from '../src/data/schema';
 import { readText } from './helpers/data';
 
 const multiPage = readText('tests/fixtures/search-multi-page.html');
 const singlePage = readText('tests/fixtures/search-single-page.html');
 const zeroHit = readText('tests/fixtures/search-zero-hit.html');
+const allAi = readText('tests/fixtures/search-single-page-all-ai.html');
 
 /**
  * robots.txt のパターン表。SPEC 2.2 で実測確認した 2 行のみを固定する。
@@ -167,7 +170,7 @@ describe('B. 収集スクリプトの規約遵守', () => {
     const result = parseSearchResult(singlePage, { perPage: PER_PAGE });
     expect(result.pageCount).toBe(1);
     expect(result.itemsOnFirstPage).toBe(17);
-    // 1 ページに収まる場合は推定ではなく実数が確定する。
+    // 1 ページに収まる場合は推定ではなく実数が確定する。AI 生成作品もこの件数に含まれる。
     expect(result.estimatedRange).toEqual([17, 17]);
   });
 
@@ -175,6 +178,139 @@ describe('B. 収集スクリプトの規約遵守', () => {
     expect(estimateRange({ pageCount: 0, itemsOnFirstPage: 0, perPage: 30 })).toEqual([0, 0]);
     expect(estimateRange({ pageCount: 1, itemsOnFirstPage: 30, perPage: 30 })).toEqual([30, 30]);
     expect(estimateRange({ pageCount: 2, itemsOnFirstPage: 30, perPage: 30 })).toEqual([31, 60]);
+  });
+
+  it('B8: 結果リストが 2 つある実ページ構造（骨組み + 表示側）で表示側を数える', () => {
+    // 前提の固定: フィクスチャが実物と同じく id="search_result_list" を 2 つ持ち、先頭が骨組み。
+    for (const html of [multiPage, singlePage, zeroHit, allAi]) {
+      const opens = html.match(/<div[^>]*\bid="search_result_list"[^>]*>/g) ?? [];
+      expect(opens).toHaveLength(2);
+      expect(opens[0]).toContain('loading_display"');
+      expect(opens[1]).toContain('loading_display_open');
+    }
+    // 1 つ目（骨組み）だけを見る旧実装は、1 ページ以内の結果を 0 件にしてしまう。
+    expect(parseSearchResult(singlePage).itemsOnFirstPage).toBeGreaterThan(0);
+    expect(parseSearchResult(allAi).pageCount).toBe(1);
+  });
+
+  it('B8: 表示側の選択は並び順にも class 名にも依存しない', () => {
+    const skeleton = '<div id="search_result_list" class="loading_display" style="display: none;"><div class="skel"></div></div>';
+    const display = (cls: string) =>
+      `<div id="search_result_list" class="${cls}"><ul><li data-list_item_product_id="RJ01000001"></li><li data-list_item_product_id="RJ01000002"></li></ul></div>`;
+
+    const displayFirst = `${display('loading_display_open')}${skeleton}`;
+    expect(parseSearchResult(displayFirst).itemsOnFirstPage).toBe(2);
+
+    // class 名が変わっても、作品を持つ方を選ぶ。
+    const renamed = `${skeleton}${display('some_future_class')}`;
+    expect(parseSearchResult(renamed).itemsOnFirstPage).toBe(2);
+  });
+
+  it('B8: RJ 以外の作品 ID（BJ 書籍・VJ ソフト）も 1 ページ目の件数に数える', () => {
+    // 前提の固定: フィクスチャに BJ / VJ が 1 件ずつ入っている。
+    expect(singlePage.match(/data-list_item_product_id="(?:BJ|VJ)\d+"/g)).toHaveLength(2);
+    expect(parseSearchResult(singlePage).itemsOnFirstPage).toBe(17);
+  });
+
+  it('B8: 作品行の中に入れ子の ul/li があっても 1 作品を二重に数えない', () => {
+    // フィクスチャの作品行は <li> の中にカート操作の <ul><li> を持つ。
+    expect(multiPage).toContain('class="work_operation_btn');
+    expect(parseSearchResult(multiPage).itemsOnFirstPage).toBe(30);
+  });
+
+  it('B9: AI 生成作品を件数とは別に数える', () => {
+    const multi = parseSearchResult(multiPage, { perPage: PER_PAGE });
+    expect(multi.aiOnFirstPage).toBe(19);
+    // 件数の意味は変わらない: AI 生成を含んだまま 30 件・12 ページ。
+    expect(multi.itemsOnFirstPage).toBe(30);
+    expect(multi.pageCount).toBe(12);
+    expect(multi.estimatedRange).toEqual([331, 360]);
+
+    const single = parseSearchResult(singlePage, { perPage: PER_PAGE });
+    expect(single.aiOnFirstPage).toBe(6);
+    expect(single.itemsOnFirstPage).toBe(17);
+    expect(single.estimatedRange).toEqual([17, 17]);
+
+    const all = parseSearchResult(allAi, { perPage: PER_PAGE });
+    expect(all.aiOnFirstPage).toBe(5);
+    expect(all.itemsOnFirstPage).toBe(5);
+
+    const zero = parseSearchResult(zeroHit, { perPage: PER_PAGE });
+    expect(zero.aiOnFirstPage).toBe(0);
+  });
+
+  it('B9: AI 生成の判定は /aix/ URL と AIG 属性のどちらか一方でも拾う', () => {
+    const li = (id: string, inner: string) => `<li data-list_item_product_id="${id}">${inner}</li>`;
+    const list = [
+      li('RJ01000001', '<a href="https://www.dlsite.com/aix/work/=/product_id/RJ01000001.html">x</a>'),
+      li(
+        'RJ01000002',
+        '<input type="hidden" class="__product_attributes" name="__product_attributes" id="_RJ01000002" value="RG1,adl,male,AIG,JPN" disabled="disabled">',
+      ),
+      li('RJ01000003', '<a href="https://www.dlsite.com/maniax/work/=/product_id/RJ01000003.html">x</a>'),
+      // AIG に似た別トークンは AI 生成ではない。
+      li(
+        'RJ01000004',
+        '<input type="hidden" class="__product_attributes" name="__product_attributes" id="_RJ01000004" value="RG1,adl,male,AIGX,XAIG" disabled="disabled">',
+      ),
+    ].join('');
+    const result = parseSearchResult(`<div id="search_result_list">${list}</div>`);
+    expect(result.itemsOnFirstPage).toBe(4);
+    expect(result.aiOnFirstPage).toBe(2);
+  });
+
+  it('B9: 結果リストの外（推薦枠）にある /aix/ リンクは AI 生成の数に入れない', () => {
+    const html = `<div id="search_result_list"><li data-list_item_product_id="RJ01000001"><a href="https://www.dlsite.com/maniax/work/=/product_id/RJ01000001.html">x</a></li></div>
+      <div id="recommend"><a href="https://www.dlsite.com/aix/work/=/product_id/RJ01000001.html">x</a><a href="https://www.dlsite.com/aix/work/=/product_id/RJ09999999.html">y</a></div>`;
+    const result = parseSearchResult(html);
+    expect(result.itemsOnFirstPage).toBe(1);
+    expect(result.aiOnFirstPage).toBe(0);
+  });
+
+  it('B10: 結果リスト自体が見つからないページは 0 件と誤認せずエラーにする', () => {
+    expect(() => parseSearchResult('<html><body>Just a moment...</body></html>')).toThrow(/search_result_list/);
+  });
+
+  it('B10: 複数ページと言いながら 1 ページ目の作品を読めないときはエラーにする', () => {
+    // 骨組みを掴む不具合では、pageCount だけ正しく出て itemsOnFirstPage が 0 のままになっていた。
+    const html = `<div id="search_result_list" class="loading_display_open"></div>
+      <a href="/maniax/fsr/=/keyword/x/per_page/30/page/5/">最後へ</a>`;
+    expect(() => parseSearchResult(html)).toThrow(/1 ページ目/);
+  });
+
+  it('B11: 1 キャラの収集結果は従来の件数フィールドの意味を保ち、firstPage を別に持つ', async () => {
+    const urls: string[] = [];
+    const politeFetch = async (url: string) => {
+      urls.push(url);
+      // 全体は 12 ページ（AI 19/30）、work_type を絞った 3 本は 1 ページに収まる 17 件。
+      const html = url.includes('work_type_category') ? singlePage : multiPage;
+      return { ok: true, status: 200, text: async () => html };
+    };
+    const entry = await collectCharacter(politeFetch, { dlsiteQuery: 'テスト' });
+
+    expect(urls).toHaveLength(4);
+    expect(entry.pageCount).toBe(12);
+    expect(entry.estimatedRange).toEqual([331, 360]);
+    // byWorkType は pageCount の意味のまま（1 ページに収まるなら 1。旧実装は 0 になっていた）。
+    expect(entry.byWorkType).toEqual({ doujinshi: 1, voice: 1, game: 1 });
+    expect(entry.firstPage).toEqual({ items: 30, aiGenerated: 19 });
+    expect(entry.fetchedAt).toMatch(/^\d{4}-\d{2}-\d{2}T/);
+  });
+
+  it('B11: supply のスキーマは firstPage を任意で受け付け、内数が件数を超える値は弾く', () => {
+    const base = {
+      pageCount: 1,
+      estimatedRange: [17, 17],
+      byWorkType: { doujinshi: 1, voice: 0, game: 0 },
+      fetchedAt: '2026-10-05T00:00:00.000Z',
+      hitomi: null,
+    };
+    // 収集し直す前の既存エントリ（firstPage なし）はそのまま通る。
+    expect(supplyFileSchema.safeParse({ a: base }).success).toBe(true);
+    expect(supplyFileSchema.safeParse({ a: { ...base, firstPage: { items: 17, aiGenerated: 6 } } }).success).toBe(true);
+    expect(supplyFileSchema.safeParse({ a: { ...base, firstPage: { items: 5, aiGenerated: 6 } } }).success).toBe(false);
+    expect(supplyFileSchema.safeParse({ a: { ...base, firstPage: { items: 5, aiGenerated: -1 } } }).success).toBe(false);
+    expect(supplyFileSchema.safeParse({ a: { ...base, firstPage: { items: 5 } } }).success).toBe(false);
   });
 
   it('import しただけでは外部通信しない（収集はアプリ実行時に走らない）', async () => {
