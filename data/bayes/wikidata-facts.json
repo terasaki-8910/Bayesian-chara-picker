@@ -2085,6 +2085,1139 @@
     },
     "pokemon-akari": {},
     "pokemon-juliana": {},
-    "bluearchive-kanoe": {}
+    "bluearchive-kanoe": {},
+    "umamusume-agnestachyon": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "red",
+      "stature": "標準"
+    },
+    "honkai3-elysia": {},
+    "umamusume-manhattancafe": {
+      "genderExpression": "女性",
+      "hairColor": "黒",
+      "eyeColor": "yellow",
+      "stature": "小柄"
+    },
+    "hololiveen-ina": {},
+    "kancolle-yuudachi": {},
+    "touhou-miko": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "umamusume-goldship": {
+      "genderExpression": "女性",
+      "hairColor": "銀"
+    },
+    "touhou-futo": {},
+    "genshin-columbina": {
+      "genderExpression": "女性"
+    },
+    "kancolle-ryuujou": {},
+    "madoka-sayaka": {
+      "genderExpression": "女性",
+      "hairColor": "青",
+      "species": [
+        "人間"
+      ]
+    },
+    "umamusume-mejiromcqueen": {
+      "genderExpression": "女性",
+      "hairColor": "紫",
+      "eyeColor": "purple",
+      "stature": "標準"
+    },
+    "touhou-murasa": {
+      "genderExpression": "女性"
+    },
+    "xeno2-hikari": {},
+    "touhou-seiga": {},
+    "kemono-serval": {},
+    "kancolle-houshou": {},
+    "touhou-kokoro": {},
+    "zzz-miyabi": {
+      "genderExpression": "女性",
+      "hairColor": "黒",
+      "eyeColor": "red"
+    },
+    "fgo-tristan": {},
+    "kancolle-murakumo": {},
+    "ranma-saotome": {},
+    "kancolle-yukikaze": {},
+    "fe3h-byleth": {},
+    "kancolle-ushio": {},
+    "touhou-junko": {},
+    "arknights-lappland": {},
+    "umamusume-tokaiteio": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "blue",
+      "stature": "小柄"
+    },
+    "touhou-kyouko": {},
+    "touhou-tojiko": {},
+    "touhou-yamame": {},
+    "vocaloid-meiko": {},
+    "kancolle-akebono": {},
+    "arknights-skadi": {},
+    "genshin-sandrone": {
+      "genderExpression": "女性"
+    },
+    "tsukihime-arcueid": {
+      "genderExpression": "女性",
+      "eyeColor": "red"
+    },
+    "sailormoon-usagi": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "eyeColor": "blue",
+      "stature": "小柄",
+      "species": [
+        "人間"
+      ]
+    },
+    "umamusume-oguri": {
+      "genderExpression": "女性",
+      "hairColor": "銀",
+      "eyeColor": "grey",
+      "stature": "標準"
+    },
+    "touhou-sekibanki": {},
+    "girlsfrontline-hk416": {},
+    "kancolle-ooyodo": {},
+    "sunshine-you": {
+      "genderExpression": "女性",
+      "eyeColor": "blue",
+      "stature": "標準",
+      "species": [
+        "人間"
+      ]
+    },
+    "touhou-seija": {},
+    "kancolle-hoppou": {},
+    "limbus-ishmael": {},
+    "touhou-minoriko": {},
+    "arknights-kaltsit": {},
+    "limbus-donquixote": {},
+    "mha-mirko": {},
+    "omori-aubrey": {},
+    "touhou-akyuu": {},
+    "gup-erika": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "deltarune-kris": {},
+    "arknights-angelina": {},
+    "vocaloid-gumi": {},
+    "idolmaster-makoto": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "touhou-shinmyoumaru": {},
+    "touhou-hecatia": {
+      "genderExpression": "女性",
+      "eyeColor": "red",
+      "species": [
+        "人間"
+      ]
+    },
+    "kon-tsumugi": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "gup-anchovy": {},
+    "kancolle-mutsu": {},
+    "honkai3-mei": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "fgo-artoria-lancer": {},
+    "touhou-mamizou": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "brown"
+    },
+    "touhou-letty": {
+      "genderExpression": "女性"
+    },
+    "kancolle-tatsuta": {},
+    "fgo-ereshkigal": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "kancolle-ooi": {},
+    "umamusume-nicenature": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "grey",
+      "stature": "標準"
+    },
+    "umamusume-satonodiamond": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "orange",
+      "stature": "小柄"
+    },
+    "kancolle-sendai": {},
+    "kancolle-musashi": {},
+    "nijisanji-angekatrina": {},
+    "hsr-robin": {},
+    "wutheringwaves-femalerover": {},
+    "nikkiseries-nikki": {},
+    "kancolle-bismarck": {},
+    "kancolle-akashi": {},
+    "kancolle-shiranui": {},
+    "ranma-akane": {},
+    "kancolle-sazanami": {},
+    "arknights-surtr": {},
+    "wuwa-zani": {
+      "genderExpression": "女性",
+      "hairColor": "白",
+      "eyeColor": "red",
+      "species": [
+        "人間"
+      ]
+    },
+    "gup-yukari": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "fate-meltryllis": {},
+    "honkai3-fuhua": {},
+    "kancolle-souryuu": {},
+    "kancolle-kasumi": {},
+    "umamusume-symbolirudolf": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "purple",
+      "stature": "標準"
+    },
+    "hololiveen-raora": {},
+    "omori-mari": {},
+    "kancolle-samidare": {},
+    "touhou-wakasagihime": {},
+    "hololiveen-bijou": {},
+    "touhou-lilywhite": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "eyeColor": "green"
+    },
+    "kancolle-yamashiro": {},
+    "rozenmaiden-suigintou": {
+      "genderExpression": "女性",
+      "hairColor": "銀",
+      "eyeColor": "red"
+    },
+    "arknights-shu": {},
+    "kancolle-ro500": {},
+    "kancolle-hiei": {},
+    "danganronpa-kaede": {},
+    "gquuuuuux-yuzuriha": {
+      "genderExpression": "女性",
+      "hairColor": "赤",
+      "eyeColor": "green"
+    },
+    "idolmaster-hibiki": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "bluearchive-shiroko-2": {},
+    "aot-mikasa": {
+      "genderExpression": "女性",
+      "hairColor": "黒",
+      "species": [
+        "人間"
+      ]
+    },
+    "limbus-faust": {},
+    "kancolle-kirishima": {},
+    "voiceroid-akari": {},
+    "umamusume-haruurara": {
+      "genderExpression": "女性",
+      "hairColor": "桃",
+      "stature": "小柄"
+    },
+    "kancolle-wo-class": {},
+    "umamusume-currenchan": {
+      "genderExpression": "女性",
+      "eyeColor": "purple",
+      "stature": "小柄"
+    },
+    "girlsfrontline-ump45": {},
+    "imascg-kaede": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "species": [
+        "人間"
+      ]
+    },
+    "majosaiban-ema": {
+      "genderExpression": "女性",
+      "stature": "標準",
+      "species": [
+        "人間"
+      ]
+    },
+    "fgo-artoria-caster": {},
+    "lovelivesunshine-yoshiko": {
+      "genderExpression": "女性",
+      "stature": "標準",
+      "species": [
+        "人間"
+      ]
+    },
+    "higurashi-rika": {
+      "genderExpression": "女性",
+      "hairColor": "青",
+      "eyeColor": "purple",
+      "species": [
+        "人間"
+      ]
+    },
+    "arknights-chen": {},
+    "kancolle-yuubari": {},
+    "touhou-doremy": {
+      "genderExpression": "女性",
+      "hairColor": "青"
+    },
+    "spiceandwolf-holo": {},
+    "pokemon-hexmaniac": {},
+    "idolmaster-yayoi": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "jojo-jolyne": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "eyeColor": "green",
+      "stature": "長身",
+      "species": [
+        "人間"
+      ]
+    },
+    "danganronpa-kyoko": {
+      "genderExpression": "女性",
+      "eyeColor": "purple",
+      "stature": "標準",
+      "species": [
+        "人間"
+      ]
+    },
+    "higurashi-rena": {
+      "genderExpression": "女性",
+      "hairColor": "橙",
+      "species": [
+        "人間"
+      ]
+    },
+    "ranma-shampoo": {},
+    "sf-juri": {
+      "genderExpression": "女性",
+      "hairColor": "黒",
+      "species": [
+        "人間"
+      ]
+    },
+    "ranma-ranma-female": {},
+    "danganronpa-junko": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "stature": "標準",
+      "species": [
+        "人間"
+      ]
+    },
+    "lovelivesunshine-riko": {
+      "genderExpression": "女性",
+      "stature": "標準",
+      "species": [
+        "人間"
+      ]
+    },
+    "haruhi-mikuru": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "steinsgate-kurisu": {
+      "genderExpression": "女性",
+      "eyeColor": "purple",
+      "stature": "標準",
+      "species": [
+        "人間"
+      ]
+    },
+    "arknights-mudrock": {},
+    "kancolle-naganami": {},
+    "kancolle-kiso": {},
+    "fgo-kama": {},
+    "touhou-medicine": {},
+    "touhou-kosuzu": {},
+    "touhou-sumireko": {},
+    "umamusume-chevalgrand": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "blue",
+      "stature": "標準"
+    },
+    "umamusume-tamamocross": {
+      "genderExpression": "女性",
+      "hairColor": "銀",
+      "eyeColor": "blue",
+      "stature": "小柄"
+    },
+    "needygirl-tenshichan": {},
+    "arknights-dusk": {},
+    "hololive-coco": {},
+    "kancolle-grafzeppelin": {},
+    "splatoon-callie": {
+      "genderExpression": "女性"
+    },
+    "gkidols-kotone": {
+      "species": [
+        "人間"
+      ]
+    },
+    "project-sekai-asahina-mafuyu": {},
+    "umamusume-admire-vega": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "brown",
+      "stature": "標準"
+    },
+    "nijisanji-tsukino-mito": {},
+    "idolmaster-cinderella-girls-futaba-anzu": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "species": [
+        "人間"
+      ]
+    },
+    "touhou-kisume": {},
+    "touhou-star-sapphire": {},
+    "umamusume-gentildonna": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "red",
+      "stature": "標準"
+    },
+    "love-live-sunshine-takami-chika": {
+      "genderExpression": "女性",
+      "hairColor": "橙",
+      "species": [
+        "人間"
+      ]
+    },
+    "zenless-zone-zero-tsukishiro-yanagi": {
+      "genderExpression": "女性",
+      "hairColor": "桃",
+      "species": [
+        "人間"
+      ]
+    },
+    "umamusume-tmoperao": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "purple",
+      "stature": "標準"
+    },
+    "gup-saori": {},
+    "kancolle-zuihou": {},
+    "limbus-ryoshu": {},
+    "fate-nobunaga": {},
+    "imascg-ranko": {
+      "genderExpression": "女性",
+      "eyeColor": "red",
+      "species": [
+        "人間"
+      ]
+    },
+    "umamusume-kinghalo": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "orange",
+      "stature": "標準"
+    },
+    "wonderland-alice": {},
+    "gup-kay": {},
+    "prosekai-mizuki": {
+      "species": [
+        "人間"
+      ]
+    },
+    "umamusume-mihonobourbon": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "blue",
+      "stature": "標準"
+    },
+    "mahomajo-hiro": {
+      "genderExpression": "女性",
+      "stature": "標準",
+      "species": [
+        "人間"
+      ]
+    },
+    "touhou-lunasa": {
+      "genderExpression": "女性"
+    },
+    "kancolle-murasame": {},
+    "touhou-okina": {},
+    "genshin-yoimiya": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "eyeColor": "orange",
+      "species": [
+        "人間"
+      ]
+    },
+    "imascg-shiki": {
+      "genderExpression": "女性",
+      "eyeColor": "blue",
+      "species": [
+        "人間"
+      ]
+    },
+    "dungeon-meshi-falin-touden": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "orange",
+      "species": [
+        "人間"
+      ]
+    },
+    "pokemon-scarlet-and-violet-rika": {},
+    "kantai-collection-naka": {},
+    "touhou-kudamaki-tsukasa": {
+      "genderExpression": "女性"
+    },
+    "persona-4-shirogane-naoto": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "gochuumon-wa-usagi-desu-ka-hoto-cocoa": {
+      "genderExpression": "女性",
+      "hairColor": "橙",
+      "eyeColor": "purple",
+      "stature": "小柄",
+      "species": [
+        "人間"
+      ]
+    },
+    "hololive-momosuzu-nene": {},
+    "nijisanji-makaino-ririmu": {},
+    "xenoblade-chronicles-2-nia": {
+      "genderExpression": "女性",
+      "hairColor": "銀",
+      "eyeColor": "orange"
+    },
+    "umamusume-mayano-top-gun": {
+      "genderExpression": "女性",
+      "hairColor": "橙",
+      "eyeColor": "orange",
+      "stature": "小柄"
+    },
+    "rwby-ruby-rose": {
+      "genderExpression": "女性",
+      "hairColor": "黒",
+      "species": [
+        "人間"
+      ]
+    },
+    "project-sekai-shinonome-ena": {},
+    "hololive-omaru-polka": {},
+    "fate-apocrypha-jack-the-ripper": {
+      "genderExpression": "女性"
+    },
+    "lucky-star-hiiragi-tsukasa": {
+      "genderExpression": "女性",
+      "hairColor": "紫",
+      "eyeColor": "blue",
+      "species": [
+        "人間"
+      ]
+    },
+    "nitroplus-sonico": {},
+    "wuwa-changli": {
+      "genderExpression": "女性",
+      "hairColor": "桃",
+      "species": [
+        "人間"
+      ]
+    },
+    "honkai3-seele": {},
+    "arknights-mostima": {},
+    "meitanteiprecure-luluka": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "kancolle-yamakaze": {},
+    "kancolle-i19": {},
+    "gup-arisu": {},
+    "wuwa-chisa": {
+      "genderExpression": "女性",
+      "hairColor": "黒",
+      "species": [
+        "人間"
+      ]
+    },
+    "persona4-chie": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "species": [
+        "人間"
+      ]
+    },
+    "hololive-watame": {},
+    "umamusume-seiunsky": {
+      "genderExpression": "女性",
+      "eyeColor": "blue",
+      "stature": "小柄"
+    },
+    "umamusume-vodka": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "brown",
+      "stature": "標準"
+    },
+    "urusei-lum": {},
+    "wuwa-aemeath": {
+      "genderExpression": "女性",
+      "hairColor": "桃",
+      "species": [
+        "人間"
+      ]
+    },
+    "imascg-sachiko": {
+      "genderExpression": "女性",
+      "hairColor": "紫",
+      "species": [
+        "人間"
+      ]
+    },
+    "csm-yoru": {},
+    "oshinoko-kana": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "kancolle-seaport-princess": {},
+    "kancolle-akigumo": {},
+    "strikewitches-sanya": {
+      "genderExpression": "女性",
+      "eyeColor": "green",
+      "species": [
+        "人間"
+      ]
+    },
+    "endfield-endministrator": {},
+    "imascg-anastasia": {},
+    "machikado-yuuko": {
+      "genderExpression": "女性",
+      "stature": "小柄",
+      "species": [
+        "人間"
+      ]
+    },
+    "idolmaster-yukiho": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "girls-und-panzer-katyusha": {},
+    "kantai-collection-maya": {},
+    "nijisanji-inui-toko": {},
+    "touhou-kicchou-yachie": {},
+    "idolmaster-miura-azusa": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "arknights-nian": {},
+    "toradora-aisaka-taiga": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "stature": "小柄",
+      "species": [
+        "人間"
+      ]
+    },
+    "danganronpa-v3-killing-harmony-harukawa-maki": {},
+    "fate-elizabeth-bathory": {},
+    "zenless-zone-zero-aria": {},
+    "sonic-amy-rose": {
+      "genderExpression": "女性",
+      "eyeColor": "green"
+    },
+    "bakemonogatari-senjougahara-hitagi": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "azur-lane-ayanami": {},
+    "girls-band-cry-awa-subaru": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "kancolle-oboro": {},
+    "hololiveen-gigimurin": {},
+    "umamusume-eishinflash": {
+      "genderExpression": "女性",
+      "hairColor": "黒",
+      "eyeColor": "blue",
+      "stature": "標準"
+    },
+    "nikke-cinderella": {},
+    "kancolle-i58": {},
+    "kancolle-leberechtmaass": {},
+    "umamusume-agnesdigital": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "blue",
+      "stature": "小柄"
+    },
+    "kancolle-atlanta": {},
+    "panty-stocking-with-garterbelt-panty": {},
+    "umamusume-twin-turbo": {
+      "genderExpression": "女性",
+      "hairColor": "青",
+      "stature": "小柄"
+    },
+    "zenless-zone-zero-nangong-yu": {},
+    "kemono-friends-common-raccoon": {},
+    "higurashi-no-naku-koro-ni-houjou-satoko": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "species": [
+        "人間"
+      ]
+    },
+    "idolmaster-shiny-colors-asakura-toru": {},
+    "umineko-no-naku-koro-ni-beatrice": {
+      "genderExpression": "女性",
+      "hairColor": "金"
+    },
+    "project-sekai-yoisaki-kanade": {},
+    "kantai-collection-tokitsukaze": {},
+    "darkstalkers-lilith": {},
+    "umamusume-still-in-love": {
+      "genderExpression": "女性",
+      "eyeColor": "red",
+      "stature": "小柄"
+    },
+    "gochuumon-wa-usagi-desu-ka-kirima-syaro": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "species": [
+        "人間"
+      ]
+    },
+    "umamusume-sirius-symboli": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "red",
+      "stature": "標準"
+    },
+    "honkai-star-rail-black-swan": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "umamusume-super-creek": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "blue",
+      "stature": "標準"
+    },
+    "pokemon-zeiyu": {
+      "genderExpression": "女性",
+      "hairColor": "黒",
+      "eyeColor": "yellow",
+      "species": [
+        "人間"
+      ]
+    },
+    "kancolle-maxschultz": {},
+    "sunshine-kanan": {
+      "genderExpression": "女性",
+      "stature": "標準",
+      "species": [
+        "人間"
+      ]
+    },
+    "hololive-lui": {},
+    "idolmaster-ritsuko": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "genshin-qiqi": {
+      "genderExpression": "女性"
+    },
+    "persona3-yukari": {},
+    "kancolle-warspite": {},
+    "girlsfrontline-wa2000": {},
+    "gup-mako": {},
+    "kancolle-i401": {},
+    "gurrenlagann-nia": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "idolmaster-miku": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "green",
+      "species": [
+        "人間"
+      ]
+    },
+    "kancolle-aoba": {},
+    "umamusume-airgroove": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "blue",
+      "stature": "標準"
+    },
+    "geass-kallen": {
+      "genderExpression": "女性",
+      "hairColor": "赤",
+      "eyeColor": "blue",
+      "species": [
+        "人間"
+      ]
+    },
+    "macross-sheryl-nome": {
+      "genderExpression": "女性",
+      "hairColor": "桃",
+      "eyeColor": "blue",
+      "stature": "標準",
+      "species": [
+        "人間"
+      ]
+    },
+    "blue-archive-haruka": {
+      "genderExpression": "女性",
+      "stature": "標準"
+    },
+    "kantai-collection-kumano": {},
+    "kantai-collection-kuma": {},
+    "love-live-hasu-no-sora-jogakuin-school-idol-club-ceras-yanagida-lilienfeld": {},
+    "girls-und-panzer-mika": {},
+    "wuthering-waves-phoebe": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "species": [
+        "人間"
+      ]
+    },
+    "pokemon-firered-and-leafgreen-leaf": {},
+    "kemono-friends-fennec": {},
+    "persona-3-aigis": {
+      "genderExpression": "女性"
+    },
+    "umamusume-dantsu-flame": {
+      "genderExpression": "女性",
+      "eyeColor": "orange",
+      "stature": "標準"
+    },
+    "fire-emblem-three-houses-hilda-valentine-goneril": {
+      "genderExpression": "女性",
+      "hairColor": "桃",
+      "species": [
+        "人間"
+      ]
+    },
+    "danganronpa-2-goodbye-despair-tsumiki-mikan": {},
+    "kantai-collection-ashigara": {},
+    "zenless-zone-zero-ukinami-yuzuha": {
+      "genderExpression": "女性",
+      "hairColor": "赤",
+      "eyeColor": "green",
+      "species": [
+        "人間"
+      ]
+    },
+    "hirogaru-sky-precure-sora-harewataru": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "mahou-shoujo-madoka-magica-charlotte": {},
+    "love-live-sunshine-kurosawa-dia": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "stature": "標準",
+      "species": [
+        "人間"
+      ]
+    },
+    "kantai-collection-shiratsuyu": {},
+    "kantai-collection-kagerou": {},
+    "kill-la-kill-mankanshoku-mako": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "brown",
+      "species": [
+        "人間"
+      ]
+    },
+    "chainsaw-man-mitaka-asa": {},
+    "tate-no-yuusha-no-nariagari-raphtalia": {},
+    "kantai-collection-uzuki": {},
+    "fate-grand-order-tomoe-gozen": {},
+    "kantai-collection-satsuki": {},
+    "kantai-collection-mogami": {},
+    "zenless-zone-zero-alice-thymefield": {
+      "genderExpression": "女性",
+      "eyeColor": "orange"
+    },
+    "hololive-english-cecilia-immergreen": {},
+    "umamusume-matikanetannhauser": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "orange",
+      "stature": "小柄"
+    },
+    "pokemon-sword-and-shield-sonia": {},
+    "kantai-collection-urakaze": {},
+    "arknights-specter": {},
+    "fire-emblem-fates-camilla": {},
+    "umamusume-meisho-doto": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "purple",
+      "stature": "標準"
+    },
+    "persona-3-portable-shiomi-kotone": {},
+    "bakemonogatari-hanekawa-tsubasa": {
+      "genderExpression": "女性"
+    },
+    "blue-archive-himari": {
+      "genderExpression": "女性",
+      "stature": "標準"
+    },
+    "pokemon-heartgold-and-soulsilver-lyra": {},
+    "shine-post-seibu-rio": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "species": [
+        "人間"
+      ]
+    },
+    "shine-post-nabatame-haru": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "species": [
+        "人間"
+      ]
+    },
+    "shine-post-tamaki-kyouka": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "brown",
+      "species": [
+        "人間"
+      ]
+    },
+    "shine-post-totsuka-nanami": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "eyeColor": "green",
+      "species": [
+        "人間"
+      ]
+    },
+    "shine-post-agarie-nagi": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "shine-post-hirose-miina": {
+      "genderExpression": "女性",
+      "hairColor": "青",
+      "eyeColor": "yellow",
+      "species": [
+        "人間"
+      ]
+    },
+    "shine-post-natalya": {
+      "genderExpression": "女性",
+      "eyeColor": "blue",
+      "species": [
+        "人間"
+      ]
+    },
+    "shine-post-komurasaki-momoka": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "shine-post-karabayashi-itoha": {
+      "genderExpression": "女性",
+      "hairColor": "桃",
+      "species": [
+        "人間"
+      ]
+    },
+    "shine-post-kurogane-ren": {
+      "genderExpression": "女性",
+      "hairColor": "青",
+      "eyeColor": "blue",
+      "species": [
+        "人間"
+      ]
+    },
+    "shine-post-takamura-hibiki": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "shine-post-hiumi-nanoka": {
+      "genderExpression": "女性",
+      "hairColor": "青",
+      "eyeColor": "blue",
+      "species": [
+        "人間"
+      ]
+    },
+    "shine-post-kazamatsuri-asahi": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "shine-post-hinomoto-hinatsu": {
+      "genderExpression": "女性",
+      "hairColor": "桃",
+      "species": [
+        "人間"
+      ]
+    },
+    "shine-post-nashinoki-remi": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "species": [
+        "人間"
+      ]
+    },
+    "shine-post-kotomori-airi": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "shine-post-yamada-kanon": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "shine-post-karabayashi-aoba": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "shine-post-hotaru": {
+      "genderExpression": "女性",
+      "hairColor": "桃",
+      "species": [
+        "人間"
+      ]
+    },
+    "shine-post-minamizaki-minato": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "shine-post-yakushiin-asuka": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "shine-post-izumino-koyume": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "shine-post-tsukimi-pie-mochiko": {},
+    "onii-chan-wa-oshimai-oka-asahi": {},
+    "onii-chan-wa-oshimai-senkawa-minato": {},
+    "gochuumon-wa-usagi-desu-ka-jouga-maya": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "gochuumon-wa-usagi-desu-ka-natsu-megumi": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "gochuumon-wa-usagi-desu-ka-fuiba-fuyu": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "gochuumon-wa-usagi-desu-ka-aoyama-blue-mountain": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "gochuumon-wa-usagi-desu-ka-karede-yura": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "gochuumon-wa-usagi-desu-ka-hoto-mocha": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    }
   }
 }
