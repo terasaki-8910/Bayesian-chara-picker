@@ -1429,10 +1429,6 @@
       "tag": "toyosatomimi_no_miko",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
-    "azurlane-manjuu": {
-      "tag": "manjuu_(azur_lane)",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
     "umamusume-goldship": {
       "tag": "gold_ship_(umamusume)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
@@ -1441,20 +1437,8 @@
       "tag": "mononobe_no_futo",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
-    "touhou-shanghai": {
-      "tag": "shanghai_doll",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
-    "kancolle-yuudachi-kai2": {
-      "tag": "yuudachi_kai_ni_(kancolle)",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
     "genshin-columbina": {
       "tag": "columbina_(genshin_impact)",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
-    "madoka-kyubey": {
-      "tag": "kyubey",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
     "kancolle-ryuujou": {
@@ -1505,10 +1489,6 @@
       "tag": "murakumo_(kancolle)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
-    "hololiveen-gura-2": {
-      "tag": "gawr_gura_(1st_costume)",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
     "ranma-saotome": {
       "tag": "saotome_ranma",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
@@ -1553,10 +1533,6 @@
       "tag": "meiko_(vocaloid)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
-    "bluearchive-asuna-2": {
-      "tag": "asuna_(bunny)_(blue_archive)",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
     "kancolle-akebono": {
       "tag": "akebono_(kancolle)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
@@ -1591,10 +1567,6 @@
     },
     "kancolle-ooyodo": {
       "tag": "ooyodo_(kancolle)",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
-    "danganronpa-hajime": {
-      "tag": "hinata_hajime",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
     "sunshine-you": {
@@ -1637,10 +1609,6 @@
       "tag": "hieda_no_akyuu",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
-    "kancolle-rensouhou-chan": {
-      "tag": "rensouhou-chan",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
     "gup-erika": {
       "tag": "itsumi_erika",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
@@ -1649,20 +1617,12 @@
       "tag": "kris_(deltarune)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
-    "hololive-marine-2": {
-      "tag": "houshou_marine_(1st_costume)",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
     "arknights-angelina": {
       "tag": "angelina_(arknights)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
     "vocaloid-gumi": {
       "tag": "gumi",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
-    "bluearchive-toki-2": {
-      "tag": "toki_(bunny)_(blue_archive)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
     "idolmaster-makoto": {
@@ -1679,10 +1639,6 @@
     },
     "kon-tsumugi": {
       "tag": "kotobuki_tsumugi",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
-    "hsr-cyrene-2": {
-      "tag": "cyrene_(demiurge)_(honkai:_star_rail)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
     "gup-anchovy": {
@@ -1745,10 +1701,6 @@
       "tag": "robin_(honkai:_star_rail)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
-    "umamusume-agnestachyon-tachnology": {
-      "tag": "agnes_tachyon_(tach-nology)_(umamusume)",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
     "wutheringwaves-femalerover": {
       "tag": "female_rover_(wuthering_waves)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
@@ -1759,10 +1711,6 @@
     },
     "kancolle-bismarck": {
       "tag": "bismarck_(kancolle)",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
-    "killakill-senketsu": {
-      "tag": "senketsu",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
     "kancolle-akashi": {
@@ -1837,10 +1785,6 @@
       "tag": "lily_white",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
-    "omori-kel": {
-      "tag": "kel_(omori)",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
     "kancolle-yamashiro": {
       "tag": "yamashiro_(kancolle)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
@@ -1857,14 +1801,6 @@
       "tag": "ro-500_(kancolle)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
-    "madoka-ultimate": {
-      "tag": "ultimate_madoka",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
-    "sailormoon-sailormoon": {
-      "tag": "sailor_moon",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
     "kancolle-hiei": {
       "tag": "hiei_(kancolle)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
@@ -1873,16 +1809,8 @@
       "tag": "akamatsu_kaede",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
-    "hololive-pekora-2": {
-      "tag": "usada_pekora_(1st_costume)",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
     "gquuuuuux-yuzuriha": {
       "tag": "amate_yuzuriha",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
-    "kancolle-verniy": {
-      "tag": "verniy_(kancolle)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
     "idolmaster-hibiki": {
@@ -1899,10 +1827,6 @@
     },
     "limbus-faust": {
       "tag": "faust_(project_moon)",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
-    "honkai-impact-3rd-elysia": {
-      "tag": "elysia_(herrscher_of_human:_ego)_(honkai_impact)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
     "kancolle-kirishima": {
@@ -1923,10 +1847,6 @@
     },
     "umamusume-currenchan": {
       "tag": "curren_chan_(umamusume)",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
-    "hololive-fubuki-2": {
-      "tag": "shirakami_fubuki_(1st_costume)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
     "girlsfrontline-ump45": {
@@ -1965,10 +1885,6 @@
       "tag": "doremy_sweet",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
-    "bluearchive-kei-2": {
-      "tag": "kei_(student)_(blue_archive)",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
     "spiceandwolf-holo": {
       "tag": "holo",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
@@ -1977,20 +1893,12 @@
       "tag": "hex_maniac_(pokemon)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
-    "fate-medusa": {
-      "tag": "medusa_(rider)_(fate)",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
     "idolmaster-yayoi": {
       "tag": "takatsuki_yayoi",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
     "jojo-jolyne": {
       "tag": "kujo_jolyne",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
-    "hsr-march7th-2": {
-      "tag": "march_7th_(preservation)_(honkai:_star_rail)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
     "danganronpa-kyoko": {
@@ -2027,10 +1935,6 @@
     },
     "steinsgate-kurisu": {
       "tag": "makise_kurisu",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
-    "honkai-impact-3rd-elysia-2": {
-      "tag": "elysia_(miss_pink_elf)_(honkai_impact)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
     "arknights-mudrock": {
@@ -2129,10 +2033,6 @@
       "tag": "tsukishiro_yanagi",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
-    "blue-archive-yuuka": {
-      "tag": "yuuka_(track)_(blue_archive)",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
     "umamusume-tmoperao": {
       "tag": "t.m._opera_o_(umamusume)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
@@ -2177,10 +2077,6 @@
       "tag": "mihono_bourbon_(umamusume)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
-    "omori-hero": {
-      "tag": "hero_(omori)",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
     "mahomajo-hiro": {
       "tag": "nikaido_hiro",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
@@ -2217,16 +2113,8 @@
       "tag": "naka_(kancolle)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
-    "blue-archive-karin": {
-      "tag": "karin_(bunny)_(blue_archive)",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
     "touhou-kudamaki-tsukasa": {
       "tag": "kudamaki_tsukasa",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
-    "blue-archive-shiroko": {
-      "tag": "shiroko_(swimsuit)_(blue_archive)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
     "persona-4-shirogane-naoto": {
@@ -2273,10 +2161,6 @@
       "tag": "hiiragi_tsukasa",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
-    "honkai-star-rail-cyrene": {
-      "tag": "cyrene_(philia093)_(honkai:_star_rail)",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
     "nitroplus-sonico": {
       "tag": "super_sonico",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
@@ -2303,10 +2187,6 @@
     },
     "kancolle-i19": {
       "tag": "i-19_(kancolle)",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
-    "blue-archive-asuna": {
-      "tag": "asuna_(school_uniform)_(blue_archive)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
     "gup-arisu": {
@@ -2347,10 +2227,6 @@
     },
     "csm-yoru": {
       "tag": "yoru_(chainsaw_man)",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
-    "pokemon-hex-maniac-xy": {
-      "tag": "hex_maniac_(pokemon_xy)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
     "oshinoko-kana": {
@@ -2421,10 +2297,6 @@
       "tag": "elizabeth_bathory_(fate)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
-    "hololive-english-ouro-kronii": {
-      "tag": "ouro_kronii_(1st_costume)",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
     "zenless-zone-zero-aria": {
       "tag": "aria_(zenless_zone_zero)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
@@ -2447,10 +2319,6 @@
     },
     "kancolle-oboro": {
       "tag": "oboro_(kancolle)",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
-    "bluearchive-peroro": {
-      "tag": "peroro_(blue_archive)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
     "hololiveen-gigimurin": {
@@ -2493,28 +2361,12 @@
       "tag": "nangong_yu",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
-    "blue-archive-hanako": {
-      "tag": "hanako_(swimsuit)_(blue_archive)",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
     "kemono-friends-common-raccoon": {
       "tag": "common_raccoon_(kemono_friends)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
     "higurashi-no-naku-koro-ni-houjou-satoko": {
       "tag": "houjou_satoko",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
-    "hololive-english-ninomae-ina-nis": {
-      "tag": "ninomae_ina'nis_(1st_costume)",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
-    "zenless-zone-zero-eous": {
-      "tag": "eous_(zenless_zone_zero)",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
-    "umamusume-gold-ship": {
-      "tag": "gold_ship_(red_strife)_(umamusume)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
     "idolmaster-shiny-colors-asakura-toru": {
@@ -2565,20 +2417,12 @@
       "tag": "z3_max_schultz_(kancolle)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
-    "hololiveen-amelia-2": {
-      "tag": "watson_amelia_(1st_costume)",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
     "sunshine-kanan": {
       "tag": "matsuura_kanan",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
     "hololive-lui": {
       "tag": "takane_lui",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
-    "hololiveen-mumei-2": {
-      "tag": "nanashi_mumei_(1st_costume)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
     "idolmaster-ritsuko": {
@@ -2599,10 +2443,6 @@
     },
     "girlsfrontline-wa2000": {
       "tag": "wa2000_(girls'_frontline)",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
-    "csm-aki": {
-      "tag": "hayakawa_aki",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
     "gup-mako": {
@@ -2637,10 +2477,6 @@
       "tag": "sheryl_nome",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
-    "hololive-english-mori-calliope": {
-      "tag": "mori_calliope_(1st_costume)",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
     "blue-archive-haruka": {
       "tag": "haruka_(blue_archive)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
@@ -2651,10 +2487,6 @@
     },
     "kantai-collection-kuma": {
       "tag": "kuma_(kancolle)",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
-    "blue-archive-seia": {
-      "tag": "seia_(swimsuit)_(blue_archive)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
     "love-live-hasu-no-sora-jogakuin-school-idol-club-ceras-yanagida-lilienfeld": {
@@ -2673,20 +2505,12 @@
       "tag": "leaf_(pokemon)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
-    "hololive-inugami-korone": {
-      "tag": "inugami_korone_(1st_costume)",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
     "kemono-friends-fennec": {
       "tag": "fennec_(kemono_friends)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
     "persona-3-aigis": {
       "tag": "aigis_(persona)",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
-    "girls-und-panzer-boko": {
-      "tag": "boko_(girls_und_panzer)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
     "umamusume-dantsu-flame": {
@@ -2713,20 +2537,12 @@
       "tag": "sora_harewataru",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
-    "hololive-nekomata-okayu": {
-      "tag": "nekomata_okayu_(1st_costume)",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
     "mahou-shoujo-madoka-magica-charlotte": {
       "tag": "charlotte_(madoka_magica)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
     "love-live-sunshine-kurosawa-dia": {
       "tag": "kurosawa_dia",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
-    "blue-archive-hoshino": {
-      "tag": "hoshino_(swimsuit)_(blue_archive)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
     "kantai-collection-shiratsuyu": {
@@ -2913,28 +2729,12 @@
       "tag": "senkawa_minato",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
-    "onii-chan-wa-oshimai-sakurada-yuuta": {
-      "tag": "sakurada_yuuta",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
-    "gochuumon-wa-usagi-desu-ka-tippy": {
-      "tag": "tippy_(gochiusa)",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
     "gochuumon-wa-usagi-desu-ka-jouga-maya": {
       "tag": "jouga_maya",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
     "gochuumon-wa-usagi-desu-ka-natsu-megumi": {
       "tag": "natsu_megumi",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
-    "gochuumon-wa-usagi-desu-ka-anko": {
-      "tag": "anko_(gochiusa)",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
-    "gochuumon-wa-usagi-desu-ka-wild-geese": {
-      "tag": "wild_geese",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
     "gochuumon-wa-usagi-desu-ka-fuiba-fuyu": {
@@ -2947,10 +2747,6 @@
     },
     "gochuumon-wa-usagi-desu-ka-karede-yura": {
       "tag": "karede_yura",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
-    },
-    "gochuumon-wa-usagi-desu-ka-phantom-thief-lapin": {
-      "tag": "phantom_thief_lapin",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
     "gochuumon-wa-usagi-desu-ka-hoto-mocha": {
