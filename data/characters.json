@@ -23697,96 +23697,6 @@
     "imageApproved": false
   },
   {
-    "id": "touhou-hanrei",
-    "name": "半霊",
-    "series": "東方",
-    "aliases": [],
-    "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
-      "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
-      "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
-      "occupation": []
-    },
-    "reviewed": false,
-    "provisional": false,
-    "imagePath": null,
-    "imageApproved": false
-  },
-  {
-    "id": "ff14-warrioroflight",
-    "name": "光の戦士(FF14)",
-    "series": "ファイナルファンタジーXIV",
-    "aliases": [],
-    "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
-      "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
-      "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
-      "occupation": []
-    },
-    "reviewed": false,
-    "provisional": false,
-    "imagePath": null,
-    "imageApproved": false
-  },
-  {
-    "id": "fate-saber",
-    "name": "セイバー",
-    "series": "フェイト/ステイナイト",
-    "aliases": [],
-    "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
-      "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
-      "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
-      "occupation": []
-    },
-    "reviewed": false,
-    "provisional": false,
-    "imagePath": null,
-    "imageApproved": false
-  },
-  {
     "id": "umamusume-agnestachyon",
     "name": "アグネスタキオン(ウマ娘)",
     "series": "ウマ娘プリティーダービー",
@@ -23819,37 +23729,7 @@
   {
     "id": "honkai3-elysia",
     "name": "エリシア",
-    "series": "崩坏3",
-    "aliases": [],
-    "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
-      "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
-      "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
-      "occupation": []
-    },
-    "reviewed": false,
-    "provisional": false,
-    "imagePath": null,
-    "imageApproved": false
-  },
-  {
-    "id": "splatoon-inklinggirl",
-    "name": "イカガール",
-    "series": "スプラトゥーン",
+    "series": "崩壊3rd",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -23939,7 +23819,7 @@
   {
     "id": "kancolle-yuudachi",
     "name": "夕立",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -23969,7 +23849,7 @@
   {
     "id": "touhou-miko",
     "name": "豊聡耳神子",
-    "series": "東方",
+    "series": "東方Project",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -23999,7 +23879,7 @@
   {
     "id": "azurlane-manjuu",
     "name": "饅頭(アズールレーン)",
-    "series": "碧蓝航线",
+    "series": "アズールレーン",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -24059,7 +23939,7 @@
   {
     "id": "touhou-futo",
     "name": "物部布都",
-    "series": "東方",
+    "series": "東方Project",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -24089,7 +23969,7 @@
   {
     "id": "touhou-shanghai",
     "name": "上海人形",
-    "series": "東方",
+    "series": "東方Project",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -24119,7 +23999,7 @@
   {
     "id": "kancolle-yuudachi-kai2",
     "name": "夕立改二",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -24209,7 +24089,7 @@
   {
     "id": "kancolle-ryuujou",
     "name": "龍驤",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -24299,7 +24179,7 @@
   {
     "id": "touhou-murasa",
     "name": "村紗水蜜",
-    "series": "東方",
+    "series": "東方Project",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -24359,7 +24239,7 @@
   {
     "id": "touhou-seiga",
     "name": "霍青娥",
-    "series": "東方",
+    "series": "東方Project",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -24419,7 +24299,7 @@
   {
     "id": "kancolle-houshou",
     "name": "鳳翔",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -24449,7 +24329,7 @@
   {
     "id": "touhou-kokoro",
     "name": "秦こころ",
-    "series": "東方",
+    "series": "東方Project",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -24479,7 +24359,7 @@
   {
     "id": "zzz-miyabi",
     "name": "星見雅",
-    "series": "绝区零",
+    "series": "ゼンレスゾーンゼロ",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -24509,7 +24389,7 @@
   {
     "id": "fgo-tristan",
     "name": "妖精騎士トリスタン",
-    "series": "Fate/GrandOrder(腐)",
+    "series": "Fate/Grand Order",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -24539,7 +24419,7 @@
   {
     "id": "kancolle-murakumo",
     "name": "叢雲",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -24599,7 +24479,7 @@
   {
     "id": "ranma-saotome",
     "name": "早乙女乱馬",
-    "series": "らんま1⁄2",
+    "series": "らんま½",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -24629,7 +24509,7 @@
   {
     "id": "kancolle-yukikaze",
     "name": "雪風",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -24689,7 +24569,7 @@
   {
     "id": "kancolle-ushio",
     "name": "潮",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -24719,7 +24599,7 @@
   {
     "id": "touhou-junko",
     "name": "純狐",
-    "series": "東方",
+    "series": "東方Project",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -24749,7 +24629,7 @@
   {
     "id": "arknights-lappland",
     "name": "ラップランド",
-    "series": "明日方舟",
+    "series": "アークナイツ",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -24809,7 +24689,7 @@
   {
     "id": "touhou-kyouko",
     "name": "幽谷響子",
-    "series": "東方",
+    "series": "東方Project",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -24839,7 +24719,7 @@
   {
     "id": "touhou-tojiko",
     "name": "蘇我屠自古",
-    "series": "東方",
+    "series": "東方Project",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -24869,7 +24749,7 @@
   {
     "id": "touhou-yamame",
     "name": "黒谷ヤマメ",
-    "series": "東方",
+    "series": "東方Project",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -24929,7 +24809,7 @@
   {
     "id": "bluearchive-asuna-2",
     "name": "一之濑明日奈(兔女郎)",
-    "series": "ブルアカ",
+    "series": "ブルーアーカイブ",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -24959,7 +24839,7 @@
   {
     "id": "kancolle-akebono",
     "name": "曙",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -24989,7 +24869,7 @@
   {
     "id": "arknights-skadi",
     "name": "スカジ",
-    "series": "明日方舟",
+    "series": "アークナイツ",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -25139,7 +25019,7 @@
   {
     "id": "touhou-sekibanki",
     "name": "赤蛮奇",
-    "series": "東方",
+    "series": "東方Project",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -25169,7 +25049,7 @@
   {
     "id": "girlsfrontline-hk416",
     "name": "HK416(少女前線)",
-    "series": "少女前线",
+    "series": "ドールズフロントライン",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -25199,7 +25079,7 @@
   {
     "id": "kancolle-ooyodo",
     "name": "大淀",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -25229,7 +25109,7 @@
   {
     "id": "danganronpa-hajime",
     "name": "日向創",
-    "series": "スーパーダンガンロンパ2",
+    "series": "ダンガンロンパ2 さよなら絶望学園",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -25289,7 +25169,7 @@
   {
     "id": "touhou-seija",
     "name": "鬼人正邪",
-    "series": "東方",
+    "series": "東方Project",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -25319,7 +25199,7 @@
   {
     "id": "kancolle-hoppou",
     "name": "北方棲姫",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -25349,7 +25229,7 @@
   {
     "id": "limbus-ishmael",
     "name": "イシュメール",
-    "series": "リンバス",
+    "series": "Limbus Company",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -25379,7 +25259,7 @@
   {
     "id": "touhou-minoriko",
     "name": "秋穣子",
-    "series": "東方",
+    "series": "東方Project",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -25409,7 +25289,7 @@
   {
     "id": "arknights-kaltsit",
     "name": "ケルシー",
-    "series": "明日方舟",
+    "series": "アークナイツ",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -25439,7 +25319,7 @@
   {
     "id": "limbus-donquixote",
     "name": "堂吉诃德",
-    "series": "リンバス",
+    "series": "Limbus Company",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -25499,7 +25379,7 @@
   {
     "id": "omori-aubrey",
     "name": "奥布里",
-    "series": "おもり",
+    "series": "OMORI",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -25529,7 +25409,7 @@
   {
     "id": "touhou-akyuu",
     "name": "稗田阿求",
-    "series": "東方",
+    "series": "東方Project",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -25559,7 +25439,7 @@
   {
     "id": "kancolle-rensouhou-chan",
     "name": "連装砲ちゃん",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -25619,7 +25499,7 @@
   {
     "id": "deltarune-kris",
     "name": "クリス",
-    "series": "デルタルーン",
+    "series": "DELTARUNE",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -25679,7 +25559,7 @@
   {
     "id": "arknights-angelina",
     "name": "アンジェリーナ",
-    "series": "明日方舟",
+    "series": "アークナイツ",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -25739,7 +25619,7 @@
   {
     "id": "bluearchive-toki-2",
     "name": "飛鳥馬トキ(バニーガール)",
-    "series": "ブルアカ",
+    "series": "ブルーアーカイブ",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -25799,7 +25679,7 @@
   {
     "id": "touhou-shinmyoumaru",
     "name": "少名針妙丸",
-    "series": "東方",
+    "series": "東方Project",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -25829,7 +25709,7 @@
   {
     "id": "touhou-hecatia",
     "name": "ヘカーティア・ラピスラズリ",
-    "series": "東方",
+    "series": "東方Project",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -25889,7 +25769,7 @@
   {
     "id": "hsr-cyrene-2",
     "name": "昔涟(德谬歌)",
-    "series": "崩坏:星穹铁道",
+    "series": "崩壊：スターレイル",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -25949,7 +25829,7 @@
   {
     "id": "kancolle-mutsu",
     "name": "陸奥(艦隊これくしょん)",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -25979,7 +25859,7 @@
   {
     "id": "honkai3-mei",
     "name": "芽衣",
-    "series": "崩坏3",
+    "series": "崩壊3rd",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -26009,7 +25889,7 @@
   {
     "id": "fgo-artoria-lancer",
     "name": "アルトリア・ペンドラゴン(ランサー)",
-    "series": "Fate/GrandOrder(腐)",
+    "series": "Fate/Grand Order",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -26039,7 +25919,7 @@
   {
     "id": "touhou-mamizou",
     "name": "二ッ岩マミゾウ",
-    "series": "東方",
+    "series": "東方Project",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -26069,7 +25949,7 @@
   {
     "id": "touhou-letty",
     "name": "レティ・ホワイトロック",
-    "series": "東方",
+    "series": "東方Project",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -26099,7 +25979,7 @@
   {
     "id": "kancolle-tatsuta",
     "name": "龍田(艦隊これくしょん)",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -26129,7 +26009,7 @@
   {
     "id": "fgo-ereshkigal",
     "name": "エレシュキガル",
-    "series": "Fate/GrandOrder(腐)",
+    "series": "Fate/Grand Order",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -26159,7 +26039,7 @@
   {
     "id": "kancolle-ooi",
     "name": "大井",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -26249,7 +26129,7 @@
   {
     "id": "kancolle-sendai",
     "name": "川内",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -26279,7 +26159,7 @@
   {
     "id": "kancolle-musashi",
     "name": "武蔵",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -26337,39 +26217,9 @@
     "imageApproved": false
   },
   {
-    "id": "kohaace-sakurasaber",
-    "name": "桜セイバー",
-    "series": "コハエース",
-    "aliases": [],
-    "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
-      "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
-      "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
-      "occupation": []
-    },
-    "reviewed": false,
-    "provisional": false,
-    "imagePath": null,
-    "imageApproved": false
-  },
-  {
     "id": "hsr-robin",
     "name": "知更鸟",
-    "series": "崩坏:星穹铁道",
+    "series": "崩壊：スターレイル",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -26429,7 +26279,7 @@
   {
     "id": "wutheringwaves-femalerover",
     "name": "女漂泊者",
-    "series": "鸣潮",
+    "series": "鳴潮",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -26489,7 +26339,7 @@
   {
     "id": "kancolle-bismarck",
     "name": "ビスマルク",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -26549,7 +26399,7 @@
   {
     "id": "kancolle-akashi",
     "name": "明石",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -26579,7 +26429,7 @@
   {
     "id": "kancolle-shiranui",
     "name": "不知火",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -26609,7 +26459,7 @@
   {
     "id": "ranma-akane",
     "name": "天道あかね",
-    "series": "らんま1⁄2",
+    "series": "らんま½",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -26639,7 +26489,7 @@
   {
     "id": "kancolle-sazanami",
     "name": "漣",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -26669,7 +26519,7 @@
   {
     "id": "arknights-surtr",
     "name": "史尔特尔",
-    "series": "明日方舟",
+    "series": "アークナイツ",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -26699,37 +26549,7 @@
   {
     "id": "wuwa-zani",
     "name": "ザンニー",
-    "series": "鸣潮",
-    "aliases": [],
-    "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
-      "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
-      "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
-      "occupation": []
-    },
-    "reviewed": false,
-    "provisional": false,
-    "imagePath": null,
-    "imageApproved": false
-  },
-  {
-    "id": "splatoon-hachigo",
-    "name": "8号",
-    "series": "スプラトゥーン",
+    "series": "鳴潮",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -26789,7 +26609,7 @@
   {
     "id": "fate-meltryllis",
     "name": "メルトリリス",
-    "series": "Fateシリーズ",
+    "series": "Fate",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -26819,7 +26639,7 @@
   {
     "id": "honkai3-fuhua",
     "name": "フカ",
-    "series": "崩坏3",
+    "series": "崩壊3rd",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -26849,7 +26669,7 @@
   {
     "id": "kancolle-souryuu",
     "name": "蒼龍",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -26879,7 +26699,7 @@
   {
     "id": "kancolle-kasumi",
     "name": "霞(艦隊これくしょん)",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -26969,7 +26789,7 @@
   {
     "id": "omori-mari",
     "name": "マリ",
-    "series": "おもり",
+    "series": "OMORI",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -26999,7 +26819,7 @@
   {
     "id": "kancolle-samidare",
     "name": "五月雨",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -27029,7 +26849,7 @@
   {
     "id": "touhou-wakasagihime",
     "name": "わかさぎ姫",
-    "series": "東方",
+    "series": "東方Project",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -27089,7 +26909,7 @@
   {
     "id": "touhou-lilywhite",
     "name": "リリーホワイト",
-    "series": "東方",
+    "series": "東方Project",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -27119,7 +26939,7 @@
   {
     "id": "omori-kel",
     "name": "ケルサニ",
-    "series": "おもり",
+    "series": "OMORI",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -27149,7 +26969,7 @@
   {
     "id": "kancolle-yamashiro",
     "name": "山城",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -27209,7 +27029,7 @@
   {
     "id": "arknights-shu",
     "name": "黍",
-    "series": "明日方舟",
+    "series": "アークナイツ",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -27239,7 +27059,7 @@
   {
     "id": "kancolle-ro500",
     "name": "呂500",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -27329,7 +27149,7 @@
   {
     "id": "kancolle-hiei",
     "name": "比叡",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -27359,7 +27179,7 @@
   {
     "id": "danganronpa-kaede",
     "name": "赤松楓",
-    "series": "NEWダンガンロンパV3",
+    "series": "ニューダンガンロンパV3 みんなのコロシアイ新学期",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -27419,7 +27239,7 @@
   {
     "id": "gquuuuuux-yuzuriha",
     "name": "アマテ・ユズリハ",
-    "series": "機動戦士GundamGQuuuuuuX",
+    "series": "機動戦士Gundam GQuuuuuuX",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -27449,7 +27269,7 @@
   {
     "id": "kancolle-verniy",
     "name": "ヴェールヌイ",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -27509,7 +27329,7 @@
   {
     "id": "bluearchive-shiroko-2",
     "name": "砂狼シロコ(色彩)",
-    "series": "ブルアカ",
+    "series": "ブルーアーカイブ",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -27569,7 +27389,7 @@
   {
     "id": "limbus-faust",
     "name": "浮士德",
-    "series": "リンバス",
+    "series": "Limbus Company",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -27599,7 +27419,7 @@
   {
     "id": "honkai-impact-3rd-elysia",
     "name": "人之律者",
-    "series": "崩坏3",
+    "series": "崩壊3rd",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -27629,7 +27449,7 @@
   {
     "id": "kancolle-kirishima",
     "name": "霧島",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -27659,7 +27479,7 @@
   {
     "id": "voiceroid-akari",
     "name": "紲星あかり",
-    "series": "ボイスロイド",
+    "series": "VOICEROID",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -27719,7 +27539,7 @@
   {
     "id": "kancolle-wo-class",
     "name": "空母ヲ級",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -27809,7 +27629,7 @@
   {
     "id": "girlsfrontline-ump45",
     "name": "UMP45(ドールズフロントライン)",
-    "series": "少女前线",
+    "series": "ドールズフロントライン",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -27899,7 +27719,7 @@
   {
     "id": "fgo-artoria-caster",
     "name": "アルトリア・キャスター",
-    "series": "Fate/GrandOrder(腐)",
+    "series": "Fate/Grand Order",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -27989,7 +27809,7 @@
   {
     "id": "arknights-chen",
     "name": "陈",
-    "series": "明日方舟",
+    "series": "アークナイツ",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -28019,7 +27839,7 @@
   {
     "id": "kancolle-yuubari",
     "name": "夕張",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -28049,7 +27869,7 @@
   {
     "id": "touhou-doremy",
     "name": "ドレミー・スイート",
-    "series": "東方",
+    "series": "東方Project",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -28079,7 +27899,7 @@
   {
     "id": "bluearchive-kei-2",
     "name": "天童ケイ",
-    "series": "ブルアカ",
+    "series": "ブルーアーカイブ",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -28169,7 +27989,7 @@
   {
     "id": "fate-medusa",
     "name": "ライダー(Fate/staynight)",
-    "series": "フェイト/ステイナイト",
+    "series": "Fate/stay night",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -28259,7 +28079,7 @@
   {
     "id": "hsr-march7th-2",
     "name": "三月七·存护",
-    "series": "崩坏:星穹铁道",
+    "series": "崩壊：スターレイル",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -28289,7 +28109,7 @@
   {
     "id": "danganronpa-kyoko",
     "name": "霧切響子",
-    "series": "ダンガンロンパ_希望の学園と絶望の高校生",
+    "series": "ダンガンロンパ 希望の学園と絶望の高校生",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -28349,7 +28169,7 @@
   {
     "id": "ranma-shampoo",
     "name": "シャンプー",
-    "series": "らんま1⁄2",
+    "series": "らんま½",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -28407,39 +28227,9 @@
     "imageApproved": false
   },
   {
-    "id": "ragnarok-archbishop",
-    "name": "アークビショップ",
-    "series": "ラグナロクオンライン",
-    "aliases": [],
-    "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
-      "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
-      "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
-      "occupation": []
-    },
-    "reviewed": false,
-    "provisional": false,
-    "imagePath": null,
-    "imageApproved": false
-  },
-  {
     "id": "ranma-ranma-female",
     "name": "早乙女らんま",
-    "series": "らんま1⁄2",
+    "series": "らんま½",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -28469,7 +28259,7 @@
   {
     "id": "danganronpa-junko",
     "name": "江ノ島盾子",
-    "series": "ダンガンロンパ_希望の学園と絶望の高校生",
+    "series": "ダンガンロンパ 希望の学園と絶望の高校生",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -28559,7 +28349,7 @@
   {
     "id": "steinsgate-kurisu",
     "name": "牧瀬紅莉栖",
-    "series": "シュタインズゲート",
+    "series": "STEINS;GATE",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -28589,7 +28379,7 @@
   {
     "id": "honkai-impact-3rd-elysia-2",
     "name": "エリシア(通常)",
-    "series": "崩坏3",
+    "series": "崩壊3rd",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -28619,7 +28409,7 @@
   {
     "id": "arknights-mudrock",
     "name": "泥岩",
-    "series": "明日方舟",
+    "series": "アークナイツ",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -28649,7 +28439,7 @@
   {
     "id": "kancolle-naganami",
     "name": "長波",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -28679,7 +28469,7 @@
   {
     "id": "kancolle-kiso",
     "name": "木曾",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -28709,7 +28499,7 @@
   {
     "id": "fgo-kama",
     "name": "カーマ(Fate)",
-    "series": "Fate/GrandOrder(腐)",
+    "series": "Fate/Grand Order",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -28739,7 +28529,7 @@
   {
     "id": "touhou-medicine",
     "name": "メディスン・メランコリー",
-    "series": "東方",
+    "series": "東方Project",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -28769,7 +28559,7 @@
   {
     "id": "touhou-kosuzu",
     "name": "本居小鈴",
-    "series": "東方",
+    "series": "東方Project",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -28799,7 +28589,7 @@
   {
     "id": "touhou-sumireko",
     "name": "宇佐見菫子",
-    "series": "東方",
+    "series": "東方Project",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -28889,7 +28679,7 @@
   {
     "id": "needygirl-tenshichan",
     "name": "超絶最かわてんしちゃん",
-    "series": "にーでぃがーる",
+    "series": "NEEDY GIRL OVERDOSE",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -28919,7 +28709,7 @@
   {
     "id": "arknights-dusk",
     "name": "夕",
-    "series": "明日方舟",
+    "series": "アークナイツ",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -28979,7 +28769,7 @@
   {
     "id": "kancolle-grafzeppelin",
     "name": "グラーフ・ツェッペリン",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -29008,7 +28798,7 @@
   },
   {
     "id": "splatoon-callie",
-    "name": "シオカラーズ",
+    "name": "アオリ",
     "series": "スプラトゥーン",
     "aliases": [],
     "axes": {
@@ -29189,7 +28979,7 @@
   {
     "id": "touhou-kisume",
     "name": "キスメ",
-    "series": "東方",
+    "series": "東方Project",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -29219,7 +29009,7 @@
   {
     "id": "touhou-star-sapphire",
     "name": "スターサファイア",
-    "series": "東方",
+    "series": "東方Project",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -29309,7 +29099,7 @@
   {
     "id": "zenless-zone-zero-tsukishiro-yanagi",
     "name": "月城柳",
-    "series": "绝区零",
+    "series": "ゼンレスゾーンゼロ",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -29339,7 +29129,7 @@
   {
     "id": "blue-archive-yuuka",
     "name": "早濑优香(体操服)",
-    "series": "ブルアカ",
+    "series": "ブルーアーカイブ",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -29429,7 +29219,7 @@
   {
     "id": "kancolle-zuihou",
     "name": "瑞鳳",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -29459,7 +29249,7 @@
   {
     "id": "limbus-ryoshu",
     "name": "良秀",
-    "series": "リンバス",
+    "series": "Limbus Company",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -29489,7 +29279,7 @@
   {
     "id": "fate-nobunaga",
     "name": "織田信長",
-    "series": "Fateシリーズ",
+    "series": "Fate",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -29699,7 +29489,7 @@
   {
     "id": "omori-hero",
     "name": "ヒロ",
-    "series": "おもり",
+    "series": "OMORI",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -29759,7 +29549,7 @@
   {
     "id": "touhou-lunasa",
     "name": "ルナサ・プリズムリバー",
-    "series": "東方",
+    "series": "東方Project",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -29789,7 +29579,7 @@
   {
     "id": "kancolle-murasame",
     "name": "村雨",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -29819,7 +29609,7 @@
   {
     "id": "touhou-okina",
     "name": "摩多羅隠岐奈",
-    "series": "東方",
+    "series": "東方Project",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -29939,7 +29729,7 @@
   {
     "id": "pokemon-scarlet-and-violet-rika",
     "name": "チリ(トレーナー)",
-    "series": "ポケモンSV",
+    "series": "ポケモン",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -29969,7 +29759,7 @@
   {
     "id": "kantai-collection-naka",
     "name": "那珂",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -29999,7 +29789,7 @@
   {
     "id": "blue-archive-karin",
     "name": "角楯花凛(兔女郎)",
-    "series": "ブルアカ",
+    "series": "ブルーアーカイブ",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -30029,37 +29819,7 @@
   {
     "id": "touhou-kudamaki-tsukasa",
     "name": "菅牧典",
-    "series": "東方",
-    "aliases": [],
-    "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
-      "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
-      "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
-      "occupation": []
-    },
-    "reviewed": false,
-    "provisional": false,
-    "imagePath": null,
-    "imageApproved": false
-  },
-  {
-    "id": "splatoon-octoling-girl",
-    "name": "タコガール",
-    "series": "スプラトゥーン",
+    "series": "東方Project",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -30089,7 +29849,7 @@
   {
     "id": "blue-archive-shiroko",
     "name": "砂狼白子(泳装)",
-    "series": "ブルアカ",
+    "series": "ブルーアーカイブ",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -30299,7 +30059,7 @@
   {
     "id": "rwby-ruby-rose",
     "name": "ルビー・ローズ",
-    "series": "RWBYイラコン",
+    "series": "RWBY",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -30389,7 +30149,7 @@
   {
     "id": "fate-apocrypha-jack-the-ripper",
     "name": "ジャック・ザ・リッパー(Fate)",
-    "series": "アポクリファ",
+    "series": "Fate/Apocrypha",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -30449,7 +30209,7 @@
   {
     "id": "honkai-star-rail-cyrene",
     "name": "小昔涟",
-    "series": "崩坏:星穹铁道",
+    "series": "崩壊：スターレイル",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -30509,7 +30269,7 @@
   {
     "id": "wuwa-changli",
     "name": "長離",
-    "series": "鸣潮",
+    "series": "鳴潮",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -30539,7 +30299,7 @@
   {
     "id": "honkai3-seele",
     "name": "ゼーレ",
-    "series": "崩坏3",
+    "series": "崩壊3rd",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -30569,7 +30329,7 @@
   {
     "id": "arknights-mostima",
     "name": "モスティマ",
-    "series": "明日方舟",
+    "series": "アークナイツ",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -30629,7 +30389,7 @@
   {
     "id": "kancolle-yamakaze",
     "name": "山風",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -30659,7 +30419,7 @@
   {
     "id": "kancolle-i19",
     "name": "伊19",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -30689,7 +30449,7 @@
   {
     "id": "blue-archive-asuna",
     "name": "一之濑明日奈(校服)",
-    "series": "ブルアカ",
+    "series": "ブルーアーカイブ",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -30749,7 +30509,7 @@
   {
     "id": "wuwa-chisa",
     "name": "千咲",
-    "series": "鸣潮",
+    "series": "鳴潮",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -30929,7 +30689,7 @@
   {
     "id": "wuwa-aemeath",
     "name": "エイメス",
-    "series": "鸣潮",
+    "series": "鳴潮",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -30989,7 +30749,7 @@
   {
     "id": "csm-yoru",
     "name": "ヨル(チェンソーマン)",
-    "series": "链锯人",
+    "series": "チェンソーマン",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -31019,7 +30779,7 @@
   {
     "id": "pokemon-hex-maniac-xy",
     "name": "オカルトマニア(XY)",
-    "series": "ポケモンXY",
+    "series": "ポケモン",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -31049,7 +30809,7 @@
   {
     "id": "oshinoko-kana",
     "name": "有馬かな",
-    "series": "推しの子",
+    "series": "【推しの子】",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -31079,7 +30839,7 @@
   {
     "id": "kancolle-seaport-princess",
     "name": "港湾棲姫",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -31109,7 +30869,7 @@
   {
     "id": "kancolle-akigumo",
     "name": "秋雲",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -31169,7 +30929,7 @@
   {
     "id": "endfield-endministrator",
     "name": "管理人(エンドフィールド)",
-    "series": "明日方舟:终末地",
+    "series": "アークナイツ：エンドフィールド",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -31319,7 +31079,7 @@
   {
     "id": "kantai-collection-maya",
     "name": "摩耶",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -31379,7 +31139,7 @@
   {
     "id": "touhou-kicchou-yachie",
     "name": "吉弔八千慧",
-    "series": "東方",
+    "series": "東方Project",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -31439,7 +31199,7 @@
   {
     "id": "arknights-nian",
     "name": "年",
-    "series": "明日方舟",
+    "series": "アークナイツ",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -31499,7 +31259,7 @@
   {
     "id": "danganronpa-v3-killing-harmony-harukawa-maki",
     "name": "春川魔姫",
-    "series": "NEWダンガンロンパV3",
+    "series": "ニューダンガンロンパV3 みんなのコロシアイ新学期",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -31529,7 +31289,7 @@
   {
     "id": "fate-elizabeth-bathory",
     "name": "エリザベート・バートリー(Fate)",
-    "series": "Fateシリーズ",
+    "series": "Fate",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -31589,37 +31349,7 @@
   {
     "id": "zenless-zone-zero-aria",
     "name": "アリア(ゼンゼロ)",
-    "series": "绝区零",
-    "aliases": [],
-    "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
-      "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
-      "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
-      "occupation": []
-    },
-    "reviewed": false,
-    "provisional": false,
-    "imagePath": null,
-    "imageApproved": false
-  },
-  {
-    "id": "ado-chando",
-    "name": "チャンド",
-    "series": "アド",
+    "series": "ゼンレスゾーンゼロ",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -31679,7 +31409,7 @@
   {
     "id": "bakemonogatari-senjougahara-hitagi",
     "name": "戦場ヶ原ひたぎ",
-    "series": "化物語",
+    "series": "物語シリーズ",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -31709,7 +31439,7 @@
   {
     "id": "azur-lane-ayanami",
     "name": "綾波(アズールレーン)",
-    "series": "碧蓝航线",
+    "series": "アズールレーン",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -31769,7 +31499,7 @@
   {
     "id": "kancolle-oboro",
     "name": "朧",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -31799,7 +31529,7 @@
   {
     "id": "bluearchive-peroro",
     "name": "ペロロ様",
-    "series": "ブルアカ",
+    "series": "ブルーアーカイブ",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -31919,7 +31649,7 @@
   {
     "id": "kancolle-i58",
     "name": "伊58",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -31949,7 +31679,7 @@
   {
     "id": "kancolle-leberechtmaass",
     "name": "レーベレヒト・マース",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -32009,7 +31739,7 @@
   {
     "id": "kancolle-atlanta",
     "name": "アトランタ(艦隊これくしょん)",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -32099,7 +31829,7 @@
   {
     "id": "zenless-zone-zero-nangong-yu",
     "name": "南宮羽",
-    "series": "绝区零",
+    "series": "ゼンレスゾーンゼロ",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -32129,7 +31859,7 @@
   {
     "id": "blue-archive-hanako",
     "name": "浦和花子(泳装)",
-    "series": "ブルアカ",
+    "series": "ブルーアーカイブ",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -32249,7 +31979,7 @@
   {
     "id": "zenless-zone-zero-eous",
     "name": "イアス",
-    "series": "绝区零",
+    "series": "ゼンレスゾーンゼロ",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -32399,7 +32129,7 @@
   {
     "id": "kantai-collection-tokitsukaze",
     "name": "時津風",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -32429,7 +32159,7 @@
   {
     "id": "darkstalkers-lilith",
     "name": "欲望の迷い子リリス",
-    "series": "ヴァンパイア",
+    "series": "ヴァンパイア(ダークストーカーズ)",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -32549,7 +32279,7 @@
   {
     "id": "honkai-star-rail-black-swan",
     "name": "黑天鹅",
-    "series": "崩坏:星穹铁道",
+    "series": "崩壊：スターレイル",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -32609,7 +32339,7 @@
   {
     "id": "pokemon-zeiyu",
     "name": "ゼイユ",
-    "series": "ポケモンSV",
+    "series": "ポケモン",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -32639,7 +32369,7 @@
   {
     "id": "kancolle-maxschultz",
     "name": "マックス・シュルツ",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -32879,7 +32609,7 @@
   {
     "id": "kancolle-warspite",
     "name": "ウォースパイト(艦隊これくしょん)",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -32909,7 +32639,7 @@
   {
     "id": "girlsfrontline-wa2000",
     "name": "WA2000(ドールズフロントライン)",
-    "series": "少女前线",
+    "series": "ドールズフロントライン",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -32939,7 +32669,7 @@
   {
     "id": "csm-aki",
     "name": "早川秋",
-    "series": "链锯人",
+    "series": "チェンソーマン",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -32999,7 +32729,7 @@
   {
     "id": "kancolle-i401",
     "name": "伊401",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -33089,7 +32819,7 @@
   {
     "id": "kancolle-aoba",
     "name": "青葉",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -33179,7 +32909,7 @@
   {
     "id": "macross-sheryl-nome",
     "name": "シェリル・ノーム",
-    "series": "マクロス",
+    "series": "マクロスF",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -33239,7 +32969,7 @@
   {
     "id": "blue-archive-haruka",
     "name": "伊草ハルカ",
-    "series": "ブルアカ",
+    "series": "ブルーアーカイブ",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -33269,7 +32999,7 @@
   {
     "id": "kantai-collection-kumano",
     "name": "熊野(艦隊これくしょん)",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -33299,7 +33029,7 @@
   {
     "id": "kantai-collection-kuma",
     "name": "球磨",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -33329,7 +33059,7 @@
   {
     "id": "blue-archive-seia",
     "name": "百合園セイア(水着)",
-    "series": "ブルアカ",
+    "series": "ブルーアーカイブ",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -33359,7 +33089,7 @@
   {
     "id": "love-live-hasu-no-sora-jogakuin-school-idol-club-ceras-yanagida-lilienfeld",
     "name": "セラス柳田リリエンフェルト",
-    "series": "Link!Like!ラブライブ!",
+    "series": "ラブライブ!蓮ノ空女学院スクールアイドルクラブ",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -33419,7 +33149,7 @@
   {
     "id": "wuthering-waves-phoebe",
     "name": "菲比",
-    "series": "鸣潮",
+    "series": "鳴潮",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -33449,7 +33179,7 @@
   {
     "id": "pokemon-firered-and-leafgreen-leaf",
     "name": "リーフ(トレーナー)",
-    "series": "ポケットモンスターリーフグリーン",
+    "series": "ポケモン",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -33659,7 +33389,7 @@
   {
     "id": "danganronpa-2-goodbye-despair-tsumiki-mikan",
     "name": "罪木蜜柑",
-    "series": "スーパーダンガンロンパ2",
+    "series": "ダンガンロンパ2 さよなら絶望学園",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -33689,7 +33419,7 @@
   {
     "id": "kantai-collection-ashigara",
     "name": "足柄",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -33719,7 +33449,7 @@
   {
     "id": "zenless-zone-zero-ukinami-yuzuha",
     "name": "浮波柚葉",
-    "series": "绝区零",
+    "series": "ゼンレスゾーンゼロ",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -33869,7 +33599,7 @@
   {
     "id": "blue-archive-hoshino",
     "name": "小鸟游星野(泳装)",
-    "series": "ブルアカ",
+    "series": "ブルーアーカイブ",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -33899,7 +33629,7 @@
   {
     "id": "kantai-collection-shiratsuyu",
     "name": "白露",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -33929,7 +33659,7 @@
   {
     "id": "kantai-collection-kagerou",
     "name": "陽炎",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -33989,7 +33719,7 @@
   {
     "id": "chainsaw-man-mitaka-asa",
     "name": "三鹰朝",
-    "series": "链锯人",
+    "series": "チェンソーマン",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -34049,7 +33779,7 @@
   {
     "id": "kantai-collection-uzuki",
     "name": "卯月",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -34079,7 +33809,7 @@
   {
     "id": "fate-grand-order-tomoe-gozen",
     "name": "アーチャー・インフェルノ",
-    "series": "Fate/GrandOrder(腐)",
+    "series": "Fate/Grand Order",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -34109,7 +33839,7 @@
   {
     "id": "kantai-collection-satsuki",
     "name": "皐月",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -34139,7 +33869,7 @@
   {
     "id": "kantai-collection-mogami",
     "name": "最上(艦隊これくしょん)",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -34169,7 +33899,7 @@
   {
     "id": "zenless-zone-zero-alice-thymefield",
     "name": "アリス・タイムフィールド",
-    "series": "绝区零",
+    "series": "ゼンレスゾーンゼロ",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -34259,7 +33989,7 @@
   {
     "id": "pokemon-sword-and-shield-sonia",
     "name": "ソニア(ポケモン)",
-    "series": "ポケモン剣盾",
+    "series": "ポケモン",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -34289,7 +34019,7 @@
   {
     "id": "kantai-collection-urakaze",
     "name": "浦風",
-    "series": "艦これ",
+    "series": "艦隊これくしょん",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -34319,7 +34049,7 @@
   {
     "id": "arknights-specter",
     "name": "幽灵鲨",
-    "series": "明日方舟",
+    "series": "アークナイツ",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -34408,7 +34138,7 @@
   },
   {
     "id": "persona-3-portable-shiomi-kotone",
-    "name": "ハム子",
+    "name": "汐見琴音",
     "series": "ペルソナ3ポータブル",
     "aliases": [],
     "axes": {
@@ -34439,7 +34169,7 @@
   {
     "id": "bakemonogatari-hanekawa-tsubasa",
     "name": "羽川翼",
-    "series": "化物語",
+    "series": "物語シリーズ",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -34469,7 +34199,7 @@
   {
     "id": "blue-archive-himari",
     "name": "明星ヒマリ",
-    "series": "ブルアカ",
+    "series": "ブルーアーカイブ",
     "aliases": [],
     "axes": {
       "genderExpression": null,
@@ -34499,37 +34229,7 @@
   {
     "id": "pokemon-heartgold-and-soulsilver-lyra",
     "name": "コトネ(トレーナー)",
-    "series": "ポケモンHGSS",
-    "aliases": [],
-    "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
-      "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
-      "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
-      "occupation": []
-    },
-    "reviewed": false,
-    "provisional": false,
-    "imagePath": null,
-    "imageApproved": false
-  },
-  {
-    "id": "danganronpa-monokuma",
-    "name": "モノクマ",
-    "series": "ダンガンロンパシリーズ",
+    "series": "ポケモン",
     "aliases": [],
     "axes": {
       "genderExpression": null,

@@ -48,7 +48,7 @@ async function resolveSeriesForCandidate(danbooruFetch, tag, postCount) {
 
 async function main() {
   const stateDir = new URL('../../state/expansion/', import.meta.url);
-  const candidatesPath = fileURLToPath(new URL('candidates.json', stateDir));
+  const candidatesPath = fileURLToPath(new URL(`${process.env.CANDIDATES_FILE ?? 'candidates'}.json`, stateDir));
   const c = JSON.parse(readFileSync(candidatesPath, 'utf8'));
   const danbooruFetch = createDanbooruFetcher({});
 

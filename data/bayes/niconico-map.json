@@ -2930,42 +2930,11 @@
       "source": "search-verified",
       "checkedAt": "2026-10-04T15:50:04.420Z"
     },
-    "touhou-hanrei": {
-      "title": "半霊",
-      "url": "https://dic.nicovideo.jp/a/%E5%8D%8A%E9%9C%8A",
-      "source": "search-verified",
-      "checkedAt": "2026-10-06T02:19:03.812Z"
-    },
-    "ff14-warrioroflight": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:19:08.370Z"
-    },
-    "fate-saber": {
-      "title": null,
-      "reason": "記事「セイバー」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "セイバー",
-      "checkedAt": "2026-10-06T02:19:13.567Z"
-    },
     "umamusume-agnestachyon": {
       "title": "アグネスタキオン(ウマ娘)",
       "url": "https://dic.nicovideo.jp/a/%E3%82%A2%E3%82%B0%E3%83%8D%E3%82%B9%E3%82%BF%E3%82%AD%E3%82%AA%E3%83%B3(%E3%82%A6%E3%83%9E%E5%A8%98)",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:19:18.946Z"
-    },
-    "honkai3-elysia": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:19:23.327Z"
-    },
-    "splatoon-inklinggirl": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:19:28.367Z"
     },
     "umamusume-manhattancafe": {
       "title": "マンハッタンカフェ(ウマ娘)",
@@ -2979,25 +2948,11 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:19:38.649Z"
     },
-    "kancolle-yuudachi": {
-      "title": null,
-      "reason": "記事「夕立」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "夕立",
-      "checkedAt": "2026-10-06T02:19:43.591Z"
-    },
     "touhou-miko": {
       "title": "豊聡耳神子",
       "url": "https://dic.nicovideo.jp/a/%E8%B1%8A%E8%81%A1%E8%80%B3%E7%A5%9E%E5%AD%90",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:19:49.285Z"
-    },
-    "azurlane-manjuu": {
-      "title": null,
-      "reason": "記事「饅頭(アズールレーン)」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "饅頭(アズールレーン)",
-      "checkedAt": "2026-10-06T02:19:53.597Z"
     },
     "umamusume-goldship": {
       "title": "ゴールドシップ(ウマ娘)",
@@ -3017,19 +2972,6 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:20:08.784Z"
     },
-    "kancolle-yuudachi-kai2": {
-      "title": null,
-      "reason": "記事「夕立改二」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "夕立改二",
-      "checkedAt": "2026-10-06T02:20:18.753Z"
-    },
-    "genshin-columbina": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:20:23.387Z"
-    },
     "madoka-kyubey": {
       "title": "キュゥべえ",
       "url": "https://dic.nicovideo.jp/a/%E3%82%AD%E3%83%A5%E3%82%A5%E3%81%B9%E3%81%88",
@@ -3042,12 +2984,6 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:20:33.581Z"
     },
-    "madoka-sayaka": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:20:38.446Z"
-    },
     "umamusume-mejiromcqueen": {
       "title": "メジロマックイーン(ウマ娘)",
       "url": "https://dic.nicovideo.jp/a/%E3%83%A1%E3%82%B8%E3%83%AD%E3%83%9E%E3%83%83%E3%82%AF%E3%82%A4%E3%83%BC%E3%83%B3(%E3%82%A6%E3%83%9E%E5%A8%98)",
@@ -3059,13 +2995,6 @@
       "url": "https://dic.nicovideo.jp/a/%E6%9D%91%E7%B4%97%E6%B0%B4%E8%9C%9C",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:20:48.724Z"
-    },
-    "xeno2-hikari": {
-      "title": null,
-      "reason": "記事「ヒカリ(ゼノブレイド2)」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "ヒカリ(ゼノブレイド2)",
-      "checkedAt": "2026-10-06T02:20:59.191Z"
     },
     "touhou-seiga": {
       "title": "霍青娥",
@@ -3091,51 +3020,11 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:21:18.844Z"
     },
-    "zzz-miyabi": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:21:23.429Z"
-    },
-    "fgo-tristan": {
-      "title": null,
-      "reason": "記事「妖精騎士トリスタン」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "妖精騎士トリスタン",
-      "checkedAt": "2026-10-06T02:21:28.996Z"
-    },
-    "kancolle-murakumo": {
-      "title": null,
-      "reason": "記事「叢雲」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "叢雲",
-      "checkedAt": "2026-10-06T02:21:33.664Z"
-    },
-    "hololiveen-gura-2": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:21:38.477Z"
-    },
-    "ranma-saotome": {
-      "title": null,
-      "reason": "記事「早乙女乱馬」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "早乙女乱馬",
-      "checkedAt": "2026-10-06T02:21:43.813Z"
-    },
     "kancolle-yukikaze": {
       "title": "雪風",
       "url": "https://dic.nicovideo.jp/a/%E9%9B%AA%E9%A2%A8",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:21:48.771Z"
-    },
-    "fe3h-byleth": {
-      "title": null,
-      "reason": "記事「ベレス」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "ベレス",
-      "checkedAt": "2026-10-06T02:21:53.687Z"
     },
     "kancolle-ushio": {
       "title": "潮",
@@ -3148,12 +3037,6 @@
       "url": "https://dic.nicovideo.jp/a/%E7%B4%94%E7%8B%90",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:22:04.096Z"
-    },
-    "arknights-lappland": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:22:08.506Z"
     },
     "umamusume-tokaiteio": {
       "title": "トウカイテイオー(ウマ娘)",
@@ -3179,38 +3062,6 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:22:28.813Z"
     },
-    "vocaloid-meiko": {
-      "title": null,
-      "reason": "記事「メイコ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "メイコ",
-      "checkedAt": "2026-10-06T02:22:33.665Z"
-    },
-    "bluearchive-asuna-2": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:22:38.578Z"
-    },
-    "kancolle-akebono": {
-      "title": null,
-      "reason": "記事「曙」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "曙",
-      "checkedAt": "2026-10-06T02:22:48.812Z"
-    },
-    "arknights-skadi": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:22:53.665Z"
-    },
-    "genshin-sandrone": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:22:58.679Z"
-    },
     "tsukihime-arcueid": {
       "title": "アルクェイド",
       "url": "https://dic.nicovideo.jp/a/%E3%82%A2%E3%83%AB%E3%82%AF%E3%82%A7%E3%82%A4%E3%83%89",
@@ -3234,12 +3085,6 @@
       "url": "https://dic.nicovideo.jp/a/%E8%B5%A4%E8%9B%AE%E5%A5%87",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:23:27.582Z"
-    },
-    "girlsfrontline-hk416": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:23:28.758Z"
     },
     "kancolle-ooyodo": {
       "title": "大淀",
@@ -3271,41 +3116,17 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:23:54.035Z"
     },
-    "limbus-ishmael": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:23:58.745Z"
-    },
     "touhou-minoriko": {
       "title": "秋穣子",
       "url": "https://dic.nicovideo.jp/a/%E7%A7%8B%E7%A9%A3%E5%AD%90",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:24:04.386Z"
     },
-    "arknights-kaltsit": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:24:08.693Z"
-    },
-    "limbus-donquixote": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:24:13.708Z"
-    },
     "mha-mirko": {
       "title": "ミルコ",
       "url": "https://dic.nicovideo.jp/a/%E3%83%9F%E3%83%AB%E3%82%B3",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:24:18.873Z"
-    },
-    "omori-aubrey": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:24:23.813Z"
     },
     "touhou-akyuu": {
       "title": "稗田阿求",
@@ -3319,43 +3140,11 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:24:33.964Z"
     },
-    "gup-erika": {
-      "title": null,
-      "reason": "記事「逸見エリカ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "逸見エリカ",
-      "checkedAt": "2026-10-06T02:24:39.054Z"
-    },
-    "deltarune-kris": {
-      "title": null,
-      "reason": "記事「クリス」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "クリス",
-      "checkedAt": "2026-10-06T02:24:44.112Z"
-    },
-    "hololive-marine-2": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:24:48.835Z"
-    },
-    "arknights-angelina": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:24:53.803Z"
-    },
     "vocaloid-gumi": {
       "title": "メグッポイド",
       "url": "https://dic.nicovideo.jp/a/%E3%83%A1%E3%82%B0%E3%83%83%E3%83%9D%E3%82%A4%E3%83%89",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:24:59.074Z"
-    },
-    "bluearchive-toki-2": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:25:03.911Z"
     },
     "idolmaster-makoto": {
       "title": "菊地真",
@@ -3381,39 +3170,6 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:25:24.524Z"
     },
-    "hsr-cyrene-2": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:25:28.856Z"
-    },
-    "gup-anchovy": {
-      "title": null,
-      "reason": "記事「アンチョビ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "アンチョビ",
-      "checkedAt": "2026-10-06T02:25:34.021Z"
-    },
-    "kancolle-mutsu": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:25:38.888Z"
-    },
-    "honkai3-mei": {
-      "title": null,
-      "reason": "記事「芽衣」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "芽衣",
-      "checkedAt": "2026-10-06T02:25:44.006Z"
-    },
-    "fgo-artoria-lancer": {
-      "title": null,
-      "reason": "記事「アルトリア・ペンドラゴン(ランサー)」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "アルトリア・ペンドラゴン(ランサー)",
-      "checkedAt": "2026-10-06T02:25:49.504Z"
-    },
     "touhou-mamizou": {
       "title": "二ッ岩マミゾウ",
       "url": "https://dic.nicovideo.jp/a/%E4%BA%8C%E3%83%83%E5%B2%A9%E3%83%9E%E3%83%9F%E3%82%BE%E3%82%A6",
@@ -3425,18 +3181,6 @@
       "url": "https://dic.nicovideo.jp/a/%E3%83%AC%E3%83%86%E3%82%A3%E3%83%BB%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AD%E3%83%83%E3%82%AF",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:25:59.266Z"
-    },
-    "kancolle-tatsuta": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:26:03.913Z"
-    },
-    "fgo-ereshkigal": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:26:08.896Z"
     },
     "kancolle-ooi": {
       "title": "大井",
@@ -3474,48 +3218,11 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:26:39.393Z"
     },
-    "kohaace-sakurasaber": {
-      "title": "桜セイバー",
-      "url": "https://dic.nicovideo.jp/a/%E6%A1%9C%E3%82%BB%E3%82%A4%E3%83%90%E3%83%BC",
-      "source": "search-verified",
-      "checkedAt": "2026-10-06T02:26:44.588Z"
-    },
-    "hsr-robin": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:26:48.986Z"
-    },
-    "umamusume-agnestachyon-tachnology": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:26:53.968Z"
-    },
-    "wutheringwaves-femalerover": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:26:58.958Z"
-    },
-    "nikkiseries-nikki": {
-      "title": null,
-      "reason": "記事「ニキ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "ニキ",
-      "checkedAt": "2026-10-06T02:27:04.164Z"
-    },
     "kancolle-bismarck": {
       "title": "ビスマルク",
       "url": "https://dic.nicovideo.jp/a/%E3%83%93%E3%82%B9%E3%83%9E%E3%83%AB%E3%82%AF",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:27:09.213Z"
-    },
-    "killakill-senketsu": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:27:14.005Z"
     },
     "kancolle-akashi": {
       "title": "明石",
@@ -3529,37 +3236,11 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:27:24.274Z"
     },
-    "ranma-akane": {
-      "title": null,
-      "reason": "記事「天道あかね」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "天道あかね",
-      "checkedAt": "2026-10-06T02:27:29.213Z"
-    },
     "kancolle-sazanami": {
       "title": "漣",
       "url": "https://dic.nicovideo.jp/a/%E6%BC%A3",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:27:39.227Z"
-    },
-    "arknights-surtr": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:27:44.021Z"
-    },
-    "wuwa-zani": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:27:49.067Z"
-    },
-    "splatoon-hachigo": {
-      "title": null,
-      "reason": "記事「8号」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "8号",
-      "checkedAt": "2026-10-06T02:27:54.166Z"
     },
     "gup-yukari": {
       "title": "秋山優花里",
@@ -3567,30 +3248,11 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:27:59.516Z"
     },
-    "fate-meltryllis": {
-      "title": null,
-      "reason": "記事「メルトリリス」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "メルトリリス",
-      "checkedAt": "2026-10-06T02:28:04.761Z"
-    },
-    "honkai3-fuhua": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:28:09.077Z"
-    },
     "kancolle-souryuu": {
       "title": "蒼龍",
       "url": "https://dic.nicovideo.jp/a/%E8%92%BC%E9%BE%8D",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:28:14.252Z"
-    },
-    "kancolle-kasumi": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:28:19.140Z"
     },
     "umamusume-symbolirudolf": {
       "title": "シンボリルドルフ(ウマ娘)",
@@ -3603,13 +3265,6 @@
       "url": "https://dic.nicovideo.jp/a/%E3%83%A9%E3%82%AA%E3%83%BC%E3%83%A9%E3%83%BB%E3%83%91%E3%83%B3%E3%83%86%E3%83%BC%E3%83%A9",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:28:29.290Z"
-    },
-    "omori-mari": {
-      "title": null,
-      "reason": "記事「マリ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "マリ",
-      "checkedAt": "2026-10-06T02:28:34.283Z"
     },
     "kancolle-samidare": {
       "title": "五月雨",
@@ -3635,12 +3290,6 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:28:54.476Z"
     },
-    "omori-kel": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:28:59.130Z"
-    },
     "kancolle-yamashiro": {
       "title": "山城",
       "url": "https://dic.nicovideo.jp/a/%E5%B1%B1%E5%9F%8E",
@@ -3652,13 +3301,6 @@
       "url": "https://dic.nicovideo.jp/a/%E6%B0%B4%E9%8A%80%E7%87%88",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:29:09.554Z"
-    },
-    "arknights-shu": {
-      "title": null,
-      "reason": "記事「黍」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "黍",
-      "checkedAt": "2026-10-06T02:29:14.334Z"
     },
     "kancolle-ro500": {
       "title": "呂500",
@@ -3678,26 +3320,6 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:29:34.887Z"
     },
-    "kancolle-hiei": {
-      "title": null,
-      "reason": "記事「比叡」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "比叡",
-      "checkedAt": "2026-10-06T02:29:39.320Z"
-    },
-    "danganronpa-kaede": {
-      "title": null,
-      "reason": "記事「赤松楓」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "赤松楓",
-      "checkedAt": "2026-10-06T02:29:44.398Z"
-    },
-    "hololive-pekora-2": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:29:49.235Z"
-    },
     "gquuuuuux-yuzuriha": {
       "title": "アマテ・ユズリハ",
       "url": "https://dic.nicovideo.jp/a/%E3%82%A2%E3%83%9E%E3%83%86%E3%83%BB%E3%83%A6%E3%82%BA%E3%83%AA%E3%83%8F",
@@ -3716,42 +3338,17 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:30:10.456Z"
     },
-    "bluearchive-shiroko-2": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:30:14.194Z"
-    },
     "aot-mikasa": {
       "title": "ミカサ・アッカーマン",
       "url": "https://dic.nicovideo.jp/a/%E3%83%9F%E3%82%AB%E3%82%B5%E3%83%BB%E3%82%A2%E3%83%83%E3%82%AB%E3%83%BC%E3%83%9E%E3%83%B3",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:30:19.716Z"
     },
-    "limbus-faust": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:30:24.208Z"
-    },
-    "honkai-impact-3rd-elysia": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:30:29.248Z"
-    },
     "kancolle-kirishima": {
       "title": "霧島",
       "url": "https://dic.nicovideo.jp/a/%E9%9C%A7%E5%B3%B6",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:30:34.493Z"
-    },
-    "voiceroid-akari": {
-      "title": null,
-      "reason": "記事「紲星あかり」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "紲星あかり",
-      "checkedAt": "2026-10-06T02:30:39.741Z"
     },
     "umamusume-haruurara": {
       "title": "ハルウララ(ウマ娘)",
@@ -3771,36 +3368,11 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:30:54.899Z"
     },
-    "hololive-fubuki-2": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:30:59.278Z"
-    },
-    "girlsfrontline-ump45": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:31:04.394Z"
-    },
     "imascg-kaede": {
       "title": "高垣楓",
       "url": "https://dic.nicovideo.jp/a/%E9%AB%98%E5%9E%A3%E6%A5%93",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:31:10.714Z"
-    },
-    "majosaiban-ema": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:31:14.295Z"
-    },
-    "fgo-artoria-caster": {
-      "title": null,
-      "reason": "記事「アルトリア・キャスター」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "アルトリア・キャスター",
-      "checkedAt": "2026-10-06T02:31:20.339Z"
     },
     "lovelivesunshine-yoshiko": {
       "title": "津島善子",
@@ -3814,31 +3386,11 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:31:29.616Z"
     },
-    "arknights-chen": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:31:34.312Z"
-    },
-    "kancolle-yuubari": {
-      "title": null,
-      "reason": "記事「夕張」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "夕張",
-      "checkedAt": "2026-10-06T02:31:39.597Z"
-    },
     "touhou-doremy": {
       "title": "ドレミー・スイート",
       "url": "https://dic.nicovideo.jp/a/%E3%83%89%E3%83%AC%E3%83%9F%E3%83%BC%E3%83%BB%E3%82%B9%E3%82%A4%E3%83%BC%E3%83%88",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:31:44.679Z"
-    },
-    "bluearchive-kei-2": {
-      "title": null,
-      "reason": "記事「天童ケイ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "天童ケイ",
-      "checkedAt": "2026-10-06T02:31:54.612Z"
     },
     "spiceandwolf-holo": {
       "title": "ホロ",
@@ -3852,12 +3404,6 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:32:04.614Z"
     },
-    "fate-medusa": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:32:09.484Z"
-    },
     "idolmaster-yayoi": {
       "title": "高槻やよい",
       "url": "https://dic.nicovideo.jp/a/%E9%AB%98%E6%A7%BB%E3%82%84%E3%82%88%E3%81%84",
@@ -3869,12 +3415,6 @@
       "url": "https://dic.nicovideo.jp/a/%E7%A9%BA%E6%9D%A1%E5%BE%90%E5%80%AB",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:32:19.733Z"
-    },
-    "hsr-march7th-2": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:32:24.453Z"
     },
     "danganronpa-kyoko": {
       "title": "霧切響子",
@@ -3888,30 +3428,11 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:32:34.720Z"
     },
-    "ranma-shampoo": {
-      "title": null,
-      "reason": "記事「シャンプー」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "シャンプー",
-      "checkedAt": "2026-10-06T02:32:39.609Z"
-    },
     "sf-juri": {
       "title": "ハン・ジュリ",
       "url": "https://dic.nicovideo.jp/a/%E3%83%8F%E3%83%B3%E3%83%BB%E3%82%B8%E3%83%A5%E3%83%AA",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:32:44.901Z"
-    },
-    "ragnarok-archbishop": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:32:49.458Z"
-    },
-    "ranma-ranma-female": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:32:54.484Z"
     },
     "danganronpa-junko": {
       "title": "江ノ島盾子",
@@ -3931,44 +3452,11 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:33:09.863Z"
     },
-    "steinsgate-kurisu": {
-      "title": null,
-      "reason": "記事「牧瀬紅莉栖」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "牧瀬紅莉栖",
-      "checkedAt": "2026-10-06T02:33:14.863Z"
-    },
-    "honkai-impact-3rd-elysia-2": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:33:19.535Z"
-    },
-    "arknights-mudrock": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:33:24.514Z"
-    },
-    "kancolle-naganami": {
-      "title": null,
-      "reason": "記事「長波」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "長波",
-      "checkedAt": "2026-10-06T02:33:29.756Z"
-    },
     "kancolle-kiso": {
       "title": "木曾",
       "url": "https://dic.nicovideo.jp/a/%E6%9C%A8%E6%9B%BE",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:33:39.752Z"
-    },
-    "fgo-kama": {
-      "title": null,
-      "reason": "記事「カーマ(Fate)」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "カーマ(Fate)",
-      "checkedAt": "2026-10-06T02:33:45.449Z"
     },
     "touhou-medicine": {
       "title": "メディスン・メランコリー",
@@ -4000,19 +3488,6 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:34:10.292Z"
     },
-    "needygirl-tenshichan": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:34:14.598Z"
-    },
-    "arknights-dusk": {
-      "title": null,
-      "reason": "記事「夕」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "夕",
-      "checkedAt": "2026-10-06T02:34:19.737Z"
-    },
     "hololive-coco": {
       "title": "桐生ココ",
       "url": "https://dic.nicovideo.jp/a/%E6%A1%90%E7%94%9F%E3%82%B3%E3%82%B3",
@@ -4025,24 +3500,11 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:34:34.846Z"
     },
-    "splatoon-callie": {
-      "title": null,
-      "reason": "記事「シオカラーズ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "シオカラーズ",
-      "checkedAt": "2026-10-06T02:34:39.951Z"
-    },
     "gkidols-kotone": {
       "title": "藤田ことね",
       "url": "https://dic.nicovideo.jp/a/%E8%97%A4%E7%94%B0%E3%81%93%E3%81%A8%E3%81%AD",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:34:44.950Z"
-    },
-    "project-sekai-asahina-mafuyu": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:34:49.634Z"
     },
     "umamusume-admire-vega": {
       "title": "アドマイヤベガ(ウマ娘)",
@@ -4086,50 +3548,11 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:35:24.889Z"
     },
-    "zenless-zone-zero-tsukishiro-yanagi": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:35:29.690Z"
-    },
-    "blue-archive-yuuka": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:35:34.709Z"
-    },
     "umamusume-tmoperao": {
       "title": "テイエムオペラオー(ウマ娘)",
       "url": "https://dic.nicovideo.jp/a/%E3%83%86%E3%82%A4%E3%82%A8%E3%83%A0%E3%82%AA%E3%83%9A%E3%83%A9%E3%82%AA%E3%83%BC(%E3%82%A6%E3%83%9E%E5%A8%98)",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:35:40.445Z"
-    },
-    "gup-saori": {
-      "title": null,
-      "reason": "記事「武部沙織」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "武部沙織",
-      "checkedAt": "2026-10-06T02:35:45.114Z"
-    },
-    "kancolle-zuihou": {
-      "title": null,
-      "reason": "記事「瑞鳳」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "瑞鳳",
-      "checkedAt": "2026-10-06T02:35:49.916Z"
-    },
-    "limbus-ryoshu": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:35:54.818Z"
-    },
-    "fate-nobunaga": {
-      "title": null,
-      "reason": "記事「織田信長」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "織田信長",
-      "checkedAt": "2026-10-06T02:36:00.832Z"
     },
     "imascg-ranko": {
       "title": "神崎蘭子",
@@ -4149,13 +3572,6 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:36:15.198Z"
     },
-    "gup-kay": {
-      "title": null,
-      "reason": "記事「ケイ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "ケイ",
-      "checkedAt": "2026-10-06T02:36:20.034Z"
-    },
     "prosekai-mizuki": {
       "title": "暁山瑞希",
       "url": "https://dic.nicovideo.jp/a/%E6%9A%81%E5%B1%B1%E7%91%9E%E5%B8%8C",
@@ -4168,31 +3584,11 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:36:30.578Z"
     },
-    "omori-hero": {
-      "title": null,
-      "reason": "記事「ヒロ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "ヒロ",
-      "checkedAt": "2026-10-06T02:36:35.054Z"
-    },
-    "mahomajo-hiro": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:36:39.868Z"
-    },
     "touhou-lunasa": {
       "title": "ルナサ・プリズムリバー",
       "url": "https://dic.nicovideo.jp/a/%E3%83%AB%E3%83%8A%E3%82%B5%E3%83%BB%E3%83%97%E3%83%AA%E3%82%BA%E3%83%A0%E3%83%AA%E3%83%90%E3%83%BC",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:36:45.220Z"
-    },
-    "kancolle-murasame": {
-      "title": null,
-      "reason": "記事「村雨」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "村雨",
-      "checkedAt": "2026-10-06T02:36:50.115Z"
     },
     "touhou-okina": {
       "title": "摩多羅隠岐奈",
@@ -4200,29 +3596,11 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:36:55.184Z"
     },
-    "genshin-yoimiya": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:36:59.893Z"
-    },
     "imascg-shiki": {
       "title": "一ノ瀬志希",
       "url": "https://dic.nicovideo.jp/a/%E4%B8%80%E3%83%8E%E7%80%AC%E5%BF%97%E5%B8%8C",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:37:05.570Z"
-    },
-    "dungeon-meshi-falin-touden": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:37:09.944Z"
-    },
-    "pokemon-scarlet-and-violet-rika": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:37:14.953Z"
     },
     "kantai-collection-naka": {
       "title": "那珂",
@@ -4230,29 +3608,11 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:37:20.188Z"
     },
-    "blue-archive-karin": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:37:24.953Z"
-    },
     "touhou-kudamaki-tsukasa": {
       "title": "菅牧典",
       "url": "https://dic.nicovideo.jp/a/%E8%8F%85%E7%89%A7%E5%85%B8",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:37:30.157Z"
-    },
-    "splatoon-octoling-girl": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:37:34.945Z"
-    },
-    "blue-archive-shiroko": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:37:39.967Z"
     },
     "persona-4-shirogane-naoto": {
       "title": "白鐘直斗",
@@ -4290,31 +3650,11 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:38:10.660Z"
     },
-    "rwby-ruby-rose": {
-      "title": null,
-      "reason": "記事「ルビー・ローズ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "ルビー・ローズ",
-      "checkedAt": "2026-10-06T02:38:15.298Z"
-    },
-    "project-sekai-shinonome-ena": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:38:20.042Z"
-    },
     "hololive-omaru-polka": {
       "title": "尾丸ポルカ",
       "url": "https://dic.nicovideo.jp/a/%E5%B0%BE%E4%B8%B8%E3%83%9D%E3%83%AB%E3%82%AB",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:38:25.318Z"
-    },
-    "fate-apocrypha-jack-the-ripper": {
-      "title": null,
-      "reason": "記事「ジャック・ザ・リッパー(Fate)」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "ジャック・ザ・リッパー(Fate)",
-      "checkedAt": "2026-10-06T02:38:30.391Z"
     },
     "lucky-star-hiiragi-tsukasa": {
       "title": "柊つかさ",
@@ -4322,35 +3662,11 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:38:35.903Z"
     },
-    "honkai-star-rail-cyrene": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:38:40.086Z"
-    },
     "nitroplus-sonico": {
       "title": "すーぱーそに子",
       "url": "https://dic.nicovideo.jp/a/%E3%81%99%E3%83%BC%E3%81%B1%E3%83%BC%E3%81%9D%E3%81%AB%E5%AD%90",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:38:45.492Z"
-    },
-    "wuwa-changli": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:38:50.092Z"
-    },
-    "honkai3-seele": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:38:55.181Z"
-    },
-    "arknights-mostima": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:39:00.228Z"
     },
     "meitanteiprecure-luluka": {
       "title": "森亜るるか",
@@ -4369,25 +3685,6 @@
       "url": "https://dic.nicovideo.jp/a/%E4%BC%8A19",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:39:15.332Z"
-    },
-    "blue-archive-asuna": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:39:20.245Z"
-    },
-    "gup-arisu": {
-      "title": null,
-      "reason": "記事「島田愛里寿」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "島田愛里寿",
-      "checkedAt": "2026-10-06T02:39:25.451Z"
-    },
-    "wuwa-chisa": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:39:30.128Z"
     },
     "persona4-chie": {
       "title": "里中千枝",
@@ -4413,35 +3710,11 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:39:50.949Z"
     },
-    "urusei-lum": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:39:55.179Z"
-    },
-    "wuwa-aemeath": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:40:00.413Z"
-    },
     "imascg-sachiko": {
       "title": "輿水幸子",
       "url": "https://dic.nicovideo.jp/a/%E8%BC%BF%E6%B0%B4%E5%B9%B8%E5%AD%90",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:40:06.378Z"
-    },
-    "csm-yoru": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:40:10.232Z"
-    },
-    "pokemon-hex-maniac-xy": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:40:15.338Z"
     },
     "oshinoko-kana": {
       "title": "有馬かな",
@@ -4455,24 +3728,11 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:40:25.502Z"
     },
-    "kancolle-akigumo": {
-      "title": null,
-      "reason": "記事「秋雲」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "秋雲",
-      "checkedAt": "2026-10-06T02:40:30.451Z"
-    },
     "strikewitches-sanya": {
       "title": "サーニャ・V・リトヴャク",
       "url": "https://dic.nicovideo.jp/a/%E3%82%B5%E3%83%BC%E3%83%8B%E3%83%A3%E3%83%BBV%E3%83%BB%E3%83%AA%E3%83%88%E3%83%B4%E3%83%A3%E3%82%AF",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:40:35.890Z"
-    },
-    "endfield-endministrator": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:40:40.284Z"
     },
     "imascg-anastasia": {
       "title": "アナスタシア",
@@ -4498,13 +3758,6 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:41:00.687Z"
     },
-    "kantai-collection-maya": {
-      "title": null,
-      "reason": "記事「摩耶」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "摩耶",
-      "checkedAt": "2026-10-06T02:41:05.467Z"
-    },
     "nijisanji-inui-toko": {
       "title": "戌亥とこ",
       "url": "https://dic.nicovideo.jp/a/%E6%88%8C%E4%BA%A5%E3%81%A8%E3%81%93",
@@ -4523,50 +3776,11 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:41:21.431Z"
     },
-    "arknights-nian": {
-      "title": null,
-      "reason": "記事「年」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "年",
-      "checkedAt": "2026-10-06T02:41:25.537Z"
-    },
     "toradora-aisaka-taiga": {
       "title": "逢坂大河",
       "url": "https://dic.nicovideo.jp/a/%E9%80%A2%E5%9D%82%E5%A4%A7%E6%B2%B3",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:41:30.537Z"
-    },
-    "danganronpa-v3-killing-harmony-harukawa-maki": {
-      "title": null,
-      "reason": "記事「春川魔姫」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "春川魔姫",
-      "checkedAt": "2026-10-06T02:41:35.559Z"
-    },
-    "fate-elizabeth-bathory": {
-      "title": null,
-      "reason": "記事「エリザベート・バートリー(Fate)」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "エリザベート・バートリー(Fate)",
-      "checkedAt": "2026-10-06T02:41:46.615Z"
-    },
-    "hololive-english-ouro-kronii": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:41:50.318Z"
-    },
-    "zenless-zone-zero-aria": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:41:55.395Z"
-    },
-    "ado-chando": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:42:03.786Z"
     },
     "sonic-amy-rose": {
       "title": "エミー・ローズ",
@@ -4580,13 +3794,6 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:42:10.789Z"
     },
-    "azur-lane-ayanami": {
-      "title": null,
-      "reason": "記事「綾波(アズールレーン)」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "綾波(アズールレーン)",
-      "checkedAt": "2026-10-06T02:42:15.806Z"
-    },
     "girls-band-cry-awa-subaru": {
       "title": "安和すばる",
       "url": "https://dic.nicovideo.jp/a/%E5%AE%89%E5%92%8C%E3%81%99%E3%81%B0%E3%82%8B",
@@ -4598,12 +3805,6 @@
       "url": "https://dic.nicovideo.jp/a/%E6%9C%A7",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:42:25.713Z"
-    },
-    "bluearchive-peroro": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:42:34.656Z"
     },
     "hololiveen-gigimurin": {
       "title": "ジジ・ムリン",
@@ -4617,35 +3818,17 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:42:41.058Z"
     },
-    "nikke-cinderella": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:42:45.517Z"
-    },
     "kancolle-i58": {
       "title": "伊58",
       "url": "https://dic.nicovideo.jp/a/%E4%BC%8A58",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:42:50.626Z"
     },
-    "kancolle-leberechtmaass": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:42:55.517Z"
-    },
     "umamusume-agnesdigital": {
       "title": "アグネスデジタル(ウマ娘)",
       "url": "https://dic.nicovideo.jp/a/%E3%82%A2%E3%82%B0%E3%83%8D%E3%82%B9%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB(%E3%82%A6%E3%83%9E%E5%A8%98)",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:43:01.353Z"
-    },
-    "kancolle-atlanta": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:43:05.471Z"
     },
     "panty-stocking-with-garterbelt-panty": {
       "title": "アナーキー・パンティ",
@@ -4659,18 +3842,6 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:43:16.400Z"
     },
-    "zenless-zone-zero-nangong-yu": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:43:20.522Z"
-    },
-    "blue-archive-hanako": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:43:25.520Z"
-    },
     "kemono-friends-common-raccoon": {
       "title": "アライグマ(けものフレンズ)",
       "url": "https://dic.nicovideo.jp/a/%E3%82%A2%E3%83%A9%E3%82%A4%E3%82%B0%E3%83%9E(%E3%81%91%E3%82%82%E3%81%AE%E3%83%95%E3%83%AC%E3%83%B3%E3%82%BA)",
@@ -4683,24 +3854,6 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:43:35.718Z"
     },
-    "hololive-english-ninomae-ina-nis": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:43:40.562Z"
-    },
-    "zenless-zone-zero-eous": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:43:45.572Z"
-    },
-    "umamusume-gold-ship": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:43:50.568Z"
-    },
     "idolmaster-shiny-colors-asakura-toru": {
       "title": "浅倉透",
       "url": "https://dic.nicovideo.jp/a/%E6%B5%85%E5%80%89%E9%80%8F",
@@ -4712,25 +3865,6 @@
       "url": "https://dic.nicovideo.jp/a/%E3%83%99%E3%82%A2%E3%83%88%E3%83%AA%E3%83%BC%E3%83%81%E3%82%A7",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:44:00.996Z"
-    },
-    "project-sekai-yoisaki-kanade": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:44:05.581Z"
-    },
-    "kantai-collection-tokitsukaze": {
-      "title": null,
-      "reason": "記事「時津風」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "時津風",
-      "checkedAt": "2026-10-06T02:44:10.725Z"
-    },
-    "darkstalkers-lilith": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:44:15.595Z"
     },
     "umamusume-still-in-love": {
       "title": "スティルインラブ(ウマ娘)",
@@ -4750,37 +3884,11 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:44:31.063Z"
     },
-    "honkai-star-rail-black-swan": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:44:35.602Z"
-    },
     "umamusume-super-creek": {
       "title": "スーパークリーク(ウマ娘)",
       "url": "https://dic.nicovideo.jp/a/%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%82%AF%E3%83%AA%E3%83%BC%E3%82%AF(%E3%82%A6%E3%83%9E%E5%A8%98)",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:44:41.240Z"
-    },
-    "pokemon-zeiyu": {
-      "title": null,
-      "reason": "記事「ゼイユ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "ゼイユ",
-      "checkedAt": "2026-10-06T02:44:45.970Z"
-    },
-    "kancolle-maxschultz": {
-      "title": null,
-      "reason": "記事「マックス・シュルツ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "マックス・シュルツ",
-      "checkedAt": "2026-10-06T02:44:50.766Z"
-    },
-    "hololiveen-amelia-2": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:44:55.735Z"
     },
     "sunshine-kanan": {
       "title": "松浦果南",
@@ -4794,67 +3902,17 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:45:06.002Z"
     },
-    "hololiveen-mumei-2": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:45:10.695Z"
-    },
     "idolmaster-ritsuko": {
       "title": "秋月律子",
       "url": "https://dic.nicovideo.jp/a/%E7%A7%8B%E6%9C%88%E5%BE%8B%E5%AD%90",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:45:16.857Z"
     },
-    "genshin-qiqi": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:45:20.637Z"
-    },
     "persona3-yukari": {
       "title": "岳羽ゆかり",
       "url": "https://dic.nicovideo.jp/a/%E5%B2%B3%E7%BE%BD%E3%82%86%E3%81%8B%E3%82%8A",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:45:26.129Z"
-    },
-    "kancolle-warspite": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:45:30.689Z"
-    },
-    "girlsfrontline-wa2000": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:45:35.757Z"
-    },
-    "csm-aki": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:45:40.725Z"
-    },
-    "gup-mako": {
-      "title": null,
-      "reason": "記事「冷泉麻子」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "冷泉麻子",
-      "checkedAt": "2026-10-06T02:45:45.989Z"
-    },
-    "kancolle-i401": {
-      "title": null,
-      "reason": "記事「伊401」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "伊401",
-      "checkedAt": "2026-10-06T02:45:50.914Z"
-    },
-    "gurrenlagann-nia": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:45:55.742Z"
     },
     "idolmaster-miku": {
       "title": "前川みく",
@@ -4886,38 +3944,6 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:46:26.081Z"
     },
-    "hololive-english-mori-calliope": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:46:30.796Z"
-    },
-    "blue-archive-haruka": {
-      "title": null,
-      "reason": "記事「伊草ハルカ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "伊草ハルカ",
-      "checkedAt": "2026-10-06T02:46:36.078Z"
-    },
-    "kantai-collection-kumano": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:46:40.783Z"
-    },
-    "kantai-collection-kuma": {
-      "title": null,
-      "reason": "記事「球磨」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "球磨",
-      "checkedAt": "2026-10-06T02:46:45.901Z"
-    },
-    "blue-archive-seia": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:46:50.826Z"
-    },
     "love-live-hasu-no-sora-jogakuin-school-idol-club-ceras-yanagida-lilienfeld": {
       "title": "セラス柳田リリエンフェルト",
       "url": "https://dic.nicovideo.jp/a/%E3%82%BB%E3%83%A9%E3%82%B9%E6%9F%B3%E7%94%B0%E3%83%AA%E3%83%AA%E3%82%A8%E3%83%B3%E3%83%95%E3%82%A7%E3%83%AB%E3%83%88",
@@ -4930,41 +3956,11 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:47:00.973Z"
     },
-    "wuthering-waves-phoebe": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:47:05.813Z"
-    },
-    "pokemon-firered-and-leafgreen-leaf": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:47:10.873Z"
-    },
-    "hololive-inugami-korone": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:47:15.847Z"
-    },
     "kemono-friends-fennec": {
       "title": "フェネック(けものフレンズ)",
       "url": "https://dic.nicovideo.jp/a/%E3%83%95%E3%82%A7%E3%83%8D%E3%83%83%E3%82%AF(%E3%81%91%E3%82%82%E3%81%AE%E3%83%95%E3%83%AC%E3%83%B3%E3%82%BA)",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:47:21.225Z"
-    },
-    "persona-3-aigis": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:47:25.829Z"
-    },
-    "girls-und-panzer-boko": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:47:30.834Z"
     },
     "umamusume-dantsu-flame": {
       "title": "ダンツフレーム(ウマ娘)",
@@ -4990,23 +3986,11 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:47:51.164Z"
     },
-    "zenless-zone-zero-ukinami-yuzuha": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:47:55.854Z"
-    },
     "hirogaru-sky-precure-sora-harewataru": {
       "title": "ソラ・ハレワタール",
       "url": "https://dic.nicovideo.jp/a/%E3%82%BD%E3%83%A9%E3%83%BB%E3%83%8F%E3%83%AC%E3%83%AF%E3%82%BF%E3%83%BC%E3%83%AB",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:48:01.342Z"
-    },
-    "hololive-nekomata-okayu": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:48:05.859Z"
     },
     "mahou-shoujo-madoka-magica-charlotte": {
       "title": "シャルロッテ",
@@ -5020,37 +4004,11 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:48:21.240Z"
     },
-    "blue-archive-hoshino": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:48:25.948Z"
-    },
-    "kantai-collection-shiratsuyu": {
-      "title": null,
-      "reason": "記事「白露」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "白露",
-      "checkedAt": "2026-10-06T02:48:31.002Z"
-    },
-    "kantai-collection-kagerou": {
-      "title": null,
-      "reason": "記事「陽炎」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "陽炎",
-      "checkedAt": "2026-10-06T02:48:36.098Z"
-    },
     "kill-la-kill-mankanshoku-mako": {
       "title": "満艦飾マコ",
       "url": "https://dic.nicovideo.jp/a/%E6%BA%80%E8%89%A6%E9%A3%BE%E3%83%9E%E3%82%B3",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:48:41.169Z"
-    },
-    "chainsaw-man-mitaka-asa": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:48:45.956Z"
     },
     "tate-no-yuusha-no-nariagari-raphtalia": {
       "title": "ラフタリア",
@@ -5064,32 +4022,6 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:49:00.235Z"
     },
-    "fate-grand-order-tomoe-gozen": {
-      "title": null,
-      "reason": "記事「アーチャー・インフェルノ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "アーチャー・インフェルノ",
-      "checkedAt": "2026-10-06T02:49:01.585Z"
-    },
-    "kantai-collection-satsuki": {
-      "title": null,
-      "reason": "記事「皐月」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "皐月",
-      "checkedAt": "2026-10-06T02:49:06.250Z"
-    },
-    "kantai-collection-mogami": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:49:11.028Z"
-    },
-    "zenless-zone-zero-alice-thymefield": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:49:15.999Z"
-    },
     "hololive-english-cecilia-immergreen": {
       "title": "セシリア・イマーグリーン",
       "url": "https://dic.nicovideo.jp/a/%E3%82%BB%E3%82%B7%E3%83%AA%E3%82%A2%E3%83%BB%E3%82%A4%E3%83%9E%E3%83%BC%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3",
@@ -5102,30 +4034,11 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:49:26.911Z"
     },
-    "pokemon-sword-and-shield-sonia": {
-      "title": null,
-      "reason": "記事「ソニア(ポケモン)」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "ソニア(ポケモン)",
-      "checkedAt": "2026-10-06T02:49:31.224Z"
-    },
     "kantai-collection-urakaze": {
       "title": "浦風",
       "url": "https://dic.nicovideo.jp/a/%E6%B5%A6%E9%A2%A8",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:49:36.150Z"
-    },
-    "arknights-specter": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:49:41.067Z"
-    },
-    "fire-emblem-fates-camilla": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:49:46.117Z"
     },
     "umamusume-meisho-doto": {
       "title": "メイショウドトウ(ウマ娘)",
@@ -5144,183 +4057,6 @@
       "url": "https://dic.nicovideo.jp/a/%E7%BE%BD%E5%B7%9D%E7%BF%BC",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:50:01.541Z"
-    },
-    "blue-archive-himari": {
-      "title": null,
-      "reason": "記事「明星ヒマリ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "明星ヒマリ",
-      "checkedAt": "2026-10-06T02:50:06.337Z"
-    },
-    "pokemon-heartgold-and-soulsilver-lyra": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:50:11.153Z"
-    },
-    "danganronpa-monokuma": {
-      "title": null,
-      "reason": "記事「モノクマ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "モノクマ",
-      "checkedAt": "2026-10-06T02:50:16.490Z"
-    },
-    "shine-post-seibu-rio": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:50:21.152Z"
-    },
-    "shine-post-nabatame-haru": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:50:26.137Z"
-    },
-    "shine-post-tamaki-kyouka": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:50:31.073Z"
-    },
-    "shine-post-totsuka-nanami": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:50:36.107Z"
-    },
-    "shine-post-agarie-nagi": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:50:41.133Z"
-    },
-    "shine-post-hirose-miina": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:50:46.160Z"
-    },
-    "shine-post-natalya": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:50:51.108Z"
-    },
-    "shine-post-komurasaki-momoka": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:50:56.176Z"
-    },
-    "shine-post-karabayashi-itoha": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:51:01.170Z"
-    },
-    "shine-post-kurogane-ren": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:51:06.193Z"
-    },
-    "shine-post-takamura-hibiki": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:51:11.154Z"
-    },
-    "shine-post-hiumi-nanoka": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:51:16.178Z"
-    },
-    "shine-post-kazamatsuri-asahi": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:51:21.193Z"
-    },
-    "shine-post-hinomoto-hinatsu": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:51:26.223Z"
-    },
-    "shine-post-nashinoki-remi": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:51:31.205Z"
-    },
-    "shine-post-kotomori-airi": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:51:36.217Z"
-    },
-    "shine-post-yamada-kanon": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:51:41.191Z"
-    },
-    "shine-post-karabayashi-aoba": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:51:46.196Z"
-    },
-    "shine-post-hotaru": {
-      "title": null,
-      "reason": "記事「螢」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "螢",
-      "checkedAt": "2026-10-06T02:51:56.409Z"
-    },
-    "shine-post-minamizaki-minato": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:52:01.228Z"
-    },
-    "shine-post-yakushiin-asuka": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:52:06.228Z"
-    },
-    "shine-post-izumino-koyume": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:52:11.247Z"
-    },
-    "shine-post-tsukimi-pie-mochiko": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:52:16.269Z"
-    },
-    "onii-chan-wa-oshimai-oka-asahi": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:52:21.286Z"
-    },
-    "onii-chan-wa-oshimai-senkawa-minato": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:52:26.276Z"
-    },
-    "onii-chan-wa-oshimai-sakurada-yuuta": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:52:31.255Z"
     },
     "gochuumon-wa-usagi-desu-ka-tippy": {
       "title": "ティッピー",
@@ -5346,12 +4082,6 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:52:51.434Z"
     },
-    "gochuumon-wa-usagi-desu-ka-wild-geese": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:52:56.344Z"
-    },
     "gochuumon-wa-usagi-desu-ka-fuiba-fuyu": {
       "title": "風衣葉冬優",
       "url": "https://dic.nicovideo.jp/a/%E9%A2%A8%E8%A1%A3%E8%91%89%E5%86%AC%E5%84%AA",
@@ -5363,12 +4093,6 @@
       "url": "https://dic.nicovideo.jp/a/%E9%9D%92%E5%B1%B1%E3%83%96%E3%83%AB%E3%83%BC%E3%83%9E%E3%82%A6%E3%83%B3%E3%83%86%E3%83%B3",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:53:06.826Z"
-    },
-    "gochuumon-wa-usagi-desu-ka-karede-yura": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T02:53:11.350Z"
     },
     "gochuumon-wa-usagi-desu-ka-phantom-thief-lapin": {
       "title": "怪盗ラパン",

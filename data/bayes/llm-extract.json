@@ -25928,69 +25928,6 @@
       },
       "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
-    "touhou-hanrei": {
-      "article": "半霊",
-      "axes": {
-        "personality": {
-          "value": "該当なし",
-          "verified": false,
-          "confidence": "none"
-        },
-        "mood": {
-          "value": "該当なし",
-          "verified": false,
-          "confidence": "none"
-        },
-        "species": {
-          "value": "該当なし",
-          "verified": false,
-          "confidence": "none"
-        },
-        "combat": {
-          "value": "戦う",
-          "verified": true,
-          "confidence": "high"
-        },
-        "distance": {
-          "value": "該当なし",
-          "verified": false,
-          "confidence": "none"
-        },
-        "affiliationKind": {
-          "value": "該当なし",
-          "verified": false,
-          "confidence": "none"
-        },
-        "ageFeel": {
-          "value": "該当なし",
-          "verified": false,
-          "confidence": "none"
-        },
-        "build": {
-          "value": "該当なし",
-          "verified": false,
-          "confidence": "none"
-        },
-        "stature": {
-          "value": "小柄",
-          "verified": true,
-          "confidence": "high"
-        },
-        "roles": {
-          "values": [
-            "主従"
-          ],
-          "verified": true,
-          "confidence": "high"
-        },
-        "occupation": {
-          "values": [],
-          "verified": false,
-          "confidence": "none"
-        }
-      },
-      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
-    },
     "umamusume-manhattancafe": {
       "article": "マンハッタンカフェ(ウマ娘)",
       "axes": {
@@ -28820,67 +28757,6 @@
           ],
           "verified": true,
           "confidence": "high"
-        }
-      },
-      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
-    },
-    "kohaace-sakurasaber": {
-      "article": "桜セイバー",
-      "axes": {
-        "personality": {
-          "value": "該当なし",
-          "verified": false,
-          "confidence": "none"
-        },
-        "mood": {
-          "value": "該当なし",
-          "verified": false,
-          "confidence": "none"
-        },
-        "species": {
-          "value": "該当なし",
-          "verified": false,
-          "confidence": "none"
-        },
-        "combat": {
-          "value": "戦う",
-          "verified": true,
-          "confidence": "high"
-        },
-        "distance": {
-          "value": "該当なし",
-          "verified": false,
-          "confidence": "none"
-        },
-        "affiliationKind": {
-          "value": "非人間・その他",
-          "verified": true,
-          "confidence": "low"
-        },
-        "ageFeel": {
-          "value": "該当なし",
-          "verified": false,
-          "confidence": "none"
-        },
-        "build": {
-          "value": "該当なし",
-          "verified": false,
-          "confidence": "none"
-        },
-        "stature": {
-          "value": "標準",
-          "verified": true,
-          "confidence": "high"
-        },
-        "roles": {
-          "values": [],
-          "verified": false,
-          "confidence": "none"
-        },
-        "occupation": {
-          "values": [],
-          "verified": false,
-          "confidence": "none"
         }
       },
       "model": "huihui_ai/gemma-4-abliterated-26b-qat"
