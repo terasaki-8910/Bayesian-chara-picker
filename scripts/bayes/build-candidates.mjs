@@ -106,6 +106,7 @@ export function isExcludedCandidate(tagName) {
 }
 /** Danbooru API の /tags.json 1リクエストで取れる最大件数。 */
 const TOP_TAGS_LIMIT = 1000;
+const TOP_TAGS_PAGES = 3;
 /** 最終候補の目標件数（脱落込みで+312狙い、SPEC§6.1の供給先行方針）。 */
 const TARGET_CANDIDATE_COUNT = 512;
 /** fav_count中央値を測る対象（傾向スコア上位、コスト管理のため候補全体には広げない）。 */
@@ -240,7 +241,10 @@ async function main() {
   console.log(`既存タグ ${existingTags.size} 件を除外対象として読み込みました。`);
 
   console.log('Danbooruキャラタグ人気ランキングを取得中...');
-  const topTags = await listTopCharacterTags(danbooruFetch, { limit: TOP_TAGS_LIMIT });
+  const topTags = [];
+  for (let page = 1; page <= TOP_TAGS_PAGES; page += 1) {
+    topTags.push(...(await listTopCharacterTags(danbooruFetch, { page, limit: TOP_TAGS_LIMIT })));
+  }
   const deduped = topTags.filter((t) => !existingTags.has(t.name) && !isExcludedCandidate(t.name));
   const excludedCount = topTags.filter((t) => !existingTags.has(t.name) && isExcludedCandidate(t.name)).length;
   console.log(
