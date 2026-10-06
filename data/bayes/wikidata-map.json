@@ -5542,13 +5542,6 @@
       "seriesMatch": true,
       "checkedAt": "2026-10-06T11:24:10.681Z"
     },
-    "steinsgate0-hiyajou-maho": {
-      "qid": "Q28555148",
-      "label": "Maho Hiyajo",
-      "source": "search-verified",
-      "seriesMatch": true,
-      "checkedAt": "2026-10-06T11:24:15.131Z"
-    },
     "mahoushoujoniakogarete-magia-baiser": {
       "qid": "Q141633324",
       "label": "Hiiragi Utena",
@@ -5968,14 +5961,6 @@
       "seriesMatch": true,
       "checkedAt": "2026-10-06T11:28:14.674Z"
     },
-    "xmen-magik": {
-      "qid": null,
-      "reason": "シリーズ確認不能のため除外(候補qid=Q2651308, Magik)。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateQid": "Q2651308",
-      "candidateLabel": "Magik",
-      "checkedAt": "2026-10-06T11:28:24.017Z"
-    },
     "arknights-aurora": {
       "qid": null,
       "reason": "シリーズ確認不能のため除外(候補qid=Q22595, Aurora)。要レビュー→確認できればoverridesへ。",
@@ -6106,12 +6091,6 @@
       "seriesMatch": true,
       "checkedAt": "2026-10-06T11:29:55.677Z"
     },
-    "nanashiinc-shishio-chris": {
-      "qid": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T11:29:57.596Z"
-    },
     "umamusume-cesario": {
       "qid": "Q138001919",
       "label": "Cesario",
@@ -6235,13 +6214,6 @@
       "seriesMatch": true,
       "checkedAt": "2026-10-06T11:31:05.847Z"
     },
-    "majosaiban-hasumi-leia": {
-      "qid": "Q135616937",
-      "label": "Leia Hasumi",
-      "source": "search-verified",
-      "seriesMatch": true,
-      "checkedAt": "2026-10-06T11:31:10.071Z"
-    },
     "pokemonhorizons-dot": {
       "qid": null,
       "reason": "シリーズ確認不能のため除外(候補qid=Q117210216, Dot)。要レビュー→確認できればoverridesへ。",
@@ -6249,12 +6221,6 @@
       "candidateQid": "Q117210216",
       "candidateLabel": "Dot",
       "checkedAt": "2026-10-06T11:31:18.939Z"
-    },
-    "pokemontheseriessunmoon-lana-s-mother": {
-      "qid": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T11:31:19.617Z"
     },
     "tokyoghoul-kirishima-touka": {
       "qid": "Q123301532",
@@ -6461,14 +6427,6 @@
       "source": "not-found",
       "checkedAt": "2026-10-06T11:33:18.362Z"
     },
-    "megamanzero-fairy-leviathan": {
-      "qid": null,
-      "reason": "シリーズ確認不能のため除外(候補qid=Q192677, Leviathan)。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateQid": "Q192677",
-      "candidateLabel": "Leviathan",
-      "checkedAt": "2026-10-06T11:33:22.436Z"
-    },
     "finalfantasyv-faris-scherwiz": {
       "qid": null,
       "reason": "not-found",
@@ -6556,14 +6514,6 @@
       "candidateQid": "Q124130254",
       "candidateLabel": "Hiodoshi Ao",
       "checkedAt": "2026-10-06T11:34:16.519Z"
-    },
-    "reverse1999-regulus": {
-      "qid": null,
-      "reason": "シリーズ確認不能のため除外(候補qid=Q76493786, Regulus)。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateQid": "Q76493786",
-      "candidateLabel": "Regulus",
-      "checkedAt": "2026-10-06T11:34:23.613Z"
     },
     "umamusume-daiichi-ruby": {
       "qid": "Q113591559",
@@ -6734,12 +6684,6 @@
       "seriesMatch": true,
       "checkedAt": "2026-10-06T11:36:05.622Z"
     },
-    "genshin-anastasya-feodorovna-snezhnaya": {
-      "qid": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T11:36:08.094Z"
-    },
     "hibikeeuphonium-nakagawa-natsuki": {
       "qid": null,
       "reason": "not-found",
@@ -6872,14 +6816,6 @@
       "seriesMatch": true,
       "checkedAt": "2026-10-06T11:37:29.038Z"
     },
-    "nijisanjien-millie-parfait": {
-      "qid": null,
-      "reason": "シリーズ確認不能のため除外(候補qid=Q111986527, Millie Parfait)。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateQid": "Q111986527",
-      "candidateLabel": "Millie Parfait",
-      "checkedAt": "2026-10-06T11:37:32.394Z"
-    },
     "skullgirls-filia": {
       "qid": null,
       "reason": "シリーズ確認不能のため除外(候補qid=Q28949145, Philia)。要レビュー→確認できればoverridesへ。",
@@ -6916,13 +6852,6 @@
       "source": "search-verified",
       "seriesMatch": true,
       "checkedAt": "2026-10-06T11:37:59.006Z"
-    },
-    "majosaiban-housho-margo": {
-      "qid": "Q135616940",
-      "label": "Māgo Hōshō",
-      "source": "search-verified",
-      "seriesMatch": true,
-      "checkedAt": "2026-10-06T11:38:03.034Z"
     },
     "arknights-warfarin": {
       "qid": null,
@@ -7216,6 +7145,85 @@
       "candidateQid": "Q107619707",
       "candidateLabel": "Lain Paterson",
       "checkedAt": "2026-10-06T11:41:07.608Z"
+    },
+    "arknights-w": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q743, tungsten)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q743",
+      "candidateLabel": "tungsten",
+      "checkedAt": "2026-10-06T14:57:00.876Z"
+    },
+    "brs-black-rock-shooter": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q1151460, Black Rock Shooter)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q1151460",
+      "candidateLabel": "Black Rock Shooter",
+      "checkedAt": "2026-10-06T14:57:07.386Z"
+    },
+    "brs-dead-master": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-06T14:57:08.091Z"
+    },
+    "nanoha-hayate": {
+      "qid": "Q865145",
+      "label": "Hayate Yagami",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-06T14:57:10.973Z"
+    },
+    "dmc-lady": {
+      "qid": "Q55950725",
+      "label": "Lady",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-06T14:57:21.499Z"
+    },
+    "kimetsu-kanao": {
+      "qid": "Q123515825",
+      "label": "Kanao Tsuyuri",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-06T14:57:26.804Z"
+    },
+    "conan-haibara-ai": {
+      "qid": "Q1148698",
+      "label": "Ai Haibara",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-06T14:57:31.472Z"
+    },
+    "fgo-suzuka-gozen": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q11649495, Suzuka Gozen)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q11649495",
+      "candidateLabel": "Suzuka Gozen",
+      "checkedAt": "2026-10-06T14:57:34.927Z"
+    },
+    "tekken-lili": {
+      "qid": "Q82195",
+      "label": "Lili",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-06T14:57:39.010Z"
+    },
+    "nadesico-hoshino-ruri": {
+      "qid": "Q3942833",
+      "label": "Ruri Hoshino",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-06T14:57:43.639Z"
+    },
+    "doa-ayane": {
+      "qid": "Q1076313",
+      "label": "Ayane",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-06T14:57:48.263Z"
     }
   }
 }

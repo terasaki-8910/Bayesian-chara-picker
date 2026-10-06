@@ -3048,13 +3048,6 @@
         "人間"
       ]
     },
-    "steinsgate0-hiyajou-maho": {
-      "genderExpression": "女性",
-      "eyeColor": "green",
-      "species": [
-        "人間"
-      ]
-    },
     "mahoushoujoniakogarete-magia-baiser": {
       "genderExpression": "女性",
       "species": [
@@ -3225,7 +3218,6 @@
     "bakemonogatari-araragi-tsukihi": {
       "genderExpression": "女性"
     },
-    "xmen-magik": {},
     "arknights-aurora": {},
     "fgo-van-gogh": {},
     "hsr-yunli": {
@@ -3293,7 +3285,6 @@
     "startwinkleprecure-hagoromo-lala": {
       "genderExpression": "女性"
     },
-    "nanashiinc-shishio-chris": {},
     "umamusume-cesario": {
       "genderExpression": "女性",
       "hairColor": "青",
@@ -3348,15 +3339,7 @@
         "人間"
       ]
     },
-    "majosaiban-hasumi-leia": {
-      "genderExpression": "女性",
-      "stature": "長身",
-      "species": [
-        "人間"
-      ]
-    },
     "pokemonhorizons-dot": {},
-    "pokemontheseriessunmoon-lana-s-mother": {},
     "tokyoghoul-kirishima-touka": {
       "genderExpression": "女性",
       "hairColor": "青",
@@ -3463,7 +3446,6 @@
       "stature": "小柄"
     },
     "symphogear-kohinata-miku": {},
-    "megamanzero-fairy-leviathan": {},
     "finalfantasyv-faris-scherwiz": {},
     "digimon-yagami-hikari": {
       "genderExpression": "女性",
@@ -3487,7 +3469,6 @@
     "honkai-rozaliya-olenyeva": {},
     "danganronpa-pekoyama-peko": {},
     "hololivedevis-hiodoshi-ao": {},
-    "reverse1999-regulus": {},
     "umamusume-daiichi-ruby": {
       "genderExpression": "女性",
       "hairColor": "茶",
@@ -3550,7 +3531,6 @@
         "人間"
       ]
     },
-    "genshin-anastasya-feodorovna-snezhnaya": {},
     "hibikeeuphonium-nakagawa-natsuki": {},
     "dragonquestiv-manya": {},
     "nijisanji-hyakumantenbara-salome": {},
@@ -3602,7 +3582,6 @@
       "genderExpression": "女性",
       "hairColor": "金"
     },
-    "nijisanjien-millie-parfait": {},
     "skullgirls-filia": {},
     "shugochara-hinamori-amu": {
       "genderExpression": "女性",
@@ -3622,13 +3601,6 @@
     },
     "freshprecure-cure-peach": {
       "genderExpression": "女性",
-      "species": [
-        "人間"
-      ]
-    },
-    "majosaiban-housho-margo": {
-      "genderExpression": "女性",
-      "stature": "標準",
       "species": [
         "人間"
       ]
@@ -3770,6 +3742,59 @@
         "人間"
       ]
     },
-    "nijisanji-lain-paterson": {}
+    "nijisanji-lain-paterson": {},
+    "arknights-w": {},
+    "brs-black-rock-shooter": {},
+    "brs-dead-master": {},
+    "nanoha-hayate": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "blue",
+      "species": [
+        "人間"
+      ]
+    },
+    "dmc-lady": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "kimetsu-kanao": {
+      "genderExpression": "女性",
+      "hairColor": "黒",
+      "eyeColor": "purple",
+      "species": [
+        "人間"
+      ]
+    },
+    "conan-haibara-ai": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "blue",
+      "species": [
+        "人間"
+      ]
+    },
+    "fgo-suzuka-gozen": {},
+    "tekken-lili": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "nadesico-hoshino-ruri": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "doa-ayane": {
+      "genderExpression": "女性",
+      "eyeColor": "red",
+      "species": [
+        "人間"
+      ]
+    }
   }
 }

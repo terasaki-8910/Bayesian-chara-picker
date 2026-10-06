@@ -7012,12 +7012,6 @@
       "source": "override",
       "checkedAt": "2026-10-06T11:23:38.567Z"
     },
-    "steinsgate0-hiyajou-maho": {
-      "tag": "hiyajou_maho",
-      "postCount": 1129,
-      "source": "override",
-      "checkedAt": "2026-10-06T11:23:38.957Z"
-    },
     "mahoushoujoniakogarete-magia-baiser": {
       "tag": "magia_baiser",
       "postCount": 1128,
@@ -7372,12 +7366,6 @@
       "source": "override",
       "checkedAt": "2026-10-06T11:24:02.833Z"
     },
-    "xmen-magik": {
-      "tag": "magik_(x-men)",
-      "postCount": 1091,
-      "source": "override",
-      "checkedAt": "2026-10-06T11:24:03.230Z"
-    },
     "arknights-aurora": {
       "tag": "aurora_(arknights)",
       "postCount": 1091,
@@ -7486,12 +7474,6 @@
       "source": "override",
       "checkedAt": "2026-10-06T11:24:10.547Z"
     },
-    "nanashiinc-shishio-chris": {
-      "tag": "shishio_chris",
-      "postCount": 1080,
-      "source": "override",
-      "checkedAt": "2026-10-06T11:24:10.938Z"
-    },
     "umamusume-cesario": {
       "tag": "cesario_(umamusume)",
       "postCount": 1077,
@@ -7594,23 +7576,11 @@
       "source": "override",
       "checkedAt": "2026-10-06T11:24:17.664Z"
     },
-    "majosaiban-hasumi-leia": {
-      "tag": "hasumi_leia",
-      "postCount": 1063,
-      "source": "override",
-      "checkedAt": "2026-10-06T11:24:18.036Z"
-    },
     "pokemonhorizons-dot": {
       "tag": "dot_(pokemon)",
       "postCount": 1063,
       "source": "override",
       "checkedAt": "2026-10-06T11:24:18.430Z"
-    },
-    "pokemontheseriessunmoon-lana-s-mother": {
-      "tag": "lana's_mother_(pokemon)",
-      "postCount": 1063,
-      "source": "override",
-      "checkedAt": "2026-10-06T11:24:18.833Z"
     },
     "tokyoghoul-kirishima-touka": {
       "tag": "kirishima_touka",
@@ -7786,12 +7756,6 @@
       "source": "override",
       "checkedAt": "2026-10-06T11:24:30.468Z"
     },
-    "megamanzero-fairy-leviathan": {
-      "tag": "fairy_leviathan_(mega_man)",
-      "postCount": 1040,
-      "source": "override",
-      "checkedAt": "2026-10-06T11:24:30.848Z"
-    },
     "finalfantasyv-faris-scherwiz": {
       "tag": "faris_scherwiz",
       "postCount": 1039,
@@ -7863,12 +7827,6 @@
       "postCount": 1029,
       "source": "override",
       "checkedAt": "2026-10-06T11:24:36.189Z"
-    },
-    "reverse1999-regulus": {
-      "tag": "regulus_(reverse:1999)",
-      "postCount": 1027,
-      "source": "override",
-      "checkedAt": "2026-10-06T11:24:36.576Z"
     },
     "umamusume-daiichi-ruby": {
       "tag": "daiichi_ruby_(umamusume)",
@@ -8008,12 +7966,6 @@
       "source": "override",
       "checkedAt": "2026-10-06T11:24:45.603Z"
     },
-    "genshin-anastasya-feodorovna-snezhnaya": {
-      "tag": "anastasya_feodorovna_snezhnaya",
-      "postCount": 1009,
-      "source": "override",
-      "checkedAt": "2026-10-06T11:24:45.975Z"
-    },
     "hibikeeuphonium-nakagawa-natsuki": {
       "tag": "nakagawa_natsuki",
       "postCount": 1008,
@@ -8122,12 +8074,6 @@
       "source": "override",
       "checkedAt": "2026-10-06T11:24:53.128Z"
     },
-    "nijisanjien-millie-parfait": {
-      "tag": "millie_parfait",
-      "postCount": 1000,
-      "source": "override",
-      "checkedAt": "2026-10-06T11:24:53.511Z"
-    },
     "skullgirls-filia": {
       "tag": "filia_(skullgirls)",
       "postCount": 999,
@@ -8157,12 +8103,6 @@
       "postCount": 997,
       "source": "override",
       "checkedAt": "2026-10-06T11:24:55.501Z"
-    },
-    "majosaiban-housho-margo": {
-      "tag": "housho_margo",
-      "postCount": 997,
-      "source": "override",
-      "checkedAt": "2026-10-06T11:24:55.872Z"
     },
     "arknights-warfarin": {
       "tag": "warfarin_(arknights)",
@@ -8403,6 +8343,72 @@
       "postCount": 972,
       "source": "override",
       "checkedAt": "2026-10-06T11:25:12.043Z"
+    },
+    "arknights-w": {
+      "tag": "w_(arknights)",
+      "postCount": 4863,
+      "source": "override",
+      "checkedAt": "2026-10-06T14:57:00.534Z"
+    },
+    "brs-black-rock-shooter": {
+      "tag": "black_rock_shooter_(character)",
+      "postCount": 4501,
+      "source": "override",
+      "checkedAt": "2026-10-06T14:57:06.064Z"
+    },
+    "brs-dead-master": {
+      "tag": "dead_master",
+      "postCount": 1005,
+      "source": "override",
+      "checkedAt": "2026-10-06T14:57:12.826Z"
+    },
+    "nanoha-hayate": {
+      "tag": "yagami_hayate",
+      "postCount": 3442,
+      "source": "override",
+      "checkedAt": "2026-10-06T14:57:21.141Z"
+    },
+    "dmc-lady": {
+      "tag": "lady_(devil_may_cry)",
+      "postCount": 1112,
+      "source": "override",
+      "checkedAt": "2026-10-06T14:57:26.770Z"
+    },
+    "kimetsu-kanao": {
+      "tag": "tsuyuri_kanao",
+      "postCount": 1112,
+      "source": "override",
+      "checkedAt": "2026-10-06T14:57:32.805Z"
+    },
+    "conan-haibara-ai": {
+      "tag": "haibara_ai",
+      "postCount": 1097,
+      "source": "override",
+      "checkedAt": "2026-10-06T14:57:40.833Z"
+    },
+    "fgo-suzuka-gozen": {
+      "tag": "suzuka_gozen_(fate)",
+      "postCount": 1096,
+      "source": "override",
+      "checkedAt": "2026-10-06T14:57:49.671Z"
+    },
+    "tekken-lili": {
+      "tag": "lili_(tekken)",
+      "postCount": 1060,
+      "source": "override",
+      "checkedAt": "2026-10-06T14:57:57.073Z"
+    },
+    "nadesico-hoshino-ruri": {
+      "tag": "hoshino_ruri",
+      "postCount": 1020,
+      "source": "override",
+      "checkedAt": "2026-10-06T14:58:07.134Z"
+    },
+    "doa-ayane": {
+      "tag": "ayane_(doa)",
+      "postCount": 975,
+      "source": "override",
+      "checkedAt": "2026-10-06T14:58:13.802Z"
     }
   }
 }
