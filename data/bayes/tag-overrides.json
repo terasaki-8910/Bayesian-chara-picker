@@ -2831,8 +2831,8 @@
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
     "fgo-saber-alter": {
-      "tag": "saber_alter_(ver._shinjuku_1999)",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+      "tag": "saber_alter",
+      "reason": "2026-10-06 Opus確認: 候補生成が衣装版タグ saber_alter_(ver._shinjuku_1999)(1095件)を拾ったため、本来のタグ saber_alter(7305件、category 4)に差し替える"
     },
     "undertale-toriel": {
       "tag": "toriel",
