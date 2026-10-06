@@ -6530,14 +6530,6 @@
       "candidateLabel": "Verditer Flycatcher",
       "checkedAt": "2026-10-06T11:33:58.926Z"
     },
-    "stellasora-female-tyrant": {
-      "qid": null,
-      "reason": "シリーズ確認不能のため除外(候補qid=Q4352080, Tyrant)。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateQid": "Q4352080",
-      "candidateLabel": "Tyrant",
-      "checkedAt": "2026-10-06T11:34:08.867Z"
-    },
     "imascg-sato-shin": {
       "qid": "Q139331695",
       "label": "Shin Satō",
