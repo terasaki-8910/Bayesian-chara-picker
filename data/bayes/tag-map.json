@@ -5464,18 +5464,6 @@
       "source": "override",
       "checkedAt": "2026-10-06T06:57:21.712Z"
     },
-    "touhou-tojiko": {
-      "tag": "soga_no_tojiko",
-      "postCount": 7233,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:57:22.088Z"
-    },
-    "touhou-yamame": {
-      "tag": "kurodani_yamame",
-      "postCount": 7142,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:57:22.436Z"
-    },
     "vocaloid-meiko": {
       "tag": "meiko_(vocaloid)",
       "postCount": 7064,
@@ -5518,12 +5506,6 @@
       "source": "override",
       "checkedAt": "2026-10-06T06:57:25.008Z"
     },
-    "touhou-sekibanki": {
-      "tag": "sekibanki",
-      "postCount": 6819,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:57:25.361Z"
-    },
     "girlsfrontline-hk416": {
       "tag": "hk416_(girls'_frontline)",
       "postCount": 6787,
@@ -5542,12 +5524,6 @@
       "source": "override",
       "checkedAt": "2026-10-06T06:57:26.483Z"
     },
-    "touhou-seija": {
-      "tag": "kijin_seija",
-      "postCount": 6769,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:57:26.859Z"
-    },
     "kancolle-hoppou": {
       "tag": "northern_ocean_princess",
       "postCount": 6764,
@@ -5559,12 +5535,6 @@
       "postCount": 6656,
       "source": "override",
       "checkedAt": "2026-10-06T06:57:27.565Z"
-    },
-    "touhou-minoriko": {
-      "tag": "aki_minoriko",
-      "postCount": 6646,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:57:27.929Z"
     },
     "arknights-kaltsit": {
       "tag": "kal'tsit_(arknights)",
@@ -5589,12 +5559,6 @@
       "postCount": 6475,
       "source": "override",
       "checkedAt": "2026-10-06T06:57:29.401Z"
-    },
-    "touhou-akyuu": {
-      "tag": "hieda_no_akyuu",
-      "postCount": 6457,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:57:29.748Z"
     },
     "gup-erika": {
       "tag": "itsumi_erika",
@@ -5626,18 +5590,6 @@
       "source": "override",
       "checkedAt": "2026-10-06T06:57:31.573Z"
     },
-    "touhou-shinmyoumaru": {
-      "tag": "sukuna_shinmyoumaru",
-      "postCount": 5930,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:57:31.914Z"
-    },
-    "touhou-hecatia": {
-      "tag": "hecatia_lapislazuli",
-      "postCount": 5930,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:57:32.275Z"
-    },
     "kon-tsumugi": {
       "tag": "kotobuki_tsumugi",
       "postCount": 5923,
@@ -5667,18 +5619,6 @@
       "postCount": 5829,
       "source": "override",
       "checkedAt": "2026-10-06T06:57:34.202Z"
-    },
-    "touhou-mamizou": {
-      "tag": "futatsuiwa_mamizou",
-      "postCount": 5823,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:57:34.563Z"
-    },
-    "touhou-letty": {
-      "tag": "letty_whiterock",
-      "postCount": 5781,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:57:34.941Z"
     },
     "kancolle-tatsuta": {
       "tag": "tatsuta_(kancolle)",
@@ -5842,23 +5782,11 @@
       "source": "override",
       "checkedAt": "2026-10-06T06:57:45.075Z"
     },
-    "touhou-wakasagihime": {
-      "tag": "wakasagihime",
-      "postCount": 5181,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:57:45.430Z"
-    },
     "hololiveen-bijou": {
       "tag": "koseki_bijou",
       "postCount": 5181,
       "source": "override",
       "checkedAt": "2026-10-06T06:57:45.821Z"
-    },
-    "touhou-lilywhite": {
-      "tag": "lily_white",
-      "postCount": 5172,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:57:46.173Z"
     },
     "kancolle-yamashiro": {
       "tag": "yamashiro_(kancolle)",
@@ -6004,12 +5932,6 @@
       "source": "override",
       "checkedAt": "2026-10-06T06:57:55.187Z"
     },
-    "touhou-doremy": {
-      "tag": "doremy_sweet",
-      "postCount": 4529,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:57:55.569Z"
-    },
     "spiceandwolf-holo": {
       "tag": "holo",
       "postCount": 4522,
@@ -6069,24 +5991,6 @@
       "postCount": 4320,
       "source": "override",
       "checkedAt": "2026-10-06T06:58:01.495Z"
-    },
-    "touhou-medicine": {
-      "tag": "medicine_melancholy",
-      "postCount": 4320,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:58:01.865Z"
-    },
-    "touhou-kosuzu": {
-      "tag": "motoori_kosuzu",
-      "postCount": 4310,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:58:02.239Z"
-    },
-    "touhou-sumireko": {
-      "tag": "usami_sumireko",
-      "postCount": 4297,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:58:02.644Z"
     },
     "umamusume-chevalgrand": {
       "tag": "cheval_grand_(umamusume)",
@@ -6159,18 +6063,6 @@
       "postCount": 4136,
       "source": "override",
       "checkedAt": "2026-10-06T06:58:07.326Z"
-    },
-    "touhou-kisume": {
-      "tag": "kisume",
-      "postCount": 4136,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:58:07.710Z"
-    },
-    "touhou-star-sapphire": {
-      "tag": "star_sapphire",
-      "postCount": 4129,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:58:08.072Z"
     },
     "umamusume-gentildonna": {
       "tag": "gentildonna_(umamusume)",
@@ -6262,23 +6154,11 @@
       "source": "override",
       "checkedAt": "2026-10-06T06:58:13.745Z"
     },
-    "touhou-lunasa": {
-      "tag": "lunasa_prismriver",
-      "postCount": 3925,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:58:14.239Z"
-    },
     "kancolle-murasame": {
       "tag": "murasame_(kancolle)",
       "postCount": 3921,
       "source": "override",
       "checkedAt": "2026-10-06T06:58:14.619Z"
-    },
-    "touhou-okina": {
-      "tag": "matara_okina",
-      "postCount": 3915,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:58:14.985Z"
     },
     "genshin-yoimiya": {
       "tag": "yoimiya_(genshin_impact)",
@@ -6309,12 +6189,6 @@
       "postCount": 3854,
       "source": "override",
       "checkedAt": "2026-10-06T06:58:16.822Z"
-    },
-    "touhou-kudamaki-tsukasa": {
-      "tag": "kudamaki_tsukasa",
-      "postCount": 3840,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:58:17.176Z"
     },
     "persona-4-shirogane-naoto": {
       "tag": "shirogane_naoto",
@@ -6550,12 +6424,6 @@
       "source": "override",
       "checkedAt": "2026-10-06T06:58:32.016Z"
     },
-    "touhou-kicchou-yachie": {
-      "tag": "kicchou_yachie",
-      "postCount": 3529,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:58:32.386Z"
-    },
     "idolmaster-miura-azusa": {
       "tag": "miura_azusa",
       "postCount": 3522,
@@ -6646,23 +6514,11 @@
       "source": "override",
       "checkedAt": "2026-10-06T06:58:38.249Z"
     },
-    "kancolle-leberechtmaass": {
-      "tag": "z1_leberecht_maass_(kancolle)",
-      "postCount": 3392,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:58:38.612Z"
-    },
     "umamusume-agnesdigital": {
       "tag": "agnes_digital_(umamusume)",
       "postCount": 3392,
       "source": "override",
       "checkedAt": "2026-10-06T06:58:39.034Z"
-    },
-    "kancolle-atlanta": {
-      "tag": "atlanta_(kancolle)",
-      "postCount": 3384,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:58:39.409Z"
     },
     "panty-stocking-with-garterbelt-panty": {
       "tag": "panty_(psg)",
@@ -6712,12 +6568,6 @@
       "source": "override",
       "checkedAt": "2026-10-06T06:58:42.338Z"
     },
-    "kantai-collection-tokitsukaze": {
-      "tag": "tokitsukaze_(kancolle)",
-      "postCount": 3327,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:58:42.678Z"
-    },
     "darkstalkers-lilith": {
       "tag": "lilith_(darkstalkers)",
       "postCount": 3322,
@@ -6760,12 +6610,6 @@
       "source": "override",
       "checkedAt": "2026-10-06T06:58:45.469Z"
     },
-    "kancolle-maxschultz": {
-      "tag": "z3_max_schultz_(kancolle)",
-      "postCount": 3286,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:58:45.955Z"
-    },
     "sunshine-kanan": {
       "tag": "matsuura_kanan",
       "postCount": 3280,
@@ -6796,12 +6640,6 @@
       "source": "override",
       "checkedAt": "2026-10-06T06:58:47.779Z"
     },
-    "kancolle-warspite": {
-      "tag": "warspite_(kancolle)",
-      "postCount": 3214,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:58:48.123Z"
-    },
     "girlsfrontline-wa2000": {
       "tag": "wa2000_(girls'_frontline)",
       "postCount": 3205,
@@ -6814,12 +6652,6 @@
       "source": "override",
       "checkedAt": "2026-10-06T06:58:48.841Z"
     },
-    "kancolle-i401": {
-      "tag": "i-401_(kancolle)",
-      "postCount": 3195,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:58:49.252Z"
-    },
     "gurrenlagann-nia": {
       "tag": "nia_teppelin",
       "postCount": 3194,
@@ -6831,12 +6663,6 @@
       "postCount": 3190,
       "source": "override",
       "checkedAt": "2026-10-06T06:58:50.003Z"
-    },
-    "kancolle-aoba": {
-      "tag": "aoba_(kancolle)",
-      "postCount": 3190,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:58:50.371Z"
     },
     "umamusume-airgroove": {
       "tag": "air_groove_(umamusume)",
@@ -6861,18 +6687,6 @@
       "postCount": 3164,
       "source": "override",
       "checkedAt": "2026-10-06T06:58:51.822Z"
-    },
-    "kantai-collection-kumano": {
-      "tag": "kumano_(kancolle)",
-      "postCount": 3161,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:58:52.181Z"
-    },
-    "kantai-collection-kuma": {
-      "tag": "kuma_(kancolle)",
-      "postCount": 3157,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:58:52.524Z"
     },
     "love-live-hasu-no-sora-jogakuin-school-idol-club-ceras-yanagida-lilienfeld": {
       "tag": "ceras_yanagida_lilienfeld",
@@ -6928,12 +6742,6 @@
       "source": "override",
       "checkedAt": "2026-10-06T06:58:56.069Z"
     },
-    "kantai-collection-ashigara": {
-      "tag": "ashigara_(kancolle)",
-      "postCount": 3106,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:58:56.430Z"
-    },
     "zenless-zone-zero-ukinami-yuzuha": {
       "tag": "ukinami_yuzuha",
       "postCount": 3102,
@@ -6958,18 +6766,6 @@
       "source": "override",
       "checkedAt": "2026-10-06T06:58:57.865Z"
     },
-    "kantai-collection-shiratsuyu": {
-      "tag": "shiratsuyu_(kancolle)",
-      "postCount": 3072,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:58:58.213Z"
-    },
-    "kantai-collection-kagerou": {
-      "tag": "kagerou_(kancolle)",
-      "postCount": 3065,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:58:58.561Z"
-    },
     "kill-la-kill-mankanshoku-mako": {
       "tag": "mankanshoku_mako",
       "postCount": 3065,
@@ -6988,29 +6784,11 @@
       "source": "override",
       "checkedAt": "2026-10-06T06:58:59.651Z"
     },
-    "kantai-collection-uzuki": {
-      "tag": "uzuki_(kancolle)",
-      "postCount": 3048,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:59:00.000Z"
-    },
     "fate-grand-order-tomoe-gozen": {
       "tag": "tomoe_gozen_(fate)",
       "postCount": 3042,
       "source": "override",
       "checkedAt": "2026-10-06T06:59:00.370Z"
-    },
-    "kantai-collection-satsuki": {
-      "tag": "satsuki_(kancolle)",
-      "postCount": 3041,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:59:00.725Z"
-    },
-    "kantai-collection-mogami": {
-      "tag": "mogami_(kancolle)",
-      "postCount": 3037,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:59:01.103Z"
     },
     "zenless-zone-zero-alice-thymefield": {
       "tag": "alice_thymefield",
@@ -7035,12 +6813,6 @@
       "postCount": 3025,
       "source": "override",
       "checkedAt": "2026-10-06T06:59:02.551Z"
-    },
-    "kantai-collection-urakaze": {
-      "tag": "urakaze_(kancolle)",
-      "postCount": 3023,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:59:02.911Z"
     },
     "arknights-specter": {
       "tag": "specter_(arknights)",
@@ -7084,143 +6856,17 @@
       "source": "override",
       "checkedAt": "2026-10-06T06:59:05.464Z"
     },
-    "shine-post-seibu-rio": {
-      "tag": "seibu_rio",
-      "postCount": 108,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:59:05.833Z"
-    },
-    "shine-post-nabatame-haru": {
-      "tag": "nabatame_haru",
-      "postCount": 107,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:59:06.174Z"
-    },
-    "shine-post-tamaki-kyouka": {
-      "tag": "tamaki_kyouka",
-      "postCount": 84,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:59:06.544Z"
-    },
-    "shine-post-totsuka-nanami": {
-      "tag": "totsuka_nanami",
-      "postCount": 68,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:59:07.039Z"
-    },
-    "shine-post-agarie-nagi": {
-      "tag": "agarie_nagi",
-      "postCount": 66,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:59:07.427Z"
-    },
-    "shine-post-hirose-miina": {
-      "tag": "hirose_miina",
-      "postCount": 49,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:59:07.918Z"
-    },
     "shine-post-natalya": {
       "tag": "natalya_(shine_post)",
       "postCount": 41,
       "source": "override",
       "checkedAt": "2026-10-06T06:59:08.302Z"
     },
-    "shine-post-komurasaki-momoka": {
-      "tag": "komurasaki_momoka",
-      "postCount": 46,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:59:08.676Z"
-    },
-    "shine-post-karabayashi-itoha": {
-      "tag": "karabayashi_itoha",
-      "postCount": 40,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:59:09.050Z"
-    },
-    "shine-post-kurogane-ren": {
-      "tag": "kurogane_ren",
-      "postCount": 41,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:59:09.411Z"
-    },
-    "shine-post-takamura-hibiki": {
-      "tag": "takamura_hibiki",
-      "postCount": 47,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:59:09.773Z"
-    },
-    "shine-post-hiumi-nanoka": {
-      "tag": "hiumi_nanoka",
-      "postCount": 38,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:59:10.179Z"
-    },
-    "shine-post-kazamatsuri-asahi": {
-      "tag": "kazamatsuri_asahi",
-      "postCount": 40,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:59:10.545Z"
-    },
-    "shine-post-hinomoto-hinatsu": {
-      "tag": "hinomoto_hinatsu",
-      "postCount": 36,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:59:10.928Z"
-    },
-    "shine-post-nashinoki-remi": {
-      "tag": "nashinoki_remi",
-      "postCount": 32,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:59:11.296Z"
-    },
-    "shine-post-kotomori-airi": {
-      "tag": "kotomori_airi",
-      "postCount": 33,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:59:11.674Z"
-    },
-    "shine-post-yamada-kanon": {
-      "tag": "yamada_kanon",
-      "postCount": 41,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:59:12.046Z"
-    },
-    "shine-post-karabayashi-aoba": {
-      "tag": "karabayashi_aoba",
-      "postCount": 32,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:59:12.428Z"
-    },
     "shine-post-hotaru": {
       "tag": "hotaru_(shine_post)",
       "postCount": 22,
       "source": "override",
       "checkedAt": "2026-10-06T06:59:12.790Z"
-    },
-    "shine-post-minamizaki-minato": {
-      "tag": "minamizaki_minato",
-      "postCount": 20,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:59:13.155Z"
-    },
-    "shine-post-yakushiin-asuka": {
-      "tag": "yakushiin_asuka",
-      "postCount": 22,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:59:13.488Z"
-    },
-    "shine-post-izumino-koyume": {
-      "tag": "izumino_koyume",
-      "postCount": 17,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:59:13.841Z"
-    },
-    "shine-post-tsukimi-pie-mochiko": {
-      "tag": "tsukimi_pie_mochiko",
-      "postCount": 36,
-      "source": "override",
-      "checkedAt": "2026-10-06T06:59:14.190Z"
     },
     "onii-chan-wa-oshimai-oka-asahi": {
       "tag": "oka_asahi",

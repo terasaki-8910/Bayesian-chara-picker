@@ -3038,18 +3038,6 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:22:18.911Z"
     },
-    "touhou-tojiko": {
-      "title": "蘇我屠自古",
-      "url": "https://dic.nicovideo.jp/a/%E8%98%87%E6%88%91%E5%B1%A0%E8%87%AA%E5%8F%A4",
-      "source": "search-verified",
-      "checkedAt": "2026-10-06T02:22:23.851Z"
-    },
-    "touhou-yamame": {
-      "title": "黒谷ヤマメ",
-      "url": "https://dic.nicovideo.jp/a/%E9%BB%92%E8%B0%B7%E3%83%A4%E3%83%9E%E3%83%A1",
-      "source": "search-verified",
-      "checkedAt": "2026-10-06T02:22:28.813Z"
-    },
     "tsukihime-arcueid": {
       "title": "アルクェイド",
       "url": "https://dic.nicovideo.jp/a/%E3%82%A2%E3%83%AB%E3%82%AF%E3%82%A7%E3%82%A4%E3%83%89",
@@ -3068,12 +3056,6 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:23:19.554Z"
     },
-    "touhou-sekibanki": {
-      "title": "赤蛮奇",
-      "url": "https://dic.nicovideo.jp/a/%E8%B5%A4%E8%9B%AE%E5%A5%87",
-      "source": "search-verified",
-      "checkedAt": "2026-10-06T02:23:27.582Z"
-    },
     "kancolle-ooyodo": {
       "title": "大淀",
       "url": "https://dic.nicovideo.jp/a/%E5%A4%A7%E6%B7%80",
@@ -3086,35 +3068,17 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:23:44.010Z"
     },
-    "touhou-seija": {
-      "title": "鬼人正邪",
-      "url": "https://dic.nicovideo.jp/a/%E9%AC%BC%E4%BA%BA%E6%AD%A3%E9%82%AA",
-      "source": "search-verified",
-      "checkedAt": "2026-10-06T02:23:49.015Z"
-    },
     "kancolle-hoppou": {
       "title": "北方棲姫",
       "url": "https://dic.nicovideo.jp/a/%E5%8C%97%E6%96%B9%E6%A3%B2%E5%A7%AB",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:23:54.035Z"
     },
-    "touhou-minoriko": {
-      "title": "秋穣子",
-      "url": "https://dic.nicovideo.jp/a/%E7%A7%8B%E7%A9%A3%E5%AD%90",
-      "source": "search-verified",
-      "checkedAt": "2026-10-06T02:24:04.386Z"
-    },
     "mha-mirko": {
       "title": "ミルコ",
       "url": "https://dic.nicovideo.jp/a/%E3%83%9F%E3%83%AB%E3%82%B3",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:24:18.873Z"
-    },
-    "touhou-akyuu": {
-      "title": "稗田阿求",
-      "url": "https://dic.nicovideo.jp/a/%E7%A8%97%E7%94%B0%E9%98%BF%E6%B1%82",
-      "source": "search-verified",
-      "checkedAt": "2026-10-06T02:24:29.107Z"
     },
     "vocaloid-gumi": {
       "title": "メグッポイド",
@@ -3128,35 +3092,11 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:25:09.996Z"
     },
-    "touhou-shinmyoumaru": {
-      "title": "少名針妙丸",
-      "url": "https://dic.nicovideo.jp/a/%E5%B0%91%E5%90%8D%E9%87%9D%E5%A6%99%E4%B8%B8",
-      "source": "search-verified",
-      "checkedAt": "2026-10-06T02:25:14.211Z"
-    },
-    "touhou-hecatia": {
-      "title": "ヘカーティア・ラピスラズリ",
-      "url": "https://dic.nicovideo.jp/a/%E3%83%98%E3%82%AB%E3%83%BC%E3%83%86%E3%82%A3%E3%82%A2%E3%83%BB%E3%83%A9%E3%83%94%E3%82%B9%E3%83%A9%E3%82%BA%E3%83%AA",
-      "source": "search-verified",
-      "checkedAt": "2026-10-06T02:25:19.184Z"
-    },
     "kon-tsumugi": {
       "title": "琴吹紬",
       "url": "https://dic.nicovideo.jp/a/%E7%90%B4%E5%90%B9%E7%B4%AC",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:25:24.524Z"
-    },
-    "touhou-mamizou": {
-      "title": "二ッ岩マミゾウ",
-      "url": "https://dic.nicovideo.jp/a/%E4%BA%8C%E3%83%83%E5%B2%A9%E3%83%9E%E3%83%9F%E3%82%BE%E3%82%A6",
-      "source": "search-verified",
-      "checkedAt": "2026-10-06T02:25:54.413Z"
-    },
-    "touhou-letty": {
-      "title": "レティ・ホワイトロック",
-      "url": "https://dic.nicovideo.jp/a/%E3%83%AC%E3%83%86%E3%82%A3%E3%83%BB%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AD%E3%83%83%E3%82%AF",
-      "source": "search-verified",
-      "checkedAt": "2026-10-06T02:25:59.266Z"
     },
     "kancolle-ooi": {
       "title": "大井",
@@ -3248,23 +3188,11 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:28:39.304Z"
     },
-    "touhou-wakasagihime": {
-      "title": "わかさぎ姫",
-      "url": "https://dic.nicovideo.jp/a/%E3%82%8F%E3%81%8B%E3%81%95%E3%81%8E%E5%A7%AB",
-      "source": "search-verified",
-      "checkedAt": "2026-10-06T02:28:44.462Z"
-    },
     "hololiveen-bijou": {
       "title": "古石ビジュー",
       "url": "https://dic.nicovideo.jp/a/%E5%8F%A4%E7%9F%B3%E3%83%93%E3%82%B8%E3%83%A5%E3%83%BC",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:28:49.417Z"
-    },
-    "touhou-lilywhite": {
-      "title": "リリーホワイト",
-      "url": "https://dic.nicovideo.jp/a/%E3%83%AA%E3%83%AA%E3%83%BC%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88",
-      "source": "search-verified",
-      "checkedAt": "2026-10-06T02:28:54.476Z"
     },
     "kancolle-yamashiro": {
       "title": "山城",
@@ -3344,12 +3272,6 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:31:29.616Z"
     },
-    "touhou-doremy": {
-      "title": "ドレミー・スイート",
-      "url": "https://dic.nicovideo.jp/a/%E3%83%89%E3%83%AC%E3%83%9F%E3%83%BC%E3%83%BB%E3%82%B9%E3%82%A4%E3%83%BC%E3%83%88",
-      "source": "search-verified",
-      "checkedAt": "2026-10-06T02:31:44.679Z"
-    },
     "spiceandwolf-holo": {
       "title": "ホロ",
       "url": "https://dic.nicovideo.jp/a/%E3%83%9B%E3%83%AD",
@@ -3416,24 +3338,6 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:33:39.752Z"
     },
-    "touhou-medicine": {
-      "title": "メディスン・メランコリー",
-      "url": "https://dic.nicovideo.jp/a/%E3%83%A1%E3%83%87%E3%82%A3%E3%82%B9%E3%83%B3%E3%83%BB%E3%83%A1%E3%83%A9%E3%83%B3%E3%82%B3%E3%83%AA%E3%83%BC",
-      "source": "search-verified",
-      "checkedAt": "2026-10-06T02:33:49.827Z"
-    },
-    "touhou-kosuzu": {
-      "title": "本居小鈴",
-      "url": "https://dic.nicovideo.jp/a/%E6%9C%AC%E5%B1%85%E5%B0%8F%E9%88%B4",
-      "source": "search-verified",
-      "checkedAt": "2026-10-06T02:33:54.835Z"
-    },
-    "touhou-sumireko": {
-      "title": "宇佐見菫子",
-      "url": "https://dic.nicovideo.jp/a/%E5%AE%87%E4%BD%90%E8%A6%8B%E8%8F%AB%E5%AD%90",
-      "source": "search-verified",
-      "checkedAt": "2026-10-06T02:34:00.273Z"
-    },
     "umamusume-chevalgrand": {
       "title": "シュヴァルグラン(ウマ娘)",
       "url": "https://dic.nicovideo.jp/a/%E3%82%B7%E3%83%A5%E3%83%B4%E3%82%A1%E3%83%AB%E3%82%B0%E3%83%A9%E3%83%B3(%E3%82%A6%E3%83%9E%E5%A8%98)",
@@ -3481,18 +3385,6 @@
       "url": "https://dic.nicovideo.jp/a/%E5%8F%8C%E8%91%89%E6%9D%8F",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:35:05.358Z"
-    },
-    "touhou-kisume": {
-      "title": "キスメ",
-      "url": "https://dic.nicovideo.jp/a/%E3%82%AD%E3%82%B9%E3%83%A1",
-      "source": "search-verified",
-      "checkedAt": "2026-10-06T02:35:09.965Z"
-    },
-    "touhou-star-sapphire": {
-      "title": "スターサファイア",
-      "url": "https://dic.nicovideo.jp/a/%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%B5%E3%83%95%E3%82%A1%E3%82%A4%E3%82%A2",
-      "source": "search-verified",
-      "checkedAt": "2026-10-06T02:35:15.068Z"
     },
     "umamusume-gentildonna": {
       "title": "ジェンティルドンナ(ウマ娘)",
@@ -3542,18 +3434,6 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:36:30.578Z"
     },
-    "touhou-lunasa": {
-      "title": "ルナサ・プリズムリバー",
-      "url": "https://dic.nicovideo.jp/a/%E3%83%AB%E3%83%8A%E3%82%B5%E3%83%BB%E3%83%97%E3%83%AA%E3%82%BA%E3%83%A0%E3%83%AA%E3%83%90%E3%83%BC",
-      "source": "search-verified",
-      "checkedAt": "2026-10-06T02:36:45.220Z"
-    },
-    "touhou-okina": {
-      "title": "摩多羅隠岐奈",
-      "url": "https://dic.nicovideo.jp/a/%E6%91%A9%E5%A4%9A%E7%BE%85%E9%9A%A0%E5%B2%90%E5%A5%88",
-      "source": "search-verified",
-      "checkedAt": "2026-10-06T02:36:55.184Z"
-    },
     "imascg-shiki": {
       "title": "一ノ瀬志希",
       "url": "https://dic.nicovideo.jp/a/%E4%B8%80%E3%83%8E%E7%80%AC%E5%BF%97%E5%B8%8C",
@@ -3565,12 +3445,6 @@
       "url": "https://dic.nicovideo.jp/a/%E9%82%A3%E7%8F%82",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:37:20.188Z"
-    },
-    "touhou-kudamaki-tsukasa": {
-      "title": "菅牧典",
-      "url": "https://dic.nicovideo.jp/a/%E8%8F%85%E7%89%A7%E5%85%B8",
-      "source": "search-verified",
-      "checkedAt": "2026-10-06T02:37:30.157Z"
     },
     "persona-4-shirogane-naoto": {
       "title": "白鐘直斗",
@@ -3722,12 +3596,6 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:41:10.757Z"
     },
-    "touhou-kicchou-yachie": {
-      "title": "吉弔八千慧",
-      "url": "https://dic.nicovideo.jp/a/%E5%90%89%E5%BC%94%E5%85%AB%E5%8D%83%E6%85%A7",
-      "source": "search-verified",
-      "checkedAt": "2026-10-06T02:41:15.545Z"
-    },
     "idolmaster-miura-azusa": {
       "title": "三浦あずさ",
       "url": "https://dic.nicovideo.jp/a/%E4%B8%89%E6%B5%A6%E3%81%82%E3%81%9A%E3%81%95",
@@ -3878,12 +3746,6 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:46:01.701Z"
     },
-    "kancolle-aoba": {
-      "title": "青葉",
-      "url": "https://dic.nicovideo.jp/a/%E9%9D%92%E8%91%89",
-      "source": "search-verified",
-      "checkedAt": "2026-10-06T02:46:05.965Z"
-    },
     "umamusume-airgroove": {
       "title": "エアグルーヴ(ウマ娘)",
       "url": "https://dic.nicovideo.jp/a/%E3%82%A8%E3%82%A2%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%B4(%E3%82%A6%E3%83%9E%E5%A8%98)",
@@ -3938,12 +3800,6 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:47:46.095Z"
     },
-    "kantai-collection-ashigara": {
-      "title": "足柄",
-      "url": "https://dic.nicovideo.jp/a/%E8%B6%B3%E6%9F%84",
-      "source": "search-verified",
-      "checkedAt": "2026-10-06T02:47:51.164Z"
-    },
     "hirogaru-sky-precure-sora-harewataru": {
       "title": "ソラ・ハレワタール",
       "url": "https://dic.nicovideo.jp/a/%E3%82%BD%E3%83%A9%E3%83%BB%E3%83%8F%E3%83%AC%E3%83%AF%E3%82%BF%E3%83%BC%E3%83%AB",
@@ -3974,12 +3830,6 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:48:51.249Z"
     },
-    "kantai-collection-uzuki": {
-      "title": "卯月",
-      "url": "https://dic.nicovideo.jp/a/%E5%8D%AF%E6%9C%88",
-      "source": "search-verified",
-      "checkedAt": "2026-10-06T02:49:00.235Z"
-    },
     "hololive-english-cecilia-immergreen": {
       "title": "セシリア・イマーグリーン",
       "url": "https://dic.nicovideo.jp/a/%E3%82%BB%E3%82%B7%E3%83%AA%E3%82%A2%E3%83%BB%E3%82%A4%E3%83%9E%E3%83%BC%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3",
@@ -3991,12 +3841,6 @@
       "url": "https://dic.nicovideo.jp/a/%E3%83%9E%E3%83%81%E3%82%AB%E3%83%8D%E3%82%BF%E3%83%B3%E3%83%9B%E3%82%A4%E3%82%B6(%E3%82%A6%E3%83%9E%E5%A8%98)",
       "source": "search-verified",
       "checkedAt": "2026-10-06T02:49:26.911Z"
-    },
-    "kantai-collection-urakaze": {
-      "title": "浦風",
-      "url": "https://dic.nicovideo.jp/a/%E6%B5%A6%E9%A2%A8",
-      "source": "search-verified",
-      "checkedAt": "2026-10-06T02:49:36.150Z"
     },
     "umamusume-meisho-doto": {
       "title": "メイショウドトウ(ウマ娘)",
@@ -4670,19 +4514,6 @@
       "candidateTitle": "シンデレラ",
       "checkedAt": "2026-10-06T07:17:42.225Z"
     },
-    "kancolle-leberechtmaass": {
-      "title": null,
-      "reason": "記事「Z1」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "Z1",
-      "checkedAt": "2026-10-06T07:18:03.505Z"
-    },
-    "kancolle-atlanta": {
-      "title": "アトランタ",
-      "url": "https://dic.nicovideo.jp/a/%E3%82%A2%E3%83%88%E3%83%A9%E3%83%B3%E3%82%BF",
-      "source": "search-verified",
-      "checkedAt": "2026-10-06T07:18:07.439Z"
-    },
     "zenless-zone-zero-nangong-yu": {
       "title": null,
       "reason": "not-found",
@@ -4695,13 +4526,6 @@
       "source": "low-confidence",
       "candidateTitle": "奏",
       "checkedAt": "2026-10-06T07:18:32.267Z"
-    },
-    "kantai-collection-tokitsukaze": {
-      "title": null,
-      "reason": "記事「時津風」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "時津風",
-      "checkedAt": "2026-10-06T07:18:42.288Z"
     },
     "darkstalkers-lilith": {
       "title": null,
@@ -4716,24 +4540,11 @@
       "source": "not-found",
       "checkedAt": "2026-10-06T07:19:12.225Z"
     },
-    "kancolle-maxschultz": {
-      "title": "マックス",
-      "url": "https://dic.nicovideo.jp/a/%E3%83%9E%E3%83%83%E3%82%AF%E3%82%B9",
-      "source": "search-verified",
-      "checkedAt": "2026-10-06T07:19:27.443Z"
-    },
     "genshin-qiqi": {
       "title": null,
       "reason": "not-found",
       "source": "not-found",
       "checkedAt": "2026-10-06T07:19:37.341Z"
-    },
-    "kancolle-warspite": {
-      "title": null,
-      "reason": "記事「ウォースパイト」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "ウォースパイト",
-      "checkedAt": "2026-10-06T07:19:57.300Z"
     },
     "girlsfrontline-wa2000": {
       "title": "WA2000",
@@ -4748,32 +4559,11 @@
       "candidateTitle": "冷泉麻子",
       "checkedAt": "2026-10-06T07:20:17.398Z"
     },
-    "kancolle-i401": {
-      "title": null,
-      "reason": "記事「伊401」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "伊401",
-      "checkedAt": "2026-10-06T07:20:37.457Z"
-    },
     "gurrenlagann-nia": {
       "title": "ニア",
       "url": "https://dic.nicovideo.jp/a/%E3%83%8B%E3%82%A2",
       "source": "search-verified",
       "checkedAt": "2026-10-06T07:20:47.711Z"
-    },
-    "kantai-collection-kumano": {
-      "title": null,
-      "reason": "記事「熊野」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "熊野",
-      "checkedAt": "2026-10-06T07:20:57.488Z"
-    },
-    "kantai-collection-kuma": {
-      "title": null,
-      "reason": "記事「球磨」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "球磨",
-      "checkedAt": "2026-10-06T07:21:07.704Z"
     },
     "wuthering-waves-phoebe": {
       "title": null,
@@ -4801,39 +4591,11 @@
       "candidateTitle": "柚葉",
       "checkedAt": "2026-10-06T07:21:57.532Z"
     },
-    "kantai-collection-shiratsuyu": {
-      "title": null,
-      "reason": "記事「白露」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "白露",
-      "checkedAt": "2026-10-06T07:22:07.605Z"
-    },
-    "kantai-collection-kagerou": {
-      "title": null,
-      "reason": "記事「陽炎」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "陽炎",
-      "checkedAt": "2026-10-06T07:22:17.723Z"
-    },
     "chainsaw-man-mitaka-asa": {
       "title": "三鷹アサ",
       "url": "https://dic.nicovideo.jp/a/%E4%B8%89%E9%B7%B9%E3%82%A2%E3%82%B5",
       "source": "search-verified",
       "checkedAt": "2026-10-06T07:22:22.728Z"
-    },
-    "kantai-collection-satsuki": {
-      "title": null,
-      "reason": "記事「皐月」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "皐月",
-      "checkedAt": "2026-10-06T07:22:32.717Z"
-    },
-    "kantai-collection-mogami": {
-      "title": null,
-      "reason": "記事「最上」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "最上",
-      "checkedAt": "2026-10-06T07:23:54.705Z"
     },
     "zenless-zone-zero-alice-thymefield": {
       "title": null,
@@ -4862,114 +4624,11 @@
       "source": "search-verified",
       "checkedAt": "2026-10-06T07:25:20.409Z"
     },
-    "shine-post-seibu-rio": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T07:25:35.245Z"
-    },
-    "shine-post-nabatame-haru": {
-      "title": null,
-      "reason": "記事「春」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "春",
-      "checkedAt": "2026-10-06T07:25:50.236Z"
-    },
-    "shine-post-tamaki-kyouka": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T07:26:05.271Z"
-    },
-    "shine-post-totsuka-nanami": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T07:26:15.332Z"
-    },
-    "shine-post-agarie-nagi": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T07:26:25.277Z"
-    },
-    "shine-post-hirose-miina": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T07:26:35.302Z"
-    },
     "shine-post-natalya": {
       "title": null,
       "reason": "not-found",
       "source": "not-found",
       "checkedAt": "2026-10-06T07:26:45.381Z"
-    },
-    "shine-post-komurasaki-momoka": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T07:26:55.292Z"
-    },
-    "shine-post-karabayashi-itoha": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T07:27:05.299Z"
-    },
-    "shine-post-kurogane-ren": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T07:27:15.375Z"
-    },
-    "shine-post-takamura-hibiki": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T07:27:25.334Z"
-    },
-    "shine-post-hiumi-nanoka": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T07:27:35.407Z"
-    },
-    "shine-post-kazamatsuri-asahi": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T07:27:45.421Z"
-    },
-    "shine-post-hinomoto-hinatsu": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T07:27:55.433Z"
-    },
-    "shine-post-nashinoki-remi": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T07:28:05.566Z"
-    },
-    "shine-post-kotomori-airi": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T07:28:15.431Z"
-    },
-    "shine-post-yamada-kanon": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T07:28:25.405Z"
-    },
-    "shine-post-karabayashi-aoba": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T07:28:35.449Z"
     },
     "shine-post-hotaru": {
       "title": null,
@@ -4977,31 +4636,6 @@
       "source": "low-confidence",
       "candidateTitle": "螢",
       "checkedAt": "2026-10-06T07:28:55.660Z"
-    },
-    "shine-post-minamizaki-minato": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T07:29:00.520Z"
-    },
-    "shine-post-yakushiin-asuka": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T07:29:05.458Z"
-    },
-    "shine-post-izumino-koyume": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T07:29:10.456Z"
-    },
-    "shine-post-tsukimi-pie-mochiko": {
-      "title": null,
-      "reason": "記事「もち子」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "もち子",
-      "checkedAt": "2026-10-06T07:29:20.540Z"
     },
     "onii-chan-wa-oshimai-oka-asahi": {
       "title": "桜花あさひ",

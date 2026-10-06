@@ -3665,18 +3665,6 @@
       "source": "not-found",
       "checkedAt": "2026-10-06T06:59:34.233Z"
     },
-    "touhou-tojiko": {
-      "qid": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T06:59:34.926Z"
-    },
-    "touhou-yamame": {
-      "qid": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T06:59:35.631Z"
-    },
     "vocaloid-meiko": {
       "qid": null,
       "reason": "シリーズ確認不能のため除外(候補qid=Q618888, MEIKO)。要レビュー→確認できればoverridesへ。",
@@ -3729,12 +3717,6 @@
       "seriesMatch": true,
       "checkedAt": "2026-10-06T07:00:16.548Z"
     },
-    "touhou-sekibanki": {
-      "qid": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T07:00:18.445Z"
-    },
     "girlsfrontline-hk416": {
       "qid": null,
       "reason": "シリーズ確認不能のため除外(候補qid=Q741107, Heckler & Koch HK416)。要レビュー→確認できればoverridesへ。",
@@ -3758,12 +3740,6 @@
       "seriesMatch": true,
       "checkedAt": "2026-10-06T07:00:31.591Z"
     },
-    "touhou-seija": {
-      "qid": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T07:00:33.718Z"
-    },
     "kancolle-hoppou": {
       "qid": null,
       "reason": "not-found",
@@ -3777,12 +3753,6 @@
       "candidateQid": "Q139568490",
       "candidateLabel": "Ismaire",
       "checkedAt": "2026-10-06T07:00:40.913Z"
-    },
-    "touhou-minoriko": {
-      "qid": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T07:00:41.582Z"
     },
     "arknights-kaltsit": {
       "qid": null,
@@ -3815,12 +3785,6 @@
       "candidateQid": "Q19672745",
       "candidateLabel": "Aubrey",
       "checkedAt": "2026-10-06T07:01:11.809Z"
-    },
-    "touhou-akyuu": {
-      "qid": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T07:01:12.494Z"
     },
     "gup-erika": {
       "qid": "Q133539149",
@@ -3860,19 +3824,6 @@
       "seriesMatch": true,
       "checkedAt": "2026-10-06T07:01:40.247Z"
     },
-    "touhou-shinmyoumaru": {
-      "qid": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T07:01:42.110Z"
-    },
-    "touhou-hecatia": {
-      "qid": "Q117803344",
-      "label": "Hecatia Lapislazuli",
-      "source": "search-verified",
-      "seriesMatch": true,
-      "checkedAt": "2026-10-06T07:01:44.979Z"
-    },
     "kon-tsumugi": {
       "qid": "Q4000019",
       "label": "Tsumugi Kotobuki",
@@ -3908,20 +3859,6 @@
       "reason": "not-found",
       "source": "not-found",
       "checkedAt": "2026-10-06T07:02:10.173Z"
-    },
-    "touhou-mamizou": {
-      "qid": "Q117811801",
-      "label": "Mamizou Futatsuiwa",
-      "source": "search-verified",
-      "seriesMatch": true,
-      "checkedAt": "2026-10-06T07:02:13.068Z"
-    },
-    "touhou-letty": {
-      "qid": "Q53728534",
-      "label": "Letty Whiterock",
-      "source": "search-verified",
-      "seriesMatch": true,
-      "checkedAt": "2026-10-06T07:02:17.833Z"
     },
     "kancolle-tatsuta": {
       "qid": null,
@@ -4128,12 +4065,6 @@
       "candidateLabel": "Japanese destroyer Samidare",
       "checkedAt": "2026-10-06T07:04:49.243Z"
     },
-    "touhou-wakasagihime": {
-      "qid": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T07:04:49.890Z"
-    },
     "hololiveen-bijou": {
       "qid": null,
       "reason": "シリーズ確認不能のため除外(候補qid=Q124946800, Koseki Bijou)。要レビュー→確認できればoverridesへ。",
@@ -4141,13 +4072,6 @@
       "candidateQid": "Q124946800",
       "candidateLabel": "Koseki Bijou",
       "checkedAt": "2026-10-06T07:04:51.559Z"
-    },
-    "touhou-lilywhite": {
-      "qid": "Q118464638",
-      "label": "Lily White",
-      "source": "search-verified",
-      "seriesMatch": true,
-      "checkedAt": "2026-10-06T07:04:54.422Z"
     },
     "kancolle-yamashiro": {
       "qid": null,
@@ -4323,13 +4247,6 @@
       "candidateLabel": "Japanese cruiser Yūbari",
       "checkedAt": "2026-10-06T07:06:41.729Z"
     },
-    "touhou-doremy": {
-      "qid": "Q119440307",
-      "label": "Doremy Sweet",
-      "source": "search-verified",
-      "seriesMatch": true,
-      "checkedAt": "2026-10-06T07:06:44.561Z"
-    },
     "spiceandwolf-holo": {
       "qid": null,
       "reason": "シリーズ確認不能のため除外(候補qid=Q213371, vitreous enamel)。要レビュー→確認できればoverridesへ。",
@@ -4455,24 +4372,6 @@
       "candidateLabel": "Kamadeva",
       "checkedAt": "2026-10-06T07:08:11.076Z"
     },
-    "touhou-medicine": {
-      "qid": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T07:08:11.759Z"
-    },
-    "touhou-kosuzu": {
-      "qid": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T07:08:12.447Z"
-    },
-    "touhou-sumireko": {
-      "qid": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T07:08:13.152Z"
-    },
     "umamusume-chevalgrand": {
       "qid": "Q110985428",
       "label": "Cheval Grand",
@@ -4558,22 +4457,6 @@
       "source": "search-verified",
       "seriesMatch": true,
       "checkedAt": "2026-10-06T07:08:59.638Z"
-    },
-    "touhou-kisume": {
-      "qid": null,
-      "reason": "シリーズ確認不能のため除外(候補qid=Q88948269, Kizzmekia Corbett)。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateQid": "Q88948269",
-      "candidateLabel": "Kizzmekia Corbett",
-      "checkedAt": "2026-10-06T07:09:07.646Z"
-    },
-    "touhou-star-sapphire": {
-      "qid": null,
-      "reason": "シリーズ確認不能のため除外(候補qid=Q2664269, Star Sapphire)。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateQid": "Q2664269",
-      "candidateLabel": "Star Sapphire",
-      "checkedAt": "2026-10-06T07:09:12.291Z"
     },
     "umamusume-gentildonna": {
       "qid": "Q138004049",
@@ -4684,13 +4567,6 @@
       "seriesMatch": true,
       "checkedAt": "2026-10-06T07:10:28.381Z"
     },
-    "touhou-lunasa": {
-      "qid": "Q52633687",
-      "label": "Lunasa Prismriver",
-      "source": "search-verified",
-      "seriesMatch": true,
-      "checkedAt": "2026-10-06T07:10:32.465Z"
-    },
     "kancolle-murasame": {
       "qid": null,
       "reason": "シリーズ確認不能のため除外(候補qid=Q17217694, Murasame)。要レビュー→確認できればoverridesへ。",
@@ -4698,13 +4574,6 @@
       "candidateQid": "Q17217694",
       "candidateLabel": "Murasame",
       "checkedAt": "2026-10-06T07:10:43.529Z"
-    },
-    "touhou-okina": {
-      "qid": "Q126002222",
-      "label": "Okina Matara",
-      "source": "search-verified",
-      "seriesMatch": true,
-      "checkedAt": "2026-10-06T07:10:46.363Z"
     },
     "genshin-yoimiya": {
       "qid": "Q113493715",
@@ -4742,13 +4611,6 @@
       "candidateQid": "Q1036566",
       "candidateLabel": "Japanese cruiser Naka",
       "checkedAt": "2026-10-06T07:11:17.071Z"
-    },
-    "touhou-kudamaki-tsukasa": {
-      "qid": "Q121435529",
-      "label": "Tsukasa Kudamaki",
-      "source": "search-verified",
-      "seriesMatch": true,
-      "checkedAt": "2026-10-06T07:11:19.908Z"
     },
     "persona-4-shirogane-naoto": {
       "qid": "Q72223181",
@@ -5030,12 +4892,6 @@
       "candidateLabel": "Inui Toko",
       "checkedAt": "2026-10-06T07:14:07.887Z"
     },
-    "touhou-kicchou-yachie": {
-      "qid": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T07:14:08.725Z"
-    },
     "idolmaster-miura-azusa": {
       "qid": "Q111535793",
       "label": "Azusa Miura",
@@ -5148,28 +5004,12 @@
       "candidateLabel": "Japanese submarine I-58",
       "checkedAt": "2026-10-06T07:15:27.022Z"
     },
-    "kancolle-leberechtmaass": {
-      "qid": null,
-      "reason": "シリーズ確認不能のため除外(候補qid=Q69989, Leberecht Maass)。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateQid": "Q69989",
-      "candidateLabel": "Leberecht Maass",
-      "checkedAt": "2026-10-06T07:15:30.112Z"
-    },
     "umamusume-agnesdigital": {
       "qid": "Q107147074",
       "label": "Agnes Digital",
       "source": "search-verified",
       "seriesMatch": true,
       "checkedAt": "2026-10-06T07:15:34.157Z"
-    },
-    "kancolle-atlanta": {
-      "qid": null,
-      "reason": "シリーズ確認不能のため除外(候補qid=Q23556, Atlanta)。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateQid": "Q23556",
-      "candidateLabel": "Atlanta",
-      "checkedAt": "2026-10-06T07:15:43.217Z"
     },
     "panty-stocking-with-garterbelt-panty": {
       "qid": null,
@@ -5224,14 +5064,6 @@
       "source": "not-found",
       "checkedAt": "2026-10-06T07:16:10.434Z"
     },
-    "kantai-collection-tokitsukaze": {
-      "qid": null,
-      "reason": "シリーズ確認不能のため除外(候補qid=Q2990040, Japanese destroyer Tokitsukaze)。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateQid": "Q2990040",
-      "candidateLabel": "Japanese destroyer Tokitsukaze",
-      "checkedAt": "2026-10-06T07:16:16.896Z"
-    },
     "darkstalkers-lilith": {
       "qid": null,
       "reason": "シリーズ確認不能のため除外(候補qid=Q180627, Lilith)。要レビュー→確認できればoverridesへ。",
@@ -5282,14 +5114,6 @@
       "seriesMatch": true,
       "checkedAt": "2026-10-06T07:16:52.187Z"
     },
-    "kancolle-maxschultz": {
-      "qid": null,
-      "reason": "シリーズ確認不能のため除外(候補qid=Q136617, German destroyer Z3 Max Schultz)。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateQid": "Q136617",
-      "candidateLabel": "German destroyer Z3 Max Schultz",
-      "checkedAt": "2026-10-06T07:16:57.240Z"
-    },
     "sunshine-kanan": {
       "qid": "Q83251106",
       "label": "Kanan Matsuura",
@@ -5325,14 +5149,6 @@
       "source": "not-found",
       "checkedAt": "2026-10-06T07:17:12.247Z"
     },
-    "kancolle-warspite": {
-      "qid": null,
-      "reason": "シリーズ確認不能のため除外(候補qid=Q1318636, HMS Warspite)。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateQid": "Q1318636",
-      "candidateLabel": "HMS Warspite",
-      "checkedAt": "2026-10-06T07:17:18.715Z"
-    },
     "girlsfrontline-wa2000": {
       "qid": null,
       "reason": "シリーズ確認不能のため除外(候補qid=Q42257, Walther WA 2000)。要レビュー→確認できればoverridesへ。",
@@ -5347,14 +5163,6 @@
       "source": "not-found",
       "checkedAt": "2026-10-06T07:17:21.434Z"
     },
-    "kancolle-i401": {
-      "qid": null,
-      "reason": "シリーズ確認不能のため除外(候補qid=Q6159061, Japanese submarine I-401)。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateQid": "Q6159061",
-      "candidateLabel": "Japanese submarine I-401",
-      "checkedAt": "2026-10-06T07:17:23.070Z"
-    },
     "gurrenlagann-nia": {
       "qid": "Q3875778",
       "label": "Nia Teppelin",
@@ -5368,14 +5176,6 @@
       "source": "search-verified",
       "seriesMatch": true,
       "checkedAt": "2026-10-06T07:17:30.136Z"
-    },
-    "kancolle-aoba": {
-      "qid": null,
-      "reason": "シリーズ確認不能のため除外(候補qid=Q153385, 4292 Aoba)。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateQid": "Q153385",
-      "candidateLabel": "4292 Aoba",
-      "checkedAt": "2026-10-06T07:17:38.225Z"
     },
     "umamusume-airgroove": {
       "qid": "Q106000073",
@@ -5404,22 +5204,6 @@
       "source": "search-verified",
       "seriesMatch": true,
       "checkedAt": "2026-10-06T07:17:55.243Z"
-    },
-    "kantai-collection-kumano": {
-      "qid": null,
-      "reason": "シリーズ確認不能のため除外(候補qid=Q1791961, Kumano)。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateQid": "Q1791961",
-      "candidateLabel": "Kumano",
-      "checkedAt": "2026-10-06T07:18:03.702Z"
-    },
-    "kantai-collection-kuma": {
-      "qid": null,
-      "reason": "シリーズ確認不能のため除外(候補qid=Q2415335, Japanese cruiser Kuma)。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateQid": "Q2415335",
-      "candidateLabel": "Japanese cruiser Kuma",
-      "checkedAt": "2026-10-06T07:18:10.807Z"
     },
     "love-live-hasu-no-sora-jogakuin-school-idol-club-ceras-yanagida-lilienfeld": {
       "qid": null,
@@ -5485,14 +5269,6 @@
       "source": "not-found",
       "checkedAt": "2026-10-06T07:18:54.997Z"
     },
-    "kantai-collection-ashigara": {
-      "qid": null,
-      "reason": "シリーズ確認不能のため除外(候補qid=Q725335, Ashigara)。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateQid": "Q725335",
-      "candidateLabel": "Ashigara",
-      "checkedAt": "2026-10-06T07:19:02.108Z"
-    },
     "zenless-zone-zero-ukinami-yuzuha": {
       "qid": "Q136514527",
       "label": "Ukinami Yuzuha",
@@ -5522,22 +5298,6 @@
       "seriesMatch": true,
       "checkedAt": "2026-10-06T07:19:23.164Z"
     },
-    "kantai-collection-shiratsuyu": {
-      "qid": null,
-      "reason": "シリーズ確認不能のため除外(候補qid=Q136526503, Bailu)。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateQid": "Q136526503",
-      "candidateLabel": "Bailu",
-      "checkedAt": "2026-10-06T07:19:32.675Z"
-    },
-    "kantai-collection-kagerou": {
-      "qid": null,
-      "reason": "シリーズ確認不能のため除外(候補qid=Q2990067, Japanese destroyer Kagerō)。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateQid": "Q2990067",
-      "candidateLabel": "Japanese destroyer Kagerō",
-      "checkedAt": "2026-10-06T07:19:39.356Z"
-    },
     "kill-la-kill-mankanshoku-mako": {
       "qid": "Q116878839",
       "label": "Mako Mankanshoku",
@@ -5559,14 +5319,6 @@
       "candidateLabel": "Raphtalia",
       "checkedAt": "2026-10-06T07:19:46.445Z"
     },
-    "kantai-collection-uzuki": {
-      "qid": null,
-      "reason": "シリーズ確認不能のため除外(候補qid=Q839352, 4th month)。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateQid": "Q839352",
-      "candidateLabel": "4th month",
-      "checkedAt": "2026-10-06T07:19:53.779Z"
-    },
     "fate-grand-order-tomoe-gozen": {
       "qid": null,
       "reason": "シリーズ確認不能のため除外(候補qid=Q450780, Tomoe Gozen)。要レビュー→確認できればoverridesへ。",
@@ -5574,22 +5326,6 @@
       "candidateQid": "Q450780",
       "candidateLabel": "Tomoe Gozen",
       "checkedAt": "2026-10-06T07:19:57.405Z"
-    },
-    "kantai-collection-satsuki": {
-      "qid": null,
-      "reason": "シリーズ確認不能のため除外(候補qid=Q839049, 5th month)。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateQid": "Q839049",
-      "candidateLabel": "5th month",
-      "checkedAt": "2026-10-06T07:20:04.782Z"
-    },
-    "kantai-collection-mogami": {
-      "qid": null,
-      "reason": "シリーズ確認不能のため除外(候補qid=Q1850384, Japanese cruiser Mogami)。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateQid": "Q1850384",
-      "candidateLabel": "Japanese cruiser Mogami",
-      "checkedAt": "2026-10-06T07:20:11.659Z"
     },
     "zenless-zone-zero-alice-thymefield": {
       "qid": "Q136515548",
@@ -5620,14 +5356,6 @@
       "candidateQid": "Q4327105",
       "candidateLabel": "Sonja",
       "checkedAt": "2026-10-06T07:20:29.977Z"
-    },
-    "kantai-collection-urakaze": {
-      "qid": null,
-      "reason": "シリーズ確認不能のため除外(候補qid=Q2237956, Japanese destroyer Urakaze)。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateQid": "Q2237956",
-      "candidateLabel": "Japanese destroyer Urakaze",
-      "checkedAt": "2026-10-06T07:20:36.449Z"
     },
     "arknights-specter": {
       "qid": null,
@@ -5680,48 +5408,6 @@
       "candidateLabel": "Kotone",
       "checkedAt": "2026-10-06T07:21:11.020Z"
     },
-    "shine-post-seibu-rio": {
-      "qid": "Q112876006",
-      "label": "Rio Seibu",
-      "source": "search-verified",
-      "seriesMatch": true,
-      "checkedAt": "2026-10-06T07:21:13.869Z"
-    },
-    "shine-post-nabatame-haru": {
-      "qid": "Q112874566",
-      "label": "Haru Nabatame",
-      "source": "search-verified",
-      "seriesMatch": true,
-      "checkedAt": "2026-10-06T07:21:18.174Z"
-    },
-    "shine-post-tamaki-kyouka": {
-      "qid": "Q112874568",
-      "label": "Kyōka Tamaki",
-      "source": "search-verified",
-      "seriesMatch": true,
-      "checkedAt": "2026-10-06T07:21:22.585Z"
-    },
-    "shine-post-totsuka-nanami": {
-      "qid": "Q112899162",
-      "label": "Nanami Totsuka",
-      "source": "search-verified",
-      "seriesMatch": true,
-      "checkedAt": "2026-10-06T07:21:26.641Z"
-    },
-    "shine-post-agarie-nagi": {
-      "qid": "Q135394590",
-      "label": "Nagi Agarie",
-      "source": "search-verified",
-      "seriesMatch": true,
-      "checkedAt": "2026-10-06T07:21:31.069Z"
-    },
-    "shine-post-hirose-miina": {
-      "qid": "Q112899185",
-      "label": "Miina Hirose",
-      "source": "search-verified",
-      "seriesMatch": true,
-      "checkedAt": "2026-10-06T07:21:35.477Z"
-    },
     "shine-post-natalya": {
       "qid": "Q112899179",
       "label": "Natalya",
@@ -5729,116 +5415,12 @@
       "seriesMatch": true,
       "checkedAt": "2026-10-06T07:21:42.381Z"
     },
-    "shine-post-komurasaki-momoka": {
-      "qid": "Q135394597",
-      "label": "Momoka Komurasaki",
-      "source": "search-verified",
-      "seriesMatch": true,
-      "checkedAt": "2026-10-06T07:21:46.871Z"
-    },
-    "shine-post-karabayashi-itoha": {
-      "qid": "Q112892337",
-      "label": "Itoha Karabayashi",
-      "source": "search-verified",
-      "seriesMatch": true,
-      "checkedAt": "2026-10-06T07:21:51.312Z"
-    },
-    "shine-post-kurogane-ren": {
-      "qid": "Q112891356",
-      "label": "Ren Kurogane",
-      "source": "search-verified",
-      "seriesMatch": true,
-      "checkedAt": "2026-10-06T07:21:55.770Z"
-    },
-    "shine-post-takamura-hibiki": {
-      "qid": "Q135394595",
-      "label": "Hibiki Takamura",
-      "source": "search-verified",
-      "seriesMatch": true,
-      "checkedAt": "2026-10-06T07:21:59.842Z"
-    },
-    "shine-post-hiumi-nanoka": {
-      "qid": "Q112899158",
-      "label": "Nanoka Hiumi",
-      "source": "search-verified",
-      "seriesMatch": true,
-      "checkedAt": "2026-10-06T07:22:03.866Z"
-    },
-    "shine-post-kazamatsuri-asahi": {
-      "qid": "Q135394596",
-      "label": "Asahi Kazamatsuri",
-      "source": "search-verified",
-      "seriesMatch": true,
-      "checkedAt": "2026-10-06T07:22:07.905Z"
-    },
-    "shine-post-hinomoto-hinatsu": {
-      "qid": "Q112899171",
-      "label": "Hinatsu Hinamoto",
-      "source": "search-verified",
-      "seriesMatch": true,
-      "checkedAt": "2026-10-06T07:22:11.972Z"
-    },
-    "shine-post-nashinoki-remi": {
-      "qid": "Q112899176",
-      "label": "Remi Nashinoki",
-      "source": "search-verified",
-      "seriesMatch": true,
-      "checkedAt": "2026-10-06T07:22:16.053Z"
-    },
-    "shine-post-kotomori-airi": {
-      "qid": "Q135394592",
-      "label": "Airi Kotomor",
-      "source": "search-verified",
-      "seriesMatch": true,
-      "checkedAt": "2026-10-06T07:22:20.485Z"
-    },
-    "shine-post-yamada-kanon": {
-      "qid": "Q135394599",
-      "label": "Kanon Yamada",
-      "source": "search-verified",
-      "seriesMatch": true,
-      "checkedAt": "2026-10-06T07:22:24.523Z"
-    },
-    "shine-post-karabayashi-aoba": {
-      "qid": "Q112892334",
-      "label": "Aoba Karabayashi",
-      "source": "search-verified",
-      "seriesMatch": true,
-      "checkedAt": "2026-10-06T07:22:28.585Z"
-    },
     "shine-post-hotaru": {
       "qid": "Q112907875",
       "label": "Hotaru",
       "source": "search-verified",
       "seriesMatch": true,
       "checkedAt": "2026-10-06T07:22:36.663Z"
-    },
-    "shine-post-minamizaki-minato": {
-      "qid": "Q135394594",
-      "label": "Minato Minamizaki",
-      "source": "search-verified",
-      "seriesMatch": true,
-      "checkedAt": "2026-10-06T07:22:41.141Z"
-    },
-    "shine-post-yakushiin-asuka": {
-      "qid": "Q135394591",
-      "label": "Asuka Yakushīn",
-      "source": "search-verified",
-      "seriesMatch": true,
-      "checkedAt": "2026-10-06T07:22:45.594Z"
-    },
-    "shine-post-izumino-koyume": {
-      "qid": "Q135394775",
-      "label": "Koyume Izumino",
-      "source": "search-verified",
-      "seriesMatch": true,
-      "checkedAt": "2026-10-06T07:22:49.669Z"
-    },
-    "shine-post-tsukimi-pie-mochiko": {
-      "qid": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-06T07:22:51.551Z"
     },
     "onii-chan-wa-oshimai-oka-asahi": {
       "qid": null,
