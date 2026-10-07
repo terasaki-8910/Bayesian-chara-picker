@@ -242,7 +242,9 @@ async function main() {
 
   console.log('Danbooruキャラタグ人気ランキングを取得中...');
   const topTags = [];
-  for (let page = 1; page <= TOP_TAGS_PAGES; page += 1) {
+  const firstPage = Number(process.env.CANDIDATES_FIRST_PAGE ?? 1);
+  const lastPage = Number(process.env.CANDIDATES_LAST_PAGE ?? TOP_TAGS_PAGES);
+  for (let page = firstPage; page <= lastPage; page += 1) {
     topTags.push(...(await listTopCharacterTags(danbooruFetch, { page, limit: TOP_TAGS_LIMIT })));
   }
   const deduped = topTags.filter((t) => !existingTags.has(t.name) && !isExcludedCandidate(t.name));
@@ -283,7 +285,7 @@ async function main() {
 
   console.log('優先3作品のシリーズ内キャラを列挙中...');
   const priorityResults = [];
-  for (const series of PRIORITY_SERIES) {
+  for (const series of process.env.CANDIDATES_SKIP_PRIORITY ? [] : PRIORITY_SERIES) {
     const copyrightTag = await resolveCopyrightTag(danbooruFetch, series.copyrightCandidates);
     if (!copyrightTag) {
       priorityResults.push({ seriesJa: series.seriesJa, resolved: false, characters: [] });
@@ -326,7 +328,7 @@ async function main() {
     rankedCandidates,
     priorityResults,
   };
-  writeFileSync(fileURLToPath(new URL('candidates.json', stateDir)), `${JSON.stringify(output, null, 2)}\n`);
+  writeFileSync(fileURLToPath(new URL(`${process.env.CANDIDATES_FILE ?? 'candidates'}.json`, stateDir)), `${JSON.stringify(output, null, 2)}\n`);
 
   const GENDER_REVIEW_MAX = 0.5;
   const uncertainCandidates = rankedCandidates.filter((c) => c.genderRatio < GENDER_REVIEW_MAX);
@@ -371,7 +373,7 @@ async function main() {
       '',
     ]),
   ].join('\n');
-  writeFileSync(fileURLToPath(new URL('candidates.md', stateDir)), md);
+  writeFileSync(fileURLToPath(new URL(`${process.env.CANDIDATES_FILE ?? 'candidates'}.md`, stateDir)), md);
 
   console.log(`\n完了。${rankedCandidates.length}件の候補 + 優先${priorityResults.length}作品を`);
   console.log('  state/expansion/candidates.json');

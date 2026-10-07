@@ -17,6 +17,10 @@ import { pathToFileURL } from 'node:url';
 /** 匿名アクセスの実測レート制限に対して十分余裕を持たせた自主規制の間隔。 */
 export const REQUEST_DELAY_MS = 1_100;
 
+/** 429 を受けたときの再試行回数と、Retry-After が無いときの待ち時間(回数倍)。 */
+const RATE_LIMIT_RETRIES = 5;
+const RATE_LIMIT_BACKOFF_MS = 15_000;
+
 export const USER_AGENT =
   'chara-picker-bayes/0.1 (+https://github.com/terasaki-8910; tag statistics only, no image/content fetch)';
 
@@ -46,7 +50,15 @@ export function createDanbooruFetcher({ fetchImpl = fetch, delayMs = REQUEST_DEL
       if (wait > 0) await sleep(wait);
     }
     lastCallAt = Date.now();
-    const res = await fetchImpl(`${API_ROOT}${path}`, { headers: { 'User-Agent': USER_AGENT } });
+    let res = await fetchImpl(`${API_ROOT}${path}`, { headers: { 'User-Agent': USER_AGENT } });
+    // 429(呼びすぎ)だけは待って再試行する。別プロセスが同時に Danbooru を呼ぶと起きる
+    // (2026-10-06、候補生成が途中の評価を失って止まった)。5xx は呼び出し側の再試行に任せる。
+    for (let attempt = 1; res.status === 429 && attempt <= RATE_LIMIT_RETRIES; attempt += 1) {
+      const retryAfter = Number(res.headers?.get?.('retry-after'));
+      await sleep(Number.isFinite(retryAfter) && retryAfter > 0 ? retryAfter * 1000 : RATE_LIMIT_BACKOFF_MS * attempt);
+      lastCallAt = Date.now();
+      res = await fetchImpl(`${API_ROOT}${path}`, { headers: { 'User-Agent': USER_AGENT } });
+    }
     if (!res.ok) {
       throw new Error(`Danbooru API 呼び出しに失敗しました (status=${res.status}): ${path}`);
     }

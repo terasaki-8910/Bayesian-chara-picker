@@ -269,8 +269,12 @@ export function bayesScoreCharacters(
 
 /** 最低質問数。classicのMIN_QUESTIONSと同値だがベイズ側で独立にチューニングできるよう別名にする。 */
 export const MIN_QUESTIONS_BAYES = 6;
-/** 質問数の絶対上限（PLAN: classicの10とは別に12）。 */
-export const HARD_CAP_BAYES = 12;
+/**
+ * 質問数の絶対上限（PLAN: classicの10とは別）。12 で始めたが、1008体に増やすと
+ * 自分自身に行き着く率(BC13)が 81.2% に落ちたため 15 にした（R8-1、2026-10-07。
+ * 実測: 12問 81.2% / 15問 95.4% / 18問 99.9%）。
+ */
+export const HARD_CAP_BAYES = 15;
 /** 1位の事後確率がこれ以上なら停止候補にする。 */
 export const P_STOP = 0.55;
 /** 1位/2位の事後確率比がこれ以上なら停止候補にする。 */
