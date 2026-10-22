@@ -8409,6 +8409,774 @@
       "postCount": 975,
       "source": "override",
       "checkedAt": "2026-10-06T14:58:13.802Z"
+    },
+    "kaguyasamawakokurasetaitensaitachinorenaizunousen-shinomiya-kaguya": {
+      "tag": "shinomiya_kaguya",
+      "postCount": 2588,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "shinomiya_kaguya",
+        "shinomiya_kaguya_(kaguya-sama_wa_kokurasetai_~tensai-tachi_no_renai_zunousen~)",
+        "shinomiya_kaguya(*)",
+        "shinomiya(*)"
+      ],
+      "allCandidates": [
+        "shinomiya_kaguya(2588)",
+        "shinomiya_runa(821)",
+        "shinomiya_fuyumi(684)",
+        "shinomiya_karen(480)",
+        "shinomiya_himawari(392)"
+      ],
+      "checkedAt": "2026-10-22T12:39:52.841Z"
+    },
+    "kaguyasamawakokurasetaitensaitachinorenaizunousen-fujiwara-chika": {
+      "tag": "fujiwara_chika",
+      "postCount": 2283,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "fujiwara_chika",
+        "fujiwara_chika_(kaguya-sama_wa_kokurasetai_~tensai-tachi_no_renai_zunousen~)",
+        "fujiwara_chika(*)",
+        "fujiwara(*)"
+      ],
+      "allCandidates": [
+        "fujiwara_chika(2283)",
+        "fujiwara_no_mokou(30984)",
+        "fujiwara_hajime(551)",
+        "fujiwara_no_mokou_(young)(356)",
+        "fujiwara_no_iyozane(333)"
+      ],
+      "checkedAt": "2026-10-22T12:39:57.560Z"
+    },
+    "kaguyasamawakokurasetaitensaitachinorenaizunousen-hayasaka-ai": {
+      "tag": "hayasaka_ai",
+      "postCount": 1413,
+      "source": "exact",
+      "seriesOverlap": 0.9992922859164898,
+      "candidatesTried": [
+        "hayasaka_ai",
+        "hayasaka_ai_(kaguya-sama_wa_kokurasetai_~tensai-tachi_no_renai_zunousen~)",
+        "hayasaka_ai(*)",
+        "hayasaka(*)"
+      ],
+      "allCandidates": [
+        "hayasaka_ai(1413)",
+        "hayasaka_mirei(836)",
+        "hayasaka_akira(185)",
+        "hayasaka_mei(75)",
+        "hayasaka_miura(74)"
+      ],
+      "checkedAt": "2026-10-22T12:40:03.787Z"
+    },
+    "kaguyasamawakokurasetaitensaitachinorenaizunousen-shijou-maki": {
+      "tag": "shijou_maki",
+      "postCount": 40,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "shijou_maki",
+        "shijou_maki_(kaguya-sama_wa_kokurasetai_~tensai-tachi_no_renai_zunousen~)",
+        "shijou_maki(*)",
+        "shijou(*)"
+      ],
+      "allCandidates": [
+        "shijou_maki(40)",
+        "shijou_takane(5661)",
+        "shijou_takane_(beyond_the_nobles)(240)",
+        "shijou_mitsue(158)",
+        "shijou_mitsuki(114)"
+      ],
+      "checkedAt": "2026-10-22T12:40:11.010Z"
+    },
+    "kaguyasamawakokurasetaitensaitachinorenaizunousen-koyasu-tsubame": {
+      "tag": "koyasu_tsubame",
+      "postCount": 31,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "koyasu_tsubame",
+        "koyasu_tsubame_(kaguya-sama_wa_kokurasetai_~tensai-tachi_no_renai_zunousen~)",
+        "koyasu_tsubame(*)",
+        "koyasu(*)"
+      ],
+      "allCandidates": [
+        "koyasu_tsubame(31)",
+        "koyasu_takehito(43)",
+        "koyasu_yuki(3)",
+        "koyasu_mana(1)"
+      ],
+      "checkedAt": "2026-10-22T12:40:16.654Z"
+    },
+    "saki-haramura-nodoka": {
+      "tag": "haramura_nodoka",
+      "postCount": 1421,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "haramura_nodoka",
+        "haramura_nodoka_(saki_(manga))",
+        "haramura_nodoka(*)",
+        "haramura(*)"
+      ],
+      "allCandidates": [
+        "haramura_nodoka(1421)",
+        "haramura_kaho(5)"
+      ],
+      "checkedAt": "2026-10-22T12:40:24.062Z"
+    },
+    "saki-miyanaga-saki": {
+      "tag": "miyanaga_saki",
+      "postCount": 880,
+      "source": "exact",
+      "seriesOverlap": 0.9977272727272727,
+      "candidatesTried": [
+        "miyanaga_saki",
+        "miyanaga_saki_(saki_(manga))",
+        "miyanaga_saki(*)",
+        "miyanaga(*)"
+      ],
+      "allCandidates": [
+        "miyanaga_saki(880)",
+        "miyanaga_teru(431)",
+        "miyanaga_nonoka(367)",
+        "miyanaga_nonoka_(real)(195)",
+        "miyanaga_nonoka_(virtual)(113)"
+      ],
+      "checkedAt": "2026-10-22T12:40:28.812Z"
+    },
+    "saki-takei-hisa": {
+      "tag": "takei_hisa",
+      "postCount": 784,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "takei_hisa",
+        "takei_hisa_(saki_(manga))",
+        "takei_hisa(*)",
+        "takei(*)"
+      ],
+      "allCandidates": [
+        "takei_hisa(784)",
+        "takei_junko(249)",
+        "takei_chiyo_(narisokonai)(13)",
+        "takei_(furrybar)(5)",
+        "takei_(jaku-chara_tomozaki-kun)(2)"
+      ],
+      "checkedAt": "2026-10-22T12:40:33.829Z"
+    },
+    "saki-fukuji-mihoko": {
+      "tag": "fukuji_mihoko",
+      "postCount": 669,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "fukuji_mihoko",
+        "fukuji_mihoko_(saki_(manga))",
+        "fukuji_mihoko(*)",
+        "fukuji(*)"
+      ],
+      "allCandidates": [
+        "fukuji_mihoko(669)",
+        "fukuji_sango(4)"
+      ],
+      "checkedAt": "2026-10-22T12:40:38.579Z"
+    },
+    "saki-amae-koromo": {
+      "tag": "amae_koromo",
+      "postCount": 444,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "amae_koromo",
+        "amae_koromo_(saki_(manga))",
+        "amae_koromo(*)",
+        "amae(*)"
+      ],
+      "allCandidates": [
+        "amae_koromo(444)",
+        "amae_ten(4)",
+        "amaeda_chiwa(3)",
+        "amae_kozue(3)",
+        "amae-chan(3)"
+      ],
+      "checkedAt": "2026-10-22T12:40:44.080Z"
+    },
+    "saki-miyanaga-teru": {
+      "tag": "miyanaga_teru",
+      "postCount": 431,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "miyanaga_teru",
+        "miyanaga_teru_(saki_(manga))",
+        "miyanaga_teru(*)",
+        "miyanaga(*)"
+      ],
+      "allCandidates": [
+        "miyanaga_teru(431)",
+        "miyanaga_saki(880)",
+        "miyanaga_nonoka(367)",
+        "miyanaga_nonoka_(real)(195)",
+        "miyanaga_nonoka_(virtual)(113)"
+      ],
+      "checkedAt": "2026-10-22T12:40:48.775Z"
+    },
+    "saki-kataoka-yuuki": {
+      "tag": "kataoka_yuuki",
+      "postCount": 428,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "kataoka_yuuki",
+        "kataoka_yuuki_(saki_(manga))",
+        "kataoka_yuuki(*)",
+        "kataoka(*)"
+      ],
+      "allCandidates": [
+        "kataoka_yuuki(428)",
+        "kataoka_megu(59)",
+        "kataoka_tesshin(11)",
+        "kataoka_(big_mukimuki_&_small_muchimuchi)(5)",
+        "kataoka_nagisa(4)"
+      ],
+      "checkedAt": "2026-10-22T12:40:53.670Z"
+    },
+    "saki-atarashi-ako": {
+      "tag": "atarashi_ako",
+      "postCount": 392,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "atarashi_ako",
+        "atarashi_ako_(saki_(manga))",
+        "atarashi_ako(*)",
+        "atarashi(*)"
+      ],
+      "allCandidates": [
+        "atarashi_ako(392)",
+        "atarashi_coco(19)",
+        "atarashi_mikoto(3)",
+        "atarashi_nozomi(3)",
+        "atarashi_hajime(1)"
+      ],
+      "checkedAt": "2026-10-22T12:40:58.653Z"
+    },
+    "saki-takakamo-shizuno": {
+      "tag": "takakamo_shizuno",
+      "postCount": 378,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "takakamo_shizuno",
+        "takakamo_shizuno_(saki_(manga))",
+        "takakamo_shizuno(*)",
+        "takakamo(*)"
+      ],
+      "allCandidates": [
+        "takakamo_shizuno(378)"
+      ],
+      "checkedAt": "2026-10-22T12:41:04.002Z"
+    },
+    "saki-touyoko-momoko": {
+      "tag": "touyoko_momoko",
+      "postCount": 370,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "touyoko_momoko",
+        "touyoko_momoko_(saki_(manga))",
+        "touyoko_momoko(*)",
+        "touyoko(*)"
+      ],
+      "allCandidates": [
+        "touyoko_momoko(370)",
+        "touyokoin_reika(15)"
+      ],
+      "checkedAt": "2026-10-22T12:41:08.718Z"
+    },
+    "saki-kunihiro-hajime": {
+      "tag": "kunihiro_hajime",
+      "postCount": 358,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "kunihiro_hajime",
+        "kunihiro_hajime_(saki_(manga))",
+        "kunihiro_hajime(*)",
+        "kunihiro(*)"
+      ],
+      "allCandidates": [
+        "kunihiro_hajime(358)",
+        "kunihiro_hinata(28)",
+        "kunihiro_ritsuko(8)"
+      ],
+      "checkedAt": "2026-10-22T12:41:15.476Z"
+    },
+    "saki-matsumi-kuro": {
+      "tag": "matsumi_kuro",
+      "postCount": 335,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "matsumi_kuro",
+        "matsumi_kuro_(saki_(manga))",
+        "matsumi_kuro(*)",
+        "matsumi(*)"
+      ],
+      "allCandidates": [
+        "matsumi_kuro(335)",
+        "matsumi_yuu(298)",
+        "matsumiya_yuumi(14)",
+        "matsumiya_yuuka(13)",
+        "matsumiya_aya(8)"
+      ],
+      "checkedAt": "2026-10-22T12:41:20.288Z"
+    },
+    "saki-iwato-kasumi": {
+      "tag": "iwato_kasumi",
+      "postCount": 323,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "iwato_kasumi",
+        "iwato_kasumi_(saki_(manga))",
+        "iwato_kasumi(*)",
+        "iwato(*)"
+      ],
+      "allCandidates": [
+        "iwato_kasumi(323)",
+        "iwatooshi(413)",
+        "iwato_suzume(178)",
+        "iwatobi-chan(42)",
+        "iwato_takashi(9)"
+      ],
+      "checkedAt": "2026-10-22T12:41:25.835Z"
+    },
+    "saki-kajiki-yumi": {
+      "tag": "kajiki_yumi",
+      "postCount": 303,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "kajiki_yumi",
+        "kajiki_yumi_(saki_(manga))",
+        "kajiki_yumi(*)",
+        "kajiki(*)"
+      ],
+      "allCandidates": [
+        "kajiki_yumi(303)",
+        "kajiki_yuuki(7)",
+        "kajiki_ryouta(4)",
+        "kajiki_aiko(2)",
+        "kajiki_ryo(2)"
+      ],
+      "checkedAt": "2026-10-22T12:41:30.769Z"
+    },
+    "saki-matsumi-yuu": {
+      "tag": "matsumi_yuu",
+      "postCount": 298,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "matsumi_yuu",
+        "matsumi_yuu_(saki_(manga))",
+        "matsumi_yuu(*)",
+        "matsumi(*)"
+      ],
+      "allCandidates": [
+        "matsumi_yuu(298)",
+        "matsumi_kuro(335)",
+        "matsumiya_yuumi(14)",
+        "matsumiya_yuuka(13)",
+        "matsumiya_aya(8)"
+      ],
+      "checkedAt": "2026-10-22T12:41:35.501Z"
+    },
+    "saki-onjouji-toki": {
+      "tag": "onjouji_toki",
+      "postCount": 277,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "onjouji_toki",
+        "onjouji_toki_(saki_(manga))",
+        "onjouji_toki(*)",
+        "onjouji(*)"
+      ],
+      "allCandidates": [
+        "onjouji_toki(277)",
+        "onjouji_shiori(15)",
+        "onjouji_toki's_mother(1)"
+      ],
+      "checkedAt": "2026-10-22T12:41:40.229Z"
+    },
+    "saki-shimizudani-ryuuka": {
+      "tag": "shimizudani_ryuuka",
+      "postCount": 261,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "shimizudani_ryuuka",
+        "shimizudani_ryuuka_(saki_(manga))",
+        "shimizudani_ryuuka(*)",
+        "shimizudani(*)"
+      ],
+      "allCandidates": [
+        "shimizudani_ryuuka(261)",
+        "shimizudani_reika(2)"
+      ],
+      "checkedAt": "2026-10-22T12:41:45.141Z"
+    },
+    "saki-ikeda-kana": {
+      "tag": "ikeda_kana",
+      "postCount": 247,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "ikeda_kana",
+        "ikeda_kana_(saki_(manga))",
+        "ikeda_kana(*)",
+        "ikeda(*)"
+      ],
+      "allCandidates": [
+        "ikeda_kana(247)",
+        "ikeda_chitose(682)",
+        "ikeda_chizuru(201)",
+        "ikeda_emi(103)",
+        "ikeda_masako(29)"
+      ],
+      "checkedAt": "2026-10-22T12:41:52.596Z"
+    },
+    "saki-hirose-sumire": {
+      "tag": "hirose_sumire",
+      "postCount": 215,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "hirose_sumire",
+        "hirose_sumire_(saki_(manga))",
+        "hirose_sumire(*)",
+        "hirose(*)"
+      ],
+      "allCandidates": [
+        "hirose_sumire(215)",
+        "hirose_koichi(893)",
+        "hirose_yasuho(513)",
+        "hirose_aiki(305)",
+        "hirose_natsuko(60)"
+      ],
+      "checkedAt": "2026-10-22T12:41:58.143Z"
+    },
+    "saki-kosegawa-shiromi": {
+      "tag": "kosegawa_shiromi",
+      "postCount": 209,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "kosegawa_shiromi",
+        "kosegawa_shiromi_(saki_(manga))",
+        "kosegawa_shiromi(*)",
+        "kosegawa(*)"
+      ],
+      "allCandidates": [
+        "kosegawa_shiromi(209)",
+        "kosegawa_shirose(1)"
+      ],
+      "checkedAt": "2026-10-22T12:42:03.108Z"
+    },
+    "saki-oohoshi-awai": {
+      "tag": "oohoshi_awai",
+      "postCount": 202,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "oohoshi_awai",
+        "oohoshi_awai_(saki_(manga))",
+        "oohoshi_awai(*)",
+        "oohoshi(*)"
+      ],
+      "allCandidates": [
+        "oohoshi_awai(202)",
+        "oohoshi_ringo(10)"
+      ],
+      "checkedAt": "2026-10-22T12:42:08.053Z"
+    },
+    "saki-usuzumi-hatsumi": {
+      "tag": "usuzumi_hatsumi",
+      "postCount": 190,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "usuzumi_hatsumi",
+        "usuzumi_hatsumi_(saki_(manga))",
+        "usuzumi_hatsumi(*)",
+        "usuzumi(*)"
+      ],
+      "allCandidates": [
+        "usuzumi_hatsumi(190)",
+        "usuzumi_kei(33)",
+        "usuzumi_sakura(18)",
+        "usuzumi_hinageshi(12)"
+      ],
+      "checkedAt": "2026-10-22T12:42:12.768Z"
+    },
+    "saki-tsuruta-himeko": {
+      "tag": "tsuruta_himeko",
+      "postCount": 170,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "tsuruta_himeko",
+        "tsuruta_himeko_(saki_(manga))",
+        "tsuruta_himeko(*)",
+        "tsuruta(*)"
+      ],
+      "allCandidates": [
+        "tsuruta_himeko(170)",
+        "tsuruta_(tsukiatte_agetemo_ii_kana)(9)",
+        "tsurutani_ayaka(5)",
+        "tsuruta_hirokazu(2)",
+        "tsuruta_tatsuya(2)"
+      ],
+      "checkedAt": "2026-10-22T12:42:17.655Z"
+    },
+    "saki-kanbara-satomi": {
+      "tag": "kanbara_satomi",
+      "postCount": 160,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "kanbara_satomi",
+        "kanbara_satomi_(saki_(manga))",
+        "kanbara_satomi(*)",
+        "kanbara(*)"
+      ],
+      "allCandidates": [
+        "kanbara_satomi(160)",
+        "kanbara_takuya(140)",
+        "kanbara_akihito(90)",
+        "kanbara_chisa(6)",
+        "kanbara_sachiko(2)"
+      ],
+      "checkedAt": "2026-10-22T12:42:22.400Z"
+    },
+    "saki-ryuumonbuchi-touka": {
+      "tag": "ryuumonbuchi_touka",
+      "postCount": 155,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "ryuumonbuchi_touka",
+        "ryuumonbuchi_touka_(saki_(manga))",
+        "ryuumonbuchi_touka(*)",
+        "ryuumonbuchi(*)"
+      ],
+      "allCandidates": [
+        "ryuumonbuchi_touka(155)"
+      ],
+      "checkedAt": "2026-10-22T12:42:27.223Z"
+    },
+    "saki-someya-mako": {
+      "tag": "someya_mako",
+      "postCount": 145,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "someya_mako",
+        "someya_mako_(saki_(manga))",
+        "someya_mako(*)",
+        "someya(*)"
+      ],
+      "allCandidates": [
+        "someya_mako(145)",
+        "someya_yuujirou(32)",
+        "someya_yuzu(14)",
+        "someya_luna(8)",
+        "someya_ryouta(4)"
+      ],
+      "checkedAt": "2026-10-22T12:42:31.939Z"
+    },
+    "saki-anetai-toyone": {
+      "tag": "anetai_toyone",
+      "postCount": 139,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "anetai_toyone",
+        "anetai_toyone_(saki_(manga))",
+        "anetai_toyone(*)",
+        "anetai(*)"
+      ],
+      "allCandidates": [
+        "anetai_toyone(139)"
+      ],
+      "checkedAt": "2026-10-22T12:42:36.797Z"
+    },
+    "saki-eguchi-sera": {
+      "tag": "eguchi_sera",
+      "postCount": 138,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "eguchi_sera",
+        "eguchi_sera_(saki_(manga))",
+        "eguchi_sera(*)",
+        "eguchi(*)"
+      ],
+      "allCandidates": [
+        "eguchi_sera(138)",
+        "eguchi_tomoka(72)",
+        "eguchi_hibiki(62)",
+        "eguchi_(tonaero)(41)",
+        "eguchi-chan_(outo_eguchi)(41)"
+      ],
+      "checkedAt": "2026-10-22T12:42:41.525Z"
+    },
+    "saki-hanada-kirame": {
+      "tag": "hanada_kirame",
+      "postCount": 134,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "hanada_kirame",
+        "hanada_kirame_(saki_(manga))",
+        "hanada_kirame(*)",
+        "hanada(*)"
+      ],
+      "allCandidates": [
+        "hanada_kirame(134)",
+        "hanada_nikki(63)",
+        "hanada_yayo(15)",
+        "hanadawannyan(2)",
+        "hanada_yasutaka(2)"
+      ],
+      "checkedAt": "2026-10-22T12:42:46.260Z"
+    },
+    "saki-sagimori-arata": {
+      "tag": "sagimori_arata",
+      "postCount": 128,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "sagimori_arata",
+        "sagimori_arata_(saki_(manga))",
+        "sagimori_arata(*)",
+        "sagimori(*)"
+      ],
+      "allCandidates": [
+        "sagimori_arata(128)",
+        "sagimori_shiori(1)"
+      ],
+      "checkedAt": "2026-10-22T12:42:51.079Z"
+    },
+    "saki-aislinn-wishart": {
+      "tag": "aislinn_wishart",
+      "postCount": 127,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "aislinn_wishart",
+        "aislinn_wishart_(saki_(manga))",
+        "aislinn_wishart(*)",
+        "aislinn(*)"
+      ],
+      "allCandidates": [
+        "aislinn_wishart(127)"
+      ],
+      "checkedAt": "2026-10-22T12:42:57.302Z"
+    },
+    "saki-jindai-komaki": {
+      "tag": "jindai_komaki",
+      "postCount": 126,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "jindai_komaki",
+        "jindai_komaki_(saki_(manga))",
+        "jindai_komaki(*)",
+        "jindai(*)"
+      ],
+      "allCandidates": [
+        "jindai_komaki(126)",
+        "jindaiji_mami(5)"
+      ],
+      "checkedAt": "2026-10-22T12:43:02.638Z"
+    },
+    "saki-atago-hiroe": {
+      "tag": "atago_hiroe",
+      "postCount": 126,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "atago_hiroe",
+        "atago_hiroe_(saki_(manga))",
+        "atago_hiroe(*)",
+        "atago(*)"
+      ],
+      "allCandidates": [
+        "atago_hiroe(126)",
+        "atago_(kancolle)(7219)",
+        "atago_(azur_lane)(4915)",
+        "atago_(stunning_speedster)_(azur_lane)(984)",
+        "atago_(summer_march)_(azur_lane)(679)"
+      ],
+      "checkedAt": "2026-10-22T12:43:08.190Z"
+    },
+    "saki-usuzawa-sae": {
+      "tag": "usuzawa_sae",
+      "postCount": 126,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "usuzawa_sae",
+        "usuzawa_sae_(saki_(manga))",
+        "usuzawa_sae(*)",
+        "usuzawa(*)"
+      ],
+      "allCandidates": [
+        "usuzawa_sae(126)"
+      ],
+      "checkedAt": "2026-10-22T12:43:13.261Z"
+    },
+    "saki-atago-kinue": {
+      "tag": "atago_kinue",
+      "postCount": 112,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "atago_kinue",
+        "atago_kinue_(saki_(manga))",
+        "atago_kinue(*)",
+        "atago(*)"
+      ],
+      "allCandidates": [
+        "atago_kinue(112)",
+        "atago_(kancolle)(7219)",
+        "atago_(azur_lane)(4915)",
+        "atago_(stunning_speedster)_(azur_lane)(984)",
+        "atago_(summer_march)_(azur_lane)(679)"
+      ],
+      "checkedAt": "2026-10-22T12:43:22.746Z"
+    },
+    "saki-shirouzu-mairu": {
+      "tag": "shirouzu_mairu",
+      "postCount": 110,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "shirouzu_mairu",
+        "shirouzu_mairu_(saki_(manga))",
+        "shirouzu_mairu(*)",
+        "shirouzu(*)"
+      ],
+      "allCandidates": [
+        "shirouzu_mairu(110)",
+        "shirouzu_(gundam)(196)",
+        "shirouzu_rikka(23)"
+      ],
+      "checkedAt": "2026-10-22T12:43:27.431Z"
     }
   }
 }

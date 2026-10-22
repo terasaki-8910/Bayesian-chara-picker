@@ -49176,5 +49176,2052 @@
       "character": "ayane",
       "series": null
     }
+  },
+  {
+    "id": "kaguyasamawakokurasetaitensaitachinorenaizunousen-shinomiya-kaguya",
+    "name": "四宮かぐや",
+    "series": "かぐや様は告らせたい〜天才たちの恋愛頭脳戦〜",
+    "aliases": [
+      "かぐや様",
+      "氷のかぐや",
+      "Kaguya Shinomiya"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "小さい",
+      "distance": "やや受け身",
+      "skinTone": "色白",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "秀知院学園",
+      "stature": "標準",
+      "personality": [
+        "クール",
+        "むっつり"
+      ],
+      "roles": [
+        "恋人・伴侶"
+      ],
+      "looks": [],
+      "hairColor": [
+        "黒"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [
+        "純愛寄り"
+      ],
+      "occupation": []
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "かぐや様 四宮かぐや",
+    "hitomiQuery": {
+      "character": "kaguya shinomiya",
+      "series": null
+    }
+  },
+  {
+    "id": "kaguyasamawakokurasetaitensaitachinorenaizunousen-fujiwara-chika",
+    "name": "藤原千花",
+    "series": "かぐや様は告らせたい〜天才たちの恋愛頭脳戦〜",
+    "aliases": [
+      "藤原書記",
+      "千花",
+      "Chika Fujiwara"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "distance": "中立",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "秀知院学園",
+      "stature": "標準",
+      "personality": [
+        "元気",
+        "おっとり"
+      ],
+      "roles": [
+        "友人"
+      ],
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "桃"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [],
+      "occupation": []
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "かぐや様 藤原千花",
+    "hitomiQuery": {
+      "character": "chika fujiwara",
+      "series": null
+    }
+  },
+  {
+    "id": "kaguyasamawakokurasetaitensaitachinorenaizunousen-hayasaka-ai",
+    "name": "早坂愛",
+    "series": "かぐや様は告らせたい〜天才たちの恋愛頭脳戦〜",
+    "aliases": [
+      "早坂",
+      "スミシー・A・ハーサカ",
+      "Ai Hayasaka"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "distance": "やや積極的",
+      "skinTone": "色白",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "秀知院学園",
+      "stature": "標準",
+      "personality": [
+        "クール"
+      ],
+      "roles": [
+        "幼馴染",
+        "主従"
+      ],
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "金"
+      ],
+      "outfit": [
+        "制服",
+        "メイド"
+      ],
+      "mood": [],
+      "occupation": [
+        "メイド・従者"
+      ]
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "かぐや様 早坂愛",
+    "hitomiQuery": {
+      "character": "ai hayasaka",
+      "series": null
+    }
+  },
+  {
+    "id": "kaguyasamawakokurasetaitensaitachinorenaizunousen-shijou-maki",
+    "name": "四条眞妃",
+    "series": "かぐや様は告らせたい〜天才たちの恋愛頭脳戦〜",
+    "aliases": [
+      "眞妃",
+      "ウケルちゃん",
+      "ツンデレ先輩",
+      "Maki Shijou"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "distance": "やや受け身",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "秀知院学園",
+      "stature": "標準",
+      "personality": [
+        "生意気"
+      ],
+      "roles": [
+        "幼馴染",
+        "先輩"
+      ],
+      "looks": [
+        "ツインテール"
+      ],
+      "hairColor": [
+        "茶"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [],
+      "occupation": []
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "かぐや様 四条眞妃",
+    "hitomiQuery": {
+      "character": "maki shijou",
+      "series": null
+    }
+  },
+  {
+    "id": "kaguyasamawakokurasetaitensaitachinorenaizunousen-koyasu-tsubame",
+    "name": "子安つばめ",
+    "series": "かぐや様は告らせたい〜天才たちの恋愛頭脳戦〜",
+    "aliases": [
+      "つばめ先輩",
+      "Tsubame Koyasu"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "distance": "中立",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "秀知院学園",
+      "stature": "標準",
+      "personality": [
+        "元気",
+        "姉御"
+      ],
+      "roles": [
+        "先輩"
+      ],
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "茶",
+        "桃"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [
+        "甘め"
+      ],
+      "occupation": []
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "かぐや様 子安つばめ",
+    "hitomiQuery": {
+      "character": "tsubame koyasu",
+      "series": null
+    }
+  },
+  {
+    "id": "saki-haramura-nodoka",
+    "name": "原村和",
+    "series": "咲-Saki-",
+    "aliases": [
+      "のどっち",
+      "和",
+      "Nodoka Haramura"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "むっちり",
+      "bust": "大きい",
+      "distance": "やや受け身",
+      "skinTone": "色白",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "清澄高校",
+      "stature": "標準",
+      "personality": [
+        "クール"
+      ],
+      "roles": [
+        "友人"
+      ],
+      "looks": [
+        "長髪",
+        "ツインテール"
+      ],
+      "hairColor": [
+        "桃"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [],
+      "occupation": []
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "咲 原村和",
+    "hitomiQuery": {
+      "character": "nodoka haramura",
+      "series": null
+    }
+  },
+  {
+    "id": "saki-miyanaga-saki",
+    "name": "宮永咲",
+    "series": "咲-Saki-",
+    "aliases": [
+      "咲さん",
+      "Saki Miyanaga"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "小さい",
+      "distance": "受け身",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "清澄高校",
+      "stature": "標準",
+      "personality": [
+        "おっとり",
+        "内気"
+      ],
+      "roles": [
+        "妹",
+        "友人"
+      ],
+      "looks": [],
+      "hairColor": [
+        "茶"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [],
+      "occupation": []
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "咲 宮永咲",
+    "hitomiQuery": {
+      "character": "saki miyanaga",
+      "series": null
+    }
+  },
+  {
+    "id": "saki-takei-hisa",
+    "name": "竹井久",
+    "series": "咲-Saki-",
+    "aliases": [
+      "部長",
+      "上埜久",
+      "Hisa Takei"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "distance": "やや積極的",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "清澄高校",
+      "stature": "標準",
+      "personality": [
+        "姉御"
+      ],
+      "roles": [
+        "先輩"
+      ],
+      "looks": [],
+      "hairColor": [
+        "茶",
+        "赤"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [
+        "支配的"
+      ],
+      "occupation": []
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "咲 竹井久",
+    "hitomiQuery": {
+      "character": "hisa takei",
+      "series": null
+    }
+  },
+  {
+    "id": "saki-fukuji-mihoko",
+    "name": "福路美穂子",
+    "series": "咲-Saki-",
+    "aliases": [
+      "キャプテン",
+      "Mihoko Fukuji"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "distance": "やや受け身",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "風越女子高校",
+      "stature": "標準",
+      "personality": [
+        "おっとり"
+      ],
+      "roles": [
+        "先輩",
+        "母性"
+      ],
+      "looks": [],
+      "hairColor": [
+        "金"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [
+        "甘め"
+      ],
+      "occupation": []
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "咲 福路美穂子",
+    "hitomiQuery": {
+      "character": "mihoko fukuji",
+      "series": null
+    }
+  },
+  {
+    "id": "saki-amae-koromo",
+    "name": "天江衣",
+    "series": "咲-Saki-",
+    "aliases": [
+      "衣",
+      "ころたん",
+      "Koromo Amae"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "distance": "やや積極的",
+      "skinTone": "色白",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "龍門渕高校",
+      "stature": "小柄",
+      "personality": [
+        "元気",
+        "生意気"
+      ],
+      "roles": [],
+      "looks": [
+        "ケモミミ",
+        "長髪"
+      ],
+      "hairColor": [
+        "金"
+      ],
+      "outfit": [],
+      "mood": [
+        "甘め"
+      ],
+      "occupation": []
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "咲 天江衣",
+    "hitomiQuery": {
+      "character": "koromo amae",
+      "series": null
+    }
+  },
+  {
+    "id": "saki-miyanaga-teru",
+    "name": "宮永照",
+    "series": "咲-Saki-",
+    "aliases": [
+      "照",
+      "テルー",
+      "Teru Miyanaga"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "小さい",
+      "distance": "やや受け身",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "白糸台高校",
+      "stature": "標準",
+      "personality": [
+        "クール",
+        "おっとり"
+      ],
+      "roles": [
+        "姉"
+      ],
+      "looks": [],
+      "hairColor": [
+        "赤"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [],
+      "occupation": []
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "咲 宮永照",
+    "hitomiQuery": {
+      "character": "teru miyanaga",
+      "series": null
+    }
+  },
+  {
+    "id": "saki-kataoka-yuuki",
+    "name": "片岡優希",
+    "series": "咲-Saki-",
+    "aliases": [
+      "優希",
+      "ゆーき",
+      "タコス",
+      "Yuuki Kataoka"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "distance": "積極的",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "清澄高校",
+      "stature": "小柄",
+      "personality": [
+        "元気",
+        "生意気"
+      ],
+      "roles": [
+        "友人"
+      ],
+      "looks": [],
+      "hairColor": [
+        "茶"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [
+        "純愛寄り"
+      ],
+      "occupation": []
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "咲 片岡優希",
+    "hitomiQuery": {
+      "character": "yuuki kataoka",
+      "series": null
+    }
+  },
+  {
+    "id": "saki-atarashi-ako",
+    "name": "新子憧",
+    "series": "咲-Saki-",
+    "aliases": [
+      "憧",
+      "アコチャー",
+      "Ako Atarashi"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "distance": "中立",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "阿知賀女子学院",
+      "stature": "標準",
+      "personality": [
+        "クール",
+        "生意気"
+      ],
+      "roles": [
+        "幼馴染"
+      ],
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "茶"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [
+        "背徳寄り"
+      ],
+      "occupation": []
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "咲 新子憧",
+    "hitomiQuery": {
+      "character": "ako atarashi",
+      "series": null
+    }
+  },
+  {
+    "id": "saki-takakamo-shizuno",
+    "name": "高鴨穏乃",
+    "series": "咲-Saki-",
+    "aliases": [
+      "穏乃",
+      "シズ",
+      "Shizuno Takakamo"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "小さい",
+      "distance": "やや積極的",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "阿知賀女子学院",
+      "stature": "小柄",
+      "personality": [
+        "元気"
+      ],
+      "roles": [
+        "幼馴染"
+      ],
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "茶"
+      ],
+      "outfit": [],
+      "mood": [],
+      "occupation": []
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "咲 高鴨穏乃",
+    "hitomiQuery": {
+      "character": "shizuno takakamo",
+      "series": null
+    }
+  },
+  {
+    "id": "saki-touyoko-momoko",
+    "name": "東横桃子",
+    "series": "咲-Saki-",
+    "aliases": [
+      "モモ",
+      "ステルスモモ",
+      "Momoko Touyoko"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "distance": "やや積極的",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "鶴賀学園",
+      "stature": "標準",
+      "personality": [
+        "内気"
+      ],
+      "roles": [
+        "後輩"
+      ],
+      "looks": [],
+      "hairColor": [
+        "黒"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [
+        "純愛寄り"
+      ],
+      "occupation": []
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "咲 東横桃子",
+    "hitomiQuery": {
+      "character": "momoko touyoko",
+      "series": null
+    }
+  },
+  {
+    "id": "saki-kunihiro-hajime",
+    "name": "国広一",
+    "series": "咲-Saki-",
+    "aliases": [
+      "一",
+      "はじめ",
+      "Hajime Kunihiro"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "小さい",
+      "distance": "中立",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "龍門渕高校",
+      "stature": "小柄",
+      "personality": [
+        "元気"
+      ],
+      "roles": [
+        "主従"
+      ],
+      "looks": [],
+      "hairColor": [
+        "黒"
+      ],
+      "outfit": [
+        "メイド"
+      ],
+      "mood": [
+        "従属的"
+      ],
+      "occupation": [
+        "メイド・従者"
+      ]
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "咲 国広一",
+    "hitomiQuery": {
+      "character": "hajime kunihiro",
+      "series": null
+    }
+  },
+  {
+    "id": "saki-matsumi-kuro",
+    "name": "松実玄",
+    "series": "咲-Saki-",
+    "aliases": [
+      "玄",
+      "クロチャー",
+      "ドラゴンロード",
+      "Kuro Matsumi"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "distance": "やや積極的",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "阿知賀女子学院",
+      "stature": "標準",
+      "personality": [
+        "おっとり",
+        "むっつり"
+      ],
+      "roles": [
+        "先輩",
+        "妹"
+      ],
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "茶",
+        "紫"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [
+        "甘め"
+      ],
+      "occupation": []
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "咲 松実玄",
+    "hitomiQuery": {
+      "character": "kuro matsumi",
+      "series": null
+    }
+  },
+  {
+    "id": "saki-iwato-kasumi",
+    "name": "石戸霞",
+    "series": "咲-Saki-",
+    "aliases": [
+      "霞",
+      "Kasumi Iwato"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "むっちり",
+      "bust": "とても大きい",
+      "distance": "中立",
+      "skinTone": "色白",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "永水女子高校",
+      "stature": "標準",
+      "personality": [
+        "おっとり"
+      ],
+      "roles": [
+        "母性"
+      ],
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "黒"
+      ],
+      "outfit": [
+        "巫女",
+        "和服・着物"
+      ],
+      "mood": [
+        "甘め"
+      ],
+      "occupation": [
+        "巫女・神職"
+      ]
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "咲 石戸霞",
+    "hitomiQuery": {
+      "character": "kasumi iwato",
+      "series": null
+    }
+  },
+  {
+    "id": "saki-kajiki-yumi",
+    "name": "加治木ゆみ",
+    "series": "咲-Saki-",
+    "aliases": [
+      "かじゅ",
+      "ゆみちん",
+      "Yumi Kajiki"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "distance": "やや積極的",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "鶴賀学園",
+      "stature": "標準",
+      "personality": [
+        "クール",
+        "姉御"
+      ],
+      "roles": [
+        "先輩"
+      ],
+      "looks": [],
+      "hairColor": [
+        "黒",
+        "紫"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [
+        "純愛寄り"
+      ],
+      "occupation": []
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "咲 加治木ゆみ",
+    "hitomiQuery": {
+      "character": "yumi kajiki",
+      "series": null
+    }
+  },
+  {
+    "id": "saki-matsumi-yuu",
+    "name": "松実宥",
+    "series": "咲-Saki-",
+    "aliases": [
+      "宥姉",
+      "Yuu Matsumi"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "distance": "受け身",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "阿知賀女子学院",
+      "stature": "標準",
+      "personality": [
+        "おっとり",
+        "内気"
+      ],
+      "roles": [
+        "先輩",
+        "姉"
+      ],
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "茶"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [
+        "甘め"
+      ],
+      "occupation": []
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "咲 松実宥",
+    "hitomiQuery": {
+      "character": "yuu matsumi",
+      "series": null
+    }
+  },
+  {
+    "id": "saki-onjouji-toki",
+    "name": "園城寺怜",
+    "series": "咲-Saki-",
+    "aliases": [
+      "怜ちゃん",
+      "Toki Onjouji"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "標準",
+      "distance": "中立",
+      "skinTone": "色白",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "千里山女子高校",
+      "stature": "標準",
+      "personality": [
+        "おっとり"
+      ],
+      "roles": [
+        "幼馴染",
+        "友人"
+      ],
+      "looks": [],
+      "hairColor": [
+        "茶"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [
+        "甘め"
+      ],
+      "occupation": []
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "咲 園城寺怜",
+    "hitomiQuery": {
+      "character": "toki onjouji",
+      "series": null
+    }
+  },
+  {
+    "id": "saki-shimizudani-ryuuka",
+    "name": "清水谷竜華",
+    "series": "咲-Saki-",
+    "aliases": [
+      "竜華",
+      "Ryuuka Shimizudani"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "むっちり",
+      "bust": "大きい",
+      "distance": "やや積極的",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "千里山女子高校",
+      "stature": "標準",
+      "personality": [
+        "おっとり",
+        "姉御"
+      ],
+      "roles": [
+        "幼馴染",
+        "母性",
+        "友人"
+      ],
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "黒"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [
+        "甘め"
+      ],
+      "occupation": []
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "咲 清水谷竜華",
+    "hitomiQuery": {
+      "character": "ryuuka shimizudani",
+      "series": null
+    }
+  },
+  {
+    "id": "saki-ikeda-kana",
+    "name": "池田華菜",
+    "series": "咲-Saki-",
+    "aliases": [
+      "華菜ちゃん",
+      "池田ァ",
+      "Kana Ikeda"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "小さい",
+      "distance": "やや積極的",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "風越女子高校",
+      "stature": "小柄",
+      "personality": [
+        "元気",
+        "生意気"
+      ],
+      "roles": [
+        "後輩",
+        "姉"
+      ],
+      "looks": [
+        "ケモミミ"
+      ],
+      "hairColor": [
+        "青"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [],
+      "occupation": []
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "咲 池田華菜",
+    "hitomiQuery": {
+      "character": "kana ikeda",
+      "series": null
+    }
+  },
+  {
+    "id": "saki-hirose-sumire",
+    "name": "弘世菫",
+    "series": "咲-Saki-",
+    "aliases": [
+      "弘世様",
+      "シャープシューター",
+      "Sumire Hirose"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "distance": "中立",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "白糸台高校",
+      "stature": "長身",
+      "personality": [
+        "クール",
+        "姉御"
+      ],
+      "roles": [
+        "先輩",
+        "友人"
+      ],
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "青"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [
+        "純愛寄り"
+      ],
+      "occupation": []
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "咲 弘世菫",
+    "hitomiQuery": {
+      "character": "sumire hirose",
+      "series": null
+    }
+  },
+  {
+    "id": "saki-kosegawa-shiromi",
+    "name": "小瀬川白望",
+    "series": "咲-Saki-",
+    "aliases": [
+      "シロ",
+      "Shiromi Kosegawa"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "distance": "受け身",
+      "skinTone": "色白",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "宮守女子高校",
+      "stature": "標準",
+      "personality": [
+        "クール",
+        "おっとり"
+      ],
+      "roles": [
+        "友人"
+      ],
+      "looks": [],
+      "hairColor": [
+        "白",
+        "銀"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [],
+      "occupation": []
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "咲 小瀬川白望",
+    "hitomiQuery": {
+      "character": "shiromi kosegawa",
+      "series": null
+    }
+  },
+  {
+    "id": "saki-oohoshi-awai",
+    "name": "大星淡",
+    "series": "咲-Saki-",
+    "aliases": [
+      "淡",
+      "Awai Oohoshi"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "distance": "やや積極的",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "白糸台高校",
+      "stature": "標準",
+      "personality": [
+        "元気",
+        "生意気"
+      ],
+      "roles": [
+        "後輩"
+      ],
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "金"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [],
+      "occupation": []
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "咲 大星淡",
+    "hitomiQuery": {
+      "character": "awai oohoshi",
+      "series": null
+    }
+  },
+  {
+    "id": "saki-usuzumi-hatsumi",
+    "name": "薄墨初美",
+    "series": "咲-Saki-",
+    "aliases": [
+      "はっちゃん",
+      "Hatsumi Usuzumi"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "幼い",
+      "build": "華奢",
+      "bust": "小さい",
+      "distance": "中立",
+      "skinTone": "褐色",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "永水女子高校",
+      "stature": "小柄",
+      "personality": [
+        "元気",
+        "おっとり"
+      ],
+      "roles": [],
+      "looks": [
+        "ツインテール"
+      ],
+      "hairColor": [
+        "茶",
+        "紫"
+      ],
+      "outfit": [
+        "巫女",
+        "和服・着物"
+      ],
+      "mood": [
+        "背徳寄り"
+      ],
+      "occupation": [
+        "巫女・神職"
+      ]
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "咲 薄墨初美",
+    "hitomiQuery": {
+      "character": "hatsumi usuzumi",
+      "series": null
+    }
+  },
+  {
+    "id": "saki-tsuruta-himeko",
+    "name": "鶴田姫子",
+    "series": "咲-Saki-",
+    "aliases": [
+      "姫子",
+      "Himeko Tsuruta"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "distance": "やや受け身",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "新道寺女子高校",
+      "stature": "標準",
+      "personality": [
+        "クール",
+        "むっつり"
+      ],
+      "roles": [
+        "後輩"
+      ],
+      "looks": [],
+      "hairColor": [
+        "茶"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [
+        "従属的"
+      ],
+      "occupation": []
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "咲 鶴田姫子",
+    "hitomiQuery": {
+      "character": "himeko tsuruta",
+      "series": null
+    }
+  },
+  {
+    "id": "saki-kanbara-satomi",
+    "name": "蒲原智美",
+    "series": "咲-Saki-",
+    "aliases": [
+      "ワハハ",
+      "カマボコ",
+      "Satomi Kanbara"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "小さい",
+      "distance": "やや積極的",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "鶴賀学園",
+      "stature": "標準",
+      "personality": [
+        "元気"
+      ],
+      "roles": [
+        "幼馴染"
+      ],
+      "looks": [],
+      "hairColor": [
+        "赤"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [],
+      "occupation": []
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "咲 蒲原智美",
+    "hitomiQuery": {
+      "character": "satomi kanbara",
+      "series": null
+    }
+  },
+  {
+    "id": "saki-ryuumonbuchi-touka",
+    "name": "龍門渕透華",
+    "series": "咲-Saki-",
+    "aliases": [
+      "透華",
+      "Touka Ryuumonbuchi"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "小さい",
+      "distance": "やや積極的",
+      "skinTone": "色白",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "龍門渕高校",
+      "stature": "標準",
+      "personality": [
+        "元気",
+        "生意気"
+      ],
+      "roles": [
+        "主従",
+        "ライバル"
+      ],
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "金"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [],
+      "occupation": [
+        "王族・貴族"
+      ]
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "咲 龍門渕透華",
+    "hitomiQuery": {
+      "character": "touka ryuumonbuchi",
+      "series": null
+    }
+  },
+  {
+    "id": "saki-someya-mako",
+    "name": "染谷まこ",
+    "series": "咲-Saki-",
+    "aliases": [
+      "まこ",
+      "Mako Someya"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "小さい",
+      "distance": "中立",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "清澄高校",
+      "stature": "標準",
+      "personality": [
+        "姉御"
+      ],
+      "roles": [
+        "先輩"
+      ],
+      "looks": [
+        "眼鏡"
+      ],
+      "hairColor": [
+        "緑"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [],
+      "occupation": []
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "咲 染谷まこ",
+    "hitomiQuery": {
+      "character": "mako someya",
+      "series": null
+    }
+  },
+  {
+    "id": "saki-anetai-toyone",
+    "name": "姉帯豊音",
+    "series": "咲-Saki-",
+    "aliases": [
+      "トヨネ",
+      "Toyone Anetai"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "distance": "やや受け身",
+      "skinTone": "色白",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "宮守女子高校",
+      "stature": "長身",
+      "personality": [
+        "元気",
+        "おっとり"
+      ],
+      "roles": [
+        "友人"
+      ],
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "黒"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [],
+      "occupation": []
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "咲 姉帯豊音",
+    "hitomiQuery": {
+      "character": "toyone anetai",
+      "series": null
+    }
+  },
+  {
+    "id": "saki-eguchi-sera",
+    "name": "江口セーラ",
+    "series": "咲-Saki-",
+    "aliases": [
+      "セーラ",
+      "Sera Eguchi"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "小さい",
+      "distance": "中立",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "千里山女子高校",
+      "stature": "標準",
+      "personality": [
+        "元気",
+        "姉御"
+      ],
+      "roles": [],
+      "looks": [],
+      "hairColor": [
+        "茶"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [],
+      "occupation": []
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "咲 江口セーラ",
+    "hitomiQuery": {
+      "character": "sera eguchi",
+      "series": null
+    }
+  },
+  {
+    "id": "saki-hanada-kirame",
+    "name": "花田煌",
+    "series": "咲-Saki-",
+    "aliases": [
+      "すばら先輩",
+      "Kirame Hanada"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "distance": "やや積極的",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "新道寺女子高校",
+      "stature": "標準",
+      "personality": [
+        "元気"
+      ],
+      "roles": [
+        "先輩"
+      ],
+      "looks": [
+        "ツインテール"
+      ],
+      "hairColor": [
+        "紫"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [],
+      "occupation": []
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "咲 花田煌",
+    "hitomiQuery": {
+      "character": "kirame hanada",
+      "series": null
+    }
+  },
+  {
+    "id": "saki-sagimori-arata",
+    "name": "鷺森灼",
+    "series": "咲-Saki-",
+    "aliases": [
+      "灼",
+      "Arata Sagimori"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "小さい",
+      "distance": "やや受け身",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "阿知賀女子学院",
+      "stature": "小柄",
+      "personality": [
+        "クール"
+      ],
+      "roles": [
+        "先輩"
+      ],
+      "looks": [],
+      "hairColor": [
+        "黒"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [],
+      "occupation": []
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "咲 鷺森灼",
+    "hitomiQuery": {
+      "character": "arata sagimori",
+      "series": null
+    }
+  },
+  {
+    "id": "saki-aislinn-wishart",
+    "name": "エイスリン・ウィッシュアート",
+    "series": "咲-Saki-",
+    "aliases": [
+      "エイスリン",
+      "エイちゃん",
+      "Aislinn Wishart"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "distance": "中立",
+      "skinTone": "色白",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "宮守女子高校",
+      "stature": "標準",
+      "personality": [
+        "元気"
+      ],
+      "roles": [
+        "友人"
+      ],
+      "looks": [],
+      "hairColor": [
+        "金"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [],
+      "occupation": []
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "咲 エイスリン・ウィッシュアート",
+    "hitomiQuery": {
+      "character": "aislinn wishart",
+      "series": null
+    }
+  },
+  {
+    "id": "saki-jindai-komaki",
+    "name": "神代小蒔",
+    "series": "咲-Saki-",
+    "aliases": [
+      "姫様",
+      "小蒔",
+      "Komaki Jindai"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "distance": "やや受け身",
+      "skinTone": "色白",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "永水女子高校",
+      "stature": "標準",
+      "personality": [
+        "おっとり"
+      ],
+      "roles": [
+        "主従"
+      ],
+      "looks": [
+        "長髪",
+        "ツインテール"
+      ],
+      "hairColor": [
+        "黒"
+      ],
+      "outfit": [
+        "制服",
+        "巫女",
+        "和服・着物"
+      ],
+      "mood": [],
+      "occupation": [
+        "巫女・神職"
+      ]
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "咲 神代小蒔",
+    "hitomiQuery": {
+      "character": "komaki jindai",
+      "series": null
+    }
+  },
+  {
+    "id": "saki-atago-hiroe",
+    "name": "愛宕洋榎",
+    "series": "咲-Saki-",
+    "aliases": [
+      "洋榎",
+      "Hiroe Atago"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "小さい",
+      "distance": "やや積極的",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "姫松高校",
+      "stature": "標準",
+      "personality": [
+        "元気"
+      ],
+      "roles": [
+        "姉",
+        "ライバル"
+      ],
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "赤"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [],
+      "occupation": []
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "咲 愛宕洋榎",
+    "hitomiQuery": {
+      "character": "hiroe atago",
+      "series": null
+    }
+  },
+  {
+    "id": "saki-usuzawa-sae",
+    "name": "臼沢塞",
+    "series": "咲-Saki-",
+    "aliases": [
+      "塞",
+      "Sae Usuzawa"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "distance": "中立",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "宮守女子高校",
+      "stature": "標準",
+      "personality": [
+        "姉御"
+      ],
+      "roles": [],
+      "looks": [],
+      "hairColor": [
+        "赤"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [],
+      "occupation": []
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "咲 臼沢塞",
+    "hitomiQuery": {
+      "character": "sae usuzawa",
+      "series": null
+    }
+  },
+  {
+    "id": "saki-atago-kinue",
+    "name": "愛宕絹恵",
+    "series": "咲-Saki-",
+    "aliases": [
+      "絹恵",
+      "絹",
+      "Kinue Atago"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "distance": "中立",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "姫松高校",
+      "stature": "標準",
+      "personality": [
+        "元気"
+      ],
+      "roles": [
+        "妹"
+      ],
+      "looks": [
+        "眼鏡",
+        "長髪"
+      ],
+      "hairColor": [
+        "青"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [],
+      "occupation": []
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "咲 愛宕絹恵",
+    "hitomiQuery": {
+      "character": "kinue atago",
+      "series": null
+    }
+  },
+  {
+    "id": "saki-shirouzu-mairu",
+    "name": "白水哩",
+    "series": "咲-Saki-",
+    "aliases": [
+      "哩",
+      "シローズ",
+      "Mairu Shirouzu"
+    ],
+    "axes": {
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "distance": "中立",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "新道寺女子高校",
+      "stature": "標準",
+      "personality": [
+        "クール"
+      ],
+      "roles": [
+        "先輩"
+      ],
+      "looks": [
+        "長髪",
+        "ツインテール"
+      ],
+      "hairColor": [
+        "緑"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [
+        "背徳寄り"
+      ],
+      "occupation": []
+    },
+    "reviewed": true,
+    "provisional": false,
+    "imagePath": null,
+    "imageApproved": false,
+    "dlsiteQuery": "咲 白水哩",
+    "hitomiQuery": {
+      "character": "mairu shirouzu",
+      "series": null
+    }
   }
 ]
