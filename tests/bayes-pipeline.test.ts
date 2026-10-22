@@ -148,7 +148,7 @@ describe('BB. Danbooruクライアント（scripts/bayes/danbooru-client.mjs）'
   });
 
   it('retryOnServerError: 5xx は待って再試行し、それ以外の失敗はすぐ投げる', async () => {
-    vi.spyOn(console, 'error').mockImplementation(() => {});
+    const errorSpy = vi.spyOn(console, 'error').mockImplementation(() => {});
     let calls = 0;
     const flaky = async () => {
       calls += 1;
@@ -170,6 +170,7 @@ describe('BB. Danbooruクライアント（scripts/bayes/danbooru-client.mjs）'
       throw new Error('Danbooru API 呼び出しに失敗しました (status=502): /tags.json');
     };
     await expect(retryOnServerError(down, 'x', { retries: 2, backoffMs: 0 })).rejects.toThrow(/status=502/);
+    errorSpy.mockRestore();
   });
 
   it('fetchTagExact: search[name]の完全一致で1件目を返す、無ければnull', async () => {
