@@ -18,7 +18,7 @@ import {
   searchCharacterTagCandidates,
   splitTagString,
 } from '../scripts/bayes/danbooru-client.mjs';
-import { isExcludedCandidate } from '../scripts/bayes/build-candidates.mjs';
+import { isExcludedCandidate, rankCandidates } from '../scripts/bayes/build-candidates.mjs';
 import { resolveJapaneseName } from '../scripts/bayes/resolve-candidate-names.mjs';
 import { mapOneCharacter, seriesOverlapRatio, toBareTag } from '../scripts/bayes/map-characters.mjs';
 import { runVerifyChecks, samplePostsForTag } from '../scripts/bayes/sample-posts.mjs';
@@ -352,6 +352,21 @@ describe('BB. Danbooruクライアント（scripts/bayes/danbooru-client.mjs）'
     vi.resetModules();
     await import('../scripts/bayes/danbooru-client.mjs');
     expect(fetchSpy).not.toHaveBeenCalled();
+  });
+});
+
+describe('rankCandidates（scripts/bayes/build-candidates.mjs）', () => {
+  // 2026-10-22 発見: fav を測った上位400件だけを候補に残していたため、投稿約1150〜3003件の
+  // 候補（四宮かぐや・原村和など）が何も言わずに落ちていた。fav を測らなかった候補も残す。
+  it('fav を測らなかった候補も落とさず、投稿数の降順に並べる', () => {
+    const female = [
+      { tag: 'b', postCount: 2588 },
+      { tag: 'a', postCount: 5000 },
+      { tag: 'c', postCount: 1421 },
+    ];
+    const ranked = rankCandidates(female, new Map([['a', 12]]));
+    expect(ranked.map((c) => c.tag)).toEqual(['a', 'b', 'c']);
+    expect(ranked.map((c) => c.favMedian)).toEqual([12, null, null]);
   });
 });
 
