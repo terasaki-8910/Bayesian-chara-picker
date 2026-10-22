@@ -51123,51 +51123,6 @@
     }
   },
   {
-    "id": "saki-kakura-kurumi",
-    "name": "鹿倉胡桃",
-    "series": "咲-Saki-",
-    "aliases": [
-      "胡桃",
-      "Kurumi Kakura"
-    ],
-    "axes": {
-      "genderExpression": "女性",
-      "ageFeel": "幼い",
-      "build": "華奢",
-      "bust": "小さい",
-      "distance": "やや積極的",
-      "skinTone": "標準",
-      "species": "人間",
-      "combat": "戦わない",
-      "affiliationKind": "学生",
-      "affiliationName": "宮守女子高校",
-      "stature": "小柄",
-      "personality": [
-        "元気",
-        "生意気"
-      ],
-      "roles": [],
-      "looks": [],
-      "hairColor": [
-        "茶"
-      ],
-      "outfit": [
-        "制服"
-      ],
-      "mood": [],
-      "occupation": []
-    },
-    "reviewed": false,
-    "provisional": false,
-    "imagePath": null,
-    "imageApproved": false,
-    "dlsiteQuery": "咲 鹿倉胡桃",
-    "hitomiQuery": {
-      "character": "kurumi kakura",
-      "series": null
-    }
-  },
-  {
     "id": "saki-atago-kinue",
     "name": "愛宕絹恵",
     "series": "咲-Saki-",

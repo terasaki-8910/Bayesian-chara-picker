@@ -48808,67 +48808,6 @@
       },
       "model": "huihui_ai/gemma-4-abliterated-26b-qat"
     },
-    "saki-kakura-kurumi": {
-      "article": "鹿倉胡桃",
-      "axes": {
-        "personality": {
-          "value": "該当なし",
-          "verified": false,
-          "confidence": "none"
-        },
-        "mood": {
-          "value": "該当なし",
-          "verified": false,
-          "confidence": "none"
-        },
-        "species": {
-          "value": "該当なし",
-          "verified": false,
-          "confidence": "none"
-        },
-        "combat": {
-          "value": "該当なし",
-          "verified": false,
-          "confidence": "none"
-        },
-        "distance": {
-          "value": "該当なし",
-          "verified": false,
-          "confidence": "none"
-        },
-        "affiliationKind": {
-          "value": "学生",
-          "verified": true,
-          "confidence": "high"
-        },
-        "ageFeel": {
-          "value": "該当なし",
-          "verified": false,
-          "confidence": "none"
-        },
-        "build": {
-          "value": "該当なし",
-          "verified": false,
-          "confidence": "none"
-        },
-        "stature": {
-          "value": "小柄",
-          "verified": true,
-          "confidence": "high"
-        },
-        "roles": {
-          "values": [],
-          "verified": false,
-          "confidence": "none"
-        },
-        "occupation": {
-          "values": [],
-          "verified": false,
-          "confidence": "none"
-        }
-      },
-      "model": "huihui_ai/gemma-4-abliterated-26b-qat"
-    },
     "saki-atago-kinue": {
       "article": "愛宕絹恵",
       "axes": {
