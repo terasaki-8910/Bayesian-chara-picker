@@ -7224,6 +7224,295 @@
       "source": "search-verified",
       "seriesMatch": true,
       "checkedAt": "2026-10-06T14:57:48.263Z"
+    },
+    "kaguyasamawakokurasetaitensaitachinorenaizunousen-shinomiya-kaguya": {
+      "qid": "Q94578998",
+      "label": "Kaguya Shinomiya",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-22T12:39:59.468Z"
+    },
+    "kaguyasamawakokurasetaitensaitachinorenaizunousen-fujiwara-chika": {
+      "qid": "Q94579116",
+      "label": "Chika Fujiwara",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-22T12:40:03.342Z"
+    },
+    "kaguyasamawakokurasetaitensaitachinorenaizunousen-hayasaka-ai": {
+      "qid": "Q94579119",
+      "label": "Ai Hayasaka",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-22T12:40:07.611Z"
+    },
+    "kaguyasamawakokurasetaitensaitachinorenaizunousen-shijou-maki": {
+      "qid": "Q94579126",
+      "label": "Maki Shijo",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-22T12:40:12.681Z"
+    },
+    "kaguyasamawakokurasetaitensaitachinorenaizunousen-koyasu-tsubame": {
+      "qid": "Q94579125",
+      "label": "Tsubame Koyasu",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-22T12:40:17.155Z"
+    },
+    "saki-haramura-nodoka": {
+      "qid": "Q141734602",
+      "label": "Nodoka Haramura",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-22T12:40:21.177Z"
+    },
+    "saki-miyanaga-saki": {
+      "qid": "Q122625499",
+      "label": "Saki Miyanaga",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-22T12:40:25.654Z"
+    },
+    "saki-takei-hisa": {
+      "qid": "Q141734632",
+      "label": "Hisa Takei",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-22T12:40:30.062Z"
+    },
+    "saki-fukuji-mihoko": {
+      "qid": "Q141738403",
+      "label": "Mihoko Fukuji",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-22T12:40:34.487Z"
+    },
+    "saki-amae-koromo": {
+      "qid": "Q141734648",
+      "label": "Koromo Amae",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-22T12:40:38.583Z"
+    },
+    "saki-miyanaga-teru": {
+      "qid": "Q141740466",
+      "label": "Teru Miyanaga",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-22T12:40:43.035Z"
+    },
+    "saki-kataoka-yuuki": {
+      "qid": "Q141734617",
+      "label": "Yūki Kataoka",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-22T12:40:47.521Z"
+    },
+    "saki-atarashi-ako": {
+      "qid": "Q141757664",
+      "label": "Ako Atarashi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-22T12:40:51.585Z"
+    },
+    "saki-takakamo-shizuno": {
+      "qid": "Q141757032",
+      "label": "Shizuno Takakamo",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-22T12:40:55.618Z"
+    },
+    "saki-touyoko-momoko": {
+      "qid": "Q141740443",
+      "label": "Momoko Tōyoko",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-22T12:41:00.055Z"
+    },
+    "saki-kunihiro-hajime": {
+      "qid": "Q141734673",
+      "label": "Hajime Kunihiro",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-22T12:41:04.116Z"
+    },
+    "saki-matsumi-kuro": {
+      "qid": "Q141757668",
+      "label": "Kuro Matsumi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-22T12:41:08.188Z"
+    },
+    "saki-iwato-kasumi": {
+      "qid": "Q141755941",
+      "label": "Kasumi Iwato",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-22T12:41:12.640Z"
+    },
+    "saki-kajiki-yumi": {
+      "qid": "Q141740412",
+      "label": "Yumi Kajiki",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-22T12:41:17.153Z"
+    },
+    "saki-matsumi-yuu": {
+      "qid": "Q141757669",
+      "label": "Yū Matsumi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-22T12:41:21.219Z"
+    },
+    "saki-onjouji-toki": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-22T12:41:23.515Z"
+    },
+    "saki-shimizudani-ryuuka": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-22T12:41:24.256Z"
+    },
+    "saki-ikeda-kana": {
+      "qid": "Q141740381",
+      "label": "Kana Ikeda",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-22T12:41:27.142Z"
+    },
+    "saki-hirose-sumire": {
+      "qid": "Q141761631",
+      "label": "Sumire Hirose",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-22T12:41:31.616Z"
+    },
+    "saki-kosegawa-shiromi": {
+      "qid": "Q141756974",
+      "label": "Shiromi Kosegawa",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-22T12:41:35.700Z"
+    },
+    "saki-oohoshi-awai": {
+      "qid": "Q141761639",
+      "label": "Awai Ōhoshi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-22T12:41:39.738Z"
+    },
+    "saki-usuzumi-hatsumi": {
+      "qid": "Q141755939",
+      "label": "Hatsumi Usuzumi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-22T12:41:43.763Z"
+    },
+    "saki-tsuruta-himeko": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-22T12:41:46.029Z"
+    },
+    "saki-kanbara-satomi": {
+      "qid": "Q141740446",
+      "label": "Satomi Kanbara",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-22T12:41:48.911Z"
+    },
+    "saki-ryuumonbuchi-touka": {
+      "qid": "Q141734663",
+      "label": "Tōka Ryūmonbuchi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-22T12:41:52.939Z"
+    },
+    "saki-someya-mako": {
+      "qid": "Q141734634",
+      "label": "Mako Someya",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-22T12:41:57.454Z"
+    },
+    "saki-anetai-toyone": {
+      "qid": "Q141757005",
+      "label": "Toyone Anetai",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-22T12:42:01.902Z"
+    },
+    "saki-eguchi-sera": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-22T12:42:03.757Z"
+    },
+    "saki-hanada-kirame": {
+      "qid": "Q141757762",
+      "label": "Kirame Hanada",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-22T12:42:06.661Z"
+    },
+    "saki-sagimori-arata": {
+      "qid": "Q141757671",
+      "label": "Arata Sagimori",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-22T12:42:11.083Z"
+    },
+    "saki-aislinn-wishart": {
+      "qid": "Q141756983",
+      "label": "Aislinn Wishart",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-22T12:42:15.553Z"
+    },
+    "saki-jindai-komaki": {
+      "qid": "Q141755717",
+      "label": "Komaki Jindai",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-22T12:42:19.985Z"
+    },
+    "saki-atago-hiroe": {
+      "qid": "Q141756958",
+      "label": "Hiroe Atago",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-22T12:42:24.470Z"
+    },
+    "saki-usuzawa-sae": {
+      "qid": "Q141756998",
+      "label": "Sae Usuzawa",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-22T12:42:28.970Z"
+    },
+    "saki-kakura-kurumi": {
+      "qid": "Q141756987",
+      "label": "Kurumi Kakura",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-22T12:42:33.449Z"
+    },
+    "saki-atago-kinue": {
+      "qid": "Q141756963",
+      "label": "Kinue Atago",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-22T12:42:37.490Z"
+    },
+    "saki-shirouzu-mairu": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-22T12:42:39.811Z"
     }
   }
 }
