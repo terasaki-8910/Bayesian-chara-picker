@@ -9468,7 +9468,7 @@
     "series": "東方Project",
     "dlsiteQuery": "東方 火焔猫燐",
     "hitomiQuery": {
-      "character": "kaenbyou rin",
+      "character": "rin kaenbyou",
       "series": null
     },
     "axes": {
@@ -9608,7 +9608,7 @@
     "series": "東方Project",
     "dlsiteQuery": "東方 多々良小傘",
     "hitomiQuery": {
-      "character": "tatara kogasa",
+      "character": "kogasa tatara",
       "series": null
     },
     "axes": {
@@ -10727,7 +10727,7 @@
     "series": "ボーカロイド",
     "dlsiteQuery": "初音ミク",
     "hitomiQuery": {
-      "character": "hatsune miku",
+      "character": "miku hatsune",
       "series": null
     },
     "axes": {
@@ -10878,7 +10878,7 @@
     "series": "ボーカロイド",
     "dlsiteQuery": "鏡音リン",
     "hitomiQuery": {
-      "character": "kagamine rin",
+      "character": "rin kagamine",
       "series": null
     },
     "axes": {
@@ -11024,7 +11024,7 @@
     "series": "ボーカロイド",
     "dlsiteQuery": "巡音ルカ",
     "hitomiQuery": {
-      "character": "megurine luka",
+      "character": "luka megurine",
       "series": null
     },
     "axes": {
@@ -11070,7 +11070,7 @@
     "series": "ボーカロイド",
     "dlsiteQuery": "結月ゆかり",
     "hitomiQuery": {
-      "character": "yuzuki yukari",
+      "character": "yukari yuzuki",
       "series": null
     },
     "axes": {
@@ -20358,7 +20358,7 @@
     "series": "物語シリーズ",
     "dlsiteQuery": "忍野忍",
     "hitomiQuery": {
-      "character": "oshino shinobu",
+      "character": "shinobu oshino",
       "series": null
     },
     "axes": {
@@ -24429,7 +24429,7 @@
     "imageApproved": false,
     "dlsiteQuery": "東方 霍青娥",
     "hitomiQuery": {
-      "character": "kaku seiga",
+      "character": "seiga kaku",
       "series": null
     }
   },
@@ -25104,7 +25104,7 @@
     "imageApproved": false,
     "dlsiteQuery": "東方 幽谷響子",
     "hitomiQuery": {
-      "character": "kasodani kyouko",
+      "character": "kyouko kasodani",
       "series": null
     }
   },
@@ -26308,7 +26308,7 @@
     "imageApproved": false,
     "dlsiteQuery": "崩壊3rd 芽衣",
     "hitomiQuery": {
-      "character": "raiden mei",
+      "character": "mei raiden",
       "series": null
     }
   },
@@ -28376,7 +28376,7 @@
     "imageApproved": false,
     "dlsiteQuery": "VOICEROID 紲星あかり",
     "hitomiQuery": {
-      "character": "kizuna akari",
+      "character": "akari kizuna",
       "series": null
     }
   },
@@ -29082,7 +29082,7 @@
     "imageApproved": false,
     "dlsiteQuery": "アイマス やよい",
     "hitomiQuery": {
-      "character": "takatsuki yayoi",
+      "character": "yayoi takatsuki",
       "series": null
     }
   },
@@ -29127,7 +29127,7 @@
     "imageApproved": false,
     "dlsiteQuery": "ジョジョ 徐倫",
     "hitomiQuery": {
-      "character": "kujo jolyne",
+      "character": "jolyne kujo",
       "series": null
     }
   },
@@ -29225,7 +29225,7 @@
     "imageApproved": false,
     "dlsiteQuery": "ひぐらし レナ",
     "hitomiQuery": {
-      "character": "ryuuguu rena",
+      "character": "rena ryuuguu",
       "series": null
     }
   },
@@ -29326,7 +29326,7 @@
     "imageApproved": false,
     "dlsiteQuery": "ストリートファイター ジュリ",
     "hitomiQuery": {
-      "character": "han juri",
+      "character": "juri han",
       "series": null
     }
   },
@@ -30179,7 +30179,7 @@
     "imageApproved": false,
     "dlsiteQuery": "学園アイドルマスター 藤田ことね",
     "hitomiQuery": {
-      "character": "fujita kotone",
+      "character": "kotone fujita",
       "series": null
     }
   },
@@ -30228,7 +30228,7 @@
     "imageApproved": false,
     "dlsiteQuery": "プロセカ 朝比奈まふゆ",
     "hitomiQuery": {
-      "character": "asahina mafuyu",
+      "character": "mafuyu asahina",
       "series": null
     }
   },
@@ -30379,7 +30379,7 @@
     "imageApproved": false,
     "dlsiteQuery": "デレマス 双葉杏",
     "hitomiQuery": {
-      "character": "futaba anzu",
+      "character": "anzu futaba",
       "series": null
     }
   },
@@ -30484,7 +30484,7 @@
     "imageApproved": false,
     "dlsiteQuery": "ラブライブ 千歌",
     "hitomiQuery": {
-      "character": "takami chika",
+      "character": "chika takami",
       "series": null
     }
   },
@@ -30531,7 +30531,7 @@
     "imageApproved": false,
     "dlsiteQuery": "ゼンゼロ 月城柳",
     "hitomiQuery": {
-      "character": "tsukishiro yanagi",
+      "character": "yanagi tsukishiro",
       "series": null
     }
   },
@@ -34519,7 +34519,7 @@
     "imageApproved": false,
     "dlsiteQuery": "プロセカ 宵崎奏",
     "hitomiQuery": {
-      "character": "yoisaki kanade",
+      "character": "kanade yoisaki",
       "series": null
     }
   },
@@ -34913,7 +34913,7 @@
     "imageApproved": false,
     "dlsiteQuery": "ラブライブ 果南",
     "hitomiQuery": {
-      "character": "matsuura kanan",
+      "character": "kanan matsuura",
       "series": null
     }
   },
@@ -35009,7 +35009,7 @@
     "imageApproved": false,
     "dlsiteQuery": "アイドルマスター 秋月律子",
     "hitomiQuery": {
-      "character": "akizuki ritsuko",
+      "character": "ritsuko akizuki",
       "series": null
     }
   },
@@ -35102,7 +35102,7 @@
     "imageApproved": false,
     "dlsiteQuery": "ペルソナ3 岳羽ゆかり",
     "hitomiQuery": {
-      "character": "takeba yukari",
+      "character": "yukari takeba",
       "series": null
     }
   },
@@ -35992,7 +35992,7 @@
     "imageApproved": false,
     "dlsiteQuery": "ゼンゼロ 浮波柚葉",
     "hitomiQuery": {
-      "character": "ukinami yuzuha",
+      "character": "yuzuha ukinami",
       "series": null
     }
   },
@@ -38197,7 +38197,7 @@
     "imageApproved": false,
     "dlsiteQuery": "スタァライト 華恋",
     "hitomiQuery": {
-      "character": "aijo karen",
+      "character": "karen aijo",
       "series": null
     }
   },
@@ -38722,7 +38722,7 @@
     "imageApproved": false,
     "dlsiteQuery": "魔法少女ノ魔女裁判 氷上メルル",
     "hitomiQuery": {
-      "character": "hikami meruru",
+      "character": "meruru hikami",
       "series": null
     }
   },
@@ -39709,7 +39709,7 @@
     "imageApproved": false,
     "dlsiteQuery": "プロセカ 日野森志歩",
     "hitomiQuery": {
-      "character": "hinomori shiho",
+      "character": "shiho hinomori",
       "series": null
     }
   },
@@ -40009,7 +40009,7 @@
     "imageApproved": false,
     "dlsiteQuery": "プロセカ 望月穂波",
     "hitomiQuery": {
-      "character": "mochizuki honami",
+      "character": "honami mochizuki",
       "series": null
     }
   },
@@ -40162,7 +40162,7 @@
     "imageApproved": false,
     "dlsiteQuery": "原神 夢見月瑞希",
     "hitomiQuery": {
-      "character": "yumemizuki mizuki",
+      "character": "mizuki yumemizuki",
       "series": null
     }
   },
@@ -40899,7 +40899,7 @@
     "imageApproved": false,
     "dlsiteQuery": "上伊那ぼたん",
     "hitomiQuery": {
-      "character": "kamiina botan",
+      "character": "botan kamiina",
       "series": null
     }
   },
@@ -40991,7 +40991,7 @@
     "imageApproved": false,
     "dlsiteQuery": "ガルパン 近藤妙子",
     "hitomiQuery": {
-      "character": "kondou taeko",
+      "character": "taeko kondou",
       "series": null
     }
   },
@@ -41915,7 +41915,7 @@
     "imageApproved": false,
     "dlsiteQuery": "プリキュア 白雪ひめ",
     "hitomiQuery": {
-      "character": "hime shirayuki",
+      "character": "shirayuki hime",
       "series": null
     }
   },
@@ -41966,7 +41966,7 @@
     "imageApproved": false,
     "dlsiteQuery": "FGO 清少納言",
     "hitomiQuery": {
-      "character": "sei shounagon",
+      "character": "shounagon sei",
       "series": null
     }
   },
@@ -43087,7 +43087,7 @@
     "imageApproved": false,
     "dlsiteQuery": "魔法使いの夜 久遠寺有珠",
     "hitomiQuery": {
-      "character": "kuonji alice",
+      "character": "alice kuonji",
       "series": null
     }
   },
@@ -43141,7 +43141,7 @@
     "imageApproved": false,
     "dlsiteQuery": "ドキプリ ありす",
     "hitomiQuery": {
-      "character": "yotsuba alice",
+      "character": "alice yotsuba",
       "series": null
     }
   },
@@ -43444,7 +43444,7 @@
     "imageApproved": false,
     "dlsiteQuery": "ヘブバン 東城つかさ",
     "hitomiQuery": {
-      "character": "tojo tsukasa",
+      "character": "tsukasa tojo",
       "series": null
     }
   },
@@ -43869,7 +43869,7 @@
     "imageApproved": false,
     "dlsiteQuery": "シンフォギア 未来",
     "hitomiQuery": {
-      "character": "kohinata miku",
+      "character": "miku kohinata",
       "series": null
     }
   },
@@ -44297,7 +44297,7 @@
     "imageApproved": false,
     "dlsiteQuery": "デレマス 佐藤心",
     "hitomiQuery": {
-      "character": "sato shin",
+      "character": "shin sato",
       "series": null
     }
   },
@@ -45326,7 +45326,7 @@
     "imageApproved": false,
     "dlsiteQuery": "ミリオンライブ 桜守歌織",
     "hitomiQuery": {
-      "character": "sakuramori kaori",
+      "character": "kaori sakuramori",
       "series": null
     }
   },
@@ -45624,7 +45624,7 @@
     "imageApproved": false,
     "dlsiteQuery": "ユーフォニアム 夏紀",
     "hitomiQuery": {
-      "character": "nakagawa natsuki",
+      "character": "natsuki nakagawa",
       "series": null
     }
   },
@@ -46242,7 +46242,7 @@
     "imageApproved": false,
     "dlsiteQuery": "かぐや様 伊井野ミコ",
     "hitomiQuery": {
-      "character": "iino miko",
+      "character": "miko iino",
       "series": null
     }
   },
@@ -46544,7 +46544,7 @@
     "imageApproved": false,
     "dlsiteQuery": "しゅごキャラ 日奈森あむ",
     "hitomiQuery": {
-      "character": "hinamori amu",
+      "character": "amu hinamori",
       "series": null
     }
   },
@@ -49125,7 +49125,7 @@
     "imageApproved": false,
     "dlsiteQuery": "ナデシコ ルリ",
     "hitomiQuery": {
-      "character": "hoshino ruri",
+      "character": "ruri hoshino",
       "series": null
     }
   },
