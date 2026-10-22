@@ -21030,5 +21030,761 @@
       "seriesFilter": null,
       "fetchedAt": "2026-10-06T15:11:31.115Z"
     }
+  },
+  "kaguyasamawakokurasetaitensaitachinorenaizunousen-shinomiya-kaguya": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 30,
+      "aiGenerated": 22
+    },
+    "fetchedAt": "2026-10-22T12:40:10.220Z",
+    "hitomi": null
+  },
+  "kaguyasamawakokurasetaitensaitachinorenaizunousen-fujiwara-chika": {
+    "pageCount": 1,
+    "estimatedRange": [
+      27,
+      27
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 27,
+      "aiGenerated": 23
+    },
+    "fetchedAt": "2026-10-22T12:40:50.297Z",
+    "hitomi": null
+  },
+  "kaguyasamawakokurasetaitensaitachinorenaizunousen-hayasaka-ai": {
+    "pageCount": 1,
+    "estimatedRange": [
+      25,
+      25
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 25,
+      "aiGenerated": 21
+    },
+    "fetchedAt": "2026-10-22T12:41:30.385Z",
+    "hitomi": null
+  },
+  "kaguyasamawakokurasetaitensaitachinorenaizunousen-shijou-maki": {
+    "pageCount": 1,
+    "estimatedRange": [
+      2,
+      2
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 2,
+      "aiGenerated": 2
+    },
+    "fetchedAt": "2026-10-22T12:42:10.391Z",
+    "hitomi": null
+  },
+  "kaguyasamawakokurasetaitensaitachinorenaizunousen-koyasu-tsubame": {
+    "pageCount": 1,
+    "estimatedRange": [
+      2,
+      2
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 2,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-22T12:42:50.435Z",
+    "hitomi": null
+  },
+  "saki-haramura-nodoka": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 1
+    },
+    "firstPage": {
+      "items": 30,
+      "aiGenerated": 13
+    },
+    "fetchedAt": "2026-10-22T12:43:30.345Z",
+    "hitomi": null
+  },
+  "saki-miyanaga-saki": {
+    "pageCount": 1,
+    "estimatedRange": [
+      13,
+      13
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 13,
+      "aiGenerated": 5
+    },
+    "fetchedAt": "2026-10-22T12:44:10.507Z",
+    "hitomi": null
+  },
+  "saki-takei-hisa": {
+    "pageCount": 1,
+    "estimatedRange": [
+      9,
+      9
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 9,
+      "aiGenerated": 3
+    },
+    "fetchedAt": "2026-10-22T12:44:50.481Z",
+    "hitomi": null
+  },
+  "saki-fukuji-mihoko": {
+    "pageCount": 1,
+    "estimatedRange": [
+      6,
+      6
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 6,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-22T12:45:30.533Z",
+    "hitomi": null
+  },
+  "saki-amae-koromo": {
+    "pageCount": 1,
+    "estimatedRange": [
+      4,
+      4
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 4,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-22T12:46:10.499Z",
+    "hitomi": null
+  },
+  "saki-miyanaga-teru": {
+    "pageCount": 1,
+    "estimatedRange": [
+      4,
+      4
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 4,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-22T12:46:50.580Z",
+    "hitomi": null
+  },
+  "saki-kataoka-yuuki": {
+    "pageCount": 1,
+    "estimatedRange": [
+      10,
+      10
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 10,
+      "aiGenerated": 2
+    },
+    "fetchedAt": "2026-10-22T12:47:30.564Z",
+    "hitomi": null
+  },
+  "saki-atarashi-ako": {
+    "pageCount": 1,
+    "estimatedRange": [
+      12,
+      12
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 12,
+      "aiGenerated": 3
+    },
+    "fetchedAt": "2026-10-22T12:48:10.590Z",
+    "hitomi": null
+  },
+  "saki-takakamo-shizuno": {
+    "pageCount": 1,
+    "estimatedRange": [
+      1,
+      1
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 1,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-22T12:48:50.674Z",
+    "hitomi": null
+  },
+  "saki-touyoko-momoko": {
+    "pageCount": 1,
+    "estimatedRange": [
+      4,
+      4
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 4,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-22T12:49:30.633Z",
+    "hitomi": null
+  },
+  "saki-kunihiro-hajime": {
+    "pageCount": 1,
+    "estimatedRange": [
+      3,
+      3
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 3,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-22T12:50:10.677Z",
+    "hitomi": null
+  },
+  "saki-matsumi-kuro": {
+    "pageCount": 1,
+    "estimatedRange": [
+      5,
+      5
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 5,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-22T12:50:50.767Z",
+    "hitomi": null
+  },
+  "saki-iwato-kasumi": {
+    "pageCount": 1,
+    "estimatedRange": [
+      1,
+      1
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 1,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-22T12:51:30.759Z",
+    "hitomi": null
+  },
+  "saki-kajiki-yumi": {
+    "pageCount": 1,
+    "estimatedRange": [
+      3,
+      3
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 3,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-22T12:52:10.821Z",
+    "hitomi": null
+  },
+  "saki-matsumi-yuu": {
+    "pageCount": 1,
+    "estimatedRange": [
+      3,
+      3
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 3,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-22T12:52:50.880Z",
+    "hitomi": null
+  },
+  "saki-onjouji-toki": {
+    "pageCount": 1,
+    "estimatedRange": [
+      2,
+      2
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 2,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-22T12:53:30.851Z",
+    "hitomi": null
+  },
+  "saki-shimizudani-ryuuka": {
+    "pageCount": 1,
+    "estimatedRange": [
+      2,
+      2
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 2,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-22T12:54:10.952Z",
+    "hitomi": null
+  },
+  "saki-ikeda-kana": {
+    "pageCount": 1,
+    "estimatedRange": [
+      2,
+      2
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 2,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-22T12:54:51.008Z",
+    "hitomi": null
+  },
+  "saki-hirose-sumire": {
+    "pageCount": 1,
+    "estimatedRange": [
+      4,
+      4
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 4,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-22T12:55:30.943Z",
+    "hitomi": null
+  },
+  "saki-kosegawa-shiromi": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-22T12:56:11.079Z",
+    "hitomi": null
+  },
+  "saki-oohoshi-awai": {
+    "pageCount": 1,
+    "estimatedRange": [
+      1,
+      1
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 1,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-22T12:56:51.044Z",
+    "hitomi": null
+  },
+  "saki-usuzumi-hatsumi": {
+    "pageCount": 1,
+    "estimatedRange": [
+      1,
+      1
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 1,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-22T12:57:31.130Z",
+    "hitomi": null
+  },
+  "saki-tsuruta-himeko": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-22T12:58:11.141Z",
+    "hitomi": null
+  },
+  "saki-kanbara-satomi": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-22T12:58:51.222Z",
+    "hitomi": null
+  },
+  "saki-ryuumonbuchi-touka": {
+    "pageCount": 1,
+    "estimatedRange": [
+      3,
+      3
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 3,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-22T12:59:31.217Z",
+    "hitomi": null
+  },
+  "saki-someya-mako": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-22T13:00:11.277Z",
+    "hitomi": null
+  },
+  "saki-anetai-toyone": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-22T13:00:51.375Z",
+    "hitomi": null
+  },
+  "saki-eguchi-sera": {
+    "pageCount": 1,
+    "estimatedRange": [
+      1,
+      1
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 1,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-22T13:01:31.305Z",
+    "hitomi": null
+  },
+  "saki-hanada-kirame": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-22T13:02:11.375Z",
+    "hitomi": null
+  },
+  "saki-sagimori-arata": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-22T13:02:51.358Z",
+    "hitomi": null
+  },
+  "saki-aislinn-wishart": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-22T13:03:31.381Z",
+    "hitomi": null
+  },
+  "saki-jindai-komaki": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-22T13:04:11.542Z",
+    "hitomi": null
+  },
+  "saki-atago-hiroe": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-22T13:04:51.465Z",
+    "hitomi": null
+  },
+  "saki-usuzawa-sae": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-22T13:05:31.592Z",
+    "hitomi": null
+  },
+  "saki-kakura-kurumi": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-22T13:06:11.582Z",
+    "hitomi": null
+  },
+  "saki-atago-kinue": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-22T13:06:51.621Z",
+    "hitomi": null
+  },
+  "saki-shirouzu-mairu": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-22T13:07:31.613Z",
+    "hitomi": null
   }
 }
