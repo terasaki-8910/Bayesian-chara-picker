@@ -21,6 +21,10 @@ export const REQUEST_DELAY_MS = 1_100;
 const RATE_LIMIT_RETRIES = 5;
 const RATE_LIMIT_BACKOFF_MS = 15_000;
 
+/** 5xx(Cloudflare の 520 等)を受けたときの再試行回数と待ち時間(回数倍)。 */
+const SERVER_ERROR_RETRIES = 3;
+const SERVER_ERROR_BACKOFF_MS = 30_000;
+
 export const USER_AGENT =
   'chara-picker-bayes/0.1 (+https://github.com/terasaki-8910; tag statistics only, no image/content fetch)';
 
@@ -64,6 +68,31 @@ export function createDanbooruFetcher({ fetchImpl = fetch, delayMs = REQUEST_DEL
     }
     return res.json();
   };
+}
+
+/**
+ * fetcher は 5xx をすぐ投げるので、長い一括処理では1件ぶんの処理をこれで包んで待って再試行する
+ * (2026-10-22、候補の判定が約1900件中700件目の 520 で止まり、途中の結果が全部失われた)。
+ * @template T
+ * @param {() => Promise<T>} fn
+ * @param {string} label ログに出す処理対象(タグ名など)
+ * @param {{ retries?: number, backoffMs?: number }} [opts]
+ * @returns {Promise<T>}
+ */
+export async function retryOnServerError(
+  fn,
+  label,
+  { retries = SERVER_ERROR_RETRIES, backoffMs = SERVER_ERROR_BACKOFF_MS } = {},
+) {
+  for (let attempt = 1; ; attempt += 1) {
+    try {
+      return await fn();
+    } catch (err) {
+      if (!/status=5\d\d/.test(String(err?.message)) || attempt > retries) throw err;
+      console.error(`  ${label}: ${err.message}。${(backoffMs * attempt) / 1000}秒待って再試行します`);
+      await sleep(backoffMs * attempt);
+    }
+  }
 }
 
 /**

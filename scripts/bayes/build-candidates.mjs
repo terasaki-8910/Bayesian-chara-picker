@@ -35,6 +35,7 @@ import {
   fetchPostsPage,
   fetchTagExact,
   listTopCharacterTags,
+  retryOnServerError,
   splitTagString,
 } from './danbooru-client.mjs';
 
@@ -235,28 +236,6 @@ async function scoreCandidate(danbooruFetch, tag) {
   return { tag: tag.name, postCount: tag.post_count, genderRatio, boyCount, girlDominant: girlCount > boyCount, explicitCount };
 }
 
-/** 5xx(Danbooru 側の一時的な失敗)の再試行回数と待ち時間(回数倍)。429 は danbooruFetch が待つ。 */
-const SERVER_ERROR_RETRIES = 3;
-const SERVER_ERROR_BACKOFF_MS = 30_000;
-
-/**
- * scoreCandidate を、5xx のときだけ待って再試行する(danbooru-client.mjs は 5xx を呼び出し側に任せる)。
- * @param {ReturnType<typeof createDanbooruFetcher>} danbooruFetch
- * @param {{ name: string, post_count: number }} tag
- */
-async function scoreWithRetry(danbooruFetch, tag) {
-  for (let attempt = 1; ; attempt += 1) {
-    try {
-      return await scoreCandidate(danbooruFetch, tag);
-    } catch (err) {
-      const serverError = /status=5\d\d/.test(String(err?.message));
-      if (!serverError || attempt > SERVER_ERROR_RETRIES) throw err;
-      console.error(`  ${tag.name}: ${err.message}。${(SERVER_ERROR_BACKOFF_MS * attempt) / 1000}秒待って再試行します`);
-      await new Promise((resolve) => setTimeout(resolve, SERVER_ERROR_BACKOFF_MS * attempt));
-    }
-  }
-}
-
 /**
  * @param {ReturnType<typeof createDanbooruFetcher>} danbooruFetch
  * @param {string} tagName
@@ -307,7 +286,8 @@ async function main() {
   const scoredCache = existsSync(scoredCachePath) ? JSON.parse(readFileSync(scoredCachePath, 'utf8')) : {};
   const scored = [];
   for (const [index, tag] of deduped.entries()) {
-    const result = scoredCache[tag.name] ?? (await scoreWithRetry(danbooruFetch, tag));
+    const result =
+      scoredCache[tag.name] ?? (await retryOnServerError(() => scoreCandidate(danbooruFetch, tag), tag.name));
     scoredCache[tag.name] = result;
     scored.push(result);
     if ((index + 1) % 50 === 0) {

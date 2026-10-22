@@ -12,7 +12,12 @@
  */
 import { readFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath, pathToFileURL } from 'node:url';
-import { createDanbooruFetcher, fetchWikiOtherNames, pickJapaneseDisplayName } from './danbooru-client.mjs';
+import {
+  createDanbooruFetcher,
+  fetchWikiOtherNames,
+  pickJapaneseDisplayName,
+  retryOnServerError,
+} from './danbooru-client.mjs';
 
 /**
  * 選定ロジック本体は`pickJapaneseDisplayName`（danbooru-client.mjs、シリーズ名解決
@@ -41,15 +46,22 @@ async function main() {
   let kanjiOnly = 0;
   let unresolved = 0;
   for (const [index, { ref, tag }] of allTags.entries()) {
-    const { otherNames, resolvedName, confidence } = await resolveJapaneseName(danbooruFetch, tag);
-    ref.otherNames = otherNames;
-    ref.resolvedName = resolvedName;
-    ref.resolvedNameConfidence = confidence;
-    if (confidence === 'kana') kana++;
-    else if (confidence === 'kanji-only') kanjiOnly++;
+    // 50件ごとに書き出すので、途中で止まっても再実行すれば解決済みを飛ばして続きから始まる
+    if (ref.resolvedNameConfidence === undefined) {
+      const { otherNames, resolvedName, confidence } = await retryOnServerError(
+        () => resolveJapaneseName(danbooruFetch, tag),
+        tag,
+      );
+      ref.otherNames = otherNames;
+      ref.resolvedName = resolvedName;
+      ref.resolvedNameConfidence = confidence;
+    }
+    if (ref.resolvedNameConfidence === 'kana') kana++;
+    else if (ref.resolvedNameConfidence === 'kanji-only') kanjiOnly++;
     else unresolved++;
     if ((index + 1) % 50 === 0) {
-      console.log(`[${index + 1}/${allTags.length}] 日本語名解決中... (直近: ${tag} -> ${resolvedName ?? '未解決'})`);
+      writeFileSync(candidatesPath, `${JSON.stringify(c, null, 2)}\n`);
+      console.log(`[${index + 1}/${allTags.length}] 日本語名解決中... (直近: ${tag} -> ${ref.resolvedName ?? '未解決'})`);
     }
   }
 

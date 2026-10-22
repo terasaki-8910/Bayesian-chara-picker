@@ -15,6 +15,7 @@ import {
   fetchWikiPage,
   listTopCharacterTags,
   pickJapaneseDisplayName,
+  retryOnServerError,
   searchCharacterTagCandidates,
   splitTagString,
 } from '../scripts/bayes/danbooru-client.mjs';
@@ -144,6 +145,31 @@ describe('BB. Danbooruクライアント（scripts/bayes/danbooru-client.mjs）'
     const fetchImpl = async () => ({ ok: false, status: 500, json: async () => ({}) });
     const fetcher = createDanbooruFetcher({ fetchImpl, delayMs: 0 });
     await expect(fetcher('/tags.json')).rejects.toThrow(/status=500/);
+  });
+
+  it('retryOnServerError: 5xx は待って再試行し、それ以外の失敗はすぐ投げる', async () => {
+    vi.spyOn(console, 'error').mockImplementation(() => {});
+    let calls = 0;
+    const flaky = async () => {
+      calls += 1;
+      if (calls < 3) throw new Error('Danbooru API 呼び出しに失敗しました (status=520): /posts.json');
+      return 'ok';
+    };
+    await expect(retryOnServerError(flaky, 'x', { backoffMs: 0 })).resolves.toBe('ok');
+    expect(calls).toBe(3);
+
+    let notFoundCalls = 0;
+    const notFound = async () => {
+      notFoundCalls += 1;
+      throw new Error('Danbooru API 呼び出しに失敗しました (status=404): /wiki_pages/x.json');
+    };
+    await expect(retryOnServerError(notFound, 'x', { backoffMs: 0 })).rejects.toThrow(/status=404/);
+    expect(notFoundCalls).toBe(1);
+
+    const down = async () => {
+      throw new Error('Danbooru API 呼び出しに失敗しました (status=502): /tags.json');
+    };
+    await expect(retryOnServerError(down, 'x', { retries: 2, backoffMs: 0 })).rejects.toThrow(/status=502/);
   });
 
   it('fetchTagExact: search[name]の完全一致で1件目を返す、無ければnull', async () => {
