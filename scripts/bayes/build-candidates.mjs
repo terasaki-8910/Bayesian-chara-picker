@@ -27,7 +27,7 @@
  * 自主規制を全リクエスト種別（タグ列挙・性別判定・傾向計測・fav計測・シリーズ列挙）に
  * 一貫して適用する（複数インスタンスを作ると律速が効かなくなるため）。
  */
-import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import {
   countPosts,
@@ -235,6 +235,28 @@ async function scoreCandidate(danbooruFetch, tag) {
   return { tag: tag.name, postCount: tag.post_count, genderRatio, boyCount, girlDominant: girlCount > boyCount, explicitCount };
 }
 
+/** 5xx(Danbooru 側の一時的な失敗)の再試行回数と待ち時間(回数倍)。429 は danbooruFetch が待つ。 */
+const SERVER_ERROR_RETRIES = 3;
+const SERVER_ERROR_BACKOFF_MS = 30_000;
+
+/**
+ * scoreCandidate を、5xx のときだけ待って再試行する(danbooru-client.mjs は 5xx を呼び出し側に任せる)。
+ * @param {ReturnType<typeof createDanbooruFetcher>} danbooruFetch
+ * @param {{ name: string, post_count: number }} tag
+ */
+async function scoreWithRetry(danbooruFetch, tag) {
+  for (let attempt = 1; ; attempt += 1) {
+    try {
+      return await scoreCandidate(danbooruFetch, tag);
+    } catch (err) {
+      const serverError = /status=5\d\d/.test(String(err?.message));
+      if (!serverError || attempt > SERVER_ERROR_RETRIES) throw err;
+      console.error(`  ${tag.name}: ${err.message}。${(SERVER_ERROR_BACKOFF_MS * attempt) / 1000}秒待って再試行します`);
+      await new Promise((resolve) => setTimeout(resolve, SERVER_ERROR_BACKOFF_MS * attempt));
+    }
+  }
+}
+
 /**
  * @param {ReturnType<typeof createDanbooruFetcher>} danbooruFetch
  * @param {string} tagName
@@ -279,14 +301,21 @@ async function main() {
       `アバター等）も除いた${deduped.length}件を候補として評価します。`,
   );
 
+  // 判定済みの結果を途中保存し、再実行ではそこから続ける(2026-10-22、約1900件の判定が700件目の
+  // Danbooru の 520 で止まり、最後にまとめて書く作りのため全部失われた)。
+  const scoredCachePath = fileURLToPath(new URL(`${process.env.CANDIDATES_FILE ?? 'candidates'}-scored.json`, stateDir));
+  const scoredCache = existsSync(scoredCachePath) ? JSON.parse(readFileSync(scoredCachePath, 'utf8')) : {};
   const scored = [];
   for (const [index, tag] of deduped.entries()) {
-    const result = await scoreCandidate(danbooruFetch, tag);
+    const result = scoredCache[tag.name] ?? (await scoreWithRetry(danbooruFetch, tag));
+    scoredCache[tag.name] = result;
     scored.push(result);
     if ((index + 1) % 50 === 0) {
+      writeFileSync(scoredCachePath, `${JSON.stringify(scoredCache)}\n`);
       console.log(`[${index + 1}/${deduped.length}] 性別・傾向判定 処理中... (直近: ${tag.name})`);
     }
   }
+  writeFileSync(scoredCachePath, `${JSON.stringify(scoredCache)}\n`);
 
   const femaleCandidates = scored
     .filter((s) => s.genderRatio >= GENDER_RATIO_MIN && s.girlDominant)
