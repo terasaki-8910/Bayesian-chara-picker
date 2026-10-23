@@ -52945,7 +52945,7 @@
       "Artoria Pendragon (Ruler)"
     ],
     "series": "Fate/Grand Order",
-    "dlsiteQuery": "FGO アルトリア・ペンドラゴン〔ルーラー〕",
+    "dlsiteQuery": "アルトリア ルーラー",
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "年上",
@@ -52982,7 +52982,7 @@
     },
     "reviewed": false,
     "hitomiQuery": {
-      "character": "artoria pendragon",
+      "character": "artoria pendragon ruler",
       "series": null
     },
     "provisional": false,
@@ -74621,7 +74621,7 @@
       "Quetzalcoatl"
     ],
     "series": "小林さんちのメイドラゴン",
-    "dlsiteQuery": "小林さんちのメイドラゴン ケツァルコアトル",
+    "dlsiteQuery": "メイドラゴン ルコア",
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "年上",
@@ -77189,7 +77189,7 @@
       "Alisa Shito"
     ],
     "series": "魔法少女ノ魔女裁判",
-    "dlsiteQuery": "魔法少女ノ魔女裁判 紫藤アリサ",
+    "dlsiteQuery": "紫藤アリサ",
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "同年代",
@@ -79328,7 +79328,7 @@
       "Amélie Lacroix"
     ],
     "series": "オーバーウォッチ",
-    "dlsiteQuery": "オーバーウォッチ ウィドウメイカー",
+    "dlsiteQuery": "ウィドウメイカー",
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "年上",
@@ -87712,7 +87712,7 @@
       "Luciana de Montefio"
     ],
     "series": "ゼンレスゾーンゼロ",
-    "dlsiteQuery": "ゼンレスゾーンゼロ ルシアーナ・デ・モンテフィーノ",
+    "dlsiteQuery": "ゼンレスゾーンゼロ ルーシー",
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "同年代",
@@ -90700,7 +90700,7 @@
       "タイムキーパー"
     ],
     "series": "リバース：1999",
-    "dlsiteQuery": "リバース1999 ヴェルティ",
+    "dlsiteQuery": "ヴェルティ",
     "axes": {
       "genderExpression": "女性",
       "ageFeel": "同年代",
