@@ -460,7 +460,7 @@ describe('BA8. niconico-map.json / llm-extract.json の整合性（PLAN「P5b」
       ['niconico-map.json', JSON.stringify(niconicoMap)],
       ['llm-extract.json', JSON.stringify(llmExtractRaw)],
     ];
-    // 記事名・キャラ名は固有名詞なので判定から外す（「レオナ」が「オナ」に部分一致する、2026-10-23）。
+    // 記事名・キャラ名は固有名詞なので判定から外す（KOF と FGO のキャラ名が禁止語の1つに部分一致した、2026-10-23）。
     // characters.json の name も同じ理由で判定していない。外すのは名前そのものだけで、地の文は判定に残る。
     const properNouns = [
       ...Object.values(niconicoMap.entries as Record<string, { title: string | null }>).map((e) => e.title),

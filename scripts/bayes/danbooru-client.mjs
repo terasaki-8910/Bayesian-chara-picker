@@ -70,9 +70,20 @@ export function createDanbooruFetcher({ fetchImpl = fetch, delayMs = REQUEST_DEL
   };
 }
 
+/** fetch が接続の失敗で投げる TypeError("fetch failed")。原因のコードは cause に入る。 */
+function isNetworkError(err) {
+  const code = err?.cause?.code ?? err?.code;
+  return (
+    (err instanceof TypeError && /fetch failed/.test(String(err.message))) ||
+    ['ECONNRESET', 'ETIMEDOUT', 'ECONNREFUSED', 'EAI_AGAIN', 'UND_ERR_SOCKET'].includes(code)
+  );
+}
+
 /**
  * fetcher は 5xx をすぐ投げるので、長い一括処理では1件ぶんの処理をこれで包んで待って再試行する
  * (2026-10-22、候補の判定が約1900件中700件目の 520 で止まり、途中の結果が全部失われた)。
+ * 接続が切れた失敗(ECONNRESET 等。fetch が TypeError を投げる)も同じく一時的なので再試行する
+ * (2026-10-23、上位の帯の判定が途中の ECONNRESET で止まった)。
  * @template T
  * @param {() => Promise<T>} fn
  * @param {string} label ログに出す処理対象(タグ名など)
@@ -88,7 +99,8 @@ export async function retryOnServerError(
     try {
       return await fn();
     } catch (err) {
-      if (!/status=5\d\d/.test(String(err?.message)) || attempt > retries) throw err;
+      const transient = /status=5\d\d/.test(String(err?.message)) || isNetworkError(err);
+      if (!transient || attempt > retries) throw err;
       console.error(`  ${label}: ${err.message}。${(backoffMs * attempt) / 1000}秒待って再試行します`);
       await sleep(backoffMs * attempt);
     }

@@ -147,7 +147,7 @@ describe('BB. Danbooruクライアント（scripts/bayes/danbooru-client.mjs）'
     await expect(fetcher('/tags.json')).rejects.toThrow(/status=500/);
   });
 
-  it('retryOnServerError: 5xx は待って再試行し、それ以外の失敗はすぐ投げる', async () => {
+  it('retryOnServerError: 5xx と接続の切断は待って再試行し、それ以外の失敗はすぐ投げる', async () => {
     const errorSpy = vi.spyOn(console, 'error').mockImplementation(() => {});
     let calls = 0;
     const flaky = async () => {
@@ -170,6 +170,15 @@ describe('BB. Danbooruクライアント（scripts/bayes/danbooru-client.mjs）'
       throw new Error('Danbooru API 呼び出しに失敗しました (status=502): /tags.json');
     };
     await expect(retryOnServerError(down, 'x', { retries: 2, backoffMs: 0 })).rejects.toThrow(/status=502/);
+
+    let resetCalls = 0;
+    const reset = async () => {
+      resetCalls += 1;
+      if (resetCalls < 2) throw new TypeError('fetch failed', { cause: Object.assign(new Error('read ECONNRESET'), { code: 'ECONNRESET' }) });
+      return 'ok';
+    };
+    await expect(retryOnServerError(reset, 'x', { backoffMs: 0 })).resolves.toBe('ok');
+    expect(resetCalls).toBe(2);
     errorSpy.mockRestore();
   });
 
