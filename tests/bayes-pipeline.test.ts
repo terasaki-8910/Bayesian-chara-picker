@@ -15,10 +15,11 @@ import {
   fetchWikiPage,
   listTopCharacterTags,
   pickJapaneseDisplayName,
+  retryOnServerError,
   searchCharacterTagCandidates,
   splitTagString,
 } from '../scripts/bayes/danbooru-client.mjs';
-import { isExcludedCandidate } from '../scripts/bayes/build-candidates.mjs';
+import { isExcludedCandidate, rankCandidates } from '../scripts/bayes/build-candidates.mjs';
 import { resolveJapaneseName } from '../scripts/bayes/resolve-candidate-names.mjs';
 import { mapOneCharacter, seriesOverlapRatio, toBareTag } from '../scripts/bayes/map-characters.mjs';
 import { runVerifyChecks, samplePostsForTag } from '../scripts/bayes/sample-posts.mjs';
@@ -144,6 +145,41 @@ describe('BB. Danbooruクライアント（scripts/bayes/danbooru-client.mjs）'
     const fetchImpl = async () => ({ ok: false, status: 500, json: async () => ({}) });
     const fetcher = createDanbooruFetcher({ fetchImpl, delayMs: 0 });
     await expect(fetcher('/tags.json')).rejects.toThrow(/status=500/);
+  });
+
+  it('retryOnServerError: 5xx と接続の切断は待って再試行し、それ以外の失敗はすぐ投げる', async () => {
+    const errorSpy = vi.spyOn(console, 'error').mockImplementation(() => {});
+    let calls = 0;
+    const flaky = async () => {
+      calls += 1;
+      if (calls < 3) throw new Error('Danbooru API 呼び出しに失敗しました (status=520): /posts.json');
+      return 'ok';
+    };
+    await expect(retryOnServerError(flaky, 'x', { backoffMs: 0 })).resolves.toBe('ok');
+    expect(calls).toBe(3);
+
+    let notFoundCalls = 0;
+    const notFound = async () => {
+      notFoundCalls += 1;
+      throw new Error('Danbooru API 呼び出しに失敗しました (status=404): /wiki_pages/x.json');
+    };
+    await expect(retryOnServerError(notFound, 'x', { backoffMs: 0 })).rejects.toThrow(/status=404/);
+    expect(notFoundCalls).toBe(1);
+
+    const down = async () => {
+      throw new Error('Danbooru API 呼び出しに失敗しました (status=502): /tags.json');
+    };
+    await expect(retryOnServerError(down, 'x', { retries: 2, backoffMs: 0 })).rejects.toThrow(/status=502/);
+
+    let resetCalls = 0;
+    const reset = async () => {
+      resetCalls += 1;
+      if (resetCalls < 2) throw new TypeError('fetch failed', { cause: Object.assign(new Error('read ECONNRESET'), { code: 'ECONNRESET' }) });
+      return 'ok';
+    };
+    await expect(retryOnServerError(reset, 'x', { backoffMs: 0 })).resolves.toBe('ok');
+    expect(resetCalls).toBe(2);
+    errorSpy.mockRestore();
   });
 
   it('fetchTagExact: search[name]の完全一致で1件目を返す、無ければnull', async () => {
@@ -352,6 +388,21 @@ describe('BB. Danbooruクライアント（scripts/bayes/danbooru-client.mjs）'
     vi.resetModules();
     await import('../scripts/bayes/danbooru-client.mjs');
     expect(fetchSpy).not.toHaveBeenCalled();
+  });
+});
+
+describe('rankCandidates（scripts/bayes/build-candidates.mjs）', () => {
+  // 2026-10-22 発見: fav を測った上位400件だけを候補に残していたため、投稿約1150〜3003件の
+  // 候補（四宮かぐや・原村和など）が何も言わずに落ちていた。fav を測らなかった候補も残す。
+  it('fav を測らなかった候補も落とさず、投稿数の降順に並べる', () => {
+    const female = [
+      { tag: 'b', postCount: 2588 },
+      { tag: 'a', postCount: 5000 },
+      { tag: 'c', postCount: 1421 },
+    ];
+    const ranked = rankCandidates(female, new Map([['a', 12]]));
+    expect(ranked.map((c) => c.tag)).toEqual(['a', 'b', 'c']);
+    expect(ranked.map((c) => c.favMedian)).toEqual([12, null, null]);
   });
 });
 
@@ -835,6 +886,21 @@ describe('BB. Wikidataクライアント（scripts/bayes/wikidata-client.mjs）'
     await expect(fetcher('https://www.wikidata.org/w/api.php?a=1')).rejects.toThrow(/レート制限/);
   });
 
+  it('maxlag のエラー応答は待って再試行し、それ以外のエラー応答は中身を付けて投げる', async () => {
+    let calls = 0;
+    const lagged = async () => {
+      calls += 1;
+      return calls === 1 ? jsonResponse({ error: { code: 'maxlag', info: 'Waiting for a database server' } }) : jsonResponse({ entities: {} });
+    };
+    const fetcher = createWikidataFetcher({ fetchImpl: lagged, delayMs: 0, maxlagBackoffMs: 0 });
+    await expect(fetcher('https://www.wikidata.org/w/api.php?a=1')).resolves.toEqual({ entities: {} });
+    expect(calls).toBe(2);
+
+    const failing = async () => jsonResponse({ error: { code: 'no-such-entity', info: 'Could not find an entity' } });
+    const failingFetcher = createWikidataFetcher({ fetchImpl: failing, delayMs: 0, maxlagBackoffMs: 0 });
+    await expect(failingFetcher('https://www.wikidata.org/w/api.php?a=1')).rejects.toThrow(/no-such-entity/);
+  });
+
   it('ok:false のレスポンスはエラーにする', async () => {
     const fetchImpl = async () => ({ ok: false, status: 500, text: async () => '', json: async () => ({}) });
     const fetcher = createWikidataFetcher({ fetchImpl, delayMs: 0 });
@@ -887,6 +953,21 @@ describe('BB. Wikidataクライアント（scripts/bayes/wikidata-client.mjs）'
       P21: { ja: '性別', en: 'sex or gender' },
       P1441: { ja: '', en: 'present in work' },
     });
+  });
+
+  it('fetchEntityLabels: idが50件を超えたら50件ずつに分けて引き、全件のラベルを返す', async () => {
+    const idsPerCall: number[] = [];
+    const fetchImpl = async (url: string) => {
+      const ids = new URL(url).searchParams.get('ids')!.split('|');
+      idsPerCall.push(ids.length);
+      return jsonResponse({ entities: Object.fromEntries(ids.map((id) => [id, { labels: { en: { value: id } } }])) });
+    };
+    const fetcher = createWikidataFetcher({ fetchImpl, delayMs: 0 });
+    const ids = Array.from({ length: 120 }, (_, i) => `Q${i + 1}`);
+    const labels = await fetchEntityLabels(fetcher, ids);
+    expect(idsPerCall).toEqual([50, 50, 20]);
+    expect(Object.keys(labels)).toHaveLength(120);
+    expect(labels.Q120).toEqual({ ja: '', en: 'Q120' });
   });
 
   it('claimValuesOf: mainsnak.datavalueを取り出す。プロパティが無ければ空配列', () => {
@@ -1015,10 +1096,28 @@ describe('BB. ニコニコ大百科クライアント（scripts/bayes/niconico-c
     expect(await fetchArticleHtml(fetcher, '存在しない記事')).toBeNull();
   });
 
-  it('fetchArticleHtml: 404以外のエラーは例外にする', async () => {
-    const fetchImpl = async () => ({ ok: false, status: 500, text: async () => '' });
-    const fetcher = createNiconicoFetcher({ fetchImpl, delayMs: 0 });
+  it('fetchArticleHtml: 404以外のエラーは例外にする(5xx は再試行してもだめなとき)', async () => {
+    let calls = 0;
+    const fetchImpl = async () => {
+      calls += 1;
+      return { ok: false, status: 500, text: async () => '' };
+    };
+    const fetcher = createNiconicoFetcher({ fetchImpl, delayMs: 0, serverErrorBackoffMs: 0 });
     await expect(fetchArticleHtml(fetcher, 'x')).rejects.toThrow(/status=500/);
+    expect(calls).toBe(4);
+  });
+
+  it('5xx は待って再試行し、通ればその応答を返す', async () => {
+    let calls = 0;
+    const fetchImpl = async () => {
+      calls += 1;
+      return calls === 1
+        ? { ok: false, status: 500, text: async () => '' }
+        : { ok: true, status: 200, text: async () => '<html>本文</html>' };
+    };
+    const fetcher = createNiconicoFetcher({ fetchImpl, delayMs: 0, serverErrorBackoffMs: 0 });
+    expect(await fetchArticleHtml(fetcher, 'x')).toBe('<html>本文</html>');
+    expect(calls).toBe(2);
   });
 
   it('extractRedirectPath: location.replace(...)からパスを取り出す。リダイレクトでなければnull', () => {

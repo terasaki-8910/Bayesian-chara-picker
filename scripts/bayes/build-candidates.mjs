@@ -27,7 +27,7 @@
  * 自主規制を全リクエスト種別（タグ列挙・性別判定・傾向計測・fav計測・シリーズ列挙）に
  * 一貫して適用する（複数インスタンスを作ると律速が効かなくなるため）。
  */
-import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import {
   countPosts,
@@ -35,6 +35,7 @@ import {
   fetchPostsPage,
   fetchTagExact,
   listTopCharacterTags,
+  retryOnServerError,
   splitTagString,
 } from './danbooru-client.mjs';
 
@@ -100,6 +101,23 @@ const EXCLUDED_TAGS = new Set([
   'leon_s._kennedy',
 ]);
 
+/**
+ * 性別判定を通った候補を投稿数の降順に並べ、fav_count中央値を付ける。測っていない候補は favMedian:null。
+ *
+ * 1件も落とさないこと（2026-10-22 発見の不具合の再発防止）: 以前は fav を測った上位
+ * FAV_SAMPLE_TOP_N(400)件だけを候補として残していたため、1〜3ページ目では投稿3003件以上しか残らず、
+ * 約1150〜3003件の候補（四宮かぐや・藤原千花・原村和など）が何も言わずに落ちていた。
+ * @template {{ tag: string, postCount: number }} T
+ * @param {T[]} femaleCandidates
+ * @param {Map<string, number>} favMedianByTag
+ * @returns {(T & { favMedian: number | null })[]}
+ */
+export function rankCandidates(femaleCandidates, favMedianByTag) {
+  return femaleCandidates
+    .map((c) => ({ ...c, favMedian: favMedianByTag.get(c.tag) ?? null }))
+    .sort((a, b) => b.postCount - a.postCount);
+}
+
 /** @param {string} tagName */
 export function isExcludedCandidate(tagName) {
   return EXCLUDED_TAGS.has(tagName) || EXCLUDED_AVATAR_PATTERNS.some((p) => p.test(tagName));
@@ -107,9 +125,12 @@ export function isExcludedCandidate(tagName) {
 /** Danbooru API の /tags.json 1リクエストで取れる最大件数。 */
 const TOP_TAGS_LIMIT = 1000;
 const TOP_TAGS_PAGES = 3;
-/** 最終候補の目標件数（脱落込みで+312狙い、SPEC§6.1の供給先行方針）。 */
+/** 最終候補の目標件数（脱落込みで+312狙い、SPEC§6.1の供給先行方針）。採否の目安で、候補を切り詰める数ではない。 */
 const TARGET_CANDIDATE_COUNT = 512;
-/** fav_count中央値を測る対象（傾向スコア上位、コスト管理のため候補全体には広げない）。 */
+/**
+ * fav_count中央値を測る対象（投稿数の上位、コスト管理のため候補全体には広げない）。
+ * 測るのを上位に絞るだけで、候補そのものは落とさない（下の rankCandidates）。
+ */
 const FAV_SAMPLE_TOP_N = 400;
 /**
  * シリーズ内キャラ列挙で「本編キャラ」とみなす最低共起件数（2026-08-02実地確認で追加）。
@@ -247,21 +268,34 @@ async function main() {
   for (let page = firstPage; page <= lastPage; page += 1) {
     topTags.push(...(await listTopCharacterTags(danbooruFetch, { page, limit: TOP_TAGS_LIMIT })));
   }
-  const deduped = topTags.filter((t) => !existingTags.has(t.name) && !isExcludedCandidate(t.name));
+  // CANDIDATES_MAX_POSTS: これ未満の投稿数のタグだけを評価する（前回の実行で評価済みの上位を飛ばし、
+  // 取りこぼした帯だけを数え直すため）。未指定なら全件。
+  const maxPosts = Number(process.env.CANDIDATES_MAX_POSTS ?? Infinity);
+  const deduped = topTags.filter(
+    (t) => t.post_count < maxPosts && !existingTags.has(t.name) && !isExcludedCandidate(t.name),
+  );
   const excludedCount = topTags.filter((t) => !existingTags.has(t.name) && isExcludedCandidate(t.name)).length;
   console.log(
     `上位${topTags.length}件中、既存重複を除き、除外パターン${excludedCount}件（自己投影` +
       `アバター等）も除いた${deduped.length}件を候補として評価します。`,
   );
 
+  // 判定済みの結果を途中保存し、再実行ではそこから続ける(2026-10-22、約1900件の判定が700件目の
+  // Danbooru の 520 で止まり、最後にまとめて書く作りのため全部失われた)。
+  const scoredCachePath = fileURLToPath(new URL(`${process.env.CANDIDATES_FILE ?? 'candidates'}-scored.json`, stateDir));
+  const scoredCache = existsSync(scoredCachePath) ? JSON.parse(readFileSync(scoredCachePath, 'utf8')) : {};
   const scored = [];
   for (const [index, tag] of deduped.entries()) {
-    const result = await scoreCandidate(danbooruFetch, tag);
+    const result =
+      scoredCache[tag.name] ?? (await retryOnServerError(() => scoreCandidate(danbooruFetch, tag), tag.name));
+    scoredCache[tag.name] = result;
     scored.push(result);
     if ((index + 1) % 50 === 0) {
+      writeFileSync(scoredCachePath, `${JSON.stringify(scoredCache)}\n`);
       console.log(`[${index + 1}/${deduped.length}] 性別・傾向判定 処理中... (直近: ${tag.name})`);
     }
   }
+  writeFileSync(scoredCachePath, `${JSON.stringify(scoredCache)}\n`);
 
   const femaleCandidates = scored
     .filter((s) => s.genderRatio >= GENDER_RATIO_MIN && s.girlDominant)
@@ -272,16 +306,18 @@ async function main() {
 
   const favTargets = femaleCandidates.slice(0, Math.min(FAV_SAMPLE_TOP_N, femaleCandidates.length));
   console.log(`fav_count中央値を測る対象: ${favTargets.length}件`);
-  const withFav = [];
+  const favMedianByTag = new Map();
   for (const [index, c] of favTargets.entries()) {
-    const favMedian = await favCountMedian(danbooruFetch, c.tag);
-    withFav.push({ ...c, favMedian });
+    favMedianByTag.set(c.tag, await favCountMedian(danbooruFetch, c.tag));
     if ((index + 1) % 50 === 0) {
       console.log(`[${index + 1}/${favTargets.length}] fav_count測定中... (直近: ${c.tag})`);
     }
   }
 
-  const rankedCandidates = withFav.sort((a, b) => b.postCount - a.postCount).slice(0, TARGET_CANDIDATE_COUNT);
+  const rankedCandidates = rankCandidates(femaleCandidates, favMedianByTag);
+  if (rankedCandidates.length > TARGET_CANDIDATE_COUNT) {
+    console.log(`候補 ${rankedCandidates.length}件は目標 ${TARGET_CANDIDATE_COUNT}件を超えるが、切り詰めずにすべて書き出す。`);
+  }
 
   console.log('優先3作品のシリーズ内キャラを列挙中...');
   const priorityResults = [];

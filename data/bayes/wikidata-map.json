@@ -7506,6 +7506,5653 @@
       "reason": "not-found",
       "source": "not-found",
       "checkedAt": "2026-10-22T12:42:39.811Z"
+    },
+    "bangdreamgirlsbandparty-hikawa-sayo": {
+      "qid": "Q107994181",
+      "label": "Sayo Hikawa",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T04:02:48.478Z"
+    },
+    "bangdreamgirlsbandparty-hikawa-hina": {
+      "qid": "Q107994176",
+      "label": "Hina Hikawa",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T04:02:53.308Z"
+    },
+    "bangdreamgirlsbandparty-mitake-ran": {
+      "qid": "Q107994170",
+      "label": "Ran Mitake",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T04:02:59.377Z"
+    },
+    "bangdreamgirlsbandparty-imai-lisa": {
+      "qid": "Q107994182",
+      "label": "Lisa Imai",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T04:03:04.176Z"
+    },
+    "bangdreamgirlsbandparty-minato-yukina": {
+      "qid": "Q107994180",
+      "label": "Yukina Minato",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T04:03:09.023Z"
+    },
+    "bangdreamgirlsbandparty-tsurumaki-kokoro": {
+      "qid": "Q107994185",
+      "label": "Kokoro Tsurumaki",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T04:03:17.468Z"
+    },
+    "bangdreamgirlsbandparty-aoba-moca": {
+      "qid": "Q107994171",
+      "label": "Moca Aoba",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T04:03:22.282Z"
+    },
+    "bangdreamgirlsbandparty-maruyama-aya": {
+      "qid": "Q107994175",
+      "label": "Aya Maruyama",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T04:03:27.137Z"
+    },
+    "bangdreamgirlsbandparty-okusawa-misaki": {
+      "qid": "Q107994190",
+      "label": "Misaki Okusawa",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T04:03:31.941Z"
+    },
+    "residentevil-jill-valentine": {
+      "qid": "Q840368",
+      "label": "Jill Valentine",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T04:03:36.859Z"
+    },
+    "persona-amagi-yukiko": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T04:03:39.221Z"
+    },
+    "hololive-akai-haato": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q92181505, Akai Haato)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q92181505",
+      "candidateLabel": "Akai Haato",
+      "checkedAt": "2026-10-23T04:03:42.194Z"
+    },
+    "hololive-himemori-luna": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q99413776, Himemori Luna)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q99413776",
+      "candidateLabel": "Himemori Luna",
+      "checkedAt": "2026-10-23T04:03:44.217Z"
+    },
+    "hololive-yuzuki-choco": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q106833841, Yuzuki Choco)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q106833841",
+      "candidateLabel": "Yuzuki Choco",
+      "checkedAt": "2026-10-23T04:03:46.423Z"
+    },
+    "hololive-pekomama": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T04:03:47.655Z"
+    },
+    "hololive-tokino-sora": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q60649413, Tokino Sora)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q60649413",
+      "candidateLabel": "Tokino Sora",
+      "checkedAt": "2026-10-23T04:03:52.469Z"
+    },
+    "hololive-aki-rosenthal": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q108068617, Aki Rosenthal)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q108068617",
+      "candidateLabel": "Aki Rosenthal",
+      "checkedAt": "2026-10-23T04:03:55.495Z"
+    },
+    "hololive-roboco-san": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q85327516, Roboco-san)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q85327516",
+      "candidateLabel": "Roboco-san",
+      "checkedAt": "2026-10-23T04:03:58.230Z"
+    },
+    "hololive-yozora-mel": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q104732671, Yozora Mel)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q104732671",
+      "candidateLabel": "Yozora Mel",
+      "checkedAt": "2026-10-23T04:03:59.993Z"
+    },
+    "hololive-kurokami-fubuki": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T04:04:01.002Z"
+    },
+    "fgo-katsushika-hokusai": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q5586, Katsushika Hokusai)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q5586",
+      "candidateLabel": "Katsushika Hokusai",
+      "checkedAt": "2026-10-23T04:04:07.534Z"
+    },
+    "fgo-barghest": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T04:04:08.425Z"
+    },
+    "fgo-sessyoin-kiara": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T04:04:09.567Z"
+    },
+    "fgo-tamamo-cat": {
+      "qid": "Q137398575",
+      "label": "Tamamo Cat",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T04:04:13.165Z"
+    },
+    "fgo-koyanskaya": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T04:04:15.633Z"
+    },
+    "fgo-leonardo-da-vinci": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q762, Leonardo da Vinci)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q762",
+      "candidateLabel": "Leonardo da Vinci",
+      "checkedAt": "2026-10-23T04:04:24.921Z"
+    },
+    "fgo-ibaraki-douji": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q5983716, Ibaraki-dōji)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q5983716",
+      "candidateLabel": "Ibaraki-dōji",
+      "checkedAt": "2026-10-23T04:04:26.462Z"
+    },
+    "fgo-yu-mei-ren": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q3275211, Consort Yu)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q3275211",
+      "candidateLabel": "Consort Yu",
+      "checkedAt": "2026-10-23T04:04:33.692Z"
+    },
+    "fgo-anastasia": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q34584, Anastacia)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q34584",
+      "candidateLabel": "Anastacia",
+      "checkedAt": "2026-10-23T04:04:41.334Z"
+    },
+    "fgo-ushiwakamaru": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q310445, Minamoto no Yoshitsune)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q310445",
+      "candidateLabel": "Minamoto no Yoshitsune",
+      "checkedAt": "2026-10-23T04:04:48.769Z"
+    },
+    "fgo-lilith": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q180627, Lilith)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q180627",
+      "candidateLabel": "Lilith",
+      "checkedAt": "2026-10-23T04:04:55.820Z"
+    },
+    "fgo-mysterious-heroine-xx": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T04:04:56.624Z"
+    },
+    "fgo-artoria-pendragon": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T04:04:57.855Z"
+    },
+    "fgo-marie-antoinette": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q47365, Marie Antoinette)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q47365",
+      "candidateLabel": "Marie Antoinette",
+      "checkedAt": "2026-10-23T04:05:06.613Z"
+    },
+    "fgo-olga-marie-animusphere": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T04:05:06.979Z"
+    },
+    "fgo-artoria-pendragon-swimsuit-ruler-fate": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T04:05:08.165Z"
+    },
+    "fgo-mysterious-heroine-x-alter": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T04:05:09.374Z"
+    },
+    "fgo-tenochtitlan": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q13695, Tenochtitlan)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q13695",
+      "candidateLabel": "Tenochtitlan",
+      "checkedAt": "2026-10-23T04:05:13.012Z"
+    },
+    "fgo-scathach-skadi": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T04:05:14.215Z"
+    },
+    "fgo-martha": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q232453, Martha)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q232453",
+      "candidateLabel": "Martha",
+      "checkedAt": "2026-10-23T04:05:22.972Z"
+    },
+    "fgo-caenis": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q1132772, Caeneus)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q1132772",
+      "candidateLabel": "Caeneus",
+      "checkedAt": "2026-10-23T04:05:26.579Z"
+    },
+    "fgo-yang-guifei": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q298046, Yang Guifei)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q298046",
+      "candidateLabel": "Yang Guifei",
+      "checkedAt": "2026-10-23T04:05:33.841Z"
+    },
+    "fgo-passionlip": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T04:05:35.164Z"
+    },
+    "fgo-osakabehime": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q17209288, Osakabehime)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q17209288",
+      "candidateLabel": "Osakabehime",
+      "checkedAt": "2026-10-23T04:05:37.437Z"
+    },
+    "fgo-boudica": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q184634, Boudica)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q184634",
+      "candidateLabel": "Boudica",
+      "checkedAt": "2026-10-23T04:05:45.902Z"
+    },
+    "fgo-helena-blavatsky": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q189454, Helena Blavatsky)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q189454",
+      "candidateLabel": "Helena Blavatsky",
+      "checkedAt": "2026-10-23T04:05:49.325Z"
+    },
+    "fgo-murasaki-shikibu": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q81731, Murasaki Shikibu)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q81731",
+      "candidateLabel": "Murasaki Shikibu",
+      "checkedAt": "2026-10-23T04:05:56.106Z"
+    },
+    "fgo-okita-souji-alter": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T04:05:56.948Z"
+    },
+    "chokaguyahime-kaguya": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q205408, SELENE)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q205408",
+      "candidateLabel": "SELENE",
+      "checkedAt": "2026-10-23T04:06:04.412Z"
+    },
+    "machikado-chiyoda-momo": {
+      "qid": "Q107025865",
+      "label": "Momo Chiyoda",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T04:06:07.802Z"
+    },
+    "fatezero-irisviel-von-einzbern": {
+      "qid": "Q61982935",
+      "label": "Irisviel von Einzbern",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T04:06:12.616Z"
+    },
+    "fireemblemengage-female-alear": {
+      "qid": "Q115384495",
+      "label": "Alear",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T04:06:19.862Z"
+    },
+    "fireemblemengage-ivy": {
+      "qid": "Q115486647",
+      "label": "Ivy",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T04:06:27.420Z"
+    },
+    "pokemon-lusamine": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q30900362, Lusamine)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q30900362",
+      "candidateLabel": "Lusamine",
+      "checkedAt": "2026-10-23T04:06:33.457Z"
+    },
+    "pokemon-canari": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T04:06:34.649Z"
+    },
+    "pokemon-jessie": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q5369684, Jessie)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q5369684",
+      "candidateLabel": "Jessie",
+      "checkedAt": "2026-10-23T04:06:43.118Z"
+    },
+    "pokemon-elesa": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q3651221, Elesa)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q3651221",
+      "candidateLabel": "Elesa",
+      "checkedAt": "2026-10-23T04:06:52.844Z"
+    },
+    "pokemon-nemona": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q28113670, Nemo)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q28113670",
+      "candidateLabel": "Nemo",
+      "checkedAt": "2026-10-23T04:06:59.206Z"
+    },
+    "pokemon-irida": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q634940, Kai)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q634940",
+      "candidateLabel": "Kai",
+      "checkedAt": "2026-10-23T04:07:06.719Z"
+    },
+    "pokemon-sabrina": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q3944342, Sabrina)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q3944342",
+      "candidateLabel": "Sabrina",
+      "checkedAt": "2026-10-23T04:07:15.035Z"
+    },
+    "pokemon-bianca": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q101401, bell)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q101401",
+      "candidateLabel": "bell",
+      "checkedAt": "2026-10-23T04:07:23.478Z"
+    },
+    "pokemon-gwynn": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q14530198, Sapindus mukorossi)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q14530198",
+      "candidateLabel": "Sapindus mukorossi",
+      "checkedAt": "2026-10-23T04:07:30.506Z"
+    },
+    "pokemon-penny": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q160464, button)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q160464",
+      "candidateLabel": "button",
+      "checkedAt": "2026-10-23T04:07:38.097Z"
+    },
+    "pokemon-emma": {
+      "qid": "Q136547781",
+      "label": "Emma",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T04:07:41.405Z"
+    },
+    "pokemon-lacey": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q136342668, Lacey)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q136342668",
+      "candidateLabel": "Lacey",
+      "checkedAt": "2026-10-23T04:07:52.494Z"
+    },
+    "pokemon-erika": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q4962499, Erika)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q4962499",
+      "candidateLabel": "Erika",
+      "checkedAt": "2026-10-23T04:07:59.959Z"
+    },
+    "pokemon-jacinthe": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q132858691, ユカリ)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q132858691",
+      "candidateLabel": "ユカリ",
+      "checkedAt": "2026-10-23T04:08:09.205Z"
+    },
+    "pokemon-harmony": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q11314116, Seika)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q11314116",
+      "candidateLabel": "Seika",
+      "checkedAt": "2026-10-23T04:08:17.095Z"
+    },
+    "arknights-skadi-the-corrupting-heart": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T04:08:17.916Z"
+    },
+    "arknights-goldenglow": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q1011547, Golden Globes)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q1011547",
+      "candidateLabel": "Golden Globes",
+      "checkedAt": "2026-10-23T04:08:25.446Z"
+    },
+    "arknights-sussurro": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q1402563, Suzlon Energy)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q1402563",
+      "candidateLabel": "Suzlon Energy",
+      "checkedAt": "2026-10-23T04:08:28.202Z"
+    },
+    "arknights-irene": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T04:08:28.817Z"
+    },
+    "arknights-saria": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q174833, Sarria)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q174833",
+      "candidateLabel": "Sarria",
+      "checkedAt": "2026-10-23T04:08:36.305Z"
+    },
+    "arknights-ho-olheyak": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T04:08:37.315Z"
+    },
+    "arknights-hoshiguma": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T04:08:38.511Z"
+    },
+    "arknights-mon3tr": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T04:08:39.691Z"
+    },
+    "arknights-ling": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q115657337, Rean Schwarzer)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q115657337",
+      "candidateLabel": "Rean Schwarzer",
+      "checkedAt": "2026-10-23T04:08:45.832Z"
+    },
+    "arknights-virtuosa": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q214970, virtuoso)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q214970",
+      "candidateLabel": "virtuoso",
+      "checkedAt": "2026-10-23T04:08:48.199Z"
+    },
+    "arknights-muelsyse": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T04:08:49.365Z"
+    },
+    "arknights-theresa": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q140198113, Theresia)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q140198113",
+      "candidateLabel": "Theresia",
+      "checkedAt": "2026-10-23T04:08:57.865Z"
+    },
+    "arknights-reed": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q23041455, Reid)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q23041455",
+      "candidateLabel": "Reid",
+      "checkedAt": "2026-10-23T04:09:05.731Z"
+    },
+    "arknights-blue-poison": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T04:09:06.362Z"
+    },
+    "arknights-la-pluma": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T04:09:07.559Z"
+    },
+    "arknights-vulpisfoglia": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T04:09:08.791Z"
+    },
+    "arknights-priestess": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T04:09:09.998Z"
+    },
+    "arknights-siege": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q140, lion)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q140",
+      "candidateLabel": "lion",
+      "checkedAt": "2026-10-23T04:09:19.288Z"
+    },
+    "arknights-blaze": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q12130, Brittany)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q12130",
+      "candidateLabel": "Brittany",
+      "checkedAt": "2026-10-23T04:09:27.133Z"
+    },
+    "arknights-lemuen": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T04:09:27.480Z"
+    },
+    "arknights-utage": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T04:09:28.686Z"
+    },
+    "arknights-pramanix": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T04:09:29.924Z"
+    },
+    "arknights-schwarz": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q2253414, Schwartz)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q2253414",
+      "candidateLabel": "Schwartz",
+      "checkedAt": "2026-10-23T04:09:38.177Z"
+    },
+    "arknights-ceobe": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T04:09:39.737Z"
+    },
+    "arknights-typhon": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T04:09:40.990Z"
+    },
+    "arknights-silence": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q5118933, Silence)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q5118933",
+      "candidateLabel": "Silence",
+      "checkedAt": "2026-10-23T04:09:49.376Z"
+    },
+    "arknights-fiammetta": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q18164038, Fiammetta Wilson)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q18164038",
+      "candidateLabel": "Fiammetta Wilson",
+      "checkedAt": "2026-10-23T04:09:52.069Z"
+    },
+    "arknights-swire": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q1141162, Swire Group)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q1141162",
+      "candidateLabel": "Swire Group",
+      "checkedAt": "2026-10-23T04:09:56.654Z"
+    },
+    "neptuneseries-neptune": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q5502540, Neptune)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q5502540",
+      "candidateLabel": "Neptune",
+      "checkedAt": "2026-10-23T04:10:04.344Z"
+    },
+    "neptuneseries-noire": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q134126468, Noire)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q134126468",
+      "candidateLabel": "Noire",
+      "checkedAt": "2026-10-23T04:10:23.759Z"
+    },
+    "neptuneseries-nepgear": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T04:10:24.533Z"
+    },
+    "neptuneseries-blanc": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q134204, Blain)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q134204",
+      "candidateLabel": "Blain",
+      "checkedAt": "2026-10-23T04:10:32.738Z"
+    },
+    "watamote-tamura-yuri": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T04:10:33.112Z"
+    },
+    "watamote-katou-asuka": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T04:10:34.309Z"
+    },
+    "watamote-nemoto-hina": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T04:10:35.503Z"
+    },
+    "heartcatchprecure-tsukikage-yuri": {
+      "qid": "Q4023259",
+      "label": "Yuri Tsukikage",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T04:10:39.106Z"
+    },
+    "kemono-shoebill": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q18700, Shoebill)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q18700",
+      "candidateLabel": "Shoebill",
+      "checkedAt": "2026-10-23T04:10:45.400Z"
+    },
+    "kemono-silver-fox": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q2574250, silver fox)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q2574250",
+      "candidateLabel": "silver fox",
+      "checkedAt": "2026-10-23T04:10:47.579Z"
+    },
+    "kemono-japanese-crested-ibis": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q493173, Crested Ibis)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q493173",
+      "candidateLabel": "Crested Ibis",
+      "checkedAt": "2026-10-23T04:10:55.413Z"
+    },
+    "kemono-northern-white-faced-owl": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q126483, Northern White-faced Owl)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q126483",
+      "candidateLabel": "Northern White-faced Owl",
+      "checkedAt": "2026-10-23T04:10:59.094Z"
+    },
+    "kemono-ezo-red-fox": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q848814, Vulpes vulpes schrenckii)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q848814",
+      "candidateLabel": "Vulpes vulpes schrenckii",
+      "checkedAt": "2026-10-23T04:11:04.313Z"
+    },
+    "kemono-grey-wolf": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q18498, grey wolf)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q18498",
+      "candidateLabel": "grey wolf",
+      "checkedAt": "2026-10-23T04:11:07.177Z"
+    },
+    "kemono-dhole": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q205586, Dole)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q205586",
+      "candidateLabel": "Dole",
+      "checkedAt": "2026-10-23T04:11:13.942Z"
+    },
+    "kemono-suri-alpaca": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T04:11:15.154Z"
+    },
+    "kemono-emperor-penguin": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q161829, Emperor Penguin)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q161829",
+      "candidateLabel": "Emperor Penguin",
+      "checkedAt": "2026-10-23T04:11:21.237Z"
+    },
+    "kemono-eurasian-eagle-owl": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q130933, Eurasian Eagle-owl)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q130933",
+      "candidateLabel": "Eurasian Eagle-owl",
+      "checkedAt": "2026-10-23T04:11:26.122Z"
+    },
+    "kemono-jaguar": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q35694, jaguar)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q35694",
+      "candidateLabel": "jaguar",
+      "checkedAt": "2026-10-23T04:11:33.170Z"
+    },
+    "kemono-brown-long-eared-bat": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q210708, Plecotus auritus)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q210708",
+      "candidateLabel": "Plecotus auritus",
+      "checkedAt": "2026-10-23T04:11:38.068Z"
+    },
+    "dccomics-raven": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q3187163, Ravenclaw)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q3187163",
+      "candidateLabel": "Ravenclaw",
+      "checkedAt": "2026-10-23T04:11:47.040Z"
+    },
+    "dccomics-harley-quinn": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q849477, Harley Quinn)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q849477",
+      "candidateLabel": "Harley Quinn",
+      "checkedAt": "2026-10-23T04:11:53.814Z"
+    },
+    "strikewitches-erica-hartmann": {
+      "qid": "Q134431686",
+      "label": "Erica Hartmann",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T04:11:56.768Z"
+    },
+    "strikewitches-gertrud-barkhorn": {
+      "qid": "Q134431440",
+      "label": "Gertrud Barkhorn",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T04:12:01.615Z"
+    },
+    "strikewitches-lynette-bishop": {
+      "qid": "Q134431510",
+      "label": "Lynette Bishop",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T04:12:06.396Z"
+    },
+    "strikewitches-charlotte-e-yeager": {
+      "qid": "Q134434661",
+      "label": "Charlotte E. Yeager",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T04:12:11.224Z"
+    },
+    "strikewitches-sakamoto-mio": {
+      "qid": "Q112786417",
+      "label": "Mio Sakamoto",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T04:12:16.073Z"
+    },
+    "strikewitches-minna-dietlinde-wilcke": {
+      "qid": "Q134431564",
+      "label": "Minna-Dietlinde Wilcke",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T04:12:20.883Z"
+    },
+    "csm-fami": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q108483, giga)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q108483",
+      "candidateLabel": "giga",
+      "checkedAt": "2026-10-23T04:12:30.492Z"
+    },
+    "csm-quanxi": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q469387, Gwangjong of Goryeo)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q469387",
+      "candidateLabel": "Gwangjong of Goryeo",
+      "checkedAt": "2026-10-23T04:12:36.937Z"
+    },
+    "digimon-angewomon": {
+      "qid": "Q4350071",
+      "label": "Angewomon",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:15:01.159Z"
+    },
+    "aceattorney-maya-fey": {
+      "qid": "Q5370036",
+      "label": "Maya Fey",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:15:06.031Z"
+    },
+    "airvisualnovel-kamio-misuzu": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:15:08.424Z"
+    },
+    "alienstage-hyuna": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q18125814, Hyeon-a)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q18125814",
+      "candidateLabel": "Hyeon-a",
+      "checkedAt": "2026-10-23T05:15:14.850Z"
+    },
+    "amagami-nanasaki-ai": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:15:15.697Z"
+    },
+    "amagibrilliantpark-sento-isuzu": {
+      "qid": "Q138789623",
+      "label": "Isuzu Sento",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:15:19.318Z"
+    },
+    "angelbeats-tachibana-kanade": {
+      "qid": "Q133542804",
+      "label": "Kanade Tachibana",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:15:24.147Z"
+    },
+    "angelbeats-nakamura-yuri": {
+      "qid": "Q138763299",
+      "label": "Yuri Nakamura",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:15:28.982Z"
+    },
+    "angelbeats-yui": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q106947019, Yui)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q106947019",
+      "candidateLabel": "Yui",
+      "checkedAt": "2026-10-23T05:15:39.853Z"
+    },
+    "animalcrossing-isabelle": {
+      "qid": "Q59220438",
+      "label": "Isabelle",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:15:43.552Z"
+    },
+    "apexlegends-wattson": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:15:45.946Z"
+    },
+    "apexlegends-wraith": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q16881778, Race)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q16881778",
+      "candidateLabel": "Race",
+      "checkedAt": "2026-10-23T05:15:53.369Z"
+    },
+    "ariamanga-mizunashi-akari": {
+      "qid": "Q112624519",
+      "label": "Akari Mizunashi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:15:56.769Z"
+    },
+    "endfield-perlica": {
+      "qid": "Q141678238",
+      "label": "Perlica",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:16:06.466Z"
+    },
+    "endfield-rossi": {
+      "qid": "Q141717595",
+      "label": "Rossi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:16:16.115Z"
+    },
+    "endfield-yvonne": {
+      "qid": "Q141717633",
+      "label": "Yvonne",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:16:23.371Z"
+    },
+    "endfield-chen-qianyu": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:16:26.024Z"
+    },
+    "endfield-zhuang-fangyi": {
+      "qid": "Q141805621",
+      "label": "Zhuang Fangyi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:16:29.384Z"
+    },
+    "azumangadaioh-kasuga-ayumu": {
+      "qid": "Q845208",
+      "label": "Ayumu Kasuga",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:16:34.211Z"
+    },
+    "azurlane-kaga": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q726146, Kaga)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q726146",
+      "candidateLabel": "Kaga",
+      "checkedAt": "2026-10-23T05:16:43.071Z"
+    },
+    "azurlane-enterprise": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q989888, Starship Enterprise)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q989888",
+      "candidateLabel": "Starship Enterprise",
+      "checkedAt": "2026-10-23T05:16:51.806Z"
+    },
+    "azurlane-takao": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q181557, Kaohsiung)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q181557",
+      "candidateLabel": "Kaohsiung",
+      "checkedAt": "2026-10-23T05:16:58.376Z"
+    },
+    "azurlane-akagi": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q320967, Akagi)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q320967",
+      "candidateLabel": "Akagi",
+      "checkedAt": "2026-10-23T05:17:06.019Z"
+    },
+    "azurlane-st-louis": {
+      "qid": "Q123564382",
+      "label": "St. Louis",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:17:14.109Z"
+    },
+    "azurlane-shinano": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q241858, Japanese aircraft carrier Shinano)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q241858",
+      "candidateLabel": "Japanese aircraft carrier Shinano",
+      "checkedAt": "2026-10-23T05:17:23.491Z"
+    },
+    "azurlane-honolulu": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q18094, Honolulu)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q18094",
+      "candidateLabel": "Honolulu",
+      "checkedAt": "2026-10-23T05:17:30.933Z"
+    },
+    "azurlane-baltimore": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q5092, Baltimore)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q5092",
+      "candidateLabel": "Baltimore",
+      "checkedAt": "2026-10-23T05:17:38.395Z"
+    },
+    "azurlane-new-jersey": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q1408, New Jersey)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q1408",
+      "candidateLabel": "New Jersey",
+      "checkedAt": "2026-10-23T05:17:45.311Z"
+    },
+    "azurlane-kashino": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q6158870, Japanese munition ship Kashino)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q6158870",
+      "candidateLabel": "Japanese munition ship Kashino",
+      "checkedAt": "2026-10-23T05:17:52.581Z"
+    },
+    "azurlane-dido": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q1054844, Taito)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q1054844",
+      "candidateLabel": "Taito",
+      "checkedAt": "2026-10-23T05:18:00.665Z"
+    },
+    "azurlane-aegir": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q204927, Ægir)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q204927",
+      "candidateLabel": "Ægir",
+      "checkedAt": "2026-10-23T05:18:08.675Z"
+    },
+    "azurlane-cheshire": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q23064, Cheshire)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q23064",
+      "candidateLabel": "Cheshire",
+      "checkedAt": "2026-10-23T05:18:15.926Z"
+    },
+    "azurlane-amagi": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q452508, Japanese aircraft carrier Amagi)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q452508",
+      "candidateLabel": "Japanese aircraft carrier Amagi",
+      "checkedAt": "2026-10-23T05:18:23.179Z"
+    },
+    "azurlane-musashi": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q1127368, Japanese battleship Musashi)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q1127368",
+      "candidateLabel": "Japanese battleship Musashi",
+      "checkedAt": "2026-10-23T05:18:30.646Z"
+    },
+    "azurlane-yamashiro": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q11725, Chongqing)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q11725",
+      "candidateLabel": "Chongqing",
+      "checkedAt": "2026-10-23T05:18:38.908Z"
+    },
+    "azurlane-jean-bart": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q333388, Jean Bart)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q333388",
+      "candidateLabel": "Jean Bart",
+      "checkedAt": "2026-10-23T05:18:46.190Z"
+    },
+    "baldursgate3-shadowheart": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:18:47.404Z"
+    },
+    "bayonettaseries-bayonetta": {
+      "qid": "Q4874693",
+      "label": "Bayonetta",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:18:52.306Z"
+    },
+    "sailormoon-ten-ou-haruka": {
+      "qid": "Q1049705",
+      "label": "Sailor Uranus",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:18:57.859Z"
+    },
+    "sailormoon-kaiou-michiru": {
+      "qid": "Q1051519",
+      "label": "Sailor Neptune",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:19:02.699Z"
+    },
+    "blacklagoon-revy": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q139208, Lévis)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q139208",
+      "candidateLabel": "Lévis",
+      "checkedAt": "2026-10-23T05:19:11.177Z"
+    },
+    "blazblue-makoto-nanaya": {
+      "qid": "Q105737013",
+      "label": "Makoto Nanaya",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:19:14.834Z"
+    },
+    "blazblue-noel-vermillion": {
+      "qid": "Q105710957",
+      "label": "Noel Vermillion",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:19:19.705Z"
+    },
+    "blazblue-nu-13": {
+      "qid": "Q105719267",
+      "label": "ν-No.13-",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:19:24.532Z"
+    },
+    "bocchi-ijichi-seika": {
+      "qid": "Q115924685",
+      "label": "Seika Ijichi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:19:29.309Z"
+    },
+    "mha-asui-tsuyu": {
+      "qid": "Q117874849",
+      "label": "Tsuyu Asui",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:19:34.166Z"
+    },
+    "mha-yaoyorozu-momo": {
+      "qid": "Q141681678",
+      "label": "Momo Yaoyorozu",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:19:39.004Z"
+    },
+    "mha-ashido-mina": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:19:41.430Z"
+    },
+    "mha-jiro-kyoka": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q141610301, Kyoka Jiro)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q141610301",
+      "candidateLabel": "Kyoka Jiro",
+      "checkedAt": "2026-10-23T05:19:43.843Z"
+    },
+    "mha-hado-nejire": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:19:45.043Z"
+    },
+    "mha-hagakure-toru": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:19:46.270Z"
+    },
+    "bokuwatomodachigasukunai-kashiwazaki-sena": {
+      "qid": "Q134487187",
+      "label": "Sena Kashiwazaki",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:19:49.903Z"
+    },
+    "sf-kasugano-sakura": {
+      "qid": "Q2450317",
+      "label": "Sakura Kasugano",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:19:54.701Z"
+    },
+    "sf-ingrid": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q903741, Ingrid)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q903741",
+      "candidateLabel": "Ingrid",
+      "checkedAt": "2026-10-23T05:20:03.424Z"
+    },
+    "chuunibyoudemokoigashitai-takanashi-rikka": {
+      "qid": "Q110846720",
+      "label": "Rikka Takanashi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:20:06.857Z"
+    },
+    "clannad-furukawa-nagisa": {
+      "qid": "Q118907354",
+      "label": "Nagisa Furukawa",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:20:11.713Z"
+    },
+    "clannad-fujibayashi-kyou": {
+      "qid": "Q119439209",
+      "label": "Fujibayashi Kyou",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:20:16.500Z"
+    },
+    "cyberpunkedgerunners1-rebecca": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q503607, Rebecca)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q503607",
+      "candidateLabel": "Rebecca",
+      "checkedAt": "2026-10-23T05:20:25.499Z"
+    },
+    "cyberpunkedgerunners1-lucy": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q13365715, Lucy)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q13365715",
+      "candidateLabel": "Lucy",
+      "checkedAt": "2026-10-23T05:20:32.534Z"
+    },
+    "dagashikashi-shidare-hotaru": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:20:33.544Z"
+    },
+    "danganronpa-mioda-ibuki": {
+      "qid": "Q70332553",
+      "label": "Ibuki Mioda",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:20:37.176Z"
+    },
+    "danganronpa-sonia-nevermind": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:20:39.608Z"
+    },
+    "danganronpa-saionji-hiyoko": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:20:40.818Z"
+    },
+    "danganronpa-koizumi-mahiru": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:20:42.013Z"
+    },
+    "danganronpa-iruma-miu": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:20:43.213Z"
+    },
+    "danganronpa-yumeno-himiko": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:20:44.416Z"
+    },
+    "danganronpa-yonaga-angie": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:20:45.611Z"
+    },
+    "danganronpa-chabashira-tenko": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:20:46.823Z"
+    },
+    "danganronpa-shirogane-tsumugi": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:20:48.052Z"
+    },
+    "danganronpa-celestia-ludenberg": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:20:49.260Z"
+    },
+    "danganronpa-fukawa-toko": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:20:50.459Z"
+    },
+    "danganronpa-maizono-sayaka": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q11613594, 舞園さやか)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q11613594",
+      "candidateLabel": "舞園さやか",
+      "checkedAt": "2026-10-23T05:20:52.875Z"
+    },
+    "danganronpa-ikusaba-mukuro": {
+      "qid": "Q133700007",
+      "label": "Mukuro Ikusaba",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:20:56.547Z"
+    },
+    "darkstalkers-felicia": {
+      "qid": "Q2734434",
+      "label": "Felicia",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:21:03.753Z"
+    },
+    "darkstalkers-hsien-ko": {
+      "qid": "Q11349381",
+      "label": "Hsien-Ko",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:21:08.574Z"
+    },
+    "datealive-tokisaki-kurumi": {
+      "qid": "Q55718817",
+      "label": "Kurumi Tokisaki",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:21:13.405Z"
+    },
+    "doa-kasumi": {
+      "qid": "Q2520527",
+      "label": "Kasumi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:21:20.816Z"
+    },
+    "doa-marie-rose": {
+      "qid": "Q105595602",
+      "label": "Marie Rose",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:21:25.525Z"
+    },
+    "deltarune-noelle-holiday": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q261113, Noel)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q261113",
+      "candidateLabel": "Noel",
+      "checkedAt": "2026-10-23T05:21:34.767Z"
+    },
+    "deltarune-susie": {
+      "qid": "Q116258790",
+      "label": "Susie",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:21:37.554Z"
+    },
+    "disgaea-etna": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q3451773, Etna)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q3451773",
+      "candidateLabel": "Etna",
+      "checkedAt": "2026-10-23T05:21:46.002Z"
+    },
+    "dokidokiliteratureclub-monika": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q18177153, Monika)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q18177153",
+      "candidateLabel": "Monika",
+      "checkedAt": "2026-10-23T05:21:54.372Z"
+    },
+    "dokidokiliteratureclub-natsuki": {
+      "qid": "Q65040172",
+      "label": "Natsuki",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:21:58.379Z"
+    },
+    "dokidokiliteratureclub-yuri": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q5194627, Lilium)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q5194627",
+      "candidateLabel": "Lilium",
+      "checkedAt": "2026-10-23T05:22:07.053Z"
+    },
+    "dokidokiliteratureclub-sayori": {
+      "qid": "Q65039853",
+      "label": "Sayori",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:22:11.695Z"
+    },
+    "dragonball-chi-chi": {
+      "qid": "Q1139513",
+      "label": "Chi-Chi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:22:16.521Z"
+    },
+    "dragonquestv-bianca": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q4961660, Bianca)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q4961660",
+      "candidateLabel": "Bianca",
+      "checkedAt": "2026-10-23T05:22:25.506Z"
+    },
+    "dragonscrown-sorceress": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q60986169, Sorceress * Alive! ~the World's End Fallen Star~)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q60986169",
+      "candidateLabel": "Sorceress * Alive! ~the World's End Fallen Star~",
+      "checkedAt": "2026-10-23T05:22:27.474Z"
+    },
+    "dungeonmeshi-izutsumi": {
+      "qid": "Q126884483",
+      "label": "Izutsumi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:22:30.993Z"
+    },
+    "eldenring-ranni-the-witch": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:22:33.432Z"
+    },
+    "eldenring-malenia-blade-of-miquella": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:22:34.614Z"
+    },
+    "elsword-eve": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q830183, Eve)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q830183",
+      "candidateLabel": "Eve",
+      "checkedAt": "2026-10-23T05:22:43.921Z"
+    },
+    "elsword-aisha-landar": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q920442, 3584 Aisha)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q920442",
+      "candidateLabel": "3584 Aisha",
+      "checkedAt": "2026-10-23T05:22:51.948Z"
+    },
+    "fairytail-lucy-heartfilia": {
+      "qid": "Q2571469",
+      "label": "Lucy Heartfilia",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:22:54.746Z"
+    },
+    "fate-medea": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q11033, mass media)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q11033",
+      "candidateLabel": "mass media",
+      "checkedAt": "2026-10-23T05:23:03.515Z"
+    },
+    "fate-saber-lily": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:23:04.437Z"
+    },
+    "fate-altera": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q438294, Altera)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q438294",
+      "candidateLabel": "Altera",
+      "checkedAt": "2026-10-23T05:23:11.690Z"
+    },
+    "fate-atalanta": {
+      "qid": "Q137589352",
+      "label": "Atalanta",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:23:17.715Z"
+    },
+    "fate-frankenstein-s-monster": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q246693, Ząbkowice Śląskie)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q246693",
+      "candidateLabel": "Ząbkowice Śląskie",
+      "checkedAt": "2026-10-23T05:23:26.242Z"
+    },
+    "fate-kishinami-hakuno": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:23:27.386Z"
+    },
+    "fatehollowataraxia-caren-hortensia": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:23:28.581Z"
+    },
+    "fateprototypefragmentsofblueandsilver-hassan-of-serenity": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:23:29.805Z"
+    },
+    "finalfantasyiv-rydia": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q292282, Lydia of Thyatira)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q292282",
+      "candidateLabel": "Lydia of Thyatira",
+      "checkedAt": "2026-10-23T05:23:45.482Z"
+    },
+    "finalfantasyix-garnet-til-alexandros-xvii": {
+      "qid": "Q3758396",
+      "label": "Garnet Til Alexandros XVII",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:23:49.138Z"
+    },
+    "finalfantasyv-lenna-charlotte-tycoon": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:23:51.576Z"
+    },
+    "finalfantasyvi-terra-branford": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:23:52.764Z"
+    },
+    "finalfantasyvi-celes-chere": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:23:53.967Z"
+    },
+    "ff7-yuffie-kisaragi": {
+      "qid": "Q4199411",
+      "label": "Yuffie Kisaragi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:23:57.664Z"
+    },
+    "finalfantasyx-yuna": {
+      "qid": "Q1334722",
+      "label": "Yuna",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:24:02.464Z"
+    },
+    "finalfantasyxiii-lightning-farron": {
+      "qid": "Q2066495",
+      "label": "Lightning",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:24:07.295Z"
+    },
+    "finalfantasyxiv-y-shtola-rhul": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:24:09.655Z"
+    },
+    "fe-female-robin": {
+      "qid": "Q108377901",
+      "label": "Robin",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:24:15.755Z"
+    },
+    "fe-tharja": {
+      "qid": "Q119244782",
+      "label": "Tharja",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:24:24.152Z"
+    },
+    "fe-tiki": {
+      "qid": "Q115861755",
+      "label": "Tiki",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:24:30.279Z"
+    },
+    "fireemblemechoesshadowsofvalentia-celica": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q105748752, Celica A. Mercury)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q105748752",
+      "candidateLabel": "Celica A. Mercury",
+      "checkedAt": "2026-10-23T05:24:39.865Z"
+    },
+    "fe-azura": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q2859118, Aqua)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q2859118",
+      "candidateLabel": "Aqua",
+      "checkedAt": "2026-10-23T05:24:48.302Z"
+    },
+    "fe-elise": {
+      "qid": "Q126598560",
+      "label": "Elise",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:24:58.154Z"
+    },
+    "fe-sakura": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q871991, cherry blossom)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q871991",
+      "candidateLabel": "cherry blossom",
+      "checkedAt": "2026-10-23T05:25:07.194Z"
+    },
+    "fireemblemgenealogyoftheholywar-larcei": {
+      "qid": "Q126733298",
+      "label": "Larcei",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:25:10.207Z"
+    },
+    "fireemblemgenealogyoftheholywar-julia": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q235087, Julia)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q235087",
+      "candidateLabel": "Julia",
+      "checkedAt": "2026-10-23T05:25:19.880Z"
+    },
+    "fireemblemradiantdawn-micaiah": {
+      "qid": "Q126564693",
+      "label": "Micaiah",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:25:23.561Z"
+    },
+    "fireemblemthesacredstones-eirika": {
+      "qid": "Q126558152",
+      "label": "Eirika",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:25:28.382Z"
+    },
+    "fe3h-lysithea-von-ordelia": {
+      "qid": "Q115506566",
+      "label": "Lysithea von Ordelia",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:25:34.411Z"
+    },
+    "fe3h-marianne-von-edmund": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q107740951, Miss Goldenweek)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q107740951",
+      "candidateLabel": "Miss Goldenweek",
+      "checkedAt": "2026-10-23T05:25:44.178Z"
+    },
+    "fe3h-bernadetta-von-varley": {
+      "qid": "Q115498671",
+      "label": "Bernadetta von Varley",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:25:50.134Z"
+    },
+    "fe3h-dorothea-arnault": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q909253, Dorothea)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q909253",
+      "candidateLabel": "Dorothea",
+      "checkedAt": "2026-10-23T05:25:59.015Z"
+    },
+    "fe3h-ingrid-brandl-galatea": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q118524031, Ingrid)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q118524031",
+      "candidateLabel": "Ingrid",
+      "checkedAt": "2026-10-23T05:26:09.098Z"
+    },
+    "fe3h-rhea": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q15050, Rhea)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q15050",
+      "candidateLabel": "Rhea",
+      "checkedAt": "2026-10-23T05:26:16.118Z"
+    },
+    "frozendisney-elsa": {
+      "qid": "Q15620419",
+      "label": "Elsa",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:26:20.384Z"
+    },
+    "fullmetalalchemist-winry-rockbell": {
+      "qid": "Q1079740",
+      "label": "Winry Rockbell",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:26:25.218Z"
+    },
+    "gkidols-tsukimura-temari": {
+      "qid": "Q134570629",
+      "label": "Temari Tsukimura",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:26:30.001Z"
+    },
+    "gkidols-hanami-saki": {
+      "qid": "Q134570608",
+      "label": "Saki Hanami",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:26:34.841Z"
+    },
+    "gkidols-himesaki-rinami": {
+      "qid": "Q134570637",
+      "label": "Rinami Himesaki",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:26:39.678Z"
+    },
+    "gkidols-katsuragi-lilja": {
+      "qid": "Q134570632",
+      "label": "Lilja Katsuragi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:26:44.489Z"
+    },
+    "gkidols-hataya-misuzu": {
+      "qid": "Q134570639",
+      "label": "Misuzu Hataya",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:26:49.347Z"
+    },
+    "gkidols-kuramoto-china": {
+      "qid": "Q134570634",
+      "label": "China Kuramoto",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:26:54.182Z"
+    },
+    "gkidols-juo-sena": {
+      "qid": "Q134570641",
+      "label": "Sena Jūō",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:26:59.004Z"
+    },
+    "gkidols-arimura-mao": {
+      "qid": "Q134570631",
+      "label": "Mao Arimura",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:27:03.858Z"
+    },
+    "gkidols-shiun-sumika": {
+      "qid": "Q134570635",
+      "label": "Sumika Shiun",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:27:08.676Z"
+    },
+    "gegegenokitarou-nekomusume": {
+      "qid": "Q11572006",
+      "label": "Neko-Musume",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:27:13.512Z"
+    },
+    "genshin-clorinde": {
+      "qid": "Q136338907",
+      "label": "Clorinde",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:27:19.627Z"
+    },
+    "genshin-navia": {
+      "qid": "Q136338931",
+      "label": "Navia",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:27:24.422Z"
+    },
+    "genshin-ningguang": {
+      "qid": "Q111180134",
+      "label": "Ningguang",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:27:29.301Z"
+    },
+    "genshin-mavuika": {
+      "qid": "Q131326273",
+      "label": "Mavuika",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:27:34.080Z"
+    },
+    "genshin-lynette": {
+      "qid": "Q136338929",
+      "label": "Lynette",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:27:40.123Z"
+    },
+    "genshin-lisa": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q488157, Rissa Municipality)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q488157",
+      "candidateLabel": "Rissa Municipality",
+      "checkedAt": "2026-10-23T05:27:51.186Z"
+    },
+    "genshin-kujou-sara": {
+      "qid": "Q136338923",
+      "label": "Kujou Sara",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:27:54.038Z"
+    },
+    "genshin-yanfei": {
+      "qid": "Q110965539",
+      "label": "Yanfei",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:27:58.831Z"
+    },
+    "genshin-noelle": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q261113, Noel)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q261113",
+      "candidateLabel": "Noel",
+      "checkedAt": "2026-10-23T05:28:07.604Z"
+    },
+    "genshin-beidou": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q857141, BeiDou)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q857141",
+      "candidateLabel": "BeiDou",
+      "checkedAt": "2026-10-23T05:28:15.026Z"
+    },
+    "genshin-dehya": {
+      "qid": "Q136338910",
+      "label": "Dehya",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:28:18.198Z"
+    },
+    "genshin-mualani": {
+      "qid": "Q136338560",
+      "label": "Mualani",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:28:23.037Z"
+    },
+    "genshin-collei": {
+      "qid": "Q118153805",
+      "label": "Collei",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:28:27.828Z"
+    },
+    "genshin-kirara": {
+      "qid": "Q136338922",
+      "label": "Kirara",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:28:32.650Z"
+    },
+    "genshin-xiangling": {
+      "qid": "Q111018815",
+      "label": "Xiangling",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:28:37.471Z"
+    },
+    "genshin-varesa": {
+      "qid": "Q136338938",
+      "label": "Varesa",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:28:42.328Z"
+    },
+    "genshin-sigewinne": {
+      "qid": "Q131840393",
+      "label": "Sigewinne",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:28:47.203Z"
+    },
+    "genshin-kuki-shinobu": {
+      "qid": "Q136338925",
+      "label": "Kuki Shinobu",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:28:52.060Z"
+    },
+    "genshin-faruzan": {
+      "qid": "Q136338913",
+      "label": "Faruzan",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:28:58.032Z"
+    },
+    "genshin-skirk": {
+      "qid": "Q136338905",
+      "label": "Skirk",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:29:02.881Z"
+    },
+    "genshin-rosaria": {
+      "qid": "Q135102481",
+      "label": "Rosaria",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:29:12.243Z"
+    },
+    "genshin-chiori": {
+      "qid": "Q136338777",
+      "label": "Chiori",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:29:17.075Z"
+    },
+    "genshin-sucrose": {
+      "qid": "Q112220215",
+      "label": "Sucrose",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:29:23.337Z"
+    },
+    "genshin-xianyun": {
+      "qid": "Q125120467",
+      "label": "Xianyun",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:29:29.363Z"
+    },
+    "genshin-layla": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q1607500, Leila)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q1607500",
+      "candidateLabel": "Leila",
+      "checkedAt": "2026-10-23T05:29:38.042Z"
+    },
+    "genshin-signora": {
+      "qid": "Q136345176",
+      "label": "La Signora",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:29:41.482Z"
+    },
+    "ghostintheshell-kusanagi-motoko": {
+      "qid": "Q6918065",
+      "label": "Motoko Kusanagi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:29:46.289Z"
+    },
+    "girls-rupa": {
+      "qid": "Q125884564",
+      "label": "Rupa",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:29:56.932Z"
+    },
+    "girls-ebizuka-tomo": {
+      "qid": "Q125884563",
+      "label": "Tomo Ebizuka",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:30:01.762Z"
+    },
+    "gup-isuzu-hana": {
+      "qid": "Q131717105",
+      "label": "Hana Isuzu",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:30:06.614Z"
+    },
+    "gup-nonna": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q242138, Nonna Mordyukova)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q242138",
+      "candidateLabel": "Nonna Mordyukova",
+      "checkedAt": "2026-10-23T05:30:15.602Z"
+    },
+    "gup-nishizumi-shiho": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:30:16.531Z"
+    },
+    "gup-orange-pekoe": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q1546094, Orange Pekoe)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q1546094",
+      "candidateLabel": "Orange Pekoe",
+      "checkedAt": "2026-10-23T05:30:20.183Z"
+    },
+    "gup-andou": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q24090426, Andō)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q24090426",
+      "candidateLabel": "Andō",
+      "checkedAt": "2026-10-23T05:30:27.372Z"
+    },
+    "gup-pepperoni": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q855131, pepperoni)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q855131",
+      "candidateLabel": "pepperoni",
+      "checkedAt": "2026-10-23T05:30:31.004Z"
+    },
+    "gup-rosehip": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q46740, rose hip)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q46740",
+      "candidateLabel": "rose hip",
+      "checkedAt": "2026-10-23T05:30:35.839Z"
+    },
+    "gup-oshida": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:30:37.030Z"
+    },
+    "gup-nishi-kinuyo": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:30:38.259Z"
+    },
+    "gup-marie": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q734578, Mary)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q734578",
+      "candidateLabel": "Mary",
+      "checkedAt": "2026-10-23T05:30:46.580Z"
+    },
+    "gup-kadotani-anzu": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:30:47.756Z"
+    },
+    "gup-assam": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q1164, Assam)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q1164",
+      "candidateLabel": "Assam",
+      "checkedAt": "2026-10-23T05:30:55.746Z"
+    },
+    "gup-kawashima-momo": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:30:56.310Z"
+    },
+    "gup-carpaccio": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q5581, Vittore Carpaccio)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q5581",
+      "candidateLabel": "Vittore Carpaccio",
+      "checkedAt": "2026-10-23T05:31:00.350Z"
+    },
+    "gup-sawa-azusa": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:31:01.383Z"
+    },
+    "girlsfrontline-ump9": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q461510, H&K UMP)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q461510",
+      "candidateLabel": "H&K UMP",
+      "checkedAt": "2026-10-23T05:31:04.048Z"
+    },
+    "girlsfrontline-ak-12": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q1902575, AK-12)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q1902575",
+      "candidateLabel": "AK-12",
+      "checkedAt": "2026-10-23T05:31:07.444Z"
+    },
+    "girlsfrontline-springfield": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q151076, Springfield)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q151076",
+      "candidateLabel": "Springfield",
+      "checkedAt": "2026-10-23T05:31:16.403Z"
+    },
+    "girlsfrontline-an-94": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q295513, AN-94)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q295513",
+      "candidateLabel": "AN-94",
+      "checkedAt": "2026-10-23T05:31:23.148Z"
+    },
+    "girlsfrontline-g11": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q11200722, G11)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q11200722",
+      "candidateLabel": "G11",
+      "checkedAt": "2026-10-23T05:31:30.403Z"
+    },
+    "girlsfrontline-m200": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q1071406, CheyTac Intervention)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q1071406",
+      "candidateLabel": "CheyTac Intervention",
+      "checkedAt": "2026-10-23T05:31:38.316Z"
+    },
+    "girlsfrontline-m4-sopmod-ii": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:31:38.856Z"
+    },
+    "girlsfrontline-m4a1": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q214688, M4)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q214688",
+      "candidateLabel": "M4",
+      "checkedAt": "2026-10-23T05:31:46.084Z"
+    },
+    "girlsfrontline-m16a1": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q170318, M16 rifle)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q170318",
+      "candidateLabel": "M16 rifle",
+      "checkedAt": "2026-10-23T05:31:49.707Z"
+    },
+    "girlsfrontline-st-ar-15": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:31:50.938Z"
+    },
+    "girlsfrontline-ro635": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:31:52.145Z"
+    },
+    "girlsfrontline-rpk-16": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q55659227, Kalashnikov RPK-16)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q55659227",
+      "candidateLabel": "Kalashnikov RPK-16",
+      "checkedAt": "2026-10-23T05:31:54.564Z"
+    },
+    "girlsfrontline-suomi": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q141965, 1656 Suomi)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q141965",
+      "candidateLabel": "1656 Suomi",
+      "checkedAt": "2026-10-23T05:32:02.279Z"
+    },
+    "girlsfrontline-ots-14": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q142928, OTs-14 Groza)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q142928",
+      "candidateLabel": "OTs-14 Groza",
+      "checkedAt": "2026-10-23T05:32:06.732Z"
+    },
+    "girlsfrontline-g36": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q4388373, Matsuchi Station)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q4388373",
+      "candidateLabel": "Matsuchi Station",
+      "checkedAt": "2026-10-23T05:32:13.963Z"
+    },
+    "girlsfrontline-ak-15": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q105453970, AK-15)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q105453970",
+      "candidateLabel": "AK-15",
+      "checkedAt": "2026-10-23T05:32:17.576Z"
+    },
+    "girlsfrontline-type-95": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q696563, Type 95 Ha-Go)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q696563",
+      "candidateLabel": "Type 95 Ha-Go",
+      "checkedAt": "2026-10-23T05:32:24.897Z"
+    },
+    "gotoubun-nakano-itsuki": {
+      "qid": "Q104664052",
+      "label": "Itsuki Nakano",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:32:28.446Z"
+    },
+    "gotoubun-nakano-ichika": {
+      "qid": "Q104664021",
+      "label": "Ichika Nakano",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:32:33.251Z"
+    },
+    "godeater-alisa-ilinichina-amiella": {
+      "qid": "Q138568977",
+      "label": "Alisa Ilinichina Amiella",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:32:38.077Z"
+    },
+    "nikke-elegg": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q9778, electronic music)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q9778",
+      "candidateLabel": "electronic music",
+      "checkedAt": "2026-10-23T05:32:47.047Z"
+    },
+    "nikke-red-hood": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q2143880, Red Hood)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q2143880",
+      "candidateLabel": "Red Hood",
+      "checkedAt": "2026-10-23T05:32:54.981Z"
+    },
+    "nikke-marciana": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q157792, Marciana)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q157792",
+      "candidateLabel": "Marciana",
+      "checkedAt": "2026-10-23T05:33:00.240Z"
+    },
+    "nikke-dorothy": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q2583524, Dorothy Gale)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q2583524",
+      "candidateLabel": "Dorothy Gale",
+      "checkedAt": "2026-10-23T05:33:08.265Z"
+    },
+    "nikke-alice": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q650689, Alice)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q650689",
+      "candidateLabel": "Alice",
+      "checkedAt": "2026-10-23T05:33:17.058Z"
+    },
+    "nikke-viper": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q568267, Viper)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q568267",
+      "candidateLabel": "Viper",
+      "checkedAt": "2026-10-23T05:33:26.247Z"
+    },
+    "granblue-anila": {
+      "qid": "Q61413771",
+      "label": "Anila",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:33:30.388Z"
+    },
+    "granblue-zeta": {
+      "qid": "Q61435233",
+      "label": "Zeta",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:33:40.097Z"
+    },
+    "granblue-cagliostro": {
+      "qid": "Q61410182",
+      "label": "Cagliostro",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:33:47.469Z"
+    },
+    "granblue-vikala": {
+      "qid": "Q87705192",
+      "label": "Vikala",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:33:53.548Z"
+    },
+    "guiltycrown-yuzuriha-inori": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:33:55.906Z"
+    },
+    "guiltygear-elphelt-valentine": {
+      "qid": "Q24870132",
+      "label": "Elphelt Valentine",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:33:59.543Z"
+    },
+    "guiltygear-ramlethal-valentine": {
+      "qid": "Q24870125",
+      "label": "Ramlethal Valentine",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:34:04.370Z"
+    },
+    "guiltygear-baiken": {
+      "qid": "Q5716598",
+      "label": "Baiken",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:34:09.247Z"
+    },
+    "guiltygear-jack-o-valentine": {
+      "qid": "Q28685452",
+      "label": "Jack-O'",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:34:14.033Z"
+    },
+    "guiltygear-millia-rage": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:34:16.451Z"
+    },
+    "gquuuuuux-deux-murasame": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:34:18.135Z"
+    },
+    "gundamseed-cagalli-yula-athha": {
+      "qid": "Q2755135",
+      "label": "Cagalli Yula Athha",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:34:21.298Z"
+    },
+    "hazbinhotel-charlie-morningstar": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:34:23.708Z"
+    },
+    "heavenburnsred-kayamori-ruka": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:34:24.926Z"
+    },
+    "heavenburnsred-izumi-yuki": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:34:26.138Z"
+    },
+    "heavenburnsred-asakura-karen": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:34:27.338Z"
+    },
+    "helltaker-lucifer": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q104181778, Lucilius)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q104181778",
+      "candidateLabel": "Lucilius",
+      "checkedAt": "2026-10-23T05:34:37.190Z"
+    },
+    "helltaker-modeus": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:34:38.404Z"
+    },
+    "helltaker-justice": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q329178, Justice)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q329178",
+      "candidateLabel": "Justice",
+      "checkedAt": "2026-10-23T05:34:45.916Z"
+    },
+    "hibikeeuphonium-oumae-kumiko": {
+      "qid": "Q134930917",
+      "label": "Kumiko Ōmae",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:34:49.330Z"
+    },
+    "hibikeeuphonium-kousaka-reina": {
+      "qid": "Q134930945",
+      "label": "Reina Kōsaka",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:34:54.156Z"
+    },
+    "hibikeeuphonium-yoroizuka-mizore": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:34:56.555Z"
+    },
+    "hibikeeuphonium-kasaki-nozomi": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:34:57.754Z"
+    },
+    "hidamarisketch-yuno": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q59612405, Yuno)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q59612405",
+      "candidateLabel": "Yuno",
+      "checkedAt": "2026-10-23T05:35:05.007Z"
+    },
+    "highschooldxd-rias-gremory": {
+      "qid": "Q5548417",
+      "label": "Rias Gremory",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:35:08.597Z"
+    },
+    "highschooldxd-himejima-akeno": {
+      "qid": "Q133606000",
+      "label": "Akeno Himejima",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:35:13.429Z"
+    },
+    "hollowknight-hornet": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q1141355, USS Hornet)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q1141355",
+      "candidateLabel": "USS Hornet",
+      "checkedAt": "2026-10-23T05:35:23.539Z"
+    },
+    "hololivedevis-otonose-kanade": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q123417584, Otonose Kanade)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q123417584",
+      "candidateLabel": "Otonose Kanade",
+      "checkedAt": "2026-10-23T05:35:25.574Z"
+    },
+    "hololivedevis-todoroki-hajime": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q123417379, Todoroki Hajime)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q123417379",
+      "candidateLabel": "Todoroki Hajime",
+      "checkedAt": "2026-10-23T05:35:27.976Z"
+    },
+    "hololivedevis-ichijou-ririka": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q130033029, Ichijou Ririka)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q130033029",
+      "candidateLabel": "Ichijou Ririka",
+      "checkedAt": "2026-10-23T05:35:30.367Z"
+    },
+    "hololivedevis-juufuutei-raden": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q123417421, Juufuutei Raden)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q123417421",
+      "candidateLabel": "Juufuutei Raden",
+      "checkedAt": "2026-10-23T05:35:33.939Z"
+    },
+    "hololivedevis-rindo-chihaya": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q135106196, Rindo Chihaya)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q135106196",
+      "candidateLabel": "Rindo Chihaya",
+      "checkedAt": "2026-10-23T05:35:36.683Z"
+    },
+    "hololivedevis-kikirara-vivi": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q135106219, Kikirara Vivi)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q135106219",
+      "candidateLabel": "Kikirara Vivi",
+      "checkedAt": "2026-10-23T05:35:38.799Z"
+    },
+    "hololiveen-elizabeth-rose-bloodflame": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q130278560, Elizabeth Rose Bloodflame)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q130278560",
+      "candidateLabel": "Elizabeth Rose Bloodflame",
+      "checkedAt": "2026-10-23T05:35:41.102Z"
+    },
+    "hololiveen-mococo-abyssgard": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q124353047, Mococo Abyssgard)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q124353047",
+      "candidateLabel": "Mococo Abyssgard",
+      "checkedAt": "2026-10-23T05:35:43.389Z"
+    },
+    "hololiveen-fuwawa-abyssgard": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q124353054, Fuwawa Abyssgard)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q124353054",
+      "candidateLabel": "Fuwawa Abyssgard",
+      "checkedAt": "2026-10-23T05:35:45.976Z"
+    },
+    "hololiveen-tsukumo-sana": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q108223425, Tsukumo Sana)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q108223425",
+      "candidateLabel": "Tsukumo Sana",
+      "checkedAt": "2026-10-23T05:35:48.803Z"
+    },
+    "hololiveindonesia-kureiji-ollie": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q110914377, Kureiji Ollie)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q110914377",
+      "candidateLabel": "Kureiji Ollie",
+      "checkedAt": "2026-10-23T05:35:50.956Z"
+    },
+    "hololiveindonesia-moona-hoshinova": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q110934456, Moona Hoshinova)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q110934456",
+      "candidateLabel": "Moona Hoshinova",
+      "checkedAt": "2026-10-23T05:35:53.300Z"
+    },
+    "hololiveindonesia-pavolia-reine": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q130381120, Pavolia Reine)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q130381120",
+      "candidateLabel": "Pavolia Reine",
+      "checkedAt": "2026-10-23T05:35:55.487Z"
+    },
+    "hololiveindonesia-kaela-kovalskia": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q111359644, Kaela Kovalskia)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q111359644",
+      "candidateLabel": "Kaela Kovalskia",
+      "checkedAt": "2026-10-23T05:35:58.147Z"
+    },
+    "hololiveindonesia-kobo-kanaeru": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q111359713, Kobo Kanaeru)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q111359713",
+      "candidateLabel": "Kobo Kanaeru",
+      "checkedAt": "2026-10-23T05:36:00.642Z"
+    },
+    "hololiveindonesia-ayunda-risu": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q98116419, Ayunda Risu)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q98116419",
+      "candidateLabel": "Ayunda Risu",
+      "checkedAt": "2026-10-23T05:36:03.437Z"
+    },
+    "hololiveindonesia-vestia-zeta": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q111359676, Vestia Zeta)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q111359676",
+      "candidateLabel": "Vestia Zeta",
+      "checkedAt": "2026-10-23T05:36:05.331Z"
+    },
+    "hololiveindonesia-anya-melfissa": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q110904676, Anya Melfissa)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q110904676",
+      "candidateLabel": "Anya Melfissa",
+      "checkedAt": "2026-10-23T05:36:07.694Z"
+    },
+    "honkai3-yae-sakura": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q871991, cherry blossom)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q871991",
+      "candidateLabel": "cherry blossom",
+      "checkedAt": "2026-10-23T05:36:12.263Z"
+    },
+    "honkai3-theresa-apocalypse": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:36:13.485Z"
+    },
+    "honkai3-rita-rossweisse": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:36:14.701Z"
+    },
+    "honkai3-mobius": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q309240, Jean Giraud)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q309240",
+      "candidateLabel": "Jean Giraud",
+      "checkedAt": "2026-10-23T05:36:24.170Z"
+    },
+    "honkai3-murata-himeko": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q136526520, Himeko)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q136526520",
+      "candidateLabel": "Himeko",
+      "checkedAt": "2026-10-23T05:36:27.782Z"
+    },
+    "honkai3-seele-alter-ego": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:36:36.869Z"
+    },
+    "honkai3-durandal": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q138003425, Durandal)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q138003425",
+      "candidateLabel": "Durandal",
+      "checkedAt": "2026-10-23T05:36:45.325Z"
+    },
+    "honkai3-aponia": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q1245063, aponia)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q1245063",
+      "candidateLabel": "aponia",
+      "checkedAt": "2026-10-23T05:36:49.024Z"
+    },
+    "hsr-evernight": {
+      "qid": "Q136526511",
+      "label": "Evernight",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:36:52.578Z"
+    },
+    "hsr-hyacine": {
+      "qid": "Q136526523",
+      "label": "Hyacine",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:36:57.383Z"
+    },
+    "hsr-cipher": {
+      "qid": "Q136526509",
+      "label": "Cipher",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:37:02.233Z"
+    },
+    "hsr-ruan-mei": {
+      "qid": "Q136526542",
+      "label": "Ruan Mei",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:37:07.053Z"
+    },
+    "hsr-aglaea": {
+      "qid": "Q136526498",
+      "label": "Aglaea",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:37:13.133Z"
+    },
+    "hsr-himeko": {
+      "qid": "Q136526520",
+      "label": "Himeko",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:37:19.140Z"
+    },
+    "hsr-sparxie": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q60332392, Hibana)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q60332392",
+      "candidateLabel": "Hibana",
+      "checkedAt": "2026-10-23T05:37:28.825Z"
+    },
+    "hsr-topaz": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q134985, topaz)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q134985",
+      "candidateLabel": "topaz",
+      "checkedAt": "2026-10-23T05:37:36.070Z"
+    },
+    "hsr-feixiao": {
+      "qid": "Q136526512",
+      "label": "Feixiao",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:37:39.697Z"
+    },
+    "hsr-jingliu": {
+      "qid": "Q136526528",
+      "label": "Jingliu",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:37:44.545Z"
+    },
+    "hsr-evanescia": {
+      "qid": "Q139596806",
+      "label": "Evanescia",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:37:49.339Z"
+    },
+    "hsr-cerydra": {
+      "qid": "Q136526508",
+      "label": "Cerydra",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:37:54.174Z"
+    },
+    "hsr-tingyun": {
+      "qid": "Q136526549",
+      "label": "Tingyun",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:37:59.015Z"
+    },
+    "hsr-hysilens": {
+      "qid": "Q136526524",
+      "label": "Hysilens",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:38:03.850Z"
+    },
+    "hsr-bronya-rand": {
+      "qid": "Q136526506",
+      "label": "Bronya",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:38:08.684Z"
+    },
+    "hsr-seele": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q6643, Céret)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q6643",
+      "candidateLabel": "Céret",
+      "checkedAt": "2026-10-23T05:38:17.511Z"
+    },
+    "hyouka-chitanda-eru": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q114677073, Chitanda Eru)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q114677073",
+      "candidateLabel": "Chitanda Eru",
+      "checkedAt": "2026-10-23T05:38:20.418Z"
+    },
+    "idolmaster-otonashi-kotori": {
+      "qid": "Q140265351",
+      "label": "Kotori Otonashi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:38:23.421Z"
+    },
+    "imascg-hayami-kanade": {
+      "qid": "Q139267629",
+      "label": "Kanade Hayami",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:38:28.258Z"
+    },
+    "imascg-ohtsuki-yui": {
+      "qid": "Q139006728",
+      "label": "Yui Ōtsuki",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:38:33.070Z"
+    },
+    "imascg-honda-mio": {
+      "qid": "Q137460563",
+      "label": "Mio Honda",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:38:37.922Z"
+    },
+    "imascg-miyamoto-frederica": {
+      "qid": "Q139267668",
+      "label": "Frederica Miyamoto",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:38:42.733Z"
+    },
+    "imascg-hoshi-syoko": {
+      "qid": "Q139006202",
+      "label": "Shōko Hoshi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:38:47.578Z"
+    },
+    "imascg-sunazuka-akira": {
+      "qid": "Q139324213",
+      "label": "Akira Sunazuka",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:38:52.411Z"
+    },
+    "imascg-shiomi-syuko": {
+      "qid": "Q139267740",
+      "label": "Shūko Shiomi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:38:57.251Z"
+    },
+    "imascg-moroboshi-kirari": {
+      "qid": "Q138975582",
+      "label": "Kirari Moroboshi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:39:02.089Z"
+    },
+    "imascg-hojo-karen": {
+      "qid": "Q139146979",
+      "label": "Karen Hōjō",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:39:06.923Z"
+    },
+    "imascg-kamiya-nao": {
+      "qid": "Q139006238",
+      "label": "Nao Kamiya",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:39:11.774Z"
+    },
+    "imascg-sakuma-mayu": {
+      "qid": "Q139006695",
+      "label": "Mayu Sakuma",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:39:16.611Z"
+    },
+    "imascg-mimura-kanako": {
+      "qid": "Q138968633",
+      "label": "Kanako Mimura",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:39:21.450Z"
+    },
+    "imascg-totoki-airi": {
+      "qid": "Q139147191",
+      "label": "Airi Totoki",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:39:26.256Z"
+    },
+    "imascg-oikawa-shizuku": {
+      "qid": "Q139147160",
+      "label": "Shizuku Oikawa",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:39:31.093Z"
+    },
+    "imascg-abe-nana": {
+      "qid": "Q138983488",
+      "label": "Nana Abe",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:39:35.976Z"
+    },
+    "imascg-ogata-chieri": {
+      "qid": "Q138977543",
+      "label": "Chieri Ogata",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:39:40.763Z"
+    },
+    "imascg-tada-riina": {
+      "qid": "Q138977572",
+      "label": "Riina Tada",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:39:45.611Z"
+    },
+    "imascg-kohinata-miho": {
+      "qid": "Q139147779",
+      "label": "Miho Kohinata",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:39:50.467Z"
+    },
+    "idolmastermillionlivetheaterdays-tanaka-kotoha": {
+      "qid": "Q123301916",
+      "label": "Kotoha Tanaka",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:39:55.322Z"
+    },
+    "idolmastermillionlivetheaterdays-makabe-mizuki": {
+      "qid": "Q123301968",
+      "label": "Mizuki Makabe",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:40:00.117Z"
+    },
+    "idolmastermillionlivetheaterdays-toyokawa-fuka": {
+      "qid": "Q123317201",
+      "label": "Fūka Toyokawa",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:40:05.387Z"
+    },
+    "idolmastermillionlivetheaterdays-yokoyama-nao": {
+      "qid": "Q123300294",
+      "label": "Nao Yokoyama",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:40:09.803Z"
+    },
+    "idolmastermillionlivetheaterdays-tokoro-megumi": {
+      "qid": "Q123310036",
+      "label": "Megumi Tokoro",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:40:14.604Z"
+    },
+    "idolmastermillionlivetheaterdays-satake-minako": {
+      "qid": "Q123300323",
+      "label": "Minako Satake",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:40:19.483Z"
+    },
+    "imsc-hachimiya-meguru": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:40:21.904Z"
+    },
+    "imsc-fukumaru-koito": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:40:23.132Z"
+    },
+    "imsc-osaki-amana": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:40:24.523Z"
+    },
+    "imsc-kuwayama-chiyuki": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:40:25.525Z"
+    },
+    "imsc-morino-rinze": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:40:26.767Z"
+    },
+    "imsc-shirase-sakuya": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:40:27.972Z"
+    },
+    "imsc-sonoda-chiyoko": {
+      "qid": "Q141539245",
+      "label": "Sonoda Chiyoko",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:40:31.553Z"
+    },
+    "imsc-sakuragi-mano": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:40:34.010Z"
+    },
+    "imsc-tsukioka-kogane": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:40:35.200Z"
+    },
+    "imsc-ichikawa-hinana": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:40:36.409Z"
+    },
+    "imsc-osaki-tenka": {
+      "qid": "Q141539188",
+      "label": "Ōsaki Tenka",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:40:40.057Z"
+    },
+    "imsc-tanaka-mamimi": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:40:42.445Z"
+    },
+    "imsc-kazano-hiori": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:40:43.656Z"
+    },
+    "imsc-arisugawa-natsuha": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:40:44.850Z"
+    },
+    "imsc-izumi-mei": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:40:46.065Z"
+    },
+    "imsc-yukoku-kiriko": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:40:47.528Z"
+    },
+    "imsc-nanakusa-nichika": {
+      "qid": "Q141539138",
+      "label": "Nanakusa Nichika",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:40:50.906Z"
+    },
+    "imsc-mitsumine-yuika": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:40:53.331Z"
+    },
+    "imsc-saijo-juri": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:40:54.555Z"
+    },
+    "imsc-ikaruga-luca": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:40:55.729Z"
+    },
+    "ijiranaidenagatorosan-nagatoro-hayase": {
+      "qid": "Q119795412",
+      "label": "Hayase Nagatoro",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:40:59.356Z"
+    },
+    "indievirtualyoutuber-sameko-saba": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:41:01.796Z"
+    },
+    "indievirtualyoutuber-mint-fantome": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q139564156, Mint Fantôme)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q139564156",
+      "candidateLabel": "Mint Fantôme",
+      "checkedAt": "2026-10-23T05:41:04.205Z"
+    },
+    "indievirtualyoutuber-dokibird": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:41:05.421Z"
+    },
+    "indievirtualyoutuber-nimi-nightmare": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:41:06.630Z"
+    },
+    "indievirtualyoutuber-yuuki-sakuna": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q130649443, Yuuki Sakuna)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q130649443",
+      "candidateLabel": "Yuuki Sakuna",
+      "checkedAt": "2026-10-23T05:41:09.061Z"
+    },
+    "indievirtualyoutuber-shylily": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q124711962, Shylily)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q124711962",
+      "candidateLabel": "Shylily",
+      "checkedAt": "2026-10-23T05:41:11.482Z"
+    },
+    "infinitestratos-charlotte-dunois": {
+      "qid": "Q134487240",
+      "label": "Charlotte Dunois",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:41:15.092Z"
+    },
+    "jujutsukaisen-kugisaki-nobara": {
+      "qid": "Q105037400",
+      "label": "Nobara Kugisaki",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:41:19.930Z"
+    },
+    "jujutsukaisen-zen-in-maki": {
+      "qid": "Q105152624",
+      "label": "Maki Zen'in",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:41:24.733Z"
+    },
+    "kon-hirasawa-ui": {
+      "qid": "Q15520173",
+      "label": "Ui Hirasawa",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:41:29.571Z"
+    },
+    "kagerouproject-tateyama-ayano": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:41:31.997Z"
+    },
+    "kagerouproject-kozakura-marry": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:41:33.192Z"
+    },
+    "kamitsubakistudio-isekaijoucho": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q107352036, Isekaijoucho)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q107352036",
+      "candidateLabel": "Isekaijoucho",
+      "checkedAt": "2026-10-23T05:41:38.066Z"
+    },
+    "kamitsubakistudio-kaf": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q63142036, KAF)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q63142036",
+      "candidateLabel": "KAF",
+      "checkedAt": "2026-10-23T05:41:42.060Z"
+    },
+    "kannagi-nagi": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q134132478, Nagi)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q134132478",
+      "candidateLabel": "Nagi",
+      "checkedAt": "2026-10-23T05:41:50.537Z"
+    },
+    "karanokyoukai-ryougi-shiki": {
+      "qid": "Q122967283",
+      "label": "Shiki Ryougi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:41:53.722Z"
+    },
+    "kidicarus-palutena": {
+      "qid": "Q10343913",
+      "label": "Palutena",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:41:58.639Z"
+    },
+    "killakill-jakuzure-nonon": {
+      "qid": "Q116878844",
+      "label": "Nonon Jakuzure",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:42:03.375Z"
+    },
+    "killmebaby-sonya": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q139577539, Sonia)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q139577539",
+      "candidateLabel": "Sonia",
+      "checkedAt": "2026-10-23T05:42:14.060Z"
+    },
+    "killmebaby-oribe-yasuna": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:42:14.423Z"
+    },
+    "kimetsu-kanroji-mitsuri": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:42:15.702Z"
+    },
+    "kiminonawa-miyamizu-mitsuha": {
+      "qid": "Q29171744",
+      "label": "Mitsuha Miyamizu",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:42:19.256Z"
+    },
+    "kizunaaiinc-kizuna-ai": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q29515292, Kizuna AI)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q29515292",
+      "candidateLabel": "Kizuna AI",
+      "checkedAt": "2026-10-23T05:42:24.071Z"
+    },
+    "maidragon-tohru": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q42952, Thor)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q42952",
+      "candidateLabel": "Thor",
+      "checkedAt": "2026-10-23T05:42:34.754Z"
+    },
+    "maidragon-lucoa": {
+      "qid": "Q107557092",
+      "label": "Lucoa",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:42:40.194Z"
+    },
+    "maidragon-ilulu": {
+      "qid": "Q107557095",
+      "label": "Ilulu",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:42:46.231Z"
+    },
+    "komisanwakomyushoudesu-komi-shouko": {
+      "qid": "Q114661289",
+      "label": "Shoko Komi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:42:51.073Z"
+    },
+    "konosuba-wiz": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q428158, The Wiz)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q428158",
+      "candidateLabel": "The Wiz",
+      "checkedAt": "2026-10-23T05:43:01.074Z"
+    },
+    "kusuriyanohitorigoto-maomao": {
+      "qid": "Q122830542",
+      "label": "Maomao",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:43:03.873Z"
+    },
+    "lol-vi": {
+      "qid": "Q100255100",
+      "label": "Vi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:43:08.708Z"
+    },
+    "lol-caitlyn": {
+      "qid": "Q100254976",
+      "label": "Caitlyn",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:43:18.385Z"
+    },
+    "lol-gwen": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q11075327, Gwen)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q11075327",
+      "candidateLabel": "Gwen",
+      "checkedAt": "2026-10-23T05:43:26.854Z"
+    },
+    "lol-akali": {
+      "qid": "Q100254964",
+      "label": "Akali",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:43:35.269Z"
+    },
+    "lol-lux": {
+      "qid": "Q100255030",
+      "label": "Lux",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:43:42.582Z"
+    },
+    "lol-sona": {
+      "qid": "Q59457312",
+      "label": "Sona",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:43:52.223Z"
+    },
+    "lol-evelynn": {
+      "qid": "Q100254987",
+      "label": "Evelynn",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:43:59.488Z"
+    },
+    "limbus-outis": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:44:02.000Z"
+    },
+    "limbus-rodion": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q319396, Miklós Rózsa)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q319396",
+      "candidateLabel": "Miklós Rózsa",
+      "checkedAt": "2026-10-23T05:44:09.831Z"
+    },
+    "littlebusters-noumi-kudryavka": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:44:10.384Z"
+    },
+    "littlebusters-natsume-rin": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:44:11.550Z"
+    },
+    "littlebusters-kamikita-komari": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:44:12.764Z"
+    },
+    "littlewitchacademia-kagari-atsuko": {
+      "qid": "Q65115312",
+      "label": "Atsuko Kagari",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:44:16.393Z"
+    },
+    "littlewitchacademia-diana-cavendish": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:44:18.779Z"
+    },
+    "littlewitchacademia-sucy-manbavaran": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:44:20.060Z"
+    },
+    "love-katsuragi-izumi": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:44:21.206Z"
+    },
+    "nijigasaki-osaka-shizuku": {
+      "qid": "Q107026106",
+      "label": "Shizuku Osaka",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:44:24.815Z"
+    },
+    "nijigasaki-takasaki-yu": {
+      "qid": "Q107026103",
+      "label": "Yu Takasaki",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:44:29.662Z"
+    },
+    "nijigasaki-tennoji-rina": {
+      "qid": "Q107026113",
+      "label": "Rina Tennoji",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:44:34.465Z"
+    },
+    "nijigasaki-nakasu-kasumi": {
+      "qid": "Q107026105",
+      "label": "Kasumi Nakasu",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:44:39.305Z"
+    },
+    "nijigasaki-emma-verde": {
+      "qid": "Q107026112",
+      "label": "Emma Verde",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:44:44.121Z"
+    },
+    "nijigasaki-miyashita-ai": {
+      "qid": "Q107026108",
+      "label": "Ai Miyashita",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:44:48.934Z"
+    },
+    "nijigasaki-mifune-shioriko": {
+      "qid": "Q108367311",
+      "label": "Shioriko Mifune",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:44:53.775Z"
+    },
+    "nijigasaki-asaka-karin": {
+      "qid": "Q107026107",
+      "label": "Karin Asaka",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:44:58.604Z"
+    },
+    "nijigasaki-konoe-kanata": {
+      "qid": "Q107026109",
+      "label": "Kanata Konoe",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:45:03.462Z"
+    },
+    "nijigasaki-zhong-lanzhu": {
+      "qid": "Q108418428",
+      "label": "Lanzhu Zhong",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:45:08.298Z"
+    },
+    "sunshine-kurosawa-ruby": {
+      "qid": "Q83039653",
+      "label": "Ruby Kurosawa",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:45:13.178Z"
+    },
+    "sunshine-kunikida-hanamaru": {
+      "qid": "Q83025796",
+      "label": "Hanamaru Kunikida",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:45:17.989Z"
+    },
+    "sunshine-ohara-mari": {
+      "qid": "Q83493967",
+      "label": "Mari Ohara",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:45:22.825Z"
+    },
+    "lovelivesuperstar-shibuya-kanon": {
+      "qid": "Q107526181",
+      "label": "Kanon Shibuya",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:45:27.644Z"
+    },
+    "lovelivesuperstar-heanna-sumire": {
+      "qid": "Q107578738",
+      "label": "Sumire Heanna",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:45:32.491Z"
+    },
+    "lovelivesuperstar-tang-keke": {
+      "qid": "Q107526228",
+      "label": "Keke Tang",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:45:37.304Z"
+    },
+    "lovelivesuperstar-arashi-chisato": {
+      "qid": "Q107578440",
+      "label": "Chisato Arashi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:45:42.133Z"
+    },
+    "lovelivesuperstar-wakana-shiki": {
+      "qid": "Q111807300",
+      "label": "Shiki Wakana",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:45:46.962Z"
+    },
+    "lovelivesuperstar-hazuki-ren": {
+      "qid": "Q108569639",
+      "label": "Ren Hazuki",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:45:51.754Z"
+    },
+    "luckystar-takara-miyuki": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:45:54.226Z"
+    },
+    "macross-ranka-lee": {
+      "qid": "Q11347500",
+      "label": "Ranka Lee",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:45:57.817Z"
+    },
+    "magiarecordmahoushoujomadokamagicagaiden-alina-gray": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:46:00.255Z"
+    },
+    "magiarecordmahoushoujomadokamagicagaiden-nanami-yachiyo": {
+      "qid": "Q91242747",
+      "label": "Yachiyo Nanami",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:46:03.857Z"
+    },
+    "nanoha-signum": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q236813, sign function)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q236813",
+      "candidateLabel": "sign function",
+      "checkedAt": "2026-10-23T05:46:11.389Z"
+    },
+    "majosaiban-tachibana-sherry": {
+      "qid": "Q135616944",
+      "label": "Shelley Tachibana",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:46:14.735Z"
+    },
+    "majosaiban-natsume-an-an": {
+      "qid": "Q135616935",
+      "label": "An'an Natsume",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:46:24.383Z"
+    },
+    "majosaiban-kurobe-nanoka": {
+      "qid": "Q135616942",
+      "label": "Nanoka Kurobe",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:46:34.036Z"
+    },
+    "majosaiban-shito-alisa": {
+      "qid": "Q135616943",
+      "label": "Arisa Shitō",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:46:48.514Z"
+    },
+    "majosaiban-saeki-miria": {
+      "qid": "Q135616939",
+      "label": "Miria Saeki",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:46:53.373Z"
+    },
+    "majosaiban-tsukishiro-yuki": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:46:55.801Z"
+    },
+    "mahoutsukainoyoru-aozaki-aoko": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:46:58.195Z"
+    },
+    "majonotabitabi-elaina": {
+      "qid": "Q115429122",
+      "label": "Elaina",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:47:01.823Z"
+    },
+    "makeheroinegaoosugiru-yanami-anna": {
+      "qid": "Q127686278",
+      "label": "Anna Yanami",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:47:06.665Z"
+    },
+    "spiderman-psylocke": {
+      "qid": "Q973050",
+      "label": "Betsy Braddock",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:47:11.568Z"
+    },
+    "spiderman-gwen-stacy": {
+      "qid": "Q945817",
+      "label": "Gwen Stacy",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:47:16.339Z"
+    },
+    "spiderman-emma-frost": {
+      "qid": "Q1995969",
+      "label": "Emma Frost",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:47:21.176Z"
+    },
+    "spiderman-sue-storm": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:47:23.558Z"
+    },
+    "megamanzx-aile": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q178122, aria)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q178122",
+      "candidateLabel": "aria",
+      "checkedAt": "2026-10-23T05:47:30.973Z"
+    },
+    "meltyblood-sion-eltnam": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:47:32.014Z"
+    },
+    "miside-mita": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q423071, midazolam)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q423071",
+      "candidateLabel": "midazolam",
+      "checkedAt": "2026-10-23T05:47:39.420Z"
+    },
+    "bakemonogatari-oshino-ougi": {
+      "qid": "Q125313285",
+      "label": "Ōgi Oshino",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:47:43.011Z"
+    },
+    "bakemonogatari-kanbaru-suruga": {
+      "qid": "Q125304230",
+      "label": "Suruga Kanbaru",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:47:47.829Z"
+    },
+    "mushokutensei-roxy-migurdia": {
+      "qid": "Q104246831",
+      "label": "Roxy Migurdia",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:47:52.655Z"
+    },
+    "mushokutensei-sylphiette": {
+      "qid": "Q104246829",
+      "label": "Sylphiette",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:47:57.480Z"
+    },
+    "eva-katsuragi-misato": {
+      "qid": "Q1203370",
+      "label": "Misato Katsuragi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:48:02.311Z"
+    },
+    "nier-kaine": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q1132772, Caeneus)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q1132772",
+      "candidateLabel": "Caeneus",
+      "checkedAt": "2026-10-23T05:48:11.983Z"
+    },
+    "nijisanji-higuchi-kaede": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q60643996, Kaede Higuchi)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q60643996",
+      "candidateLabel": "Kaede Higuchi",
+      "checkedAt": "2026-10-23T05:48:17.303Z"
+    },
+    "nijisanji-hoshikawa-sara": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q107298750, Sara Hoshikawa)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q107298750",
+      "candidateLabel": "Sara Hoshikawa",
+      "checkedAt": "2026-10-23T05:48:19.284Z"
+    },
+    "nijisanji-suzuhara-lulu": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q96619781, Lulu Suzuhara)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q96619781",
+      "candidateLabel": "Lulu Suzuhara",
+      "checkedAt": "2026-10-23T05:48:21.704Z"
+    },
+    "nijisanji-furen-e-lustario": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q104723014, Furen E Lustario)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q104723014",
+      "candidateLabel": "Furen E Lustario",
+      "checkedAt": "2026-10-23T05:48:24.741Z"
+    },
+    "nijisanji-sukoya-kana": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q92754132, Kana Sukoya)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q92754132",
+      "candidateLabel": "Kana Sukoya",
+      "checkedAt": "2026-10-23T05:48:27.112Z"
+    },
+    "nijisanji-sasaki-saku": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q94332432, Sasaki Saku)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q94332432",
+      "candidateLabel": "Sasaki Saku",
+      "checkedAt": "2026-10-23T05:48:28.980Z"
+    },
+    "nijisanji-amamiya-kokoro": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q111949826, Amamiya Kokoro)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q111949826",
+      "candidateLabel": "Amamiya Kokoro",
+      "checkedAt": "2026-10-23T05:48:31.935Z"
+    },
+    "nijisanji-sister-claire": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q111467566, Sister Claire)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q111467566",
+      "candidateLabel": "Sister Claire",
+      "checkedAt": "2026-10-23T05:48:33.817Z"
+    },
+    "nijisanji-yorumi-rena": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q111949828, Rena Yorumi)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q111949828",
+      "candidateLabel": "Rena Yorumi",
+      "checkedAt": "2026-10-23T05:48:36.249Z"
+    },
+    "nijisanji-nui-sociere": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:48:37.382Z"
+    },
+    "nijisanji-shizuka-rin": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q66386577, Rin Shizuka)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q66386577",
+      "candidateLabel": "Rin Shizuka",
+      "checkedAt": "2026-10-23T05:48:40.939Z"
+    },
+    "nijisanjien-elira-pendora": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:48:42.162Z"
+    },
+    "nijisanjien-selen-tatsuki": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:48:43.789Z"
+    },
+    "nijisanjien-enna-alouette": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q111986646, Enna Alouette)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q111986646",
+      "candidateLabel": "Enna Alouette",
+      "checkedAt": "2026-10-23T05:48:45.886Z"
+    },
+    "nijisanjien-pomu-rainpuff": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:48:47.013Z"
+    },
+    "nijisanjien-finana-ryugu": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q108905242, Finana Ryugu)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q108905242",
+      "candidateLabel": "Finana Ryugu",
+      "checkedAt": "2026-10-23T05:48:49.492Z"
+    },
+    "nijisanjien-petra-gurin": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q110817030, Petra Gurin)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q110817030",
+      "candidateLabel": "Petra Gurin",
+      "checkedAt": "2026-10-23T05:48:51.924Z"
+    },
+    "onepiece-yamato": {
+      "qid": "Q104816261",
+      "label": "Yamato",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:48:59.147Z"
+    },
+    "opm-fubuki": {
+      "qid": "Q63343310",
+      "label": "Fubuki",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:49:03.921Z"
+    },
+    "oshinoko-hoshino-ai": {
+      "qid": "Q110713922",
+      "label": "Ai Hoshino",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:49:08.705Z"
+    },
+    "oshinoko-hoshino-ruby": {
+      "qid": "Q110713919",
+      "label": "Ruby Hoshino",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:49:13.529Z"
+    },
+    "oshinoko-kurokawa-akane": {
+      "qid": "Q133807676",
+      "label": "Akane Kurokawa",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:49:18.392Z"
+    },
+    "overwatch-mei": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q1751954, May)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q1751954",
+      "candidateLabel": "May",
+      "checkedAt": "2026-10-23T05:49:27.109Z"
+    },
+    "overwatch-tracer": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q109804030, Tracer)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q109804030",
+      "candidateLabel": "Tracer",
+      "checkedAt": "2026-10-23T05:49:34.572Z"
+    },
+    "overwatch-widowmaker": {
+      "qid": "Q25204967",
+      "label": "Widowmaker",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:49:37.707Z"
+    },
+    "overwatch-pharah": {
+      "qid": "Q56818141",
+      "label": "Pharah",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:49:46.164Z"
+    },
+    "psg-kneesocks": {
+      "qid": "Q63862259",
+      "label": "Kneesocks Daemon",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:49:50.969Z"
+    },
+    "persona3-kirijou-mitsuru": {
+      "qid": "Q67906528",
+      "label": "Mitsuru Kirijo",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:49:55.831Z"
+    },
+    "persona3-yamagishi-fuuka": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:49:58.267Z"
+    },
+    "persona5-sakura-futaba": {
+      "qid": "Q65515926",
+      "label": "Futaba Sakura",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:50:01.870Z"
+    },
+    "persona5-niijima-makoto": {
+      "qid": "Q65515918",
+      "label": "Makoto Niijima",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:50:06.723Z"
+    },
+    "persona5-yoshizawa-kasumi": {
+      "qid": "Q65515945",
+      "label": "Kasumi Yoshizawa",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:50:11.548Z"
+    },
+    "persona5-okumura-haru": {
+      "qid": "Q65194528",
+      "label": "Haru Okumura",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:50:16.341Z"
+    },
+    "pricone-yui": {
+      "qid": "Q106947019",
+      "label": "Yui",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:50:26.259Z"
+    },
+    "lobotomycorporation-angela": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q4851436, Angela)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q4851436",
+      "candidateLabel": "Angela",
+      "checkedAt": "2026-10-23T05:50:35.113Z"
+    },
+    "project-kusanagi-nene": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:50:36.005Z"
+    },
+    "project-shiraishi-an": {
+      "qid": "Q141662998",
+      "label": "An Shiraishi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:50:39.618Z"
+    },
+    "project-azusawa-kohane": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:50:42.055Z"
+    },
+    "project-kiritani-haruka": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:50:43.244Z"
+    },
+    "project-tenma-saki": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:50:44.477Z"
+    },
+    "project-hoshino-ichika": {
+      "qid": "Q141597592",
+      "label": "Ichika Hoshino",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:50:48.084Z"
+    },
+    "project-hanasato-minori": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:50:50.497Z"
+    },
+    "project-momoi-airi": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:50:51.696Z"
+    },
+    "project-hinomori-shizuku": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:50:52.884Z"
+    },
+    "punishinggrayraven-lucia": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q1160640, Lucia)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q1160640",
+      "candidateLabel": "Lucia",
+      "checkedAt": "2026-10-23T05:51:00.831Z"
+    },
+    "puyopuyo-arle-nadja": {
+      "qid": "Q17226703",
+      "label": "Arle Nadja",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:51:03.888Z"
+    },
+    "rezero-beatrice": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q734292, Beatrice)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q734292",
+      "candidateLabel": "Beatrice",
+      "checkedAt": "2026-10-23T05:51:12.517Z"
+    },
+    "residentevil4-ada-wong": {
+      "qid": "Q1145624",
+      "label": "Ada Wong",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:51:15.965Z"
+    },
+    "reverse1999-isolde": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q140299268, Isolte Cruel)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q140299268",
+      "candidateLabel": "Isolte Cruel",
+      "checkedAt": "2026-10-23T05:51:38.941Z"
+    },
+    "rozenmaiden-shinku": {
+      "qid": "Q136296589",
+      "label": "Shinku",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:51:43.757Z"
+    },
+    "rozenmaiden-suiseiseki": {
+      "qid": "Q136288910",
+      "label": "Suiseiseki",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:51:48.639Z"
+    },
+    "rozenmaiden-souseiseki": {
+      "qid": "Q136296592",
+      "label": "Souseiseki",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:51:53.430Z"
+    },
+    "rurinohouseki-arato-nagi": {
+      "qid": "Q135246656",
+      "label": "Nagi Arato",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:51:58.245Z"
+    },
+    "rwby-yang-xiao-long": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:52:00.678Z"
+    },
+    "rwby-blake-belladonna": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q65837239, Blake Belladonna)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q65837239",
+      "candidateLabel": "Blake Belladonna",
+      "checkedAt": "2026-10-23T05:52:04.272Z"
+    },
+    "rwby-neopolitan": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:52:05.506Z"
+    },
+    "saenaiheroinenosodatekata-katou-megumi": {
+      "qid": "Q134442282",
+      "label": "Megumi Katō",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:52:12.747Z"
+    },
+    "samuraispirits-iroha": {
+      "qid": "Q13403453",
+      "label": "Iroha",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:52:18.820Z"
+    },
+    "sanachannel-natori-sana": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q60988286, Sana Natori)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q60988286",
+      "candidateLabel": "Sana Natori",
+      "checkedAt": "2026-10-23T05:52:22.471Z"
+    },
+    "seikendensetsu3-riesz": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q1201922, wreath)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q1201922",
+      "candidateLabel": "wreath",
+      "checkedAt": "2026-10-23T05:52:30.693Z"
+    },
+    "seishunbutayarou-sakurajima-mai": {
+      "qid": "Q119802661",
+      "label": "Mai Sakurajima",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:52:33.638Z"
+    },
+    "symphogear-tachibana-hibiki": {
+      "qid": "Q138391020",
+      "label": "Hibiki Tachibana",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:52:38.482Z"
+    },
+    "symphogear-akatsuki-kirika": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:52:40.896Z"
+    },
+    "symphogear-maria-cadenzavna-eve": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:52:42.133Z"
+    },
+    "symphogear-tsukuyomi-shirabe": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:52:43.331Z"
+    },
+    "symphogear-kazanari-tsubasa": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:52:44.534Z"
+    },
+    "senpaigauzaikouhainohanashi-igarashi-futaba": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:52:45.741Z"
+    },
+    "senrankagura-yumi": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q13953064, 雪泉村)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q13953064",
+      "candidateLabel": "雪泉村",
+      "checkedAt": "2026-10-23T05:52:48.524Z"
+    },
+    "senrankagura-asuka": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q752394, Asuka)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q752394",
+      "candidateLabel": "Asuka",
+      "checkedAt": "2026-10-23T05:52:55.469Z"
+    },
+    "senrankagura-ikaruga": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q1658068, Ikaruga)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q1658068",
+      "candidateLabel": "Ikaruga",
+      "checkedAt": "2026-10-23T05:53:03.077Z"
+    },
+    "shantaeseries-shantae": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q2615915, inner peace)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q2615915",
+      "candidateLabel": "inner peace",
+      "checkedAt": "2026-10-23T05:53:10.205Z"
+    },
+    "aot-krista-lenz": {
+      "qid": "Q109536771",
+      "label": "Historia  Reiss",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:53:13.717Z"
+    },
+    "aot-ymir": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q134132416, Ymir)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q134132416",
+      "candidateLabel": "Ymir",
+      "checkedAt": "2026-10-23T05:53:23.603Z"
+    },
+    "aot-annie-leonhart": {
+      "qid": "Q97238076",
+      "label": "Annie Leonhart",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:53:27.040Z"
+    },
+    "shokugekinosouma-nakiri-erina": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:53:29.416Z"
+    },
+    "shoujokagekirevuestarlight-saijo-claudine": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:53:30.621Z"
+    },
+    "shoujokagekirevuestarlight-tendo-maya": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:53:31.834Z"
+    },
+    "shoujokagekirevuestarlight-daiba-nana": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:53:33.035Z"
+    },
+    "shuuniichidoclassmatewokauhanashi-sendai-hazuki": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:53:34.265Z"
+    },
+    "shuuniichidoclassmatewokauhanashi-miyagi-shiori": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:53:35.457Z"
+    },
+    "slayers-lina-inverse": {
+      "qid": "Q2610026",
+      "label": "Lina Inverse",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:53:39.085Z"
+    },
+    "sonic-rouge-the-bat": {
+      "qid": "Q2288335",
+      "label": "Rouge the Bat",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:53:43.953Z"
+    },
+    "frieren-ubel": {
+      "qid": "Q123982659",
+      "label": "Übel",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:53:51.212Z"
+    },
+    "frieren-aura": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q774114, Aura)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q774114",
+      "candidateLabel": "Aura",
+      "checkedAt": "2026-10-23T05:53:59.626Z"
+    },
+    "splatoon-marina": {
+      "qid": "Q126917411",
+      "label": "Marina",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:54:04.503Z"
+    },
+    "splatoon-shiver": {
+      "qid": "Q126079232",
+      "label": "Shiver",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:54:09.261Z"
+    },
+    "splatoon-frye": {
+      "qid": "Q121177290",
+      "label": "Frye",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:54:14.131Z"
+    },
+    "splatoon-pearl": {
+      "qid": "Q126917410",
+      "label": "Pearl",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:54:22.589Z"
+    },
+    "splatoon-marie": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q25420, Lampyridae)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q25420",
+      "candidateLabel": "Lampyridae",
+      "checkedAt": "2026-10-23T05:54:32.233Z"
+    },
+    "gridman-shinjou-akane": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:54:32.595Z"
+    },
+    "steinsgate-shiina-mayuri": {
+      "qid": "Q3959462",
+      "label": "Mayuri Shiina",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:54:36.206Z"
+    },
+    "summerpockets-naruse-shiroha": {
+      "qid": "Q118539125",
+      "label": "Shiroha Naruse",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:54:44.661Z"
+    },
+    "haruhi-asakura-ryoko": {
+      "qid": "Q141679813",
+      "label": "Ryoko Asakura",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:54:49.490Z"
+    },
+    "haruhi-tsuruya": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q5373041, 鶴屋さんのめがっさおつかれ！相談コーナー)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q5373041",
+      "candidateLabel": "鶴屋さんのめがっさおつかれ！相談コーナー",
+      "checkedAt": "2026-10-23T05:54:53.527Z"
+    },
+    "talesofvesperia-estellise-sidos-heurassein": {
+      "qid": "Q65808000",
+      "label": "Estellise Sidos Heurassein",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:54:56.749Z"
+    },
+    "tekken-kazama-asuka": {
+      "qid": "Q2714423",
+      "label": "Asuka Kazama",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:55:01.633Z"
+    },
+    "theamazingdigitalcircus-pomni": {
+      "qid": "Q123532032",
+      "label": "Pomni",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:55:06.385Z"
+    },
+    "thecoffinofandyandleyley-ashley-graves": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:55:08.816Z"
+    },
+    "thekingoffighters-angel": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q665157, Angel)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q665157",
+      "candidateLabel": "Angel",
+      "checkedAt": "2026-10-23T05:55:16.108Z"
+    },
+    "thekingoffighters-leona-heidern": {
+      "qid": "Q1044043",
+      "label": "Leona Heidern",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:55:19.902Z"
+    },
+    "thelegendofkorra-korra": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q114264, Cola)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q114264",
+      "candidateLabel": "Cola",
+      "checkedAt": "2026-10-23T05:55:28.222Z"
+    },
+    "zelda-purah": {
+      "qid": "Q118496849",
+      "label": "Purah",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:55:33.029Z"
+    },
+    "zelda-mipha": {
+      "qid": "Q73151293",
+      "label": "Mipha",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:55:37.843Z"
+    },
+    "zelda-urbosa": {
+      "qid": "Q70397061",
+      "label": "Urbosa",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:55:42.669Z"
+    },
+    "zelda-impa": {
+      "qid": "Q9008098",
+      "label": "Impa",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:55:47.576Z"
+    },
+    "zelda-paya": {
+      "qid": "Q120061883",
+      "label": "Paya",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:55:53.712Z"
+    },
+    "zelda-sonia": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q4327105, Sonja)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q4327105",
+      "candidateLabel": "Sonja",
+      "checkedAt": "2026-10-23T05:56:02.388Z"
+    },
+    "zelda-mineru": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q126916, Minerva)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q126916",
+      "candidateLabel": "Minerva",
+      "checkedAt": "2026-10-23T05:56:09.985Z"
+    },
+    "zelda-midna": {
+      "qid": "Q1200192",
+      "label": "Midna",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:56:13.122Z"
+    },
+    "themoonstudio-kaguya-luna": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q56345992, Kaguya Luna)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q56345992",
+      "candidateLabel": "Kaguya Luna",
+      "checkedAt": "2026-10-23T05:56:17.967Z"
+    },
+    "thering-yamamura-sadako": {
+      "qid": "Q2596301",
+      "label": "Sadako Yamamura",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:56:21.567Z"
+    },
+    "toheart2-kousaka-tamaki": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:56:23.995Z"
+    },
+    "toloveru-momo-velia-deviluke": {
+      "qid": "Q105081279",
+      "label": "Momo Belia Deviluke",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:56:27.645Z"
+    },
+    "tokidokibosottoroshiagodedererutonarinoalyasan-alisa-mikhailovna-kujou": {
+      "qid": "Q116903689",
+      "label": "Alisa Mikhailovna Kujō",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:56:32.454Z"
+    },
+    "tsukihime-ciel": {
+      "qid": "Q8346129",
+      "label": "Ciel",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:56:38.627Z"
+    },
+    "tsukihime-tohno-akiha": {
+      "qid": "Q5687168",
+      "label": "Akiha Tohno",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:56:43.432Z"
+    },
+    "tsukihime-kohaku": {
+      "qid": "Q2860686",
+      "label": "Kohaku",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:56:54.316Z"
+    },
+    "tsukihime-hisui": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q79915, Common Kingfisher)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q79915",
+      "candidateLabel": "Common Kingfisher",
+      "checkedAt": "2026-10-23T05:57:03.600Z"
+    },
+    "umamusume-nakayama-festa": {
+      "qid": "Q107193593",
+      "label": "Nakayama Festa",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:57:07.812Z"
+    },
+    "umamusume-narita-brian": {
+      "qid": "Q106000039",
+      "label": "Narita Brian",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:57:13.891Z"
+    },
+    "umamusume-daitaku-helios": {
+      "qid": "Q106079940",
+      "label": "Daitaku Helios",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:57:18.701Z"
+    },
+    "umamusume-mejiro-ardan": {
+      "qid": "Q107207752",
+      "label": "Mejiro Ardan",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:57:23.538Z"
+    },
+    "umamusume-narita-taishin": {
+      "qid": "Q106002338",
+      "label": "Narita Taishin",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:57:28.343Z"
+    },
+    "umamusume-verxina": {
+      "qid": "Q138004535",
+      "label": "Verxina",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:57:34.398Z"
+    },
+    "umamusume-dream-journey": {
+      "qid": "Q138003005",
+      "label": "Dream Journey",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:57:40.441Z"
+    },
+    "umamusume-air-shakur": {
+      "qid": "Q107176521",
+      "label": "Air Shakur",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:57:45.283Z"
+    },
+    "umamusume-almond-eye": {
+      "qid": "Q137997525",
+      "label": "Almond Eye",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:57:51.334Z"
+    },
+    "umamusume-matikanefukukitaru": {
+      "qid": "Q111043887",
+      "label": "Matikanefukukitaru",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:57:57.400Z"
+    },
+    "umamusume-smart-falcon": {
+      "qid": "Q107192561",
+      "label": "Smart Falcon",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:58:03.398Z"
+    },
+    "umamusume-narita-top-road": {
+      "qid": "Q110712824",
+      "label": "Narita Top Road",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:58:09.466Z"
+    },
+    "umamusume-katsuragi-ace": {
+      "qid": "Q138004097",
+      "label": "Katsuragi Ace",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:58:15.535Z"
+    },
+    "umineko-ushiromiya-ange": {
+      "qid": "Q136734049",
+      "label": "Ange Ushiromiya",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:58:20.362Z"
+    },
+    "umineko-frederica-bernkastel": {
+      "qid": "Q134581249",
+      "label": "Bernkastel",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:58:25.172Z"
+    },
+    "umineko-furudo-erika": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:58:27.654Z"
+    },
+    "uzakichanwaasobitai-uzaki-hana": {
+      "qid": "Q114554799",
+      "label": "Hana Uzaki",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:58:31.198Z"
+    },
+    "uzakichanwaasobitai-uzaki-tsuki": {
+      "qid": "Q114556894",
+      "label": "Tsuki Uzaki",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:58:36.055Z"
+    },
+    "vedalai-neuro-sama": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:58:39.685Z"
+    },
+    "vedalai-evil-neuro-sama": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:58:40.862Z"
+    },
+    "vocaloid-ia": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q1546, Iowa)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q1546",
+      "candidateLabel": "Iowa",
+      "checkedAt": "2026-10-23T05:58:51.649Z"
+    },
+    "vocaloid-akita-neru": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:58:52.399Z"
+    },
+    "vocaloid-yowane-haku": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:58:53.586Z"
+    },
+    "vocaloid-flower": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q506, flower)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q506",
+      "candidateLabel": "flower",
+      "checkedAt": "2026-10-23T05:59:01.707Z"
+    },
+    "vocaloid-luo-tianyi": {
+      "qid": "Q11145954",
+      "label": "Luo Tianyi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:59:05.300Z"
+    },
+    "voiceroid-kotonoha-akane": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q112031567, Kotonoha Akane & Aoi)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q112031567",
+      "candidateLabel": "Kotonoha Akane & Aoi",
+      "checkedAt": "2026-10-23T05:59:08.923Z"
+    },
+    "voiceroid-kotonoha-aoi": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:59:10.142Z"
+    },
+    "voiceroid-tsurumaki-maki": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q106893508, Tsurumaki Maki)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q106893508",
+      "candidateLabel": "Tsurumaki Maki",
+      "checkedAt": "2026-10-23T05:59:12.584Z"
+    },
+    "voiceroid-touhoku-zunko": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q11526103, Tohoku Zunko)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q11526103",
+      "candidateLabel": "Tohoku Zunko",
+      "checkedAt": "2026-10-23T05:59:15.637Z"
+    },
+    "vshojo-ironmouse": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q111677965, Ironmouse)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q111677965",
+      "candidateLabel": "Ironmouse",
+      "checkedAt": "2026-10-23T05:59:18.502Z"
+    },
+    "vshojo-zentreya": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:59:18.898Z"
+    },
+    "vspo-tachibana-hinano": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q113497643, 橘ひなの)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q113497643",
+      "candidateLabel": "橘ひなの",
+      "checkedAt": "2026-10-23T05:59:23.678Z"
+    },
+    "vspo-ichinose-uruha": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q123985327, URUHA ICHINOSE)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q123985327",
+      "candidateLabel": "URUHA ICHINOSE",
+      "checkedAt": "2026-10-23T05:59:26.113Z"
+    },
+    "vspo-aizawa-ema": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:59:27.344Z"
+    },
+    "vspo-yakumo-beni": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q107861283, Beni Yakumo)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q107861283",
+      "candidateLabel": "Beni Yakumo",
+      "checkedAt": "2026-10-23T05:59:29.737Z"
+    },
+    "vspo-nekota-tsuna": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T05:59:30.941Z"
+    },
+    "vspo-kurumi-noah": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q130443742, Kurumi Noah)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q130443742",
+      "candidateLabel": "Kurumi Noah",
+      "checkedAt": "2026-10-23T05:59:34.013Z"
+    },
+    "watashigakoibitoninareruwakenaijanmurimuri-amaori-renako": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q131289099, Renako Amaori)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q131289099",
+      "candidateLabel": "Renako Amaori",
+      "checkedAt": "2026-10-23T05:59:36.961Z"
+    },
+    "wuwa-shorekeeper": {
+      "qid": "Q131758750",
+      "label": "Shorekeeper",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:59:40.585Z"
+    },
+    "wuwa-denia": {
+      "qid": "Q139998510",
+      "label": "Denia",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:59:48.006Z"
+    },
+    "wuwa-cartethyia": {
+      "qid": "Q133804704",
+      "label": "Cartethyia",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T05:59:52.810Z"
+    },
+    "wuwa-carlotta": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q17497413, Carlotta)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q17497413",
+      "candidateLabel": "Carlotta",
+      "checkedAt": "2026-10-23T06:00:01.299Z"
+    },
+    "wuwa-camellya": {
+      "qid": "Q131824642",
+      "label": "Camellya",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:00:07.294Z"
+    },
+    "wuwa-iuno": {
+      "qid": "Q134946061",
+      "label": "Iuno",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:00:14.562Z"
+    },
+    "wuwa-lynae": {
+      "qid": "Q137363211",
+      "label": "Lynae",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:00:22.217Z"
+    },
+    "wuwa-phrolova": {
+      "qid": "Q131837308",
+      "label": "Phrolova",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:00:28.239Z"
+    },
+    "wuwa-cantarella": {
+      "qid": "Q133804646",
+      "label": "Cantarella",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:00:35.480Z"
+    },
+    "wuwa-jinhsi": {
+      "qid": "Q131758702",
+      "label": "Jinhsi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:00:40.313Z"
+    },
+    "wuwa-mornye": {
+      "qid": "Q137363227",
+      "label": "Mornye",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:00:45.105Z"
+    },
+    "wuwa-hiyuki": {
+      "qid": "Q139541834",
+      "label": "Hiyuki",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:00:49.934Z"
+    },
+    "wuwa-yangyang": {
+      "qid": "Q131451855",
+      "label": "Yangyang",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:00:58.394Z"
+    },
+    "wuwa-lupa": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q125884564, Rupa)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q125884564",
+      "candidateLabel": "Rupa",
+      "checkedAt": "2026-10-23T06:01:08.058Z"
+    },
+    "wuwa-sigrika": {
+      "qid": "Q139070022",
+      "label": "Sigrika",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:01:11.680Z"
+    },
+    "wuwa-yinlin": {
+      "qid": "Q132195290",
+      "label": "Yinlin",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:01:16.500Z"
+    },
+    "xeno2-pneuma": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q1048935, pneuma)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q1048935",
+      "candidateLabel": "pneuma",
+      "checkedAt": "2026-10-23T06:01:22.575Z"
+    },
+    "xenobladechronicles3-mio": {
+      "qid": "Q112670911",
+      "label": "Mio",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:01:31.058Z"
+    },
+    "xenobladechronicles3-eunie": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q8819, The Unicode Standard)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q8819",
+      "candidateLabel": "The Unicode Standard",
+      "checkedAt": "2026-10-23T06:01:41.230Z"
+    },
+    "xenosaga-kos-mos": {
+      "qid": "Q2247980",
+      "label": "KOS-MOS",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:01:43.981Z"
+    },
+    "yahariorenoseishunlovecomewamachigatteiru-yukinoshita-yukino": {
+      "qid": "Q97644241",
+      "label": "Yukino Yukinoshita",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:01:48.810Z"
+    },
+    "yahariorenoseishunlovecomewamachigatteiru-yuigahama-yui": {
+      "qid": "Q97644811",
+      "label": "Yui Yuigahama",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:01:53.637Z"
+    },
+    "yahariorenoseishunlovecomewamachigatteiru-isshiki-iroha": {
+      "qid": "Q97645544",
+      "label": "Iroha Isshiki",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:01:58.477Z"
+    },
+    "yugioh-lovely-labrynth-of-the-silver-castle": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T06:02:00.901Z"
+    },
+    "yugioh5ds-izayoi-aki": {
+      "qid": "Q2829086",
+      "label": "Akiza Izinski",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:02:04.494Z"
+    },
+    "yugiohgx-tenjouin-asuka": {
+      "qid": "Q2748937",
+      "label": "Alexis Rhodes",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:02:09.321Z"
+    },
+    "yumenikki-madotsuki": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q8024376, windowed envelope)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q8024376",
+      "candidateLabel": "windowed envelope",
+      "checkedAt": "2026-10-23T06:02:13.374Z"
+    },
+    "yurucamp-shima-rin": {
+      "qid": "Q105085395",
+      "label": "Rin Shima",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:02:16.598Z"
+    },
+    "yurucamp-kagamihara-nadeshiko": {
+      "qid": "Q105085447",
+      "label": "Nadeshiko Kagamihara",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:02:21.421Z"
+    },
+    "yurucamp-inuyama-aoi": {
+      "qid": "Q105085448",
+      "label": "Aoi Inuyama",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:02:26.221Z"
+    },
+    "yurucamp-oogaki-chiaki": {
+      "qid": "Q105085450",
+      "label": "Chiaki Ōgaki",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:02:31.075Z"
+    },
+    "yurucamp-saitou-ena": {
+      "qid": "Q105085449",
+      "label": "Ena Saitō",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:02:35.914Z"
+    },
+    "yurucamp-toki-ayano": {
+      "qid": "Q108816806",
+      "label": "Ayano Toki",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:02:40.710Z"
+    },
+    "yurucamp-kagamihara-sakura": {
+      "qid": "Q105085482",
+      "label": "Sakura Kagamihara",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:02:45.532Z"
+    },
+    "yurucamp-toba-minami": {
+      "qid": "Q106315985",
+      "label": "Minami Toba",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:02:50.380Z"
+    },
+    "zzz-luciana-de-montefio": {
+      "qid": "Q136346373",
+      "label": "Luciana de Montefio",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:02:55.220Z"
+    },
+    "zzz-ye-shunguang": {
+      "qid": "Q141647290",
+      "label": "Ye Shunguang",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:03:00.038Z"
+    },
+    "zzz-anby-demara": {
+      "qid": "Q136276618",
+      "label": "Anby Demara",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:03:04.860Z"
+    },
+    "zzz-velina-airgid": {
+      "qid": "Q141579945",
+      "label": "Velina Airgid",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:03:09.661Z"
+    },
+    "zzz-corin-wickes": {
+      "qid": "Q136260130",
+      "label": "Corin Wickes",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:03:14.504Z"
+    },
+    "zzz-cissia": {
+      "qid": "Q141514337",
+      "label": "Cissia",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:03:19.299Z"
+    },
+    "zzz-qingyi": {
+      "qid": "Q136306642",
+      "label": "Qingyi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:03:24.151Z"
+    },
+    "zzz-soukaku": {
+      "qid": "Q136367194",
+      "label": "Soukaku",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:03:28.984Z"
+    },
+    "zzz-zhao": {
+      "qid": "Q141678200",
+      "label": "Zhao",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:03:37.472Z"
+    },
+    "zzz-caesar-king": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T06:03:39.887Z"
+    },
+    "zzz-norma-hollowell": {
+      "qid": "Q141580094",
+      "label": "Norma Hollowell",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:03:43.509Z"
+    },
+    "zzz-grace-howard": {
+      "qid": "Q136281798",
+      "label": "Grace Howard",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:03:48.387Z"
+    },
+    "zzz-trigger": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q336751, firearm trigger)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q336751",
+      "candidateLabel": "firearm trigger",
+      "checkedAt": "2026-10-23T06:03:56.813Z"
+    },
+    "zzz-yidhari-murphy": {
+      "qid": "Q136556375",
+      "label": "Yidhari Murphy",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:04:00.428Z"
+    },
+    "zzz-piper-wheel": {
+      "qid": "Q136337768",
+      "label": "Piper Wheel",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:04:05.261Z"
+    },
+    "zzz-nekomiya-mana": {
+      "qid": "Q136278183",
+      "label": "Nekomiya Mana",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:04:10.065Z"
+    },
+    "zzz-orphie-magnusson": {
+      "qid": "Q136556314",
+      "label": "Orphie Magnusson",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:04:14.915Z"
+    },
+    "zzz-alexandrina-sebastiane": {
+      "qid": "Q136259894",
+      "label": "Alexandrina Sebastiane",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:04:19.731Z"
+    },
+    "zzz-claret-flint": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T06:04:22.135Z"
+    },
+    "zzz-seed": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q3130, Sydney)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q3130",
+      "candidateLabel": "Sydney",
+      "checkedAt": "2026-10-23T06:04:30.799Z"
+    },
+    "zzz-promeia": {
+      "qid": "Q141507799",
+      "label": "Promeia",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:04:34.428Z"
+    },
+    "zzz-dialyn": {
+      "qid": "Q136911998",
+      "label": "Dialyn",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:04:39.258Z"
+    },
+    "zzz-pulchra-fellini": {
+      "qid": "Q136335173",
+      "label": "Pulchra Fellini",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:04:44.085Z"
+    },
+    "zzz-koleda-belobog": {
+      "qid": "Q136281841",
+      "label": "Koleda Belobog",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:04:48.904Z"
+    },
+    "zzz-phoenix-reffaella": {
+      "qid": "Q141678164",
+      "label": "Phoenix Reffaella",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:04:53.737Z"
+    },
+    "zeronotsukaima-louise-francoise-le-blanc-de-la-valliere": {
+      "qid": "Q5981518",
+      "label": "Louise Françoise le Blanc de la Vallière",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:04:58.550Z"
+    },
+    "zombielandsaga-konno-junko": {
+      "qid": "Q104602867",
+      "label": "Junko Konno",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:05:03.389Z"
+    },
+    "zombielandsaga-minamoto-sakura": {
+      "qid": "Q65040610",
+      "label": "Sakura Minamoto",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:05:08.240Z"
+    },
+    "zombielandsaga-mizuno-ai": {
+      "qid": "Q104602866",
+      "label": "Ai Mizuno",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:05:13.085Z"
+    },
+    "nikke-rapi": {
+      "qid": "Q134280866",
+      "label": "Rapi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T06:23:24.689Z"
+    },
+    "mygo-chihaya-anon": {
+      "qid": "Q120985082",
+      "label": "Anon Chihaya",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T08:19:36.953Z"
+    },
+    "mygo-nagasaki-soyo": {
+      "qid": "Q120985085",
+      "label": "Soyo Nagasaki",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T08:19:41.777Z"
+    },
+    "mygo-shiina-taki": {
+      "qid": "Q120985084",
+      "label": "Taki Shiina",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T08:19:46.615Z"
+    },
+    "mygo-takamatsu-tomori": {
+      "qid": "Q120985083",
+      "label": "Tomori Takamatsu",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T08:19:51.462Z"
+    },
+    "avemujica-togawa-sakiko": {
+      "qid": "Q121600088",
+      "label": "Sakiko Togawa",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T08:20:01.141Z"
+    },
+    "avemujica-misumi-uika": {
+      "qid": "Q121600268",
+      "label": "Uika Misumi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T08:20:05.992Z"
+    },
+    "avemujica-wakaba-mutsumi": {
+      "qid": "Q121600113",
+      "label": "Mutsumi Wakaba",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T08:20:10.824Z"
+    },
+    "avemujica-yahata-umiri": {
+      "qid": "Q121600221",
+      "label": "Umiri Yahata",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T08:20:15.613Z"
+    },
+    "avemujica-yuutenji-nyamu": {
+      "qid": "Q121909754",
+      "label": "Nyamu Yūtenji",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T08:20:20.439Z"
+    },
+    "hasunosora-hinoshita-kaho": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T08:20:22.878Z"
+    },
+    "hasunosora-otomune-kozue": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T08:20:24.082Z"
+    },
+    "hasunosora-murano-sayaka": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T08:20:25.288Z"
+    },
+    "hasunosora-osawa-rurino": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T08:20:26.490Z"
+    },
+    "hasunosora-momose-ginko": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T08:20:27.711Z"
+    },
+    "hasunosora-yugiri-tsuzuri": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T08:20:28.910Z"
+    },
+    "hasunosora-fujishima-megumi": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T08:20:30.142Z"
+    },
+    "hasunosora-kachimachi-kosuzu": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T08:20:31.394Z"
+    },
+    "hasunosora-anyoji-hime": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T08:20:32.696Z"
+    },
+    "madoka-sakura-kyoko": {
+      "qid": "Q11382982",
+      "label": "Kyoko Sakura",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T08:20:36.158Z"
+    },
+    "kon-hirasawa-yui": {
+      "qid": "Q4023191",
+      "label": "Yui Hirasawa",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T08:20:40.987Z"
+    },
+    "kon-tainaka-ritsu": {
+      "qid": "Q3937809",
+      "label": "Ritsu Tainaka",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T08:20:45.821Z"
+    },
+    "suiseinomajo-suletta-mercury": {
+      "qid": "Q113089992",
+      "label": "Suletta Mercury",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T08:20:50.655Z"
+    },
+    "suiseinomajo-miorine-rembran": {
+      "qid": "Q113089994",
+      "label": "Miorine Rembran",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T08:20:55.484Z"
+    },
+    "girls-band-cry-iseri-nina": {
+      "qid": "Q125884560",
+      "label": "Nina Iseri",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T08:21:00.346Z"
+    },
+    "girls-band-cry-kawaragi-momoka": {
+      "qid": "Q125884561",
+      "label": "Momoka Kawaragi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T08:21:05.180Z"
+    },
+    "lycrecoil-inoue-takina": {
+      "qid": "Q112860533",
+      "label": "Takina Inoue",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T08:21:10.029Z"
+    },
+    "chokaguyahime-sakayori-iroha": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T08:21:12.429Z"
+    },
+    "chokaguyahime-runami-yachiyo": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T08:21:13.650Z"
+    },
+    "alienstage-sua": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q16256674, Su-a)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q16256674",
+      "candidateLabel": "Su-a",
+      "checkedAt": "2026-10-23T08:21:29.437Z"
+    },
+    "kemono-kaban": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q467505, handbag)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q467505",
+      "candidateLabel": "handbag",
+      "checkedAt": "2026-10-23T08:21:36.089Z"
+    },
+    "strikewitches-eila": {
+      "qid": "Q134434665",
+      "label": "Eila Ilmatar Juutilainen",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T08:21:39.753Z"
+    },
+    "reverse1999-vertin": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q7317, Giuseppe Verdi)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q7317",
+      "candidateLabel": "Giuseppe Verdi",
+      "checkedAt": "2026-10-23T08:21:48.330Z"
     }
   }
 }

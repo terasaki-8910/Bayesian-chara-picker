@@ -23,6 +23,13 @@ export const USER_AGENT =
  * サーバ側がエラーを返し、bot側はリトライを遅らせるべきとされる規約。 */
 const MAXLAG_SECONDS = 5;
 
+/** maxlag エラーを受けたときの再試行回数と、Retry-After が無いときの待ち時間(回数倍)。 */
+const MAXLAG_RETRIES = 5;
+const MAXLAG_BACKOFF_MS = 5_000;
+
+/** wbgetentities の ids に渡せる上限(匿名アクセス)。 */
+const ENTITY_IDS_PER_REQUEST = 50;
+
 const API_ROOT = 'https://www.wikidata.org/w/api.php';
 const ENTITY_DATA_ROOT = 'https://www.wikidata.org/wiki/Special:EntityData';
 
@@ -39,31 +46,51 @@ function sleep(ms) {
  * danbooru-client.mjs の createDanbooruFetcher と同じ形の薄いスロットラー。
  * リトライは呼び出し側（map-wikidata.mjs）が collect-hitomi.mjs と同じ
  * retry-with-backoff で行う——ここは間隔維持とUA送出・エラー検出だけに専念する。
- * @param {{ fetchImpl?: WikidataFetchLike, delayMs?: number }} [opts]
+ * 例外は maxlag で、Wikidata の規約どおり待って再試行する。
+ * @param {{ fetchImpl?: WikidataFetchLike, delayMs?: number, maxlagBackoffMs?: number }} [opts]
  */
-export function createWikidataFetcher({ fetchImpl = fetch, delayMs = REQUEST_DELAY_MS } = {}) {
+export function createWikidataFetcher({
+  fetchImpl = fetch,
+  delayMs = REQUEST_DELAY_MS,
+  maxlagBackoffMs = MAXLAG_BACKOFF_MS,
+} = {}) {
   let lastCallAt = null;
 
   return async function wikidataFetch(url) {
-    if (lastCallAt !== null) {
-      const wait = delayMs - (Date.now() - lastCallAt);
-      if (wait > 0) await sleep(wait);
-    }
-    lastCallAt = Date.now();
-    const res = await fetchImpl(url, { headers: { 'User-Agent': USER_AGENT } });
+    for (let attempt = 1; ; attempt += 1) {
+      if (lastCallAt !== null) {
+        const wait = delayMs - (Date.now() - lastCallAt);
+        if (wait > 0) await sleep(wait);
+      }
+      lastCallAt = Date.now();
+      const res = await fetchImpl(url, { headers: { 'User-Agent': USER_AGENT } });
 
-    if (!res.ok) {
-      throw new Error(`Wikidata API 呼び出しに失敗しました (status=${res.status}): ${url}`);
-    }
-    // レート制限時は"You are making too many requests to the API."という
-    // プレーンテキスト応答（JSONではない）を200やその他のステータスで返すことがある
-    // （2026-07-25実測）。res.okだけでは検出できないため、JSONパース自体を
-    // レート制限検出の最終防衛線にする。
-    const text = await res.text();
-    try {
-      return JSON.parse(text);
-    } catch (_err) {
-      throw new Error(`Wikidata APIが非JSON応答を返しました（レート制限の疑い）: ${text.slice(0, 100)}`);
+      if (!res.ok) {
+        throw new Error(`Wikidata API 呼び出しに失敗しました (status=${res.status}): ${url}`);
+      }
+      // レート制限時は"You are making too many requests to the API."という
+      // プレーンテキスト応答（JSONではない）を200やその他のステータスで返すことがある
+      // （2026-07-25実測）。res.okだけでは検出できないため、JSONパース自体を
+      // レート制限検出の最終防衛線にする。
+      const text = await res.text();
+      let body;
+      try {
+        body = JSON.parse(text);
+      } catch (_err) {
+        throw new Error(`Wikidata APIが非JSON応答を返しました（レート制限の疑い）: ${text.slice(0, 100)}`);
+      }
+      // maxlag を付けて呼ぶので、レプリカが遅れていると 200 のまま {error:{code:'maxlag'}} が返る
+      // (2026-10-23、これを entities として読んで TypeError で止まった)。maxlag は待って再試行し、
+      // それ以外のエラーは中身を付けて投げる。
+      if (body?.error) {
+        if (body.error.code === 'maxlag' && attempt <= MAXLAG_RETRIES) {
+          const retryAfter = Number(res.headers?.get?.('retry-after'));
+          await sleep(Number.isFinite(retryAfter) && retryAfter > 0 ? retryAfter * 1000 : maxlagBackoffMs * attempt);
+          continue;
+        }
+        throw new Error(`Wikidata API がエラーを返しました (${body.error.code}): ${String(body.error.info ?? '').slice(0, 100)}`);
+      }
+      return body;
     }
   };
 }
@@ -130,22 +157,25 @@ export async function fetchEntity(wikidataFetch, qid) {
  * @returns {Promise<Record<string, { ja: string, en: string }>>} id -> {ja, en}ラベル（無ければ空文字）
  */
 export async function fetchEntityLabels(wikidataFetch, ids) {
-  if (ids.length === 0) return {};
-  const params = new URLSearchParams({
-    action: 'wbgetentities',
-    ids: ids.join('|'),
-    props: 'labels',
-    languages: 'ja|en',
-    format: 'json',
-    maxlag: String(MAXLAG_SECONDS),
-  });
-  const result = /** @type {{ entities: Record<string, { labels: Record<string, { value: string }> }> }} */ (
-    await wikidataFetch(`${API_ROOT}?${params}`)
-  );
   const labels = {};
-  for (const id of ids) {
-    const entityLabels = result.entities[id]?.labels;
-    labels[id] = { ja: entityLabels?.ja?.value ?? '', en: entityLabels?.en?.value ?? '' };
+  // wbgetentities の ids は1回50件まで(超えると toomanyvalues。2026-10-23、主張の多いエンジェウーモンで発生)。
+  for (let start = 0; start < ids.length; start += ENTITY_IDS_PER_REQUEST) {
+    const chunk = ids.slice(start, start + ENTITY_IDS_PER_REQUEST);
+    const params = new URLSearchParams({
+      action: 'wbgetentities',
+      ids: chunk.join('|'),
+      props: 'labels',
+      languages: 'ja|en',
+      format: 'json',
+      maxlag: String(MAXLAG_SECONDS),
+    });
+    const result = /** @type {{ entities: Record<string, { labels: Record<string, { value: string }> }> }} */ (
+      await wikidataFetch(`${API_ROOT}?${params}`)
+    );
+    for (const id of chunk) {
+      const entityLabels = result.entities[id]?.labels;
+      labels[id] = { ja: entityLabels?.ja?.value ?? '', en: entityLabels?.en?.value ?? '' };
+    }
   }
   return labels;
 }

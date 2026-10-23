@@ -15,6 +15,7 @@ import {
   fetchTagExact,
   fetchWikiPage,
   pickJapaneseDisplayName,
+  retryOnServerError,
 } from './danbooru-client.mjs';
 
 const MAX_LINK_ATTEMPTS = 6;
@@ -55,16 +56,23 @@ async function main() {
   let resolved = 0;
   let unresolved = 0;
   for (const [index, ref] of c.rankedCandidates.entries()) {
-    const result = await resolveSeriesForCandidate(danbooruFetch, ref.tag, ref.postCount);
-    ref.seriesTag = result.seriesTag;
-    ref.seriesOverlap = result.overlap ?? null;
-    ref.seriesNameJa = result.seriesNameJa ?? null;
-    ref.seriesNameConfidence = result.seriesNameConfidence ?? null;
-    if (result.seriesTag) resolved++;
+    // 25件ごとに書き出すので、途中で止まっても再実行すれば解決済みを飛ばして続きから始まる
+    if (ref.seriesOverlap === undefined) {
+      const result = await retryOnServerError(
+        () => resolveSeriesForCandidate(danbooruFetch, ref.tag, ref.postCount),
+        ref.tag,
+      );
+      ref.seriesTag = result.seriesTag;
+      ref.seriesOverlap = result.overlap ?? null;
+      ref.seriesNameJa = result.seriesNameJa ?? null;
+      ref.seriesNameConfidence = result.seriesNameConfidence ?? null;
+    }
+    if (ref.seriesTag) resolved++;
     else unresolved++;
     if ((index + 1) % 25 === 0) {
+      writeFileSync(candidatesPath, `${JSON.stringify(c, null, 2)}\n`);
       console.log(
-        `[${index + 1}/${c.rankedCandidates.length}] シリーズ解決中... (直近: ${ref.tag} -> ${result.seriesTag ?? '未解決'})`,
+        `[${index + 1}/${c.rankedCandidates.length}] シリーズ解決中... (直近: ${ref.tag} -> ${ref.seriesTag ?? '未解決'})`,
       );
     }
   }

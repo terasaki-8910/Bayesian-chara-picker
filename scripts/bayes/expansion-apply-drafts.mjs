@@ -5,7 +5,7 @@
  *
  * 対象は data/characters.json のうち reviewed!==true かつ provisional!==true の
  * キャラ（まだ下書きが未反映の新規キャラ）のみ。除外するかどうかの判断は一切せず、
- * 下書きの flags にそのまま従う（same-as:*・not-a-character・player-avatar・male・
+ * 下書きの flags にそのまま従う（same-as:*・not-a-character・player-avatar・male・child・
  * unreleased のいずれかが付いていれば除外、それ以外は軸を正規化して取り込むだけ）。
  *
  * journal は Workflow 実行中は追記され続けるため、同じ id の draft が複数回
@@ -77,7 +77,8 @@ const MIN_OPTIONAL_FILLED = 4;
 /** 下書きの flags のうち、これらが1つでも付いていれば除外（除外の判断そのものはしない。flags に従うだけ）。 */
 function isExcludedByFlags(flags) {
   return (flags ?? []).some(
-    (f) => f === 'not-a-character' || f === 'player-avatar' || f === 'male' || f === 'unreleased' || f.startsWith('same-as:'),
+    (f) =>
+      f === 'not-a-character' || f === 'player-avatar' || f === 'male' || f === 'unreleased' || f === 'child' || f.startsWith('same-as:'),
   );
 }
 
