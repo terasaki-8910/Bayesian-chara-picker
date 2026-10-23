@@ -4205,7 +4205,6 @@
     "arknights-utage": {},
     "arknights-pramanix": {},
     "arknights-schwarz": {},
-    "arknights-texas-the-omertosa": {},
     "arknights-ceobe": {},
     "arknights-typhon": {},
     "arknights-silence": {},
@@ -4235,7 +4234,6 @@
     "kemono-emperor-penguin": {},
     "kemono-eurasian-eagle-owl": {},
     "kemono-jaguar": {},
-    "kemono-island-fox": {},
     "kemono-brown-long-eared-bat": {},
     "dccomics-raven": {},
     "dccomics-harley-quinn": {},
@@ -5086,14 +5084,11 @@
     "hololiveindonesia-ayunda-risu": {},
     "hololiveindonesia-vestia-zeta": {},
     "hololiveindonesia-anya-melfissa": {},
-    "homicipher-adashino-adami": {},
     "honkai3-yae-sakura": {},
     "honkai3-theresa-apocalypse": {},
     "honkai3-rita-rossweisse": {},
-    "honkai3-herrscher-of-sentience": {},
     "honkai3-mobius": {},
     "honkai3-murata-himeko": {},
-    "honkai3-eden": {},
     "honkai3-seele-alter-ego": {},
     "honkai3-durandal": {},
     "honkai3-aponia": {},
@@ -5700,13 +5695,6 @@
         "人間"
       ]
     },
-    "majosaiban-tono-hanna": {
-      "genderExpression": "女性",
-      "stature": "小柄",
-      "species": [
-        "人間"
-      ]
-    },
     "majosaiban-natsume-an-an": {
       "genderExpression": "女性",
       "stature": "小柄",
@@ -5714,28 +5702,7 @@
         "人間"
       ]
     },
-    "majosaiban-jogasaki-noah": {
-      "genderExpression": "女性",
-      "stature": "小柄",
-      "species": [
-        "人間"
-      ]
-    },
     "majosaiban-kurobe-nanoka": {
-      "genderExpression": "女性",
-      "stature": "標準",
-      "species": [
-        "人間"
-      ]
-    },
-    "majosaiban-hasumi-leia": {
-      "genderExpression": "女性",
-      "stature": "長身",
-      "species": [
-        "人間"
-      ]
-    },
-    "majosaiban-housho-margo": {
       "genderExpression": "女性",
       "stature": "標準",
       "species": [
@@ -5757,7 +5724,6 @@
       ]
     },
     "majosaiban-tsukishiro-yuki": {},
-    "majosaiban-kurobe-honoka": {},
     "mahoutsukainoyoru-aozaki-aoko": {},
     "majonotabitabi-elaina": {
       "genderExpression": "女性",
@@ -5970,8 +5936,6 @@
         "人間"
       ]
     },
-    "reverse1999-sonetto": {},
-    "reverse1999-37": {},
     "reverse1999-isolde": {},
     "rozenmaiden-shinku": {
       "genderExpression": "女性",
@@ -6098,9 +6062,6 @@
         "人間"
       ]
     },
-    "stellive-akane-lize": {},
-    "stellive-tenko-shibuki": {},
-    "stellive-yuzuha-riko": {},
     "summerpockets-naruse-shiroha": {
       "genderExpression": "女性",
       "stature": "小柄",
@@ -6303,7 +6264,6 @@
         "人間"
       ]
     },
-    "va11halla-jill-stingray": {},
     "vedalai-neuro-sama": {},
     "vedalai-evil-neuro-sama": {},
     "vocaloid-ia": {},
@@ -6820,7 +6780,6 @@
     },
     "chokaguyahime-sakayori-iroha": {},
     "chokaguyahime-runami-yachiyo": {},
-    "alienstage-mizi": {},
     "alienstage-sua": {},
     "kemono-kaban": {},
     "strikewitches-eila": {

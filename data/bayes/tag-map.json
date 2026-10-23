@@ -10792,26 +10792,6 @@
       ],
       "checkedAt": "2026-10-23T04:12:25.514Z"
     },
-    "arknights-texas-the-omertosa": {
-      "tag": "texas_the_omertosa_(arknights)",
-      "postCount": 1748,
-      "source": "series-qualified",
-      "seriesOverlap": 1,
-      "candidatesTried": [
-        "texas_the_omertosa",
-        "texas_the_omertosa_(arknights)",
-        "texas_the_omertosa(*)",
-        "texas(*)"
-      ],
-      "allCandidates": [
-        "texas_the_omertosa_(arknights)(1748)",
-        "texas_(arknights)(8748)",
-        "texas_(willpower)_(arknights)(1000)",
-        "texas_(winter_messenger)_(arknights)(708)",
-        "texas_(ambience_synesthesia_2022)_(arknights)(115)"
-      ],
-      "checkedAt": "2026-10-23T04:12:31.170Z"
-    },
     "arknights-ceobe": {
       "tag": "ceobe_(arknights)",
       "postCount": 1624,
@@ -11277,27 +11257,6 @@
         "jaguar_(oyatsu)(13)"
       ],
       "checkedAt": "2026-10-23T04:14:56.875Z"
-    },
-    "kemono-island-fox": {
-      "tag": "island_fox_(kemono_friends)",
-      "postCount": 1268,
-      "source": "series-qualified",
-      "seriesOverlap": 1,
-      "candidatesTried": [
-        "island_fox",
-        "fox_island",
-        "island_fox_(kemono_friends)",
-        "island_fox(*)",
-        "island(*)"
-      ],
-      "allCandidates": [
-        "island_fox_(kemono_friends)(1268)",
-        "island_1(9)",
-        "island_7(5)",
-        "island_melter_(xxx)(4)",
-        "island_vacation_gwen(2)"
-      ],
-      "checkedAt": "2026-10-23T04:15:02.674Z"
     },
     "kemono-brown-long-eared-bat": {
       "tag": "brown_long-eared_bat_(kemono_friends)",
@@ -16300,26 +16259,6 @@
       ],
       "checkedAt": "2026-10-23T04:39:20.419Z"
     },
-    "homicipher-adashino-adami": {
-      "tag": "adashino_adami",
-      "postCount": 1376,
-      "source": "exact",
-      "seriesOverlap": 1,
-      "candidatesTried": [
-        "adashino_adami",
-        "adashino_adami_(homicipher)",
-        "adashino_adami(*)",
-        "adashino(*)"
-      ],
-      "allCandidates": [
-        "adashino_adami(1376)",
-        "adashino_benio(24)",
-        "adashino-sensei_(mushishi)(22)",
-        "adashino_oto(20)",
-        "adashino_ren(13)"
-      ],
-      "checkedAt": "2026-10-23T04:39:26.496Z"
-    },
     "honkai3-yae-sakura": {
       "tag": "yae_sakura",
       "postCount": 2772,
@@ -16380,26 +16319,6 @@
       ],
       "checkedAt": "2026-10-23T04:39:42.633Z"
     },
-    "honkai3-herrscher-of-sentience": {
-      "tag": "herrscher_of_sentience",
-      "postCount": 2118,
-      "source": "exact",
-      "seriesOverlap": 1,
-      "candidatesTried": [
-        "herrscher_of_sentience",
-        "herrscher_of_sentience_(honkai_impact_3rd)",
-        "herrscher_of_sentience(*)",
-        "herrscher(*)"
-      ],
-      "allCandidates": [
-        "herrscher_of_sentience(2118)",
-        "herrscher_of_corruption(249)",
-        "herrscher_of_sentience_(turn_up_the_music!)(107)",
-        "herrscher_of_sentience_(onyx_simurgh)(75)",
-        "herrscher_(elsword)(63)"
-      ],
-      "checkedAt": "2026-10-23T04:39:48.119Z"
-    },
     "honkai3-mobius": {
       "tag": "mobius_(honkai_impact)",
       "postCount": 1892,
@@ -16438,25 +16357,6 @@
         "murata_himeko_(black_mamba)(108)"
       ],
       "checkedAt": "2026-10-23T04:39:58.142Z"
-    },
-    "honkai3-eden": {
-      "tag": "eden_(honkai_impact)",
-      "postCount": 1464,
-      "source": "wildcard-verified",
-      "seriesOverlap": 1,
-      "candidatesTried": [
-        "eden",
-        "eden_(honkai_impact_3rd)",
-        "eden(*)"
-      ],
-      "allCandidates": [
-        "eden_(honkai_impact)(1464)",
-        "eden_(degrees_of_lewdity)(148)",
-        "eden_(flowing_rhyme)_(honkai_impact)(130)",
-        "eden_(male)_(degrees_of_lewdity)(101)",
-        "eden_(female)_(degrees_of_lewdity)(47)"
-      ],
-      "checkedAt": "2026-10-23T04:40:02.898Z"
     },
     "honkai3-durandal": {
       "tag": "durandal_(honkai_impact)",
@@ -18976,26 +18876,6 @@
       ],
       "checkedAt": "2026-10-23T04:52:29.998Z"
     },
-    "majosaiban-tono-hanna": {
-      "tag": "tono_hanna",
-      "postCount": 1924,
-      "source": "exact",
-      "seriesOverlap": 1,
-      "candidatesTried": [
-        "tono_hanna",
-        "tono_hanna_(mahou_shoujo_no_majo_saiban)",
-        "tono_hanna(*)",
-        "tono(*)"
-      ],
-      "allCandidates": [
-        "tono_hanna(1924)",
-        "tono_hoeru(28)",
-        "tono_hitomi(16)",
-        "tonogawachi_tatsuomi(15)",
-        "tonosaki_daisuke(15)"
-      ],
-      "checkedAt": "2026-10-23T04:52:35.740Z"
-    },
     "majosaiban-natsume-an-an": {
       "tag": "natsume_an-an",
       "postCount": 1765,
@@ -19016,24 +18896,6 @@
       ],
       "checkedAt": "2026-10-23T04:52:42.290Z"
     },
-    "majosaiban-jogasaki-noah": {
-      "tag": "jogasaki_noah",
-      "postCount": 1583,
-      "source": "exact",
-      "seriesOverlap": 1,
-      "candidatesTried": [
-        "jogasaki_noah",
-        "jogasaki_noah_(mahou_shoujo_no_majo_saiban)",
-        "jogasaki_noah(*)",
-        "jogasaki(*)"
-      ],
-      "allCandidates": [
-        "jogasaki_noah(1583)",
-        "jogasaki_akari(1)",
-        "jogasaki_karuta(1)"
-      ],
-      "checkedAt": "2026-10-23T04:52:48.391Z"
-    },
     "majosaiban-kurobe-nanoka": {
       "tag": "kurobe_nanoka",
       "postCount": 1297,
@@ -19053,46 +18915,6 @@
         "kurobe_(tensura)(4)"
       ],
       "checkedAt": "2026-10-23T04:52:53.476Z"
-    },
-    "majosaiban-hasumi-leia": {
-      "tag": "hasumi_leia",
-      "postCount": 1067,
-      "source": "exact",
-      "seriesOverlap": 0.9990627928772259,
-      "candidatesTried": [
-        "hasumi_leia",
-        "hasumi_leia_(mahou_shoujo_no_majo_saiban)",
-        "hasumi_leia(*)",
-        "hasumi(*)"
-      ],
-      "allCandidates": [
-        "hasumi_leia(1067)",
-        "hasumi_(blue_archive)(7122)",
-        "hasumi_(track)_(blue_archive)(1833)",
-        "hasumi_(swimsuit)_(blue_archive)(1543)",
-        "hasumi_souji_(eroe)(541)"
-      ],
-      "checkedAt": "2026-10-23T04:53:01.215Z"
-    },
-    "majosaiban-housho-margo": {
-      "tag": "housho_margo",
-      "postCount": 1021,
-      "source": "exact",
-      "seriesOverlap": 1,
-      "candidatesTried": [
-        "housho_margo",
-        "housho_margo_(mahou_shoujo_no_majo_saiban)",
-        "housho_margo(*)",
-        "housho(*)"
-      ],
-      "allCandidates": [
-        "housho_margo(1021)",
-        "houshou_marine(18117)",
-        "houshou_(kancolle)(8366)",
-        "houshou_marine_(1st_costume)(6235)",
-        "houshou_marine_(summer)(2357)"
-      ],
-      "checkedAt": "2026-10-23T04:53:06.752Z"
     },
     "majosaiban-shito-alisa": {
       "tag": "shito_alisa",
@@ -19153,26 +18975,6 @@
         "tsukishiro_mona(104)"
       ],
       "checkedAt": "2026-10-23T04:53:31.452Z"
-    },
-    "majosaiban-kurobe-honoka": {
-      "tag": "kurobe_honoka",
-      "postCount": 261,
-      "source": "exact",
-      "seriesOverlap": 0.9961685823754789,
-      "candidatesTried": [
-        "kurobe_honoka",
-        "kurobe_honoka_(mahou_shoujo_no_majo_saiban)",
-        "kurobe_honoka(*)",
-        "kurobe(*)"
-      ],
-      "allCandidates": [
-        "kurobe_honoka(261)",
-        "kurobe_nanoka(1297)",
-        "kurobe_natsumi(435)",
-        "kurobe_tamiko(4)",
-        "kurobe_(tensura)(4)"
-      ],
-      "checkedAt": "2026-10-23T04:53:37.192Z"
     },
     "mahoutsukainoyoru-aozaki-aoko": {
       "tag": "aozaki_aoko",
@@ -20387,44 +20189,6 @@
       ],
       "checkedAt": "2026-10-23T04:59:37.425Z"
     },
-    "reverse1999-sonetto": {
-      "tag": "sonetto_(reverse:1999)",
-      "postCount": 2207,
-      "source": "series-qualified",
-      "seriesOverlap": 1,
-      "candidatesTried": [
-        "sonetto",
-        "sonetto_(reverse:1999)",
-        "sonetto(*)"
-      ],
-      "allCandidates": [
-        "sonetto_(reverse:1999)(2207)",
-        "sonetto_(emotion_in_tranquility)_(reverse:1999)(135)",
-        "sonetto_(parade_anthem)_(reverse:1999)(119)",
-        "sonetto_(the_steadfast_heart)_(reverse:1999)(37)",
-        "sonetto_(winter)_(reverse:1999)(36)"
-      ],
-      "checkedAt": "2026-10-23T04:59:41.904Z"
-    },
-    "reverse1999-37": {
-      "tag": "37_(reverse:1999)",
-      "postCount": 1545,
-      "source": "series-qualified",
-      "seriesOverlap": 1,
-      "candidatesTried": [
-        "37",
-        "37_(reverse:1999)",
-        "37(*)"
-      ],
-      "allCandidates": [
-        "37_(reverse:1999)(1545)",
-        "37_(down_in_the_grotto)_(reverse:1999)(136)",
-        "37_(a_gift_of_nourishment)_(reverse:1999)(62)",
-        "37_(happy_bird_catcher)_(reverse:1999)(55)",
-        "37_(maidjump_goods_cafe)_(reverse:1999)(54)"
-      ],
-      "checkedAt": "2026-10-23T04:59:46.274Z"
-    },
     "reverse1999-isolde": {
       "tag": "isolde_(reverse:1999)",
       "postCount": 1306,
@@ -21244,66 +21008,6 @@
         "shiina_mahiru_(otonari_no_tenshi-sama)(556)"
       ],
       "checkedAt": "2026-10-23T05:03:31.408Z"
-    },
-    "stellive-akane-lize": {
-      "tag": "akane_lize",
-      "postCount": 1859,
-      "source": "exact",
-      "seriesOverlap": 1,
-      "candidatesTried": [
-        "akane_lize",
-        "akane_lize_(stellive)",
-        "akane_lize(*)",
-        "akane(*)"
-      ],
-      "allCandidates": [
-        "akane_lize(1859)",
-        "akane_(blue_archive)(2775)",
-        "akane_(bunny)_(blue_archive)(1267)",
-        "akane_(school_uniform)_(blue_archive)(509)",
-        "akane_canna(164)"
-      ],
-      "checkedAt": "2026-10-23T05:03:36.933Z"
-    },
-    "stellive-tenko-shibuki": {
-      "tag": "tenko_shibuki",
-      "postCount": 1669,
-      "source": "exact",
-      "seriesOverlap": 1,
-      "candidatesTried": [
-        "tenko_shibuki",
-        "tenko_shibuki_(stellive)",
-        "tenko_shibuki(*)",
-        "tenko(*)"
-      ],
-      "allCandidates": [
-        "tenko_shibuki(1669)",
-        "tenko_shibuki_(1st_costume)(337)",
-        "tenko_kuugen(112)",
-        "tenko_(yuureidoushi_(yuurei6214))(66)",
-        "tenko_shibuki_(2nd_costume)(18)"
-      ],
-      "checkedAt": "2026-10-23T05:03:43.723Z"
-    },
-    "stellive-yuzuha-riko": {
-      "tag": "yuzuha_riko",
-      "postCount": 1350,
-      "source": "exact",
-      "seriesOverlap": 1,
-      "candidatesTried": [
-        "yuzuha_riko",
-        "yuzuha_riko_(stellive)",
-        "yuzuha_riko(*)",
-        "yuzuha(*)"
-      ],
-      "allCandidates": [
-        "yuzuha_riko(1350)",
-        "yuzuhara_konomi(900)",
-        "yuzuha_riko_(1st_costume)(144)",
-        "yuzuhara_haruka(129)",
-        "yuzuha_(utawarerumono)(97)"
-      ],
-      "checkedAt": "2026-10-23T05:03:49.252Z"
     },
     "summerpockets-naruse-shiroha": {
       "tag": "naruse_shiroha",
@@ -22174,26 +21878,6 @@
         "uzaki_kiri(9)"
       ],
       "checkedAt": "2026-10-23T05:08:07.649Z"
-    },
-    "va11halla-jill-stingray": {
-      "tag": "jill_stingray",
-      "postCount": 1390,
-      "source": "exact",
-      "seriesOverlap": 0.9985611510791367,
-      "candidatesTried": [
-        "jill_stingray",
-        "jill_stingray_(va-11_hall-a)",
-        "jill_stingray(*)",
-        "jill(*)"
-      ],
-      "allCandidates": [
-        "jill_stingray(1390)",
-        "jill_valentine(2713)",
-        "jill_warrick(818)",
-        "jill_valentine_(battle_suit)(205)",
-        "jill_(fire_emblem)(152)"
-      ],
-      "checkedAt": "2026-10-23T05:08:15.116Z"
     },
     "vedalai-neuro-sama": {
       "tag": "neuro-sama",
@@ -24390,25 +24074,6 @@
         "yachiyo_(dragalia_lost)(7)"
       ],
       "checkedAt": "2026-10-23T08:14:23.314Z"
-    },
-    "alienstage-mizi": {
-      "tag": "mizi_(alien_stage)",
-      "postCount": 7529,
-      "source": "series-qualified",
-      "seriesOverlap": 0.9994687209456767,
-      "candidatesTried": [
-        "mizi",
-        "mizi_(alien_stage)",
-        "mizi(*)"
-      ],
-      "allCandidates": [
-        "mizi_(alien_stage)(7529)",
-        "mizi_(zombie_stage)(1913)",
-        "mizi_(demon)_(alien_stage)(192)",
-        "mizi_(akuma)_(zombie_stage)(104)",
-        "mizi's_mother_(alien_stage)(8)"
-      ],
-      "checkedAt": "2026-10-23T08:14:27.777Z"
     },
     "alienstage-sua": {
       "tag": "sua_(alien_stage)",

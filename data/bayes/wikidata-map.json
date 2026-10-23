@@ -8163,12 +8163,6 @@
       "candidateLabel": "Schwartz",
       "checkedAt": "2026-10-23T04:09:38.177Z"
     },
-    "arknights-texas-the-omertosa": {
-      "qid": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-23T04:09:38.516Z"
-    },
     "arknights-ceobe": {
       "qid": null,
       "reason": "not-found",
@@ -8345,14 +8339,6 @@
       "candidateQid": "Q35694",
       "candidateLabel": "jaguar",
       "checkedAt": "2026-10-23T04:11:33.170Z"
-    },
-    "kemono-island-fox": {
-      "qid": null,
-      "reason": "シリーズ確認不能のため除外(候補qid=Q722180, island fox)。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateQid": "Q722180",
-      "candidateLabel": "island fox",
-      "checkedAt": "2026-10-23T04:11:35.034Z"
     },
     "kemono-brown-long-eared-bat": {
       "qid": null,
@@ -10272,12 +10258,6 @@
       "candidateLabel": "Anya Melfissa",
       "checkedAt": "2026-10-23T05:36:07.694Z"
     },
-    "homicipher-adashino-adami": {
-      "qid": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-23T05:36:08.673Z"
-    },
     "honkai3-yae-sakura": {
       "qid": null,
       "reason": "シリーズ確認不能のため除外(候補qid=Q871991, cherry blossom)。要レビュー→確認できればoverridesへ。",
@@ -10298,12 +10278,6 @@
       "source": "not-found",
       "checkedAt": "2026-10-23T05:36:14.701Z"
     },
-    "honkai3-herrscher-of-sentience": {
-      "qid": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-23T05:36:15.900Z"
-    },
     "honkai3-mobius": {
       "qid": null,
       "reason": "シリーズ確認不能のため除外(候補qid=Q309240, Jean Giraud)。要レビュー→確認できればoverridesへ。",
@@ -10319,14 +10293,6 @@
       "candidateQid": "Q136526520",
       "candidateLabel": "Himeko",
       "checkedAt": "2026-10-23T05:36:27.782Z"
-    },
-    "honkai3-eden": {
-      "qid": null,
-      "reason": "シリーズ確認不能のため除外(候補qid=Q294054, Ödön)。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateQid": "Q294054",
-      "candidateLabel": "Ödön",
-      "checkedAt": "2026-10-23T05:36:35.710Z"
     },
     "honkai3-seele-alter-ego": {
       "qid": null,
@@ -11265,13 +11231,6 @@
       "seriesMatch": true,
       "checkedAt": "2026-10-23T05:46:14.735Z"
     },
-    "majosaiban-tono-hanna": {
-      "qid": "Q135616945",
-      "label": "Hanna Tōno",
-      "source": "search-verified",
-      "seriesMatch": true,
-      "checkedAt": "2026-10-23T05:46:19.521Z"
-    },
     "majosaiban-natsume-an-an": {
       "qid": "Q135616935",
       "label": "An'an Natsume",
@@ -11279,33 +11238,12 @@
       "seriesMatch": true,
       "checkedAt": "2026-10-23T05:46:24.383Z"
     },
-    "majosaiban-jogasaki-noah": {
-      "qid": "Q135616936",
-      "label": "Noa Jōgasaki",
-      "source": "search-verified",
-      "seriesMatch": true,
-      "checkedAt": "2026-10-23T05:46:29.249Z"
-    },
     "majosaiban-kurobe-nanoka": {
       "qid": "Q135616942",
       "label": "Nanoka Kurobe",
       "source": "search-verified",
       "seriesMatch": true,
       "checkedAt": "2026-10-23T05:46:34.036Z"
-    },
-    "majosaiban-hasumi-leia": {
-      "qid": "Q135616937",
-      "label": "Leia Hasumi",
-      "source": "search-verified",
-      "seriesMatch": true,
-      "checkedAt": "2026-10-23T05:46:38.833Z"
-    },
-    "majosaiban-housho-margo": {
-      "qid": "Q135616940",
-      "label": "Māgo Hōshō",
-      "source": "search-verified",
-      "seriesMatch": true,
-      "checkedAt": "2026-10-23T05:46:43.682Z"
     },
     "majosaiban-shito-alisa": {
       "qid": "Q135616943",
@@ -11326,12 +11264,6 @@
       "reason": "not-found",
       "source": "not-found",
       "checkedAt": "2026-10-23T05:46:55.801Z"
-    },
-    "majosaiban-kurobe-honoka": {
-      "qid": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-23T05:46:56.990Z"
     },
     "mahoutsukainoyoru-aozaki-aoko": {
       "qid": null,
@@ -11787,22 +11719,6 @@
       "seriesMatch": true,
       "checkedAt": "2026-10-23T05:51:15.965Z"
     },
-    "reverse1999-sonetto": {
-      "qid": null,
-      "reason": "シリーズ確認不能のため除外(候補qid=Q80056, sonnet)。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateQid": "Q80056",
-      "candidateLabel": "sonnet",
-      "checkedAt": "2026-10-23T05:51:25.044Z"
-    },
-    "reverse1999-37": {
-      "qid": null,
-      "reason": "シリーズ確認不能のため除外(候補qid=Q712770, 37)。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateQid": "Q712770",
-      "candidateLabel": "37",
-      "checkedAt": "2026-10-23T05:51:31.739Z"
-    },
     "reverse1999-isolde": {
       "qid": null,
       "reason": "シリーズ確認不能のため除外(候補qid=Q140299268, Isolte Cruel)。要レビュー→確認できればoverridesへ。",
@@ -12100,24 +12016,6 @@
       "source": "search-verified",
       "seriesMatch": true,
       "checkedAt": "2026-10-23T05:54:36.206Z"
-    },
-    "stellive-akane-lize": {
-      "qid": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-23T05:54:38.637Z"
-    },
-    "stellive-tenko-shibuki": {
-      "qid": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-23T05:54:39.842Z"
-    },
-    "stellive-yuzuha-riko": {
-      "qid": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-23T05:54:41.025Z"
     },
     "summerpockets-naruse-shiroha": {
       "qid": "Q118539125",
@@ -12437,12 +12335,6 @@
       "source": "search-verified",
       "seriesMatch": true,
       "checkedAt": "2026-10-23T05:58:36.055Z"
-    },
-    "va11halla-jill-stingray": {
-      "qid": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-23T05:58:38.456Z"
     },
     "vedalai-neuro-sama": {
       "qid": null,
@@ -13230,14 +13122,6 @@
       "reason": "not-found",
       "source": "not-found",
       "checkedAt": "2026-10-23T08:21:13.650Z"
-    },
-    "alienstage-mizi": {
-      "qid": null,
-      "reason": "シリーズ確認不能のため除外(候補qid=Q1166, Michigan)。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateQid": "Q1166",
-      "candidateLabel": "Michigan",
-      "checkedAt": "2026-10-23T08:21:22.024Z"
     },
     "alienstage-sua": {
       "qid": null,

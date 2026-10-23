@@ -55594,52 +55594,6 @@
     "imageApproved": false
   },
   {
-    "id": "arknights-texas-the-omertosa",
-    "name": "血掟テキサス",
-    "aliases": [
-      "Texas the Omertosa"
-    ],
-    "series": "アークナイツ",
-    "dlsiteQuery": "アークナイツ 血掟テキサス",
-    "axes": {
-      "genderExpression": "女性",
-      "ageFeel": "同年代",
-      "build": "標準",
-      "bust": "標準",
-      "distance": "中立",
-      "skinTone": "標準",
-      "species": "獣人",
-      "combat": "戦う",
-      "affiliationKind": "軍・組織",
-      "affiliationName": "ペンギン急便",
-      "stature": "標準",
-      "personality": [
-        "クール"
-      ],
-      "roles": [],
-      "looks": [
-        "ケモミミ",
-        "長髪"
-      ],
-      "hairColor": [
-        "黒"
-      ],
-      "outfit": [],
-      "mood": [],
-      "occupation": [
-        "スパイ・暗殺者"
-      ]
-    },
-    "reviewed": false,
-    "hitomiQuery": {
-      "character": "texas the omertosa",
-      "series": null
-    },
-    "provisional": false,
-    "imagePath": null,
-    "imageApproved": false
-  },
-  {
     "id": "arknights-ceobe",
     "name": "ケオベ",
     "aliases": [
@@ -56788,56 +56742,6 @@
     "reviewed": false,
     "hitomiQuery": {
       "character": "jaguar",
-      "series": null
-    },
-    "provisional": false,
-    "imagePath": null,
-    "imageApproved": false
-  },
-  {
-    "id": "kemono-island-fox",
-    "name": "シマハイイロギツネ",
-    "aliases": [
-      "しまはい"
-    ],
-    "series": "けものフレンズ",
-    "dlsiteQuery": "けものフレンズ シマハイイロギツネ",
-    "axes": {
-      "genderExpression": "女性",
-      "ageFeel": "同年代",
-      "build": "標準",
-      "bust": "大きい",
-      "distance": "やや積極的",
-      "skinTone": "標準",
-      "species": "獣人",
-      "combat": "戦わない",
-      "affiliationKind": "非人間・その他",
-      "affiliationName": "けものフレンズVぷろじぇくと",
-      "stature": "標準",
-      "personality": [
-        "元気"
-      ],
-      "roles": [],
-      "looks": [
-        "ケモミミ",
-        "尻尾",
-        "長髪",
-        "ツインテール"
-      ],
-      "hairColor": [
-        "茶",
-        "銀",
-        "橙"
-      ],
-      "outfit": [],
-      "mood": [],
-      "occupation": [
-        "アイドル・芸能"
-      ]
-    },
-    "reviewed": false,
-    "hitomiQuery": {
-      "character": "island fox",
       "series": null
     },
     "provisional": false,
@@ -69835,51 +69739,6 @@
     "imageApproved": false
   },
   {
-    "id": "homicipher-adashino-adami",
-    "name": "化之あだみ",
-    "aliases": [
-      "あだみ",
-      "Adashino Adami"
-    ],
-    "series": "文字化化",
-    "dlsiteQuery": "文字化化 化之あだみ",
-    "axes": {
-      "genderExpression": "女性",
-      "ageFeel": "同年代",
-      "build": "華奢",
-      "bust": "標準",
-      "distance": "中立",
-      "skinTone": "色白",
-      "species": "人間",
-      "combat": "戦う",
-      "affiliationKind": "学生",
-      "affiliationName": null,
-      "stature": "標準",
-      "personality": [
-        "元気",
-        "生意気"
-      ],
-      "roles": [],
-      "looks": [
-        "長髪"
-      ],
-      "hairColor": [
-        "黒"
-      ],
-      "outfit": [],
-      "mood": [],
-      "occupation": []
-    },
-    "reviewed": false,
-    "hitomiQuery": {
-      "character": "adashino adami",
-      "series": null
-    },
-    "provisional": false,
-    "imagePath": null,
-    "imageApproved": false
-  },
-  {
     "id": "honkai3-yae-sakura",
     "name": "八重桜",
     "aliases": [
@@ -70039,52 +69898,6 @@
     "imageApproved": false
   },
   {
-    "id": "honkai3-herrscher-of-sentience",
-    "name": "識の律者",
-    "aliases": [
-      "Herrscher of Sentience",
-      "識律"
-    ],
-    "series": "崩壊3rd",
-    "dlsiteQuery": "崩壊3rd 識の律者",
-    "axes": {
-      "genderExpression": "女性",
-      "ageFeel": "同年代",
-      "build": "華奢",
-      "bust": "小さい",
-      "distance": "やや積極的",
-      "skinTone": "色白",
-      "species": "人間",
-      "combat": "戦う",
-      "affiliationKind": "非人間・その他",
-      "affiliationName": null,
-      "stature": "標準",
-      "personality": [
-        "元気",
-        "生意気"
-      ],
-      "roles": [],
-      "looks": [
-        "長髪"
-      ],
-      "hairColor": [
-        "白",
-        "銀"
-      ],
-      "outfit": [],
-      "mood": [],
-      "occupation": []
-    },
-    "reviewed": false,
-    "hitomiQuery": {
-      "character": "herrscher of sentience",
-      "series": null
-    },
-    "provisional": false,
-    "imagePath": null,
-    "imageApproved": false
-  },
-  {
     "id": "honkai3-mobius",
     "name": "メビウス",
     "aliases": [
@@ -70178,54 +69991,6 @@
     "reviewed": false,
     "hitomiQuery": {
       "character": "himeko murata",
-      "series": null
-    },
-    "provisional": false,
-    "imagePath": null,
-    "imageApproved": false
-  },
-  {
-    "id": "honkai3-eden",
-    "name": "エデン",
-    "aliases": [
-      "Eden",
-      "伊甸"
-    ],
-    "series": "崩壊3rd",
-    "dlsiteQuery": "崩壊3rd エデン",
-    "axes": {
-      "genderExpression": "女性",
-      "ageFeel": "年上",
-      "build": "標準",
-      "bust": "大きい",
-      "distance": "中立",
-      "skinTone": "色白",
-      "species": "人間",
-      "combat": "戦う",
-      "affiliationKind": "軍・組織",
-      "affiliationName": "逐火之蛾",
-      "stature": "標準",
-      "personality": [
-        "おっとり",
-        "姉御"
-      ],
-      "roles": [],
-      "looks": [
-        "長髪"
-      ],
-      "hairColor": [
-        "茶"
-      ],
-      "outfit": [],
-      "mood": [],
-      "occupation": [
-        "兵士・軍人",
-        "アイドル・芸能"
-      ]
-    },
-    "reviewed": false,
-    "hitomiQuery": {
-      "character": "eden",
       "series": null
     },
     "provisional": false,
@@ -76911,53 +76676,6 @@
     "imageApproved": false
   },
   {
-    "id": "majosaiban-tono-hanna",
-    "name": "遠野ハンナ",
-    "aliases": [
-      "ハンナ",
-      "Hanna Tono"
-    ],
-    "series": "魔法少女ノ魔女裁判",
-    "dlsiteQuery": "魔法少女ノ魔女裁判 遠野ハンナ",
-    "axes": {
-      "genderExpression": "女性",
-      "ageFeel": "同年代",
-      "build": "華奢",
-      "bust": "小さい",
-      "distance": "やや受け身",
-      "skinTone": "色白",
-      "species": "人間",
-      "combat": "戦わない",
-      "affiliationKind": "学生",
-      "affiliationName": null,
-      "stature": "標準",
-      "personality": [
-        "生意気"
-      ],
-      "roles": [
-        "友人"
-      ],
-      "looks": [
-        "長髪",
-        "ツインテール"
-      ],
-      "hairColor": [
-        "金"
-      ],
-      "outfit": [],
-      "mood": [],
-      "occupation": []
-    },
-    "reviewed": false,
-    "hitomiQuery": {
-      "character": "tono hanna",
-      "series": null
-    },
-    "provisional": false,
-    "imagePath": null,
-    "imageApproved": false
-  },
-  {
     "id": "majosaiban-natsume-an-an",
     "name": "夏目アンアン",
     "aliases": [
@@ -77003,50 +76721,6 @@
     "imageApproved": false
   },
   {
-    "id": "majosaiban-jogasaki-noah",
-    "name": "城ケ崎ノア",
-    "aliases": [
-      "ノア",
-      "Noah Jogasaki"
-    ],
-    "series": "魔法少女ノ魔女裁判",
-    "dlsiteQuery": "魔法少女ノ魔女裁判 城ケ崎ノア",
-    "axes": {
-      "genderExpression": "女性",
-      "ageFeel": "同年代",
-      "build": "華奢",
-      "bust": "小さい",
-      "distance": "中立",
-      "skinTone": "色白",
-      "species": "人間",
-      "combat": "戦わない",
-      "affiliationKind": "学生",
-      "affiliationName": null,
-      "stature": "小柄",
-      "personality": [
-        "おっとり"
-      ],
-      "roles": [],
-      "looks": [
-        "長髪"
-      ],
-      "hairColor": [
-        "白"
-      ],
-      "outfit": [],
-      "mood": [],
-      "occupation": []
-    },
-    "reviewed": false,
-    "hitomiQuery": {
-      "character": "jogasaki noah",
-      "series": null
-    },
-    "provisional": false,
-    "imagePath": null,
-    "imageApproved": false
-  },
-  {
     "id": "majosaiban-kurobe-nanoka",
     "name": "黒部ナノカ",
     "aliases": [
@@ -77085,96 +76759,6 @@
     "reviewed": false,
     "hitomiQuery": {
       "character": "nanoka kurobe",
-      "series": null
-    },
-    "provisional": false,
-    "imagePath": null,
-    "imageApproved": false
-  },
-  {
-    "id": "majosaiban-hasumi-leia",
-    "name": "蓮見レイア",
-    "aliases": [
-      "レイア",
-      "Leia Hasumi"
-    ],
-    "series": "魔法少女ノ魔女裁判",
-    "dlsiteQuery": "魔法少女ノ魔女裁判 蓮見レイア",
-    "axes": {
-      "genderExpression": "女性",
-      "ageFeel": "同年代",
-      "build": "標準",
-      "bust": "標準",
-      "distance": "積極的",
-      "skinTone": "色白",
-      "species": "人間",
-      "combat": "戦わない",
-      "affiliationKind": "学生",
-      "affiliationName": null,
-      "stature": "長身",
-      "personality": [
-        "元気"
-      ],
-      "roles": [],
-      "looks": [],
-      "hairColor": [
-        "金"
-      ],
-      "outfit": [],
-      "mood": [],
-      "occupation": [
-        "アイドル・芸能"
-      ]
-    },
-    "reviewed": false,
-    "hitomiQuery": {
-      "character": "hasumi leia",
-      "series": null
-    },
-    "provisional": false,
-    "imagePath": null,
-    "imageApproved": false
-  },
-  {
-    "id": "majosaiban-housho-margo",
-    "name": "宝生マーゴ",
-    "aliases": [
-      "マーゴ",
-      "Margo Housho"
-    ],
-    "series": "魔法少女ノ魔女裁判",
-    "dlsiteQuery": "魔法少女ノ魔女裁判 宝生マーゴ",
-    "axes": {
-      "genderExpression": "女性",
-      "ageFeel": "同年代",
-      "build": "標準",
-      "bust": "標準",
-      "distance": "やや積極的",
-      "skinTone": "色白",
-      "species": "人間",
-      "combat": "戦わない",
-      "affiliationKind": "学生",
-      "affiliationName": null,
-      "stature": "標準",
-      "personality": [
-        "クール"
-      ],
-      "roles": [],
-      "looks": [],
-      "hairColor": [
-        "黒"
-      ],
-      "outfit": [
-        "和服・着物"
-      ],
-      "mood": [
-        "背徳寄り"
-      ],
-      "occupation": []
-    },
-    "reviewed": false,
-    "hitomiQuery": {
-      "character": "housho margo",
       "series": null
     },
     "provisional": false,
@@ -77313,49 +76897,6 @@
     "reviewed": false,
     "hitomiQuery": {
       "character": "yuki tsukishiro",
-      "series": null
-    },
-    "provisional": false,
-    "imagePath": null,
-    "imageApproved": false
-  },
-  {
-    "id": "majosaiban-kurobe-honoka",
-    "name": "黒部ホノカ",
-    "aliases": [
-      "ホノカ"
-    ],
-    "series": "魔法少女ノ魔女裁判",
-    "dlsiteQuery": "魔法少女ノ魔女裁判 黒部ホノカ",
-    "axes": {
-      "genderExpression": "女性",
-      "ageFeel": "同年代",
-      "build": "華奢",
-      "bust": "標準",
-      "distance": "中立",
-      "skinTone": "色白",
-      "species": "人間",
-      "combat": "戦わない",
-      "affiliationKind": "学生",
-      "affiliationName": null,
-      "stature": "標準",
-      "personality": [
-        "元気"
-      ],
-      "roles": [
-        "妹"
-      ],
-      "looks": [],
-      "hairColor": [
-        "白"
-      ],
-      "outfit": [],
-      "mood": [],
-      "occupation": []
-    },
-    "reviewed": false,
-    "hitomiQuery": {
-      "character": "kurobe honoka",
       "series": null
     },
     "provisional": false,
@@ -80471,101 +80012,6 @@
     "imageApproved": false
   },
   {
-    "id": "reverse1999-sonetto",
-    "name": "ソネット",
-    "aliases": [
-      "Sonetto"
-    ],
-    "series": "リバース：1999",
-    "dlsiteQuery": "リバース1999 ソネット",
-    "axes": {
-      "genderExpression": "女性",
-      "ageFeel": "同年代",
-      "build": "標準",
-      "bust": "小さい",
-      "distance": "やや受け身",
-      "skinTone": "標準",
-      "species": "人間",
-      "combat": "戦う",
-      "affiliationKind": "軍・組織",
-      "affiliationName": "聖パブロフ財団",
-      "stature": "標準",
-      "personality": [
-        "クール"
-      ],
-      "roles": [
-        "友人"
-      ],
-      "looks": [
-        "長髪"
-      ],
-      "hairColor": [
-        "橙"
-      ],
-      "outfit": [],
-      "mood": [
-        "純愛寄り"
-      ],
-      "occupation": [
-        "魔法使い・魔術師"
-      ]
-    },
-    "reviewed": false,
-    "hitomiQuery": {
-      "character": "sonetto",
-      "series": null
-    },
-    "provisional": false,
-    "imagePath": null,
-    "imageApproved": false
-  },
-  {
-    "id": "reverse1999-37",
-    "name": "37",
-    "aliases": [],
-    "series": "リバース：1999",
-    "dlsiteQuery": "リバース1999 37",
-    "axes": {
-      "genderExpression": "女性",
-      "ageFeel": "同年代",
-      "build": "華奢",
-      "bust": "小さい",
-      "distance": "中立",
-      "skinTone": "標準",
-      "species": "人間",
-      "combat": "戦う",
-      "affiliationKind": "軍・組織",
-      "affiliationName": "アペイロン",
-      "stature": "標準",
-      "personality": [
-        "元気"
-      ],
-      "roles": [
-        "友人"
-      ],
-      "looks": [
-        "長髪"
-      ],
-      "hairColor": [
-        "青"
-      ],
-      "outfit": [],
-      "mood": [],
-      "occupation": [
-        "研究者・発明家",
-        "魔法使い・魔術師"
-      ]
-    },
-    "reviewed": false,
-    "hitomiQuery": {
-      "character": "37",
-      "series": null
-    },
-    "provisional": false,
-    "imagePath": null,
-    "imageApproved": false
-  },
-  {
     "id": "reverse1999-isolde",
     "name": "イゾルデ",
     "aliases": [
@@ -82669,148 +82115,6 @@
     "reviewed": false,
     "hitomiQuery": {
       "character": "mayuri shiina",
-      "series": null
-    },
-    "provisional": false,
-    "imagePath": null,
-    "imageApproved": false
-  },
-  {
-    "id": "stellive-akane-lize",
-    "name": "朱音リゼ",
-    "aliases": [
-      "Akane Lize",
-      "アカネ・リゼ"
-    ],
-    "series": "ステライブ",
-    "dlsiteQuery": "朱音リゼ",
-    "axes": {
-      "genderExpression": "女性",
-      "ageFeel": "同年代",
-      "build": "標準",
-      "bust": "大きい",
-      "distance": "中立",
-      "skinTone": "色白",
-      "species": "人間",
-      "combat": "戦わない",
-      "affiliationKind": "社会人",
-      "affiliationName": "ステライブ",
-      "stature": "標準",
-      "personality": [
-        "クール"
-      ],
-      "roles": [],
-      "looks": [
-        "長髪"
-      ],
-      "hairColor": [
-        "赤"
-      ],
-      "outfit": [],
-      "mood": [],
-      "occupation": [
-        "アイドル・芸能"
-      ]
-    },
-    "reviewed": false,
-    "hitomiQuery": {
-      "character": "akane lize",
-      "series": null
-    },
-    "provisional": false,
-    "imagePath": null,
-    "imageApproved": false
-  },
-  {
-    "id": "stellive-tenko-shibuki",
-    "name": "天狐紫吹",
-    "aliases": [
-      "Tenko Shibuki",
-      "テンコ・シブキ"
-    ],
-    "series": "ステライブ",
-    "dlsiteQuery": "天狐紫吹",
-    "axes": {
-      "genderExpression": "女性",
-      "ageFeel": "同年代",
-      "build": "華奢",
-      "bust": "小さい",
-      "distance": "中立",
-      "skinTone": "色白",
-      "species": "獣人",
-      "combat": "戦わない",
-      "affiliationKind": "社会人",
-      "affiliationName": "ステライブ",
-      "stature": "小柄",
-      "personality": [
-        "元気",
-        "生意気"
-      ],
-      "roles": [],
-      "looks": [
-        "ケモミミ",
-        "尻尾",
-        "長髪"
-      ],
-      "hairColor": [
-        "紫"
-      ],
-      "outfit": [],
-      "mood": [],
-      "occupation": [
-        "アイドル・芸能"
-      ]
-    },
-    "reviewed": false,
-    "hitomiQuery": {
-      "character": "tenko shibuki",
-      "series": null
-    },
-    "provisional": false,
-    "imagePath": null,
-    "imageApproved": false
-  },
-  {
-    "id": "stellive-yuzuha-riko",
-    "name": "柚葉莉子",
-    "aliases": [
-      "Yuzuha Riko",
-      "ユズハ・リコ"
-    ],
-    "series": "ステライブ",
-    "dlsiteQuery": "柚葉莉子",
-    "axes": {
-      "genderExpression": "女性",
-      "ageFeel": "同年代",
-      "build": "標準",
-      "bust": "大きい",
-      "distance": "中立",
-      "skinTone": "色白",
-      "species": "人間",
-      "combat": "戦わない",
-      "affiliationKind": "社会人",
-      "affiliationName": "ステライブ",
-      "stature": "標準",
-      "personality": [
-        "元気"
-      ],
-      "roles": [],
-      "looks": [
-        "長髪",
-        "ツインテール"
-      ],
-      "hairColor": [
-        "緑"
-      ],
-      "outfit": [],
-      "mood": [],
-      "occupation": [
-        "アイドル・芸能"
-      ]
-    },
-    "reviewed": false,
-    "hitomiQuery": {
-      "character": "yuzuha riko",
       "series": null
     },
     "provisional": false,
@@ -85028,52 +84332,6 @@
     "reviewed": false,
     "hitomiQuery": {
       "character": "tsuki uzaki",
-      "series": null
-    },
-    "provisional": false,
-    "imagePath": null,
-    "imageApproved": false
-  },
-  {
-    "id": "va11halla-jill-stingray",
-    "name": "ジル・スティングレイ",
-    "aliases": [
-      "ジル",
-      "Jill Stingray",
-      "Julianne Natalie Stingray"
-    ],
-    "series": "VA-11 Hall-A",
-    "dlsiteQuery": "ジル・スティングレイ",
-    "axes": {
-      "genderExpression": "女性",
-      "ageFeel": "年上",
-      "build": "標準",
-      "bust": "標準",
-      "distance": "やや受け身",
-      "skinTone": "色白",
-      "species": "人間",
-      "combat": "戦わない",
-      "affiliationKind": "社会人",
-      "affiliationName": "VA-11 Hall-A",
-      "stature": "標準",
-      "personality": [
-        "クール"
-      ],
-      "roles": [],
-      "looks": [
-        "長髪",
-        "ツインテール"
-      ],
-      "hairColor": [
-        "紫"
-      ],
-      "outfit": [],
-      "mood": [],
-      "occupation": []
-    },
-    "reviewed": false,
-    "hitomiQuery": {
-      "character": "jill stingray",
       "series": null
     },
     "provisional": false,
@@ -90487,55 +89745,6 @@
     "reviewed": false,
     "hitomiQuery": {
       "character": "yachiyo runami",
-      "series": null
-    },
-    "provisional": false,
-    "imagePath": null,
-    "imageApproved": false
-  },
-  {
-    "id": "alienstage-mizi",
-    "name": "ミジ",
-    "aliases": [
-      "Mizi"
-    ],
-    "series": "ALIEN STAGE",
-    "dlsiteQuery": "ALIEN STAGE ミジ",
-    "axes": {
-      "genderExpression": "女性",
-      "ageFeel": "同年代",
-      "build": "華奢",
-      "bust": "標準",
-      "distance": "やや積極的",
-      "skinTone": "色白",
-      "species": "人間",
-      "combat": "戦わない",
-      "affiliationKind": "学生",
-      "affiliationName": null,
-      "stature": "標準",
-      "personality": [
-        "元気"
-      ],
-      "roles": [
-        "恋人・伴侶"
-      ],
-      "looks": [
-        "長髪"
-      ],
-      "hairColor": [
-        "桃"
-      ],
-      "outfit": [],
-      "mood": [
-        "純愛寄り"
-      ],
-      "occupation": [
-        "アイドル・芸能"
-      ]
-    },
-    "reviewed": false,
-    "hitomiQuery": {
-      "character": "mizi",
       "series": null
     },
     "provisional": false,
