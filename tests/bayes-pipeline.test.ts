@@ -877,6 +877,21 @@ describe('BB. Wikidataクライアント（scripts/bayes/wikidata-client.mjs）'
     await expect(fetcher('https://www.wikidata.org/w/api.php?a=1')).rejects.toThrow(/レート制限/);
   });
 
+  it('maxlag のエラー応答は待って再試行し、それ以外のエラー応答は中身を付けて投げる', async () => {
+    let calls = 0;
+    const lagged = async () => {
+      calls += 1;
+      return calls === 1 ? jsonResponse({ error: { code: 'maxlag', info: 'Waiting for a database server' } }) : jsonResponse({ entities: {} });
+    };
+    const fetcher = createWikidataFetcher({ fetchImpl: lagged, delayMs: 0, maxlagBackoffMs: 0 });
+    await expect(fetcher('https://www.wikidata.org/w/api.php?a=1')).resolves.toEqual({ entities: {} });
+    expect(calls).toBe(2);
+
+    const failing = async () => jsonResponse({ error: { code: 'no-such-entity', info: 'Could not find an entity' } });
+    const failingFetcher = createWikidataFetcher({ fetchImpl: failing, delayMs: 0, maxlagBackoffMs: 0 });
+    await expect(failingFetcher('https://www.wikidata.org/w/api.php?a=1')).rejects.toThrow(/no-such-entity/);
+  });
+
   it('ok:false のレスポンスはエラーにする', async () => {
     const fetchImpl = async () => ({ ok: false, status: 500, text: async () => '', json: async () => ({}) });
     const fetcher = createWikidataFetcher({ fetchImpl, delayMs: 0 });
