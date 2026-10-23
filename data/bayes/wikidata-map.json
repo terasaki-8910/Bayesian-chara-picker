@@ -13045,6 +13045,237 @@
       "source": "search-verified",
       "seriesMatch": true,
       "checkedAt": "2026-10-23T06:23:24.689Z"
+    },
+    "mygo-chihaya-anon": {
+      "qid": "Q120985082",
+      "label": "Anon Chihaya",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T08:19:36.953Z"
+    },
+    "mygo-nagasaki-soyo": {
+      "qid": "Q120985085",
+      "label": "Soyo Nagasaki",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T08:19:41.777Z"
+    },
+    "mygo-shiina-taki": {
+      "qid": "Q120985084",
+      "label": "Taki Shiina",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T08:19:46.615Z"
+    },
+    "mygo-takamatsu-tomori": {
+      "qid": "Q120985083",
+      "label": "Tomori Takamatsu",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T08:19:51.462Z"
+    },
+    "mygo-kaname-raana": {
+      "qid": "Q120985086",
+      "label": "Raana Kaname",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T08:19:56.584Z"
+    },
+    "avemujica-togawa-sakiko": {
+      "qid": "Q121600088",
+      "label": "Sakiko Togawa",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T08:20:01.141Z"
+    },
+    "avemujica-misumi-uika": {
+      "qid": "Q121600268",
+      "label": "Uika Misumi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T08:20:05.992Z"
+    },
+    "avemujica-wakaba-mutsumi": {
+      "qid": "Q121600113",
+      "label": "Mutsumi Wakaba",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T08:20:10.824Z"
+    },
+    "avemujica-yahata-umiri": {
+      "qid": "Q121600221",
+      "label": "Umiri Yahata",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T08:20:15.613Z"
+    },
+    "avemujica-yuutenji-nyamu": {
+      "qid": "Q121909754",
+      "label": "Nyamu Yūtenji",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T08:20:20.439Z"
+    },
+    "hasunosora-hinoshita-kaho": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T08:20:22.878Z"
+    },
+    "hasunosora-otomune-kozue": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T08:20:24.082Z"
+    },
+    "hasunosora-murano-sayaka": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T08:20:25.288Z"
+    },
+    "hasunosora-osawa-rurino": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T08:20:26.490Z"
+    },
+    "hasunosora-momose-ginko": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T08:20:27.711Z"
+    },
+    "hasunosora-yugiri-tsuzuri": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T08:20:28.910Z"
+    },
+    "hasunosora-fujishima-megumi": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T08:20:30.142Z"
+    },
+    "hasunosora-kachimachi-kosuzu": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T08:20:31.394Z"
+    },
+    "hasunosora-anyoji-hime": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T08:20:32.696Z"
+    },
+    "madoka-sakura-kyoko": {
+      "qid": "Q11382982",
+      "label": "Kyoko Sakura",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T08:20:36.158Z"
+    },
+    "kon-hirasawa-yui": {
+      "qid": "Q4023191",
+      "label": "Yui Hirasawa",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T08:20:40.987Z"
+    },
+    "kon-tainaka-ritsu": {
+      "qid": "Q3937809",
+      "label": "Ritsu Tainaka",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T08:20:45.821Z"
+    },
+    "suiseinomajo-suletta-mercury": {
+      "qid": "Q113089992",
+      "label": "Suletta Mercury",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T08:20:50.655Z"
+    },
+    "suiseinomajo-miorine-rembran": {
+      "qid": "Q113089994",
+      "label": "Miorine Rembran",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T08:20:55.484Z"
+    },
+    "girls-band-cry-iseri-nina": {
+      "qid": "Q125884560",
+      "label": "Nina Iseri",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T08:21:00.346Z"
+    },
+    "girls-band-cry-kawaragi-momoka": {
+      "qid": "Q125884561",
+      "label": "Momoka Kawaragi",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T08:21:05.180Z"
+    },
+    "lycrecoil-inoue-takina": {
+      "qid": "Q112860533",
+      "label": "Takina Inoue",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T08:21:10.029Z"
+    },
+    "chokaguyahime-sakayori-iroha": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T08:21:12.429Z"
+    },
+    "chokaguyahime-runami-yachiyo": {
+      "qid": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-23T08:21:13.650Z"
+    },
+    "alienstage-mizi": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q1166, Michigan)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q1166",
+      "candidateLabel": "Michigan",
+      "checkedAt": "2026-10-23T08:21:22.024Z"
+    },
+    "alienstage-sua": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q16256674, Su-a)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q16256674",
+      "candidateLabel": "Su-a",
+      "checkedAt": "2026-10-23T08:21:29.437Z"
+    },
+    "kemono-kaban": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q467505, handbag)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q467505",
+      "candidateLabel": "handbag",
+      "checkedAt": "2026-10-23T08:21:36.089Z"
+    },
+    "strikewitches-eila": {
+      "qid": "Q134434665",
+      "label": "Eila Ilmatar Juutilainen",
+      "source": "search-verified",
+      "seriesMatch": true,
+      "checkedAt": "2026-10-23T08:21:39.753Z"
+    },
+    "reverse1999-vertin": {
+      "qid": null,
+      "reason": "シリーズ確認不能のため除外(候補qid=Q7317, Giuseppe Verdi)。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateQid": "Q7317",
+      "candidateLabel": "Giuseppe Verdi",
+      "checkedAt": "2026-10-23T08:21:48.330Z"
     }
   }
 }

@@ -6697,6 +6697,144 @@
     },
     "nikke-rapi": {
       "genderExpression": "女性"
-    }
+    },
+    "mygo-chihaya-anon": {
+      "genderExpression": "女性",
+      "hairColor": "桃",
+      "eyeColor": "grey",
+      "species": [
+        "人間"
+      ]
+    },
+    "mygo-nagasaki-soyo": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "mygo-shiina-taki": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "mygo-takamatsu-tomori": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "mygo-kaname-raana": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "avemujica-togawa-sakiko": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "avemujica-misumi-uika": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "avemujica-wakaba-mutsumi": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "avemujica-yahata-umiri": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "avemujica-yuutenji-nyamu": {
+      "genderExpression": "女性",
+      "hairColor": "紫",
+      "species": [
+        "人間"
+      ]
+    },
+    "hasunosora-hinoshita-kaho": {},
+    "hasunosora-otomune-kozue": {},
+    "hasunosora-murano-sayaka": {},
+    "hasunosora-osawa-rurino": {},
+    "hasunosora-momose-ginko": {},
+    "hasunosora-yugiri-tsuzuri": {},
+    "hasunosora-fujishima-megumi": {},
+    "hasunosora-kachimachi-kosuzu": {},
+    "hasunosora-anyoji-hime": {},
+    "madoka-sakura-kyoko": {
+      "genderExpression": "女性",
+      "hairColor": "赤",
+      "species": [
+        "人間"
+      ]
+    },
+    "kon-hirasawa-yui": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "kon-tainaka-ritsu": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "suiseinomajo-suletta-mercury": {
+      "genderExpression": "女性",
+      "hairColor": "赤",
+      "eyeColor": "blue",
+      "species": [
+        "人間"
+      ]
+    },
+    "suiseinomajo-miorine-rembran": {
+      "genderExpression": "女性",
+      "hairColor": "白",
+      "species": [
+        "人間"
+      ]
+    },
+    "girls-band-cry-iseri-nina": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "girls-band-cry-kawaragi-momoka": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "lycrecoil-inoue-takina": {
+      "genderExpression": "女性",
+      "hairColor": "黒",
+      "eyeColor": "purple",
+      "species": [
+        "人間"
+      ]
+    },
+    "chokaguyahime-sakayori-iroha": {},
+    "chokaguyahime-runami-yachiyo": {},
+    "alienstage-mizi": {},
+    "alienstage-sua": {},
+    "kemono-kaban": {},
+    "strikewitches-eila": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "reverse1999-vertin": {}
   }
 }
