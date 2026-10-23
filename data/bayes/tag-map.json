@@ -10924,27 +10924,6 @@
       ],
       "checkedAt": "2026-10-23T04:13:01.312Z"
     },
-    "neptuneseries-purple-heart": {
-      "tag": "purple_heart_(neptunia)",
-      "postCount": 1826,
-      "source": "wildcard-verified",
-      "seriesOverlap": 0.9972617743702081,
-      "candidatesTried": [
-        "purple_heart",
-        "heart_purple",
-        "purple_heart_(neptune_(series))",
-        "purple_heart(*)",
-        "purple(*)"
-      ],
-      "allCandidates": [
-        "purple_heart_(neptunia)(1826)",
-        "purple_pikmin(825)",
-        "purple_heart_(lost_purple)_(neptunia)(531)",
-        "purple_sister(377)",
-        "purple_haze_(stand)(157)"
-      ],
-      "checkedAt": "2026-10-23T04:13:08.927Z"
-    },
     "neptuneseries-noire": {
       "tag": "noire_(neptunia)",
       "postCount": 1764,
@@ -22782,21 +22761,6 @@
         "hiyuki_utamiya(2)"
       ],
       "checkedAt": "2026-10-23T05:10:59.984Z"
-    },
-    "wuwa-fleurdelys": {
-      "tag": "fleurdelys_(wuthering_waves)",
-      "postCount": 1574,
-      "source": "series-qualified",
-      "seriesOverlap": 1,
-      "candidatesTried": [
-        "fleurdelys",
-        "fleurdelys_(wuthering_waves)",
-        "fleurdelys(*)"
-      ],
-      "allCandidates": [
-        "fleurdelys_(wuthering_waves)(1574)"
-      ],
-      "checkedAt": "2026-10-23T05:11:04.389Z"
     },
     "wuwa-yangyang": {
       "tag": "yangyang_(wuthering_waves)",

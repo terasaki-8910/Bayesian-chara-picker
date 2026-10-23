@@ -460,7 +460,17 @@ describe('BA8. niconico-map.json / llm-extract.json の整合性（PLAN「P5b」
       ['niconico-map.json', JSON.stringify(niconicoMap)],
       ['llm-extract.json', JSON.stringify(llmExtractRaw)],
     ];
-    for (const [name, raw] of targets) {
+    // 記事名・キャラ名は固有名詞なので判定から外す（「レオナ」が「オナ」に部分一致する、2026-10-23）。
+    // characters.json の name も同じ理由で判定していない。外すのは名前そのものだけで、地の文は判定に残る。
+    const properNouns = [
+      ...Object.values(niconicoMap.entries as Record<string, { title: string | null }>).map((e) => e.title),
+      ...(Object.values(llmExtractRaw.entries) as { article: string }[]).map((e) => e.article),
+      ...charactersFile.map((c) => c.name),
+    ]
+      .filter((n): n is string => typeof n === 'string' && n.length > 0)
+      .sort((a, b) => b.length - a.length);
+    for (const [name, json] of targets) {
+      const raw = properNouns.reduce((s, noun) => s.split(noun).join(' '), json);
       const lower = raw.toLowerCase();
       for (const term of FORBIDDEN_TERMS) {
         if (lower.includes(term.toLowerCase())) hits.push(`${name}: 「${term}」を含む`);

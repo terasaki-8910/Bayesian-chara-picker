@@ -8213,14 +8213,6 @@
       "candidateLabel": "Neptune",
       "checkedAt": "2026-10-23T04:10:04.344Z"
     },
-    "neptuneseries-purple-heart": {
-      "qid": null,
-      "reason": "シリーズ確認不能のため除外(候補qid=Q7261418, Purple Heart)。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateQid": "Q7261418",
-      "candidateLabel": "Purple Heart",
-      "checkedAt": "2026-10-23T04:10:11.411Z"
-    },
     "neptuneseries-noire": {
       "qid": null,
       "reason": "シリーズ確認不能のため除外(候補qid=Q134126468, Noire)。要レビュー→確認できればoverridesへ。",
@@ -12679,14 +12671,6 @@
       "source": "search-verified",
       "seriesMatch": true,
       "checkedAt": "2026-10-23T06:00:49.934Z"
-    },
-    "wuwa-fleurdelys": {
-      "qid": null,
-      "reason": "シリーズ確認不能のため除外(候補qid=Q132444131, Fleur de Lis)。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateQid": "Q132444131",
-      "candidateLabel": "Fleur de Lis",
-      "checkedAt": "2026-10-23T06:00:55.186Z"
     },
     "wuwa-yangyang": {
       "qid": "Q131451855",
