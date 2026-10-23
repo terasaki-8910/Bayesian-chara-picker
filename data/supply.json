@@ -21932,5 +21932,851 @@
       "seriesFilter": null,
       "fetchedAt": "2026-10-22T13:14:52.695Z"
     }
+  },
+  "bangdreamgirlsbandparty-mortis": {
+    "pageCount": 1,
+    "estimatedRange": [
+      1,
+      1
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 1,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-23T04:02:51.199Z",
+    "hitomi": null
+  },
+  "bangdreamgirlsbandparty-oblivionis": {
+    "pageCount": 1,
+    "estimatedRange": [
+      2,
+      2
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 2,
+      "aiGenerated": 2
+    },
+    "fetchedAt": "2026-10-23T04:03:31.275Z",
+    "hitomi": null
+  },
+  "bangdreamgirlsbandparty-hikawa-sayo": {
+    "pageCount": 1,
+    "estimatedRange": [
+      8,
+      8
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 8,
+      "aiGenerated": 2
+    },
+    "fetchedAt": "2026-10-23T04:04:11.286Z",
+    "hitomi": null
+  },
+  "bangdreamgirlsbandparty-hikawa-hina": {
+    "pageCount": 1,
+    "estimatedRange": [
+      3,
+      3
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 3,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-23T04:04:51.357Z",
+    "hitomi": null
+  },
+  "bangdreamgirlsbandparty-doloris": {
+    "pageCount": 1,
+    "estimatedRange": [
+      2,
+      2
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 2,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-23T04:05:31.425Z",
+    "hitomi": null
+  },
+  "bangdreamgirlsbandparty-mitake-ran": {
+    "pageCount": 1,
+    "estimatedRange": [
+      3,
+      3
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 3,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-23T04:06:11.918Z",
+    "hitomi": null
+  },
+  "bangdreamgirlsbandparty-imai-lisa": {
+    "pageCount": 1,
+    "estimatedRange": [
+      7,
+      7
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 7,
+      "aiGenerated": 5
+    },
+    "fetchedAt": "2026-10-23T04:06:51.403Z",
+    "hitomi": null
+  },
+  "bangdreamgirlsbandparty-minato-yukina": {
+    "pageCount": 1,
+    "estimatedRange": [
+      12,
+      12
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 12,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-23T04:07:31.640Z",
+    "hitomi": null
+  },
+  "bangdreamgirlsbandparty-timoris": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-23T04:08:11.717Z",
+    "hitomi": null
+  },
+  "bangdreamgirlsbandparty-tsurumaki-kokoro": {
+    "pageCount": 1,
+    "estimatedRange": [
+      8,
+      8
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 8,
+      "aiGenerated": 3
+    },
+    "fetchedAt": "2026-10-23T04:08:51.697Z",
+    "hitomi": null
+  },
+  "bangdreamgirlsbandparty-aoba-moca": {
+    "pageCount": 1,
+    "estimatedRange": [
+      2,
+      2
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 2,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-23T04:09:31.858Z",
+    "hitomi": null
+  },
+  "bangdreamgirlsbandparty-maruyama-aya": {
+    "pageCount": 1,
+    "estimatedRange": [
+      8,
+      8
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 8,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-23T04:10:11.564Z",
+    "hitomi": null
+  },
+  "bangdreamgirlsbandparty-okusawa-misaki": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-23T04:10:51.608Z",
+    "hitomi": null
+  },
+  "residentevil-jill-valentine": {
+    "pageCount": 1,
+    "estimatedRange": [
+      5,
+      5
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 1
+    },
+    "firstPage": {
+      "items": 5,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-23T04:11:31.716Z",
+    "hitomi": null
+  },
+  "persona-amagi-yukiko": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 29,
+      "aiGenerated": 2
+    },
+    "fetchedAt": "2026-10-23T04:12:11.846Z",
+    "hitomi": null
+  },
+  "hololive-akai-haato": {
+    "pageCount": 1,
+    "estimatedRange": [
+      13,
+      13
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 13,
+      "aiGenerated": 9
+    },
+    "fetchedAt": "2026-10-23T04:12:52.364Z",
+    "hitomi": null
+  },
+  "hololive-himemori-luna": {
+    "pageCount": 1,
+    "estimatedRange": [
+      27,
+      27
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 27,
+      "aiGenerated": 18
+    },
+    "fetchedAt": "2026-10-23T04:13:32.232Z",
+    "hitomi": null
+  },
+  "hololive-yuzuki-choco": {
+    "pageCount": 1,
+    "estimatedRange": [
+      22,
+      22
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 22,
+      "aiGenerated": 16
+    },
+    "fetchedAt": "2026-10-23T04:14:11.866Z",
+    "hitomi": null
+  },
+  "hololive-pekomama": {
+    "pageCount": 1,
+    "estimatedRange": [
+      19,
+      19
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 19,
+      "aiGenerated": 14
+    },
+    "fetchedAt": "2026-10-23T04:14:52.321Z",
+    "hitomi": null
+  },
+  "hololive-tokino-sora": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 30,
+      "aiGenerated": 26
+    },
+    "fetchedAt": "2026-10-23T04:15:32.440Z",
+    "hitomi": null
+  },
+  "hololive-aki-rosenthal": {
+    "pageCount": 1,
+    "estimatedRange": [
+      7,
+      7
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 7,
+      "aiGenerated": 6
+    },
+    "fetchedAt": "2026-10-23T04:16:12.304Z",
+    "hitomi": null
+  },
+  "hololive-roboco-san": {
+    "pageCount": 1,
+    "estimatedRange": [
+      5,
+      5
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 5,
+      "aiGenerated": 4
+    },
+    "fetchedAt": "2026-10-23T04:16:51.854Z",
+    "hitomi": null
+  },
+  "hololive-yozora-mel": {
+    "pageCount": 1,
+    "estimatedRange": [
+      6,
+      6
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 6,
+      "aiGenerated": 5
+    },
+    "fetchedAt": "2026-10-23T04:17:32.405Z",
+    "hitomi": null
+  },
+  "hololive-kurokami-fubuki": {
+    "pageCount": 1,
+    "estimatedRange": [
+      3,
+      3
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 3,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-23T04:18:11.963Z",
+    "hitomi": null
+  },
+  "fgo-katsushika-hokusai": {
+    "pageCount": 1,
+    "estimatedRange": [
+      23,
+      23
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 23,
+      "aiGenerated": 7
+    },
+    "fetchedAt": "2026-10-23T04:18:52.086Z",
+    "hitomi": null
+  },
+  "fgo-barghest": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-23T04:19:32.207Z",
+    "hitomi": null
+  },
+  "fgo-sessyoin-kiara": {
+    "pageCount": 1,
+    "estimatedRange": [
+      5,
+      5
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 5,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-23T04:20:12.074Z",
+    "hitomi": null
+  },
+  "fgo-tamamo-cat": {
+    "pageCount": 1,
+    "estimatedRange": [
+      12,
+      12
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 12,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-23T04:20:52.125Z",
+    "hitomi": null
+  },
+  "fgo-koyanskaya": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-23T04:21:32.272Z",
+    "hitomi": null
+  },
+  "fgo-leonardo-da-vinci": {
+    "pageCount": 1,
+    "estimatedRange": [
+      11,
+      11
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 11,
+      "aiGenerated": 6
+    },
+    "fetchedAt": "2026-10-23T04:22:12.320Z",
+    "hitomi": null
+  },
+  "fgo-ibaraki-douji": {
+    "pageCount": 1,
+    "estimatedRange": [
+      30,
+      30
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 30,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-23T04:22:52.292Z",
+    "hitomi": null
+  },
+  "fgo-yu-mei-ren": {
+    "pageCount": 1,
+    "estimatedRange": [
+      21,
+      21
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 21,
+      "aiGenerated": 4
+    },
+    "fetchedAt": "2026-10-23T04:23:32.335Z",
+    "hitomi": null
+  },
+  "fgo-anastasia": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 30,
+      "aiGenerated": 9
+    },
+    "fetchedAt": "2026-10-23T04:24:12.391Z",
+    "hitomi": null
+  },
+  "fgo-ushiwakamaru": {
+    "pageCount": 1,
+    "estimatedRange": [
+      25,
+      25
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 25,
+      "aiGenerated": 8
+    },
+    "fetchedAt": "2026-10-23T04:24:52.422Z",
+    "hitomi": null
+  },
+  "fgo-lilith": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 30,
+      "aiGenerated": 15
+    },
+    "fetchedAt": "2026-10-23T04:25:32.492Z",
+    "hitomi": null
+  },
+  "fgo-mysterious-heroine-xx": {
+    "pageCount": 1,
+    "estimatedRange": [
+      22,
+      22
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 22,
+      "aiGenerated": 2
+    },
+    "fetchedAt": "2026-10-23T04:26:12.412Z",
+    "hitomi": null
+  },
+  "fgo-artoria-pendragon": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-23T04:26:52.532Z",
+    "hitomi": null
+  },
+  "fgo-marie-antoinette": {
+    "pageCount": 1,
+    "estimatedRange": [
+      7,
+      7
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 7,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-23T04:27:32.519Z",
+    "hitomi": null
+  },
+  "fgo-olga-marie-animusphere": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-23T04:28:12.479Z",
+    "hitomi": null
+  },
+  "fgo-artoria-pendragon-swimsuit-ruler-fate": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-23T04:28:52.590Z",
+    "hitomi": null
+  },
+  "fgo-mysterious-heroine-x-alter": {
+    "pageCount": 1,
+    "estimatedRange": [
+      2,
+      2
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 2,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-23T04:29:32.577Z",
+    "hitomi": null
+  },
+  "fgo-tenochtitlan": {
+    "pageCount": 1,
+    "estimatedRange": [
+      4,
+      4
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 4,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-23T04:30:12.611Z",
+    "hitomi": null
+  },
+  "fgo-scathach-skadi": {
+    "pageCount": 1,
+    "estimatedRange": [
+      5,
+      5
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 5,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-23T04:30:52.617Z",
+    "hitomi": null
+  },
+  "fgo-martha": {
+    "pageCount": 1,
+    "estimatedRange": [
+      22,
+      22
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 22,
+      "aiGenerated": 9
+    },
+    "fetchedAt": "2026-10-23T04:31:32.736Z",
+    "hitomi": null
+  },
+  "fgo-caenis": {
+    "pageCount": 1,
+    "estimatedRange": [
+      9,
+      9
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 9,
+      "aiGenerated": 2
+    },
+    "fetchedAt": "2026-10-23T04:32:12.695Z",
+    "hitomi": null
+  },
+  "fgo-yang-guifei": {
+    "pageCount": 1,
+    "estimatedRange": [
+      12,
+      12
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 1
+    },
+    "firstPage": {
+      "items": 12,
+      "aiGenerated": 3
+    },
+    "fetchedAt": "2026-10-23T04:32:52.770Z",
+    "hitomi": null
+  },
+  "fgo-passionlip": {
+    "pageCount": 1,
+    "estimatedRange": [
+      17,
+      17
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 17,
+      "aiGenerated": 4
+    },
+    "fetchedAt": "2026-10-23T04:33:32.771Z",
+    "hitomi": null
   }
 }

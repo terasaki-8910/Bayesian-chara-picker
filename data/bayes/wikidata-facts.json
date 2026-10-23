@@ -4028,6 +4028,266 @@
         "人間"
       ]
     },
-    "saki-shirouzu-mairu": {}
+    "saki-shirouzu-mairu": {},
+    "bangdreamgirlsbandparty-mortis": {},
+    "bangdreamgirlsbandparty-oblivionis": {},
+    "bangdreamgirlsbandparty-hikawa-sayo": {
+      "genderExpression": "女性",
+      "hairColor": "青",
+      "eyeColor": "green",
+      "species": [
+        "人間"
+      ]
+    },
+    "bangdreamgirlsbandparty-hikawa-hina": {
+      "genderExpression": "女性",
+      "hairColor": "青",
+      "eyeColor": "green",
+      "species": [
+        "人間"
+      ]
+    },
+    "bangdreamgirlsbandparty-doloris": {},
+    "bangdreamgirlsbandparty-mitake-ran": {
+      "genderExpression": "女性",
+      "hairColor": "黒",
+      "species": [
+        "人間"
+      ]
+    },
+    "bangdreamgirlsbandparty-imai-lisa": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "species": [
+        "人間"
+      ]
+    },
+    "bangdreamgirlsbandparty-minato-yukina": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "bangdreamgirlsbandparty-timoris": {},
+    "bangdreamgirlsbandparty-tsurumaki-kokoro": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "eyeColor": "yellow",
+      "species": [
+        "人間"
+      ]
+    },
+    "bangdreamgirlsbandparty-aoba-moca": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "bangdreamgirlsbandparty-maruyama-aya": {
+      "genderExpression": "女性",
+      "hairColor": "桃",
+      "species": [
+        "人間"
+      ]
+    },
+    "bangdreamgirlsbandparty-okusawa-misaki": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "residentevil-jill-valentine": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "persona-amagi-yukiko": {},
+    "hololive-akai-haato": {},
+    "hololive-himemori-luna": {},
+    "hololive-yuzuki-choco": {},
+    "hololive-pekomama": {},
+    "hololive-tokino-sora": {},
+    "hololive-aki-rosenthal": {},
+    "hololive-roboco-san": {},
+    "hololive-yozora-mel": {},
+    "hololive-kurokami-fubuki": {},
+    "fgo-katsushika-hokusai": {},
+    "fgo-barghest": {},
+    "fgo-sessyoin-kiara": {},
+    "fgo-tamamo-cat": {
+      "genderExpression": "女性"
+    },
+    "fgo-koyanskaya": {},
+    "fgo-leonardo-da-vinci": {},
+    "fgo-ibaraki-douji": {},
+    "fgo-yu-mei-ren": {},
+    "fgo-anastasia": {},
+    "fgo-ushiwakamaru": {},
+    "fgo-lilith": {},
+    "fgo-mysterious-heroine-xx": {},
+    "fgo-artoria-pendragon": {},
+    "fgo-marie-antoinette": {},
+    "fgo-olga-marie-animusphere": {},
+    "fgo-artoria-pendragon-swimsuit-ruler-fate": {},
+    "fgo-mysterious-heroine-x-alter": {},
+    "fgo-tenochtitlan": {},
+    "fgo-scathach-skadi": {},
+    "fgo-martha": {},
+    "fgo-caenis": {},
+    "fgo-yang-guifei": {},
+    "fgo-passionlip": {},
+    "fgo-osakabehime": {},
+    "fgo-boudica": {},
+    "fgo-helena-blavatsky": {},
+    "fgo-murasaki-shikibu": {},
+    "fgo-okita-souji-alter": {},
+    "chokaguyahime-kaguya": {},
+    "machikado-chiyoda-momo": {
+      "genderExpression": "女性",
+      "stature": "標準",
+      "species": [
+        "人間"
+      ]
+    },
+    "fatezero-irisviel-von-einzbern": {
+      "genderExpression": "女性"
+    },
+    "fireemblemengage-female-alear": {
+      "hairColor": "赤",
+      "eyeColor": "red"
+    },
+    "fireemblemengage-ivy": {
+      "genderExpression": "女性",
+      "hairColor": "紫",
+      "eyeColor": "purple",
+      "stature": "長身",
+      "species": [
+        "人間"
+      ]
+    },
+    "pokemon-lusamine": {},
+    "pokemon-canari": {},
+    "pokemon-jessie": {},
+    "pokemon-elesa": {},
+    "pokemon-nemona": {},
+    "pokemon-irida": {},
+    "pokemon-sabrina": {},
+    "pokemon-bianca": {},
+    "pokemon-gwynn": {},
+    "pokemon-penny": {},
+    "pokemon-emma": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "pokemon-lacey": {},
+    "pokemon-erika": {},
+    "pokemon-jacinthe": {},
+    "pokemon-harmony": {},
+    "arknights-skadi-the-corrupting-heart": {},
+    "arknights-goldenglow": {},
+    "arknights-sussurro": {},
+    "arknights-irene": {},
+    "arknights-saria": {},
+    "arknights-ho-olheyak": {},
+    "arknights-hoshiguma": {},
+    "arknights-mon3tr": {},
+    "arknights-ling": {},
+    "arknights-virtuosa": {},
+    "arknights-muelsyse": {},
+    "arknights-theresa": {},
+    "arknights-reed": {},
+    "arknights-blue-poison": {},
+    "arknights-la-pluma": {},
+    "arknights-vulpisfoglia": {},
+    "arknights-priestess": {},
+    "arknights-siege": {},
+    "arknights-blaze": {},
+    "arknights-lemuen": {},
+    "arknights-utage": {},
+    "arknights-pramanix": {},
+    "arknights-schwarz": {},
+    "arknights-texas-the-omertosa": {},
+    "arknights-ceobe": {},
+    "arknights-typhon": {},
+    "arknights-silence": {},
+    "arknights-fiammetta": {},
+    "arknights-swire": {},
+    "neptuneseries-neptune": {},
+    "neptuneseries-purple-heart": {},
+    "neptuneseries-noire": {},
+    "neptuneseries-nepgear": {},
+    "neptuneseries-blanc": {},
+    "watamote-tamura-yuri": {},
+    "watamote-katou-asuka": {},
+    "watamote-nemoto-hina": {},
+    "heartcatchprecure-tsukikage-yuri": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "kemono-shoebill": {},
+    "kemono-silver-fox": {},
+    "kemono-japanese-crested-ibis": {},
+    "kemono-northern-white-faced-owl": {},
+    "kemono-ezo-red-fox": {},
+    "kemono-grey-wolf": {},
+    "kemono-dhole": {},
+    "kemono-suri-alpaca": {},
+    "kemono-emperor-penguin": {},
+    "kemono-eurasian-eagle-owl": {},
+    "kemono-jaguar": {},
+    "kemono-island-fox": {},
+    "kemono-brown-long-eared-bat": {},
+    "dccomics-raven": {},
+    "dccomics-harley-quinn": {},
+    "strikewitches-erica-hartmann": {
+      "genderExpression": "女性",
+      "hairColor": "金",
+      "eyeColor": "blue",
+      "species": [
+        "人間"
+      ]
+    },
+    "strikewitches-gertrud-barkhorn": {
+      "genderExpression": "女性",
+      "hairColor": "茶",
+      "eyeColor": "brown",
+      "species": [
+        "人間"
+      ]
+    },
+    "strikewitches-lynette-bishop": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "strikewitches-charlotte-e-yeager": {
+      "genderExpression": "女性",
+      "hairColor": "橙",
+      "eyeColor": "blue",
+      "species": [
+        "人間"
+      ]
+    },
+    "strikewitches-sakamoto-mio": {
+      "genderExpression": "女性",
+      "hairColor": "黒",
+      "species": [
+        "人間"
+      ]
+    },
+    "strikewitches-minna-dietlinde-wilcke": {
+      "genderExpression": "女性",
+      "species": [
+        "人間"
+      ]
+    },
+    "csm-fami": {},
+    "csm-quanxi": {}
   }
 }
