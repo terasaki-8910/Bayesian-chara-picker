@@ -27,7 +27,8 @@
  *      織り込み済みの安全な劣化）
  *
  * 再実行時は checkedAt が7日以内のエントリをスキップする（--force で無視、
- * --char <id> で単体のみ強制再チェック）。
+ * --char <id> で単体のみ強制再チェック。--missing-only はエントリが無いキャラだけを処理する
+ * ——大量に足した直後に、既存キャラの7日ごとの再チェックを巻き込まないため）。
  */
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
@@ -174,6 +175,7 @@ async function mapOneCharacter(niconicoFetch, character, overridesFile) {
 async function main() {
   const args = process.argv.slice(2);
   const force = args.includes('--force');
+  const missingOnly = args.includes('--missing-only');
   const charFilter = args.includes('--char') ? args[args.indexOf('--char') + 1] : null;
 
   const dataDir = new URL('../../data/', import.meta.url);
@@ -206,6 +208,7 @@ async function main() {
     if (force || charFilter) return true;
     const existing = niconicoMap.entries[c.id];
     if (!existing) return true;
+    if (missingOnly) return false;
     return now - new Date(existing.checkedAt).getTime() > SEVEN_DAYS_MS;
   });
 
