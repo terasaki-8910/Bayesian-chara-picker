@@ -946,6 +946,21 @@ describe('BB. Wikidataクライアント（scripts/bayes/wikidata-client.mjs）'
     });
   });
 
+  it('fetchEntityLabels: idが50件を超えたら50件ずつに分けて引き、全件のラベルを返す', async () => {
+    const idsPerCall: number[] = [];
+    const fetchImpl = async (url: string) => {
+      const ids = new URL(url).searchParams.get('ids')!.split('|');
+      idsPerCall.push(ids.length);
+      return jsonResponse({ entities: Object.fromEntries(ids.map((id) => [id, { labels: { en: { value: id } } }])) });
+    };
+    const fetcher = createWikidataFetcher({ fetchImpl, delayMs: 0 });
+    const ids = Array.from({ length: 120 }, (_, i) => `Q${i + 1}`);
+    const labels = await fetchEntityLabels(fetcher, ids);
+    expect(idsPerCall).toEqual([50, 50, 20]);
+    expect(Object.keys(labels)).toHaveLength(120);
+    expect(labels.Q120).toEqual({ ja: '', en: 'Q120' });
+  });
+
   it('claimValuesOf: mainsnak.datavalueを取り出す。プロパティが無ければ空配列', () => {
     const entity = {
       qid: 'Q1',
@@ -1072,10 +1087,28 @@ describe('BB. ニコニコ大百科クライアント（scripts/bayes/niconico-c
     expect(await fetchArticleHtml(fetcher, '存在しない記事')).toBeNull();
   });
 
-  it('fetchArticleHtml: 404以外のエラーは例外にする', async () => {
-    const fetchImpl = async () => ({ ok: false, status: 500, text: async () => '' });
-    const fetcher = createNiconicoFetcher({ fetchImpl, delayMs: 0 });
+  it('fetchArticleHtml: 404以外のエラーは例外にする(5xx は再試行してもだめなとき)', async () => {
+    let calls = 0;
+    const fetchImpl = async () => {
+      calls += 1;
+      return { ok: false, status: 500, text: async () => '' };
+    };
+    const fetcher = createNiconicoFetcher({ fetchImpl, delayMs: 0, serverErrorBackoffMs: 0 });
     await expect(fetchArticleHtml(fetcher, 'x')).rejects.toThrow(/status=500/);
+    expect(calls).toBe(4);
+  });
+
+  it('5xx は待って再試行し、通ればその応答を返す', async () => {
+    let calls = 0;
+    const fetchImpl = async () => {
+      calls += 1;
+      return calls === 1
+        ? { ok: false, status: 500, text: async () => '' }
+        : { ok: true, status: 200, text: async () => '<html>本文</html>' };
+    };
+    const fetcher = createNiconicoFetcher({ fetchImpl, delayMs: 0, serverErrorBackoffMs: 0 });
+    expect(await fetchArticleHtml(fetcher, 'x')).toBe('<html>本文</html>');
+    expect(calls).toBe(2);
   });
 
   it('extractRedirectPath: location.replace(...)からパスを取り出す。リダイレクトでなければnull', () => {

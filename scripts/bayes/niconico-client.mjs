@@ -29,20 +29,34 @@ function sleep(ms) {
  *   Promise<{ ok: boolean, status: number, text: () => Promise<string> }>} NiconicoFetchLike
  */
 
+/** 5xx を受けたときの再試行回数と待ち時間(回数倍)。 */
+const SERVER_ERROR_RETRIES = 3;
+const SERVER_ERROR_BACKOFF_MS = 30_000;
+
 /**
  * danbooru-client.mjs/wikidata-client.mjs と同じ形の薄いスロットラー。
- * @param {{ fetchImpl?: NiconicoFetchLike, delayMs?: number }} [opts]
+ * 5xx は一時的なことが多い(2026-10-23、787体の対応付けで別々の記事に2回出て、どちらも
+ * 取り直すと通った)ので待って再試行し、それでも 5xx なら最後の応答をそのまま返す(判定は呼び出し側)。
+ * @param {{ fetchImpl?: NiconicoFetchLike, delayMs?: number, serverErrorBackoffMs?: number }} [opts]
  */
-export function createNiconicoFetcher({ fetchImpl = fetch, delayMs = REQUEST_DELAY_MS } = {}) {
+export function createNiconicoFetcher({
+  fetchImpl = fetch,
+  delayMs = REQUEST_DELAY_MS,
+  serverErrorBackoffMs = SERVER_ERROR_BACKOFF_MS,
+} = {}) {
   let lastCallAt = null;
 
   return async function niconicoFetch(path) {
-    if (lastCallAt !== null) {
-      const wait = delayMs - (Date.now() - lastCallAt);
-      if (wait > 0) await sleep(wait);
+    for (let attempt = 1; ; attempt += 1) {
+      if (lastCallAt !== null) {
+        const wait = delayMs - (Date.now() - lastCallAt);
+        if (wait > 0) await sleep(wait);
+      }
+      lastCallAt = Date.now();
+      const res = await fetchImpl(`${SITE_ROOT}${path}`, { headers: { 'User-Agent': USER_AGENT } });
+      if (res.status < 500 || attempt > SERVER_ERROR_RETRIES) return res;
+      await sleep(serverErrorBackoffMs * attempt);
     }
-    lastCallAt = Date.now();
-    return fetchImpl(`${SITE_ROOT}${path}`, { headers: { 'User-Agent': USER_AGENT } });
   };
 }
 

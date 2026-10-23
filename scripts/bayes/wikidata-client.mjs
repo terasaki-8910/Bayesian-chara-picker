@@ -27,6 +27,9 @@ const MAXLAG_SECONDS = 5;
 const MAXLAG_RETRIES = 5;
 const MAXLAG_BACKOFF_MS = 5_000;
 
+/** wbgetentities の ids に渡せる上限(匿名アクセス)。 */
+const ENTITY_IDS_PER_REQUEST = 50;
+
 const API_ROOT = 'https://www.wikidata.org/w/api.php';
 const ENTITY_DATA_ROOT = 'https://www.wikidata.org/wiki/Special:EntityData';
 
@@ -154,22 +157,25 @@ export async function fetchEntity(wikidataFetch, qid) {
  * @returns {Promise<Record<string, { ja: string, en: string }>>} id -> {ja, en}ラベル（無ければ空文字）
  */
 export async function fetchEntityLabels(wikidataFetch, ids) {
-  if (ids.length === 0) return {};
-  const params = new URLSearchParams({
-    action: 'wbgetentities',
-    ids: ids.join('|'),
-    props: 'labels',
-    languages: 'ja|en',
-    format: 'json',
-    maxlag: String(MAXLAG_SECONDS),
-  });
-  const result = /** @type {{ entities: Record<string, { labels: Record<string, { value: string }> }> }} */ (
-    await wikidataFetch(`${API_ROOT}?${params}`)
-  );
   const labels = {};
-  for (const id of ids) {
-    const entityLabels = result.entities[id]?.labels;
-    labels[id] = { ja: entityLabels?.ja?.value ?? '', en: entityLabels?.en?.value ?? '' };
+  // wbgetentities の ids は1回50件まで(超えると toomanyvalues。2026-10-23、主張の多いエンジェウーモンで発生)。
+  for (let start = 0; start < ids.length; start += ENTITY_IDS_PER_REQUEST) {
+    const chunk = ids.slice(start, start + ENTITY_IDS_PER_REQUEST);
+    const params = new URLSearchParams({
+      action: 'wbgetentities',
+      ids: chunk.join('|'),
+      props: 'labels',
+      languages: 'ja|en',
+      format: 'json',
+      maxlag: String(MAXLAG_SECONDS),
+    });
+    const result = /** @type {{ entities: Record<string, { labels: Record<string, { value: string }> }> }} */ (
+      await wikidataFetch(`${API_ROOT}?${params}`)
+    );
+    for (const id of chunk) {
+      const entityLabels = result.entities[id]?.labels;
+      labels[id] = { ja: entityLabels?.ja?.value ?? '', en: entityLabels?.en?.value ?? '' };
+    }
   }
   return labels;
 }
