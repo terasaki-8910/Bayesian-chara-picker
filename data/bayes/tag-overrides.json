@@ -3678,6 +3678,74 @@
     "doa-ayane": {
       "tag": "ayane_(doa)",
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+    },
+    "fgo-tamamo-cat": {
+      "tag": "tamamo_cat_(fate)",
+      "reason": "帯の取り直し(R9-3)の候補タグ。名前から自動導出すると玉藻の前の総称タグ tamamo_no_mae_(fate)(既存 fate-tamamo と同じ)を掴むため、候補のタグに固定する。"
+    },
+    "fgo-yu-mei-ren": {
+      "tag": "yu_mei-ren_(fate)",
+      "reason": "帯の取り直し(R9-3)の候補タグ。名前から自動導出すると「虞美人」から別作品の yuudachi_(kancolle) を掴む(共起率0%)ため、候補のタグに固定する。"
+    },
+    "fgo-artoria-pendragon": {
+      "tag": "artoria_pendragon_(lancer_alter)_(fate)",
+      "reason": "帯の取り直し(R9-3)の候補タグ。名前から自動導出するとアルトリアの総称タグ(既存 fate-artoria と同じ)を掴むため、ランサー・オルタのタグに固定する。"
+    },
+    "fgo-artoria-pendragon-swimsuit-ruler-fate": {
+      "tag": "artoria_pendragon_(swimsuit_ruler)_(fate)",
+      "reason": "帯の取り直し(R9-3)の候補タグ。名前から自動導出するとアルトリアの総称タグ(既存 fate-artoria と同じ)を掴むため、ルーラーのタグに固定する。"
+    },
+    "fgo-mysterious-heroine-x-alter": {
+      "tag": "mysterious_heroine_x_alter_(fate)",
+      "reason": "帯の取り直し(R9-3)の候補タグ。名前から自動導出すると謎のヒロインXX(既存 fgo-mysterious-heroine-xx と同じ)を掴むため、候補のタグに固定する。"
+    },
+    "fgo-okita-souji-alter": {
+      "tag": "okita_souji_alter_(fate)",
+      "reason": "帯の取り直し(R9-3)の候補タグ。名前から自動導出すると沖田総司の総称タグ(既存 fgo-okita と同じ)を掴むため、オルタのタグに固定する。"
+    },
+    "fireemblemengage-female-alear": {
+      "tag": "female_alear_(fire_emblem)",
+      "reason": "帯の取り直し(R9-3)の候補タグ。名前から自動導出すると別作品の female_corrin_(fire_emblem)(既存 fe-corrin と同じ、共起率3%)を掴むため、候補のタグに固定する。"
+    },
+    "fate-frankenstein-s-monster": {
+      "tag": "frankenstein's_monster_(fate)",
+      "reason": "帯の取り直し(R9-3)の候補タグ。名前から自動導出すると投稿の少ない frankenstein's_monster_(fate/apocrypha)(492件)を掴むため、本体のタグ(1296件)に固定する。"
+    },
+    "fe-sakura": {
+      "tag": "sakura_(fire_emblem)",
+      "reason": "帯の取り直し(R9-3)の候補タグ。名前から自動導出すると別作品の sakura_kyoko(共起率0%)を掴むため、候補のタグに固定する。"
+    },
+    "nikke-alice": {
+      "tag": "alice_(nikke)",
+      "reason": "帯の取り直し(R9-3)の候補タグ。名前から自動導出すると別作品の alice_zuberg(既存 sao-alice と同じ、共起率0%)を掴むため、候補のタグに固定する。"
+    },
+    "honkai3-seele-alter-ego": {
+      "tag": "seele_(alter_ego)",
+      "reason": "帯の取り直し(R9-3)の候補タグ。名前から自動導出すると表のゼーレの seele_vollerei(既存 honkai3-seele と同じ)を掴むため、裏人格のタグに固定する。"
+    },
+    "idolmastermillionlivetheaterdays-toyokawa-fuka": {
+      "tag": "toyokawa_fuka",
+      "reason": "帯の取り直し(R9-3)の候補タグ。名前から自動導出すると衣装違いの toyokawa_fuka_(heartful_nurse) を掴むため、本人のタグに固定する。"
+    },
+    "idolmastermillionlivetheaterdays-tokoro-megumi": {
+      "tag": "tokoro_megumi",
+      "reason": "帯の取り直し(R9-3)の候補タグ。名前から自動導出すると衣装違いの tokoro_megumi_(thousand_arabian) を掴むため、本人のタグに固定する。"
+    },
+    "indievirtualyoutuber-mint-fantome": {
+      "tag": "mint_fantome",
+      "reason": "帯の取り直し(R9-3)の候補タグ。名前から自動導出すると衣装違いの mint_fantome_(minto_2.0) を掴むため、本人のタグに固定する。"
+    },
+    "lol-vi": {
+      "tag": "vi_(league)",
+      "reason": "帯の取り直し(R9-3)の候補タグ。名前から自動導出すると別作品の virtuosa_(arknights)(既存 arknights-virtuosa と同じ、共起率0%)を掴むため、候補のタグに固定する。"
+    },
+    "meltyblood-sion-eltnam": {
+      "tag": "sion_eltnam_(type-moon)",
+      "reason": "帯の取り直し(R9-3)の候補タグ。名前から自動導出すると投稿の少ない sion_eltnam_atlasia(774件)を掴むため、候補のタグ(1213件)に固定する。"
+    },
+    "vshojo-zentreya": {
+      "tag": "zentreya",
+      "reason": "帯の取り直し(R9-3)の候補タグ。名前から自動導出すると衣装違いの zentreya_(cyborg)_(1st_costume) を掴むため、本人のタグに固定する。"
     }
   }
 }

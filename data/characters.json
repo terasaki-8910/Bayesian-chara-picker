@@ -51225,76 +51225,6 @@
     }
   },
   {
-    "id": "bangdreamgirlsbandparty-mortis",
-    "name": "モーティス",
-    "aliases": [],
-    "series": "バンドリ! ガールズバンドパーティ!",
-    "dlsiteQuery": "バンドリ モーティス",
-    "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
-      "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
-      "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
-      "occupation": []
-    },
-    "reviewed": false,
-    "hitomiQuery": {
-      "character": "mortis",
-      "series": null
-    },
-    "provisional": false,
-    "imagePath": null,
-    "imageApproved": false
-  },
-  {
-    "id": "bangdreamgirlsbandparty-oblivionis",
-    "name": "オブリビオニス",
-    "aliases": [],
-    "series": "バンドリ! ガールズバンドパーティ!",
-    "dlsiteQuery": "バンドリ オブリビオニス",
-    "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
-      "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
-      "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
-      "occupation": []
-    },
-    "reviewed": false,
-    "hitomiQuery": {
-      "character": "oblivionis",
-      "series": null
-    },
-    "provisional": false,
-    "imagePath": null,
-    "imageApproved": false
-  },
-  {
     "id": "bangdreamgirlsbandparty-hikawa-sayo",
     "name": "氷川紗夜",
     "aliases": [],
@@ -51358,41 +51288,6 @@
     "reviewed": false,
     "hitomiQuery": {
       "character": "hina hikawa",
-      "series": null
-    },
-    "provisional": false,
-    "imagePath": null,
-    "imageApproved": false
-  },
-  {
-    "id": "bangdreamgirlsbandparty-doloris",
-    "name": "ドロリス",
-    "aliases": [],
-    "series": "バンドリ! ガールズバンドパーティ!",
-    "dlsiteQuery": "バンドリ ドロリス",
-    "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
-      "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
-      "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
-      "occupation": []
-    },
-    "reviewed": false,
-    "hitomiQuery": {
-      "character": "doloris",
       "series": null
     },
     "provisional": false,
@@ -51498,41 +51393,6 @@
     "reviewed": false,
     "hitomiQuery": {
       "character": "yukina minato",
-      "series": null
-    },
-    "provisional": false,
-    "imagePath": null,
-    "imageApproved": false
-  },
-  {
-    "id": "bangdreamgirlsbandparty-timoris",
-    "name": "八幡海鈴",
-    "aliases": [],
-    "series": "バンドリ! ガールズバンドパーティ!",
-    "dlsiteQuery": "バンドリ 八幡海鈴",
-    "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
-      "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
-      "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
-      "occupation": []
-    },
-    "reviewed": false,
-    "hitomiQuery": {
-      "character": "timoris",
       "series": null
     },
     "provisional": false,
@@ -59450,41 +59310,6 @@
     "imageApproved": false
   },
   {
-    "id": "fate-medea-caster-fate",
-    "name": "メディア",
-    "aliases": [],
-    "series": "Fate/stay night",
-    "dlsiteQuery": "Fate メディア",
-    "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
-      "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
-      "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
-      "occupation": []
-    },
-    "reviewed": false,
-    "hitomiQuery": {
-      "character": "medea",
-      "series": null
-    },
-    "provisional": false,
-    "imagePath": null,
-    "imageApproved": false
-  },
-  {
     "id": "finalfantasyiv-rydia",
     "name": "リディア",
     "aliases": [],
@@ -63126,10 +62951,10 @@
   },
   {
     "id": "nikke-rapi",
-    "name": "ラピ:レッドフード",
+    "name": "ラピ",
     "aliases": [],
     "series": "勝利の女神:NIKKE",
-    "dlsiteQuery": "NIKKE ラピ:レッドフード",
+    "dlsiteQuery": "NIKKE ラピ",
     "axes": {
       "genderExpression": null,
       "ageFeel": null,
