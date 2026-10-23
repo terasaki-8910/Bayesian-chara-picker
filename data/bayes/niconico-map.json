@@ -7002,13 +7002,6 @@
       "source": "search-verified",
       "checkedAt": "2026-10-23T04:21:31.773Z"
     },
-    "neptuneseries-purple-heart": {
-      "title": null,
-      "reason": "記事「パープルハート」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
-      "source": "low-confidence",
-      "candidateTitle": "パープルハート",
-      "checkedAt": "2026-10-23T04:21:36.703Z"
-    },
     "neptuneseries-noire": {
       "title": null,
       "reason": "記事「ノワール」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
@@ -10906,12 +10899,6 @@
       "reason": "not-found",
       "source": "not-found",
       "checkedAt": "2026-10-23T06:13:25.455Z"
-    },
-    "wuwa-fleurdelys": {
-      "title": null,
-      "reason": "not-found",
-      "source": "not-found",
-      "checkedAt": "2026-10-23T06:13:30.541Z"
     },
     "wuwa-yangyang": {
       "title": null,
