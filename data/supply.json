@@ -21933,42 +21933,6 @@
       "fetchedAt": "2026-10-22T13:14:52.695Z"
     }
   },
-  "bangdreamgirlsbandparty-mortis": {
-    "pageCount": 1,
-    "estimatedRange": [
-      1,
-      1
-    ],
-    "byWorkType": {
-      "doujinshi": 1,
-      "voice": 1,
-      "game": 0
-    },
-    "firstPage": {
-      "items": 1,
-      "aiGenerated": 1
-    },
-    "fetchedAt": "2026-10-23T04:02:51.199Z",
-    "hitomi": null
-  },
-  "bangdreamgirlsbandparty-oblivionis": {
-    "pageCount": 1,
-    "estimatedRange": [
-      2,
-      2
-    ],
-    "byWorkType": {
-      "doujinshi": 1,
-      "voice": 1,
-      "game": 0
-    },
-    "firstPage": {
-      "items": 2,
-      "aiGenerated": 2
-    },
-    "fetchedAt": "2026-10-23T04:03:31.275Z",
-    "hitomi": null
-  },
   "bangdreamgirlsbandparty-hikawa-sayo": {
     "pageCount": 1,
     "estimatedRange": [
@@ -22003,24 +21967,6 @@
       "aiGenerated": 0
     },
     "fetchedAt": "2026-10-23T04:04:51.357Z",
-    "hitomi": null
-  },
-  "bangdreamgirlsbandparty-doloris": {
-    "pageCount": 1,
-    "estimatedRange": [
-      2,
-      2
-    ],
-    "byWorkType": {
-      "doujinshi": 1,
-      "voice": 1,
-      "game": 0
-    },
-    "firstPage": {
-      "items": 2,
-      "aiGenerated": 0
-    },
-    "fetchedAt": "2026-10-23T04:05:31.425Z",
     "hitomi": null
   },
   "bangdreamgirlsbandparty-mitake-ran": {
@@ -22075,24 +22021,6 @@
       "aiGenerated": 1
     },
     "fetchedAt": "2026-10-23T04:07:31.640Z",
-    "hitomi": null
-  },
-  "bangdreamgirlsbandparty-timoris": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "firstPage": {
-      "items": 0,
-      "aiGenerated": 0
-    },
-    "fetchedAt": "2026-10-23T04:08:11.717Z",
     "hitomi": null
   },
   "bangdreamgirlsbandparty-tsurumaki-kokoro": {
@@ -23769,24 +23697,6 @@
     "fetchedAt": "2026-10-23T05:10:14.351Z",
     "hitomi": null
   },
-  "neptuneseries-purple-heart": {
-    "pageCount": 1,
-    "estimatedRange": [
-      15,
-      15
-    ],
-    "byWorkType": {
-      "doujinshi": 1,
-      "voice": 1,
-      "game": 0
-    },
-    "firstPage": {
-      "items": 15,
-      "aiGenerated": 2
-    },
-    "fetchedAt": "2026-10-23T05:10:54.889Z",
-    "hitomi": null
-  },
   "neptuneseries-noire": {
     "pageCount": 1,
     "estimatedRange": [
@@ -24163,24 +24073,6 @@
       "aiGenerated": 0
     },
     "fetchedAt": "2026-10-23T05:24:55.096Z",
-    "hitomi": null
-  },
-  "dccomics-harley-quinn": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "firstPage": {
-      "items": 0,
-      "aiGenerated": 0
-    },
-    "fetchedAt": "2026-10-23T05:25:35.182Z",
     "hitomi": null
   },
   "strikewitches-erica-hartmann": {
@@ -26163,24 +26055,6 @@
     "fetchedAt": "2026-10-23T06:38:58.262Z",
     "hitomi": null
   },
-  "fate-medea-caster-fate": {
-    "pageCount": 1,
-    "estimatedRange": [
-      16,
-      16
-    ],
-    "byWorkType": {
-      "doujinshi": 1,
-      "voice": 1,
-      "game": 1
-    },
-    "firstPage": {
-      "items": 16,
-      "aiGenerated": 5
-    },
-    "fetchedAt": "2026-10-23T06:39:38.211Z",
-    "hitomi": null
-  },
   "finalfantasyiv-rydia": {
     "pageCount": 1,
     "estimatedRange": [
@@ -28051,24 +27925,6 @@
       "aiGenerated": 7
     },
     "fetchedAt": "2026-10-23T07:49:01.347Z",
-    "hitomi": null
-  },
-  "nikke-rapi": {
-    "pageCount": 1,
-    "estimatedRange": [
-      3,
-      3
-    ],
-    "byWorkType": {
-      "doujinshi": 1,
-      "voice": 1,
-      "game": 0
-    },
-    "firstPage": {
-      "items": 3,
-      "aiGenerated": 1
-    },
-    "fetchedAt": "2026-10-23T07:49:41.414Z",
     "hitomi": null
   },
   "nikke-marciana": {
@@ -31779,78 +31635,6 @@
     "fetchedAt": "2026-10-23T10:07:05.102Z",
     "hitomi": null
   },
-  "spiderman-psylocke": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "firstPage": {
-      "items": 0,
-      "aiGenerated": 0
-    },
-    "fetchedAt": "2026-10-23T10:07:45.374Z",
-    "hitomi": null
-  },
-  "spiderman-gwen-stacy": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "firstPage": {
-      "items": 0,
-      "aiGenerated": 0
-    },
-    "fetchedAt": "2026-10-23T10:08:25.063Z",
-    "hitomi": null
-  },
-  "spiderman-emma-frost": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "firstPage": {
-      "items": 0,
-      "aiGenerated": 0
-    },
-    "fetchedAt": "2026-10-23T10:09:05.198Z",
-    "hitomi": null
-  },
-  "spiderman-sue-storm": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "firstPage": {
-      "items": 0,
-      "aiGenerated": 0
-    },
-    "fetchedAt": "2026-10-23T10:09:45.369Z",
-    "hitomi": null
-  },
   "megamanzx-aile": {
     "pageCount": 1,
     "estimatedRange": [
@@ -32407,78 +32191,6 @@
       "aiGenerated": 26
     },
     "fetchedAt": "2026-10-23T10:30:26.119Z",
-    "hitomi": null
-  },
-  "overwatch-mei": {
-    "pageCount": 1,
-    "estimatedRange": [
-      11,
-      11
-    ],
-    "byWorkType": {
-      "doujinshi": 1,
-      "voice": 1,
-      "game": 0
-    },
-    "firstPage": {
-      "items": 11,
-      "aiGenerated": 0
-    },
-    "fetchedAt": "2026-10-23T10:31:06.083Z",
-    "hitomi": null
-  },
-  "overwatch-tracer": {
-    "pageCount": 1,
-    "estimatedRange": [
-      2,
-      2
-    ],
-    "byWorkType": {
-      "doujinshi": 1,
-      "voice": 1,
-      "game": 0
-    },
-    "firstPage": {
-      "items": 2,
-      "aiGenerated": 0
-    },
-    "fetchedAt": "2026-10-23T10:31:46.069Z",
-    "hitomi": null
-  },
-  "overwatch-widowmaker": {
-    "pageCount": 1,
-    "estimatedRange": [
-      1,
-      1
-    ],
-    "byWorkType": {
-      "doujinshi": 1,
-      "voice": 1,
-      "game": 0
-    },
-    "firstPage": {
-      "items": 1,
-      "aiGenerated": 0
-    },
-    "fetchedAt": "2026-10-23T10:32:26.214Z",
-    "hitomi": null
-  },
-  "overwatch-pharah": {
-    "pageCount": 0,
-    "estimatedRange": [
-      0,
-      0
-    ],
-    "byWorkType": {
-      "doujinshi": 0,
-      "voice": 0,
-      "game": 0
-    },
-    "firstPage": {
-      "items": 0,
-      "aiGenerated": 0
-    },
-    "fetchedAt": "2026-10-23T10:33:06.273Z",
     "hitomi": null
   },
   "psg-kneesocks": {
@@ -35145,24 +34857,6 @@
     "fetchedAt": "2026-10-23T12:11:50.650Z",
     "hitomi": null
   },
-  "wuwa-fleurdelys": {
-    "pageCount": 1,
-    "estimatedRange": [
-      1,
-      1
-    ],
-    "byWorkType": {
-      "doujinshi": 1,
-      "voice": 1,
-      "game": 0
-    },
-    "firstPage": {
-      "items": 1,
-      "aiGenerated": 0
-    },
-    "fetchedAt": "2026-10-23T12:12:30.644Z",
-    "hitomi": null
-  },
   "wuwa-yangyang": {
     "pageCount": 1,
     "estimatedRange": [
@@ -35233,24 +34927,6 @@
       "aiGenerated": 1
     },
     "fetchedAt": "2026-10-23T12:15:10.877Z",
-    "hitomi": null
-  },
-  "xeno2-pneuma": {
-    "pageCount": 1,
-    "estimatedRange": [
-      1,
-      1
-    ],
-    "byWorkType": {
-      "doujinshi": 1,
-      "voice": 1,
-      "game": 0
-    },
-    "firstPage": {
-      "items": 1,
-      "aiGenerated": 1
-    },
-    "fetchedAt": "2026-10-23T12:15:50.777Z",
     "hitomi": null
   },
   "xenobladechronicles3-mio": {
@@ -36097,6 +35773,798 @@
       "aiGenerated": 0
     },
     "fetchedAt": "2026-10-23T12:47:12.927Z",
+    "hitomi": null
+  },
+  "dccomics-harley-quinn": {
+    "pageCount": 1,
+    "estimatedRange": [
+      1,
+      1
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 1,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-23T12:49:20.073Z",
+    "hitomi": null
+  },
+  "nikke-rapi": {
+    "pageCount": 1,
+    "estimatedRange": [
+      28,
+      28
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 28,
+      "aiGenerated": 19
+    },
+    "fetchedAt": "2026-10-23T12:49:59.988Z",
+    "hitomi": null
+  },
+  "spiderman-psylocke": {
+    "pageCount": 1,
+    "estimatedRange": [
+      8,
+      8
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 8,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-23T12:50:39.155Z",
+    "hitomi": null
+  },
+  "spiderman-gwen-stacy": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-23T12:51:19.657Z",
+    "hitomi": null
+  },
+  "spiderman-emma-frost": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-23T12:51:59.243Z",
+    "hitomi": null
+  },
+  "spiderman-sue-storm": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-23T12:52:39.301Z",
+    "hitomi": null
+  },
+  "overwatch-mei": {
+    "pageCount": 1,
+    "estimatedRange": [
+      1,
+      1
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 1,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-23T12:53:19.583Z",
+    "hitomi": null
+  },
+  "overwatch-tracer": {
+    "pageCount": 1,
+    "estimatedRange": [
+      1,
+      1
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 1,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-23T12:53:59.446Z",
+    "hitomi": null
+  },
+  "overwatch-widowmaker": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-23T12:54:39.322Z",
+    "hitomi": null
+  },
+  "overwatch-pharah": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-23T12:55:19.409Z",
+    "hitomi": null
+  },
+  "xeno2-pneuma": {
+    "pageCount": 1,
+    "estimatedRange": [
+      2,
+      2
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 2,
+      "aiGenerated": 2
+    },
+    "fetchedAt": "2026-10-23T12:55:59.542Z",
+    "hitomi": null
+  },
+  "mygo-chihaya-anon": {
+    "pageCount": 1,
+    "estimatedRange": [
+      3,
+      3
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 3,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-23T12:56:39.503Z",
+    "hitomi": null
+  },
+  "mygo-nagasaki-soyo": {
+    "pageCount": 1,
+    "estimatedRange": [
+      4,
+      4
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 4,
+      "aiGenerated": 2
+    },
+    "fetchedAt": "2026-10-23T12:57:19.517Z",
+    "hitomi": null
+  },
+  "mygo-shiina-taki": {
+    "pageCount": 1,
+    "estimatedRange": [
+      5,
+      5
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 5,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-23T12:57:59.532Z",
+    "hitomi": null
+  },
+  "mygo-takamatsu-tomori": {
+    "pageCount": 1,
+    "estimatedRange": [
+      4,
+      4
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 4,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-23T12:58:39.520Z",
+    "hitomi": null
+  },
+  "avemujica-togawa-sakiko": {
+    "pageCount": 1,
+    "estimatedRange": [
+      6,
+      6
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 6,
+      "aiGenerated": 5
+    },
+    "fetchedAt": "2026-10-23T12:59:19.591Z",
+    "hitomi": null
+  },
+  "avemujica-misumi-uika": {
+    "pageCount": 1,
+    "estimatedRange": [
+      1,
+      1
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 1,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-23T12:59:59.586Z",
+    "hitomi": null
+  },
+  "avemujica-wakaba-mutsumi": {
+    "pageCount": 1,
+    "estimatedRange": [
+      1,
+      1
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 1,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-23T13:00:39.692Z",
+    "hitomi": null
+  },
+  "avemujica-yahata-umiri": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-23T13:01:19.682Z",
+    "hitomi": null
+  },
+  "avemujica-yuutenji-nyamu": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-23T13:01:59.735Z",
+    "hitomi": null
+  },
+  "hasunosora-hinoshita-kaho": {
+    "pageCount": 1,
+    "estimatedRange": [
+      5,
+      5
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 5,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-23T13:02:39.786Z",
+    "hitomi": null
+  },
+  "hasunosora-otomune-kozue": {
+    "pageCount": 1,
+    "estimatedRange": [
+      9,
+      9
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 9,
+      "aiGenerated": 2
+    },
+    "fetchedAt": "2026-10-23T13:03:19.855Z",
+    "hitomi": null
+  },
+  "hasunosora-murano-sayaka": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-23T13:03:59.901Z",
+    "hitomi": null
+  },
+  "hasunosora-osawa-rurino": {
+    "pageCount": 1,
+    "estimatedRange": [
+      5,
+      5
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 5,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-23T13:04:39.923Z",
+    "hitomi": null
+  },
+  "hasunosora-momose-ginko": {
+    "pageCount": 1,
+    "estimatedRange": [
+      2,
+      2
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 2,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-23T13:05:19.951Z",
+    "hitomi": null
+  },
+  "hasunosora-yugiri-tsuzuri": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-23T13:05:59.970Z",
+    "hitomi": null
+  },
+  "hasunosora-fujishima-megumi": {
+    "pageCount": 1,
+    "estimatedRange": [
+      8,
+      8
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 8,
+      "aiGenerated": 2
+    },
+    "fetchedAt": "2026-10-23T13:06:39.994Z",
+    "hitomi": null
+  },
+  "hasunosora-kachimachi-kosuzu": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-23T13:07:19.986Z",
+    "hitomi": null
+  },
+  "hasunosora-anyoji-hime": {
+    "pageCount": 1,
+    "estimatedRange": [
+      5,
+      5
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 5,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-23T13:08:00.060Z",
+    "hitomi": null
+  },
+  "madoka-sakura-kyoko": {
+    "pageCount": 1,
+    "estimatedRange": [
+      24,
+      24
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 1
+    },
+    "firstPage": {
+      "items": 24,
+      "aiGenerated": 8
+    },
+    "fetchedAt": "2026-10-23T13:08:40.105Z",
+    "hitomi": null
+  },
+  "kon-hirasawa-yui": {
+    "pageCount": 3,
+    "estimatedRange": [
+      61,
+      90
+    ],
+    "byWorkType": {
+      "doujinshi": 3,
+      "voice": 3,
+      "game": 1
+    },
+    "firstPage": {
+      "items": 30,
+      "aiGenerated": 9
+    },
+    "fetchedAt": "2026-10-23T13:09:20.111Z",
+    "hitomi": null
+  },
+  "kon-tainaka-ritsu": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 1
+    },
+    "firstPage": {
+      "items": 30,
+      "aiGenerated": 7
+    },
+    "fetchedAt": "2026-10-23T13:10:00.101Z",
+    "hitomi": null
+  },
+  "suiseinomajo-suletta-mercury": {
+    "pageCount": 1,
+    "estimatedRange": [
+      29,
+      29
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 29,
+      "aiGenerated": 6
+    },
+    "fetchedAt": "2026-10-23T13:10:40.092Z",
+    "hitomi": null
+  },
+  "suiseinomajo-miorine-rembran": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 30,
+      "aiGenerated": 6
+    },
+    "fetchedAt": "2026-10-23T13:11:20.175Z",
+    "hitomi": null
+  },
+  "girls-band-cry-iseri-nina": {
+    "pageCount": 1,
+    "estimatedRange": [
+      2,
+      2
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 2,
+      "aiGenerated": 1
+    },
+    "fetchedAt": "2026-10-23T13:12:00.152Z",
+    "hitomi": null
+  },
+  "girls-band-cry-kawaragi-momoka": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-23T13:12:40.211Z",
+    "hitomi": null
+  },
+  "lycrecoil-inoue-takina": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 30,
+      "aiGenerated": 24
+    },
+    "fetchedAt": "2026-10-23T13:13:20.211Z",
+    "hitomi": null
+  },
+  "chokaguyahime-sakayori-iroha": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-23T13:14:00.349Z",
+    "hitomi": null
+  },
+  "chokaguyahime-runami-yachiyo": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-23T13:14:40.345Z",
+    "hitomi": null
+  },
+  "alienstage-mizi": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-23T13:15:20.576Z",
+    "hitomi": null
+  },
+  "alienstage-sua": {
+    "pageCount": 1,
+    "estimatedRange": [
+      3,
+      3
+    ],
+    "byWorkType": {
+      "doujinshi": 1,
+      "voice": 1,
+      "game": 1
+    },
+    "firstPage": {
+      "items": 3,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-23T13:16:00.469Z",
+    "hitomi": null
+  },
+  "kemono-kaban": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 30,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-23T13:16:40.458Z",
+    "hitomi": null
+  },
+  "strikewitches-eila": {
+    "pageCount": 2,
+    "estimatedRange": [
+      31,
+      60
+    ],
+    "byWorkType": {
+      "doujinshi": 2,
+      "voice": 2,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 30,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-23T13:17:20.450Z",
+    "hitomi": null
+  },
+  "reverse1999-vertin": {
+    "pageCount": 0,
+    "estimatedRange": [
+      0,
+      0
+    ],
+    "byWorkType": {
+      "doujinshi": 0,
+      "voice": 0,
+      "game": 0
+    },
+    "firstPage": {
+      "items": 0,
+      "aiGenerated": 0
+    },
+    "fetchedAt": "2026-10-23T13:18:00.678Z",
     "hitomi": null
   }
 }
