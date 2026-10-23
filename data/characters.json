@@ -89074,27 +89074,41 @@
   {
     "id": "mygo-chihaya-anon",
     "name": "千早愛音",
-    "aliases": [],
+    "aliases": [
+      "あのん",
+      "アノン",
+      "Anon Chihaya"
+    ],
     "series": "BanG Dream! It's MyGO!!!!!",
     "dlsiteQuery": "千早愛音",
     "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
-      "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "distance": "やや積極的",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "羽丘女子学園",
+      "stature": "標準",
+      "personality": [
+        "元気"
+      ],
+      "roles": [
+        "友人"
+      ],
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "桃"
+      ],
+      "outfit": [
+        "制服"
+      ],
       "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
       "occupation": []
     },
     "reviewed": false,
@@ -89109,27 +89123,41 @@
   {
     "id": "mygo-nagasaki-soyo",
     "name": "長崎そよ",
-    "aliases": [],
+    "aliases": [
+      "そよママ",
+      "そよりん",
+      "Soyo Nagasaki"
+    ],
     "series": "BanG Dream! It's MyGO!!!!!",
     "dlsiteQuery": "長崎そよ",
     "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
-      "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "distance": "中立",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "月ノ森女子学園",
+      "stature": "標準",
+      "personality": [
+        "おっとり"
+      ],
+      "roles": [
+        "母性"
+      ],
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "茶"
+      ],
+      "outfit": [
+        "制服"
+      ],
       "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
       "occupation": []
     },
     "reviewed": false,
@@ -89144,27 +89172,40 @@
   {
     "id": "mygo-shiina-taki",
     "name": "椎名立希",
-    "aliases": [],
+    "aliases": [
+      "りっきー",
+      "たき",
+      "Taki Shiina"
+    ],
     "series": "BanG Dream! It's MyGO!!!!!",
     "dlsiteQuery": "椎名立希",
     "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
-      "looks": [],
-      "hairColor": [],
-      "skinTone": null,
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "distance": "受け身",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "花咲川女子学園",
+      "stature": "標準",
+      "personality": [
+        "クール",
+        "生意気"
+      ],
+      "roles": [
+        "友人"
+      ],
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "黒"
+      ],
       "outfit": [],
-      "species": null,
       "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
       "occupation": []
     },
     "reviewed": false,
@@ -89179,27 +89220,38 @@
   {
     "id": "mygo-takamatsu-tomori",
     "name": "高松燈",
-    "aliases": [],
+    "aliases": [
+      "ともりん",
+      "Tomori Takamatsu"
+    ],
     "series": "BanG Dream! It's MyGO!!!!!",
     "dlsiteQuery": "高松燈",
     "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "標準",
+      "distance": "受け身",
+      "skinTone": "色白",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "羽丘女子学園",
+      "stature": "標準",
+      "personality": [
+        "内気"
+      ],
+      "roles": [
+        "友人"
+      ],
       "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
+      "hairColor": [
+        "銀"
+      ],
+      "outfit": [
+        "制服"
+      ],
       "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
       "occupation": []
     },
     "reviewed": false,
@@ -89212,64 +89264,43 @@
     "imageApproved": false
   },
   {
-    "id": "mygo-kaname-raana",
-    "name": "要楽奈",
-    "aliases": [],
-    "series": "BanG Dream! It's MyGO!!!!!",
-    "dlsiteQuery": "要楽奈",
-    "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
-      "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
-      "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
-      "occupation": []
-    },
-    "reviewed": false,
-    "hitomiQuery": {
-      "character": "raana kaname",
-      "series": null
-    },
-    "provisional": false,
-    "imagePath": null,
-    "imageApproved": false
-  },
-  {
     "id": "avemujica-togawa-sakiko",
     "name": "豊川祥子",
-    "aliases": [],
+    "aliases": [
+      "祥ちゃん",
+      "さきこ",
+      "オブリビオニス",
+      "Sakiko Togawa"
+    ],
     "series": "BanG Dream! Ave Mujica",
     "dlsiteQuery": "豊川祥子",
     "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
-      "looks": [],
-      "hairColor": [],
-      "skinTone": null,
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "distance": "中立",
+      "skinTone": "色白",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "羽丘女子学園",
+      "stature": "標準",
+      "personality": [
+        "クール"
+      ],
+      "roles": [
+        "幼馴染"
+      ],
+      "looks": [
+        "長髪",
+        "ツインテール"
+      ],
+      "hairColor": [
+        "青"
+      ],
       "outfit": [],
-      "species": null,
       "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
       "occupation": []
     },
     "reviewed": false,
@@ -89284,28 +89315,40 @@
   {
     "id": "avemujica-misumi-uika",
     "name": "三角初華",
-    "aliases": [],
+    "aliases": [
+      "ういか",
+      "ドロリス",
+      "Uika Misumi"
+    ],
     "series": "BanG Dream! Ave Mujica",
     "dlsiteQuery": "三角初華",
     "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "distance": "やや積極的",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "花咲川女子学園",
+      "stature": "標準",
+      "personality": [
+        "おっとり"
+      ],
+      "roles": [
+        "幼馴染"
+      ],
       "looks": [],
-      "hairColor": [],
-      "skinTone": null,
+      "hairColor": [
+        "金"
+      ],
       "outfit": [],
-      "species": null,
       "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
-      "occupation": []
+      "occupation": [
+        "アイドル・芸能"
+      ]
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -89319,28 +89362,43 @@
   {
     "id": "avemujica-wakaba-mutsumi",
     "name": "若葉睦",
-    "aliases": [],
+    "aliases": [
+      "むつみ",
+      "モーティス",
+      "Mutsumi Wakaba"
+    ],
     "series": "BanG Dream! Ave Mujica",
     "dlsiteQuery": "若葉睦",
     "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
-      "looks": [],
-      "hairColor": [],
-      "skinTone": null,
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "小さい",
+      "distance": "受け身",
+      "skinTone": "色白",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "月ノ森女子学園",
+      "stature": "標準",
+      "personality": [
+        "クール",
+        "内気"
+      ],
+      "roles": [
+        "幼馴染"
+      ],
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "緑"
+      ],
       "outfit": [],
-      "species": null,
       "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
-      "occupation": []
+      "occupation": [
+        "アイドル・芸能"
+      ]
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -89354,27 +89412,35 @@
   {
     "id": "avemujica-yahata-umiri",
     "name": "八幡海鈴",
-    "aliases": [],
+    "aliases": [
+      "うみり",
+      "ティモリス",
+      "Umiri Yahata"
+    ],
     "series": "BanG Dream! Ave Mujica",
     "dlsiteQuery": "八幡海鈴",
     "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "distance": "中立",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "花咲川女子学園",
+      "stature": "標準",
+      "personality": [
+        "クール"
+      ],
       "roles": [],
-      "distance": null,
       "looks": [],
-      "hairColor": [],
-      "skinTone": null,
+      "hairColor": [
+        "黒"
+      ],
       "outfit": [],
-      "species": null,
       "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
       "occupation": []
     },
     "reviewed": false,
@@ -89389,28 +89455,41 @@
   {
     "id": "avemujica-yuutenji-nyamu",
     "name": "祐天寺にゃむ",
-    "aliases": [],
+    "aliases": [
+      "にゃむち",
+      "アモーリス",
+      "祐天寺若麦",
+      "Yuutenji Nyamu"
+    ],
     "series": "BanG Dream! Ave Mujica",
     "dlsiteQuery": "祐天寺にゃむ",
     "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "distance": "やや積極的",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "Ave Mujica",
+      "stature": "標準",
+      "personality": [
+        "生意気"
+      ],
       "roles": [],
-      "distance": null,
       "looks": [],
-      "hairColor": [],
-      "skinTone": null,
+      "hairColor": [
+        "紫"
+      ],
       "outfit": [],
-      "species": null,
-      "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
-      "occupation": []
+      "mood": [
+        "支配的"
+      ],
+      "occupation": [
+        "アイドル・芸能"
+      ]
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -89424,28 +89503,44 @@
   {
     "id": "hasunosora-hinoshita-kaho",
     "name": "日野下花帆",
-    "aliases": [],
+    "aliases": [
+      "花帆",
+      "かほ",
+      "Hinoshita Kaho"
+    ],
     "series": "ラブライブ!蓮ノ空女学院スクールアイドルクラブ",
     "dlsiteQuery": "蓮ノ空 日野下花帆",
     "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "distance": "やや積極的",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "蓮ノ空女学院",
+      "stature": "標準",
+      "personality": [
+        "元気"
+      ],
+      "roles": [
+        "後輩"
+      ],
       "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
-      "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
-      "occupation": []
+      "hairColor": [
+        "橙"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [
+        "甘め"
+      ],
+      "occupation": [
+        "アイドル・芸能"
+      ]
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -89459,28 +89554,46 @@
   {
     "id": "hasunosora-otomune-kozue",
     "name": "乙宗梢",
-    "aliases": [],
+    "aliases": [
+      "梢",
+      "こずえ",
+      "Otomune Kozue"
+    ],
     "series": "ラブライブ!蓮ノ空女学院スクールアイドルクラブ",
     "dlsiteQuery": "蓮ノ空 乙宗梢",
     "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
-      "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
-      "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
-      "occupation": []
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "distance": "やや受け身",
+      "skinTone": "色白",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "蓮ノ空女学院",
+      "stature": "標準",
+      "personality": [
+        "クール"
+      ],
+      "roles": [
+        "先輩"
+      ],
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "紫"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [
+        "純愛寄り"
+      ],
+      "occupation": [
+        "アイドル・芸能"
+      ]
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -89494,28 +89607,46 @@
   {
     "id": "hasunosora-murano-sayaka",
     "name": "村野さやか",
-    "aliases": [],
+    "aliases": [
+      "さやか",
+      "Murano Sayaka"
+    ],
     "series": "ラブライブ!蓮ノ空女学院スクールアイドルクラブ",
     "dlsiteQuery": "蓮ノ空 村野さやか",
     "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
-      "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
-      "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
-      "occupation": []
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "小さい",
+      "distance": "やや受け身",
+      "skinTone": "色白",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "蓮ノ空女学院",
+      "stature": "標準",
+      "personality": [
+        "クール"
+      ],
+      "roles": [
+        "先輩"
+      ],
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "青"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [
+        "純愛寄り"
+      ],
+      "occupation": [
+        "アイドル・芸能",
+        "アスリート"
+      ]
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -89529,28 +89660,48 @@
   {
     "id": "hasunosora-osawa-rurino",
     "name": "大沢瑠璃乃",
-    "aliases": [],
+    "aliases": [
+      "瑠璃乃",
+      "るりちゃん",
+      "Osawa Rurino"
+    ],
     "series": "ラブライブ!蓮ノ空女学院スクールアイドルクラブ",
     "dlsiteQuery": "蓮ノ空 大沢瑠璃乃",
     "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
-      "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
-      "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
-      "occupation": []
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "distance": "やや積極的",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "蓮ノ空女学院",
+      "stature": "標準",
+      "personality": [
+        "元気"
+      ],
+      "roles": [
+        "幼馴染"
+      ],
+      "looks": [
+        "長髪",
+        "ツインテール"
+      ],
+      "hairColor": [
+        "金",
+        "青"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [
+        "甘め"
+      ],
+      "occupation": [
+        "アイドル・芸能"
+      ]
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -89564,28 +89715,44 @@
   {
     "id": "hasunosora-momose-ginko",
     "name": "百生吟子",
-    "aliases": [],
+    "aliases": [
+      "吟子",
+      "ぎんこ",
+      "Momose Ginko"
+    ],
     "series": "ラブライブ!蓮ノ空女学院スクールアイドルクラブ",
     "dlsiteQuery": "蓮ノ空 百生吟子",
     "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "distance": "やや受け身",
+      "skinTone": "色白",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "蓮ノ空女学院",
+      "stature": "標準",
+      "personality": [
+        "クール"
+      ],
+      "roles": [
+        "後輩"
+      ],
       "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
-      "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
-      "occupation": []
+      "hairColor": [
+        "黒"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [
+        "純愛寄り"
+      ],
+      "occupation": [
+        "アイドル・芸能"
+      ]
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -89599,28 +89766,46 @@
   {
     "id": "hasunosora-yugiri-tsuzuri",
     "name": "夕霧綴理",
-    "aliases": [],
+    "aliases": [
+      "綴理",
+      "つづり",
+      "Yugiri Tsuzuri"
+    ],
     "series": "ラブライブ!蓮ノ空女学院スクールアイドルクラブ",
     "dlsiteQuery": "蓮ノ空 夕霧綴理",
     "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "小さい",
+      "distance": "中立",
+      "skinTone": "色白",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "蓮ノ空女学院",
+      "stature": "標準",
+      "personality": [
+        "おっとり"
+      ],
+      "roles": [
+        "先輩"
+      ],
       "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
-      "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
-      "occupation": []
+      "hairColor": [
+        "白",
+        "赤",
+        "銀"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [
+        "甘め"
+      ],
+      "occupation": [
+        "アイドル・芸能"
+      ]
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -89634,28 +89819,47 @@
   {
     "id": "hasunosora-fujishima-megumi",
     "name": "藤島慈",
-    "aliases": [],
+    "aliases": [
+      "慈",
+      "めぐちゃん",
+      "Fujishima Megumi"
+    ],
     "series": "ラブライブ!蓮ノ空女学院スクールアイドルクラブ",
     "dlsiteQuery": "蓮ノ空 藤島慈",
     "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
-      "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
-      "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
-      "occupation": []
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "distance": "やや積極的",
+      "skinTone": "色白",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "蓮ノ空女学院",
+      "stature": "標準",
+      "personality": [
+        "生意気"
+      ],
+      "roles": [
+        "幼馴染",
+        "先輩"
+      ],
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "茶"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [
+        "甘め"
+      ],
+      "occupation": [
+        "アイドル・芸能"
+      ]
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -89669,28 +89873,44 @@
   {
     "id": "hasunosora-kachimachi-kosuzu",
     "name": "徒町小鈴",
-    "aliases": [],
+    "aliases": [
+      "小鈴",
+      "こすず",
+      "Kachimachi Kosuzu"
+    ],
     "series": "ラブライブ!蓮ノ空女学院スクールアイドルクラブ",
     "dlsiteQuery": "蓮ノ空 徒町小鈴",
     "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "小さい",
+      "distance": "やや積極的",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "蓮ノ空女学院",
+      "stature": "標準",
+      "personality": [
+        "元気"
+      ],
+      "roles": [
+        "後輩"
+      ],
       "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
-      "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
-      "occupation": []
+      "hairColor": [
+        "茶"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [
+        "甘め"
+      ],
+      "occupation": [
+        "アイドル・芸能"
+      ]
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -89704,28 +89924,47 @@
   {
     "id": "hasunosora-anyoji-hime",
     "name": "安養寺姫芽",
-    "aliases": [],
+    "aliases": [
+      "姫芽",
+      "ひめ",
+      "Anyoji Hime"
+    ],
     "series": "ラブライブ!蓮ノ空女学院スクールアイドルクラブ",
     "dlsiteQuery": "蓮ノ空 安養寺姫芽",
     "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
-      "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
-      "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
-      "occupation": []
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "distance": "やや積極的",
+      "skinTone": "色白",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "蓮ノ空女学院",
+      "stature": "標準",
+      "personality": [
+        "おっとり"
+      ],
+      "roles": [
+        "後輩"
+      ],
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "金",
+        "桃"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [
+        "甘め"
+      ],
+      "occupation": [
+        "アイドル・芸能"
+      ]
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -89739,28 +89978,48 @@
   {
     "id": "madoka-sakura-kyoko",
     "name": "佐倉杏子",
-    "aliases": [],
+    "aliases": [
+      "杏子",
+      "あんこ",
+      "Kyoko Sakura"
+    ],
     "series": "魔法少女まどか☆マギカ",
     "dlsiteQuery": "まどマギ 佐倉杏子",
     "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
-      "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
-      "mood": [],
-      "combat": null,
-      "affiliationKind": null,
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "小さい",
+      "distance": "やや積極的",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦う",
+      "affiliationKind": "冒険者",
       "affiliationName": null,
-      "stature": null,
-      "occupation": []
+      "stature": "標準",
+      "personality": [
+        "生意気",
+        "姉御"
+      ],
+      "roles": [
+        "ライバル",
+        "友人"
+      ],
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "赤"
+      ],
+      "outfit": [
+        "魔法少女"
+      ],
+      "mood": [
+        "純愛寄り"
+      ],
+      "occupation": [
+        "魔法使い・魔術師"
+      ]
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -89774,27 +90033,43 @@
   {
     "id": "kon-hirasawa-yui",
     "name": "平沢唯",
-    "aliases": [],
+    "aliases": [
+      "唯",
+      "唯ちゃん",
+      "Yui Hirasawa"
+    ],
     "series": "けいおん!",
     "dlsiteQuery": "けいおん 平沢唯",
     "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "小さい",
+      "distance": "やや積極的",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "桜が丘高校",
+      "stature": "標準",
+      "personality": [
+        "元気",
+        "おっとり"
+      ],
+      "roles": [
+        "姉",
+        "友人"
+      ],
       "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
-      "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
+      "hairColor": [
+        "茶"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [
+        "甘め"
+      ],
       "occupation": []
     },
     "reviewed": false,
@@ -89809,27 +90084,42 @@
   {
     "id": "kon-tainaka-ritsu",
     "name": "田井中律",
-    "aliases": [],
+    "aliases": [
+      "律",
+      "りっちゃん",
+      "Ritsu Tainaka"
+    ],
     "series": "けいおん!",
     "dlsiteQuery": "けいおん 田井中律",
     "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "小さい",
+      "distance": "やや積極的",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "桜が丘高校",
+      "stature": "標準",
+      "personality": [
+        "元気",
+        "生意気"
+      ],
+      "roles": [
+        "幼馴染",
+        "姉",
+        "友人"
+      ],
       "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
+      "hairColor": [
+        "茶"
+      ],
+      "outfit": [
+        "制服"
+      ],
       "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
       "occupation": []
     },
     "reviewed": false,
@@ -89844,27 +90134,44 @@
   {
     "id": "suiseinomajo-suletta-mercury",
     "name": "スレッタ・マーキュリー",
-    "aliases": [],
+    "aliases": [
+      "スレッタ",
+      "水星たぬき",
+      "Suletta Mercury"
+    ],
     "series": "機動戦士ガンダム 水星の魔女",
     "dlsiteQuery": "水星の魔女 スレッタ",
     "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
-      "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
-      "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "大きい",
+      "distance": "やや受け身",
+      "skinTone": "褐色",
+      "species": "人間",
+      "combat": "戦う",
+      "affiliationKind": "学生",
+      "affiliationName": "アスティカシア高等専門学園",
+      "stature": "標準",
+      "personality": [
+        "元気",
+        "内気"
+      ],
+      "roles": [
+        "恋人・伴侶"
+      ],
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "赤"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [
+        "純愛寄り"
+      ],
       "occupation": []
     },
     "reviewed": false,
@@ -89879,27 +90186,44 @@
   {
     "id": "suiseinomajo-miorine-rembran",
     "name": "ミオリネ・レンブラン",
-    "aliases": [],
+    "aliases": [
+      "ミオリネ",
+      "Miorine Rembran"
+    ],
     "series": "機動戦士ガンダム 水星の魔女",
     "dlsiteQuery": "水星の魔女 ミオリネ",
     "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
-      "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
-      "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "小さい",
+      "distance": "中立",
+      "skinTone": "色白",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "アスティカシア高等専門学園",
+      "stature": "標準",
+      "personality": [
+        "クール",
+        "生意気"
+      ],
+      "roles": [
+        "恋人・伴侶"
+      ],
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "白",
+        "銀"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [
+        "純愛寄り"
+      ],
       "occupation": []
     },
     "reviewed": false,
@@ -89914,28 +90238,43 @@
   {
     "id": "girls-band-cry-iseri-nina",
     "name": "井芹仁菜",
-    "aliases": [],
+    "aliases": [
+      "仁菜",
+      "ニナ",
+      "Nina Iseri"
+    ],
     "series": "ガールズバンドクライ",
     "dlsiteQuery": "ガルクラ 井芹仁菜",
     "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
-      "looks": [],
-      "hairColor": [],
-      "skinTone": null,
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "distance": "中立",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
+      "affiliationName": "トゲナシトゲアリ",
+      "stature": "標準",
+      "personality": [
+        "生意気",
+        "内気"
+      ],
+      "roles": [
+        "友人"
+      ],
+      "looks": [
+        "ツインテール"
+      ],
+      "hairColor": [
+        "茶"
+      ],
       "outfit": [],
-      "species": null,
       "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
-      "occupation": []
+      "occupation": [
+        "アイドル・芸能"
+      ]
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -89949,28 +90288,43 @@
   {
     "id": "girls-band-cry-kawaragi-momoka",
     "name": "河原木桃香",
-    "aliases": [],
+    "aliases": [
+      "桃香",
+      "Momoka Kawaragi"
+    ],
     "series": "ガールズバンドクライ",
     "dlsiteQuery": "ガルクラ 河原木桃香",
     "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
-      "looks": [],
-      "hairColor": [],
-      "skinTone": null,
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "distance": "中立",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "社会人",
+      "affiliationName": "トゲナシトゲアリ",
+      "stature": "標準",
+      "personality": [
+        "クール",
+        "姉御"
+      ],
+      "roles": [
+        "先輩",
+        "友人"
+      ],
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "銀"
+      ],
       "outfit": [],
-      "species": null,
       "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
-      "occupation": []
+      "occupation": [
+        "アイドル・芸能"
+      ]
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -89984,28 +90338,45 @@
   {
     "id": "lycrecoil-inoue-takina",
     "name": "井ノ上たきな",
-    "aliases": [],
+    "aliases": [
+      "たきな",
+      "Takina Inoue"
+    ],
     "series": "リコリス・リコイル",
     "dlsiteQuery": "リコリス・リコイル 井ノ上たきな",
     "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
-      "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
-      "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
-      "occupation": []
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "distance": "やや受け身",
+      "skinTone": "色白",
+      "species": "人間",
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "affiliationName": "DA(Direct Attack)",
+      "stature": "標準",
+      "personality": [
+        "クール"
+      ],
+      "roles": [
+        "友人"
+      ],
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "黒"
+      ],
+      "outfit": [
+        "制服"
+      ],
+      "mood": [
+        "純愛寄り"
+      ],
+      "occupation": [
+        "スパイ・暗殺者"
+      ]
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -90019,27 +90390,45 @@
   {
     "id": "chokaguyahime-sakayori-iroha",
     "name": "酒寄彩葉",
-    "aliases": [],
+    "aliases": [
+      "いろP",
+      "彩葉"
+    ],
     "series": "超かぐや姫!",
     "dlsiteQuery": "超かぐや姫 酒寄彩葉",
     "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
-      "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
-      "mood": [],
-      "combat": null,
-      "affiliationKind": null,
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "distance": "やや受け身",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
       "affiliationName": null,
-      "stature": null,
+      "stature": "標準",
+      "personality": [
+        "クール"
+      ],
+      "roles": [
+        "友人"
+      ],
+      "looks": [
+        "ケモミミ",
+        "尻尾",
+        "長髪"
+      ],
+      "hairColor": [
+        "青",
+        "紫"
+      ],
+      "outfit": [
+        "和服・着物"
+      ],
+      "mood": [
+        "純愛寄り"
+      ],
       "occupation": []
     },
     "reviewed": false,
@@ -90054,28 +90443,46 @@
   {
     "id": "chokaguyahime-runami-yachiyo",
     "name": "月見ヤチヨ",
-    "aliases": [],
+    "aliases": [
+      "ヤッチョ",
+      "Yachiyo Runami"
+    ],
     "series": "超かぐや姫!",
     "dlsiteQuery": "超かぐや姫 月見ヤチヨ",
     "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "distance": "やや積極的",
+      "skinTone": "色白",
+      "species": "機械",
+      "combat": "戦わない",
+      "affiliationKind": "非人間・その他",
+      "affiliationName": "ツクヨミ",
+      "stature": "標準",
+      "personality": [
+        "元気",
+        "おっとり"
+      ],
       "roles": [],
-      "distance": null,
-      "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
-      "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
-      "occupation": []
+      "looks": [
+        "長髪",
+        "ツインテール"
+      ],
+      "hairColor": [
+        "白",
+        "桃"
+      ],
+      "outfit": [
+        "和服・着物"
+      ],
+      "mood": [
+        "甘め"
+      ],
+      "occupation": [
+        "アイドル・芸能"
+      ]
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -90089,28 +90496,42 @@
   {
     "id": "alienstage-mizi",
     "name": "ミジ",
-    "aliases": [],
+    "aliases": [
+      "Mizi"
+    ],
     "series": "ALIEN STAGE",
     "dlsiteQuery": "ALIEN STAGE ミジ",
     "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
-      "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
-      "mood": [],
-      "combat": null,
-      "affiliationKind": null,
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "標準",
+      "distance": "やや積極的",
+      "skinTone": "色白",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
       "affiliationName": null,
-      "stature": null,
-      "occupation": []
+      "stature": "標準",
+      "personality": [
+        "元気"
+      ],
+      "roles": [
+        "恋人・伴侶"
+      ],
+      "looks": [
+        "長髪"
+      ],
+      "hairColor": [
+        "桃"
+      ],
+      "outfit": [],
+      "mood": [
+        "純愛寄り"
+      ],
+      "occupation": [
+        "アイドル・芸能"
+      ]
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -90124,28 +90545,41 @@
   {
     "id": "alienstage-sua",
     "name": "スア",
-    "aliases": [],
+    "aliases": [
+      "Sua"
+    ],
     "series": "ALIEN STAGE",
     "dlsiteQuery": "ALIEN STAGE スア",
     "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
-      "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
-      "mood": [],
-      "combat": null,
-      "affiliationKind": null,
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "小さい",
+      "distance": "やや受け身",
+      "skinTone": "色白",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "学生",
       "affiliationName": null,
-      "stature": null,
-      "occupation": []
+      "stature": "標準",
+      "personality": [
+        "クール",
+        "内気"
+      ],
+      "roles": [
+        "恋人・伴侶"
+      ],
+      "looks": [],
+      "hairColor": [
+        "黒"
+      ],
+      "outfit": [],
+      "mood": [
+        "純愛寄り"
+      ],
+      "occupation": [
+        "アイドル・芸能"
+      ]
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -90159,27 +90593,39 @@
   {
     "id": "kemono-kaban",
     "name": "かばん",
-    "aliases": [],
+    "aliases": [
+      "かばんちゃん",
+      "Kaban"
+    ],
     "series": "けものフレンズ",
     "dlsiteQuery": "けものフレンズ かばん",
     "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
-      "roles": [],
-      "distance": null,
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "小さい",
+      "distance": "やや受け身",
+      "skinTone": "標準",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "冒険者",
+      "affiliationName": "ジャパリパーク",
+      "stature": "標準",
+      "personality": [
+        "おっとり",
+        "内気"
+      ],
+      "roles": [
+        "友人"
+      ],
       "looks": [],
-      "hairColor": [],
-      "skinTone": null,
+      "hairColor": [
+        "黒"
+      ],
       "outfit": [],
-      "species": null,
-      "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
+      "mood": [
+        "純愛寄り"
+      ],
       "occupation": []
     },
     "reviewed": false,
@@ -90194,28 +90640,48 @@
   {
     "id": "strikewitches-eila",
     "name": "エイラ・イルマタル・ユーティライネン",
-    "aliases": [],
+    "aliases": [
+      "エイラ",
+      "イッル",
+      "Eila"
+    ],
     "series": "ストライクウィッチーズ",
     "dlsiteQuery": "ストライクウィッチーズ エイラ",
     "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "標準",
+      "bust": "標準",
+      "distance": "やや受け身",
+      "skinTone": "色白",
+      "species": "獣人",
+      "combat": "戦う",
+      "affiliationKind": "軍・組織",
+      "affiliationName": "第501統合戦闘航空団",
+      "stature": "標準",
+      "personality": [
+        "生意気",
+        "むっつり"
+      ],
       "roles": [],
-      "distance": null,
-      "looks": [],
-      "hairColor": [],
-      "skinTone": null,
-      "outfit": [],
-      "species": null,
-      "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
-      "occupation": []
+      "looks": [
+        "ケモミミ",
+        "尻尾",
+        "長髪"
+      ],
+      "hairColor": [
+        "金",
+        "銀"
+      ],
+      "outfit": [
+        "軍服"
+      ],
+      "mood": [
+        "純愛寄り"
+      ],
+      "occupation": [
+        "兵士・軍人"
+      ]
     },
     "reviewed": false,
     "hitomiQuery": {
@@ -90229,27 +90695,34 @@
   {
     "id": "reverse1999-vertin",
     "name": "ヴェルティ",
-    "aliases": [],
+    "aliases": [
+      "Vertin",
+      "タイムキーパー"
+    ],
     "series": "リバース：1999",
     "dlsiteQuery": "リバース1999 ヴェルティ",
     "axes": {
-      "genderExpression": null,
-      "ageFeel": null,
-      "build": null,
-      "bust": null,
-      "personality": [],
+      "genderExpression": "女性",
+      "ageFeel": "同年代",
+      "build": "華奢",
+      "bust": "小さい",
+      "distance": "中立",
+      "skinTone": "色白",
+      "species": "人間",
+      "combat": "戦わない",
+      "affiliationKind": "軍・組織",
+      "affiliationName": "聖パブロフ財団",
+      "stature": "標準",
+      "personality": [
+        "クール"
+      ],
       "roles": [],
-      "distance": null,
       "looks": [],
-      "hairColor": [],
-      "skinTone": null,
+      "hairColor": [
+        "銀"
+      ],
       "outfit": [],
-      "species": null,
       "mood": [],
-      "combat": null,
-      "affiliationKind": null,
-      "affiliationName": null,
-      "stature": null,
       "occupation": []
     },
     "reviewed": false,

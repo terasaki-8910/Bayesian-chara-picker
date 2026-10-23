@@ -17,7 +17,7 @@
  *   - 値が無い（単一値はnull、配列は[]）のは「未設定」という1つの状態として扱う。
  *     両者とも未設定なら一致（nullとnullも、[]と[]も一致）とみなす——「両者とも
  *     確証が無く空けた」もここでは意見の一致として数える。
- *   - 下書き側に除外flags（same-as:*・not-a-character・player-avatar・male・
+ *   - 下書き側に除外flags（same-as:*・not-a-character・player-avatar・male・child・
  *     unreleased）が付いているキャラは比較から外す（除外前提のため軸の比較自体に
  *     意味が無い）。
  *   - n はその軸で実際に比較したキャラ数（= 全軸共通。drafts と annotations の
@@ -49,7 +49,8 @@ const ARRAY_AXES_LIST = ['personality', 'roles', 'looks', 'hairColor', 'outfit',
 /** 下書きの flags のうち、これらが1つでも付いていれば比較から外す。apply側と同じ条件。 */
 function isExcludedByFlags(flags) {
   return (flags ?? []).some(
-    (f) => f === 'not-a-character' || f === 'player-avatar' || f === 'male' || f === 'unreleased' || f.startsWith('same-as:'),
+    (f) =>
+      f === 'not-a-character' || f === 'player-avatar' || f === 'male' || f === 'unreleased' || f === 'child' || f.startsWith('same-as:'),
   );
 }
 
