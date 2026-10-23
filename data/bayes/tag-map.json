@@ -5351,10 +5351,10 @@
       "checkedAt": "2026-10-06T06:57:14.455Z"
     },
     "madoka-sayaka": {
-      "tag": "miki_sayaka_(magical_girl)",
-      "postCount": 8825,
+      "tag": "miki_sayaka",
+      "postCount": 20384,
       "source": "override",
-      "checkedAt": "2026-10-06T06:57:14.844Z"
+      "checkedAt": "2026-10-23T08:14:46.910Z"
     },
     "umamusume-mejiromcqueen": {
       "tag": "mejiro_mcqueen_(umamusume)",
@@ -23825,6 +23825,683 @@
       "postCount": 1622,
       "source": "override",
       "checkedAt": "2026-10-23T06:23:01.403Z"
+    },
+    "mygo-chihaya-anon": {
+      "tag": "chihaya_anon",
+      "postCount": 11031,
+      "source": "name-order-reversed",
+      "seriesOverlap": 0.9999093463874535,
+      "candidatesTried": [
+        "anon_chihaya",
+        "chihaya_anon",
+        "anon_chihaya_(bang_dream!_it's_mygo!!!!!)",
+        "anon_chihaya(*)",
+        "anon(*)"
+      ],
+      "allCandidates": [
+        "chihaya_anon(11031)",
+        "anonymous_(4chan)(84)",
+        "anonymous_elf(68)",
+        "anon_non(31)",
+        "anonymous_crossdresser(23)"
+      ],
+      "checkedAt": "2026-10-23T08:11:19.413Z"
+    },
+    "mygo-nagasaki-soyo": {
+      "tag": "nagasaki_soyo",
+      "postCount": 9637,
+      "source": "name-order-reversed",
+      "seriesOverlap": 0.9998962332676145,
+      "candidatesTried": [
+        "soyo_nagasaki",
+        "nagasaki_soyo",
+        "soyo_nagasaki_(bang_dream!_it's_mygo!!!!!)",
+        "soyo_nagasaki(*)",
+        "soyo(*)"
+      ],
+      "allCandidates": [
+        "nagasaki_soyo(9637)",
+        "soyogo_(flower_knight_girl)(11)",
+        "soyogi_setsune(10)",
+        "soyo_hime(7)",
+        "soyon_(kemono_no_souja_erin)(7)"
+      ],
+      "checkedAt": "2026-10-23T08:11:25.991Z"
+    },
+    "mygo-shiina-taki": {
+      "tag": "shiina_taki",
+      "postCount": 8025,
+      "source": "name-order-reversed",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "taki_shiina",
+        "shiina_taki",
+        "taki_shiina_(bang_dream!_it's_mygo!!!!!)",
+        "taki_shiina(*)",
+        "taki(*)"
+      ],
+      "allCandidates": [
+        "shiina_taki(8025)",
+        "takimoto_hifumi(802)",
+        "takino_tomo(540)",
+        "takigawa_miu(468)",
+        "taki_(soulcalibur)(461)"
+      ],
+      "checkedAt": "2026-10-23T08:11:32.643Z"
+    },
+    "mygo-takamatsu-tomori": {
+      "tag": "takamatsu_tomori",
+      "postCount": 5180,
+      "source": "name-order-reversed",
+      "seriesOverlap": 0.9996138996138996,
+      "candidatesTried": [
+        "tomori_takamatsu",
+        "takamatsu_tomori",
+        "tomori_takamatsu_(bang_dream!_it's_mygo!!!!!)",
+        "tomori_takamatsu(*)",
+        "tomori(*)"
+      ],
+      "allCandidates": [
+        "takamatsu_tomori(5180)",
+        "tomori_nao(898)",
+        "tomori_manaka(104)",
+        "tomori_kizuna(14)",
+        "tomorin_(penguin)(8)"
+      ],
+      "checkedAt": "2026-10-23T08:11:39.248Z"
+    },
+    "mygo-kaname-raana": {
+      "tag": "kaname_raana",
+      "postCount": 3333,
+      "source": "name-order-reversed",
+      "seriesOverlap": 0.9996999699969997,
+      "candidatesTried": [
+        "raana_kaname",
+        "kaname_raana",
+        "raana_kaname_(bang_dream!_it's_mygo!!!!!)",
+        "raana_kaname(*)",
+        "raana(*)"
+      ],
+      "allCandidates": [
+        "kaname_raana(3333)"
+      ],
+      "checkedAt": "2026-10-23T08:11:45.890Z"
+    },
+    "avemujica-togawa-sakiko": {
+      "tag": "togawa_sakiko",
+      "postCount": 11943,
+      "source": "name-order-reversed",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "sakiko_togawa",
+        "togawa_sakiko",
+        "sakiko_togawa_(bang_dream!_it's_mygo!!!!!)",
+        "sakiko_togawa(*)",
+        "sakiko(*)"
+      ],
+      "allCandidates": [
+        "togawa_sakiko(11943)",
+        "sakiko_(vocaloid)(19)",
+        "sakiko_yarimura_(risakiriki)(13)"
+      ],
+      "checkedAt": "2026-10-23T08:11:52.555Z"
+    },
+    "avemujica-misumi-uika": {
+      "tag": "misumi_uika",
+      "postCount": 8139,
+      "source": "name-order-reversed",
+      "seriesOverlap": 0.9998771347831429,
+      "candidatesTried": [
+        "uika_misumi",
+        "misumi_uika",
+        "uika_misumi_(bang_dream!_it's_mygo!!!!!)",
+        "uika_misumi(*)",
+        "uika(*)"
+      ],
+      "allCandidates": [
+        "misumi_uika(8139)",
+        "uikawa_shino(16)",
+        "uika-chan_(fukunao)(1)"
+      ],
+      "checkedAt": "2026-10-23T08:11:59.180Z"
+    },
+    "avemujica-wakaba-mutsumi": {
+      "tag": "wakaba_mutsumi",
+      "postCount": 7761,
+      "source": "name-order-reversed",
+      "seriesOverlap": 0.9998711506249195,
+      "candidatesTried": [
+        "mutsumi_wakaba",
+        "wakaba_mutsumi",
+        "mutsumi_wakaba_(bang_dream!_it's_mygo!!!!!)",
+        "mutsumi_wakaba(*)",
+        "mutsumi(*)"
+      ],
+      "allCandidates": [
+        "wakaba_mutsumi(7761)",
+        "mutsumi_(juukyuu)(77)",
+        "mutsumi_kai(75)",
+        "mutsumi_(utawarerumono)(32)",
+        "mutsumi_golem_bibliophile(15)"
+      ],
+      "checkedAt": "2026-10-23T08:12:05.936Z"
+    },
+    "avemujica-yahata-umiri": {
+      "tag": "yahata_umiri",
+      "postCount": 7309,
+      "source": "name-order-reversed",
+      "seriesOverlap": 0.9998631823778903,
+      "candidatesTried": [
+        "umiri_yahata",
+        "yahata_umiri",
+        "umiri_yahata_(bang_dream!_it's_mygo!!!!!)",
+        "umiri_yahata(*)",
+        "umiri(*)"
+      ],
+      "allCandidates": [
+        "yahata_umiri(7309)"
+      ],
+      "checkedAt": "2026-10-23T08:12:12.507Z"
+    },
+    "avemujica-yuutenji-nyamu": {
+      "tag": "yuutenji_nyamu",
+      "postCount": 3106,
+      "source": "name-order-reversed",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "nyamu_yuutenji",
+        "yuutenji_nyamu",
+        "nyamu_yuutenji_(bang_dream!_it's_mygo!!!!!)",
+        "nyamu_yuutenji(*)",
+        "nyamu(*)"
+      ],
+      "allCandidates": [
+        "yuutenji_nyamu(3106)",
+        "nyamu_nyamu(7)",
+        "nyamu-chan_(nyamura)(3)",
+        "nyamuta_(vtuber)(1)"
+      ],
+      "checkedAt": "2026-10-23T08:12:19.138Z"
+    },
+    "hasunosora-hinoshita-kaho": {
+      "tag": "hinoshita_kaho",
+      "postCount": 9216,
+      "source": "name-order-reversed",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "kaho_hinoshita",
+        "hinoshita_kaho",
+        "kaho_hinoshita_(love_live!_hasu_no_sora_jogakuin_school_idol_club)",
+        "kaho_hinoshita(*)",
+        "kaho(*)"
+      ],
+      "allCandidates": [
+        "hinoshita_kaho(9216)",
+        "kaho_(blue_archive)(1064)",
+        "kaho_(sister_princess)(126)",
+        "kaho_eira(56)",
+        "kaho_(juukyuu)(40)"
+      ],
+      "checkedAt": "2026-10-23T08:12:25.719Z"
+    },
+    "hasunosora-otomune-kozue": {
+      "tag": "otomune_kozue",
+      "postCount": 7305,
+      "source": "name-order-reversed",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "kozue_otomune",
+        "otomune_kozue",
+        "kozue_otomune_(love_live!_hasu_no_sora_jogakuin_school_idol_club)",
+        "kozue_otomune(*)",
+        "kozue(*)"
+      ],
+      "allCandidates": [
+        "otomune_kozue(7305)",
+        "kozue_mone(92)",
+        "kozue_west(90)",
+        "kozue_mayu(40)",
+        "kozue_mone_(1st_costume)(34)"
+      ],
+      "checkedAt": "2026-10-23T08:12:32.356Z"
+    },
+    "hasunosora-murano-sayaka": {
+      "tag": "murano_sayaka",
+      "postCount": 7144,
+      "source": "name-order-reversed",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "sayaka_murano",
+        "murano_sayaka",
+        "sayaka_murano_(love_live!_hasu_no_sora_jogakuin_school_idol_club)",
+        "sayaka_murano(*)",
+        "sayaka(*)"
+      ],
+      "allCandidates": [
+        "murano_sayaka(7144)",
+        "sayaka_(saru_getchu)(450)",
+        "sayaka_(harris_hero)(88)",
+        "sayaka-chan_(gashi-gashi)(45)",
+        "sayaka_(tonari_no_jk_ni_odosarete_iribitararetemasu)(40)"
+      ],
+      "checkedAt": "2026-10-23T08:12:39.085Z"
+    },
+    "hasunosora-osawa-rurino": {
+      "tag": "osawa_rurino",
+      "postCount": 6696,
+      "source": "name-order-reversed",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "rurino_osawa",
+        "osawa_rurino",
+        "rurino_osawa_(love_live!_hasu_no_sora_jogakuin_school_idol_club)",
+        "rurino_osawa(*)",
+        "rurino(*)"
+      ],
+      "allCandidates": [
+        "osawa_rurino(6696)",
+        "rurino_nemo(12)"
+      ],
+      "checkedAt": "2026-10-23T08:12:45.661Z"
+    },
+    "hasunosora-momose-ginko": {
+      "tag": "momose_ginko",
+      "postCount": 7434,
+      "source": "name-order-reversed",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "ginko_momose",
+        "momose_ginko",
+        "ginko_momose_(love_live!_hasu_no_sora_jogakuin_school_idol_club)",
+        "ginko_momose(*)",
+        "ginko(*)"
+      ],
+      "allCandidates": [
+        "momose_ginko(7434)",
+        "ginko_(mushishi)(334)",
+        "ginko_(sugar_sweet)(26)",
+        "ginko_(kimetsu_no_yaiba)(8)",
+        "ginko_(tasogare_no_sinsemilla)(7)"
+      ],
+      "checkedAt": "2026-10-23T08:12:52.474Z"
+    },
+    "hasunosora-yugiri-tsuzuri": {
+      "tag": "yugiri_tsuzuri",
+      "postCount": 5855,
+      "source": "name-order-reversed",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "tsuzuri_yugiri",
+        "yugiri_tsuzuri",
+        "tsuzuri_yugiri_(love_live!_hasu_no_sora_jogakuin_school_idol_club)",
+        "tsuzuri_yugiri(*)",
+        "tsuzuri(*)"
+      ],
+      "allCandidates": [
+        "yugiri_tsuzuri(5855)",
+        "tsuzuri_(lycoris_radiata)(11)",
+        "tsuzurime_higasa(6)",
+        "tsuzurigi_ichinari(5)",
+        "tsuzurine_algo(1)"
+      ],
+      "checkedAt": "2026-10-23T08:12:58.953Z"
+    },
+    "hasunosora-fujishima-megumi": {
+      "tag": "fujishima_megumi",
+      "postCount": 7614,
+      "source": "name-order-reversed",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "megumi_fujishima",
+        "fujishima_megumi",
+        "megumi_fujishima_(love_live!_hasu_no_sora_jogakuin_school_idol_club)",
+        "megumi_fujishima(*)",
+        "megumi(*)"
+      ],
+      "allCandidates": [
+        "fujishima_megumi(7614)",
+        "megumin(10966)",
+        "megumi_(girls_und_panzer)(314)",
+        "megumi's_mother_(jujutsu_kaisen)(59)",
+        "megumi_moka(33)"
+      ],
+      "checkedAt": "2026-10-23T08:13:05.596Z"
+    },
+    "hasunosora-kachimachi-kosuzu": {
+      "tag": "kachimachi_kosuzu",
+      "postCount": 5536,
+      "source": "name-order-reversed",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "kosuzu_kachimachi",
+        "kachimachi_kosuzu",
+        "kosuzu_kachimachi_(love_live!_hasu_no_sora_jogakuin_school_idol_club)",
+        "kosuzu_kachimachi(*)",
+        "kosuzu(*)"
+      ],
+      "allCandidates": [
+        "kachimachi_kosuzu(5536)",
+        "kosuzu_(senran_kagura)(77)",
+        "kosuzu_rin-chan_(sinon77)(19)",
+        "kosuzu_hisae(17)",
+        "kosuzu_lian(3)"
+      ],
+      "checkedAt": "2026-10-23T08:13:12.246Z"
+    },
+    "hasunosora-anyoji-hime": {
+      "tag": "anyoji_hime",
+      "postCount": 6089,
+      "source": "name-order-reversed",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "hime_anyoji",
+        "anyoji_hime",
+        "hime_anyoji_(love_live!_hasu_no_sora_jogakuin_school_idol_club)",
+        "hime_anyoji(*)",
+        "hime(*)"
+      ],
+      "allCandidates": [
+        "anyoji_hime(6089)",
+        "himekaidou_hatate(8960)",
+        "himemori_luna(2833)",
+        "himesaki_rinami(2446)",
+        "himeko_(honkai:_star_rail)(2332)"
+      ],
+      "checkedAt": "2026-10-23T08:13:18.875Z"
+    },
+    "madoka-sakura-kyoko": {
+      "tag": "sakura_kyoko",
+      "postCount": 17227,
+      "source": "name-order-reversed",
+      "seriesOverlap": 0.9999419515876241,
+      "candidatesTried": [
+        "kyoko_sakura",
+        "sakura_kyoko",
+        "kyoko_sakura_(mahou_shoujo_madoka_magica)",
+        "kyoko_sakura(*)",
+        "kyoko(*)"
+      ],
+      "allCandidates": [
+        "sakura_kyoko(17227)",
+        "kyoko_(kunio-kun)(219)",
+        "kyoko_(madaotheory)(126)",
+        "kyoko_needleworker(21)",
+        "kyokotsu_(nue_no_onmyouji)(16)"
+      ],
+      "checkedAt": "2026-10-23T08:13:25.582Z"
+    },
+    "kon-hirasawa-yui": {
+      "tag": "hirasawa_yui",
+      "postCount": 8981,
+      "source": "name-order-reversed",
+      "seriesOverlap": 0.9995546152989645,
+      "candidatesTried": [
+        "yui_hirasawa",
+        "hirasawa_yui",
+        "yui_hirasawa_(k-on!)",
+        "yui_hirasawa(*)",
+        "yui(*)"
+      ],
+      "allCandidates": [
+        "hirasawa_yui(8981)",
+        "yuigahama_yui(1833)",
+        "yui_(angel_beats!)(1412)",
+        "yui_(princess_connect!)(1271)",
+        "yuiman_asama(868)"
+      ],
+      "checkedAt": "2026-10-23T08:13:32.799Z"
+    },
+    "kon-tainaka-ritsu": {
+      "tag": "tainaka_ritsu",
+      "postCount": 7608,
+      "source": "name-order-reversed",
+      "seriesOverlap": 0.9997371188222923,
+      "candidatesTried": [
+        "ritsu_tainaka",
+        "tainaka_ritsu",
+        "ritsu_tainaka_(k-on!)",
+        "ritsu_tainaka(*)",
+        "ritsu(*)"
+      ],
+      "allCandidates": [
+        "tainaka_ritsu(7608)",
+        "ritsu_(blue_archive)(222)",
+        "ritsu_(kemurikusa)(132)",
+        "ritsuko_kubel_kettenkrad(93)",
+        "ritsuko_(yamibou)(23)"
+      ],
+      "checkedAt": "2026-10-23T08:13:38.807Z"
+    },
+    "suiseinomajo-suletta-mercury": {
+      "tag": "suletta_mercury",
+      "postCount": 8112,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "suletta_mercury",
+        "suletta_mercury_(gundam_suisei_no_majo)",
+        "suletta_mercury(*)",
+        "suletta(*)"
+      ],
+      "allCandidates": [
+        "suletta_mercury(8112)"
+      ],
+      "checkedAt": "2026-10-23T08:13:45.040Z"
+    },
+    "suiseinomajo-miorine-rembran": {
+      "tag": "miorine_rembran",
+      "postCount": 7327,
+      "source": "exact",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "miorine_rembran",
+        "miorine_rembran_(gundam_suisei_no_majo)",
+        "miorine_rembran(*)",
+        "miorine(*)"
+      ],
+      "allCandidates": [
+        "miorine_rembran(7327)"
+      ],
+      "checkedAt": "2026-10-23T08:13:50.181Z"
+    },
+    "girls-band-cry-iseri-nina": {
+      "tag": "iseri_nina",
+      "postCount": 7918,
+      "source": "name-order-reversed",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "nina_iseri",
+        "iseri_nina",
+        "nina_iseri_(girls_band_cry)",
+        "nina_iseri(*)",
+        "nina(*)"
+      ],
+      "allCandidates": [
+        "iseri_nina(7918)",
+        "nina_(fire_emblem)(1128)",
+        "nina_kosaka(679)",
+        "nina_(breath_of_fire_v)(459)",
+        "nina_(breath_of_fire_ii)(427)"
+      ],
+      "checkedAt": "2026-10-23T08:13:57.014Z"
+    },
+    "girls-band-cry-kawaragi-momoka": {
+      "tag": "kawaragi_momoka",
+      "postCount": 7426,
+      "source": "name-order-reversed",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "momoka_kawaragi",
+        "kawaragi_momoka",
+        "momoka_kawaragi_(girls_band_cry)",
+        "momoka_kawaragi(*)",
+        "momoka(*)"
+      ],
+      "allCandidates": [
+        "kawaragi_momoka(7426)",
+        "momoka_(blue_archive)(431)",
+        "momoka_(pretzelfan)(25)",
+        "momoka_(galholic)(22)",
+        "momokawa_sasa(20)"
+      ],
+      "checkedAt": "2026-10-23T08:14:03.403Z"
+    },
+    "lycrecoil-inoue-takina": {
+      "tag": "inoue_takina",
+      "postCount": 6913,
+      "source": "name-order-reversed",
+      "seriesOverlap": 0.9995660350065094,
+      "candidatesTried": [
+        "takina_inoue",
+        "inoue_takina",
+        "takina_inoue_(lycoris_recoil)",
+        "takina_inoue(*)",
+        "takina(*)"
+      ],
+      "allCandidates": [
+        "inoue_takina(6913)",
+        "takinami_lemon(4)",
+        "takinami_suzuka(2)",
+        "takinami_ryuuko(1)"
+      ],
+      "checkedAt": "2026-10-23T08:14:10.041Z"
+    },
+    "chokaguyahime-sakayori-iroha": {
+      "tag": "sakayori_iroha",
+      "postCount": 10847,
+      "source": "name-order-reversed",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "iroha_sakayori",
+        "sakayori_iroha",
+        "iroha_sakayori_(cho_kaguya-hime!)",
+        "iroha_sakayori(*)",
+        "iroha(*)"
+      ],
+      "allCandidates": [
+        "sakayori_iroha(10847)",
+        "iroha_(blue_archive)(4549)",
+        "iroha_(samurai_spirits)(1205)",
+        "iroha_(swimsuit)_(blue_archive)(533)",
+        "iroha_nanairo_(urushiushiru)(75)"
+      ],
+      "checkedAt": "2026-10-23T08:14:16.715Z"
+    },
+    "chokaguyahime-runami-yachiyo": {
+      "tag": "runami_yachiyo",
+      "postCount": 7197,
+      "source": "name-order-reversed",
+      "seriesOverlap": 0.999861053216618,
+      "candidatesTried": [
+        "yachiyo_runami",
+        "runami_yachiyo",
+        "yachiyo_runami_(cho_kaguya-hime!)",
+        "yachiyo_runami(*)",
+        "yachiyo(*)"
+      ],
+      "allCandidates": [
+        "runami_yachiyo(7197)",
+        "yachiyo_(apocalypse_hotel)(136)",
+        "yachiyo_mei(28)",
+        "yachiyo_(rune_factory)(20)",
+        "yachiyo_(dragalia_lost)(7)"
+      ],
+      "checkedAt": "2026-10-23T08:14:23.314Z"
+    },
+    "alienstage-mizi": {
+      "tag": "mizi_(alien_stage)",
+      "postCount": 7529,
+      "source": "series-qualified",
+      "seriesOverlap": 0.9994687209456767,
+      "candidatesTried": [
+        "mizi",
+        "mizi_(alien_stage)",
+        "mizi(*)"
+      ],
+      "allCandidates": [
+        "mizi_(alien_stage)(7529)",
+        "mizi_(zombie_stage)(1913)",
+        "mizi_(demon)_(alien_stage)(192)",
+        "mizi_(akuma)_(zombie_stage)(104)",
+        "mizi's_mother_(alien_stage)(8)"
+      ],
+      "checkedAt": "2026-10-23T08:14:27.777Z"
+    },
+    "alienstage-sua": {
+      "tag": "sua_(alien_stage)",
+      "postCount": 7828,
+      "source": "series-qualified",
+      "seriesOverlap": 0.9994890137966275,
+      "candidatesTried": [
+        "sua",
+        "sua_(alien_stage)",
+        "sua(*)"
+      ],
+      "allCandidates": [
+        "sua_(alien_stage)(7828)",
+        "sua_(zombie_stage)(1984)",
+        "sua_(angel)_(alien_stage)(262)",
+        "sua_(black_survival)(230)",
+        "sua_(tenshi)_(zombie_stage)(102)"
+      ],
+      "checkedAt": "2026-10-23T08:14:32.187Z"
+    },
+    "kemono-kaban": {
+      "tag": "kaban_(kemono_friends)",
+      "postCount": 5914,
+      "source": "series-qualified",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "kaban",
+        "kaban_(kemono_friends)",
+        "kaban(*)"
+      ],
+      "allCandidates": [
+        "kaban_(kemono_friends)(5914)",
+        "kabane_yuen_homura(4)",
+        "kaban_(escape_from_tarkov)(3)",
+        "kabane_jyuji(3)",
+        "kabanera_(23-ku_tokyo_majou)(2)"
+      ],
+      "checkedAt": "2026-10-23T08:14:36.602Z"
+    },
+    "strikewitches-eila": {
+      "tag": "eila_ilmatar_juutilainen",
+      "postCount": 3547,
+      "source": "exact",
+      "seriesOverlap": 0.994643360586411,
+      "candidatesTried": [
+        "eila_ilmatar_juutilainen",
+        "eila_ilmatar_juutilainen_(strike_witches)",
+        "eila_ilmatar_juutilainen(*)",
+        "eila(*)"
+      ],
+      "allCandidates": [
+        "eila_ilmatar_juutilainen(3547)",
+        "eiland_(fields_of_mistria)(17)",
+        "eila_halltunen(4)",
+        "eila_sera_berman(2)",
+        "eila_(merc_storia)(2)"
+      ],
+      "checkedAt": "2026-10-23T08:14:42.128Z"
+    },
+    "reverse1999-vertin": {
+      "tag": "vertin_(reverse:1999)",
+      "postCount": 3137,
+      "source": "series-qualified",
+      "seriesOverlap": 1,
+      "candidatesTried": [
+        "vertin",
+        "vertin_(reverse:1999)",
+        "vertin(*)"
+      ],
+      "allCandidates": [
+        "vertin_(reverse:1999)(3137)",
+        "vertin_(ipstar)_(reverse:1999)(61)",
+        "vertin_(winter)_(reverse:1999)(59)",
+        "vertin_(the_long-eared_watchmaker)_(reverse:1999)(25)"
+      ],
+      "checkedAt": "2026-10-23T08:14:46.552Z"
     }
   }
 }

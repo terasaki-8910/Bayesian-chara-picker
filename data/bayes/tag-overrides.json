@@ -340,7 +340,10 @@
     "遊☆戯☆王5D's": "yu-gi-oh!_5d's",
     "遊☆戯☆王デュエルモンスターズGX": "yu-gi-oh!_gx",
     "ゆめにっき": "yume_nikki",
-    "ゼロの使い魔": "zero_no_tsukaima"
+    "ゼロの使い魔": "zero_no_tsukaima",
+    "BanG Dream! It's MyGO!!!!!": "bang_dream!_it's_mygo!!!!!",
+    "BanG Dream! Ave Mujica": "bang_dream!_it's_mygo!!!!!",
+    "機動戦士ガンダム 水星の魔女": "gundam_suisei_no_majo"
   },
   "overrides": {
     "naruto-kurenai": {
@@ -1640,8 +1643,8 @@
       "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
     },
     "madoka-sayaka": {
-      "tag": "miki_sayaka_(magical_girl)",
-      "reason": "500体拡張Stage 0/1で確定済みのDanbooru候補タグをそのまま採用。候補生成時にgenderRatio/1girl優位性、シリーズ候補はwikiリンクとの共起率50%以上を検証済み。"
+      "tag": "miki_sayaka",
+      "reason": "衣装違いの miki_sayaka_(magical_girl)(8825件)を指していたため、本人のタグ(20384件)に直す(2026-10-23、上位の帯の取り直しで判明)。"
     },
     "umamusume-mejiromcqueen": {
       "tag": "mejiro_mcqueen_(umamusume)",
