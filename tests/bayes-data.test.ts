@@ -160,13 +160,14 @@ describe('BA2. likelihoods.json の構造・確率範囲', () => {
 
   it('全ての確率値が [epsilon, 1-epsilon] の範囲内でNaNでない', () => {
     const { epsilon } = likelihoodsFile;
+    // 1800体 × 139問を1値ずつ expect すると5秒の制限を超えたので、外れた値だけを集めて比べる(2026-10-23)。
+    const outOfRange: string[] = [];
     for (const [id, arr] of Object.entries(likelihoodsFile.chars)) {
       for (const [i, p] of arr.entries()) {
-        expect(Number.isNaN(p), `${id}[${i}]=${p}`).toBe(false);
-        expect(p, `${id}[${i}]`).toBeGreaterThanOrEqual(epsilon);
-        expect(p, `${id}[${i}]`).toBeLessThanOrEqual(1 - epsilon);
+        if (Number.isNaN(p) || p < epsilon || p > 1 - epsilon) outOfRange.push(`${id}[${i}]=${p}`);
       }
     }
+    expect(outOfRange).toEqual([]);
   });
 
   it('baseRates も [epsilon, 1-epsilon] の範囲内（軸のみソースの質問は0.5になり得る）', () => {
