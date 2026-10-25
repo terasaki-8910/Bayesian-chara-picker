@@ -5,8 +5,9 @@
  *
  * 対象は data/characters.json のうち reviewed!==true かつ provisional!==true の
  * キャラ（まだ下書きが未反映の新規キャラ）のみ。除外するかどうかの判断は一切せず、
- * 下書きの flags にそのまま従う（same-as:*・not-a-character・player-avatar・male・child・
- * unreleased のいずれかが付いていれば除外、それ以外は軸を正規化して取り込むだけ）。
+ * 下書きの flags にそのまま従う（same-as:*・not-a-character・player-avatar・male・
+ * unreleased のいずれかが付いていれば除外、それ以外は軸を正規化して取り込むだけ。
+ * child の印では外さない。R10-1）。
  *
  * journal は Workflow 実行中は追記され続けるため、同じ id の draft が複数回
  * 出現することがある。その場合は journal 内で最後に現れたものを採用する。
@@ -74,11 +75,13 @@ const REQUIRED_8 = ['genderExpression', 'ageFeel', 'build', 'bust', 'personality
 const OPTIONAL_10 = ['roles', 'distance', 'looks', 'skinTone', 'outfit', 'species', 'mood', 'occupation', 'stature', 'affiliationName'];
 const MIN_OPTIONAL_FILLED = 4;
 
-/** 下書きの flags のうち、これらが1つでも付いていれば除外（除外の判断そのものはしない。flags に従うだけ）。 */
+/**
+ * 下書きの flags のうち、これらが1つでも付いていれば除外（除外の判断そのものはしない。flags に従うだけ）。
+ * 作中の年齢（child）では外さない（10回目のシート R10-1、ユーザーの判断）。
+ */
 function isExcludedByFlags(flags) {
   return (flags ?? []).some(
-    (f) =>
-      f === 'not-a-character' || f === 'player-avatar' || f === 'male' || f === 'unreleased' || f === 'child' || f.startsWith('same-as:'),
+    (f) => f === 'not-a-character' || f === 'player-avatar' || f === 'male' || f === 'unreleased' || f.startsWith('same-as:'),
   );
 }
 

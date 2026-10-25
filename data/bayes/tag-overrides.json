@@ -343,7 +343,37 @@
     "ゼロの使い魔": "zero_no_tsukaima",
     "BanG Dream! It's MyGO!!!!!": "bang_dream!_it's_mygo!!!!!",
     "BanG Dream! Ave Mujica": "bang_dream!_it's_mygo!!!!!",
-    "機動戦士ガンダム 水星の魔女": "gundam_suisei_no_majo"
+    "機動戦士ガンダム 水星の魔女": "gundam_suisei_no_majo",
+    "ゆるゆり": "yuruyuri",
+    "ふたりはプリキュア": "futari_wa_precure",
+    "アイカツ!": "aikatsu!",
+    "ロックマンDASH": "mega_man_legends_(series)",
+    "少女終末旅行": "shoujo_shuumatsu_ryokou",
+    "あの日見た花の名前を僕達はまだ知らない。": "ano_hi_mita_hana_no_namae_wo_bokutachi_wa_mada_shiranai.",
+    "僕の心のヤバイやつ": "boku_no_kokoro_no_yabai_yatsu",
+    "銀魂": "gintama",
+    "Go!プリンセスプリキュア": "go!_princess_precure",
+    "ガンダムビルドファイターズトライ": "gundam_build_fighters_try",
+    "からかい上手の高木さん": "karakai_jouzu_no_takagi-san",
+    "キングダム ハーツ": "kingdom_hearts",
+    "キノの旅": "kino_no_tabi",
+    "赤ずきん": "little_red_riding_hood_(fairy_tale)",
+    "メイドインアビス": "made_in_abyss",
+    "魔法つかいプリキュア!": "mahou_tsukai_precure!",
+    "魔女の宅急便": "majo_no_takkyuubin",
+    "ロックマン": "mega_man_(classic)",
+    "流星のロックマン": "mega_man_star_force_(series)",
+    "ポプテピピック": "poptepipic",
+    "プリパラ": "pripara",
+    "serial experiments lain": "serial_experiments_lain",
+    "灼眼のシャナ": "shakugan_no_shana",
+    "侵略!イカ娘": "shinryaku!_ikamusume",
+    "少女革命ウテナ": "shoujo_kakumei_utena",
+    "ソウルイーター": "soul_eater",
+    "鳩羽つぐ": "tsugu_(vtuber)",
+    "ヴァイオレット・エヴァーガーデン": "violet_evergarden_(series)",
+    "Yes!プリキュア5": "yes!_precure_5",
+    "幼女戦記": "youjo_senki"
   },
   "overrides": {
     "naruto-kurenai": {
@@ -3749,6 +3779,26 @@
     "vshojo-zentreya": {
       "tag": "zentreya",
       "reason": "帯の取り直し(R9-3)の候補タグ。名前から自動導出すると衣装違いの zentreya_(cyborg)_(1st_costume) を掴むため、本人のタグに固定する。"
+    },
+    "fgo-jeanne-d-arc-alter-santa-lily": {
+      "tag": "jeanne_d'arc_alter_santa_lily_(fate)",
+      "reason": "R10-1 で戻した候補のタグ。名前から自動導出すると大人のジャンヌ・オルタ(jeanne_d'arc_alter_(fate))を掴むため、本人のタグに固定する。"
+    },
+    "idolmastermillionlivetheaterdays-kitazawa-shiho": {
+      "tag": "kitazawa_shiho",
+      "reason": "R10-1 で戻した候補のタグ。名前から自動導出すると衣装違いの kitazawa_shiho_(depths_of_twilight_maid) を掴むため、本人のタグに固定する。"
+    },
+    "idolmastermillionlivetheaterdays-nanao-yuriko": {
+      "tag": "nanao_yuriko",
+      "reason": "R10-1 で戻した候補のタグ。名前から自動導出すると別人の nanao_yuriko's_mother を掴むため、本人のタグに固定する。"
+    },
+    "idolmastermillionlivetheaterdays-hakozaki-serika": {
+      "tag": "hakozaki_serika",
+      "reason": "R10-1 で戻した候補のタグ。名前から自動導出すると衣装違いの hakozaki_serika_(everyone_is_special) を掴むため、本人のタグに固定する。"
+    },
+    "nanoha-vivio": {
+      "tag": "vivio",
+      "reason": "R10-1 で戻した候補のタグ。なのはViVid など続編の作品タグで描かれることが多く、魔法少女リリカルなのはの作品タグとの共起率は低い(約10%)が本人のタグ。"
     }
   }
 }
