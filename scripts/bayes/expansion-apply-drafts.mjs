@@ -5,8 +5,9 @@
  *
  * 対象は data/characters.json のうち reviewed!==true かつ provisional!==true の
  * キャラ（まだ下書きが未反映の新規キャラ）のみ。除外するかどうかの判断は一切せず、
- * 下書きの flags にそのまま従う（same-as:*・not-a-character・player-avatar・male・child・
- * unreleased のいずれかが付いていれば除外、それ以外は軸を正規化して取り込むだけ）。
+ * 下書きの flags にそのまま従う（same-as:*・not-a-character・player-avatar・male・
+ * unreleased のいずれかが付いていれば除外、それ以外は軸を正規化して取り込むだけ。
+ * child の印では外さない。R10-1）。
  *
  * journal は Workflow 実行中は追記され続けるため、同じ id の draft が複数回
  * 出現することがある。その場合は journal 内で最後に現れたものを採用する。
