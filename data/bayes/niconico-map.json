@@ -11317,6 +11317,963 @@
       "reason": "not-found",
       "source": "not-found",
       "checkedAt": "2026-10-23T08:24:33.922Z"
+    },
+    "futariwaprecure-misumi-nagisa": {
+      "title": "美墨なぎさ",
+      "url": "https://dic.nicovideo.jp/a/%E7%BE%8E%E5%A2%A8%E3%81%AA%E3%81%8E%E3%81%95",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:35:47.100Z"
+    },
+    "futariwaprecure-yukishiro-honoka": {
+      "title": "雪城ほのか",
+      "url": "https://dic.nicovideo.jp/a/%E9%9B%AA%E5%9F%8E%E3%81%BB%E3%81%AE%E3%81%8B",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:35:51.992Z"
+    },
+    "strikewitches-francesca-lucchini": {
+      "title": "フランチェスカ・ルッキーニ",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%95%E3%83%A9%E3%83%B3%E3%83%81%E3%82%A7%E3%82%B9%E3%82%AB%E3%83%BB%E3%83%AB%E3%83%83%E3%82%AD%E3%83%BC%E3%83%8B",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:35:57.046Z"
+    },
+    "fate-reines-el-melloi-archisorte": {
+      "title": "ライネス・エルメロイ・アーチゾルテ",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%A9%E3%82%A4%E3%83%8D%E3%82%B9%E3%83%BB%E3%82%A8%E3%83%AB%E3%83%A1%E3%83%AD%E3%82%A4%E3%83%BB%E3%82%A2%E3%83%BC%E3%83%81%E3%82%BE%E3%83%AB%E3%83%86",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:36:02.965Z"
+    },
+    "toloveru-yuuki-mikan": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-25T09:36:06.753Z"
+    },
+    "aikatsu-hoshimiya-ichigo": {
+      "title": "星宮いちご",
+      "url": "https://dic.nicovideo.jp/a/%E6%98%9F%E5%AE%AE%E3%81%84%E3%81%A1%E3%81%94",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:36:11.985Z"
+    },
+    "aikatsu-kiriya-aoi": {
+      "title": "霧矢あおい",
+      "url": "https://dic.nicovideo.jp/a/%E9%9C%A7%E7%9F%A2%E3%81%82%E3%81%8A%E3%81%84",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:36:17.049Z"
+    },
+    "anohimitahananonamaewobokutachiwamadashiranai-honma-meiko": {
+      "title": "本間芽衣子",
+      "url": "https://dic.nicovideo.jp/a/%E6%9C%AC%E9%96%93%E8%8A%BD%E8%A1%A3%E5%AD%90",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:36:21.897Z"
+    },
+    "arknights-eyjafjalla": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-25T09:36:26.780Z"
+    },
+    "arknights-rosmontis": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-25T09:36:31.721Z"
+    },
+    "endfield-gilberta": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-25T09:36:36.765Z"
+    },
+    "azurlane-laffey": {
+      "title": "ラフィー",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%A9%E3%83%95%E3%82%A3%E3%83%BC",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:36:41.955Z"
+    },
+    "azurlane-javelin": {
+      "title": "ジャベリン",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%B8%E3%83%A3%E3%83%99%E3%83%AA%E3%83%B3",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:36:47.014Z"
+    },
+    "azurlane-z23": {
+      "title": "Z23(アズールレーン)",
+      "url": "https://dic.nicovideo.jp/a/Z23(%E3%82%A2%E3%82%BA%E3%83%BC%E3%83%AB%E3%83%AC%E3%83%BC%E3%83%B3)",
+      "source": "override",
+      "checkedAt": "2026-10-25T09:56:13.721Z"
+    },
+    "sailormoon-mizuno-ami": {
+      "title": "水野亜美",
+      "url": "https://dic.nicovideo.jp/a/%E6%B0%B4%E9%87%8E%E4%BA%9C%E7%BE%8E",
+      "source": "override",
+      "checkedAt": "2026-10-25T09:56:14.282Z"
+    },
+    "sailormoon-aino-minako": {
+      "title": "愛野美奈子",
+      "url": "https://dic.nicovideo.jp/a/%E6%84%9B%E9%87%8E%E7%BE%8E%E5%A5%88%E5%AD%90",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:37:32.149Z"
+    },
+    "sailormoon-hino-rei": {
+      "title": "火野レイ",
+      "url": "https://dic.nicovideo.jp/a/%E7%81%AB%E9%87%8E%E3%83%AC%E3%82%A4",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:37:37.171Z"
+    },
+    "sailormoon-kino-makoto": {
+      "title": "木野まこと",
+      "url": "https://dic.nicovideo.jp/a/%E6%9C%A8%E9%87%8E%E3%81%BE%E3%81%93%E3%81%A8",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:37:42.235Z"
+    },
+    "sailormoon-chibi-usa": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-25T09:37:46.967Z"
+    },
+    "bokunokokoronoyabaiyatsu-yamada-anna": {
+      "title": "山田杏奈",
+      "url": "https://dic.nicovideo.jp/a/%E5%B1%B1%E7%94%B0%E6%9D%8F%E5%A5%88",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:37:52.204Z"
+    },
+    "naruto-uchiha-sarada": {
+      "title": "うちはサラダ",
+      "url": "https://dic.nicovideo.jp/a/%E3%81%86%E3%81%A1%E3%81%AF%E3%82%B5%E3%83%A9%E3%83%80",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:37:57.202Z"
+    },
+    "ccs-daidouji-tomoyo": {
+      "title": "大道寺知世",
+      "url": "https://dic.nicovideo.jp/a/%E5%A4%A7%E9%81%93%E5%AF%BA%E7%9F%A5%E4%B8%96",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:38:02.622Z"
+    },
+    "csm-nayuta": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-25T09:38:06.957Z"
+    },
+    "digicharat-dejiko": {
+      "title": "でじこ",
+      "url": "https://dic.nicovideo.jp/a/%E3%81%A7%E3%81%98%E3%81%93",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:38:17.290Z"
+    },
+    "dokidokiprecure-hishikawa-rikka": {
+      "title": "菱川六花",
+      "url": "https://dic.nicovideo.jp/a/%E8%8F%B1%E5%B7%9D%E5%85%AD%E8%8A%B1",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:38:22.240Z"
+    },
+    "dokidokiprecure-aida-mana": {
+      "title": "相田マナ",
+      "url": "https://dic.nicovideo.jp/a/%E7%9B%B8%E7%94%B0%E3%83%9E%E3%83%8A",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:38:27.354Z"
+    },
+    "dokidokiprecure-kenzaki-makoto": {
+      "title": "剣崎真琴",
+      "url": "https://dic.nicovideo.jp/a/%E5%89%A3%E5%B4%8E%E7%9C%9F%E7%90%B4",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:38:32.435Z"
+    },
+    "dragonball-pan": {
+      "title": "パン",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%91%E3%83%B3",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:38:37.410Z"
+    },
+    "fate-nursery-rhyme": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-25T09:38:42.095Z"
+    },
+    "fgo-jeanne-d-arc-alter-santa-lily": {
+      "title": "ジャンヌ・ダルク・オルタ・サンタ・リリィ",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%8C%E3%83%BB%E3%83%80%E3%83%AB%E3%82%AF%E3%83%BB%E3%82%AA%E3%83%AB%E3%82%BF%E3%83%BB%E3%82%B5%E3%83%B3%E3%82%BF%E3%83%BB%E3%83%AA%E3%83%AA%E3%82%A3",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:38:47.356Z"
+    },
+    "fireemblem-tiki": {
+      "title": "チキ",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%81%E3%82%AD",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:38:52.508Z"
+    },
+    "freshprecure-higashi-setsuna": {
+      "title": "東せつな",
+      "url": "https://dic.nicovideo.jp/a/%E6%9D%B1%E3%81%9B%E3%81%A4%E3%81%AA",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:38:57.361Z"
+    },
+    "genshin-diona": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-25T09:39:02.192Z"
+    },
+    "gintama-kagura": {
+      "title": "神楽",
+      "url": "https://dic.nicovideo.jp/a/%E7%A5%9E%E6%A5%BD",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:39:07.278Z"
+    },
+    "goprincessprecure-amanogawa-kirara": {
+      "title": "天ノ川きらら",
+      "url": "https://dic.nicovideo.jp/a/%E5%A4%A9%E3%83%8E%E5%B7%9D%E3%81%8D%E3%82%89%E3%82%89",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:39:12.585Z"
+    },
+    "granblue-lyria": {
+      "title": "ルリア",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%AB%E3%83%AA%E3%82%A2",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:39:17.401Z"
+    },
+    "guiltygear-may": {
+      "title": "メイ(ギルティギア)",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%A1%E3%82%A4(%E3%82%AE%E3%83%AB%E3%83%86%E3%82%A3%E3%82%AE%E3%82%A2)",
+      "source": "override",
+      "checkedAt": "2026-10-25T09:56:14.944Z"
+    },
+    "gundambuildfighterstry-hoshino-fumina": {
+      "title": "ホシノ・フミナ",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%9B%E3%82%B7%E3%83%8E%E3%83%BB%E3%83%95%E3%83%9F%E3%83%8A",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:39:27.424Z"
+    },
+    "heartcatchprecure-kurumi-erika": {
+      "title": "来海えりか",
+      "url": "https://dic.nicovideo.jp/a/%E6%9D%A5%E6%B5%B7%E3%81%88%E3%82%8A%E3%81%8B",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:39:32.540Z"
+    },
+    "heartcatchprecure-hanasaki-tsubomi": {
+      "title": "花咲つぼみ",
+      "url": "https://dic.nicovideo.jp/a/%E8%8A%B1%E5%92%B2%E3%81%A4%E3%81%BC%E3%81%BF",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:39:37.483Z"
+    },
+    "heartcatchprecure-myoudouin-itsuki": {
+      "title": "明堂院いつき",
+      "url": "https://dic.nicovideo.jp/a/%E6%98%8E%E5%A0%82%E9%99%A2%E3%81%84%E3%81%A4%E3%81%8D",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:39:42.520Z"
+    },
+    "higurashi-sonozaki-mion": {
+      "title": "園崎魅音",
+      "url": "https://dic.nicovideo.jp/a/%E5%9C%92%E5%B4%8E%E9%AD%85%E9%9F%B3",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:39:47.252Z"
+    },
+    "higurashi-hanyuu": {
+      "title": "羽入",
+      "url": "https://dic.nicovideo.jp/a/%E7%BE%BD%E5%85%A5",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:39:52.366Z"
+    },
+    "higurashi-sonozaki-shion": {
+      "title": "園崎詩音",
+      "url": "https://dic.nicovideo.jp/a/%E5%9C%92%E5%B4%8E%E8%A9%A9%E9%9F%B3",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:39:57.402Z"
+    },
+    "hirogaru-nijigaoka-mashiro": {
+      "title": "虹ヶ丘ましろ",
+      "url": "https://dic.nicovideo.jp/a/%E8%99%B9%E3%83%B6%E4%B8%98%E3%81%BE%E3%81%97%E3%82%8D",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:40:03.563Z"
+    },
+    "honkai3-griseo": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-25T09:40:07.112Z"
+    },
+    "idolmaster-futami-mami": {
+      "title": "双海真美",
+      "url": "https://dic.nicovideo.jp/a/%E5%8F%8C%E6%B5%B7%E7%9C%9F%E7%BE%8E",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:40:13.096Z"
+    },
+    "idolmaster-futami-ami": {
+      "title": "双海亜美",
+      "url": "https://dic.nicovideo.jp/a/%E5%8F%8C%E6%B5%B7%E4%BA%9C%E7%BE%8E",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:40:18.200Z"
+    },
+    "imascg-akagi-miria": {
+      "title": "赤城みりあ",
+      "url": "https://dic.nicovideo.jp/a/%E8%B5%A4%E5%9F%8E%E3%81%BF%E3%82%8A%E3%81%82",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:40:22.750Z"
+    },
+    "imascg-morikubo-nono": {
+      "title": "森久保乃々",
+      "url": "https://dic.nicovideo.jp/a/%E6%A3%AE%E4%B9%85%E4%BF%9D%E4%B9%83%E3%80%85",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:40:27.735Z"
+    },
+    "imascg-sasaki-chie": {
+      "title": "佐々木千枝",
+      "url": "https://dic.nicovideo.jp/a/%E4%BD%90%E3%80%85%E6%9C%A8%E5%8D%83%E6%9E%9D",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:40:32.815Z"
+    },
+    "imascg-ichihara-nina": {
+      "title": "市原仁奈",
+      "url": "https://dic.nicovideo.jp/a/%E5%B8%82%E5%8E%9F%E4%BB%81%E5%A5%88",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:40:37.585Z"
+    },
+    "imascg-hisakawa-hayate": {
+      "title": "久川颯",
+      "url": "https://dic.nicovideo.jp/a/%E4%B9%85%E5%B7%9D%E9%A2%AF",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:40:42.697Z"
+    },
+    "imascg-yuuki-haru": {
+      "title": "結城晴",
+      "url": "https://dic.nicovideo.jp/a/%E7%B5%90%E5%9F%8E%E6%99%B4",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:40:47.688Z"
+    },
+    "imascg-matoba-risa": {
+      "title": "的場梨沙",
+      "url": "https://dic.nicovideo.jp/a/%E7%9A%84%E5%A0%B4%E6%A2%A8%E6%B2%99",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:40:52.618Z"
+    },
+    "imascg-hisakawa-nagi": {
+      "title": "久川凪",
+      "url": "https://dic.nicovideo.jp/a/%E4%B9%85%E5%B7%9D%E5%87%AA",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:40:57.569Z"
+    },
+    "imascg-sajo-yukimi": {
+      "title": "佐城雪美",
+      "url": "https://dic.nicovideo.jp/a/%E4%BD%90%E5%9F%8E%E9%9B%AA%E7%BE%8E",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:41:03.398Z"
+    },
+    "imascg-ninomiya-asuka": {
+      "title": "二宮飛鳥",
+      "url": "https://dic.nicovideo.jp/a/%E4%BA%8C%E5%AE%AE%E9%A3%9B%E9%B3%A5",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:41:08.687Z"
+    },
+    "imascg-ryuzaki-kaoru": {
+      "title": "龍崎薫",
+      "url": "https://dic.nicovideo.jp/a/%E9%BE%8D%E5%B4%8E%E8%96%AB",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:41:13.187Z"
+    },
+    "imascg-yusa-kozue": {
+      "title": "遊佐こずえ",
+      "url": "https://dic.nicovideo.jp/a/%E9%81%8A%E4%BD%90%E3%81%93%E3%81%9A%E3%81%88",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:41:18.120Z"
+    },
+    "idolmastermillionlivetheaterdays-kitazawa-shiho": {
+      "title": "北沢志保",
+      "url": "https://dic.nicovideo.jp/a/%E5%8C%97%E6%B2%A2%E5%BF%97%E4%BF%9D",
+      "source": "override",
+      "checkedAt": "2026-10-25T09:56:16.257Z"
+    },
+    "idolmastermillionlivetheaterdays-suou-momoko": {
+      "title": "周防桃子",
+      "url": "https://dic.nicovideo.jp/a/%E5%91%A8%E9%98%B2%E6%A1%83%E5%AD%90",
+      "source": "override",
+      "checkedAt": "2026-10-25T09:56:17.663Z"
+    },
+    "idolmastermillionlivetheaterdays-mogami-shizuka": {
+      "title": "最上静香",
+      "url": "https://dic.nicovideo.jp/a/%E6%9C%80%E4%B8%8A%E9%9D%99%E9%A6%99",
+      "source": "override",
+      "checkedAt": "2026-10-25T09:56:19.191Z"
+    },
+    "idolmastermillionlivetheaterdays-nanao-yuriko": {
+      "title": "七尾百合子",
+      "url": "https://dic.nicovideo.jp/a/%E4%B8%83%E5%B0%BE%E7%99%BE%E5%90%88%E5%AD%90",
+      "source": "override",
+      "checkedAt": "2026-10-25T09:56:20.671Z"
+    },
+    "idolmastermillionlivetheaterdays-ibuki-tsubasa": {
+      "title": "伊吹翼",
+      "url": "https://dic.nicovideo.jp/a/%E4%BC%8A%E5%90%B9%E7%BF%BC",
+      "source": "override",
+      "checkedAt": "2026-10-25T09:56:22.126Z"
+    },
+    "idolmastermillionlivetheaterdays-kasuga-mirai": {
+      "title": "春日未来",
+      "url": "https://dic.nicovideo.jp/a/%E6%98%A5%E6%97%A5%E6%9C%AA%E6%9D%A5",
+      "source": "override",
+      "checkedAt": "2026-10-25T09:56:23.803Z"
+    },
+    "idolmastermillionlivetheaterdays-mochizuki-anna": {
+      "title": "望月杏奈",
+      "url": "https://dic.nicovideo.jp/a/%E6%9C%9B%E6%9C%88%E6%9D%8F%E5%A5%88",
+      "source": "override",
+      "checkedAt": "2026-10-25T09:56:25.257Z"
+    },
+    "idolmastermillionlivetheaterdays-hakozaki-serika": {
+      "title": "箱崎星梨花",
+      "url": "https://dic.nicovideo.jp/a/%E7%AE%B1%E5%B4%8E%E6%98%9F%E6%A2%A8%E8%8A%B1",
+      "source": "override",
+      "checkedAt": "2026-10-25T09:56:27.204Z"
+    },
+    "imsc-serizawa-asahi": {
+      "title": "芹沢あさひ",
+      "url": "https://dic.nicovideo.jp/a/%E8%8A%B9%E6%B2%A2%E3%81%82%E3%81%95%E3%81%B2",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:42:03.898Z"
+    },
+    "imsc-komiya-kaho": {
+      "title": "小宮果穂",
+      "url": "https://dic.nicovideo.jp/a/%E5%B0%8F%E5%AE%AE%E6%9E%9C%E7%A9%82",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:42:07.793Z"
+    },
+    "karakaijouzunotakagisan-takagi-san": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-25T09:42:12.446Z"
+    },
+    "kingdomhearts-kairi": {
+      "title": null,
+      "reason": "記事「カイリ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateTitle": "カイリ",
+      "checkedAt": "2026-10-25T09:42:17.492Z"
+    },
+    "kinonotabi-kino": {
+      "title": "キノ",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%AD%E3%83%8E",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:42:22.535Z"
+    },
+    "konosuba-yunyun": {
+      "title": "ゆんゆん",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%86%E3%82%93%E3%82%86%E3%82%93",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:42:27.569Z"
+    },
+    "littleredridinghoodfairytale-little-red-riding-hood": {
+      "title": "赤ずきん",
+      "url": "https://dic.nicovideo.jp/a/%E8%B5%A4%E3%81%9A%E3%81%8D%E3%82%93",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:42:32.650Z"
+    },
+    "nijigasaki-mia-taylor": {
+      "title": "ミア・テイラー",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%9F%E3%82%A2%E3%83%BB%E3%83%86%E3%82%A4%E3%83%A9%E3%83%BC",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:42:37.763Z"
+    },
+    "madeinabyss-nanachi": {
+      "title": "ナナチ",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%8A%E3%83%8A%E3%83%81",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:42:42.635Z"
+    },
+    "magiarecordmahoushoujomadokamagicagaiden-tamaki-iroha": {
+      "title": "環いろは",
+      "url": "https://dic.nicovideo.jp/a/%E7%92%B0%E3%81%84%E3%82%8D%E3%81%AF",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:42:47.829Z"
+    },
+    "nanoha-vita": {
+      "title": "ヴィータ",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%B4%E3%82%A3%E3%83%BC%E3%82%BF",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:42:52.642Z"
+    },
+    "nanoha-vivio": {
+      "title": "高町ヴィヴィオ",
+      "url": "https://dic.nicovideo.jp/a/%E9%AB%98%E7%94%BA%E3%83%B4%E3%82%A3%E3%83%B4%E3%82%A3%E3%82%AA",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:42:57.743Z"
+    },
+    "madoka-momoe-nagisa": {
+      "title": "百江なぎさ",
+      "url": "https://dic.nicovideo.jp/a/%E7%99%BE%E6%B1%9F%E3%81%AA%E3%81%8E%E3%81%95",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:43:03.063Z"
+    },
+    "mahoushoujoniakogarete-hiiragi-utena": {
+      "title": "柊うてな",
+      "url": "https://dic.nicovideo.jp/a/%E6%9F%8A%E3%81%86%E3%81%A6%E3%81%AA",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:43:07.642Z"
+    },
+    "mahoutsukaiprecure-asahina-mirai": {
+      "title": "朝日奈みらい",
+      "url": "https://dic.nicovideo.jp/a/%E6%9C%9D%E6%97%A5%E5%A5%88%E3%81%BF%E3%82%89%E3%81%84",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:43:12.856Z"
+    },
+    "majonotakkyuubin-kiki": {
+      "title": null,
+      "reason": "記事「キキ」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateTitle": "キキ",
+      "checkedAt": "2026-10-25T09:43:17.713Z"
+    },
+    "megamanclassic-roll": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-25T09:43:22.440Z"
+    },
+    "megamanlegendsseries-tron-bonne": {
+      "title": "トロン・ボーン",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%88%E3%83%AD%E3%83%B3%E3%83%BB%E3%83%9C%E3%83%BC%E3%83%B3",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:43:27.967Z"
+    },
+    "megamanlegendsseries-roll-caskett": {
+      "title": "ロール・キャスケット",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%AD%E3%83%BC%E3%83%AB%E3%83%BB%E3%82%AD%E3%83%A3%E3%82%B9%E3%82%B1%E3%83%83%E3%83%88",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:43:32.696Z"
+    },
+    "megamanstarforceseries-luna-platz": {
+      "title": "白金ルナ",
+      "url": "https://dic.nicovideo.jp/a/%E7%99%BD%E9%87%91%E3%83%AB%E3%83%8A",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:43:37.755Z"
+    },
+    "bakemonogatari-sengoku-nadeko": {
+      "title": "千石撫子",
+      "url": "https://dic.nicovideo.jp/a/%E5%8D%83%E7%9F%B3%E6%92%AB%E5%AD%90",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:43:42.824Z"
+    },
+    "bakemonogatari-hachikuji-mayoi": {
+      "title": "八九寺真宵",
+      "url": "https://dic.nicovideo.jp/a/%E5%85%AB%E4%B9%9D%E5%AF%BA%E7%9C%9F%E5%AE%B5",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:43:47.710Z"
+    },
+    "bakemonogatari-ononoki-yotsugi": {
+      "title": "斧乃木余接",
+      "url": "https://dic.nicovideo.jp/a/%E6%96%A7%E4%B9%83%E6%9C%A8%E4%BD%99%E6%8E%A5",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:43:52.733Z"
+    },
+    "bakemonogatari-araragi-karen": {
+      "title": "阿良々木火憐",
+      "url": "https://dic.nicovideo.jp/a/%E9%98%BF%E8%89%AF%E3%80%85%E6%9C%A8%E7%81%AB%E6%86%90",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:43:57.723Z"
+    },
+    "oshimai-oyama-mihari": {
+      "title": "緒山みはり",
+      "url": "https://dic.nicovideo.jp/a/%E7%B7%92%E5%B1%B1%E3%81%BF%E3%81%AF%E3%82%8A",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:44:02.988Z"
+    },
+    "oshimai-hozuki-momiji": {
+      "title": "穂月もみじ",
+      "url": "https://dic.nicovideo.jp/a/%E7%A9%82%E6%9C%88%E3%82%82%E3%81%BF%E3%81%98",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:44:07.831Z"
+    },
+    "oshimai-murosaki-miyo": {
+      "title": "室崎みよ",
+      "url": "https://dic.nicovideo.jp/a/%E5%AE%A4%E5%B4%8E%E3%81%BF%E3%82%88",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:44:12.756Z"
+    },
+    "oreimo-kousaka-kirino": {
+      "title": "高坂桐乃",
+      "url": "https://dic.nicovideo.jp/a/%E9%AB%98%E5%9D%82%E6%A1%90%E4%B9%83",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:44:18.161Z"
+    },
+    "persona-doujima-nanako": {
+      "title": "堂島菜々子",
+      "url": "https://dic.nicovideo.jp/a/%E5%A0%82%E5%B3%B6%E8%8F%9C%E3%80%85%E5%AD%90",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:44:22.785Z"
+    },
+    "pokemon-mallow": {
+      "title": "マオ",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%9E%E3%82%AA",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:44:27.699Z"
+    },
+    "pokemon-kris": {
+      "title": "クリス(ポケモン)",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%AF%E3%83%AA%E3%82%B9(%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3)",
+      "source": "override",
+      "checkedAt": "2026-10-25T09:56:27.909Z"
+    },
+    "pokemon-iris": {
+      "title": "アイリス",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%A2%E3%82%A4%E3%83%AA%E3%82%B9",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:44:37.782Z"
+    },
+    "pokemon-green": {
+      "title": "ブルー",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%96%E3%83%AB%E3%83%BC",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:44:42.809Z"
+    },
+    "pokemon-acerola": {
+      "title": "アセロラ(ポケモン)",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%A2%E3%82%BB%E3%83%AD%E3%83%A9(%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3)",
+      "source": "override",
+      "checkedAt": "2026-10-25T09:56:28.528Z"
+    },
+    "pokemon-yellow": {
+      "title": null,
+      "reason": "記事「イエロー」は存在するがシリーズ名/本人名確認不能のため除外。要レビュー→確認できればoverridesへ。",
+      "source": "low-confidence",
+      "candidateTitle": "イエロー",
+      "checkedAt": "2026-10-25T09:44:52.740Z"
+    },
+    "pokemon-liko": {
+      "title": "リコ",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%AA%E3%82%B3",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:44:57.836Z"
+    },
+    "poptepipic-popuko": {
+      "title": "ポプ子",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%9D%E3%83%97%E5%AD%90",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:45:03.080Z"
+    },
+    "pricone-saren": {
+      "title": "サレン",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%B5%E3%83%AC%E3%83%B3",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:45:13.094Z"
+    },
+    "pricone-kyoka": {
+      "title": "キョウカ",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%AD%E3%83%A7%E3%82%A6%E3%82%AB",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:45:22.964Z"
+    },
+    "pripara-manaka-laala": {
+      "title": "真中らぁら",
+      "url": "https://dic.nicovideo.jp/a/%E7%9C%9F%E4%B8%AD%E3%82%89%E3%81%81%E3%82%89",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:45:28.092Z"
+    },
+    "eva-makinami-mari-illustrious": {
+      "title": "真希波・マリ・イラストリアス",
+      "url": "https://dic.nicovideo.jp/a/%E7%9C%9F%E5%B8%8C%E6%B3%A2%E3%83%BB%E3%83%9E%E3%83%AA%E3%83%BB%E3%82%A4%E3%83%A9%E3%82%B9%E3%83%88%E3%83%AA%E3%82%A2%E3%82%B9",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:45:32.998Z"
+    },
+    "rozenmaiden-hinaichigo": {
+      "title": "雛苺",
+      "url": "https://dic.nicovideo.jp/a/%E9%9B%9B%E8%8B%BA",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:45:37.881Z"
+    },
+    "serialexperimentslain-iwakura-lain": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-25T09:45:42.682Z"
+    },
+    "shakugannoshana-shana": {
+      "title": "シャナ",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%B7%E3%83%A3%E3%83%8A",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:45:48.308Z"
+    },
+    "shinryakuikamusume-ikamusume": {
+      "title": "イカ娘",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%A4%E3%82%AB%E5%A8%98",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:45:53.165Z"
+    },
+    "shoujokakumeiutena-tenjou-utena": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-25T09:45:57.715Z"
+    },
+    "shoujoshuumatsuryokou-yuuri": {
+      "title": "ユーリ",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%A6%E3%83%BC%E3%83%AA",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:46:02.966Z"
+    },
+    "shoujoshuumatsuryokou-chito": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-25T09:46:07.699Z"
+    },
+    "smileprecure-hino-akane": {
+      "title": "日野あかね",
+      "url": "https://dic.nicovideo.jp/a/%E6%97%A5%E9%87%8E%E3%81%82%E3%81%8B%E3%81%AD",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:46:13.007Z"
+    },
+    "smileprecure-cure-peace": {
+      "title": "キュアピース",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%AD%E3%83%A5%E3%82%A2%E3%83%94%E3%83%BC%E3%82%B9",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:46:23.114Z"
+    },
+    "smileprecure-cure-beauty": {
+      "title": "キュアビューティ",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%AD%E3%83%A5%E3%82%A2%E3%83%93%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:46:33.129Z"
+    },
+    "sonic-blaze-the-cat": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-25T09:46:37.774Z"
+    },
+    "souleater-maka-albarn": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-25T09:46:42.938Z"
+    },
+    "strikewitches-miyafuji-yoshika": {
+      "title": "宮藤芳佳",
+      "url": "https://dic.nicovideo.jp/a/%E5%AE%AE%E8%97%A4%E8%8A%B3%E4%BD%B3",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:46:48.360Z"
+    },
+    "strikewitches-perrine-h-clostermann": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-25T09:46:52.858Z"
+    },
+    "suiteprecure-minamino-kanade": {
+      "title": "南野奏",
+      "url": "https://dic.nicovideo.jp/a/%E5%8D%97%E9%87%8E%E5%A5%8F",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:46:58.147Z"
+    },
+    "sao-kirigaya-suguha": {
+      "title": "桐ヶ谷直葉",
+      "url": "https://dic.nicovideo.jp/a/%E6%A1%90%E3%83%B6%E8%B0%B7%E7%9B%B4%E8%91%89",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:47:08.126Z"
+    },
+    "sao-yuuki": {
+      "title": "ユウキ",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%A6%E3%82%A6%E3%82%AD",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:47:17.979Z"
+    },
+    "thekingoffighters-kula-diamond": {
+      "title": "クーラ・ダイアモンド",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%AF%E3%83%BC%E3%83%A9%E3%83%BB%E3%83%80%E3%82%A4%E3%82%A2%E3%83%A2%E3%83%B3%E3%83%89",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:47:23.031Z"
+    },
+    "zelda-riju": {
+      "title": "ルージュ",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%AB%E3%83%BC%E3%82%B8%E3%83%A5",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:47:27.971Z"
+    },
+    "tigerbunny-huang-pao-lin": {
+      "title": "ホァン・パオリン",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%9B%E3%82%A1%E3%83%B3%E3%83%BB%E3%83%91%E3%82%AA%E3%83%AA%E3%83%B3",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:47:38.291Z"
+    },
+    "toloveru-konjiki-no-yami": {
+      "title": "金色の闇",
+      "url": "https://dic.nicovideo.jp/a/%E9%87%91%E8%89%B2%E3%81%AE%E9%97%87",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:47:43.021Z"
+    },
+    "toaru-saten-ruiko": {
+      "title": "佐天涙子",
+      "url": "https://dic.nicovideo.jp/a/%E4%BD%90%E5%A4%A9%E6%B6%99%E5%AD%90",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:47:48.118Z"
+    },
+    "toaru-uiharu-kazari": {
+      "title": "初春飾利",
+      "url": "https://dic.nicovideo.jp/a/%E5%88%9D%E6%98%A5%E9%A3%BE%E5%88%A9",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:47:53.106Z"
+    },
+    "toaru-index": {
+      "title": "インデックス",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%A4%E3%83%B3%E3%83%87%E3%83%83%E3%82%AF%E3%82%B9",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:47:58.304Z"
+    },
+    "toaru-last-order": {
+      "title": "打ち止め",
+      "url": "https://dic.nicovideo.jp/a/%E6%89%93%E3%81%A1%E6%AD%A2%E3%82%81",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:48:03.578Z"
+    },
+    "toaru-misaka-imouto": {
+      "title": "御坂妹",
+      "url": "https://dic.nicovideo.jp/a/%E5%BE%A1%E5%9D%82%E5%A6%B9",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:48:08.145Z"
+    },
+    "tsuguvtuber-hatoba-tsugu": {
+      "title": "鳩羽つぐ",
+      "url": "https://dic.nicovideo.jp/a/%E9%B3%A9%E7%BE%BD%E3%81%A4%E3%81%90",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:48:13.095Z"
+    },
+    "tsukihime-len": {
+      "title": "レン(月姫)",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%AC%E3%83%B3(%E6%9C%88%E5%A7%AB)",
+      "source": "override",
+      "checkedAt": "2026-10-25T09:56:29.225Z"
+    },
+    "umamusume-vivlos": {
+      "title": "ヴィブロス",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%B4%E3%82%A3%E3%83%96%E3%83%AD%E3%82%B9",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:48:23.249Z"
+    },
+    "umamusume-nishino-flower": {
+      "title": "ニシノフラワー",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%8B%E3%82%B7%E3%83%8E%E3%83%95%E3%83%A9%E3%83%AF%E3%83%BC",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:48:28.309Z"
+    },
+    "umineko-ushiromiya-maria": {
+      "title": "右代宮真里亞",
+      "url": "https://dic.nicovideo.jp/a/%E5%8F%B3%E4%BB%A3%E5%AE%AE%E7%9C%9F%E9%87%8C%E4%BA%9E",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:48:33.102Z"
+    },
+    "utau-utane-uta": {
+      "title": "唄音ウタ",
+      "url": "https://dic.nicovideo.jp/a/%E5%94%84%E9%9F%B3%E3%82%A6%E3%82%BF",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:48:43.296Z"
+    },
+    "violetevergardenseries-violet-evergarden": {
+      "title": "ヴァイオレット・エヴァーガーデン",
+      "url": "https://dic.nicovideo.jp/a/%E3%83%B4%E3%82%A1%E3%82%A4%E3%82%AA%E3%83%AC%E3%83%83%E3%83%88%E3%83%BB%E3%82%A8%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:48:48.337Z"
+    },
+    "vocaloid-otomachi-una": {
+      "title": "音街ウナ",
+      "url": "https://dic.nicovideo.jp/a/%E9%9F%B3%E8%A1%97%E3%82%A6%E3%83%8A",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:48:53.398Z"
+    },
+    "vocaloid-kaai-yuki": {
+      "title": "歌愛ユキ",
+      "url": "https://dic.nicovideo.jp/a/%E6%AD%8C%E6%84%9B%E3%83%A6%E3%82%AD",
+      "source": "override",
+      "checkedAt": "2026-10-25T09:56:29.980Z"
+    },
+    "wonderfulprecure-nekoyashiki-yuki": {
+      "title": "猫屋敷ユキ",
+      "url": "https://dic.nicovideo.jp/a/%E7%8C%AB%E5%B1%8B%E6%95%B7%E3%83%A6%E3%82%AD",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:49:03.299Z"
+    },
+    "wonderfulprecure-nekoyashiki-mayu": {
+      "title": "猫屋敷まゆ",
+      "url": "https://dic.nicovideo.jp/a/%E7%8C%AB%E5%B1%8B%E6%95%B7%E3%81%BE%E3%82%86",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:49:08.283Z"
+    },
+    "wonderfulprecure-inukai-komugi": {
+      "title": "犬飼こむぎ",
+      "url": "https://dic.nicovideo.jp/a/%E7%8A%AC%E9%A3%BC%E3%81%93%E3%82%80%E3%81%8E",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:49:13.340Z"
+    },
+    "yesprecure5-yumehara-nozomi": {
+      "title": "夢原のぞみ",
+      "url": "https://dic.nicovideo.jp/a/%E5%A4%A2%E5%8E%9F%E3%81%AE%E3%81%9E%E3%81%BF",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:49:18.284Z"
+    },
+    "youjosenki-tanya-degurechaff": {
+      "title": "ターニャ・デグレチャフ",
+      "url": "https://dic.nicovideo.jp/a/%E3%82%BF%E3%83%BC%E3%83%8B%E3%83%A3%E3%83%BB%E3%83%87%E3%82%B0%E3%83%AC%E3%83%81%E3%83%A3%E3%83%95",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:49:23.437Z"
+    },
+    "yuruyuri-toshinou-kyouko": {
+      "title": "歳納京子",
+      "url": "https://dic.nicovideo.jp/a/%E6%AD%B3%E7%B4%8D%E4%BA%AC%E5%AD%90",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:49:28.272Z"
+    },
+    "yuruyuri-akaza-akari": {
+      "title": "赤座あかり",
+      "url": "https://dic.nicovideo.jp/a/%E8%B5%A4%E5%BA%A7%E3%81%82%E3%81%8B%E3%82%8A",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:49:33.399Z"
+    },
+    "yuruyuri-funami-yui": {
+      "title": "船見結衣",
+      "url": "https://dic.nicovideo.jp/a/%E8%88%B9%E8%A6%8B%E7%B5%90%E8%A1%A3",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:49:38.307Z"
+    },
+    "yuruyuri-oomuro-sakurako": {
+      "title": "大室櫻子",
+      "url": "https://dic.nicovideo.jp/a/%E5%A4%A7%E5%AE%A4%E6%AB%BB%E5%AD%90",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:49:43.176Z"
+    },
+    "yuruyuri-yoshikawa-chinatsu": {
+      "title": "吉川ちなつ",
+      "url": "https://dic.nicovideo.jp/a/%E5%90%89%E5%B7%9D%E3%81%A1%E3%81%AA%E3%81%A4",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:49:48.294Z"
+    },
+    "yuruyuri-furutani-himawari": {
+      "title": "古谷向日葵",
+      "url": "https://dic.nicovideo.jp/a/%E5%8F%A4%E8%B0%B7%E5%90%91%E6%97%A5%E8%91%B5",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:49:53.275Z"
+    },
+    "yuruyuri-sugiura-ayano": {
+      "title": "杉浦綾乃",
+      "url": "https://dic.nicovideo.jp/a/%E6%9D%89%E6%B5%A6%E7%B6%BE%E4%B9%83",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:49:58.292Z"
+    },
+    "kaguyasamawakokurasetaitensaitachinorenaizunousen-shirogane-kei": {
+      "title": "白銀圭",
+      "url": "https://dic.nicovideo.jp/a/%E7%99%BD%E9%8A%80%E5%9C%AD",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:50:03.483Z"
+    },
+    "kaguyasamawakokurasetaitensaitachinorenaizunousen-fujiwara-moeha": {
+      "title": null,
+      "reason": "not-found",
+      "source": "not-found",
+      "checkedAt": "2026-10-25T09:50:08.016Z"
+    },
+    "mygo-kaname-raana": {
+      "title": "要楽奈",
+      "url": "https://dic.nicovideo.jp/a/%E8%A6%81%E6%A5%BD%E5%A5%88",
+      "source": "search-verified",
+      "checkedAt": "2026-10-25T09:50:13.299Z"
     }
   }
 }
