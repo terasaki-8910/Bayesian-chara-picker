@@ -3780,6 +3780,26 @@
     "vshojo-zentreya": {
       "tag": "zentreya",
       "reason": "帯の取り直し(R9-3)の候補タグ。名前から自動導出すると衣装違いの zentreya_(cyborg)_(1st_costume) を掴むため、本人のタグに固定する。"
+    },
+    "fgo-jeanne-d-arc-alter-santa-lily": {
+      "tag": "jeanne_d'arc_alter_santa_lily_(fate)",
+      "reason": "R10-1 で戻した候補のタグ。名前から自動導出すると大人のジャンヌ・オルタ(jeanne_d'arc_alter_(fate))を掴むため、本人のタグに固定する。"
+    },
+    "idolmastermillionlivetheaterdays-kitazawa-shiho": {
+      "tag": "kitazawa_shiho",
+      "reason": "R10-1 で戻した候補のタグ。名前から自動導出すると衣装違いの kitazawa_shiho_(depths_of_twilight_maid) を掴むため、本人のタグに固定する。"
+    },
+    "idolmastermillionlivetheaterdays-nanao-yuriko": {
+      "tag": "nanao_yuriko",
+      "reason": "R10-1 で戻した候補のタグ。名前から自動導出すると別人の nanao_yuriko's_mother を掴むため、本人のタグに固定する。"
+    },
+    "idolmastermillionlivetheaterdays-hakozaki-serika": {
+      "tag": "hakozaki_serika",
+      "reason": "R10-1 で戻した候補のタグ。名前から自動導出すると衣装違いの hakozaki_serika_(everyone_is_special) を掴むため、本人のタグに固定する。"
+    },
+    "nanoha-vivio": {
+      "tag": "vivio",
+      "reason": "R10-1 で戻した候補のタグ。なのはViVid など続編の作品タグで描かれることが多く、魔法少女リリカルなのはの作品タグとの共起率は低い(約10%)が本人のタグ。"
     }
   }
 }
