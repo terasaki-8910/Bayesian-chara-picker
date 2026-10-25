@@ -24723,25 +24723,6 @@
       "source": "override",
       "checkedAt": "2026-10-25T09:35:09.981Z"
     },
-    "fireemblem-tiki": {
-      "tag": "tiki_(fire_emblem)",
-      "postCount": 2347,
-      "source": "series-qualified",
-      "seriesOverlap": 1,
-      "candidatesTried": [
-        "tiki",
-        "tiki_(fire_emblem)",
-        "tiki(*)"
-      ],
-      "allCandidates": [
-        "tiki_(fire_emblem)(2347)",
-        "tiki_(adult)_(fire_emblem)(1382)",
-        "tiki_(young)_(fire_emblem)(1042)",
-        "tiki_(adult)_(summering_scion)_(fire_emblem)(176)",
-        "tiki_(young)_(legendary_dragon)_(fire_emblem)(79)"
-      ],
-      "checkedAt": "2026-10-25T09:21:19.315Z"
-    },
     "freshprecure-higashi-setsuna": {
       "tag": "higashi_setsuna",
       "postCount": 1590,
@@ -25666,26 +25647,6 @@
         "momoe_nagisa_(swimsuit_ver.)(13)"
       ],
       "checkedAt": "2026-10-25T09:26:13.697Z"
-    },
-    "mahoushoujoniakogarete-hiiragi-utena": {
-      "tag": "hiiragi_utena",
-      "postCount": 1410,
-      "source": "exact",
-      "seriesOverlap": 0.999290780141844,
-      "candidatesTried": [
-        "hiiragi_utena",
-        "hiiragi_utena_(mahou_shoujo_ni_akogarete)",
-        "hiiragi_utena(*)",
-        "hiiragi(*)"
-      ],
-      "allCandidates": [
-        "hiiragi_utena(1410)",
-        "hiiragi_kagami(6546)",
-        "hiiragi_tsukasa(3749)",
-        "hiiragi_yuzu(717)",
-        "hiiragi_shinoa(370)"
-      ],
-      "checkedAt": "2026-10-25T09:26:19.247Z"
     },
     "mahoutsukaiprecure-asahina-mirai": {
       "tag": "asahina_mirai",

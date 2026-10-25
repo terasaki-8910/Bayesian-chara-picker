@@ -13369,13 +13369,6 @@
       "source": "not-found",
       "checkedAt": "2026-10-25T09:38:07.264Z"
     },
-    "fireemblem-tiki": {
-      "qid": "Q115861755",
-      "label": "Tiki",
-      "source": "search-verified",
-      "seriesMatch": true,
-      "checkedAt": "2026-10-25T09:38:12.151Z"
-    },
     "freshprecure-higashi-setsuna": {
       "qid": "Q3958297",
       "label": "Setsuna Higashi",
@@ -13726,13 +13719,6 @@
       "reason": "not-found",
       "source": "not-found",
       "checkedAt": "2026-10-25T09:42:18.170Z"
-    },
-    "mahoushoujoniakogarete-hiiragi-utena": {
-      "qid": "Q141633324",
-      "label": "Hiiragi Utena",
-      "source": "search-verified",
-      "seriesMatch": true,
-      "checkedAt": "2026-10-25T09:42:21.728Z"
     },
     "mahoutsukaiprecure-asahina-mirai": {
       "qid": "Q65270877",
