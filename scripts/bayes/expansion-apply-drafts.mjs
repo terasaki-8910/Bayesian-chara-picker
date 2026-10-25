@@ -74,11 +74,13 @@ const REQUIRED_8 = ['genderExpression', 'ageFeel', 'build', 'bust', 'personality
 const OPTIONAL_10 = ['roles', 'distance', 'looks', 'skinTone', 'outfit', 'species', 'mood', 'occupation', 'stature', 'affiliationName'];
 const MIN_OPTIONAL_FILLED = 4;
 
-/** 下書きの flags のうち、これらが1つでも付いていれば除外（除外の判断そのものはしない。flags に従うだけ）。 */
+/**
+ * 下書きの flags のうち、これらが1つでも付いていれば除外（除外の判断そのものはしない。flags に従うだけ）。
+ * 作中の年齢（child）では外さない（10回目のシート R10-1、ユーザーの判断）。
+ */
 function isExcludedByFlags(flags) {
   return (flags ?? []).some(
-    (f) =>
-      f === 'not-a-character' || f === 'player-avatar' || f === 'male' || f === 'unreleased' || f === 'child' || f.startsWith('same-as:'),
+    (f) => f === 'not-a-character' || f === 'player-avatar' || f === 'male' || f === 'unreleased' || f.startsWith('same-as:'),
   );
 }
 

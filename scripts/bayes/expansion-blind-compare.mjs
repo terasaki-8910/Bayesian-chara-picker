@@ -46,11 +46,10 @@ const UNORDERED_SINGLE_AXES = ['genderExpression', 'skinTone', 'species', 'comba
 const ARRAY_AXES_LIST = ['personality', 'roles', 'looks', 'hairColor', 'outfit', 'mood', 'occupation'];
 // affiliationName は比較しない（自由記述・語彙なし）。
 
-/** 下書きの flags のうち、これらが1つでも付いていれば比較から外す。apply側と同じ条件。 */
+/** 下書きの flags のうち、これらが1つでも付いていれば比較から外す。apply側と同じ条件（作中の年齢では外さない。R10-1）。 */
 function isExcludedByFlags(flags) {
   return (flags ?? []).some(
-    (f) =>
-      f === 'not-a-character' || f === 'player-avatar' || f === 'male' || f === 'unreleased' || f === 'child' || f.startsWith('same-as:'),
+    (f) => f === 'not-a-character' || f === 'player-avatar' || f === 'male' || f === 'unreleased' || f.startsWith('same-as:'),
   );
 }
 
