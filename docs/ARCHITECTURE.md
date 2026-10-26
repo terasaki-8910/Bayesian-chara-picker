@@ -237,6 +237,21 @@ mount時に1回だけ読み、router は使わない）。
   各モデルの runInfo（ビルド、GGUF の sha256、起動引数）と一緒に
   `state/bayes-pipeline/bench/` へ残す。
   `llm-extract.mjs` は `--force` なしで実行すると未処理分だけ再開する設計。
+- **R11（2026-10-26、2002体のレビューのあと）**: 実際のプレイヤーの答えに近づけるための3つの変更。
+  - **1人の絵で数える**: Danbooru の集計は、solo の投稿が30件以上あるキャラなら solo だけを使う
+    （`selectDanbooruPosts`）。複数人の絵では相手の特徴が混ざっていた（井ノ上たきなの金髪、砕蜂の褐色など）。
+    タグが付いているかどうかだけで決まる質問（色白・眼鏡など）で注釈もあるときは、Danbooru の重みを
+    注釈と同じ30までにする（`PRESENCE_TAG_WEIGHT_CAP`。タグが付いていないことは弱い証拠でしかない）。
+  - **答えのずれを織り込む**: `scripts/bayes/answer-noise.mjs` が、独立の付け直しの比較
+    （`state/expansion/blind-compare-*.json`）から軸ごとの一致率を集め、
+    `data/bayes/answer-noise.json` に軸ごとのずれ e = (1 − 一致率) / 2（0.03〜0.25）を書く。
+    `build-likelihoods.mjs` は、マージした尤度 p を (1 − e)・p + e・(1 − p) にしてから書き出す。
+    距離感(0.177)・雰囲気(0.191)・性格(0.163)のように当てにならない軸ほど、1問の重みが弱くなり、
+    聞かれにくくなる。1問あたりの手がかりが弱くなるので、質問の上限 `HARD_CAP_BAYES` は 15 → 20。
+  - **作品の質問19問**: `data/bayes/series-facts.json` に、367作品それぞれの世界観・作品の年代・ジャンル・
+    原作の媒体を持つ（質問の source は `series`）。値は2人が独立に付け
+    （規則は `state/expansion/SERIES-RULES.md`、比較は `state/expansion/blind-compare-series.json`）、
+    判断が分かれた値は `maybe` に入れて、はい・いいえのどちらの手がかりにもしない。
 
 ## テスト・ゲート
 
