@@ -186,11 +186,16 @@ export function estimateAxisMultiLikelihood(charArray, targetValue) {
 /**
  * 作品単位の確定事実から尤度を返す。複数値リストは網羅済みなので、空配列や
  * 対象値の不在も明確な「いいえ」として扱う。
+ * `maybe` に入っている値は、独立に付けた2人の判断が分かれた値（例: ブルーアーカイブの
+ * 「現代日本」）。プレイヤーの答えも割れるはずなので、はい・いいえのどちらの手がかりにも
+ * しない（null）。
  * @param {{ facts: Record<string, unknown> | undefined, axis: string, value: string, multi: boolean }} params
  * @returns {number | null}
  */
 export function estimateSeriesLikelihood({ facts, axis, value, multi }) {
   if (!facts || facts[axis] === undefined || facts[axis] === null) return null;
+  const maybe = facts.maybe?.[axis];
+  if (Array.isArray(maybe) && maybe.includes(value)) return null;
   const axisValue = facts[axis];
   if (multi) {
     return Array.isArray(axisValue) && axisValue.includes(value) ? SERIES_LIKELY_YES : SERIES_LIKELY_NO;

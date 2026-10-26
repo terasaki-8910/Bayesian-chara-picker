@@ -86,6 +86,14 @@ const seriesFactsSchema = z.object({
       era: z.string().min(1),
       genre: z.array(z.string().min(1)),
       media: z.array(z.string().min(1)),
+      maybe: z
+        .object({
+          world: z.array(z.string().min(1)).min(1).optional(),
+          genre: z.array(z.string().min(1)).min(1).optional(),
+          media: z.array(z.string().min(1)).min(1).optional(),
+        })
+        .strict()
+        .optional(),
       note: z.string().min(1).optional(),
     }),
   ),
@@ -549,6 +557,17 @@ describe('BA9. series-facts.json / answer-noise.json', () => {
     }
   });
 
+  it('判断が分かれた値(maybe)は値域の中にあり、確定の値と重ならない', () => {
+    for (const [series, facts] of Object.entries(seriesFacts.series)) {
+      for (const axis of ['world', 'genre', 'media'] as const) {
+        for (const value of facts.maybe?.[axis] ?? []) {
+          expect(seriesFacts.values[axis], `${series}.maybe.${axis}: 「${value}」が値域に無い`).toContain(value);
+          expect(facts[axis], `${series}.maybe.${axis}: 「${value}」が確定の値と重なる`).not.toContain(value);
+        }
+      }
+    }
+  });
+
   it('characters.json の全作品が1件ずつ存在し、余分な作品も無い', () => {
     const expected = new Set(charactersFile.map((character) => character.series));
     const actual = new Set(Object.keys(seriesFacts.series));
@@ -614,9 +633,11 @@ describe('BA6. likelihoods.json の既知実測値との整合（ビルドパイ
   it('Danbooruタグを持たないキャラ(azurlane-yamato)は軸ソースのみで妥当な値になる', () => {
     const combatIdx = likelihoodIndexOf('ax:combat=戦う');
     // 実データのcombat軸値が「戦う」の場合、danbooru重み0でaxisのみに従いAXIS_SINGLE_MATCH(0.9)相当になるはず。
+    // R11-B から答えのずれ(combat の e)を織り込むので、0.9 を (1-e)・0.9 + e・0.1 にした値になる。
     const yamato = charactersFile.find((c) => c.id === 'azurlane-yamato')!;
+    const e = JSON.parse(readFileSync(new URL('../data/bayes/answer-noise.json', import.meta.url), 'utf8')).axes.combat.e;
     if (yamato.axes.combat === '戦う') {
-      expect(likelihoodsFile.chars['azurlane-yamato'][combatIdx]).toBeCloseTo(0.9, 2);
+      expect(likelihoodsFile.chars['azurlane-yamato'][combatIdx]).toBeCloseTo((1 - e) * 0.9 + e * 0.1, 2);
     }
   });
 });

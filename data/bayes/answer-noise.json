@@ -1,0 +1,120 @@
+{
+  "version": 1,
+  "sources": [
+    "blind-compare-cycle1.json",
+    "blind-compare-1000.json",
+    "blind-compare-gap.json",
+    "blind-compare-top.json",
+    "blind-compare-restore.json",
+    "blind-compare-series.json"
+  ],
+  "min": 0.03,
+  "max": 0.25,
+  "axes": {
+    "affiliationKind": {
+      "n": 144,
+      "agreement": 0.972,
+      "e": 0.03
+    },
+    "ageFeel": {
+      "n": 144,
+      "agreement": 0.91,
+      "e": 0.045
+    },
+    "build": {
+      "n": 144,
+      "agreement": 0.917,
+      "e": 0.042
+    },
+    "bust": {
+      "n": 144,
+      "agreement": 1,
+      "e": 0.03
+    },
+    "combat": {
+      "n": 144,
+      "agreement": 0.993,
+      "e": 0.03
+    },
+    "distance": {
+      "n": 144,
+      "agreement": 0.646,
+      "e": 0.177
+    },
+    "era": {
+      "n": 367,
+      "agreement": 1,
+      "e": 0.03
+    },
+    "genderExpression": {
+      "n": 144,
+      "agreement": 1,
+      "e": 0.03
+    },
+    "genre": {
+      "n": 367,
+      "agreement": 0.926,
+      "e": 0.037
+    },
+    "hairColor": {
+      "n": 144,
+      "agreement": 1,
+      "e": 0.03
+    },
+    "looks": {
+      "n": 144,
+      "agreement": 0.972,
+      "e": 0.03
+    },
+    "media": {
+      "n": 367,
+      "agreement": 0.992,
+      "e": 0.03
+    },
+    "mood": {
+      "n": 144,
+      "agreement": 0.618,
+      "e": 0.191
+    },
+    "occupation": {
+      "n": 144,
+      "agreement": 0.896,
+      "e": 0.052
+    },
+    "outfit": {
+      "n": 144,
+      "agreement": 0.972,
+      "e": 0.03
+    },
+    "personality": {
+      "n": 144,
+      "agreement": 0.674,
+      "e": 0.163
+    },
+    "roles": {
+      "n": 144,
+      "agreement": 0.792,
+      "e": 0.104
+    },
+    "skinTone": {
+      "n": 144,
+      "agreement": 0.799,
+      "e": 0.101
+    },
+    "species": {
+      "n": 144,
+      "agreement": 0.951,
+      "e": 0.03
+    },
+    "stature": {
+      "n": 144,
+      "agreement": 0.951,
+      "e": 0.03
+    },
+    "world": {
+      "n": 367,
+      "agreement": 0.937,
+      "e": 0.031
+    }
+  }
+}

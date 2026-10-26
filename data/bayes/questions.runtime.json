@@ -1251,6 +1251,177 @@
         "label": "外見的特徴",
         "value": "眼帯"
       }
+    },
+    {
+      "key": "q140",
+      "prompt": "舞台は現代の日本ですか?",
+      "reason": {
+        "axis": "world",
+        "label": "世界観",
+        "value": "現代日本"
+      }
+    },
+    {
+      "key": "q141",
+      "prompt": "舞台は異世界やファンタジーの世界ですか?",
+      "reason": {
+        "axis": "world",
+        "label": "世界観",
+        "value": "異世界ファンタジー"
+      }
+    },
+    {
+      "key": "q142",
+      "prompt": "SFや近未来の作品ですか?",
+      "reason": {
+        "axis": "world",
+        "label": "世界観",
+        "value": "SF・近未来"
+      }
+    },
+    {
+      "key": "q143",
+      "prompt": "和風の世界観の作品ですか?",
+      "reason": {
+        "axis": "world",
+        "label": "世界観",
+        "value": "和風"
+      }
+    },
+    {
+      "key": "q144",
+      "prompt": "実在の歴史や人物・艦船・競走馬などがもとになっている作品ですか?",
+      "reason": {
+        "axis": "world",
+        "label": "世界観",
+        "value": "歴史"
+      }
+    },
+    {
+      "key": "q145",
+      "prompt": "作品(シリーズ)が始まったのは1999年以前ですか?",
+      "reason": {
+        "axis": "era",
+        "label": "作品の年代",
+        "value": "2000年以前"
+      }
+    },
+    {
+      "key": "q146",
+      "prompt": "作品(シリーズ)が始まったのは2000年代ですか?",
+      "reason": {
+        "axis": "era",
+        "label": "作品の年代",
+        "value": "2000年代"
+      }
+    },
+    {
+      "key": "q147",
+      "prompt": "作品(シリーズ)が始まったのは2010年代ですか?",
+      "reason": {
+        "axis": "era",
+        "label": "作品の年代",
+        "value": "2010年代"
+      }
+    },
+    {
+      "key": "q148",
+      "prompt": "作品(シリーズ)が始まったのは2020年代ですか?",
+      "reason": {
+        "axis": "era",
+        "label": "作品の年代",
+        "value": "2020年代"
+      }
+    },
+    {
+      "key": "q149",
+      "prompt": "バトルが中心の作品ですか?",
+      "reason": {
+        "axis": "genre",
+        "label": "ジャンル",
+        "value": "バトル"
+      }
+    },
+    {
+      "key": "q150",
+      "prompt": "日常ものの作品ですか?",
+      "reason": {
+        "axis": "genre",
+        "label": "ジャンル",
+        "value": "日常"
+      }
+    },
+    {
+      "key": "q151",
+      "prompt": "恋愛が中心の作品ですか?",
+      "reason": {
+        "axis": "genre",
+        "label": "ジャンル",
+        "value": "恋愛"
+      }
+    },
+    {
+      "key": "q152",
+      "prompt": "軍隊や兵器が中心の作品ですか?",
+      "reason": {
+        "axis": "genre",
+        "label": "ジャンル",
+        "value": "ミリタリー"
+      }
+    },
+    {
+      "key": "q153",
+      "prompt": "アイドルものの作品ですか?",
+      "reason": {
+        "axis": "genre",
+        "label": "ジャンル",
+        "value": "アイドル"
+      }
+    },
+    {
+      "key": "q154",
+      "prompt": "原作はゲームですか?",
+      "reason": {
+        "axis": "media",
+        "label": "原作",
+        "value": "ゲーム"
+      }
+    },
+    {
+      "key": "q155",
+      "prompt": "原作はアニメ(オリジナルアニメ)ですか?",
+      "reason": {
+        "axis": "media",
+        "label": "原作",
+        "value": "アニメ"
+      }
+    },
+    {
+      "key": "q156",
+      "prompt": "原作は漫画ですか?",
+      "reason": {
+        "axis": "media",
+        "label": "原作",
+        "value": "漫画"
+      }
+    },
+    {
+      "key": "q157",
+      "prompt": "原作は小説やライトノベルですか?",
+      "reason": {
+        "axis": "media",
+        "label": "原作",
+        "value": "小説・ライトノベル"
+      }
+    },
+    {
+      "key": "q158",
+      "prompt": "VTuberや配信者ですか?",
+      "reason": {
+        "axis": "media",
+        "label": "原作",
+        "value": "VTuber・配信"
+      }
     }
   ]
 }

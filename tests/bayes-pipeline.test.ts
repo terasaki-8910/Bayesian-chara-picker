@@ -602,6 +602,13 @@ describe('BB. 尤度推定の純粋関数（scripts/bayes/estimators.mjs）', ()
     expect(estimateSeriesLikelihood({ facts: {}, axis: 'era', value: '2020年代', multi: false })).toBeNull();
   });
 
+  it('estimateSeriesLikelihood: 判断が分かれた値(maybe)はnull、それ以外の値はそのまま', () => {
+    const facts = { world: ['SF・近未来'], maybe: { world: ['現代日本'] } };
+    expect(estimateSeriesLikelihood({ facts, axis: 'world', value: '現代日本', multi: true })).toBeNull();
+    expect(estimateSeriesLikelihood({ facts, axis: 'world', value: 'SF・近未来', multi: true })).toBe(SERIES_LIKELY_YES);
+    expect(estimateSeriesLikelihood({ facts, axis: 'world', value: '和風', multi: true })).toBe(SERIES_LIKELY_NO);
+  });
+
   it('mergeLikelihoods: 有効ソースが無ければfallbackを返す', () => {
     expect(mergeLikelihoods([], 0.31)).toBeCloseTo(0.31, 10);
     expect(mergeLikelihoods([{ p: null, weight: 10 }], 0.31)).toBeCloseTo(0.31, 10);
