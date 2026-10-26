@@ -152,10 +152,27 @@ export const MIN_GAIN_BAYES = 0.02;
 export const TOP_K_BAYES = 5;
 
 /**
+ * 決まった問目（1始まり）に、決まった軸の質問を1問だけ必ず出す（R12、2026-10-26）。
+ * 答えのずれを織り込む(R11-B)と、性格・距離感・雰囲気は手がかりが弱いとみなされてほぼ聞かれなくなった
+ * （性格が出るのはプレイの0.8%）。遊びとして物足りないので、その軸の中でいちばん手がかりになる質問を差し込む。
+ * その問目までに同じ軸の質問がもう出ていれば差し込まない。再現プログラムでの1回目の正解率は誤差の範囲
+ * （ファン想定 99.1% → 99.5%）。
+ */
+export const FORCED_AXIS_SLOTS: readonly { readonly at: number; readonly axes: readonly string[] }[] = [
+  { at: 4, axes: ['personality'] },
+  { at: 8, axes: ['distance', 'mood'] },
+];
+
+/** 1回のプレイで聞く数に上限がある軸（R12: 「作品(シリーズ)が始まったのは○年代?」が2〜3回続くのを避ける）。 */
+export const MAX_QUESTIONS_PER_AXIS: Readonly<Record<string, number>> = { era: 2 };
+
+/**
  * 次に聞くべきベイズ質問を選ぶ。classic の `nextProbe` と違い、作業集合を
  * ハードに絞り込む処理（CONTENTION_M 相当）は無い——全 survivors への事後確率の
  * 重み付けだけで済むベイズ推定はハード制約による「集団が2体未満に縮む」問題が
  * 起きないため（PLAN「質問選択」に CONTENTION_M 相当の記載が無いのはこのため）。
+ * `FORCED_AXIS_SLOTS` の問目では、その軸の質問を手がかりの大きさだけで選んで返す（乱択しない）。
+ * `MAX_QUESTIONS_PER_AXIS` の上限に達した軸の質問は候補から外す。
  */
 export function bayesNextProbe(
   dataset: Dataset,
@@ -167,9 +184,27 @@ export function bayesNextProbe(
   if (population.length === 0) return null;
 
   const posterior = normalizePosterior(computeLogPosterior(population, dataset.supply, answers));
+  const askedAxes = [...askedKeys].map((key) => probeByKey.get(key)?.reason.axis);
+
+  const slot = FORCED_AXIS_SLOTS.find((s) => s.at === askedKeys.size + 1);
+  if (slot !== undefined && !askedAxes.some((axis) => axis !== undefined && slot.axes.includes(axis))) {
+    let forced: { probe: BayesProbe; gain: number } | null = null;
+    for (const probe of allProbes) {
+      if (askedKeys.has(probe.key) || !slot.axes.includes(probe.reason.axis)) continue;
+      const gain = expectedGain(posterior, probe.key);
+      if (forced === null || gain > forced.gain + GAIN_EPSILON) forced = { probe, gain };
+    }
+    if (forced !== null) return forced.probe;
+  }
+
+  const fullAxes = new Set(
+    Object.entries(MAX_QUESTIONS_PER_AXIS)
+      .filter(([axis, max]) => askedAxes.filter((a) => a === axis).length >= max)
+      .map(([axis]) => axis),
+  );
   const candidates: { probe: BayesProbe; gain: number }[] = [];
   for (const probe of allProbes) {
-    if (askedKeys.has(probe.key)) continue;
+    if (askedKeys.has(probe.key) || fullAxes.has(probe.reason.axis)) continue;
     const gain = expectedGain(posterior, probe.key);
     if (gain >= MIN_GAIN_BAYES) candidates.push({ probe, gain });
   }

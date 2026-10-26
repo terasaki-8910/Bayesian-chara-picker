@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vitest';
+import { beforeAll, describe, expect, it } from 'vitest';
 
 import type { Character, SupplyFile } from '../src/data/schema';
 import likelihoodsData from '../data/bayes/likelihoods.json';
@@ -6,7 +6,9 @@ import questionsRuntimeData from '../data/bayes/questions.runtime.json';
 import {
   BONUS_MAX_QUESTIONS_BAYES,
   BONUS_MIN_QUESTIONS_BAYES,
+  FORCED_AXIS_SLOTS,
   HARD_CAP_BAYES,
+  MAX_QUESTIONS_PER_AXIS,
   MIN_QUESTIONS_BAYES,
   SCORE_SCALE,
   bayesNextProbe,
@@ -283,6 +285,48 @@ describe('BC. ベイズ推薦エンジン', () => {
       const only: Scored[] = [{ character: dataset.characters[0], score: 1, supplyRank: '豊富', reasons: [] }];
       expect(bayesShouldReguess(only, BONUS_MIN_QUESTIONS_BAYES, true)).toBe(true);
       expect(bayesShouldReguess(only, BONUS_MIN_QUESTIONS_BAYES - 1, true)).toBe(false);
+    });
+  });
+
+  describe('BC15: 決まった問目に差し込む質問と、軸ごとの上限（R12）', () => {
+    const AXIS_BY_KEY = new Map(
+      (questionsRuntimeData as { questions: { key: string; reason: { axis: string } }[] }).questions.map((q) => [q.key, q.reason.axis]),
+    );
+    // 乱択あり(本番と同じ)で、無作為のキャラ60体を最後まで聞く(1体およそ1秒)。
+    let sessions: { id: string; axes: (string | undefined)[] }[] = [];
+    beforeAll(() => {
+      const rand = mulberry32(20261026);
+      sessions = Array.from({ length: 60 }, () => {
+        const target = dataset.characters[Math.floor(rand() * dataset.characters.length)];
+        const { askedKeys } = runToGuess(dataset, oracleFor(target), { rng: rand });
+        return { id: target.id, axes: [...askedKeys].map((key) => AXIS_BY_KEY.get(key)) };
+      });
+    }, 600000);
+
+    it('FORCED_AXIS_SLOTS の問目には、その軸の質問が出る（それまでに同じ軸が出ていなければ）', () => {
+      for (const { id, axes } of sessions) {
+        for (const slot of FORCED_AXIS_SLOTS) {
+          if (axes.length < slot.at) continue;
+          const before = axes.slice(0, slot.at - 1);
+          if (before.some((axis) => axis !== undefined && slot.axes.includes(axis))) continue;
+          expect(slot.axes, `${id}: ${slot.at}問目が「${axes[slot.at - 1]}」`).toContain(axes[slot.at - 1]);
+        }
+      }
+    });
+
+    it('4問目までに性格、8問目までに距離感か雰囲気の質問が必ず1問は出る', () => {
+      for (const { id, axes } of sessions) {
+        if (axes.length >= 4) expect(axes.slice(0, 4), id).toContain('personality');
+        if (axes.length >= 8) expect(axes.slice(0, 8).some((a) => a === 'distance' || a === 'mood'), id).toBe(true);
+      }
+    });
+
+    it('MAX_QUESTIONS_PER_AXIS の軸は、1回のプレイで上限までしか聞かない', () => {
+      for (const { id, axes } of sessions) {
+        for (const [axis, max] of Object.entries(MAX_QUESTIONS_PER_AXIS)) {
+          expect(axes.filter((a) => a === axis).length, `${id}: ${axis}`).toBeLessThanOrEqual(max);
+        }
+      }
     });
   });
 
