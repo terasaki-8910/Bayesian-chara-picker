@@ -27,6 +27,7 @@ const LLM_AXIS_KEYS = [
   'personality', 'mood', 'species', 'combat', 'distance', 'affiliationKind', 'roles',
   'ageFeel', 'build', 'stature', 'occupation',
 ] as const;
+const SERIES_AXIS_KEYS = ['world', 'era', 'genre', 'media'] as const;
 
 const sourceSchema = z.discriminatedUnion('type', [
   z.object({ type: z.literal('danbooru-group'), group: z.string().min(1), tag: z.string().min(1) }),
@@ -34,6 +35,7 @@ const sourceSchema = z.discriminatedUnion('type', [
   z.object({ type: z.literal('axis'), axis: z.string().min(1), value: z.string().min(1), multi: z.boolean() }),
   z.object({ type: z.literal('wikidata'), axis: z.enum(WIKIDATA_AXIS_KEYS), value: z.string().min(1), multi: z.boolean() }),
   z.object({ type: z.literal('llm'), axis: z.enum(LLM_AXIS_KEYS), value: z.string().min(1), multi: z.boolean() }),
+  z.object({ type: z.literal('series'), axis: z.enum(SERIES_AXIS_KEYS), value: z.string().min(1), multi: z.boolean() }),
 ]);
 
 const questionSchema = z.object({
@@ -67,12 +69,58 @@ const runtimeSchema = z.object({
   ),
 });
 
+const seriesValuesSchema = z.object({
+  world: z.array(z.string().min(1)).min(1),
+  era: z.array(z.string().min(1)).min(1),
+  genre: z.array(z.string().min(1)).min(1),
+  media: z.array(z.string().min(1)).min(1),
+});
+
+const seriesFactsSchema = z.object({
+  version: z.literal(1),
+  values: seriesValuesSchema,
+  series: z.record(
+    z.string().min(1),
+    z.object({
+      world: z.array(z.string().min(1)),
+      era: z.string().min(1),
+      genre: z.array(z.string().min(1)),
+      media: z.array(z.string().min(1)),
+      maybe: z
+        .object({
+          world: z.array(z.string().min(1)).min(1).optional(),
+          genre: z.array(z.string().min(1)).min(1).optional(),
+          media: z.array(z.string().min(1)).min(1).optional(),
+        })
+        .strict()
+        .optional(),
+      note: z.string().min(1).optional(),
+    }),
+  ),
+});
+
+const answerNoiseSchema = z.object({
+  version: z.literal(1),
+  sources: z.array(z.string().min(1)),
+  min: z.number(),
+  max: z.number(),
+  axes: z.record(
+    z.string().min(1),
+    z.object({
+      n: z.number().int().nonnegative(),
+      agreement: z.number(),
+      e: z.number(),
+    }),
+  ),
+});
+
 /** schema.ts の Axes 実キーと一致させる（typoの早期検出。tests/data.test.ts のA5相当）。 */
 const VALID_AXIS_KEYS = new Set([
   'genderExpression', 'ageFeel', 'build', 'bust', 'personality', 'roles', 'distance',
   'looks', 'hairColor', 'skinTone', 'outfit', 'species', 'mood', 'combat',
   'affiliationKind', 'affiliationName', 'stature', 'occupation',
 ]);
+const VALID_REASON_AXIS_KEYS = new Set<string>([...VALID_AXIS_KEYS, ...SERIES_AXIS_KEYS]);
 
 describe('BA1. questions.json の構造', () => {
   it('スキーマに適合する', () => {
@@ -107,7 +155,7 @@ describe('BA1. questions.json の構造', () => {
       }
     }
     for (const q of typedQuestions.questions) {
-      expect(VALID_AXIS_KEYS.has(q.reason.axis), `${q.id}: reason.axis「${q.reason.axis}」が不正`).toBe(true);
+      expect(VALID_REASON_AXIS_KEYS.has(q.reason.axis), `${q.id}: reason.axis「${q.reason.axis}」が不正`).toBe(true);
     }
   });
 
@@ -481,6 +529,85 @@ describe('BA8. niconico-map.json / llm-extract.json の整合性（PLAN「P5b」
   });
 });
 
+describe('BA9. series-facts.json / answer-noise.json', () => {
+  const seriesFactsRaw = JSON.parse(
+    readFileSync(new URL('../data/bayes/series-facts.json', import.meta.url), 'utf8'),
+  );
+  const answerNoiseRaw = JSON.parse(
+    readFileSync(new URL('../data/bayes/answer-noise.json', import.meta.url), 'utf8'),
+  );
+  const seriesFacts = seriesFactsSchema.parse(seriesFactsRaw);
+  const answerNoise = answerNoiseSchema.parse(answerNoiseRaw);
+  const typedQuestions = questionsSchema.parse(questionsFile);
+
+  it('series-facts.json はスキーマに適合する', () => {
+    const result = seriesFactsSchema.safeParse(seriesFactsRaw);
+    expect(result.success, JSON.stringify(result.success ? null : result.error?.issues, null, 2)).toBe(true);
+  });
+
+  it('作品事実の全値が values の値域に収まり、era は許可された単一値である', () => {
+    const multiAxes = ['world', 'genre', 'media'] as const;
+    for (const [series, facts] of Object.entries(seriesFacts.series)) {
+      for (const axis of multiAxes) {
+        for (const value of facts[axis]) {
+          expect(seriesFacts.values[axis], `${series}.${axis}: 「${value}」が値域に無い`).toContain(value);
+        }
+      }
+      expect(seriesFacts.values.era, `${series}.era: 「${facts.era}」が値域に無い`).toContain(facts.era);
+    }
+  });
+
+  it('判断が分かれた値(maybe)は値域の中にあり、確定の値と重ならない', () => {
+    for (const [series, facts] of Object.entries(seriesFacts.series)) {
+      for (const axis of ['world', 'genre', 'media'] as const) {
+        for (const value of facts.maybe?.[axis] ?? []) {
+          expect(seriesFacts.values[axis], `${series}.maybe.${axis}: 「${value}」が値域に無い`).toContain(value);
+          expect(facts[axis], `${series}.maybe.${axis}: 「${value}」が確定の値と重なる`).not.toContain(value);
+        }
+      }
+    }
+  });
+
+  it('characters.json の全作品が1件ずつ存在し、余分な作品も無い', () => {
+    const expected = new Set(charactersFile.map((character) => character.series));
+    const actual = new Set(Object.keys(seriesFacts.series));
+    expect(actual).toEqual(expected);
+  });
+
+  it('seriesソースは対応軸の値域だけを使い、eraだけmulti=falseである', () => {
+    for (const question of typedQuestions.questions) {
+      for (const source of question.sources) {
+        if (source.type !== 'series') continue;
+        expect(
+          seriesFacts.values[source.axis],
+          `${question.id}: ${source.axis}=${source.value} が値域に無い`,
+        ).toContain(source.value);
+        expect(source.multi, `${question.id}: multiが軸の形式と一致しない`).toBe(source.axis !== 'era');
+      }
+    }
+  });
+
+  it('answer-noise.json はスキーマに適合し、agreementとeが範囲内である', () => {
+    const result = answerNoiseSchema.safeParse(answerNoiseRaw);
+    expect(result.success, JSON.stringify(result.success ? null : result.error?.issues, null, 2)).toBe(true);
+    expect(answerNoise.min).toBe(0.03);
+    expect(answerNoise.max).toBe(0.25);
+    for (const [axis, noise] of Object.entries(answerNoise.axes)) {
+      expect(noise.agreement, `${axis}.agreement`).toBeGreaterThanOrEqual(0);
+      expect(noise.agreement, `${axis}.agreement`).toBeLessThanOrEqual(1);
+      expect(noise.e, `${axis}.e`).toBeGreaterThanOrEqual(0.03);
+      expect(noise.e, `${axis}.e`).toBeLessThanOrEqual(0.25);
+    }
+  });
+
+  it('questions.json の全 reason.axis に回答ノイズが定義されている', () => {
+    const reasonAxes = new Set(typedQuestions.questions.map((question) => question.reason.axis));
+    for (const axis of reasonAxes) {
+      expect(answerNoise.axes[axis], `answer-noise.json に軸「${axis}」が無い`).toBeDefined();
+    }
+  });
+});
+
 /**
  * questions.json の（Danbooruタグ名を含む）記述的idから、実行時の不透明key配列上の
  * 位置を引く。likelihoods.json/questions.runtime.json のkeyはid自体とは別物
@@ -506,9 +633,11 @@ describe('BA6. likelihoods.json の既知実測値との整合（ビルドパイ
   it('Danbooruタグを持たないキャラ(azurlane-yamato)は軸ソースのみで妥当な値になる', () => {
     const combatIdx = likelihoodIndexOf('ax:combat=戦う');
     // 実データのcombat軸値が「戦う」の場合、danbooru重み0でaxisのみに従いAXIS_SINGLE_MATCH(0.9)相当になるはず。
+    // R11-B から答えのずれ(combat の e)を織り込むので、0.9 を (1-e)・0.9 + e・0.1 にした値になる。
     const yamato = charactersFile.find((c) => c.id === 'azurlane-yamato')!;
+    const e = JSON.parse(readFileSync(new URL('../data/bayes/answer-noise.json', import.meta.url), 'utf8')).axes.combat.e;
     if (yamato.axes.combat === '戦う') {
-      expect(likelihoodsFile.chars['azurlane-yamato'][combatIdx]).toBeCloseTo(0.9, 2);
+      expect(likelihoodsFile.chars['azurlane-yamato'][combatIdx]).toBeCloseTo((1 - e) * 0.9 + e * 0.1, 2);
     }
   });
 });

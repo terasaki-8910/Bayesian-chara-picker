@@ -67,8 +67,11 @@ import {
   DEFAULT_EPSILON,
   LLM_LIKELY_NO,
   LLM_LIKELY_YES,
+  SERIES_LIKELY_NO,
+  SERIES_LIKELY_YES,
   WIKIDATA_LIKELY_NO,
   WIKIDATA_LIKELY_YES,
+  applyAnswerNoise,
   clamp01,
   computeBinaryTheta,
   computeGroupBaseRate,
@@ -78,9 +81,11 @@ import {
   estimateBinaryRawRate,
   estimateGroupLikelihood,
   estimateLlmLikelihood,
+  estimateSeriesLikelihood,
   estimateWikidataLikelihood,
   logit,
   mergeLikelihoods,
+  selectDanbooruPosts,
   sigmoid,
 } from '../scripts/bayes/estimators.mjs';
 
@@ -454,10 +459,51 @@ describe('isExcludedCandidate（scripts/bayes/build-candidates.mjs）', () => {
 });
 
 describe('BB. 尤度推定の純粋関数（scripts/bayes/estimators.mjs）', () => {
+  it('selectDanbooruPosts: solo投稿が30件以上ならsoloだけを返す', () => {
+    const posts = [
+      ...Array.from({ length: 30 }, (_, i) => ({ id: i, tags: ['solo', 'blue_hair'] })),
+      ...Array.from({ length: 5 }, (_, i) => ({ id: 30 + i, tags: ['2girls', 'blonde_hair'] })),
+    ];
+    const selected = selectDanbooruPosts(posts);
+    expect(selected).toHaveLength(30);
+    expect(selected.every((post) => post.tags.includes('solo'))).toBe(true);
+  });
+
+  it('selectDanbooruPosts: solo投稿が30件未満なら全投稿を返す', () => {
+    const posts = [
+      ...Array.from({ length: 29 }, (_, i) => ({ id: i, tags: ['solo'] })),
+      { id: 29, tags: ['2girls'] },
+    ];
+    expect(selectDanbooruPosts(posts)).toBe(posts);
+  });
+
+  it('selectDanbooruPosts: minSoloを指定できる', () => {
+    const posts = [
+      { id: 1, tags: ['solo'] },
+      { id: 2, tags: ['solo', 'smile'] },
+      { id: 3, tags: ['2girls'] },
+    ];
+    expect(selectDanbooruPosts(posts, { minSolo: 2 })).toEqual(posts.slice(0, 2));
+  });
+
   it('clamp01: [epsilon, 1-epsilon] の範囲に丸める', () => {
     expect(clamp01(-1, 0.02)).toBe(0.02);
     expect(clamp01(2, 0.02)).toBe(0.98);
     expect(clamp01(0.5, 0.02)).toBe(0.5);
+  });
+
+  it('applyAnswerNoise: e=0ならepsilonクランプを除いて元の確率を保つ', () => {
+    expect(applyAnswerNoise(0.8, 0)).toBeCloseTo(0.8, 10);
+    expect(applyAnswerNoise(0, 0)).toBe(DEFAULT_EPSILON);
+  });
+
+  it('applyAnswerNoise: p=0.9・e=0.2なら0.74になる', () => {
+    expect(applyAnswerNoise(0.9, 0.2)).toBeCloseTo(0.74, 10);
+  });
+
+  it('applyAnswerNoise: 結果は常に[epsilon, 1-epsilon]の範囲', () => {
+    expect(applyAnswerNoise(0, 0, 0.1)).toBe(0.1);
+    expect(applyAnswerNoise(1, 0, 0.1)).toBe(0.9);
   });
 
   it('logit/sigmoid: 互いに逆関数である', () => {
@@ -528,6 +574,39 @@ describe('BB. 尤度推定の純粋関数（scripts/bayes/estimators.mjs）', ()
     expect(estimateAxisMultiLikelihood(['眼鏡', '長髪'], '眼鏡')).toBe(AXIS_MULTI_INCLUDES);
     expect(estimateAxisMultiLikelihood(['長髪'], '眼鏡')).toBe(AXIS_MULTI_EXCLUDES);
     expect(estimateAxisMultiLikelihood([], '眼鏡')).toBeNull();
+  });
+
+  it('estimateSeriesLikelihood: 複数値は含む場合YES、含まない場合と空配列はNO', () => {
+    expect(estimateSeriesLikelihood({ facts: { world: ['現代日本'] }, axis: 'world', value: '現代日本', multi: true })).toBe(
+      SERIES_LIKELY_YES,
+    );
+    expect(estimateSeriesLikelihood({ facts: { world: ['現代日本'] }, axis: 'world', value: '歴史', multi: true })).toBe(
+      SERIES_LIKELY_NO,
+    );
+    expect(estimateSeriesLikelihood({ facts: { world: [] }, axis: 'world', value: '歴史', multi: true })).toBe(
+      SERIES_LIKELY_NO,
+    );
+  });
+
+  it('estimateSeriesLikelihood: 単一値は一致でYES、不一致でNO', () => {
+    expect(estimateSeriesLikelihood({ facts: { era: '2020年代' }, axis: 'era', value: '2020年代', multi: false })).toBe(
+      SERIES_LIKELY_YES,
+    );
+    expect(estimateSeriesLikelihood({ facts: { era: '2020年代' }, axis: 'era', value: '2010年代', multi: false })).toBe(
+      SERIES_LIKELY_NO,
+    );
+  });
+
+  it('estimateSeriesLikelihood: factsまたは対象軸が無ければnull', () => {
+    expect(estimateSeriesLikelihood({ facts: undefined, axis: 'era', value: '2020年代', multi: false })).toBeNull();
+    expect(estimateSeriesLikelihood({ facts: {}, axis: 'era', value: '2020年代', multi: false })).toBeNull();
+  });
+
+  it('estimateSeriesLikelihood: 判断が分かれた値(maybe)はnull、それ以外の値はそのまま', () => {
+    const facts = { world: ['SF・近未来'], maybe: { world: ['現代日本'] } };
+    expect(estimateSeriesLikelihood({ facts, axis: 'world', value: '現代日本', multi: true })).toBeNull();
+    expect(estimateSeriesLikelihood({ facts, axis: 'world', value: 'SF・近未来', multi: true })).toBe(SERIES_LIKELY_YES);
+    expect(estimateSeriesLikelihood({ facts, axis: 'world', value: '和風', multi: true })).toBe(SERIES_LIKELY_NO);
   });
 
   it('mergeLikelihoods: 有効ソースが無ければfallbackを返す', () => {
