@@ -152,24 +152,88 @@ export const MIN_GAIN_BAYES = 0.02;
 export const TOP_K_BAYES = 5;
 
 /**
+ * 質問の出し方の方針（R12、2026-10-26）。
+ * - `forcedSlots`: 決まった問目（1始まり）に、決まった軸の質問を1問だけ必ず出す。その軸の中で
+ *   いちばん手がかりになる質問を選ぶ（乱択しない）。その問目までに同じ軸の質問がもう出ていれば差し込まない。
+ * - `groupLimits`: 軸のまとまりごとに、1回のプレイで聞く数の上限（`max`）と、聞いてよい最初の問目（`from`）。
+ */
+export type QuestionPolicy = {
+  readonly forcedSlots: readonly { readonly at: number; readonly axes: readonly string[] }[];
+  readonly groupLimits: readonly { readonly axes: readonly string[]; readonly max: number; readonly from?: number }[];
+};
+
+/** 作品の質問（R11-C）の軸。 */
+export const SERIES_AXES: readonly string[] = ['world', 'era', 'genre', 'media'];
+
+/**
+ * 答えのずれを織り込む(R11-B)と、性格・距離感・雰囲気は手がかりが弱いとみなされてほぼ聞かれなくなった
+ * （性格が出るのはプレイの0.8%）。遊びとして物足りないので、4問目に性格、8問目に距離感か雰囲気を差し込む（R12）。
+ */
+const FORCED_TRAIT_SLOTS: QuestionPolicy['forcedSlots'] = [
+  { at: 4, axes: ['personality'] },
+  { at: 8, axes: ['distance', 'mood'] },
+];
+
+/**
+ * - `default`: 本番の方針（R12）。「理想の推し」として好みで答える人には作品で絞る質問が向かないので、
+ *   年代は聞かず、世界観・ジャンル・原作は合わせて2問まで・5問目から。
+ *   再現プログラムでの1回目の正解率はファン想定 98.7%（作品の質問を制限しない場合 99.5%）。
+ * - `guess`: 思い浮かべた推しを当てる遊び方。作品の質問も使う（年代は「○年代?」が続かないよう2問まで）。
+ * - `discover`: 好みの特徴だけで理想の推しを探す遊び方。作品の質問は聞かない。
+ */
+export const QUESTION_POLICIES: Readonly<Record<'default' | 'guess' | 'discover', QuestionPolicy>> = {
+  default: {
+    forcedSlots: FORCED_TRAIT_SLOTS,
+    groupLimits: [
+      { axes: ['era'], max: 0 },
+      { axes: ['world', 'genre', 'media'], max: 2, from: 5 },
+    ],
+  },
+  guess: { forcedSlots: FORCED_TRAIT_SLOTS, groupLimits: [{ axes: ['era'], max: 2 }] },
+  discover: { forcedSlots: FORCED_TRAIT_SLOTS, groupLimits: [{ axes: SERIES_AXES, max: 0 }] },
+};
+
+/**
  * 次に聞くべきベイズ質問を選ぶ。classic の `nextProbe` と違い、作業集合を
  * ハードに絞り込む処理（CONTENTION_M 相当）は無い——全 survivors への事後確率の
  * 重み付けだけで済むベイズ推定はハード制約による「集団が2体未満に縮む」問題が
  * 起きないため（PLAN「質問選択」に CONTENTION_M 相当の記載が無いのはこのため）。
+ * `policy`（省略時は `QUESTION_POLICIES.default`）の `forcedSlots` の問目では、その軸の質問を返す。
+ * `groupLimits` の上限に達した、またはまだ聞いてよい問目でない軸の質問は候補から外す。
  */
 export function bayesNextProbe(
   dataset: Dataset,
   answers: BayesAnswerMap,
   askedKeys: ReadonlySet<string>,
-  opts?: { exclude?: ReadonlySet<string>; rng?: () => number },
+  opts?: { exclude?: ReadonlySet<string>; rng?: () => number; policy?: QuestionPolicy },
 ): BayesProbe | null {
   const population = survivors(dataset, opts?.exclude);
   if (population.length === 0) return null;
 
+  const policy = opts?.policy ?? QUESTION_POLICIES.default;
   const posterior = normalizePosterior(computeLogPosterior(population, dataset.supply, answers));
+  const askedAxes = [...askedKeys].map((key) => probeByKey.get(key)?.reason.axis);
+  const nextNumber = askedKeys.size + 1;
+
+  const slot = policy.forcedSlots.find((s) => s.at === nextNumber);
+  if (slot !== undefined && !askedAxes.some((axis) => axis !== undefined && slot.axes.includes(axis))) {
+    let forced: { probe: BayesProbe; gain: number } | null = null;
+    for (const probe of allProbes) {
+      if (askedKeys.has(probe.key) || !slot.axes.includes(probe.reason.axis)) continue;
+      const gain = expectedGain(posterior, probe.key);
+      if (forced === null || gain > forced.gain + GAIN_EPSILON) forced = { probe, gain };
+    }
+    if (forced !== null) return forced.probe;
+  }
+
+  const closedAxes = new Set<string>();
+  for (const limit of policy.groupLimits) {
+    const used = askedAxes.filter((axis) => axis !== undefined && limit.axes.includes(axis)).length;
+    if (used >= limit.max || nextNumber < (limit.from ?? 1)) limit.axes.forEach((axis) => closedAxes.add(axis));
+  }
   const candidates: { probe: BayesProbe; gain: number }[] = [];
   for (const probe of allProbes) {
-    if (askedKeys.has(probe.key)) continue;
+    if (askedKeys.has(probe.key) || closedAxes.has(probe.reason.axis)) continue;
     const gain = expectedGain(posterior, probe.key);
     if (gain >= MIN_GAIN_BAYES) candidates.push({ probe, gain });
   }

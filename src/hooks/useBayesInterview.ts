@@ -11,6 +11,7 @@ import {
   type BayesProbe,
   type Confidence,
   type Dataset,
+  type QuestionPolicy,
   type Scored,
 } from '../engine/bayes';
 
@@ -73,7 +74,7 @@ function snapshotOf(state: RawState): Snapshot {
  * マウントごとに1回だけ呼ばれる（Reactの仕様）ので、複数インスタンスが
  * 同じ初期質問に固定される心配もない。
  */
-export function init(dataset: Dataset): RawState {
+export function init(dataset: Dataset, policy?: QuestionPolicy): RawState {
   return {
     answers: {},
     askedKeys: [],
@@ -82,17 +83,19 @@ export function init(dataset: Dataset): RawState {
     guess: null,
     confirmed: false,
     exhausted: false,
-    probe: bayesNextProbe(dataset, {}, new Set(), { exclude: new Set(), rng: Math.random }),
+    probe: bayesNextProbe(dataset, {}, new Set(), { exclude: new Set(), rng: Math.random, policy }),
     history: [],
   };
 }
 
+/** `policy` は質問の出し方の方針（engine/bayes.ts の QuestionPolicy。省略時は QUESTION_POLICIES.default）。
+ * dataset と同じく action で渡し、reducer を純粋なまま保つ。 */
 export type Action =
-  | { type: 'answer'; key: string; confidence: Confidence; recentGuessIds: readonly string[]; dataset: Dataset }
-  | { type: 'reject'; characterId: string; recentGuessIds: readonly string[]; dataset: Dataset }
+  | { type: 'answer'; key: string; confidence: Confidence; recentGuessIds: readonly string[]; dataset: Dataset; policy?: QuestionPolicy }
+  | { type: 'reject'; characterId: string; recentGuessIds: readonly string[]; dataset: Dataset; policy?: QuestionPolicy }
   | { type: 'confirm' }
   | { type: 'undo' }
-  | { type: 'reset'; dataset: Dataset };
+  | { type: 'reset'; dataset: Dataset; policy?: QuestionPolicy };
 
 export function reducer(state: RawState, action: Action): RawState {
   switch (action.type) {
@@ -103,7 +106,7 @@ export function reducer(state: RawState, action: Action): RawState {
       const rejectedSet = new Set(state.rejected);
 
       const askedSet = new Set(askedKeys);
-      const probe = bayesNextProbe(action.dataset, answers, askedSet, { exclude: rejectedSet, rng: Math.random });
+      const probe = bayesNextProbe(action.dataset, answers, askedSet, { exclude: rejectedSet, rng: Math.random, policy: action.policy });
       const scored = bayesScoreCharacters(answers, action.dataset, { exclude: rejectedSet });
 
       // 「いいえ」後の再質問モード中は、最低問数と確信の回復を bayesShouldReguess に委ねる
@@ -146,7 +149,11 @@ export function reducer(state: RawState, action: Action): RawState {
       if (scored.length === 0) return { ...state, rejected, exhausted: true, probe: null, history };
 
       const askedSet = new Set(state.askedKeys);
-      const bonusProbe = bayesNextProbe(action.dataset, state.answers, askedSet, { exclude: rejectedSet, rng: Math.random });
+      const bonusProbe = bayesNextProbe(action.dataset, state.answers, askedSet, {
+        exclude: rejectedSet,
+        rng: Math.random,
+        policy: action.policy,
+      });
 
       // 聞ける質問が残っていれば再質問モードへ入る（0問答えた状態から開始）。
       if (bonusProbe !== null) return { ...state, rejected, questionsSinceReject: 0, probe: bonusProbe, history };
@@ -173,7 +180,7 @@ export function reducer(state: RawState, action: Action): RawState {
     }
 
     case 'reset':
-      return init(action.dataset);
+      return init(action.dataset, action.policy);
 
     default:
       return state;
@@ -209,8 +216,9 @@ function answersLogOf(answers: BayesAnswerMap): SessionLogRecord['answers'] {
   return Object.entries(answers).map(([key, confidence]) => ({ key, confidence }));
 }
 
-export function useBayesInterview(dataset: Dataset): BayesInterviewState {
-  const [state, dispatch] = useReducer(reducer, dataset, init);
+export function useBayesInterview(dataset: Dataset, options?: { policy?: QuestionPolicy }): BayesInterviewState {
+  const policy = options?.policy;
+  const [state, dispatch] = useReducer(reducer, dataset, (d) => init(d, policy));
   const { recentGuessIds, log } = useSessionLog();
 
   const rejectedSet = useMemo(() => new Set(state.rejected), [state.rejected]);
@@ -219,16 +227,16 @@ export function useBayesInterview(dataset: Dataset): BayesInterviewState {
   // コメント参照）。
   const probe = state.probe;
 
-  const reset = useCallback(() => dispatch({ type: 'reset', dataset }), [dataset]);
+  const reset = useCallback(() => dispatch({ type: 'reset', dataset, policy }), [dataset, policy]);
   const undo = useCallback(() => dispatch({ type: 'undo' }), []);
   const canUndo = state.history.length > 0;
 
   const answer = useCallback(
     (confidence: Confidence) => {
       if (!probe) return;
-      dispatch({ type: 'answer', key: probe.key, confidence, recentGuessIds, dataset });
+      dispatch({ type: 'answer', key: probe.key, confidence, recentGuessIds, dataset, policy });
     },
-    [probe, recentGuessIds, dataset],
+    [probe, recentGuessIds, dataset, policy],
   );
 
   const confirm = useCallback(() => {
@@ -257,8 +265,8 @@ export function useBayesInterview(dataset: Dataset): BayesInterviewState {
       rejectedIds: state.rejected,
       engine: 'bayes',
     });
-    dispatch({ type: 'reject', characterId: state.guess.character.id, recentGuessIds, dataset });
-  }, [state.guess, state.askedKeys, state.answers, state.rejected, recentGuessIds, dataset, log]);
+    dispatch({ type: 'reject', characterId: state.guess.character.id, recentGuessIds, dataset, policy });
+  }, [state.guess, state.askedKeys, state.answers, state.rejected, recentGuessIds, dataset, policy, log]);
 
   useEffect(() => {
     if (!state.exhausted) return;

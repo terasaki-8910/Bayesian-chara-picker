@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vitest';
+import { beforeAll, describe, expect, it } from 'vitest';
 
 import type { Character, SupplyFile } from '../src/data/schema';
 import likelihoodsData from '../data/bayes/likelihoods.json';
@@ -8,6 +8,7 @@ import {
   BONUS_MIN_QUESTIONS_BAYES,
   HARD_CAP_BAYES,
   MIN_QUESTIONS_BAYES,
+  QUESTION_POLICIES,
   SCORE_SCALE,
   bayesNextProbe,
   bayesScoreCharacters,
@@ -17,6 +18,7 @@ import {
   type BayesProbe,
   type Confidence,
   type Dataset,
+  type QuestionPolicy,
   type Scored,
 } from '../src/engine/bayes';
 import { survivors, topGuess } from '../src/engine/recommend';
@@ -75,7 +77,7 @@ function oracleFor(target: Character): Strategy {
 function runToGuess(
   dataset: Dataset,
   strategy: Strategy,
-  opts?: { exclude?: ReadonlySet<string>; rng?: () => number },
+  opts?: { exclude?: ReadonlySet<string>; rng?: () => number; policy?: QuestionPolicy },
 ): { guess: Scored; answers: BayesAnswerMap; askedKeys: Set<string>; probesExhausted: boolean; scored: Scored[] } {
   const answers: BayesAnswerMap = {};
   const askedKeys = new Set<string>();
@@ -283,6 +285,70 @@ describe('BC. ベイズ推薦エンジン', () => {
       const only: Scored[] = [{ character: dataset.characters[0], score: 1, supplyRank: '豊富', reasons: [] }];
       expect(bayesShouldReguess(only, BONUS_MIN_QUESTIONS_BAYES, true)).toBe(true);
       expect(bayesShouldReguess(only, BONUS_MIN_QUESTIONS_BAYES - 1, true)).toBe(false);
+    });
+  });
+
+  describe('BC15: 質問の出し方の方針（R12）', () => {
+    const AXIS_BY_KEY = new Map(
+      (questionsRuntimeData as { questions: { key: string; reason: { axis: string } }[] }).questions.map((q) => [q.key, q.reason.axis]),
+    );
+    const SERIES = new Set(['world', 'era', 'genre', 'media']);
+    // 乱択あり(本番と同じ)で、方針ごとに無作為のキャラ40体を最後まで聞く(1体およそ1秒)。
+    const sessionsByPolicy = new Map<string, { id: string; axes: (string | undefined)[] }[]>();
+    beforeAll(() => {
+      for (const [name, policy] of Object.entries(QUESTION_POLICIES)) {
+        const rand = mulberry32(20261026);
+        sessionsByPolicy.set(
+          name,
+          Array.from({ length: 40 }, () => {
+            const target = dataset.characters[Math.floor(rand() * dataset.characters.length)];
+            const { askedKeys } = runToGuess(dataset, oracleFor(target), { rng: rand, policy });
+            return { id: target.id, axes: [...askedKeys].map((key) => AXIS_BY_KEY.get(key)) };
+          }),
+        );
+      }
+    }, 900000);
+
+    it('どの方針でも、forcedSlots の問目にはその軸の質問が出る（それまでに同じ軸が出ていなければ）', () => {
+      for (const [name, policy] of Object.entries(QUESTION_POLICIES)) {
+        for (const { id, axes } of sessionsByPolicy.get(name)!) {
+          for (const slot of policy.forcedSlots) {
+            if (axes.length < slot.at) continue;
+            const before = axes.slice(0, slot.at - 1);
+            if (before.some((axis) => axis !== undefined && slot.axes.includes(axis))) continue;
+            expect(slot.axes, `${name} ${id}: ${slot.at}問目が「${axes[slot.at - 1]}」`).toContain(axes[slot.at - 1]);
+          }
+        }
+      }
+    });
+
+    it('どの方針でも、groupLimits の上限と、聞いてよい最初の問目を守る', () => {
+      for (const [name, policy] of Object.entries(QUESTION_POLICIES)) {
+        for (const { id, axes } of sessionsByPolicy.get(name)!) {
+          for (const limit of policy.groupLimits) {
+            const positions = axes.flatMap((axis, i) => (axis !== undefined && limit.axes.includes(axis) ? [i + 1] : []));
+            expect(positions.length, `${name} ${id}: ${limit.axes.join('/')}`).toBeLessThanOrEqual(limit.max);
+            for (const at of positions) expect(at, `${name} ${id}: ${limit.axes.join('/')}`).toBeGreaterThanOrEqual(limit.from ?? 1);
+          }
+        }
+      }
+    });
+
+    it('default: 4問目までに性格、8問目までに距離感か雰囲気が出て、年代は聞かず、作品の質問は2問まで', () => {
+      for (const { id, axes } of sessionsByPolicy.get('default')!) {
+        if (axes.length >= 4) expect(axes.slice(0, 4), id).toContain('personality');
+        if (axes.length >= 8) expect(axes.slice(0, 8).some((a) => a === 'distance' || a === 'mood'), id).toBe(true);
+        expect(axes, id).not.toContain('era');
+        expect(axes.filter((a) => a !== undefined && SERIES.has(a)).length, id).toBeLessThanOrEqual(2);
+      }
+    });
+
+    it('discover: 作品の質問を1問も聞かない／guess: 作品の質問も使う', () => {
+      for (const { id, axes } of sessionsByPolicy.get('discover')!) {
+        expect(axes.filter((a) => a !== undefined && SERIES.has(a)), id).toEqual([]);
+      }
+      const guessSeries = sessionsByPolicy.get('guess')!.map(({ axes }) => axes.filter((a) => a !== undefined && SERIES.has(a)).length);
+      expect(Math.max(...guessSeries)).toBeGreaterThan(2);
     });
   });
 
