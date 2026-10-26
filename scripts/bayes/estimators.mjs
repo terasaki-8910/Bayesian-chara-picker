@@ -11,6 +11,8 @@
  */
 
 export const DEFAULT_EPSILON = 0.02;
+/** solo 投稿だけで集計するために必要な最低件数。 */
+export const SOLO_MIN_POSTS = 30;
 /** グループ質問の平滑化定数K（少サンプルは基底率へ縮退させる強さ）。 */
 export const GROUP_SMOOTHING_K = 10;
 /** 二値質問のラプラス平滑化の疑似カウント。 */
@@ -26,6 +28,13 @@ export const AXIS_MULTI_EXCLUDES = 0.2;
 
 /** マージ式での16軸ソースの固定重み W_AXIS。 */
 export const AXIS_MERGE_WEIGHT = 30;
+/** 16軸と併用する存在タグの最大重み。 */
+export const PRESENCE_TAG_WEIGHT_CAP = 30;
+export const NOISE_MIN = 0.03;
+export const NOISE_MAX = 0.25;
+export const SERIES_LIKELY_YES = 0.95;
+export const SERIES_LIKELY_NO = 0.05;
+export const SERIES_MERGE_WEIGHT = 30;
 /**
  * マージ式でのWikidata構造化事実ソースの固定重み W_WIKIDATA（Phase 5a）。
  * 「自前レビュー済み16軸(30) > 外部ハード事実(25) > LLM推論(15)」の序列にする——
@@ -63,6 +72,22 @@ export const LLM_NO_EVIDENCE = 0.5;
 /** [epsilon, 1-epsilon] にクランプする（logitが±Infinityにならないようにする）。 */
 export function clamp01(p, epsilon = DEFAULT_EPSILON) {
   return Math.min(1 - epsilon, Math.max(epsilon, p));
+}
+
+/**
+ * solo 投稿が十分あればそれだけを採用する。複数キャラの投稿は相手の特徴を混ぜる
+ * （例: 井ノ上たきなの金髪、砕蜂の褐色。R11-A）ため、少数時だけ全投稿へ戻す。
+ * @param {{ tags: string[] }[]} posts
+ * @param {{ minSolo?: number }} [opts]
+ */
+export function selectDanbooruPosts(posts, { minSolo = SOLO_MIN_POSTS } = {}) {
+  const soloPosts = posts.filter((post) => post.tags.includes('solo'));
+  return soloPosts.length >= minSolo ? soloPosts : posts;
+}
+
+/** 独立の付け直しとの一致率から求めた回答のずれを尤度へ織り込む（R11-B）。 */
+export function applyAnswerNoise(p, e, epsilon = DEFAULT_EPSILON) {
+  return clamp01((1 - e) * p + e * (1 - p), epsilon);
 }
 
 export function logit(p) {
@@ -156,6 +181,21 @@ export function estimateAxisSingleLikelihood(charValue, targetValue) {
 export function estimateAxisMultiLikelihood(charArray, targetValue) {
   if (!Array.isArray(charArray) || charArray.length === 0) return null;
   return charArray.includes(targetValue) ? AXIS_MULTI_INCLUDES : AXIS_MULTI_EXCLUDES;
+}
+
+/**
+ * 作品単位の確定事実から尤度を返す。複数値リストは網羅済みなので、空配列や
+ * 対象値の不在も明確な「いいえ」として扱う。
+ * @param {{ facts: Record<string, unknown> | undefined, axis: string, value: string, multi: boolean }} params
+ * @returns {number | null}
+ */
+export function estimateSeriesLikelihood({ facts, axis, value, multi }) {
+  if (!facts || facts[axis] === undefined || facts[axis] === null) return null;
+  const axisValue = facts[axis];
+  if (multi) {
+    return Array.isArray(axisValue) && axisValue.includes(value) ? SERIES_LIKELY_YES : SERIES_LIKELY_NO;
+  }
+  return axisValue === value ? SERIES_LIKELY_YES : SERIES_LIKELY_NO;
 }
 
 /**

@@ -3055,6 +3055,329 @@
           "multi": true
         }
       ]
+    },
+    {
+      "id": "sf:world=現代日本",
+      "prompt": "舞台は現代の日本ですか?",
+      "reason": {
+        "axis": "world",
+        "label": "世界観",
+        "value": "現代日本"
+      },
+      "sources": [
+        {
+          "type": "series",
+          "axis": "world",
+          "value": "現代日本",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "sf:world=異世界ファンタジー",
+      "prompt": "舞台は異世界やファンタジーの世界ですか?",
+      "reason": {
+        "axis": "world",
+        "label": "世界観",
+        "value": "異世界ファンタジー"
+      },
+      "sources": [
+        {
+          "type": "series",
+          "axis": "world",
+          "value": "異世界ファンタジー",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "sf:world=SF・近未来",
+      "prompt": "SFや近未来の作品ですか?",
+      "reason": {
+        "axis": "world",
+        "label": "世界観",
+        "value": "SF・近未来"
+      },
+      "sources": [
+        {
+          "type": "series",
+          "axis": "world",
+          "value": "SF・近未来",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "sf:world=和風",
+      "prompt": "和風の世界観の作品ですか?",
+      "reason": {
+        "axis": "world",
+        "label": "世界観",
+        "value": "和風"
+      },
+      "sources": [
+        {
+          "type": "series",
+          "axis": "world",
+          "value": "和風",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "sf:world=歴史",
+      "prompt": "実在の歴史や人物・艦船・競走馬などがもとになっている作品ですか?",
+      "reason": {
+        "axis": "world",
+        "label": "世界観",
+        "value": "歴史"
+      },
+      "sources": [
+        {
+          "type": "series",
+          "axis": "world",
+          "value": "歴史",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "sf:era=2000年以前",
+      "prompt": "作品(シリーズ)が始まったのは1999年以前ですか?",
+      "reason": {
+        "axis": "era",
+        "label": "作品の年代",
+        "value": "2000年以前"
+      },
+      "sources": [
+        {
+          "type": "series",
+          "axis": "era",
+          "value": "2000年以前",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "sf:era=2000年代",
+      "prompt": "作品(シリーズ)が始まったのは2000年代ですか?",
+      "reason": {
+        "axis": "era",
+        "label": "作品の年代",
+        "value": "2000年代"
+      },
+      "sources": [
+        {
+          "type": "series",
+          "axis": "era",
+          "value": "2000年代",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "sf:era=2010年代",
+      "prompt": "作品(シリーズ)が始まったのは2010年代ですか?",
+      "reason": {
+        "axis": "era",
+        "label": "作品の年代",
+        "value": "2010年代"
+      },
+      "sources": [
+        {
+          "type": "series",
+          "axis": "era",
+          "value": "2010年代",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "sf:era=2020年代",
+      "prompt": "作品(シリーズ)が始まったのは2020年代ですか?",
+      "reason": {
+        "axis": "era",
+        "label": "作品の年代",
+        "value": "2020年代"
+      },
+      "sources": [
+        {
+          "type": "series",
+          "axis": "era",
+          "value": "2020年代",
+          "multi": false
+        }
+      ]
+    },
+    {
+      "id": "sf:genre=バトル",
+      "prompt": "バトルが中心の作品ですか?",
+      "reason": {
+        "axis": "genre",
+        "label": "ジャンル",
+        "value": "バトル"
+      },
+      "sources": [
+        {
+          "type": "series",
+          "axis": "genre",
+          "value": "バトル",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "sf:genre=日常",
+      "prompt": "日常ものの作品ですか?",
+      "reason": {
+        "axis": "genre",
+        "label": "ジャンル",
+        "value": "日常"
+      },
+      "sources": [
+        {
+          "type": "series",
+          "axis": "genre",
+          "value": "日常",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "sf:genre=恋愛",
+      "prompt": "恋愛が中心の作品ですか?",
+      "reason": {
+        "axis": "genre",
+        "label": "ジャンル",
+        "value": "恋愛"
+      },
+      "sources": [
+        {
+          "type": "series",
+          "axis": "genre",
+          "value": "恋愛",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "sf:genre=ミリタリー",
+      "prompt": "軍隊や兵器が中心の作品ですか?",
+      "reason": {
+        "axis": "genre",
+        "label": "ジャンル",
+        "value": "ミリタリー"
+      },
+      "sources": [
+        {
+          "type": "series",
+          "axis": "genre",
+          "value": "ミリタリー",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "sf:genre=アイドル",
+      "prompt": "アイドルものの作品ですか?",
+      "reason": {
+        "axis": "genre",
+        "label": "ジャンル",
+        "value": "アイドル"
+      },
+      "sources": [
+        {
+          "type": "series",
+          "axis": "genre",
+          "value": "アイドル",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "sf:media=ゲーム",
+      "prompt": "原作はゲームですか?",
+      "reason": {
+        "axis": "media",
+        "label": "原作",
+        "value": "ゲーム"
+      },
+      "sources": [
+        {
+          "type": "series",
+          "axis": "media",
+          "value": "ゲーム",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "sf:media=アニメ",
+      "prompt": "原作はアニメ(オリジナルアニメ)ですか?",
+      "reason": {
+        "axis": "media",
+        "label": "原作",
+        "value": "アニメ"
+      },
+      "sources": [
+        {
+          "type": "series",
+          "axis": "media",
+          "value": "アニメ",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "sf:media=漫画",
+      "prompt": "原作は漫画ですか?",
+      "reason": {
+        "axis": "media",
+        "label": "原作",
+        "value": "漫画"
+      },
+      "sources": [
+        {
+          "type": "series",
+          "axis": "media",
+          "value": "漫画",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "sf:media=小説・ライトノベル",
+      "prompt": "原作は小説やライトノベルですか?",
+      "reason": {
+        "axis": "media",
+        "label": "原作",
+        "value": "小説・ライトノベル"
+      },
+      "sources": [
+        {
+          "type": "series",
+          "axis": "media",
+          "value": "小説・ライトノベル",
+          "multi": true
+        }
+      ]
+    },
+    {
+      "id": "sf:media=VTuber・配信",
+      "prompt": "VTuberや配信者ですか?",
+      "reason": {
+        "axis": "media",
+        "label": "原作",
+        "value": "VTuber・配信"
+      },
+      "sources": [
+        {
+          "type": "series",
+          "axis": "media",
+          "value": "VTuber・配信",
+          "multi": true
+        }
+      ]
     }
   ]
 }

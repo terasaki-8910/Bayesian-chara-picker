@@ -14,8 +14,12 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import {
   DEFAULT_EPSILON,
   AXIS_MERGE_WEIGHT,
+  PRESENCE_TAG_WEIGHT_CAP,
+  NOISE_MIN,
+  SERIES_MERGE_WEIGHT,
   WIKIDATA_MERGE_WEIGHT,
   LLM_MERGE_WEIGHT,
+  applyAnswerNoise,
   clamp01,
   computeBinaryTheta,
   computeGroupBaseRate,
@@ -24,13 +28,26 @@ import {
   estimateBinaryLikelihood,
   estimateBinaryRawRate,
   estimateGroupLikelihood,
+  estimateSeriesLikelihood,
   estimateWikidataLikelihood,
   estimateLlmLikelihood,
   mergeLikelihoods,
+  selectDanbooruPosts,
 } from './estimators.mjs';
 
 function round3(x) {
   return Math.round(x * 1000) / 1000;
+}
+
+function readRequiredJson(url, displayName) {
+  try {
+    return JSON.parse(readFileSync(fileURLToPath(url), 'utf8'));
+  } catch (err) {
+    if (err?.code === 'ENOENT') {
+      throw new Error(`必須ファイル ${displayName} が見つかりません。先に生成または追加してください。`);
+    }
+    throw err;
+  }
 }
 
 /** 投稿配列から「いずれかのタグを含む投稿数(n_G)」と「タグ別内訳(k_q)」を数える。 */
@@ -77,6 +94,15 @@ function axisSourceLikelihood(character, source) {
     : estimateAxisSingleLikelihood(raw, source.value);
 }
 
+function seriesSourceLikelihood(facts, source) {
+  return estimateSeriesLikelihood({
+    facts,
+    axis: source.axis,
+    value: source.value,
+    multi: source.multi,
+  });
+}
+
 /**
  * wikidata-facts.json は16軸(schema.tsのAxes)に無いキー（eyeColor等）も持つため
  * character.axesではなく専用のfactsオブジェクトから引く（PLAN「P5」）。
@@ -110,6 +136,14 @@ async function main() {
   const characters = JSON.parse(readFileSync(fileURLToPath(new URL('characters.json', dataDir)), 'utf8'));
   const questionsFile = JSON.parse(readFileSync(fileURLToPath(new URL('bayes/questions.json', dataDir)), 'utf8'));
   const tagMap = JSON.parse(readFileSync(fileURLToPath(new URL('bayes/tag-map.json', dataDir)), 'utf8'));
+  const answerNoise = readRequiredJson(new URL('bayes/answer-noise.json', dataDir), 'data/bayes/answer-noise.json');
+  const seriesFacts = readRequiredJson(new URL('bayes/series-facts.json', dataDir), 'data/bayes/series-facts.json');
+  const missingSeries = [...new Set(characters.map((c) => c.series))]
+    .filter((series) => !(series in seriesFacts.series))
+    .sort();
+  if (missingSeries.length > 0) {
+    throw new Error(`data/bayes/series-facts.json に未定義の作品があります: ${missingSeries.join(' / ')}`);
+  }
   // wikidata-facts.json は任意（P5a未実行時は{}扱い。Danbooruキャッシュ欠落と同じく
   // 自然にnull寄与へフォールバックする）。
   let wikidataFacts = { entries: {} };
@@ -129,7 +163,9 @@ async function main() {
   const postsByChar = new Map();
   for (const c of characters) {
     const entry = tagMap.entries[c.id];
-    postsByChar.set(c.id, entry && entry.tag !== null ? loadDanbooruCache(cacheDir, c.id) : []);
+    const posts = entry && entry.tag !== null ? loadDanbooruCache(cacheDir, c.id) : [];
+    // 複数キャラの投稿は相手の特徴を混ぜる（例: 井ノ上たきなの金髪、砕蜂の褐色。R11-A）。
+    postsByChar.set(c.id, selectDanbooruPosts(posts));
   }
 
   // ---- グループ質問: グループ単位でn_G/k_qを先に全キャラ分集計してからb_qを出す ----
@@ -199,6 +235,7 @@ async function main() {
     const groupSource = q.sources.find((s) => s.type === 'danbooru-group');
     const binarySource = q.sources.find((s) => s.type === 'danbooru-binary');
     const axisSource = q.sources.find((s) => s.type === 'axis');
+    const seriesSource = q.sources.find((s) => s.type === 'series');
     const wikidataSource = q.sources.find((s) => s.type === 'wikidata');
     const llmSource = q.sources.find((s) => s.type === 'llm');
 
@@ -214,6 +251,7 @@ async function main() {
 
     for (const c of characters) {
       const sources = [];
+      const axisLikelihood = axisSource ? axisSourceLikelihood(c, axisSource) : null;
       if (groupSource) {
         const cov = groupCoverageByChar.get(c.id)[groupSource.group];
         const kQ = cov.kByTag[groupSource.tag];
@@ -225,10 +263,16 @@ async function main() {
         const posts = postsByChar.get(c.id);
         const kT = binaryKByChar.get(binarySource.tag).get(c.id);
         const theta = binaryTheta[binarySource.tag];
-        sources.push({ p: estimateBinaryLikelihood({ k_t: kT, n_c: posts.length, theta }), weight: posts.length });
+        // presence タグの欠落は弱い証拠（例: pale_skin が無く色白を「いいえ」にする）。
+        const weight = axisLikelihood === null ? posts.length : Math.min(posts.length, PRESENCE_TAG_WEIGHT_CAP);
+        sources.push({ p: estimateBinaryLikelihood({ k_t: kT, n_c: posts.length, theta }), weight });
       }
       if (axisSource) {
-        sources.push({ p: axisSourceLikelihood(c, axisSource), weight: AXIS_MERGE_WEIGHT });
+        sources.push({ p: axisLikelihood, weight: AXIS_MERGE_WEIGHT });
+      }
+      if (seriesSource) {
+        const facts = seriesFacts.series[c.series];
+        sources.push({ p: seriesSourceLikelihood(facts, seriesSource), weight: SERIES_MERGE_WEIGHT });
       }
       if (wikidataSource) {
         const facts = wikidataFacts.entries[c.id];
@@ -239,7 +283,9 @@ async function main() {
         sources.push({ p: llmSourceLikelihood(entry, llmSource), weight: LLM_MERGE_WEIGHT });
       }
       const merged = mergeLikelihoods(sources, fallback);
-      chars[c.id].push(round3(merged));
+      // 独立の付け直しとの一致率から軸ごとの答えのずれを決める（R11-B）。
+      const e = answerNoise.axes[q.reason.axis]?.e ?? NOISE_MIN;
+      chars[c.id].push(round3(applyAnswerNoise(merged, e)));
     }
   }
 
