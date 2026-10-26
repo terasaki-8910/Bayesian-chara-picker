@@ -252,6 +252,14 @@ mount時に1回だけ読み、router は使わない）。
     原作の媒体を持つ（質問の source は `series`）。値は2人が独立に付け
     （規則は `state/expansion/SERIES-RULES.md`、比較は `state/expansion/blind-compare-series.json`）、
     判断が分かれた値は `maybe` に入れて、はい・いいえのどちらの手がかりにもしない。
+- **R12（2026-10-26、質問の出し方）**: `bayesNextProbe` は質問の出し方の方針（`QuestionPolicy`）を受け取る。
+  `forcedSlots` は決めた問目に、決めた軸の中でいちばん手がかりになる質問を出す（乱択しない。それまでに同じ軸を
+  聞いていれば差し込まない）。`groupLimits` は軸のまとまりごとに、1回のプレイで聞く数の上限と聞き始める問目を決める。
+  `QUESTION_POLICIES` の3つはどれも、4問目に性格、8問目に距離感か雰囲気を出す。
+  - `default`: 年代は聞かない。世界観・ジャンル・原作は合わせて2問まで、5問目から。このリポジトリの画面と BC13 が使う。
+  - `guess`（推しを当ててもらう）: 年代は2問まで。
+  - `discover`（理想の推しに出会う）: 作品の質問を聞かない。
+  サイトは遊び方を選ぶ画面で `guess` か `discover` を選び、`useBayesInterview(dataset, { policy })` に渡す。
 
 ## テスト・ゲート
 
