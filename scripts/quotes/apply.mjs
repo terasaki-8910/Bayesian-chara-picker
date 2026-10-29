@@ -49,7 +49,12 @@ function parseArgs(argv) {
 const readJson = (p) => JSON.parse(readFileSync(p, 'utf8'));
 /** 句読点・記号・長音の揺れを除いて比べる。 */
 const loose = (s) => String(s ?? '').normalize('NFKC').replace(/[\s!?！？…‥・.,、。〜~ー\-—―☆\u266A「」『』]/g, '');
-const clean = (s) => String(s ?? '').trim().normalize('NFC');
+// 和文の句読点のあとに紛れた半角空白（抜粋の改行の名残）は除く。英語の台詞の空白は残す。
+const clean = (s) =>
+  String(s ?? '')
+    .trim()
+    .normalize('NFC')
+    .replace(/([、。！？!?…])[ ]+(?=[^\x20-\x7e])/g, '$1');
 // ○○ はゲームの中でプレイヤー名が入る穴（「○○P」など）。そのままでは台詞にならない。
 const okText = (t) => t && [...t].length <= MAX_LENGTH && !/[「」\r\n]/.test(t) && !/[○〇●◯]{2}/.test(t);
 // 検索エンジンの結果ページは出どころにならない（何が書いてあったか後から辿れない）。
@@ -137,7 +142,8 @@ function main() {
     for (const q of row.quotes ?? []) {
       const text = clean(q.text);
       const source = httpsOnly(q.source);
-      const rkey = `${row.id}#S#${text}`;
+      // 査読の答えと結ぶ鍵は、空白を整える前の文で作る（整え方を変えても査読をやり直さずに済むように）。
+      const rkey = `${row.id}#S#${String(q.text ?? '').trim().normalize('NFC')}`;
       if (!okText(text) || source.length === 0) {
         rejected.push({ key: rkey, reason: !okText(text) ? `決まりに合わない: ${text}` : '出どころの https の URL が無い' });
         continue;
