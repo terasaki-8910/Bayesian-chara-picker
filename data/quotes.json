@@ -1,0 +1,713 @@
+{
+  "version": 1,
+  "characters": {
+    "bleach-orihime": [
+      {
+        "text": "双天帰盾、私は拒絶する",
+        "source": [
+          "https://dic.pixiv.net/a/盾舜六花"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "bleach-rangiku": [
+      {
+        "text": "唸れ『灰猫』",
+        "source": [
+          "https://dic.pixiv.net/a/灰猫(BLEACH)"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "ccs-sakura": [
+      {
+        "text": "はにゃ〜ん",
+        "source": [
+          "https://dic.nicovideo.jp/a/木之本桜",
+          "https://dic.nicovideo.jp/a/はにゃーん"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "絶対だいじょうぶだよ",
+        "source": [
+          "https://dic.pixiv.net/a/絶対だいじょうぶだよ"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "闇の力を秘めし鍵よ、真の姿を我の前に示せ。契約のもと、さくらが命じる。封印解除(レリーズ)!",
+        "source": [
+          "https://ja.wikipedia.org/wiki/カードキャプターさくら"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "csm-makima": [
+      {
+        "text": "悪魔として私に殺されるか、人として私に飼われるか",
+        "source": [
+          "https://dic.nicovideo.jp/a/マキマ"
+        ],
+        "checked": "verified",
+        "harsh": true
+      }
+    ],
+    "eva-rei": [
+      {
+        "text": "あなたは死なないわ。私が守るもの",
+        "source": [
+          "https://ciatr.jp/topics/302052",
+          "https://dic.nicovideo.jp/a/綾波レイ"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "ごめんなさい。こういうときどんな顔すればいいかわからないの",
+        "source": [
+          "https://ciatr.jp/topics/302052",
+          "https://dic.nicovideo.jp/a/綾波レイ"
+        ],
+        "checked": "corrected"
+      }
+    ],
+    "fatalfury-mai": [
+      {
+        "text": "日本一!",
+        "source": [
+          "https://dic.nicovideo.jp/a/不知火舞",
+          "https://dic.pixiv.net/a/日本一"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "fate-illya": [
+      {
+        "text": "やっちゃえ、バーサーカー",
+        "source": [
+          "https://renote.net/articles/31582/page/3",
+          "https://ciatr.jp/topics/315465"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "fate-jalter": [
+      {
+        "text": "サーヴァント、アヴェンジャー。召喚に応じ参上しました。…どうしました。その顔は。さ、契約書です",
+        "source": [
+          "https://kamigame.jp/fgo/サーヴァントボイス/ジャンヌ・ダルク(オルタ).html",
+          "https://appmedia.jp/fategrandorder/75727930"
+        ],
+        "checked": "corrected"
+      }
+    ],
+    "fate-scathach": [
+      {
+        "text": "影の国よりまかり越したスカサハだ。マスター、と呼べばいいのかな?お主を",
+        "source": [
+          "https://kamigame.jp/fgo/サーヴァントボイス/スカサハ.html"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "fate-tamamo": [
+      {
+        "text": "みこーん!",
+        "source": [
+          "https://kamigame.jp/fgo/サーヴァントボイス/玉藻の前.html"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "frieren-frieren": [
+      {
+        "text": "人間の寿命は短いってわかっていたのに…なんでもっと知ろうと思わなかったんだろう",
+        "source": [
+          "https://ciatr.jp/topics/325268",
+          "https://ciatr.jp/topics/326191"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "暗いよー、怖いよー",
+        "source": [
+          "https://dengekionline.com/article/202408/13100",
+          "https://times.abema.tv/articles/-/10116175"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "geass-cc": [
+      {
+        "text": "王の力はお前を孤独にする",
+        "source": [
+          "https://dic.pixiv.net/a/L.L.",
+          "https://animeanime.jp/article/2020/10/10/56847.html"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "gup-darjeeling": [
+      {
+        "text": "こんな格言を知ってる?",
+        "source": [
+          "https://dic.nicovideo.jp/a/ダージリン"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "イギリス人は恋愛と戦争では手段を選ばない",
+        "source": [
+          "https://dic.nicovideo.jp/a/ダージリン"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "gup-miho": [
+      {
+        "text": "パンツァー・フォー!",
+        "source": [
+          "https://ja.wikipedia.org/wiki/ガールズ&パンツァー",
+          "https://dic.pixiv.net/a/あんこうチーム"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "haruhi-haruhi": [
+      {
+        "text": "ただの人間には興味ありません。この中に宇宙人、未来人、異世界人、超能力者がいたら、あたしのところに来なさい。以上。",
+        "source": [
+          "https://dic.pixiv.net/a/涼宮ハルヒ"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "haruhi-mikuru": [
+      {
+        "text": "禁則事項です",
+        "source": [
+          "https://dic.nicovideo.jp/a/朝比奈みくる"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "higurashi-no-naku-koro-ni-houjou-satoko": [
+      {
+        "text": "をーっほっほっほ!",
+        "source": [
+          "https://ja.wikipedia.org/wiki/北条沙都子"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "higurashi-rika": [
+      {
+        "text": "にぱ〜☆",
+        "source": [
+          "https://dic.pixiv.net/en/a/Rika%20Furude",
+          "https://dic.pixiv.net/a/にぱー☆"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "かわいそかわいそなのです",
+        "source": [
+          "https://dic.nicovideo.jp/a/古手梨花"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "hololive-marine": [
+      {
+        "text": "Ahoy!",
+        "source": [
+          "https://ja.wikipedia.org/wiki/宝鐘マリン",
+          "https://dic.nicovideo.jp/a/宝鐘マリン"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "hololive-miko": [
+      {
+        "text": "にゃっはろ〜!",
+        "source": [
+          "https://ja.wikipedia.org/wiki/さくらみこ",
+          "https://dic.nicovideo.jp/a/さくらみこ"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "hololive-pekora": [
+      {
+        "text": "こんぺこ!こんぺこ!こんぺこー!",
+        "source": [
+          "https://hololive.hololivepro.com/talents/usada-pekora/",
+          "https://ja.wikipedia.org/wiki/兎田ぺこら"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "idolmaster-haruka": [
+      {
+        "text": "ドームですよっ!ドームっっ!",
+        "source": [
+          "https://dic.nicovideo.jp/a/ドームですよっ!ドームっっ!",
+          "https://dic.pixiv.net/a/ドームですよっ!ドームっっ!"
+        ],
+        "checked": "corrected"
+      }
+    ],
+    "idolmaster-miki": [
+      {
+        "text": "あふぅ",
+        "source": [
+          "https://dic.nicovideo.jp/a/星井美希",
+          "https://dic.pixiv.net/a/あふぅ"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "idolmaster-yayoi": [
+      {
+        "text": "うっうー!",
+        "source": [
+          "https://dic.nicovideo.jp/a/高槻やよい",
+          "https://dic.pixiv.net/a/うっうー"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "ハイ、ターッチ!イェイ!",
+        "source": [
+          "https://w.atwiki.jp/imas_ml/pages/72.html",
+          "https://w.atwiki.jp/imas_cg/pages/73.html"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "imascg-rin": [
+      {
+        "text": "ふーん、アンタが私のプロデューサー?…まあ、悪くないかな…",
+        "source": [
+          "https://dic.nicovideo.jp/a/渋谷凛"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "kaguyasamawakokurasetaitensaitachinorenaizunousen-shinomiya-kaguya": [
+      {
+        "text": "お可愛いこと",
+        "source": [
+          "https://dic.nicovideo.jp/a/お可愛いこと",
+          "https://dic.pixiv.net/en/a/O%20Kawaii%20Koto"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "kancolle-hibiki": [
+      {
+        "text": "響だよ。その活躍ぶりから不死鳥の通り名もあるよ",
+        "source": [
+          "https://wikiwiki.jp/kancolle/響"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "kancolle-kaga": [
+      {
+        "text": "航空母艦、加賀です。あなたが私の提督なの?それなりに期待はしているわ",
+        "source": [
+          "https://wikiwiki.jp/kancolle/加賀"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "鎧袖一触よ。心配いらないわ",
+        "source": [
+          "https://wikiwiki.jp/kancolle/加賀"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "流石に気分が高揚します",
+        "source": [
+          "https://wikiwiki.jp/kancolle/加賀"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "kancolle-shigure": [
+      {
+        "text": "僕は白露型駆逐艦、時雨。これからよろしくね",
+        "source": [
+          "https://wikiwiki.jp/kancolle/時雨"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "kemono-serval": [
+      {
+        "text": "すっごーい!",
+        "source": [
+          "https://dic.nicovideo.jp/a/サーバル(けものフレンズ)",
+          "https://dic.pixiv.net/a/すっごーい!"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "たーのしー!",
+        "source": [
+          "https://dic.nicovideo.jp/a/サーバル(けものフレンズ)",
+          "https://dic.pixiv.net/a/たーのしー!"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "食べないよ!",
+        "source": [
+          "https://dic.nicovideo.jp/a/サーバル(けものフレンズ)"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "kimetsu-shinobu": [
+      {
+        "text": "そんなだからみんなに嫌われるんですよ",
+        "source": [
+          "https://dic.nicovideo.jp/a/冨岡義勇",
+          "https://dic.pixiv.net/a/俺は嫌われてない"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "konosuba-yunyun": [
+      {
+        "text": "我が名はゆんゆん。アークウィザードにして上級魔法を操る者。やがて紅魔族の長となる者……!",
+        "source": [
+          "https://dic.nicovideo.jp/a/ゆんゆん(この素晴らしい世界に祝福を!)"
+        ],
+        "checked": "corrected"
+      }
+    ],
+    "littleredridinghoodfairytale-little-red-riding-hood": [
+      {
+        "text": "ああら、おばあさん、おばあさんのお耳は大きいのねえ。",
+        "source": [
+          "https://www.aozora.gr.jp/cards/001091/files/59835_72466.html",
+          "https://www.aozora.gr.jp/cards/001091/files/42311_15546.html"
+        ],
+        "checked": "corrected"
+      }
+    ],
+    "lovelive-kotori": [
+      {
+        "text": "ことりのおやつにしちゃうぞ!",
+        "source": [
+          "https://dic.pixiv.net/a/ことりのおやつ",
+          "https://dic.nicovideo.jp/a/μ's"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "lovelive-maki": [
+      {
+        "text": "イミワカンナイ!",
+        "source": [
+          "https://dic.pixiv.net/a/ｲﾐﾜｶﾝﾅｲ"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "lovelive-nico": [
+      {
+        "text": "にっこにっこにー!あなたのハートににこにこにー!笑顔届ける矢澤にこにこ!にこにーって覚えてラブにこ!",
+        "source": [
+          "https://dic.nicovideo.jp/a/にっこにっこにー",
+          "https://dic.pixiv.net/a/にっこにっこにー/"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "lovelivesunshine-yoshiko": [
+      {
+        "text": "堕天使ヨハネと契約して、あなたも私のリトルデーモンになってみない?",
+        "source": [
+          "https://dic.pixiv.net/a/津島善子生誕祭2016"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "lycrecoil-chisato": [
+      {
+        "text": "私はいつもやりたいこと最優先♪",
+        "source": [
+          "https://animeanime.jp/article/2022/09/12/72049.html"
+        ],
+        "checked": "corrected"
+      }
+    ],
+    "macross-sheryl-nome": [
+      {
+        "text": "あたしの歌を聴けぇ!",
+        "source": [
+          "https://dic.pixiv.net/a/俺の歌を聴けー!!!!!",
+          "https://dic.nicovideo.jp/a/シェリル・ノーム"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "madoka-homura": [
+      {
+        "text": "あなたは自分の人生が尊いと思う?家族や友達を大切にしてる?",
+        "source": [
+          "https://renote.net/articles/56855"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "もう誰にも頼らない",
+        "source": [
+          "https://ciatr.jp/topics/339395",
+          "https://dic.nicovideo.jp/a/もう誰にも頼らない"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "madoka-sayaka": [
+      {
+        "text": "奇跡も、魔法も、あるんだよ",
+        "source": [
+          "https://dic.pixiv.net/a/奇跡も、魔法も、あるんだよ",
+          "https://dic.nicovideo.jp/a/奇跡も、魔法も、あるんだよ"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "あたしって、ほんとバカ",
+        "source": [
+          "https://dic.pixiv.net/en/a/I'm%20Such%20a%20Fool",
+          "https://dic.nicovideo.jp/a/あたしって、ほんとバカ"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "monogatari-shinobu": [
+      {
+        "text": "ぱないの!",
+        "source": [
+          "https://dic.pixiv.net/a/ぱないの!",
+          "https://dic.nicovideo.jp/a/ぱないの!"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "nadesico-hoshino-ruri": [
+      {
+        "text": "バカばっか",
+        "source": [
+          "https://dic.nicovideo.jp/a/ホシノ・ルリ"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "nanoha-nanoha": [
+      {
+        "text": "少し…頭冷やそうか",
+        "source": [
+          "https://dic.nicovideo.jp/a/高町なのは",
+          "https://dic.pixiv.net/a/少し頭冷やそうか"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "naruto-hinata": [
+      {
+        "text": "私は…ナルトくんが大好きだから",
+        "source": [
+          "https://dic.nicovideo.jp/a/日向ヒナタ",
+          "https://dic.pixiv.net/a/運命の赤いマフラー"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "まっすぐ…自分の言葉は曲げない…私もそれが忍道だから",
+        "source": [
+          "https://renote.net/articles/12580/page/4"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "naruto-sakura": [
+      {
+        "text": "しゃーんなろー!",
+        "source": [
+          "https://dic.nicovideo.jp/a/春野サクラ"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "nier-2b": [
+      {
+        "text": "人類に、栄光あれ",
+        "source": [
+          "https://dic.nicovideo.jp/a/ヨルハ二号b型"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "感情を持つことは禁止されている",
+        "source": [
+          "https://dic.nicovideo.jp/a/ヨルハ二号b型"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "onepiece-hancock": [
+      {
+        "text": "そうよ、わらわが美しいから!",
+        "source": [
+          "https://renote.net/articles/308733/page/3",
+          "https://renote.net/articles/10361/page/13"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "onepiece-nami": [
+      {
+        "text": "ルフィ…助けて…",
+        "source": [
+          "https://ciatr.jp/topics/152343?page=2",
+          "https://dic.pixiv.net/a/ONEPIECEの台詞一覧"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "onepiece-robin": [
+      {
+        "text": "生きたいっ!!!私も一緒に海へ連れてって!!!",
+        "source": [
+          "https://ranking.net/items/2e281a",
+          "https://renote.net/articles/18494/page/2"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "pricone-pecorine": [
+      {
+        "text": "やばいですね☆",
+        "source": [
+          "https://dic.nicovideo.jp/a/ペコリーヌ"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "ranma-saotome": [
+      {
+        "text": "かわいくねえ",
+        "source": [
+          "https://ja.wikipedia.org/wiki/早乙女乱馬"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "rezero-rem": [
+      {
+        "text": "ここから始めましょう。イチから…いいえ、ゼロから!",
+        "source": [
+          "https://ciatr.jp/topics/337350",
+          "https://dic.pixiv.net/a/レム(リゼロ)"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "レムは、スバルくんを愛しています",
+        "source": [
+          "https://ciatr.jp/topics/337350"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "鬼がかってますね",
+        "source": [
+          "https://times.abema.tv/articles/-/10151154?page=1",
+          "https://times.abema.tv/articles/-/7040432?page=1"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "rozenmaiden-suigintou": [
+      {
+        "text": "おばかさぁん",
+        "source": [
+          "https://dic.pixiv.net/a/おばかさぁん"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "乳酸菌とってるぅ?",
+        "source": [
+          "https://dic.nicovideo.jp/a/水銀燈"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "sao-yuuki": [
+      {
+        "text": "ぶつからなきゃ伝わらないことだってあるよ",
+        "source": [
+          "https://renote.net/articles/13430"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "sunshine-you": [
+      {
+        "text": "全速前進!ヨーソロー!",
+        "source": [
+          "https://dic.pixiv.net/a/(*>ᴗ・*)ゞ",
+          "https://dic.nicovideo.jp/a/渡辺曜"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "symphogear-chris": [
+      {
+        "text": "ちょせえ!",
+        "source": [
+          "https://ja.wikipedia.org/wiki/戦姫絶唱シンフォギア",
+          "https://ranking.net/items/e38668"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "toloveru-kotegawa-yui": [
+      {
+        "text": "ハレンチな!",
+        "source": [
+          "https://dic.pixiv.net/a/古手川唯",
+          "https://dic.nicovideo.jp/a/古手川唯"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "touhou-cirno": [
+      {
+        "text": "あんたなんて、英吉利牛と一緒に冷凍保存してやるわ!!",
+        "source": [
+          "https://dic.nicovideo.jp/a/東方projectの台詞一覧",
+          "https://dic.pixiv.net/a/英吉利牛"
+        ],
+        "checked": "corrected"
+      }
+    ],
+    "touhou-reimu": [
+      {
+        "text": "素敵なお賽銭箱はそこよ",
+        "source": [
+          "https://dic.nicovideo.jp/a/博麗霊夢"
+        ],
+        "checked": "corrected"
+      }
+    ]
+  }
+}
