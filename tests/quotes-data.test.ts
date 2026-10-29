@@ -61,13 +61,15 @@ describe('A18. 名台詞のデータ', () => {
     expect(keys).toEqual([...keys].sort());
   });
 
-  it(`A18: 台詞は前後の空白なし・${MAX_LENGTH}字まで・「」と改行を含まない・NFC`, () => {
+  it(`A18: 台詞は前後の空白なし・${MAX_LENGTH}字まで・「」と改行と名前の穴（○○）を含まない・NFC`, () => {
     const bad: string[] = [];
     eachQuote((id, q) => {
       const t = q.text;
       if (t !== t.trim()) bad.push(`${id}: 前後に空白 "${t}"`);
       if ([...t].length > MAX_LENGTH) bad.push(`${id}: ${[...t].length}字 "${t}"`);
       if (/[「」\r\n]/.test(t)) bad.push(`${id}: 「」か改行を含む "${t}"`);
+      // ゲームでプレイヤー名が入る穴（「○○P」など）はそのままでは台詞にならない。
+      if (/[○〇●◯]{2}/.test(t)) bad.push(`${id}: 名前の穴を含む "${t}"`);
       if (t !== t.normalize('NFC')) bad.push(`${id}: NFC でない "${t}"`);
     });
     expect(bad).toEqual([]);
@@ -92,6 +94,10 @@ describe('A18. 名台詞のデータ', () => {
       if (q.source.length === 0) bad.push(`${id}: 出どころが無い "${q.text}"`);
       for (const url of q.source) {
         if (!url.startsWith('https://')) bad.push(`${id}: https でない ${url}`);
+        // 検索結果のページは、何が書いてあったか後から辿れないので出どころにしない。
+        if (/^https:\/\/([a-z0-9-]+\.)*(google\.[a-z.]+\/search|bing\.com\/search|search\.yahoo\.co\.jp|duckduckgo\.com)/i.test(url)) {
+          bad.push(`${id}: 検索結果のページ ${url}`);
+        }
       }
     });
     expect(bad).toEqual([]);

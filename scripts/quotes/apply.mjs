@@ -50,8 +50,12 @@ const readJson = (p) => JSON.parse(readFileSync(p, 'utf8'));
 /** 句読点・記号・長音の揺れを除いて比べる。 */
 const loose = (s) => String(s ?? '').normalize('NFKC').replace(/[\s!?！？…‥・.,、。〜~ー\-—―☆\u266A「」『』]/g, '');
 const clean = (s) => String(s ?? '').trim().normalize('NFC');
-const okText = (t) => t && [...t].length <= MAX_LENGTH && !/[「」\r\n]/.test(t);
-const httpsOnly = (list) => (Array.isArray(list) ? list : []).filter((u) => typeof u === 'string' && u.startsWith('https://'));
+// ○○ はゲームの中でプレイヤー名が入る穴（「○○P」など）。そのままでは台詞にならない。
+const okText = (t) => t && [...t].length <= MAX_LENGTH && !/[「」\r\n]/.test(t) && !/[○〇●◯]{2}/.test(t);
+// 検索エンジンの結果ページは出どころにならない（何が書いてあったか後から辿れない）。
+const SEARCH_PAGE = /^https:\/\/([a-z0-9-]+\.)*(google\.[a-z.]+\/search|bing\.com\/search|search\.yahoo\.co\.jp|duckduckgo\.com)/i;
+const httpsOnly = (list) =>
+  (Array.isArray(list) ? list : []).filter((u) => typeof u === 'string' && u.startsWith('https://') && !SEARCH_PAGE.test(u));
 
 function readOuts(webDir, pattern) {
   if (!existsSync(webDir)) return [];
