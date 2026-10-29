@@ -12,7 +12,9 @@
  * --dir の中で読むもの:
  *   collected.json                   collect-drafts.mjs の出力（下書きの台詞と、抜き取ったかどうか）
  *   web/verify-*.out.json, web/luna-*.out.json   確かめの結果（TASK-verify の形、key で下書きと結ぶ）
- *   web/search-*.out.json            探索の結果（TASK-search の形）
+ *     同じ候補に複数の結果があるときは、verified / corrected を not_found より優先する
+ *     （検索の上限で調べきれなかった候補を、別の担当で調べ直すため）。
+ *   web/search-*.out.json, web/lunas-*.out.json  探索の結果（TASK-search の形）
  * 査読の答え（review.json）は [{ rkey, decision: "accept" | "reject", reason, harsh? }]。一覧の全件に答えが要る。
  *
  * 入れ方:
@@ -70,9 +72,13 @@ function main() {
   const collected = readJson(join(dir, 'collected.json'));
   const draftByKey = new Map(collected.map((q) => [`${q.id}#${q.text}`, q]));
 
+  const STATUS_RANK = { verified: 3, corrected: 3, wrong_character: 2, not_found: 1 };
   const verifyResults = new Map();
-  for (const r of readOuts(webDir, /^(verify|luna)-\d+\.out\.json$/)) verifyResults.set(r.key, r);
-  const searchRows = readOuts(webDir, /^search-\d+\.out\.json$/);
+  for (const r of readOuts(webDir, /^(verify|luna)-\d+\.out\.json$/)) {
+    const prev = verifyResults.get(r.key);
+    if (!prev || (STATUS_RANK[r.status] ?? 0) > (STATUS_RANK[prev.status] ?? 0)) verifyResults.set(r.key, r);
+  }
+  const searchRows = readOuts(webDir, /^(search|lunas)-\d+\.out\.json$/);
 
   // 抜き取りの判定（R13-1）。
   const sampled = collected.filter((q) => q.confidence === 'high' && q.sampled);
