@@ -83,9 +83,11 @@ function main() {
   // 抜き取りの判定（R13-1）。
   const sampled = collected.filter((q) => q.confidence === 'high' && q.sampled);
   const sampleChecked = sampled.filter((q) => verifyResults.has(`${q.id}#${q.text}`));
+  // 確かめ担当の verified / corrected の印ではなく、句読点・記号・長音を除いた言い回しで比べる
+  // （記号の違いだけで corrected と付ける担当がいるため）。
   const sampleSame = sampleChecked.filter((q) => {
     const r = verifyResults.get(`${q.id}#${q.text}`);
-    return r.status === 'verified' && loose(r.text || q.text) === loose(q.text);
+    return (r.status === 'verified' || r.status === 'corrected') && loose(r.text || q.text) === loose(q.text);
   });
   const sampleRate = sampleChecked.length ? sampleSame.length / sampleChecked.length : null;
   const sampleDone = sampleChecked.length === sampled.length;
