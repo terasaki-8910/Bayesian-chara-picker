@@ -15,6 +15,7 @@
  *     同じ候補に複数の結果があるときは、verified / corrected を not_found より優先する
  *     （検索の上限で調べきれなかった候補を、別の担当で調べ直すため）。
  *   web/search-*.out.json, web/lunas-*.out.json  探索の結果（TASK-search の形）
+ *   web/lunap-*.out.json, web/lunax-*.out.json  ページの本文で探した結果（TASK-page・TASK-extract。形は TASK-search と同じ）
  * 査読の答え（review.json）は [{ rkey, decision: "accept" | "reject", reason, harsh? }]。一覧の全件に答えが要る。
  *
  * 入れ方:
@@ -89,7 +90,7 @@ function main() {
     const prev = verifyResults.get(r.key);
     if (!prev || (STATUS_RANK[r.status] ?? 0) > (STATUS_RANK[prev.status] ?? 0)) verifyResults.set(r.key, r);
   }
-  const searchRows = readOuts(webDir, /^(search|lunas)-\d+\.out\.json$/);
+  const searchRows = readOuts(webDir, /^(search|lunas|lunap|lunax)-\d+\.out\.json$/);
 
   // 抜き取りの判定（R13-1）。
   const sampled = collected.filter((q) => q.confidence === 'high' && q.sampled);
