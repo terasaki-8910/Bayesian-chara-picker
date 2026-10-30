@@ -4,7 +4,7 @@
  * 取り方の決まり:
  *   - robots.txt に従う。User-agent: * に加えて、Claude と Anthropic のクローラーの組も見る
  *     （AI の取得を断っているサイトは取らない。ピクシブ百科事典・ポケモンWiki など）。
- *   - 同じホストへは2秒（Crawl-delay があればその秒数）あける。
+ *   - 同じホストへは2秒（Crawl-delay があればその秒数、HOST_MIN_INTERVAL_MS にあればその長さ）あける。
  *   - 1ページを1回だけ取り、本文を state/quotes/pages/ に控える（2回目からは控えを読む）。
  */
 import { createHash } from 'node:crypto';
@@ -17,6 +17,8 @@ const CACHE = join(ROOT, 'state/quotes/pages');
 const USER_AGENT = 'Mozilla/5.0 (compatible; Bayesian-chara-picker quote check)';
 const OUR_AGENTS = ['*', 'claudebot', 'claude-user', 'claude-searchbot', 'claude-web', 'anthropic-ai'];
 const HOST_INTERVAL_MS = 2000;
+// 2秒でも速すぎると返したホスト（2026-10-30 に wikiwiki.jp が 429 を返した）。
+const HOST_MIN_INTERVAL_MS = { 'wikiwiki.jp': 10000 };
 const TIMEOUT_MS = 20000;
 const MAX_BYTES = 4 * 1024 * 1024;
 
@@ -31,7 +33,8 @@ const lastHit = new Map();
 const hostDelay = new Map();
 async function politeFetch(url) {
   const host = new URL(url).host;
-  const wait = (lastHit.get(host) ?? 0) + (hostDelay.get(host) ?? HOST_INTERVAL_MS) - Date.now();
+  const interval = Math.max(hostDelay.get(host) ?? HOST_INTERVAL_MS, HOST_MIN_INTERVAL_MS[host] ?? 0);
+  const wait = (lastHit.get(host) ?? 0) + interval - Date.now();
   if (wait > 0) await sleep(wait);
   lastHit.set(host, Date.now());
   const res = await fetch(url, {
@@ -149,7 +152,8 @@ export async function readPage(url) {
       page = { status: 'error', message: String(e?.message ?? e) };
     }
   }
-  writeFileSync(file, `${JSON.stringify({ url, ...page })}\n`);
+  // 取得が速すぎる・一時的に落ちている、の答えは控えず、次に回したときに取り直す。
+  if (page.http !== 429 && page.http !== 503) writeFileSync(file, `${JSON.stringify({ url, ...page })}\n`);
   return page;
 }
 
