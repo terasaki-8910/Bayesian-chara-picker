@@ -228,6 +228,53 @@ wave 3〜5 で作った「軸ごとに全選択肢を並べ、常に上位 3〜5
 選ばれにくくなる。固定順の質問リストでは表現できない挙動であり、冗長な軸を
 足しても質問を無駄にしない。
 
+#### 遊び方ごとの質問（R14）
+
+遊び方（`guess` = 思い浮かべた推しを当てる、`discover` = 好みの特徴で理想の推しを探す）ごとに、
+質問の出し方・文・止め方・答えのボタンを変える。方針は `src/engine/bayes.ts` の
+`QUESTION_POLICIES`（`default` / `guess` / `discover`）、質問ごとの指定は
+`data/bayes/question-modes.json`（手書きの正本。質問idで引く）を `scripts/bayes/apply-question-modes.mjs` で
+`questions.runtime.json` の各質問の `modes` 欄に写したもの。`modes` を持たない質問・遊び方を持たない方針
+（`default`）では、従来と1問も変わらない。
+
+- **runtime の `modes` の形**（書くことがなければ省く）:
+  `{ guess?: { skip?: true }, discover?: { prompt?: string, skip?: true, group?: string } }`
+  - `skip`: その遊び方では聞かない。先頭・差し込み（`forcedSlots`）・通常のどの段でも候補にしない。
+  - `discover.prompt`: 探すでの質問文（好みを聞く形。「〜がいいですか?」で終わり、重複しない）。
+    `bayesNextProbe` が返す `probe.prompt` は、方針の `mode` の `prompt` があればそれ、無ければ従来の `prompt`
+    （読み込んだ質問そのものは書き換えず、写しを返す）。
+  - `discover.group`: 質問のまとまりの名前（今は `detail` = 手袋・帽子・リボン・天使の輪・アホ毛・ヘッドホン・
+    ネクタイ・マント・チョーカー・そばかす・傷痕・髪飾りの12問だけ）。
+- **方針の項目**（`QuestionPolicy`。すべて省略可で、省くと従来どおり）:
+  - `mode`: 遊び方。上の `modes` のどちらを使うか。
+  - `leadGroups`: 最初の `leadGroups.length` 問は、まだ聞いていない組の軸から1問ずつ。`rng` があれば組の順番を乱択し、
+    その組の中でいちばん手がかりになる質問を選ぶ（`rng` が無ければ、聞いていない組すべての中で最善）。
+    この段は `MIN_GAIN_BAYES` で足切りしない。候補が無ければ次の段へ進む。この段が `forcedSlots` より先に働くので、
+    先頭の問目にある差し込みは効かない（その軸は組に入っている）。
+  - `groupQuestionLimits`: `modes[mode].group` が同じ質問を `max` 問聞いたら、そのまとまりを全部の段の候補から外す。
+  - `stop`: `{ hardCap, bonusMax }`。`bayesShouldGuess` の質問数の上限（既定 `HARD_CAP_BAYES` = 20）と、
+    `bayesShouldReguess` の「いいえ」後の聞き直しの上限（既定 `BONUS_MAX_QUESTIONS_BAYES` = 6）。
+    どちらも最後の引数に方針を渡したときだけ効く（`useBayesInterview` の reducer は `action.policy` を渡す）。
+    定数の値は変えない。
+- **`guess`**: 覚えていないことが多い質問（目の色10問と、色白・ニーソ・手袋・リボン・アホ毛・ヘッドホン・ネクタイ・
+  チョーカー・そばかす・傷痕・髪飾りの11問、計21問）は聞かない（R14-3）。差が出るまで推測を出さないよう、
+  `stop` は `{ hardCap: 30, bonusMax: 15 }`（20問・6問のままだと、差がつかないまま出した推測の当たりが低い。R14-6）。
+  作品の質問は使う（年代は2問まで。従来どおり）。
+- **`discover`**: 最初の6問は、好みの6つの軸（性格・体格・胸・年齢の印象・身長・距離感か雰囲気）から1問ずつ、
+  組の順番は毎回乱択する（R14-2）。目の色10問と、子どもや学校を思わせる4問（`ax:ageFeel=幼い`・
+  `ax:affiliationKind=学生`・`db:school_uniform`・`db:sailor_collar`。好みの文を書かない）と、作品の質問19問は聞かない
+  （計33問。R14-1）。`detail` の12問は1回のプレイで2問まで。止め方は従来のまま（20問・6問）。
+- **答えのボタンの文言**（`src/engine/questions.ts` の `CONFIDENCE_LABELS_BY_MODE`。意味・重みは変えない。
+  `CONFIDENCE_LABEL` は遊び方を決めない呼び出し側向けにそのまま残す）:
+  `guess` = はい / たぶんそう / わからない / たぶん違う / いいえ、
+  `discover` = いい / ややいい / どちらでも良い / あまりよくない / よくない（R14-5）。
+- **データの更新**: `question-modes.json` を変えたら `node scripts/bayes/apply-question-modes.mjs` で runtime に写す
+  （id が `questions.json` と片方にしか無ければ止まる）。`build-likelihoods.mjs` も runtime を書くときに同じ処理を通すので、
+  尤度を作り直しても `modes` は消えない。BA10 が、`question-modes.json` と `questions.json` の id の一致、runtime との一致、
+  文の形、聞かない質問の数を機械で確かめる。
+- **測定**: `node --no-warnings scripts/bayes/sim-sessions.mjs <guess|discover> <human|human2|harsh> [random] [minor] [hoshino] [seed]`。
+  本物のエンジンと方針で、外して聞き直すところまで含めて1回のプレイを再現する（結果は `state/question-modes/out/`）。
+
 ### 2.5 アプリ
 
 - **静的 SPA**。`characters.json` / `supply.json` をビルド時に同梱。

@@ -7,10 +7,13 @@
  *
  * 出力:
  *   data/bayes/likelihoods.json      キャラ×質問 P(yes|c) 密行列（数値のみ）
- *   data/bayes/questions.runtime.json UI用射影（日本語プロンプトのみ。タグ文字列・sourcesは含めない）
+ *   data/bayes/questions.runtime.json UI用射影（日本語プロンプトのみ。タグ文字列・sourcesは含めない）。
+ *                                     遊び方ごとの modes 欄は data/bayes/question-modes.json から写す
+ *                                     （apply-question-modes.mjs の attachQuestionModes）
  */
 import { readFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath, pathToFileURL } from 'node:url';
+import { attachQuestionModes } from './apply-question-modes.mjs';
 import {
   DEFAULT_EPSILON,
   AXIS_MERGE_WEIGHT,
@@ -295,9 +298,15 @@ async function main() {
     `${JSON.stringify(likelihoods, null, 2)}\n`,
   );
 
+  // 遊び方ごとの質問（question-modes.json）の modes 欄は、尤度を作り直しても消さない（R14）。
+  const questionModes = readRequiredJson(new URL('bayes/question-modes.json', dataDir), 'data/bayes/question-modes.json');
   const runtime = {
     version: questionsFile.version,
-    questions: questionsFile.questions.map((q, i) => ({ key: questionIds[i], prompt: q.prompt, reason: q.reason })),
+    questions: attachQuestionModes(
+      questionsFile.questions.map((q, i) => ({ key: questionIds[i], prompt: q.prompt, reason: q.reason })),
+      questionsFile,
+      questionModes,
+    ),
   };
   writeFileSync(fileURLToPath(new URL('bayes/questions.runtime.json', dataDir)), `${JSON.stringify(runtime, null, 2)}\n`);
 

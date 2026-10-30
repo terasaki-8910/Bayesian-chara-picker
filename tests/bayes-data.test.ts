@@ -5,6 +5,7 @@ import { z } from 'zod';
 import forbiddenTermsFile from '../config/forbidden-terms.json';
 import charactersFile from '../data/characters.json';
 import likelihoodsFile from '../data/bayes/likelihoods.json';
+import questionModesFile from '../data/bayes/question-modes.json';
 import questionsFile from '../data/bayes/questions.json';
 import questionsRuntimeFile from '../data/bayes/questions.runtime.json';
 
@@ -65,6 +66,17 @@ const runtimeSchema = z.object({
       key: z.string().min(1),
       prompt: z.string().min(1),
       reason: z.object({ axis: z.string().min(1), label: z.string().min(1), value: z.string().min(1) }),
+      // 遊び方ごとの指定(R14)。question-modes.json から写したもので、書くことがなければ省く。
+      modes: z
+        .object({
+          guess: z.object({ skip: z.literal(true).optional() }).strict().optional(),
+          discover: z
+            .object({ prompt: z.string().min(1).optional(), skip: z.literal(true).optional(), group: z.string().min(1).optional() })
+            .strict()
+            .optional(),
+        })
+        .strict()
+        .optional(),
     }),
   ),
 });
@@ -262,7 +274,9 @@ describe('BA3. questions.runtime.json の射影ドリフト検出', () => {
   });
 
   it('sources フィールド・生のDanbooruタグ文字列を一切含まない', () => {
-    const raw = JSON.stringify(questionsRuntimeFile);
+    // modes.discover.group は質問のまとまりの名前(今は detail だけ。BA10)で、Danbooru のタグではない。
+    // 'detail' はタグ「tail」を部分文字列に含んでしまうので、照合の前に group の値だけ外す(R14)。
+    const raw = JSON.stringify(questionsRuntimeFile, (key, value: unknown) => (key === 'group' ? undefined : value));
     expect(raw.includes('"sources"')).toBe(false);
     const allTags = new Set(
       questionsFile.questions.flatMap((q) =>
@@ -275,6 +289,65 @@ describe('BA3. questions.runtime.json の射影ドリフト検出', () => {
       // 混入していたのに完全一致判定では検出できなかった実例を踏まえる）。
       expect(raw.includes(tag), `タグ文字列「${tag}」がruntimeに漏れている（部分一致含む）`).toBe(false);
     }
+  });
+});
+
+describe('BA10. question-modes.json（遊び方ごとの質問。R14）', () => {
+  type ModesEntry = { guess?: { skip?: boolean }; discover?: { prompt?: string; skip?: boolean; group?: string } };
+  const modes = (questionModesFile as { questions: unknown }).questions as Record<string, ModesEntry>;
+  const ids = questionsFile.questions.map((q) => q.id);
+  const discoverOf = (id: string) => modes[id].discover ?? {};
+
+  it('質問idが questions.json と完全に一致する(過不足なし)', () => {
+    expect(Object.keys(modes).sort()).toEqual([...ids].sort());
+  });
+
+  it('discover は prompt か skip のどちらか一方(両方・どちらも無しは不可)', () => {
+    for (const id of ids) {
+      const { prompt, skip } = discoverOf(id);
+      expect((prompt === undefined ? 0 : 1) + (skip === undefined ? 0 : 1), `${id}: prompt と skip は片方だけ`).toBe(1);
+      if (skip !== undefined) expect(skip, `${id}: skip は true`).toBe(true);
+      if (modes[id].guess?.skip !== undefined) expect(modes[id].guess?.skip, `${id}: guess.skip は true`).toBe(true);
+    }
+  });
+
+  it('discover の prompt は「がいいですか?」で終わり、重複せず、禁止語(config/forbidden-terms.json)を含まない', () => {
+    const prompts = ids.flatMap((id) => (discoverOf(id).prompt === undefined ? [] : [{ id, prompt: discoverOf(id).prompt! }]));
+    expect(prompts.length).toBeGreaterThan(0);
+    for (const { id, prompt } of prompts) {
+      expect(prompt.endsWith('がいいですか?'), `${id}: ${prompt}`).toBe(true);
+      for (const term of FORBIDDEN_TERMS) expect(prompt.toLowerCase().includes(term.toLowerCase()), `${id}: 「${term}」を含む(${prompt})`).toBe(false);
+    }
+    expect(new Set(prompts.map((p) => p.prompt)).size, '文が重複している').toBe(prompts.length);
+  });
+
+  it('discover の group は detail だけ', () => {
+    for (const id of ids) {
+      const { group } = discoverOf(id);
+      if (group !== undefined) expect(group, id).toBe('detail');
+    }
+  });
+
+  it('questions.runtime.json の modes が question-modes.json と一致する(順番で q001.. に対応)', () => {
+    expect(questionsRuntimeFile.questions.length).toBe(ids.length);
+    ids.forEach((id, i) => {
+      const runtime = questionsRuntimeFile.questions[i] as { key: string; modes?: ModesEntry };
+      expect(runtime.modes ?? {}, `[${i}] ${id}`).toEqual(modes[id]);
+    });
+  });
+
+  it('子どもや学校を思わせる4問(ageFeel=幼い・affiliationKind=学生・school_uniform・sailor_collar)は、探すで聞かず、好みの文も無い', () => {
+    for (const id of ['ax:ageFeel=幼い', 'ax:affiliationKind=学生', 'db:school_uniform', 'db:sailor_collar']) {
+      expect(discoverOf(id).skip, id).toBe(true);
+      expect(discoverOf(id).prompt, id).toBeUndefined();
+    }
+  });
+
+  it('聞かない質問・細かい見た目の数: 当てるで聞かない21問、探すで聞かない33問、detail 12問', () => {
+    const count = (pick: (entry: ModesEntry) => boolean) => ids.filter((id) => pick(modes[id])).length;
+    expect(count((m) => m.guess?.skip === true), 'guess の skip').toBe(21);
+    expect(count((m) => m.discover?.skip === true), 'discover の skip').toBe(33);
+    expect(count((m) => m.discover?.group === 'detail'), 'detail').toBe(12);
   });
 });
 

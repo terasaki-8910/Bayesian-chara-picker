@@ -113,7 +113,7 @@ export function reducer(state: RawState, action: Action): RawState {
       // （1問だけ聞いて即答えを出す旧挙動をやめた。engine/bayes.ts の同関数のコメント参照）。
       if (state.questionsSinceReject !== null) {
         const questionsSinceReject = state.questionsSinceReject + 1;
-        if (!bayesShouldReguess(scored, questionsSinceReject, probe !== null)) {
+        if (!bayesShouldReguess(scored, questionsSinceReject, probe !== null, action.policy)) {
           return { ...state, answers, askedKeys, questionsSinceReject, probe, history };
         }
         return {
@@ -127,7 +127,7 @@ export function reducer(state: RawState, action: Action): RawState {
         };
       }
 
-      const goToGuessing = probe === null || bayesShouldGuess(scored, askedKeys.length, probe !== null);
+      const goToGuessing = probe === null || bayesShouldGuess(scored, askedKeys.length, probe !== null, action.policy);
 
       if (!goToGuessing) return { ...state, answers, askedKeys, probe, history };
       return {
