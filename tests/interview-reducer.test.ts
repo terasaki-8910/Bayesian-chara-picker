@@ -2,7 +2,13 @@ import { describe, expect, it } from 'vitest';
 
 import likelihoodsData from '../data/bayes/likelihoods.json';
 import questionsRuntimeData from '../data/bayes/questions.runtime.json';
-import { initBayesData, type LikelihoodsFile, type QuestionsRuntimeFile } from '../src/engine/bayes';
+import {
+  QUESTION_POLICIES,
+  initBayesData,
+  type LikelihoodsFile,
+  type QuestionPolicy,
+  type QuestionsRuntimeFile,
+} from '../src/engine/bayes';
 import type { Dataset } from '../src/engine/recommend';
 import * as bayesHook from '../src/hooks/useBayesInterview';
 import * as classicHook from '../src/hooks/useInterview';
@@ -88,6 +94,33 @@ describe('useBayesInterview の reducer: undoの決定性', () => {
       expect(s3.probe?.key).toBe(key1);
     }
   });
+});
+
+describe('useBayesInterview の reducer: 遊び方ごとの止め方(R14)', () => {
+  /**
+   * 全部「どちらでも良い」で答え続ける(確信は付かない)。最初の推測が出るまでに答えた数と、
+   * その推測を外した後に、次の推測が出るまでに答えた数を返す。
+   */
+  function stopPoints(policy?: QuestionPolicy): { first: number; afterReject: number } {
+    const answer = (s: bayesHook.RawState): bayesHook.RawState =>
+      bayesHook.reducer(s, { type: 'answer', key: s.probe!.key, confidence: 'unknown', recentGuessIds: [], dataset, policy });
+    let s = bayesHook.init(dataset, policy);
+    for (let guard = 0; guard < 60 && s.guess === null; guard += 1) s = answer(s);
+    const first = s.askedKeys.length;
+    s = bayesHook.reducer(s, { type: 'reject', characterId: s.guess!.character.id, recentGuessIds: [], dataset, policy });
+    let afterReject = 0;
+    for (let guard = 0; guard < 60 && s.questionsSinceReject !== null; guard += 1) {
+      s = answer(s);
+      afterReject += 1;
+    }
+    return { first, afterReject };
+  }
+
+  it('policy を渡すと、guess は30問まで・外した後は15問まで聞く(渡さない・default は20問・6問のまま)', () => {
+    expect(stopPoints()).toEqual({ first: 20, afterReject: 6 });
+    expect(stopPoints(QUESTION_POLICIES.default)).toEqual({ first: 20, afterReject: 6 });
+    expect(stopPoints(QUESTION_POLICIES.guess)).toEqual({ first: 30, afterReject: 15 });
+  }, 120000);
 });
 
 describe('useInterview(classic) の reducer: undoの決定性', () => {

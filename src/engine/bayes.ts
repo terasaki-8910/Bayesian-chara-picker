@@ -1,9 +1,9 @@
 import type { AxisKey, Character, SupplyFile } from '../data/schema';
-import { CONFIDENCE_WEIGHT, type Confidence } from './questions';
+import { CONFIDENCE_WEIGHT, type Confidence, type QuestionMode } from './questions';
 import { combinedRankFor, survivors, type Dataset, type Reason, type Scored } from './recommend';
 import { supplyRankIndex, type SupplyRank } from './supply';
 
-export type { Confidence } from './questions';
+export type { Confidence, QuestionMode } from './questions';
 export type { Dataset, Reason, Scored } from './recommend';
 
 /** プローブ key（questions.json の質問id） -> 確信度。classic の AnswerMap とキー空間が違うため別名にする。 */
@@ -21,9 +21,20 @@ export type LikelihoodsFile = {
   baseRates: number[];
   chars: Record<string, number[]>;
 };
+/**
+ * 質問ごとの、遊び方別の指定（questions.runtime.json の `modes` 欄。元データは data/bayes/question-modes.json）。
+ * どちらの遊び方も、書くことがなければ省く。
+ * - `guess.skip` / `discover.skip`: その遊び方では聞かない。
+ * - `discover.prompt`: 探すでの質問文（好みを聞く形。省くと `prompt` のまま）。
+ * - `discover.group`: 質問のまとまりの名前（QuestionPolicy.groupQuestionLimits で、聞く数の上限をかける単位）。
+ */
+export type QuestionModes = {
+  guess?: { skip?: true };
+  discover?: { prompt?: string; skip?: true; group?: string };
+};
 export type QuestionsRuntimeFile = {
   version: number;
-  questions: { key: string; prompt: string; reason: { axis: string; label: string; value: string } }[];
+  questions: { key: string; prompt: string; reason: { axis: string; label: string; value: string }; modes?: QuestionModes }[];
 };
 
 /*
@@ -43,6 +54,8 @@ let questionIndex = new Map<string, number>();
 let probeByKey = new Map<string, BayesProbe>();
 /** 質問選択・エントロピー計算の対象になる全プローブ（固定順=questions.runtime.jsonの記載順）。 */
 let allProbes: readonly BayesProbe[] = [];
+/** 質問key -> 遊び方別の指定（`modes` 欄がある質問だけ）。 */
+let modesByKey = new Map<string, QuestionModes>();
 
 export function initBayesData(l: LikelihoodsFile, q: QuestionsRuntimeFile): void {
   likelihoods = l;
@@ -51,6 +64,12 @@ export function initBayesData(l: LikelihoodsFile, q: QuestionsRuntimeFile): void
     q.questions.map((qq) => [qq.key, { key: qq.key, prompt: qq.prompt, reason: qq.reason as BayesProbe['reason'] }]),
   );
   allProbes = q.questions.map((qq) => probeByKey.get(qq.key)!);
+  modesByKey = new Map(q.questions.flatMap((qq) => (qq.modes === undefined ? [] : [[qq.key, qq.modes] as const])));
+}
+
+/** その遊び方での、質問の指定（遊び方が無い・指定が無ければ undefined）。 */
+function modeEntryOf(key: string, mode: QuestionMode | undefined): { skip?: true; prompt?: string; group?: string } | undefined {
+  return mode === undefined ? undefined : modesByKey.get(key)?.[mode];
 }
 
 function likelihoodOf(characterId: string, questionKey: string): number {
@@ -152,14 +171,29 @@ export const MIN_GAIN_BAYES = 0.02;
 export const TOP_K_BAYES = 5;
 
 /**
- * 質問の出し方の方針（R12、2026-10-26）。
+ * 質問の出し方と止め方の方針（R12、2026-10-26。遊び方ごとの項目は R14、2026-10-31）。
  * - `forcedSlots`: 決まった問目（1始まり）に、決まった軸の質問を1問だけ必ず出す。その軸の中で
  *   いちばん手がかりになる質問を選ぶ（乱択しない）。その問目までに同じ軸の質問がもう出ていれば差し込まない。
  * - `groupLimits`: 軸のまとまりごとに、1回のプレイで聞く数の上限（`max`）と、聞いてよい最初の問目（`from`）。
+ *
+ * 以下は遊び方ごとの項目で、省くと従来どおりの動き（`default` は1問も変わらない）:
+ * - `mode`: 遊び方。questions.runtime.json の `modes` 欄のうち、この遊び方の指定を使う。
+ *   `skip` の質問は、先頭・forcedSlots・通常のどの段でも聞かない。`prompt` があれば、返す質問の文をそれにする。
+ * - `leadGroups`: 最初の `leadGroups.length` 問は、まだ聞いていない組の軸から1問ずつ聞く。`rng` があれば組の順番を
+ *   乱択し、その組の中でいちばん手がかりになる質問を選ぶ（`rng` が無ければ、まだ聞いていない組すべての中で最善）。
+ *   先頭の段では `MIN_GAIN_BAYES` で足切りしない。候補が無い間は次の段へ進む。
+ * - `groupQuestionLimits`: `modes[mode].group` が同じ質問のまとまりごとに、1回のプレイで聞く数の上限（`max`）。
+ *   上限まで聞いたら、そのまとまりは全部の段の候補から外す。
+ * - `stop`: 止め方。`hardCap` は最初の推測を出すまでの質問数の上限、`bonusMax` は「いいえ」後の聞き直しの上限
+ *   （`bayesShouldGuess`・`bayesShouldReguess` の最後の引数に方針を渡したときだけ効く）。
  */
 export type QuestionPolicy = {
   readonly forcedSlots: readonly { readonly at: number; readonly axes: readonly string[] }[];
   readonly groupLimits: readonly { readonly axes: readonly string[]; readonly max: number; readonly from?: number }[];
+  readonly mode?: QuestionMode;
+  readonly leadGroups?: readonly (readonly string[])[];
+  readonly groupQuestionLimits?: readonly { readonly group: string; readonly max: number }[];
+  readonly stop?: { readonly hardCap: number; readonly bonusMax: number };
 };
 
 /** 作品の質問（R11-C）の軸。 */
@@ -179,7 +213,13 @@ const FORCED_TRAIT_SLOTS: QuestionPolicy['forcedSlots'] = [
  *   年代は聞かず、世界観・ジャンル・原作は合わせて2問まで・5問目から。
  *   再現プログラムでの1回目の正解率はファン想定 98.7%（作品の質問を制限しない場合 99.5%）。
  * - `guess`: 思い浮かべた推しを当てる遊び方。作品の質問も使う（年代は「○年代?」が続かないよう2問まで）。
- * - `discover`: 好みの特徴だけで理想の推しを探す遊び方。作品の質問は聞かない。
+ *   覚えていないことが多い質問（目の色・細かい見た目、21問）は聞かない（R14-3）。差が出るまで推測を出さないよう、
+ *   最初の推測までの上限を30問、「いいえ」後の聞き直しの上限を15問にする（R14-6 の補足。上限が 20・6 のままだと、
+ *   差がつかないまま無理に出した推測の当たりは2〜6割、差がついてから出すと5〜10割だった）。
+ * - `discover`: 好みの特徴だけで理想の推しを探す遊び方。作品の質問は聞かない。最初の6問は好みの6つの軸
+ *   （性格・体格・胸・年齢の印象・身長・距離感か雰囲気）から1問ずつ、組の順番は毎回乱択する（R14-2）。
+ *   目の色などと、子どもや学校を思わせる4問は聞かない（R14-1。`modes` の `skip`）。細かい見た目・小物（`detail`、12問）は
+ *   1回のプレイで2問まで。止め方は従来のまま（20問・6問）: 正解の決まっていない遊び方なので、差がつかないまま上限まで聞き続けるおそれがある。
  */
 export const QUESTION_POLICIES: Readonly<Record<'default' | 'guess' | 'discover', QuestionPolicy>> = {
   default: {
@@ -189,8 +229,19 @@ export const QUESTION_POLICIES: Readonly<Record<'default' | 'guess' | 'discover'
       { axes: ['world', 'genre', 'media'], max: 2, from: 5 },
     ],
   },
-  guess: { forcedSlots: FORCED_TRAIT_SLOTS, groupLimits: [{ axes: ['era'], max: 2 }] },
-  discover: { forcedSlots: FORCED_TRAIT_SLOTS, groupLimits: [{ axes: SERIES_AXES, max: 0 }] },
+  guess: {
+    mode: 'guess',
+    forcedSlots: FORCED_TRAIT_SLOTS,
+    groupLimits: [{ axes: ['era'], max: 2 }],
+    stop: { hardCap: 30, bonusMax: 15 },
+  },
+  discover: {
+    mode: 'discover',
+    forcedSlots: FORCED_TRAIT_SLOTS,
+    groupLimits: [{ axes: SERIES_AXES, max: 0 }],
+    leadGroups: [['personality'], ['build'], ['bust'], ['ageFeel'], ['stature'], ['distance', 'mood']],
+    groupQuestionLimits: [{ group: 'detail', max: 2 }],
+  },
 };
 
 /**
@@ -200,6 +251,9 @@ export const QUESTION_POLICIES: Readonly<Record<'default' | 'guess' | 'discover'
  * 起きないため（PLAN「質問選択」に CONTENTION_M 相当の記載が無いのはこのため）。
  * `policy`（省略時は `QUESTION_POLICIES.default`）の `forcedSlots` の問目では、その軸の質問を返す。
  * `groupLimits` の上限に達した、またはまだ聞いてよい問目でない軸の質問は候補から外す。
+ * 遊び方（`policy.mode`、R14）があれば、その遊び方で `skip` の質問は先頭・forcedSlots・通常のどの段でも聞かず、
+ * 先頭は `leadGroups`、`groupQuestionLimits` の上限に達したまとまりは全部の段の候補から外す。
+ * 返す質問の文は、`modes[policy.mode].prompt` があればそれ（`probeByKey` の中身は書き換えず、写しを返す）。
  */
 export function bayesNextProbe(
   dataset: Dataset,
@@ -211,19 +265,59 @@ export function bayesNextProbe(
   if (population.length === 0) return null;
 
   const policy = opts?.policy ?? QUESTION_POLICIES.default;
+  const mode = policy.mode;
   const posterior = normalizePosterior(computeLogPosterior(population, dataset.supply, answers));
   const askedAxes = [...askedKeys].map((key) => probeByKey.get(key)?.reason.axis);
   const nextNumber = askedKeys.size + 1;
+
+  // 聞く数の上限に達した質問のまとまり。この遊び方で聞かない質問と合わせて、どの段でも候補にしない。
+  const closedQuestionGroups = new Set<string>();
+  for (const limit of policy.groupQuestionLimits ?? []) {
+    const used = [...askedKeys].filter((key) => modeEntryOf(key, mode)?.group === limit.group).length;
+    if (used >= limit.max) closedQuestionGroups.add(limit.group);
+  }
+  const askable = (probe: BayesProbe): boolean => {
+    if (askedKeys.has(probe.key)) return false;
+    const entry = modeEntryOf(probe.key, mode);
+    if (entry?.skip === true) return false;
+    return entry?.group === undefined || !closedQuestionGroups.has(entry.group);
+  };
+  const present = (probe: BayesProbe): BayesProbe => {
+    const prompt = modeEntryOf(probe.key, mode)?.prompt;
+    return prompt === undefined ? probe : { ...probe, prompt };
+  };
+
+  const lead = policy.leadGroups ?? [];
+  if (nextNumber <= lead.length) {
+    // まだ聞いていない組のうち、聞ける質問が残っている組ごとの候補。
+    const openGroups = lead
+      .filter((group) => !askedAxes.some((axis) => axis !== undefined && group.includes(axis)))
+      .map((group) => allProbes.filter((probe) => askable(probe) && group.includes(probe.reason.axis)))
+      .filter((probes) => probes.length > 0);
+    if (openGroups.length > 0) {
+      // 組の順番だけ乱択し、その組の中ではいちばん手がかりになる質問を選ぶ。rng が無ければ全部の組の中で最善。
+      const pool =
+        opts?.rng === undefined
+          ? openGroups.flat()
+          : openGroups[Math.min(Math.floor(opts.rng() * openGroups.length), openGroups.length - 1)];
+      let best: { probe: BayesProbe; gain: number } | null = null;
+      for (const probe of pool) {
+        const gain = expectedGain(posterior, probe.key);
+        if (best === null || gain > best.gain + GAIN_EPSILON) best = { probe, gain };
+      }
+      if (best !== null) return present(best.probe);
+    }
+  }
 
   const slot = policy.forcedSlots.find((s) => s.at === nextNumber);
   if (slot !== undefined && !askedAxes.some((axis) => axis !== undefined && slot.axes.includes(axis))) {
     let forced: { probe: BayesProbe; gain: number } | null = null;
     for (const probe of allProbes) {
-      if (askedKeys.has(probe.key) || !slot.axes.includes(probe.reason.axis)) continue;
+      if (!askable(probe) || !slot.axes.includes(probe.reason.axis)) continue;
       const gain = expectedGain(posterior, probe.key);
       if (forced === null || gain > forced.gain + GAIN_EPSILON) forced = { probe, gain };
     }
-    if (forced !== null) return forced.probe;
+    if (forced !== null) return present(forced.probe);
   }
 
   const closedAxes = new Set<string>();
@@ -233,7 +327,7 @@ export function bayesNextProbe(
   }
   const candidates: { probe: BayesProbe; gain: number }[] = [];
   for (const probe of allProbes) {
-    if (askedKeys.has(probe.key) || closedAxes.has(probe.reason.axis)) continue;
+    if (!askable(probe) || closedAxes.has(probe.reason.axis)) continue;
     const gain = expectedGain(posterior, probe.key);
     if (gain >= MIN_GAIN_BAYES) candidates.push({ probe, gain });
   }
@@ -244,13 +338,13 @@ export function bayesNextProbe(
     for (const c of candidates) {
       if (c.gain > best.gain + GAIN_EPSILON) best = c;
     }
-    return best.probe;
+    return present(best.probe);
   }
 
   const ranked = candidates.slice().sort((a, b) => b.gain - a.gain);
   const top = ranked.slice(0, TOP_K_BAYES);
   const idx = Math.min(Math.floor(opts.rng() * top.length), top.length - 1);
-  return top[idx].probe;
+  return present(top[idx].probe);
 }
 
 /** score = SCORE_SCALE・P(c)。確率差0.2がMARGIN_STOP(40, recommend.ts)に対応する換算（PLAN）。 */
@@ -363,10 +457,16 @@ function isConfidentEnough(scored: readonly Scored[]): boolean {
  * 推測を提示してよいかどうか（PLAN「停止」）。classicの`shouldGuess`とシグネチャを
  * 揃えて`useBayesInterview`からの置き換えを容易にする——ただし判定式自体は
  * スコア差(MARGIN_STOP)ではなく事後確率の絶対値・比(P_STOP/ODDS_STOP)を使う点が異なる。
+ * 質問数の上限は `policy?.stop?.hardCap`（遊び方ごと、R14）、無ければ `HARD_CAP_BAYES`。
  */
-export function bayesShouldGuess(scored: readonly Scored[], askedCount: number, hasInformativeProbe: boolean): boolean {
+export function bayesShouldGuess(
+  scored: readonly Scored[],
+  askedCount: number,
+  hasInformativeProbe: boolean,
+  policy?: QuestionPolicy,
+): boolean {
   if (askedCount < MIN_QUESTIONS_BAYES) return false;
-  if (askedCount >= HARD_CAP_BAYES) return true;
+  if (askedCount >= (policy?.stop?.hardCap ?? HARD_CAP_BAYES)) return true;
   if (!hasInformativeProbe) return true;
   return isConfidentEnough(scored);
 }
@@ -392,14 +492,16 @@ export const BONUS_MAX_QUESTIONS_BAYES = 6;
  * 見ない——既に上限まで聞いていても、拒否した以上は最低限の聞き直しをする方が
  * 体験として一貫しているため。ただし聞くべき質問が尽きていれば
  * （`hasInformativeProbe===false`）下限を待たず即座に再推測する。
+ * 打ち切りの上限は `policy?.stop?.bonusMax`（遊び方ごと、R14）、無ければ `BONUS_MAX_QUESTIONS_BAYES`。
  */
 export function bayesShouldReguess(
   scored: readonly Scored[],
   questionsSinceReject: number,
   hasInformativeProbe: boolean,
+  policy?: QuestionPolicy,
 ): boolean {
   if (!hasInformativeProbe) return true;
   if (questionsSinceReject < BONUS_MIN_QUESTIONS_BAYES) return false;
-  if (questionsSinceReject >= BONUS_MAX_QUESTIONS_BAYES) return true;
+  if (questionsSinceReject >= (policy?.stop?.bonusMax ?? BONUS_MAX_QUESTIONS_BAYES)) return true;
   return isConfidentEnough(scored);
 }

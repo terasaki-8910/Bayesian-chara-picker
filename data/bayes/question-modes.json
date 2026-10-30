@@ -1,0 +1,870 @@
+{
+  "version": 1,
+  "questions": {
+    "dg:hair-color:black_hair": {
+      "discover": {
+        "prompt": "髪は黒系がいいですか?"
+      }
+    },
+    "dg:hair-color:white_hair": {
+      "discover": {
+        "prompt": "髪は白系がいいですか?"
+      }
+    },
+    "dg:hair-color:blonde_hair": {
+      "discover": {
+        "prompt": "髪は金系がいいですか?"
+      }
+    },
+    "dg:hair-color:brown_hair": {
+      "discover": {
+        "prompt": "髪は茶系がいいですか?"
+      }
+    },
+    "dg:hair-color:red_hair": {
+      "discover": {
+        "prompt": "髪は赤系がいいですか?"
+      }
+    },
+    "dg:hair-color:blue_hair": {
+      "discover": {
+        "prompt": "髪は青系がいいですか?"
+      }
+    },
+    "dg:hair-color:green_hair": {
+      "discover": {
+        "prompt": "髪は緑系がいいですか?"
+      }
+    },
+    "dg:hair-color:pink_hair": {
+      "discover": {
+        "prompt": "髪はピンク系がいいですか?"
+      }
+    },
+    "dg:hair-color:purple_hair": {
+      "discover": {
+        "prompt": "髪は紫系がいいですか?"
+      }
+    },
+    "dg:hair-color:grey_hair": {
+      "discover": {
+        "prompt": "髪は銀系がいいですか?"
+      }
+    },
+    "dg:hair-color:orange_hair": {
+      "discover": {
+        "prompt": "髪はオレンジ系がいいですか?"
+      }
+    },
+    "dg:hair-length:short_hair": {
+      "discover": {
+        "prompt": "髪は短いほうがいいですか?"
+      }
+    },
+    "dg:hair-length:medium_hair": {
+      "discover": {
+        "prompt": "髪はミディアムくらいがいいですか?"
+      }
+    },
+    "dg:hair-length:long_hair": {
+      "discover": {
+        "prompt": "髪は長いほうがいいですか?"
+      }
+    },
+    "dg:hair-length:very_long_hair": {
+      "discover": {
+        "prompt": "髪はとても長い(腰下くらい)ほうがいいですか?"
+      }
+    },
+    "dg:eye-color:aqua_eyes": {
+      "guess": {
+        "skip": true
+      },
+      "discover": {
+        "skip": true
+      }
+    },
+    "dg:eye-color:black_eyes": {
+      "guess": {
+        "skip": true
+      },
+      "discover": {
+        "skip": true
+      }
+    },
+    "dg:eye-color:blue_eyes": {
+      "guess": {
+        "skip": true
+      },
+      "discover": {
+        "skip": true
+      }
+    },
+    "dg:eye-color:brown_eyes": {
+      "guess": {
+        "skip": true
+      },
+      "discover": {
+        "skip": true
+      }
+    },
+    "dg:eye-color:green_eyes": {
+      "guess": {
+        "skip": true
+      },
+      "discover": {
+        "skip": true
+      }
+    },
+    "dg:eye-color:grey_eyes": {
+      "guess": {
+        "skip": true
+      },
+      "discover": {
+        "skip": true
+      }
+    },
+    "dg:eye-color:orange_eyes": {
+      "guess": {
+        "skip": true
+      },
+      "discover": {
+        "skip": true
+      }
+    },
+    "dg:eye-color:purple_eyes": {
+      "guess": {
+        "skip": true
+      },
+      "discover": {
+        "skip": true
+      }
+    },
+    "dg:eye-color:red_eyes": {
+      "guess": {
+        "skip": true
+      },
+      "discover": {
+        "skip": true
+      }
+    },
+    "dg:eye-color:yellow_eyes": {
+      "guess": {
+        "skip": true
+      },
+      "discover": {
+        "skip": true
+      }
+    },
+    "dg:breast-size:flat_chest": {
+      "discover": {
+        "prompt": "胸はとても控えめなほうがいいですか?"
+      }
+    },
+    "dg:breast-size:small_breasts": {
+      "discover": {
+        "prompt": "胸は小さいほうがいいですか?"
+      }
+    },
+    "dg:breast-size:medium_breasts": {
+      "discover": {
+        "prompt": "胸は標準くらいがいいですか?"
+      }
+    },
+    "dg:breast-size:large_breasts": {
+      "discover": {
+        "prompt": "胸は大きいほうがいいですか?"
+      }
+    },
+    "dg:breast-size:huge_breasts": {
+      "discover": {
+        "prompt": "胸はとても大きいほうがいいですか?"
+      }
+    },
+    "dg:breast-size:gigantic_breasts": {
+      "discover": {
+        "prompt": "胸は規格外に大きいほうがいいですか?"
+      }
+    },
+    "db:pale_skin": {
+      "guess": {
+        "skip": true
+      },
+      "discover": {
+        "prompt": "肌は色白がいいですか?"
+      }
+    },
+    "db:dark_skin": {
+      "discover": {
+        "prompt": "肌は褐色寄りがいいですか?"
+      }
+    },
+    "db:glasses": {
+      "discover": {
+        "prompt": "眼鏡をかけているほうがいいですか?"
+      }
+    },
+    "db:animal_ears": {
+      "discover": {
+        "prompt": "ケモミミがあるほうがいいですか?"
+      }
+    },
+    "db:horns": {
+      "discover": {
+        "prompt": "角があるほうがいいですか?"
+      }
+    },
+    "db:tail": {
+      "discover": {
+        "prompt": "尻尾があるほうがいいですか?"
+      }
+    },
+    "db:twintails": {
+      "discover": {
+        "prompt": "髪型はツインテールがいいですか?"
+      }
+    },
+    "db:school_uniform": {
+      "discover": {
+        "skip": true
+      }
+    },
+    "db:maid": {
+      "discover": {
+        "prompt": "服装はメイド系がいいですか?"
+      }
+    },
+    "db:miko": {
+      "discover": {
+        "prompt": "服装は巫女装束がいいですか?"
+      }
+    },
+    "db:nurse_cap": {
+      "discover": {
+        "prompt": "服装はナース系がいいですか?"
+      }
+    },
+    "db:magical_girl": {
+      "discover": {
+        "prompt": "服装は魔法少女系がいいですか?"
+      }
+    },
+    "db:military_uniform": {
+      "discover": {
+        "prompt": "服装は軍服系がいいですか?"
+      }
+    },
+    "db:office_lady": {
+      "discover": {
+        "prompt": "服装はOL系がいいですか?"
+      }
+    },
+    "db:thighhighs": {
+      "guess": {
+        "skip": true
+      },
+      "discover": {
+        "prompt": "ニーソを履いているほうがいいですか?"
+      }
+    },
+    "db:gloves": {
+      "guess": {
+        "skip": true
+      },
+      "discover": {
+        "prompt": "手袋をしているほうがいいですか?",
+        "group": "detail"
+      }
+    },
+    "db:hat": {
+      "discover": {
+        "prompt": "帽子をかぶっているほうがいいですか?",
+        "group": "detail"
+      }
+    },
+    "db:ribbon": {
+      "guess": {
+        "skip": true
+      },
+      "discover": {
+        "prompt": "リボンを着けているほうがいいですか?",
+        "group": "detail"
+      }
+    },
+    "db:ponytail": {
+      "discover": {
+        "prompt": "髪型はポニーテールがいいですか?"
+      }
+    },
+    "db:braid": {
+      "discover": {
+        "prompt": "髪型は三つ編みがいいですか?"
+      }
+    },
+    "db:wings": {
+      "discover": {
+        "prompt": "翼があるほうがいいですか?"
+      }
+    },
+    "db:halo": {
+      "discover": {
+        "prompt": "天使の輪(ハロー)があるほうがいいですか?",
+        "group": "detail"
+      }
+    },
+    "db:ahoge": {
+      "guess": {
+        "skip": true
+      },
+      "discover": {
+        "prompt": "アホ毛があるほうがいいですか?",
+        "group": "detail"
+      }
+    },
+    "db:headphones": {
+      "guess": {
+        "skip": true
+      },
+      "discover": {
+        "prompt": "ヘッドホンを着けているほうがいいですか?",
+        "group": "detail"
+      }
+    },
+    "db:necktie": {
+      "guess": {
+        "skip": true
+      },
+      "discover": {
+        "prompt": "ネクタイをしているほうがいいですか?",
+        "group": "detail"
+      }
+    },
+    "db:swimsuit": {
+      "discover": {
+        "prompt": "水着姿の印象が強いほうがいいですか?"
+      }
+    },
+    "db:apron": {
+      "discover": {
+        "prompt": "エプロンを着けているほうがいいですか?"
+      }
+    },
+    "db:cape": {
+      "discover": {
+        "prompt": "マント(ケープ)を着けているほうがいいですか?",
+        "group": "detail"
+      }
+    },
+    "db:choker": {
+      "guess": {
+        "skip": true
+      },
+      "discover": {
+        "prompt": "チョーカーを着けているほうがいいですか?",
+        "group": "detail"
+      }
+    },
+    "db:freckles": {
+      "guess": {
+        "skip": true
+      },
+      "discover": {
+        "prompt": "そばかすがあるほうがいいですか?",
+        "group": "detail"
+      }
+    },
+    "db:scar": {
+      "guess": {
+        "skip": true
+      },
+      "discover": {
+        "prompt": "傷痕があるほうがいいですか?",
+        "group": "detail"
+      }
+    },
+    "db:hair_ornament": {
+      "guess": {
+        "skip": true
+      },
+      "discover": {
+        "prompt": "髪飾りを着けているほうがいいですか?",
+        "group": "detail"
+      }
+    },
+    "db:armor": {
+      "discover": {
+        "prompt": "鎧を身に着けているほうがいいですか?"
+      }
+    },
+    "db:witch_hat": {
+      "discover": {
+        "prompt": "魔女帽子をかぶっているほうがいいですか?"
+      }
+    },
+    "db:one_eye_covered": {
+      "discover": {
+        "prompt": "片目が髪で隠れているほうがいいですか?"
+      }
+    },
+    "db:fang": {
+      "discover": {
+        "prompt": "八重歯や牙があるほうがいいですか?"
+      }
+    },
+    "db:rabbit_ears": {
+      "discover": {
+        "prompt": "うさ耳を着けているほうがいいですか?"
+      }
+    },
+    "db:sailor_collar": {
+      "discover": {
+        "skip": true
+      }
+    },
+    "ax:personality=クール": {
+      "discover": {
+        "prompt": "性格はクール寄りがいいですか?"
+      }
+    },
+    "ax:personality=元気": {
+      "discover": {
+        "prompt": "性格は元気寄りがいいですか?"
+      }
+    },
+    "ax:personality=おっとり": {
+      "discover": {
+        "prompt": "性格はおっとり寄りがいいですか?"
+      }
+    },
+    "ax:personality=生意気": {
+      "discover": {
+        "prompt": "性格は生意気寄りがいいですか?"
+      }
+    },
+    "ax:personality=内気": {
+      "discover": {
+        "prompt": "性格は内気寄りがいいですか?"
+      }
+    },
+    "ax:personality=姉御": {
+      "discover": {
+        "prompt": "性格は姉御寄りがいいですか?"
+      }
+    },
+    "ax:roles~幼馴染": {
+      "discover": {
+        "prompt": "幼馴染のような関係がいいですか?"
+      }
+    },
+    "ax:roles~後輩": {
+      "discover": {
+        "prompt": "後輩のような関係がいいですか?"
+      }
+    },
+    "ax:roles~先輩": {
+      "discover": {
+        "prompt": "先輩のような関係がいいですか?"
+      }
+    },
+    "ax:roles~姉": {
+      "discover": {
+        "prompt": "姉のような存在がいいですか?"
+      }
+    },
+    "ax:roles~妹": {
+      "discover": {
+        "prompt": "妹のような存在がいいですか?"
+      }
+    },
+    "ax:roles~母性": {
+      "discover": {
+        "prompt": "母性のある存在がいいですか?"
+      }
+    },
+    "ax:roles~教師": {
+      "discover": {
+        "prompt": "先生のような存在がいいですか?"
+      }
+    },
+    "ax:roles~主従": {
+      "discover": {
+        "prompt": "主従の関係がいいですか?"
+      }
+    },
+    "ax:roles~ライバル": {
+      "discover": {
+        "prompt": "ライバルのような関係がいいですか?"
+      }
+    },
+    "ax:distance=積極的": {
+      "discover": {
+        "prompt": "距離感は積極的なほうがいいですか?"
+      }
+    },
+    "ax:distance=やや積極的": {
+      "discover": {
+        "prompt": "距離感はやや積極的なくらいがいいですか?"
+      }
+    },
+    "ax:distance=中立": {
+      "discover": {
+        "prompt": "距離感は中立くらいがいいですか?"
+      }
+    },
+    "ax:distance=やや受け身": {
+      "discover": {
+        "prompt": "距離感はやや受け身なくらいがいいですか?"
+      }
+    },
+    "ax:distance=受け身": {
+      "discover": {
+        "prompt": "距離感は受け身なほうがいいですか?"
+      }
+    },
+    "ax:species=人間": {
+      "discover": {
+        "prompt": "種族は人間がいいですか?"
+      }
+    },
+    "ax:species=エルフ": {
+      "discover": {
+        "prompt": "種族はエルフがいいですか?"
+      }
+    },
+    "ax:species=獣人": {
+      "discover": {
+        "prompt": "種族は獣人がいいですか?"
+      }
+    },
+    "ax:species=魔族": {
+      "discover": {
+        "prompt": "種族は魔族がいいですか?"
+      }
+    },
+    "ax:species=機械": {
+      "discover": {
+        "prompt": "種族は機械がいいですか?"
+      }
+    },
+    "ax:species=不死": {
+      "discover": {
+        "prompt": "種族は不死がいいですか?"
+      }
+    },
+    "ax:mood=甘め": {
+      "discover": {
+        "prompt": "雰囲気は甘め寄りがいいですか?"
+      }
+    },
+    "ax:mood=支配的": {
+      "discover": {
+        "prompt": "雰囲気は支配的寄りがいいですか?"
+      }
+    },
+    "ax:mood=従属的": {
+      "discover": {
+        "prompt": "雰囲気は従属的寄りがいいですか?"
+      }
+    },
+    "ax:mood=純愛寄り": {
+      "discover": {
+        "prompt": "雰囲気は純愛寄りがいいですか?"
+      }
+    },
+    "ax:mood=背徳寄り": {
+      "discover": {
+        "prompt": "雰囲気は背徳寄りがいいですか?"
+      }
+    },
+    "ax:combat=戦う": {
+      "discover": {
+        "prompt": "戦うキャラがいいですか?"
+      }
+    },
+    "ax:combat=戦わない": {
+      "discover": {
+        "prompt": "戦わないキャラがいいですか?"
+      }
+    },
+    "ax:affiliationKind=学生": {
+      "discover": {
+        "skip": true
+      }
+    },
+    "ax:affiliationKind=社会人": {
+      "discover": {
+        "prompt": "所属は社会人がいいですか?"
+      }
+    },
+    "ax:affiliationKind=軍・組織": {
+      "discover": {
+        "prompt": "所属は軍や組織がいいですか?"
+      }
+    },
+    "ax:affiliationKind=冒険者": {
+      "discover": {
+        "prompt": "所属は冒険者がいいですか?"
+      }
+    },
+    "ax:affiliationKind=非人間・その他": {
+      "discover": {
+        "prompt": "所属は非人間やその他がいいですか?"
+      }
+    },
+    "ax:ageFeel=幼い": {
+      "discover": {
+        "skip": true
+      }
+    },
+    "ax:ageFeel=同年代": {
+      "discover": {
+        "prompt": "見た目の年齢は同年代くらいがいいですか?"
+      }
+    },
+    "ax:ageFeel=年上": {
+      "discover": {
+        "prompt": "見た目は年上で落ち着いた印象がいいですか?"
+      }
+    },
+    "ax:ageFeel=熟れた": {
+      "discover": {
+        "prompt": "見た目は大人びた印象がいいですか?"
+      }
+    },
+    "ax:build=華奢": {
+      "discover": {
+        "prompt": "体格は華奢なほうがいいですか?"
+      }
+    },
+    "ax:build=標準": {
+      "discover": {
+        "prompt": "体格は標準くらいがいいですか?"
+      }
+    },
+    "ax:build=むっちり": {
+      "discover": {
+        "prompt": "体格はむっちりしているほうがいいですか?"
+      }
+    },
+    "ax:stature=小柄": {
+      "discover": {
+        "prompt": "身長は小柄なほうがいいですか?"
+      }
+    },
+    "ax:stature=標準": {
+      "discover": {
+        "prompt": "身長は平均くらいがいいですか?"
+      }
+    },
+    "ax:stature=長身": {
+      "discover": {
+        "prompt": "身長は高いほうがいいですか?"
+      }
+    },
+    "ax:occupation~忍者": {
+      "discover": {
+        "prompt": "忍者がいいですか?"
+      }
+    },
+    "ax:occupation~海賊": {
+      "discover": {
+        "prompt": "海賊がいいですか?"
+      }
+    },
+    "ax:occupation~兵士・軍人": {
+      "discover": {
+        "prompt": "軍人や兵士がいいですか?"
+      }
+    },
+    "ax:occupation~警察・公安": {
+      "discover": {
+        "prompt": "警察や公安の立場がいいですか?"
+      }
+    },
+    "ax:occupation~スパイ・暗殺者": {
+      "discover": {
+        "prompt": "スパイや暗殺者がいいですか?"
+      }
+    },
+    "ax:occupation~アイドル・芸能": {
+      "discover": {
+        "prompt": "アイドルや芸能人がいいですか?"
+      }
+    },
+    "ax:occupation~アスリート": {
+      "discover": {
+        "prompt": "スポーツ選手がいいですか?"
+      }
+    },
+    "ax:occupation~巫女・神職": {
+      "discover": {
+        "prompt": "巫女や神職がいいですか?"
+      }
+    },
+    "ax:occupation~神様・精霊": {
+      "discover": {
+        "prompt": "神様や精霊がいいですか?"
+      }
+    },
+    "ax:occupation~メイド・従者": {
+      "discover": {
+        "prompt": "メイドや従者がいいですか?"
+      }
+    },
+    "ax:occupation~王族・貴族": {
+      "discover": {
+        "prompt": "王族や貴族がいいですか?"
+      }
+    },
+    "ax:occupation~医療従事者": {
+      "discover": {
+        "prompt": "医者や看護師がいいですか?"
+      }
+    },
+    "ax:occupation~研究者・発明家": {
+      "discover": {
+        "prompt": "研究者や発明家がいいですか?"
+      }
+    },
+    "ax:occupation~魔法使い・魔術師": {
+      "discover": {
+        "prompt": "魔法使いや魔術師がいいですか?"
+      }
+    },
+    "ax:roles~恋人・伴侶": {
+      "discover": {
+        "prompt": "恋人や伴侶のような関係がいいですか?"
+      }
+    },
+    "ax:roles~友人": {
+      "discover": {
+        "prompt": "対等な友人のような関係がいいですか?"
+      }
+    },
+    "ax:outfit~和服・着物": {
+      "discover": {
+        "prompt": "服装は和服や着物がいいですか?"
+      }
+    },
+    "ax:occupation~会社員・OL": {
+      "discover": {
+        "prompt": "会社員やOLがいいですか?"
+      }
+    },
+    "ax:occupation~教師・講師": {
+      "discover": {
+        "prompt": "教師や講師がいいですか?"
+      }
+    },
+    "ax:occupation~格闘家・武道家": {
+      "discover": {
+        "prompt": "格闘家や武道家がいいですか?"
+      }
+    },
+    "ax:personality=むっつり": {
+      "discover": {
+        "prompt": "性格はむっつり寄りがいいですか?"
+      }
+    },
+    "db:eyepatch": {
+      "discover": {
+        "prompt": "眼帯をしているほうがいいですか?"
+      }
+    },
+    "sf:world=現代日本": {
+      "discover": {
+        "skip": true
+      }
+    },
+    "sf:world=異世界ファンタジー": {
+      "discover": {
+        "skip": true
+      }
+    },
+    "sf:world=SF・近未来": {
+      "discover": {
+        "skip": true
+      }
+    },
+    "sf:world=和風": {
+      "discover": {
+        "skip": true
+      }
+    },
+    "sf:world=歴史": {
+      "discover": {
+        "skip": true
+      }
+    },
+    "sf:era=2000年以前": {
+      "discover": {
+        "skip": true
+      }
+    },
+    "sf:era=2000年代": {
+      "discover": {
+        "skip": true
+      }
+    },
+    "sf:era=2010年代": {
+      "discover": {
+        "skip": true
+      }
+    },
+    "sf:era=2020年代": {
+      "discover": {
+        "skip": true
+      }
+    },
+    "sf:genre=バトル": {
+      "discover": {
+        "skip": true
+      }
+    },
+    "sf:genre=日常": {
+      "discover": {
+        "skip": true
+      }
+    },
+    "sf:genre=恋愛": {
+      "discover": {
+        "skip": true
+      }
+    },
+    "sf:genre=ミリタリー": {
+      "discover": {
+        "skip": true
+      }
+    },
+    "sf:genre=アイドル": {
+      "discover": {
+        "skip": true
+      }
+    },
+    "sf:media=ゲーム": {
+      "discover": {
+        "skip": true
+      }
+    },
+    "sf:media=アニメ": {
+      "discover": {
+        "skip": true
+      }
+    },
+    "sf:media=漫画": {
+      "discover": {
+        "skip": true
+      }
+    },
+    "sf:media=小説・ライトノベル": {
+      "discover": {
+        "skip": true
+      }
+    },
+    "sf:media=VTuber・配信": {
+      "discover": {
+        "skip": true
+      }
+    }
+  }
+}

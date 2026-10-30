@@ -19,6 +19,35 @@ export const CONFIDENCE_LABEL: Record<Confidence, string> = {
   no: 'いいえ',
 };
 
+/**
+ * 遊び方。`guess` は思い浮かべた推しを当てる、`discover` は好みの特徴で理想の推しを探す
+ * （質問の出し方の方針は engine/bayes.ts の QUESTION_POLICIES）。
+ */
+export type QuestionMode = 'guess' | 'discover';
+
+/**
+ * 遊び方ごとの答えのボタンの文言（R14-5）。`CONFIDENCE_LABEL` は遊び方を決めない呼び出し側向けにそのまま残す。
+ * - guess: 事実を答える形（「〜ですか?」）に合わせる。覚えていなければ「わからない」。
+ * - discover: 好みを答える形（「〜がいいですか?」）に合わせる。
+ * 意味・重みは `CONFIDENCE_WEIGHT` のとおりで、どちらの遊び方でも変わらない（中央は重み0）。
+ */
+export const CONFIDENCE_LABELS_BY_MODE: Record<QuestionMode, Record<Confidence, string>> = {
+  guess: {
+    yes: 'はい',
+    probably_yes: 'たぶんそう',
+    unknown: 'わからない',
+    probably_no: 'たぶん違う',
+    no: 'いいえ',
+  },
+  discover: {
+    yes: 'いい',
+    probably_yes: 'ややいい',
+    unknown: 'どちらでも良い',
+    probably_no: 'あまりよくない',
+    no: 'よくない',
+  },
+};
+
 export const CONFIDENCE_WEIGHT: Record<Confidence, number> = {
   yes: 1,
   probably_yes: 0.5,

@@ -18,8 +18,11 @@ import {
   type BayesProbe,
   type Confidence,
   type Dataset,
+  type LikelihoodsFile,
   type QuestionPolicy,
+  type QuestionsRuntimeFile,
   type Scored,
+  initBayesData,
 } from '../src/engine/bayes';
 import { survivors, topGuess } from '../src/engine/recommend';
 import { readJson } from './helpers/data';
@@ -81,7 +84,9 @@ function runToGuess(
 ): { guess: Scored; answers: BayesAnswerMap; askedKeys: Set<string>; probesExhausted: boolean; scored: Scored[] } {
   const answers: BayesAnswerMap = {};
   const askedKeys = new Set<string>();
-  for (let guard = 0; guard <= HARD_CAP_BAYES + 2; guard += 1) {
+  // 止め方(質問数の上限)は方針ごと(R14)。方針なしは HARD_CAP_BAYES。
+  const hardCap = opts?.policy?.stop?.hardCap ?? HARD_CAP_BAYES;
+  for (let guard = 0; guard <= hardCap + 2; guard += 1) {
     const probe = bayesNextProbe(dataset, answers, askedKeys, opts);
     const scored = bayesScoreCharacters(answers, dataset, opts);
     // probe===null は「情報量(期待エントロピー削減)がMIN_GAIN_BAYES以上の質問が
@@ -89,7 +94,7 @@ function runToGuess(
     // 進む（存在しない質問を asking 画面に表示できないため）ので、テストでも
     // 同じ短絡にし、どちらで止まったかを呼び出し側へ返す。
     if (probe === null) return { guess: topGuess(scored, opts?.rng), answers, askedKeys, probesExhausted: true, scored };
-    if (bayesShouldGuess(scored, askedKeys.size, true)) {
+    if (bayesShouldGuess(scored, askedKeys.size, true, opts?.policy)) {
       return { guess: topGuess(scored, opts?.rng), answers, askedKeys, probesExhausted: false, scored };
     }
     answers[probe.key] = strategy(probe);
@@ -288,13 +293,12 @@ describe('BC. ベイズ推薦エンジン', () => {
     });
   });
 
-  describe('BC15: 質問の出し方の方針（R12）', () => {
-    const AXIS_BY_KEY = new Map(
-      (questionsRuntimeData as { questions: { key: string; reason: { axis: string } }[] }).questions.map((q) => [q.key, q.reason.axis]),
-    );
+  describe('BC15: 質問の出し方の方針（R12。遊び方ごとの出し方・止め方は R14）', () => {
+    const RUNTIME = questionsRuntimeData as unknown as QuestionsRuntimeFile;
+    const AXIS_BY_KEY = new Map(RUNTIME.questions.map((q) => [q.key, q.reason.axis]));
     const SERIES = new Set(['world', 'era', 'genre', 'media']);
     // 乱択あり(本番と同じ)で、方針ごとに無作為のキャラ40体を最後まで聞く(1体およそ1秒)。
-    const sessionsByPolicy = new Map<string, { id: string; axes: (string | undefined)[] }[]>();
+    const sessionsByPolicy = new Map<string, { id: string; keys: string[]; axes: (string | undefined)[] }[]>();
     beforeAll(() => {
       for (const [name, policy] of Object.entries(QUESTION_POLICIES)) {
         const rand = mulberry32(20261026);
@@ -303,17 +307,62 @@ describe('BC. ベイズ推薦エンジン', () => {
           Array.from({ length: 40 }, () => {
             const target = dataset.characters[Math.floor(rand() * dataset.characters.length)];
             const { askedKeys } = runToGuess(dataset, oracleFor(target), { rng: rand, policy });
-            return { id: target.id, axes: [...askedKeys].map((key) => AXIS_BY_KEY.get(key)) };
+            return { id: target.id, keys: [...askedKeys], axes: [...askedKeys].map((key) => AXIS_BY_KEY.get(key)) };
           }),
         );
       }
     }, 900000);
+
+    /** 同じ方針で最初の n 問を、対象キャラ自身の尤度で答えながら聞く(推測までは進めない。rng 省略時は決定論)。 */
+    function firstProbes(policy: QuestionPolicy, n: number, target: Character, rng?: () => number): BayesProbe[] {
+      const strategy = oracleFor(target);
+      const answers: BayesAnswerMap = {};
+      const askedKeys = new Set<string>();
+      const probes: BayesProbe[] = [];
+      for (let i = 0; i < n; i += 1) {
+        const probe = bayesNextProbe(dataset, answers, askedKeys, { rng, policy });
+        if (probe === null) break;
+        probes.push(probe);
+        answers[probe.key] = strategy(probe);
+        askedKeys.add(probe.key);
+      }
+      return probes;
+    }
+
+    /** 全部「どちらでも良い」で答え(事後分布が動かない)、候補が尽きるか n 問になるまで聞いた質問(rng なしの決定論)。 */
+    function unknownRun(policy: QuestionPolicy, n: number): BayesProbe[] {
+      const answers: BayesAnswerMap = {};
+      const askedKeys = new Set<string>();
+      const probes: BayesProbe[] = [];
+      for (let i = 0; i < n; i += 1) {
+        const probe = bayesNextProbe(dataset, answers, askedKeys, { policy });
+        if (probe === null) break;
+        probes.push(probe);
+        answers[probe.key] = 'unknown';
+        askedKeys.add(probe.key);
+      }
+      return probes;
+    }
+
+    const modesOf = (key: string) => RUNTIME.questions.find((q) => q.key === key)?.modes;
+    /** 確信がない(1位 0.3 / 2位 0.25。P_STOP・ODDS_STOP に届かない)候補の並び。 */
+    const unsure: Scored[] = [
+      { character: dataset.characters[0], score: SCORE_SCALE * 0.3, supplyRank: '豊富', reasons: [] },
+      { character: dataset.characters[1], score: SCORE_SCALE * 0.25, supplyRank: '豊富', reasons: [] },
+    ];
+    const confident: Scored[] = [
+      { character: dataset.characters[0], score: SCORE_SCALE * 0.9, supplyRank: '豊富', reasons: [] },
+      { character: dataset.characters[1], score: SCORE_SCALE * 0.05, supplyRank: '豊富', reasons: [] },
+    ];
 
     it('どの方針でも、forcedSlots の問目にはその軸の質問が出る（それまでに同じ軸が出ていなければ）', () => {
       for (const [name, policy] of Object.entries(QUESTION_POLICIES)) {
         for (const { id, axes } of sessionsByPolicy.get(name)!) {
           for (const slot of policy.forcedSlots) {
             if (axes.length < slot.at) continue;
+            // leadGroups の問目(先頭)は組の順番が先に決まる。forcedSlots の軸(性格・距離感・雰囲気)も組に入っているので、
+            // 先頭の6問の中で必ず出る(下の「最初の6問は、6つの組から1問ずつ」で確かめる)。
+            if (slot.at <= (policy.leadGroups?.length ?? 0)) continue;
             const before = axes.slice(0, slot.at - 1);
             if (before.some((axis) => axis !== undefined && slot.axes.includes(axis))) continue;
             expect(slot.axes, `${name} ${id}: ${slot.at}問目が「${axes[slot.at - 1]}」`).toContain(axes[slot.at - 1]);
@@ -350,6 +399,131 @@ describe('BC. ベイズ推薦エンジン', () => {
       const guessSeries = sessionsByPolicy.get('guess')!.map(({ axes }) => axes.filter((a) => a !== undefined && SERIES.has(a)).length);
       expect(Math.max(...guessSeries)).toBeGreaterThan(2);
     });
+
+    it('guess・discover とも、modes で skip の質問は1問も出ない(方針なしでは出る質問が、遊び方では出ない)', () => {
+      const defaultKeys = unknownRun(QUESTION_POLICIES.default, 40).map((p) => p.key);
+      for (const mode of ['guess', 'discover'] as const) {
+        const skipped = new Set(RUNTIME.questions.filter((q) => q.modes?.[mode]?.skip === true).map((q) => q.key));
+        expect(skipped.size, mode).toBeGreaterThan(0);
+        for (const { id, keys } of sessionsByPolicy.get(mode)!) {
+          expect(keys.filter((key) => skipped.has(key)), `${mode} ${id}`).toEqual([]);
+        }
+        // 事後分布を動かさず聞き続けると、上位の質問から順に出る。方針なしでは skip の質問が混ざる(対照)。
+        expect(defaultKeys.some((key) => skipped.has(key)), `${mode}: 対照(default)にも出ない`).toBe(true);
+        expect(unknownRun(QUESTION_POLICIES[mode], 40).filter((p) => skipped.has(p.key)), mode).toEqual([]);
+      }
+    }, 60000);
+
+    it('discover: 最初の6問は、6つの組(leadGroups)から1問ずつ', () => {
+      const lead = QUESTION_POLICIES.discover.leadGroups!;
+      expect(lead.length).toBe(6);
+      const groupOf = (axis: string | undefined) => lead.findIndex((g) => axis !== undefined && g.includes(axis));
+      let checked = 0;
+      for (const { id, axes } of sessionsByPolicy.get('discover')!) {
+        if (axes.length < lead.length) continue;
+        checked += 1;
+        const groups = axes.slice(0, lead.length).map(groupOf).sort((a, b) => a - b);
+        expect(groups, `${id}: ${axes.slice(0, lead.length).join(',')}`).toEqual(lead.map((_g, i) => i));
+      }
+      expect(checked).toBeGreaterThan(0);
+    });
+
+    it('discover: rng を変えると先頭の軸の順番が変わる(rng が無ければ同じ順)', () => {
+      const lead = QUESTION_POLICIES.discover.leadGroups!;
+      const groupOf = (axis: string) => lead.findIndex((g) => g.includes(axis));
+      const target = survivors(dataset)[0];
+      const orders = new Set<string>();
+      for (let seed = 1; seed <= 6; seed += 1) {
+        const probes = firstProbes(QUESTION_POLICIES.discover, lead.length, target, mulberry32(seed));
+        orders.add(probes.map((p) => groupOf(p.reason.axis)).join(','));
+      }
+      expect(orders.size, [...orders].join(' / ')).toBeGreaterThan(1);
+
+      const fixed = () => firstProbes(QUESTION_POLICIES.discover, lead.length, target).map((p) => p.key);
+      expect(fixed()).toEqual(fixed());
+    }, 60000);
+
+    it('discover: 細かい見た目(group detail)は1回に2問まで。上限に達したら全部の段の候補から外す', () => {
+      const detailKeys = new Set(RUNTIME.questions.filter((q) => q.modes?.discover?.group === 'detail').map((q) => q.key));
+      expect(detailKeys.size).toBeGreaterThan(2);
+      for (const { id, keys } of sessionsByPolicy.get('discover')!) {
+        expect(keys.filter((key) => detailKeys.has(key)).length, id).toBeLessThanOrEqual(2);
+      }
+
+      // 細かい見た目の軸(looks・outfit)だけが残る方針にして、上限が効くことを確かめる。上限なしなら2問を超える(対照)。
+      const detailAxes = new Set([...detailKeys].map((key) => AXIS_BY_KEY.get(key)));
+      const otherAxes = [...new Set(AXIS_BY_KEY.values())].filter((axis) => !detailAxes.has(axis));
+      const detailOnly: QuestionPolicy = { mode: 'discover', forcedSlots: [], groupLimits: [{ axes: otherAxes, max: 0 }] };
+      const countDetail = (policy: QuestionPolicy) => unknownRun(policy, 12).filter((p) => detailKeys.has(p.key)).length;
+      expect(countDetail({ ...detailOnly, groupQuestionLimits: [{ group: 'detail', max: 2 }] })).toBe(2);
+      expect(countDetail(detailOnly), '対照(上限なし)').toBeGreaterThan(2);
+    }, 60000);
+
+    it('probe.prompt: discover は好みを聞く文(「〜がいいですか?」)、guess と default は従来の文のまま', () => {
+      const target = survivors(dataset)[0];
+      const basePrompt = (key: string) => RUNTIME.questions.find((q) => q.key === key)!.prompt;
+      const discoverKeys = new Set<string>();
+      for (const probe of firstProbes(QUESTION_POLICIES.discover, 8, target, mulberry32(7))) {
+        expect(probe.prompt, probe.key).toBe(modesOf(probe.key)?.discover?.prompt);
+        expect(probe.prompt.endsWith('がいいですか?'), probe.prompt).toBe(true);
+        expect(probe.prompt, probe.key).not.toBe(basePrompt(probe.key));
+        discoverKeys.add(probe.key);
+      }
+      for (const name of ['guess', 'default'] as const) {
+        for (const probe of firstProbes(QUESTION_POLICIES[name], 6, target)) expect(probe.prompt, `${name} ${probe.key}`).toBe(basePrompt(probe.key));
+      }
+      // 上で discover の文を返した質問も、方針なしでは元の文のまま(返すのは写しで、読み込んだ質問そのものは書き換えない)。
+      const plain = unknownRun({ forcedSlots: [], groupLimits: [] }, 60);
+      const overlap = plain.filter((p) => discoverKeys.has(p.key));
+      expect(overlap.length).toBeGreaterThan(0);
+      for (const probe of overlap) expect(probe.prompt, probe.key).toBe(basePrompt(probe.key));
+    }, 60000);
+
+    it('default: modes 欄のないデータでも、質問の列(keyと文)がまったく同じ', () => {
+      const target = survivors(dataset)[0];
+      const run = () => [3, 4].map((seed) => firstProbes(QUESTION_POLICIES.default, 10, target, mulberry32(seed)).map((p) => `${p.key} ${p.prompt}`));
+      const withModes = run();
+      const likelihoodsFile = likelihoodsData as unknown as LikelihoodsFile;
+      initBayesData(likelihoodsFile, { ...RUNTIME, questions: RUNTIME.questions.map(({ modes: _modes, ...rest }) => rest) });
+      try {
+        expect(run()).toEqual(withModes);
+      } finally {
+        initBayesData(likelihoodsFile, RUNTIME);
+      }
+    }, 60000);
+
+    it('止め方: guess は確信がないと20問で止まらず30問で止まり、外した後も6問で止まらず15問で止まる。default・discover は20問・6問のまま', () => {
+      const { guess, discover, default: base } = QUESTION_POLICIES;
+      expect([HARD_CAP_BAYES, BONUS_MAX_QUESTIONS_BAYES]).toEqual([20, 6]);
+      expect(guess.stop).toEqual({ hardCap: 30, bonusMax: 15 });
+      expect([base.stop, discover.stop]).toEqual([undefined, undefined]);
+
+      // 最初の推測
+      for (const policy of [undefined, base, discover]) {
+        expect(bayesShouldGuess(unsure, 19, true, policy)).toBe(false);
+        expect(bayesShouldGuess(unsure, 20, true, policy)).toBe(true);
+      }
+      expect(bayesShouldGuess(unsure, 20, true, guess)).toBe(false);
+      expect(bayesShouldGuess(unsure, 29, true, guess)).toBe(false);
+      expect(bayesShouldGuess(unsure, 30, true, guess)).toBe(true);
+      expect(bayesShouldGuess(confident, 10, true, guess), '差がついていれば上限を待たない').toBe(true);
+
+      // 外した後の聞き直し
+      for (const policy of [undefined, base, discover]) {
+        expect(bayesShouldReguess(unsure, 5, true, policy)).toBe(false);
+        expect(bayesShouldReguess(unsure, 6, true, policy)).toBe(true);
+      }
+      expect(bayesShouldReguess(unsure, 6, true, guess)).toBe(false);
+      expect(bayesShouldReguess(unsure, 14, true, guess)).toBe(false);
+      expect(bayesShouldReguess(unsure, 15, true, guess)).toBe(true);
+      expect(bayesShouldReguess(confident, BONUS_MIN_QUESTIONS_BAYES, true, guess), '差がついていれば上限を待たない').toBe(true);
+      expect(bayesShouldReguess(confident, BONUS_MIN_QUESTIONS_BAYES - 1, true, guess), '最低問数は守る').toBe(false);
+    });
+
+    it('guess は、ずっと確信が持てなくても30問まで聞いてから推測する(default は20問)', () => {
+      const { askedKeys } = runToGuess(dataset, always('unknown'), { policy: QUESTION_POLICIES.guess });
+      expect(askedKeys.size).toBe(30);
+    }, 60000);
   });
 
   // 2026-08-02発見（500体拡張Stage 1 査読キャンペーン完走・reachable 185→488）:
