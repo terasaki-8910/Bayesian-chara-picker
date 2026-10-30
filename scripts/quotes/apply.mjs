@@ -15,6 +15,7 @@
  *     同じ候補に複数の結果があるときは、verified / corrected を not_found より優先する
  *     （検索の上限で調べきれなかった候補を、別の担当で調べ直すため）。
  *   web/search-*.out.json, web/lunas-*.out.json  探索の結果（TASK-search の形）
+ *   web/lunap-*.out.json, web/lunax-*.out.json  ページの本文で探した結果（TASK-page・TASK-extract。形は TASK-search と同じ）
  * 査読の答え（review.json）は [{ rkey, decision: "accept" | "reject", reason, harsh? }]。一覧の全件に答えが要る。
  *
  * 入れ方:
@@ -56,7 +57,13 @@ const clean = (s) =>
     .normalize('NFC')
     .replace(/([、。！？!?…])[ ]+(?=[^\x20-\x7e])/g, '$1')
     // ゲームの表記や漫画の書き起こしの区切りの空白は残し、和文の間では全角にそろえる。
-    .replace(/([^\x20-\x7e]) (?=[^\x20-\x7e])/g, '$1\u3000');
+    .replace(/([^\x20-\x7e]) (?=[^\x20-\x7e])/g, '$1\u3000')
+    // 読点・句点の直後の全角空白（本文の改行の名残）は除く。！？のあとの全角空白は和文の普通の書き方なので残す。
+    .replace(/([、。])\u3000+/g, '$1')
+    // 表示側が「」で囲むので、台詞全体を囲む「」は外し、台詞の中の「」は入れ子の『』にする。
+    .replace(/^「([^「」]*)」$/, '$1')
+    .replace(/「/g, '『')
+    .replace(/」/g, '』');
 // ○○ はゲームの中でプレイヤー名が入る穴（「○○P」など）。そのままでは台詞にならない。
 const okText = (t) => t && [...t].length <= MAX_LENGTH && !/[「」\r\n]/.test(t) && !/[○〇●◯]{2}/.test(t);
 // 検索エンジンの結果ページは出どころにならない（何が書いてあったか後から辿れない）。
@@ -89,7 +96,7 @@ function main() {
     const prev = verifyResults.get(r.key);
     if (!prev || (STATUS_RANK[r.status] ?? 0) > (STATUS_RANK[prev.status] ?? 0)) verifyResults.set(r.key, r);
   }
-  const searchRows = readOuts(webDir, /^(search|lunas)-\d+\.out\.json$/);
+  const searchRows = readOuts(webDir, /^(search|lunas|lunap|lunax)-\d+\.out\.json$/);
 
   // 抜き取りの判定（R13-1）。
   const sampled = collected.filter((q) => q.confidence === 'high' && q.sampled);
