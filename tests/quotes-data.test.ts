@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { z } from 'zod';
 
+import forbiddenTermsFile from '../config/forbidden-terms.json';
 import { readJson } from './helpers/data';
 import type { Character } from '../src/data/schema';
 
@@ -73,6 +74,23 @@ describe('A18. 名台詞のデータ', () => {
       if (t !== t.normalize('NFC')) bad.push(`${id}: NFC でない "${t}"`);
     });
     expect(bad).toEqual([]);
+  });
+
+  it('A18: 台詞は禁止語(config/forbidden-terms.json)を含まない', () => {
+    // data/ は禁止語の lint の対象外なので、ここで照合する（BA4 と同じ）。
+    // キャラの名前と別名は固有名詞なので外す（FGO のキャラ名が禁止語の1つに部分一致する）。
+    const names = characters
+      .flatMap((c) => [c.name, ...c.aliases])
+      .filter((n) => n.length > 0)
+      .sort((a, b) => b.length - a.length);
+    const hits: string[] = [];
+    eachQuote((id, q) => {
+      const lower = names.reduce((s, n) => s.split(n).join(' '), q.text).toLowerCase();
+      for (const term of forbiddenTermsFile.terms) {
+        if (lower.includes(term.toLowerCase())) hits.push(`${id}: 「${term}」を含む "${q.text}"`);
+      }
+    });
+    expect(hits).toEqual([]);
   });
 
   it('A18: 同じキャラに同じ台詞が重ならない', () => {
