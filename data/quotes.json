@@ -197,6 +197,98 @@
         "checked": "verified"
       }
     ],
+    "arknights-angelina": [
+      {
+        "text": "チャオ、あたしはシラクーザからのトランスポーター、安心院アンジェリーナだよ。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%82%A2%E3%83%B3%E3%82%B8%E3%82%A7%E3%83%AA%E3%83%BC%E3%83%8A"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "おはよードクター！",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%82%A2%E3%83%B3%E3%82%B8%E3%82%A7%E3%83%AA%E3%83%BC%E3%83%8A"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "見てよドクター。大地も、山も、雲も、星空も、今じゃもうあたしたちの足元だよ。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%82%A2%E3%83%B3%E3%82%B8%E3%82%A7%E3%83%AA%E3%83%BC%E3%83%8A"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "arknights-aurora": [
+      {
+        "text": "私……きっと探検家には向いてない。探検するより、何かを守る仕事がしたいんだ。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%82%AA%E3%83%BC%E3%83%AD%E3%83%A9"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "あなたたち、これ以上近づかないで。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%82%AA%E3%83%BC%E3%83%AD%E3%83%A9"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "故郷の雪は……私と共に。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%82%AA%E3%83%BC%E3%83%AD%E3%83%A9"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "arknights-bagpipe": [
+      {
+        "text": "『思考を明晰にするは戦術』！",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%83%90%E3%82%B0%E3%83%91%E3%82%A4%E3%83%97"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "『意志を堅固にするは規律』！",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%83%90%E3%82%B0%E3%83%91%E3%82%A4%E3%83%97"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "『生命を救済しうるは慈しみ』！",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%83%90%E3%82%B0%E3%83%91%E3%82%A4%E3%83%97"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "arknights-blaze": [
+      {
+        "text": "感染者の為に戦う、それが私の信条。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%83%96%E3%83%AC%E3%82%A4%E3%82%BA"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "感染者の権利は、感染者自身の手で取り戻す！",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%83%96%E3%83%AC%E3%82%A4%E3%82%BA"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "ちょっと乱暴だけど、かったーい金属とかシェルターを切り裂くのが好きなんだ！",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%83%96%E3%83%AC%E3%82%A4%E3%82%BA"
+        ],
+        "checked": "verified"
+      }
+    ],
     "arknights-blemishine": [
       {
         "text": "剣術とアーツにはイマイチ自信ないけど……でも機械の修理なら私に任せてちょーだい！",
@@ -240,6 +332,52 @@
         "checked": "verified"
       }
     ],
+    "arknights-dusk": [
+      {
+        "text": "このシーが描いた絵はあげられないわよ。誰にもあげないの。リクエストも受けないから！",
+        "source": [
+          "https://smartgamecap.net/?p=27803"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "鋒落とせば長日墜ち、筆起こせば畳嶂起こる！",
+        "source": [
+          "https://smartgamecap.net/?p=27803"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "有形を以て無垠を模し、無形を以て天下を応ず！",
+        "source": [
+          "https://smartgamecap.net/?p=27803"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "arknights-exusiai": [
+      {
+        "text": "リーダー、パーティーでもしない？ヒップホップ流して、アップルパイなんかも焼いちゃってさぁ。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%82%A8%E3%82%AF%E3%82%B7%E3%82%A2"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "ロックン・ロール！",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%82%A8%E3%82%AF%E3%82%B7%E3%82%A2"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "まさに阿吽の呼吸ってやつだね！",
+        "source": [
+          "https://dengekionline.com/articles/31315/"
+        ],
+        "checked": "verified"
+      }
+    ],
     "arknights-eyjafjalla": [
       {
         "text": "先輩、おはようございます！",
@@ -252,6 +390,45 @@
         "text": "こう見えても私、なかなかしぶといですよ！",
         "source": [
           "https://smartgamecap.net/?p=14245"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "arknights-feater": [
+      {
+        "text": "あたしをどこかで見たことがある？そりゃもちろんスクリーンの中ででしょ～。",
+        "source": [
+          "https://smartgamecap.net/?p=14614"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "ロドスでの生活に満足してるかって？まあ、正直に言うと……映画の中より全然面白いよ‼",
+        "source": [
+          "https://smartgamecap.net/?p=14614"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "本物のカンフーの腕があってこそのムービースターさ！",
+        "source": [
+          "https://smartgamecap.net/?p=14614"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "arknights-fiammetta": [
+      {
+        "text": "どんな用件だろうと私がモスティマを捕まえてからにして。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%83%95%E3%82%A3%E3%82%A2%E3%83%A1%E3%83%83%E3%82%BF"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "モスティマのほうがもっと厄介だもの。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%83%95%E3%82%A3%E3%82%A2%E3%83%A1%E3%83%83%E3%82%BF"
         ],
         "checked": "verified"
       }
@@ -299,6 +476,29 @@
         "checked": "verified"
       }
     ],
+    "arknights-goldenglow": [
+      {
+        "text": "今日も楽しく過ごしましょう！",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%87%E3%83%B3%E3%82%B0%E3%82%B0%E3%83%AD%E3%83%BC"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "頑張れ、頑張れ、私ならできる！",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%87%E3%83%B3%E3%82%B0%E3%82%B0%E3%83%AD%E3%83%BC"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "早く離れてください、お願いします！",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%87%E3%83%B3%E3%82%B0%E3%82%B0%E3%83%AD%E3%83%BC"
+        ],
+        "checked": "verified"
+      }
+    ],
     "arknights-ho-olheyak": [
       {
         "text": "今回の私の行いはマイレンダー基金会を代表するものでは無いし、ましてやライン生命を代表したものでもない。",
@@ -317,11 +517,58 @@
         "checked": "verified"
       }
     ],
+    "arknights-irene": [
+      {
+        "text": "イベリア裁判所のトランスポーター、アイリーニです。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%82%A2%E3%82%A4%E3%83%AA%E3%83%BC%E3%83%8B"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "我が灯火が邪悪を払う！",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%82%A2%E3%82%A4%E3%83%AA%E3%83%BC%E3%83%8B"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "我が心が判決を下す。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%82%A2%E3%82%A4%E3%83%AA%E3%83%BC%E3%83%8B"
+        ],
+        "checked": "verified"
+      }
+    ],
     "arknights-kaltsit": [
       {
         "text": "ドクター、かけてくれ。ただの回診だからそう固くなるな。",
         "source": [
           "https://smartgamecap.net/?p=28758"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "arknights-la-pluma": [
+      {
+        "text": "ドクターって、戦うの好き？誰かを切ったり、ぶちのめしたりって……わたし、実はそんなに好きじゃないんだ。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%83%A9%E3%83%BB%E3%83%97%E3%83%AB%E3%83%9E"
+        ],
+        "checked": "verified",
+        "harsh": true
+      },
+      {
+        "text": "パパはね、ほんとはずっと、わたしに手伝いをさせたくなかったんだ。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%83%A9%E3%83%BB%E3%83%97%E3%83%AB%E3%83%9E"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "わたし道案内は得意だよ。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%83%A9%E3%83%BB%E3%83%97%E3%83%AB%E3%83%9E"
         ],
         "checked": "verified"
       }
@@ -335,11 +582,80 @@
         "checked": "verified"
       }
     ],
+    "arknights-lemuen": [
+      {
+        "text": "一切の情けを捨てなさい。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%83%AC%E3%83%9F%E3%83%A5%E3%82%A2%E3%83%B3"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "私が皆の背中を見張っておく。誰も近づけやしない。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%83%AC%E3%83%9F%E3%83%A5%E3%82%A2%E3%83%B3"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "あなたの訃報を聞くのは誰なのか、考えたことある？",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%83%AC%E3%83%9F%E3%83%A5%E3%82%A2%E3%83%B3"
+        ],
+        "checked": "verified"
+      }
+    ],
     "arknights-lin": [
       {
         "text": "あなたの護衛も、面倒事の処理も、してあげたって構わないわ。",
         "source": [
           "https://terra-archive.net/ja/operators/char_4080_lin"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "arknights-ling": [
+      {
+        "text": "心に在るを志となし、言に発するを詩となす。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%83%AA%E3%82%A3%E3%83%B3"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "どうしたの？こっちで一献傾けていく？遠慮するって？残念だね。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%83%AA%E3%82%A3%E3%83%B3"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "遠くに火を望んだところで、熱さは分からないさ。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%83%AA%E3%82%A3%E3%83%B3"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "arknights-liskarm": [
+      {
+        "text": "どんな任務も真面目に取り組む。それがプロの保全員としての基本です。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%83%AA%E3%82%B9%E3%82%AB%E3%83%A0"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "雷鳴よ、轟け。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%83%AA%E3%82%B9%E3%82%AB%E3%83%A0"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "一発で仕留めます。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%83%AA%E3%82%B9%E3%82%AB%E3%83%A0"
         ],
         "checked": "verified"
       }
@@ -360,6 +676,53 @@
         "checked": "verified"
       }
     ],
+    "arknights-mon3tr": [
+      {
+        "text": "あのね、じろじろ見ないでよ。今でも簡単に君を吊るし上げることができるんだから",
+        "source": [
+          "https://arknights.wikiru.jp/?Mon3tr"
+        ],
+        "checked": "verified",
+        "harsh": true
+      },
+      {
+        "text": "私の爪に引っかかれないようにしてよ！",
+        "source": [
+          "https://arknights.wikiru.jp/?Mon3tr"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "滅ぼし、そして癒す。",
+        "source": [
+          "https://arknights.wikiru.jp/?Mon3tr"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "arknights-mostima": [
+      {
+        "text": "ふふ、ラッキーだねドクター。今日は急ぎの仕事がないから、ちょっとなら付き合ってあげるよ。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%83%A2%E3%82%B9%E3%83%86%E3%82%A3%E3%83%9E"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "私にも君という友人がいて……このこみ上げる喜びは本物みたいだ。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%83%A2%E3%82%B9%E3%83%86%E3%82%A3%E3%83%9E"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "トランスポーターにとって、戦いの結果なんてどうでもいいんだ。生き延びさえすれば勝利だからね。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%83%A2%E3%82%B9%E3%83%86%E3%82%A3%E3%83%9E"
+        ],
+        "checked": "verified"
+      }
+    ],
     "arknights-mudrock": [
       {
         "text": "うん？ああ、この土か……彼はささやき、踊る。私の友人だ。",
@@ -374,6 +737,22 @@
         "text": "あら、仕事のタイムシフトも、外出のスケジューリングも任せてくれるのね？",
         "source": [
           "https://terra-archive.net/ja/operators/char_249_mlyss"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "arknights-nian": [
+      {
+        "text": "生きるのは大変だけど、人が必死に生き抜く様はたまらなく好きなのさ。",
+        "source": [
+          "https://smartgamecap.net/?p=19550"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "武器を打つ鍛冶師はな、そいつで流れる血まで背負わなきゃいけないんだ。",
+        "source": [
+          "https://smartgamecap.net/?p=19550"
         ],
         "checked": "verified"
       }
@@ -401,6 +780,52 @@
         "text": "私を助けたのは……君たち？",
         "source": [
           "https://smartgamecap.net/?p=18508"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "arknights-reed-the-flame-shadow": [
+      {
+        "text": "私は今でもただの影……だけど、もう姉さんの影じゃない。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E7%84%94%E5%BD%B1%E3%83%AA%E3%83%BC%E3%83%89"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "ドクター、私はただ……誰にでも帰れる故郷があってほしいだけなんだ。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E7%84%94%E5%BD%B1%E3%83%AA%E3%83%BC%E3%83%89"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "私がダブリンだ。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E7%84%94%E5%BD%B1%E3%83%AA%E3%83%BC%E3%83%89"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "arknights-rosmontis": [
+      {
+        "text": "ロドスのみんなは私の友達、エリートオペレーターと隊員たちは私の家族だよ。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%83%AD%E3%82%B9%E3%83%A2%E3%83%B3%E3%83%86%E3%82%A3%E3%82%B9"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "記憶は負担になるけど、それでも自分で背負わなきゃ。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%83%AD%E3%82%B9%E3%83%A2%E3%83%B3%E3%83%86%E3%82%A3%E3%82%B9"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "私が裁くよ。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%83%AD%E3%82%B9%E3%83%A2%E3%83%B3%E3%83%86%E3%82%A3%E3%82%B9"
         ],
         "checked": "verified"
       }
@@ -484,6 +909,30 @@
         "checked": "verified"
       }
     ],
+    "arknights-surtr": [
+      {
+        "text": "私がここに留まってるのは必要だからじゃない、そうしたいからだ。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%82%B9%E3%83%AB%E3%83%88"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "レーヴァテイン！",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%82%B9%E3%83%AB%E3%83%88"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "死ね！",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%82%B9%E3%83%AB%E3%83%88"
+        ],
+        "checked": "verified",
+        "harsh": true
+      }
+    ],
     "arknights-sussurro": [
       {
         "text": "ドクター、そろそろ休憩の時間だよ。",
@@ -527,11 +976,74 @@
         "checked": "verified"
       }
     ],
+    "arknights-typhon": [
+      {
+        "text": "どっちが獲物か、ここで分からせてやる。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%83%86%E3%82%A3%E3%83%95%E3%82%A9%E3%83%B3"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "その時は……次の闇夜に飛び込むかもしれない。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%83%86%E3%82%A3%E3%83%95%E3%82%A9%E3%83%B3"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "獲物が狩人の手から逃れる術など、ありはしない。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%83%86%E3%82%A3%E3%83%95%E3%82%A9%E3%83%B3"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "arknights-utage": [
+      {
+        "text": "うん？どうしてウタゲなのかって？別に難しい理由はないよ、毎日宴みたいに楽しく過ごせたらなーって。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%82%A6%E3%82%BF%E3%82%B2"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "いっぱい楽しませてくれてサンキュー、ごちそうさま。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%82%A6%E3%82%BF%E3%82%B2"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "そろそろ本気出しますか。嫌な奴ら全部潰しに行こ〜",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%82%A6%E3%82%BF%E3%82%B2"
+        ],
+        "checked": "verified",
+        "harsh": true
+      }
+    ],
     "arknights-virtuosa": [
       {
         "text": "サルカズが歌い、サンクタが伴奏を――誰のためのレクイエムなのかって？",
         "source": [
           "https://terra-archive.net/ja/operators/char_245_cello"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "arknights-vulpisfoglia": [
+      {
+        "text": "悪いね、もうそういうのはやめたんだ。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%82%A6%E3%83%AB%E3%83%94%E3%82%B9%E3%83%95%E3%82%A9%E3%83%AA%E3%82%A2"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "休暇中に考えるようなことじゃないね。",
+        "source": [
+          "https://arknights.wikiru.jp/?%E3%82%A6%E3%83%AB%E3%83%94%E3%82%B9%E3%83%95%E3%82%A9%E3%83%AA%E3%82%A2"
         ],
         "checked": "verified"
       }
@@ -581,6 +1093,22 @@
         "checked": "corrected"
       }
     ],
+    "avemujica-wakaba-mutsumi": [
+      {
+        "text": "私は……バンド、楽しいって思ったこと一度もない",
+        "source": [
+          "https://dic.nicovideo.jp/a/%E8%8B%A5%E8%91%89%E7%9D%A6"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "さきが壊れそうだから",
+        "source": [
+          "https://dic.nicovideo.jp/a/%E8%8B%A5%E8%91%89%E7%9D%A6"
+        ],
+        "checked": "verified"
+      }
+    ],
     "avemujica-yahata-umiri": [
       {
         "text": "Ave Mujicaの練習ですよ…！",
@@ -595,6 +1123,29 @@
         "text": "麦は踏まれて強くなるから、明日のにゃむはもっと強くなっている",
         "source": [
           "https://anibase.net/ja/character/mjrOB/%E7%A5%90%E5%A4%A9%E5%AF%BA%E3%81%AB%E3%82%83%E3%82%80"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "azur-lane-ayanami": [
+      {
+        "text": "綾波……です。『鬼神』とよく言われるのです。よろしくです",
+        "source": [
+          "https://azurlane.gamerch.com/%E7%B6%BE%E6%B3%A2"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "指揮官は食べました？おやつ、です",
+        "source": [
+          "https://azurlane.gamerch.com/%E7%B6%BE%E6%B3%A2"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "『鬼神』の力、味わうがいい…！",
+        "source": [
+          "https://azurlane.gamerch.com/%E7%B6%BE%E6%B3%A2"
         ],
         "checked": "verified"
       }
@@ -783,6 +1334,22 @@
         "harsh": true
       }
     ],
+    "azurlane-kashino": [
+      {
+        "text": "樫野になにか運んだり...お手伝いできたりすることはありませんか？...？",
+        "source": [
+          "https://gamewith.jp/azurlane/article/show/228629"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "名前は樫野で、趣味は温泉に入ること、あと身長と体重は……あっ、そういう自己紹介じゃないですよね！",
+        "source": [
+          "https://gamewith.jp/azurlane/article/show/228629"
+        ],
+        "checked": "verified"
+      }
+    ],
     "azurlane-kisaragi": [
       {
         "text": "如月はおいしくないから、たべないでください……",
@@ -880,6 +1447,22 @@
         "checked": "verified"
       }
     ],
+    "azurlane-taihou": [
+      {
+        "text": "大鳳は重桜の最新型の装甲空母なのです。爆弾だろうと、魚雷だろうと、どれも私に傷一つ付けられません。",
+        "source": [
+          "https://gamewith.jp/azurlane/article/show/401340"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "指揮官様、やっと見つけましたわ～。",
+        "source": [
+          "https://gamewith.jp/azurlane/article/show/401340"
+        ],
+        "checked": "verified"
+      }
+    ],
     "azurlane-takao": [
       {
         "text": "そなたが指揮官か？拙者は高雄、微力ながら力を尽くす所存だ！",
@@ -926,6 +1509,22 @@
         "text": "指揮官、お腹すいた…出撃の前にちょっとお肉を食べに行こうよ！",
         "source": [
           "https://tkmr723.moe/ja/yuudachi-azurlane/"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "azurlane-z23": [
+      {
+        "text": "Guten Tag、指揮官閣下。Z23と申します。一緒に勉強して頂点を目指しましょう！",
+        "source": [
+          "https://azurlane.gamerch.com/Z23"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "今日はやることがいっぱいありますから、サボってはダメですよ",
+        "source": [
+          "https://azurlane.gamerch.com/Z23"
         ],
         "checked": "verified"
       }
@@ -1064,6 +1663,15 @@
         "text": "お前なー、静かに入れっていっつも言ってんだろ。燐子先輩とかいるときもあんだからさ",
         "source": [
           "https://realdgame.jp/bangdream_gbp/nazo/"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "bangdreamgirlsbandparty-maruyama-aya": [
+      {
+        "text": "みなさんこんにちはー☆　まんまるお山に彩を！　丸山彩でーす！",
+        "source": [
+          "https://dic.nicovideo.jp/a/%E4%B8%B8%E5%B1%B1%E5%BD%A9"
         ],
         "checked": "verified"
       }
@@ -1347,6 +1955,45 @@
         "harsh": true
       }
     ],
+    "blue-archive-himari": [
+      {
+        "text": "ミレニアム最高の天才清楚系病弱美少女ハッカーの明星ヒマリと申します。",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%83%92%E3%83%9E%E3%83%AA"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "天才美少女ハッカーの真髄、お見せしましょう。",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%83%92%E3%83%9E%E3%83%AA"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "bluearchive-ako": [
+      {
+        "text": "ゲヘナ学園風紀委員会所属の行政官、天雨アコ。",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%82%A2%E3%82%B3"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "風紀委員の情報収集能力、お見せします。",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%82%A2%E3%82%B3"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "分析完了。弱点は把握済みです。",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%82%A2%E3%82%B3"
+        ],
+        "checked": "verified"
+      }
+    ],
     "bluearchive-aris": [
       {
         "text": "光よ！",
@@ -1365,11 +2012,73 @@
         "checked": "verified"
       }
     ],
+    "bluearchive-aru": [
+      {
+        "text": "ふふ、この私に協力したいと？まあ、断りはしないけど。私を雇うなら高くつくわよ？先生。",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%82%A2%E3%83%AB"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "便利屋に任せておけば、完璧なんだから！",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%82%A2%E3%83%AB"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "先生！いらっしゃい。今日もこの私が先生を警護してあげるわ！",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%82%A2%E3%83%AB"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "bluearchive-asuna": [
+      {
+        "text": "ご主人様と一緒に！楽しい一日を始めちゃおう！",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%82%A2%E3%82%B9%E3%83%8A"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "ふふっ！やっぱり私が必要なんだね！",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%82%A2%E3%82%B9%E3%83%8A"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "ご主人様！見て見て！新しい武器が届いたの！キラキラしてて可愛いでしょ？！",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%82%A2%E3%82%B9%E3%83%8A"
+        ],
+        "checked": "verified"
+      }
+    ],
     "bluearchive-azusa": [
       {
         "text": "たとえ全てが虚しいことだとしても、それは今日最善を尽くさない理由にはならない。",
         "source": [
           "https://note.com/aniken_kokushi/n/nff504e884ea8"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "bluearchive-hanako": [
+      {
+        "text": "浦和ハナコです。これから色々とよろしくお願いしますね。",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%83%8F%E3%83%8A%E3%82%B3"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "おかえりなさい、先生。今日もよろしくお願いいたします。",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%83%8F%E3%83%8A%E3%82%B3"
         ],
         "checked": "verified"
       }
@@ -1388,6 +2097,52 @@
         "text": "有用な物を作ることが楽しいかって？それもあるけど…これは趣味じゃなく、生き様だよ。",
         "source": [
           "https://bluearchive.fandom.com/wiki/Nekozuka_Hibiki/Audio"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "bluearchive-hifumi": [
+      {
+        "text": "あはは…至らない私ですがよろしくお願いします。",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%83%92%E3%83%95%E3%83%9F"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "ペロロ様の出番です！",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%83%92%E3%83%95%E3%83%9F"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "最善を尽くします。",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%83%92%E3%83%95%E3%83%9F"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "bluearchive-hikari": [
+      {
+        "text": "ハイランダー鉄道がくえーん橘ヒカリ……さんじょー。",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%83%92%E3%82%AB%E3%83%AA"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "今日はおサボリデーに決定ー。",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%83%92%E3%82%AB%E3%83%AA"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "返事は待たずに動くーそれが橘ヒカリー。",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%83%92%E3%82%AB%E3%83%AA"
         ],
         "checked": "verified"
       }
@@ -1464,11 +2219,66 @@
         "checked": "verified"
       }
     ],
+    "bluearchive-kanoe": [
+      {
+        "text": "ワイルドハント芸術学院の板垣カノエ……。今日、会えることも……知ってたよ。",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%82%AB%E3%83%8E%E3%82%A8"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "私たち、赤い糸で結ばれてるからね……イヒッ。",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%82%AB%E3%83%8E%E3%82%A8"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "bluearchive-karin": [
+      {
+        "text": "元々私の主はミレニアムそのものだけど、今日だけは…先生がご主人様だ。",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%82%AB%E3%83%AA%E3%83%B3"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "先生の敵は逃がさない。",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%82%AB%E3%83%AA%E3%83%B3"
+        ],
+        "checked": "verified"
+      }
+    ],
     "bluearchive-kayoko": [
       {
         "text": "お世辞じゃないってこと、私、信じるって決めたから……だから、こうしているわけ。",
         "source": [
           "https://r20115.hatenablog.com/entry/dress_kayoko"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "bluearchive-kazusa": [
+      {
+        "text": "トリニティ総合学園、放課後スイーツ部の杏山カズサ。えっと、よろしく……お願い、します。",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%82%AB%E3%82%BA%E3%82%B5"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "ゆっくり食べる暇もない…！",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%82%AB%E3%82%BA%E3%82%B5"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "本腰、入れないとね。じゃあ、行こうか！",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%82%AB%E3%82%ズサ"
         ],
         "checked": "verified"
       }
@@ -1515,6 +2325,22 @@
         "checked": "verified"
       }
     ],
+    "bluearchive-koharu": [
+      {
+        "text": "見た？これが私の実力よ。",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%82%B3%E3%83%8F%E3%83%AB"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "わ、私の前で、素行不良とか許さないから！",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%82%B3%E3%83%8F%E3%83%AB"
+        ],
+        "checked": "verified"
+      }
+    ],
     "bluearchive-kokona": [
       {
         "text": "こ、ココナちゃんって呼ばないでください！小さい子みたいじゃないですか！",
@@ -1524,11 +2350,59 @@
         "checked": "verified"
       }
     ],
+    "bluearchive-mari": [
+      {
+        "text": "すべての方に、祝福を！",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%83%9E%E3%83%AA%E3%83%BC"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "おかえりなさい、先生。今日もお会いできて嬉しいです。",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%83%9E%E3%83%AA%E3%83%BC"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "bluearchive-midori": [
+      {
+        "text": "ドットを打つように緻密に……！",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%83%9F%E3%83%89%E3%83%AA"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "私は絵を描くとき、『萌え』だけではなく『愛おしさ』も込めたいです。",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%83%9F%E3%83%89%E3%83%AA"
+        ],
+        "checked": "verified"
+      }
+    ],
     "bluearchive-mika": [
       {
         "text": "……わーお。",
         "source": [
           "https://wikiwiki.jp/gameongeki/%E3%83%96%E3%83%AB%E3%83%BC%E3%82%A2%E3%83%BC%E3%82%AB%E3%82%A4%E3%83%96%E3%80%90%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E7%B7%A8%E3%80%91%EF%BC%88%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%EF%BC%89"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "bluearchive-miyako": [
+      {
+        "text": "SRT特殊学園、RABBIT小隊の月雪ミヤコです。先生、ご指示を。",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%83%9F%E3%83%A4%E3%82%B3"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "ウサギは寂しいと死んでしまう生き物だそうです。RABBIT小隊も同じです。きっと…。",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%83%9F%E3%83%A4%E3%82%B3"
         ],
         "checked": "verified"
       }
@@ -1567,6 +2441,22 @@
         "checked": "verified"
       }
     ],
+    "bluearchive-nagisa": [
+      {
+        "text": "ふふっ。ごきげんよう。",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%83%8A%E3%82%AE%E3%82%B5"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "素敵なティータイムに音楽は欠かせませんね。",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%83%8A%E3%82%AE%E3%82%B5"
+        ],
+        "checked": "verified"
+      }
+    ],
     "bluearchive-natsu": [
       {
         "text": "ショートケーキについて考えてみたことある？",
@@ -1586,11 +2476,43 @@
         "harsh": true
       }
     ],
+    "bluearchive-noa": [
+      {
+        "text": "セミナーの書記、生塩ノアです。",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%83%8E%E3%82%A2"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "記録とは本来、現在の意志を未来に伝達するための手段だというのに。",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%83%8E%E3%82%A2"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "ちょっと失礼♪記録を開始します。",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%83%8E%E3%82%A2"
+        ],
+        "checked": "verified"
+      }
+    ],
     "bluearchive-nonomi": [
       {
         "text": "うちの子たちはみ〜んな可愛いから。",
         "source": [
           "https://gameranbu.jp/bluearchive/696f1f0b5fcf52ce4174"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "bluearchive-nozomi": [
+      {
+        "text": "列車操縦でも線路建設でも！何でも任せてよ！パヒャヒャッ！",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%83%8E%E3%82%BE%E3%83%9F"
         ],
         "checked": "verified"
       }
@@ -1609,6 +2531,68 @@
         "text": "ミレニアムサイエンススクール、セミナーの調月リオよ。",
         "source": [
           "https://bluearchive.fandom.com/wiki/Tsukatsuki_Rio/Audio"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "bluearchive-saki": [
+      {
+        "text": "SRT特殊学園、RABBIT小隊の空井サキだ。で、シャーレの教範はどこにある？",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%82%B5%E3%82%AD"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "見渡す限りアホ面ばっかりだ。",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%82%B5%E3%82%AD"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "やはり教範は紙に限る。",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%82%B5%E3%82%AD"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "bluearchive-saori": [
+      {
+        "text": "虚しい…全てはただ、虚しいだけだ。",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%82%B5%E3%82%AA%E3%83%AA"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "私はまだ、生きていてもいいのだろうか…",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%82%B5%E3%82%AA%E3%83%AA"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "bluearchive-seia": [
+      {
+        "text": "久方ぶりの邂逅……きっと、こう言うべきなのだろうね。待ちわびたよ、先生。",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%82%BB%E3%82%A4%E3%82%A2"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "君という存在を、少しずつ解釈できてきたよ。君の方はどうかな？",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%82%BB%E3%82%A4%E3%82%A2"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "その目で見届けると良い。",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%82%BB%E3%82%A4%E3%82%A2"
         ],
         "checked": "verified"
       }
@@ -1645,6 +2629,29 @@
         "text": "えらい、えらい。みんなよくできました！",
         "source": [
           "https://bajiten.cloudfree.jp/生徒一覧_58/"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "bluearchive-suzumi": [
+      {
+        "text": "正義というものは、一つの小さなことから正すのが大事なのです。",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%82%B9%E3%82%BA%E3%83%9F"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "この地域はもう安全です。みなさん、お疲れ様でした。",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%82%B9%E3%82%BA%E3%83%9F"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "天罰の光を！",
+        "source": [
+          "https://bluearchive.wikiru.jp/?%E3%82%B9%E3%82%BA%E3%83%9F"
         ],
         "checked": "verified"
       }
@@ -2087,6 +3094,15 @@
         "harsh": true
       }
     ],
+    "danganronpa-2-goodbye-despair-tsumiki-mikan": [
+      {
+        "text": "ごめんなさぁーい！",
+        "source": [
+          "https://charasinri.com/character-tsumiki-mikan/"
+        ],
+        "checked": "verified"
+      }
+    ],
     "danganronpa-asahina-aoi": [
       {
         "text": "さくらちゃんだって…弱いところもある…普通の人間なんだよ……",
@@ -2101,6 +3117,15 @@
         "text": "は…半端者ですと！？",
         "source": [
           "https://gamers-high.com/new-danganronpa-v3/data/chabashira-tenko.html"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "danganronpa-chiaki": [
+      {
+        "text": "原作はバッテリーな野球マンガなのに横スクロールのアクションゲームになったみたいな…それくらい不自然なんだよね",
+        "source": [
+          "https://charasinri.com/character-nanami-chiaki/"
         ],
         "checked": "verified"
       }
@@ -2385,6 +3410,23 @@
         "checked": "verified"
       }
     ],
+    "disgaea-etna": [
+      {
+        "text": "可憐に戦うあたしの姿が、一番の見どころね。",
+        "source": [
+          "https://disgaea.jp/1/index.html"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "あたしを適当に扱ったりしたら、ブッ殺すわよ。",
+        "source": [
+          "https://disgaea.jp/1/index.html"
+        ],
+        "checked": "verified",
+        "harsh": true
+      }
+    ],
     "doa-ayane": [
       {
         "text": "あなたはいつもヒロインだった",
@@ -2418,6 +3460,33 @@
         "text": "短くて魅力的な本から始めたら、そんなに難しいことでもないわよ",
         "source": [
           "https://game-koryaku.com/doki-doki-literature-club/ddlc-just-monika"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "dokidokiliteratureclub-sayori": [
+      {
+        "text": "あるがままで幸せになる権利が、誰にだってある。だから、ナツキちゃんにはここに居場所があるって知ってほしいの",
+        "source": [
+          "https://note.com/meta309/n/n2cba996d3b28"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "dokidokiliteratureclub-yuri": [
+      {
+        "text": "それを誰かに見せるとは、読者に対して心を開き、自分の弱さを晒し、心の一番深いところを見せるということですからね",
+        "source": [
+          "https://note.com/meta309/n/n2cba996d3b28"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "dokidokiprecure-aida-mana": [
+      {
+        "text": "大貝第一中学校生徒会長！相田マナです",
+        "source": [
+          "https://nitiasa.wiki.cre.jp/wiki/%E7%9B%B8%E7%94%B0%E3%83%9E%E3%83%8A"
         ],
         "checked": "verified"
       }
@@ -2561,6 +3630,22 @@
         "text": "遅い！早く進め！！",
         "source": [
           "https://kamatalog.com/anime-review-delicious-in-dungeon/"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "dungeonmeshi-marcille": [
+      {
+        "text": "魔物を食べるとは言ってない!!",
+        "source": [
+          "https://animemanga33.com/archives/61219?PageSpeed=noscript"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "当然のように食おうとするな──ッ",
+        "source": [
+          "https://animemanga33.com/archives/61219?PageSpeed=noscript"
         ],
         "checked": "verified"
       }
@@ -3283,6 +4368,29 @@
         "checked": "verified"
       }
     ],
+    "fe3h-edelgard": [
+      {
+        "text": "合格？　当然でしょ",
+        "source": [
+          "https://www.pegasusknight.com/wiki/fe16/%E4%BC%9A%E8%A9%B1%E9%9B%86/%E3%82%BB%E3%83%AA%E3%83%95%E9%9B%86/%E3%82%A8%E3%83%BC%E3%83%87%E3%83%AB%E3%82%AC%E3%83%AB%E3%83%88"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "挑戦なくして勝利はないわ",
+        "source": [
+          "https://www.pegasusknight.com/wiki/fe16/%E4%BC%9A%E8%A9%B1%E9%9B%86/%E3%82%BB%E3%83%AA%E3%83%95%E9%9B%86/%E3%82%A8%E3%83%BC%E3%83%87%E3%83%AB%E3%82%AC%E3%83%AB%E3%83%88"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "使いこなしてみせる",
+        "source": [
+          "https://www.pegasusknight.com/wiki/fe16/%E4%BC%9A%E8%A9%B1%E9%9B%86/%E3%82%BB%E3%83%AA%E3%83%95%E9%9B%86/%E3%82%A8%E3%83%BC%E3%83%87%E3%83%AB%E3%82%AC%E3%83%AB%E3%83%88"
+        ],
+        "checked": "verified"
+      }
+    ],
     "fe3h-ingrid-brandl-galatea": [
       {
         "text": "空腹を満たすためではなく民の力となるために食べるんです！",
@@ -3310,6 +4418,22 @@
         "checked": "verified"
       }
     ],
+    "fe3h-mercedes-von-martritz": [
+      {
+        "text": "合格できて、一安心ね～",
+        "source": [
+          "https://www.pegasusknight.com/wiki/fe16/%E4%BC%9A%E8%A9%B1%E9%9B%86/%E3%82%BB%E3%83%AA%E3%83%95%E9%9B%86/%E3%83%A1%E3%83%AB%E3%82%BB%E3%83%87%E3%82%B9"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "この歌が、女神様に届くといいわね～。",
+        "source": [
+          "https://www.pegasusknight.com/wiki/fe16/%E4%BC%9A%E8%A9%B1%E9%9B%86/%E3%82%BB%E3%83%AA%E3%83%95%E9%9B%86/%E3%83%A1%E3%83%AB%E3%82%BB%E3%83%87%E3%82%B9"
+        ],
+        "checked": "verified"
+      }
+    ],
     "fe3h-rhea": [
       {
         "text": "見事な働きです",
@@ -3328,6 +4452,29 @@
         "checked": "verified"
       }
     ],
+    "ff7-aerith": [
+      {
+        "text": "じゃあねえ、デート一回!",
+        "source": [
+          "https://wikiwiki.jp/ffdic/%E3%82%BB%E3%83%AA%E3%83%95/FF7"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "おっきな、鳥さん",
+        "source": [
+          "https://wikiwiki.jp/ffdic/%E3%82%BB%E3%83%AA%E3%83%95/FF7"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "……のぞいちゃダメよ",
+        "source": [
+          "https://wikiwiki.jp/ffdic/%E3%82%BB%E3%83%AA%E3%83%95/FF7"
+        ],
+        "checked": "verified"
+      }
+    ],
     "ff7-tifa": [
       {
         "text": "クラウド、私を助けに来てね",
@@ -3335,6 +4482,29 @@
           "https://wikiwiki.jp/ffdic/ストーリー/【7年前の約束】"
         ],
         "checked": "corrected"
+      }
+    ],
+    "ff7-yuffie-kisaragi": [
+      {
+        "text": "アタシの強さにビビってんだろ！",
+        "source": [
+          "https://cour89.com/ff7/tips/yuffie.php"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "アンタらについてってやるよ！",
+        "source": [
+          "https://cour89.com/ff7/tips/yuffie.php"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "ひとーつ、人より修行は苦手。ふたーつ、ふるさとウータイを守るため。みっつ、醜い神羅のソルジャー……成敗してくれよう！",
+        "source": [
+          "https://dic.nicovideo.jp/a/%E3%83%A6%E3%83%95%E3%82%A3%E3%83%BB%E3%82%AD%E3%82%B5%E3%83%A9%E3%82%AE"
+        ],
+        "checked": "verified"
       }
     ],
     "fgo-anastasia": [
@@ -3615,11 +4785,36 @@
         "checked": "corrected"
       }
     ],
+    "fgo-medusa": [
+      {
+        "text": "帰ってもいいですか？",
+        "source": [
+          "https://typemoon.wiki.cre.jp/wiki/%E3%83%A1%E3%83%89%E3%82%A5%E3%83%BC%E3%82%B5"
+        ],
+        "checked": "verified"
+      }
+    ],
     "fgo-murasaki-shikibu": [
       {
         "text": "文に親しみ、詞に焦がれ、ひとの想いに寄り添う女にて――どうぞよしなに",
         "source": [
           "https://w.atwiki.jp/f_go/pages/3909.html"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "fgo-musashi": [
+      {
+        "text": "一刀三拝。無限を破り零に至る",
+        "source": [
+          "https://kamigame.jp/fgo/%E3%82%B5%E3%83%BC%E3%83%B4%E3%82%A1%E3%83%B3%E3%83%88%E3%83%9C%E3%82%A4%E3%82%B9/%E5%AE%AE%E6%9C%AC%E6%AD%A6%E8%94%B5.html"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "よーし、今回も生き残ったわね！うどん食べに行くかっ！",
+        "source": [
+          "https://kamigame.jp/fgo/%E3%82%B5%E3%83%BC%E3%83%B4%E3%82%A1%E3%83%B3%E3%83%88%E3%83%9C%E3%82%A4%E3%82%B9/%E5%AE%AE%E6%9C%AC%E6%AD%A6%E8%94%B5.html"
         ],
         "checked": "verified"
       }
@@ -3679,6 +4874,15 @@
         "text": "我は魔を裂き、神を穿つ、人の祈りを束ねし者、魔神人・沖田総司！",
         "source": [
           "https://w.atwiki.jp/f_go/pages/3306.html"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "fgo-olga-marie-animusphere": [
+      {
+        "text": "………ふん。SOSを送ったところで、誰も助けてくれないクセに。",
+        "source": [
+          "https://typemoon.wiki.cre.jp/wiki/%E3%82%AA%E3%83%AB%E3%82%AC%E3%83%9E%E3%83%AA%E3%83%BC%E3%83%BB%E3%82%A2%E3%83%8B%E3%83%A0%E3%82%B9%E3%83%95%E3%82%A3%E3%82%A2"
         ],
         "checked": "verified"
       }
@@ -3772,6 +4976,29 @@
         "text": "ふふふふ！楽しいわ。とってもね！",
         "source": [
           "https://appmedia.jp/fategrandorder/75727738"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "fgo-suzuka-gozen": [
+      {
+        "text": "サーヴァントセイバー、召喚されて超参上！　みたいなー☆",
+        "source": [
+          "https://kamigame.jp/fgo/%E3%82%B5%E3%83%BC%E3%83%B4%E3%82%A1%E3%83%B3%E3%83%88%E3%83%9C%E3%82%A4%E3%82%B9/%E9%88%B4%E9%B9%BF%E5%BE%A1%E5%89%8D.html"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "全然イケるし？　超余裕だし",
+        "source": [
+          "https://kamigame.jp/fgo/%E3%82%B5%E3%83%BC%E3%83%B4%E3%82%A1%E3%83%B3%E3%83%88%E3%83%9C%E3%82%A4%E3%82%B9/%E9%88%B4%E9%B9%BF%E5%BE%A1%E5%89%8D.html"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "ま、こんぐらいできて当然だし？",
+        "source": [
+          "https://kamigame.jp/fgo/%E3%82%B5%E3%83%BC%E3%83%B4%E3%82%A1%E3%83%B3%E3%83%88%E3%83%9C%E3%82%A4%E3%82%B9/%E9%88%B4%E9%B9%BF%E5%BE%A1%E5%89%8D.html"
         ],
         "checked": "verified"
       }
@@ -4042,6 +5269,29 @@
         "checked": "verified"
       }
     ],
+    "fireemblemengage-celine": [
+      {
+        "text": "ティータイムよ！",
+        "source": [
+          "https://www.pegasusknight.com/wiki/fe17/%E4%BC%9A%E8%A9%B1%E9%9B%86/%E6%88%A6%E9%97%98%E6%99%82%E3%81%AE%E3%82%BB%E3%83%AA%E3%83%95/%E3%82%BB%E3%83%AA%E3%83%BC%E3%83%8C"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "フィレネ王国第一王女、セリーヌ",
+        "source": [
+          "https://www.pegasusknight.com/wiki/fe17/%E4%BC%9A%E8%A9%B1%E9%9B%86/%E6%88%A6%E9%97%98%E6%99%82%E3%81%AE%E3%82%BB%E3%83%AA%E3%83%95/%E3%82%BB%E3%83%AA%E3%83%BC%E3%83%8C"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "平和のために…戦わないと……",
+        "source": [
+          "https://www.pegasusknight.com/wiki/fe17/%E4%BC%9A%E8%A9%B1%E9%9B%86/%E6%88%A6%E9%97%98%E6%99%82%E3%81%AE%E3%82%BB%E3%83%AA%E3%83%95/%E3%82%BB%E3%83%AA%E3%83%BC%E3%83%8C"
+        ],
+        "checked": "verified"
+      }
+    ],
     "fireemblemengage-female-alear": [
       {
         "text": "名は覚えています。でも、それ以外のことは何も…",
@@ -4078,11 +5328,36 @@
         "checked": "verified"
       }
     ],
+    "fireemblemgenealogyoftheholywar-larcei": [
+      {
+        "text": "向こうから来てくれるなら　手間がはぶけていいじゃない",
+        "source": [
+          "https://www.pegasusknight.com/mb/fe4/st_map6/"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "迎え討って、ついでにガネーシャまで進撃しましょう",
+        "source": [
+          "https://www.pegasusknight.com/mb/fe4/st_map6/"
+        ],
+        "checked": "verified"
+      }
+    ],
     "fireemblempathofradiance-mia": [
       {
         "text": "宿命の対決！",
         "source": [
           "https://altema.jp/fe-heroes/chara/559"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "fireemblemradiantdawn-micaiah": [
+      {
+        "text": "……ええ。あなたといっしょに、どんなことだって耐えてみせる。",
+        "source": [
+          "https://fe-akatuki.kouryaku.red/entry27.html"
         ],
         "checked": "verified"
       }
@@ -4329,6 +5604,15 @@
         "checked": "verified"
       }
     ],
+    "genshin-chiori": [
+      {
+        "text": "紅に染まって散りなさい。",
+        "source": [
+          "https://wikiwiki.jp/genshinwiki/%E5%8D%83%E7%B9%94"
+        ],
+        "checked": "verified"
+      }
+    ],
     "genshin-citlali": [
       {
         "text": "八重堂から出てる小説は一応全部読んでるの。ベ、ベツにおかしくなんてないでしょ！",
@@ -4424,6 +5708,22 @@
         "text": "えっと…名前は甘、甘雨です…これでいいですね。",
         "source": [
           "https://wikiwiki.jp/genshinwiki/%E7%94%98%E9%9B%A8"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "genshin-jean": [
+      {
+        "text": "『蒲公英騎士』・ジン、入隊させていただきたい。",
+        "source": [
+          "https://wikiwiki.jp/genshinwiki/%E3%82%B8%E3%83%B3"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "人々を守るための盾と剣にならなくては。",
+        "source": [
+          "https://wikiwiki.jp/genshinwiki/%E3%82%B8%E3%83%B3"
         ],
         "checked": "verified"
       }
@@ -4539,6 +5839,29 @@
         "text": "挑戦は一番の趣味だからな。",
         "source": [
           "https://wikiwiki.jp/genshinwiki/%E5%B9%BB%E6%83%B3%E3%82%B7%E3%82%A2%E3%82%BF%E3%83%BC/%E3%83%9C%E3%82%A4%E3%82%B9%E4%B8%80%E8%A6%A7"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "genshin-mona": [
+      {
+        "text": "物欲を抑えることは占星術師の修行の一部。",
+        "source": [
+          "https://wikiwiki.jp/genshinwiki/%E3%83%A2%E3%83%8A"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "こんな時間なのに、明日締め切りの原稿がまったく進んでません…",
+        "source": [
+          "https://wikiwiki.jp/genshinwiki/%E3%83%A2%E3%83%8A"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "仕方ありませんね。",
+        "source": [
+          "https://wikiwiki.jp/genshinwiki/%E3%83%A2%E3%83%8A"
         ],
         "checked": "verified"
       }
@@ -4681,6 +6004,29 @@
         "checked": "verified"
       }
     ],
+    "genshin-skirk": [
+      {
+        "text": "私の力が必要か？",
+        "source": [
+          "https://wikiwiki.jp/genshinwiki/%E3%82%B9%E3%82%AB%E3%83%BC%E3%82%AF"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "教えるのは一度だけだ。",
+        "source": [
+          "https://wikiwiki.jp/genshinwiki/%E3%82%B9%E3%82%AB%E3%83%BC%E3%82%AF"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "お前が得るべき報酬だ。",
+        "source": [
+          "https://wikiwiki.jp/genshinwiki/%E3%82%B9%E3%82%AB%E3%83%BC%E3%82%AF"
+        ],
+        "checked": "verified"
+      }
+    ],
     "genshin-sucrose": [
       {
         "text": "私はスクロース、錬金術の…研究員。",
@@ -4767,6 +6113,29 @@
         "text": "こんにちは、旅人。私のことは夜蘭でいいわ。",
         "source": [
           "https://wikiwiki.jp/genshinwiki/夜蘭"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "genshin-yoimiya": [
+      {
+        "text": "花火はパッと消えてまうけど、友情は一生もんや。",
+        "source": [
+          "https://wikiwiki.jp/genshinwiki/%E5%AE%B5%E5%AE%AE"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "うちは宵宮、何でも言うてや～！",
+        "source": [
+          "https://wikiwiki.jp/genshinwiki/%E5%AE%B5%E5%AE%AE"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "もっと高く、もっと響きぃ！",
+        "source": [
+          "https://wikiwiki.jp/genshinwiki/%E5%AE%B5%E5%AE%AE"
         ],
         "checked": "verified"
       }
@@ -4906,6 +6275,29 @@
         "text": "わたしは完璧よ。",
         "source": [
           "https://wikiwiki.jp/dolls-fl/416"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "girlsfrontline-kalina": [
+      {
+        "text": "こんにちは、指揮官さま。お昼寝の後のお飲み物はいかがですか？頭がすっきりしますよ。",
+        "source": [
+          "https://wikiwiki.jp/dolls-fl/NPC/%E3%82%AB%E3%83%AA%E3%83%BC%E3%83%8A"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "指揮官さま、お買い物をしてくれないと、私の稼ぎがなくなりますわ！",
+        "source": [
+          "https://wikiwiki.jp/dolls-fl/NPC/%E3%82%AB%E3%83%AA%E3%83%BC%E3%83%8A"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "指揮官さま、奇跡が起きるかどうかは私のピュアな魔法と、少しのお金にかかってるんです！",
+        "source": [
+          "https://wikiwiki.jp/dolls-fl/NPC/%E3%82%AB%E3%83%AA%E3%83%BC%E3%83%8A"
         ],
         "checked": "verified"
       }
@@ -5159,6 +6551,15 @@
         "harsh": true
       }
     ],
+    "gkidols-arimura-mao": [
+      {
+        "text": "――『可愛い』からこそ『かっこいい』。ボクらしくやってみますよ。",
+        "source": [
+          "https://gakuen.idolmaster-official.jp/idol/mao/"
+        ],
+        "checked": "verified"
+      }
+    ],
     "gkidols-hanami-saki": [
       {
         "text": "朝の4時よ！これから走りに出るんでしょ？",
@@ -5168,11 +6569,73 @@
         "checked": "verified"
       }
     ],
+    "gkidols-hataya-misuzu": [
+      {
+        "text": "ふぁぁ……今日もお昼寝日和、ですね。",
+        "source": [
+          "https://gamevika.com/ja/gakumas/support-card/sup-3-0079"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "（……なんだか……懐かしい気配がしたような……）",
+        "source": [
+          "https://gamevika.com/ja/gakumas/support-card/sup-3-0001"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "（……あたたかいほうに、向かいましょう）",
+        "source": [
+          "https://gamevika.com/ja/gakumas/support-card/sup-3-0001"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "gkidols-himesaki-rinami": [
+      {
+        "text": "よしよし。",
+        "source": [
+          "https://gamevika.com/ja/gakumas/support-card/sup-3-0064"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "清夏ちゃんがいつも頑張ってること、私はちゃーんと知ってるからね。",
+        "source": [
+          "https://gamevika.com/ja/gakumas/support-card/sup-3-0064"
+        ],
+        "checked": "verified"
+      }
+    ],
     "gkidols-hiro": [
       {
         "text": "プロデューサーはひどい。鬼。悪魔。そういうところが……すき。",
         "source": [
           "https://gakuen.idolmaster-official.jp/idol/hiro/"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "gkidols-juo-sena": [
+      {
+        "text": "宣言したからには、やる。それが十王星南だから",
+        "source": [
+          "https://note.com/kitune_vulpes/n/ncfb46c98081c"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "百戦百勝、一意専心、勇往邁進……",
+        "source": [
+          "https://gamevika.com/ja/gakumas/support-card/sup-3-0098"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "全力で勝ちを獲りにいくわよ！",
+        "source": [
+          "https://gamevika.com/ja/gakumas/support-card/sup-3-0098"
         ],
         "checked": "verified"
       }
@@ -5802,6 +7265,29 @@
         "checked": "verified"
       }
     ],
+    "gup-kadotani-anzu": [
+      {
+        "text": "そういう戦い、得意だよウチは。",
+        "source": [
+          "https://dic.nicovideo.jp/a/%E8%A7%92%E8%B0%B7%E6%9D%8F"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "あえて突っ込んだ方が安全なんだってよ",
+        "source": [
+          "https://animemanga33.com/archives/20134"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "今ここで、覚書(おぼえがき)を交わして下さい",
+        "source": [
+          "https://animemanga33.com/archives/28005"
+        ],
+        "checked": "verified"
+      }
+    ],
     "gup-kawashima-momo": [
       {
         "text": "桃ちゃんと呼ぶなーっ！",
@@ -5894,6 +7380,15 @@
         "checked": "verified"
       }
     ],
+    "gup-oshida": [
+      {
+        "text": "貴様らは我々の後ろからついてくればいいんだ",
+        "source": [
+          "https://febri.jp/series/gppedia/story02/japanese_syllabary_ka-story02/"
+        ],
+        "checked": "verified"
+      }
+    ],
     "gup-pepperoni": [
       {
         "text": "おめぇ通だね～！",
@@ -5917,6 +7412,22 @@
         "text": "その調子でドンドンいこう！",
         "source": [
           "https://dengekionline.com/elem/000/000/860/860318/"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "gup-yukari": [
+      {
+        "text": "ヒヤッホォォォウ！最高だぜぇぇぇぇ！！",
+        "source": [
+          "https://dic.nicovideo.jp/a/%E7%A7%8B%E5%B1%B1%E5%84%AA%E8%8A%B1%E9%87%8C"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "西住殿に一生ついていきます！！",
+        "source": [
+          "https://dic.nicovideo.jp/a/%E7%A7%8B%E5%B1%B1%E5%84%AA%E8%8A%B1%E9%87%8C"
         ],
         "checked": "verified"
       }
@@ -6032,6 +7543,29 @@
         "text": "蓮ノ空に、藤島慈あり！",
         "source": [
           "https://irodori-drop.com/others/lovelive/hasunosora/linklikecard-megumi/"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "hasunosora-hinoshita-kaho": [
+      {
+        "text": "絶対、君の心も花咲かせてあげる！",
+        "source": [
+          "https://irodori-drop.com/others/lovelive/hasunosora/linklikecard-kaho/"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "みんなで、花咲こうね！",
+        "source": [
+          "https://irodori-drop.com/others/lovelive/hasunosora/linklikecard-kaho/"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "あたし、花咲きたいんです！",
+        "source": [
+          "https://irodori-drop.com/others/lovelive/hasunosora/linklikecard-kaho/"
         ],
         "checked": "verified"
       }
@@ -6383,6 +7917,29 @@
         "text": "アゲてひろがるワンダホー！キュアバタフライ！",
         "source": [
           "https://www.toei-anim.co.jp/tv/hirogaru-sky_precure/news/2023052801.php"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "hirogaru-nijigaoka-mashiro": [
+      {
+        "text": "あなたが心配だよ・・・。助けたいよ・・・。気持ちは同じ・・・。それって、一緒に戦う理由にならないかな？",
+        "source": [
+          "https://mskmtn.blog.fc2.com/blog-entry-1505.html"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "自分の価値は、自分で決めるんだよ！",
+        "source": [
+          "https://mskmtn.blog.fc2.com/blog-entry-1505.html"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "描こう！これからも沢山！思いっきり！",
+        "source": [
+          "https://mskmtn.blog.fc2.com/blog-entry-1505.html"
         ],
         "checked": "verified"
       }
@@ -6806,6 +8363,15 @@
         "text": "かわいい！ポジティブ！ジーニアス！hololive ReGLOSSの一条莉々華だよ～！",
         "source": [
           "https://hololive.hololivepro.com/talents/ichijou-ririka/"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "hololivedevis-juufuutei-raden": [
+      {
+        "text": "余った時間で何しよう！あそれ！まいたけまいたけぐるぐるぐる！",
+        "source": [
+          "https://dic.nicovideo.jp/a/%E5%84%92%E7%83%8F%E9%A2%A8%E4%BA%AD%E3%82%89%E3%81%A7%E3%82%93"
         ],
         "checked": "verified"
       }
@@ -7303,6 +8869,22 @@
         "checked": "verified"
       }
     ],
+    "hsr-bronya-rand": [
+      {
+        "text": "守るべきもののために、敵を打ち崩せ！",
+        "source": [
+          "https://wikiwiki.jp/star-rail/%E3%83%96%E3%83%AD%E3%83%BC%E3%83%8B%E3%83%A3"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "我々が失ったものを、すべて取り戻す。",
+        "source": [
+          "https://wikiwiki.jp/star-rail/%E3%83%96%E3%83%AD%E3%83%BC%E3%83%8B%E3%83%A3"
+        ],
+        "checked": "verified"
+      }
+    ],
     "hsr-castorice": [
       {
         "text": "オクヘイマへようこそ、私はキャストリスと申します",
@@ -7353,6 +8935,29 @@
         "text": "運命的な出会いだよね。そう思わない？",
         "source": [
           "https://wikiwiki.jp/star-rail/長夜月"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "hsr-feixiao": [
+      {
+        "text": "避けず、悔やまず！",
+        "source": [
+          "https://wikiwiki.jp/star-rail/%E9%A3%9B%E9%9C%84"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "飛翔不墜、常勝不敗！",
+        "source": [
+          "https://wikiwiki.jp/star-rail/%E9%A3%9B%E9%9C%84"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "あなたはあたしを『治療する』のが仕事で、あたしは戦争を『治療する』のが仕事。",
+        "source": [
+          "https://wikiwiki.jp/star-rail/%E9%A3%9B%E9%9C%84"
         ],
         "checked": "verified"
       }
@@ -7463,6 +9068,29 @@
         "checked": "verified"
       }
     ],
+    "hsr-seele": [
+      {
+        "text": "ワタシはゼーレ、ベロブルグ下層部の『地炎』のメンバーよ。一緒に下層部の未来を見届ける？",
+        "source": [
+          "https://wikiwiki.jp/star-rail/%E3%82%BC%E3%83%BC%E3%83%AC"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "蝶と共に散れ、スタールイーファントム。",
+        "source": [
+          "https://wikiwiki.jp/star-rail/%E3%82%BC%E3%83%BC%E3%83%AC"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "ワタシの小さい頃？フック10人分くらいの破壊力はあったわね。",
+        "source": [
+          "https://wikiwiki.jp/star-rail/%E3%82%BC%E3%83%BC%E3%83%AC"
+        ],
+        "checked": "verified"
+      }
+    ],
     "hsr-silverwolf": [
       {
         "text": "今日もログインしたんだね？",
@@ -7495,6 +9123,29 @@
         "text": "人類、女性、若い、美しい、可愛い。",
         "source": [
           "https://wikiwiki.jp/star-rail/%E3%83%9E%E3%83%80%E3%83%A0%E3%83%BB%E3%83%98%E3%83%AB%E3%82%BF"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "hsr-tingyun": [
+      {
+        "text": "諸悪退散～",
+        "source": [
+          "https://wikiwiki.jp/star-rail/%E5%81%9C%E9%9B%B2"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "万事吉とならん、一心同帰。",
+        "source": [
+          "https://wikiwiki.jp/star-rail/%E5%81%9C%E9%9B%B2"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "──この扇子で思いっ切りひっぱたいてあげましょう！",
+        "source": [
+          "https://wikiwiki.jp/star-rail/%E5%81%9C%E9%9B%B2"
         ],
         "checked": "verified"
       }
@@ -8143,6 +9794,15 @@
         "checked": "verified"
       }
     ],
+    "imascg-oikawa-shizuku": [
+      {
+        "text": "ふふっ、熱くなってきましたー！このバレンタインを、牛さんみたいに、一気に駆け抜けますよー！ふぁいとーっ！もーっ！",
+        "source": [
+          "https://dic.nicovideo.jp/a/%E5%8F%8A%E5%B7%9D%E9%9B%AB"
+        ],
+        "checked": "verified"
+      }
+    ],
     "imascg-otokura-yuuki": [
       {
         "text": "私、少しずつですけど、可愛いアイドルに近づけるってわかるんですっ！",
@@ -8256,6 +9916,22 @@
         "checked": "verified"
       }
     ],
+    "imascg-senkawa-chihiro": [
+      {
+        "text": "プロデューサーさん、まだあきらめちゃダメです!",
+        "source": [
+          "https://dic.nicovideo.jp/a/%E5%8D%83%E5%B7%9D%E3%81%A1%E3%81%B2%E3%82%8D"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "これからも、プロデューサーさんとアシスタントの私と、二人三脚でアイドル達を応援していきましょうね!えへっ♪",
+        "source": [
+          "https://dic.nicovideo.jp/a/%E5%8D%83%E5%B7%9D%E3%81%A1%E3%81%B2%E3%82%8D"
+        ],
+        "checked": "verified"
+      }
+    ],
     "imascg-shiki": [
       {
         "text": "音の連鎖反応、大成功～♪",
@@ -8301,6 +9977,29 @@
         "checked": "verified"
       }
     ],
+    "imascg-totoki-airi": [
+      {
+        "text": "今度こそ…出番ですねっ！",
+        "source": [
+          "https://dic.nicovideo.jp/a/%E5%8D%81%E6%99%82%E6%84%9B%E6%A2%A8"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "トップシークレットなのに見ちゃダメですよー！",
+        "source": [
+          "https://dic.nicovideo.jp/a/%E5%8D%81%E6%99%82%E6%84%9B%E6%A2%A8"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "メイドさんはみんな17歳っていうんですって！面白いですね♪",
+        "source": [
+          "https://dic.nicovideo.jp/a/%E5%8D%81%E6%99%82%E6%84%9B%E6%A2%A8"
+        ],
+        "checked": "verified"
+      }
+    ],
     "imascg-uzuki": [
       {
         "text": "島村卯月、１７歳です。私、精一杯頑張りますから、一緒に夢叶えましょうね♪よろしくお願いしますっ！",
@@ -8317,6 +10016,29 @@
           "https://gamerch.com/imascg-slstage-wiki/516157"
         ],
         "checked": "corrected"
+      }
+    ],
+    "imascg-yusa-kozue": [
+      {
+        "text": "こずえはねー…おはななのー…。ふわふわぁーってひらいてー…ぱぁーってさくよぉー…",
+        "source": [
+          "https://dic.nicovideo.jp/a/%E9%81%8A%E4%BD%90%E3%81%93%E3%81%9A%E3%81%88"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "こずえ…どこまでもいくよー？うーんと、うーんと…とおいばしょー。ぷろでゅーさーと…ずーっとむこう…きれいなばしょー",
+        "source": [
+          "https://dic.nicovideo.jp/a/%E9%81%8A%E4%BD%90%E3%81%93%E3%81%9A%E3%81%88"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "こずえ……あいどるすきー。ぷろでゅーさーが……つれてきたのー。だからねー……これからもつれてってー？",
+        "source": [
+          "https://dic.nicovideo.jp/a/%E9%81%8A%E4%BD%90%E3%81%93%E3%81%9A%E3%81%88"
+        ],
+        "checked": "verified"
       }
     ],
     "imascg-yuuki-haru": [
@@ -8694,6 +10416,15 @@
         "text": "楽しそうなことは、やっぱりやらないと損だもん",
         "source": [
           "https://animemanga33.com/archives/75493"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "kaguyasamawakokurasetaitensaitachinorenaizunousen-shijou-maki": [
+      {
+        "text": "ヘンテコヘアピン女……絶対許さない",
+        "source": [
+          "https://bontoku.com/meigen-kaguyasamahasijoumaki"
         ],
         "checked": "verified"
       }
@@ -9253,6 +10984,15 @@
         "checked": "verified"
       }
     ],
+    "kancolle-wo-class": [
+      {
+        "text": "今日は暴れるのやーめたっ",
+        "source": [
+          "https://dic.nicovideo.jp/a/%E7%A9%BA%E6%AF%8D%E3%83%B2%E7%B4%9A"
+        ],
+        "checked": "verified"
+      }
+    ],
     "kancolle-yamakaze": [
       {
         "text": "あたし…白露型駆逐艦……その八番艦。山風。いいよ……。別に。",
@@ -9409,6 +11149,22 @@
         ],
         "checked": "verified",
         "harsh": true
+      }
+    ],
+    "kemono-brown-long-eared-bat": [
+      {
+        "text": "自由気ままにパトロールし隊、昼間担当のウサギコウモリでしゅ。",
+        "source": [
+          "https://kemono-friends.gamerch.com/%E3%82%A6%E3%82%B5%E3%82%AE%E3%82%B3%E3%82%A6%E3%83%A2%E3%83%AA/"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "おめめに頼らなきゃいけないからパトロールも大変、悪いことしちゃだめでしゅよ？",
+        "source": [
+          "https://kemono-friends.gamerch.com/%E3%82%A6%E3%82%B5%E3%82%AE%E3%82%B3%E3%82%A6%E3%83%A2%E3%83%AA/"
+        ],
+        "checked": "verified"
       }
     ],
     "kemono-caracal": [
@@ -9658,6 +11414,15 @@
         "checked": "verified"
       }
     ],
+    "killmebaby-sonya": [
+      {
+        "text": "だめだ…あんなバカみたいな真似はできない…",
+        "source": [
+          "https://renote.net/articles/56578/page/5"
+        ],
+        "checked": "verified"
+      }
+    ],
     "kimetsu-kanao": [
       {
         "text": "どうでもいいの　全部どうでもいいから　自分で決められないの",
@@ -9780,6 +11545,29 @@
         "checked": "verified"
       }
     ],
+    "kon-hirasawa-yui": [
+      {
+        "text": "やっぱり音楽っていいね！今日みんなと始めて合わせてみて楽しかったもん！",
+        "source": [
+          "https://meigenkakugen.net/%E3%81%91%E3%81%84%E3%81%8A%E3%82%93%EF%BC%81_%E5%B9%B3%E6%B2%A2%E5%94%AF/"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "あんまり上手くないですね",
+        "source": [
+          "https://meigenkakugen.net/%E3%81%91%E3%81%84%E3%81%8A%E3%82%93%EF%BC%81_%E5%B9%B3%E6%B2%A2%E5%94%AF/"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "楽しいは楽しいだよ。",
+        "source": [
+          "https://meigenkakugen.net/%E3%81%91%E3%81%84%E3%81%8A%E3%82%93%EF%BC%81_%E5%B9%B3%E6%B2%A2%E5%94%AF/"
+        ],
+        "checked": "verified"
+      }
+    ],
     "kon-manabe-nodoka": [
       {
         "text": "なんていうか、軽音部って、唯にぴったりだと思う",
@@ -9789,11 +11577,50 @@
         "checked": "verified"
       }
     ],
+    "kon-mio": [
+      {
+        "text": "乗り越えないと、自分を！",
+        "source": [
+          "https://animemanga33.com/archives/21258"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "ただ…律のドラムがないと、ちょっと寂しいかな",
+        "source": [
+          "https://animemanga33.com/archives/21258"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "今、私達に出来る精一杯のことをやろう",
+        "source": [
+          "https://animemanga33.com/archives/21258"
+        ],
+        "checked": "verified"
+      }
+    ],
     "kon-tainaka-ritsu": [
       {
         "text": "紙切れなんかに私たちの未来は決められないぜぇー！",
         "source": [
           "https://meigenkakugen.net/%E3%81%91%E3%81%84%E3%81%8A%E3%82%93%EF%BC%81_%E7%94%B0%E4%BA%95%E4%B8%AD%E5%BE%8B/"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "kon-tsumugi": [
+      {
+        "text": "負けないと思う。私たちなら。",
+        "source": [
+          "https://meigenkakugen.net/%E3%81%91%E3%81%84%E3%81%8A%E3%82%93%EF%BC%81_%E7%90%B4%E5%90%B9%E7%B4%AC/"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "抱き締めてもよかですか",
+        "source": [
+          "https://meigenkakugen.net/%E3%81%91%E3%81%84%E3%81%8A%E3%82%93%EF%BC%81_%E7%90%B4%E5%90%B9%E7%B4%AC/"
         ],
         "checked": "verified"
       }
@@ -10538,6 +12365,22 @@
         "checked": "verified"
       }
     ],
+    "mahoushoujolyricalnanohastrikers-subaru-nakajima": [
+      {
+        "text": "スターズ３・スバル・ナカジマ、行きます！",
+        "source": [
+          "https://cozalweb.com/ctv/kimezerifu/anime/ma/ririkarunanoha.html"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "全開、行きます！振動ぉぉ拳！",
+        "source": [
+          "https://cozalweb.com/ctv/kimezerifu/anime/ma/ririkarunanoha.html"
+        ],
+        "checked": "verified"
+      }
+    ],
     "mahoushoujoniakogarete-magia-baiser": [
       {
         "text": "だからわたしはマジアベーゼなんです",
@@ -10736,6 +12579,22 @@
         "checked": "verified"
       }
     ],
+    "majosaiban-tsukishiro-yuki": [
+      {
+        "text": "人間とは、相容れない存在なんです。",
+        "source": [
+          "https://wikiwiki.jp/manosaba/%E6%94%BB%E7%95%A5/%E6%9C%80%E7%B5%82%E7%AB%A0"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "人間は愚かだと……信じる価値などないのだと。",
+        "source": [
+          "https://wikiwiki.jp/manosaba/%E6%94%BB%E7%95%A5/%E6%9C%80%E7%B5%82%E7%AB%A0"
+        ],
+        "checked": "verified"
+      }
+    ],
     "makeheroinegaoosugiru-yanami-anna": [
       {
         "text": "私達も文芸部なんだし、積極的に文豪気分になんないと",
@@ -10899,6 +12758,29 @@
         "checked": "verified"
       }
     ],
+    "mha-hagakure-toru": [
+      {
+        "text": "尾白くん私ちょっと本気出すわ　手袋もブーツも脱ぐわ",
+        "source": [
+          "https://dic.nicovideo.jp/a/%E8%91%89%E9%9A%A0%E9%80%8F"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "集光屈折ハイチーズ！",
+        "source": [
+          "https://mangakawiki.com/archives/14018"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "透明（インビジブル）　私は無敵！！！",
+        "source": [
+          "https://mangakawiki.com/archives/14018"
+        ],
+        "checked": "verified"
+      }
+    ],
     "mha-jiro-kyoka": [
       {
         "text": "男のくせにウダウダと・・・　じゃあさ人間スタンガン！！",
@@ -11013,11 +12895,29 @@
         "checked": "verified"
       }
     ],
+    "mygo-chihaya-anon": [
+      {
+        "text": "It's my goだよ！It's my go！ヤバッ！大発見じゃん",
+        "source": [
+          "https://dic.nicovideo.jp/a/%E5%8D%83%E6%97%A9%E6%84%9B%E9%9F%B3"
+        ],
+        "checked": "verified"
+      }
+    ],
     "mygo-kaname-raana": [
       {
         "text": "おもしれー女",
         "source": [
           "https://www.excite.co.jp/news/article/Lisani_0000375727/"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "mygo-nagasaki-soyo": [
+      {
+        "text": "なんで『春日影』やったの!?",
+        "source": [
+          "https://zukan-zukan.com/characters/items/nagasaki-soyo"
         ],
         "checked": "verified"
       }
@@ -11118,6 +13018,15 @@
         "checked": "verified"
       }
     ],
+    "nanoha-vivio": [
+      {
+        "text": "一閃必中！",
+        "source": [
+          "https://dic.nicovideo.jp/a/%E9%AB%98%E7%94%BA%E3%83%B4%E3%82%A3%E3%83%B4%E3%82%A3%E3%82%AA"
+        ],
+        "checked": "verified"
+      }
+    ],
     "naruto-anko": [
       {
         "text": "次　行くわよ　次ィ!!!",
@@ -11160,6 +13069,22 @@
         "checked": "verified"
       }
     ],
+    "naruto-kushina": [
+      {
+        "text": "私は…　アナタの前任の九尾の人柱力…　まずはそこからね",
+        "source": [
+          "https://meigenkakugen.net/%E3%81%86%E3%81%9A%E3%81%BE%E3%81%8D%E3%82%AF%E3%82%B7%E3%83%8A/"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "私を母にしてくれてありがとう…！",
+        "source": [
+          "https://meigenkakugen.net/%E3%81%86%E3%81%9A%E3%81%BE%E3%81%8D%E3%82%AF%E3%82%B7%E3%83%8A/"
+        ],
+        "checked": "verified"
+      }
+    ],
     "naruto-sakura": [
       {
         "text": "しゃーんなろー!",
@@ -11174,6 +13099,15 @@
         "text": "まずは情報収集と分析。そっちの方が早い！",
         "source": [
           "https://renote.net/articles/12580/page/21"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "naruto-shizune": [
+      {
+        "text": "大丈夫。綱手様は必ず帰ってくる。",
+        "source": [
+          "https://meigenkakugen.net/%E3%82%B7%E3%82%BA%E3%83%8D/"
         ],
         "checked": "verified"
       }
@@ -11193,6 +13127,29 @@
         "text": "あたしは伝説のくの一　綱手様のような………強い忍者になりたいなぁ…",
         "source": [
           "https://meigenkakugen.net/%E3%83%86%E3%83%B3%E3%83%86%E3%83%B3/"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "naruto-tsunade": [
+      {
+        "text": "初代から引き継がれ流れ続けるものが私の本当の力だ・・・火の意志をなめるなよ！",
+        "source": [
+          "https://meigenkakugen.net/%E7%B6%B1%E6%89%8B/"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "最後にもう１度だけ・・・　アンタに賭けてみたくなった・・・・・・",
+        "source": [
+          "https://meigenkakugen.net/%E7%B6%B1%E6%89%8B/"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "木ノ葉は、この私が命に代えても守ってみせる！！",
+        "source": [
+          "https://meigenkakugen.net/%E7%B6%B1%E6%89%8B/"
         ],
         "checked": "verified"
       }
@@ -11308,6 +13265,22 @@
         "checked": "verified"
       }
     ],
+    "nijigasaki-asaka-karin": [
+      {
+        "text": "仲間だけどライバル、ライバルだけど仲間！",
+        "source": [
+          "https://note.com/llsmash/n/n00accc6883fa"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "努力は私を裏切らないのよ",
+        "source": [
+          "https://llsif.gamedbs.jp/character/detail/204"
+        ],
+        "checked": "verified"
+      }
+    ],
     "nijigasaki-ayumu": [
       {
         "text": "自分の名前のとおり、夢に向かって一歩一歩、頑張って歩いていきたいと思います！",
@@ -11385,6 +13358,22 @@
         "text": "始まったのなら、貫くのみです！",
         "source": [
           "https://mskmtn.blog.fc2.com/blog-entry-1174.html"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "nijigasaki-takasaki-yu": [
+      {
+        "text": "ラブライブ！になんて出なくていい！",
+        "source": [
+          "https://www.famitsu.com/news/202011/29210122.html"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "この世界に私は私しかいない。うまくできなくてもいい、私にしかできないことを",
+        "source": [
+          "https://note.com/llsmash/n/n00accc6883fa"
         ],
         "checked": "verified"
       }
@@ -11994,6 +13983,22 @@
         "checked": "verified"
       }
     ],
+    "opm-fubuki": [
+      {
+        "text": "私はこの位置のままＢ級以下のヒーローを束ねて、単独行動主義の姉を超えてみせるって",
+        "source": [
+          "https://animemanga33.com/archives/20240"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "あなたや姉が私より強くたって関係ない・・・私は私のやり方でいく！",
+        "source": [
+          "https://meigenmeikan.com/%E5%9C%B0%E7%8D%84%E3%81%AE%E3%83%95%E3%83%96%E3%82%AD/"
+        ],
+        "checked": "verified"
+      }
+    ],
     "opm-tatsumaki": [
       {
         "text": "何？　私じゃ不満なわけ？",
@@ -12027,6 +14032,31 @@
         "text": "我は闇の眷属にして夜の女王……。ハンドルネームは、黒猫だけど……。",
         "source": [
           "https://wikiwiki.jp/yomecolle/%E9%BB%92%E7%8C%AB"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "oshimai-mahiro": [
+      {
+        "text": "むさ苦しい男を操作するより女の子のほうが楽しいに決まってるだろ！むしろ男を使う意味がわからん…",
+        "source": [
+          "https://dic.nicovideo.jp/a/%E7%B7%92%E5%B1%B1%E3%81%BE%E3%81%B2%E3%82%8D"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "バーチャル世界では誰もが美少女になれるんだ…なんだか夢があるじゃないか",
+        "source": [
+          "https://dic.nicovideo.jp/a/%E7%B7%92%E5%B1%B1%E3%81%BE%E3%81%B2%E3%82%8D"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "oshimai-murosaki-miyo": [
+      {
+        "text": "だ……ダメ……私……目がすくんで動けない…！！",
+        "source": [
+          "https://dic.nicovideo.jp/a/%E5%AE%A4%E5%B4%8E%E3%81%BF%E3%82%88"
         ],
         "checked": "verified"
       }
@@ -12437,6 +14467,15 @@
         "checked": "verified"
       }
     ],
+    "persona5-yoshizawa-kasumi": [
+      {
+        "text": "借りを作ったままの自分とは今日でお別れです！",
+        "source": [
+          "https://dic.nicovideo.jp/a/%E8%8A%B3%E6%BE%A4%E3%81%8B%E3%81%99%E3%81%BF"
+        ],
+        "checked": "verified"
+      }
+    ],
     "pokemon-acerola": [
       {
         "text": "はーい！　こだいの　プリンセス！　アセロラちゃん　です！",
@@ -12541,6 +14580,15 @@
         "checked": "verified"
       }
     ],
+    "pokemon-hexmaniac": [
+      {
+        "text": "クセになりそうだったら……いっしょにオカルトマニア道をつき進んでみない？",
+        "source": [
+          "https://www.pokemon.jp/special/kowapoke/mania/"
+        ],
+        "checked": "verified"
+      }
+    ],
     "pokemon-hilda": [
       {
         "text": "わたし　トウコ！ポケモン勝負のことなら　任せて！とっても　強いんだから！",
@@ -12623,6 +14671,29 @@
         "text": "テブリムのしたいことをしていいんだよ",
         "source": [
           "https://www.tv-tokyo.co.jp/anime/pocketmonster2023/episodes/index_4.html"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "pokemon-lillie": [
+      {
+        "text": "リーリエと　申します",
+        "source": [
+          "https://luvp0ke.blog.fc2.com/blog-entry-99.html"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "わたし……きちんと　みます",
+        "source": [
+          "https://luvp0ke.blog.fc2.com/blog-entry-99.html"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "バッグから　でないでください",
+        "source": [
+          "https://luvp0ke.blog.fc2.com/blog-entry-99.html"
         ],
         "checked": "verified"
       }
@@ -13078,6 +15149,30 @@
         "checked": "verified"
       }
     ],
+    "ranma-shampoo": [
+      {
+        "text": "我愛你。",
+        "source": [
+          "https://meigenanime.com/ranma-shampoo/"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "愛妻弁当ね。",
+        "source": [
+          "https://meigenanime.com/ranma-shampoo/"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "女的乱馬殺すべし。",
+        "source": [
+          "https://meigenanime.com/ranma-shampoo/"
+        ],
+        "checked": "verified",
+        "harsh": true
+      }
+    ],
     "residentevil-jill-valentine": [
       {
         "text": "やるしかないわね",
@@ -13124,6 +15219,22 @@
         "text": "でもお医者様、それは全部、『わたし』ですわ",
         "source": [
           "https://www.bilibili.com/video/BV1Fb421n7Qn/"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "rezero-beatrice": [
+      {
+        "text": "ベティーはスバルのパートナーだから、この場にいるのは当然かしら",
+        "source": [
+          "https://animemanga33.com/archives/26155"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "たまにはいい薬なのよ",
+        "source": [
+          "https://animemanga33.com/archives/26155"
         ],
         "checked": "verified"
       }
@@ -13262,6 +15373,15 @@
           "https://pssmhozonkai.com/data/"
         ],
         "checked": "corrected"
+      }
+    ],
+    "sailormoon-chibi-usa": [
+      {
+        "text": "あたしだけじゃなくって　ほたるちゃんも守ってあげられる力だよ",
+        "source": [
+          "https://www.animatetimes.com/news/details.php?id=1623394814"
+        ],
+        "checked": "verified"
       }
     ],
     "sailormoon-hino-rei": [
@@ -13495,6 +15615,15 @@
         "checked": "verified"
       }
     ],
+    "saki-matsumi-yuu": [
+      {
+        "text": "おねーちゃんが取り返してあげるから",
+        "source": [
+          "https://mangapedia.com/gd/x43jnygn0"
+        ],
+        "checked": "verified"
+      }
+    ],
     "saki-miyanaga-saki": [
       {
         "text": "麻雀って…楽しいよね",
@@ -13529,6 +15658,15 @@
         "checked": "verified"
       }
     ],
+    "saki-oohoshi-awai": [
+      {
+        "text": "イケてるじゃん！",
+        "source": [
+          "https://dic.nicovideo.jp/a/%E5%A4%A7%E6%98%9F%E6%B7%A1"
+        ],
+        "checked": "verified"
+      }
+    ],
     "saki-ryuumonbuchi-touka": [
       {
         "text": "あなたと楽しく遊べる相手が―――必ずどこかにいるはずですわ！！",
@@ -13543,6 +15681,15 @@
         "text": "連れて行く！決勝まで……！！",
         "source": [
           "https://toppoi.blog.fc2.com/blog-entry-782.html"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "saki-shimizudani-ryuuka": [
+      {
+        "text": "――――ここに怜を感じる。こっちかて一人やない！",
+        "source": [
+          "https://dic.nicovideo.jp/a/%E6%B8%85%E6%B0%B4%E8%B0%B7%E7%AB%9C%E8%8F%AF"
         ],
         "checked": "verified"
       }
@@ -13863,6 +16010,22 @@
           "https://wikiwiki.jp/yomecolle/%E3%82%A4%E3%82%AB%E5%A8%98"
         ],
         "checked": "corrected"
+      }
+    ],
+    "shokugekinosouma-nakiri-erina": [
+      {
+        "text": "は…破廉恥だわ…！",
+        "source": [
+          "https://dic.nicovideo.jp/a/%E8%96%99%E5%88%87%E3%81%88%E3%82%8A%E3%81%AA"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "どうしてここまで繊細で深い味わいが生まれているの！！？",
+        "source": [
+          "https://dic.nicovideo.jp/a/%E8%96%99%E5%88%87%E3%81%88%E3%82%8A%E3%81%AA"
+        ],
+        "checked": "verified"
       }
     ],
     "shoujokagekirevuestarlight-aijo-karen": [
@@ -14230,6 +16393,22 @@
         "checked": "verified"
       }
     ],
+    "strikewitches-francesca-lucchini": [
+      {
+        "text": "通りすがりの正義の味方、フランチェスカ・ルッキーニ！",
+        "source": [
+          "https://animemanga33.com/archives/12123"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "みんなの家とか友達を守るのが、ウィッチだもん！",
+        "source": [
+          "https://animemanga33.com/archives/12123"
+        ],
+        "checked": "verified"
+      }
+    ],
     "strikewitches-gertrud-barkhorn": [
       {
         "text": "私のこの命はウィッチーズに捧げたのだ",
@@ -14526,6 +16705,29 @@
         "checked": "verified"
       }
     ],
+    "tate-no-yuusha-no-nariagari-raphtalia": [
+      {
+        "text": "私はあなたの剣です！",
+        "source": [
+          "https://animemanga33.com/archives/81768"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "尚文様の悲しみ、私が断ち切ります",
+        "source": [
+          "https://animemanga33.com/archives/9838"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "私は盾の勇者の…尚文様の剣だから！",
+        "source": [
+          "https://animemanga33.com/archives/81768"
+        ],
+        "checked": "verified"
+      }
+    ],
     "tekken-kazama-asuka": [
       {
         "text": "風間流古武術には勝てへんで！",
@@ -14761,6 +16963,29 @@
         "checked": "verified"
       }
     ],
+    "touhou-aya": [
+      {
+        "text": "最初は小さな火種でいいんです。それを大火にするのが　私の仕事ですから。",
+        "source": [
+          "https://danmakuwiki.com/%E5%B0%84%E5%91%BD%E4%B8%B8%E6%96%87"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "特ダネ、スクープ……ああ、その言葉だけで　気分が上がりますねえ。",
+        "source": [
+          "https://danmakuwiki.com/%E5%B0%84%E5%91%BD%E4%B8%B8%E6%96%87"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "私はガセネタは書きませんよ。事実をよりセンセーショナルに　伝えているだけです。",
+        "source": [
+          "https://danmakuwiki.com/%E5%B0%84%E5%91%BD%E4%B8%B8%E6%96%87"
+        ],
+        "checked": "verified"
+      }
+    ],
     "touhou-byakuren": [
       {
         "text": "いざ、南無三――！",
@@ -14794,6 +17019,52 @@
         "text": "イッツ、ルナティックターイム！",
         "source": [
           "https://www.masa-web.jp/danmaku/card/r050/index.html"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "touhou-daiyousei": [
+      {
+        "text": "私は大妖精といいます。いつもは湖でチルノちゃんやサニーちゃんたちと遊んでいることが多いです。",
+        "source": [
+          "https://wikiwiki.jp/toho_lw/%E5%A4%A7%E5%A6%96%E7%B2%BE"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "わっ！邪魔しないで！どいてくださ～い！",
+        "source": [
+          "https://wikiwiki.jp/toho_lw/%E5%A4%A7%E5%A6%96%E7%B2%BE"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "皆のために何かができるって素敵だと、私思うんです！",
+        "source": [
+          "https://wikiwiki.jp/toho_lw/%E5%A4%A7%E5%A6%96%E7%B2%BE"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "touhou-eiki": [
+      {
+        "text": "貴方にも、常に公明正大であってほしいです。",
+        "source": [
+          "https://wikiwiki.jp/toho_lw/%E5%9B%9B%E5%AD%A3%E6%98%A0%E5%A7%AB%E3%83%BB%E3%83%A4%E3%83%9E%E3%82%B6%E3%83%8A%E3%83%89%E3%82%A5%28%E8%8A%B1%E5%9C%92%E3%81%AE%E6%9C%80%E9%AB%98%E8%A3%81%E5%88%A4%E9%95%B7%29"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "貴方の罪は既に数えました。さあ、鞭打ちの時間ですよ",
+        "source": [
+          "https://wikiwiki.jp/toho_lw/%E5%9B%9B%E5%AD%A3%E6%98%A0%E5%A7%AB%E3%83%BB%E3%83%A4%E3%83%9E%E3%82%B6%E3%83%8A%E3%83%89%E3%82%A5%28%E8%8A%B1%E5%9C%92%E3%81%AE%E6%9C%80%E9%AB%98%E8%A3%81%E5%88%A4%E9%95%B7%29"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "我が鞭を受け、生まれ変われ！",
+        "source": [
+          "https://wikiwiki.jp/toho_lw/%E5%9B%9B%E5%AD%A3%E6%98%A0%E5%A7%AB%E3%83%BB%E3%83%A4%E3%83%9E%E3%82%B6%E3%83%8A%E3%83%89%E3%82%A5%28%E8%8A%B1%E5%9C%92%E3%81%AE%E6%9C%80%E9%AB%98%E8%A3%81%E5%88%A4%E9%95%B7%29"
         ],
         "checked": "verified"
       }
@@ -14969,6 +17240,39 @@
         "checked": "verified"
       }
     ],
+    "touhou-miko": [
+      {
+        "text": "私は豊聡耳神子。仏なき世を救済する聖人です。",
+        "source": [
+          "https://wikiwiki.jp/toho_lw/%E8%B1%8A%E8%81%A1%E8%80%B3%E7%A5%9E%E5%AD%90%28%28%E7%A5%9E%29%E8%81%96%E5%BE%B3%E9%81%93%E5%A3%AB%29"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "お前の欲望を全てさらけ出せ！",
+        "source": [
+          "https://wikiwiki.jp/toho_lw/%E8%B1%8A%E8%81%A1%E8%80%B3%E7%A5%9E%E5%AD%90%28%28%E7%A5%9E%29%E8%81%96%E5%BE%B3%E9%81%93%E5%A3%AB%29"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "touhou-mokou": [
+      {
+        "text": "私は蓬莱の薬を口にした人間だ。老いることも死ぬことも　できない。",
+        "source": [
+          "https://danmakuwiki.com/%E8%97%A4%E5%8E%9F%E5%A6%B9%E7%B4%85"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "殺し合いは割と楽しいんだ、生きてるって感じがするから。",
+        "source": [
+          "https://danmakuwiki.com/%E8%97%A4%E5%8E%9F%E5%A6%B9%E7%B4%85"
+        ],
+        "checked": "verified",
+        "harsh": true
+      }
+    ],
     "touhou-momiji": [
       {
         "text": "白狼天狗の犬走椛です。",
@@ -15020,6 +17324,22 @@
         "text": "未確認飛行物体じゃないわ。正体不明の妖怪よ！",
         "source": [
           "https://danmakuwiki.com/%E5%B0%81%E7%8D%A3%E3%81%AC%E3%81%88"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "touhou-orin": [
+      {
+        "text": "旧地獄に死体をお届け、猫車運送のお燐さ。バンバン働くよー！",
+        "source": [
+          "https://danmakuwiki.com/%E7%81%AB%E7%84%94%E7%8C%AB%E7%87%90"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "ふふん、あたしのこの猫車で　運べない死体はないのさ。",
+        "source": [
+          "https://danmakuwiki.com/%E7%81%AB%E7%84%94%E7%8C%AB%E7%87%90"
         ],
         "checked": "verified"
       }
@@ -15098,6 +17418,29 @@
         "text": "そーなのかー",
         "source": [
           "https://w.atwiki.jp/aniwikigalaxystar/pages/589.html"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "touhou-sakuya": [
+      {
+        "text": "はじめまして、十六夜咲夜ですわ。",
+        "source": [
+          "https://gamerch.com/touhou-lw/154023"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "時よ、止まれ！",
+        "source": [
+          "https://gamerch.com/touhou-lw/154023"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "いついかなる時も隙を見せない。それがメイドよ。",
+        "source": [
+          "https://gamerch.com/touhou-lw/154023"
         ],
         "checked": "verified"
       }
@@ -15210,6 +17553,29 @@
         "checked": "verified"
       }
     ],
+    "touhou-yuuka": [
+      {
+        "text": "私は風見幽香――花を愛する妖怪よ。",
+        "source": [
+          "https://gamerch.com/touhou-lw/229244"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "幻想郷で唯一枯れない花、私の相棒のような子よ。",
+        "source": [
+          "https://gamerch.com/touhou-lw/229244"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "命の輝きって素晴らしいわ。植物はいつもそれを　教えてくれるの。",
+        "source": [
+          "https://danmakuwiki.com/%E9%A2%A8%E8%A6%8B%E5%B9%BD%E9%A6%99"
+        ],
+        "checked": "verified"
+      }
+    ],
     "tsuguvtuber-hatoba-tsugu": [
       {
         "text": "鳩羽つぐです",
@@ -15265,6 +17631,29 @@
         "checked": "verified"
       }
     ],
+    "tsukihime-neco-arc": [
+      {
+        "text": "身体はネコで出来ている〜",
+        "source": [
+          "https://typemoon.wiki.cre.jp/wiki/%E3%83%8D%E3%82%B3%E3%82%A2%E3%83%AB%E3%82%AF"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "じゃ～んけ〜んちねっ！",
+        "source": [
+          "https://typemoon.wiki.cre.jp/wiki/%E3%83%8D%E3%82%B3%E3%82%A2%E3%83%AB%E3%82%AF"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "あたしが白ネコで、オマエが黒ネコ。被ってる被ってる……ふふふ……つまりあたしはツンデレってことにゃのだよ、これが。",
+        "source": [
+          "https://typemoon.wiki.cre.jp/wiki/%E3%83%8D%E3%82%B3%E3%82%A2%E3%83%AB%E3%82%AF"
+        ],
+        "checked": "verified"
+      }
+    ],
     "tsukihime-tohno-akiha": [
       {
         "text": "あ、月姫の秋葉です",
@@ -15292,6 +17681,24 @@
         "checked": "verified"
       }
     ],
+    "umamusume-agnesdigital": [
+      {
+        "text": "お疲れちゃん！デジたんですっ！キラキラのウマ娘ちゃんたちを推してます！毎日幸せ！ヲタクに生まれてよかった～♪",
+        "source": [
+          "https://gametora.com/ja/umamusume/characters/agnes-digital"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "umamusume-agnestachyon": [
+      {
+        "text": "全ては実験材料なのだよ、モルモット君。",
+        "source": [
+          "https://umamusume.jp/character/agnestachyon/"
+        ],
+        "checked": "verified"
+      }
+    ],
     "umamusume-air-shakur": [
       {
         "text": "ロジックで語りな。レースってのは数字の集合体なんだよ",
@@ -15308,6 +17715,22 @@
           "https://askz.sakura.ne.jp/column/game/uma_musume/list/air_groove.html"
         ],
         "checked": "corrected"
+      }
+    ],
+    "umamusume-almond-eye": [
+      {
+        "text": "好きよ、レース――だって楽しいじゃない？",
+        "source": [
+          "https://umamusume.jp/character/almondeye/"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "アーモンドアイよ。たとえ相手がレジェンドでも、わたしは勝つ。",
+        "source": [
+          "https://gametora.com/ja/umamusume/characters/almond-eye"
+        ],
+        "checked": "verified"
       }
     ],
     "umamusume-buena-vista": [
@@ -15423,6 +17846,15 @@
         "checked": "verified"
       }
     ],
+    "umamusume-gentildonna": [
+      {
+        "text": "とくとご覧あそばせ。真の強者というものを",
+        "source": [
+          "https://umamusume.jp/character/gentildonna"
+        ],
+        "checked": "verified"
+      }
+    ],
     "umamusume-goldship": [
       {
         "text": "あたし達なら余裕余裕",
@@ -15453,6 +17885,38 @@
         "text": "誰よりでっかいウマ娘になってやらぁっ！",
         "source": [
           "https://gametora.com/ja/umamusume/characters/inari-one"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "umamusume-k-s-miracle": [
+      {
+        "text": "おれ、いつか絶対、“奇跡”を起こします。",
+        "source": [
+          "https://umamusume.jp/character/ksmiracle"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "見ていてください、どうか",
+        "source": [
+          "https://umamusume.jp/character/ksmiracle"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "…おれは、ケイエスミラクルです。この命をくれた、みんなに報いて…必ず、奇跡を起こします",
+        "source": [
+          "https://gametora.com/ja/umamusume/characters/ksmiracle"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "umamusume-katsuragi-ace": [
+      {
+        "text": "常識も壁も、くだらねぇもの全部超えてやる！　それがあたしの志すエースだ！",
+        "source": [
+          "https://umamusume.jp/character/katsuragiace"
         ],
         "checked": "verified"
       }
@@ -15570,6 +18034,29 @@
         "checked": "verified"
       }
     ],
+    "umamusume-mihonobourbon": [
+      {
+        "text": "ターゲット確認。",
+        "source": [
+          "https://umamusume.jp/character/mihonobourbon/"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "オペレーション『三冠獲得』を開始",
+        "source": [
+          "https://umamusume.jp/character/mihonobourbon/"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "マスター、ご命令を。どんなに厳しい試練でもこなしてみせます",
+        "source": [
+          "https://gamewith.jp/uma-musume/article/show/254555"
+        ],
+        "checked": "verified"
+      }
+    ],
     "umamusume-nakayama-festa": [
       {
         "text": "ギリギリの勝負を楽しもうぜ。",
@@ -15652,6 +18139,15 @@
         "text": "ライス、がんばるぞ…おー!",
         "source": [
           "https://www.youtube.com/watch?v=4XsaZv-VL3A"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "umamusume-sakura-laurel": [
+      {
+        "text": "桜は咲きます、いつか必ず、絶対にっ！",
+        "source": [
+          "https://umamusume.jp/character/sakuralaurel/"
         ],
         "checked": "verified"
       }
@@ -15842,6 +18338,15 @@
         "harsh": true
       }
     ],
+    "umineko-ushiromiya-maria": [
+      {
+        "text": "うー！ベアトリーチェはいるー！",
+        "source": [
+          "https://umine.co/rondo/character/second-d/"
+        ],
+        "checked": "verified"
+      }
+    ],
     "undertale-toriel": [
       {
         "text": "それでいいのよ。おへやに　もどりなさい。",
@@ -15928,6 +18433,15 @@
         "checked": "verified"
       }
     ],
+    "voiceroid-tsurumaki-maki": [
+      {
+        "text": "ぎゅんぎゅん行くよー！",
+        "source": [
+          "https://dic.nicovideo.jp/a/%E5%BC%A6%E5%B7%BB%E3%83%9E%E3%82%AD"
+        ],
+        "checked": "verified"
+      }
+    ],
     "vspo-aizawa-ema": [
       {
         "text": "こんざわ",
@@ -15951,6 +18465,15 @@
         "text": "こんのあ～",
         "source": [
           "https://wikiwiki.jp/vspo/%E8%83%A1%E6%A1%83%E3%81%AE%E3%81%82"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "vtuber-shigureui": [
+      {
+        "text": "はい次。",
+        "source": [
+          "https://dic.nicovideo.jp/a/%E3%81%97%E3%81%90%E3%82%8C%E3%81%86%E3%81%84"
         ],
         "checked": "verified"
       }
@@ -16008,6 +18531,45 @@
         "text": "紫陽花さんに甘織れな子が一緒に来てくれてよかったと最終的に思ってもらうには…",
         "source": [
           "https://animemanga33.com/archives/91574"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "watashinitenshigamaiorita-himesaka-noa": [
+      {
+        "text": "サイキョーにかわいい私が、サイキョーにかわいい服着たら無敵だもんねえ！",
+        "source": [
+          "https://animemanga33.com/archives/65660"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "私がサイキョーにかわいいのはもう決まってるわけだから",
+        "source": [
+          "https://animemanga33.com/archives/65660"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "私が超えるべきは今の私！",
+        "source": [
+          "https://animemanga33.com/archives/65660"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "wonderfulprecure-inukai-iroha": [
+      {
+        "text": "ワンダフルー！",
+        "source": [
+          "https://www.toei-anim.co.jp/tv/wonderful_precure/character/chara2.php?character=3"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "みんなの笑顔で彩る世界！キュアフレンディ！あなたの声をきかせて",
+        "source": [
+          "https://www.toei-anim.co.jp/tv/wonderful_precure/character/chara2.php?character=3"
         ],
         "checked": "verified"
       }
@@ -16195,6 +18757,29 @@
         "checked": "verified"
       }
     ],
+    "wuwa-galbrena": [
+      {
+        "text": "炎に焼かれないようにする最も良い方法は、炎の中で生きること。",
+        "source": [
+          "https://wikiwiki.jp/w-w/%E3%82%AC%E3%83%AB%E3%83%96%E3%83%AC%E3%83%BC%E3%83%8A"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "だが、私はこれを『誓い』だと思っている。",
+        "source": [
+          "https://wikiwiki.jp/w-w/%E3%82%AC%E3%83%AB%E3%83%96%E3%83%AC%E3%83%BC%E3%83%8A"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "都合良く『悪魔』になるのも悪くない。",
+        "source": [
+          "https://wikiwiki.jp/w-w/%E3%82%AC%E3%83%AB%E3%83%96%E3%83%AC%E3%83%BC%E3%83%8A"
+        ],
+        "checked": "verified"
+      }
+    ],
     "wuwa-hiyuki": [
       {
         "text": "浮世、初雪の如く儚し。",
@@ -16250,6 +18835,29 @@
         "text": "あたしはたくさんの栄誉を手に入れてきた。",
         "source": [
           "https://wikiwiki.jp/w-w/%E3%83%AB%E3%83%91/プロフィール"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "wuwa-lynae": [
+      {
+        "text": "はじめまして、あたしはリンネー！うん、ただのリンネーだよ。",
+        "source": [
+          "https://wikiwiki.jp/w-w/%E3%83%AA%E3%83%B3%E3%83%8D%E3%83%BC"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "やっほー！お菓子持ってきたよ！ねぇ、せっかくの天気だし、ツーリング行かない？",
+        "source": [
+          "https://wikiwiki.jp/w-w/%E3%83%AA%E3%83%B3%E3%83%8D%E3%83%BC"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "試しに作ってみただけで、本当にバイクに積んでるわけじゃないからね！",
+        "source": [
+          "https://wikiwiki.jp/w-w/%E3%83%AA%E3%83%B3%E3%83%8D%E3%83%BC"
         ],
         "checked": "verified"
       }
@@ -16412,6 +19020,29 @@
         "checked": "verified"
       }
     ],
+    "yugiohgx-tenjouin-asuka": [
+      {
+        "text": "無窮なる力を秘めし光の天使よ　今あまねく世界にその姿を現し万物を照らせ！　サイバー・エンジェル－美朱濡－！",
+        "source": [
+          "https://23233737.doorblog.jp/archives/52096413.html"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "私のデュエルへの想い　全部見せてあげる！　フィールド魔法　祝福の教会－リチューアル・チャーチ－を発動！",
+        "source": [
+          "https://23233737.doorblog.jp/archives/52096413.html"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "真のプリマは自らの光で舞台を照らし踊り続けるのよ！　来なさい！サイバー・ブレイダー！",
+        "source": [
+          "https://23233737.doorblog.jp/archives/52096413.html"
+        ],
+        "checked": "verified"
+      }
+    ],
     "yurucamp-inuyama-aoi": [
       {
         "text": "うそやでー",
@@ -16435,6 +19066,16 @@
           "https://bontoku.com/meigen-yurunadesiko"
         ],
         "checked": "verified"
+      }
+    ],
+    "yurucamp-kagamihara-sakura": [
+      {
+        "text": "ほら、さっさと乗れ豚野郎！",
+        "source": [
+          "https://animemanga33.com/archives/740?PageSpeed=noscript"
+        ],
+        "checked": "verified",
+        "harsh": true
       }
     ],
     "yurucamp-oogaki-chiaki": [
@@ -16485,6 +19126,22 @@
         "checked": "verified"
       }
     ],
+    "yurucamp-toba-minami": [
+      {
+        "text": "お酒を飲みながらゆっくり海外ドラマを見る時間もなくなるわ",
+        "source": [
+          "https://animemanga33.com/archives/740?PageSpeed=noscript"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "朝霧だったら…ベーコンとビールよね",
+        "source": [
+          "https://animemanga33.com/archives/740?PageSpeed=noscript"
+        ],
+        "checked": "verified"
+      }
+    ],
     "yurucamp-toki-ayano": [
       {
         "text": "ホント、なでしこって美味しそうに食べるよねえ",
@@ -16508,6 +19165,29 @@
           "https://anibase.net/ja/character/l822j/%E8%B5%A4%E5%BA%A7-%E3%81%82%E3%81%8B%E3%82%8A%28%E3%81%82%E3%81%8B%E3%81%96-%E3%81%82%E3%81%8B%E3%82%8A%29"
         ],
         "checked": "corrected"
+      }
+    ],
+    "yuruyuri-funami-yui": [
+      {
+        "text": "なんかあったら守ってあげるから…すぐ言いなよ",
+        "source": [
+          "https://frequ.jp/5839"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "…ごめん。確かにおまえは迷惑ばっかりかけるし非常識だし自己中だ。でも私は元の京子がいい",
+        "source": [
+          "https://frequ.jp/5839"
+        ],
+        "checked": "verified"
+      },
+      {
+        "text": "自分の欲しいものだからって相手も喜ぶとは限らないと思うんだよね",
+        "source": [
+          "https://frequ.jp/5839"
+        ],
+        "checked": "verified"
       }
     ],
     "yuruyuri-furutani-himawari": [
@@ -16811,6 +19491,15 @@
         "text": "迷惑でなければ、お前の店でビデオテープを借りたいのだが",
         "source": [
           "https://wikiwiki.jp/zenless/ランクアップイベント/星見雅"
+        ],
+        "checked": "verified"
+      }
+    ],
+    "zzz-nekomiya-mana": [
+      {
+        "text": "もっともっと！ぜ～んぶたいらげてみせるぞ！",
+        "source": [
+          "https://wikiwiki.jp/zenless/%E7%8C%AB%E5%8F%88"
         ],
         "checked": "verified"
       }
