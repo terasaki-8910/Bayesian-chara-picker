@@ -78,7 +78,7 @@ describe('A18. 名台詞のデータ', () => {
 
   it('A18: 台詞は禁止語(config/forbidden-terms.json)を含まない', () => {
     // data/ は禁止語の lint の対象外なので、ここで照合する（BA4 と同じ）。
-    // キャラの名前と別名は固有名詞なので外す（「レオナルド」が禁止語の1つに部分一致する）。
+    // キャラの名前と別名は固有名詞なので外す（FGO のキャラ名が禁止語の1つに部分一致する）。
     const names = characters
       .flatMap((c) => [c.name, ...c.aliases])
       .filter((n) => n.length > 0)
