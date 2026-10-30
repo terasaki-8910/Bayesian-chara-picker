@@ -24,7 +24,7 @@ LLM の主観レビューは受け入れ基準に含めない。
 | A15 | `characters.json` の全作品が `tag-overrides.json` の `seriesAliases` に定義されている | Vitest（BA5） |
 | A16 | `tag-map.json` の `tag` が非 null のエントリは、作品タグとの共起率 0.3 以上か、理由付きの手動 override である | Vitest（BA5） |
 | A17 | 軸どうしの矛盾（14 ルール）と Danbooru の実測との食い違い（髪色・胸・肌・looks の 7 ルール）に、許可リスト（`data/bayes/quality-allowlist.json`）に無い新しい違反が無い。許可の理由は必須で、直った違反の許可が残っていても落ちる（ラチェット） | Vitest（BF） |
-| A18 | `data/quotes.json`（名台詞）がスキーマ検証を通り（1体1〜3個、`checked` は verified / corrected / memory、余計な項目なし）、id がすべて `characters.json` にあり、台詞は60字まで・「」と改行と名前の穴（○○）なし・NFC・同じキャラで重複なし、Web で確かめた台詞は https の出どころ（検索結果のページは不可）を持つ | Vitest |
+| A18 | `data/quotes.json`（名台詞）がスキーマ検証を通り（1体1〜3個、`checked` は verified / corrected / memory、余計な項目なし）、id がすべて `characters.json` にあり、台詞は60字まで・「」と改行と名前の穴（○○）なし・NFC・禁止語なし（キャラの名前・別名の部分は除く）・同じキャラで重複なし、Web で確かめた台詞は https の出どころ（検索結果のページは不可）を持つ | Vitest |
 
 **A15 / A16 の由来（2026-08-01 の事故）**: キャラ拡充で新しい作品を足したときに
 `seriesAliases` への追加を忘れると、`seriesOverlapRatio()` が `seriesAlias` の無い場合に
